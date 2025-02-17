@@ -1,0 +1,9 @@
+leader_traits = {
+	YZQ_xibuermeng_trait = {
+		army_morale_factor = 0.15
+		army_org_factor = 0.05
+		conscription_factor = 0.1
+		ST_race_penalty_all_factor = 0.1
+	}
+	
+}

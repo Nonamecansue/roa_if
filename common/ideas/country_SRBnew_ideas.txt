@@ -1,0 +1,47 @@
+ideas = {
+	country = {
+
+
+    SRB_xinjindanzhandepangguanzhe_idea = {
+	    	picture = man_five_year_plan_industry
+	    	allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				war_support_factor = -0.5
+				conscription_factor = -0.3
+				industrial_capacity_factory = -0.1
+				POLITICAL_POWER_GAIN = -0.25
+
+			}
+		}
+	SRB_nanminyiminchao_idea = {
+	    	picture = man_five_year_plan_industry
+	    	allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				stability_factor = -0.1
+				MONTHLY_POPULATION = 0.2
+
+			}
+		}
+	
+	
+		
+		
+
+	}
+}

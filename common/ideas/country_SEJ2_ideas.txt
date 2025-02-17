@@ -1,0 +1,887 @@
+ideas = {
+	country = {
+		SEJ_tingzhidexiakeshang_idea = {
+			picture = chi_war_of_resistance
+
+			available = {
+				is_subject = no
+			}
+	
+			modifier = {
+				political_power_factor = -0.3
+				stability_factor = -0.1
+				fandong_drift = -0.025
+			}
+	    }
+		SEJ_yuanzhumofasenlindegemingzhe_idea = {
+			picture = SOV_scientist_defect
+
+			available = {
+				not = {
+					has_war_with = NAR
+				}
+				country_exists = NAR
+			}
+	
+			modifier = {
+				political_power_factor = -0.05
+				industrial_capacity_factory = -0.05
+			}
+	    }
+
+		SEJ_minjianqingxiang_p5_idea = {
+			picture = SEJ_minjianqingxiang_p5
+
+			available = {
+
+			}
+	
+			modifier = {
+				consumer_goods_factor = -0.05
+				research_speed_factor = -0.15
+			}
+	    }
+		SEJ_minjianqingxiang_p4_idea = {
+			picture = SEJ_minjianqingxiang_p4
+
+			available = {
+
+			}
+	
+			modifier = {
+				consumer_goods_factor = -0.04
+				research_speed_factor = -0.12
+			}
+	    }
+		SEJ_minjianqingxiang_p3_idea = {
+			picture = SEJ_minjianqingxiang_p3
+
+			available = {
+
+			}
+	
+			modifier = {
+				consumer_goods_factor = -0.03
+				research_speed_factor = -0.09
+			}
+	    }
+		SEJ_minjianqingxiang_p2_idea = {
+			picture = SEJ_minjianqingxiang_p2
+
+			available = {
+
+			}
+	
+			modifier = {
+				consumer_goods_factor = -0.02
+				research_speed_factor = -0.06
+			}
+	    }
+		SEJ_minjianqingxiang_p1_idea = {
+			picture = SEJ_minjianqingxiang_p1
+
+			available = {
+
+			}
+	
+			modifier = {
+				consumer_goods_factor = -0.01
+				research_speed_factor = -0.03
+			}
+	    }
+		SEJ_minjianqingxiang_p0_idea = {
+			picture = SEJ_minjianqingxiang_p0
+
+			available = {
+
+			}
+	
+			modifier = {
+				# consumer_goods_factor = -0.01
+				# research_speed_factor = 0.03
+			}
+	    }
+		SEJ_minjianqingxiang_n1_idea = {
+			picture = SEJ_minjianqingxiang_n1
+
+			available = {
+
+			}
+	
+			modifier = {
+				consumer_goods_factor = 0.01
+				research_speed_factor = 0.03
+			}
+	    }
+		SEJ_minjianqingxiang_n2_idea = {
+			picture = SEJ_minjianqingxiang_n2
+
+			available = {
+
+			}
+	
+			modifier = {
+				consumer_goods_factor = 0.02
+				research_speed_factor = 0.06
+			}
+	    }
+		SEJ_minjianqingxiang_n3_idea = {
+			picture = SEJ_minjianqingxiang_n3
+
+			available = {
+
+			}
+	
+			modifier = {
+				consumer_goods_factor = 0.03
+				research_speed_factor = 0.09
+			}
+	    }
+		SEJ_minjianqingxiang_n4_idea = {
+			picture = SEJ_minjianqingxiang_n4
+
+			available = {
+
+			}
+	
+			modifier = {
+				consumer_goods_factor = 0.04
+				research_speed_factor = 0.12
+			}
+	    }
+		SEJ_minjianqingxiang_n5_idea = {
+			picture = SEJ_minjianqingxiang_n5
+
+			available = {
+
+			}
+	
+			modifier = {
+				consumer_goods_factor = 0.05
+				research_speed_factor = 0.15
+			}
+	    }
+
+		SEJ_lingdaocengpianxiang_p5_idea = {
+			picture = SEJ_lingdaocengpianxiang_p5
+
+			available = {
+
+			}
+	
+			modifier = {
+				political_power_factor = 0.3
+				training_time_factor = 0.2
+				# industrial_capacity_factory = -0.2
+				# production_speed_buildings_factor = -0.2
+			}
+	    }
+		SEJ_lingdaocengpianxiang_p4_idea = {
+			picture = SEJ_lingdaocengpianxiang_p4
+
+			available = {
+
+			}
+	
+			modifier = {
+				political_power_factor = 0.24
+				training_time_factor = 0.16
+				# industrial_capacity_factory = -0.16
+				# production_speed_buildings_factor = -0.16
+			}
+	    }
+		SEJ_lingdaocengpianxiang_p3_idea = {
+			picture = SEJ_lingdaocengpianxiang_p3
+
+			available = {
+
+			}
+	
+			modifier = {
+				political_power_factor = 0.18
+				training_time_factor = 0.12
+				# industrial_capacity_factory = -0.12
+				# production_speed_buildings_factor = -0.12
+			}
+	    }
+		SEJ_lingdaocengpianxiang_p2_idea = {
+			picture = SEJ_lingdaocengpianxiang_p2
+
+			available = {
+
+			}
+	
+			modifier = {
+				political_power_factor = 0.12
+				training_time_factor = 0.08
+				# industrial_capacity_factory = -0.08
+				# production_speed_buildings_factor = -0.08
+			}
+	    }
+		SEJ_lingdaocengpianxiang_p1_idea = {
+			picture = SEJ_lingdaocengpianxiang_p1
+
+			available = {
+
+			}
+	
+			modifier = {
+				political_power_factor = 0.06
+				training_time_factor = 0.04
+				# industrial_capacity_factory = -0.04
+				# production_speed_buildings_factor = -0.04
+			}
+	    }
+		SEJ_lingdaocengpianxiang_p0_idea = {
+			picture = SEJ_lingdaocengpianxiang_p0
+
+			available = {
+
+			}
+	
+			modifier = {
+
+			}
+	    }
+		SEJ_lingdaocengpianxiang_n1_idea = {
+			picture = SEJ_lingdaocengpianxiang_n1
+
+			available = {
+
+			}
+	
+			modifier = {
+				political_power_factor = -0.06
+				training_time_factor = -0.04
+				# industrial_capacity_factory = 0.04
+				# production_speed_buildings_factor = 0.04
+			}
+	    }
+		SEJ_lingdaocengpianxiang_n2_idea = {
+			picture = SEJ_lingdaocengpianxiang_n2
+
+			available = {
+
+			}
+	
+			modifier = {
+				political_power_factor = -0.12
+				training_time_factor = -0.08
+				# industrial_capacity_factory = 0.08
+				# production_speed_buildings_factor = 0.08
+			}
+	    }
+		SEJ_lingdaocengpianxiang_n3_idea = {
+			picture = SEJ_lingdaocengpianxiang_n3
+
+			available = {
+
+			}
+	
+			modifier = {
+				political_power_factor = -0.18
+				training_time_factor = -0.12
+				# industrial_capacity_factory = 0.12
+				# production_speed_buildings_factor = 0.12
+			}
+	    }
+		SEJ_lingdaocengpianxiang_n4_idea = {
+			picture = SEJ_lingdaocengpianxiang_n4
+
+			available = {
+
+			}
+	
+			modifier = {
+				political_power_factor = -0.24
+				training_time_factor = -0.16
+				# industrial_capacity_factory = 0.16
+				# production_speed_buildings_factor = 0.16
+			}
+	    }
+		SEJ_lingdaocengpianxiang_n5_idea = {
+			picture = SEJ_lingdaocengpianxiang_n5
+
+			available = {
+
+			}
+	
+			modifier = {
+				political_power_factor = -0.3
+				training_time_factor = -0.2
+				# industrial_capacity_factory = 0.2
+				# production_speed_buildings_factor = 0.2
+			}
+	    }
+
+		SEJ_diaodongewaishengchanli_idea = {
+			name = SEJ_diaodongewaishengchanli
+			picture = generic_production_bonus
+			available = {
+				
+			}
+			modifier = {
+				industrial_capacity_factory = 0.33
+			}
+		}
+		SEJ_zhaojizuizhongchengdejunguan_idea = {
+			name = SEJ_zhaojizuizhongchengdejunguan
+			picture = generic_manpower_bonus
+			modifier = {
+				army_leader_start_level = 1
+			}
+		}
+		SEJ_cefandifangbudui_idea = {
+			name = SEJ_cefandifangbudui
+			picture = generic_intel_bonus
+			modifier = {
+				decryption = 5
+			}
+		}
+		SEJ_yanjiuxiaozhui_idea = {
+			name = SEJ_yanjiuxiaozhui
+			picture = generic_research_bonus
+			modifier = {
+				research_speed_factor = 0.1
+			}
+			research_bonus = {
+				secret = 0.05
+			}
+		}
+		SEJ_shijiangeminggangling_idea = {
+			name = SEJ_shijiangeminggangling
+			picture = generic_pp_unity_bonus
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.25
+			}
+		}
+		SEJ_anxulingligongji_idea = {
+			name = SEJ_anxulingligongji
+			picture = MEX_church_power_5
+			modifier = {
+				PO_good_influence_factor = 0.1
+				PO_bad_influence_factor = -0.1
+			}
+		}
+		SEJ_shipeizhe_idea = {
+			name = SEJ_shipeizhe
+			picture = man_five_year_plan_industry
+			modifier = {
+				conscription = -0.04
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.1
+				research_speed_factor = 0.05
+			}
+		}
+		SEJ_duiwaixuanchuanbu_idea = {
+			name = SEJ_duiwaixuanchuanbu
+			picture = beretta
+			modifier = {
+				improve_relations_maintain_cost_factor = -0.1
+				resistance_growth = -0.1
+			}
+		}
+		SEJ_gewutuan_idea = {
+			name = SEJ_gewutuan
+			picture = bul_fatherland_front_positive
+			modifier = {
+				consumer_goods_factor = -0.03
+				political_power_factor = 0.15
+			}
+		}
+		SEJ_wushenlun_idea = {
+			name = SEJ_wushenlun
+			picture = SOV_a_church_of_the_catacombs
+			modifier = {
+				political_power_gain = 0.15
+				war_support_factor = 0.075
+				offensive_war_stability_factor = 0.1
+			}
+		}
+		SEJ_geminglinian_idea = {
+			name = SEJ_geminglinian
+			picture = generic_communism_drift_bonus
+			modifier = {
+				fandong_drift = 0.08
+			}
+		}
+		SEJ_xinshidaidexiakeshang_idea = {
+			# name = SEJ_xinshidaidexiakeshang
+			picture = chi_war_of_resistance3
+			available = {
+				is_subject = no
+				or = {
+					all_enemy_country = {
+						has_government = fandong
+					}
+					has_war = no
+				}
+			}
+			modifier = {
+				political_power_factor = -0.15
+				stability_factor = -0.1
+				# fandong_drift = -0.025
+			}
+		}
+		SEJ_buyudayaoguaituoxie_idea = {
+			name = SEJ_buyudayaoguaituoxie
+			picture = FRA_army_of_aggression_focus
+			targeted_modifier = {
+				tag = SEJ
+				attack_bonus_against = -0.05
+				defense_bonus_against = -0.05
+			}
+		}
+		SEJ_youxianqilunuo_idea = {
+			name = SEJ_youxianqilunuo
+			picture = chi_chinese_support
+			available = {
+				SCA = {
+					is_subject = no
+					exists = yes
+				}
+				is_subject = no
+			}
+			modifier = {
+				DIP_RULE_cannot_justify = 1
+				DIP_RULE_cannot_declare_war = 1
+			}
+			targeted_modifier = {
+				tag = SCA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		SEJ_youxianqilunuo2_idea = {
+			# name = SEJ_youxianqilunuo2
+			picture = chi_chinese_support
+			available = {
+				SCA = {
+					is_subject = no
+					exists = yes
+				}
+				is_subject = no
+			}
+			modifier = {
+				political_power_factor = 0.25
+			}
+		}
+		SEJ_guligongxianlingli_idea = {
+			name = SEJ_guligongxianlingli
+			picture = XXX
+			modifier = {
+				
+			}
+			research_bonus = {
+				magic = 0.1
+			}
+		}
+		SEJ_gaiminglujun_idea = {
+			name = SEJ_gaiminglujun
+			picture = generic_infantry_bonus
+			modifier = {
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+			}
+		}
+		SEJ_zhishiwuqibiaozhun_idea = {
+			name = SEJ_zhishiwuqibiaozhun
+			picture = generic_infantry_equipment_manufacturer_2
+			equipment_bonus = {
+				magic_core_a = {
+					instant = yes
+					soft_attack = 0.05
+					reliability = 0.05
+				}
+				magic_energy_a = {
+					instant = yes
+					soft_attack = 0.05
+					reliability = 0.05
+				}
+				melee_a = {
+					instant = yes
+					soft_attack = 0.05
+					reliability = 0.05
+				}
+			}
+		}
+		SEJ_zhenghejungongchanye_idea = {
+			name = SEJ_zhenghejungongchanye
+			picture = man_five_year_plan_industry
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		SEJ_gansidui_idea = {
+			name = SEJ_gansidui
+			picture = warrior_traditions_idea
+			modifier = {
+				modifier_army_sub_unit_sc_sf_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_sc_sf_infantry_defence_factor = 0.05
+				modifier_army_sub_unit_ma_sf_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_ma_sf_infantry_defence_factor = 0.05
+			}
+		}
+		SEJ_getiyizhideliliang_idea = {
+			name = SEJ_getiyizhideliliang
+			picture = triumphant_will
+			modifier = {
+				land_reinforce_rate = 0.05
+				army_morale_factor = 0.05
+				dig_in_speed_factor = 0.1
+			}
+		}
+		SEJ_gaishanliucheng_idea = {
+			name = SEJ_gaishanliucheng
+			picture = generic_infantry_equipment_manufacturer_3
+			modifier = {
+				
+			}
+			equipment_bonus = {
+				magic_core_a = {
+					build_cost_ic = -0.25
+					instant = yes
+				}
+			}
+		}
+		SEJ_zujianjingyanbudui_idea = {
+			name = SEJ_zujianjingyanbudui
+			picture = eng_special_air_service
+			modifier = {
+				special_forces_cap = 0.25
+			}
+		}
+		SEJ_chaojiyaoguai_idea = {
+			name = SEJ_chaojiyaoguai
+			picture = generic_acquire_tanks
+			
+			equipment_bonus = {
+				tactical_core_a = {
+					soft_attack = 0.1
+					hard_attack = 0.1
+					instant = yes
+				}
+			}
+		}
+		SEJ_zijidehudun_idea = {
+			name = SEJ_zijidehudun
+			picture = mitsubishi
+			equipment_bonus = {
+				shield_a = {
+					instant = yes
+					armor_value = 0.05
+				}
+			}
+		}
+		SEJ_wunianjihua_idea = {
+			name = SEJ_wunianjihua
+			picture = generic_research_bonus
+			modifier = {
+				research_speed_factor = 0.17
+			}
+		}
+		SEJ_jinwoguanjianbumen_idea = {
+			name = SEJ_jinwoguanjianbumen
+			picture = generic_political_support
+			modifier = {
+				political_power_gain = 0.3
+			}
+		}
+		SEJ_wuhaideshenxiang_idea = {
+			name = SEJ_wuhaideshenxiang
+			picture = anti_soviet_pact
+			modifier = {
+				drift_defence_factor = -0.25
+			}
+		}
+		SEJ_yaomeqilunuo_idea = {
+			name = SEJ_yaomeqilunuo
+			picture = officers_purged
+			targeted_modifier = {
+				tag = CIR
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+		}
+		SEJ_qiangzhezizhengzhilu_idea = {
+			name = SEJ_qiangzhezizhengzhilu
+			picture = FRA_la_deluge
+			modifier = {
+				justify_war_goal_time = -0.25
+			}
+		}
+		SEJ_jingwaizhichizhe_idea = {
+			picture = generic_spy_intel
+			available = {
+				has_war_with = SEJ
+			}
+			modifier = {
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+			}
+		}
+		SEJ_huanxiangxiangfangemingxianfeng_idea = {
+			picture = anti_soviet_pact
+			available = {
+				any_country = {
+					has_war_with = SEJ
+					has_government = fandong
+				}
+			}
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+		SEJ_liliangquanli_idea1 = {
+			picture = generic_spy_political
+			available = {
+				not = {
+					has_government = oldorder
+				}
+				is_subject = no
+			}
+			modifier = {
+				political_power_factor = -0.1
+			}
+		}
+		SEJ_liliangquanli_idea2 = {
+			picture = generic_democratic_drift_bonus
+			available = {
+				is_subject = no
+			}
+			modifier = {
+				qinwai_drift = 0.05
+			}
+		}
+		SEJ_linglipinghengyanjiuxiaozu_idea = {
+			name = SEJ_linglipinghengyanjiuxiaozu
+			picture = generic_research_bonus
+			modifier = {
+				research_speed_factor = 0.1
+			}
+		}
+		SEJ_linglipinghengdeshijian_idea1 = {
+			name = SEJ_linglipinghengdeshijian
+			picture = XXX
+			modifier = {
+				PO_good_influence_factor = -0.25
+				PO_bad_influence_factor = -0.5
+			}
+		}
+		SEJ_linglipinghengdeshijian_idea2 = {
+			picture = XXX
+			modifier = {
+				PO_daily_gain = 0.04
+			}
+		}
+		SEJ_duiwaixuanchuanchengguo_idea = {
+			name = SEJ_duiwaixuanchuanchengguo
+			picture = generic_political_support
+			modifier = {
+				political_power_factor = 0.3
+			}
+		}
+		SEJ_daohuishenshe_idea = {
+			name = SEJ_daohuishenshe
+			picture = SOV_a_church_of_the_catacombs
+			modifier = {
+				political_power_factor = 0.4
+			}
+		}
+		SEJ_wanshanxunliantixi_idea = {
+			name = SEJ_wanshanxunliantixi
+			picture = generic_infantry_bonus
+			modifier = {
+				training_time_factor = -0.15
+				army_org_factor = 0.05
+			}
+		}
+		SEJ_wanmeidexingzhengguihua_idea = {
+			name = SEJ_wanmeidexingzhengguihua
+			picture = generic_goods_red_bonus
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				consumer_goods_factor = -0.02
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		SEJ_gaishanbujiluxian_idea = {
+			name = SEJ_gaishanbujiluxian
+			picture = generic_build_infrastructure
+			modifier = {
+				supply_consumption_factor = -0.15
+				production_speed_rail_way_factor = 0.1
+			}
+		}
+		SEJ_shandonggemingxin_idea = {
+			picture = generic_communism_drift_bonus
+			modifier = {
+				fandong_drift = 0.04
+			}
+		}
+		SEJ_mofasenlinjianshefangan_mingong1_idea = {
+			name = SEJ_mofasenlinjianshefangan_mingong
+			picture = chi_hyper_inflation
+			available = {
+				not = { has_war_with = SEJ }
+			}
+			targeted_modifier = {
+				tag = SEJ
+				cic_to_target_factor = 0.05
+			}
+		}
+		SEJ_mofasenlinjianshefangan_mingong2_idea = {
+			name = SEJ_mofasenlinjianshefangan_mingong
+			picture = chi_hyper_inflation2
+			available = {
+				not = { has_war_with = SEJ }
+			}
+			targeted_modifier = {
+				tag = SEJ
+				cic_to_target_factor = 0.1
+			}
+		}
+		SEJ_mofasenlinjianshefangan_mingong3_idea = {
+			name = SEJ_mofasenlinjianshefangan_mingong
+			picture = chi_hyper_inflation3
+			available = {
+				not = { has_war_with = SEJ }
+			}
+			targeted_modifier = {
+				tag = SEJ
+				cic_to_target_factor = 0.15
+			}
+		}
+		SEJ_mofasenlinjianshefangan_mingong4_idea = {
+			name = SEJ_mofasenlinjianshefangan_mingong
+			picture = chi_hyper_inflation4
+			available = {
+				not = { has_war_with = SEJ }
+			}
+			targeted_modifier = {
+				tag = SEJ
+				cic_to_target_factor = 0.2
+			}
+		}
+		SEJ_mofasenlinjianshefangan_mingong5_idea = {
+			name = SEJ_mofasenlinjianshefangan_mingong
+			picture = chi_hyper_inflation5
+			available = {
+				not = { has_war_with = SEJ }
+			}
+			targeted_modifier = {
+				tag = SEJ
+				cic_to_target_factor = 0.25
+			}
+		}
+		SEJ_mofasenlinjianshefangan_jungong1_idea = {
+			name = SEJ_mofasenlinjianshefangan_jungong
+			picture = chi_hyper_inflation
+			available = {
+				not = { has_war_with = SEJ }
+			}
+			targeted_modifier = {
+				tag = SEJ
+				mic_to_target_factor = 0.05
+			}
+		}
+		SEJ_mofasenlinjianshefangan_jungong2_idea = {
+			name = SEJ_mofasenlinjianshefangan_jungong
+			picture = chi_hyper_inflation2
+			available = {
+				not = { has_war_with = SEJ }
+			}
+			targeted_modifier = {
+				tag = SEJ
+				mic_to_target_factor = 0.1
+			}
+		}
+		SEJ_mofasenlinjianshefangan_jungong3_idea = {
+			name = SEJ_mofasenlinjianshefangan_jungong
+			picture = chi_hyper_inflation3
+			available = {
+				not = { has_war_with = SEJ }
+			}
+			targeted_modifier = {
+				tag = SEJ
+				mic_to_target_factor = 0.15
+			}
+		}
+		SEJ_mofasenlinjianshefangan_jungong4_idea = {
+			name = SEJ_mofasenlinjianshefangan_jungong
+			picture = chi_hyper_inflation4
+			available = {
+				not = { has_war_with = SEJ }
+			}
+			targeted_modifier = {
+				tag = SEJ
+				mic_to_target_factor = 0.2
+			}
+		}
+		SEJ_mofasenlinjianshefangan_jungong5_idea = {
+			name = SEJ_mofasenlinjianshefangan_jungong
+			picture = chi_hyper_inflation5
+			available = {
+				not = { has_war_with = SEJ }
+			}
+			targeted_modifier = {
+				tag = SEJ
+				mic_to_target_factor = 0.25
+			}
+		}
+		SEJ_xiakeshangyuanling_idea = {
+			name = SEJ_xiakeshangyuanling
+			picture = generic_supply_lines
+			modifier = {
+				supply_consumption_factor = -0.05
+				attrition = -0.1
+			}
+		}
+		SEJ_qudaileimi_idea = {
+			name = SEJ_qudaileimi
+			picture = FRA_army_of_aggression_focus
+			targeted_modifier = {
+				tag = SCA
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+		}
+		SEJ_chongyaoguaijiandie_idea = {
+			name = SEJ_chongyaoguaijiandie
+			picture = generic_intel_bonus
+			modifier = {
+				decryption = 5
+			}
+		}
+		SEJ_mihuizi2_idea = {
+			picture = generic_disjointed_gov
+			modifier = {
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				war_support_factor = -0.2
+				stability_factor = -0.1
+				production_speed_buildings_factor = -0.15
+				industrial_capacity_factory = -0.15
+			}
+		}
+		SEJ_heCIRjiashenlianxi_idea = {
+			picture = FRA_army_of_aggression_focus
+			targeted_modifier = {
+				tag = NIB
+				attack_bonus_against = 0.5
+				defense_bonus_against = 0.5
+			}
+		}
+		SEJ_mihuizi_idea = {
+			picture = FRA_army_of_aggression_focus
+			targeted_modifier = {
+				tag = RMI
+				attack_bonus_against = 0.5
+				defense_bonus_against = 0.5
+			}
+		}
+	}
+}

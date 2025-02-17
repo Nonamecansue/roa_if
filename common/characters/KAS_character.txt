@@ -1,0 +1,73 @@
+characters={
+	KAS_kas ={
+		name = KAS_kas
+		portraits={
+			civilian={
+				large="gfx/leaders/KAS/KAS_kas.dds"
+				small="gfx/leaders/KAS/KAS_kas_small.dds"
+			}
+			army = {
+				large="gfx/leaders/KAS/KAS_kas.dds"
+				small="gfx/leaders/KAS/KAS_kas_small.dds"
+			}
+		}
+		field_marshal = {
+            traits = {  th_original_character th_character  th_trait_moulvedashi th_trait_chongjizhuanjia th_trait_dayaoguai }
+            attack_skill = 4
+            defense_skill = 2
+            planning_skill = 4
+            logistics_skill = 11
+            skill = 12
+        }
+		advisor = {
+			slot = character_coop
+			idea_token = KAS_kas
+			name = KAS_kas
+			cost = 200
+			modifier = {
+				ST_race_penalty_all_factor = -0.2
+				PO_good_humanism_influence_factor = 0.5
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	KAS_kas_leader ={
+		name = KAS_kas_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/KAS/KAS_kas.dds"
+				small="gfx/leaders/KAS/KAS_kas_small.dds"
+			}
+			army = {
+				large="gfx/leaders/KAS/KAS_kas.dds"
+				small="gfx/leaders/KAS/KAS_kas_small.dds"
+			}
+		}
+		country_leader={
+			ideology=qinwai_type
+			id=-1
+		}
+		country_leader={
+			ideology=guli_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldorder_type
+			id=-1
+		}
+		country_leader={
+			ideology=fandong_type
+			id=-1
+		}
+		country_leader={
+			ideology=neworder_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldgenso_type
+			id=-1
+		}
+	}
+}

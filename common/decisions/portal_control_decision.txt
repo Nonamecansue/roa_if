@@ -1,0 +1,3653 @@
+portal_hint = {
+	#hints
+	##
+	view_portal_624_to_652_f = {
+		visible = {
+			or = {
+				624 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				652 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			goto_state = 624
+		}
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	view_portal_624_to_652_l = {
+		visible = {
+			or = {
+				624 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				652 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			goto_state = 652
+		}
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	##
+	view_portal_640_to_648_f = {
+		visible = {
+			or = {
+				640 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				648 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			goto_state = 640
+		}
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	view_portal_640_to_648_l = {
+		visible = {
+			or = {
+				640 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				648 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			goto_state = 648
+		}
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	##
+	view_portal_626_to_650_f = {
+		visible = {
+			or = {
+				626 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				650 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			goto_state = 626
+		}
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	view_portal_626_to_650_l = {
+		visible = {
+			or = {
+				626 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				650 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			goto_state = 650
+		}
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	##
+	view_portal_627_to_643_f = {
+		visible = {
+			or = {
+				627 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				643 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			goto_state = 627
+		}
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	view_portal_627_to_643_l = {
+		visible = {
+			or = {
+				627 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				643 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			goto_state = 643
+		}
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	##
+	view_portal_628_to_655_f = {
+		visible = {
+			or = {
+				628 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				655 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			goto_state = 628
+		}
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	view_portal_628_to_655_l = {
+		visible = {
+			or = {
+				628 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				655 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			goto_state = 655
+		}
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	##
+	view_portal_629_to_654_f = {
+		visible = {
+			or = {
+				629 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				654 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			goto_state = 629
+		}
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	view_portal_629_to_654_l = {
+		visible = {
+			or = {
+				629 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				654 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			goto_state = 654
+		}
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	##
+	view_portal_630_to_649_f = {
+		visible = {
+			or = {
+				630 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				649 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			goto_state = 630
+		}
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	view_portal_630_to_649_l = {
+		visible = {
+			or = {
+				630 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				649 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			goto_state = 649
+		}
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	##
+	view_portal_631_to_645_f = {
+		visible = {
+			or = {
+				631 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				645 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			goto_state = 631
+		}
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	view_portal_631_to_645_l = {
+		visible = {
+			or = {
+				631 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				645 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			goto_state = 645
+		}
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	##
+	view_portal_634_to_656_f = {
+		visible = {
+			or = {
+				634 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				656 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			goto_state = 634
+		}
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	view_portal_634_to_656_l = {
+		visible = {
+			or = {
+				634 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				656 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			goto_state = 656
+		}
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	##
+	view_portal_635_to_653_f = {
+		visible = {
+			or = {
+				635 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				653 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			goto_state = 635
+		}
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	view_portal_635_to_653_l = {
+		visible = {
+			or = {
+				635 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				653 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			goto_state = 653
+		}
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	##
+	view_portal_636_to_658_f = {
+		visible = {
+			or = {
+				636 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				658 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			goto_state = 636
+		}
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	view_portal_636_to_658_l = {
+		visible = {
+			or = {
+				636 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				658 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			goto_state = 658
+		}
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	##
+	view_portal_637_to_657_f = {
+		visible = {
+			or = {
+				637 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				657 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			goto_state = 637
+		}
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	view_portal_637_to_657_l = {
+		visible = {
+			or = {
+				637 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				657 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			goto_state = 657
+		}
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	##
+	view_portal_638_to_644_f = {
+		visible = {
+			or = {
+				638 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				644 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			goto_state = 638
+		}
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	view_portal_638_to_644_l = {
+		visible = {
+			or = {
+				638 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				644 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			goto_state = 644
+		}
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	##
+	view_portal_639_to_647_f = {
+		visible = {
+			or = {
+				639 = {
+					any_neighbor_state = {
+					controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				647 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			goto_state = 639
+		}
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	view_portal_639_to_647_l = {
+		visible = {
+			or = {
+				639 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				647 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			goto_state = 647
+		}
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	##
+	view_portal_632_to_646_f = {
+		visible = {
+			or = {
+				632 = {
+					any_neighbor_state = {
+					controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				646 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			goto_state = 632
+		}
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	view_portal_632_to_646_l = {
+		visible = {
+			or = {
+				632 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				646 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			goto_state = 646
+		}
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	##
+	view_portal_625_to_651_f = {
+		visible = {
+			or = {
+				625 = {
+					any_neighbor_state = {
+					controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				651 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			goto_state = 625
+		}
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	view_portal_625_to_651_l = {
+		visible = {
+			or = {
+				625 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				651 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			goto_state = 651
+		}
+		fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
+portal_control = {
+	#####华扇
+	#地底
+	open_624_652 = {
+		visible = {
+			ZON = {
+				controls_state = 624
+			}
+			or = {
+				624 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				652 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		available = {
+			has_tech = kongjianmonijishu
+		}
+		highlight_states = {
+			highlight_states_trigger = {
+				state = 624
+			}
+		}
+		days_remove = 10
+		remove_effect = {
+			transfer_state = 624
+			every_country = {
+				limit = {
+					not = {
+						tag = ROOT
+						tag = ZON
+					}
+					or = {
+						624 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+						652 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+					}
+				}
+				set_variable = {
+					global.portal_id = 1
+				}
+				#OPEN HINT EVENT
+				portal_hint_event = yes
+			}
+		}
+		ai_will_do = {
+			base = 50000
+			# modifier = {
+			# 	factor = 0
+			# 	has_country_flag = owns_mountain_portal
+			# 	not = {
+			# 		has_country_flag = open_624_652
+			# 	}
+			# }
+			modifier = {
+				factor = 0
+				indoor_is_being_threatened = yes
+			}
+		}
+	}
+	close_624_652 = {
+		visible = {
+			ZON = {
+				not = { controls_state = 624 }
+			}
+			has_country_flag = owns_mountain_portal
+		}
+		available = {
+			has_tech = kongjianmonijishu
+			or = {
+				has_war = no
+				all_enemy_country = {
+					not = {
+						has_tech = kongjianmonijishu
+					}
+				}
+			}
+		}
+		highlight_states = {
+			highlight_states_trigger = {
+				state = 624
+			}
+		}
+		days_remove = 10
+		remove_effect = {
+			ZON = { transfer_state = 624 }
+			every_country = {
+				limit = {
+					not = {
+						tag = ROOT
+						tag = ZON
+					}
+					or = {
+						624 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+						652 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+					}
+				}
+				set_variable = {
+					global.portal_id = 1
+				}
+				#CLOSE HINT EVENT
+				portal_hint_event = yes
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 50000
+				indoor_is_being_threatened = yes
+			}
+		}
+	}
+	#村落
+	open_640_648 = {
+		visible = {
+			ZON = {
+				controls_state = 640
+			}
+			or = {
+				640 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				648 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		available = {
+			has_tech = kongjianmonijishu
+		}
+		highlight_states = {
+			highlight_states_trigger = {
+				state = 640
+			}
+		}
+		days_remove = 10
+		remove_effect = {
+			transfer_state = 640
+			every_country = {
+				limit = {
+					not = {
+						tag = ROOT
+						tag = ZON
+					}
+					or = {
+						640 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+						648 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+					}
+				}
+				set_variable = {
+					global.portal_id = 2
+				}
+				#OPEN HINT EVENT
+				portal_hint_event = yes
+			}
+		}
+		ai_will_do = {
+			base = 50000
+			# modifier = {
+			# 	factor = 0
+			# 	has_country_flag = owns_mountain_portal
+			# 	not = {
+			# 		has_country_flag = open_640_648
+			# 	}
+			# }
+			modifier = {
+				factor = 0
+				indoor_is_being_threatened = yes
+			}
+		}
+	}
+	close_640_648 = {
+		visible = {
+			ZON = {
+				not = { controls_state = 640 }
+			}
+			has_country_flag = owns_mountain_portal
+		}
+		available = {
+			has_tech = kongjianmonijishu
+			or = {
+				has_war = no
+				all_enemy_country = {
+					not = {
+						has_tech = kongjianmonijishu
+					}
+				}
+			}
+		}
+		highlight_states = {
+			highlight_states_trigger = {
+				state = 640
+			}
+		}
+		days_remove = 10
+		remove_effect = {
+			ZON = { transfer_state = 640 }
+			every_country = {
+				limit = {
+					not = {
+						tag = ROOT
+						tag = ZON
+					}
+					or = {
+						640 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+						648 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+					}
+				}
+				set_variable = {
+					global.portal_id = 2
+				}
+				#CLOSE HINT EVENT
+				portal_hint_event = yes
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 50000
+				indoor_is_being_threatened = yes
+			}
+		}
+	}
+	#####后户
+	#地狱
+	open_626_650 = {
+		visible = {
+			ZON = {
+				controls_state = 626
+			}
+			or = {
+				626 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				650 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		available = {
+			has_tech = kongjianmonijishu
+		}
+		highlight_states = {
+			highlight_states_trigger = {
+				state = 626
+			}
+		}
+		days_remove = 10
+		remove_effect = {
+			transfer_state = 626
+			every_country = {
+				limit = {
+					not = {
+						tag = ROOT
+						tag = ZON
+					}
+					or = {
+						626 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+						650 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+					}
+				}
+				set_variable = {
+					global.portal_id = 3
+				}
+				#OPEN HINT EVENT
+				portal_hint_event = yes
+			}
+		}
+		ai_will_do = {
+			base = 50000
+			# modifier = {
+			# 	factor = 0
+			# 	has_country_flag = owns_backdoor_portal
+			# 	not = {
+			# 		has_country_flag = open_626_650
+			# 	}
+			# }
+			modifier = {
+				factor = 0
+				indoor_is_being_threatened = yes
+			}
+		}
+	}
+	close_626_650 = {
+		visible = {
+			ZON = {
+				not = { controls_state = 626 }
+			}
+			has_country_flag = owns_backdoor_portal
+		}
+		available = {
+			has_tech = kongjianmonijishu
+			or = {
+				has_war = no
+				all_enemy_country = {
+					not = {
+						has_tech = kongjianmonijishu
+					}
+				}
+			}
+		}
+		highlight_states = {
+			highlight_states_trigger = {
+				state = 626
+			}
+		}
+		days_remove = 10
+		remove_effect = {
+			ZON = { transfer_state = 626 }
+			every_country = {
+				limit = {
+					not = {
+						tag = ROOT
+						tag = ZON
+					}
+					or = {
+						626 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+						650 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+					}
+				}
+				set_variable = {
+					global.portal_id = 3
+				}
+				#CLOSE HINT EVENT
+				portal_hint_event = yes
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 50000
+				indoor_is_being_threatened = yes
+			}
+		}
+	}
+	#地底
+	open_627_643 = {
+		visible = {
+			ZON = {
+				controls_state = 627
+			}
+			or = {
+				627 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				643 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		available = {
+			has_tech = kongjianmonijishu
+		}
+		highlight_states = {
+			highlight_states_trigger = {
+				state = 627
+			}
+		}
+		days_remove = 10
+		remove_effect = {
+			transfer_state = 627
+			every_country = {
+				limit = {
+					not = {
+						tag = ROOT
+						tag = ZON
+					}
+					or = {
+						627 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+						643 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+					}
+				}
+				set_variable = {
+					global.portal_id = 4
+				}
+				#OPEN HINT EVENT
+				portal_hint_event = yes
+			}
+		}
+		ai_will_do = {
+			base = 50000
+			# modifier = {
+			# 	factor = 0
+			# 	has_country_flag = owns_backdoor_portal
+			# 	not = {
+			# 		has_country_flag = open_627_643
+			# 	}
+			# }
+			modifier = {
+				factor = 0
+				indoor_is_being_threatened = yes
+			}
+		}
+	}
+	close_627_643 = {
+		visible = {
+			ZON = {
+				not = { controls_state = 627 }
+			}
+			has_country_flag = owns_backdoor_portal
+		}
+		available = {
+			has_tech = kongjianmonijishu
+			or = {
+				has_war = no
+				all_enemy_country = {
+					not = {
+						has_tech = kongjianmonijishu
+					}
+				}
+			}
+		}
+		highlight_states = {
+			highlight_states_trigger = {
+				state = 627
+			}
+		}
+		days_remove = 10
+		remove_effect = {
+			ZON = { transfer_state = 627 }
+			every_country = {
+				limit = {
+					not = {
+						tag = ROOT
+						tag = ZON
+					}
+					or = {
+						627 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+						643 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+					}
+				}
+				set_variable = {
+					global.portal_id = 4
+				}
+				#CLOSE HINT EVENT
+				portal_hint_event = yes
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 50000
+				indoor_is_being_threatened = yes
+			}
+		}
+	}
+	#雾之湖
+	open_628_655 = {
+		visible = {
+			ZON = {
+				controls_state = 628
+			}
+			or = {
+				628 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				655 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		available = {
+			has_tech = kongjianmonijishu
+		}
+		highlight_states = {
+			highlight_states_trigger = {
+				state = 628
+			}
+		}
+		days_remove = 10
+		remove_effect = {
+			transfer_state = 628
+			every_country = {
+				limit = {
+					not = {
+						tag = ROOT
+						tag = ZON
+					}
+					or = {
+						628 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+						655 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+					}
+				}
+				set_variable = {
+					global.portal_id = 5
+				}
+				#OPEN HINT EVENT
+				portal_hint_event = yes
+			}
+		}
+		ai_will_do = {
+			base = 50000
+			# modifier = {
+			# 	factor = 0
+			# 	has_country_flag = owns_backdoor_portal
+			# 	not = {
+			# 		has_country_flag = open_628_655
+			# 	}
+			# }
+			modifier = {
+				factor = 0
+				indoor_is_being_threatened = yes
+			}
+		}
+	}
+	close_628_655 = {
+		visible = {
+			ZON = {
+				not = { controls_state = 628 }
+			}
+			has_country_flag = owns_backdoor_portal
+		}
+		available = {
+			has_tech = kongjianmonijishu
+			or = {
+				has_war = no
+				all_enemy_country = {
+					not = {
+						has_tech = kongjianmonijishu
+					}
+				}
+			}
+		}
+		highlight_states = {
+			highlight_states_trigger = {
+				state = 628
+			}
+		}
+		days_remove = 10
+		remove_effect = {
+			ZON = { transfer_state = 628 }
+			every_country = {
+				limit = {
+					not = {
+						tag = ROOT
+						tag = ZON
+					}
+					or = {
+						628 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+						655 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+					}
+				}
+				set_variable = {
+					global.portal_id = 5
+				}
+				#CLOSE HINT EVENT
+				portal_hint_event = yes
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 50000
+				indoor_is_being_threatened = yes
+			}
+		}
+	}
+	#无缘冢
+	open_629_654 = {
+		visible = {
+			ZON = {
+				controls_state = 629
+			}
+			or = {
+				629 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				654 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		available = {
+			has_tech = kongjianmonijishu
+		}
+		highlight_states = {
+			highlight_states_trigger = {
+				state = 629
+			}
+		}
+		days_remove = 10
+		remove_effect = {
+			transfer_state = 629
+			every_country = {
+				limit = {
+					not = {
+						tag = ROOT
+						tag = ZON
+					}
+					or = {
+						629 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+						654 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+					}
+				}
+				set_variable = {
+					global.portal_id = 6
+				}
+				#OPEN HINT EVENT
+				portal_hint_event = yes
+			}
+		}
+		ai_will_do = {
+			base = 50000
+			# modifier = {
+			# 	factor = 0
+			# 	has_country_flag = owns_backdoor_portal
+			# 	not = {
+			# 		has_country_flag = open_629_654
+			# 	}
+			# }
+			modifier = {
+				factor = 0
+				indoor_is_being_threatened = yes
+			}
+		}
+	}
+	close_629_654 = {
+		visible = {
+			ZON = {
+				not = { controls_state = 629 }
+			}
+			has_country_flag = owns_backdoor_portal
+		}
+		available = {
+			has_tech = kongjianmonijishu
+			or = {
+				has_war = no
+				all_enemy_country = {
+					not = {
+						has_tech = kongjianmonijishu
+					}
+				}
+			}
+		}
+		highlight_states = {
+			highlight_states_trigger = {
+				state = 629
+			}
+		}
+		days_remove = 10
+		remove_effect = {
+			ZON = { transfer_state = 629 }
+			every_country = {
+				limit = {
+					not = {
+						tag = ROOT
+						tag = ZON
+					}
+					or = {
+						629 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+						654 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+					}
+				}
+				set_variable = {
+					global.portal_id = 6
+				}
+				#CLOSE HINT EVENT
+				portal_hint_event = yes
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 50000
+				indoor_is_being_threatened = yes
+			}
+		}
+	}
+	#村落
+	open_630_649 = {
+		visible = {
+			ZON = {
+				controls_state = 630
+			}
+			or = {
+				630 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				649 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		available = {
+			has_tech = kongjianmonijishu
+		}
+		highlight_states = {
+			highlight_states_trigger = {
+				state = 630
+			}
+		}
+		days_remove = 10
+		remove_effect = {
+			transfer_state = 630
+			every_country = {
+				limit = {
+					not = {
+						tag = ROOT
+						tag = ZON
+					}
+					or = {
+						630 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+						649 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+					}
+				}
+				set_variable = {
+					global.portal_id = 7
+				}
+				#OPEN HINT EVENT
+				portal_hint_event = yes
+			}
+		}
+		ai_will_do = {
+			base = 50000
+			# modifier = {
+			# 	factor = 0
+			# 	has_country_flag = owns_backdoor_portal
+			# 	not = {
+			# 		has_country_flag = open_630_649
+			# 	}
+			# }
+			modifier = {
+				factor = 0
+				indoor_is_being_threatened = yes
+			}
+		}
+	}
+	close_630_649 = {
+		visible = {
+			ZON = {
+				not = { controls_state = 630 }
+			}
+			has_country_flag = owns_backdoor_portal
+		}
+		available = {
+			has_tech = kongjianmonijishu
+			or = {
+				has_war = no
+				all_enemy_country = {
+					not = {
+						has_tech = kongjianmonijishu
+					}
+				}
+			}
+		}
+		highlight_states = {
+			highlight_states_trigger = {
+				state = 630
+			}
+		}
+		days_remove = 10
+		remove_effect = {
+			ZON = { transfer_state = 630 }
+			every_country = {
+				limit = {
+					not = {
+						tag = ROOT
+						tag = ZON
+					}
+					or = {
+						630 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+						649 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+					}
+				}
+				set_variable = {
+					global.portal_id = 7
+				}
+				#CLOSE HINT EVENT
+				portal_hint_event = yes
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 50000
+				indoor_is_being_threatened = yes
+			}
+		}
+	}
+	#竹林
+	open_631_645 = {
+		visible = {
+			ZON = {
+				controls_state = 631
+			}
+			or = {
+				631 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				645 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		available = {
+			has_tech = kongjianmonijishu
+		}
+		highlight_states = {
+			highlight_states_trigger = {
+				state = 631
+			}
+		}
+		days_remove = 10
+		remove_effect = {
+			transfer_state = 631
+			every_country = {
+				limit = {
+					not = {
+						tag = ROOT
+						tag = ZON
+					}
+					or = {
+						631 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+						645 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+					}
+				}
+				set_variable = {
+					global.portal_id = 8
+				}
+				#OPEN HINT EVENT
+				portal_hint_event = yes
+			}
+		}
+		ai_will_do = {
+			base = 50000
+			# modifier = {
+			# 	factor = 0
+			# 	has_country_flag = owns_backdoor_portal
+			# 	not = {
+			# 		has_country_flag = open_631_645
+			# 	}
+			# }
+			modifier = {
+				factor = 0
+				indoor_is_being_threatened = yes
+			}
+		}
+	}
+	close_631_645 = {
+		visible = {
+			ZON = {
+				not = { controls_state = 631 }
+			}
+			has_country_flag = owns_backdoor_portal
+		}
+		available = {
+			has_tech = kongjianmonijishu
+			or = {
+				has_war = no
+				all_enemy_country = {
+					not = {
+						has_tech = kongjianmonijishu
+					}
+				}
+			}
+		}
+		highlight_states = {
+			highlight_states_trigger = {
+				state = 631
+			}
+		}
+		days_remove = 10
+		remove_effect = {
+			ZON = { transfer_state = 631 }
+			every_country = {
+				limit = {
+					not = {
+						tag = ROOT
+						tag = ZON
+					}
+					or = {
+						631 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+						645 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+					}
+				}
+				set_variable = {
+					global.portal_id = 8
+				}
+				#CLOSE HINT EVENT
+				portal_hint_event = yes
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 50000
+				indoor_is_being_threatened = yes
+			}
+		}
+	}
+	#####隙间
+	#幻草原
+	open_634_656 = {
+		visible = {
+			ZON = {
+				controls_state = 634
+			}
+			or = {
+				634 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				656 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		available = {
+			has_tech = kongjianmonijishu
+		}
+		highlight_states = {
+			highlight_states_trigger = {
+				state = 634
+			}
+		}
+		days_remove = 10
+		remove_effect = {
+			transfer_state = 634
+			every_country = {
+				limit = {
+					not = {
+						tag = ROOT
+						tag = ZON
+					}
+					or = {
+						634 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+						656 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+					}
+				}
+				set_variable = {
+					global.portal_id = 9
+				}
+				#OPEN HINT EVENT
+				portal_hint_event = yes
+			}
+		}
+		ai_will_do = {
+			base = 50000
+			# modifier = {
+			# 	factor = 0
+			# 	has_country_flag = owns_gap_portal
+			# 	not = {
+			# 		has_country_flag = open_634_656
+			# 	}
+			# }
+			modifier = {
+				factor = 0
+				indoor_is_being_threatened = yes
+			}
+		}
+	}
+	close_634_656 = {
+		visible = {
+			ZON = {
+				not = { controls_state = 634 }
+			}
+			has_country_flag = owns_gap_portal
+		}
+		available = {
+			has_tech = kongjianmonijishu
+			or = {
+				has_war = no
+				all_enemy_country = {
+					not = {
+						has_tech = kongjianmonijishu
+					}
+				}
+			}
+		}
+		highlight_states = {
+			highlight_states_trigger = {
+				state = 634
+			}
+		}
+		days_remove = 10
+		remove_effect = {
+			ZON = { transfer_state = 634 }
+			every_country = {
+				limit = {
+					not = {
+						tag = ROOT
+						tag = ZON
+					}
+					or = {
+						634 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+						656 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+					}
+				}
+				set_variable = {
+					global.portal_id = 9
+				}
+				#CLOSE HINT EVENT
+				portal_hint_event = yes
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 50000
+				indoor_is_being_threatened = yes
+			}
+		}
+	}
+	#妖怪山
+	open_635_653 = {
+		visible = {
+			ZON = {
+				controls_state = 635
+			}
+			or = {
+				635 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				653 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		available = {
+			has_tech = kongjianmonijishu
+		}
+		highlight_states = {
+			highlight_states_trigger = {
+				state = 635
+			}
+		}
+		days_remove = 10
+		remove_effect = {
+			transfer_state = 635
+			every_country = {
+				limit = {
+					not = {
+						tag = ROOT
+						tag = ZON
+					}
+					or = {
+						635 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+						653 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+					}
+				}
+				set_variable = {
+					global.portal_id = 10
+				}
+				#OPEN HINT EVENT
+				portal_hint_event = yes
+			}
+		}
+		ai_will_do = {
+			base = 50000
+			# modifier = {
+			# 	factor = 0
+			# 	has_country_flag = owns_gap_portal
+			# 	not = {
+			# 		has_country_flag = open_635_653
+			# 	}
+			# }
+			modifier = {
+				factor = 0
+				indoor_is_being_threatened = yes
+			}
+		}
+	}
+	close_635_653 = {
+		visible = {
+			ZON = {
+				not = { controls_state = 635 }
+			}
+			has_country_flag = owns_gap_portal
+		}
+		available = {
+			has_tech = kongjianmonijishu
+			or = {
+				has_war = no
+				all_enemy_country = {
+					not = {
+						has_tech = kongjianmonijishu
+					}
+				}
+			}
+		}
+		highlight_states = {
+			highlight_states_trigger = {
+				state = 635
+			}
+		}
+		days_remove = 10
+		remove_effect = {
+			ZON = { transfer_state = 635 }
+			every_country = {
+				limit = {
+					not = {
+						tag = ROOT
+						tag = ZON
+					}
+					or = {
+						635 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+						653 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+					}
+				}
+				set_variable = {
+					global.portal_id = 10
+				}
+				#CLOSE HINT EVENT
+				portal_hint_event = yes
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 50000
+				indoor_is_being_threatened = yes
+			}
+		}
+	}
+	#冥界
+	open_636_658 = {
+		visible = {
+			ZON = {
+				controls_state = 636
+			}
+			or = {
+				636 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				658 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		available = {
+			has_tech = kongjianmonijishu
+		}
+		highlight_states = {
+			highlight_states_trigger = {
+				state = 636
+			}
+		}
+		days_remove = 10
+		remove_effect = {
+			transfer_state = 636
+			every_country = {
+				limit = {
+					not = {
+						tag = ROOT
+						tag = ZON
+					}
+					or = {
+						636 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+						658 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+					}
+				}
+				set_variable = {
+					global.portal_id = 11
+				}
+				#OPEN HINT EVENT
+				portal_hint_event = yes
+			}
+		}
+		ai_will_do = {
+			base = 50000
+			# modifier = {
+			# 	factor = 0
+			# 	has_country_flag = owns_gap_portal
+			# 	not = {
+			# 		has_country_flag = open_636_658
+			# 	}
+			# }
+			modifier = {
+				factor = 0
+				indoor_is_being_threatened = yes
+			}
+		}
+	}
+	close_636_658 = {
+		visible = {
+			ZON = {
+				not = { controls_state = 636 }
+			}
+			has_country_flag = owns_gap_portal
+		}
+		available = {
+			has_tech = kongjianmonijishu
+			or = {
+				has_war = no
+				all_enemy_country = {
+					not = {
+						has_tech = kongjianmonijishu
+					}
+				}
+			}
+		}
+		highlight_states = {
+			highlight_states_trigger = {
+				state = 636
+			}
+		}
+		days_remove = 10
+		remove_effect = {
+			ZON = { transfer_state = 636 }
+			every_country = {
+				limit = {
+					not = {
+						tag = ROOT
+						tag = ZON
+					}
+					or = {
+						636 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+						658 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+					}
+				}
+				set_variable = {
+					global.portal_id = 11
+				}
+				#CLOSE HINT EVENT
+				portal_hint_event = yes
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 50000
+				indoor_is_being_threatened = yes
+			}
+		}
+	}
+	#神社
+	open_637_657 = {
+		visible = {
+			ZON = {
+				controls_state = 637
+			}
+			or = {
+				637 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				657 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		available = {
+			has_tech = kongjianmonijishu
+		}
+		highlight_states = {
+			highlight_states_trigger = {
+				state = 637
+			}
+		}
+		days_remove = 10
+		remove_effect = {
+			transfer_state = 637
+			every_country = {
+				limit = {
+					not = {
+						tag = ROOT
+						tag = ZON
+					}
+					or = {
+						637 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+						657 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+					}
+				}
+				set_variable = {
+					global.portal_id = 12
+				}
+				#OPEN HINT EVENT
+				portal_hint_event = yes
+			}
+		}
+		ai_will_do = {
+			base = 50000
+			# modifier = {
+			# 	factor = 0
+			# 	has_country_flag = owns_gap_portal
+			# 	not = {
+			# 		has_country_flag = open_637_657
+			# 	}
+			# }
+			modifier = {
+				factor = 0
+				indoor_is_being_threatened = yes
+			}
+		}
+	}
+	close_637_657 = {
+		visible = {
+			ZON = {
+				not = { controls_state = 637 }
+			}
+			has_country_flag = owns_gap_portal
+		}
+		available = {
+			has_tech = kongjianmonijishu
+			or = {
+				has_war = no
+				all_enemy_country = {
+					not = {
+						has_tech = kongjianmonijishu
+					}
+				}
+			}
+		}
+		highlight_states = {
+			highlight_states_trigger = {
+				state = 637
+			}
+		}
+		days_remove = 10
+		remove_effect = {
+			ZON = { transfer_state = 637 }
+			every_country = {
+				limit = {
+					not = {
+						tag = ROOT
+						tag = ZON
+					}
+					or = {
+						637 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+						657 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+					}
+				}
+				set_variable = {
+					global.portal_id = 12
+				}
+				#CLOSE HINT EVENT
+				portal_hint_event = yes
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 50000
+				indoor_is_being_threatened = yes
+			}
+		}
+	}
+	#竹林
+	open_638_644 = {
+		visible = {
+			ZON = {
+				controls_state = 638
+			}
+			or = {
+				638 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				644 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		available = {
+			has_tech = kongjianmonijishu
+		}
+		highlight_states = {
+			highlight_states_trigger = {
+				state = 638
+			}
+		}
+		days_remove = 10
+		remove_effect = {
+			transfer_state = 638
+			every_country = {
+				limit = {
+					not = {
+						tag = ROOT
+						tag = ZON
+					}
+					or = {
+						638 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+						644 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+					}
+				}
+				set_variable = {
+					global.portal_id = 13
+				}
+				#OPEN HINT EVENT
+				portal_hint_event = yes
+			}
+		}
+		ai_will_do = {
+			base = 50000
+			# modifier = {
+			# 	factor = 0
+			# 	has_country_flag = owns_gap_portal
+			# 	not = {
+			# 		has_country_flag = open_638_644
+			# 	}
+			# }
+			modifier = {
+				factor = 0
+				indoor_is_being_threatened = yes
+			}
+		}
+	}
+	close_638_644 = {
+		visible = {
+			ZON = {
+				not = { controls_state = 638 }
+			}
+			has_country_flag = owns_gap_portal
+		}
+		available = {
+			has_tech = kongjianmonijishu
+			or = {
+				has_war = no
+				all_enemy_country = {
+					not = {
+						has_tech = kongjianmonijishu
+					}
+				}
+			}
+		}
+		highlight_states = {
+			highlight_states_trigger = {
+				state = 638
+			}
+		}
+		days_remove = 10
+		remove_effect = {
+			ZON = { transfer_state = 638 }
+			every_country = {
+				limit = {
+					not = {
+						tag = ROOT
+						tag = ZON
+					}
+					or = {
+						638 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+						644 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+					}
+				}
+				set_variable = {
+					global.portal_id = 13
+				}
+				#CLOSE HINT EVENT
+				portal_hint_event = yes
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 50000
+				indoor_is_being_threatened = yes
+			}
+		}
+	}
+	#村落
+	open_639_647 = {
+		visible = {
+			ZON = {
+				controls_state = 639
+			}
+			or = {
+				639 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				647 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		available = {
+			has_tech = kongjianmonijishu
+		}
+		highlight_states = {
+			highlight_states_trigger = {
+				state = 639
+			}
+		}
+		days_remove = 10
+		remove_effect = {
+			transfer_state = 639
+			every_country = {
+				limit = {
+					not = {
+						tag = ROOT
+						tag = ZON
+					}
+					or = {
+						639 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+						647 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+					}
+				}
+				set_variable = {
+					global.portal_id = 14
+				}
+				#OPEN HINT EVENT
+				portal_hint_event = yes
+			}
+		}
+		ai_will_do = {
+			base = 50000
+			# modifier = {
+			# 	factor = 0
+			# 	has_country_flag = owns_gap_portal
+			# 	not = {
+			# 		has_country_flag = open_639_647
+			# 	}
+			# }
+			modifier = {
+				factor = 0
+				indoor_is_being_threatened = yes
+			}
+		}
+	}
+	close_639_647 = {
+		visible = {
+			ZON = {
+				not = { controls_state = 639 }
+			}
+			has_country_flag = owns_gap_portal
+		}
+		available = {
+			has_tech = kongjianmonijishu
+			or = {
+				has_war = no
+				all_enemy_country = {
+					not = {
+						has_tech = kongjianmonijishu
+					}
+				}
+			}
+		}
+		highlight_states = {
+			highlight_states_trigger = {
+				state = 639
+			}
+		}
+		days_remove = 10
+		remove_effect = {
+			ZON = { transfer_state = 639 }
+			every_country = {
+				limit = {
+					not = {
+						tag = ROOT
+						tag = ZON
+					}
+					or = {
+						639 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+						647 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+					}
+				}
+				set_variable = {
+					global.portal_id = 14
+				}
+				#CLOSE HINT EVENT
+				portal_hint_event = yes
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 50000
+				indoor_is_being_threatened = yes
+			}
+		}
+	}
+	#####神灵庙
+	#幻想乡
+	open_632_646 = {
+		visible = {
+			ZON = {
+				controls_state = 632
+			}
+			or = {
+				632 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				646 = {
+					any_neighbor_state = {
+						controller = {
+							or = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		available = {
+			has_tech = kongjianmonijishu
+		}
+		highlight_states = {
+			highlight_states_trigger = {
+				state = 632
+			}
+		}
+		days_remove = 10
+		remove_effect = {
+			transfer_state = 632
+			every_country = {
+				limit = {
+					not = {
+						tag = ROOT
+						tag = ZON
+					}
+					or = {
+						632 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+						646 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+					}
+				}
+				set_variable = {
+					global.portal_id = 15
+				}
+				#OPEN HINT EVENT
+				portal_hint_event = yes
+			}
+		}
+		ai_will_do = {
+			base = 50000
+			# modifier = {
+			# 	factor = 0
+			# 	has_country_flag = owns_senkai_portal
+			# 	not = {
+			# 		has_country_flag = open_632_646
+			# 	}
+			# }
+			modifier = {
+				factor = 0
+				indoor_is_being_threatened = yes
+			}
+		}
+	}
+	close_632_646 = {
+		visible = {
+			ZON = {
+				not = { controls_state = 632 }
+			}
+			has_country_flag = owns_senkai_portal
+		}
+		available = {
+			has_tech = kongjianmonijishu
+			or = {
+				has_war = no
+				all_enemy_country = {
+					not = {
+						has_tech = kongjianmonijishu
+					}
+				}
+			}
+		}
+		highlight_states = {
+			highlight_states_trigger = {
+				state = 632
+			}
+		}
+		days_remove = 10
+		remove_effect = {
+			ZON = { transfer_state = 632 }
+			every_country = {
+				limit = {
+					not = {
+						tag = ROOT
+						tag = ZON
+					}
+					or = {
+						632 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+						646 = {
+							any_neighbor_state = {
+								controller = {
+									or = {
+										tag = PREV.PREV.PREV
+										is_subject_of = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
+									}
+								}
+							}
+						}
+					}
+				}
+				set_variable = {
+					global.portal_id = 15
+				}
+				#CLOSE HINT EVENT
+				portal_hint_event = yes
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 50000
+				indoor_is_being_threatened = yes
+			}
+		}
+	}
+}
+portal_training = {
+
+}

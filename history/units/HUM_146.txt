@@ -1,0 +1,620 @@
+﻿division_template = {
+	name = "扫荡编制"
+	regiments = {
+		sc_light_infantry = { x = 0 y = 0 }
+		sc_light_infantry = { x = 0 y = 1 }
+		sc_light_infantry = { x = 0 y = 2 }
+		sc_light_infantry = { x = 0 y = 3 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "精锐步兵编制"
+	regiments = {
+		sc_infantry = { x = 0 y = 0 }
+		sc_infantry = { x = 0 y = 1 }
+		sc_infantry = { x = 0 y = 2 }
+		sc_infantry = { x = 1 y = 0 }
+		sc_infantry = { x = 1 y = 1 }
+		sc_infantry = { x = 1 y = 2 }
+		sc_infantry = { x = 2 y = 0 }
+		sc_infantry = { x = 2 y = 1 }
+		sc_infantry = { x = 2 y = 2 }
+	}
+	support = {
+		sp_zhihuidui = { x = 0 y = 0 } 
+		sp_gongjianpao = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "实验型坦克编制"
+	regiments = {
+		sc_yizhantan = { x = 0 y = 0 }
+		sc_yizhantan = { x = 0 y = 1 }
+		sc_yizhantan = { x = 0 y = 2 }
+		sc_yizhantan = {x = 0 y = 3 }
+		sc_yizhantan = { x = 0 y = 4 }
+		sc_infantry = { x = 1 y = 0 }
+		sc_infantry = { x = 1 y = 1 }
+		sc_infantry = { x = 1 y = 2 }
+	}
+	support = {
+		sp_zhihuidui = { x = 0 y = 0 } 
+		sp_gongjianpao = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "通用步兵编制"
+	regiments = {
+		sc_infantry = { x = 0 y = 0 }
+		sc_infantry = { x = 0 y = 1 }
+		sc_infantry = { x = 0 y = 2 }
+		sc_infantry = { x = 1 y = 0 }
+		sc_infantry = { x = 1 y = 1 }
+		sc_infantry = { x = 1 y = 2 }
+	}
+	support = {
+	    sp_gongjianpao = { x = 0 y = 0 } 
+	    sp_zhihuidui = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "人类冲锋部队"
+	regiments = {
+		sc_sf_infantry = { x = 0 y = 0 }
+		sc_sf_infantry = { x = 0 y = 1 }
+		sc_sf_infantry = { x = 0 y = 2 }
+		sc_sf_infantry = { x = 0 y = 3 }
+		sc_sf_infantry = { x = 0 y = 4 }
+		sc_sf_infantry = { x = 1 y = 0 }
+		sc_sf_infantry = { x = 1 y = 1 }
+		sc_sf_infantry = { x = 1 y = 2 }
+		sc_sf_infantry = { x = 1 y = 3 }
+		sc_sf_infantry = { x = 1 y = 4 }
+	}
+	support = {
+	    sp_gongjianpao = { x = 0 y = 0 } 
+	    sp_zhihuidui = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "征集僧侣部队"
+	is_locked = yes
+	regiments = {
+		sc_infantry = { x = 0 y = 0 }
+		sc_infantry = { x = 0 y = 1 }
+		melee_infantry = {x = 0 y = 2 }
+		melee_infantry = { x = 0 y = 3 }
+	}
+}
+division_template = {
+	name = "惩戒部队"
+	is_locked = yes
+	regiments = {
+		sc_infantry = { x = 0 y = 0 }
+		sc_infantry = { x = 0 y = 1 }
+		sc_infantry = { x = 0 y = 2 }
+		sc_infantry = { x = 0 y = 3 }
+	}
+}
+division_template = {
+	name = "精锐巫女部队"
+	regiments = {
+		sc_shield_infantry = { x = 0 y = 0 }
+		sc_shield_infantry = { x = 0 y = 1 }
+		sc_shield_infantry = { x = 0 y = 2 }
+		sc_shield_infantry = { x = 0 y = 3 }
+		ma_infantry = { x = 1 y = 0 }
+		ma_infantry = { x = 1 y = 1 }
+		ma_infantry = { x = 1 y = 2 }
+		ma_infantry = { x = 1 y = 3 }
+	}
+	support = {
+	    sp_gongjianpao = { x = 0 y = 0 } 
+	    sp_zhihuidui = { x = 0 y = 1 }
+	    sp_wunv = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "竹林边防部队"
+	regiments = {
+		sc_infantry = { x = 0 y = 0 }
+		sc_infantry = { x = 0 y = 1 }
+		sc_infantry= { x = 0 y = 2 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "竹林特防部队"
+	regiments = {
+		sc_infantry = { x = 0 y = 0 }
+		sc_infantry = { x = 0 y = 1 }
+		sc_infantry= { x = 0 y = 2 }
+		sc_mortar_brigade = { x = 0 y = 3 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "骑兵分队"
+	regiments = {
+		gun_cavalry = { x = 0 y = 0 }
+		gun_cavalry = { x = 0 y = 1 }
+		gun_cavalry= { x = 0 y = 2 }
+	}
+	support = {
+	}
+}
+units = {
+	division = {
+		name = "精锐步兵编制"
+		location = 5609
+		division_template = "精锐步兵编制"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "精锐步兵编制"
+		location = 3184
+		division_template = "精锐步兵编制"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "实验型坦克编制"
+		location = 3184
+		division_template = "实验型坦克编制"
+		start_experience_factor = 0
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "精锐步兵编制"
+		location = 182
+		division_template = "精锐步兵编制"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "精锐步兵编制"
+		location = 230
+		division_template = "精锐步兵编制"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "通用步兵编制"
+		location = 1804
+		division_template = "通用步兵编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "通用步兵编制"
+		location = 1804
+		division_template = "通用步兵编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "通用步兵编制"
+		location = 1804
+		division_template = "通用步兵编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "通用步兵编制"
+		location = 1804
+		division_template = "通用步兵编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "通用步兵编制"
+		location = 3494
+		division_template = "通用步兵编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "通用步兵编制"
+		location = 3494
+		division_template = "通用步兵编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "通用步兵编制"
+		location = 3494
+		division_template = "通用步兵编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "通用步兵编制"
+		location = 1804
+		division_template = "通用步兵编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "通用步兵编制"
+		location = 3184
+		division_template = "通用步兵编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "通用步兵编制"
+		location = 3184
+		division_template = "通用步兵编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "通用步兵编制"
+		location = 3184
+		division_template = "通用步兵编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "通用步兵编制"
+		location = 3184
+		division_template = "通用步兵编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "通用步兵编制"
+		location = 3184
+		division_template = "通用步兵编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "通用步兵编制"
+		location = 3193
+		division_template = "通用步兵编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "通用步兵编制"
+		location = 1310
+		division_template = "通用步兵编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "通用步兵编制"
+		location = 3158
+		division_template = "通用步兵编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "通用步兵编制"
+		location = 5604
+		division_template = "通用步兵编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "通用步兵编制"
+		location = 5604
+		division_template = "通用步兵编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "通用步兵编制"
+		location = 1732
+		division_template = "通用步兵编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "通用步兵编制"
+		location = 1732
+		division_template = "通用步兵编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "通用步兵编制"
+		location = 1732
+		division_template = "通用步兵编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "通用步兵编制"
+		location = 1732
+		division_template = "通用步兵编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "通用步兵编制"
+		location = 1804
+		division_template = "通用步兵编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "通用步兵编制"
+		location = 1732
+		division_template = "通用步兵编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "通用步兵编制"
+		location = 3184
+		division_template = "通用步兵编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "通用步兵编制"
+		location = 463
+		division_template = "通用步兵编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "通用步兵编制"
+		location = 463
+		division_template = "通用步兵编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "通用步兵编制"
+		location = 463
+		division_template = "通用步兵编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "通用步兵编制"
+		location = 5604
+		division_template = "通用步兵编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "通用步兵编制"
+		location = 3471
+		division_template = "通用步兵编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "第一先锋兵团-联合第一"
+		location = 3184
+		division_template = "人类冲锋部队"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "征集僧侣部队"
+		location = 7678
+		division_template = "征集僧侣部队"
+		start_experience_factor = 0
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "征集僧侣部队"
+		location = 7678
+		division_template = "征集僧侣部队"
+		start_experience_factor = 0
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "征集僧侣部队"
+		location = 7678
+		division_template = "征集僧侣部队"
+		start_experience_factor = 0
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "征集僧侣部队"
+		location = 811
+		division_template = "征集僧侣部队"
+		start_experience_factor = 0
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "征集僧侣部队"
+		location = 811
+		division_template = "征集僧侣部队"
+		start_experience_factor = 0
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "征集僧侣部队"
+		location = 811
+		division_template = "征集僧侣部队"
+		start_experience_factor = 0
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "征集僧侣部队"
+		location = 1315
+		division_template = "征集僧侣部队"
+		start_experience_factor = 0
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "征集僧侣部队"
+		location = 1315
+		division_template = "征集僧侣部队"
+		start_experience_factor = 0
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "征集僧侣部队"
+		location = 1315
+		division_template = "征集僧侣部队"
+		start_experience_factor = 0
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "惩戒部队"
+		location = 3166
+		division_template = "惩戒部队"
+		start_experience_factor = 0
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "惩戒部队"
+		location = 3166
+		division_template = "惩戒部队"
+		start_experience_factor = 0
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "惩戒部队"
+		location = 3166
+		division_template = "惩戒部队"
+		start_experience_factor = 0
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "惩戒部队"
+		location = 303
+		division_template = "惩戒部队"
+		start_experience_factor = 0
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "惩戒部队"
+		location = 303
+		division_template = "惩戒部队"
+		start_experience_factor = 0
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "惩戒部队"
+		location = 303
+		division_template = "惩戒部队"
+		start_experience_factor = 0
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "竹林边防部队"
+		location = 5541
+		division_template = "竹林边防部队"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "竹林边防部队"
+		location = 5525
+		division_template = "竹林边防部队"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "竹林边防部队"
+		location = 3140
+		division_template = "竹林边防部队"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "竹林边防部队"
+		location = 1134
+		division_template = "竹林边防部队"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "竹林边防部队"
+		location = 1277
+		division_template = "竹林边防部队"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "竹林特防部队"
+		location = 1169
+		division_template = "竹林特防部队"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "竹林特防部队"
+		location = 2432
+		division_template = "竹林特防部队"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "骑兵分队"
+		location = 3806
+		division_template = "骑兵分队"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "骑兵分队"
+		location = 3803
+		division_template = "骑兵分队"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "扫荡编制"
+		location = 3150
+		division_template = "扫荡编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "扫荡编制"
+		location = 224
+		division_template = "扫荡编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "扫荡编制"
+		location = 738
+		division_template = "扫荡编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "扫荡编制"
+		location = 245
+		division_template = "扫荡编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "扫荡编制"
+		location = 3157
+		division_template = "扫荡编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "扫荡编制"
+		location = 5643
+		division_template = "扫荡编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "扫荡编制"
+		location = 1106
+		division_template = "扫荡编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+}

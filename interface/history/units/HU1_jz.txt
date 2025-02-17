@@ -1,0 +1,60 @@
+﻿
+division_template = {
+	name = "征召民兵"
+	regiments = {
+		melee_infantry = { x = 0 y = 0 }
+		melee_infantry = { x = 0 y = 1 }
+		melee_infantry = { x = 0 y = 2 }
+		melee_infantry = { x = 0 y = 3 }
+		melee_infantry = { x = 0 y = 4 }
+	}
+	support = {
+	}
+}
+units = {
+	division = {
+		name = "征召民兵"
+		location = 5096
+		division_template = "征召民兵"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "征召民兵"
+		location = 5096
+		division_template = "征召民兵"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "征召民兵"
+		location = 5096
+		division_template = "征召民兵"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "征召民兵"
+		location = 5096
+		division_template = "征召民兵"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "征召民兵"
+		location = 5096
+		division_template = "征召民兵"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "征召民兵"
+		location = 5096
+		division_template = "征召民兵"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+
+
+}

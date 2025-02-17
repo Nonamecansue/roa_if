@@ -1,0 +1,6 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_idea_XXC_linqikaifaxieyi_js"
+		texturefile = "gfx/interface/ideas/idea_linqikaifaxieyi.png"
+	}	
+}

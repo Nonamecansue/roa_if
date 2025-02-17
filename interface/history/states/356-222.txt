@@ -1,0 +1,35 @@
+
+state={
+	id=356
+	name="STATE_356"
+	resources={
+		energy=2.000
+		powder=0.000
+		metal=0.000
+		gas=5.000
+		crystal=10.000
+	}
+
+	history={
+		146.1.1 = {
+			owner = KAS
+			add_core_of = KAS
+			buildings = {
+				infrastructure = 4
+				industrial_complex = 3
+				arms_factory = 1
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		1119 2753 3085 3904 5023 5024 5033 5034 5036 5047 7628 
+	}
+	manpower=1421
+	buildings_max_level_factor=1.000
+	state_category=s5
+	local_supplies=2.500
+}

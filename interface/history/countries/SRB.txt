@@ -1,0 +1,120 @@
+﻿capital = 633
+146.1.1 = {
+    set_technology = {
+        #通用武器线
+        spell_card1 = 1
+        spear1 = 1
+        gun1 = 1
+        linglicunchu = 1
+        linglizhufu = 1
+        linglidanyao = 1
+        spell_card2 = 1
+        spear2 = 1
+        gun2 = 1
+        lingliliushuixian = 1
+        #辅助
+        zhiyuanzhuangbei = 1
+        zhihuixiaodui146 = 1
+
+        #专用辅助
+        mortar1 = 1
+        
+        wunvzhiyuan149 = 1
+
+        #专用基础
+        kexuebubingzhuangbei = 1
+        jiqiang1 = 1
+
+        #专用进阶
+
+        #混合系
+        sc_shield1 = 1
+
+        #陆军学说
+        zhanchangzhihui140 = 1
+        zuzhihuazhanzheng142 = 1
+        zhanchangzhihui145 = 1
+            
+        #工程学 
+        jichushuxue = 1
+        shuxuegongju = 1
+        waike = 1
+
+        #专用工程学
+
+        #工业
+        production_theory = 1
+        org_production = 1
+            
+        #专用工业
+        fangwaijieshengchan130 = 1
+        fangwaijieshengchan140 = 1
+
+        #种族
+            
+        #secret
+        kongjianxue = 1
+        kongjianmonijishu = 1
+    }
+    
+}
+144.1.1={
+    oob = "TEST"
+    set_country_flag = owns_senkai_portal
+    add_ideas = {
+    God
+    Shrine
+    open0
+    dove1
+    normal_border
+    sc_rule
+    
+    }
+    set_politics = {
+        ruling_party = qinwai
+        election_frequency = 48
+        elections_allowed = no
+    }
+    set_popularities = {
+        qinwai = 40
+        guli = 30
+        neworder = 30
+        oldorder = 0
+        fandong = 0
+    }
+}
+
+146.1.1={
+    oob = "SRB_146"
+
+    set_country_flag = bunengqie_qinwai
+    
+    add_ideas = {
+        Magician
+        Shrine
+        open1
+        dove1
+        normal_border
+        sc_rule
+        jibenanbao
+        chubugongyehua
+        zhongshikejihua
+        srb_daojiaotansuojingshen_o_idea
+        manpowerlv1
+        SRB_xinjindanzhandepangguanzhe_idea
+        SRB_nanminyiminchao_idea
+    }
+
+    set_politics = {
+    	ruling_party = guli
+    	election_frequency = 48
+    	elections_allowed = no
+    }
+    set_popularities = {
+        qinwai = 8
+        guli = 55
+        neworder = 37
+        oldorder = 0
+        fandong = 0
+    }
+}

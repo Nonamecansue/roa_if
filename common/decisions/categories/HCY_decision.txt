@@ -1,0 +1,2271 @@
+HCY_TEST = {
+
+    HCY_TEST4 = {
+        visible = {
+        tag = HCY
+        not = {
+          has_completed_focus = HCY_2
+        }
+        or = {
+          has_completed_focus = HCY_7
+          has_completed_focus = HCY_8
+          has_completed_focus = HCY_9
+          has_completed_focus = HCY_10
+          has_completed_focus = HCY_11
+          has_completed_focus = HCY_12
+        }
+        
+
+        }
+        available = {
+         tag = HCY
+        not = {
+          has_completed_focus = HCY_2
+        }
+        or = {
+          has_completed_focus = HCY_7
+          has_completed_focus = HCY_8
+          has_completed_focus = HCY_9
+          has_completed_focus = HCY_10
+          has_completed_focus = HCY_11
+          has_completed_focus = HCY_12
+        }
+       
+        }
+#greater_than_or_equals
+        fire_only_once = yes
+
+        cost = 60
+
+        ai_will_do = {
+          factor = 0
+        }
+
+        complete_effect = {
+        set_country_flag = HCY_gansheyanjiang
+      }
+
+    }
+    HCY_TEST3 = {
+        visible = {
+        tag = HCY
+        not = {
+          has_completed_focus = HCY_2
+        }
+
+        }
+        available = {
+          tag = HCY
+          not = {
+          has_completed_focus = HCY_2
+        }
+        }
+
+        fire_only_once = yes
+
+        cost = 0
+
+        ai_will_do = {
+          factor = 0
+        }
+
+        complete_effect = {
+        TEST_add0 = yes
+      }
+
+    }
+     HCY_TEST5 = {
+        icon = generic_political_actions
+
+        available = {
+            always = no
+        }
+        visible = {
+            tag = HCY
+            not = {
+          has_completed_focus = HCY_2
+        }
+        }
+
+        days_mission_timeout = 200
+
+        fire_only_once = no
+        is_good = no
+        activation = {
+        tag = HCY
+
+        }
+
+        cancel_trigger = {
+  
+         always = no
+        }
+
+        timeout_effect = {
+           country_event = { id = hcy.1 day = 1 }
+           
+           
+            
+           
+            
+        }
+    }
+    HCY_JM1laipiao1 = {
+        visible = {
+        tag = HCY
+        not = {
+          has_completed_focus = HCY_2
+        }
+        has_completed_focus = HCY_6
+        not = {
+          has_completed_focus = HCY_8
+        }
+
+        }
+        available = {
+          tag = HCY
+          not = {
+          has_completed_focus = HCY_2
+        }
+        has_completed_focus = HCY_6
+        not = {
+          has_completed_focus = HCY_8
+        }
+        }
+
+        fire_only_once = no
+
+        cost = 10
+
+        ai_will_do = {
+          factor = 0
+        }
+        days_remove = 10
+
+        complete_effect = {
+        
+        hidden_effect = {
+       #set_country_flag = HCY_jiminlaxuanpiao1_flag
+       #set_country_flag = HCY_jiminlaxuanpiao2_flag
+       #set_country_flag = HCY_jiminlaxuanpiao3_flag
+       #set_country_flag = HCY_jiminlaxuanpiao4_flag
+       #set_country_flag = HCY_jiminlaxuanpiao5_flag
+       #set_country_flag = HCY_jiminlaxuanpiao6_flag
+       #set_country_flag = HCY_jiminlaxuanpiao7_flag
+       #set_country_flag = HCY_jiminlaxuanpiao8_flag
+       #set_country_flag = HCY_jiminlaxuanpiao9_flag
+       #set_country_flag = HCY_jiminlaxuanpiao10_flag
+       #set_country_flag = HCY_jiminlaxuanpiao11_flag
+       #set_country_flag = HCY_jiminlaxuanpiao12_flag
+       random_list = {
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao3_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao4_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao5_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao6_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao7_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao8_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao9_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao10_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao11_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao12_flag
+                    }
+                    30 = {
+                        custom_effect_tooltip = SAT_Nothing_happens_tt
+                    }
+                }
+        }
+      }
+      remove_effect ={ 
+        JM1_add0 = yes
+        hidden_effect = {
+          random_list = {
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao3_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao4_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao5_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao6_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao7_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao8_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao9_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao10_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao11_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao12_flag
+                    }
+                    25 = {
+                        custom_effect_tooltip = SAT_Nothing_happens_tt
+                    }
+                }
+        }
+
+      }
+
+    }
+    HCY_JM1laipiao2 = {
+        visible = {
+        tag = HCY
+        not = {
+          has_completed_focus = HCY_2
+        }
+        has_completed_focus = HCY_6
+        not = {
+          has_completed_focus = HCY_8
+        }
+
+        }
+        available = {
+          tag = HCY
+          not = {
+          has_completed_focus = HCY_2
+        }
+        has_completed_focus = HCY_6
+        not = {
+          has_completed_focus = HCY_8
+        }
+        }
+
+        fire_only_once = no
+
+        cost = 20
+
+        ai_will_do = {
+          factor = 0
+        }
+        days_remove = 10
+
+        complete_effect = {
+       
+        hidden_effect = {
+       random_list = {
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao3_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao4_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao5_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao6_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao7_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao8_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao9_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao10_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao11_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao12_flag
+                    }
+                    5 = {
+                        custom_effect_tooltip = SAT_Nothing_happens_tt
+                    }
+                }
+        }
+      }
+      remove_effect ={ 
+        JM2_add0 = yes
+        hidden_effect = {
+          random_list = {
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao3_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao4_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao5_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao6_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao7_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao8_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao9_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao10_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao11_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao12_flag
+                    }
+                    5 = {
+                        custom_effect_tooltip = SAT_Nothing_happens_tt
+                    }
+                }
+        }
+      }
+
+    }
+    HCY_JM2laipiao1 = {
+        visible = {
+        tag = HCY
+        not = {
+          has_completed_focus = HCY_2
+        }
+        has_completed_focus = HCY_6
+        not = {
+          has_completed_focus = HCY_7
+        }
+
+        }
+        available = {
+          tag = HCY
+          not = {
+          has_completed_focus = HCY_2
+        }
+        has_completed_focus = HCY_6
+        not = {
+          has_completed_focus = HCY_7
+        }
+        }
+
+        fire_only_once = no
+
+
+        cost = 10
+
+        ai_will_do = {
+          factor = 0
+        }
+        days_remove = 10
+
+        complete_effect = {
+       
+        hidden_effect = {
+          random_list = {
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao1_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao2_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao5_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao6_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao7_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao8_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao9_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao10_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao11_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao12_flag
+                    }
+                    30 = {
+                        custom_effect_tooltip = SAT_Nothing_happens_tt
+                    }
+                }
+       
+        }
+      }
+      remove_effect ={ 
+        JM3_add0 = yes
+        hidden_effect = {
+        random_list = {
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao1_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao2_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao5_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao6_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao7_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao8_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao9_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao10_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao11_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao12_flag
+                    }
+                    30 = {
+                        custom_effect_tooltip = SAT_Nothing_happens_tt
+                    }
+                }
+
+      }
+     }
+
+    }
+    HCY_JM2laipiao2 = {
+        visible = {
+        tag = HCY
+        not = {
+          has_completed_focus = HCY_2
+        }
+        has_completed_focus = HCY_6
+        not = {
+          has_completed_focus = HCY_7
+        }
+
+        }
+        available = {
+          tag = HCY
+          not = {
+          has_completed_focus = HCY_2
+        }
+        has_completed_focus = HCY_6
+        not = {
+          has_completed_focus = HCY_7
+        }
+        }
+
+        fire_only_once = no
+
+        cost = 20
+
+        ai_will_do = {
+          factor = 0
+        }
+        days_remove = 10
+
+        complete_effect = {
+       
+        hidden_effect = {
+          random_list = {
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao1_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao2_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao5_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao6_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao7_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao8_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao9_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao10_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao11_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao12_flag
+                    }
+                    5 = {
+                        custom_effect_tooltip = SAT_Nothing_happens_tt
+                    }
+                }
+       
+        }
+      }
+      remove_effect ={ 
+        JM4_add0 = yes
+       hidden_effect = {
+          random_list = {
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao1_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao2_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao5_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao6_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao7_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao8_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao9_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao10_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao11_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao12_flag
+                    }
+                    5 = {
+                        custom_effect_tooltip = SAT_Nothing_happens_tt
+                    }
+                }
+       }
+        
+
+      }
+
+    }
+    HCY_BM1laipiao1 = {
+        visible = {
+        tag = HCY
+        not = {
+          has_completed_focus = HCY_2
+        }
+        has_completed_focus = HCY_4
+        not = {
+          has_completed_focus = HCY_10
+        }
+
+        }
+        available = {
+          tag = HCY
+        not = {
+          has_completed_focus = HCY_2
+        }
+        has_completed_focus = HCY_4
+        not = {
+          has_completed_focus = HCY_10
+        }
+        }
+
+        fire_only_once = no
+
+        cost = 10
+
+        ai_will_do = {
+          factor = 0
+        }
+        days_remove = 10
+
+        complete_effect = {
+        
+        hidden_effect = {
+          random_list = {
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao1_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao2_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao5_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao6_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao7_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao8_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao9_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao10_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao11_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao12_flag
+                    }
+                    30 = {
+                        custom_effect_tooltip = SAT_Nothing_happens_tt
+                    }
+                }
+       
+        }
+      }
+      remove_effect ={ 
+        JM5_add0 = yes
+        hidden_effect = {
+          random_list = {
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao1_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao2_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao5_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao6_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao7_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao8_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao9_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao10_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao11_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao12_flag
+                    }
+                    30 = {
+                        custom_effect_tooltip = SAT_Nothing_happens_tt
+                    }
+                }
+        }
+
+      }
+    }
+      HCY_BM1laipiao2 = {
+        visible = {
+        tag = HCY
+        not = {
+          has_completed_focus = HCY_2
+        }
+        has_completed_focus = HCY_4
+        not = {
+          has_completed_focus = HCY_10
+        }
+
+        }
+        available = {
+          tag = HCY
+        not = {
+          has_completed_focus = HCY_2
+        }
+        has_completed_focus = HCY_4
+        not = {
+          has_completed_focus = HCY_10
+        }
+        }
+
+        fire_only_once = no
+
+        cost = 20
+
+        ai_will_do = {
+          factor = 0
+        }
+        days_remove = 10
+
+        complete_effect = {
+        
+        hidden_effect = {
+       random_list = {
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao1_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao2_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao3_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao4_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao7_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao8_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao9_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao10_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao11_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao12_flag
+                    }
+                    5 = {
+                        custom_effect_tooltip = SAT_Nothing_happens_tt
+                    }
+                }
+        }
+      }
+      remove_effect ={ 
+        JM6_add0 = yes
+        hidden_effect = {
+          random_list = {
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao1_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao2_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao3_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao4_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao7_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao8_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao9_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao10_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao11_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao12_flag
+                    }
+                    5 = {
+                        custom_effect_tooltip = SAT_Nothing_happens_tt
+                    }
+                }
+        }
+
+      }
+
+    }
+    HCY_BM2laipiao1 = {
+        visible = {
+        tag = HCY
+        not = {
+          has_completed_focus = HCY_2
+        }
+        has_completed_focus = HCY_4
+        not = {
+          has_completed_focus = HCY_9
+        }
+
+        }
+        available = {
+         tag = HCY
+        not = {
+          has_completed_focus = HCY_2
+        }
+        has_completed_focus = HCY_4
+        not = {
+          has_completed_focus = HCY_9
+        }
+        }
+
+        fire_only_once = no
+
+        cost = 10
+
+        ai_will_do = {
+          factor = 0
+        }
+        days_remove = 10
+
+        complete_effect = {
+        
+        hidden_effect = {
+       random_list = {
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao1_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao2_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao3_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao4_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao5_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao6_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao9_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao10_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao11_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao12_flag
+                    }
+                    30 = {
+                        custom_effect_tooltip = SAT_Nothing_happens_tt
+                    }
+                }
+        }
+      }
+      remove_effect ={ 
+        JM7_add0 = yes
+        hidden_effect = {
+          random_list = {
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao1_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao2_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao3_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao4_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao5_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao6_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao9_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao10_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao11_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao12_flag
+                    }
+                    30 = {
+                        custom_effect_tooltip = SAT_Nothing_happens_tt
+                    }
+                }
+        }
+
+      }
+    }
+      HCY_BM2laipiao2 = {
+        visible = {
+        tag = HCY
+        not = {
+          has_completed_focus = HCY_2
+        }
+        has_completed_focus = HCY_4
+        not = {
+          has_completed_focus = HCY_9
+        }
+
+        }
+        available = {
+          tag = HCY
+        not = {
+          has_completed_focus = HCY_2
+        }
+        has_completed_focus = HCY_4
+        not = {
+          has_completed_focus = HCY_9
+        }
+        }
+
+        fire_only_once = no
+
+        cost = 20
+
+        ai_will_do = {
+          factor = 0
+        }
+        days_remove = 10
+
+        complete_effect = {
+        
+        hidden_effect = {
+       random_list = {
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao1_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao2_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao3_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao4_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao5_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao6_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao9_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao10_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao11_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao12_flag
+                    }
+                    5 = {
+                        custom_effect_tooltip = SAT_Nothing_happens_tt
+                    }
+                }
+        }
+      }
+      remove_effect ={ 
+        JM8_add0 = yes
+        hidden_effect = {
+          random_list = {
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao1_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao2_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao3_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao4_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao5_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao6_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao9_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao10_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao11_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao12_flag
+                    }
+                    5 = {
+                        custom_effect_tooltip = SAT_Nothing_happens_tt
+                    }
+                }
+        }
+
+      }
+
+    }
+    HCY_XR1laipiao1 = {
+        visible = {
+        tag = HCY
+        not = {
+          has_completed_focus = HCY_2
+        }
+        has_completed_focus = HCY_5
+        not = {
+          has_completed_focus = HCY_11
+        }
+
+        }
+        available = {
+         tag = HCY
+        not = {
+          has_completed_focus = HCY_2
+        }
+        has_completed_focus = HCY_5
+        not = {
+          has_completed_focus = HCY_11
+        }
+        }
+
+        fire_only_once = no
+
+        cost = 10
+
+        ai_will_do = {
+          factor = 0
+        }
+        days_remove = 10
+
+        complete_effect = {
+        
+        hidden_effect = {
+          random_list = {
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao1_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao2_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao3_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao4_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao5_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao6_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao7_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao8_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao11_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao12_flag
+                    }
+                    30 = {
+                        custom_effect_tooltip = SAT_Nothing_happens_tt
+                    }
+                }
+       
+        }
+
+      }
+      remove_effect ={ 
+        JM9_add0 = yes
+        hidden_effect = {
+          random_list = {
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao1_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao2_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao3_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao4_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao5_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao6_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao7_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao8_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao11_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao12_flag
+                    }
+                    30 = {
+                        custom_effect_tooltip = SAT_Nothing_happens_tt
+                    }
+                }
+        }
+
+      }
+
+    }
+    HCY_XR1laipiao2 = {
+        visible = {
+         tag = HCY
+        not = {
+          has_completed_focus = HCY_2
+        }
+        has_completed_focus = HCY_5
+        not = {
+          has_completed_focus = HCY_11
+        }
+
+        }
+        available = {
+         tag = HCY
+        not = {
+          has_completed_focus = HCY_2
+        }
+        has_completed_focus = HCY_5
+        not = {
+          has_completed_focus = HCY_11
+        }
+        }
+
+        fire_only_once = no
+
+        cost = 20
+
+        ai_will_do = {
+          factor = 0
+        }
+        days_remove = 10
+
+        complete_effect = {
+        
+        hidden_effect = {
+          random_list = {
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao1_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao2_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao3_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao4_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao5_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao6_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao7_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao8_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao11_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao12_flag
+                    }
+                    5 = {
+                        custom_effect_tooltip = SAT_Nothing_happens_tt
+                    }
+                }
+       
+        }
+
+      }
+      remove_effect ={ 
+        JM10_add0 = yes
+        hidden_effect = {
+          random_list = {
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao1_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao2_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao3_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao4_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao5_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao6_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao7_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao8_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao11_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao12_flag
+                    }
+                    5 = {
+                        custom_effect_tooltip = SAT_Nothing_happens_tt
+                    }
+                }
+        }
+
+      }
+
+    }
+    HCY_XR2laipiao1 = {
+        visible = {
+        tag = HCY
+        not = {
+          has_completed_focus = HCY_2
+        }
+        has_completed_focus = HCY_5
+        not = {
+          has_completed_focus = HCY_12
+        }
+
+        }
+        available = {
+         tag = HCY
+        not = {
+          has_completed_focus = HCY_2
+        }
+        has_completed_focus = HCY_5
+        not = {
+          has_completed_focus = HCY_12
+        }
+        }
+
+        fire_only_once = no
+
+        cost = 10
+
+        ai_will_do = {
+          factor = 0
+        }
+        days_remove = 10
+
+        complete_effect = {
+        
+        hidden_effect = {
+          random_list = {
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao1_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao2_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao3_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao4_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao5_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao6_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao7_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao8_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao9_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao10_flag
+                    }
+                    30 = {
+                        custom_effect_tooltip = SAT_Nothing_happens_tt
+                    }
+                }
+       
+        }
+
+      }
+      remove_effect ={ 
+        JM11_add0 = yes
+        hidden_effect = {
+          random_list = {
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao1_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao2_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao3_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao4_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao5_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao6_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao7_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao8_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao9_flag
+                    }
+                    5 = {
+                        set_country_flag = HCY_jiminlaxuanpiao10_flag
+                    }
+                    30 = {
+                        custom_effect_tooltip = SAT_Nothing_happens_tt
+                    }
+                }
+        }
+
+      }
+
+    }
+    HCY_XR2laipiao2 = {
+        visible = {
+         tag = HCY
+        not = {
+          has_completed_focus = HCY_2
+        }
+        has_completed_focus = HCY_5
+        not = {
+          has_completed_focus = HCY_12
+        }
+
+        }
+        available = {
+         tag = HCY
+        not = {
+          has_completed_focus = HCY_2
+        }
+        has_completed_focus = HCY_5
+        not = {
+          has_completed_focus = HCY_12
+        }
+        }
+
+        fire_only_once = no
+
+        cost = 20
+
+        ai_will_do = {
+          factor = 0
+        }
+        
+        days_remove = 10
+
+        complete_effect = {
+        JM12_add0 = yes
+        hidden_effect = {
+          random_list = {
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao1_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao2_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao3_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao4_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao5_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao6_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao7_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao8_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao9_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao10_flag
+                    }
+                    5 = {
+                        custom_effect_tooltip = SAT_Nothing_happens_tt
+                    }
+                }
+       
+        }
+      }
+      remove_effect ={ 
+        JM12_add0 = yes
+        hidden_effect = {
+          random_list = {
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao1_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao2_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao3_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao4_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao5_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao6_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao7_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao8_flag
+                    }
+                    10 = {
+                       set_country_flag = HCY_jiminlaxuanpiao9_flag
+                    }
+                    20 = {
+                        set_country_flag = HCY_jiminlaxuanpiao10_flag
+                    }
+                    5 = {
+                        custom_effect_tooltip = SAT_Nothing_happens_tt
+                    }
+                }
+        }
+
+      }
+
+    }
+        
+  }
+
+HCY_TEST_2 = {
+
+    
+     HCY_TEST6 = {
+        icon = generic_political_actions
+
+        available = {
+            always = no
+
+           
+        }
+        visible = {
+            tag = HCY
+        }
+
+        days_mission_timeout = 120
+
+        fire_only_once = yes
+        is_good = no
+        activation = {
+        tag = HCY
+
+        }
+
+        cancel_trigger = {
+          has_country_flag = HCY_gansheyanjiang
+            
+        }
+
+        timeout_effect = {
+           hidden_effect = {
+            random_list = {
+                    10 = {
+                       JM1_add0 = yes
+                    }
+                    20 = {
+                        JM2_add0 = yes
+                    }
+                    10 = {
+                       JM3_add0 = yes
+                    }
+                    20 = {
+                        JM4_add0 = yes
+                    }
+                    10 = {
+                       JM5_add0 = yes
+                    }
+                    20 = {
+                        JM6_add0 = yes
+                    }
+                    10 = {
+                       JM7_add0 = yes
+                    }
+                    20 = {
+                        JM8_add0 = yes
+                    }
+                    10 = {
+                       JM9_add0 = yes
+                    }
+                    20 = {
+                        JM10_add0 = yes
+                    }
+                    10 = {
+                        JM11_add0 = yes
+                    }
+                    10 = {
+                        JM12_add0 = yes
+                    }
+                    5 = {
+                        add_stability = -0.1
+                    }
+                }
+           }
+           
+            
+           
+            
+        }
+    }
+    HCY_TEST9 = {
+        icon = generic_political_actions
+
+        available = {
+            always = no
+
+           
+        }
+        visible = {
+            tag = HCY
+            has_country_flag = HCY_gansheyanjiang
+        }
+
+        days_mission_timeout = 120
+
+        fire_only_once = yes
+        is_good = no
+        activation = {
+        tag = HCY
+        has_country_flag = HCY_gansheyanjiang
+
+        }
+
+        cancel_trigger = {
+          
+            
+        }
+
+        timeout_effect = {
+           
+            if = {
+              limit = { has_completed_focus = HCY_8 }
+                random_list = {
+                    70 = {
+                       JM4_add0 = yes
+                       JM4_add0 = yes
+                    }
+                    30 = {
+                      add_stability = -0.15
+                        
+                    }
+                }
+            }
+             else_if = {
+              limit = { has_completed_focus = HCY_7 }
+                random_list = {
+                    70 = {
+                       JM2_add0 = yes
+                       JM2_add0 = yes
+                    }
+                    30 = {
+                      add_stability = -0.15
+                        
+                    }
+                }
+            }
+             else_if = {
+              limit = { has_completed_focus = HCY_9 }
+                random_list = {
+                    70 = {
+                       JM6_add0 = yes
+                       JM6_add0 = yes
+                    }
+                    30 = {
+                      add_stability = -0.15
+                        
+                    }
+                }
+            }
+            else_if = {
+              limit = { has_completed_focus = HCY_12 }
+                random_list = {
+                    70 = {
+                       JM10_add0 = yes
+                       JM10_add0 = yes
+                    }
+                    30 = {
+                      add_stability = -0.15
+                        
+                    }
+                }
+            }
+            
+           }
+           
+            
+           
+            
+        
+    }
+    HCY_JM1huodong1 = {
+        icon = generic_political_actions
+
+        available = {
+          always = no
+           
+        }
+        visible = {
+            tag = HCY
+            has_country_flag = HCY_jiminlaxuanpiao1_flag
+        }
+
+        days_mission_timeout = 10
+
+        fire_only_once = no
+        is_good = no
+        activation = {
+          tag = HCY
+            has_country_flag = HCY_jiminlaxuanpiao1_flag
+    
+
+        }
+
+        cancel_trigger = {
+            not = {
+            
+            has_country_flag = HCY_jiminlaxuanpiao1_flag
+            }
+        }
+
+        timeout_effect = {
+           JM1_add0 = yes
+           clr_country_flag = HCY_jiminlaxuanpiao1_flag
+           
+            
+           
+            
+        }
+    }
+    HCY_JM1huodong2 = {
+        icon = generic_political_actions
+
+        available = {
+          always = no
+           
+        }
+        visible = {
+            tag = HCY
+            has_country_flag = HCY_jiminlaxuanpiao2_flag
+        }
+
+        days_mission_timeout = 10
+
+        fire_only_once = no
+        is_good = no
+        activation = {
+          tag = HCY
+            has_country_flag = HCY_jiminlaxuanpiao2_flag
+    
+
+        }
+
+        cancel_trigger = {
+            not = {
+            
+            has_country_flag = HCY_jiminlaxuanpiao2_flag
+            }
+        }
+
+        timeout_effect = {
+           JM2_add0 = yes
+           clr_country_flag = HCY_jiminlaxuanpiao2_flag
+           
+            
+           
+            
+        }
+    }
+    HCY_JM2huodong1 = {
+        icon = generic_political_actions
+
+        available = {
+          always = no
+           
+        }
+        visible = {
+            tag = HCY
+            has_country_flag = HCY_jiminlaxuanpiao3_flag
+        }
+
+        days_mission_timeout = 10
+
+        fire_only_once = no
+        is_good = no
+        activation = {
+          tag = HCY
+            has_country_flag = HCY_jiminlaxuanpiao3_flag
+    
+
+        }
+
+        cancel_trigger = {
+            not = {
+            
+            has_country_flag = HCY_jiminlaxuanpiao3_flag
+            }
+        }
+
+        timeout_effect = {
+           JM3_add0 = yes
+           clr_country_flag = HCY_jiminlaxuanpiao3_flag
+           
+            
+           
+            
+        }
+    }
+    HCY_JM2huodong2 = {
+        icon = generic_political_actions
+
+        available = {
+          always = no
+           
+        }
+        visible = {
+            tag = HCY
+            has_country_flag = HCY_jiminlaxuanpiao4_flag
+        }
+
+        days_mission_timeout = 10
+
+        fire_only_once = no
+        is_good = no
+        activation = {
+          tag = HCY
+            has_country_flag = HCY_jiminlaxuanpiao4_flag
+    
+
+        }
+
+        cancel_trigger = {
+            not = {
+            
+            has_country_flag = HCY_jiminlaxuanpiao4_flag
+            }
+        }
+
+        timeout_effect = {
+           JM4_add0 = yes
+           clr_country_flag = HCY_jiminlaxuanpiao4_flag
+           
+            
+           
+            
+        }
+    }
+    HCY_BM1huodong1 = {
+        icon = generic_political_actions
+
+        available = {
+          always = no
+           
+        }
+        visible = {
+            tag = HCY
+            has_country_flag = HCY_jiminlaxuanpiao5_flag
+        }
+
+        days_mission_timeout = 10
+
+        fire_only_once = no
+        is_good = no
+        activation = {
+          tag = HCY
+            has_country_flag = HCY_jiminlaxuanpiao5_flag
+    
+
+        }
+
+        cancel_trigger = {
+            not = {
+            
+            has_country_flag = HCY_jiminlaxuanpiao5_flag
+            }
+        }
+
+        timeout_effect = {
+           JM5_add0 = yes
+           clr_country_flag = HCY_jiminlaxuanpiao5_flag
+           
+            
+           
+            
+        }
+    }
+    HCY_BM1huodong2 = {
+        icon = generic_political_actions
+
+        available = {
+          always = no
+           
+        }
+        visible = {
+            tag = HCY
+            has_country_flag = HCY_jiminlaxuanpiao6_flag
+        }
+
+        days_mission_timeout = 10
+
+        fire_only_once = no
+        is_good = no
+        activation = {
+          tag = HCY
+            has_country_flag = HCY_jiminlaxuanpiao6_flag
+    
+
+        }
+
+        cancel_trigger = {
+            not = {
+            
+            has_country_flag = HCY_jiminlaxuanpiao6_flag
+            }
+        }
+
+        timeout_effect = {
+           JM6_add0 = yes
+           clr_country_flag = HCY_jiminlaxuanpiao6_flag
+           
+            
+           
+            
+        }
+    }
+    HCY_BM2huodong1 = {
+        icon = generic_political_actions
+
+        available = {
+          always = no
+           
+        }
+        visible = {
+            tag = HCY
+            has_country_flag = HCY_jiminlaxuanpiao7_flag
+        }
+
+        days_mission_timeout = 10
+
+        fire_only_once = no
+        is_good = no
+        activation = {
+          tag = HCY
+            has_country_flag = HCY_jiminlaxuanpiao7_flag
+    
+
+        }
+
+        cancel_trigger = {
+            not = {
+            
+            has_country_flag = HCY_jiminlaxuanpiao7_flag
+            }
+        }
+
+        timeout_effect = {
+           JM7_add0 = yes
+           clr_country_flag = HCY_jiminlaxuanpiao7_flag
+           
+            
+           
+            
+        }
+    }
+    HCY_BM2huodong2 = {
+        icon = generic_political_actions
+
+        available = {
+          always = no
+           
+        }
+        visible = {
+            tag = HCY
+            has_country_flag = HCY_jiminlaxuanpiao8_flag
+        }
+
+        days_mission_timeout = 10
+
+        fire_only_once = no
+        is_good = no
+        activation = {
+          tag = HCY
+            has_country_flag = HCY_jiminlaxuanpiao8_flag
+    
+
+        }
+
+        cancel_trigger = {
+            not = {
+            
+            has_country_flag = HCY_jiminlaxuanpiao8_flag
+            }
+        }
+
+        timeout_effect = {
+           JM8_add0 = yes
+           clr_country_flag = HCY_jiminlaxuanpiao8_flag
+           
+            
+           
+            
+        }
+    }
+    HCY_XR1huodong1 = {
+        icon = generic_political_actions
+
+        available = {
+          always = no
+           
+        }
+        visible = {
+            tag = HCY
+            has_country_flag = HCY_jiminlaxuanpiao9_flag
+        }
+
+        days_mission_timeout = 10
+
+        fire_only_once = no
+        is_good = no
+        activation = {
+          tag = HCY
+            has_country_flag = HCY_jiminlaxuanpiao9_flag
+    
+
+        }
+
+        cancel_trigger = {
+            not = {
+            
+            has_country_flag = HCY_jiminlaxuanpiao9_flag
+            }
+        }
+
+        timeout_effect = {
+           JM9_add0 = yes
+           clr_country_flag = HCY_jiminlaxuanpiao9_flag
+           
+            
+           
+            
+        }
+    }
+    HCY_XR1huodong2 = {
+        icon = generic_political_actions
+
+        available = {
+          always = no
+           
+        }
+        visible = {
+            tag = HCY
+            has_country_flag = HCY_jiminlaxuanpiao10_flag
+        }
+
+        days_mission_timeout = 10
+
+        fire_only_once = no
+        is_good = no
+        activation = {
+          tag = HCY
+            has_country_flag = HCY_jiminlaxuanpiao10_flag
+    
+
+        }
+
+        cancel_trigger = {
+            not = {
+            
+            has_country_flag = HCY_jiminlaxuanpiao10_flag
+            }
+        }
+
+        timeout_effect = {
+           JM10_add0 = yes
+           clr_country_flag = HCY_jiminlaxuanpiao10_flag
+           
+            
+           
+            
+        }
+    }
+    HCY_XR2huodong1 = {
+        icon = generic_political_actions
+
+        available = {
+          always = no
+           
+        }
+        visible = {
+            tag = HCY
+            has_country_flag = HCY_jiminlaxuanpiao11_flag
+        }
+
+        days_mission_timeout = 10
+
+        fire_only_once = no
+        is_good = no
+        activation = {
+          tag = HCY
+            has_country_flag = HCY_jiminlaxuanpiao11_flag
+    
+
+        }
+
+        cancel_trigger = {
+            not = {
+            
+            has_country_flag = HCY_jiminlaxuanpiao11_flag
+            }
+        }
+
+        timeout_effect = {
+           JM11_add0 = yes
+           clr_country_flag = HCY_jiminlaxuanpiao11_flag
+           
+            
+           
+            
+        }
+    }
+    HCY_XR2huodong2 = {
+        icon = generic_political_actions
+
+        available = {
+          always = no
+           
+        }
+        visible = {
+            tag = HCY
+            has_country_flag = HCY_jiminlaxuanpiao12_flag
+        }
+
+        days_mission_timeout = 10
+
+        fire_only_once = no
+        is_good = no
+        activation = {
+          tag = HCY
+            has_country_flag = HCY_jiminlaxuanpiao12_flag
+    
+
+        }
+
+        cancel_trigger = {
+            not = {
+            
+            has_country_flag = HCY_jiminlaxuanpiao12_flag
+            }
+        }
+
+        timeout_effect = {
+           JM12_add0 = yes
+           clr_country_flag = HCY_jiminlaxuanpiao12_flag
+           
+            
+           
+            
+        }
+    }
+
+
+        
+  }
+HCY_TEST_3 = {
+
+    
+     HCY_TEST7 = {
+        icon = generic_political_actions
+
+        available = {
+            always = no
+        }
+        visible = {
+            tag = HCY
+            not = {
+          has_completed_focus = HCY_2
+        }
+        }
+
+        days_mission_timeout = 200
+
+        fire_only_once = yes
+        is_good = no
+        activation = {
+        tag = HCY
+        not = {
+         has_completed_focus = HCY_2
+        }
+
+        }
+
+        cancel_trigger = {
+            has_completed_focus = HCY_2
+
+        }
+
+        timeout_effect = {
+           country_event = { id = hcy.1 day = 1 }
+           
+            
+           
+            
+        }
+    }
+        
+  }
+HCY_TEST_4 = {
+
+    
+     HCY_TEST8 = {
+        icon = generic_political_actions
+
+        available = {
+            always = no
+        }
+        visible = {
+            tag = HCY
+            not = {
+              has_completed_focus = HCY_2
+            }
+        }
+
+        days_mission_timeout = 200
+
+        fire_only_once = yes
+        is_good = no
+        activation = {
+        tag = HCY
+
+        }
+
+        cancel_trigger = {
+            has_completed_focus = HCY_2
+        }
+
+        timeout_effect = {
+           country_event = { id = hcy.1 day = 1 }
+           
+            
+           
+            
+        }
+    }
+        
+  }
+HCY_TEST_5 = {
+
+    
+     HCY_TEST11 = {
+        icon = generic_political_actions
+
+        available = {
+            always = no
+        }
+        visible = {
+            tag = HCY
+              has_completed_focus = HCY_2
+        }
+
+
+        fire_only_once = yes
+        activation = {
+        tag = HCY
+
+        }
+        remove_effect = {
+          add_days_mission_timeout = {
+				mission = HCY_TEST5
+				days = 36
+			}
+        }
+
+        
+    }
+        
+  }

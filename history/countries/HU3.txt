@@ -1,0 +1,105 @@
+﻿capital = 144
+146.1.1 = {
+    set_technology = {
+        #通用武器线
+        spell_card1 = 1
+        spear1 = 1
+        gun1 = 1
+        linglicunchu = 1
+        linglizhufu = 1
+        linglidanyao = 1
+        gun2 = 1
+        gun3 = 1
+            
+        #辅助
+        zhiyuanzhuangbei = 1
+        zhihuixiaodui146 = 1
+        zhanchanggongbing146 = 1
+
+        #专用辅助
+        mortar1 = 1
+
+        #专用基础
+        kexuebubingzhuangbei = 1
+        jiqiang1 = 1
+        jiqiang2 = 1
+        jiqiang3 = 1
+        shoulei1 = 1
+        shoulei2 = 1
+        bubingbuji1 = 1
+        #专用进阶
+
+        #混合系
+
+        #陆军学说
+            zhanchangzhihui140 = 1
+            
+        #工程学 
+            jichushuxue = 1
+            shuxuegongju = 1
+            waike = 1
+
+        #专用工程学
+
+        #工业
+            production_theory = 1
+            org_production = 1
+            
+        #专用工业
+        fangwaijieshengchan130 = 1
+
+        #种族
+            
+    }
+    
+}
+146.1.1={
+    oob = "HU3_146"
+    
+    add_manpower = 100
+    
+    add_ideas = {
+    type2_manpowerlv4
+    Human
+    sub_Pri_youkai
+    low_economic_mobilisation
+    Village
+    close2
+    hawk1
+    strict_border
+    forbidden_magic
+    jibenanbao
+    xianzhiguowaimeiti
+    chubugongyehua
+    diwenmang
+    jibenkejihua
+    AKI_laiziqiushendezhichi_idea   
+    #HU3_jingyiejuntuanzhongdeng_idea
+    #HU3_shenyoujuntuanzhizheng_idea
+    #HU3_wumingjuntuanzhongdeng_idea
+    #HU3_xinanrenleifuquanzhenxian_idea
+    HU3_beiqizhiren_idea
+    HU3_nanwangzhiqiji_idea
+    FY_xizhandehunluan
+    HU3_jiduyingxiang_idea
+
+    }
+   # add_timed_idea = {
+     #   idea = HU3_zaoqigongyejingyan_idea
+    #    days = 365
+   # }
+
+    set_politics = {
+    	ruling_party = guli
+    	election_frequency = 48
+    	elections_allowed = no
+    }
+    set_popularities = {
+        qinwai = 5
+        jinwai = 20
+        guli = 35
+        neworder = 20
+        oldorder = 0
+        fandong = 20
+    }
+}

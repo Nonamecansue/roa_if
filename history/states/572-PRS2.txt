@@ -1,0 +1,32 @@
+state={
+	id=572
+	name="STATE_572"
+	provinces={
+		314 520 1293 1519 1981 2302 2601 2613 2642 
+	}
+	resources={
+		powder=0.000
+		metal=0.000
+		gas=0.000
+		crystal=0.000
+	}
+
+	history={
+		146.1.1 = {
+			owner = PRS
+			add_core_of = PRS
+			buildings = {
+				infrastructure = 3
+				industrial_complex = 0
+				arms_factory = 0
+
+			}
+
+		}
+
+	}
+	state_category=s2
+	manpower=875
+	buildings_max_level_factor=1.000
+	local_supplies=2.5.000
+}

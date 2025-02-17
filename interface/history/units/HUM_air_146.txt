@@ -1,0 +1,16 @@
+﻿air_wings = {
+	246 = {
+	sc_fighter148 = {
+	owner = HUM
+	amount = 80
+	}
+	name = "验型空中战斗部队"
+  }
+  246 = {
+	sc_bomber148 = {
+	owner = HUM
+	amount = 50
+	}
+	name = "验型空中支援部队"
+  }
+}

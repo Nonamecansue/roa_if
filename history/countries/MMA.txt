@@ -1,0 +1,80 @@
+﻿capital = 191
+146.1.1 = {
+    set_technology = {
+            
+    }
+}
+146.1.1={
+    oob = "ALI_146"
+    # set_research_slots = 4
+    # Starting tech
+
+    add_ideas = {
+    Magician
+    Tribal
+    hawk2
+    close1
+    normal_border
+    sc_rule
+    }
+    #########局势修改
+    set_politics = {
+        ruling_party = neworder
+        election_frequency = 48
+        elections_allowed = no
+    }
+    set_popularities = {
+        qinwai = 0
+        guli = 5
+        neworder = 95
+        oldorder = 0
+        fandong = 0
+    }
+
+
+}
+
+create_country_leader = {
+    # name = "Alice Margatroid"
+    name = "爱丽丝·玛格特罗伊德"
+    desc = ""
+    picture = "gfx/leaders/ALI/ALI_ali.dds"
+    ideology = oldorder_type
+    traits = {  }
+}
+
+create_country_leader = {
+    # name = "Alice Margatroid"
+    name = "爱丽丝·玛格特罗伊德"
+    desc = ""
+    picture = "gfx/leaders/ALI/ALI_ali.dds"
+    ideology = guli_type
+    traits = {  }
+}
+
+create_country_leader = {
+    # name = "Alice Margatroid"
+    name = "爱丽丝·玛格特罗伊德"
+    desc = ""
+    picture = "gfx/leaders/ALI/ALI_ali.dds"
+    ideology = neworder_type
+    traits = {  }
+}
+
+create_country_leader = {
+    # name = "Yatadera Narumi"
+    name = "矢田寺成美"
+    picture = "gfx/leaders/MRS/MRS_narumi.dds"
+    # picture = "MRS_mrs.dds"
+    ideology = fandong_type
+    traits = {  }
+}
+
+create_country_leader = {
+    # name = "Yatadera Narumi"
+    name = "矢田寺成美"
+    picture = "gfx/leaders/MRS/MRS_narumi.dds"
+    # picture = "MRS_mrs.dds"
+    ideology = qinwai_type
+    traits = {  }
+}

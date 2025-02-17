@@ -1,0 +1,48 @@
+
+state={
+	id=248
+	name="STATE_248"
+	resources={
+
+		powder = 6.0
+		metal = 0.0
+		gas=20.000
+		crystal=0.000
+	}
+
+	history={
+		143.7.1 = {
+			owner = SCA
+			add_core_of = SGS
+			add_core_of = HU4
+			buildings = {
+				infrastructure =1
+				industrial_complex = 2
+				arms_factory = 1
+
+			}
+
+		}
+		146.1.1 = {
+			owner = HU4
+			add_core_of = SGS
+			add_core_of = HU4
+			buildings = {
+				infrastructure =1
+				industrial_complex = 2
+				arms_factory = 1
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		70 583 1195 3219 3232 4822 4832 4848 4854 4869 
+	}
+	manpower=23864.0
+	buildings_max_level_factor=1.000
+	state_category=s5
+	local_supplies=2.5
+}

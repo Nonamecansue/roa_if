@@ -1,0 +1,27 @@
+﻿add_namespace = xnty
+news_event = { #阿哈下的西南统一
+	id = xnty.1
+	title = xnty.1.t
+	desc = xnty.1.d
+
+	major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = xnty.1.1a
+		trigger = {
+         tag = ASG
+		}
+		country_event = { id = DBG.6 day = 1 }  
+	}
+	option = {
+		name = xnty.1.2a
+		trigger = {
+         not = {
+			tag = ASG
+		 }
+		}
+		country_event = { id = DBG.6 day = 1 }  
+	}
+}

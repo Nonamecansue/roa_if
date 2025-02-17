@@ -1,0 +1,109 @@
+ideas = {
+
+	press_laws = { 
+		law = yes
+		ziyoufangrenmeiti = {
+			default = yes
+									
+			
+			level = 1
+			cost = 200
+			cancel_if_invalid = no
+			removal_cost = -1
+		#	research_bonus = {
+		#		magic = 0.1
+		#		science = -0.1		
+		#	}
+			modifier = {
+				drift_defence_factor = -0.2
+				justify_war_goal_time = 0.2
+				stability_factor = -0.05
+				political_power_factor = 0.25
+				civilian_intel_factor = 0.2
+				army_intel_factor = 0.2
+			}
+			
+		}
+		xianzhiguowaimeiti = {
+									
+			
+			level = 2
+			cost = 200
+			cancel_if_invalid = no
+			removal_cost = -1
+		#	research_bonus = {
+		#		magic = 0.1
+		#		science = -0.1		
+		#	}
+			modifier = {
+				drift_defence_factor = -0.1
+				justify_war_goal_time = 0.1
+				stability_factor = -0.025
+				political_power_factor = 0.15
+				civilian_intel_factor = 0.1
+				army_intel_factor = 0.1
+			}
+			
+			
+		}
+		jinbenguomeiti = {
+									
+			
+			level = 3
+			cost = 200
+			cancel_if_invalid = no
+			removal_cost = -1
+		#	research_bonus = {
+		#		magic = 0.1
+		#		science = -0.1		
+		#	}
+			modifier = {
+			}
+			
+		}
+		jinguolimeiti = {
+									
+			
+			level = 4
+			cost = 200
+			cancel_if_invalid = no
+			removal_cost = -1
+		#	research_bonus = {
+		#		magic = 0.1
+		#		science = -0.1		
+		#	}
+			modifier = {
+				drift_defence_factor = 0.1
+				justify_war_goal_time = -0.1
+				stability_factor = 0.025
+				political_power_factor = -0.15
+				civilian_intel_factor = -0.1
+				army_intel_factor = -0.1
+			}
+			
+			
+		}
+		yanjinmeitihuodong = {
+									
+			
+			level = 5
+			cost = 200
+			cancel_if_invalid = no
+			removal_cost = -1
+		#	research_bonus = {
+		#		magic = 0.1
+		#		science = -0.1		
+		#	}
+			modifier = {
+				drift_defence_factor = 0.2
+				justify_war_goal_time = -0.2
+				stability_factor = 0.05
+				political_power_factor = -0.25
+				civilian_intel_factor = -0.2
+				army_intel_factor = -0.2
+			}
+			
+			
+		}
+	}
+}

@@ -1,0 +1,173 @@
+﻿capital = 282
+143.7.1 = {
+    set_technology = {
+        
+    }
+}
+146.1.1 = {
+    set_technology = {
+        #通用武器线
+        spell_card1 = 1
+        spear1 = 1
+        gun1 = 1
+        linglicunchu = 1
+        linglizhufu = 1
+        linglidanyao = 1
+        gun2 = 1
+        lingliliushuixian = 1
+        gun3 = 1
+        #辅助
+
+        #专用辅助
+
+        #专用基础
+        kexuebubingzhuangbei = 1
+        jiqiang1 = 1
+        jiqiang2 = 1
+        jiqiang3 = 1
+        bubingbuji1 = 1
+
+
+        #专用进阶
+
+        #混合系
+
+        #陆军学说
+            zhanchangzhihui140 = 1
+            zuzhihuazhanzheng142 = 1
+            
+        #工程学 
+            jichushuxue = 1
+            shuxuegongju = 1
+            waike = 1
+            tongxunlilun = 1
+            jiemi137 = 1
+
+        #专用工程学
+
+        #工业
+            production_theory = 1
+            org_production = 1
+            jianzaojishu130 = 1
+            yunshudui140 = 1
+            
+        #专用工业
+            fangwaijieshengchan130 = 1
+
+        #种族
+            yeguangzhili1 = 1
+            
+    }
+    
+}
+143.7.1={
+    oob = "MAM_143"
+    add_ideas = {
+        Youkai
+        Village
+        close1
+        hawk0
+        strict_border
+        sc_rule
+        type3_manpowerlv4
+    }
+    set_politics = {
+        ruling_party = guli
+        election_frequency = 48
+        elections_allowed = no
+    }
+    set_popularities = {
+        qinwai = 25
+        guli = 70
+        neworder = 5
+        oldorder = 0
+        fandong = 0
+    }
+    if = {
+        limit = {
+            has_start_date < 143.7.2
+        }
+        set_technology = {
+			#通用武器线
+        spell_card1 = 1
+        spear1 = 1
+        gun1 = 1
+        linglicunchu = 1
+        linglizhufu = 1
+        linglidanyao = 1
+        gun2 = 1
+        #辅助
+
+        #专用辅助
+
+        #专用基础
+
+        #专用进阶
+
+        #混合系
+
+        #陆军学说
+            zhanchangzhihui140 = 1
+            zuzhihuazhanzheng142 = 1
+            
+        #工程学 
+            jichushuxue = 1
+            shuxuegongju = 1
+            lingben = 1
+            tongxunlilun = 1
+            jiemi137 = 1
+
+        #专用工程学
+
+        #工业
+            production_theory = 1
+            org_production = 1
+            jianzaojishu130 = 1
+            yunshudui140 = 1
+            
+        #专用工业
+            linglishengchan130 = 1
+
+        #种族
+            yeguangzhili1 = 1 
+		}
+    }
+    
+    
+}
+146.1.1={
+    oob = "MAM_146"
+    add_ideas = {
+    Human
+    Village
+    close1
+    hawk0
+    strict_border
+    sc_rule
+    type3_manpowerlv2
+    zhongwenmang
+    xianzhuqishi
+    chunnongye
+    kejilinglipingheng
+    yanlianbao
+    xianzhiguowaimeiti
+    HUM_fuyonggongyezhengshou
+    MAM_suzhikanyoudejundui
+    MAM_shizhiwuwei
+    }
+    set_politics = {
+    	ruling_party = guli
+    	election_frequency = 48
+    	elections_allowed = no
+    }
+    set_popularities = {
+        qinwai = 10
+        jinwai = 25
+        guli = 45
+        neworder = 10
+        oldorder = 10
+        fandong = 0
+    }
+    
+    
+}

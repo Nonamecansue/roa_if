@@ -1,0 +1,82 @@
+
+###############################################################
+########            XXXXXXXXXXXXXXXXXXXXX              ########
+###############################################################
+
+
+TEST_add0 = {
+	custom_effect_tooltip = TEST_add0.tt
+	add_to_variable = { HCY_TEST = 100 }
+}
+JM1_add0 = {
+	custom_effect_tooltip = JM1_add0.tt
+	add_to_variable = { HCY_TEST = 5 }
+}
+JM2_add0 = {
+	custom_effect_tooltip = JM2_add0.tt
+	add_to_variable = { HCY_TEST = 10 }
+}
+JM3_add0 = {
+	custom_effect_tooltip = JM3_add0.tt
+	add_to_variable = { HCY_CESHI = 5 }
+}
+JM4_add0 = {
+	custom_effect_tooltip = JM4_add0.tt
+	add_to_variable = { HCY_CESHI = 10 }
+}
+JM5_add0 = {
+	custom_effect_tooltip = JM5_add0.tt
+	add_to_variable = { HCY_SJ = 5 }
+}
+JM6_add0 = {
+	custom_effect_tooltip = JM6_add0.tt
+	add_to_variable = { HCY_SJ = 10 }
+}
+JM7_add0 = {
+	custom_effect_tooltip = JM7_add0.tt
+	add_to_variable = { HCY_BS = 5 }
+}
+JM8_add0 = {
+	custom_effect_tooltip = JM8_add0.tt
+	add_to_variable = { HCY_BS = 10 }
+}
+JM9_add0 = {
+	custom_effect_tooltip = JM9_add0.tt
+	add_to_variable = { HCY_CS = 5 }
+}
+JM10_add0 = {
+	custom_effect_tooltip = JM10_add0.tt
+	add_to_variable = { HCY_CS = 10 }
+}
+JM11_add0 = {
+	custom_effect_tooltip = JM11_add0.tt
+	add_to_variable = { HCY_SC = 5 }
+}
+JM12_add0 = {
+	custom_effect_tooltip = JM12_add0.tt
+	add_to_variable = { HCY_SC = 10 }
+}
+JZB1_add0 = {
+	custom_effect_tooltip = JZB1_add0.tt
+	add_to_variable = { HCY_JUNBIAN = 5 }
+}
+JZB2_add0 = {
+	custom_effect_tooltip = JZB2_add0.tt
+	add_to_variable = { HCY_JUNBIAN = 20 }
+}
+JZB3_add0 = {
+	custom_effect_tooltip = JZB3_add0.tt
+	add_to_variable = { HCY_JUNBIAN = -5 }
+}
+CJ1_add0 = {
+	custom_effect_tooltip = CJ1_add0.tt
+	add_to_variable = { HCY_CHAJUEDU = -5 }
+}
+CJ2_add0 = {
+	custom_effect_tooltip = CJ2_add0.tt
+	add_to_variable = { HCY_CHAJUEDU = 5 }
+}
+
+
+
+

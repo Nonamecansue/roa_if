@@ -1,0 +1,87 @@
+﻿capital = 45
+143.7.1 = {
+    set_technology = {
+          #通用武器线
+            spell_card1 = 1
+            spear1 = 1
+            gun1 = 1
+            linglicunchu = 1
+            linglizhufu = 1
+            linglidanyao = 1
+            spell_card2 = 1
+            spear2 = 1
+            gun2 = 1
+            lingliliushuixian = 1
+            gun3 = 1
+        #辅助
+            zhiyuanzhuangbei = 1
+        #专用辅助
+           mortar1 = 1
+        #专用基础
+        kexuebubingzhuangbei = 1
+        jiqiang1 = 1
+        jiqiang2 = 1
+        shoulei1 = 1
+
+        #专用进阶
+
+        #混合系
+
+        #陆军学说
+            zhanchangzhihui140 = 1
+        #工程学 
+            jichushuxue = 1
+            shuxuegongju = 1
+            waike = 1
+        #专用工程学
+
+        #工业
+            production_theory = 1
+            org_production = 1
+            jianzaojishu130 = 1
+            ziyuankaifa130 = 1
+            yunshudui140 = 1
+        #专用工业
+            
+            
+        #种族
+             
+    }
+}
+138.8.13 = {
+    oob = "SC3_146"
+	# # set_research_slots = 1
+	set_politics = {
+        ruling_party = guli
+        election_frequency = 48
+        elections_allowed = no
+    } 
+    set_popularities = {
+        qinwai = 30
+        jinwai = 20
+        guli = 45
+        neworder = 0
+        oldorder = 0
+        fandong = 5
+
+    }
+    
+    add_ideas={
+    Town
+    type1_manpowerlv3
+	Fairy
+    open1
+    hawk2
+    loose_border
+    sc_rule
+    nongye_gongye
+    quanwenmang
+    banzhongzupingdeng
+    zhongshikejihua
+    jibenanbao
+     
+    }	
+
+
+}
+

@@ -1,0 +1,39 @@
+characters={
+  GRS_xiaxuanwuchuan_leader ={
+    name = GRS_xiaxuanwuchuan_leader
+    portraits={
+      civilian={
+        large="gfx/leaders/ZYD/ZYD_council.dds"
+        small="gfx/leaders/ZYD/ZYD_council_small.dds"
+      }
+      army = {
+        large="gfx/leaders/ZYD/ZYD_council.dds"
+        small="gfx/leaders/ZYD/ZYD_council_small.dds"
+      }
+    }
+    country_leader={
+      ideology=fandong_waige
+      id=-1
+    }
+    country_leader={
+      ideology=guli_zhiminzhengfu
+      id=-1
+    }
+    country_leader={
+      ideology=qinwai_type
+      id=-1
+    }
+    country_leader={
+      ideology=oldorder_type
+      id=-1
+    }
+    country_leader={
+      ideology=neworder_type
+      id=-1
+    }
+    country_leader={
+      ideology=oldgenso_type
+      id=-1
+    }
+  }
+}

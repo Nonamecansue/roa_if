@@ -1,0 +1,30 @@
+
+state={
+	id=603
+	name="STATE_603"
+	provinces={
+		1471 1798 6278 6285 6300 6309 
+	}
+	resources={
+		energy = 1
+		powder = 5.0
+		metal = 0.0
+		gas=2.000
+		crystal=0.000
+	}
+	history={
+		146.1.1 = {
+			owner = HUB
+			add_core_of = HUB
+			buildings = {
+				infrastructure = 1
+				industrial_complex = 0
+				arms_factory = 0
+			}
+		}
+	}
+	state_category=s2
+	manpower=672
+	buildings_max_level_factor=1.000
+	local_supplies=2.500
+}

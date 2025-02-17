@@ -1,0 +1,312 @@
+add_namespace = akinew
+
+country_event = { #邀请农民议会代表
+	id = akinew.1
+	title = akinew.1.t
+	desc = akinew.1.d
+
+	# major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = akinew.1.1#
+		trigger = {
+
+		}
+
+      	add_political_power = -25
+
+	}
+
+}
+country_event = { #邀请凋零者代表
+	id = akinew.2
+	title = akinew.2.t
+	desc = akinew.2.d
+
+	# major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = akinew.2.1#
+		trigger = {
+
+		}
+
+      	add_political_power = -25
+
+	}
+
+}
+country_event = { #邀请改革派代表
+	id = akinew.3
+	title = akinew.3.t
+	desc = akinew.3.d
+
+	# major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = akinew.3.1#
+		trigger = {
+
+		}
+
+      	add_political_power = -25
+
+	}
+
+}
+country_event = { #邀请本地底层代表
+	id = akinew.4
+	title = akinew.4.t
+	desc = akinew.4.d
+
+	# major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = akinew.4.1#
+		trigger = {
+
+		}
+
+      	add_political_power = -25
+
+	}
+
+}
+
+country_event = { #会议开始
+	id = akinew.5
+	title = akinew.5.t
+	desc = akinew.5.d
+
+	# major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = akinew.5.1#
+		trigger = {
+
+		}
+
+      	country_event = { id = akinew.6 hours = 12 }
+
+	}
+}
+country_event = { #暴乱
+	id = akinew.6
+	title = akinew.6.t
+	desc = akinew.6.d
+
+	# major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = akinew.6.1#
+		trigger = {
+
+		}
+		ai_chance = {
+			factor = 50
+		}
+
+      	load_focus_tree = AKI_focus_2
+		mark_focus_tree_layout_dirty = yes
+		HU1 = {
+				country_event = {
+					id = akinew.7
+					days = 1
+				}
+			}
+		HU2 = {
+				country_event = {
+					id = akinew.8
+					days = 1
+				}
+			}
+		add_timed_idea = {days = 60 idea = AKI_cubujifang_idea}
+
+	}
+	option = {
+		name = akinew.6.2#
+		trigger = {
+
+		}
+		ai_chance = {
+			factor = 50
+		}
+
+      	load_focus_tree = AKI_focus_2
+		mark_focus_tree_layout_dirty = yes
+		AKI_hin_leader = {
+			add_country_leader_role = {
+				promote_leader = yes
+				country_leader = {
+					ideology = qinwai_type
+				}
+			}
+		}
+		set_politics = {
+	    	ruling_party = qinwai
+	    }
+	    HU1 = {
+				country_event = {
+					id = akinew.7
+					days = 1
+				}
+			}
+		HU2 = {
+				country_event = {
+					id = akinew.8
+					days = 1
+				}
+			}
+		add_timed_idea = {days = 60 idea = AKI_cubujifang_idea}
+
+
+	}
+}
+country_event = { #农民联盟叛乱
+	id = akinew.7
+	title = akinew.7.t
+	desc = akinew.7.d
+
+	# major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = akinew.7.1#
+		trigger = {
+
+		}
+		 AKI = {
+            end_puppet = HU1
+          }
+
+      	HU1 = {
+
+			leave_faction = yes
+			declare_war_on = {
+				type = annex_everything
+				target = AKI	
+			}
+		}
+		add_timed_idea = {days = 120 idea = AKI_chenxuerru_idea}
+		109 = {
+        add_core_of = HU1
+      }
+      126 = {
+        add_core_of = HU1
+      }
+      125 = {
+        add_core_of = HU1
+      }
+      HU1 = {
+        set_cosmetic_tag = AKI_HU1
+    }
+
+
+	}
+  }
+  country_event = { #凋零者叛乱
+	id = akinew.8
+	title = akinew.8.t
+	desc = akinew.8.d
+
+	# major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = akinew.8.1#
+		trigger = {
+
+		}
+		 AKI = {
+            end_puppet = HU2
+          }
+
+      	HU2 = {
+
+			leave_faction = yes
+			declare_war_on = {
+				type = annex_everything
+				target = AKI	
+			}
+			HU2 = {
+        set_cosmetic_tag = AKI
+    }
+			
+
+		}
+		add_timed_idea = {days = 120 idea = AKI_chenxuerru_idea}
+		107 = {
+        add_core_of = HU2
+      }
+      375 = {
+        add_core_of = HU2
+      }
+      139 = {
+        add_core_of = HU2
+      }
+      105 = {
+        add_core_of = HU2
+      }
+      108 = {
+        add_core_of = HU2
+      }
+
+
+		
+
+	    	    AKI = {
+				AKI_sizuha = {
+					set_nationality = ROOT
+				}
+				AKI_sizuha_leader = {
+					set_nationality = ROOT
+				}
+			}
+	    country_event = { id = akinew.9 hours = 1 }
+	    add_ideas = God
+			
+
+	}
+  }
+  country_event = { #改领导人
+	id = akinew.9
+	title = akinew.9.t
+	desc = akinew.9.d
+
+	# major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = akinew.9.1#
+		trigger = {
+
+		}
+
+      	retire_character = village_leader
+      	AKI_sizuha_leader = {
+			add_country_leader_role = {
+				promote_leader = yes
+				country_leader = {
+					ideology = neworder_type
+				}
+			}
+		}
+
+
+	}
+}

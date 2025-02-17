@@ -1,0 +1,296 @@
+focus_tree = {
+  id = HU2_focus_1
+  country = {
+    factor = 0
+    modifier = {
+      add = 10
+      tag =  
+    }
+  }
+
+  shared_focus = ty_medium_main 
+
+  continuous_focus_position = { x = 20 y = 1700 }
+
+  focus = {
+      id = HU2_quebaoneibuwending
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 4
+      x = 4
+      y = 0
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        add_stability = 0.2
+        add_war_support = 0.2
+        add_timed_idea = {days = 35 idea = HU2_qingxifanduipai_idea}
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HU2_quebaowuqichongzu
+      icon = GFX_focus_generic_self_management
+      cost = 2
+      relative_position_id = HU2_quebaoneibuwending
+      x = -2
+      y = 1
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      }
+
+       prerequisite = { focus = HU2_quebaoneibuwending }
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        add_equipment_to_stockpile = {
+          type = gun147
+          amount = 1000
+          producer = HU2
+        }
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HU2_zujianchongfegdui
+      icon = GFX_focus_generic_little_entente
+      cost = 2
+      relative_position_id = HU2_quebaoneibuwending
+      x = 2
+      y = 1
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      }
+
+       prerequisite = { focus = HU2_quebaoneibuwending }
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+      hidden_effect = {
+        load_oob = "HU2_jz"
+        }
+        custom_effect_tooltip = hu2_zaochongfengdui_1
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HU2_mimiqianshuhubaotiaoyue
+      icon = GFX_goal_generic_propaganda
+      cost = 4
+      relative_position_id = HU2_quebaoneibuwending
+      x = 0
+      y = 2
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      }
+
+       prerequisite = { focus = HU2_zujianchongfegdui }
+       prerequisite = { focus = HU2_quebaowuqichongzu }
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+      add_opinion_modifier = {
+          target = HU1
+          modifier = background_friend
+        }
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+focus = {
+      id = HU2_jialijinjishengchanqu
+      icon = GFX_goal_generic_construct_mil_factory
+      cost = 4
+      relative_position_id = HU2_quebaoneibuwending
+      x = 2
+      y = 3
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      }
+
+       prerequisite = { focus = HU2_mimiqianshuhubaotiaoyue }
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+      133 = {
+        add_building_construction = {
+          type = arms_factory
+          level = 3
+          instant_build = yes
+        }
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+}
+focus = {
+      id = HU2_qiangzhizhengbing
+      icon = GFX_focus_generic_manpower
+      cost = 4
+      relative_position_id = HU2_quebaoneibuwending
+      x = -2
+      y = 3
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      }
+
+       prerequisite = { focus = HU2_mimiqianshuhubaotiaoyue }
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+      add_manpower = 200
+      add_stability = -0.15
+      
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+focus = {
+      id = HU2_zhunbeimianduizuihuaikeneng
+      icon = GFX_focus_SOV_penal_battalions
+      cost = 2
+      relative_position_id = HU2_quebaoneibuwending
+      x = 0
+      y = 4
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      }
+
+       prerequisite = { focus = HU2_qiangzhizhengbing }
+       prerequisite = { focus = HU2_jialijinjishengchanqu }
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+      add_timed_idea = {days = 40 idea = HU2_zhidaohuanglong_idea}
+      
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+

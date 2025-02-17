@@ -1,0 +1,1597 @@
+focus_tree = {
+  id = HUM_focus_1
+  country = {
+    factor = 0
+    modifier = {
+      add = 10
+      tag = HUM
+    }
+  }
+
+  shared_focus = ty_medium_main 
+
+  continuous_focus_position = { x = 20 y = 1700 }
+
+  focus = {
+      id = HUM_kaolvxianzhuang
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 2
+      x = 4
+      y = 0
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+       country_event = { id = hum.9 day = 1 }
+       
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HUM_chongzhengqigu
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 2
+      x = 0
+      y = 1
+      relative_position_id = HU4_pingqinggengduoguyongbing
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      
+      }
+      prerequisite = { focus = HUM_kaolvxianzhuang }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        country_event = { id = hum.10 day = 1 }
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HUM_zhaokaihuiyi
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 2
+      x = 0
+      y = 2
+      relative_position_id = HU4_pingqinggengduoguyongbing
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      
+      }
+      prerequisite = { focus = HUM_chongzhengqigu }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        
+        country_event = { id = hum.7 day = 1 }
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HUM_yuanmanwancheng
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 2
+      x = 0
+      y = 3
+      relative_position_id = HU4_pingqinggengduoguyongbing
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      custom_trigger_tooltip = {
+        tooltip = suifazhanjiesuo
+        always = no
+      }
+      
+      
+      }
+      prerequisite = { focus = HUM_zhaokaihuiyi }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        custom_effect_tooltip = hum_huiyizhaokaiwancheng
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  ####种族假线
+  focus = {
+      id = HUM_zhuoshouzhongzuwenti
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 4
+      x = 12
+      y = 4
+      relative_position_id = HU4_pingqinggengduoguyongbing
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      
+      
+      }
+      prerequisite = { focus = HUM_yuanmanwancheng }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        add_stability = 0.2
+        country_event = { id = hum.11 day = 1 }
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HUM_quanjiexiaoling
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 4
+      x = -3
+      y = 2
+      relative_position_id = HUM_zhuoshouzhongzuwenti
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      
+      
+      }
+      prerequisite = { focus = HUM_zhuoshouzhongzuwenti }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        country_event = { id = hum.12 day = 1 }
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HUM_shoubianfuquanzhenxian
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 4
+      x = -4
+      y = 3
+      relative_position_id = HUM_zhuoshouzhongzuwenti
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      
+      
+      }
+      prerequisite = { focus = HUM_quanjiexiaoling }
+      mutually_exclusive = {
+      focus = HUM_qudifuquanzhenxian
+    }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        add_manpower = 200
+        add_war_support = 0.25 
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HUM_qudifuquanzhenxian
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 4
+      x = -2
+      y = 3
+      relative_position_id = HUM_zhuoshouzhongzuwenti
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      
+      
+      }
+      prerequisite = { focus = HUM_quanjiexiaoling }
+      mutually_exclusive = {
+      focus = HUM_shoubianfuquanzhenxian
+    }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        add_stability = 0.2
+        country_event = { id = hum.13 day = 1 }
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HUM_peichangsunshi
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 4
+      x = -3
+      y = 4
+      relative_position_id = HUM_zhuoshouzhongzuwenti
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      
+      
+      }
+      prerequisite = {
+       focus = HUM_qudifuquanzhenxian
+       focus = HUM_shoubianfuquanzhenxian
+        }
+      
+
+      
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        add_stability = 0.15
+        add_political_power = -50
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HUM_kaochadongbuzhulin
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 4
+      x = 3
+      y = 2
+      relative_position_id = HUM_zhuoshouzhongzuwenti
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      
+      
+      }
+      prerequisite = { focus = HUM_zhuoshouzhongzuwenti }
+
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        country_event = { id = hum.14 day = 1 }
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HUM_jieshujinjizhuangtai
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 4
+      x = 2
+      y = 3
+      relative_position_id = HUM_zhuoshouzhongzuwenti
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      
+      
+      }
+      prerequisite = { focus = HUM_kaochadongbuzhulin }
+
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        add_stability = 0.2
+        country_event = { id = hum.15 day = 1 }
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HUM_yudikangjunhejie
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 4
+      x = 4
+      y = 3
+      relative_position_id = HUM_zhuoshouzhongzuwenti
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      
+      
+      }
+      prerequisite = { focus = HUM_kaochadongbuzhulin }
+
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        add_manpower = 120
+        stability_factor = 0.2
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HUM_pingyongyaoguaiguanyuan
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 4
+      x = 3
+      y = 4
+      relative_position_id = HUM_zhuoshouzhongzuwenti
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      
+      
+      }
+      prerequisite = { focus = HUM_jieshujinjizhuangtai }
+      prerequisite = { focus = HUM_yudikangjunhejie }
+
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        add_political_power = 150
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HUM_choubeidongbuzizhiqu
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 4
+      x = 0
+      y = 5
+      relative_position_id = HUM_zhuoshouzhongzuwenti
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      
+      
+      }
+      prerequisite = { focus = HUM_peichangsunshi }
+      prerequisite = { focus = HUM_pingyongyaoguaiguanyuan }
+
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        add_stability = 0.15
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HUM_yunanbuyaoguaihuaqingbianjie
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 4
+      x = 0
+      y = 6
+      relative_position_id = HUM_zhuoshouzhongzuwenti
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      
+      
+      }
+      prerequisite = { focus = HUM_choubeidongbuzizhiqu }
+      
+
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        country_event = { id = hum.16 day = 1 }
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HUM_zhengshijianlizizhiqu
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 4
+      x = 0
+      y = 7
+      relative_position_id = HUM_zhuoshouzhongzuwenti
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      
+      
+      }
+      prerequisite = { focus = HUM_yunanbuyaoguaihuaqingbianjie }
+      
+
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        country_event = { id = hum.17 day = 1 }
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  #######经济假线
+  focus = {
+      id = HUM_yugujingjiqingkuang
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 2
+      x = 0
+      y = 4
+      relative_position_id = HU4_pingqinggengduoguyongbing
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      custom_trigger_tooltip = {
+        tooltip = suifazhanjiesuo
+        always = no
+      }
+      
+      
+      }
+      prerequisite = { focus = HUM_yuanmanwancheng }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        add_political_power = 150
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HUM_jiujishiyerenqun
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 4
+      x = -3
+      y = 2
+      relative_position_id = HUM_yugujingjiqingkuang
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      
+      
+      }
+      prerequisite = { focus = HUM_yugujingjiqingkuang }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+      add_stability = 0.25
+      add_political_power = -50
+        
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HUM_jixubentugongyejianshe
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 4
+      x = -3
+      y = 3
+      relative_position_id = HUM_yugujingjiqingkuang
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      
+      
+      }
+      prerequisite = { focus = HUM_jiujishiyerenqun }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        548 = {
+        add_extra_state_shared_building_slots = 2
+        add_building_construction = {
+          type = industrial_complex 
+          level = 2
+          instant_build = yes
+        }
+      }
+      
+
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HUM_kuodaqinggongyeshengchan
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 4
+      x = -3
+      y = 4
+      relative_position_id = HUM_yugujingjiqingkuang
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      
+      
+      }
+      prerequisite = { focus = HUM_jixubentugongyejianshe }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        252 = {
+        add_extra_state_shared_building_slots = 4
+        add_building_construction = {
+          type = industrial_complex 
+          level = 4
+          instant_build = yes
+        }
+      }
+      556 = {
+        add_extra_state_shared_building_slots = 4
+        add_building_construction = {
+          type = industrial_complex 
+          level = 4
+          instant_build = yes
+        }
+      }
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HUM_dajifeifataijia
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 4
+      x = 3
+      y = 2
+      relative_position_id = HUM_yugujingjiqingkuang
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      
+      
+      }
+      prerequisite = { focus = HUM_yugujingjiqingkuang }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        add_political_power = 150
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HUM_quebaoliangshichongzu
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 4
+      x = 3
+      y = 3
+      relative_position_id = HUM_yugujingjiqingkuang
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      
+      
+      }
+      prerequisite = { focus = HUM_dajifeifataijia }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+      537 = {
+        add_extra_state_shared_building_slots = 5
+        add_building_construction = {
+          type = industrial_complex 
+          level = 1
+          instant_build = yes
+        }
+      }
+        
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HUM_tiaozhengjingjitixi
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 4
+      x = 3
+      y = 4
+      relative_position_id = HUM_yugujingjiqingkuang
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      
+      
+      }
+      prerequisite = { focus = HUM_quebaoliangshichongzu }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        add_political_power = -150
+        add_stability = 0.25
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HUM_gaobieshiyewenti
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 4
+      x = 0
+      y = 5
+      relative_position_id = HUM_yugujingjiqingkuang
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      
+      
+      }
+      prerequisite = { focus = HUM_tiaozhengjingjitixi }
+      prerequisite = { focus = HUM_kuodaqinggongyeshengchan }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        remove_ideas = HUM_daguimoshiye
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HUM_jieshujingjiweiji
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 4
+      x = 0
+      y = 6
+      relative_position_id = HUM_yugujingjiqingkuang
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      
+      
+      }
+      prerequisite = { focus = HUM_gaobieshiyewenti }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        remove_ideas = HUM_jihubengkuidejingji
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HUM_xiqujingyanjiaoxun
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 4
+      x = 0
+      y = 7
+      relative_position_id = HUM_yugujingjiqingkuang
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      
+      
+      }
+      prerequisite = { focus = HUM_jieshujingjiweiji }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        add_political_power = 250
+        
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+######军事假线
+focus = {
+      id = HUM_mimichongqijunshiyuanjiu
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 4
+      x = -12
+      y = 4
+      relative_position_id = HU4_pingqinggengduoguyongbing
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      
+      
+      }
+      prerequisite = { focus = HUM_yuanmanwancheng }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        add_doctrine_cost_reduction = {
+        cost_reduction = 0.75
+        uses = 1
+        category = land_doctrine
+      }
+      add_tech_bonus = {
+        bonus = 1.0
+        ahead_reduction = 1.0
+        uses = 2.0
+        category = primary_weapons
+      }
+      add_tech_bonus = {
+        bonus = 1.0
+        ahead_reduction = 1.0
+        uses = 2.0
+        category = artillery_tech
+      }
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HUM_tigaolaobingdaiyu
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 4
+      x = -3
+      y = 2
+      relative_position_id = HUM_mimichongqijunshiyuanjiu
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      
+      
+      }
+      prerequisite = { focus = HUM_mimichongqijunshiyuanjiu }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        add_stability = 0.25
+        add_political_power = -50
+        
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HUM_kaoluzhaomurenwaishibing
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 4
+      x = -3
+      y = 3
+      relative_position_id = HUM_mimichongqijunshiyuanjiu
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      has_completed_focus = { HUM_pingyongyaoguaiguanyuan }
+      
+      
+      }
+      prerequisite = { focus = HUM_tigaolaobingdaiyu }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        add_manpower = 100
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+   focus = {
+      id = HUM_chouxindaguimozhaobing
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 4
+      x = -3
+      y = 4
+      relative_position_id = HUM_mimichongqijunshiyuanjiu
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      NOT = {
+        has_idea = HUM_jihubengkuidejingji
+        has_idea = HUM_daguimoshiye
+      }
+      
+      
+      }
+      prerequisite = { focus = HUM_kaoluzhaomurenwaishibing }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        remove_ideas = HUM_caijunhouyizheng
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HUM_zhiyuanbuduiduoyanghua
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 4
+      x = 3
+      y = 2
+      relative_position_id = HUM_mimichongqijunshiyuanjiu
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      
+      
+      }
+      prerequisite = { focus = HUM_mimichongqijunshiyuanjiu }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        add_tech_bonus = {
+      uses = 3
+      bonus = 2
+      category = support_tech
+      }
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HUM_gailiangxunlianfangshi
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 4
+      x = 3
+      y = 3
+      relative_position_id = HUM_mimichongqijunshiyuanjiu
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      
+      
+      }
+      prerequisite = { focus = HUM_zhiyuanbuduiduoyanghua }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        army_experience = 50
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HUM_cainanxinxingzhanshu
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 4
+      x = 3
+      y = 4
+      relative_position_id = HUM_mimichongqijunshiyuanjiu
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      
+      
+      }
+      prerequisite = { focus =  HUM_gailiangxunlianfangshi }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        army_experience = 150
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HUM_zaifushudiquzhujun
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 4
+      x = 0
+      y = 5
+      relative_position_id = HUM_mimichongqijunshiyuanjiu
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      
+      
+      }
+      prerequisite = { focus =  HUM_cainanxinxingzhanshu }
+      prerequisite = { focus =  HUM_chouxindaguimozhaobing }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        remove_ideas = HUM_bukekaodeshiliquan
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HUM_pujijidongzhuangbei
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 4
+      x = 0
+      y = 6
+      relative_position_id = HUM_mimichongqijunshiyuanjiu
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      
+      
+      }
+      prerequisite = { focus =  HUM_zaifushudiquzhujun }
+
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        add_ideas = HUM_pujijidongzhuangbei
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HUM_tankebuduizhengshihua
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 4
+      x = 0
+      y = 7
+      relative_position_id = HUM_mimichongqijunshiyuanjiu
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      
+      
+      }
+      prerequisite = { focus =  HUM_pujijidongzhuangbei }
+
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+      add_ideas = HUM_tankebuduizhengshihua
+        
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  ######假结尾
+  focus = {
+      id = HUM_fangyanxifang
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 4
+      x = 0 
+      y = 12
+      relative_position_id = HU4_pingqinggengduoguyongbing
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      
+      
+      }
+      prerequisite = { focus = HUM_tankebuduizhengshihua }
+      prerequisite = { focus = HUM_zhengshijianlizizhiqu }
+      prerequisite = { focus = HUM_xiqujingyanjiaoxun }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        country_event = { id = hum.18 day = 1 }
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }

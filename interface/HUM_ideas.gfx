@@ -1,0 +1,14 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_idea_HUM_daguimoshiye_js"
+		texturefile = "gfx/interface/ideas/idea_daguimoshiye.png"
+	}
+	spriteType = {
+		name = "GFX_idea_HUM_caijunhouyizheng_js"
+		texturefile = "gfx/interface/ideas/idea_caijunhouyizheng.png"
+	}
+	spriteType = {
+		name = "GFX_idea_HUM_jihubengkuidejingji_js"
+		texturefile = "gfx/interface/ideas/idea_jihubengkuidejingji.png"
+	}		
+}

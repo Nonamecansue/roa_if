@@ -1,0 +1,392 @@
+focus_tree = {
+  id = HCY_focus_Jjx_1
+  country = {
+    factor = 0
+    modifier = {
+      add = 10
+      tag = 
+    }
+  }
+
+  shared_focus = ty_medium_main 
+
+  continuous_focus_position = { x = 20 y = 1700 }
+
+  focus = {
+      id = HCY_jz_1
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 2
+      x = 16
+      y = -1
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      
+      }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        conservativedecrease = yes
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+
+  focus = {
+      id = HCY_jz_2
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 2
+      x = 0
+      y = 1
+
+       prerequisite = {
+          focus = HCY_jz_1
+       }
+
+
+       relative_position_id = HCY_jz_1
+
+      available ={
+      
+      
+      }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        conservativedecrease = yes
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HCY_jz_2_1
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 2
+      x = 0
+      y = 2
+
+       prerequisite = {
+          focus = HCY_jz_2
+       }
+
+
+       relative_position_id = HCY_jz_2
+
+      available ={
+      
+      
+      }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        
+        
+      hidden_effect = {
+        load_oob = HCY_yingzhaobing
+
+        }
+        custom_effect_tooltip = HCY_JZ_2_2_zhaobing
+      
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+
+  focus = {
+      id = HCY_jz_2_2
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 2
+      x = 0
+      y = 4
+
+       prerequisite = {
+          focus = HCY_jz_2_1
+       }
+
+
+       relative_position_id = HCY_jz_2
+
+      available ={
+        country_exists = DHC
+      
+      
+      }
+
+     
+
+      bypass = {
+        not = {
+          country_exists = DHC
+        }
+      
+      }
+
+      completion_reward = {
+        hidden_effect = {
+
+        }
+
+        declare_war_on = {
+				   target = DHC
+				   type = annex_everything
+			}
+      DHC = {
+        every_owned_state = {
+          add_core_of = HCY
+        }
+      }
+      HCY = {
+        every_owned_state = {
+          add_core_of = DHC
+        }
+      }
+       
+        
+      
+
+        
+      
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  
+  focus = {
+      id = HCY_jz_2_3
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 2
+      x = 0
+      y = 6
+
+       prerequisite = {
+          focus = HCY_jz_2_2
+       }
+
+
+       relative_position_id = HCY_jz_2
+
+      available ={
+         not = {
+          country_exists = DHC
+        }
+      
+      
+      }
+
+     
+
+      bypass = {
+       
+      
+      }
+
+      completion_reward = {
+        
+       hidden_effect = {
+        HUM = {
+          limit = { 
+            has_war = no
+            
+         
+           }
+          country_event = {id = hcy.4 days = 1 }
+        }
+        MRS = {
+          limit = { 
+            has_war = no
+            
+         
+           }
+          country_event = {id = hcy.4 days = 1 }
+        }
+        
+
+        HKR = {
+          limit = { 
+            has_war = no
+            
+         
+           }
+          country_event = {id = hcy.4 days = 1 }
+        }
+        OTG = {
+          limit = { 
+            has_war = no
+            
+         
+           }
+          country_event = {id = hcy.4 days = 1 }
+        }
+        MRY = {
+          limit = { 
+            has_war = no
+            
+         
+           }
+          country_event = {id = hcy.4 days = 1 }
+        
+        }
+        AKI = {
+          limit = { 
+            has_war = no
+            
+         
+           }
+          country_event = {id = hcy.4 days = 1 }
+        }
+        KAP = {
+          limit = { 
+            has_war = no
+            
+         
+           }
+          country_event = {id = hcy.4 days = 1 }
+        }
+       }
+
+
+        
+      
+      add_popularity = {
+				ideology = guli
+				popularity = 0.1
+			}
+      add_stability = -0.1
+      country_event = {id = hcy.3 days = 5 }
+
+      }
+
+        
+      
+      
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HCY_jz_3
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 2
+      x = 6
+      y = 8
+
+       prerequisite = {
+          focus = HCY_jz_2_3
+       }
+
+
+       relative_position_id = HCY_jz_2
+
+      available ={
+      
+      
+      }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        conservativedecrease = yes
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HCY_jz_4
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 2
+      x = -6
+      y = 8
+
+       prerequisite = {
+          focus = HCY_jz_2_3
+       }
+
+
+       relative_position_id = HCY_jz_2
+
+      available ={
+      
+      
+      }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        conservativedecrease = yes
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+}
+  

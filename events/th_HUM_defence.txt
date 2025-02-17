@@ -1,0 +1,3172 @@
+﻿add_namespace = hum
+
+country_event = { #内战测试前
+	id = hum.1
+	title = hum.1.t
+	desc = hum.1.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = hum.1.1
+		
+		ai_chance = {
+			base = 95
+		}
+		683 = {
+      add_core_of = ZBT
+    
+    }
+		330 = {
+		add_core_of = ZBT
+		}
+		227 = {
+		add_core_of = ZBT
+		}
+		329 = {
+		add_core_of = ZBT
+		}
+		203 = {
+		add_core_of = ZBT
+		}
+		241 = {
+		add_core_of = ZBT
+		}
+		258 = {
+		add_core_of = HU5
+		}
+		240 = {
+		add_core_of = HU5
+		}
+		242 = {
+		add_core_of = HU5
+		}
+		260 = {
+		add_core_of = HU5
+		}
+		253 = {
+		add_core_of = HU5
+		}
+		432 = {
+		add_core_of = HU5
+		}
+		268 = {
+		add_core_of = HU5
+		}
+		347 = {
+		add_core_of = HU5
+		}
+		243 = {
+		add_core_of = HU5
+		}
+		259 = {
+		add_core_of = HU5
+		}
+		271 = {
+		add_core_of = HU5
+		}
+		284 = {
+		add_core_of = HU5
+		}
+		289 = {
+		add_core_of = HU5
+		}
+		510 = {
+		add_core_of = HU5
+		}
+		348 = {
+		add_core_of = HU5
+		}
+		259 = {
+		add_core_of = HU5
+		}
+		267 = {
+		add_core_of = HU5
+		}
+	}
+
+	
+}
+country_event = { #内战测试后
+	id = hum.2
+	title = hum.2.t
+	desc = hum.2.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = hum.2.1
+		
+		ai_chance = {
+			base = 95
+		}
+		every_owned_state = {
+					limit = {
+						is_core_of = ZBT
+					}
+					ZBT = {
+						transfer_state = PREV
+					}
+					remove_core_of = ROOT
+				}
+				every_owned_state = {
+					limit = {
+						is_core_of = HU5
+					}
+					HU5 = {
+						transfer_state = PREV
+					}
+					remove_core_of = ROOT
+				}
+				HUM = {
+					delete_unit_template_and_units = { 
+						division_template = "扫荡编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "精锐步兵编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "通用步兵编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "人类冲锋部队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "征集僧侣部队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "惩戒部队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "精锐巫女部队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "实验型坦克编制"
+						disband = no 
+					}
+					country_value_calculator_and_manpower_gainer = yes
+					declare_war_on = {
+				    target = ZBT
+				    type = civil_war
+			}
+			       declare_war_on = {
+				   target = HU5
+				   type = civil_war
+			}
+			hidden_effect = {
+			load_oob = "HUM_neizhan"
+			}
+								
+				}
+				ZBT = {
+					delete_unit_template_and_units = { 
+						division_template = "扫荡编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "精锐步兵编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "通用步兵编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "人类冲锋部队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "征集僧侣部队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "惩戒部队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "精锐巫女部队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "实验型坦克编制"
+						disband = no 
+					}
+				}
+				HU5 = {
+					delete_unit_template_and_units = { 
+						division_template = "扫荡编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "精锐步兵编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "通用步兵编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "人类冲锋部队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "征集僧侣部队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "惩戒部队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "精锐巫女部队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "实验型坦克编制"
+						disband = no 
+					}
+					outlook_to_pingheng = yes
+					hidden_effect = {
+			load_oob = "HU5_146"
+			}
+				}
+				ZBT = {
+			declare_war_on = {
+				target = HU5
+				type = civil_war
+			}
+			hidden_effect = {
+			load_oob = "ZBT_146"
+			}
+		}
+			HUM = {
+                end_puppet = TKM
+            }
+            HUM = {
+                end_puppet = NMS
+            }
+            HUM = {
+                end_puppet = MAM
+            }
+            HUM = {
+                end_puppet = YKR
+            }
+            add_popularity = {
+				ideology = neworder
+				popularity = -0.15
+			}
+			add_popularity = {
+				ideology = qinwai
+				popularity = -0.3
+			}
+			add_popularity = {
+				ideology = fandong
+				popularity = 0.15
+			}
+			HUM_kosuzu = {
+					set_nationality = ZBT
+				}
+				HUM_kosuzu_leader = {
+					set_nationality = ZBT
+				}
+				HUM_keine = {
+					set_nationality = HU5
+				}
+				HUM_keine_leader = {
+					set_nationality = HU5
+				}
+				SBK_sek_leader = {
+					set_nationality = HU5
+				}
+				HU5 = {
+				country_event = { id = hum.3 day = 1 }  
+
+				}
+
+
+
+
+
+
+	}
+
+	
+}
+country_event = { #改革派换领导人
+	id = hum.3
+	title = hum.3.t
+	desc = hum.3.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = hum.3.1
+		
+		ai_chance = {
+			base = 95
+		}
+		retire_character = village_leader
+      	HUM_keine_leader = {
+			add_country_leader_role = {
+				promote_leader = yes
+				country_leader = {
+					ideology = qinwai_type
+					ideology = guli_type
+					ideology = neworder_type
+					ideology = oldorder_type
+					ideology = oldgenso_type
+
+				}
+			}
+		}
+		SBK_sek_leader = {
+			add_country_leader_role = {
+				promote_leader = yes
+				country_leader = {
+					ideology = fandong_type
+					
+
+				}
+			}
+		}
+		outlook_to_weiwu = yes
+		
+			}
+
+	
+}
+country_event = { #nms内战测试上
+	id = hum.4
+	title = hum.4.t
+	desc = hum.4.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = hum.4.1
+		
+		ai_chance = {
+			base = 95
+		}
+		retire_character = village_leader
+      238 = {
+		add_core_of = MNM
+		}
+		245 = {
+		add_core_of = MNM
+		}
+		195 = {
+		add_core_of = MNM
+		}
+		327 = {
+		add_core_of = MNM
+		}
+		328 = {
+		add_core_of = NGJ
+		}
+		642 = {
+		add_core_of = KYK
+		}
+		199 = {
+		add_core_of = GTW
+		}
+		434 = {
+		add_core_of = GTW
+		}
+		423 = {
+		add_core_of = GTW
+		}
+		country_event = { id = hum.5 hours = 120 }
+
+
+
+		
+		
+			}
+
+	
+}
+country_event = { #nms内战测试下
+	id = hum.5
+	title = hum.5.t
+	desc = hum.5.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = hum.5.1
+		
+		ai_chance = {
+			base = 95
+		}
+		every_owned_state = {
+					limit = {
+						is_core_of = GTW
+					}
+					GTW = {
+						transfer_state = PREV
+					}
+					remove_core_of = ROOT
+				}
+				every_owned_state = {
+					limit = {
+						is_core_of = NGJ
+					}
+					NGJ = {
+						transfer_state = PREV
+					}
+					remove_core_of = ROOT
+				}
+				every_owned_state = {
+					limit = {
+						is_core_of = KYK
+					}
+					KYK = {
+						transfer_state = PREV
+					}
+					remove_core_of = ROOT
+				}
+				every_owned_state = {
+					limit = {
+						is_core_of = MNM
+					}
+					MNM = {
+						transfer_state = PREV
+					}
+					remove_core_of = ROOT
+				}
+				every_owned_state = {
+					limit = {
+						is_core_of = NUE
+					}
+					NUE = {
+						transfer_state = PREV
+					}
+					remove_core_of = ROOT
+				}
+				NMS = {
+					delete_unit_template_and_units = { 
+						division_template = "扫荡编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "妖怪突击掠夺队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "圣辇船陆战队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "东村落驻守编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "大妖怪编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "大妖怪仆从编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "命莲寺护卫队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "佛教僧侣编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "实验圣佛光炮小队"
+						disband = no 
+					}
+					declare_war_on = {
+				    target = KYK
+				    type = civil_war
+			}
+			       declare_war_on = {
+				   target = NUE
+				   type = civil_war
+			}
+			declare_war_on = {
+				    target = GTW
+				    type = civil_war
+			}
+			       declare_war_on = {
+				   target = MNM
+				   type = civil_war
+			}
+			declare_war_on = {
+				   target = NGJ
+				   type = civil_war
+			}
+
+				}
+			NGJ = {
+			declare_war_on = {
+				    target = KYK
+				    type = civil_war
+			}
+			       declare_war_on = {
+				   target = NUE
+				   type = civil_war
+			}
+			declare_war_on = {
+				    target = GTW
+				    type = civil_war
+			}
+			       declare_war_on = {
+				   target = MNM
+				   type = civil_war
+			}
+			inherit_technology = NMS
+		}
+		    MNM = {
+		    declare_war_on = {
+				    target = KYK
+				    type = civil_war
+			}
+			       declare_war_on = {
+				   target = NUE
+				   type = civil_war
+			}
+			declare_war_on = {
+				    target = GTW
+				    type = civil_war
+			}
+			set_technology = {
+				spell_card1 = 1
+        spear1 = 1
+        gun1 = 1
+        linglicunchu = 1
+        linglizhufu = 1
+        linglidanyao = 1
+        spell_card2 = 1
+        spear2 = 1
+        lingliliushuixian = 1
+        spell_card3 = 1
+        spear3 = 1
+            
+        #辅助
+        zhiyuanzhuangbei = 1
+        zhihuixiaodui146 = 1
+
+        #专用辅助
+        lingliganying147 = 1
+
+        #专用基础
+
+        #专用进阶
+
+        #混合系
+        ma_shield1 = 1
+
+        #陆军学说
+        zhanchangzhihui140 = 1
+        zuzhihuazhanzheng142 = 1
+        zhanchangzhihui145 = 1
+        jingyingxunlian = 1
+            
+        #工程学 
+        jichushuxue = 1
+        shuxuegongju = 1
+        lingben = 1
+        tongxunlilun = 1
+        jiemi137 = 1
+
+        #专用工程学
+
+        #工业
+        production_theory = 1
+        org_production = 1
+            
+        #专用工业
+        linglishengchan130 = 1
+        linglishengchan140 = 1
+
+        #种族
+        caogenchuantong1 = 1
+        caogenchuantong2 = 1
+        qinlvetianxing1 = 1
+        qinlvetianxing2 = 1
+			}
+		}
+		    GTW = {
+		    declare_war_on = {
+				    target = KYK
+				    type = civil_war
+			}
+			       declare_war_on = {
+				   target = NUE
+				   type = civil_war
+			}
+			inherit_technology = NMS
+		}
+		    NUE = {
+		    declare_war_on = {
+				    target = KYK
+				    type = civil_war
+			}
+			set_technology = {
+				#通用武器线
+        spell_card1 = 1
+        spear1 = 1
+        gun1 = 1
+        linglicunchu = 1
+        linglizhufu = 1
+        linglidanyao = 1
+        spell_card2 = 1
+        spear2 = 1
+        lingliliushuixian = 1
+        spell_card3 = 1
+        spear3 = 1
+            
+        #辅助
+        zhiyuanzhuangbei = 1
+        zhihuixiaodui146 = 1
+
+        #专用辅助
+        lingliganying147 = 1
+
+        #专用基础
+
+        #专用进阶
+
+        #混合系
+        ma_shield1 = 1
+
+        #陆军学说
+        zhanchangzhihui140 = 1
+        zuzhihuazhanzheng142 = 1
+        zhanchangzhihui145 = 1
+        jingyingxunlian = 1
+            
+        #工程学 
+        jichushuxue = 1
+        shuxuegongju = 1
+        lingben = 1
+        tongxunlilun = 1
+        jiemi137 = 1
+
+        #专用工程学
+
+        #工业
+        production_theory = 1
+        org_production = 1
+            
+        #专用工业
+        linglishengchan130 = 1
+        linglishengchan140 = 1
+
+        #种族
+        caogenchuantong1 = 1
+        caogenchuantong2 = 1
+        qinlvetianxing1 = 1
+        qinlvetianxing2 = 1
+            
+			}
+		}
+		KYK = {
+			inherit_technology = NMS
+		}
+		remove_ideas = NMS_guang
+		NMS = {
+				NMS_guang = {
+					set_nationality = GTW
+				}
+				NMS_guang_leader = {
+					set_nationality = GTW
+				}
+				NMS_nue = {
+					set_nationality = NUE
+				}
+				NMS_murasa = {
+					set_nationality = MNM
+				}
+				
+			}
+			GTW = {
+				country_event = { id = hum.6 day = 1 }  
+				}
+			GTW = {
+				delete_unit_template_and_units = { 
+						division_template = "扫荡编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "妖怪突击掠夺队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "圣辇船陆战队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "东村落驻守编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "大妖怪编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "大妖怪仆从编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "命莲寺护卫队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "佛教僧侣编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "实验圣佛光炮小队"
+						disband = no 
+					}
+				hidden_effect = {
+			load_oob = "GTW_1"
+			}
+			}
+			KYK = {
+				delete_unit_template_and_units = { 
+						division_template = "扫荡编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "妖怪突击掠夺队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "圣辇船陆战队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "东村落驻守编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "大妖怪编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "大妖怪仆从编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "命莲寺护卫队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "佛教僧侣编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "实验圣佛光炮小队"
+						disband = no 
+					}
+			}
+			NUE = {
+				delete_unit_template_and_units = { 
+						division_template = "扫荡编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "妖怪突击掠夺队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "圣辇船陆战队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "东村落驻守编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "大妖怪编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "大妖怪仆从编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "命莲寺护卫队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "佛教僧侣编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "实验圣佛光炮小队"
+						disband = no 
+					}
+			}
+			NGJ = {
+				delete_unit_template_and_units = { 
+						division_template = "扫荡编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "妖怪突击掠夺队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "圣辇船陆战队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "东村落驻守编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "大妖怪编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "大妖怪仆从编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "命莲寺护卫队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "佛教僧侣编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "实验圣佛光炮小队"
+						disband = no 
+					}
+					hidden_effect = {
+			load_oob = "NGJ_1"
+			}
+			}
+			MNM = {
+				delete_unit_template_and_units = { 
+						division_template = "扫荡编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "妖怪突击掠夺队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "圣辇船陆战队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "东村落驻守编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "大妖怪编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "大妖怪仆从编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "命莲寺护卫队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "佛教僧侣编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "实验圣佛光炮小队"
+						disband = no 
+					}
+			}
+			NMS = {
+				add_ideas = { type2_manpowerlv3 }
+			}
+
+
+      
+
+
+
+		
+		
+			}
+
+	
+}
+country_event = { #广田文变领导人
+	id = hum.6
+	title = hum.6.t
+	desc = hum.6.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = hum.6.1
+		
+		ai_chance = {
+			base = 95
+		}
+		retire_character = village_leader
+      	NMS_guang_leader = {
+			add_country_leader_role = {
+				promote_leader = yes
+				country_leader = {
+					ideology = qinwai_type
+					ideology = guli_type
+					ideology = neworder_type
+					ideology = oldorder_type
+					ideology = oldgenso_type
+
+				}
+			}
+		}
+
+		
+		
+			}
+
+	
+}
+country_event = { #开会前
+	id = hum.7
+	title = hum.7.t
+	desc = hum.7.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = hum.7.1
+		
+		ai_chance = {
+			base = 95
+		}
+
+			
+			 
+			hidden_effect = {
+			country_event = { id = hum.8 hours = 8 }
+			}
+			custom_effect_tooltip = hum_jixukaihui
+		}
+
+	
+}
+country_event = { #开会后
+	id = hum.8
+	title = hum.8.t
+	desc = hum.8.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			HUM = { complete_national_focus = HUM_huiyishangdehunluan }
+
+		}
+	}
+
+	option = {
+		name = hum.8.1
+		
+		ai_chance = {
+			base = 95
+		}
+		
+		hidden_effect = {
+			add_country_leader_trait = HUM_jiangsizhiren_trait
+			load_focus_tree = HUM_focus_2
+			
+			
+	
+			}
+
+		custom_effect_tooltip = hum_binsi
+
+			}
+			
+
+	
+}
+country_event = { #考虑现状
+	id = hum.9
+	title = hum.9.t
+	desc = hum.9.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = hum.9.1
+		
+		ai_chance = {
+			base = 95
+		}
+		
+		
+
+			}
+			
+
+	
+}
+country_event = { #重整旗鼓
+	id = hum.10
+	title = hum.10.t
+	desc = hum.10.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = hum.11.1
+		
+		ai_chance = {
+			base = 95
+		}
+		
+		
+
+			}
+			
+
+	
+}
+country_event = { #着手种族问题
+	id = hum.11
+	title = hum.11.t
+	desc = hum.11.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = hum.11.1
+		
+		ai_chance = {
+			base = 95
+		}
+		
+		
+
+			}
+			
+
+	
+}
+country_event = { #劝解小铃
+	id = hum.12
+	title = hum.12.t
+	desc = hum.12.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = hum.12.1
+		
+		ai_chance = {
+			base = 95
+		}
+		
+		
+
+			}
+			
+
+	
+}
+country_event = { #取缔阵线
+	id = hum.13
+	title = hum.13.t
+	desc = hum.13.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = hum.13.1
+		
+		ai_chance = {
+			base = 95
+		}
+		
+		
+
+			}
+			
+
+	
+}
+country_event = { #考察东部
+	id = hum.14
+	title = hum.14.t
+	desc = hum.14.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = hum.14.1
+		
+		ai_chance = {
+			base = 95
+		}
+		
+		
+
+			}
+			
+
+	
+}
+country_event = { #结束紧急状态
+	id = hum.15
+	title = hum.15.t
+	desc = hum.15.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = hum.15.1
+		
+		ai_chance = {
+			base = 95
+		}
+		
+		
+
+			}
+			
+
+	
+}
+country_event = { #商议边界
+	id = hum.16
+	title = hum.16.t
+	desc = hum.16.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = hum.16.1
+		
+		ai_chance = {
+			base = 95
+		}
+		
+		
+
+			}
+			
+
+	
+}
+country_event = { #正式建立自治区
+	id = hum.17
+	title = hum.17.t
+	desc = hum.17.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = hum.17.1
+		
+		ai_chance = {
+			base = 95
+		}
+		
+		
+
+			}
+			
+
+	
+}
+country_event = { #看向西方
+	id = hum.18
+	title = hum.18.t
+	desc = hum.18.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = hum.18.1
+		
+		ai_chance = {
+			base = 95
+		}
+		
+		
+
+			}
+			
+
+	
+}
+country_event = { #阿求逝世
+	id = hum.19
+	title = hum.19.t
+	desc = hum.19.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = hum.19.1
+		
+		ai_chance = {
+			base = 95
+		}
+		683 = {
+      add_core_of = ZBT
+    
+    }
+		330 = {
+		add_core_of = ZBT
+		}
+		227 = {
+		add_core_of = ZBT
+		}
+		329 = {
+		add_core_of = ZBT
+		}
+		203 = {
+		add_core_of = ZBT
+		}
+		241 = {
+		add_core_of = ZBT
+		}
+		258 = {
+		add_core_of = HU5
+		}
+		240 = {
+		add_core_of = HU5
+		}
+		242 = {
+		add_core_of = HU5
+		}
+		260 = {
+		add_core_of = HU5
+		}
+		253 = {
+		add_core_of = HU5
+		}
+		432 = {
+		add_core_of = HU5
+		}
+		268 = {
+		add_core_of = HU5
+		}
+		347 = {
+		add_core_of = HU5
+		}
+		243 = {
+		add_core_of = HU5
+		}
+		259 = {
+		add_core_of = HU5
+		}
+		271 = {
+		add_core_of = HU5
+		}
+		284 = {
+		add_core_of = HU5
+		}
+		289 = {
+		add_core_of = HU5
+		}
+		510 = {
+		add_core_of = HU5
+		}
+		348 = {
+		add_core_of = HU5
+		}
+		259 = {
+		add_core_of = HU5
+		}
+		267 = {
+		add_core_of = HU5
+		}
+		hidden_effect = {
+			HUM_aky_leader = {
+			set_nationality = SKI
+			}
+			}
+		HUM_council_leader = {
+			add_country_leader_role = {
+				promote_leader = yes
+				country_leader = {
+					ideology = guli_guoduzhengfu
+				}
+			}
+		}
+		
+		
+		hidden_effect = {
+        SKI = {
+		country_event = {id = hum.21 hours = 120 }
+        }
+        custom_effect_tooltip = aqiuzhisi
+		
+		
+
+			}
+		}
+		add_stability = -0.8
+	}
+			
+
+	
+
+
+country_event = { #内战复权派
+	id = hum.20
+	title = hum.20.t
+	desc = hum.20.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = hum.20.1
+		
+		ai_chance = {
+			base = 95
+		}
+		every_owned_state = {
+					limit = {
+						is_core_of = ZBT
+					}
+					ZBT = {
+						transfer_state = PREV
+					}
+					
+				}
+				every_owned_state = {
+					limit = {
+						is_core_of = HU5
+					}
+					HU5 = {
+						transfer_state = PREV
+					}
+					
+				}
+				HUM = {
+					delete_unit_template_and_units = { 
+						division_template = "扫荡编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "精锐步兵编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "通用步兵编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "人类冲锋部队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "征集僧侣部队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "惩戒部队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "精锐巫女部队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "实验型坦克编制"
+						disband = no 
+					}
+					country_value_calculator_and_manpower_gainer = yes
+					declare_war_on = {
+				    target = ZBT
+				    type =civil_war
+			}
+			       declare_war_on = {
+				   target = HU5
+				   type = civil_war
+			}
+			hidden_effect = {
+			load_oob = "HUM_neizhan"
+			load_focus_tree = HUM_focus_3
+			}
+								
+				}
+				ZBT = {
+					delete_unit_template_and_units = { 
+						division_template = "扫荡编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "精锐步兵编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "通用步兵编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "人类冲锋部队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "征集僧侣部队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "惩戒部队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "精锐巫女部队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "实验型坦克编制"
+						disband = no 
+					}
+				}
+				HU5 = {
+					delete_unit_template_and_units = { 
+						division_template = "扫荡编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "精锐步兵编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "通用步兵编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "人类冲锋部队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "征集僧侣部队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "惩戒部队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "精锐巫女部队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "实验型坦克编制"
+						disband = no 
+					}
+					
+					hidden_effect = {
+			load_oob = "HU5_146"
+			}
+				}
+				ZBT = {
+			declare_war_on = {
+				target = HU5
+				type = civil_war
+			}
+			hidden_effect = {
+			load_oob = "ZBT_146"
+			}
+		}
+			HUM = {
+                end_puppet = TKM
+            }
+            HUM = {
+                end_puppet = NMS
+            }
+            HUM = {
+                end_puppet = MAM
+            }
+            HUM = {
+                end_puppet = YKR
+            }
+            add_popularity = {
+				ideology = neworder
+				popularity = -0.15
+			}
+			add_popularity = {
+				ideology = qinwai
+				popularity = -0.3
+			}
+			add_popularity = {
+				ideology = fandong
+				popularity = 0.15
+			}
+			HUM_kosuzu = {
+					set_nationality = HU5
+				}
+				HUM_kosuzu_leader = {
+					set_nationality = ZBT
+				}
+				HUM_keine = {
+					set_nationality = HU5
+				}
+				HUM_keine_leader = {
+					set_nationality = HU5
+				}
+				SBK_sek_leader = {
+					set_nationality = HU5
+				}
+				HU5 = {
+				country_event = { id = hum.3 day = 1 }  
+
+				}
+				230 = {
+		add_core_of = ZBT
+		add_core_of = HU5
+		}
+		649 = {
+		add_core_of = ZBT
+		add_core_of = HU5
+		}
+		249 = {
+		add_core_of = ZBT
+		add_core_of = HU5
+		}
+		539 = {
+		add_core_of = ZBT
+		add_core_of = HU5
+		}
+		648 = {
+		add_core_of = ZBT
+		add_core_of = HU5
+		}
+		270 = {
+		add_core_of = ZBT
+		add_core_of = HU5
+		}
+		548 = {
+		add_core_of = ZBT
+		add_core_of = HU5
+		}
+		556 = {
+		add_core_of = ZBT
+		add_core_of = HU5
+		}
+		232 = {
+		add_core_of = ZBT
+		add_core_of = HU5
+		}
+		460 = {
+		add_core_of = ZBT
+		add_core_of = HU5
+		}
+		537 = {
+		add_core_of = ZBT
+		add_core_of = HU5
+		}
+		276 = {
+		add_core_of = ZBT
+		add_core_of = HU5
+		}
+		252 = {
+		add_core_of = ZBT
+		add_core_of = HU5
+		}
+		545 = {
+		add_core_of = ZBT
+		add_core_of = HU5
+		}
+		246 = {
+		add_core_of = ZBT
+		add_core_of = HU5
+		}
+		454 = {
+		add_core_of = ZBT
+		add_core_of = HU5
+		}
+		266 = {
+		add_core_of = ZBT
+		add_core_of = HU5
+		}
+		546 = {
+		add_core_of = ZBT
+		add_core_of = HU5
+		}
+		250 = {
+		add_core_of = ZBT
+		add_core_of = HU5
+		}
+		ZBT = {
+			change_tag_from = ROOT
+		}
+		ZBT = {
+		add_equipment_to_stockpile = {
+          type = gun147
+          amount = 5000
+        }
+		add_equipment_to_stockpile = {
+          type = mortar143
+          amount = 400
+        }
+		}
+
+		HUM = {
+			country_lock_all_division_template = no
+			remove_ideas = { HUM_caijunhouyizheng }
+		}
+		TKM = {
+		#country_event = { id = hum.23 day = 120 }
+		remove_ideas = { TKM_renleidegongyequ_idea  }
+		add_ideas = { close_border }
+		add_stability = -0.5
+		}
+		
+		MAM = {
+		country_event = { id = hum.26 day = 360 }
+		remove_ideas = { HUM_fuyonggongyezhengshou  }
+		add_ideas = { close_border }
+		add_stability = -0.5
+		}
+		NMS = {
+		#country_event = { id = hum.4 hours = 120 }
+		remove_ideas = { HUM_fuyonggongyezhengshou  }
+		add_ideas = { close_border }
+		add_stability = -0.5
+		}
+		ZLJ = {
+		country_event = { id = hum.28 hours = 120 }
+		country_event = { id = hum.31 day = 1 }
+		}
+		284 = {
+			add_core_of = ZLJ
+		}
+		510 = {
+			add_core_of = ZLJ
+		}
+		289 = {
+			add_core_of = ZLJ
+		}
+		ZLJ = {
+        transfer_state = 284
+        transfer_state = 510
+        transfer_state = 289
+		inherit_technology = HUM
+      }
+	  
+	  every_country = {
+			country_event = { id = DBG.2 day = 1 }  
+		}
+		ZBT = {
+		country_event = { id = DBG.2 day = 1 }  
+	  }
+	  ZLJ = {
+		country_event = { id = DBG.2 day = 1 }  
+		
+	  }
+	  HU5 = {
+		country_event = { id = DBG.2 day = 1 }  
+	  }
+	  HUM = {
+		delete_unit_template_and_units = { 
+						division_template = "竹林边防部队"
+						disband = no 
+					}
+		delete_unit_template_and_units = { 
+						division_template = "竹林特防部队"
+						disband = no 
+					}
+		delete_unit_template_and_units = { 
+						division_template = "骑兵分队"
+						disband = no 
+					}
+	  }
+	  ZBT = {
+		add_timed_idea = {days = 240 idea = ZBT_xiangshoudujinjun_idea}
+		add_ideas = {
+			HUM_tongyizhanzheng
+		}
+		add_timed_idea = {days = 30 idea = HUM_fangdunkeng_0}
+		set_country_flag = hum_neizhan_flag
+	  }
+	  HUM = {
+		add_ideas = {
+			HUM_tongyizhanzheng
+		}
+		add_timed_idea = {days = 30 idea = HUM_fangdunkeng_0}
+		set_country_flag = hum_neizhan_flag
+	  }
+	  HU5 = {
+		add_ideas = {
+			HUM_tongyizhanzheng
+		}
+		add_timed_idea = {days = 30 idea = HUM_fangdunkeng_0}
+		set_country_flag = hum_neizhan_flag
+	  }
+
+
+
+
+
+
+
+
+	}
+
+	
+}
+country_event = { #阿求逝世后续
+	id = hum.21
+	title = hum.21.t
+	desc = hum.21.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = hum.21.1
+		
+		ai_chance = {
+			base = 95
+		}
+		
+		HUM = {
+		HUM_aky = {
+					set_nationality = SKI
+				}
+			}
+		hidden_effect = {
+			ZBT = {
+				outlook_to_weiwu = yes
+			}
+			HU5 = {
+				outlook_to_weiwu = yes
+			}
+		}
+		}
+			
+
+	
+
+
+}
+country_event = { #饥荒
+	id = hum.22
+	title = hum.22.t
+	desc = hum.22.d
+
+	fire_only_once = yes
+	trigger = {
+		date > 146.1.18
+		tag = HUM
+	}
+
+
+	option = {
+		name = hum.22.1
+		
+		ai_chance = {
+			base = 95
+		}
+		add_timed_idea = {days = 240 idea = HUM_liangshiqianshou}
+	}
+		
+			
+
+	
+
+
+}
+country_event = { #付丧神内战测试上
+	id = hum.23
+	title = hum.23.t
+	desc = hum.23.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		
+	}
+
+
+	option = {
+		name = hum.23.1
+		
+		ai_chance = {
+			base = 95
+		}
+		165 = {
+		add_core_of = GMJ
+		}
+		316 = {
+		add_core_of = GMJ
+		}
+		177 = {
+		add_core_of = GMJ
+		}
+		173 = {
+		add_core_of = GMJ
+		}
+		234 = {
+		add_core_of = NLG
+		}
+		237 = {
+		add_core_of = NLG
+		}
+		212 = {
+		add_core_of = XGM
+		}
+		197 = {
+		add_core_of = XGM
+		}
+		187 = {
+		add_core_of = XGM
+		}
+		204 = {
+		add_core_of = XGM
+		}
+		country_event = { id = hum.24 hours = 120 }
+	}
+		
+			
+
+	
+
+
+}
+country_event = { #付丧神内战测试下
+	id = hum.24
+	title = hum.24.t
+	desc = hum.24.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		
+	}
+
+
+	option = {
+		name = hum.24.1
+		
+		ai_chance = {
+			base = 95
+		}
+		every_owned_state = {
+					limit = {
+						is_core_of = GMJ
+					}
+					GMJ = {
+						transfer_state = PREV
+					}
+					
+				}
+		every_owned_state = {
+					limit = {
+						is_core_of = NLG
+					}
+					NLG = {
+						transfer_state = PREV
+					}
+					
+				}
+		every_owned_state = {
+					limit = {
+						is_core_of = XGM
+					}
+					XGM = {
+						transfer_state = PREV
+					}
+					
+				}
+	    GMJ = {
+			country_event = { id = hum.25 day = 1 } 
+			inherit_technology = TKM
+			declare_war_on = {
+				    target = TKM
+				    type = civil_war
+			}
+			declare_war_on = {
+				    target = NLG
+				    type = civil_war
+			}
+			declare_war_on = {
+				    target = XGM
+				    type = civil_war
+			}
+		}
+		NLG = {
+			inherit_technology = TKM
+			declare_war_on = {
+				    target = TKM
+				    type = civil_war
+			}
+			declare_war_on = {
+				    target = XGM
+				    type = civil_war
+			}
+		}
+		XGM = {
+			inherit_technology = TKM
+			declare_war_on = {
+				    target = TKM
+				    type = civil_war
+			}
+		}
+		TKM_raiko = {
+					set_nationality = GMJ
+				}
+				TKM_raiko_leader = {
+					set_nationality = GMJ
+				}
+		204 = {
+			add_core_of = TKM
+		}
+		
+	}
+		
+			
+
+	
+
+
+}
+country_event = { #国民军换领导人
+	id = hum.25
+	title = hum.25.t
+	desc = hum.25.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+	trigger = {
+		
+	}
+
+
+	option = {
+		name = hum.25.1
+		
+		ai_chance = {
+			base = 95
+		}
+		every_owned_state = {
+					limit = {
+						is_core_of = GMJ
+					}
+					GMJ = {
+						transfer_state = PREV
+					}
+					
+				}
+	    
+		retire_character = zhanweide
+		TKM_raiko_leader = {
+			add_country_leader_role = {
+				promote_leader = yes
+				country_leader = {
+					ideology = qinwai_type
+					#ideology = guli_type
+					#ideology = neworder_type
+					#ideology = oldorder_type
+					#ideology = oldgenso_type
+
+				}
+			}
+			add_country_leader_role = {
+				promote_leader = yes
+				country_leader = {
+					#ideology = qinwai_type
+					ideology = guli_type
+					#ideology = neworder_type
+					#ideology = oldorder_type
+					#ideology = oldgenso_type
+
+				}
+			}
+			add_country_leader_role = {
+				promote_leader = yes
+				country_leader = {
+					#ideology = qinwai_type
+					#ideology = guli_type
+					ideology = neworder_type
+					#ideology = oldorder_type
+					#ideology = oldgenso_type
+
+				}
+			}
+			add_country_leader_role = {
+				promote_leader = yes
+				country_leader = {
+					#ideology = qinwai_type
+					#ideology = guli_type
+					#ideology = neworder_type
+					ideology = oldorder_type
+					#ideology = oldgenso_type
+
+				}
+			}
+			add_country_leader_role = {
+				promote_leader = yes
+				country_leader = {
+					#ideology = qinwai_type
+					#ideology = guli_type
+					#ideology = neworder_type
+					#ideology = oldorder_type
+					ideology = oldgenso_type
+
+				}
+			}
+			add_country_leader_role = {
+				promote_leader = yes
+				country_leader = {
+					#ideology = qinwai_type
+					#ideology = guli_type
+					#ideology = neworder_type
+					#ideology = oldorder_type
+					#ideology = oldgenso_type
+					ideology = fandong_type
+
+				}
+			}
+		}
+		GMJ = {
+		TKM_raiko_leader = {
+			add_country_leader_role = {
+				promote_leader = yes
+				country_leader = {
+					ideology = qinwai_type
+					ideology = guli_type
+					ideology = fandong_type
+					ideology = neworder_type
+					ideology = oldorder_type
+					ideology = oldgenso_type
+
+				}
+			}
+		}
+		}
+	}
+		
+			
+
+	
+
+
+}
+country_event = { #南殖民地内战测试上
+	id = hum.26
+	title = hum.26.t
+	desc = hum.26.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		
+	}
+
+
+	option = {
+		name = hum.26.1
+		
+		ai_chance = {
+			base = 95
+		}
+		263 = {
+		add_core_of = NMA
+		}
+		323 = {
+		add_core_of = NMA
+		}
+		277 = {
+		add_core_of = NMA
+		}
+		country_event = { id = hum.27 hours = 120 }
+	}
+		
+			
+
+	
+
+
+}
+country_event = { #南殖民地内战测试下
+	id = hum.27
+	title = hum.27.t
+	desc = hum.27.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		
+	}
+
+
+	option = {
+		name = hum.27.1
+		
+		ai_chance = {
+			base = 95
+		}
+		every_owned_state = {
+					limit = {
+						is_core_of = NMA
+					}
+					NMA = {
+						transfer_state = PREV
+					}
+					
+				}
+		NMA = {
+			declare_war_on = {
+				    target = MAM
+				    type = civil_war
+			}
+			inherit_technology = MAM
+			
+		}
+		
+	}
+		
+			
+
+	
+
+
+}
+country_event = { #竹林袭击
+	id = hum.28
+	title = hum.28.t
+	desc = hum.28.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		
+	}
+
+
+	option = {
+		name = hum.28.1
+		
+		ai_chance = {
+			base = 95
+		}
+		INB = {
+			declare_war_on = {
+				    target = ZLJ
+				    type = annex_everything
+			}
+			
+		}
+		
+	}
+		
+			
+
+	
+
+
+}
+country_event = { #HUM投降ZBT
+	id = hum.29
+	title = hum.29.t
+	desc = hum.29.d
+
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		HUM = {
+			not = {
+					has_country_flag = HUM_neizhantouxiang
+
+				}
+		}
+		or = {
+		and = {
+		tag = ZBT
+		246 = { is_controlled_by = ZBT }
+		246 = { is_owned_by = HUM }
+		}
+		and = {
+		tag = HU5
+		246 = { is_controlled_by = HU5 }
+		246 = { is_owned_by = HUM }
+		}
+		}
+		
+
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
+
+
+	option = {
+		name = hum.29.1
+		
+		ai_chance = {
+			base = 95
+		}
+		annex_country = { target = HUM transfer_troops = yes }
+		HUM = {
+			set_country_flag = HUM_neizhantouxiang
+		}
+		
+		
+	}
+		
+			
+
+	
+
+
+}
+country_event = { #HU5投降
+	id = hum.30
+	title = hum.30.t
+	desc = hum.30.d
+
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		HU5 = {
+			surrender_progress > 0.6
+		}
+		or = {
+		and = {
+		tag = ZBT
+		258 = { is_controlled_by = ZBT }
+		258 = { is_owned_by = HU5 }
+		}
+		and = {
+		tag = HUM
+		258 = { is_controlled_by = HUM }
+		258 = { is_owned_by = HU5 }
+		}
+		}
+		
+		
+
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
+
+
+	option = {
+		name = hum.30.1
+		
+		ai_chance = {
+			base = 95
+		}
+		annex_country = { target = HU5 transfer_troops = no }
+		HU5 = {
+			set_country_flag = HU5_neizhantouxiang
+		}
+		add_ideas = { HUM_tongyikuangre }
+		if = {
+                limit = {
+                 not = {
+					tag = ZBT
+				 }
+                 }
+            ZBT = {
+				add_ideas = { ZBT_duidikongju_idea }
+			}
+        }
+		
+	}
+		
+			
+
+	
+
+
+}
+country_event = { #加载兵1
+	id = hum.31
+	title = hum.31.t
+	desc = hum.31.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+	trigger = {
+		
+		
+
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
+
+
+	option = {
+		name = hum.31.1
+		
+		ai_chance = {
+			base = 95
+		}
+		load_oob = "ZLJ_146"
+      
+		
+		
+		
+	}
+		
+			
+
+	
+
+
+}
+country_event = { #防蹲坑机制——人里一次内战
+	id = hum.32
+	title = hum.32.t
+	desc = hum.32.d
+
+	fire_only_once = no
+	is_triggered_only = no
+	hidden = yes
+	trigger = {
+		or = {
+			tag = HUM 
+			tag = ZBT
+			tag = HU5
+		}
+		has_country_flag = hum_neizhan_flag
+		not = {
+			has_idea = HUM_fangdunkeng_0
+		}
+		
+		
+
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
+
+
+	option = {
+		name = hum.32.1
+		
+		ai_chance = {
+			base = 95
+		}
+		if = {
+                limit = {
+                 or = {
+					has_war_with = HUM
+					has_war_with = ZBT
+					has_war_with = HU5
+				 }
+                 }
+				 if = {
+                limit = {
+                 not = {
+					has_idea = HUM_fangdunkeng_1
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_2
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_3
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_4
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_5
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_6
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_7
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_8
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_9
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_10
+				 }
+                 }
+				add_ideas = { HUM_fangdunkeng_1 }
+        }
+		else_if = {
+                limit = {
+					has_idea = HUM_fangdunkeng_1
+                 not = {
+					has_idea = HUM_fangdunkeng_2
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_3
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_4
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_5
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_6
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_7
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_8
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_9
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_10
+				 }
+                 }
+				add_ideas = { HUM_fangdunkeng_2 }
+				remove_ideas =	HUM_fangdunkeng_1
+        }
+		else_if = {
+                limit = {
+				not = {
+					has_idea = HUM_fangdunkeng_1
+				 }
+					has_idea = HUM_fangdunkeng_2
+                 not = {
+					has_idea = HUM_fangdunkeng_3
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_4
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_5
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_6
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_7
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_8
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_9
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_10
+				 }
+                 }
+				add_ideas = { HUM_fangdunkeng_3 }
+				remove_ideas =	HUM_fangdunkeng_2
+        }
+		else_if = {
+                limit = {
+					not = {
+					has_idea = HUM_fangdunkeng_1
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_2
+				 }
+					has_idea = HUM_fangdunkeng_3
+                 not = {
+					has_idea = HUM_fangdunkeng_4
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_5
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_6
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_7
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_8
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_9
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_10
+				 }
+                 }
+				add_ideas = { HUM_fangdunkeng_4 }
+				remove_ideas =	HUM_fangdunkeng_3
+        }
+		else_if = {
+                limit = {
+					not = {
+					has_idea = HUM_fangdunkeng_1
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_2
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_3
+				 }
+					has_idea = HUM_fangdunkeng_4
+                 not = {
+					has_idea = HUM_fangdunkeng_5
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_6
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_7
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_8
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_9
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_10
+				 }
+
+                 }
+				add_ideas = { HUM_fangdunkeng_5 }
+				remove_ideas =	HUM_fangdunkeng_4
+        }
+		else_if = {
+                limit = {
+				not = {
+					has_idea = HUM_fangdunkeng_1
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_2
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_3
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_4
+				 }
+					has_idea = HUM_fangdunkeng_5
+                 not = {
+					has_idea = HUM_fangdunkeng_6
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_7
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_8
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_9
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_10
+				 }
+                 }
+				add_ideas = { HUM_fangdunkeng_6 }
+				remove_ideas =	HUM_fangdunkeng_5
+        }
+		else_if = {
+                limit = {
+				not = {
+					has_idea = HUM_fangdunkeng_1
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_2
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_3
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_4
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_5
+				 }
+					has_idea = HUM_fangdunkeng_6
+                 not = {
+					has_idea = HUM_fangdunkeng_7
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_8
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_9
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_10
+				 }
+                 }
+				add_ideas = { HUM_fangdunkeng_7}
+				remove_ideas =	HUM_fangdunkeng_6
+        }
+		else_if = {
+                limit = {
+				not = {
+					has_idea = HUM_fangdunkeng_1
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_2
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_3
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_4
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_5
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_6
+				 }
+					has_idea = HUM_fangdunkeng_7
+                 not = {
+					has_idea = HUM_fangdunkeng_8
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_9
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_10
+				 }
+                 }
+				add_ideas = { HUM_fangdunkeng_8 }
+				remove_ideas =	HUM_fangdunkeng_7
+        }
+		else_if = {
+                limit = {
+				not = {
+					has_idea = HUM_fangdunkeng_1
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_2
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_3
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_4
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_5
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_6
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_7
+				 }
+					has_idea = HUM_fangdunkeng_8
+                 not = {
+					has_idea = HUM_fangdunkeng_9
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_10
+				 }
+                 }
+				add_ideas = { HUM_fangdunkeng_9 }
+				remove_ideas =	HUM_fangdunkeng_8
+        }
+		else_if = {
+                limit = {
+				not = {
+					has_idea = HUM_fangdunkeng_1
+				 }
+				not = {
+					has_idea = HUM_fangdunkeng_2
+				 }
+				not = {
+					has_idea = HUM_fangdunkeng_3
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_4
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_5
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_6
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_7
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_8
+				 }
+					has_idea = HUM_fangdunkeng_9
+                 not = {
+					has_idea = {HUM_fangdunkeng_10}
+				 }
+                 }
+				add_ideas = { HUM_fangdunkeng_10 }
+				remove_ideas =	HUM_fangdunkeng_9
+        }
+		add_timed_idea = {days = 30 idea = HUM_fangdunkeng_0}
+        }
+		if = {
+                limit = {
+                 not = {
+					has_war = yes
+				 }
+                 }
+            remove_ideas =	HUM_fangdunkeng_1
+			remove_ideas =	HUM_fangdunkeng_2
+			remove_ideas =	HUM_fangdunkeng_3
+			remove_ideas =	HUM_fangdunkeng_4
+			remove_ideas =	HUM_fangdunkeng_5
+			remove_ideas =	HUM_fangdunkeng_6
+			remove_ideas =	HUM_fangdunkeng_7
+			remove_ideas =	HUM_fangdunkeng_8
+			remove_ideas =	HUM_fangdunkeng_9
+			remove_ideas =	HUM_fangdunkeng_10
+        }
+		if = {
+			limit = {
+				
+                 check_variable = { OL_view_type = 0}
+                 }
+				 outlook_to_weiwu = yes
+				 OL_d10_tt = yes
+				 OL_d10_tt = yes
+				 OL_d10_tt = yes
+				 OL_d10_tt = yes
+				 OL_d10_tt = yes
+		}
+      
+		
+		
+		
+	}
+		
+			
+
+	
+
+
+}
+country_event = { #内战中央派
+	id = hum.33
+	title = hum.33.t
+	desc = hum.33.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = hum.33.1
+		
+		ai_chance = {
+			base = 95
+		}
+		every_owned_state = {
+					limit = {
+						is_core_of = ZBT
+					}
+					ZBT = {
+						transfer_state = PREV
+					}
+					
+				}
+				every_owned_state = {
+					limit = {
+						is_core_of = HU5
+					}
+					HU5 = {
+						transfer_state = PREV
+					}
+					
+				}
+				HUM = {
+					delete_unit_template_and_units = { 
+						division_template = "扫荡编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "精锐步兵编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "通用步兵编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "人类冲锋部队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "征集僧侣部队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "惩戒部队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "精锐巫女部队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "实验型坦克编制"
+						disband = no 
+					}
+					country_value_calculator_and_manpower_gainer = yes
+					declare_war_on = {
+				    target = ZBT
+				    type =civil_war
+			}
+			       declare_war_on = {
+				   target = HU5
+				   type = civil_war
+			}
+			hidden_effect = {
+			load_oob = "HUM_neizhan"
+			load_focus_tree = HUM_focus_3
+			}
+								
+				}
+				ZBT = {
+					delete_unit_template_and_units = { 
+						division_template = "扫荡编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "精锐步兵编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "通用步兵编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "人类冲锋部队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "征集僧侣部队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "惩戒部队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "精锐巫女部队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "实验型坦克编制"
+						disband = no 
+					}
+				}
+				HU5 = {
+					delete_unit_template_and_units = { 
+						division_template = "扫荡编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "精锐步兵编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "通用步兵编制"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "人类冲锋部队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "征集僧侣部队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "惩戒部队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "精锐巫女部队"
+						disband = no 
+					}
+					delete_unit_template_and_units = { 
+						division_template = "实验型坦克编制"
+						disband = no 
+					}
+					
+					hidden_effect = {
+			load_oob = "HU5_146"
+			}
+				}
+				ZBT = {
+			declare_war_on = {
+				target = HU5
+				type = civil_war
+			}
+			hidden_effect = {
+			load_oob = "ZBT_146"
+			}
+		}
+			HUM = {
+                end_puppet = TKM
+            }
+            HUM = {
+                end_puppet = NMS
+            }
+            HUM = {
+                end_puppet = MAM
+            }
+            HUM = {
+                end_puppet = YKR
+            }
+            add_popularity = {
+				ideology = neworder
+				popularity = -0.15
+			}
+			add_popularity = {
+				ideology = qinwai
+				popularity = -0.3
+			}
+			add_popularity = {
+				ideology = fandong
+				popularity = 0.15
+			}
+			HUM_kosuzu = {
+					set_nationality = HU5
+				}
+				HUM_kosuzu_leader = {
+					set_nationality = ZBT
+				}
+				HUM_keine = {
+					set_nationality = HU5
+				}
+				HUM_keine_leader = {
+					set_nationality = HU5
+				}
+				SBK_sek_leader = {
+					set_nationality = HU5
+				}
+				HU5 = {
+				country_event = { id = hum.3 day = 1 }  
+
+				}
+				230 = {
+		add_core_of = ZBT
+		add_core_of = HU5
+		}
+		649 = {
+		add_core_of = ZBT
+		add_core_of = HU5
+		}
+		249 = {
+		add_core_of = ZBT
+		add_core_of = HU5
+		}
+		539 = {
+		add_core_of = ZBT
+		add_core_of = HU5
+		}
+		648 = {
+		add_core_of = ZBT
+		add_core_of = HU5
+		}
+		270 = {
+		add_core_of = ZBT
+		add_core_of = HU5
+		}
+		548 = {
+		add_core_of = ZBT
+		add_core_of = HU5
+		}
+		556 = {
+		add_core_of = ZBT
+		add_core_of = HU5
+		}
+		232 = {
+		add_core_of = ZBT
+		add_core_of = HU5
+		}
+		460 = {
+		add_core_of = ZBT
+		add_core_of = HU5
+		}
+		537 = {
+		add_core_of = ZBT
+		add_core_of = HU5
+		}
+		276 = {
+		add_core_of = ZBT
+		add_core_of = HU5
+		}
+		252 = {
+		add_core_of = ZBT
+		add_core_of = HU5
+		}
+		545 = {
+		add_core_of = ZBT
+		add_core_of = HU5
+		}
+		246 = {
+		add_core_of = ZBT
+		add_core_of = HU5
+		}
+		454 = {
+		add_core_of = ZBT
+		add_core_of = HU5
+		}
+		266 = {
+		add_core_of = ZBT
+		add_core_of = HU5
+		}
+		546 = {
+		add_core_of = ZBT
+		add_core_of = HU5
+		}
+		250 = {
+		add_core_of = ZBT
+		add_core_of = HU5
+		}
+		ZBT = {
+		add_equipment_to_stockpile = {
+          type = gun147
+          amount = 5000
+        }
+		add_equipment_to_stockpile = {
+          type = mortar143
+          amount = 400
+        }
+		}
+
+		HUM = {
+			country_lock_all_division_template = no
+			remove_ideas = { HUM_caijunhouyizheng }
+		}
+		TKM = {
+		#country_event = { id = hum.23 day = 120 }
+		remove_ideas = { TKM_renleidegongyequ_idea  }
+		add_ideas = { close_border }
+		add_stability = -0.5
+		}
+		
+		MAM = {
+		country_event = { id = hum.26 day = 360 }
+		remove_ideas = { HUM_fuyonggongyezhengshou  }
+		add_ideas = { close_border }
+		add_stability = -0.5
+		}
+		NMS = {
+		#country_event = { id = hum.4 hours = 120 }
+		remove_ideas = { HUM_fuyonggongyezhengshou  }
+		add_ideas = { close_border }
+		add_stability = -0.5
+		}
+		ZLJ = {
+		country_event = { id = hum.28 hours = 120 }
+		country_event = { id = hum.31 day = 1 }
+		}
+		284 = {
+			add_core_of = ZLJ
+		}
+		510 = {
+			add_core_of = ZLJ
+		}
+		289 = {
+			add_core_of = ZLJ
+		}
+		ZLJ = {
+        transfer_state = 284
+        transfer_state = 510
+        transfer_state = 289
+		inherit_technology = HUM
+      }
+	  
+	  every_country = {
+			country_event = { id = DBG.2 day = 1 }  
+		}
+		ZBT = {
+		country_event = { id = DBG.2 day = 1 }  
+	  }
+	  ZLJ = {
+		country_event = { id = DBG.2 day = 1 }  
+		
+	  }
+	  HU5 = {
+		country_event = { id = DBG.2 day = 1 }  
+	  }
+	  HUM = {
+		delete_unit_template_and_units = { 
+						division_template = "竹林边防部队"
+						disband = no 
+					}
+		delete_unit_template_and_units = { 
+						division_template = "竹林特防部队"
+						disband = no 
+					}
+		delete_unit_template_and_units = { 
+						division_template = "骑兵分队"
+						disband = no 
+					}
+	  }
+	  ZBT = {
+		add_timed_idea = {days = 240 idea = ZBT_xiangshoudujinjun_idea}
+		add_ideas = {
+			HUM_tongyizhanzheng
+		}
+		add_timed_idea = {days = 30 idea = HUM_fangdunkeng_0}
+		set_country_flag = hum_neizhan_flag
+	  }
+	  HUM = {
+		add_ideas = {
+			HUM_tongyizhanzheng
+		}
+		add_timed_idea = {days = 30 idea = HUM_fangdunkeng_0}
+		set_country_flag = hum_neizhan_flag
+	  }
+	  HU5 = {
+		add_ideas = {
+			HUM_tongyizhanzheng
+		}
+		add_timed_idea = {days = 30 idea = HUM_fangdunkeng_0}
+		set_country_flag = hum_neizhan_flag
+	  }
+
+
+
+
+
+
+
+
+	}
+
+	
+}

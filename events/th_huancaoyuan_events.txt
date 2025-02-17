@@ -1,0 +1,28 @@
+﻿add_namespace = hcyl
+##
+country_event = { #YZQ VS HGH
+	id = hcyl.1
+	title = hcyl.1.t
+	desc = hcyl.1.d
+	fire_only_once = yes
+	is_triggered_only = no
+	#trigger = {
+	#	date > 146.4.18
+	#	tag = HGH
+	#}
+
+	option = {
+		name = helnew.1.1
+		ai_chance = {
+			base = 100
+		}
+		HCY = {
+
+			leave_faction = yes
+			declare_war_on = {
+				type = annex_everything
+				target = DHC	
+			}
+		}
+	}
+}

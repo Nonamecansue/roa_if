@@ -1,0 +1,67 @@
+﻿division_template = {
+	name = "扫荡编制"
+	regiments = {
+		sc_light_infantry = { x = 0 y = 0 }
+		sc_light_infantry = { x = 0 y = 1 }
+		sc_light_infantry = { x = 0 y = 2 }
+		sc_light_infantry = { x = 0 y = 3 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "移民区保卫队"
+	regiments = {
+		sc_infantry = { x = 0 y = 0 }
+		sc_infantry = { x = 0 y = 1 }
+		sc_infantry = { x = 0 y = 2 }
+		sc_infantry = { x = 0 y = 3 }
+		sc_infantry = { x = 0 y = 4 }
+		sc_mortar_brigade = {x = 1 y = 0 }
+		sc_mortar_brigade = {x = 1 y = 1 }
+	
+	}
+	support = {
+		sp_zhihuidui = { x = 0 y = 0}
+	}
+}
+division_template = {
+	name = "民兵部队"
+	regiments = {
+		sc_infantry = { x = 0 y = 0 }
+		sc_infantry = { x = 0 y = 1 }
+		sc_infantry = { x = 0 y = 2 }
+	}
+	support = {
+	}
+}
+units = {
+	division = {
+		name = "移民区保卫队"
+		location = 6531
+		division_template = "移民区保卫队"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "移民区保卫队"
+		location = 6531
+		division_template = "移民区保卫队"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "移民区保卫队"
+		location = 6525
+		division_template = "移民区保卫队"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "移民区保卫队"
+		location = 6525
+		division_template = "移民区保卫队"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+}

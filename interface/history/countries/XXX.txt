@@ -1,0 +1,403 @@
+﻿capital = 129
+138.1.1={
+    oob = "TEST"
+    # set_research_slots = 0
+    add_ideas = cannot_build_idea
+    add_ideas = hawk0
+    add_ideas = open0
+    add_ideas = Fairy
+    set_politics = {
+        ruling_party = guli
+        election_frequency = 48
+        elections_allowed = no
+    }
+    set_popularities = {
+        qinwai = 0
+        guli = 100
+        neworder = 0
+        oldorder = 0
+        fandong = 0
+    }
+    set_major = no
+
+    every_country = {
+        limit = {
+            random_leader = yes
+        }
+        retire_country_leader = yes 
+    }
+    startup_manu = yes
+    startup_weapon_pro = yes
+    every_country = {
+        ma_weapons = yes
+        sc_weapons = yes
+        ma_weapons_art = yes
+        sc_weapons_art = yes
+    }
+
+    # for display
+    every_country = { #####就是这个导致error
+        custom_situation_initialize = yes
+    }
+    # techtree only can be changed for one time 以及ai无科技国家
+    every_country = {
+        set_technology = {
+            tech_changed = 1 #0在onaction里
+        }
+    }
+    
+
+    #focus
+    every_country = {
+        limit = {
+            date > 145.12.31
+            not = { tag = XXX }
+        }
+        complete_national_focus = ty_early_main 
+    }
+
+    ST_race_setting = yes
+
+    #idea
+    every_country = {
+        limit = {
+            has_start_date > 145.12.31
+            or = {
+                tag = HUM
+                tag = MRS
+                tag = HKR
+                tag = AKI
+                tag = HU1
+                tag = HU2
+                tag = HU3
+                tag = OTG
+                tag = KAP
+
+            }
+            
+        }
+        add_ideas = gensokyo_primary_idea
+    }
+
+    every_country = {
+        limit = {
+            capital_scope = {
+                not = { is_on_continent = Gensokyo }
+            }
+        }
+        add_ideas = not_gensoukyo_idea
+    }
+
+    every_state = {
+        limit = {
+            not = {
+                is_owned_by = XXX
+                is_owned_by = ZON
+            }
+        }
+        add_building_construction = {
+            type = air_base
+            level = 1
+            instant_build = yes
+        }
+    }
+
+    #others#
+    set_research_slots = 0
+
+    #jiaqiang
+    KAS = {
+        add_ideas = great_presige_idea
+    }
+    OKI = {
+        add_ideas = great_presige_idea
+    }
+    YUK = {
+        add_ideas = great_presige_idea
+    }
+    EET = {
+        add_ideas = great_presige_idea
+    }
+    #MOK = {
+     #   add_ideas = great_presige_idea
+    #}
+    YUG = {
+        add_ideas = great_presige_idea
+    }
+    HCT = {
+        add_ideas = great_presige_idea
+    }
+    SKI = {
+        add_ideas = great_presige_idea
+    }
+    KEK = {
+        add_ideas = great_presige_idea
+    }
+
+    ##### Pact of Geyser
+    SCA = {
+        add_ideas = SAT_Pact_of_Geyser_Gensokyo
+    }
+    SEJ = {
+        add_ideas = SAT_Pact_of_Geyser_Gensokyo
+    }
+    MRY = {
+        add_ideas = SAT_Pact_of_Geyser_Gensokyo
+    }
+    MRS = {
+        add_ideas = SAT_Pact_of_Geyser_Gensokyo
+    }
+    YMM = {
+        add_ideas = SAT_Pact_of_Geyser
+    }
+    PRS = {
+        add_ideas = SAT_Pact_of_Geyser
+    }
+    UNL = {
+        add_ideas = SAT_Pact_of_Geyser
+    }
+    YUG = {
+        add_ideas = SAT_Pact_of_Geyser
+    }
+    JZS = {
+        add_ideas = SAT_Pact_of_Geyser
+    }
+    JGZ = {
+        add_ideas = SAT_Pact_of_Geyser
+    }
+    WTL = {
+        add_ideas = SAT_Pact_of_Geyser
+    }
+    ##### 
+    
+    if = {
+        limit = {
+            has_start_date < 143.7.2
+            has_start_date > 143.6.30
+        }
+        set_variable = { global.sce143_zhuzha = 39}
+        set_variable = { global.sce143_fusangshenzhongcheng = 100}
+        set_global_flag = scenario143
+        HUM = {
+            EXHC_exhaustion_add25 = yes
+            set_cosmetic_tag = HUM_143
+        }
+        PRI = {
+            set_cosmetic_tag = PRI_SCA
+            #add_ideas = juexin_idea
+        }
+        GRS = {
+            set_cosmetic_tag = GRS_SCA
+            #add_ideas = juexin_idea
+        }
+        TKM = {
+            set_cosmetic_tag = TKM2
+            recruit_character = TKM_council_leader
+            TKM_council_leader = {
+                add_country_leader_role = {
+                    promote_leader = yes
+                    country_leader = {
+                        ideology = guli_type
+                    }
+                }
+            }
+            set_party_name = { 
+                ideology = guli 
+                long_name = TKM_143_guli 
+                name = TKM_143_guli 
+            }
+            add_ideas = shuxirenli_idea
+            set_capital = { state = 165 }
+        }
+        KAP = {
+           
+        }
+        HUM = {
+            TKM = {
+                subject_level4 = yes
+            }
+            add_ideas = shuxirenli_idea
+            create_faction = HUM_scenario_faction
+            add_to_faction = HKR
+            add_to_faction = MRS
+            add_to_faction = KAP
+            add_to_faction = OTG
+            declare_war_on = {
+                    target = SCA
+                    type = scenario143
+                }
+            declare_war_on = {
+                    target = PRI
+                    type = scenario143
+                }
+        }
+        XXX = {
+            SCA_rem_leader = {
+					set_nationality = SCA
+				}
+                SCA_rem = {
+					set_nationality = SCA
+				}
+                SCA_flan = {
+					set_nationality = SCA
+				}
+                SCA_sky = {
+					set_nationality = SCA
+				}
+        }
+        SCA = {
+            #add_ideas = juexin_idea
+            create_faction = feihongtixi
+            add_to_faction = PRI
+            add_to_faction = GRS
+            add_to_faction = KAG
+            add_to_faction = MSD
+            add_to_faction = MAM
+            add_to_faction = SEJ
+            add_to_faction = NIB
+            add_to_faction = RMI
+            add_to_faction = NMS
+            PRI = {
+                subject_level4 = yes
+            }
+            GRS = {
+                subject_level4 = yes
+            }
+            SCA_pachy_leader = {
+					set_nationality = XXX
+				}
+        }
+        NMS = {
+           # add_ideas = juexin_idea
+            #create_faction = NMS_scenario_faction
+            MAM = {
+                subject_level3 = yes
+            }
+            
+            # add_to_faction = CHE
+            SEJ = {
+                RMI = {
+                    subject_level1 = yes
+                }
+                NIB = {
+                    subject_level1 = yes
+                }
+            }
+            every_country = {
+                limit = {
+                    or = {
+                        is_in_faction_with = NMS
+                        tag = NMS
+                    }
+                }
+                #add_ideas = juexin_idea
+                declare_war_on = {
+                    target = HUM
+                    type = scenario143
+                }
+                declare_war_on = {
+                    target = HKR
+                    type = scenario143
+                }
+                declare_war_on = {
+                    target = MRS
+                    type = scenario143
+                }
+                declare_war_on = {
+                    target = TKM
+                    type = scenario143
+                }
+            }
+        }
+        CHE = {
+            #add_ideas = juexin_idea
+        }
+        TKM = {
+            #add_ideas = qingbaoxielu143_idea
+        }
+        HKR = {
+            #add_ideas = qingbaoxielu143_idea
+        }
+        HUM = {
+            #add_ideas = qingbaoxielu143_idea
+            add_ideas = quanminjiebing_idea
+            add_ideas = xianrujiangchidexixianzhanchang_idea
+        }
+        MRS = {
+            set_cosmetic_tag = MRS_MF
+            add_stability = -0.5
+            add_war_support = -0.5
+            #add_ideas = qingbaoxielu143_idea 
+            recruit_character = ELL_ellen
+            recruit_character = NAR_narumi
+        }
+        every_country = {
+            limit = {
+                not = {
+                    tag = HUM
+                    tag = HKR
+                    tag = MRS
+                    tag = CHE
+                }
+            }
+            add_equipment_to_stockpile = {
+                type = magic_core_a
+                amount = 50000
+                # producer = SCA
+            }
+            add_equipment_to_stockpile = {
+                type = shield_a
+                amount = 50000
+                # producer = SCA
+            }
+            add_equipment_to_stockpile = {
+                type = melee_a
+                amount = 50000
+                # producer = SCA
+            }
+            add_equipment_to_stockpile = {
+                type = gun_a
+                amount = 50000
+                # producer = SCA
+            }
+        }
+        SCA = {
+            add_equipment_to_stockpile = {
+                type = ma_fighter148
+                amount = 100
+                producer = SCA
+            }
+        }
+    }
+    ###YYK
+    #every_country = {
+     #   limit = {
+      #      capital_scope = {
+       #         is_on_continent = Hell
+        #    }
+         #   not = {
+          #      tag = SKI
+           # }
+#        }
+ #       add_opinion_modifier = {
+  #          target = YYK
+   #         modifier = YYK_sijidezhicai_op
+    #    }
+#    }
+    
+ #   SKI = {
+  #      add_opinion_modifier = {
+   #         target = YYK
+    #        modifier = YYK_sijidezhicai_op2
+     #   }
+    #}
+}
+
+create_country_leader = {
+    name = "Unknown"
+    picture = "gfx/leaders/leader_unknown.dds"
+    ideology = guli_type
+    traits = {
+
+    }
+}

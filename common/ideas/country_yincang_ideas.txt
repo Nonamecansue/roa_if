@@ -1,0 +1,249 @@
+ideas = {
+	hidden_ideas = {
+		HUM_fangdunkeng_0 = {
+			picture = generic_deal_with_the_devil2
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			available = {
+				has_war = yes
+			    
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+			
+			}
+		}
+		HUM_fangdunkeng_1 = {
+			picture = generic_deal_with_the_devil2
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			available = {
+				has_war = yes
+			    
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				surrender_limit = -0.05				
+
+			}
+		}
+		HUM_fangdunkeng_2 = {
+			picture = generic_deal_with_the_devil2
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			available = {
+				has_war = yes
+			    
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				surrender_limit = -0.1				
+
+			}
+		}
+		HUM_fangdunkeng_3 = {
+			picture = generic_deal_with_the_devil2
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			available = {
+				has_war = yes
+			    
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				surrender_limit = -0.15				
+
+			}
+		}
+		HUM_fangdunkeng_4 = {
+			picture = generic_deal_with_the_devil2
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			available = {
+				has_war = yes
+			    
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				surrender_limit = -0.2				
+
+			}
+		}
+		HUM_fangdunkeng_5 = {
+			picture = generic_deal_with_the_devil2
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			available = {
+				has_war = yes
+			    
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				surrender_limit = -0.25			
+
+			}
+		}
+		HUM_fangdunkeng_6 = {
+			picture = generic_deal_with_the_devil2
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			available = {
+				has_war = yes
+			    
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				surrender_limit = -0.3			
+
+			}
+		}
+		HUM_fangdunkeng_7 = {
+			picture = generic_deal_with_the_devil2
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			available = {
+				has_war = yes
+			    
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				surrender_limit = -0.35				
+
+			}
+		}
+		HUM_fangdunkeng_8 = {
+			picture = generic_deal_with_the_devil2
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			available = {
+				has_war = yes
+			    
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				surrender_limit = -0.4				
+
+			}
+		}
+		HUM_fangdunkeng_9 = {
+			picture = generic_deal_with_the_devil2
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			available = {
+				has_war = yes
+			    
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				surrender_limit = -0.45				
+
+			}
+		}
+		HUM_fangdunkeng_10 = {
+			picture = generic_deal_with_the_devil2
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			available = {
+				has_war = yes
+			    
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				surrender_limit = -0.5				
+
+			}
+		}
+    }
+
+	}
+
+
+		

@@ -1,0 +1,2829 @@
+SGS_kaifatudi_category = {
+	SGS_kaifahuangdi_decision = {
+		visible = {
+			has_completed_focus = SGS_kaifahuangdi
+		}
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = SGS
+				or = {
+					is_core_of = HU3
+					is_core_of = HU2
+					is_core_of = HU4
+					is_core_of = HU1
+					is_core_of = MEL
+					is_core_of = GH2
+					is_core_of = GH3
+					is_core_of = AKI
+					is_core_of = ZYD
+					is_core_of = NMN
+					is_core_of = SGS
+				}
+				not = {has_state_flag = SGS_kaifatudi_flag}
+			}
+		}
+		cost = 15
+		days_remove = 60
+		remove_effect = {
+			FROM = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = SGS_kaifatudi_flag
+			}
+		}
+	}
+	SGS_jieshounanming_decision = {
+		visible = {
+			has_completed_focus = SGS_jieshouyaojingnanmin
+		}
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				has_state_flag = SGS_kaifatudi_flag
+			}
+		}
+		fire_only_once = yes
+		cost = 20
+		days_remove = 30
+		remove_effect = {
+			add_manpower = 50
+			FROM = {
+				add_manpower = 500
+			}
+		}
+	}
+
+}
+#########################
+SGS_zaitaiyanghuatianhuodong_category = { 
+	SGS_chuanbolinian_decision = {
+		icon = eng_propaganda_campaigns
+		allowed = {
+			tag =SGS
+		}
+		ai_will_do = {
+			factor = 1000000
+		}
+		visible = {
+			has_completed_focus = SGS_xiangtaiyanghuatian
+			not = {
+				has_completed_focus = SGS_tiaodonghuatian
+			}
+			has_country_flag = SGS_weikaizhan_flag
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SGS_linianshengfen_tt
+				check_variable = {
+					SGS_linianshengfen < 5
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = SGS_zhengzaichuanbolinian_tt
+				not = { 
+					has_country_flag = SGS_chuanbolinian_flag
+				}
+			}
+			not = {
+				has_completed_focus = SGS_tiaodonghuatian
+			}
+			
+		}
+		
+		target_trigger = {
+			FROM = { 
+				is_owned_and_controlled_by = YUK 
+				not = {
+				is_core_of = YS1
+				}
+			}
+		}
+		
+		state_target = yes
+		
+		cost = 10
+	
+		days_remove = 20
+	
+		fire_only_once = no
+		
+		complete_effect = {  
+			set_country_flag = SGS_chuanbolinian_flag
+		}
+
+		remove_effect = {
+			FROM = {
+				add_core_of = YS1
+			}
+			add_to_variable = {
+				SGS_linianshengfen = 1
+			}
+			clr_country_flag = SGS_chuanbolinian_flag
+		}
+	}
+	SGS_shongfuka_decision = {
+		icon = generic_industry
+		visible = {
+			has_completed_focus = SGS_tiaodonghuatian
+			has_country_flag = SGS_weikaizhan2_flag
+		}
+		available = {
+			SGS = {
+				has_equipment = {
+					magic_core141 > 999
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = SGS_junduishuliang_tt
+				check_variable = {
+					SGS_junduishuliang < 12
+				}
+			}
+		}
+		complete_effect = {
+			SGS = {
+				send_equipment = {
+					type = magic_core141
+					amount = 1000
+				}
+			}	
+			add_to_variable = {
+				SGS_junduishuliang = 2
+			}	
+		}
+		remove_effect = {
+			YS1 = {
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = YS1
+					}
+						create_unit = {
+							division = "name = \"妖精革命军\"division_template = \"妖精革命军\"start_experience_factor = 0.2" 
+							owner = YS1
+
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = YS1
+					}
+						create_unit = {
+							division = "name = \"妖精革命军\"division_template = \"妖精革命军\"start_experience_factor = 0.2" 
+							owner = YS1
+
+					}
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 10
+	}
+	SGS_shongjingzhan_decision = {
+		icon = generic_industry
+		visible = {
+			has_completed_focus = SGS_tiaodonghuatian
+			has_country_flag = SGS_weikaizhan2_flag
+		}
+		available = {
+			SGS = {
+				has_equipment = {
+					melee141 > 999
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = SGS_junduishuliang_tt
+				check_variable = {
+					SGS_junduishuliang < 12
+				}
+			}
+		}
+		complete_effect = {
+			SGS = {
+				send_equipment = {
+					type = melee141
+					amount = 1000
+				}
+			}	
+			add_to_variable = {
+				SGS_junduishuliang = 2
+			}
+			
+		
+		}
+		remove_effect = {
+			YS1 = {
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = YS1
+					}
+						create_unit = {
+							division = "name = \"妖精国民卫队\"division_template = \"妖精国民卫队\"start_experience_factor = 0.2" 
+							owner = YS1
+
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = YS1
+					}
+						create_unit = {
+							division = "name = \"妖精国民卫队\"division_template = \"妖精国民卫队\"start_experience_factor = 0.2" 
+							owner = YS1
+
+					}
+				}
+			}
+		}
+		fire_only_once = no
+		cost = 0
+		days_remove = 10
+	}
+	SGS_shongjunguan_decision = {
+		icon = generic_army_support
+		visible = {
+			has_completed_focus = SGS_tiaodonghuatian
+			has_country_flag = SGS_weikaizhan2_flag
+		}
+		fire_only_once = yes
+		cost = 10
+		days_remove = 10
+		remove_effect = {
+			YS1 = {
+				add_ideas = SGS_junguantuan_idea
+			}
+		}
+	}
+	SGS_kaishipanluan_decision = {
+		icon = generic_nationalism
+		visible = {
+			has_completed_focus = SGS_tiaodonghuatian
+			has_country_flag = SGS_weikaizhan2_flag
+			not = {has_war_with = YUK}
+		}
+		available = {
+			not = {has_war_with = YUK}
+		}
+		fire_only_once = yes
+		cost = 10
+		days_remove = 30
+		complete_effect = {
+			YUK = {
+				country_event = sgs.31
+			}
+		}
+		remove_effect = {
+			YS1 = {                     
+				declare_war_on = { 
+					target = YUK 
+					type = annex_everything
+				}
+			}
+		}
+	}
+	SGS_zhijieganshe_decision = {
+		icon = generic_ignite_civil_war
+		visible = {
+			has_completed_focus = SGS_tiaodonghuatian
+			has_country_flag = SGS_weikaizhan2_flag
+			YS1 = {
+				has_war_with = YUK
+			}
+			not = {has_war_with = YUK}
+		}
+		available = {
+			not = {has_war_with = YUK}
+		}
+		fire_only_once = yes
+		cost = 0
+		days_remove = 20
+		complete_effect = {
+			YUK = {
+				country_event = sgs.32
+			}
+			set_country_flag = SGS_zhijieganshe_flag
+		}
+		remove_effect = {
+			SGS = {                     
+				declare_war_on = { 
+					target = YUK 
+					type = puppet_wargoal_focus
+				}
+			}
+		}
+	}
+	SGS_jianjieganshe_decision = {
+		icon = eng_trade_unions_support
+		visible = {
+			has_completed_focus = SGS_tiaodonghuatian
+			has_country_flag = SGS_weikaizhan2_flag
+			not = {
+				has_country_flag = SGS_zhijieganshe_flag
+			}
+			not = {has_war_with = YUK}
+		}
+		available = {
+			not = {has_war_with = YUK}
+		}
+		fire_only_once = yes
+		cost = 20
+		complete_effect = {
+			add_timed_idea = {
+				idea = SGS_jianjieganshe_idea
+				days = 120
+			}
+		}
+	}
+}
+########################
+SGS_zhongzulianhe_category = {
+	SGS_xinagezhouzujingrubumen_decision = { 
+		ai_will_do = {
+			factor = 100
+		}
+		visible = {
+			has_completed_focus = SGS_zujianlianhebumen
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 120
+		remove_effect = {
+			custom_effect_tooltip = SGS_xinagezhouzujingrubumen_tt
+			SGS = {
+				add_to_variable = {SGS_caogenyaoguai = 5}
+				add_to_variable = {SGS_shenming = 5}
+				add_to_variable = {SGS_tiangou = 5}
+				add_to_variable = {SGS_hetong = 5}
+				add_to_variable = {SGS_yaoguai = 5}
+				add_to_variable = {SGS_yaojing = 5}
+				add_to_variable = {SGS_youling = 5}
+				add_to_variable = {SGS_fashi = 5}
+				add_to_variable = {SGS_renlei =5}
+				add_to_variable = {SGS_yaoshou = 5}
+			}
+			SGS = {
+				clamp_variable = {
+					var = SGS_caogenyaoguai
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = SGS_shenming
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = SGS_tiangou
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = SGS_hetong
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = SGS_yaoguai
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = SGS_yaojing
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = SGS_youling
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = SGS_fashi
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = SGS_renlei
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = SGS_yaoshou
+					min = 0
+					max = 100
+				}
+			}
+		}
+	}
+	SGS_tuidongfaanpuji_decision = {
+		ai_will_do = {
+			factor = 100
+		}
+		icon = eng_trade_unions_support
+		visible = {
+			has_completed_focus = SGS_zhongzupingdengfaan
+		}
+		fire_only_once = yes
+		days_remove = 120
+		cost = 50
+		remove_effect = {
+			custom_effect_tooltip = SGS_xinagezhouzujingrubumen_tt
+			SGS = {
+				add_to_variable = {SGS_caogenyaoguai = 5}
+				add_to_variable = {SGS_shenming = 5}
+				add_to_variable = {SGS_tiangou = 5}
+				add_to_variable = {SGS_hetong = 5}
+				add_to_variable = {SGS_yaoguai = 5}
+				add_to_variable = {SGS_yaojing = 5}
+				add_to_variable = {SGS_youling = 5}
+				add_to_variable = {SGS_fashi = 5}
+				add_to_variable = {SGS_renlei =5}
+				add_to_variable = {SGS_yaoshou = 5}
+			}
+			SGS = {
+				clamp_variable = {
+					var = SGS_caogenyaoguai
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = SGS_shenming
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = SGS_tiangou
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = SGS_hetong
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = SGS_yaoguai
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = SGS_yaojing
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = SGS_youling
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = SGS_fashi
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = SGS_renlei
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = SGS_yaoshou
+					min = 0
+					max = 100
+				}
+			}
+			set_country_flag = SGS_tuidongfaanpuji_flag
+		}
+	}
+	SGS_jiadafaandezhixinglidu_decision = {
+		ai_will_do = {
+			factor = 100
+		}
+		icon = eng_trade_unions_demand
+		visible = {
+			has_completed_focus = SGS_zhongzupingdengfaan
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SGS_jiadafaandezhixinglidu_tt
+				SGS = {
+					has_country_flag = SGS_tuidongfaanpuji_flag
+				}
+			}
+		}
+		fire_only_once = yes
+		cost = 50
+		remove_effect = {
+			custom_effect_tooltip = SGS_xinagezhouzujingrubumen_tt
+			SGS = {
+				add_to_variable = {SGS_caogenyaoguai = 5}
+				add_to_variable = {SGS_shenming = 5}
+				add_to_variable = {SGS_tiangou = 5}
+				add_to_variable = {SGS_hetong = 5}
+				add_to_variable = {SGS_yaoguai = 5}
+				add_to_variable = {SGS_yaojing = 5}
+				add_to_variable = {SGS_youling = 5}
+				add_to_variable = {SGS_fashi = 5}
+				add_to_variable = {SGS_renlei =5}
+				add_to_variable = {SGS_yaoshou = 5}
+			}
+			SGS = {
+				clamp_variable = {
+					var = SGS_caogenyaoguai
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = SGS_shenming
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = SGS_tiangou
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = SGS_hetong
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = SGS_yaoguai
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = SGS_yaojing
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = SGS_youling
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = SGS_fashi
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = SGS_renlei
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = SGS_yaoshou
+					min = 0
+					max = 100
+				}
+			}
+		}
+	}
+	SGS_jingxingtuanjiexuanchuan_decision = {
+		icon = eng_propaganda_campaigns
+		visible = {
+			has_completed_focus = SGS_guojiabaoshe
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 50
+		days_remove = 200
+		complete_effect = {
+			set_country_flag = SGS_tuanjiexuanchuan_flag
+			custom_effect_tooltip  = SGS_tuanjiexuanchuan_tt
+		}
+		remove_effect = {
+			clr_country_flag = SGS_tuanjiexuanchuan_flag
+			
+		}
+	}
+	SGS_fahuicaogenyaoguaidetechang_decision = {
+		ai_will_do = {
+			factor = 100
+		}
+		fire_only_once = yes
+		visible = {
+			has_completed_focus = SGS_fahuigezutechang
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SGS_caogenyaoguailianhedu_tt
+				check_variable = {
+					SGS_caogenyaoguai > 59
+				}
+			}
+		}
+		cost = 20
+		complete_effect = {
+			
+			add_ideas = SGS_caogenyaoguai_idea
+		}
+	}
+	SGS_fahuishenmingdetechang_decision = {
+		ai_will_do = {
+			factor = 100
+		}
+		fire_only_once = yes
+		visible = {
+			has_completed_focus = SGS_fahuigezutechang
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SGS_shenminglianhedu_tt
+				check_variable = {
+					SGS_shenming > 59
+				}
+			}
+		}
+		cost = 20
+		complete_effect = {
+			
+			add_ideas = SGS_shenming_idea
+		}
+	}
+	SGS_fahuitiangoudetechang_decision = {
+		ai_will_do = {
+			factor = 100
+		}
+		fire_only_once = yes
+		visible = {
+			has_completed_focus = SGS_fahuigezutechang
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SGS_tiangoulianhedu_tt
+				check_variable = {
+					SGS_tiangou > 59
+				}
+			}
+		}
+		cost = 20
+		complete_effect = {
+			
+			add_ideas = SGS_tiangou_idea
+		}
+	}
+	SGS_fahuihetongdetechang_decision = {
+		ai_will_do = {
+			factor = 100
+		}
+		fire_only_once = yes
+		visible = {
+			has_completed_focus = SGS_fahuigezutechang
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SGS_hetonglianhedu_tt
+				check_variable = {
+					SGS_hetong > 59
+				}
+			}
+		}
+		cost = 20
+		complete_effect = {
+			
+			add_ideas = SGS_hetong_idea
+		}
+	}
+	SGS_fahuiyaoguaidetechang_decision = {
+		ai_will_do = {
+			factor = 100
+		}
+		fire_only_once = yes
+		visible = {
+			has_completed_focus = SGS_fahuigezutechang
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SGS_yaoguailianhedu_tt
+				check_variable = {
+					SGS_yaoguai > 59
+				}
+			}
+		}
+		cost = 20
+		complete_effect = {
+			
+			add_ideas = SGS_yaoguai_idea
+		}
+	}
+	SGS_fahuiyoulingidetechang_decision = {
+		ai_will_do = {
+			factor = 100
+		}
+		fire_only_once = yes
+		visible = {
+			has_completed_focus = SGS_fahuigezutechang
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SGS_youlinglianhedu_tt
+				check_variable = {
+					SGS_youling > 59
+				}
+			}
+		}
+		cost = 20
+		complete_effect = {
+			
+			add_ideas = SGS_youling_idea
+		}
+	}
+	SGS_fahuifashidetechang_decision = {
+		ai_will_do = {
+			factor = 100
+		}
+		fire_only_once = yes
+		visible = {
+			has_completed_focus = SGS_fahuigezutechang
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SGS_fashilianhedu_tt
+				check_variable = {
+					SGS_fashi > 59
+				}
+			}
+		}
+		cost = 20
+		complete_effect = {
+			
+			add_ideas = SGS_fashi_idea
+		}
+	}
+	SGS_fahuirenleidetechang_decision = {
+		ai_will_do = {
+			factor = 100
+		}
+		fire_only_once = yes
+		visible = {
+			has_completed_focus = SGS_fahuigezutechang
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SGS_renleilianhedu_tt
+				check_variable = {
+					SGS_renlei > 59
+				}
+			}
+		}
+		cost = 20
+		complete_effect = {
+			
+			add_ideas = SGS_renlei_idea
+		}
+	}
+	SGS_fahuiyaoshoudetechang_decision = {
+		ai_will_do = {
+			factor = 100
+		}
+		fire_only_once = yes
+		visible = {
+			has_completed_focus = SGS_fahuigezutechang
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SGS_yaoshoulianhedu_tt
+				check_variable = {
+					SGS_yaoshou > 59
+				}
+			}
+		}
+		cost = 20
+		complete_effect = {
+			
+			add_ideas = SGS_yaoshou_idea
+		}
+	}
+	SGS_wanquanlianhecaogenyaogai_decision = {
+		ai_will_do = {
+			factor = 1000
+		}
+		visible = {
+			has_completed_focus = SGS_yigemingzu
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SGS_wanquanlianhecaogenyaogai_tt
+				check_variable = {
+					SGS_caogenyaoguai > 99
+				}
+			}
+		}
+		fire_only_once = yes
+		cost = 150
+		days_remove = 100
+		remove_effect = {
+			add_ideas = SGS_wanquanlianhecaogenyaogai_idea
+		}
+	}
+	SGS_wanquanlianheshenming_decision = {
+		ai_will_do = {
+			factor = 1000
+		}
+		visible = {
+			has_completed_focus = SGS_yigemingzu
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SGS_wanquanlianheshenming_tt
+				check_variable = {
+					SGS_shenming > 99
+				}
+			}
+		}
+		fire_only_once = yes
+		cost = 150
+		days_remove = 100
+		remove_effect = {
+			add_ideas = SGS_wanquanlianheshenming_idea
+		}
+	}
+	SGS_wanquanlianhetiangou_decision = {
+		ai_will_do = {
+			factor = 1000
+		}
+		visible = {
+			has_completed_focus = SGS_yigemingzu
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SGS_wanquanlianhetiangou_tt
+				check_variable = {
+					SGS_tiangou > 99
+				}
+			}
+		}
+		fire_only_once = yes
+		cost = 150
+		days_remove = 100
+		remove_effect = {
+			add_ideas = SGS_wanquanlianhetiangou_idea
+		}
+	}
+	SGS_wanquanlianhehetong_decision = {
+		ai_will_do = {
+			factor = 1000
+		}
+		visible = {
+			has_completed_focus = SGS_yigemingzu
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SGS_wanquanlianhehrtong_tt
+				check_variable = {
+					SGS_hetong > 99
+				}
+			}
+		}
+		fire_only_once = yes
+		cost = 150
+		days_remove = 100
+		remove_effect = {
+			add_ideas = SGS_wanquanlianhehetong_idea
+		}
+	}
+	SGS_wanquanlianheyaoguai_decision = {
+		ai_will_do = {
+			factor = 1000
+		}
+		visible = {
+			has_completed_focus = SGS_yigemingzu
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SGS_wanquanlianheyaoguai_tt
+				check_variable = {
+					SGS_yaoguai > 99
+				}
+			}
+		}
+		fire_only_once = yes
+		cost = 150
+		days_remove = 100
+		remove_effect = {
+			add_ideas = SGS_wanquanlianheyaoguai_idea
+		}
+	}
+	SGS_wanquanlianheyaojing_decision = {
+		ai_will_do = {
+			factor = 1000
+		}
+		visible = {
+			has_completed_focus = SGS_yigemingzu
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SGS_wanquanlianheyaojing_tt
+				check_variable = {
+					SGS_yaojing > 99
+				}
+			}
+		}
+		fire_only_once = yes
+		cost = 150
+		days_remove = 100
+		remove_effect = {
+			add_ideas = SGS_wanquanlianheyaojing_idea 
+		}
+	}
+	SGS_wanquanlianheyouling_decision = {
+		ai_will_do = {
+			factor = 1000
+		}
+		visible = {
+			has_completed_focus = SGS_yigemingzu
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SGS_wanquanlianheyouling_tt
+				check_variable = {
+					SGS_youling > 99
+				}
+			}
+		}
+		fire_only_once = yes
+		cost = 150
+		days_remove = 100
+		remove_effect = {
+			add_ideas = SGS_wanquanlianheyouling_idea 
+		}
+	}
+	SGS_wanquanlianhefashi_decision = {
+		ai_will_do = {
+			factor = 1000
+		}
+		visible = {
+			has_completed_focus = SGS_yigemingzu
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SGS_wanquanlianhefashi_tt
+				check_variable = {
+					SGS_fashi > 99
+				}
+			}
+		}
+		fire_only_once = yes
+		cost = 150
+		days_remove = 100
+		remove_effect = {
+			add_ideas = SGS_wanquanlianhefashi_idea 
+		}
+	}
+	SGS_wanquanlianherenlei_decision = {
+		ai_will_do = {
+			factor = 1000
+		}
+		visible = {
+			has_completed_focus = SGS_yigemingzu
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SGS_wanquanlianherenlei_tt
+				check_variable = {
+					SGS_renlei > 99
+				}
+			}
+		}
+		fire_only_once = yes
+		cost = 150
+		days_remove = 100
+		remove_effect = {
+			add_ideas = SGS_wanquanlianherenlei_idea 
+		}
+	}
+	SGS_wanquanlianheyaoshou_decision = {
+		ai_will_do = {
+			factor = 1000
+		}
+		visible = {
+			has_completed_focus = SGS_yigemingzu
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SGS_wanquanlianheyaoshou_tt
+				check_variable = {
+					SGS_yaoshou > 99
+				}
+			}
+		}
+		fire_only_once = yes
+		cost = 150
+		days_remove = 100
+		remove_effect = {
+			add_ideas = SGS_wanquanlianheyaoshou_idea 
+		}
+	}
+}
+SGS_anliuyongdong_category = {
+	SGS_xiangMELxuanzhan_decision = {
+		visible = {
+			ROOT = {
+				has_country_flag = SGS_anliu_flag
+			}
+		}
+		available = {
+			ROOT = {is_subject = no}
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		target_trigger = {
+            FROM = {
+				not = {has_war_with = ROOT}
+                has_country_flag = SGS_anliu_flag
+				not = {is_subject_of = ROOT}
+            }
+        }
+		days_remove = 30
+		complete_effect = {
+			FROM = {
+				country_event = {
+					id = sgs.52
+					days = 1
+				}
+			}
+			setup_decision_attack_AI = yes
+		}
+		remove_effect = {
+			create_wargoal = {
+                target = FROM
+                type = SW_luanzhan
+            }
+			clear_decision_attack_AI = yes
+		}
+	}
+}
+SGS_jianlixinanyihuidasha_category = {
+	SGS_yaoqinghetong_decision = {
+		visible = {
+			has_completed_focus = SGS_jianlixinanyihuidasha
+		}
+		available ={
+			not = {
+				has_idea = SGS_daguimotourudasha_idea
+			}
+		}
+		cost = 80
+		days_remove = 60
+		fire_only_once = yes
+		remove_effect = {
+			custom_effect_tooltip = SGS_yaoqinghetong_tt
+			set_country_flag = SGS_yaoqinghetong_flag
+			SGS = {
+				add_to_variable = {
+					SGS_jiandasha_meizhou = 0.3
+				}
+			}
+			add_timed_idea = {
+				idea = SGS_daguimotourudasha_idea
+				days = 30
+			}
+		}
+	}
+	SGS_yaoqingyaoshou_decision = {
+		visible = {
+			has_completed_focus = SGS_jianlixinanyihuidasha
+		}
+		available ={
+			not = {
+				has_idea = SGS_daguimotourudasha_idea
+			}
+		}
+		cost = 20
+		days_remove = 5
+		remove_effect = {
+			custom_effect_tooltip = SGS_yaoqingyaoguai_tt
+			SGS = {
+				add_to_variable = {
+					SGS_jiandasha = 1
+				}
+			}
+			add_timed_idea = {
+				idea = SGS_daguimotourudasha_idea
+				days = 30
+			}
+		}
+	}
+	SGS_rangyaojingshiyongziranzhili_decision = {
+		visible = {
+			has_completed_focus = SGS_jianlixinanyihuidasha
+		}
+		available ={
+			not = {
+				has_idea = SGS_daguimotourudasha_idea
+			}
+		}
+		cost = 25
+		days_remove = 7
+		remove_effect = {
+			custom_effect_tooltip = SGS_rangyaojingshiyongziranzhili_tt
+			SGS = {
+				add_to_variable = {
+					SGS_jiandasha = 2
+				}
+			}
+			add_timed_idea = {
+				idea = SGS_daguimotourudasha_idea
+				days = 30
+			}
+		}
+	}
+}
+SGS_lingshifaan_category = {
+	SGS_yaojingzhengbangfaan_decision = {
+		visible = {
+			not = {has_country_flag =SGS_yaojingzhengbingfaan_flag}
+			has_completed_focus = SGS_wanshanjingjiyufalv
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SGS_muqianyoufaanzaijingxingzhong_tt
+				SGS = {
+					check_variable = {
+						SGS_lingshifaan <2
+					}
+				}
+			}
+		}
+		cost = 25
+		days_remove = 100
+		complete_effect = {
+			set_country_flag = SGS_muqianyoufaanzaijingxingzhong_flag
+			SGS = {
+				add_to_variable = {
+					SGS_lingshifaan = 1
+				}
+			}
+		}
+		remove_effect = {
+			add_ideas = SGS_yaojingzhengbingfaan_idea
+			set_country_flag = SGS_yaojingzhengbingfaan_flag 
+		}
+	}
+	SGS_yaojingzhengbangfaan2_decision = {
+		visible = {
+			has_country_flag = SGS_yaojingzhengbingfaan_flag
+			has_completed_focus = SGS_wanshanjingjiyufalv
+		}
+		days_remove = 100
+		remove_effect = {
+			remove_ideas = SGS_yaojingzhengbingfaan_idea
+			clr_country_flag = SGS_yaojingzhengbingfaan_flag
+			SGS = {
+				add_to_variable = {
+					SGS_lingshifaan = -1
+				}
+			}
+		}
+	}
+	SGS_jingjigongyefaan_decision = {
+		visible = {
+			not = {has_country_flag = SGS_jingjigongyefaan_flag}
+			has_completed_focus = SGS_wanshanjingjiyufalv
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SGS_muqianyoufaanzaijingxingzhong_tt
+				SGS = {
+					check_variable = {
+						SGS_lingshifaan <2
+					}
+				}
+			}
+		}
+		cost = 80
+		days_remove = 80
+		complete_effect = {
+			set_country_flag = SGS_muqianyoufaanzaijingxingzhong_flag
+			SGS = {
+				add_to_variable = {
+					SGS_lingshifaan = 1
+				}
+			}
+		}
+		remove_effect = {
+			add_ideas = SGS_jingjigongyefaan_idea
+			set_country_flag = SGS_jingjigongyefaan_flag 
+		}
+	}
+	SGS_jingjigongyefaan2_decision = {
+		visible = {
+			has_country_flag = SGS_jingjigongyefaan_flag
+			has_completed_focus = SGS_wanshanjingjiyufalv
+		}
+		days_remove = 30
+		remove_effect = {
+			remove_ideas = SGS_jingjigongyefaan_idea
+			clr_country_flag = SGS_jingjigongyefaan_flag
+			SGS = {
+				add_to_variable = {
+					SGS_lingshifaan = -1
+				}
+			}
+		}
+	}
+	SGS_jingjijingling_decision = {
+		visible = {
+			not = {has_country_flag = SGS_jingjijingling_flag}
+			has_completed_focus = SGS_wanshanjingjiyufalv
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SGS_muqianyoufaanzaijingxingzhong_tt
+				SGS = {
+					check_variable = {
+						SGS_lingshifaan <2
+					}
+				}
+			}
+		}
+		cost = 100
+		days_remove = 10
+		complete_effect = {
+			set_country_flag = SGS_muqianyoufaanzaijingxingzhong_flag
+			SGS = {
+				add_to_variable = {
+					SGS_lingshifaan = 1
+				}
+			}
+		}
+		remove_effect = {
+			add_ideas = SGS_jingjijingling_idea
+			set_country_flag = SGS_jingjijingling_flag 
+		}
+	}
+	SGS_jingjijingling2_decision = {
+		visible = {
+			has_country_flag = SGS_jingjijingling_flag
+			has_completed_focus = SGS_wanshanjingjiyufalv
+		}
+		days_remove = 50
+		remove_effect = {
+			remove_ideas = SGS_jingjijingling_idea
+			clr_country_flag = SGS_jingjijingling_flag
+			SGS = {
+				add_to_variable = {
+					SGS_lingshifaan = -1
+				}
+			}
+		}
+	}
+	SGS_zhengshoufaan_decision = {
+		visible = {
+			not = {has_country_flag = SGS_zhengshoufaan_flag}
+			has_completed_focus = SGS_wanshanjingjiyufalv
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SGS_muqianyoufaanzaijingxingzhong_tt
+				SGS = {
+					check_variable = {
+						SGS_lingshifaan <2
+					}
+				}
+			}
+		}
+		cost = 90
+		days_remove = 10
+		complete_effect = {
+			set_country_flag = SGS_muqianyoufaanzaijingxingzhong_flag
+			SGS = {
+				add_to_variable = {
+					SGS_lingshifaan = 1
+				}
+			}
+		}
+		remove_effect = {
+			add_ideas = SGS_zhengshoufaan_idea
+			set_country_flag = SGS_zhengshoufaan_flag  
+		}
+	}
+	SGS_zhengshoufaan2_decision = {
+		visible = {
+			has_country_flag = SGS_zhengshoufaan_flag
+			has_completed_focus = SGS_wanshanjingjiyufalv
+		}
+		days_remove = 60
+		remove_effect = {
+			remove_ideas = SGS_zhengshoufaan_idea
+			clr_country_flag = SGS_zhengshoufaan_flag
+			SGS = {
+				add_to_variable = {
+					SGS_lingshifaan = -1
+				}
+			}
+		}
+	}
+	SGS_zhengzhijizhongfaan_decision = {
+		visible = {
+			not = {has_country_flag = SGS_zhengzhijizhongfaan_flag}
+			has_completed_focus = SGS_wanshanjingjiyufalv
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SGS_muqianyoufaanzaijingxingzhong_tt
+				SGS = {
+					check_variable = {
+						SGS_lingshifaan <2
+					}
+				}
+			}
+		}
+		cost = 10
+		days_remove = 10
+		complete_effect = {
+			set_country_flag = SGS_muqianyoufaanzaijingxingzhong_flag
+			SGS = {
+				add_to_variable = {
+					SGS_lingshifaan = 1
+				}
+			}
+		}
+		remove_effect = {
+			add_ideas =SGS_zhengzhijizhongfaan_idea
+			set_country_flag = SGS_zhengzhijizhongfaan_flag  
+		}
+	}
+	SGS_zhengzhijizhongfaan2_decision = {
+		visible = {
+			has_country_flag = SGS_zhengzhijizhongfaan_flag
+			has_completed_focus = SGS_wanshanjingjiyufalv
+		}
+		days_remove = 60
+		remove_effect = {
+			remove_ideas = SGS_zhengzhijizhongfaan_idea
+			clr_country_flag = SGS_zhengzhijizhongfaan_flag
+			SGS = {
+				add_to_variable = {
+					SGS_lingshifaan = -1
+				}
+			}
+		}
+	}
+	SGS_yurenleijiaohao_decision = {
+		visible = {
+			not = {has_country_flag = SGS_yurenleijiaohao_flag}
+			has_completed_focus = SGS_wanshanjingjiyufalv
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SGS_muqianyoufaanzaijingxingzhong_tt
+				SGS = {
+					check_variable = {
+						SGS_lingshifaan <2
+					}
+				}
+			}
+		}
+		cost = 30
+		days_remove = 30
+		complete_effect = {
+			set_country_flag = SGS_muqianyoufaanzaijingxingzhong_flag
+			SGS = {
+				add_to_variable = {
+					SGS_lingshifaan = 1
+				}
+			}
+		}
+		remove_effect = {
+			add_ideas = SGS_yurenleijiaohao_idea
+			set_country_flag = SGS_yurenleijiaohao_flag  
+		}
+	}
+	SGS_yurenleijiaohao2_decision = {
+		visible = {
+			has_country_flag = SGS_yurenleijiaohao_flag
+			has_completed_focus = SGS_wanshanjingjiyufalv
+		}
+		days_remove = 60
+		remove_effect = {
+			remove_ideas = SGS_yurenleijiaohao_idea
+			clr_country_flag = SGS_yurenleijiaohao_flag
+			SGS = {
+				add_to_variable = {
+					SGS_lingshifaan = -1
+				}
+			}
+		}
+	}
+}
+SGS_zhongzhinongzuowu_category = {
+	SGS_zhongzhinongzuowu_decision = {
+		visible = {
+			has_completed_focus = SGS_zhongzhinongzuowo
+			not = {has_completed_focus = SGS_nongyeqiji}
+		}
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = SGS
+				not = {has_state_flag = SGS_zhongzhinongzuowu_flag}
+			}
+		}
+		cost = 10
+		days_remove = 180
+		remove_effect = {
+			FROM = {
+				set_state_flag = SGS_zhongzhinongzuowu_flag
+			}
+		}
+	}
+}
+SGS_jiquandu_category = {
+	SGS_zhaomuxingzhengrenyuanrudang_decision = {
+		visible = {
+			has_completed_focus = SGS_qingzhuerxiadexingguang
+		}
+		fire_only_once = yes
+		cost = 20
+		days_remove = 600
+		complete_effect = {
+			SGS = {
+				add_to_variable = {
+					SGS_jiquandu_meizhou = 0.2
+				}
+				add_to_variable = {
+					SGS_yaojingzhishangdang_meizhou = 0.2
+				}
+				add_to_variable = {
+					SGS_yaojingshiyetuan_meizhou = -0.2
+				}
+			}
+			SGS = {
+				set_country_flag = SGS_zhaomuxingzhengrenyuanrudang_flag
+			}
+			custom_effect_tooltip = SGS_zhaomuxingzhengrenyuanrudang_tt 
+		}
+		modifier = {
+			political_power_gain = -0.1
+	   	}
+		remove_effect = {
+			SGS = {
+				clr_country_flag = SGS_zhaomuxingzhengrenyuanrudang_flag
+			}
+			SGS = {
+				add_to_variable = {
+					SGS_jiquandu_meizhou = -0.2
+				}
+				add_to_variable = {
+					SGS_yaojingzhishangdang_meizhou = -0.2
+				}
+				add_to_variable = {
+					SGS_yaojingshiyetuan_meizhou = 0.2
+				}
+			}
+			
+		}
+	}
+	SGS_sheliquanguojingjihesuan_decision = {
+		visible = {
+			has_completed_focus = SGS_qingzhuerxiadexingguang
+		}
+		fire_only_once = yes
+		cost = 100
+		days_remove = 120
+		remove_effect = {
+			custom_effect_tooltip = SGS_sheliquanguojingjihesuan_tt 
+			SGS = {
+				add_to_variable = {
+					SGS_jiquandu = 7
+				}
+				add_to_variable = {
+					SGS_yaojingzhishangdang = 5
+				}
+				add_to_variable = {
+					SGS_yaojingshiyetuan = -5
+				}
+			}
+		}
+	}
+	SGS_yunxushiyetuanjianzaojungongchang_decision = {
+		icon = generic_construction
+		visible = {
+			has_completed_focus = SGS_qingzhuerxiadexingguang
+		}
+		fire_only_once = no
+		cost = 30
+		days_remove = 100
+		remove_effect = {
+			custom_effect_tooltip = SGS_yunxushiyetuanjianzaojungongchang_tt 
+			SGS = {
+				add_to_variable = {
+					SGS_jiquandu = 3
+				}
+				add_to_variable = {
+					SGS_yaojingzhishangdang = -7
+				}
+				add_to_variable = {
+					SGS_yaojingshiyetuan = 7
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	SGS_jiyumaoyitequan_decision = {
+		icon = eng_trade_unions_support
+		visible = {
+			has_completed_focus = SGS_qingzhuerxiadexingguang
+		}
+		fire_only_once = no
+		cost = 20
+		days_remove = 200
+		modifier = {
+			consumer_goods_factor = -0.08
+		}
+		complete_effect = {
+			custom_effect_tooltip = SGS_jiyumaoyitequan_tt 
+			SGS = {
+				add_to_variable = {
+					SGS_yaojingzhishangdang = -5
+				}
+				add_to_variable = {
+					SGS_yaojingshiyetuan = 5
+				}
+			}
+		}
+	}
+	SGS_caiyongjingbiao_decision = {
+		icon = eng_trade_unions_support
+		visible = {
+			has_completed_focus = SGS_qingzhuerxiadexingguang
+		}
+		fire_only_once = yes
+		cost = 30
+		days_remove = 30
+		remove_effect = {
+			custom_effect_tooltip = SGS_caiyongjingbiao_tt 
+			SGS = {
+				add_to_variable = {
+					SGS_yaojingzhishangdang = 5
+				}
+				add_to_variable = {
+					SGS_yaojingshiyetuan = -5
+				}
+			}
+			add_ideas = SGS_jingbiaocaigouzhi_idea
+		}
+	}
+	SGS_daibuweifashiyetuan_decision = {
+		icon = generic_arrest
+		visible = {
+			has_completed_focus = SGS_qingzhuerxiadexingguang
+		}
+		available = {
+			has_equipment = {
+				magic_core141 > 99
+			}
+		}
+		fire_only_once = no
+		cost = 75
+		days_remove = 60
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = magic_core141
+				amount = -100
+				producer = SGS
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = SGS_daibuweifashiyetuan_tt 
+			SGS = {
+				add_to_variable = {
+					SGS_yaojingzhishangdang = 5
+				}
+				add_to_variable = {
+					SGS_yaojingshiyetuan = -5
+				}
+			}
+		}
+	}
+	SGS_shelliyaojingzhixuzongguanju_decision = {
+		visible = {
+			has_completed_focus = SGS_qingzhuerxiadexingguang
+		}
+		fire_only_once = yes
+		cost = 100
+		days_remove = 60
+		remove_effect = {
+			custom_effect_tooltip = SGS_shelliyaojingzhixuzongguanju_tt 
+			SGS = {
+				add_to_variable = {
+					SGS_jiquandu_meizhou = 0.2
+				}
+			}
+			add_ideas = SGS_yaojingzhixuzongguanju_idea
+		}
+	}
+	SGS_shoumaiyiyuan_decision = {
+		icon = generic_fundraising
+		visible = {
+			has_completed_focus = SGS_qingzhuerxiadexingguang
+			SGS = {
+				not = {has_country_flag = SGS_qudiyihui_flag}
+			}
+		}
+		fire_only_once = no
+		cost = 20
+		days_remove = 100
+		remove_effect = {
+			custom_effect_tooltip = SGS_shoumaiyiyuan_tt
+			SGS = {
+				add_to_variable = {
+					SGS_jiquandu = 5
+				}
+				add_to_variable = {
+					SGS_yaojingzhishangdang = -6
+				}
+				add_to_variable = {
+					SGS_yaojingshiyetuan = 6
+				}
+			}
+		}
+	}
+	SGS_qudiyihui_decision = {
+		icon = generic_break_treaty
+		visible = {
+			has_completed_focus = SGS_qingzhuerxiadexingguang
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SGS_qudiyihui2_tt
+				SGS = {
+					check_variable = {
+						SGS_jiquandu > 59.99
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+		cost = 100
+		days_remove = 120
+		modifier = {
+			stability_weekly = -0.002
+		}
+		remove_effect = {
+			custom_effect_tooltip = SGS_qudiyihui_tt
+			SGS = {
+				add_to_variable = {
+					SGS_jiquandu = 10
+				}
+				set_country_flag = SGS_qudiyihui_flag
+			}
+		}
+	}
+	SGS_guoyouhuabufenqiye_decision = {
+		visible = {
+			has_completed_focus = SGS_qingzhuerxiadexingguang
+		}
+		fire_only_once = no
+		cost = 50
+		days_remove = 100
+		modifier = {
+			consumer_goods_factor = 0.1
+		}
+		remove_effect = {
+			custom_effect_tooltip = SGS_guoyouhuabufenqiye_tt 
+			SGS = {
+				add_to_variable = {
+					SGS_jiquandu = 3
+				}
+				add_to_variable = {
+					SGS_yaojingzhishangdang = 8
+				}
+				add_to_variable = {
+					SGS_yaojingshiyetuan = -8
+				}
+			}
+		}
+	}
+}
+SGS_xinanhuanxiangxianggongyehua_category = {
+	SGS_souxunfeiping_decision = {
+		icon = generic_disband_irregulars
+		visible = {
+			has_completed_focus = SGS_souxunhuanrufeiping
+			has_country_flag = SGS_xinanhuanxiangxianggongyehua_flag
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SGS_souxunfeiping_tt
+				not = {has_country_flag = SGS_souxunfeiping_flag}
+			}
+			or = {
+				or = {
+					SGS = { owns_state = 370 }
+					any_other_country = {
+						is_subject_of = SGS
+						owns_state = 370
+					}
+				}
+				or = {
+					SGS = { owns_state = 425 }
+					any_other_country = {
+						is_subject_of = SGS
+						owns_state = 425
+					}
+				}	
+				or = {
+					SGS = { owns_state = 186 }
+					any_other_country = {
+						is_subject_of = SGS
+						owns_state = 186
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				factor = 0
+				SGS = {
+					check_variable = {
+						SGS_feipingliang > 19.99
+					}
+				}
+			}
+		}
+		cost = 10
+		days_remove = 60
+		complete_effect = {
+			SGS = {
+				set_country_flag = SGS_souxunfeiping_flag
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = SGS_souxunfeiping2_tt
+			SGS = {
+				add_to_variable = {
+					SGS_feipingliang = 10
+				}
+				clr_country_flag = SGS_souxunfeiping_flag
+			}
+		}
+	}
+	SGS_souxunfeiping2_decision = {
+		icon = generic_disband_irregulars
+		visible = {
+			has_completed_focus = SGS_souxunhuanrufeiping
+			has_country_flag = SGS_xinanhuanxiangxianggongyehua_flag
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SGS_souxunfeiping_tt
+				not = {has_country_flag = SGS_souxunfeiping_flag}
+			}
+			or = {
+				or = {
+					SGS = { owns_state = 370 }
+					any_other_country = {
+						is_subject_of = SGS
+						owns_state = 370
+					}
+				}
+				or = {
+					SGS = { owns_state = 425 }
+					any_other_country = {
+						is_subject_of = SGS
+						owns_state = 425
+					}
+				}	
+				or = {
+					SGS = { owns_state = 186 }
+					any_other_country = {
+						is_subject_of = SGS
+						owns_state = 186
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 2000
+			modifier = {
+				factor = 0
+				SGS = {
+					check_variable = {
+						SGS_feipingliang > 19.99
+					}
+				}
+			}
+		}
+		cost = 25
+		days_remove = 80
+		complete_effect = {
+			SGS = {
+				set_country_flag = SGS_souxunfeiping_flag
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = SGS_souxunfeiping3_tt
+			SGS = {
+				add_to_variable = {
+					SGS_feipingliang = 20
+				}
+				clr_country_flag = SGS_souxunfeiping_flag
+			}
+		}
+	}
+	SGS_weixiufeiping_decision = {
+		icon = generic_wreckers
+		visible = {
+			has_completed_focus = SGS_feipingweixiubumen
+			has_country_flag = SGS_xinanhuanxiangxianggongyehua_flag
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SGS_weixiufeiping_tt
+				not = {has_country_flag = SGS_weixiufeiping_flag}
+			}
+			custom_trigger_tooltip = {
+				tooltip = SGS_weixiufeiping4_tt
+				SGS = {
+					check_variable = {
+						SGS_feipingliang > 9.99
+					}
+				}
+			}
+			num_of_civilian_factories_available_for_projects > 0
+		}
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				factor = 0
+				SGS = {
+					check_variable = {
+						SGS_gongyejixie > 9.99
+					}
+				}
+			}
+		}
+		days_remove = 60
+		complete_effect = {
+			set_country_flag = SGS_weixiufeiping_flag
+		}
+		complete_effect = {
+			custom_effect_tooltip = SGS_weixiufeiping21_tt
+			SGS = {
+				add_to_variable = {
+					SGS_feipingliang = -10
+				}
+			}
+		}
+		modifier = {
+			civilian_factory_use = 1
+		}
+		remove_effect = {
+			clr_country_flag = SGS_weixiufeiping_flag
+			custom_effect_tooltip = SGS_weixiufeiping22_tt
+			SGS = {
+				add_to_variable = {
+					SGS_gongyejixie = 5
+				}
+			}
+		}
+	}
+	SGS_weixiufeiping2_decision = {
+		icon = generic_wreckers
+		visible = {
+			has_completed_focus = SGS_feipingweixiubumen
+			has_country_flag = SGS_xinanhuanxiangxianggongyehua_flag
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SGS_weixiufeiping_tt
+				not = {has_country_flag = SGS_weixiufeiping_flag}
+			}
+			custom_trigger_tooltip = {
+				tooltip = SGS_weixiufeiping5_tt
+				SGS = {
+					check_variable = {
+						SGS_feipingliang > 19.99
+					}
+				}
+			}
+			num_of_civilian_factories_available_for_projects > 1
+		}
+		ai_will_do = {
+			factor = 2000
+			modifier = {
+				factor = 0
+				SGS = {
+					check_variable = {
+						SGS_gongyejixie > 9.99
+					}
+				}
+			}
+		}
+		days_remove = 80
+		complete_effect = {
+			set_country_flag = SGS_weixiufeiping_flag
+		}
+		modifier = {
+			civilian_factory_use = 2
+		}
+		complete_effect = {
+			custom_effect_tooltip = SGS_weixiufeiping31_tt
+			SGS = {
+				add_to_variable = {
+					SGS_feipingliang = -20
+				}
+			}
+		}
+		remove_effect = {
+			clr_country_flag = SGS_weixiufeiping_flag
+			custom_effect_tooltip = SGS_weixiufeiping32_tt
+			SGS = {
+				add_to_variable = {
+					SGS_gongyejixie = 10
+				}
+			}
+		}
+	}
+	SGS_shengchangongyejixie1_decision = {
+		icon = generic_merge_plant_materiel
+		visible = {
+			has_country_flag = SGS_xinanhuanxiangxianggongyehua_flag
+			SGS = {
+				check_variable = {
+					SGS_gongyehua = 1
+				}
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+			SGS = {
+				check_variable = {
+					SGS_gongyehua = 1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				factor = 0
+				SGS = {
+					check_variable = {
+						SGS_gongyejixie > 19.99
+					}
+				}
+			}
+			
+		}
+		days_remove = 50
+		modifier = {
+			civilian_factory_use = 5
+		}
+		remove_effect = {
+			custom_effect_tooltip = SGS_shengchangongyejixie1_tt
+			SGS = {
+				add_to_variable = {
+					SGS_gongyejixie = 5
+				}
+			}
+		}
+	}
+	SGS_shengchangongyejixie2_decision = {
+		icon = generic_merge_plant_materiel
+		visible = {
+			has_country_flag = SGS_xinanhuanxiangxianggongyehua_flag
+			SGS = {
+				check_variable = {
+					SGS_gongyehua = 2
+				}
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 2
+			SGS = {
+				check_variable = {
+					SGS_gongyehua = 2
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				factor = 0
+				SGS = {
+					check_variable = {
+						SGS_gongyejixie > 19.99
+					}
+				}
+			}
+			
+		}
+		days_remove = 50
+		modifier = {
+			civilian_factory_use = 3
+		}
+		remove_effect = {
+			custom_effect_tooltip = SGS_shengchangongyejixie2_tt
+			SGS = {
+				add_to_variable = {
+					SGS_gongyejixie = 10
+				}
+			}
+		}
+	}
+	SGS_shengchangongyejixie3_decision = {
+		icon = generic_merge_plant_materiel
+		visible = {
+			has_country_flag = SGS_xinanhuanxiangxianggongyehua_flag
+			SGS = {
+				check_variable = {
+					SGS_gongyehua = 3
+				}
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 1
+			SGS = {
+				check_variable = {
+					SGS_gongyehua = 3
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				factor = 0
+				SGS = {
+					check_variable = {
+						SGS_gongyejixie > 19.99
+					}
+				}
+			}
+			
+		}
+		days_remove = 40
+		modifier = {
+			civilian_factory_use = 2
+		}
+		remove_effect = {
+			custom_effect_tooltip = SGS_shengchangongyejixie3_tt
+			SGS = {
+				add_to_variable = {
+					SGS_gongyejixie = 20
+				}
+			}
+		}
+	}
+	SGS_shengchangongyejixie4_decision = {
+		icon = generic_merge_plant_materiel
+		visible = {
+			has_country_flag = SGS_xinanhuanxiangxianggongyehua_flag
+			SGS = {
+				check_variable = {
+					SGS_gongyehua = 4
+				}
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			SGS = {
+				check_variable = {
+					SGS_gongyehua = 4
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				factor = 0
+				SGS = {
+					check_variable = {
+						SGS_gongyejixie > 19.99
+					}
+				}
+			}
+			
+		}
+		days_remove = 40
+		modifier = {
+			civilian_factory_use = 1
+		}
+		remove_effect = {
+			custom_effect_tooltip = SGS_shengchangongyejixie4_tt
+			SGS = {
+				add_to_variable = {
+					SGS_gongyejixie = 30
+				}
+			}
+		}
+	}
+	SGS_jingruxiayijieduan1_decision = {
+		visible = {
+			has_country_flag = SGS_xinanhuanxiangxianggongyehua_flag
+			SGS = {
+				check_variable = {
+					SGS_gongyehua = 1
+				}
+			}
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SGS_gongyehuajingdu1_tt
+				SGS = {
+					check_variable = {
+						SGS_gongyehuajingdu1 > 9.99
+					}
+					check_variable = { 
+						SGS_gongyehua < 4
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 10000
+		}
+		remove_effect = {
+			
+			SGS = {
+				add_to_variable = {
+					SGS_gongyehua = 1
+				}
+			}
+		}
+	}
+	SGS_jingruxiayijieduan2_decision = {
+		visible = {
+			has_country_flag = SGS_xinanhuanxiangxianggongyehua_flag
+			SGS = {
+				check_variable = {
+					SGS_gongyehua = 2
+				}
+			}
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SGS_gongyehuajingdu2_tt
+				SGS = {
+					check_variable = {
+						SGS_gongyehuajingdu2 > 9.99
+					}
+					check_variable = { 
+						SGS_gongyehua < 4
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 10000
+		}
+		remove_effect = {
+			
+			SGS = {
+				add_to_variable = {
+					SGS_gongyehua = 1
+				}
+			}
+		}
+	}
+	SGS_jingruxiayijieduan3_decision = {
+		visible = {
+			has_country_flag = SGS_xinanhuanxiangxianggongyehua_flag
+			SGS = {
+				check_variable = {
+					SGS_gongyehua = 3
+				}
+			}
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SGS_gongyehuajingdu3_tt
+				SGS = {
+					check_variable = {
+						SGS_gongyehuajingdu3 > 9.99
+					}
+					check_variable = { 
+						SGS_gongyehua < 4
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 10000
+		}
+		remove_effect = {
+			
+			SGS = {
+				add_to_variable = {
+					SGS_gongyehua = 1
+				}
+			}
+		}
+	}
+	SGS_shuilifadianchang_decision = {
+		icon = hol_drain_water_lines
+		visible = {
+			has_country_flag = SGS_xinanhuanxiangxianggongyehua_flag
+			has_completed_focus = SGS_shengchandianli
+		}
+		available = {
+			or = {
+				FROM = {
+					is_owned_and_controlled_by = SGS
+				}
+				any_other_country = {
+					is_subject_of = SGS
+					owns_state = FROM
+				}
+			}
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				factor = 0
+				SGS = {
+					check_variable = {
+						SGS_dianliang > 7.99
+					}
+				}
+			}
+		}
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				has_state_flag = SGS_shuiba_flag
+			}
+		}
+		fire_only_once = yes
+		days_remove = 120
+		modifier = {
+			civilian_factory_use = 3
+		}
+		remove_effect = {
+			custom_effect_tooltip = SGS_shuilifadianchang_tt
+			SGS = {
+				add_to_variable = {
+					SGS_dianliang = 11
+				}
+			}
+			FROM = {
+				add_manpower = -500
+			}
+		}
+	}
+	SGS_linglifadianchang1_decision = {
+		icon = generic_construction
+		visible = {
+			has_country_flag = SGS_xinanhuanxiangxianggongyehua_flag
+			has_completed_focus = SGS_shengchandianli
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+		}
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				factor = 0
+				SGS = {
+					check_variable = {
+						SGS_dianliang > 7.99
+					}
+				}
+			}
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 1
+		}
+		remove_effect = {
+			custom_effect_tooltip = SGS_linglifadianchang_tt
+			SGS = {
+				add_to_variable = {
+					SGS_dianliang = 3
+				}
+			}
+		}
+	}
+	SGS_linglifadianchang2_decision = {
+		icon = generic_construction
+		visible = {
+			has_country_flag = SGS_xinanhuanxiangxianggongyehua_flag
+			has_completed_focus = SGS_shengchandianli
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+		}
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				factor = 0
+				SGS = {
+					check_variable = {
+						SGS_dianliang > 7.99
+					}
+				}
+			}
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 1
+		}
+		remove_effect = {
+			custom_effect_tooltip = SGS_linglifadianchang_tt
+			SGS = {
+				add_to_variable = {
+					SGS_dianliang = 3
+				}
+			}
+		}
+	}
+	SGS_linglifadianchang3_decision = {
+		icon = generic_construction
+		visible = {
+			has_country_flag = SGS_xinanhuanxiangxianggongyehua_flag
+			has_completed_focus = SGS_shengchandianli
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+		}
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				factor = 0
+				SGS = {
+					check_variable = {
+						SGS_dianliang > 7.99
+					}
+				}
+			}
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 1
+		}
+		remove_effect = {
+			custom_effect_tooltip = SGS_linglifadianchang_tt
+			SGS = {
+				add_to_variable = {
+					SGS_dianliang = 3
+				}
+			}
+		}
+	}
+	SGS_linglifadianchang4_decision = {
+		icon = generic_construction
+		visible = {
+			has_country_flag = SGS_xinanhuanxiangxianggongyehua_flag
+			has_completed_focus = SGS_shengchandianli
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+		}
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				factor = 0
+				SGS = {
+					check_variable = {
+						SGS_dianliang > 7.99
+					}
+				}
+			}
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 1
+		}
+		remove_effect = {
+			custom_effect_tooltip = SGS_linglifadianchang_tt
+			SGS = {
+				add_to_variable = {
+					SGS_dianliang = 3
+				}
+			}
+		}
+	}
+	SGS_gongyehuajianzao1_decision = {
+		icon = generic_construction
+		visible = {
+			has_country_flag = SGS_xinanhuanxiangxianggongyehua_flag
+			SGS = {
+				check_variable = {
+					SGS_gongyehua = 1
+				}
+			}
+		}
+		available = {
+			or = {
+				FROM = {
+					is_owned_and_controlled_by = SGS
+				}
+				any_other_country = {
+					is_subject_of = SGS
+					owns_state = FROM
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = SGS_gongyehuajianzao1_tt
+				SGS = {
+					check_variable = {
+						SGS_gongyejixie > 1.99
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		fire_only_once = yes
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				has_state_flag = SGS_xinangongyehua_flag
+			}
+		}
+		days_remove = 60
+		complete_effect = {
+			custom_effect_tooltip = SGS_gongyehuajingdutuijing11_tt
+			SGS = {
+				add_to_variable = {
+					SGS_gongyejixie = -2
+				}
+			}
+		
+		}
+		remove_effect = {
+			custom_effect_tooltip = SGS_gongyehuajingdutuijing12_tt
+			FROM = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_manpower = -50
+			}
+			SGS = {
+				add_to_variable = {
+					SGS_gongyehuajingdu1 = 1
+				}
+			}
+			
+		}
+	}
+	SGS_gongyehuajianzao2_decision = {
+		icon = generic_construction
+		visible = {
+			has_country_flag = SGS_xinanhuanxiangxianggongyehua_flag
+			SGS = {
+				check_variable = {
+					SGS_gongyehua = 2
+				}
+			}
+		}
+		available = {
+			or = {
+				FROM = {
+					is_owned_and_controlled_by = SGS
+				}
+				any_other_country = {
+					is_subject_of = SGS
+					owns_state = FROM
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = SGS_gongyehuajianzao21_tt
+				SGS = {
+					check_variable = {
+						SGS_gongyejixie > 3.99
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = SGS_gongyehuajianzao22_tt
+				SGS = {
+					check_variable = {
+						SGS_dianliang > 1.99
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		fire_only_once = yes
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				has_state_flag = SGS_xinangongyehua_flag
+			}
+		}
+		days_remove = 60
+		complete_effect = {
+			custom_effect_tooltip = SGS_gongyehuajingdutuijing21_tt
+			SGS = {
+				add_to_variable = {
+					SGS_gongyejixie = -4
+				}
+			}
+			custom_effect_tooltip = SGS_gongyehuajingdutuijing23_tt
+			SGS = {
+				add_to_variable = {
+					SGS_dianliang = -2
+				}
+			}
+		
+		}
+		remove_effect = {
+			custom_effect_tooltip = SGS_gongyehuajingdutuijing22_tt
+			FROM = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_manpower = -75
+			}
+			SGS = {
+				add_to_variable = {
+					SGS_gongyehuajingdu2 = 1
+				}
+			}
+			
+		}
+	}
+	SGS_gongyehuajianzao3_decision = {
+		icon = generic_construction
+		visible = {
+			has_country_flag = SGS_xinanhuanxiangxianggongyehua_flag
+			SGS = {
+				check_variable = {
+					SGS_gongyehua > 2
+				}
+			}
+		}
+		available = {
+			or = {
+				FROM = {
+					is_owned_and_controlled_by = SGS
+				}
+				any_other_country = {
+					is_subject_of = SGS
+					owns_state = FROM
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = SGS_gongyehuajianzao31_tt
+				SGS = {
+					check_variable = {
+						SGS_gongyejixie > 5.99
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = SGS_gongyehuajianzao32_tt
+				SGS = {
+					check_variable = {
+						SGS_dianliang > 3.99
+					}
+				}
+				
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+		fire_only_once = yes
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				has_state_flag = SGS_xinangongyehua_flag
+			}
+		}
+		days_remove = 60
+		complete_effect = {
+			custom_effect_tooltip = SGS_gongyehuajingdutuijing31_tt
+			SGS = {
+				add_to_variable = {
+					SGS_gongyejixie = -6
+				}
+			}
+			custom_effect_tooltip = SGS_gongyehuajingdutuijing33_tt
+			SGS = {
+				add_to_variable = {
+					SGS_dianliang = -4
+				}
+			}
+			
+		
+		}
+		remove_effect = {
+			custom_effect_tooltip = SGS_gongyehuajingdutuijing32_tt
+			FROM = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_manpower = -100
+			}
+			SGS = {
+				add_to_variable = {
+					SGS_gongyehuajingdu3 = 1
+				}
+			}
+			
+		}
+	} 
+}
+SGS_xinaoyizu_category = {
+	SGS_xinaoyizu_decision = {
+		visible = {
+			has_completed_focus = SGS_xinaoyizu
+		}
+		available = {
+			has_equipment = {
+				magic_core141 > 99
+			}
+		}
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = SGS
+				not = {
+					ST_race_is_Fairy = yes
+				}
+			}
+		}
+		fire_only_once = yes
+		cost = 40
+		days_remove = 60
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = magic_core141
+				amount = -100
+			}
+		}
+		remove_effect = {
+			FROM = {
+				ST_race_penalty_remove = yes
+			}
+		}
+	}
+}
+SGS_kaicaiziyaun_category = { 
+	SGS_kaicaiyaoshi_decision = {
+		icon = hol_draw_up_staff_plans
+		visible = {
+			has_completed_focus = SGS_kaicaiziyuan
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 1
+			
+		}
+		fire_only_once = yes
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				has_state_flag = SGS_yaoshi_flag
+				
+			}
+			or = {
+				FROM = {
+					is_owned_and_controlled_by = SGS
+				}
+				any_other_country = {
+					is_subject_of = SGS
+					owns_state = FROM
+				}
+			}
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 2
+		}
+		remove_effect = {
+			FROM = {
+				add_resource = {
+					type = crystal
+					amount = 10
+				}
+			}
+		}
+	}
+	SGS_kaicailingqi_decision = {
+		icon = hol_draw_up_staff_plans
+		visible = {
+			has_completed_focus = SGS_kaicaiziyuan
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 1
+			
+		}
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				has_state_flag = SGS_lingqi_flag
+				
+			}
+			or = {
+				FROM = {
+					is_owned_and_controlled_by = SGS
+				}
+				any_other_country = {
+					is_subject_of = SGS
+					owns_state = FROM
+				}
+			}
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 2
+		}
+		remove_effect = {
+			FROM = {
+
+				add_resource = {
+					type = gas
+					amount = 10
+				}
+			}
+		}
+	}
+}
+SGS_jiefangyaojingtongbao_category = {
+	SGS_jiefangyaojingtongbao_decision = {
+		visible = {
+			has_completed_focus = SGS_jiefangyaojingtongbao
+		}
+		available = {
+			FROM = {
+				before_declare_war = yes
+			}
+			is_subject = no
+		}
+		war_with_target_on_remove = yes
+		target_trigger = {
+			FROM = {
+				or = {
+					controls_state = 122
+					controls_state = 118
+					controls_state = 339
+					controls_state = 12
+					controls_state = 467
+					controls_state = 888
+					controls_state = 138
+					controls_state = 29
+				}
+				or = {
+					not = {has_idea = Fairy}
+					tag = SCA
+					and = {
+						tag = YUK
+						not = {
+							or = {
+								has_government = fandong
+								has_government = qinwai
+							}
+						}
+					}
+					and = {
+						tag = CLO
+						not = {
+							or = {
+								has_government = fandong
+								has_government = neworder
+							}
+						}
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+		cost = 30
+		days_remove = 15
+		remove_effect = {
+			create_wargoal = {
+				target = FROM
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+}

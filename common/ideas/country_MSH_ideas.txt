@@ -1,0 +1,397 @@
+ideas = {
+	country = {
+      MSH_ziyuanfeng_idea = {
+	    	picture = ast_all_in
+          allowed = {
+          always = no
+        }
+
+        available = {
+
+        }
+
+        allowed_civil_war = {
+        }
+        
+        removal_cost = -1
+    
+        modifier = {
+          stability_factor = 0.1
+          conscription_factor = 0.08
+          local_resources_factor = 0.25
+        }
+        research_bonus = {
+          resource = 0.15
+        }
+	    }
+	    MSH_ziqiang_idea = {
+        name = MSH_ziqiang
+	    	picture = FRA_matignon_agreements
+	    	allowed = {
+          always = no
+        }
+
+        available = {
+          not = {
+            has_cosmetic_tag = MAF_united
+          }
+        }
+
+        allowed_civil_war = {
+        }
+			
+			  removal_cost = -1
+	
+			  modifier = {
+          MSH_boyili_factor = 0.5
+			  }
+	    }
+      MSH_weilecunzai_idea = {
+        name = MSH_weilecunzai
+        picture = FRA_fortification_focus
+        allowed = {
+          always = no
+        }
+
+        available = {
+          not = {
+            has_cosmetic_tag = MAF_united
+          }
+        }
+        modifier = {
+          army_core_attack_factor = 0.15
+          army_core_defence_factor = 0.15
+			  }
+      }
+      MSH_zhudongchuji_idea = {
+        name = MSH_zhudongchuji
+        picture = generic_intel_bonus
+        allowed = {
+          always = no
+        }
+
+        available = {
+          not = {
+            has_cosmetic_tag = MAF_united
+          }
+        }
+        modifier = {
+          army_attack_factor = 0.08
+          army_defence_factor = 0.08
+			  }
+      }
+      MSH_yingxiangshili_idea = {
+        name = MSH_yingxiangshili
+        picture = wilkies_new_deal
+        allowed = {
+          always = no
+        }
+
+        available = {
+          not = {
+            has_cosmetic_tag = MAF_united
+          }
+        }
+        modifier = {
+          MSH_boyili_factor = 0.3
+			  }
+      }
+      MSH_jichumofa_idea = {
+        name = MSH_jichumofa
+        picture = generic_research_bonus
+        allowed = {
+          always = no
+        }
+
+        available = {
+        }
+        modifier = {
+
+			  }
+        research_bonus = {
+          magic = 0.1
+        }
+      }
+      MSH_guizhenggaojimofa_idea = {
+        name = MSH_guizhenggaojimofa
+        picture = generic_infantry_bonus
+        allowed = {
+          always = no
+        }
+
+        available = {
+        }
+        modifier = {
+          army_infantry_attack_factor = 0.04
+          army_infantry_defence_factor = 0.04
+			  }
+      }
+      MSH_souxunziyuan_idea = {
+	    	picture = ast_all_in
+        allowed = {
+          always = no
+        }
+
+        available = {
+
+        }
+        modifier = {
+          stability_factor = 0.1
+          conscription_factor = 0.08
+          local_resources_factor = 0.5
+        }
+        research_bonus = {
+          resource = 0.15
+        }
+	    }
+      MSH_jiandanjianzaoguihua_idea = {
+	    	picture = ast_all_in
+        allowed = {
+          always = no
+        }
+
+        available = {
+
+        }
+        modifier = {
+          stability_factor = 0.1
+          conscription_factor = 0.08
+          production_speed_buildings_factor = 0.05
+        }
+        research_bonus = {
+          resource = 0.15
+        }
+	    }
+      MSH_zhongchengzuizhongyao_idea = {
+        name = MSH_zhongchengzuizhongyao
+        picture = german_advisors
+        allowed = {
+          always = no
+        }
+
+        available = {
+          not = {
+            has_cosmetic_tag = MAF_united
+          }
+        }
+        modifier = {
+          army_org_factor = 0.15
+        }
+	    }
+      MSH_shuliangzuizhongyao_idea = {
+        name = MSH_shuliangzuizhongyao
+        picture = generic_manpower_bonus
+        allowed = {
+          always = no
+        }
+
+        available = {
+          not = {
+            has_cosmetic_tag = MAF_united
+          }
+        }
+        modifier = {
+          weekly_manpower = 0.02
+          training_time_factor = -0.25
+        }
+	    }
+      MSH_dacunluo_idea = {
+        name = MSH_dacunluo
+        picture = generic_manpower_bonus
+        allowed = {
+          always = no
+        }
+
+        available = {
+        }
+        modifier = {
+          monthly_population = 0.2
+        }
+      }
+      MSH_fensanxiaocunluo_idea = {
+        name = MSH_fensanxiaocunluo
+        picture = generic_manpower_bonus
+        allowed = {
+          always = no
+        }
+
+        available = {
+        }
+        modifier = {
+          monthly_population = 0.1
+        }
+      }
+      MSH_fusangshenyoushi_idea = {
+        name = MSH_fusangshenyoushi
+        picture = generic_production_bonus
+        allowed = {
+          always = no
+        }
+
+        available = {
+        }
+        modifier = {
+          production_factory_efficiency_gain_factor = 0.25
+          industrial_capacity_factory = 0.15
+        }
+      }
+      MSH_yaojingyoushi_idea = {
+        name = MSH_yaojingyoushi
+        picture = generic_exploit_mines
+        allowed = {
+          always = no
+        }
+
+        available = {
+        }
+        modifier = {
+          global_building_slots_factor = 0.1
+          supply_consumption_factor = -0.15
+        }
+      }
+      MSH_yaoguaiyoushi_idea = {
+        name = MSH_yaoguaiyoushi
+        picture = generic_deal_with_the_devil
+        allowed = {
+          always = no
+        }
+
+        available = {
+        }
+        modifier = {
+          land_night_attack = 0.15
+        }
+      }
+      MSH_ningjuzhongzu_idea = {
+        name = MSH_ningjuzhongzu
+        picture = gre_venerate_the_ancient_hellenes_plato_alexander
+        allowed = {
+          always = no
+        }
+
+        available = {
+        }
+        modifier = {
+          land_night_attack = 0.15
+          global_building_slots_factor = 0.1
+          supply_consumption_factor = -0.15
+          production_factory_efficiency_gain_factor = 0.25
+          industrial_capacity_factory = 0.15
+          political_power_factor = 0.2
+          stability_factor = 0.15
+        }
+      }
+      MSH_mopaoxueyuan_idea = {
+        name = MSH_mopaoxueyuan
+        picture = general_staff
+        allowed = {
+          always = no
+        }
+
+        available = {
+        }
+        modifier = {
+          command_power_gain_mult = 0.15
+          max_command_power_mult = 0.2
+          army_leader_start_attack_level = 1
+          army_leader_start_defense_level = 1
+          army_leader_start_planning_level = 1
+          army_leader_start_logistics_level = 1
+        }
+      }
+      MSH_minjianmofaxueyuan_idea = {
+        name = MSH_minjianmofaxueyuan
+        picture = generic_research_bonus
+        allowed = {
+          always = no
+        }
+
+        available = {
+        }
+        modifier = {
+
+        }
+        research_bonus = {
+          magic = 0.05
+        }
+      }
+      MSH_daojudidui_idea = {
+        name = MSH_daojudidui
+        picture = generic_production_bonus
+        allowed = {
+          always = no
+        }
+
+        available = {
+        }
+        targeted_modifier = {
+          tag = TKM
+          attack_bonus_against = 0.1
+          defense_bonus_against = 0.1
+        }
+      }
+      MSH_mofasenlintudi_idea = {
+        name = MSH_mofasenlintudi
+        picture = generic_fascism_drift_bonus
+        allowed = {
+          always = no
+        }
+
+        available = {
+        }
+        targeted_modifier = {
+          tag = CIR
+          attack_bonus_against = 0.05
+          defense_bonus_against = 0.05
+        }
+        targeted_modifier = {
+          tag = SEJ
+          attack_bonus_against = 0.05
+          defense_bonus_against = 0.05
+        }
+        targeted_modifier = {
+          tag = RMI
+          attack_bonus_against = 0.05
+          defense_bonus_against = 0.05
+        }
+        targeted_modifier = {
+          tag = NIB
+          attack_bonus_against = 0.05
+          defense_bonus_against = 0.05
+        }
+      }
+      MSH_zhenglimofawenxian_idea1 = {
+        picture = man_five_year_plan_industry
+        available = {
+          not = {
+            has_cosmetic_tag = MAF_united
+          }
+        }
+        modifier = {
+          industrial_factory_donations = 1
+        }
+      }
+      MSH_zhenglimofawenxian_idea2 = {
+        picture = mex_politicised_army
+        available = {
+          not = {
+            has_cosmetic_tag = MAF_united
+          }
+        }
+        modifier = {
+          military_factory_donations = 1
+        }
+      }
+      MSH_zhenglimofawenxian_idea3 = {
+        picture = generic_production_bonus
+        available = {
+          not = {
+            has_cosmetic_tag = MAF_united
+          }
+        }
+        modifier = {
+          production_factory_efficiency_gain_factor = 0.15
+        }
+      }
+  }
+}

@@ -1,0 +1,405 @@
+HU3_tongyi = {
+    HU3_tongyi_1 = {
+    visible = {
+          tag = HU3
+          is_subject = no
+        }
+        
+        available = {
+           NOT = { country_exists = SGS }
+          NOT = { country_exists = MEL }
+          NOT = { country_exists = GH2 }
+          NOT = { country_exists = HU4 }
+          NOT = { country_exists = HU2 }
+          NOT = { country_exists = HU1 }
+          NOT = { country_exists = AKI }
+        }
+
+        cost = 0
+
+        fire_only_once = yes
+
+        complete_effect = {
+            
+            if = {
+                limit = {
+                 not = {
+                    has_country_flag = HU3_yuanjiaozhixian
+                 }
+                 }
+            set_cosmetic_tag = HU3_xinanzhengfu_1
+            add_ideas = Country
+        }
+        if = {
+                limit = {
+                 has_idea = HU3_shenyoujuntuanzhizheng_idea
+                 }
+            set_cosmetic_tag = HU3_xinanzhengfu
+            add_ideas = Country
+        }
+        else_if = {
+                limit = {
+                 has_idea = HU3_wumingqiujuntuanzhizheng_idea
+                 }
+            set_cosmetic_tag = HU3_xinanzhengfu_1
+            add_ideas = Country
+        }
+        else_if = {
+                limit = {
+                 has_idea = HU3_jingyejuntuanzhizheng_idea
+                 }
+            set_cosmetic_tag = HU3_xinanzhengfu_2
+        }
+
+    }
+
+        remove_effect = {
+
+        }
+
+        ai_will_do = {
+            base = 10000
+        }
+    }
+     HU3_tongyi_2 = {
+    visible = {
+          tag = HU3
+          not = {
+            has_country_flag = hu3_xinantongyile
+          }
+        }
+        
+        available = {
+           has_completed_focus = HU3_tongyi3
+           not = {
+            has_country_flag = hu3_xinantongyile
+          }
+        }
+
+        cost = 50
+
+        fire_only_once = yes
+        days_remove = 30
+
+        complete_effect = {
+            if = {
+                limit = {
+                  country_exists = AKI
+                 }
+            declare_war_on = {
+				    target =AKI
+				    type = annex_everything
+			}
+            }
+            if = {
+                limit = {
+                  country_exists = HU1
+                 }
+            declare_war_on = {
+				    target =HU1
+				    type = annex_everything
+			}
+            }
+            if = {
+                limit = {
+                  country_exists = HU2
+                 }
+            declare_war_on = {
+				    target =HU2
+				    type = annex_everything
+			}
+            }
+            if = {
+                limit = {
+                  country_exists = SGS
+                 }
+            declare_war_on = {
+				    target =SGS
+				    type = annex_everything
+			}
+            }
+            if = {
+                limit = {
+                  country_exists = HU4
+                 }
+            declare_war_on = {
+				    target =HU4
+				    type = annex_everything
+			}
+            }
+            if = {
+                limit = {
+                  country_exists = ASG
+                 }
+            declare_war_on = {
+				    target =ASG
+				    type = annex_everything
+			}
+            }
+            if = {
+                limit = {
+                  country_exists = GH2
+                 }
+            declare_war_on = {
+				    target =GH2
+				    type = annex_everything
+			}
+            }
+
+    }
+
+        remove_effect = {
+
+        }
+
+        ai_will_do = {
+            base = 10000
+        }
+    }
+}
+    HU3_kaifahuangdi_decision = {
+    HU3_kaifahuangdi_1 = {
+        visible = {
+            has_completed_focus = HU3_gongye7
+        }
+        state_target = yes
+        target_trigger = {
+            FROM = {
+                is_owned_and_controlled_by = HU3
+                or = {
+                    is_core_of = HU2
+                    is_core_of = HU4
+                    is_core_of = HU1
+                    is_core_of = MEL
+                    is_core_of = GH2
+                    is_core_of = GH3
+                    is_core_of = AKI
+                    is_core_of = SGS
+                    has_state_flag = HU3_xiwangkaifa_flag
+                }
+                not = {has_state_flag = HU3_kaifatudi_flag}
+            }
+        }
+ 
+        cost = 5
+        days_remove = 20
+        remove_effect = {
+            FROM = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+                set_state_flag = HU3_kaifatudi_flag
+            }
+        }
+    }
+}
+    HU3_kuodayancaomaoyi = {
+    HU3_kuodayancaomaoyi_1 = {
+        available = {
+            NOT = {
+                has_country_flag = HU3_kuodayancaomaoyi_flag
+                has_idea = HU3_yapianmaoyi_idea_4
+            }
+        }
+        visible = {
+            has_completed_focus = HU3_changshizhongzhiyingsu
+        }
+        cost = 100
+        days_remove = 200
+        ai_will_do = {
+            base = 50
+        }
+        complete_effect = {
+            set_country_flag = HU3_kuodayancaomaoyi_flag
+        }
+        remove_effect = {
+            clr_country_flag = HU3_kuodayancaomaoyi_flag
+            if = {
+                limit = { has_idea = HU3_yapianmaoyi_idea_1 }
+                swap_ideas = {
+                    remove_idea = HU3_yapianmaoyi_idea_1
+                    add_idea = HU3_yapianmaoyi_idea_2
+                }
+            } 
+            else_if = {
+                limit = { has_idea = HU3_yapianmaoyi_idea_2 }
+                swap_ideas = {
+                    remove_idea = HU3_yapianmaoyi_idea_2
+                    add_idea = HU3_yapianmaoyi_idea_3
+                }
+            }
+            else_if = {
+                limit = { has_idea = HU3_yapianmaoyi_idea_3 }
+                swap_ideas = {
+                    remove_idea = HU3_yapianmaoyi_idea_3
+                    add_idea = HU3_yapianmaoyi_idea_4
+                }
+            }
+            
+        }
+    }
+    
+    
+    
+    
+   
+}
+HU3_junduiyapianwenti = {
+   hu3_paichayapianwenti = {
+        icon = generic_political_actions
+
+        available = {
+            always = no
+        }
+        visible = {
+            has_completed_focus = HU3_changshizhongzhiyingsu
+        }
+
+        days_mission_timeout = 90
+
+        fire_only_once = no
+        is_good = no
+        activation = {
+            OR = {
+                has_idea = HU3_junduiyapianfanlan_idea_1
+                has_idea = HU3_junduiyapianfanlan_idea_2
+                has_idea = HU3_junduiyapianfanlan_idea_3
+                has_idea = HU3_junduiyapianfanlan_idea_4
+                has_idea = HU3_junduiyapianfanlan_idea_5
+            }
+        }
+
+        cancel_trigger = {
+            NOT = { has_idea = HU3_junduiyapianfanlan_idea_1 }
+            NOT = { has_idea = HU3_junduiyapianfanlan_idea_2 }
+            NOT = { has_idea = HU3_junduiyapianfanlan_idea_3 }
+            NOT = { has_idea = HU3_junduiyapianfanlan_idea_4 }
+            NOT = { has_idea = HU3_junduiyapianfanlan_idea_5 }
+        }
+
+        timeout_effect = {
+            if = {
+                limit = { has_idea = HU3_junduiyapianfanlan_idea_1 }
+                random_list = {
+                    70 = {
+                       remove_idea = HU3_junduiyapianfanlan_idea_1
+                       add_ideas = HU3_junduiyapianfanlan_idea_2
+                    }
+                    30 = {
+                        custom_effect_tooltip = SAT_Nothing_happens_tt
+                    }
+                }
+            }
+            else_if = {
+                limit = { has_idea = HU3_junduiyapianfanlan_idea_2 }
+                random_list = {
+                    70 = {
+                        remove_idea = HU3_junduiyapianfanlan_idea_2
+                       add_ideas = HU3_junduiyapianfanlan_idea_3
+                    }
+                    30 = {
+                        custom_effect_tooltip = SAT_Nothing_happens_tt
+                    }
+                }
+            }
+            else_if = {
+                limit = { has_idea = HU3_junduiyapianfanlan_idea_3 }
+                random_list = {
+                    70 = {
+                        remove_idea = HU3_junduiyapianfanlan_idea_3
+                       add_ideas = HU3_junduiyapianfanlan_idea_4
+                    }
+                    30 = {
+                        custom_effect_tooltip = SAT_Nothing_happens_tt
+                    }
+                }
+            }
+            else_if = {
+                limit = { has_idea = HU3_junduiyapianfanlan_idea_4 }
+                random_list = {
+                    70 = {
+                        remove_idea = HU3_junduiyapianfanlan_idea_4
+                       add_ideas = HU3_junduiyapianfanlan_idea_5
+                    }
+                    30 = {
+                        custom_effect_tooltip = SAT_Nothing_happens_tt
+                    }
+                }
+            }
+            
+        }
+    }
+hu3_xiaomieyapianfanlan = {
+    available = {
+    not = { has_country_flag = HU3_qingchuyapian_flag }
+            OR = {
+                has_idea = HU3_junduiyapianfanlan_idea_2
+                has_idea = HU3_junduiyapianfanlan_idea_3
+                has_idea = HU3_junduiyapianfanlan_idea_4
+                has_idea = HU3_junduiyapianfanlan_idea_5
+            }
+        }
+        visible = {
+            has_completed_focus = HU3_changshizhongzhiyingsu
+        }
+        fire_only_once = no
+        cost = 200
+        days_remove = 60
+        ai_will_do = {
+            base = 200
+        }
+        complete_effect = {
+            set_country_flag = HU3_qingchuyapian_flag
+        }
+        remove_effect = {
+            clr_country_flag = HU3_qingchuyapian_flag
+            if = {
+                limit = { has_idea = HU3_junduiyapianfanlan_idea_5 }
+                swap_ideas = {
+                    remove_idea = HU3_junduiyapianfanlan_idea_5
+                    add_idea = HU3_junduiyapianfanlan_idea_4
+                }
+            } 
+            else_if = {
+                limit = { has_idea = HU3_junduiyapianfanlan_idea_4 }
+                swap_ideas = {
+                    remove_idea = HU3_junduiyapianfanlan_idea_4
+                    add_idea = HU3_junduiyapianfanlan_idea_3
+                }
+            }
+            else_if = {
+                limit = { has_idea = HU3_junduiyapianfanlan_idea_3 }
+                swap_ideas = {
+                    remove_idea = HU3_junduiyapianfanlan_idea_3
+                    add_idea = HU3_junduiyapianfanlan_idea_2
+                }
+            }
+            else_if = {
+                limit = { has_idea = HU3_junduiyapianfanlan_idea_2 }
+                swap_ideas = {
+                    remove_idea = HU3_junduiyapianfanlan_idea_2
+                    add_idea = HU3_junduiyapianfanlan_idea_1
+                }
+            }
+            
+        }
+
+
+
+
+
+} 
+}
+ 
+
+
+
+
+
+
+    
+
+

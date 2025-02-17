@@ -1,0 +1,69 @@
+﻿division_template = {
+	name = "扫荡编制"
+	regiments = {
+		ma_light_infantry = { x = 0 y = 0 }
+		ma_light_infantry = { x = 0 y = 1 }
+		ma_light_infantry = { x = 0 y = 2 }
+		ma_light_infantry = { x = 0 y = 3 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "亡灵编制"
+	regiments = {
+		ma_infantry = { x = 0 y = 0 }
+		ma_infantry = { x = 0 y = 1 }
+		ma_infantry = { x = 0 y = 2 }
+		ma_infantry = { x = 0 y = 3 }
+		ma_infantry = { x = 0 y = 4 }
+	}
+	support = {
+	}
+}
+
+units = {
+	division = {
+		name = "亡灵编制"
+		location = 2053
+		division_template = "亡灵编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "亡灵编制"
+		location = 2053
+		division_template = "亡灵编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "亡灵编制"
+		location = 2053
+		division_template = "亡灵编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "亡灵编制"
+		location = 6297
+		division_template = "亡灵编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "亡灵编制"
+		location = 6297
+		division_template = "亡灵编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "亡灵编制"
+		location = 6297
+		division_template = "亡灵编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	
+}

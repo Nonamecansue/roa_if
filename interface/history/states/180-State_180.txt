@@ -1,0 +1,35 @@
+
+state={
+	id=180
+	name="STATE_180"
+	resources={
+		energy=0.000
+		powder=0.000
+		metal=0.000
+		gas=5.000
+		crystal=2.000
+	}
+
+	history={
+		146.1.1 = {
+			owner = JXJ
+			add_core_of = YKR
+			buildings = {
+				infrastructure = 7
+				industrial_complex = 6
+				arms_factory = 4
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		278 722 1614 1864 2804 5741 5742 5744 
+	}
+	manpower=9820
+	buildings_max_level_factor=1.000
+	state_category=s12
+	local_supplies=2.500
+}

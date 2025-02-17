@@ -1,0 +1,359 @@
+
+    CIR_xiulu_decision = {
+    CIR_xiulu_1 = {
+        visible = {
+            has_completed_focus = CIR_4
+            not = {
+               has_country_flag = CIR_zhengzaixiulu
+            }
+            not = {
+               has_country_flag = CIR_xiuluwanbi
+            }
+        }
+        state_target = yes
+        target_trigger = {
+            FROM = {
+                is_owned_and_controlled_by = CIR
+                    is_core_of = CIR
+					not = {
+						has_state_flag = CIR_xiulu_flag
+					}
+                
+            }
+
+
+                not = {
+               has_idea = CIR_huimiedaijindejiaotongxian11_idea
+            }
+            }
+        
+ 
+        cost = 5
+        days_remove = 1
+        ai_will_do = {
+            base = 10000
+        }
+		complete_effect = {
+            set_country_flag = CIR_zhengzaixiulu
+        }
+        remove_effect = {
+			clr_country_flag = CIR_zhengzaixiulu
+            FROM = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+                set_state_flag = CIR_xiulu_flag
+            }
+           if = {
+                limit = { has_idea = CIR_huimiedaijindejiaotongxian0_idea }
+                swap_ideas = {
+                    remove_idea = CIR_huimiedaijindejiaotongxian0_idea
+                    add_idea = CIR_huimiedaijindejiaotongxian1_idea
+                }
+            } 
+            else_if = {
+                limit = { has_idea = CIR_huimiedaijindejiaotongxian1_idea }
+                swap_ideas = {
+                    remove_idea = CIR_huimiedaijindejiaotongxian1_idea
+                    add_idea = CIR_huimiedaijindejiaotongxian2_idea
+                }
+            }
+            else_if = {
+                limit = { has_idea = CIR_huimiedaijindejiaotongxian2_idea }
+                swap_ideas = {
+                    remove_idea = CIR_huimiedaijindejiaotongxian2_idea
+                    add_idea = CIR_huimiedaijindejiaotongxian3_idea
+                }
+                set_country_flag = CIR_xiulesancilu
+            }
+            else_if = {
+                limit = { has_idea = CIR_huimiedaijindejiaotongxian3_idea }
+                swap_ideas = {
+                    remove_idea = CIR_huimiedaijindejiaotongxian3_idea
+                    add_idea = CIR_huimiedaijindejiaotongxian4_idea
+                }
+            }
+            else_if = {
+                limit = { has_idea = CIR_huimiedaijindejiaotongxian4_idea }
+                swap_ideas = {
+                    remove_idea = CIR_huimiedaijindejiaotongxian4_idea
+                    add_idea = CIR_huimiedaijindejiaotongxian5_idea
+                }
+            }
+            else_if = {
+                limit = { has_idea = CIR_huimiedaijindejiaotongxian5_idea }
+                swap_ideas = {
+                    remove_idea = CIR_huimiedaijindejiaotongxian5_idea
+                    add_idea = CIR_huimiedaijindejiaotongxian6_idea
+                }
+            }
+            else_if = {
+                limit = { has_idea = CIR_huimiedaijindejiaotongxian6_idea }
+                swap_ideas = {
+                    remove_idea = CIR_huimiedaijindejiaotongxian6_idea
+                    add_idea = CIR_huimiedaijindejiaotongxian7_idea
+                }
+            }
+            else_if = {
+                limit = { has_idea = CIR_huimiedaijindejiaotongxian7_idea }
+                swap_ideas = {
+                    remove_idea = CIR_huimiedaijindejiaotongxian7_idea
+                    add_idea = CIR_huimiedaijindejiaotongxian8_idea
+                }
+            }
+            else_if = {
+                limit = { has_idea = CIR_huimiedaijindejiaotongxian8_idea }
+                swap_ideas = {
+                    remove_idea = CIR_huimiedaijindejiaotongxian8_idea
+                    add_idea = CIR_huimiedaijindejiaotongxian9_idea
+                }
+            }
+            else_if = {
+                limit = { has_idea = CIR_huimiedaijindejiaotongxian9_idea }
+                swap_ideas = {
+                    remove_idea = CIR_huimiedaijindejiaotongxian9_idea
+                    add_idea = CIR_huimiedaijindejiaotongxian10_idea
+                }
+            }
+            else_if = {
+                limit = { has_idea = CIR_huimiedaijindejiaotongxian10_idea }
+                swap_ideas = {
+                    remove_idea = CIR_huimiedaijindejiaotongxian10_idea
+                    add_idea = CIR_huimiedaijindejiaotongxian11_idea
+                }
+            }
+			
+        }
+    }
+    CIR_chongjiantielu_1 = {
+        available = {
+            has_idea = CIR_huimiedaijindejiaotongxian11_idea
+        }
+        visible = {
+            has_completed_focus = CIR_4
+        }
+        cost = 1
+        fire_only_once = yes
+        days_remove = 1
+        ai_will_do = {
+            base = 5000
+        }
+        remove_effect = {
+            remove_ideas = CIR_huimiedaijindejiaotongxian11_idea
+            build_railway = {
+                level = 2           
+                    path = { 
+                        913 2729 3980 3987
+                    }
+            }
+            build_railway = {
+                level = 2           
+                    path = { 
+                        2716 891 3938 2020
+                    }
+            }
+            build_railway = {
+                level = 2           
+                    path = { 
+                        2020 957 3947 3946
+                    }
+            }
+            build_railway = {
+                level = 1           
+                    path = { 
+                        1602 3439 1108 506 3344 913
+                    }
+            }
+            build_railway = {
+                level = 1           
+                    path = { 
+                        1602 2402 2222
+                    }
+            }
+            build_railway = {
+                level = 1           
+                    path = { 
+                        1167 790 213
+                    }
+            }
+            build_railway = {
+                level = 1           
+                    path = { 
+                        1167 3345 3341 3339 2742 1602
+                    }
+            }
+            build_railway = {
+                level = 1           
+                    path = { 
+                        1167 3359 316 2176 
+                    }
+            }
+            build_railway = {
+                level = 1           
+                    path = { 
+                        2716 1303 726
+                    }
+            }
+            set_country_flag = CIR_xiuluwanbi
+            
+        }
+    }
+    
+    
+    
+    
+   
+}
+
+    CIR_xiugongchang_decision = {
+    CIR_xiugongchang_1 = {
+        visible = {
+            has_completed_focus = CIR_5
+            not = {
+               has_country_flag = CIR_zhengzaixiugongchang
+            }
+            not = {
+               has_country_flag = CIR_xiugongchangwanbi
+            }
+        }
+        state_target = yes
+        target_trigger = {
+            FROM = {
+                is_owned_and_controlled_by = CIR
+                    is_core_of = CIR
+					not = {
+						has_state_flag = CIR_xiugongchang_flag
+					}
+                
+            }
+
+
+                not = {
+               has_idea = CIR_huimiedaijindejiaotongxian11_idea
+            }
+            }
+        
+ 
+        cost = 5
+        days_remove = 1
+        ai_will_do = {
+            base = 10000
+        }
+		complete_effect = {
+            set_country_flag = CIR_zhengzaixiugongchang
+        }
+        remove_effect = {
+			clr_country_flag = CIR_zhengzaixiugongchang
+            FROM = {
+                 random_list = {
+                    50 = {
+                add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory 
+					level = 1
+					instant_build = yes
+				}
+                    }
+                    50 = {
+                add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex 
+					level = 1
+					instant_build = yes
+				}
+                    }
+                }
+                set_state_flag = CIR_xiugongchang_flag
+            }
+           if = {
+                limit = { has_idea = CIR_pobaibukandegongyetixi0_idea }
+                swap_ideas = {
+                    remove_idea = CIR_pobaibukandegongyetixi0_idea
+                    add_idea = CIR_pobaibukandegongyetixi1_idea
+                }
+            } 
+            else_if = {
+                limit = { has_idea = CIR_pobaibukandegongyetixi1_idea }
+                swap_ideas = {
+                    remove_idea = CIR_pobaibukandegongyetixi1_idea
+                    add_idea = CIR_pobaibukandegongyetixi2_idea
+                }
+            }
+            else_if = {
+                limit = { has_idea = CIR_pobaibukandegongyetixi2_idea }
+                swap_ideas = {
+                    remove_idea = CIR_pobaibukandegongyetixi2_idea
+                    add_idea = CIR_pobaibukandegongyetixi3_idea
+                }
+                set_country_flag = CIR_xiulesancigongchang
+            }
+            else_if = {
+                limit = { has_idea = CIR_pobaibukandegongyetixi3_idea }
+                swap_ideas = {
+                    remove_idea = CIR_pobaibukandegongyetixi3_idea
+                    add_idea = CIR_pobaibukandegongyetixi4_idea
+                }
+            }
+            else_if = {
+                limit = { has_idea = CIR_pobaibukandegongyetixi4_idea }
+                swap_ideas = {
+                    remove_idea = CIR_pobaibukandegongyetixi4_idea
+                    add_idea = CIR_pobaibukandegongyetixi5_idea
+                }
+            }
+            else_if = {
+                limit = { has_idea = CIR_pobaibukandegongyetixi5_idea}
+                swap_ideas = {
+                    remove_idea = CIR_pobaibukandegongyetixi5_idea
+                    add_idea = CIR_pobaibukandegongyetixi6_idea
+                }
+            }
+            else_if = {
+                limit = { has_idea = CIR_pobaibukandegongyetixi6_idea }
+                swap_ideas = {
+                    remove_idea = CIR_pobaibukandegongyetixi6_idea
+                    add_idea = CIR_pobaibukandegongyetixi7_idea
+                }
+            }
+            else_if = {
+                limit = { has_idea = CIR_pobaibukandegongyetixi7_idea }
+                swap_ideas = {
+                    remove_idea = CIR_pobaibukandegongyetixi7_idea
+                    add_idea = CIR_pobaibukandegongyetixi8_idea
+                }
+            }
+            else_if = {
+                limit = { has_idea = CIR_pobaibukandegongyetixi8_idea }
+                swap_ideas = {
+                    remove_idea = CIR_pobaibukandegongyetixi8_idea
+                    add_idea = CIR_pobaibukandegongyetixi9_idea
+                }
+            }
+            else_if = {
+                limit = { has_idea = CIR_pobaibukandegongyetixi9_idea }
+                swap_ideas = {
+                    remove_idea = CIR_pobaibukandegongyetixi9_idea
+                    add_idea = CIR_pobaibukandegongyetixi10_idea
+                }
+            }
+            else_if = {
+                limit = { has_idea = CIR_pobaibukandegongyetixi10_idea }
+                
+                    remove_ideas = CIR_huimiedaijindejiaotongxian10_idea
+                    set_country_flag = CIR_xiugongchangwanbi
+                   
+            }
+			
+        }
+    }
+    
+    
+    
+    
+   
+}
+
+
+   

@@ -1,0 +1,119 @@
+characters={
+	KEK_jtg ={
+		name = KEK_jtg
+		portraits={
+			civilian={
+				large="gfx/leaders/KEK/KEK_jtg.dds"
+				small="gfx/leaders/KEK/KEK_jtg_small.dds"
+			}
+			army = {
+				large="gfx/leaders/KEK/KEK_jtg.dds"
+				small="gfx/leaders/KEK/KEK_jtg_small.dds"
+			}
+		}
+		corps_commander = {
+            traits = {  th_original_character th_character trait_cautious th_trait_chongjizhuanjia }
+            attack_skill = 4
+            defense_skill = 8
+            planning_skill = 4
+            logistics_skill = 6
+            
+            skill = 6
+        }
+		advisor = {
+			slot = character_coop
+			idea_token = KEK_jtg
+			name = KEK_jtg
+			cost = 200
+			modifier = {
+				army_org_factor = 0.15
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	KEK_kek ={
+		name = KEK_kek
+		portraits={
+			civilian={
+				large="gfx/leaders/KEK/KEK_kek.dds"
+				small="gfx/leaders/KEK/KEK_kek_small.dds"
+			}
+			army = {
+				large="gfx/leaders/KEK/KEK_kek.dds"
+				small="gfx/leaders/KEK/KEK_kek_small.dds"
+			}
+		}
+		field_marshal = {
+            traits = {  th_original_character th_character  th_trait_dayaoguai th_trait_jijiacaokongzhe }
+            attack_skill = 2
+            defense_skill = 7
+            planning_skill = 4
+            logistics_skill = 9
+            skill = 12
+        }
+		advisor = {
+			slot = character_coop
+			idea_token = KEK_kek
+			name = KEK_kek
+			cost = 200
+			modifier = {
+				weekly_manpower = 8
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	KEK_jtg_leader ={
+		name = KEK_jtg_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/KEK/KEK_jtg.dds"
+				small="gfx/leaders/KEK/KEK_jtg_small.dds"
+			}
+			army = {
+				large="gfx/leaders/KEK/KEK_jtg.dds"
+				small="gfx/leaders/KEK/KEK_jtg_small.dds"
+			}
+		}
+		country_leader={
+			ideology=fandong_type
+			id=-1
+		}
+	}
+	KEK_kek_leader ={
+		name = KEK_kek_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/KEK/KEK_kek.dds"
+				small="gfx/leaders/KEK/KEK_kek_small.dds"
+			}
+			army = {
+				large="gfx/leaders/KEK/KEK_kek.dds"
+				small="gfx/leaders/KEK/KEK_kek_small.dds"
+			}
+		}
+		country_leader={
+			ideology=qinwai_type
+			id=-1
+		}
+		country_leader={
+			ideology=guli_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldorder_type
+			id=-1
+		}
+		country_leader={
+			ideology=neworder_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldgenso_type
+			id=-1
+		}
+	}
+}

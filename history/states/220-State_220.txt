@@ -1,0 +1,35 @@
+
+state={
+	id=220
+	name="STATE_220"
+	resources={
+		energy=0.000
+		powder=4.000
+		metal=12.000
+		gas=0.000
+		crystal=0.000
+	}
+
+	history={
+		146.1.1 = {
+			owner = JXJ
+			add_core_of = YKR
+			buildings = {
+				infrastructure = 6
+				industrial_complex = 3
+				arms_factory = 2
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		37 1269 1790 2339 2845 3056 5714 5715 5720 5723 5725 
+	}
+	manpower=2201
+	buildings_max_level_factor=1.000
+	state_category=s7
+	local_supplies=2.500
+}

@@ -1,0 +1,29 @@
+bookmarks = {
+	bookmark = {
+		name = "scenario139_NAME"
+		desc = "scenario139_DESCS"
+		date = 139.1.1.7
+		picture = "GFX_Scenario143"
+		default_country = "HUM"
+		default = no
+		
+
+		# "--0"={
+			# history = "JINYONG_DESC"
+			# ideas = { 
+			# }
+		# }
+		
+		"HUM"={
+			history = "HUM_scnario143_DESC"
+			ideas = { 
+			}
+		}
+
+		
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

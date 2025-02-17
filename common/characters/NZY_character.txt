@@ -1,0 +1,177 @@
+characters={
+	NZY_taigang ={
+		name = NZY_taigang
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+				small="gfx/leaders/leader_unknown_small.dds"
+			}
+			army = {
+				large="gfx/leaders/leader_unknown.dds"
+				small="gfx/leaders/leader_unknown_small.dds"
+			}
+		}
+		corps_commander = {
+            traits = {  th_original_character th_trait_moulvedashi bamboo_rabbit old_guard career_officer }
+            attack_skill = 5
+            defense_skill = 3
+            planning_skill = 3
+            logistics_skill = 2
+            skill = 4
+        }
+		advisor = {
+			slot = character_coop
+			idea_token = NZY_taigang
+			name = NZY_taigang
+			cost = 200
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.2
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	NZY_taigangbentailang ={
+		name = NZY_taigangbentailang
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+				small="gfx/leaders/leader_unknown_small.dds"
+			}
+			army = {
+				large="gfx/leaders/leader_unknown.dds"
+				small="gfx/leaders/leader_unknown_small.dds"
+			}
+		}
+		corps_commander = {
+            traits = {  th_original_character harsh_leader }
+            attack_skill = 2
+            defense_skill = 3
+            planning_skill = 1
+            logistics_skill = 2
+            skill = 3
+        }
+		advisor = {
+			slot = character_coop
+			idea_token = NZY_taigangbentailang
+			name = NZY_taigangbentailang
+			cost = 200
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	NZY_taigangzhencilang ={
+		name = NZY_taigangzhencilang
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+				small="gfx/leaders/leader_unknown_small.dds"
+			}
+			army = {
+				large="gfx/leaders/leader_unknown.dds"
+				small="gfx/leaders/leader_unknown_small.dds"
+			}
+		}
+		corps_commander = {
+            traits = {  th_original_character trait_engineer }
+            attack_skill = 2
+            defense_skill = 2
+            planning_skill = 2
+            logistics_skill = 2
+            skill = 3
+        }
+		advisor = {
+			slot = character_coop
+			idea_token = NZY_taigangzhencilang
+			name = NZY_taigangzhencilang
+			cost = 200
+			modifier = {
+				max_dig_in_factor = 0.1
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	NZY_taigang_leader ={
+		name = NZY_taigang_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+				small="gfx/leaders/leader_unknown_small.dds"
+			}
+			army = {
+				large="gfx/leaders/leader_unknown.dds"
+				small="gfx/leaders/leader_unknown_small.dds"
+			}
+		}
+		country_leader={
+			ideology=qinwai_type
+			id=-1
+		}
+		country_leader={
+			ideology=guli_junzhengfu
+			id=-1
+		}
+		country_leader={
+			ideology=oldorder_type
+			id=-1
+		}
+		country_leader={
+			ideology=fandong_type
+			id=-1
+		}
+		country_leader={
+			ideology=neworder_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldgenso_type
+			id=-1
+		}
+	}
+	NZY_junqu_leader ={
+		name = NZY_junqu_leader
+		portraits={
+			civilian={
+        large="gfx/leaders/ZYD/ZYD_council.dds"
+        small="gfx/leaders/ZYD/ZYD_council_small.dds"
+      }
+      army = {
+        large="gfx/leaders/ZYD/ZYD_council.dds"
+        small="gfx/leaders/ZYD/ZYD_council_small.dds"
+      }
+		}
+		country_leader={
+			ideology=qinwai_type
+			id=-1
+		}
+		country_leader={
+			ideology=guli_junzhengfu
+			id=-1
+		}
+		country_leader={
+			ideology=oldorder_type
+			id=-1
+		}
+		country_leader={
+			ideology=fandong_type
+			id=-1
+		}
+		country_leader={
+			ideology=neworder_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldgenso_type
+			id=-1
+		}
+	}
+}

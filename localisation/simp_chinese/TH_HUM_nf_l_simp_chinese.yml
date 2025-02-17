@@ -1,0 +1,99 @@
+﻿l_simp_chinese:
+ HUM_kaolvxianzhuang:0 "考虑现状"
+ HUM_chongzhengqigu:0 "重整旗鼓"
+ HUM_zhaokaihuiyi:0 "召开高层会议"
+ HUM_yuanmanwancheng:0 "开始整治现状"
+ HUM_zhuoshouzhongzuwenti:0 "着手解决种族矛盾"
+ HUM_quanjiexiaoling:0 "与小铃谈判"
+ HUM_shoubianfuquanzhenxian:0 "整合复权阵线"
+ HUM_qudifuquanzhenxian:0 "查封复权阵线"
+ HUM_peichangsunshi:0 "赔偿种族主义者造成的损失"
+ HUM_kaochadongbuzhulin:0 "考察竹林县地区"
+ HUM_jieshujinjizhuangtai:0 "结束军事管制状态"
+ HUM_yudikangjunhejie:0 "尝试与叛军沟通"
+ HUM_pingyongyaoguaiguanyuan:0 "颁布《保障非人种族权利法》"
+ HUM_choubeidongbuzizhiqu:0 "准备建立东部自治区"
+ HUM_yunanbuyaoguaihuaqingbianjie:0 "与妖兔协商争议地区问题"
+ HUM_zhengshijianlizizhiqu:0 "正式成立竹林自治区"
+ HUM_yugujingjiqingkuang:0 "评估经济状况"
+ HUM_jiujishiyerenqun:0 "救济失业人员"
+ HUM_jixubentugongyejianshe:0 "扩大本土工业建设"
+ HUM_kuodaqinggongyeshengchan:0 "农业生产设施建设"
+ HUM_dajifeifataijia:0 "禁止非法抬价"
+ HUM_quebaoliangshichongzu:0 "保证粮食充足"
+ HUM_tiaozhengjingjitixi:0 "缓解经济危机"
+ HUM_gaobieshiyewenti:0 "为失业人员提供岗位"
+ HUM_jieshujingjiweiji:0 "经济正常化"
+ HUM_xiqujingyanjiaoxun:0 "吸取经验教训"
+ HUM_mimichongqijunshiyuanjiu:0 "秘密进行军备研究"
+ HUM_tigaolaobingdaiyu:0 "提高老兵待遇"
+ HUM_kaoluzhaomurenwaishibing:0 "允许非人种族参军"
+ HUM_chouxindaguimozhaobing:0 "终止裁军计划"
+ HUM_zhiyuanbuduiduoyanghua:0 "发展支援部队"
+ HUM_gailiangxunlianfangshi:0 "改良训练方式"
+ HUM_cainanxinxingzhanshu:0 "学习新型战术"
+ HUM_zaifushudiquzhujun:0 "强制军队入驻"
+ HUM_pujijidongzhuangbei:0 "军队全面机动化"
+ HUM_tankebuduizhengshihua:0 "大规模列装装甲部队"
+ HUM_fangyanxifang:0 "看向妖怪之山"
+ #################
+ HUM_huiyishangdehunluan:0 "会议上的混乱"
+ HUM_jisongyongyuanting:0 "紧急送往永远亭"
+ HUM_kanxiangxiaoling:0 "看向小铃"
+ HUM_renqingshishi:0 "认清现实"
+ HUM_sikaozhongyangquanweixing:0 "准备武力夺权"
+ HUM_sikaozhongyangquanweixing_1:0 "§R战争将至......§!"
+ HUM_mimijijielaobing:0 "集结下岗老兵"
+ HUM_mimijijielaobing_1:0 "内战开始后我们将获得额外的500人力。"
+ HUM_duoquxibudanyaochubei:0 "扎根西部"
+ HUM_duoquxibudanyaochubei_1:0 "我们将从国家的最西边出发，去铲除那些高高在上的人类败类们......"
+ HUM_zhangenxibu:0 "转移生产设备"
+ HUM_zhangenxibu_1:0 "内战开始后将获得三个军用工厂。"
+ HUM_xuanchuanfanyaoqingxu:0 "大规模反政府宣传"
+ HUM_xuanchuanfanyaoqingxu_1:0 "内战开始后，中央政府的稳定度与战争支持度将大幅度下降。"
+ HUM_yaoguaiweixie:0 "策反现役部队"
+ HUM_yaoguaiweixie_1:0 "内战开始后我们将获得一个精锐步兵编制部队以及两个通用步兵编制部队。"
+ HUM_wuruzhongyangzhengfu:0 "安插反叛部队"
+ HUM_wuruzhongyangzhengfu_1:0 "内战开始后我们的反叛部队将对中央政府的工业体系展开破坏行动。"
+ HUM_jinjizhuanyigongye:0 "夺取军械所"
+ HUM_jinjizhuanyigongye_1:0 "内战开始后，西部军械所的5000杆步枪与400门火炮将归我们所有"
+ HUM_zhengshifanpan:0 "发动西部兵变"
+ HUM_zhengshifanpan_1:0 "§R内战即将爆发，而我们也再无回头的可能......§!"
+
+
+
+
+
+
+ HUM_xianfengbingtuanjingshen:0 "先锋兵团精神"
+ HUM_xianfengbingtuanjingshen_desc:0 "在艰苦的战争中，稗田人类政府专门挑选一批无畏之人组建了先锋兵团，她们在战场前线忘我地战斗，不惜冒着被敌人全歼的风险深入敌境，这些英勇的表现使得她们成为了全人类的英雄，在政府的大力宣传之下，每个居住在稗田政府所控制的区域中的人类都梦想着加入先锋兵团，并像曾经那样赢得全人类的敬重。"
+ HUM_keyanxianzhitiaoyue:0 "科研限制条约签署国"
+ HUM_keyanxianzhitiaoyue_desc:0 "在那场战争结束之后，我们与妖怪山上的那些临时盟友在经过近两个月的协商之后，共同签署了科研限制条约，其内容简单来说就是限制军事科技的发展但不限制其他科技的发展，这不仅符合双方的共同利益，还能有效的维护整个幻想乡的和平，而我们也可以将原用于军事研究的资金转移到诸如民生之类的方面上来。§R但如果我们面临某些紧急情况时，我们还有什么必要去遵守这个条约呢？§!"
+ HUM_zongzumaodun:0 "名义上的种族平等"
+ HUM_zongzumaodun_desc:0 "自第一次幻想乡大战前夕时，人类内部就一直对非人种族有着不好的态度，而战争的胜利与接踵而至的经济危机更是使人妖之间的矛盾更加严重。如今，上到政府官员，下到平民百姓，无一不对妖怪们极度歧视。在城区里，针对妖怪的打砸抢事件时有发生，而维护秩序的警察也往往对此漠不关心，哪怕真的有几个人类因此被告上了法庭，也会因为各种借口从轻处理甚至宣告无罪。这一系列行为也使得人妖矛盾再次被加剧，人妖关系陷入了恶性循环当中。"
+ HUM_bukekaodeshiliquan:0 "不可靠的势力圈"
+ HUM_bukekaodeshiliquan_desc:0 "除了本土之外，我们还有着不少的处于我们管制之下的地区，像是雾之湖南部的付丧神自治区、西边的命莲寺以及其南部的妖怪狸之森。哪怕是神秘的间隙世界，也位于我们的统治之下——至少名义上是这样。不过，随着本土地区的局势开始变得混乱，负责管理这些非本土地区的官员也不怎么听政府的调遣了，没人可以保证他们不会趁着本土的某次大规模暴乱彻底脱离我们的控制。"
+ HUM_jihubengkuidejingji:0 "严重的经济危机"
+ HUM_jihubengkuidejingji_desc:0 "严重的经济危机"
+ HUM_daguimoshiye:0 "大规模失业"
+ HUM_caijunhouyizheng:0 "裁军计划"
+ HUM_caijunhouyizheng_desc:0 "为了取得战争的胜利，我们征召了大量了人员加入我们的军队，但随着战争的结束，如此大体量的军队成为了我们的负担，为了缓解政府的财政危机，我们制定并执行了裁军计划，在短短的1个月内裁掉了80%的军人，尽管这大大缓解了财政方面的压力，但由于裁军过程的粗暴以及未曾给予那些被裁下部队的士兵任何的赔偿，导致他们大多对现任政府及其不满。而如今的经济危机更是使得这些老兵大多变得穷困潦倒，流落街头，亦有不少人选择远走他乡当起了雇佣兵，靠着自己的作战经验谋得一份口粮。"
+ HUM_liangshiqianshou:0 "粮食恐慌"
+
+
+
+ HUM_jiangsizhiren_trait:0 "§R将死之人§!"
+ HUM_diankuangdefuquanzhuyizhe_trait:0 ""
+
+
+
+
+
+
+ HUM_kosuzu_desc:0 "本居小铃"
+
+
+
+
+ huM_paichayapianwenti:0 "内战最晚爆发时间"
+ huM_paichayapianwenti_desc:0 "一场内战已然不可避免，尽管离其彻底爆发还有多久尚不能确定，但它必然会于今年彻底爆发。"

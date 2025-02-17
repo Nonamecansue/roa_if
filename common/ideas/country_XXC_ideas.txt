@@ -1,0 +1,50 @@
+ideas = {
+	country = {
+
+
+    XXC_linqikaifaxieyi_idea = {
+	    	picture = XXC_linqikaifaxieyi_js
+	    	allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+
+
+			}
+		}
+	XXC_qiangzhikaifakuangchan_idea = {
+	    	picture = FRA_matignon_agreements
+	    	allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				local_resources_factor = 0.25
+				consumer_goods_factor = -0.2
+				political_power_factor = 0.2
+				ST_race_penalty_all_factor = 0.4
+				CONV_RULE_cannot_convert = 1
+				stability_factor = -0.1
+
+
+
+			}
+		}
+	
+	
+		
+		
+
+	}
+}

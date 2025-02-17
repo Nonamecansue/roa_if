@@ -1,0 +1,231 @@
+characters={
+	MOK_mokou ={
+		name = MOK_mokou
+		portraits={
+			civilian={
+				large="gfx/leaders/MOK/MOK_mokou.dds"
+				small="gfx/leaders/MOK/MOK_mokou_small.dds"
+			}
+			army = {
+				large="gfx/leaders/MOK/MOK_mokou.dds"
+				small="gfx/leaders/MOK/MOK_mokou_small.dds"
+			}
+		}
+		corps_commander = {
+            traits = {  th_original_character th_character  th_trait_qianxianzhandou th_trait_huoqiangzhuanjia war_hero }
+            attack_skill = 13
+            defense_skill = 13
+            planning_skill = 4
+            logistics_skill = 4
+            skill = 9
+        }
+		advisor = {
+			slot = character_coop
+			idea_token = MOK_mokou
+			name = MOK_mokou
+			cost = 200
+			modifier = {
+				modifier_army_sub_unit_ma_light_infantry_attack_factor = 0.15
+				modifier_army_sub_unit_ma_light_infantry_defence_factor = 0.15
+				modifier_army_sub_unit_sc_light_infantry_attack_factor = 0.15
+				modifier_army_sub_unit_sc_light_infantry_defence_factor = 0.15
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	MOK_fengdao ={
+		name = MOK_fengdao
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds.dds"
+				small="gfx/leaders/leader_unknown_small.dds"
+			}
+			army = {
+				large="gfx/leaders/leader_unknown.dds"
+				small="gfx/leaders/leader_unknown_small.dds"
+			}
+		}
+		corps_commander = {
+            traits = {  th_original_character  trickster hidden_sympathies }
+            attack_skill = 4
+            defense_skill = 3
+            planning_skill = 5
+            logistics_skill = 4
+            skill = 5
+        }
+		advisor = {
+			slot = character_coop
+			idea_token = MOK_fengdao
+			name = MOK_fengdao
+			cost = 200
+			modifier = {
+				max_planning_factor = 0.25
+				planning_speed = 0.25
+				 
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	MOK_shiye ={
+		name = MOK_shiye
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+				small="gfx/leaders/leader_unknown_small.dds"
+			}
+			army = {
+				large="gfx/leaders/leader_unknown.dds"
+				small="gfx/leaders/leader_unknown_small.dds"
+			}
+		}
+		corps_commander = {
+            traits = {  th_original_character  trait_engineer guerilla_fighter hidden_sympathies }
+            attack_skill = 3
+            defense_skill = 4
+            planning_skill = 2
+            logistics_skill = 2
+            skill = 4
+        }
+		advisor = {
+			slot = character_coop
+			idea_token = MOK_shiye
+			name = MOK_shiye
+			cost = 200
+			modifier = {
+				dig_in_speed_factor = 0.25
+				max_dig_in_factor = 0.25
+				 
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	MOK_yechuan ={
+		name = MOK_yechuan
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+				small="gfx/leaders/leader_unknown_small.dds"
+			}
+			army = {
+				large="gfx/leaders/leader_unknown.dds"
+				small="gfx/leaders/leader_unknown_small.dds"
+			}
+		}
+		corps_commander = {
+            traits = {  th_original_character  logistics_wizard hidden_sympathies }
+            attack_skill = 3
+            defense_skill = 2
+            planning_skill = 2
+            logistics_skill = 5
+            skill = 4
+        }
+		advisor = {
+			slot = character_coop
+			idea_token = MOK_yechuan
+			name = MOK_yechuan
+			cost = 200
+			modifier = {
+				supply_node_range = 0.25
+				
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	MOK_mokou_leader ={
+		name = MOK_mokou_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/MOK/MOK_mokou.dds"
+				small="gfx/leaders/MOK/MOK_mokou_small.dds"
+			}
+			army = {
+				large="gfx/leaders/MOK/MOK_mokou.dds"
+				small="gfx/leaders/MOK/MOK_mokou_small.dds"
+			}
+		}
+		country_leader={
+			ideology=guli_junzhengfu
+			id=-1
+		}
+		country_leader={
+			ideology=fandong_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldgenso_type
+			id=-1
+		}
+	}
+	MOK_junguantuan_leader ={
+		name = MOK_junguantuan_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/ZYD/ZYD_council.dds"
+				small="gfx/leaders/ZYD/ZYD_council_small.dds"
+			}
+			army = {
+				large="gfx/leaders/ZYD/ZYD_council.dds"
+				small="gfx/leaders/ZYD/ZYD_council_small.dds"
+			}
+		}
+		country_leader={
+			ideology=qinwai_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldorder_type
+			id=-1
+		}
+		country_leader={
+			ideology=neworder_type
+			id=-1
+		}
+	}
+	MOK_fengdao_leader ={
+		name = MOK_fengdao_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/ZYD/ZYD_council.dds"
+				small="gfx/leaders/ZYD/ZYD_council_small.dds"
+			}
+			army = {
+				large="gfx/leaders/ZYD/ZYD_council.dds"
+				small="gfx/leaders/ZYD/ZYD_council_small.dds"
+			}
+		}
+	}
+MOK_shiye_leader ={
+		name = MOK_shiye_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/ZYD/ZYD_council.dds"
+				small="gfx/leaders/ZYD/ZYD_council_small.dds"
+			}
+			army = {
+				large="gfx/leaders/ZYD/ZYD_council.dds"
+				small="gfx/leaders/ZYD/ZYD_council_small.dds"
+			}
+		}
+	}
+	MOK_yechuan_leader ={
+		name = MOK_yechuan_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/ZYD/ZYD_council.dds"
+				small="gfx/leaders/ZYD/ZYD_council_small.dds"
+			}
+			army = {
+				large="gfx/leaders/ZYD/ZYD_council.dds"
+				small="gfx/leaders/ZYD/ZYD_council_small.dds"
+			}
+		}
+	}
+}

@@ -1,0 +1,54 @@
+focus_tree = {
+  id = AKI_focus_2
+  country = {
+    factor = 0
+    modifier = {
+      add = 10
+      tag = 
+    }
+  }
+
+  shared_focus = ty_medium_main 
+
+  continuous_focus_position = { x = 20 y = 1700 }
+
+  focus = {
+      id = AKI_ZZZ
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 4
+      x = 4
+      y = 0
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      NOT = { country_exists = AKI }
+      
+      }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        add_stability = 0.2
+        add_war_support = 0.2
+        add_timed_idea = {days = 35 idea = HU2_qingxifanduipai_idea}
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  

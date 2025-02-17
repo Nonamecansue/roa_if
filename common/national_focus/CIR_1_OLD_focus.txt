@@ -1,0 +1,27 @@
+focus_tree = {
+	id = CIR_1_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CIR
+		}
+	}
+	default = no
+	shared_focus = ty_medium_main 
+	
+	shared_focus = LIL_136_2 
+	shared_focus = LIL_4 
+	continuous_focus_position = { x = 2700 y = 1900 }
+	focus = {
+		id = CIR_1
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 1.00
+		x = 27
+		y = 0
+		completion_reward = {
+		add_political_power = 50
+		
+		}
+	}
+}

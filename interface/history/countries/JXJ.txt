@@ -1,0 +1,28 @@
+﻿capital = 89
+146.1.1 = {
+    set_technology = {
+       
+    }
+    
+}
+set_technology = {
+   
+}
+146.1.1={
+    
+    add_ideas = {
+        ZON_idea
+    
+    }
+    set_politics = {
+    	ruling_party = guli
+    	election_frequency = 48
+    	elections_allowed = no
+    }
+    set_popularities = {
+        guli = 100
+        
+    }
+
+    
+}

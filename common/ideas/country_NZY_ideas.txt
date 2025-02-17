@@ -1,0 +1,44 @@
+ideas = {
+	country = {
+
+		NZY_chixubuduandebianjingchongtu_idea = {
+			picture = chi_war_of_resistance3
+			modifier = {
+				MONTHLY_POPULATION = -0.8
+				production_speed_buildings_factor = -0.5
+				research_speed_factor = -0.8
+				industrial_capacity_factory = -0.2
+
+			}
+			available = {
+
+			}
+		}
+		NZY_zhongzhuchongtu_idea = {
+			picture = chi_war_of_resistance3
+			modifier = {
+				ST_race_penalty_all_factor = 0.9
+				stability_factor = -0.4
+				stability_weekly = -0.002
+
+			}
+			available = {
+
+			}
+		}
+		NZY_beishuiyizhan_idea = {
+			picture = chi_war_of_resistance3
+			modifier = {
+				surrender_limit = 1
+				war_support_factor = 0.5
+				war_support_weekly = 0.005
+			}
+			available = {
+
+			}
+		}
+		
+	}
+}
+
+		

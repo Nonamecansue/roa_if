@@ -1,0 +1,13 @@
+leader_traits = {
+	HUM_jiangsizhiren_trait = {
+		stability_factor = -0.25
+		war_support_factor = -0.25
+		stability_weekly = -0.005
+		political_power_factor = -0.50
+		
+	}
+	HUM_diankuangdefuquanzhuyizhe_trait = {
+		
+	}
+	
+}

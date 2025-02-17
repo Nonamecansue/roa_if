@@ -1,0 +1,31 @@
+﻿
+division_template = {
+	name = "稗田退役兵"
+	regiments = {
+		sc_infantry = { x = 0 y = 0 }
+		sc_infantry = { x = 0 y = 1 }
+		sc_infantry = { x = 0 y = 2 }
+		sc_infantry = { x = 0 y = 3 }
+		sc_infantry = { x = 0 y = 4 }
+		sc_infantry = { x = 1 y = 0 }
+		sc_infantry = { x = 1 y = 1 }
+	}
+	support = {
+	}
+}
+units = {
+	division = {
+		name = "稗田志愿军"
+		location = 5096
+		division_template = "稗田退役兵"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "稗田志愿军"
+		location = 5096
+		division_template = "稗田退役兵"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	}

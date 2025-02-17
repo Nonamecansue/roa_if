@@ -1,0 +1,12 @@
+﻿division_template = {
+	name = "高级使魔部队"
+	is_locked = yes
+	regiments = {
+		ma_infantry = { x = 0 y = 0 }
+		ma_infantry = { x = 0 y = 1 }
+		ma_infantry = { x = 0 y = 2 }
+	}
+	support = {
+
+	}
+}

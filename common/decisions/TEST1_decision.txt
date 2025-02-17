@@ -1,0 +1,46 @@
+HU6_category = {
+#吞并gh2
+    HU6_tunbingkuileigh2 = {
+        visible = {
+          tag = ALI
+          is_debug = yes
+        }
+        available = {
+                or = {
+                MRS = {
+                    is_subject_of = HU6
+                }
+                is_in_faction_with = HU6
+            }
+        }
+
+        fire_only_once = yes
+
+        cost = 0
+
+        ai_will_do = {
+          factor = 10000
+        }
+
+        complete_effect = {
+        puppet = GH2
+        MRS = {
+        can_core = yes
+        low_puppet_level = yes
+        low_puppet_level = yes
+        low_puppet_level = yes
+        low_puppet_level = yes
+        low_puppet_level = yes
+    }
+    ELL = {
+        can_core = yes
+        low_puppet_level = yes
+        low_puppet_level = yes
+        low_puppet_level = yes
+        low_puppet_level = yes
+        low_puppet_level = yes
+    }
+        }
+
+    }
+}

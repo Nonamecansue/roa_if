@@ -1,0 +1,10 @@
+﻿division_template = {
+	name = "使魔部队"
+	is_locked = yes
+	regiments = {
+		ma_light_infantry = { x = 0 y = 0 }
+	}
+	support = {
+
+	}
+}

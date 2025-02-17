@@ -1,0 +1,18 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_idea_EMB_shiguandezhize_js"
+		texturefile = "gfx/interface/ideas/idea_shiguandezhize.png"
+	}	
+	spriteType = {
+		name = "GFX_idea_EMB_renleishubeiwuzhihu_js"
+		texturefile = "gfx/interface/ideas/idea_renleishubeiwuzhihu.png"
+	}	
+	spriteType = {
+		name = "GFX_idea_EMB_fenhuanbujue_js"
+		texturefile = "gfx/interface/ideas/idea_fenhuanbujue.png"
+	}	
+	spriteType = {
+		name = "GFX_idea_EMB_renleishilidewaikuo_js"
+		texturefile = "gfx/interface/ideas/idea_renleishilidewaikuo.png"
+	}	
+}

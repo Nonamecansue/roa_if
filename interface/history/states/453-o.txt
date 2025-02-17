@@ -1,0 +1,34 @@
+
+state={
+	id=453
+	name="STATE_453"
+	resources={
+		powder=2.000
+		metal=0.000
+		gas=0.000
+		crystal=0.000
+	}
+
+	history={
+		146.1.1 = {
+			owner = HB1
+			add_core_of = HB1
+			buildings = {
+				infrastructure = 1
+				industrial_complex = 0
+				arms_factory = 0
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		214 732 794 1477 1906 2400 2418 6338 6341 6343 6345 6346 6350 6352 6353 6357 6359 6363 6364 6369 
+	}
+	manpower=428
+	buildings_max_level_factor=1.000
+	state_category=s2
+	local_supplies=2.500
+}

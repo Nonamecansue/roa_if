@@ -1,0 +1,412 @@
+focus_tree = {
+  id = HU1_focus_1
+  country = {
+    factor = 0
+    modifier = {
+      add = 10
+      tag =  
+    }
+  }
+
+  shared_focus = ty_medium_main 
+
+  continuous_focus_position = { x = 20 y = 1700 }
+
+  focus = {
+      id = HU1_jienananming
+      icon = GFX_focus_generic_military_academy
+      cost = 4
+      x = 4
+      y = 0
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        
+        add_manpower = 200
+        add_stability = -0.05
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HU1_zhengjiwuqi
+      icon = GFX_focus_generic_conspiracy
+      cost = 2
+      relative_position_id = HU1_jienananming
+      x = -2
+      y = 1
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      }
+
+       prerequisite = { focus = HU1_jienananming }
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        add_equipment_to_stockpile = {
+          type = melee147
+          amount = 1000
+          producer = HU1
+        }
+        add_equipment_to_stockpile = {
+          type = gun141
+          amount = 1000
+          producer = HU1
+        }
+        add_stability = -0.15
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HU1_jianlikuangshishusongtongdao
+      icon = GFX_goal_generic_construct_civilian
+      cost = 2
+      relative_position_id = HU1_jienananming
+      x = 2
+      y = 1
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      }
+
+       prerequisite = { focus = HU1_jienananming }
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        376 = {
+        add_extra_state_shared_building_slots = 3
+      }
+
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HU1_jijikuojun
+      icon = GFX_focus_generic_infiltration
+      cost = 4
+      relative_position_id = HU1_jienananming
+      x = 0
+      y = 2
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      }
+
+       prerequisite = { focus = HU1_jianlikuangshishusongtongdao }
+       prerequisite = { focus = HU1_zhengjiwuqi }
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        hidden_effect = {
+        load_oob = "HU1_jz"
+        }
+        custom_effect_tooltip = hu1_jinjikuojun_1
+
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+  id = HU1_baozhengwuqichongzu
+      icon = GFX_goal_continuous_armor_production
+      cost = 4
+      relative_position_id = HU1_jienananming
+      x = 1
+      y = 3
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      }
+
+       prerequisite = { focus = HU1_jijikuojun }
+       mutually_exclusive = {
+      focus = HU1_jingyiqiujing
+    }
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        
+        376 = {
+        add_building_construction = {
+          type = arms_factory
+          level = 2
+          instant_build = yes
+        }
+      }
+      add_equipment_to_stockpile = {
+          type = melee147
+          amount = 1000
+          producer = HU1
+        }
+
+    }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+
+  focus = {
+  id = HU1_jingyiqiujing
+      icon = GFX_focus_generic_Melee_Weapons
+      cost = 4
+      relative_position_id = HU1_jienananming
+      x = -1
+      y = 3
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      }
+
+       prerequisite = { focus = HU1_jijikuojun }
+       mutually_exclusive = {
+      focus = HU1_baozhengwuqichongzu
+    }
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        set_technology = {
+      sc_spear4 = 1
+    }
+    set_technology = {
+      sc_spear5 = 1
+    }
+   
+
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+  id = HU1_yaoqingrenleituiyibing
+      icon = GFX_focus_generic_little_entente
+      cost = 2
+      relative_position_id = HU1_jienananming
+      x = -2
+      y = 4
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      }
+
+       prerequisite = {
+      focus = HU1_jingyiqiujing
+      focus = HU1_baozhengwuqichongzu
+    }
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        hidden_effect = {
+        load_oob = "HU1_zz"
+        }
+        custom_effect_tooltip = hu1_yaoqingrenleituiyibing
+   
+
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+  id = HU1_jianlilinshizhihuibu
+      icon = GFX_goal_generic_army_doctrines
+      cost = 2
+      relative_position_id = HU1_jienananming
+      x = 2
+      y = 4
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      }
+
+       prerequisite = {
+      focus = HU1_jingyiqiujing
+      focus = HU1_baozhengwuqichongzu
+    }
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        add_timed_idea = {days = 120 idea = HU1_linshizhihuibu_idea}
+   
+
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+  id = HU1_bubuweiying
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 2
+      relative_position_id = HU1_jienananming
+      x = 0
+      y = 5
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      }
+
+       prerequisite = { focus = HU1_jianlilinshizhihuibu }
+       prerequisite = { focus = HU1_yaoqingrenleituiyibing }
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        add_timed_idea = {days = 240 idea = HU1_bubuweiying_idea}
+   
+
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+
+
+

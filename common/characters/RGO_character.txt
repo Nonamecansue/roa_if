@@ -1,0 +1,121 @@
+characters={
+	RGO_ser ={
+		name = RGO_ser
+		portraits={
+			civilian={
+				large="gfx/leaders/RGO/RGO_ser.dds"
+				small="gfx/leaders/RGO/RGO_ser_small.dds"
+			}
+			army = {
+				large="gfx/leaders/RGO/RGO_ser.dds"
+				small="gfx/leaders/RGO/RGO_ser_small.dds"
+			}
+		}
+		corps_commander = {
+            traits = {  th_original_character th_character   th_trait_tezhongzhuanjia  }
+            attack_skill = 3
+            defense_skill = 4
+            planning_skill = 1
+            logistics_skill = 3
+            
+            skill = 4
+        }
+		advisor = {
+			slot = character_coop
+			idea_token = RGO_ser
+			name = RGO_ser
+			cost = 200
+			modifier = {
+				special_forces_attack_factor = 0.15
+				special_forces_defence_factor = 0.15
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	RGO_rgo ={
+		name = RGO_rgo
+		portraits={
+			civilian={
+				large="gfx/leaders/RGO/RGO_rgo.dds"
+				small="gfx/leaders/RGO/RGO_rgo_small.dds"
+			}
+			army = {
+				large="gfx/leaders/RGO/RGO_rgo.dds"
+				small="gfx/leaders/RGO/RGO_rgo_small.dds"
+			}
+		}
+		corps_commander = {
+            traits = {  th_original_character th_character   th_trait_tezhongzhuanjia th_trait_yinyangshi }
+            attack_skill = 5
+            defense_skill = 4
+            planning_skill = 5
+            logistics_skill = 4
+            
+            skill = 5
+        }
+		advisor = {
+			slot = character_coop
+			idea_token = RGO_rgo
+			name = RGO_rgo
+			cost = 200
+			modifier = {
+				PO_bad_influence_factor = -0.5
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	RGO_ser_leader ={
+		name = RGO_ser_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/RGO/RGO_ser.dds"
+				small="gfx/leaders/RGO/RGO_ser_small.dds"
+			}
+			army = {
+				large="gfx/leaders/RGO/RGO_ser.dds"
+				small="gfx/leaders/RGO/RGO_ser_small.dds"
+			}
+		}
+		country_leader={
+			ideology=fandong_type
+			id=-1
+		}
+		country_leader={
+			ideology=neworder_type
+			id=-1
+		}
+	}
+	RGO_rgo_leader ={
+		name = RGO_rgo_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/RGO/RGO_rgo.dds"
+				small="gfx/leaders/RGO/RGO_rgo_small.dds"
+			}
+			army = {
+				large="gfx/leaders/RGO/RGO_rgo.dds"
+				small="gfx/leaders/RGO/RGO_rgo_small.dds"
+			}
+		}
+		country_leader={
+			ideology=qinwai_type
+			id=-1
+		}
+		country_leader={
+			ideology=guli_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldorder_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldgenso_type
+			id=-1
+		}
+	}
+}

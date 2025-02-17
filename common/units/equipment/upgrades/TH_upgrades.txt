@@ -1,0 +1,149 @@
+	#	soft_attack = 0.04
+	#	hard_attack = 0.01
+	#	ap_attack = 0.01
+	#	reliability = -0.01
+	#	build_cost_ic = 0.5
+	#	defense = 0.5				
+	#	breakthrough = 0.5	
+	#	air_attack = 0.5
+	#	recon = 0.5
+	#	armor_value = 0.5
+	#	max_organisation = 2
+	#	default_morale = 2
+	#	max_strength = 2
+	#	weight = 1	
+	#	supply_consumption = 1
+	#   hardness = 0
+	#	armor_value = 0
+upgrades = {
+    upgrade_reliability = {
+		max_level = 5
+
+		cost = land				# This determies how much XP it will cost, controlled by defines, there are 3 cost types: air, land and naval
+		reliability = 0.1
+		
+	}
+	upgrade_softattack = {
+		max_level = 5
+
+		cost = land				
+      	soft_attack = 0.1
+
+	}
+	upgrade_hardattack = {
+		max_level = 5
+
+		cost = land				
+      	hard_attack = 0.1
+
+	}
+	upgrade_aaattack = {
+		max_level = 5
+
+		cost = land				
+      	air_attack = 0.1
+
+	}
+	upgrade_defense = {
+		max_level = 5
+
+		cost = land				
+		defense = 0.1
+
+	}
+	upgrade_breakthrough = {
+		max_level = 5
+
+		cost = land				
+		breakthrough = 0.1
+
+	}
+	upgrade_ic = {
+		max_level = 5
+
+		cost = land				
+		build_cost_ic = -0.1
+
+	}
+	upgrade_ic_reverse = {
+		max_level = 5
+
+		cost = land				
+		build_cost_ic = 0.1
+
+	}
+	upgrade_reliability_reverse = {
+		max_level = 5
+
+		cost = land				# This determies how much XP it will cost, controlled by defines, there are 3 cost types: air, land and naval
+		reliability = -0.1
+		
+	}
+
+	#############
+	up_sc_attack = {#1
+		max_level = 5
+
+		cost = land				
+		
+		soft_attack = 0.1
+		hard_attack = 0.1
+		ap_attack = -0.07
+		air_attack = -0.07
+	}
+	up_ma_attack = {#1
+		max_level = 5
+
+		cost = land				
+		
+		soft_attack = 0.1
+		hard_attack = 0.1
+		ap_attack = -0.07
+		air_attack = -0.07
+	}
+	up_defense = {#2
+		max_level = 5
+
+		cost = land				
+		
+		breakthrough = 0.1
+		defense = 0.1
+
+		air_attack = -0.05
+		reliability = -0.05
+	}
+	up_ap_attack = {#2
+		max_level = 5
+
+		cost = land				
+		
+		ap_attack = 0.15
+		
+		soft_attack = -0.03
+		hard_attack = -0.03
+		air_attack = -0.03
+	}
+	up_speed = {#3
+		max_level = 5
+		cost = land
+		maximum_speed = 0.04
+	}
+	up_speed_type2 = {#3
+		max_level = 5
+		cost = land
+		maximum_speed = 0.07
+	}
+	up_hardness = {#4
+		max_level = 5
+
+		cost = land				
+		
+		hardness = 0.1
+		soft_attack = -0.1
+		hard_attack = -0.1
+		breakthrough = -0.1
+		defense = -0.1
+	}
+	
+
+}

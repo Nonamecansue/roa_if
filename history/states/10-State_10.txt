@@ -1,0 +1,36 @@
+
+state={
+	id=10
+	name="STATE_10"
+	resources={
+		energy=0.000
+		powder = 6.0
+		metal = 0.0
+		gas=0.000
+		crystal=0.000
+	}
+
+	history={
+		146.1.1 = {
+			owner = WTL
+			add_core_of = WTL
+			add_claim_by = UUG
+			buildings = {
+				infrastructure = 2
+				industrial_complex = 1
+				arms_factory = 0
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		203 274 1428 1747 1957 2440 2569 
+	}
+	manpower=2134
+	buildings_max_level_factor=1.000
+	state_category=s5
+	local_supplies=2.5
+}

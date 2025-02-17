@@ -1,0 +1,40 @@
+ASG_tongyi = {
+    ASG_tongyi = {
+    visible = {
+          tag = ASG
+          is_subject = no
+        }
+        
+        available = {
+          NOT = { country_exists = SGS }
+          NOT = { country_exists = MEL }
+          NOT = { country_exists = GH2 }
+          NOT = { country_exists = HU6 }
+          NOT = { country_exists = HU4 }
+          NOT = { country_exists = HU2 }
+          NOT = { country_exists = HU1 }
+          NOT = { country_exists = AKI }
+          NOT = { country_exists = HU3 }
+        }
+
+        cost = 0
+
+        fire_only_once = yes
+
+        complete_effect = {
+            
+            set_cosmetic_tag = ASG_tongyi_1
+            country_event = { id = xnty.1 day = 1 }  
+
+
+    }
+
+        remove_effect = {
+
+        }
+
+        ai_will_do = {
+            base = 10000
+        }
+    }
+}

@@ -1,0 +1,154 @@
+magician_ai_cheat_category = {
+    mu_ai_war_on_MFA = {
+        allowed = {
+          or = {
+            original_tag = MRS
+            original_tag = NAR
+            original_tag = ELL
+            original_tag = ALI
+            original_tag = MFA
+            original_tag = MTM
+            original_tag = MYK
+          }
+          # always = no
+        }
+      visible = {    
+        is_subject = no
+        is_ai = yes
+      }
+      available = {
+        date > 147.5.1
+        has_war = no
+        is_in_faction = no
+        not = {
+          has_country_flag = MAF_ai_start_war
+        }
+        FROM = {
+          is_in_faction = no
+          not = {
+            has_non_aggression_pact_with = ROOT
+            is_subject_of = ROOT
+            has_idea = MAF_divided_region_2
+            has_cosmetic_tag = MAF_united
+          }
+          if = {
+            limit = {
+              is_subject = yes
+            }
+            OVERLORD = {
+              NOT = {
+                has_non_aggression_pact_with = ROOT
+              }
+            }
+          }
+        }
+      }
+      target_trigger = {
+        FROM = {
+          OR = {
+            tag = MRS
+            tag = NAR
+            tag = ELL
+            tag = ALI
+            tag = MFA
+            tag = MTM
+            tag = MYK
+          }
+          or = {
+            is_neighbor_of = ROOT
+            any_country = {
+              is_subject_of = ROOT
+              is_neighbor_of = FROM
+            }
+          }
+          IF = {
+            limit = {
+              is_subject = yes
+            }
+            OVERLORD = {
+              is_neighbor_of = ROOT
+            }
+          }
+        }
+      }
+      targets = { MRS NAR ELL ALI MFA MTM MYK }
+
+      cost = 0
+      days_remove = 60
+      war_with_on_remove = FROM
+      fire_only_once = no
+      complete_effect = {
+        set_country_flag = {
+          flag = MAF_ai_start_war
+          value = 1
+          days = 60
+        }
+        ROOT = {
+          add_ai_strategy = {
+            type = prepare_for_war
+            id = FROM
+            value = 100
+          }
+        }
+        FROM = {
+          activate_targeted_decision = { target = ROOT decision = ongoing_war_on_decision_days_60 }
+          add_ai_strategy = {
+            type = prepare_for_war
+            id = ROOT
+            value = 100
+          }
+        }
+      }
+      remove_effect = {
+        declare_war_on = {
+          target = FROM
+          type = MAF_united_wargoal
+        }
+      }
+      cancel_trigger = {
+        has_war = yes
+        has_non_aggression_pact_with = from
+        FROM = {
+          is_subject_of = ROOT
+        }
+      }
+      ai_will_do = {
+        factor = -1
+        modifier = {
+          add = 2
+          or = {
+            tag = ALI
+            tag = MRS
+            tag = ELL
+            tag = NAR
+          }
+          check_variable = {
+            ai_randomlize > 0.9
+          }
+        }
+        modifier = {
+          add = 2
+          or = {
+            tag = MFA
+            tag = MTM
+            tag = MYK
+          }
+          date > 147.1.1
+          check_variable = {
+            ai_randomlize > 0.97
+          }
+        }
+        modifier = {
+          factor = 0.5
+          FROM = {
+            or = {
+              tag = MFA
+              tag = MTM
+              tag = MYK
+            }
+          }    
+          date > 149.1.1
+        }
+      }
+    }
+}

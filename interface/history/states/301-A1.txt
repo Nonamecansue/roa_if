@@ -1,0 +1,28 @@
+
+state={
+	id=301
+	name="STATE_301"
+
+	history={
+		146.1.1 = {
+			owner = MRY
+			add_core_of = MRY
+			buildings = {
+				infrastructure = 3
+				industrial_complex = 3
+				arms_factory = 0
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		1155 1675 1880 3299 3300 3301 3305 3309 4459 4460 4466 4474 6696 6702 6718 6719 6751 
+	}
+	manpower=945
+	buildings_max_level_factor=1.000
+	state_category=s5
+	local_supplies=2.500
+}

@@ -1,0 +1,219 @@
+characters={
+HU3_den ={
+		name = HU3_den
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+				small="gfx/leaders/leader_unknown_small.dds"
+			}
+			army = {
+				large="gfx/leaders/leader_unknown.dds"
+				small="gfx/leaders/leader_unknown_small.dds"
+			}
+		}
+		field_marshal = {
+			traits = {  th_original_character  trait_cautious old_guard war_hero th_trait_moulvedashi old_guard }
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			skill = 3
+			# id = 23
+		}
+		advisor = {
+			slot = character_coop
+			idea_token = HU3_den
+			name = HU3_den
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				stability_factor = 0.1
+				war_support_factor = 0.2
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	HU3_tian ={
+		name = HU3_tian
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+				small="gfx/leaders/leader_unknown_small.dds"
+			}
+			army = {
+				large="gfx/leaders/leader_unknown.dds"
+				small="gfx/leaders/leader_unknown_small.dds"
+			}
+		}
+		field_marshal = {
+			traits = {  th_original_character  th_trait_huoqiangzhuanjia offensive_doctrine trait_reckless war_hero aggressive_assaulter harsh_leader }
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+			skill = 4
+			# id = 23
+		}
+		advisor = {
+			slot = character_coop
+			idea_token = HU3_tian
+			name = HU3_tian
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				army_org_factor = 0.15
+				war_support_factor = 0.3
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	HU3_gang ={
+		name = HU3_gang
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+				small="gfx/leaders/leader_unknown_small.dds"
+			}
+			army = {
+				large="gfx/leaders/leader_unknown.dds"
+				small="gfx/leaders/leader_unknown_small.dds"
+			}
+		}
+		field_marshal = {
+			traits = {  th_original_character  trait_cautious infantry_leader infantry_expert war_hero trickster }
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 2
+			skill = 5
+			# id = 23
+		}
+		advisor = {
+			slot = character_coop
+			idea_token = HU3_gan
+			name = HU3_gang
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				ST_race_penalty_all_factor = -0.3
+				stability_factor = 0.25
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	HU3_den_leader ={
+		name = HU3_den_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+				small="gfx/leaders/leader_unknown_small.dds"
+			}
+			army = {
+				large="gfx/leaders/leader_unknown.dds"
+				small="gfx/leaders/leader_unknown_small.dds"
+			}
+		}
+		country_leader={
+			ideology=guli_junzhengfu
+			id=-1
+		}
+		
+	}
+	HU3_tian_leader ={
+		name = HU3_tian_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+				small="gfx/leaders/leader_unknown_small.dds"
+			}
+			army = {
+				large="gfx/leaders/leader_unknown.dds"
+				small="gfx/leaders/leader_unknown_small.dds"
+			}
+		}
+		country_leader={
+			ideology=neworder_type
+			id=-1
+		}
+		
+	}
+	HU3_gang_leader ={
+		name = HU3_gang_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+				small="gfx/leaders/leader_unknown_small.dds"
+			}
+			army = {
+				large="gfx/leaders/leader_unknown.dds"
+				small="gfx/leaders/leader_unknown_small.dds"
+			}
+		}
+		country_leader={
+			ideology=qinwai_type
+			id=-1
+		}
+		
+	}
+	HU3_chuan_leader ={
+		name = HU3_chuan_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+				small="gfx/leaders/leader_unknown_small.dds"
+			}
+			army = {
+				large="gfx/leaders/leader_unknown.dds"
+				small="gfx/leaders/leader_unknown_small.dds"
+			}
+		}
+		
+	}
+	HU3_junzhengfu_leader ={
+		name = HU3_junzhengfu_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/ZYD/ZYD_council.dds"
+				small="gfx/leaders/ZYD/ZYD_council_small.dds"
+			}
+			army = {
+				large="gfx/leaders/ZYD/ZYD_council.dds"
+				small="gfx/leaders/ZYD/ZYD_council_small.dds"
+			}
+		}
+		country_leader={
+			ideology=qinwai_type
+			id=-1
+		}
+		country_leader={
+			ideology=guli_junzhengfu
+			id=-1
+		}
+		country_leader={
+			ideology=oldorder_type
+			id=-1
+		}
+		country_leader={
+			ideology=fandong_type
+			id=-1
+		}
+		country_leader={
+			ideology=neworder_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldgenso_type
+			id=-1
+		}
+		
+	}
+
+}
+	

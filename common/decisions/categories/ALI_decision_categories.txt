@@ -1,0 +1,29 @@
+ALI_renoucuimian_decision_category = { #人偶催眠术
+	priority = 20
+}
+ALI_jinjimofa_decision_category = { #人偶催眠术
+	priority = 20
+}
+ALI_zhidingkuojianjihua_decision_category = { #制定人偶工坊扩建计划
+	priority = 20
+}
+ALI_zengsongrenou_decision_category = { #向友好国家赠送人偶
+	priority = 20
+	visible_when_empty = yes
+	visible = {
+		has_completed_focus = ALI_zengsongrenou
+	}
+}
+ALI_gengduodeshiyanduixiang_decision_category = { #更多的实验对象
+	priority = 20
+}
+# NMS_chongzheng_category = {
+# 	priority = 20
+# 	visible_when_empty = yes
+# 	visible = {
+# 		tag = NMS
+# 		not = {
+# 			has_country_flag = NMS_wending
+# 		}
+# 	}
+# }

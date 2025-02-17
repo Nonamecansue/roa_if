@@ -1,0 +1,278 @@
+﻿add_namespace = hu3new
+##########事件###########
+country_event = { #大宣传后收益
+	id = hu3new.1
+	title = hu3new.1.t
+	desc = hu3new.1.d
+
+	# major = yes
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		has_country_flag = HU3_daguimochuanjiao
+		not = {
+			has_idea = HU3_dazongjiaoxuanchuan_idea
+		}
+	}
+
+	option = {
+		name = hu3new.1.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base = 50
+		}
+
+
+	}
+}
+country_event = { #单一宗教后期收益
+	id = hu3new.2
+	title = hu3new.2.t
+	desc = hu3new.2.d
+
+	# major = yes
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+	#	has_country_flag = HU3_daguimochuanjiao
+	#	not = {
+	#		has_idea = HU3_dazongjiaoxuanchuan_idea
+	#	}
+	}
+
+	option = {
+		name = hu3new.2.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base = 50
+		}
+
+
+	}
+}
+country_event = { #限制宗教后期收益
+	id = hu3new.3
+	title = hu3new.3.t
+	desc = hu3new.3.d
+
+	# major = yes
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+	#	has_country_flag = HU3_daguimochuanjiao
+	#	not = {
+	#		has_idea = HU3_dazongjiaoxuanchuan_idea
+	#	}
+	}
+
+	option = {
+		name = hu3new.3.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base = 50
+		}
+
+
+	}
+}
+country_event = { #种冰
+	id = hu3new.4
+	title = hu3new.4.t
+	desc = hu3new.4.d
+
+	# major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	#	has_country_flag = HU3_daguimochuanjiao
+	#	not = {
+	#		has_idea = HU3_dazongjiaoxuanchuan_idea
+	#	}
+	}
+
+	option = {
+		name = hu3new.4.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base = 50
+		}
+		add_ideas = HU3_dupingzhongzhi_1_idea
+		add_political_power = -50
+
+
+	}
+	option = {
+		name = hu3new.4.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base = 50
+		}
+		add_political_power = 50
+		add_stability = 0.1
+
+
+	}
+}
+country_event = { #政变前
+	id = hu3new.5
+	title = hu3new.5.t
+	desc = hu3new.5.d
+
+	# major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	#	has_country_flag = HU3_daguimochuanjiao
+	#	not = {
+	#		has_idea = HU3_dazongjiaoxuanchuan_idea
+	#	}
+	}
+
+	option = {
+		name = hu3new.5.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base = 50
+		}
+		add_stability = -0.25
+		add_political_power = -50
+		custom_effect_tooltip = hu3new.5_GC
+		hidden_effect = {
+			country_event = { id = hu3new.6 days = 1}
+		}
+
+
+	}
+}
+country_event = { #政变前
+	id = hu3new.6
+	title = hu3new.6.t
+	desc = hu3new.6.d
+
+	# major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	#	has_country_flag = HU3_daguimochuanjiao
+	#	not = {
+	#		has_idea = HU3_dazongjiaoxuanchuan_idea
+	#	}
+	}
+
+	option = {
+		name = hu3new.6.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base = 50
+		}
+		add_stability = -0.3
+		add_political_power = -150
+		hidden_effect = {
+			complete_national_focus = HU3_15_1
+
+		}
+		add_popularity = {
+				ideology = guli
+				popularity = 0.25
+			}
+
+
+	}
+	option = {
+		name = hu3new.6.2#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base = 50
+		}
+		add_stability = -0.25
+		add_political_power = -50
+
+
+	}
+	option = {
+		name = hu3new.6.3#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base = 50
+		}
+		add_stability = -0.25
+		add_political_power = -50
+
+
+	}
+}
+country_event = { #要地
+	id = hu3new.7
+	title = hu3new.7.t
+	desc = hu3new.7.d
+
+	# major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	#	has_country_flag = HU3_daguimochuanjiao
+	#	not = {
+	#		has_idea = HU3_dazongjiaoxuanchuan_idea
+	#	}
+	}
+
+	option = {
+		name = hu3new.7.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base = 10
+		}
+	declare_war_on = {
+    target = HU3
+    type = take_state_focus
+    generator = { 233 219 }
+    }
+		
+
+
+	}
+	option = {
+		name = hu3new.7.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base = 90
+		}
+		add_opinion_modifier = { target = HU3 modifier = background_enemy }
+		      reverse_add_opinion_modifier = { target = HU3 modifier = background_enemy }
+
+
+	}
+}

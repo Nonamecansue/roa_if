@@ -1,0 +1,29 @@
+ideas = {
+	country = {
+
+
+    MEL_dupinzhongzhi_idea = {
+	    	picture = man_five_year_plan_industry
+	    	allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				POLITICAL_POWER_GAIN = 0.15
+				consumer_goods_factor = -0.1
+
+			}
+		}
+	
+	
+	
+		
+		
+
+	}
+}

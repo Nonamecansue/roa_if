@@ -1,0 +1,34 @@
+
+state={
+	id=413
+	name="STATE_413"
+	resources={
+		powder=0.000
+		metal=0.000
+		gas=0.000
+		crystal=0.000
+	}
+
+	history={
+		146.1.1 = {
+			owner = YAW
+			add_core_of = YAW
+			buildings = {
+				infrastructure = 2
+				industrial_complex = 0
+				arms_factory = 0
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		861 1333 2157 2208 3410 3413 3416 3459 3460 5370 5385 
+	}
+	manpower=320
+	buildings_max_level_factor=1.000
+	state_category=s2
+	local_supplies=2.500
+}

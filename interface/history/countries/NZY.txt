@@ -1,0 +1,107 @@
+﻿capital = 120
+138.8.13 = {
+
+}
+141.6.2 = {
+    
+}
+142.3.8 = {
+    
+}
+144.2.5 = {
+    
+}
+146.1.1 = {
+    set_technology = {
+        #通用武器线
+        spell_card1 = 1
+        spear1 = 1
+        gun1 = 1
+        linglicunchu = 1
+        linglizhufu = 1
+        linglidanyao = 1
+        spell_card2 = 1
+        gun2 = 1
+        gun3 = 1
+            
+        #辅助
+        zhiyuanzhuangbei = 1
+        zhihuixiaodui146 = 1
+        gongjianpao149 = 1
+
+        #专用辅助
+        mortar1 = 1
+
+        #专用基础
+        kexuebubingzhuangbei = 1
+        jiqiang1 = 1
+        jiqiang2 = 1
+        jiqiang3 = 1
+        shoulei1 = 1
+        shoulei2 = 1
+        bubingbuji1 = 1
+
+        #专用进阶
+
+        #混合系
+
+        #陆军学说
+            zhanchangzhihui140 = 1
+            
+        #工程学 
+            jichushuxue = 1
+            shuxuegongju = 1
+            waike = 1
+            jisuangongju144 = 1
+            tongxunlilun = 1
+
+        #专用工程学
+
+        #工业
+            production_theory = 1
+            org_production = 1
+            
+        #专用工业
+
+        #种族
+            
+    }
+    
+}
+146.1.1={
+    oob = "NZY_146"
+    set_country_flag = bunengsuiyiqiehuanzhengti
+    add_manpower = 200
+    add_ideas = {
+    type2_manpowerlv5
+    Human
+    Village
+    war_economy
+    close2
+    hawk2
+    close_border
+    forbidden_magic
+    quanmianjieyan
+    yanjinmeitihuodong
+    xianzhuqishi
+    jibenkejihua
+    NZY_chixubuduandebianjingchongtu_idea
+    NZY_zhongzhuchongtu_idea
+    NZY_beishuiyizhan_idea
+    }
+
+
+
+    set_politics = {
+    	ruling_party = guli
+    	election_frequency = 48
+    	elections_allowed = no
+    }
+    set_popularities = {
+        qinwai = 10
+        guli = 60
+        neworder = 30
+        oldorder = 0
+        fandong = 0
+    }
+}

@@ -1,0 +1,16 @@
+ALI_zhidingkuojianjihua_modifier = {
+	icon = GFX_man_five_year_plan_industry
+	enable = { 
+		is_owned_by = ALI
+	}
+	state_production_speed_industrial_complex_factor = ALI.var_ALI_zhidingkuojianjihua
+
+}
+ALI_zengsongrenou_modifier = {
+	# icon = GFX_man_five_year_plan_industry
+	political_power_gain = ALI_zengsongrenou_var_pp
+	intel_network_gain_factor = ALI_zengsongrenou_var_intel
+	operative_slot = ALI_zengsongrenou_var_slot
+	production_speed_industrial_complex_factor = ALI_zengsongrenou_var_ic
+	industrial_factory_donations = ALI_zengsongrenou_var_icd
+}

@@ -1,0 +1,88 @@
+﻿capital = 4
+146.1.1 = {
+    set_technology = {
+        #通用武器线
+        spell_card1 = 1
+        spear1 = 1
+        gun1 = 1
+        linglicunchu = 1
+        linglidanyao = 1
+        spell_card2 = 1
+            
+        #辅助
+
+        #专用辅助
+        
+
+        #专用基础
+
+        #专用进阶
+
+        #混合系
+
+        #陆军学说
+        zhanchangzhihui140 = 1
+        zuzhihuazhanzheng142 = 1
+            
+        #工程学 
+        jichushuxue = 1
+        shuxuegongju = 1
+        waike = 1
+        jisuangongju144 = 1
+        tongxunlilun = 1
+
+
+        #专用工程学
+
+        #工业
+        production_theory = 1
+        org_production = 1
+        jianzaojishu130 = 1
+        yunshudui140 = 1
+            
+        #专用工业
+        fangwaijieshengchan130 = 1
+        fangwaijieshengchan140 = 1
+
+        #种族
+            
+    }
+    
+}
+138.1.1 = {
+    oob = "TEST"
+    # set_research_slots = 0
+    set_politics = {
+        ruling_party = guli
+        election_frequency = 48
+        elections_allowed = no
+    }
+    set_popularities = {
+        qinwai = 0
+        guli = 100
+        neworder = 0
+        oldorder = 0
+        fandong = 0
+    }
+}
+
+146.1.1={
+    oob = "NUC_146"
+    
+    
+    add_ideas = {
+    Youkai
+    Village
+    close1
+    dove2
+    normal_border
+    sc_rule
+    }
+    set_popularities = {
+        qinwai = 0
+        guli = 95
+        neworder = 0
+        oldorder = 0
+        fandong = 5
+    }   
+}

@@ -1,0 +1,14 @@
+SEJ_passive_magician_decline_category = { #拒绝支援
+	priority = 20
+}
+
+# NMS_chongzheng_category = {
+# 	priority = 20
+# 	visible_when_empty = yes
+# 	visible = {
+# 		tag = NMS
+# 		not = {
+# 			has_country_flag = NMS_wending
+# 		}
+# 	}
+# }

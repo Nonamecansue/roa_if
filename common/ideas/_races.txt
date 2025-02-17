@@ -1,0 +1,166 @@
+ideas = {
+
+	races = { 
+		law = yes
+		Beast = {
+									
+			allowed_to_remove = {
+				always = no
+			}
+			modifier = {
+				conscription = 0.14
+			}
+
+			research_bonus = {
+				# science = 0.05
+			}
+
+			cost = 0
+			
+			cancel_if_invalid = no
+		}
+		
+		Human = {
+									
+			allowed_to_remove = {
+				always = no
+			}
+			modifier = {
+				conscription = 0.04
+			}
+
+			research_bonus = {
+				
+			}
+
+			cost = 0
+			
+			cancel_if_invalid = no
+		}
+		
+		Pri_youkai = {
+									
+			allowed_to_remove = {
+				always = no
+			}
+			modifier = {
+				conscription = 0.2
+			}
+			cost = 0
+			cancel_if_invalid = no
+		}
+
+		Youkai = {
+									
+			allowed_to_remove = {
+				always = no
+			}
+
+			modifier = {		
+				conscription = 0.2
+			}
+			cost = 0
+			cancel_if_invalid = no
+			default = yes
+		}
+
+		Magician = {
+									
+			allowed_to_remove = {
+				always = no
+			}
+			research_bonus = {
+				magic = 0.05
+			}
+			modifier = {
+				conscription = 0.08
+			}
+			cost = 0
+			cancel_if_invalid = no
+		}
+
+		Kappa = {
+									
+			allowed_to_remove = {
+				always = no
+			}
+			modifier = {
+				conscription = 0.125
+			}
+			cost = 0
+			cancel_if_invalid = no
+		}
+
+		Tenggu = {
+									
+			allowed_to_remove = {
+				always = no
+			}
+			
+			modifier = {
+				conscription = 0.2
+			}
+			cost = 0
+			cancel_if_invalid = no
+		}
+
+		God = {
+									
+			allowed_to_remove = {
+				always = no
+			}
+			
+			modifier = {
+				conscription = 0.16
+			}
+			cost = 0
+			cancel_if_invalid = no
+		}
+
+
+		Fairy = {
+									
+			allowed_to_remove = {
+				always = no
+			}
+			
+			modifier = {
+				conscription = 0.01
+			}
+			
+			
+
+			cost = 0
+			
+			cancel_if_invalid = no
+		}
+		
+		Ghost = {
+									
+			allowed_to_remove = {
+				always = no
+			}
+			
+			modifier = {
+				conscription = 0.002
+			}
+			cost = 0
+			cancel_if_invalid = no
+		}
+
+		No = {
+			allowed = {
+				always = no
+			}				
+			available = {
+				always = no
+			 }
+			
+			modifier = {
+
+			}
+			cost = 0
+			cancel_if_invalid = no
+		}
+	}
+}

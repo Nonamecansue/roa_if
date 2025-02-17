@@ -1,0 +1,53 @@
+ideas = {
+	hidden_ideas = {
+
+		FYJ_yuanlingtegong_idea_1 = {
+			picture = chi_war_of_resistance3
+			modifier = {
+				#AI_FOCUS_AGGRESSIVE_FACTOR = 0.8
+				ai_focus_aggressive_factor = 1
+				army_org_factor = 2
+		army_morale_factor = 2
+
+			}
+			targeted_modifier = { 
+				tag = ONS
+				attack_bonus_against = 2
+				defense_bonus_against = 2
+			}
+			targeted_modifier = { 
+				tag = ACE
+				attack_bonus_against = 2
+				defense_bonus_against = 2
+			}
+			available = {
+
+			}
+		}
+		FYJ_yuanlingtegong_idea_2 = {
+			picture = chi_war_of_resistance3
+			modifier = {
+				#AI_FOCUS_AGGRESSIVE_FACTOR = 0.8
+				ai_focus_aggressive_factor = 1
+
+			}
+			targeted_modifier = { 
+				tag = ONS
+				attack_bonus_against = 0.6
+				defense_bonus_against = 0.6
+			}
+			targeted_modifier = { 
+				tag = ACE
+				attack_bonus_against = 0.6
+				defense_bonus_against = 0.6
+			}
+			available = {
+
+			}
+		}
+
+		
+	}
+}
+
+		

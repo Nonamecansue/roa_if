@@ -1,0 +1,36 @@
+
+state={
+	id=152
+	name="STATE_152"
+	resources={
+		energy=0.000
+		powder=6.000
+		metal=2.000
+		gas=0.000
+		crystal=0.000
+	}
+
+	history={
+		146.1.1 = {
+			owner = YZL
+			add_core_of = AOO
+			add_core_of = YZL
+			buildings = {
+				infrastructure = 4
+				industrial_complex = 3
+				arms_factory = 2
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		643 873 1067 1103 2116 2773 2784 6198 7066 7072 7078 
+	}
+	manpower=187287
+	buildings_max_level_factor=1.000
+	state_category=s10
+	local_supplies=2.500
+}

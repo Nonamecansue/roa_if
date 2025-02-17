@@ -1,0 +1,753 @@
+ideas = {
+	
+	country = {
+		CIR_biyaodeguli_idea = {
+			picture = CIR_biyaodeguli_js
+			available = {
+
+			}
+			modifier = {
+				enemy_declare_war_tension = 0.50
+				generate_wargoal_tension = 0.50
+				send_volunteer_divisions_required = 10
+				send_volunteer_tension = 10
+				ai_desired_divisions_factor = 1
+				army_core_attack_factor = 0.1
+                army_core_defence_factor = 0.1
+
+				
+
+			}
+			rule = {
+				can_create_factions = no
+				can_join_factions = no
+				can_send_volunteers = no
+			}
+		}
+		CIR_sikalietejiadeyichan_idea = {
+			picture = CIR_sikalietejiadeyichan_js
+			available = {
+
+			}
+			modifier = {
+				industrial_capacity_factory = -0.25
+				production_speed_arms_factory_factor = -0.5
+				production_speed_industrial_complex_factor = -0.5
+
+				
+
+			}
+			
+		}
+		CIR_zhengzhianquanweiyuanhui_idea = {
+			picture = FRA_matignon_agreements
+			available = {
+
+			}
+			modifier = {
+				stability_factor = 0.15
+				political_power_factor = -0.25
+				war_support_factor = -0.05
+				CONSCRIPTION_factor = -0.05
+				research_speed_factor = -0.05
+				INDUSTRIAL_CAPACITY_FACTORy = -0.05
+				
+
+				
+
+			}
+			
+		}
+		CIR_zunbeishiquchongjian_idea = {
+			picture = FRA_matignon_agreements
+			available = {
+
+			}
+			modifier = {
+				consumer_goods_expected_value = -0.1
+
+				
+
+			}
+			
+		}
+		CIR_kuaisujixiehua_idea = {
+			picture = FRA_matignon_agreements
+			available = {
+
+			}
+			modifier = {
+
+				
+
+			}
+			equipment_bonus = {
+				jixiezhuangbei_a= {
+					build_cost_ic = -0.15
+				}
+	  		  }
+			
+		}
+		CIR_guifanyunshutixi_idea = {
+			picture = FRA_matignon_agreements
+			available = {
+
+			}
+			modifier = {
+				consumer_goods_expected_value = -0.1
+
+				
+
+			}
+			equipment_bonus = {
+				truck_1= {
+					build_cost_ic = -0.5
+				}
+	  		  }
+			
+		}
+		CIR_huopaoshengchuan_idea = {
+			picture = FRA_matignon_agreements
+			available = {
+
+			}
+			modifier = {
+
+				
+
+			}
+			equipment_bonus = {
+				mortar_a= {
+					build_cost_ic = -0.15
+				}
+	  		  }
+			
+		}
+		CIR_jiakuaijixiehua_idea = {
+			picture = FRA_matignon_agreements
+			available = {
+
+			}
+			modifier = {
+				consumer_goods_expected_value = -0.1
+
+				
+
+			}
+			equipment_bonus = {
+				yunshudui_a= {
+					build_cost_ic = -0.5
+				}
+	  		  }
+			
+		}
+		CIR_xiaoguimokaifa_idea = {
+			picture = FRA_matignon_agreements
+			available = {
+
+			}
+			modifier = {
+				global_building_slots_factor = 0.2
+
+				
+
+			}
+			
+			
+		}
+		CIR_ziyuankantanxiaozu_idea = {
+			picture = FRA_matignon_agreements
+			available = {
+
+			}
+			modifier = {
+				local_resources_factor = 0.15
+
+				
+
+			}
+			
+			
+		}
+		CIR_xinxinggongyetixi_idea = {
+			picture = FRA_matignon_agreements
+			available = {
+
+			}
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_speed_buildings_factor = 0.15
+
+				
+
+			}
+			
+		}
+		CIR_zhongshigaocengneizheng_idea = {
+			picture = FRA_matignon_agreements
+			available = {
+
+			}
+			modifier = {
+				political_power_factor = 0.15
+
+				
+
+			}
+			
+		}
+		CIR_neibuzhengzhiweiyuanhui_idea_1 = {
+			picture = FRA_matignon_agreements
+			available = {
+
+			}
+			modifier = {
+				political_power_factor = 0.15
+				civilian_intel_factor = 0.05
+				army_intel_factor = 0.05
+				fandong_drift = 0.05
+				stability_factor = 0.1
+
+				
+
+			}
+			
+		}
+		CIR_neibuzhengzhiweiyuanhui_idea_2 = {
+			picture = FRA_matignon_agreements
+			available = {
+
+			}
+			modifier = {
+				political_power_factor = 0.15
+				civilian_intel_factor = 0.05
+				army_intel_factor = 0.05
+				fandong_drift = 0.05
+				stability_factor = 0.1
+				operative_slot = 1
+
+
+				
+
+			}
+			
+		}
+		CIR_neibuzhengzhiweiyuanhui_idea_3 = {
+			picture = FRA_matignon_agreements
+			available = {
+
+			}
+			modifier = {
+				political_power_factor = 0.15
+				civilian_intel_factor = 0.05
+				army_intel_factor = 0.05
+				fandong_drift = 0.05
+				stability_factor = 0.1
+				operative_slot = 1
+				decryption_factor = 0.05
+
+
+				
+
+			}
+			
+		}
+		CIR_neibuzhengzhiweiyuanhui_idea_4 = {
+			picture = FRA_matignon_agreements
+			available = {
+
+			}
+			modifier = {
+				political_power_factor = 0.15
+				civilian_intel_factor = 0.05
+				army_intel_factor = 0.05
+				fandong_drift = 0.05
+				stability_factor = 0.1
+				operative_slot = 1
+				decryption_factor = 0.05
+				enemy_operative_capture_chance_factor = 0.1
+				enemy_operative_intel_extraction_rate = 0.1
+
+
+				
+
+			}
+			
+		}
+		CIR_neibuzhengzhiweiyuanhui_idea_5 = {
+			picture = FRA_matignon_agreements
+			available = {
+
+			}
+			modifier = {
+				political_power_factor = 0.15
+				civilian_intel_factor = 0.05
+				army_intel_factor = 0.05
+				fandong_drift = 0.05
+				stability_factor = 0.2
+				operative_slot = 1
+				decryption_factor = 0.05
+				enemy_operative_capture_chance_factor = 0.1
+				enemy_operative_intel_extraction_rate = 0.1
+
+
+				
+
+			}
+			
+		}
+		CIR_neizhengbudui_idea = {
+			picture = FRA_matignon_agreements
+			available = {
+
+			}
+			modifier = {
+				stability_factor = 0.15
+				fandong_drift = 0.05
+				political_power_factor = -0.05
+				
+
+
+				
+
+			}
+			
+		}
+		CIR_junguandiaogang_idea = {
+			picture = FRA_matignon_agreements
+			available = {
+
+			}
+			modifier = {
+				dig_in_speed_factor = -0.1
+				max_dig_in_factor = -0.1
+				max_planning_factor = -0.1
+				planning_speed = -0.1
+
+
+				
+
+			}
+			
+		}
+		CIR_guanzhufanduipaidongxiang_idea = {
+			picture = FRA_matignon_agreements
+			available = {
+
+			}
+			modifier = {
+				qinwai_drift = -0.05
+				stability_weekly = 0.01
+				political_power_factor = -0.1
+
+
+				
+
+			}
+			
+		}
+		CIR_neibuzhengzhilinshitongyi_idea = {
+			picture = FRA_matignon_agreements
+			available = {
+
+			}
+			modifier = {
+				stability_factor = 0.2
+
+
+				
+
+			}
+			
+		}
+		CIR_zhengzhixuanchuangbu_idea = {
+			picture = FRA_matignon_agreements
+			available = {
+
+			}
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = 0.05
+
+
+				
+
+			}
+			
+		}
+		CIR_kuodaqingbaowang_idea = {
+			picture = FRA_matignon_agreements
+			available = {
+
+			}
+			modifier = {
+				operative_slot = 1
+				civilian_intel_factor = 0.05
+				army_intel_factor = 0.05
+				
+
+
+				
+
+			}
+			
+		}
+		CIR_duigemingdexuanchuan_idea = {
+			picture = FRA_matignon_agreements
+			available = {
+
+			}
+			modifier = {
+			fandong_drift = 0.05
+			stability_weekly = 0.05
+				
+
+
+				
+
+			}
+			
+		}
+		CIR_duigemingjunduidexuanchuan_idea = {
+			picture = FRA_matignon_agreements
+			available = {
+
+			}
+			modifier = {
+			weekly_manpower = 5
+			weekly_war_support = 0.05
+				
+
+
+				
+
+			}
+			
+		}
+		CIR_yingxiongwansui_idea = {
+			picture = FRA_matignon_agreements
+			available = {
+
+			}
+			modifier = {
+			army_org_factor = 0.1
+			army_morale_factor = 0.02
+			conscription_factor = 0.05
+				
+
+
+				
+
+			}
+			
+		}
+		CIR_guanliaogaige_idea = {
+			picture = FRA_matignon_agreements
+			available = {
+
+			}
+			modifier = {
+			stability_weekly = 0.05
+			political_power_factor = -0.15
+				
+
+
+				
+
+			}
+			
+		}
+		CIR_dicengxuanbaguanliao_idea = {
+			picture = FRA_matignon_agreements
+			available = {
+
+			}
+			modifier = {
+			stability_factor = 0.15
+			political_power_factor = -0.05
+			production_speed_buildings_factor = 0.05
+			
+				
+
+
+				
+
+			}
+			
+		}
+		CIR_jingchabudui_idea = {
+			picture = FRA_matignon_agreements
+			available = {
+
+			}
+			modifier = {
+			stability_factor = 0.1
+			conscription_factor = 0.05
+			training_time_factor = -0.05
+			
+				
+
+
+				
+
+			}
+			
+		}
+		CIR_neizhhengbukongzhijingdui_idea = {
+			picture = FRA_matignon_agreements
+			available = {
+
+			}
+			modifier = {
+			stability_factor = 0.2
+			conscription_factor = 0.05
+			training_time_factor = -0.05
+			fandong_drift = 0.05
+			stability_weekly = 0.05
+			
+				
+
+
+				
+
+			}
+			
+		}
+		CIR_xinxiongzhengzhitixi_idea = {
+			picture = FRA_matignon_agreements
+			available = {
+
+			}
+			modifier = {
+			stability_factor = 0.1
+			political_power_factor = 0.1
+			
+				
+
+
+				
+
+			}
+			
+		}
+		CIR_zhongzupingdengxuanchuan_idea = {
+			picture = FRA_matignon_agreements
+			available = {
+
+			}
+			modifier = {
+			ST_race_penalty_all_factor = -0.2
+			stability_factor = 0.05
+			army_morale_factor = 0.01
+
+			
+				
+
+
+				
+
+			}
+			
+		}
+		CIR_tuanjieyixin_idea = {
+			picture = FRA_matignon_agreements
+			available = {
+
+			}
+			modifier = {
+			stability_factor = 0.25
+			stability_weekly = 0.05
+			
+
+			
+				
+
+
+				
+
+			}
+			
+		}
+		CIR_pingqingjunguan_idea = {
+			picture = FRA_matignon_agreements
+			available = {
+
+			}
+			modifier = {
+			max_planning_factor = 0.1
+			planning_speed = 0.1
+			experience_gain_army = 0.05
+
+			
+				
+
+
+				
+
+			}
+			
+		}
+		CIR_linshikongquedegangwei_idea = {
+			picture = FRA_matignon_agreements
+			available = {
+
+			}
+			modifier = {
+				operative_slot = 1
+				recon_factor = 0.05
+				
+
+
+				
+
+			}
+			
+		}
+		CIR_ziranhuamaodun_idea = {
+			picture = received_attache
+			name = CIR_ziranhuamaodun_idea
+			available = {
+				
+			}
+			targeted_modifier = {
+				
+			}modifier = {
+				FAPO_RULE_forbidden = 1
+				stability_factor = -0.3
+			}
+
+		}
+		CIR_luohoudejunshisixiang_idea_1 = {
+			picture = received_attache
+			name = CIR_luohoudejunshisixiang_idea
+			available = {
+				
+			}
+			targeted_modifier = {
+				
+			}
+			modifier = {
+				dig_in_speed_factor = -0.25
+				max_dig_in_factor = -0.25
+				max_planning_factor = -0.25
+				planning_speed = -0.25
+				training_time_factor = 0.25
+				max_training = -0.25
+				military_leader_cost_factor = 0.2
+
+			}
+
+		}
+		CIR_luohoudejunshisixiang_idea_2 = {
+			picture = received_attache
+			name = CIR_luohoudejunshisixiang_idea
+			available = {
+				
+			}
+			targeted_modifier = {
+				
+			}
+			modifier = {
+				dig_in_speed_factor = -0.25
+				max_dig_in_factor = -0.25
+				max_planning_factor = -0.25
+				planning_speed = -0.25
+				max_training = -0.15
+				military_leader_cost_factor = 0.2
+
+			}
+
+		}
+		CIR_luohoudejunshisixiang_idea_3 = {
+			picture = received_attache
+			name = CIR_luohoudejunshisixiang_idea
+			available = {
+				
+			}
+			targeted_modifier = {
+				
+			}
+			modifier = {
+				dig_in_speed_factor = -0.15
+				max_dig_in_factor = -0.15
+				max_planning_factor = -0.25
+				planning_speed = -0.25
+				military_leader_cost_factor = 0.2
+
+			}
+
+		}
+		CIR_luohoudejunshisixiang_idea_4 = {
+			picture = received_attache
+			name = CIR_luohoudejunshisixiang_idea
+			available = {
+				
+			}
+			targeted_modifier = {
+				
+			}
+			modifier = {
+				dig_in_speed_factor = -0.15
+				max_dig_in_factor = -0.15
+				max_planning_factor = -0.15
+				planning_speed = -0.15
+				military_leader_cost_factor = 0.1
+
+			}
+
+		}
+		CIR_qianhaojishupuji_idea = {
+			picture = received_attache
+			name = CIR_qianhaojishupuji_idea
+			available = {
+				
+			}
+			targeted_modifier = {
+				
+			}
+			modifier = {
+				dig_in_speed_factor = 0.25
+				max_dig_in_factor = 0.15
+
+			}
+
+		}
+		CIR_pujizhiyuanzhuangbei_idea = {
+			picture = received_attache
+			name = CIR_pujizhiyuanzhuangbei_idea
+			available = {
+				
+			}
+			targeted_modifier = {
+				
+			}
+			modifier = {
+				modifier_army_sub_unit_sp_duzhanxiaodui_attack_factor = 0.5
+				modifier_army_sub_unit_sp_duzhanxiaodui_defence_factor = 0.5
+
+			}
+
+		}
+		CIR_gemingzhishi_idea = {
+			picture = received_attache
+			name = CIR_gemingzhishi_idea
+			available = {
+				
+			}
+			targeted_modifier = {
+				
+			}
+			modifier = {
+				recon_factor = 0.05
+				pocket_penalty = -0.1
+				army_org_factor = 0.25
+
+			}
+
+		}
+		
+	}
+	
+}

@@ -1,0 +1,9 @@
+YUK_fanpanyaojingyoujidui_state = {
+	enable = {
+		is_owned_by = YUK
+	}
+	icon = GFX_NMS_zise_state
+	state_production_speed_buildings_factor = -0.5
+	recruitable_population_factor = -0.5
+	state_resources_factor = -0.5
+}

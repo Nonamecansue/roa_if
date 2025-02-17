@@ -1,0 +1,8 @@
+leader_traits = {
+	CIR_gemingdelingdaoren_trait = {
+		stability_weekly = 0.05
+		fandong_drift = 0.05
+		stability_factor = 0.15
+	}
+	
+}

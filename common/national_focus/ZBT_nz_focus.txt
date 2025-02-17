@@ -1,0 +1,489 @@
+focus_tree = {
+	id = ZBT_focus_1
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ZBT
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 2700 y = 1900 }
+	focus = {
+		id = ZBT_1_1
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 6.00
+		x = 27
+		y = 0
+		available ={
+      
+      }
+		bypass = {
+      
+      }
+		completion_reward = {
+			
+				XXX = {
+         ZBT_shanxian = {
+					set_nationality = ROOT
+				}
+         ZBT_heitian = {
+					set_nationality = ROOT
+				}
+         ZBT_jiutiao = {
+					set_nationality = ROOT
+				}
+		 ZBT_santiao = {
+					set_nationality = ROOT
+				}
+		ZBT_zhongshan = {
+					set_nationality = ROOT
+				}				
+      }
+
+		
+	}
+	ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+	}
+	focus = {
+		id = ZBT_1_2
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 6.00
+		x = 0
+		y = 2
+		relative_position_id = ZBT_1_1
+		# prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      }
+      prerequisite = { focus = ZBT_1_1 }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        
+
+
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+		id = ZBT_1_3
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 6.00
+		x = -4
+		y = 2
+		relative_position_id = ZBT_1_2
+		# prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      }
+      prerequisite = { focus = ZBT_1_2 }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        
+
+
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+		id = ZBT_1_3_a
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 6.00
+		x = -2
+		y = 2
+		relative_position_id = ZBT_1_3
+		# prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      }
+      prerequisite = { focus = ZBT_1_3 }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        
+
+
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+		id = ZBT_1_3_b
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 6.00
+		x = 2
+		y = 2
+		relative_position_id = ZBT_1_3
+		# prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      }
+      prerequisite = { focus = ZBT_1_3 }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        
+
+
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+		id = ZBT_1_3_c
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 6.00
+		x = 0
+		y = 4
+		relative_position_id = ZBT_1_3
+		# prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      }
+      prerequisite = { focus = ZBT_1_3_a }
+	  prerequisite = { focus = ZBT_1_3_b }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        
+
+
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+		id = ZBT_1_4
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 6.00
+		x = 6
+		y = 2
+		relative_position_id = ZBT_1_2
+		# prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      }
+      prerequisite = { focus = ZBT_1_2 }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        
+
+
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+		id = ZBT_1_4_a
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 6.00
+		x = -4
+		y = 2
+		relative_position_id = ZBT_1_4
+		# prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      }
+      prerequisite = { focus = ZBT_1_4 }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        
+
+
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+		id = ZBT_1_4_b
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 6.00
+		x = 0
+		y = 2
+		relative_position_id = ZBT_1_4
+		# prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      }
+      prerequisite = { focus = ZBT_1_4 }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        
+
+
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+		id = ZBT_1_4_c
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 6.00
+		x = 4
+		y = 2
+		relative_position_id = ZBT_1_4
+		# prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      }
+      prerequisite = { focus = ZBT_1_4 }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        
+
+
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+		id = ZBT_1_4_d
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 6.00
+		x = 0
+		y = 4
+		relative_position_id = ZBT_1_4
+		# prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      }
+      prerequisite = { focus = ZBT_1_4_a }
+	  prerequisite = { focus = ZBT_1_4_b }
+	  prerequisite = { focus = ZBT_1_4_c }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        
+
+
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+		id = ZBT_1_5
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 6.00
+		x = 0
+		y = 10
+		relative_position_id = ZBT_1_1
+		# prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      }
+      prerequisite = { focus = ZBT_1_3_c }
+	  prerequisite = { focus = ZBT_1_4_d }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        
+
+
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  
+	
+}

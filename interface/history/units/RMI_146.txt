@@ -1,0 +1,196 @@
+﻿division_template = {
+	name = "游击编制"
+	regiments = {
+		ma_light_infantry = { x = 0 y = 0 }
+		ma_light_infantry = { x = 0 y = 1 }
+		ma_light_infantry = { x = 0 y = 2 }
+		ma_light_infantry = { x = 0 y = 3 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "新编革命编制"
+	regiments = {
+		ma_infantry = { x = 0 y = 0 }
+		ma_infantry = { x = 0 y = 1 }
+		ma_infantry = { x = 0 y = 2 }
+		melee_infantry = { x = 0 y = 3 }
+		melee_infantry = { x = 0 y = 4 }
+	}
+	support = {
+	}
+}
+
+
+units = {
+	division = {
+		name = "游击编制"
+		location = 5945
+		division_template = "游击编制"
+		start_experience_factor = 0.35
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "游击编制"
+		location = 5945
+		division_template = "游击编制"
+		start_experience_factor = 0.35
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "新编革命编制"
+		location = 5945
+		division_template = "新编革命编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "新编革命编制"
+		location = 5945
+		division_template = "新编革命编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "新编革命编制"
+		location = 5945
+		division_template = "新编革命编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "新编革命编制"
+		location = 5945
+		division_template = "新编革命编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "游击编制"
+		location = 751
+		division_template = "游击编制"
+		start_experience_factor = 0.35
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "新编革命编制"
+		location = 751
+		division_template = "新编革命编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "新编革命编制"
+		location = 751
+		division_template = "新编革命编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "游击编制"
+		location = 3867
+		division_template = "游击编制"
+		start_experience_factor = 0.35
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "新编革命编制"
+		location = 3867
+		division_template = "新编革命编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "新编革命编制"
+		location = 3867
+		division_template = "新编革命编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "游击编制"
+		location = 260
+		division_template = "游击编制"
+		start_experience_factor = 0.35
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "新编革命编制"
+		location = 260
+		division_template = "新编革命编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "新编革命编制"
+		location = 260
+		division_template = "新编革命编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "游击编制"
+		location = 844
+		division_template = "游击编制"
+		start_experience_factor = 0.35
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "新编革命编制"
+		location = 260
+		division_template = "新编革命编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "新编革命编制"
+		location = 260
+		division_template = "新编革命编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "游击编制"
+		location = 195
+		division_template = "游击编制"
+		start_experience_factor = 0.35
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "游击编制"
+		location = 195
+		division_template = "游击编制"
+		start_experience_factor = 0.35
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "游击编制"
+		location = 1221
+		division_template = "游击编制"
+		start_experience_factor = 0.35
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "游击编制"
+		location = 1221
+		division_template = "游击编制"
+		start_experience_factor = 0.35
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "游击编制"
+		location = 323
+		division_template = "游击编制"
+		start_experience_factor = 0.35
+		start_equipment_factor = 1
+	}
+}
+

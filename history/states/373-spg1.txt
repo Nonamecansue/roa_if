@@ -1,0 +1,33 @@
+state={
+	id=373
+	name="STATE_373"
+	provinces={
+		333 857 927 1702 2337 2624 3079 3414 5358 5362 5369 5392 
+	}
+	resources={
+
+		powder = 0.0
+		metal = 0.0
+		gas=5.000
+		crystal=0.000
+	}
+
+	history={
+		146.1.1 = {
+			owner = LIL
+			add_core_of = LIL
+			buildings = {
+				infrastructure =1
+				industrial_complex = 0
+				arms_factory = 0
+
+			}
+
+		}
+
+	}
+	manpower=15455.0
+	state_category=s5
+	local_supplies=2.5
+	buildings_max_level_factor=1.000
+}

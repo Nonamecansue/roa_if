@@ -1,0 +1,73 @@
+# All infantry equipment
+
+equipments = {
+
+	sc_yizhantan_a = {
+		year = 144
+	
+		is_archetype = yes
+		picture = archetype_infantry_equipment		
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		
+		interface_category = interface_category_land
+
+		upgrades = {
+			upgrade_reliability
+          	upgrade_softattack
+          	upgrade_hardattack
+          	upgrade_aaattack
+          	upgrade_defense
+          	upgrade_breakthrough
+          	upgrade_ic
+          	upgrade_ic_reverse
+          	upgrade_reliability_reverse
+		}
+		upgrades = {
+			up_sc_attack
+			up_defense
+			up_speed
+		}
+		
+		
+
+		
+		
+		#Defensive Abilities
+		defense = 8
+		breakthrough = 36
+		hardness = 0.95
+		armor_value = 40
+
+		#Offensive Abilities
+		soft_attack = 15
+		hard_attack = 12
+		ap_attack = 30
+		air_attack = 0
+
+		#Misc Abilities
+		reliability = 0.5
+		maximum_speed = 4
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+		
+		build_cost_ic = 20
+
+		
+		
+	}
+	sc_yizhantan144 = {
+		year = 144
+	
+		archetype = sc_yizhantan_a
+		
+		priority = 10
+		visual_level = 0
+
+		resources = {
+			metal = 2
+		}
+	}
+}

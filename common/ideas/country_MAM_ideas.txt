@@ -1,0 +1,48 @@
+ideas = {
+#===============================
+    country = {
+	#=========================
+	MAM_suzhikanyoudejundui = {
+			picture = MAM_suzhikanyoudejundui_js
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			
+	
+			modifier = {
+				stability_factor = -0.1
+				army_org_factor = -0.2
+				conscription_factor = -0.75
+				training_time_army_factor = -0.5
+				mobilization_laws_cost_factor = 1
+
+
+			}
+		}
+		MAM_shizhiwuwei = {
+			picture = FRA_matignon_agreements
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			
+	
+			modifier = {
+				political_power_factor = -0.15
+
+
+
+			}
+		}
+		
+	}
+}

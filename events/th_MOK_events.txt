@@ -1,0 +1,926 @@
+﻿add_namespace = mok
+##########事件###########
+country_event = { #边境遇袭1
+	id = mok.1
+	title = mok.1.t
+	desc = mok.1.d
+
+	# major = yes
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		date > 146.1.1
+		tag = MOK
+	}
+
+	option = {
+		name = mok.1.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base =50
+		}
+
+		296 = {
+			damage_building = {
+					type = infrastructure
+					damage = 0.5
+				}
+		}
+		add_timed_idea = {days = 35 idea = MOK_bianjingxiji_idea_1 }
+		consumer_goods_factor = -0.10
+
+	}
+	option = {
+		name = mok.1.2#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base = 60
+		}
+
+		296 = {
+			damage_building = {
+					type = infrastructure
+					damage = 0.65
+				}
+			damage_building = {
+					type = industrial_complex 
+					damage = 0.65
+				}
+			damage_building = {
+					type = arms_factory
+					damage = 0.65
+				}
+		}
+		add_timed_idea = {days = 70 idea = MOK_bianjingxiji_idea}
+
+	}
+}
+country_event = { #边境遇袭2
+	id = mok.2
+	title = mok.2.t
+	desc = mok.2.d
+
+	# major = yes
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		date > 146.2.5
+		tag = MOK
+	}
+
+	option = {
+		name = mok.2.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base =50
+		}
+		add_stability = -0.1
+		BYA = {
+		add_equipment_to_stockpile = {
+					type = gun147
+					amount = 2000
+					producer = MOK
+				}
+		}
+		MOK = {
+		add_equipment_to_stockpile = {
+					type = gun147
+					amount = -2000
+				}
+		}
+
+		
+
+	}
+	option = {
+		name = mok.2.2#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base = 60
+		}
+		add_stability = -0.05
+		BYA = {
+		add_equipment_to_stockpile = {
+					type = gun147
+					amount = 1000
+					producer = MOK
+				}
+		}
+		MOK = {
+		add_equipment_to_stockpile = {
+					type = gun147
+					amount = -1000
+				}
+		}
+
+		 add_power_balance_value = {
+                id = MOK_junguanduoquan_power_balance
+                value = -0.05
+            }
+
+		
+		
+
+	}
+}
+country_event = { #厂址
+	id = mok.3
+	title = mok.3.t
+	desc = mok.3.d
+
+	# major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		
+	}
+
+	option = {
+		name = mok.3.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base =50
+		}
+		296 = {
+        add_building_construction = {
+          type = arms_factory
+          level = 2
+          instant_build = yes
+        }
+      }
+		add_power_balance_value = {
+                id = MOK_junguanduoquan_power_balance
+                value = -0.05
+            }
+
+	}
+	option = {
+		name = mok.3.2#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base = 60
+		}
+		296 = {
+        add_building_construction = {
+          type = arms_factory
+          level = 2
+          instant_build = yes
+        }
+      }
+	  add_power_balance_value = {
+                id = MOK_junguanduoquan_power_balance
+                value = 0.05
+            }
+
+
+		
+		
+
+	}
+}
+country_event = { #与nzy协商结盟
+	id = mok.4
+	title = mok.4.t
+	desc = mok.4.d
+
+	# major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		
+	}
+
+	option = {
+		name = mok.4.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base =50
+		}
+		NZY = {
+			country_event = {id = mok.5 days = 1 }
+		}
+
+	}
+	
+}
+country_event = { #nzy结盟视角
+	id = mok.5
+	title = mok.5.t
+	desc = mok.5.d
+
+	# major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		
+	}
+
+	option = {
+		name = mok.5.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base =100
+		}
+		MOK = {
+			country_event = {id = mok.6 days = 1 }
+		}
+
+	}
+	option = {
+		name = mok.4.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base =0
+		}
+		MOK = {
+			country_event = {id = mok.7 days = 1 }
+		}
+
+	}
+	
+}
+country_event = { #nzy同意结盟
+	id = mok.6
+	title = mok.6.t
+	desc = mok.6.d
+
+	# major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		
+	}
+
+	option = {
+		name = mok.6.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base =50
+		}
+		add_political_power = 200
+			create_faction = "西竹林反妖兽战线"
+			add_to_faction = 	NZY
+			set_country_flag = MOK_nzytongyile
+			#add_ideas = { MOK_fanyaoshoutongmeng_idea }
+
+	}
+
+	
+}
+country_event = { #nzy拒绝结盟
+	id = mok.7
+	title = mok.7.t
+	desc = mok.7.d
+
+	# major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		
+	}
+
+	option = {
+		name = mok.7.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base =50
+		}
+		add_political_power = 50
+		set_country_flag = MOK_nzyjujuele
+
+	}
+
+	
+}
+country_event = { #开地1
+	id = mok.8
+	title = mok.8.t
+	desc = mok.8.d
+
+	# major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		
+	}
+
+	option = {
+		name = mok.8.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base =50
+		}
+		country_event = {id = mok.9 days = 5 }
+
+	}
+	option = {
+		name = mok.8.2#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base =50
+		}
+		country_event = {id = mok.10 days = 1 }
+
+	}
+
+	
+}
+country_event = { #传统开地
+	id = mok.9
+	title = mok.9.t
+	desc = mok.9.d
+
+	# major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		
+	}
+
+	option = {
+		name = mok.9.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base =50
+		}
+		296 = {
+			add_extra_state_shared_building_slots = 2
+		}
+		add_power_balance_value = {
+                id = MOK_junguanduoquan_power_balance
+                value = -0.05
+            }
+
+	}	
+}
+country_event = { #烧荒1
+	id = mok.10
+	title = mok.10.t
+	desc = mok.10.d
+
+	# major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		
+	}
+
+	option = {
+		name = mok.10.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base =50
+		}
+		296 = {
+			add_extra_state_shared_building_slots = 6
+			add_manpower = -50
+		}
+		add_stability = -0.2
+
+	}	
+}
+country_event = { #改良补给方式
+	id = mok.11
+	title = mok.11.t
+	desc = mok.11.d
+
+	# major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		
+	}
+
+	option = {
+		name = mok.11.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base =50
+		}
+		add_ideas = { MOK_xinshibuji_idea }
+		add_power_balance_value = {
+                id = MOK_junguanduoquan_power_balance
+                value = -0.05
+            }
+
+	}	
+	option = {
+		name = mok.11.2#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base =50
+		}
+		
+
+	}	
+}
+country_event = { #运输被袭击
+	id = mok.12
+	title = mok.12.t
+	desc = mok.12.d
+
+	# major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		
+	}
+
+	option = {
+		name = mok.12.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base =50
+		}
+		add_manpower = -10
+		add_equipment_to_stockpile = {
+					type = gun_a
+					amount = -90
+				}
+		NZY = {
+			add_manpower = -10
+			add_equipment_to_stockpile = {
+					type = gun_a
+					amount = -10
+				}
+		}
+		RGO = {
+			add_timed_idea = {days = 70 idea = MOK_xijisuodewu_idea }
+			add_equipment_to_stockpile = {
+					type = gun_a
+					amount = 100
+				}
+		}
+		add_power_balance_value = {
+                id = MOK_junguanduoquan_power_balance
+                value = -0.05
+            }
+
+	}	
+}
+country_event = { #运输平安无事
+	id = mok.13
+	title = mok.13.t
+	desc = mok.13.d
+
+	# major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		
+	}
+
+	option = {
+		name = mok.13.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base =50
+		}
+		army_experience = 10
+		NZY = {
+			add_equipment_to_stockpile = {
+					type = gun_a
+					amount = 80
+				}
+			add_timed_idea = {days = 70 idea = MOK_yunshudeshengchanjichuang_idea }
+		}
+
+		add_timed_idea = {days = 120 idea = MOK_zhulinyunshuxuanchuan_idea }
+			add_power_balance_value = {
+                id = MOK_junguanduoquan_power_balance
+                value = 0.05
+            }
+
+
+	}	
+}
+country_event = { #竹林开发运动
+	id = mok.14
+	title = mok.14.t
+	desc = mok.14.d
+
+	# major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		
+	}
+
+	option = {
+		name = mok.14.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base =50
+		}
+		#add_ideas = { MOK_zhulinkaifayundong_idea  }
+
+		add_power_balance_value = {
+                id = MOK_junguanduoquan_power_balance
+                value = -0.025
+            }
+
+
+	}	
+}
+country_event = { #突袭bya
+	id = mok.15
+	title = mok.15.t
+	desc = mok.15.d
+
+	# major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		
+	}
+
+	option = {
+		name = mok.154.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base =50
+		}
+		add_ideas = { MOK_zhulinkantuotuan_idea }
+		514 = {
+			damage_building = {
+					type = infrastructure
+					damage = 0.65
+				}
+			damage_building = {
+					type = industrial_complex 
+					damage = 0.65
+				}
+			damage_building = {
+					type = arms_factory
+					damage = 0.65
+				}
+			add_manpower = -50
+		}
+		292 = {
+			damage_building = {
+					type = infrastructure
+					damage = 0.65
+				}
+			add_manpower = -50
+		}
+		515 = {
+			add_manpower = -50
+		}
+		
+
+
+	}	
+}
+country_event = { #加宣称1
+	id = mok.16
+	title = mok.16.t
+	desc = mok.16.d
+
+	# major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+	trigger = {
+		
+	}
+
+	option = {
+		name = mok.164.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base =50
+		}
+		514 = {
+			add_claim_by = MOK
+		}
+		512 = {
+			add_claim_by = MOK
+		}
+		286 = {
+			add_claim_by = MOK
+		}
+		515 = {
+			add_claim_by = MOK
+		}
+		517 = {
+			add_claim_by = NZY
+		}
+		516 = {
+			add_claim_by = NZY
+		}
+		645 = {
+			add_claim_by = NZY
+		}
+		292 = {
+			add_claim_by = NZY
+		}
+		300 = {
+			add_claim_by = NZY
+		}
+
+
+	}	
+}
+country_event = { #修路
+	id = mok.17
+	title = mok.17.t
+	desc = mok.17.d
+
+	# major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = no
+	trigger = {
+		
+	}
+
+	option = {
+		name = mok.174.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base =50
+		}
+		build_railway = {
+                level = 1           
+                    path = { 
+                        5489 83 5509 5518
+                    }
+            }
+		build_railway = {
+                level = 1           
+                    path = { 
+                        2038 909 5520 2521 1032
+                    }
+            }
+		515 = {
+			add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+		}
+		add_manpower = -15
+
+
+	}	
+}
+country_event = { #分歧前奏
+	id = mok.18
+	title = mok.18.t
+	desc = mok.18.d
+
+	# major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = no
+	trigger = {
+		
+	}
+
+	option = {
+		name = mok.184.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base =50
+		}
+		swap_ideas = {
+                    remove_idea = MOK_gaocengdeduanzantuanjie_idea
+                    add_idea = MOK_mianqiangweichidetuanjie_idea
+                }
+
+	}	
+}
+country_event = { #大决裂
+	id = mok.19
+	title = mok.19.t
+	desc = mok.19.d
+
+	# major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = no
+	trigger = {
+		
+	}
+
+	option = {
+		name = mok.194.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base =50
+		}
+		swap_ideas = {
+                    remove_idea = MOK_mianqiangweichidetuanjie_idea
+                    add_idea = MOK_yanzhongdezhengzhifenqi_idea
+                }
+
+	}	
+}
+country_event = { #政变1
+	id = mok.20
+	title = mok.20.t
+	desc = mok.20.d
+
+	# major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = no
+	trigger = {
+		
+	}
+
+	option = {
+		name = mok.204.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base =50
+		}
+		add_stability = -0.2
+		MOK_mokou = {
+					set_nationality = XXX
+				}
+				MOK_mokou_leader = {
+					set_nationality = XXX
+				}
+		remove_ideas = { MOK_yanzhongdezhengzhifenqi_idea }
+		remove_ideas = { MOK_bukekaodepantaobudui_idea }
+		add_popularity = {
+				ideology = oldgenso
+				popularity = -1
+			}
+		set_politics = {
+            ruling_party = neworder
+        }
+		MOK_junguantuan_leader = {
+			add_country_leader_role = {
+				promote_leader = yes
+				country_leader = {
+					ideology = guli_type
+				}
+			}
+		}
+		MOK_junguantuan_leader = {
+			add_country_leader_role = {
+				promote_leader = yes
+				country_leader = {
+					ideology = fandong_type
+				}
+			}
+		}
+		MOK_junguantuan_leader = {
+			add_country_leader_role = {
+				promote_leader = yes
+				country_leader = {
+					ideology = oldgenso_type
+				}
+			}
+		}
+		MOK_junguantuan_leader = {
+			add_country_leader_role = {
+				promote_leader = yes
+				country_leader = {
+					ideology = jinwai_type
+				}
+			}
+		}
+		set_party_name = { 
+            ideology = guli
+            long_name = MOK_guli_party_1
+            name = MOK_guli_party_1
+        }
+		set_party_name = { 
+            ideology = fandong
+            long_name = MOK_fandong_party_1
+            name = MOK_fandong_party_1
+        }
+		set_party_name = { 
+            ideology = oldgenso
+            long_name = MOK_oldgenso_party_1
+            name = MOK_oldgenso_party_1
+        }
+		MOK = {
+			set_cosmetic_tag = MOK_zhengbian_1
+		}
+		lobbyincrease = yes
+		delete_unit_template_and_units = { 
+						division_template = "红之自警队"
+						disband = no 
+					}
+		outlook_to_weiwu = yes
+		MOK={complete_national_focus = MOK_30}
+		remove_ideas = { MOK_chuantongzijingtuan_idea }
+		remove_ideas = { MOK_mianqiangweichidetuanjie_idea }
+		country_event = {id = mok.21 hours = 1 }
+		remove_power_balance = { id = MOK_junguanduoquan_power_balance }
+
+	}	
+}
+country_event = { #提示
+	id = mok.21
+	title = mok.21.t
+	desc = mok.21.d
+
+	# major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = no
+	trigger = {
+		
+	}
+
+	option = {
+		name = mok.214.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base =50
+		}
+		
+
+	}	
+}
+
+
+
+
+	

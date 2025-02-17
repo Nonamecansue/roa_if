@@ -1,0 +1,48 @@
+﻿division_template = {
+	name = "临时民兵"
+	is_locked = yes
+	regiments = {
+		sc_light_infantry = { x = 0 y = 0 }
+		sc_light_infantry = { x = 0 y = 1 }
+	}
+}
+units = {
+	division = {
+		name = "临时民兵"
+		location = 5868
+		division_template = "临时民兵"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "临时民兵"
+		location = 5861
+		division_template = "临时民兵"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "临时民兵"
+		location = 290
+		division_template = "临时民兵"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "临时民兵"
+		location = 3074
+		division_template = "临时民兵"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "临时民兵"
+		location = 4141
+		division_template = "临时民兵"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	
+
+
+}

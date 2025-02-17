@@ -1,0 +1,121 @@
+characters={
+	EET_eri ={
+		name = EET_eri
+		portraits={
+			civilian={
+				large="gfx/leaders/EET/EET_eri.dds"
+				small="gfx/leaders/EET/EET_eri_small.dds"
+			}
+			army = {
+				large="gfx/leaders/EET/EET_eri.dds"
+				small="gfx/leaders/EET/EET_eri_small.dds"
+			}
+		}
+		field_marshal = {
+            traits = {  th_original_character th_character  th_trait_moulvedashi th_trait_tezhongzhuanjia  }
+            attack_skill = 7
+            defense_skill = 9
+            planning_skill = 15
+            logistics_skill = 15
+
+            skill = 13
+        }
+		advisor = {
+			slot = character_coop
+			idea_token = EET_eri
+			name = EET_eri
+			cost = 200
+			modifier = {
+				experience_loss_factor = -0.5
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	EET_kaguya ={
+		name = EET_kaguya
+		portraits={
+			civilian={
+				large="gfx/leaders/EET/EET_kaguya.dds"
+				small="gfx/leaders/EET/EET_kaguya_small.dds"
+			}
+			army = {
+				large="gfx/leaders/EET/EET_kaguya.dds"
+				small="gfx/leaders/EET/EET_kaguya_small.dds"
+			}
+		}
+		field_marshal = {
+            traits = {  th_original_character th_character old_guard th_trait_yinyangshi   }
+            attack_skill = 6
+            defense_skill = 12
+            planning_skill = 12
+            logistics_skill = 9
+            
+            skill = 10
+        }
+		advisor = {
+			slot = character_coop
+			idea_token = EET_kaguya
+			name = EET_kaguya
+			cost = 200
+			modifier = {
+				stability_weekly = 0.001
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	EET_eri_leader ={
+		name = EET_eri_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/EET/EET_eri.dds"
+				small="gfx/leaders/EET/EET_eri_small.dds"
+			}
+			army = {
+				large="gfx/leaders/EET/EET_eri.dds"
+				small="gfx/leaders/EET/EET_eri_small.dds"
+			}
+		}
+		country_leader={
+			ideology=qinwai_type
+			id=-1
+		}
+		country_leader={
+			ideology=guli_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldorder_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldgenso_type
+			id=-1
+		}
+	}
+	EET_kaguya_leader ={
+		name = EET_kaguya_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/EET/EET_kaguya.dds"
+				small="gfx/leaders/EET/EET_kaguya_small.dds"
+			}
+			army = {
+				large="gfx/leaders/EET/EET_kaguya.dds"
+				small="gfx/leaders/EET/EET_kaguya_small.dds"
+			}
+		}
+		
+		country_leader={
+			ideology=neworder_type
+			id=-1
+		}
+		country_leader={
+			ideology=fandong_type
+			id=-1
+		}
+	}
+}

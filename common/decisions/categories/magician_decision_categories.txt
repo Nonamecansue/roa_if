@@ -1,0 +1,49 @@
+magician_united_category = {
+	highlight_states = {
+        highlight_states_trigger = {
+			or = {
+				state = 465
+				state = 185
+				state = 170
+				state = 172
+				state = 468
+				state = 174
+				state = 188
+				state = 487
+				state = 153
+				state = 552
+				state = 138
+				state = 169
+				state = 191
+				state = 206
+				state = 147
+				state = 354
+				state = 162
+				state = 154
+				state = 151
+				state = 182
+				state = 355
+				state = 175
+				state = 547
+			}
+        }
+		highlight_color_while_active = 2
+    	# highlight_color_before_active = 2
+    }
+	priority = 50
+}
+magician_ai_cheat_category = {
+	priority = 50
+}
+MSH_boyi_category = {
+	priority = 50
+}
+MSH_manzu_category = {
+	priority = 50
+}
+MSH_xianzhe_category = {
+	priority = 50
+}
+MSH_xiaoshi_category = {
+	priority = 50
+}

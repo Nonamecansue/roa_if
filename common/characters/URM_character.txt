@@ -1,0 +1,74 @@
+characters={
+	URM_urm ={
+		name = URM_urm
+		portraits={
+			civilian={
+				large="gfx/leaders/URM/URM_urm.dds"
+				small="gfx/leaders/URM/URM_urm_small.dds"
+			}
+			army = {
+				large="gfx/leaders/URM/URM_urm.dds"
+				small="gfx/leaders/URM/URM_urm_small.dds"
+			}
+		}
+		corps_commander = {
+            traits = {  th_original_character th_character th_trait_huoqiangzhuanjia th_trait_chongjizhuanjia  }
+            attack_skill = 3
+            defense_skill = 6
+            planning_skill = 4
+            logistics_skill = 6
+            
+            skill = 5
+        }
+		advisor = {
+			slot = character_coop
+			idea_token = URM_urm
+			name = URM_urm
+			cost = 200
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	URM_urm_leader ={
+		name = URM_urm_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/URM/URM_urm.dds"
+				small="gfx/leaders/URM/URM_urm_small.dds"
+			}
+			army = {
+				large="gfx/leaders/URM/URM_urm.dds"
+				small="gfx/leaders/URM/URM_urm_small.dds"
+			}
+		}
+		country_leader={
+			ideology=qinwai_type
+			id=-1
+		}
+		country_leader={
+			ideology=fandong_type
+			id=-1
+		}
+		country_leader={
+			ideology=guli_chuantongtizhi
+			id=-1
+		}
+		country_leader={
+			ideology=oldorder_type
+			id=-1
+		}
+		country_leader={
+			ideology=neworder_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldgenso_type
+			id=-1
+		}
+	}
+
+}

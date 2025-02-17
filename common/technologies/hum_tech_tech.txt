@@ -1,0 +1,189 @@
+technologies = {
+	zhiyuanwuyujiaqiang150 = {
+		
+		dependencies = {
+		   wunvzhiyuan149 = 1
+		}
+
+		path = {
+			leads_to_tech = zhiyuanwuyujiaqiang160
+			research_cost_coeff = 1
+		}
+
+		sp_wunv = {
+			reliability_factor = 0.05
+			equipment_capture_factor = 0.05
+		}
+		
+		research_cost = 2
+		start_year = 150
+
+		folder = {
+			name = hum_tech_folder
+			position = { x = 4 y = 2 }
+		}
+		
+		categories = {
+			techtree_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	zhiyuanwuyujiaqiang160 = {
+	
+		path = {
+			leads_to_tech = zhiyuanwuyujiaqiang170
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 160
+
+		sp_wunv = {
+			supply_consumption_factor = -0.05
+		}
+
+		folder = {
+			name = hum_tech_folder
+			position = { x = 4 y = 4 }
+		}
+		
+		categories = {
+			techtree_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	zhiyuanwuyujiaqiang170 = {
+		
+		research_cost = 2
+		start_year = 170
+
+		folder = {
+			name = hum_tech_folder
+			position = { x = 4 y = 6 }
+		}
+
+		sp_wunv = {
+			breakthrough = 0.2
+			defense = 0.2
+		}
+		
+		categories = {
+			techtree_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	chuandunhuopao150 = {
+	
+		path = {
+			leads_to_tech = chuandunhuopao160
+			research_cost_coeff = 1
+		}
+
+		# on_research_complete = {
+		# 	add_ideas = chuandunhuopao150_idea
+		# }
+		sc_mortar_brigade = {
+			hard_attack = 0.75
+			ap_attack = 0.5
+		}
+		sc_anti_shield_brigade = {
+			hard_attack = 0.75
+			ap_attack = 0.5
+		}
+		
+		research_cost = 2
+		start_year = 150
+
+		folder = {
+			name = hum_tech_folder
+			position = { x = 10 y = 2 }
+		}
+		
+		categories = {
+			techtree_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	chuandunhuopao160 = {
+	
+		path = {
+			leads_to_tech = chuandunhuopao170
+			research_cost_coeff = 1
+		}
+
+		# on_research_complete = {
+		# 	add_ideas = chuandunhuopao154_idea
+		# }
+		sc_mortar_brigade = {
+			hard_attack = 0.75
+			ap_attack = 0.5
+		}
+		sc_anti_shield_brigade = {
+			hard_attack = 0.75
+			ap_attack = 0.5
+		}
+		
+		research_cost = 2
+		start_year = 160
+
+		folder = {
+			name = hum_tech_folder
+			position = { x = 10 y = 4 }
+		}
+		
+		categories = {
+			techtree_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	chuandunhuopao170 = {
+		
+		research_cost = 2
+		start_year = 170
+
+		# on_research_complete = {
+		# 	add_ideas = chuandunhuopao160_idea
+		# }
+		sc_mortar_brigade = {
+			hard_attack = 0.75
+			ap_attack = 0.5
+		}
+		sc_anti_shield_brigade = {
+			hard_attack = 0.75
+			ap_attack = 0.5
+		}
+
+		folder = {
+			name = hum_tech_folder
+			position = { x = 10 y = 6 }
+		}
+		
+		categories = {
+			techtree_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

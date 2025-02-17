@@ -1,0 +1,35 @@
+
+state={
+	id=642
+	name="STATE_642"
+	resources={
+		energy=0.000
+		powder=0.000
+		metal=0.000
+		gas=0.000
+		crystal=0.000
+	}
+
+	history={
+		146.1.1 = {
+			owner = NMS
+			add_core_of = NMS
+			buildings = {
+				infrastructure = 3
+				industrial_complex = 2
+				arms_factory = 0
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		628 2120 4625 4642 4668 5704 5705 
+	}
+	manpower=736
+	buildings_max_level_factor=1.000
+	state_category=s5
+	local_supplies=2.500
+}

@@ -1,0 +1,36 @@
+
+state={
+	id=21
+	name="STATE_21"
+	resources={
+		energy = 0
+		powder = 4.0
+		metal = 0.0
+		gas=2.000
+		crystal=0.000
+	}
+
+	history={
+		146.1.1 = {
+			owner = JGZ
+			add_core_of = JGZ
+			add_claim_by = UUG
+			buildings = {
+				infrastructure = 2
+				industrial_complex = 1
+				arms_factory = 1
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		4 255 699 746 1137 1301 1375 1504 1507 1937 2183 2293 2522 2543 2582 2587 
+	}
+	manpower=2110
+	buildings_max_level_factor=1.000
+	state_category=s5
+	local_supplies=2.5
+}

@@ -1,0 +1,97 @@
+characters={
+	HCY_alk ={
+		name = HCY_alk
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+				small="gfx/leaders/leader_unknown.dds"
+			}
+			army = {
+				large="gfx/leaders/leader_unknown.dds"
+				small="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		corps_commander = {
+            traits = {  th_original_character infantry_leader aggressive_assaulter offensive_doctrine }
+            attack_skill = 4
+            defense_skill = 2
+            planning_skill = 2
+            logistics_skill = 2
+            skill = 3
+        }
+		advisor = {
+			slot = character_coop
+			idea_token = HCY_alk
+			name = HCY_esh
+			cost = 200
+			modifier = {
+				max_planning = 0.25
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	HCY_lingshiweiyuanhui_leader ={
+    name = HCY_lingshiweiyuanhui_leader
+    portraits={
+      civilian={
+        large="gfx/leaders/ZYD/ZYD_council.dds"
+        small="gfx/leaders/ZYD/ZYD_council_small.dds"
+      }
+      army = {
+        large="gfx/leaders/ZYD/ZYD_council.dds"
+        small="gfx/leaders/ZYD/ZYD_council_small.dds"
+      }
+    }
+    country_leader={
+      ideology=fandong_waige
+      traits={ HCF_yihuijieshao_trait }
+      id=-1
+    }
+    country_leader={
+      ideology=guli_type
+      traits={ HCF_yihuijieshao_trait }
+      id=-1
+    }
+    country_leader={
+      ideology=qinwai_type
+      traits={ HCF_yihuijieshao_trait }
+      id=-1
+    }
+    country_leader={
+      ideology=oldorder_type
+      traits={ HCF_yihuijieshao_trait }
+      id=-1
+    }
+    country_leader={
+      ideology=neworder_type
+      traits={ HCF_yihuijieshao_trait }
+      id=-1
+    }
+    country_leader={
+      ideology=oldgenso_type
+      traits={ HCF_yihuijieshao_trait }
+      id=-1
+    }
+    country_leader={
+      ideology=jinwai_linshizhengfu
+      traits={ HCF_yihuijieshao_trait }
+      id=-1
+    }
+  }
+	HCY_alk_leader ={
+		name = HCY_alk_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+				small="gfx/leaders/leader_unknown.dds"
+			}
+			army = {
+				large="gfx/leaders/leader_unknown.dds"
+				small="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		
+	}
+}

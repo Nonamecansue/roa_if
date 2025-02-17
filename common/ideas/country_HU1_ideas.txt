@@ -1,0 +1,76 @@
+ideas = {
+	country = {
+
+
+    HU1_yuejingerlaidenongmin_idea = {
+	    	picture = man_five_year_plan_industry
+	    	allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				weekly_manpower = 10
+				industrial_capacity_factory = 0.15
+
+			}
+		}
+	    HU1_nongminyihuidegenjudi_idea = {
+	    	picture = home_of_revolution
+	    	allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				fandong_drift = 0.05
+				stability_factor = 0.1
+				war_support_factor = 0.1
+
+			}
+		}
+		HU1_linshizhihuibu_idea = {
+	    	picture = general_staff
+	    	allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				max_planning = 0.2
+				planning_speed = 0.2
+				political_power_factor = -0.1
+
+			}
+		}
+		HU1_bubuweiying_idea = {
+	    	picture = por_volunteers_in_the_war2
+	    	allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				army_defence_factor = 0.2
+
+			}
+		}
+
+	}
+}

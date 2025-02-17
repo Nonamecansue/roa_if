@@ -1,0 +1,69 @@
+HU_category = {
+
+    HU_luxingxieding1 = {
+        visible = {
+        tag = HU2
+
+        }
+        available = {
+          NOT = { country_exists = AKI }
+        }
+
+        fire_only_once = yes
+
+        cost = 0
+
+        ai_will_do = {
+          factor = 100
+        }
+
+        complete_effect = {
+        HU2 = {
+         transfer_state = 107
+         transfer_state = 108
+         transfer_state = 375
+         transfer_state = 105
+         transfer_state = 139
+        }
+        HU1 = {
+         transfer_state = 109
+         transfer_state = 126
+         transfer_state = 125
+        }
+      }
+
+    }
+        HU_luxingxieding2 = {
+        visible = {
+        tag = HU1
+
+        }
+        available = {
+          NOT = { country_exists = AKI }
+        }
+
+        fire_only_once = yes
+
+        cost = 0
+
+        ai_will_do = {
+          factor = 100
+        }
+
+        complete_effect = {
+        HU2 = {
+         transfer_state = 107
+         transfer_state = 108
+         transfer_state = 375
+         transfer_state = 105
+         transfer_state = 139
+        }
+        HU1 = {
+         transfer_state = 109
+         transfer_state = 126
+         transfer_state = 125
+        }
+      }
+
+    }
+  }

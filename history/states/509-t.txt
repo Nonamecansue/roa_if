@@ -1,0 +1,28 @@
+
+state={
+	id=509
+	name="STATE_509"
+
+	history={
+		146.1.1 = {
+			owner = JXJ
+			add_core_of = YKR
+			buildings = {
+				infrastructure = 4
+				industrial_complex = 1
+				arms_factory = 1
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		6623 6624 6625 6626 6627 6628 6629 6630 6631 7080 7081 7082 7083 7084 7085 7086 7087 7088 7089 7090 7091 7092 7093 7174 
+	}
+	manpower=1275
+	buildings_max_level_factor=1.000
+	state_category=s5
+	local_supplies=2.500
+}

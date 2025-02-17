@@ -1,0 +1,90 @@
+﻿add_namespace = hu4
+##########事件###########
+country_event = { #处置妖精
+	id = hu4.1
+	title = hu4.1.t
+	desc = hu4.1.d
+
+	# major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = hu4.1.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base = 70
+		}
+
+		hidden_effect = {
+				SGS_sun = {
+					set_nationality = XXX
+				}
+				SGS_lunar = {
+					set_nationality = XXX
+				}
+				SGS_star = {
+					set_nationality = XXX
+				}
+			}
+			custom_effect_tooltip = HU4_chuzhizhanfan1
+			
+
+	}
+}
+country_event = { #希望过境
+	id = hu4.2
+	title = hu4.2.t
+	desc = hu4.2.d
+
+	# major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = hu4.2.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base = 100
+		}
+
+		hidden_effect = {
+		410 = {
+		add_manpower = 4000
+		}
+		226 = {
+		add_manpower = 3500
+		}
+		216 = {
+		add_manpower = 300
+		}
+
+							}
+			custom_effect_tooltip = HU4_qiangzhiyaojinglaozuo1
+			
+
+	}
+	option = {
+		name = hu4.2.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base = 0
+		}
+
+		
+			
+
+	}
+}
+
+
+

@@ -1,0 +1,148 @@
+focus_tree = {
+  id = HU1_focus_2
+  country = {
+    factor = 0
+    modifier = {
+      add = 10
+      tag = 
+    }
+  }
+
+  shared_focus = ty_medium_main 
+
+  continuous_focus_position = { x = 20 y = 1700 }
+
+  focus = {
+      id = HU1_shoubianliuwangbudui
+      icon = GFX_goal_generic_national_unity
+      cost = 4
+      x = 4
+      y = 0
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      NOT = { country_exists = AKI }
+      
+      }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        hidden_effect = {
+        load_oob = "HU1_aa"
+        }
+        custom_effect_tooltip = hu1_shoubianliuwangbudui_1
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HU1_fangfanjiurimengyou
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      relative_position_id = HU1_shoubianliuwangbudui
+      cost = 4
+      x = 0
+      y = 1
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+      prerequisite = { focus = HU1_shoubianliuwangbudui }
+
+      available ={
+      
+      }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        remove_opinion_modifier = {
+          target = HU1
+          modifier = background_friend
+        }
+        remove_opinion_modifier = {
+          target = HU2
+          modifier = background_friend
+        }
+        add_war_support = 0.25
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HU1_xianfazhiren
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      relative_position_id = HU1_shoubianliuwangbudui
+      cost = 4
+      x = 0
+      y = 2
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+      prerequisite = { focus = HU1_fangfanjiurimengyou }
+
+      available ={
+      
+      }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        add_timed_idea = {days = 40 idea = HU2_zhidaohuanglong_idea}
+        HU1 = {
+
+      leave_faction = yes
+      declare_war_on = {
+        type = annex_everything
+        target = HU2  
+      }
+    }
+
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  

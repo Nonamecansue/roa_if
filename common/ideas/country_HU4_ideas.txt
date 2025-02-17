@@ -1,0 +1,100 @@
+ideas = {
+#===============================
+    country = {
+	#=========================
+		HU4_zhuanyedewuqishengchanjishu = {
+			picture = FRA_army_of_aggression_focus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				industrial_capacity_factory = 0.50
+
+			}
+		}
+		HU4_buzhuanyedejundui = {
+			picture = FRA_army_of_aggression_focus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+				
+
+
+			}
+		}
+		HU4_jinjizhengbing = {
+			picture = chi_army_corruption3
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				conscription_factor = 0.5
+				stability_factor = -0.1
+				industrial_capacity_factory = -0.25
+
+
+			}
+		}
+		HU4_jiaofuguyongjin = {
+			picture = FRA_army_of_aggression_focus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				consumer_goods_factor = 0.5
+
+
+			}
+		}
+		HU4_qiangzhiyaojinglaodong = {
+			picture = generic_production_bonus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				industrial_capacity_factory = 0.25
+				ST_race_penalty_Fairy_factor = -0.5
+
+
+			}
+		}
+	}
+}

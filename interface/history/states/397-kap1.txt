@@ -1,0 +1,36 @@
+
+state={
+	id=397
+	name="STATE_397"
+	resources={
+		powder=0.000
+		metal=0.000
+		gas=0.000
+		crystal=0.000
+	}
+
+	history={
+		146.1.1 = {
+			owner = YAW
+			add_core_of = YAW
+			add_core_of = NTR
+			add_core_of = KAP
+			buildings = {
+				infrastructure = 5
+				industrial_complex = 2
+				arms_factory = 1
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		244 622 2664 3113 4190 4196 4199 4200 4201 4205 5316 5319 5325 5419 
+	}
+	manpower=1287
+	buildings_max_level_factor=1.000
+	state_category=s5
+	local_supplies=2.500
+}

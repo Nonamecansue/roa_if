@@ -1,0 +1,179 @@
+﻿division_template = {
+	name = "扫荡编制"
+	regiments = {
+		ma_light_infantry = { x = 0 y = 0 }
+		ma_light_infantry = { x = 0 y = 1 }
+		ma_light_infantry = { x = 0 y = 2 }
+		ma_light_infantry = { x = 0 y = 3 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "魔法使编制"
+	regiments = {
+		ma_infantry = { x = 0 y = 0 }
+		ma_infantry = { x = 0 y = 1 }
+		ma_infantry = { x = 0 y = 2 }
+		ma_infantry = { x = 0 y = 3 }
+	}
+}
+division_template = {
+	name = "魔炮部队编制"
+	regiments = {
+		ma_infantry = { x = 0 y = 0 }
+		ma_infantry = { x = 0 y = 1 }
+		ma_infantry = { x = 0 y = 2 }
+		ma_infantry = { x = 0 y = 3 }
+		ma_magic_energy_brigade = {x = 1 y = 0}
+
+	}
+}
+
+######################
+units = {
+division = {
+		name = "魔法使编制"
+		location = 2818
+		division_template = "魔法使编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "魔法使编制"
+		location = 4329
+		division_template = "魔法使编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "魔法使编制"
+		location = 3229
+		division_template = "魔法使编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "魔法使编制"
+		location = 4342
+		division_template = "魔法使编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "魔炮部队编制"
+		location = 934
+		division_template = "魔炮部队编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "魔法使编制"
+		location = 3329
+		division_template = "魔法使编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "魔法使编制"
+		location = 4379
+		division_template = "魔法使编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "魔法使编制"
+		location = 1498
+		division_template = "魔法使编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "魔炮部队编制"
+		location = 3332
+		division_template = "魔炮部队编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "魔法使编制"
+		location = 928
+		division_template = "魔法使编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+
+
+	division = {
+		name = "魔法使编制"
+		location = 2818
+		division_template = "魔法使编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "魔法使编制"
+		location = 4329
+		division_template = "魔法使编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "魔法使编制"
+		location = 3229
+		division_template = "魔法使编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "魔法使编制"
+		location = 4342
+		division_template = "魔法使编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "魔炮部队编制"
+		location = 934
+		division_template = "魔炮部队编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "魔法使编制"
+		location = 3329
+		division_template = "魔法使编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "魔法使编制"
+		location = 4379
+		division_template = "魔法使编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "魔法使编制"
+		location = 1498
+		division_template = "魔法使编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "魔炮部队编制"
+		location = 3332
+		division_template = "魔炮部队编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "魔法使编制"
+		location = 928
+		division_template = "魔法使编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+
+}
+	

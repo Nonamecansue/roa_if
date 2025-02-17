@@ -1,0 +1,60 @@
+﻿
+division_template = {
+	name = "紧急冲锋队"
+	regiments = {
+		melee_infantry = { x = 0 y = 0 }
+		melee_infantry = { x = 0 y = 1 }
+		melee_infantry = { x = 0 y = 2 }
+		melee_infantry = { x = 0 y = 3 }
+		melee_infantry = { x = 0 y = 4 }
+	}
+	support = {
+	}
+}
+units = {
+	division = {
+		name = "紧急冲锋队"
+		location = 5038
+		division_template = "紧急冲锋队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "紧急冲锋队"
+		location = 5038
+		division_template = "紧急冲锋队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "紧急冲锋队"
+		location = 5038
+		division_template = "紧急冲锋队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "紧急冲锋队"
+		location = 5038
+		division_template = "紧急冲锋队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "紧急冲锋队"
+		location = 5038
+		division_template = "紧急冲锋队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "紧急冲锋队"
+		location = 5038
+		division_template = "紧急冲锋队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+
+
+}

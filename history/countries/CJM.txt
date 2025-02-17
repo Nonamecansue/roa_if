@@ -1,0 +1,81 @@
+﻿capital = 533
+set_technology = {
+    ghost_tech = 1
+}
+138.8.13 = {
+
+}
+141.6.2 = {
+    
+}
+142.3.8 = {
+    
+}
+144.2.5 = {
+    
+}
+146.1.1 = {
+    set_technology = {
+        #通用武器线
+        spell_card1 = 1
+        spear1 = 1
+        linglicunchu = 1
+            
+        #辅助
+
+        #专用辅助
+
+        #专用基础
+
+        #专用进阶
+
+        #混合系
+
+        #陆军学说
+            
+        #工程学 
+        jichushuxue = 1
+        shuxuegongju = 1
+        tongxunlilun = 1
+
+        #专用工程学
+
+        #工业
+        production_theory = 1
+        org_production = 1
+            
+        #专用工业
+
+        #种族
+            
+    }
+    
+}
+146.1.1={
+    add_manpower = 500
+    oob = "CJM_146"
+    
+    add_ideas = {
+        Ghost
+        Tribal
+        hawk1
+        open2
+        strict_border
+        free_magic
+        type0_manpowerlv3
+        partial_economic_mobilisation
+    }
+    set_politics = {
+    	ruling_party = guli
+    	election_frequency = 48
+    	elections_allowed = no
+    }
+    set_popularities = {
+        qinwai = 5
+        guli = 80
+        neworder = 15
+        oldorder = 0
+        fandong = 0
+    }
+    
+}

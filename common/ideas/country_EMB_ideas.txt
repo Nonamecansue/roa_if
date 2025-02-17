@@ -1,0 +1,113 @@
+ideas = {
+#===============================
+    country = {
+	#=========================
+	EMB_shiguandezhize = {
+			picture = EMB_shiguandezhize_js
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			
+	
+			modifier = {
+				CONV_RULE_cannot_convert = 1
+				political_power_factor = 0.15
+				conscription_factor = -2
+				weekly_manpower = 5
+
+
+			}
+		}
+		EMB_yinminyundong = {
+			picture = FRA_matignon_agreements
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			
+	
+			modifier = {
+				
+				
+
+
+			}
+		}
+		EMB_renleishubeiwuzhihu = {
+			picture = EMB_renleishubeiwuzhihu_js
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			
+	
+			modifier = {
+				MONTHLY_POPULATION = 0.5
+				
+
+
+			}
+			targeted_modifier = { 
+				tag = HUM
+	
+				cic_to_target_factor = 0.25
+				mic_to_target_factor = 0.25
+				
+			}
+		}
+		EMB_fenhuanbujue = {
+			picture = EMB_fenhuanbujue_js
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			
+	
+			modifier = {
+				stability_factor = -0.3
+				stability_weekly = -0.005
+				MONTHLY_POPULATION = -0.05
+
+
+
+			}
+		}
+		EMB_renleishilidewaikuo = {
+			picture = EMB_renleishilidewaikuo_js
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			
+	
+			modifier = {
+				political_power_factor = 0.1
+
+
+
+			}
+		}
+		
+	}
+}

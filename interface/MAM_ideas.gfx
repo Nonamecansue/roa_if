@@ -1,0 +1,6 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_idea_MAM_suzhikanyoudejundui_js"
+		texturefile = "gfx/interface/ideas/idea_suzhikanyoudejundui.png"
+	}	
+}

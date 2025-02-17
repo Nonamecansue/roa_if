@@ -1,0 +1,148 @@
+characters={
+	SEJ_sej ={
+		name = SEJ_sej
+		portraits={
+			civilian={
+				large="gfx/leaders/SEJ/SEJ_sej.dds"
+				small="gfx/leaders/SEJ/SEJ_sej_small.dds"
+			}
+			army = {
+				large="gfx/leaders/SEJ/SEJ_sej.dds"
+				small="gfx/leaders/SEJ/SEJ_sej_small.dds"
+			}
+		}
+		field_marshal = {
+			traits = {  th_original_character th_character  war_hero  }
+			attack_skill = 4
+			defense_skill = 6
+			planning_skill = 11
+			logistics_skill = 2
+			# id = 999
+			skill = 7
+		}
+		advisor = {
+			slot = character_coop
+			idea_token = SEJ_sej
+			name = SEJ_sej
+			cost = 200
+			modifier = {
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+				resistance_growth_on_our_occupied_states = 0.5
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	SEJ_smm ={
+		name = SEJ_smm
+		portraits={
+			civilian={
+				large="gfx/leaders/SEJ/SEJ_smm.dds"
+				small="gfx/leaders/SEJ/SEJ_smm_small.dds"
+			}
+			army = {
+				large="gfx/leaders/SEJ/SEJ_smm.dds"
+				small="gfx/leaders/SEJ/SEJ_smm_small.dds"
+			}
+		}
+		field_marshal = {
+            traits = {  th_original_character th_character  war_hero th_trait_huoqiangzhuanjia }
+            attack_skill = 6
+            defense_skill = 7
+            planning_skill = 4
+            logistics_skill = 7
+            skill = 6
+        }
+		advisor = {
+			slot = character_coop
+			idea_token = SEJ_smm
+			name = SEJ_smm
+			cost = 200
+			modifier = {
+				compliance_growth = 0.2
+				CO_core_resistance_required = -10
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	SEJ_sej_leader ={
+		name = SEJ_sej_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/SEJ/SEJ_sej.dds"
+				small="gfx/leaders/SEJ/SEJ_sej_small.dds"
+			}
+			army = {
+				large="gfx/leaders/SEJ/SEJ_sej.dds"
+				small="gfx/leaders/SEJ/SEJ_sej_small.dds"
+			}
+		}
+		country_leader={
+			ideology=qinwai_type
+			id=-1
+		}
+		country_leader={
+			ideology=fandong_type
+			id=-1
+		}
+	}
+	SEJ_smm_leader ={
+		name = SEJ_smm_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/SEJ/SEJ_smm.dds"
+				small="gfx/leaders/SEJ/SEJ_smm_small.dds"
+			}
+			army = {
+				large="gfx/leaders/SEJ/SEJ_smm.dds"
+				small="gfx/leaders/SEJ/SEJ_smm_small.dds"
+			}
+		}
+		country_leader={
+			ideology=qinwai_type
+			id=-1
+		}
+		country_leader={
+			ideology=guli_wenguanducai
+			id=-1
+		}
+		country_leader={
+			ideology=oldgenso_type
+			id=-1
+		}
+		country_leader={
+			ideology=neworder_type
+			id=-1
+		}
+	}
+	SEJ_nib_leader ={
+		name = SEJ_nib_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/NIB/NIB_nib.dds"
+				small="gfx/leaders/NIB/NIB_nib_small.dds"
+			}
+			army = {
+				large="gfx/leaders/NIB/NIB_nib.dds"
+				small="gfx/leaders/NIB/NIB_nib_small.dds"
+			}
+		}
+	}
+	SEJ_rmi_leader ={
+		name = SEJ_rmi_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/RMI/RMI_rmi.dds"
+				small="gfx/leaders/RMI/RMI_rmi_small.dds"
+			}
+			army = {
+				large="gfx/leaders/RMI/RMI_rmi.dds"
+				small="gfx/leaders/RMI/RMI_rmi_small.dds"
+			}
+		}
+	}
+}

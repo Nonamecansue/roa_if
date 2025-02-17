@@ -1,0 +1,233 @@
+﻿add_namespace = helnew
+##
+country_event = { #YZQ VS HGH
+	id = helnew.1
+	title = helnew.1.t
+	desc = helnew.1.d
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		date > 146.4.18
+		tag = HGH
+	}
+
+	option = {
+		name = helnew.1.1
+		ai_chance = {
+			base = 100
+		}
+		HGH = {
+
+			leave_faction = yes
+			declare_war_on = {
+				type = annex_everything
+				target = YZQ	
+			}
+		}
+	}
+}
+country_event = { #YZQ VS JJC and XYL
+	id = helnew.2
+	title = helnew.2.t
+	desc = helnew.2.d
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		date > 146.1.18
+		tag = HGH
+	}
+
+	option = {
+		name = helnew.2.1
+		ai_chance = {
+			base = 100
+		}
+		YZQ = {
+
+			#leave_faction = yes
+			declare_war_on = {
+				type = annex_everything
+				target = JJC	
+			}
+			declare_war_on = {
+				type = annex_everything
+				target = XYL	
+			}
+			622 = {
+				add_claim_by = YZQ
+			}
+			553 = {
+				add_claim_by = YZQ
+			}
+			551 = {
+				add_claim_by = YZQ
+			}
+		}
+	}
+}
+country_event = { #YZL VS LZZ 
+	id = helnew.3
+	title = helnew.3.t
+	desc = helnew.3.d
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		date > 146.1.1
+		tag = YZL
+	}
+
+	option = {
+		name = helnew.3.1
+		ai_chance = {
+			base = 100
+		}
+		YZL = {
+
+			#leave_faction = yes
+			declare_war_on = {
+				type = annex_everything
+				target = LZZ	
+			}
+			555 = {
+				add_claim_by = YZL
+			}
+		}
+	}
+}
+country_event = { #AKO VS JHY 
+	id = helnew.4
+	title = helnew.4.t
+	desc = helnew.4.d
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		date > 146.1.1
+		tag = AKO
+	}
+
+	option = {
+		name = helnew.4.1
+		ai_chance = {
+			base = 100
+		}
+		AKO = {
+
+			#leave_faction = yes
+			declare_war_on = {
+				type = annex_everything
+				target = JHY	
+			}
+			534 = {
+				add_claim_by = 555
+			}
+		}
+	}
+}
+country_event = { #AOO VS JZZ
+	id = helnew.5
+	title = helnew.5.t
+	desc = helnew.5.d
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		date > 146.1.1
+		tag = AOO
+	}
+
+	option = {
+		name = helnew.5.1
+		ai_chance = {
+			base = 100
+		}
+		AOO = {
+
+			#leave_faction = yes
+			declare_war_on = {
+				type = annex_everything
+				target = JZZ	
+			}
+			448 = {
+				add_claim_by = AOO
+			}
+		}
+	}
+}
+country_event = { #AOO VS JZZ
+	id = helnew.6
+	title = helnew.6.t
+	desc = helnew.6.d
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		date > 146.1.10
+		tag = AOO
+		not = {
+			has_war_with = JZZ
+		}
+
+	}
+
+	option = {
+		name = helnew.6.1
+		ai_chance = {
+			base = 100
+		}
+		AOO = {
+
+			#leave_faction = yes
+			declare_war_on = {
+				type = annex_everything
+				target = CJM	
+			}
+			451 = {
+				add_claim_by = AOO
+			}
+			111 = {
+				add_claim_by = AOO
+			}
+		}
+	}
+}
+country_event = { #AOO VS JZZ
+	id = helnew.7
+	title = helnew.7.t
+	desc = helnew.7.d
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		date > 146.1.1
+		tag = DYJ
+
+	}
+
+	option = {
+		name = helnew.7.1
+		ai_chance = {
+			base = 100
+		}
+		DYJ = {
+
+			#leave_faction = yes
+			declare_war_on = {
+				type = annex_everything
+				target = ZYL	
+			}
+			462 = {
+				add_claim_by = DYJ
+			}
+			181 = {
+				add_claim_by = DYJ
+			}
+			461 = {
+				add_claim_by = DYJ
+			}
+			488 = {
+				add_claim_by = ZYL
+			}
+			200 = {
+				add_claim_by = ZYL
+			}
+		}
+	}
+}
+

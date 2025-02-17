@@ -1,0 +1,29 @@
+
+state={
+	id=184
+	name="STATE_184"
+
+	history={
+		146.1.1 = {
+			owner = URM
+			add_core_of = URM
+			add_claim_by = GH1
+			buildings = {
+				infrastructure = 2
+				industrial_complex = 0
+				arms_factory = 0
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		134 273 1580 1616 2185 2317 2438 6239 
+	}
+	manpower=1367
+	state_category=s2
+	local_supplies=2.5
+	buildings_max_level_factor=1.000
+}

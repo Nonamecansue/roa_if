@@ -1,0 +1,179 @@
+technologies = {
+	feixingzhenchajiaqiang150 = {
+		
+		dependencies = {
+		   feixingzhencha149 = 1
+		}
+
+		path = {
+			leads_to_tech = feixingzhenchajiaqiang160
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 150
+
+		sp_feixingzhencha = {
+			recon = 1
+			initiative = 0.05
+		}
+
+		folder = {
+			name = youkai_tech_folder
+			position = { x = 4 y = 2 }
+		}
+		
+		categories = {
+			techtree_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	feixingzhenchajiaqiang160 = {
+	
+		path = {
+			leads_to_tech = feixingzhenchajiaqiang170
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 160
+
+		sp_feixingzhencha = {
+			recon = 1
+			initiative = 0.05
+		}
+
+		
+
+		folder = {
+			name = youkai_tech_folder
+			position = { x = 4 y = 4 }
+		}
+		
+		categories = {
+			techtree_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	feixingzhenchajiaqiang170 = {
+		
+		research_cost = 2
+		start_year = 170
+
+		sp_feixingzhencha = {
+			recon = 1
+			initiative = 0.05
+		}
+
+
+
+		folder = {
+			name = youkai_tech_folder
+			position = { x = 4 y = 6 }
+		}
+		
+		categories = {
+			techtree_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	danmujiaqiangshimo150 = {
+	
+		path = {
+			leads_to_tech = danmujiaqiangshimo160
+			research_cost_coeff = 1
+		}
+
+		ma_magic_energy_brigade = {
+			soft_attack = 0.1
+		}
+		ma_magic_focus_brigade = {
+			soft_attack = 0.1
+		}
+		
+		research_cost = 2
+		start_year = 150
+
+		folder = {
+			name = youkai_tech_folder
+			position = { x = 10 y = 2 }
+		}
+		
+		categories = {
+			techtree_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	danmujiaqiangshimo160 = {
+	
+		path = {
+			leads_to_tech = danmujiaqiangshimo170
+			research_cost_coeff = 1
+		}
+
+		ma_magic_energy_brigade = {
+			soft_attack = 0.1
+		}
+		ma_magic_focus_brigade = {
+			soft_attack = 0.1
+		}
+		
+		research_cost = 2
+		start_year = 160
+
+		folder = {
+			name = youkai_tech_folder
+			position = { x = 10 y = 4 }
+		}
+		
+		categories = {
+			techtree_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	danmujiaqiangshimo170 = {
+		
+		research_cost = 2
+		start_year = 170
+
+		ma_magic_energy_brigade = {
+			soft_attack = 0.1
+		}
+		ma_magic_focus_brigade = {
+			soft_attack = 0.1
+		}
+
+		folder = {
+			name = youkai_tech_folder
+			position = { x = 10 y = 6 }
+		}
+		
+		categories = {
+			techtree_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

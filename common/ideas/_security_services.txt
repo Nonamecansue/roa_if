@@ -1,0 +1,98 @@
+ideas = {
+
+	security_services = { 
+		law = yes
+		wuanbao = {
+			default = yes
+									
+			level = 1
+			cost = 200
+			cancel_if_invalid = no
+			removal_cost = -1
+		#	research_bonus = {
+		#		magic = 0.1
+		#		science = -0.1		
+		#	}
+			modifier = {
+				encryption_factor = -0.05
+				decryption_factor = -0.05
+				stability_factor = -0.1
+				political_power_factor =0.25
+			}
+			
+		}
+		jiadananbao = {
+									
+			level = 2
+			cost = 200
+			cancel_if_invalid = no
+			removal_cost = -1
+		#	research_bonus = {
+		#		magic = 0.1
+		#		science = -0.1		
+		#	}
+			modifier = {
+				encryption_factor = -0.025
+				decryption_factor = -0.025
+				stability_factor = -0.05
+				political_power_factor =0.125
+			}
+			
+			
+		}
+		jibenanbao = {
+									
+			level = 3
+			cost = 200
+			cancel_if_invalid = no
+			removal_cost = -1
+		#	research_bonus = {
+		#		magic = 0.1
+		#		science = -0.1		
+		#	}
+			modifier = {
+				
+			}
+			
+			
+		}
+		yanlianbao = {
+									
+			level = 4
+			cost = 200
+			cancel_if_invalid = no
+			removal_cost = -1
+		#	research_bonus = {
+		#		magic = 0.1
+		#		science = -0.1		
+		#	}
+			modifier = {
+				encryption_factor = 0.025
+				decryption_factor = 0.025
+				stability_factor = 0.05
+				political_power_factor = -0.125
+			}
+			
+			
+		}
+		quanmianjieyan = {
+									
+			level = 5
+			cost = 200
+			cancel_if_invalid = no
+			removal_cost = -1
+		#	research_bonus = {
+		#		magic = 0.1
+		#		science = -0.1		
+		#	}
+			modifier = {
+				encryption_factor = 0.05
+				decryption_factor = 0.05
+				stability_factor = 0.1
+				political_power_factor =-0.25
+			}
+			
+			
+		}
+	}
+}

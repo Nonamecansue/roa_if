@@ -1,0 +1,403 @@
+focus_tree = {
+  id = HU4_focus_1
+  country = {
+    factor = 0
+    modifier = {
+      add = 10
+      tag =  
+    }
+  }
+
+  shared_focus = ty_medium_main 
+
+  continuous_focus_position = { x = 20 y = 1700 }
+
+  focus = {
+      id = HU4_pingqinggengduoguyongbing
+      icon = GFX_goal_generic_CAS
+      cost = 4
+      x = 4
+      y = 0
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        
+        
+        add_political_power = -50
+        custom_effect_tooltip = HU4_pingqinggengduoguyongbing_1
+        add_timed_idea = {days = 120 idea = HU4_jiaofuguyongjin }
+        hidden_effect = {
+        load_oob = "HU4_z"
+        }
+      }
+      
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HU4_jinjichongxinkaifafeiqicunluo
+      icon = GFX_focus_TBA_zhuangbeigongfang
+      cost = 4
+      x = 2
+      y = 1
+      relative_position_id = HU4_pingqinggengduoguyongbing
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      }
+      prerequisite = { focus = HU4_pingqinggengduoguyongbing }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        
+        build_railway = {
+                level = 1           
+                    path = { 
+                        4958 668 1874 458 298 4908 4891
+                    }
+            }
+            385 = {
+        add_extra_state_shared_building_slots = 3
+        set_variable = { ST_present_race = 4 }
+        add_building_construction = {
+          type = infrastructure
+          level = 1
+          instant_build = yes
+        }
+        add_manpower = -7000
+        set_state_name = "xinjiancunluo"
+        set_province_name = {
+                id = 4891
+                name = "xinjiancunluo"
+            }
+
+
+      }
+      272 = {
+        add_manpower = 7000
+      }
+    }
+      
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HU4_kuodahuoyaochang
+      icon = GFX_focus_LIL_yanjiuqiyijunwuqi
+      cost = 4
+      x = -2
+      y = 1
+      relative_position_id = HU4_pingqinggengduoguyongbing
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      }
+      prerequisite = { focus = HU4_pingqinggengduoguyongbing }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        
+       
+            383 = {
+        add_extra_state_shared_building_slots = 3
+        
+        add_building_construction = {
+          type = infrastructure
+          level = 2
+          instant_build = yes
+        }
+        add_building_construction = {
+          type = arms_factory
+          level = 2
+          instant_build = yes
+        }
+        
+
+
+      }
+    }
+      
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HU4_jiejuexinfuzhihuan
+      icon = GFX_focus_LIL_xunlianfangshi
+      cost = 4
+      x = 0
+      y = 2
+      relative_position_id = HU4_pingqinggengduoguyongbing
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      }
+      prerequisite = { focus = HU4_kuodahuoyaochang }
+      prerequisite = { focus = HU4_jinjichongxinkaifafeiqicunluo }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        
+       
+      HU4= {
+      declare_war_on = {
+        type = annex_everything
+        target = SGS 
+      }
+      }
+    }
+      
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HU4_chuzhizhanfan
+      icon = GFX_goal_generic_forceful_treaty
+      cost = 4
+      x = 0
+      y = 3
+      relative_position_id = HU4_pingqinggengduoguyongbing
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      NOT = {
+          country_exists = SGS
+        }
+      
+      }
+      prerequisite = { focus = HU4_jiejuexinfuzhihuan }
+      
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        
+       
+  country_event = {
+          id = hu4.1
+          days = 1
+        }
+    }
+      
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HU4_kuojiancunluo
+      icon = GFX_focus_generic_industry_2
+      cost = 4
+      x = 2
+      y = 4
+      relative_position_id = HU4_pingqinggengduoguyongbing
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      
+      }
+      prerequisite = { focus = HU4_chuzhizhanfan }
+      
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+      386 = {
+        add_extra_state_shared_building_slots = 3
+        set_variable = { ST_present_race = 4 }
+        add_building_construction = {
+          type = infrastructure
+          level = 1
+          instant_build = yes
+        }
+        add_manpower = -2400
+        set_state_name = "xinxiuncunluo"
+        set_province_name = {
+                id = 4897
+                name = "xinxiucunluo"
+            }
+
+
+      }
+      279 = {
+      add_manpower = 2400
+      }
+      build_railway = {
+                level = 1           
+                    path = { 
+                        4891 4896 877 4904 4897 
+                    }
+            }
+        
+       
+  
+    }
+      
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HU4_qiangzhiyaojinglaozuo
+      icon = GFX_focus_CZE_german_puppet
+      cost = 4
+      x = 0
+      y = 4
+      relative_position_id = HU4_pingqinggengduoguyongbing
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      
+      }
+      prerequisite = { focus = HU4_chuzhizhanfan }
+      
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+      add_ideas = HU4_qiangzhiyaojinglaodong
+      248 = {
+      add_manpower = -10000
+      }
+      272 = {
+      add_manpower = -10000
+      }
+      279 = {
+      add_manpower = -10000
+      }
+      HU6 = {
+      country_event = {
+          id = hu4.2
+          days = 1
+        }
+      }
+        
+       
+  
+    }
+      
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }

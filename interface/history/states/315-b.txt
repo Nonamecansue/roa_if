@@ -1,0 +1,45 @@
+
+state={
+	id=315
+	name="STATE_315"
+	resources={
+		powder=6.000
+		metal=5.000
+		gas=0.000
+		crystal=0.000
+	}
+
+	history={
+		143.7.1 = {
+			owner = OTG
+			add_core_of = OTG
+			buildings = {
+				infrastructure = 5
+				industrial_complex = 2
+				arms_factory = 0
+
+			}
+
+		}
+		146.1.1 = {
+			owner = OTG
+			add_core_of = OTG
+			buildings = {
+				infrastructure = 5
+				industrial_complex = 2
+				arms_factory = 0
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		204 1257 1549 5318 5320 5324 5329 5332 5337 
+	}
+	manpower=303
+	buildings_max_level_factor=1.000
+	state_category=s5
+	local_supplies=2.500
+}

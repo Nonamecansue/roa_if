@@ -1,0 +1,142 @@
+﻿
+division_template = {
+	name = "人偶突击兵团"
+	regiments = {
+		ma_infantry = { x = 0 y = 0 }
+		ma_infantry = { x = 0 y = 1 }
+		ma_infantry = { x = 0 y = 2 }
+		ma_infantry = { x = 0 y = 3 }
+		melee_infantry = { x = 1 y = 0 }
+		melee_infantry = { x = 1 y = 1 }
+	}
+}
+division_template = {
+	name = "见习人偶师"
+	regiments = {
+		ma_infantry = { x = 0 y = 0 }
+		ma_infantry = { x = 0 y = 1 }
+		ma_infantry = { x = 0 y = 2 }
+		ma_infantry = { x = 0 y = 3 }
+	}
+}
+division_template = {
+	name = "实验歌莉娅人偶"
+	regiments = {
+		ma_shield_infantry = { x = 0 y = 0 }
+		ma_shield_infantry = { x = 0 y = 1 }
+		ma_shield_infantry = { x = 0 y = 2 }
+		ma_shield_infantry = { x = 0 y = 3 }
+	}
+}
+division_template = {
+	name = "实验媞泰妮亚人偶"
+	regiments = {
+		ma_shield_tank = { x = 0 y = 0 }
+		ma_shield_tank = { x = 0 y = 1 }
+		ma_shield_tank = { x = 0 y = 2 }
+		ma_shield_tank = { x = 0 y = 3 }
+	}
+}
+
+units = {
+division = {
+		name = "见习人偶师"
+		location = 4382
+		division_template = "见习人偶师"
+		start_experience_factor = 0
+		start_equipment_factor = 1
+	}
+division = {
+		name = "见习人偶师"
+		location = 4382
+		division_template = "见习人偶师"
+		start_experience_factor = 0
+		start_equipment_factor = 1
+	}
+division = {
+		name = "见习人偶师"
+		location = 2789
+		division_template = "见习人偶师"
+		start_experience_factor = 0
+		start_equipment_factor = 1
+	}
+division = {
+		name = "见习人偶师"
+		location = 2789
+		division_template = "见习人偶师"
+		start_experience_factor = 0
+		start_equipment_factor = 1
+	}
+division = {
+		name = "见习人偶师"
+		location = 4378
+		division_template = "见习人偶师"
+		start_experience_factor = 0
+		start_equipment_factor = 1
+}
+division = {
+		name = "见习人偶师"
+		location = 4378
+		division_template = "见习人偶师"
+		start_experience_factor = 0
+		start_equipment_factor = 1
+	}
+division = {
+		name = "人偶突击兵团"
+		location = 3266
+		division_template = "人偶突击兵团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+division = {
+		name = "见习人偶师"
+		location = 3266
+		division_template = "见习人偶师"
+		start_experience_factor = 0
+		start_equipment_factor = 1
+	}
+division = {
+		name = "人偶突击兵团"
+		location = 5740
+		division_template = "人偶突击兵团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+division = {
+		name = "见习人偶师"
+		location = 5740
+		division_template = "见习人偶师"
+		start_experience_factor = 0
+		start_equipment_factor = 1
+	}
+division = {
+		name = "人偶突击兵团"
+		location = 3322
+		division_template = "人偶突击兵团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+division = {
+		name = "见习人偶师"
+		location = 3322
+		division_template = "见习人偶师"
+		start_experience_factor = 0
+		start_equipment_factor = 1
+	}
+division = {
+		name = "实验媞泰妮亚人偶"
+		location = 1409
+		division_template = "实验媞泰妮亚人偶"
+		start_experience_factor = 0
+		start_equipment_factor = 1
+	}
+division = {
+		name = "实验歌莉娅人偶"
+		location = 1409
+		division_template = "实验歌莉娅人偶"
+		start_experience_factor = 0
+		start_equipment_factor = 1
+	}
+
+
+}

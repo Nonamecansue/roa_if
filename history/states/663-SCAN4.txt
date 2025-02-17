@@ -1,0 +1,42 @@
+state={
+	id=663
+	name="STATE_663"
+	provinces={
+		743 802 3089 3591 3961 5450 5451 5453 
+	}
+
+	history={
+		143.7.1 = {
+			owner = SCA
+			add_core_of = SCA
+			add_core_of = XBW
+			buildings = {
+				infrastructure = 2
+				industrial_complex = 1
+				arms_factory = 0
+				radar_station = 0
+
+			}
+
+		}
+		146.1.1 = {
+			owner = XBW
+			remove_core_of = SCA
+			add_core_of = XBW
+			add_claim_by = SCA
+			add_core_of = SCA
+			buildings = {
+				infrastructure = 4
+				industrial_complex = 1
+				arms_factory = 0
+				radar_station = 0
+
+			}
+
+		}
+	}
+	manpower=5720
+	state_category=s5
+	local_supplies=2.500
+	buildings_max_level_factor=1.000
+}

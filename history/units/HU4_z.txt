@@ -1,0 +1,28 @@
+﻿
+units = {
+	
+	division = {
+		name = "稗田老兵雇佣军"
+		location = 4840
+		division_template = "稗田精英编制"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "稗田老兵雇佣军"
+		location = 4840
+		division_template = "稗田精英编制"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "稗田老兵雇佣军"
+		location = 4840
+		division_template = "稗田精英编制"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+
+	
+
+}

@@ -1,0 +1,246 @@
+﻿division_template = {
+	name = "扫荡编制"
+	regiments = {
+		ma_light_infantry = { x = 0 y = 0 }
+		ma_light_infantry = { x = 0 y = 1 }
+		ma_light_infantry = { x = 0 y = 2 }
+		ma_light_infantry = { x = 0 y = 3 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "雪女近卫部队"
+	regiments = {
+		ma_infantry = { x = 0 y = 0 }
+		ma_infantry = { x = 0 y = 1 }
+		ma_infantry = { x = 0 y = 2 }
+		ma_infantry = { x = 0 y = 3 }
+		ma_infantry = { x = 0 y = 4 }
+		melee_infantry = { x = 1 y = 0 }
+		melee_infantry = { x = 1 y = 1 }
+	}
+	support = {
+	    sp_zhihuidui = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "新式自卫部队"
+	regiments = {
+		sc_infantry = { x = 0 y = 0 }
+		sc_infantry = { x = 0 y = 1 }
+		sc_infantry = { x = 0 y = 2 }
+		sc_infantry = { x = 0 y = 3 }
+		sc_infantry = { x = 1 y = 0 }
+		melee_infantry = { x = 1 y = 1 }
+	}
+	support = {
+	    sp_zhihuidui = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "妖兽部队"
+	regiments = {
+		melee_cavalry = { x = 0 y = 0 }
+		melee_cavalry = { x = 0 y = 1 }
+		melee_cavalry = { x = 0 y = 2 }
+		melee_cavalry = { x = 0 y = 3 }
+		melee_cavalry = { x = 0 y = 4 }
+		melee_cavalry = { x = 1 y = 0 }
+		melee_cavalry = { x = 1 y = 1 }
+	}
+	support = {
+	    sp_zhihuidui = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "实验型迫击炮部队"
+	regiments = {
+		sc_infantry = { x = 0 y = 0 }
+		sc_infantry = { x = 0 y = 1 }
+		sc_infantry = { x = 0 y = 2 }
+		sc_infantry = { x = 0 y = 3 }
+		sc_infantry = { x = 0 y = 4 }
+		sc_mortar_brigade = { x = 1 y = 0 }
+		sc_mortar_brigade = { x = 1 y = 1 }
+	}
+	support = {
+	    sp_zhihuidui = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "魔法森林流亡部队"
+	is_locked = yes
+	regiments = {
+		melee_cavalry = { x = 0 y = 0 }
+		melee_cavalry = { x = 0 y = 1 }
+		melee_cavalry = { x = 0 y = 2 }
+		melee_cavalry = { x = 0 y = 3 }
+		melee_cavalry = { x = 0 y = 4 }
+		melee_cavalry = { x = 1 y = 0 }
+		melee_cavalry = { x = 1 y = 1 }
+		melee_cavalry = { x = 1 y = 2 }
+		melee_cavalry = { x = 1 y = 3 }
+		melee_cavalry = { x = 1 y = 4 }
+	}
+	support = {
+	    sp_zhihuidui = { x = 0 y = 0 }
+	}
+}
+units = {
+	division = {
+		name = "雪女近卫部队"
+		location = 1920
+		division_template = "雪女近卫部队"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "雪女近卫部队"
+		location = 1920
+		division_template = "雪女近卫部队"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "雪女近卫部队"
+		location = 1920
+		division_template = "雪女近卫部队"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "雪女近卫部队"
+		location = 1920
+		division_template = "雪女近卫部队"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "雪女近卫部队"
+		location = 1920
+		division_template = "雪女近卫部队"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "雪女近卫部队"
+		location = 1920
+		division_template = "雪女近卫部队"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "雪女近卫部队"
+		location = 1920
+		division_template = "雪女近卫部队"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "雪女近卫部队"
+		location = 1920
+		division_template = "雪女近卫部队"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "雪女近卫部队"
+		location = 1920
+		division_template = "雪女近卫部队"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+		division = {
+		name = "新式自卫部队"
+		location = 2768
+		division_template = "新式自卫部队"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "新式自卫部队"
+		location = 2768
+		division_template = "新式自卫部队"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "新式自卫部队"
+		location = 2768
+		division_template = "新式自卫部队"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "新式自卫部队"
+		location = 2768
+		division_template = "新式自卫部队"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "新式自卫部队"
+		location = 2768
+		division_template = "新式自卫部队"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "妖兽部队"
+		location = 1246
+		division_template = "妖兽部队"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "妖兽部队"
+		location = 1246
+		division_template = "妖兽部队"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "妖兽部队"
+		location = 1246
+		division_template = "妖兽部队"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "旧反叛同盟部队"
+		location = 1246
+		division_template = "魔法森林流亡部队"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "实验型迫击炮部队"
+		location = 2765
+		division_template = "实验型迫击炮部队"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "实验型迫击炮部队"
+		location = 2765
+		division_template = "实验型迫击炮部队"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "实验型迫击炮部队"
+		location = 2765
+		division_template = "实验型迫击炮部队"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "实验型迫击炮部队"
+		location = 2765
+		division_template = "实验型迫击炮部队"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+}
+

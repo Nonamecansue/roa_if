@@ -1,0 +1,44 @@
+state={
+	id=668
+	name="STATE_668"
+	provinces={
+		726 820 2252 2729 3360 3442 3443 3962 3964 3976 3985 3990 3993 
+	}
+	resources={
+		powder=0.000
+		metal=0.000
+		gas=3.000
+		crystal=0.000
+	}
+
+	history={
+		143.7.1 = {
+			owner = SCA
+			add_core_of = SCA
+			buildings = {
+				infrastructure = 4
+				industrial_complex = 2
+				arms_factory = 1
+
+			}
+
+		}
+		146.1.1 = {
+			owner = CIR
+			add_core_of = CIR
+			remove_core_of = SCA
+			buildings = {
+				infrastructure = 4
+				industrial_complex = 2
+				arms_factory = 1
+
+			}
+
+		}
+
+	}
+	manpower=8879
+	state_category=s2
+	buildings_max_level_factor=1.000
+	local_supplies=2.50
+}

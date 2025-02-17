@@ -1,0 +1,158 @@
+﻿division_template = {
+	name = "民兵部队"
+	regiments = {
+		sc_light_infantry = { x = 0 y = 0 }
+		sc_light_infantry = { x = 0 y = 1 }
+		sc_light_infantry = { x = 0 y = 2 }
+		sc_light_infantry = { x = 0 y = 3 }
+		sc_light_infantry = { x = 0 y = 4 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "征集老兵部队"
+	regiments = {
+		sc_infantry = { x = 0 y = 0 }
+		sc_infantry = { x = 0 y = 1 }
+		sc_infantry = {x = 0 y = 2 }
+		sc_infantry = { x = 0 y = 3 }
+		sc_infantry = { x = 0 y = 4 }
+		sc_mortar_brigade = { x = 1 y = 0 }
+		sc_mortar_brigade = { x = 2 y = 0 }
+	}
+	support = { 
+	    sp_zhihuidui = { x = 0 y = 0 }
+	}
+}
+units = {
+	division = {
+		name = "民兵部队"
+		location = 7669
+		division_template = "民兵部队"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "民兵部队"
+		location = 7669
+		division_template = "民兵部队"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "征集老兵部队"
+		location = 7669
+		division_template = "征集老兵部队"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "民兵部队"
+		location = 3180
+		division_template = "民兵部队"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "民兵部队"
+		location = 3180
+		division_template = "民兵部队"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "征集老兵部队"
+		location = 3180
+		division_template = "征集老兵部队"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "民兵部队"
+		location = 2883
+		division_template = "民兵部队"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "民兵部队"
+		location = 2883
+		division_template = "民兵部队"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "征集老兵部队"
+		location = 2883
+		division_template = "征集老兵部队"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "民兵部队"
+		location = 5702
+		division_template = "民兵部队"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "民兵部队"
+		location = 5702
+		division_template = "民兵部队"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "征集老兵部队"
+		location = 5702
+		division_template = "征集老兵部队"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "民兵部队"
+		location = 5709
+		division_template = "民兵部队"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "民兵部队"
+		location = 5709
+		division_template = "民兵部队"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "征集老兵部队"
+		location = 5709
+		division_template = "征集老兵部队"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "民兵部队"
+		location = 3194
+		division_template = "民兵部队"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "民兵部队"
+		location = 3194
+		division_template = "民兵部队"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "征集老兵部队"
+		location = 3194
+		division_template = "征集老兵部队"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+
+
+	
+}

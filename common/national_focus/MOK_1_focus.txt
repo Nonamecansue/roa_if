@@ -1,0 +1,1693 @@
+focus_tree = {
+  id = MOK_focus_1
+  country = {
+    factor = 0
+    modifier = {
+      add = 10
+      tag = MOK
+    }
+  }
+
+  shared_focus = ty_medium_main 
+
+  continuous_focus_position = { x = 20 y = 1700 }
+
+  focus = {
+      id = MOK_1
+      icon = GFX_goal_generic_national_unity
+      cost = 1
+      x = 50
+      y = 0
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      
+      }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        hidden_effect = {
+       
+        }
+       add_political_power = 50
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = MOK_2
+      icon = GFX_goal_generic_national_unity
+      cost = 1
+      x = 4
+      y = 1
+      relative_position_id = MOK_1
+      prerequisite = { focus = MOK_1 }
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      
+      }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        hidden_effect = {
+       
+        }
+       army_experience = 25
+       add_stability = 0.2
+       add_ideas = { MOK_gaocengdeduanzantuanjie_idea }
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = MOK_3
+      icon = GFX_goal_generic_national_unity
+      cost = 1
+      x = -4
+      y = 1
+      relative_position_id = MOK_1
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+      prerequisite = { focus = MOK_1}
+
+      available ={
+      
+      
+      }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        hidden_effect = {
+       
+        }
+       add_political_power = 50
+       army_experience = 25
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = MOK_4
+      icon = GFX_goal_generic_national_unity
+      cost = 1
+      x = 0
+      y = 2
+      relative_position_id = MOK_1
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+      prerequisite = { focus = MOK_2}
+      prerequisite = { focus = MOK_3}
+
+      available ={
+      
+      
+      }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        hidden_effect = {
+       
+        }
+       add_political_power = 50
+       army_experience = 25
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = MOK_5
+      icon = GFX_goal_generic_national_unity
+      cost = 1
+      x = 0
+      y = 5
+      relative_position_id = MOK_1
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+      prerequisite = { focus = MOK_4}
+
+      available ={
+      
+      
+      }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        hidden_effect = {
+       
+        }
+       296 = {
+        add_resource = {
+          type = gas
+          amount = 5
+        }
+        add_resource = {
+          type = powder
+          amount = 5
+        }
+       }
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = MOK_6
+      icon = GFX_goal_generic_national_unity
+      cost = 1
+      x = 4
+      y = 5
+      relative_position_id = MOK_1
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+      prerequisite = { focus = MOK_4}
+
+      available ={
+      
+      
+      }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        hidden_effect = {
+       
+        }
+       country_event = {id = mok.3 days = 1 }
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+   focus = {
+      id = MOK_7
+      icon = GFX_goal_generic_national_unity
+      cost = 1
+      x = -4
+      y = 5
+      relative_position_id = MOK_1
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+      prerequisite = { focus = MOK_4}
+
+      available ={
+      
+      
+      }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        hidden_effect = {
+       
+        }
+      custom_effect_tooltip = MOK_7_1_GC
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = MOK_8
+      icon = GFX_goal_generic_national_unity
+      cost = 1
+      x = -4
+      y = 7
+      relative_position_id = MOK_1
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+      prerequisite = { focus = MOK_7}
+
+      available ={
+      
+      
+      }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        hidden_effect = {
+       
+        }
+   custom_effect_tooltip = MOK_8_1
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = MOK_9
+      icon = GFX_goal_generic_national_unity
+      cost = 1
+      x = 0
+      y = 7
+      relative_position_id = MOK_1
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+      prerequisite = { focus = MOK_5}
+
+      available ={
+      
+      
+      }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        hidden_effect = {
+       
+        }
+      country_event = {id = mok.14 days = 1 }
+     custom_effect_tooltip = MOK_9_1
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = MOK_10
+      icon = GFX_goal_generic_national_unity
+      cost = 1
+      x = 4
+      y = 7
+      relative_position_id = MOK_1
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+      prerequisite = { focus = MOK_6}
+
+      available ={
+      
+      
+      }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        hidden_effect = {
+       
+        }
+     add_timed_idea = {days = 120 idea = MOK_ganzhongshengchan_idea}
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = MOK_11
+      icon = GFX_goal_generic_national_unity
+      cost = 1
+      x = -6
+      y = 8
+      relative_position_id = MOK_1
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+      prerequisite = { focus = MOK_8}
+
+      available ={
+      not = { has_war_with =  NZY }
+      country_exists = NZY
+      }
+
+     
+
+      bypass = {
+     has_war_with =  NZY 
+    not = {country_exists = NZY}
+      }
+
+      completion_reward = {
+        hidden_effect = {
+       
+        }
+     country_event = {id = mok.4 days = 1 }
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  #focus = {
+   #   id = MOK_10
+    #  icon = GFX_goal_generic_national_unity
+     # cost = 1
+      #x = 4
+#      y = 7
+ #     relative_position_id = MOK_1
+#
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+ #     prerequisite = { focus = MOK_6}
+#
+  #    available ={
+ #     
+ #     
+  #    }
+#
+#     
+#
+ #     bypass = {
+  #    
+  #    }
+#
+ #     completion_reward = {
+  #      hidden_effect = {
+   #    
+   #     }
+    # add_timed_idea = {days = 120 idea = MOK_ganzhongshengchan_idea}
+     # }
+#
+ #     ai_will_do = {
+  #      factor = 1
+   #   }
+#
+    #  cancel_if_invalid = no
+ #     continue_if_invalid = yes
+  #    available_if_capitulated = yes
+  #}
+  focus = {
+      id = MOK_12
+      icon = GFX_goal_generic_national_unity
+      cost = 1
+      x = -2
+      y = 8
+      relative_position_id = MOK_1
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+      prerequisite = { focus = MOK_8}
+      prerequisite = { focus = MOK_9}
+
+      available ={
+      
+      
+      }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        hidden_effect = {
+       
+        }
+     country_event = {id = mok.8 days = 1 }
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = MOK_13
+      icon = GFX_goal_generic_national_unity
+      cost = 1
+      x = -2
+      y = 10
+      relative_position_id = MOK_1
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+      prerequisite = { focus = MOK_12}
+
+      available ={
+    
+      
+      }
+
+     
+
+      bypass = {
+   
+      }
+
+      completion_reward = {
+        hidden_effect = {
+       
+        }
+      custom_effect_tooltip = MOK_13_1
+    296 = {
+        add_building_construction = {
+          type = arms_factory
+          level = 2
+          instant_build = yes
+        }
+      }
+      }
+      
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = MOK_14
+      icon = GFX_goal_generic_national_unity
+      cost = 1
+      x = 2
+      y = 8
+      relative_position_id = MOK_1
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+      prerequisite = { focus = MOK_10}
+      prerequisite = { focus = MOK_9}
+
+      available ={
+      
+      
+      }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        hidden_effect = {
+       
+        }
+     296 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+				}
+      
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  }
+  focus = {
+      id = MOK_15
+      icon = GFX_goal_generic_national_unity
+      cost = 1
+      x = 2
+      y = 10
+      relative_position_id = MOK_1
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+      prerequisite = { focus = MOK_14}
+
+      available ={
+      
+      
+      }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        hidden_effect = {
+       
+        }
+     add_timed_idea = {days = 120 idea = MOK_xiujianbujixian_idea}
+      
+    country_event = {id = mok.11 days = 1 }
+
+      ai_will_do = {
+        factor = 1
+      }
+    }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+
+focus = {
+      id = MOK_16
+      icon = GFX_goal_generic_national_unity
+      cost = 1
+      x = 6
+      y = 8
+      relative_position_id = MOK_1
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+      prerequisite = { focus = MOK_10}
+
+      available ={
+      
+      
+      }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        hidden_effect = {
+       
+        }
+     add_ideas = { partial_economic_mobilisation }
+     bianjiebaoshou = yes
+     add_war_support = 0.2
+      if = {
+                limit = { has_idea= type2_manpowerlv2 }
+               add_ideas = { type2_manpowerlv3 }
+            } 
+            else_if = {
+                limit = { has_idea = type2_manpowerlv3  }
+                add_ideas = { type2_manpowerlv4 }
+            }
+            else_if = {
+                limit = { has_idea = type2_manpowerlv4  }
+                add_manpower = 200
+            }
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+
+focus = {
+      id = MOK_17
+      icon = GFX_goal_generic_national_unity
+      cost = 1
+      x = 6
+      y = 10
+      relative_position_id = MOK_1
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+      prerequisite = { focus = MOK_16}
+
+      available ={
+      
+      
+      }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        hidden_effect = {
+       
+        }
+     add_offsite_building = { type = industrial_complex level = 2 }
+      
+
+      ai_will_do = {
+        factor = 1
+      }
+    }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  
+}
+focus = {
+      id = MOK_18
+      icon = GFX_goal_generic_national_unity
+      cost = 1
+      x = -6
+      y = 10
+      relative_position_id = MOK_1
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+      prerequisite = { focus = MOK_11}
+
+      available ={
+      has_country_flag = MOK_nzytongyile
+      
+      }
+
+     
+
+      bypass = {
+      has_country_flag = MOK_nzyjujuele
+      }
+
+      completion_reward = {
+        hidden_effect = {
+       
+        }
+     if = {
+                limit = { has_country_flag = MOK_lueduoguoRGO }
+               country_event = {id = mok.12 days = 1 }
+            } 
+            else_if = {
+                limit = { not = { has_country_flag = MOK_lueduoguoRGO  } }
+                country_event = {id = mok.13 days = 1 }
+            }
+      
+
+      ai_will_do = {
+        factor = 1
+      }
+     }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  
+}
+focus = {
+      id = MOK_19
+      icon = GFX_goal_generic_national_unity
+      cost = 1
+      x = 0
+      y = 12
+      relative_position_id = MOK_1
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+      prerequisite = { focus = MOK_18}
+      prerequisite = { focus = MOK_13}
+      prerequisite = { focus = MOK_15}
+      prerequisite = { focus = MOK_17}
+
+      available ={
+      
+      
+      }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        hidden_effect = {
+       country_event = {id = mok.15 days = 3 }
+        }
+     add_equipment_to_stockpile = {
+					type = gun_a
+					amount = 500
+				}
+      add_equipment_to_stockpile = {
+					type = melee_a
+					amount = 1000
+				}
+      add_manpower = 150 
+      add_war_support = 0.15
+      add_stability = -0.15
+
+      ai_will_do = {
+        factor = 1
+      }
+    }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  
+}
+focus = {
+      id = MOK_20
+      icon = GFX_goal_generic_national_unity
+      cost = 1
+      x = 0
+      y = 14
+      relative_position_id = MOK_1
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+      prerequisite = { focus = MOK_19}
+     
+
+      available ={
+     country_exists = BYA
+      
+      }
+
+     
+
+      bypass = {
+      not = { country_exists = BYA }
+      not = { has_war_with = BYA }
+      }
+
+      completion_reward = {
+        hidden_effect = {
+       country_event = {id = mok.16 days = 1 }
+        }
+     declare_war_on = {
+				   target = BYA
+				   type = annex_everything
+			}
+      add_ideas = { MOK_zhanzhengdejinxing_idea }
+      set_country_flag = MOK_zhanzhengdejinxing0
+
+      ai_will_do = {
+        factor = 1
+      }
+     }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  
+}
+focus = {
+      id = MOK_21
+      icon = GFX_goal_generic_national_unity
+      cost = 1
+      x = 2
+      y = 16
+      relative_position_id = MOK_1
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+      prerequisite = { focus = MOK_20}
+     
+
+      available ={
+      country_exists = BYA
+      has_war_with = BYA
+      }
+
+     
+
+      bypass = {
+      not = { country_exists = BYA }
+      }
+
+      completion_reward = {
+        hidden_effect = {
+         load_oob = MOK_chengjieying
+        }
+      custom_effect_tooltip = MOK_21_1
+      add_power_balance_value = {
+                id = MOK_junguanduoquan_power_balance
+                value = 0.05
+            }
+
+      ai_will_do = {
+        factor = 1
+      }
+     }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  
+}
+focus = {
+      id = MOK_22
+      icon = GFX_goal_generic_national_unity
+      cost = 1
+      x = -2
+      y = 16
+      relative_position_id = MOK_1
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+      prerequisite = { focus = MOK_20}
+     
+
+      available ={
+      country_exists = BYA
+      has_war_with = BYA
+      }
+
+     
+
+      bypass = {
+      not = { country_exists = BYA }
+      }
+
+      completion_reward = {
+        hidden_effect = {
+       
+        }
+      add_power_balance_value = {
+                id = MOK_junguanduoquan_power_balance
+                value = -0.05
+            }
+
+      ai_will_do = {
+        factor = 1
+      }
+     }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  
+}
+focus = {
+      id = MOK_23
+      icon = GFX_goal_generic_national_unity
+      cost = 1
+      x = 0
+      y = 18
+      relative_position_id = MOK_1
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+      prerequisite = { focus = MOK_21}
+      prerequisite = { focus = MOK_22}
+     
+
+      available ={
+      not = {country_exists = BYA}
+      
+      }
+
+     
+
+      bypass = {
+
+      }
+
+      completion_reward = {
+         if = {
+                limit = { has_country_flag = MOK_zhanzhengdejinxing0
+                not = {
+                  has_country_flag = MOK_zhanzhengdejinxing1
+                } 
+                not = {
+                  has_country_flag = MOK_zhanzhengdejinxing2
+                } 
+                not = {
+                  has_country_flag = MOK_zhanzhengdejinxing3
+                } 
+                }
+               add_power_balance_value = {
+                id = MOK_junguanduoquan_power_balance
+                value = 0.1
+            }
+            }
+          else_if = {
+                limit = { has_country_flag = MOK_zhanzhengdejinxing1
+                 }not = {
+                  has_country_flag = MOK_zhanzhengdejinxing0
+                } 
+                not = {
+                  has_country_flag = MOK_zhanzhengdejinxing2
+                } 
+                not = {
+                  has_country_flag = MOK_zhanzhengdejinxing3
+                } 
+                add_power_balance_value = {
+                id = MOK_junguanduoquan_power_balance
+                value = -0.1
+            }
+    }
+    else_if = {
+                limit = { has_country_flag = MOK_zhanzhengdejinxing2
+                 not = {
+                  has_country_flag = MOK_zhanzhengdejinxing0
+                } 
+                not = {
+                  has_country_flag = MOK_zhanzhengdejinxing1
+                } 
+                not = {
+                  has_country_flag = MOK_zhanzhengdejinxing3
+                } 
+             }
+                add_power_balance_value = {
+                id = MOK_junguanduoquan_power_balance
+                value = -0.15
+            }
+    }
+    else_if = {
+                limit = { has_country_flag = MOK_zhanzhengdejinxing3
+                not = {
+                  has_country_flag = MOK_zhanzhengdejinxing0
+                } 
+                not = {
+                  has_country_flag = MOK_zhanzhengdejinxing1
+                } 
+                not = {
+                  has_country_flag = MOK_zhanzhengdejinxing2
+                } 
+    }
+                add_power_balance_value = {
+                id = MOK_junguanduoquan_power_balance
+                value = -0.2
+            }
+    }
+        hidden_effect = {
+       country_event = {id = mok.18 days = 3 }
+        }
+      
+
+      ai_will_do = {
+        factor = 1
+      }
+     }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  
+}
+focus = {
+      id = MOK_24
+      icon = GFX_goal_generic_national_unity
+      cost = 1
+      x = 0
+      y = 20
+      relative_position_id = MOK_1
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+      prerequisite = { focus = MOK_23}
+      
+     
+
+      available ={
+      
+      
+      }
+
+     
+
+      bypass = {
+
+      }
+
+      completion_reward = {
+       
+        hidden_effect = {
+       
+        }
+      country_event = {id = mok.17 days = 1 }
+
+      ai_will_do = {
+        factor = 1
+      }
+     }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  
+}
+focus = {
+      id = MOK_25
+      icon = GFX_goal_generic_national_unity
+      cost = 1
+      x = 0
+      y = 22
+      relative_position_id = MOK_1
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+      prerequisite = { focus = MOK_24}
+      
+     
+
+      available ={
+      
+      
+      }
+
+     
+
+      bypass = {
+
+      }
+
+      completion_reward = {
+       
+        hidden_effect = {
+       
+        }
+      country_event = {id = mok.18 days = 1 }
+
+      ai_will_do = {
+        factor = 1
+      }
+     }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  
+}
+focus = {
+      id = MOK_26
+      icon = GFX_goal_generic_national_unity
+      cost = 1
+      x = 4
+      y = 24
+      relative_position_id = MOK_1
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+      prerequisite = { focus = MOK_25}
+      
+     
+
+      available ={
+      is_power_balance_in_range = {
+				id = MOK_junguanduoquan_power_balance
+				range > MOK_geren_junguanduoquan_5
+			}	
+      
+      }
+      mutually_exclusive = {
+      focus = MOK_27
+    }
+
+     
+
+      bypass = {
+
+      }
+
+      completion_reward = {
+       
+        hidden_effect = {
+       
+        }
+     # country_event = {id = mok.18 days = 1 }
+     add_power_balance_value = {
+                id = MOK_junguanduoquan_power_balance
+                value = 0.1
+            }
+
+      ai_will_do = {
+        factor = 1
+      }
+     }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  
+}
+focus = {
+      id = MOK_27
+      icon = GFX_goal_generic_national_unity
+      cost = 1
+      x = -4
+      y = 24
+      relative_position_id = MOK_1
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+      prerequisite = { focus = MOK_25}
+      
+     
+
+      available ={
+      is_power_balance_in_range = {
+				id = MOK_junguanduoquan_power_balance
+				range < MOK_geren_junguanduoquan_6
+			}	
+      
+      }
+      mutually_exclusive = {
+      focus = MOK_26
+    }
+
+     
+
+      bypass = {
+
+      }
+
+      completion_reward = {
+       
+        hidden_effect = {
+       
+        }
+      #country_event = {id = mok.18 days = 1 }
+      add_power_balance_value = {
+                id = MOK_junguanduoquan_power_balance
+                value = -0.1
+            }
+
+      ai_will_do = {
+        factor = 1
+      }
+     }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  
+}
+focus = {
+      id = MOK_TEST
+      icon = GFX_goal_generic_national_unity
+      cost = 1
+      x = 1
+      y = 1
+      relative_position_id = MOK_1
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+      
+      
+     
+
+      available ={
+      
+			}	
+      
+      
+    allow_branch = {									
+			has_completed_focus = MOK_TEST								    					   
+        }
+
+     
+
+      bypass = {
+
+      }
+
+      completion_reward = {
+       
+        hidden_effect = {
+       
+        }
+      #country_event = {id = mok.18 days = 1 }
+      mark_focus_tree_layout_dirty = yes
+
+
+      ai_will_do = {
+        factor = 1
+      }
+     }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  
+}
+focus = {
+      id = MOK_TEST_1
+      icon = GFX_goal_generic_national_unity
+      cost = 1
+      x = 1
+      y = 2
+      relative_position_id = MOK_1
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+      prerequisite = { focus = MOK_TEST}
+      
+     
+
+      available ={
+      
+			}	
+      
+      
+    
+     
+
+      bypass = {
+
+      }
+
+      completion_reward = {
+       
+        hidden_effect = {
+       
+        }
+      #country_event = {id = mok.18 days = 1 }
+      mark_focus_tree_layout_dirty = yes
+
+
+      ai_will_do = {
+        factor = 1
+      }
+     }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  
+}
+focus = {
+      id = MOK_28
+      icon = GFX_goal_generic_national_unity
+      cost = 1
+      x = -4
+      y = 26
+      relative_position_id = MOK_1
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+      prerequisite = { focus = MOK_27}
+      
+     
+
+      available ={
+      is_power_balance_in_range = {
+				id = MOK_junguanduoquan_power_balance
+				range < MOK_geren_junguanduoquan_5
+			}	
+      
+      }
+
+
+     
+
+      bypass = {
+
+      }
+
+      completion_reward = {
+       
+        hidden_effect = {
+       
+        }
+      country_event = {id = mok.20 days = 1 }
+
+      ai_will_do = {
+        factor = 1
+      }
+     }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  
+}
+focus = {
+      id = MOK_29
+      icon = GFX_goal_generic_national_unity
+      cost = 1
+      x = 4
+      y = 26
+      relative_position_id = MOK_1
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+      prerequisite = { focus = MOK_26}
+      
+     
+
+      available ={
+      is_power_balance_in_range = {
+				id = MOK_junguanduoquan_power_balance
+				range > MOK_geren_junguanduoquan_6
+			}	
+      
+      }
+
+
+     
+
+      bypass = {
+
+      }
+
+      completion_reward = {
+       
+        hidden_effect = {
+       
+        }
+      country_event = {id = mok.18 days = 1 }
+
+      ai_will_do = {
+        factor = 1
+      }
+     }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  
+}
+focus = {
+      id = MOK_30
+      icon = GFX_goal_generic_national_unity
+      cost = 1
+      x = 70
+      y = 0
+      #relative_position_id = MOK_1
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+      
+      
+     
+
+      available ={
+      
+			}	
+      
+      
+    allow_branch = {									
+			has_completed_focus = MOK_30								    					   
+        }
+
+     
+
+      bypass = {
+
+      }
+
+      completion_reward = {
+       
+        hidden_effect = {
+       
+        }
+      #country_event = {id = mok.18 days = 1 }
+      mark_focus_tree_layout_dirty = yes
+      lobbyincrease = yes
+      add_ideas = { close3 }
+      add_ideas = { limit_magic }
+
+
+      ai_will_do = {
+        factor = 1
+      }
+     }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  
+}
+focus = {
+      id = MOK_31
+      icon = GFX_goal_generic_national_unity
+      cost = 1
+      x = 0
+      y = 1
+      relative_position_id = MOK_30
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+      prerequisite = { focus = MOK_30}
+      
+     
+
+      available ={
+      
+      
+      }
+
+
+     
+
+      bypass = {
+
+      }
+
+      completion_reward = {
+       
+        hidden_effect = {
+       
+        }
+      country_event = {id = mok.18 days = 1 }
+
+      ai_will_do = {
+        factor = 1
+      }
+     }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  
+}
+}

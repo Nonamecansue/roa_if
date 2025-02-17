@@ -1,0 +1,73 @@
+characters={
+	YCE_yce ={
+		name = YCE_yce
+		portraits={
+			civilian={
+				large="gfx/leaders/YCE/YCE_yce.dds"
+				small="gfx/leaders/YCE/YCE_yce_small.dds"
+			}
+			army = {
+				large="gfx/leaders/YCE/YCE_yce.dds"
+				small="gfx/leaders/YCE/YCE_yce_small.dds"
+			}
+		}
+		field_marshal = {
+            traits = {  th_original_character th_character  th_trait_moulvedashi  }
+            attack_skill = 3
+            defense_skill = 3
+            planning_skill = 13
+            logistics_skill = 10
+            
+            skill = 8
+        }
+		advisor = {
+			slot = character_coop
+			idea_token = YCE_yce
+			name = YCE_yce
+			cost = 200
+			modifier = {
+				GO_time_duration = 30
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	YCE_yce_leader ={
+		name = YCE_yce_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/YCE/YCE_yce.dds"
+				small="gfx/leaders/YCE/YCE_yce_small.dds"
+			}
+			army = {
+				large="gfx/leaders/YCE/YCE_yce.dds"
+				small="gfx/leaders/YCE/YCE_yce_small.dds"
+			}
+		}
+		country_leader={
+			ideology=qinwai_type
+			id=-1
+		}
+		country_leader={
+			ideology=guli_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldorder_type
+			id=-1
+		}
+		country_leader={
+			ideology=fandong_type
+			id=-1
+		}
+		country_leader={
+			ideology=neworder_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldgenso_type
+			id=-1
+		}
+	}
+}

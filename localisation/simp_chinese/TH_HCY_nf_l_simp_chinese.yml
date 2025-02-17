@@ -1,0 +1,30 @@
+﻿l_simp_chinese:
+ HCY_TEST:0 "大选局势"
+ HCY_TEST_desc:0 " \n 草原派1：[?HCY.HCY_TEST]，\n 妖精自由派2：[?HCY.HCY_CESHI]，\n 新妖精党：[?HCY.HCY_CS]，\n 卫原阵线：[?HCY.HCY_SC]，\n 国家派：[?HCY.HCY_BS]，\n 为民党3：[?HCY.HCY_SJ]，"
+ HCY_TEST5:0 "大选日"
+ HCY_TEST_2:0 "其他党派活动"
+ HCY_TEST_3:0 "稳定军队"
+ HCY_TEST7:0 "即将到来的军事政变"
+ HCY_TEST_4:0 "军队的异常举动"
+ HCY_TEST_5:0 "政变准备"
+ HCY_TEST_5_desc:0 " \n2 ：[?HCY.HCY_JUNBIAN]\n3 ：[?HCY.HCY_CHAJUEDU]"
+ JM1_add0.tt:0 "草原派支持度+5"
+ JM2_add0.tt:0 "草原派支持度+10"
+ JM3_add0.tt:0 "妖精自由派支持度+5"
+ JM4_add0.tt:0 "妖精自由派支持度+10"
+ JM5_add0.tt:0 "为民党支持度+5"
+ JM6_add0.tt:0 "为民党支持度+10"
+ JM7_add0.tt:0 "国家派支持度+5"
+ JM8_add0.tt:0 "国家派支持度+10"
+ JM9_add0.tt:0 "新妖精党支持度+5"
+ JM10_add0.tt:0 "新妖精党支持度+10"
+ JM11_add0.tt:0 "卫原阵线支持度+5"
+ JM12_add0.tt:0 "卫原阵线支持度+10"
+ JZB1_add0.tt:0 "政变准备度+5"
+ JZB2_add0.tt:0 "政变准备度+20"
+ HCY_xuanjujieshu:0 "选举结束或取消了"
+
+
+
+
+ 

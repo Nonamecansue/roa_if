@@ -1,0 +1,35 @@
+
+state={
+	id=400
+	name="STATE_400"
+	resources={
+		energy=0.000
+		powder=12.000
+		metal=5.000
+		gas=0.000
+		crystal=0.000
+	}
+
+	history={
+		146.1.1 = {
+			owner = YAW
+			add_core_of = YAW
+			buildings = {
+				infrastructure = 3
+				industrial_complex = 1
+				arms_factory = 0
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		360 1514 1655 3393 4207 4213 4220 4229 4233 5335 
+	}
+	manpower=746
+	buildings_max_level_factor=1.000
+	state_category=s2
+	local_supplies=2.500
+}

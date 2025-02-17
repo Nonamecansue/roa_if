@@ -1,0 +1,149 @@
+add_namespace = DBG
+
+
+country_event = { #debuging,remove this later
+	
+	id = DBG.1
+    title = DBG.1.t
+    desc = DBG.1.d 
+	is_triggered_only = yes
+	hidden = no 
+	
+	option = { #test1
+		name = DBG.1.a
+		set_global_flag = CM_SE_opened
+		clear_array = CM_SE_event_id_array
+		add_to_array = { CM_SE_event_id_array = 1 }
+		play_song = "song_CSJ1"
+	}
+	
+	option = { #test2
+		name = DBG.1.b
+		set_global_flag = CM_SE_opened
+		clear_array = CM_SE_event_id_array
+		add_to_array = { CM_SE_event_id_array = 2 }
+	}
+	
+	option = { #clear everything
+		name = DBG.1.c
+		clr_global_flag = CM_SE_opened
+		clear_array = CM_SE_event_id_array
+	}
+	option = { #test missing entry
+		name = DBG.1.d
+		set_global_flag = CM_SE_opened
+		clear_array = CM_SE_event_id_array
+		
+	}
+	
+
+
+
+}
+country_event = { #人里内战触发
+	
+	id = DBG.2
+    title = DBG.2.t
+    desc = DBG.2.d 
+	is_triggered_only = yes
+	hidden = yes 
+	
+	option = { #test1
+		name = DBG.2.a
+		set_global_flag = CM_SE_opened
+		clear_array = CM_SE_event_id_array
+		add_to_array = { CM_SE_event_id_array = 1 }
+		play_song = "song_CSJ1"
+	}
+	
+	
+
+
+
+}
+
+country_event = { #中央统一人里
+	
+	id = DBG.3
+    title = DBG.3.t
+    desc = DBG.3.d 
+	is_triggered_only = yes
+	hidden = yes 
+	
+	option = { #test1
+		name = DBG.3.a
+		set_global_flag = CM_SE_opened
+		clear_array = CM_SE_event_id_array
+		add_to_array = { CM_SE_event_id_array = 2 }
+		play_song = "song_CSJ2"
+	}
+	
+	
+
+
+
+}
+country_event = { #第二次灵力危机爆发
+	
+	id = DBG.4
+    title = DBG.4.t
+    desc = DBG.4.d 
+	is_triggered_only = yes
+	hidden = yes 
+	
+	option = { #test1
+		name = DBG.4.a
+		set_global_flag = CM_SE_opened
+		clear_array = CM_SE_event_id_array
+		add_to_array = { CM_SE_event_id_array = 3 }
+		play_song = "song_CSJ3"
+	}
+	
+	
+
+
+
+}
+country_event = { #复权派统一人里
+	
+	id = DBG.5
+    title = DBG.5.t
+    desc = DBG.5.d 
+	is_triggered_only = yes
+	hidden = yes 
+	
+	option = { #test1
+		name = DBG.4.a
+		set_global_flag = CM_SE_opened
+		clear_array = CM_SE_event_id_array
+		add_to_array = { CM_SE_event_id_array = 4 }
+		play_song = "song_CSJ4"
+	}
+	
+	
+
+
+
+}
+country_event = { #阿哈下的西南统一
+	
+	id = DBG.6
+    title = DBG.6.t
+    desc = DBG.6.d 
+	is_triggered_only = yes
+	hidden = yes
+	
+	option = { #test1
+		name = DBG.6.a
+		set_global_flag = CM_SE_opened
+		clear_array = CM_SE_event_id_array
+		add_to_array = { CM_SE_event_id_array = 5 }
+		play_song = "song_CSJ5"
+	}
+	
+	
+
+
+
+}
+

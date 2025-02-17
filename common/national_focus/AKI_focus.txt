@@ -1,0 +1,389 @@
+focus_tree = {
+  id = AKI_focus_1
+  country = {
+    factor = 0
+    modifier = {
+      add = 10
+      tag =  
+    }
+  }
+
+  shared_focus = ty_medium_main 
+
+  continuous_focus_position = { x = 20 y = 1700 }
+
+  focus = {
+      id = AKI_zhunbeifengshoudahui
+      icon = GFX_focus_eng_concessions_to_the_trade_unions
+      cost = 4
+      x = 4
+      y = 0
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        add_political_power = 150
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = AKI_dajianchangdi
+      icon = GFX_focus_generic_self_management
+      cost = 2
+      relative_position_id = AKI_zhunbeifengshoudahui
+      x = -2
+      y = 1
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      }
+
+       prerequisite = { focus = AKI_zhunbeifengshoudahui }
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        add_timed_idea = {days = 30 idea = AKI_dajianchangdi_idea}
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+    focus = {
+      id = AKI_fangfanwaibu
+      icon = GFX_goal_generic_national_unity
+      cost = 2
+      relative_position_id = AKI_zhunbeifengshoudahui
+      x = 2
+      y = 1
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      }
+
+       prerequisite = { focus = AKI_zhunbeifengshoudahui }
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        bianjiebaoshou = yes
+        add_stability = 0.15
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+      focus = {
+      id = AKI_kaishiyaoqingtaren
+      icon = GFX_goal_generic_improve_relations
+      cost = 2
+      relative_position_id = AKI_zhunbeifengshoudahui
+      x = 0
+      y = 2
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      }
+
+       prerequisite = { focus = AKI_fangfanwaibu }
+       prerequisite = { focus = AKI_dajianchangdi }
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        add_stability = 0.2
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = AKI_yaoqingnongminyihuidaibiao
+      icon = GFX_goal_generic_major_alliance
+      cost = 2
+      relative_position_id = AKI_zhunbeifengshoudahui
+      x = -1
+      y = 3
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      }
+
+       prerequisite = { focus = AKI_kaishiyaoqingtaren }
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        country_event = { id = akinew.1 day = 1 }
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = AKI_yaoqingdiaolingzhedaibiao
+      icon = GFX_goal_generic_propaganda
+      cost = 2
+      relative_position_id = AKI_zhunbeifengshoudahui
+      x = 1
+      y = 3
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      }
+
+       prerequisite = { focus = AKI_kaishiyaoqingtaren }
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        country_event = { id = akinew.2 day = 1 }
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = AKI_yaoqinggaigepaidaibiao
+      icon = GFX_goal_generic_intelligence_exchange
+      cost = 2
+      relative_position_id = AKI_zhunbeifengshoudahui
+      x = 3
+      y = 3
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      }
+
+       prerequisite = { focus = AKI_kaishiyaoqingtaren }
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        country_event = { id = akinew.3 day = 1 }
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+    focus = {
+      id = AKI_yaoqingbendidicengdaibiaodaibiao
+      icon = GFX_focus_generic_military_mission
+      cost = 2
+      relative_position_id = AKI_zhunbeifengshoudahui
+      x = -3
+      y = 3
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      }
+
+       prerequisite = { focus = AKI_kaishiyaoqingtaren }
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        country_event = { id = akinew.4 day = 1 }
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = AKI_zhunbeiyanjiangneirong
+      icon = GFX_focus_SGS_chulizhanlingqu
+      cost = 2
+      relative_position_id = AKI_zhunbeifengshoudahui
+      x = 0
+      y = 4
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      }
+
+       prerequisite = { focus = AKI_yaoqingbendidicengdaibiaodaibiao }
+       prerequisite = { focus = AKI_yaoqinggaigepaidaibiao }
+       prerequisite = { focus = AKI_yaoqingdiaolingzhedaibiao }
+       prerequisite = { focus = AKI_yaoqingnongminyihuidaibiao }
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        add_political_power = 50
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = AKI_zhengshikaishihuiyi
+      icon = GFX_focus_generic_military_academy
+      cost = 2
+      relative_position_id = AKI_zhunbeifengshoudahui
+      x = 0
+      y = 5
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      }
+
+       prerequisite = { focus = AKI_zhunbeiyanjiangneirong }
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        country_event = { id = akinew.5 hours = 12 }
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+
+

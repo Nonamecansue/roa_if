@@ -1,0 +1,63 @@
+﻿division_template = {
+	name = "魔法地藏编制"
+	regiments = {
+		ma_infantry = { x = 0 y = 0 }
+		ma_infantry = { x = 0 y = 1 }
+		ma_infantry = { x = 0 y = 2 }
+		ma_infantry = { x = 0 y = 3 }
+	}
+}
+division_template = {
+	name = "改组魔炮编制"
+	regiments = {
+		ma_infantry = { x = 0 y = 0 }
+		ma_infantry = { x = 0 y = 1 }
+		ma_infantry = { x = 0 y = 2 }
+		ma_infantry = { x = 0 y = 3 }
+		ma_magic_energy_brigade = {x = 1 y = 0}
+		ma_magic_energy_brigade = {x = 1 y = 1}
+	}
+	support = {
+		sp_jiaqiangban = { x = 0 y = 0 }
+	}
+}
+
+######################
+units = {
+division = {
+		name = "魔法地藏编制"
+		location = 2272
+		division_template = "魔法地藏编制"
+		start_experience_factor = 0
+		start_equipment_factor = 1
+	}
+division = {
+		name = "魔法地藏编制"
+		location = 2272
+		division_template = "魔法地藏编制"
+		start_experience_factor = 0
+		start_equipment_factor = 1
+	}
+division = {
+		name = "魔法地藏编制"
+		location = 2272
+		division_template = "魔法地藏编制"
+		start_experience_factor = 0
+		start_equipment_factor = 1
+	}
+division = {
+		name = "魔法地藏编制"
+		location = 2272
+		division_template = "魔法地藏编制"
+		start_experience_factor = 0
+		start_equipment_factor = 1
+	}
+division = {
+		name = "改组魔炮编制"
+		location = 2272
+		division_template = "改组魔炮编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+
+}

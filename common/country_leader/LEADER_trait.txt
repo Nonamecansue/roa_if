@@ -1,0 +1,9 @@
+leader_traits = {
+	HCF_yihuijieshao_trait = {
+		
+	}
+	XBW_huangdijieshao1_trait = {
+		
+	}
+	
+}

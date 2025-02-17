@@ -1,0 +1,185 @@
+﻿capital = 118
+143.7.1 = {
+    set_technology = {
+        #通用武器线
+            spell_card1 = 1
+            spear1 = 1
+            gun1 = 1
+            linglicunchu = 1
+            linglizhufu = 1
+            linglidanyao = 1
+            spell_card2 = 1
+            spear2 = 1
+            gun2 = 1
+            lingliliushuixian = 1
+            gun3 = 1
+        #辅助
+            zhiyuanzhuangbei = 1
+        #专用辅助
+            mortar1 = 1
+        #专用基础
+
+        #专用进阶
+
+        #混合系
+
+        #陆军学说
+            zhanchangzhihui140 = 1
+        #工程学 
+            jichushuxue = 1
+            shuxuegongju = 1
+            waike = 1
+        #专用工程学
+
+        #工业
+            production_theory = 1
+            org_production = 1
+            jianzaojishu130 = 1
+            ziyuankaifa130 = 1
+            yunshudui140 = 1
+        #专用工业
+            
+            
+        #种族
+            
+    }
+    
+}
+146.1.1 = {
+    set_technology = {
+        #通用武器线
+            spell_card1 = 1
+            spear1 = 1
+            gun1 = 1
+            linglicunchu = 1
+            linglizhufu = 1
+            linglidanyao = 1
+            spell_card2 = 1
+            spear2 = 1
+            gun2 = 1
+            lingliliushuixian = 1
+            gun3 = 1
+        #辅助
+            zhiyuanzhuangbei = 1
+           
+        #专用辅助
+            mortar1 = 1
+        #专用基础
+        kexuebubingzhuangbei = 1
+        jiqiang1 = 1
+        jiqiang2 = 1
+        shoulei1 = 1
+        bubingbuji1 = 1
+
+        #专用进阶
+
+        #混合系
+
+        #陆军学说
+            zhanchangzhihui140 = 1
+            zuzhihuazhanzheng142 = 1
+            zhanchangzhihui145 = 1
+        #工程学 
+            jichushuxue = 1
+            shuxuegongju = 1
+            waike = 1
+        #专用工程学
+
+        #工业
+            production_theory = 1
+            org_production = 1
+            jianzaojishu130 = 1
+            ziyuankaifa130 = 1
+            yunshudui140 = 1
+            
+        #专用工业
+            
+            
+        #种族
+            
+    }
+    
+}
+143.7.1 = {
+    oob = "CIR_142"
+    add_ideas = type1_manpowerlv4
+	add_ideas = {
+        
+        Village
+    	Fairy
+    	partial_economic_mobilisation
+        hawk0
+        open1
+        normal_border
+        sc_rule
+    }
+	# set_research_slots = 1
+	set_politics = {
+    	ruling_party = fandong
+    	election_frequency = 48
+    	elections_allowed = no
+    }
+    set_popularities = {
+        qinwai = 0
+        guli = 0
+        neworder = 0
+        oldorder = 0
+        fandong = 100
+    }
+}
+################
+146.1.1={
+    oob = "CIR_146"
+    
+    add_ideas = {
+        CIR_biyaodeguli_idea
+        low_economic_mobilisation
+        type1_manpowerlv3
+        Town
+        Fairy
+        hawk1
+        close5
+        strict_border
+        limit_magic
+        jinbenguomeiti
+        quanwenmang
+        zhongzupingdeng
+        zhongshikejihua
+        chubugongyehua
+        yangeanbao
+        # cir_yaojinglingxiu_idea 
+        # cir_yaoguaidediwei_idea
+       #CIR_dongdanghxxdegemingzhuyi_idea
+        CIR_ziranhuamaodun_idea
+        CIR_luohoudejunshisixiang_idea_1
+        CIR_sikalietejiadeyichan_idea
+        CIR_zhengzhianquanweiyuanhui_idea
+
+        
+
+    }
+    diplomatic_relation = { 
+        country = LIL relation = non_aggression_pact active = yes
+    }
+    #########局势修改
+    #set_stability = 0.8
+
+    set_politics = {
+    	ruling_party = fandong
+    	election_frequency = 48
+    	elections_allowed = no
+    }
+    set_popularities = {
+        qinwai = 15
+        jinwai = 15
+        guli = 25
+        neworder = 5
+        oldorder = 0
+        fandong = 40
+    }
+    set_truce = {target = SCA days = 730}
+    set_truce = {target = SC2 days = 730}
+    set_truce = {target = SC3 days = 730}
+    set_truce = {target = EMB days = 730}
+    
+}

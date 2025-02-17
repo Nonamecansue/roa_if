@@ -1,0 +1,194 @@
+technologies = {
+	linglilichangjiaqiang150 = {
+		
+		dependencies = {
+		   linglijiejie149  = 1
+		}
+
+		path = {
+			leads_to_tech = linglilichangjiaqiang160
+			research_cost_coeff = 1
+		}
+
+		sp_jiaqiangban = {
+			soft_attack = 1.5
+		}
+		
+		research_cost = 2
+		start_year = 150
+
+		folder = {
+			name = p_youkai_tech_folder
+			position = { x = 4 y = 2 }
+		}
+		
+		categories = {
+			techtree_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	linglilichangjiaqiang160 = {
+	
+		path = {
+			leads_to_tech = linglilichangjiaqiang170
+			research_cost_coeff = 1
+		}
+
+		sp_jiaqiangban = {
+			hard_attack = 1.5
+		}
+		
+		research_cost = 2
+		start_year = 160
+
+		folder = {
+			name = p_youkai_tech_folder
+			position = { x = 4 y = 4 }
+		}
+		
+		categories = {
+			techtree_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	linglilichangjiaqiang170 = {
+		
+		research_cost = 2
+		start_year = 170
+
+		sp_jiaqiangban = {
+			soft_attack = 0.75
+			hard_attack = 0.75
+		}
+
+		folder = {
+			name = p_youkai_tech_folder
+			position = { x = 4 y = 6 }
+		}
+		
+		categories = {
+			techtree_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	jinglianshimo150 = {
+	
+		path = {
+			leads_to_tech = jinglianshimo160
+			research_cost_coeff = 1
+		}
+
+		ma_infantry = {
+			need = {
+				magic_core_a = -10
+			}
+		}
+		ma_light_infantry = {
+			need = {
+				magic_core_a = -10
+			}
+		}
+		on_research_complete = {
+			custom_effect_tooltip = jinglianshimo_tt
+		}
+		
+		research_cost = 2
+		start_year = 150
+
+		folder = {
+			name = p_youkai_tech_folder
+			position = { x = 10 y = 2 }
+		}
+		
+		categories = {
+			techtree_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	jinglianshimo160 = {
+	
+		path = {
+			leads_to_tech = jinglianshimo170
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 160
+
+		ma_infantry = {
+			need = {
+				magic_core_a = -10
+			}
+		}
+		ma_light_infantry = {
+			need = {
+				magic_core_a = -10
+			}
+		}
+		on_research_complete = {
+			custom_effect_tooltip = jinglianshimo_tt
+		}
+
+		folder = {
+			name = p_youkai_tech_folder
+			position = { x = 10 y = 4 }
+		}
+		
+		categories = {
+			techtree_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	jinglianshimo170 = {
+		
+		research_cost = 2
+		start_year = 170
+
+		ma_infantry = {
+			need = {
+				magic_core_a = -10
+			}
+		}
+		ma_light_infantry = {
+			need = {
+				magic_core_a = -10
+			}
+		}
+		on_research_complete = {
+			custom_effect_tooltip = jinglianshimo_tt
+		}
+
+		folder = {
+			name = p_youkai_tech_folder
+			position = { x = 10 y = 6 }
+		}
+		
+		categories = {
+			techtree_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

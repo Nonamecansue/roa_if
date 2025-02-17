@@ -1,0 +1,69 @@
+﻿add_namespace = hu2
+##########事件###########
+country_event = { #hu2改国策树
+	id = hu2.1
+	title = hu2.1.t
+	desc = hu2.1.d
+
+	# major = yes
+	fire_only_once = yes
+	trigger = {
+		105 = {
+            owner = {
+              or = {
+                tag = HU2
+                is_subject_of = HU2
+              }
+            }
+          }
+        original_tag = HU2
+	}
+
+	option = {
+		name = hu2.1.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base = 100
+		}
+
+		load_focus_tree = HU2_focus_2
+
+	}
+}
+country_event = { #hu2加将领
+	id = hu2.2
+	title = hu2.2.t
+	desc = hu2.2.d
+
+	# major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	
+	}
+
+	option = {
+		name = hu2.1.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base = 100
+		}
+
+		AKI = {
+				AKI_szh = {
+					set_nationality = ROOT
+				}
+			}
+
+
+	}
+}
+
+
+	

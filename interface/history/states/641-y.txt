@@ -1,0 +1,29 @@
+state={
+	id=641
+	name="STATE_641"
+	provinces={
+		7534 7537 7544 7545 7555 7559 7570 7572 7584 7585 7592 
+	}
+	resources={
+		energy = 0
+		powder = 2.0
+		metal = 5.0
+		gas=0.000
+		crystal=0.000
+	}
+	history={
+		146.1.1 = {
+			owner = YMM
+			add_core_of = YMM
+			buildings = {
+				infrastructure = 2
+				industrial_complex = 1
+				arms_factory = 0
+			}
+		}
+	}
+	state_category=s5
+	manpower=1578
+	buildings_max_level_factor=1.000
+	local_supplies=2.500
+}

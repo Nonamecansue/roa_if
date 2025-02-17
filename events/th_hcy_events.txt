@@ -1,0 +1,521 @@
+﻿add_namespace = hcy
+##########事件###########
+country_event = { #大选
+	id = hcy.1
+	title = hcy.1.t
+	desc = hcy.1.d
+
+	# major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = hcy.1.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base = 70
+		}
+		set_country_flag = HCY_xuanjujieshu
+		if = {
+                limit = { 
+			    check_variable = {
+					var = HCY_TEST
+					value = HCY_CESHI
+					compare = greater_than
+			   }
+			   check_variable = {
+					var = HCY_TEST
+					value = HCY_CS
+					compare = greater_than
+			   }
+			   check_variable = {
+					var = HCY_TEST
+					value = HCY_SC
+					compare = greater_than
+			   }
+			   check_variable = {
+					var = HCY_TEST
+					value = HCY_BS
+					compare = greater_than
+			   }
+			   check_variable = {
+					var = HCY_TEST
+					value = HCY_SJ
+					compare = greater_than
+			   }
+			    }
+			add_popularity = {
+				ideology = qinwai
+				popularity = 1
+			}
+			set_politics = { ruling_party = qinwai }
+                
+            }
+		else_if = {
+                limit = { 
+			    check_variable = {
+					var = HCY_CESHI
+					value = HCY_TEST
+					compare = greater_than
+			   }
+			   check_variable = {
+					var = HCY_CESHI
+					value = HCY_CS
+					compare = greater_than
+			   }
+			   check_variable = {
+					var = HCY_CESHI
+					value = HCY_SC
+					compare = greater_than
+			   }
+			   check_variable = {
+					var = HCY_CESHI
+					value = HCY_BS
+					compare = greater_than
+			   }
+			   check_variable = {
+					var = HCY_CESHI
+					value = HCY_SJ
+					compare = greater_than
+			   }
+			    }
+			add_popularity = {
+				ideology = qinwai
+				popularity = 0.1
+			}
+			set_politics = { ruling_party = qinwai }
+                
+            }
+		else_if = {
+                limit = { 
+			    check_variable = {
+					var = HCY_BS
+					value = HCY_TEST
+					compare = greater_than
+			   }
+			   check_variable = {
+					var = HCY_BS
+					value = HCY_CS
+					compare = greater_than
+			   }
+			   check_variable = {
+					var = HCY_BS
+					value = HCY_SC
+					compare = greater_than
+			   }
+			   check_variable = {
+					var = HCY_BS
+					value = HCY_CESHI
+					compare = greater_than
+			   }
+			   check_variable = {
+					var = HCY_BS
+					value = HCY_SJ
+					compare = greater_than
+			   }
+			    }
+			add_popularity = {
+				ideology = jinwai
+				popularity = 1
+			}
+			set_politics = { ruling_party = jinwai }
+			else_if = {
+                limit = { 
+			    check_variable = {
+					var = HCY_SJ
+					value = HCY_TEST
+					compare = greater_than
+			   }
+			   check_variable = {
+					var = HCY_SJ
+					value = HCY_CS
+					compare = greater_than
+			   }
+			   check_variable = {
+					var = HCY_SJ
+					value = HCY_SC
+					compare = greater_than
+			   }
+			   check_variable = {
+					var = HCY_SJ
+					value = HCY_BS
+					compare = greater_than
+			   }
+			   check_variable = {
+					var = HCY_SJ
+					value = HCY_CESHI
+					compare = greater_than
+			   }
+			    }
+			add_popularity = {
+				ideology = jinwai
+				popularity = 0.1
+			}
+			set_politics = { ruling_party = jinwai }
+                
+            }
+			else_if = {
+                limit = { 
+			    check_variable = {
+					var = HCY_CS
+					value = HCY_TEST
+					compare = greater_than
+			   }
+			   check_variable = {
+					var = HCY_CS
+					value = HCY_CESHI
+					compare = greater_than
+			   }
+			   check_variable = {
+					var = HCY_CS
+					value = HCY_SC
+					compare = greater_than
+			   }
+			   check_variable = {
+					var = HCY_CS
+					value = HCY_BS
+					compare = greater_than
+			   }
+			   check_variable = {
+					var = HCY_CS
+					value = HCY_SJ
+					compare = greater_than
+			   }
+			    }
+			add_popularity = {
+				ideology =neworder
+				popularity = 1
+			}
+			set_politics = { ruling_party = neworder }
+			else_if = {
+                limit = { 
+			    check_variable = {
+					var = HCY_SC
+					value = HCY_TEST
+					compare = greater_than
+			   }
+			   check_variable = {
+					var = HCY_SC
+					value = HCY_CS
+					compare = greater_than
+			   }
+			   check_variable = {
+					var = HCY_SC
+					value = HCY_CESHI
+					compare = greater_than
+			   }
+			   check_variable = {
+					var = HCY_SC
+					value = HCY_BS
+					compare = greater_than
+			   }
+			   check_variable = {
+					var = HCY_SC
+					value = HCY_SJ
+					compare = greater_than
+			   }
+			    }
+			add_popularity = {
+				ideology = neworder
+				popularity = 0.1
+			}
+			set_politics = { ruling_party = neworder }
+                
+            }
+                
+            }
+                
+            }
+
+		
+			
+
+	}
+}
+country_event = { #军变
+	id = hcy.2
+	title = hcy.2.t
+	desc = hcy.2.d
+
+	# major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = hcy.2.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base = 70
+		}
+		set_country_flag = HCY_zhengbianchenggong
+		set_politics = { ruling_party = guli }
+		add_popularity = {
+				ideology = guli
+				popularity = 0.3
+			}
+		bianjiebaoshou = yes
+		add_ideas = { close1 }
+		add_ideas = { hawk1 }
+		add_stability = -0.3
+		remove_ideas = { HCY_buanfendejundui_idea }
+		remove_ideas = { HCY_xuanjuqiandehunluan_idea }
+		load_focus_tree = HCY_focus_Jjx_1
+		set_country_flag = HCY_xuanjujieshu
+		HCY_alk_leader = {
+			add_country_leader_role = {
+				promote_leader = yes
+				country_leader = {
+					ideology = guli_junzhengfu
+				}
+			}
+		}
+		HCY_alk_leader = {
+			add_country_leader_role = {
+				promote_leader = yes
+				country_leader = {
+					ideology = qinwai_type
+				}
+			}
+		}
+		HCY_alk_leader = {
+			add_country_leader_role = {
+				promote_leader = yes
+				country_leader = {
+					ideology = jinwai_type
+				}
+			}
+		}
+		HCY_alk_leader = {
+			add_country_leader_role = {
+				promote_leader = yes
+				country_leader = {
+					ideology = fandong_type
+				}
+			}
+		}
+		HCY_alk_leader = {
+			add_country_leader_role = {
+				promote_leader = yes
+				country_leader = {
+					ideology = neworder_type
+				}
+			}
+		}
+		HCY_alk_leader = {
+			add_country_leader_role = {
+				promote_leader = yes
+				country_leader = {
+					ideology = oldorder_type
+				}
+			}
+		}
+		HCY_alk_leader = {
+			add_country_leader_role = {
+				promote_leader = yes
+				country_leader = {
+					ideology = oldgenso_type
+				}
+			}
+		}
+		country_lock_all_division_template = no
+		
+		
+		
+
+		
+			
+
+	}
+}
+news_event = { #皇帝登基
+	id = hcy.3
+	title = hcy.3.t
+	desc = hcy.3.d
+	#picture = GFX_news_event_sca.9
+	major = yes
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+		
+		
+	}
+
+	option = {
+		name = hcy.3.1
+		trigger = {
+			tag = HCY
+		}
+		HCY = {
+			set_cosmetic_tag = HCY_hcdiguo
+			add_ideas = { Empire }
+			add_stability = -0.4
+		set_country_leader_ideology = guli_junzhuzhuanzhi
+		}
+		
+	}
+
+	option = {
+		name = hcy.3.2
+		trigger = {
+			not = { tag = HCY }
+		}
+		
+	}
+}
+country_event = { #邀请
+	id = hcy.4
+	title = hcy.4.t
+	desc = hcy.4.d
+
+	# major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = hcy.4.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base = 10
+		}
+		HCY = {
+			country_event = {id = hcy.5 days = 1 }
+		}
+		
+		
+		
+
+		
+			
+
+	}
+	option = {
+		name = hcy.4.2#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base = 90
+		}
+		HCY = {
+			country_event = {id = hcy.7 days = 1 }
+		}
+		
+		
+		
+
+		
+			
+
+	}
+}
+country_event = { #同意邀请
+	id = hcy.5
+	title = hcy.5.t
+	desc = hcy.5.d
+
+	# major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = hcy.5.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base = 0
+		}
+		add_stability = 0.1
+		add_political_power = 50
+		FROM = {
+		add_opinion_modifier = { target = HCY modifier = chengdizhichi }
+		reverse_add_opinion_modifier = { target = HCY modifier = chengdizhichi }
+
+		}
+		
+		
+
+		
+			
+
+	}
+}
+country_event = { #去核心1
+	id = hcy.6
+	title = hcy.6.t
+	desc = hcy.6.d
+
+	# major = yes
+	fire_only_once = yes
+	is_triggered_only = no
+	hidden = yes
+	trigger = {
+		tag = HCY
+			not = {
+          country_exists = DHC
+        }
+	}
+
+	option = {
+		name = hcy.6.1#
+		trigger = {
+			
+
+		}
+
+		ai_chance = {
+			base = 70
+		}
+		every_owned_state = {
+			remove_core_of = DHC
+		}
+		
+		
+		
+
+		
+			
+
+	}
+}
+country_event = { #拒绝邀请
+	id = hcy.7
+	title = hcy.7.t
+	desc = hcy.7.d
+
+	# major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = hcy.7.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base = 0
+		}
+		add_stability = -0.05
+		add_political_power = -10
+		
+		
+
+		
+			
+
+	}
+}

@@ -1,0 +1,32 @@
+ideas = {
+#===============================
+    country = {
+	#=========================
+		SC2_xibudehunluan = {
+			picture = FRA_matignon_agreements
+
+			allowed = {
+				always = no
+			}
+			available = {
+				
+					owns_state = 64
+				
+
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				stability_weekly = -0.005
+				fandong_drift = 0.05
+				stability_factor = -0.25
+
+
+			}
+		}
+	}
+}

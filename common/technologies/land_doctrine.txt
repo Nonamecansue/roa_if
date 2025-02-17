@@ -1,0 +1,2040 @@
+technologies = {
+	@x1 = 1
+	@x2 = 4
+	@x3 = 7
+	@x4 = 10
+	@x5 = 13
+	@x6 = 16
+	@x7 = 19
+	@y1 = 1
+	@y2 = 3
+	@y3 = 5
+	@y4 = 7
+	@y5 = 9
+	@y6 = 11
+	@y7 = 13
+	@y8 = 15
+	@y9 = 17
+	@y10 = 19
+	@y11 = 21
+	@y12 = 23
+	zhanchangzhihui140 = {
+
+		xp_research_type = army
+		xp_unlock_cost = 30
+		
+
+		
+
+		start_year = 140
+
+		melee_infantry = {
+			combat_width = -5
+		}
+		melee_cavalry = {
+			combat_width = -5
+		}
+		sc_infantry = {
+			combat_width = -5
+		}
+		sc_light_infantry = {
+			combat_width = -5
+		}
+		sc_sf_infantry = {
+			combat_width = -5
+		}
+		sc_shield_infantry = {
+			combat_width = -5
+		}
+		sc_mortar_brigade = {
+			combat_width = -5
+		}
+		sc_anti_shield_brigade = {
+			combat_width = -5
+		}
+		sc_shield_tank = {
+			combat_width = -5
+		}
+		ma_infantry = {
+			combat_width = -5
+		}
+		ma_light_infantry = {
+			combat_width = -5
+		}
+		ma_sf_infantry = {
+			combat_width = -5
+		}
+		ma_magic_energy_brigade = {
+			combat_width = -5
+		}
+		ma_magic_focus_brigade = {
+			combat_width = -5
+		}
+		ma_shield_infantry = {
+			combat_width = -5
+		}
+		ma_shield_tank = {
+			combat_width = -5
+		}
+
+		on_research_complete = {
+			army_experience = 10
+		}
+
+
+		path = {
+			leads_to_tech = zuzhihuazhanzheng142
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			basic_doctrine
+			military
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 0 y = 1 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	zhanchangzhihui145 = {
+		xp_research_type = army
+		xp_unlock_cost = 30
+		
+
+		
+
+		start_year = 145
+
+		on_research_complete = {
+			army_experience = 10
+		}
+
+		melee_infantry = {
+			combat_width = -5
+		}
+		melee_cavalry = {
+			combat_width = -5
+		}
+		sc_infantry = {
+			combat_width = -5
+		}
+		sc_light_infantry = {
+			combat_width = -5
+		}
+		sc_sf_infantry = {
+			combat_width = -5
+		}
+		sc_shield_infantry = {
+			combat_width = -5
+		}
+		sc_mortar_brigade = {
+			combat_width = -5
+		}
+		sc_anti_shield_brigade = {
+			combat_width = -5
+		}
+		sc_shield_tank = {
+			combat_width = -5
+		}
+		ma_infantry = {
+			combat_width = -5
+		}
+		ma_light_infantry = {
+			combat_width = -5
+		}
+		ma_sf_infantry = {
+			combat_width = -5
+		}
+		ma_magic_energy_brigade = {
+			combat_width = -5
+		}
+		ma_magic_focus_brigade = {
+			combat_width = -5
+		}
+		ma_shield_infantry = {
+			combat_width = -5
+		}
+		ma_shield_tank = {
+			combat_width = -5
+		}
+
+		path = {
+			leads_to_tech = zuzhihuazhanzheng147
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			basic_doctrine
+			military
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 0 y = 3 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	zhanchangzhihui150 = {
+		xp_research_type = army
+		xp_unlock_cost = 30
+		
+
+		
+
+		start_year = 150
+
+		on_research_complete = {
+			army_experience = 10
+		}
+
+		melee_infantry = {
+			combat_width = -5
+		}
+		melee_cavalry = {
+			combat_width = -5
+		}
+		sc_infantry = {
+			combat_width = -5
+		}
+		sc_light_infantry = {
+			combat_width = -5
+		}
+		sc_sf_infantry = {
+			combat_width = -5
+		}
+		sc_shield_infantry = {
+			combat_width = -5
+		}
+		sc_mortar_brigade = {
+			combat_width = -5
+		}
+		sc_anti_shield_brigade = {
+			combat_width = -5
+		}
+		sc_shield_tank = {
+			combat_width = -5
+		}
+		ma_infantry = {
+			combat_width = -5
+		}
+		ma_light_infantry = {
+			combat_width = -5
+		}
+		ma_sf_infantry = {
+			combat_width = -5
+		}
+		ma_magic_energy_brigade = {
+			combat_width = -5
+		}
+		ma_magic_focus_brigade = {
+			combat_width = -5
+		}
+		ma_shield_infantry = {
+			combat_width = -5
+		}
+		ma_shield_tank = {
+			combat_width = -5
+		}
+
+		
+
+		path = {
+			leads_to_tech = zuzhihuazhanzheng152
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			basic_doctrine
+			military
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 0 y = 5 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	zhanchangzhihui155 = {
+		xp_research_type = army
+		xp_unlock_cost = 30
+		
+
+		
+
+		start_year = 155
+		melee_infantry = {
+			combat_width = -5
+		}
+		melee_cavalry = {
+			combat_width = -5
+		}
+		sc_infantry = {
+			combat_width = -5
+		}
+		sc_light_infantry = {
+			combat_width = -5
+		}
+		sc_sf_infantry = {
+			combat_width = -5
+		}
+		sc_shield_infantry = {
+			combat_width = -5
+		}
+		sc_mortar_brigade = {
+			combat_width = -5
+		}
+		sc_anti_shield_brigade = {
+			combat_width = -5
+		}
+		sc_shield_tank = {
+			combat_width = -5
+		}
+		ma_infantry = {
+			combat_width = -5
+		}
+		ma_light_infantry = {
+			combat_width = -5
+		}
+		ma_sf_infantry = {
+			combat_width = -5
+		}
+		ma_magic_energy_brigade = {
+			combat_width = -5
+		}
+		ma_magic_focus_brigade = {
+			combat_width = -5
+		}
+		ma_shield_infantry = {
+			combat_width = -5
+		}
+		ma_shield_tank = {
+			combat_width = -5
+		}
+
+		on_research_complete = {
+			army_experience = 10
+		}
+
+		
+
+		path = {
+			leads_to_tech = zuzhihuazhanzheng157
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			basic_doctrine
+			military
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 0 y = 7 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	zhanchangzhihui160 = {
+		xp_research_type = army
+		xp_unlock_cost = 30
+		
+
+		
+
+		start_year = 160
+
+		melee_infantry = {
+			combat_width = -5
+		}
+		melee_cavalry = {
+			combat_width = -5
+		}
+		sc_infantry = {
+			combat_width = -5
+		}
+		sc_light_infantry = {
+			combat_width = -5
+		}
+		sc_sf_infantry = {
+			combat_width = -5
+		}
+		sc_shield_infantry = {
+			combat_width = -5
+		}
+		sc_mortar_brigade = {
+			combat_width = -5
+		}
+		sc_anti_shield_brigade = {
+			combat_width = -5
+		}
+		sc_shield_tank = {
+			combat_width = -5
+		}
+		ma_infantry = {
+			combat_width = -5
+		}
+		ma_light_infantry = {
+			combat_width = -5
+		}
+		ma_sf_infantry = {
+			combat_width = -5
+		}
+		ma_magic_energy_brigade = {
+			combat_width = -5
+		}
+		ma_magic_focus_brigade = {
+			combat_width = -5
+		}
+		ma_shield_infantry = {
+			combat_width = -5
+		}
+		ma_shield_tank = {
+			combat_width = -5
+		}
+
+		on_research_complete = {
+			army_experience = 10
+		}
+
+
+
+		path = {
+			leads_to_tech = zuzhihuazhanzheng162
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			basic_doctrine
+			military
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 0 y = 9 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	zuzhihuazhanzheng142 = {
+		xp_research_type = army
+		xp_unlock_cost = 30
+		
+
+		
+
+		start_year = 142
+
+		melee_infantry = {
+			max_organisation = 3
+		}
+
+		path = {
+			leads_to_tech = zhanchangzhihui145
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			basic_doctrine
+			military
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 3 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	zuzhihuazhanzheng147 = {
+		xp_research_type = army
+		xp_unlock_cost = 30
+		
+
+		
+
+		start_year = 147
+
+		on_research_complete = {
+
+		}
+
+		ma_infantry = {
+			max_organisation = 3
+		}
+		sc_infantry = {
+			max_organisation = 3
+		}
+		ma_light_infantry = {
+			max_organisation = 3
+		}
+		sc_light_infantry = {
+			max_organisation = 3
+		}
+
+		path = {
+			leads_to_tech = zhanchangzhihui150
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			basic_doctrine
+			military
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 3 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	zuzhihuazhanzheng152 = {
+		xp_research_type = army
+		xp_unlock_cost = 30
+		
+
+		
+
+		start_year = 152
+
+		melee_cavalry = {
+			max_organisation = 3
+		}
+		ma_sf_infantry = {
+			max_organisation = 5
+		}
+		sc_sf_infantry = {
+			max_organisation = 5
+		}
+
+		path = {
+			leads_to_tech = zhanchangzhihui155
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			basic_doctrine
+			military
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 3 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	zuzhihuazhanzheng157 = {
+		xp_research_type = army
+		xp_unlock_cost = 30
+		
+
+		
+
+		start_year = 157
+
+		ma_shield_infantry = {
+			max_organisation = 5
+		}
+		sc_shield_infantry = {
+			max_organisation = 5
+		}
+		ma_shield_tank = {
+			max_organisation = 3
+		}
+		sc_shield_tank = {
+			max_organisation = 3
+		}
+
+		path = {
+			leads_to_tech = zhanchangzhihui160
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			basic_doctrine
+			military
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 3 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	zuzhihuazhanzheng162 = {
+		xp_research_type = army
+		xp_unlock_cost = 30
+		
+
+		
+
+		start_year = 162
+
+		ma_shield_infantry = {
+			max_organisation = 2
+		}
+		sc_shield_infantry = {
+			max_organisation = 2
+		}
+		ma_shield_tank = {
+			max_organisation = 2
+		}
+		sc_shield_tank = {
+			max_organisation = 2
+		}
+		ma_infantry = {
+			max_organisation = 2
+		}
+		sc_infantry = {
+			max_organisation = 2
+		}
+		
+		categories = {
+			basic_doctrine
+			military
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 3 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	xianlieduixing = {
+		xp_research_type = army
+		xp_unlock_cost = 50
+		
+
+		dependencies = {
+            zuzhihuazhanzheng147 = 1
+        }
+
+		xor = {  jingyingxunlian paobingzhenxian } 
+
+		path = {
+			leads_to_tech = juezhanjihua
+			research_cost_coeff = 1
+		}
+
+		ma_infantry = {
+			max_organisation = 15
+		}
+		sc_infantry = {
+			max_organisation = 15
+		}
+		land_reinforce_rate = 0.02
+			
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			land_doctrine
+			jitizhuyi
+			military
+		}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @x2 y = @y1 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	juezhanjihua = {
+		xp_research_type = army
+		xp_unlock_cost = 50
+		
+
+		path = {
+			leads_to_tech = cidaochongfeng
+			research_cost_coeff = 1
+		}
+
+		enable_tactic = tactic_planned_attack
+
+		max_planning = 0.2
+			
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			land_doctrine
+			jitizhuyi
+			military
+		}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @x2 y = @y2 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	cidaochongfeng = {
+		xp_research_type = army
+		xp_unlock_cost = 50
+		
+
+		path = {
+			leads_to_tech = daguimodongyuan
+			research_cost_coeff = 1
+		}
+
+		enable_tactic = tactic_unexpected_thrust
+		
+		ma_infantry = {
+			combat_width = -5
+		}
+		sc_infantry = {
+			combat_width = -5
+		}
+		land_reinforce_rate = 0.04
+
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			land_doctrine
+			jitizhuyi
+			military
+		}
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @x2 y = @y3 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	daguimodongyuan = {
+		xp_research_type = army
+		xp_unlock_cost = 50
+		
+
+		path = {
+			leads_to_tech = qianyanzhonghuoli
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tujixiaodui
+			research_cost_coeff = 1
+		}
+
+		conscription_factor = 0.025
+		no_supply_grace = 48
+			
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			land_doctrine
+			jitizhuyi
+			military
+		}
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @x2 y = @y4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	qianyanzhonghuoli = {
+		xp_research_type = army
+		xp_unlock_cost = 50
+		
+
+		path = {
+			leads_to_tech = zhuanjin
+			research_cost_coeff = 1
+		}
+
+		xor = {
+			tujixiaodui
+		}
+			
+		doctrine = yes	
+		research_cost = 3
+
+		enable_tactic = tactic_overwhelming_fire
+
+		ma_magic_energy_brigade = {
+			max_organisation = 5
+			breakthrough = 0.15
+		}
+		sc_mortar_brigade = {
+			max_organisation = 5
+			breakthrough = 0.15
+		}
+		
+		categories = {
+			land_doctrine
+			jitizhuyi
+			military
+		}
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @x1 y = @y5 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	zhuanjin = {
+		xp_research_type = army
+		xp_unlock_cost = 50
+		
+
+		path = {
+			leads_to_tech = yuhuizhanshu
+			research_cost_coeff = 1
+		}
+			
+		doctrine = yes	
+		research_cost = 3
+
+		enable_tactic = tactic_elastic_defense
+
+		ma_shield_infantry = {
+			max_organisation = 5
+			default_morale = 0.01
+		}
+		sc_shield_infantry = {
+			max_organisation = 5
+			default_morale = 0.01
+		}
+		
+		categories = {
+			land_doctrine
+			jitizhuyi
+			military
+		}
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @x1 y = @y6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	tujixiaodui = {
+		xp_research_type = army
+		xp_unlock_cost = 50
+		
+
+		path = {
+			leads_to_tech = qianxingshentou
+			research_cost_coeff = 1
+		}
+
+		xor = {
+			qianyanzhonghuoli
+			daguimojidonghua
+		}
+
+		enable_tactic = tactic_relentless_assault
+
+		ma_infantry = {
+			ap_attack = 1
+			default_morale = 0.01
+		}
+		sc_infantry = {
+			ap_attack = 1
+			default_morale = 0.01
+		}
+		melee_infantry = {
+			ap_attack = 1
+			default_morale = 0.01
+		}
+		melee_cavalry = {
+			ap_attack = 1
+			default_morale = 0.01
+		}
+			
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			land_doctrine
+			jitizhuyi
+			yingxiongzhuyi
+			military
+		}
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @x3 y = @y5 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	qianxingshentou = {
+		xp_research_type = army
+		xp_unlock_cost = 50
+		
+
+		path = {
+			leads_to_tech = yuhuizhanshu
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = yazhipaoji
+			research_cost_coeff = 1
+		}
+
+		enable_tactic = tactic_infantry_charge
+
+		ma_light_infantry = {
+			maximum_speed = 0.1
+		}
+		sc_light_infantry = {
+			maximum_speed = 0.1
+		}
+			
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			land_doctrine
+			jitizhuyi
+			yingxiongzhuyi
+			military
+		}
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @x3 y = @y6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	yuhuizhanshu = {
+		xp_research_type = army
+		xp_unlock_cost = 50
+		
+
+		dependencies = {
+            xianlieduixing = 1
+        }
+		path = {
+			leads_to_tech = kuandazhanxianzuozhan
+			research_cost_coeff = 1
+		}
+			
+		doctrine = yes	
+		research_cost = 3
+
+		melee_infantry = {
+			default_morale = 0.01
+		}
+		melee_cavalry = {
+			default_morale = 0.01
+		}
+		land_reinforce_rate = 0.02
+		
+		categories = {
+			land_doctrine
+			jitizhuyi
+			military
+		}
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @x2 y = @y7 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	kuandazhanxianzuozhan = {
+		xp_research_type = army
+		xp_unlock_cost = 50
+		
+
+		path = {
+			leads_to_tech = quanminzhanzheng
+			research_cost_coeff = 1
+		}
+
+		supply_consumption_factor = -0.15
+			
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			land_doctrine
+			jitizhuyi
+			military
+		}
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @x2 y = @y8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	quanminzhanzheng = {
+		xp_research_type = army
+		xp_unlock_cost = 50
+		
+
+		path = {
+			leads_to_tech = zhuangjiaxingdong
+			research_cost_coeff = 1
+		}
+			
+		doctrine = yes	
+		research_cost = 3
+
+		enable_tactic = tactic_guerrilla_tactics
+
+		ma_infantry = {
+			max_organisation = 5
+		}
+		ma_light_infantry = {
+			max_organisation = 5
+		}
+		ma_shield_infantry = {
+			max_organisation = 5
+		}
+		ma_sf_infantry = {
+			max_organisation = 5
+		}
+		sc_infantry = {
+			max_organisation = 5
+		}
+		sc_light_infantry = {
+			max_organisation = 5
+		}
+		sc_shield_infantry = {
+			max_organisation = 5
+		}
+		sc_sf_infantry = {
+			max_organisation = 5
+		}
+		land_reinforce_rate = 0.02
+		
+		categories = {
+			land_doctrine
+			jitizhuyi
+			military
+		}
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @x2 y = @y9 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	zhuangjiaxingdong = {
+		xp_research_type = army
+		xp_unlock_cost = 50
+		
+			
+		doctrine = yes	
+		research_cost = 3
+
+		sc_shield_tank = {
+			max_organisation = 5
+		}
+		ma_shield_tank = {
+			max_organisation = 5
+		}
+
+		enable_tactic = tactic_breakthrough
+		
+		categories = {
+			land_doctrine
+			jitizhuyi
+			military
+		}
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @x2 y = @y10 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	jingyingxunlian = {
+		xp_research_type = army
+		xp_unlock_cost = 50
+		
+
+		dependencies = {
+            zuzhihuazhanzheng147 = 1
+        }
+
+		xor = {  xianlieduixing paobingzhenxian } 
+
+		path = {
+			leads_to_tech = chizhi
+			research_cost_coeff = 1
+		}
+
+		sc_light_infantry = {
+			max_organisation = 10
+		}
+		sc_sf_infantry = {
+			max_organisation = 10
+		}
+		ma_light_infantry = {
+			max_organisation = 10
+		}
+		ma_sf_infantry = {
+			max_organisation = 10
+		}
+			
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			land_doctrine
+			yingxiongzhuyi
+			military
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @x4 y = @y1 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	chizhi = {
+		xp_research_type = army
+		xp_unlock_cost = 50
+		
+
+
+		path = {
+			leads_to_tech = renwuxingzhihui
+			research_cost_coeff = 1
+		}
+			
+		doctrine = yes	
+		research_cost = 3
+
+		enable_tactic = tactic_delay
+
+		sc_infantry = {
+			max_organisation = 5
+		}
+		ma_infantry = {
+			max_organisation = 5
+		}
+		land_reinforce_rate = 0.02
+		
+		categories = {
+			land_doctrine
+			yingxiongzhuyi
+			military
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @x4 y = @y2 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	renwuxingzhihui = {
+		xp_research_type = army
+		xp_unlock_cost = 50
+		
+
+
+		path = {
+			leads_to_tech = tezhongzuozhan
+			research_cost_coeff = 1
+		}
+			
+		doctrine = yes	
+		research_cost = 3
+
+		sc_mortar_brigade = {
+			max_organisation = 10
+			breakthrough = 0.1
+			defense = 0.1
+		}
+		ma_magic_energy_brigade = {
+			max_organisation = 10
+			breakthrough = 0.1
+			defense = 0.1
+		}
+		sc_anti_shield_brigade = {
+			max_organisation = 10
+			breakthrough = 0.1
+			defense = 0.1
+		}
+		ma_magic_focus_brigade = {
+			max_organisation = 10
+			breakthrough = 0.1
+			defense = 0.1
+		}
+		
+		categories = {
+			land_doctrine
+			yingxiongzhuyi
+			military
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @x4 y = @y3 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	tezhongzuozhan = {
+		xp_research_type = army
+		xp_unlock_cost = 50
+		
+
+
+		path = {
+			leads_to_tech = tujixiaodui
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = daguimojidonghua
+			research_cost_coeff = 1
+		}
+
+		enable_tactic = tactic_unexpected_thrust
+			
+		doctrine = yes	
+		research_cost = 3
+
+		sc_light_infantry = {
+			default_morale = 0.02
+		}
+		sc_sf_infantry = {
+			default_morale = 0.02
+		}
+		sc_anti_shield_brigade = {
+			default_morale = 0.02
+		}
+		ma_light_infantry = {
+			default_morale = 0.02
+		}
+		ma_sf_infantry = {
+			default_morale = 0.02
+		}
+		ma_magic_focus_brigade = {
+			default_morale = 0.02
+		}
+		
+		categories = {
+			land_doctrine
+			yingxiongzhuyi
+			military
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @x4 y = @y4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	daguimojidonghua = {
+		xp_research_type = army
+		xp_unlock_cost = 50
+		
+
+		path = {
+			leads_to_tech = tanxingfangyu
+			research_cost_coeff = 1
+		}
+		
+		xor = {
+			tujixiaodui chuancidanmu
+		}
+
+		enable_tactic = tactic_blitz
+
+
+		melee_cavalry = {
+			max_organisation = 10
+		}
+		ma_sf_infantry = {
+			max_organisation = 10
+		}
+		ma_shield_tank = {
+			max_organisation = 10
+		}
+		sc_sf_infantry = {
+			max_organisation = 10
+		}
+		sc_shield_tank = {
+			max_organisation = 10
+		}
+			
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			land_doctrine
+			yingxiongzhuyi
+			xinxingkeji
+			military
+		}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @x5 y = @y5 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	tanxingfangyu = {
+		xp_research_type = army
+		xp_unlock_cost = 50
+		
+
+		path = {
+			leads_to_tech = yazhipaoji
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = bolanggongshi
+			research_cost_coeff = 1
+		}
+
+		enable_tactic = tactic_elastic_defense
+
+
+		ma_shield_infantry = {
+			default_morale = 0.02
+			max_organisation = 10
+		}
+		sc_shield_infantry = {
+			default_morale = 0.02
+			max_organisation = 10
+		}
+			
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			land_doctrine
+			yingxiongzhuyi
+			xinxingkeji
+			military
+		}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @x5 y = @y6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	yazhipaoji = {
+		xp_research_type = army
+		xp_unlock_cost = 50
+		
+
+		dependencies = {
+            jingyingxunlian = 1
+        }
+		path = {
+			leads_to_tech = zhanshuchetui
+			research_cost_coeff = 1
+		}
+
+		enable_tactic = tactic_overwhelming_fire
+		
+		sc_mortar_brigade = {
+			default_morale = 0.01
+			breakthrough = 0.05
+		}
+		ma_magic_focus_brigade = {
+			default_morale = 0.01
+			breakthrough = 0.05
+		}
+
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			land_doctrine
+			yingxiongzhuyi
+			military
+		}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @x4 y = @y7 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	zhanshuchetui = {
+		xp_research_type = army
+		xp_unlock_cost = 50
+		
+
+		path = {
+			leads_to_tech = youshihuoli
+			research_cost_coeff = 1
+		}
+
+		enable_tactic = tactic_tactical_withdrawal
+			
+		doctrine = yes	
+		research_cost = 3
+
+		land_reinforce_rate = 0.03
+		
+		categories = {
+			land_doctrine
+			yingxiongzhuyi
+			military
+		}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @x4 y = @y8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	youshihuoli = {
+		xp_research_type = army
+		xp_unlock_cost = 50
+		
+
+		path = {
+			leads_to_tech = yundongzhan
+			research_cost_coeff = 1
+		}
+
+		ma_sf_infantry = {
+			defense = 0.15
+			max_organisation = 15
+		}
+		ma_shield_infantry = {
+			defense = 0.15
+			max_organisation = 15
+		}
+		sc_sf_infantry = {
+			defense = 0.15
+			max_organisation = 15
+		}
+		sc_shield_infantry = {
+			defense = 0.15
+			max_organisation = 15
+		}
+			
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			land_doctrine
+			yingxiongzhuyi
+			military
+		}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @x4 y = @y9 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	yundongzhan = {
+		xp_research_type = army
+		xp_unlock_cost = 50
+		
+			
+		doctrine = yes	
+		research_cost = 3
+
+		enable_tactic = tactic_guerrilla_tactics
+
+		ma_light_infantry = {
+			breakthrough = 0.1
+			max_organisation = 10
+		}
+		ma_sf_infantry = {
+			breakthrough = 0.1
+			max_organisation = 10
+		}
+		ma_shield_infantry = {
+			breakthrough = 0.1
+			max_organisation = 10
+		}
+		sc_light_infantry = {
+			breakthrough = 0.1
+			max_organisation = 10
+		}
+		sc_sf_infantry = {
+			breakthrough = 0.1
+			max_organisation = 10
+		}
+		sc_shield_infantry = {
+			breakthrough = 0.1
+			max_organisation = 10
+		}
+		
+		categories = {
+			land_doctrine
+			yingxiongzhuyi
+			military
+		}
+
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @x4 y = @y10 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+	paobingzhenxian = {
+		xp_research_type = army
+		xp_unlock_cost = 50
+		
+
+		dependencies = {
+            zuzhihuazhanzheng147 = 1
+        }
+
+		xor = {  xianlieduixing jingyingxunlian } 
+
+		path = {
+			leads_to_tech = jidongzuozhan
+			research_cost_coeff = 1
+		}
+
+		enable_tactic = tactic_overwhelming_fire
+
+		ma_magic_energy_brigade = {
+			max_organisation = 10
+			default_morale = 0.01
+			soft_attack = 0.1
+			hard_attack = 0.1
+		}
+		sc_mortar_brigade = {
+			max_organisation = 10
+			default_morale = 0.01
+			soft_attack = 0.1
+			hard_attack = 0.1
+		}
+			
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			land_doctrine
+			xinxingkeji
+			military
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @x6 y = @y1 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	jidongzuozhan = {
+		xp_research_type = army
+		xp_unlock_cost = 50
+		
+
+
+		path = {
+			leads_to_tech = kuaisushentou
+			research_cost_coeff = 1
+		}
+
+		enable_tactic = tactic_unexpected_thrust
+
+			
+		doctrine = yes	
+		research_cost = 3
+
+		ma_light_infantry = {
+			maximum_speed = 0.1
+		}
+		ma_shield_infantry = {
+			maximum_speed = 0.1
+		}
+		sc_light_infantry = {
+			maximum_speed = 0.1
+		}
+		sc_shield_infantry = {
+			maximum_speed = 0.1
+		}
+		
+		categories = {
+			land_doctrine
+			xinxingkeji
+			military
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @x6 y = @y2 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	kuaisushentou = {
+		xp_research_type = army
+		xp_unlock_cost = 50
+		
+
+
+		path = {
+			leads_to_tech = zhuangjiayanhu
+			research_cost_coeff = 1
+		}
+
+		melee_cavalry = {
+			breakthrough = 0.15
+			max_organisation = 15
+		}
+
+		enable_tactic = tactic_infantry_charge
+			
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			land_doctrine
+			xinxingkeji
+			military
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @x6 y = @y3 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	zhuangjiayanhu = {
+		xp_research_type = army
+		xp_unlock_cost = 50
+		
+
+		path = {
+			leads_to_tech = daguimojidonghua
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = chuancidanmu
+			research_cost_coeff = 1
+		}
+
+		enable_tactic = tactic_elastic_defense
+
+		ma_shield_tank = {
+			default_morale = 0.01
+			max_organisation = 10
+		}
+		sc_shield_tank = {
+			default_morale = 0.01
+			max_organisation = 10
+		}
+			
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			land_doctrine
+			xinxingkeji
+			military
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @x6 y = @y4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	chuancidanmu = {
+		xp_research_type = army
+		xp_unlock_cost = 50
+		
+
+		path = {
+			leads_to_tech = butanxietong
+			research_cost_coeff = 1
+		}
+
+		xor = {
+			daguimojidonghua
+		}
+			
+		doctrine = yes	
+		research_cost = 3
+
+		ma_magic_energy_brigade = {
+			ap_attack = 0.33
+			max_organisation = 5
+		}
+		sc_mortar_brigade = {
+			ap_attack = 0.33
+			max_organisation = 5
+		}
+		ma_magic_focus_brigade = {
+			ap_attack = 0.33
+			max_organisation = 5
+		}
+		sc_anti_shield_brigade = {
+			ap_attack = 0.33
+			max_organisation = 5
+		}
+		
+		categories = {
+			land_doctrine
+			xinxingkeji
+			military
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @x7 y = @y5 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	butanxietong = {
+		xp_research_type = army
+		xp_unlock_cost = 50
+		
+
+		path = {
+			leads_to_tech = bolanggongshi
+			research_cost_coeff = 1
+		}
+
+		enable_tactic = tactic_blitz
+
+		doctrine = yes	
+		research_cost = 3
+
+		ma_shield_tank = {
+			max_organisation = 10
+		}
+		ma_infantry = {
+			max_organisation = 10
+		}
+		sc_shield_tank = {
+			max_organisation = 10
+		}
+		sc_infantry = {
+			max_organisation = 10
+		}
+		
+		categories = {
+			land_doctrine
+			xinxingkeji
+			military
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @x7 y = @y6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	bolanggongshi = {
+		xp_research_type = army
+		xp_unlock_cost = 50
+		
+
+		dependencies = {
+            paobingzhenxian = 1
+        }
+		path = {
+			leads_to_tech = chixuqiangxi
+			research_cost_coeff = 1
+		}
+
+		melee_cavalry = {
+			default_morale = 0.01
+		}
+		ma_sf_infantry = {
+			default_morale = 0.01
+		}
+		ma_shield_tank = {
+			default_morale = 0.01
+		}
+		sc_sf_infantry = {
+			default_morale = 0.01
+		}
+		sc_shield_tank = {
+			default_morale = 0.01
+		}
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			land_doctrine
+			xinxingkeji
+			military
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @x6 y = @y7 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	chixuqiangxi = {
+		xp_research_type = army
+		xp_unlock_cost = 50
+		
+
+		path = {
+			leads_to_tech = tupo
+			research_cost_coeff = 1
+		}
+
+		enable_tactic = tactic_relentless_assault
+
+		land_reinforce_rate = 0.01
+		melee_cavalry = {
+			defense = 0.25
+		}
+		ma_sf_infantry = {
+			defense = 0.25
+		}
+		ma_shield_infantry = {
+			defense = 0.25
+		}
+		sc_sf_infantry = {
+			defense = 0.25
+		}
+		sc_shield_infantry = {
+			defense = 0.25
+		}
+			
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			land_doctrine
+			xinxingkeji
+			military
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @x6 y = @y8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	tupo = {
+		xp_research_type = army
+		xp_unlock_cost = 50
+		
+
+		path = {
+			leads_to_tech = zhuangjiaxianfeng 
+			research_cost_coeff = 1
+		}
+
+			
+		doctrine = yes	
+		research_cost = 3
+
+		enable_tactic = tactic_breakthrough
+
+
+		ma_magic_energy_brigade = {
+			maximum_speed = 0.1
+		}
+		ma_magic_focus_brigade = {
+			maximum_speed = 0.1
+		}
+		sc_mortar_brigade = {
+			maximum_speed = 0.1
+		}
+		sc_anti_shield_brigade = {
+			maximum_speed = 0.1
+		}
+		
+		categories = {
+			land_doctrine
+			xinxingkeji
+			military
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @x6 y = @y9 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	zhuangjiaxianfeng = {
+		xp_research_type = army
+		xp_unlock_cost = 50
+		
+			
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			land_doctrine
+			xinxingkeji
+			military
+		}
+
+		ma_shield_tank = {
+			max_organisation = 5
+			armor_value = 0.15
+		}
+		sc_shield_tank = {
+			max_organisation = 5
+			armor_value = 0.15
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = @x6 y = @y10 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

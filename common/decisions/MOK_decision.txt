@@ -1,0 +1,880 @@
+MOK_test = {
+
+    MOK_luxingxieding1 = {
+         cost = 50
+        visible = {
+        tag = MOK
+        has_completed_focus = MOK_4 
+        not = {
+               has_country_flag = MOK_yuanbenxunlian
+        }
+        }
+        available = {
+        tag = MOK
+        has_completed_focus = MOK_4 
+        not = {
+               has_country_flag = MOK_yuanbenxunlian
+        }
+        }
+        complete_effect = {   
+           set_country_flag = MOK_wailaixunlian
+        }
+        remove_effect = {
+            army_experience = 25
+            set_country_flag = MOK_wailaixunlian
+             add_power_balance_value = {
+                id = MOK_junguanduoquan_power_balance
+                value = -0.05
+            }
+        }
+        modifier = {
+            #consumer_goods_factor = -0.05
+        }
+        fire_only_once = yes
+        days_remove = 5
+        ai_will_do = {
+			factor = 50
+		}
+
+    }
+     MOK_luxingxieding2 = {
+         cost = 50
+        visible = {
+         tag = MOK
+        has_completed_focus = MOK_4 
+        not = {
+               has_country_flag = MOK_wailaixunlian
+        }
+        }
+        available = {
+           tag = MOK
+        has_completed_focus = MOK_4 
+        not = {
+               has_country_flag = MOK_wailaixunlian
+        }
+        }
+        complete_effect = {   
+           set_country_flag = MOK_yuanbenxunlian
+        }
+        remove_effect = {
+            army_experience = 10
+            set_country_flag = MOK_yuanbenxunlian
+            add_power_balance_value = {
+                id = MOK_junguanduoquan_power_balance
+                value = 0.05
+            }
+        }
+        modifier = {
+           # consumer_goods_factor = 0.05
+        }
+        fire_only_once = yes
+        days_remove = 5
+        ai_will_do = {
+			factor = 50
+		}
+
+    }
+    MOK_lianminbing1 = {
+         cost = 50
+        visible = {
+         tag = MOK
+        has_completed_focus = MOK_7
+        not = {
+               has_country_flag = MOK_zijingtuanlianminbing
+        }
+        }
+        available = {
+           tag = MOK
+        has_completed_focus = MOK_7
+        not = {
+               has_country_flag = MOK_zijingtuanlianminbing
+        }
+        }
+        complete_effect = {   
+           set_country_flag = MOK_pantaobuduilianminbing
+        }
+        remove_effect = {
+            army_experience = 10
+            set_country_flag = MOK_pantaobuduilianminbing
+            add_ideas = { MOK_minbingbudui_idea_1 }
+
+            add_power_balance_value = {
+                id = MOK_junguanduoquan_power_balance
+                value = -0.05
+            }
+        }
+        modifier = {
+           # consumer_goods_factor = 0.05
+        }
+        fire_only_once = yes
+        days_remove = 5
+        ai_will_do = {
+			factor = 50
+		}
+
+    }
+    MOK_lianminbing2 = {
+         cost = 50
+        visible = {
+         tag = MOK
+        has_completed_focus = MOK_7
+        not = {
+               has_country_flag = MOK_pantaobuduilianminbing
+        }
+        }
+        available = {
+           tag = MOK
+        has_completed_focus = MOK_7
+        not = {
+               has_country_flag = MOK_pantaobuduilianminbing
+        }
+        }
+        complete_effect = {   
+           set_country_flag = MOK_zijingtuanlianminbing
+        }
+        remove_effect = {
+            army_experience = 5
+            set_country_flag = MOK_zijingtuanlianminbing
+            add_ideas = { MOK_minbingbudui_idea_2 }
+
+            add_power_balance_value = {
+                id = MOK_junguanduoquan_power_balance
+                value = 0.05
+            }
+        }
+        modifier = {
+           # consumer_goods_factor = 0.05
+        }
+        fire_only_once = yes
+        days_remove = 5
+        ai_will_do = {
+			factor = 50
+		}
+
+    }
+     MOK_zhongshibubing = {
+         cost = 50
+        visible = {
+         tag = MOK
+        has_completed_focus = MOK_8
+        not = {
+               has_country_flag = MOK_zhongshilehuopao
+        }
+        }
+        available = {
+           tag = MOK
+        has_completed_focus = MOK_8
+        not = {
+               has_country_flag = MOK_zhongshilehuopao
+        }
+        }
+        complete_effect = {   
+           set_country_flag = MOK_zhongshilebubing
+        }
+        remove_effect = {
+            army_experience = 5
+            set_country_flag = MOK_zhongshilebubing
+            add_ideas = { MOK_zhongshibubing_idea }
+
+            add_power_balance_value = {
+                id = MOK_junguanduoquan_power_balance
+                value = 0.05
+            }
+        }
+        modifier = {
+           # consumer_goods_factor = 0.05
+        }
+        fire_only_once = yes
+        days_remove = 5
+        ai_will_do = {
+			factor = 50
+		}
+
+    }
+    MOK_zhongshipaobing = {
+         cost = 50
+        visible = {
+         tag = MOK
+        has_completed_focus = MOK_8
+        not = {
+               has_country_flag = MOK_zhongshilebubing
+        }
+        }
+        available = {
+           tag = MOK
+        has_completed_focus = MOK_8
+        not = {
+               has_country_flag = MOK_zhongshilebubing
+        }
+        }
+        complete_effect = {   
+           set_country_flag = MOK_zhongshilehuopao
+        }
+        remove_effect = {
+            army_experience = 5
+            set_country_flag = MOK_zhongshilehuopao
+            add_ideas = { MOK_zhongshihuopao_idea }
+
+            add_power_balance_value = {
+                id = MOK_junguanduoquan_power_balance
+                value = -0.05
+            }
+            add_tech_bonus = {
+			bonus = 2
+			uses = 1
+			category = artillery_tech
+		}
+        }
+        modifier = {
+           # consumer_goods_factor = 0.05
+        }
+        fire_only_once = yes
+        days_remove = 5
+        ai_will_do = {
+			factor = 50
+		}
+
+    }
+      
+  }
+MOK_lueduowuqi = {
+   MOK_qiangINBqiang1 = {
+         cost = 10
+        visible = {
+         tag = MOK
+        has_completed_focus = MOK_9
+        country_exists = INB
+        is_neighbor_of = INB
+        NOT = {
+			has_war_with = INB
+		}
+
+        }
+        
+        available = {
+        NOT = {
+			has_war_with = INB
+		}
+        INB = {
+         has_equipment = { 
+				gun_a > 499
+			}
+        }
+        }
+        complete_effect = {  
+         add_manpower = -10 
+        }
+        remove_effect = {
+            add_manpower = 10
+            MOK = {
+		add_equipment_to_stockpile = {
+					type = gun_a
+					amount = 500
+				}
+		}
+      INB = {
+         add_equipment_to_stockpile = {
+					type = gun_a
+					amount = -500
+				}
+      }
+        }
+        modifier = {
+           # consumer_goods_factor = 0.05
+        }
+        fire_only_once = no
+        days_remove = 5
+        ai_will_do = {
+			factor = 50
+		}
+
+    }
+    MOK_qiangRGOqiang1 = {
+         cost = 10
+        visible = {
+         tag = MOK
+        has_completed_focus = MOK_9
+        country_exists = RGO
+        is_neighbor_of = RGO
+        NOT = {
+			has_war_with = RGO
+		}
+        }
+        
+        available = {
+        NOT = {
+			has_war_with = RGO
+		}
+        RGO = {
+         has_equipment = { 
+				gun_a > 499
+			}
+        }
+        }
+        complete_effect = {  
+         add_manpower = -10 
+        }
+        remove_effect = {
+            add_manpower = 10
+            MOK = {
+		add_equipment_to_stockpile = {
+					type = gun_a
+					amount = 500
+				}
+		}
+      RGO = {
+         add_equipment_to_stockpile = {
+					type = gun_a
+					amount = -500
+				}
+      }
+      set_country_flag = MOK_lueduoguoRGO
+        }
+        modifier = {
+           # consumer_goods_factor = 0.05
+        }
+        fire_only_once = no
+        days_remove = 5
+        ai_will_do = {
+			factor = 50
+		}
+
+    }
+    MOK_qiangEETqiang1 = {
+         cost = 10
+        visible = {
+         tag = MOK
+        has_completed_focus = MOK_9
+        is_neighbor_of = EET
+        country_exists = EET
+        NOT = {
+			has_war_with = EET
+		}
+
+        }
+        
+        available = {
+       NOT = {
+			has_war_with = EET
+		}
+        
+        EET = {
+         has_equipment = { 
+				gun_a > 499
+			}
+        }
+        }
+        complete_effect = {  
+         add_manpower = -10 
+        }
+        remove_effect = {
+            add_manpower = 10
+            MOK = {
+		add_equipment_to_stockpile = {
+					type = gun_a
+					amount = 500
+				}
+		}
+      EET = {
+         add_equipment_to_stockpile = {
+					type = gun_a
+					amount = -500
+				}
+      }
+        }
+        modifier = {
+           # consumer_goods_factor = 0.05
+        }
+        fire_only_once = no
+        days_remove = 5
+        ai_will_do = {
+			factor = 50
+		}
+
+    }
+    MOK_qiangUDOqiang1 = {
+         cost = 10
+        visible = {
+         tag = MOK
+        has_completed_focus = MOK_9
+        country_exists = UDO
+        is_neighbor_of = UDO
+        NOT = {
+			has_war_with = UDO
+		}
+        }
+        
+        available = {
+        UDO = {
+         has_equipment = { 
+				gun_a > 499
+			}
+         NOT = {
+			has_war_with = UDO
+		}
+        }
+        }
+        complete_effect = {  
+         add_manpower = -10 
+        }
+        remove_effect = {
+            add_manpower = 10
+            MOK = {
+		add_equipment_to_stockpile = {
+					type = gun_a
+					amount = 500
+				}
+		}
+      UDO = {
+         add_equipment_to_stockpile = {
+					type = gun_a
+					amount = -500
+				}
+      }
+        }
+        modifier = {
+           # consumer_goods_factor = 0.05
+        }
+        fire_only_once = no
+        days_remove = 5
+        ai_will_do = {
+			factor = 50
+		}
+
+    }
+    MOK_qiangBYAqiang1 = {
+         cost = 10
+        visible = {
+         tag = MOK
+        has_completed_focus = MOK_9
+        country_exists = BYA
+        is_neighbor_of = BYA
+        NOT = {
+			has_war_with = BYA
+		}
+        }
+        
+        available = {
+         NOT = {
+			has_war_with = BYA
+		}
+        BYA = {
+         has_equipment = { 
+				gun_a > 499
+			}
+        }
+        }
+        complete_effect = {  
+         add_manpower = -10 
+        }
+        remove_effect = {
+            add_manpower = 10
+            MOK = {
+		add_equipment_to_stockpile = {
+					type = gun_a
+					amount = 500
+				}
+		}
+      BYA = {
+         add_equipment_to_stockpile = {
+					type = gun_a
+					amount = -500
+				}
+      }
+        }
+        modifier = {
+           # consumer_goods_factor = 0.05
+        }
+        fire_only_once = no
+        days_remove = 5
+        ai_will_do = {
+			factor = 50
+		}
+
+    }
+     MOK_qiangBYApao1 = {
+         cost = 10
+        visible = {
+         tag = MOK
+        has_completed_focus = MOK_9
+        country_exists = BYA
+        is_neighbor_of = BYA
+        NOT = {
+			has_war_with = BYA
+		}
+        }
+        
+        available = {
+         NOT = {
+			has_war_with = BYA
+		}
+        BYA = {
+         has_equipment = { 
+				mortar_a > 35
+			}
+        }
+        }
+        complete_effect = {  
+         add_manpower = -10 
+        }
+        remove_effect = {
+            add_manpower = 10
+            MOK = {
+		add_equipment_to_stockpile = {
+					type = mortar_a
+					amount = 36
+				}
+		}
+      BYA = {
+         add_equipment_to_stockpile = {
+					type = mortar_a
+					amount = -36
+				}
+      }
+        }
+        modifier = {
+           # consumer_goods_factor = 0.05
+        }
+        fire_only_once = no
+        days_remove = 5
+        ai_will_do = {
+			factor = 50
+		}
+
+    }
+     MOK_qiangINBpao1 = {
+         cost = 10
+        visible = {
+         tag = MOK
+        has_completed_focus = MOK_9
+        country_exists = INB
+        is_neighbor_of = INB
+        NOT = {
+			has_war_with = INB
+		}
+        }
+        
+        available = {
+         NOT = {
+			has_war_with = INB
+		}
+        INB = {
+         has_equipment = { 
+				mortar_a > 35
+			}
+        }
+        }
+        complete_effect = {  
+         add_manpower = -10 
+        }
+        remove_effect = {
+            add_manpower = 10
+            MOK = {
+		add_equipment_to_stockpile = {
+					type = mortar_a
+					amount = 36
+				}
+		}
+      INB = {
+         add_equipment_to_stockpile = {
+					type = mortar_a
+					amount = -36
+				}
+      }
+        }
+        modifier = {
+           # consumer_goods_factor = 0.05
+        }
+        fire_only_once = no
+        days_remove = 5
+        ai_will_do = {
+			factor = 50
+		}
+
+    }
+     MOK_qiangRGOpao1 = {
+         cost = 10
+        visible = {
+         tag = MOK
+        has_completed_focus = MOK_9
+        country_exists = RGO
+        is_neighbor_of = RGO
+        NOT = {
+			has_war_with = RGO
+		}
+        }
+        
+        available = {
+         NOT = {
+			has_war_with = RGO
+		}
+       RGO = {
+         has_equipment = { 
+				mortar_a > 35
+			}
+        }
+        }
+        complete_effect = {  
+         add_manpower = -10 
+        }
+        remove_effect = {
+            add_manpower = 10
+            MOK = {
+		add_equipment_to_stockpile = {
+					type = mortar_a
+					amount = 36
+				}
+		}
+      RGO = {
+         add_equipment_to_stockpile = {
+					type = mortar_a
+					amount = -36
+				}
+      }
+      set_country_flag = MOK_lueduoguoRGO
+      
+        }
+        modifier = {
+           # consumer_goods_factor = 0.05
+        }
+        fire_only_once = no
+        days_remove = 5
+        ai_will_do = {
+			factor = 50
+		}
+
+    }
+     MOK_qiangEETpao1 = {
+         cost = 10
+        visible = {
+         tag = MOK
+        has_completed_focus = MOK_9
+        country_exists = EET
+        is_neighbor_of = EET
+        NOT = {
+			has_war_with = EET
+		}
+        }
+        
+        available = {
+         NOT = {
+			has_war_with = EET
+		}
+        EET = {
+         has_equipment = { 
+				mortar_a > 35
+			}
+        }
+        }
+        complete_effect = {  
+         add_manpower = -10 
+        }
+        remove_effect = {
+            add_manpower = 10
+            MOK = {
+		add_equipment_to_stockpile = {
+					type = mortar_a
+					amount = 36
+				}
+		}
+      EET = {
+         add_equipment_to_stockpile = {
+					type = mortar_a
+					amount = -36
+				}
+      }
+        }
+        modifier = {
+           # consumer_goods_factor = 0.05
+        }
+        fire_only_once = no
+        days_remove = 5
+        ai_will_do = {
+			factor = 50
+		}
+
+    }
+     MOK_qiangUDOpao1 = {
+         cost = 10
+        visible = {
+         tag = MOK
+        has_completed_focus = MOK_9
+        country_exists = UDO
+        is_neighbor_of = UDO
+        NOT = {
+			has_war_with = UDO
+		}
+        }
+        
+        available = {
+         NOT = {
+			has_war_with = UDO
+		}
+        UDO = {
+         has_equipment = { 
+				mortar_a > 35
+			}
+        }
+        }
+        complete_effect = {  
+         add_manpower = -10 
+        }
+        remove_effect = {
+            add_manpower = 10
+            MOK = {
+		add_equipment_to_stockpile = {
+					type = mortar_a
+					amount = 36
+				}
+		}
+      UDO = {
+         add_equipment_to_stockpile = {
+					type = mortar_a
+					amount = -36
+				}
+      }
+        }
+        modifier = {
+           # consumer_goods_factor = 0.05
+        }
+        fire_only_once = no
+        days_remove = 5
+        ai_will_do = {
+			factor = 50
+		}
+
+    }
+
+}
+
+MOK_jianlibudui = {
+MOK_qiangbingruwu = {
+         cost = 10
+        visible = {
+         tag = MOK
+        has_completed_focus = MOK_21
+         has_war = yes
+		}
+        
+        
+        available = {
+        	has_war = yes
+         has_equipment = { 
+				gun_a > 19
+			}
+
+        }
+        complete_effect = {  
+      
+        }
+        remove_effect = {
+           296={
+				create_unit={
+					division="division_template = \"国民动员编制\" start_experience_factor = 0.1 start_equipment_factor = 1"
+					owner=MOK
+					prioritize_location=5489
+					allow_spawning_on_enemy_provs=no
+				}
+				}
+            add_equipment_to_stockpile = {
+					type = gun_a
+					amount = -20
+				}
+            add_stability = -0.05
+            add_war_support = -0.05
+			
+         add_manpower = -3
+            
+        }
+        modifier = {
+           # consumer_goods_factor = 0.05
+        }
+        fire_only_once = no
+        days_remove = 5
+        ai_will_do = {
+			factor = 50
+		}
+
+    }
+
+}
+MOK_zhanshidejiangzhuo = {
+ MOK_zhanshidejiangzhuo = {
+        icon = generic_political_actions
+
+        available = {
+            always = no
+        }
+        visible = {
+            has_completed_focus = MOK_20
+        }
+
+        days_mission_timeout = 90
+
+        fire_only_once = no
+        is_good = no
+        activation = {
+            has_war_with = BYA
+            tag = MOK
+        }
+
+        cancel_trigger = {
+            NOT = { has_war_with = BYA }
+           
+        }
+
+        timeout_effect = {
+           add_power_balance_value = {
+                id = MOK_junguanduoquan_power_balance
+                value = -0.1
+            }
+            if = {
+                limit = { has_country_flag = MOK_zhanzhengdejinxing0 }
+               clr_country_flag = MOK_zhanzhengdejinxing0
+               set_country_flag = MOK_zhanzhengdejinxing1
+            }
+          else_if = {
+                limit = { has_country_flag = MOK_zhanzhengdejinxing1 }
+                clr_country_flag = MOK_zhanzhengdejinxing1
+               set_country_flag = MOK_zhanzhengdejinxing2
+    }
+    else_if = {
+                limit = { has_country_flag = MOK_zhanzhengdejinxing2 }
+                clr_country_flag = MOK_zhanzhengdejinxing2
+               set_country_flag = MOK_zhanzhengdejinxing3
+    }
+        }
+        
+
+}
+}
+MOK_zhenghetudi = {
+MOK_zhenghetudi_1 = {
+        visible = {
+            has_completed_focus = MOK_23
+        }
+        state_target = yes
+        target_trigger = {
+            FROM = {
+                is_owned_and_controlled_by = MOK
+                or = {
+                    is_core_of = BYA
+                }
+                not = {has_state_flag = MOK_zhenghetudi_flag}
+            }
+        }
+ 
+        cost = 10
+        days_remove = 30
+        remove_effect = {
+            FROM = {
+               add_core_of = MOK
+               remove_core_of = BYA
+                set_state_flag = MOK_zhenghetudi_flag
+            }
+        }
+         ai_will_do = {
+			factor = 10000
+		}
+    }
+}

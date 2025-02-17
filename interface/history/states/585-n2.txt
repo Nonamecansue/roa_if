@@ -1,0 +1,35 @@
+
+state={
+	id=585
+	name="STATE_585"
+	resources={
+		energy=0.000
+		powder=0.000
+		metal=2.000
+		gas=5.000
+		crystal=5.000
+	}
+
+	history={
+		146.1.1 = {
+			owner = MRY
+			add_core_of = MRY
+			buildings = {
+				infrastructure = 5
+				industrial_complex = 2
+				arms_factory = 1
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		109 756 1175 2606 2608 3421 3422 3425 3427 3428 3431 4421 4429 5394 5400 5408 
+	}
+	manpower=1235
+	buildings_max_level_factor=1.000
+	state_category=s5
+	local_supplies=2.500
+}

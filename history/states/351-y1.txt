@@ -1,0 +1,35 @@
+
+state={
+	id=351
+	name="STATE_351"
+	resources={
+		powder=5.000
+		metal=0.000
+		gas=25.000
+		crystal=0.000
+	}
+
+	history={
+		146.1.1 = {
+			owner = JXJ
+			add_core_of = YKR
+			
+			buildings = {
+				infrastructure = 4
+				industrial_complex = 1
+				arms_factory = 1
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		55 79 139 396 499 987 1045 1081 1187 1332 1596 1649 2008 2012 2133 2240 2359 2881 2897 3809 3810 3811 3813 3814 3815 3816 3818 5692 5701 
+	}
+	manpower=1068
+	buildings_max_level_factor=1.000
+	state_category=s5
+	local_supplies=2.500
+}

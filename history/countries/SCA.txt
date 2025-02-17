@@ -1,0 +1,248 @@
+﻿capital = 122
+143.7.1 = {
+    set_technology = {
+        #通用武器线
+        spell_card1 = 1
+        spear1 = 1
+        gun1 = 1
+        linglicunchu = 1
+        linglizhufu = 1
+        linglidanyao = 1
+        spell_card2 = 1
+        spear2 = 1
+        gun2 = 1
+        lingliliushuixian = 1
+        spell_card3 = 1
+            
+        #辅助
+        zhiyuanzhuangbei = 1
+
+        #专用辅助
+
+        #专用基础
+
+        #专用进阶
+
+        #混合系
+        ma_shield1 = 1
+
+        #陆军学说
+        zhanchangzhihui140 = 1
+
+        #空军
+        #ma_fighter1 = 1
+            
+        #工程学 
+        jichushuxue = 1
+        shuxuegongju = 1
+        #lingben = 1
+        tongxunlilun = 1
+        #jiemi137 = 1
+        #jiami137 = 1
+
+        #专用工程学
+
+        #工业
+        production_theory = 1
+        org_production = 1
+        jianzaojishu130 = 1
+       # jijianjianzao140 = 1
+        yunshudui140 = 1
+        yunshucheliang146 = 1
+            
+        #专用工业
+        #linglishengchan130 = 1
+
+
+        #种族
+            
+    }
+   
+}
+146.1.1 = {
+    set_technology = {
+        #通用武器线
+        spell_card1 = 1
+        spear1 = 1
+        gun1 = 1
+        linglicunchu = 1
+        linglizhufu = 1
+        linglidanyao = 1
+        spell_card2 = 1
+        spear2 = 1
+        gun2 = 1
+        lingliliushuixian = 1
+        spell_card3 = 1
+        spear3 = 1
+            
+        #辅助
+        zhiyuanzhuangbei = 1
+        zhihuixiaodui146 = 1
+
+        #专用辅助
+        magic_energy1 = 1
+
+        #专用基础
+        linglibubingzhuangbei = 1
+        kuaisudanmu1 = 1
+        kuaisudanmu2 = 1
+        kuaisudanmu3 = 1
+        huifushimo1 = 1
+        linglibuji1 = 1
+
+        #专用进阶
+
+        #混合系
+        ma_shield1 = 1
+
+        #陆军学说
+        zhanchangzhihui140 = 1
+
+
+        #空军
+        #ma_fighter1 = 1
+            
+        #工程学 
+        jichushuxue = 1
+        shuxuegongju = 1
+        lingben = 1
+        tongxunlilun = 1
+
+        #专用工程学
+
+        #工业
+        production_theory = 1
+        org_production = 1
+        jianzaojishu130 = 1
+        yunshudui140 = 1
+        yunshucheliang146 = 1
+            
+        #专用工业
+        #linglishengchan130 = 1
+
+
+        #种族
+            
+    }
+    recruit_character = SCA_council_leader
+}
+143.7.1 = {
+    drop_cosmetic_tag = yes
+    oob = "SCA_143"
+    add_ideas={
+        Fairy
+        Country
+        close2
+        hawk3
+        type1_manpowerlv5
+        war_economy
+        strict_border
+        sc_rule
+       # pingmingehe_idea
+        SCA_xixueguitiaoyue_idea
+        SCA_Fairy_forbidden_idea
+        
+    }
+    set_politics = {
+        ruling_party = guli
+        election_frequency = 48
+        elections_allowed = no
+    }
+    set_popularities = {
+        qinwai = 0
+        guli = 50
+        neworder = 25
+        oldorder = 0
+        fandong = 25
+    }
+    if = {
+        limit = {
+            has_start_date < 143.7.2
+        }
+        set_technology = {
+			lingben = 1
+		}
+    }
+}
+146.1.1={
+    set_country_flag = bunengqie_fandong
+    oob = "SCA_146"
+    add_manpower = -3000
+    # give_guarantee = GRS
+    set_major = yes
+    drop_cosmetic_tag = yes
+    remove_idea = {
+        SCA_xixueguitiaoyue_idea
+
+    }
+ 	
+    
+    add_ideas={
+    	Fairy
+        Country
+        type1_manpowerlv2
+        close1
+        dove1
+        loose_border
+        sc_rule
+        bangongyeguo
+        kejilinglipingheng
+        jiadananbao
+        quanwenmang
+        chuantongtaidu
+       # SCA_xixueguitiaoyue_idea
+       # pingmingehe_idea
+       # isolation
+        civilian_economy
+        SCA_junbeixianzhitiaoyue_idea_1
+        #SCA_jihudulidedifanggeji_idea
+       # SCA_zujiequ_idea_1
+       # SCA_jiduluohoudezhishishuiping_idea 
+        SCA_zhaoyingcun
+       # SCA_waichuliuxue_idea
+       # FY_dupinfanlan
+     
+    }
+    add_timed_idea = { idea = SCA_zujiequ_idea_1 days = 730 }
+    remove_ideas = {
+        SCA_xixueguitiaoyue_idea
+
+    }
+    remove_ideas = {
+       rem142
+    }
+
+        
+    set_politics = {
+    	ruling_party = guli
+    	election_frequency = 48
+    	elections_allowed = no
+    }
+    set_popularities = {
+        qinwai = 10
+        jinwai = 30
+        guli = 50
+        neworder = 10
+        oldorder = 0
+        fandong = 0
+    }
+
+
+    #add_equipment_to_stockpile = {
+     #   type = ma_fighter148
+      #  amount = 150
+       # producer = SCA
+   # }
+  # EMB = {
+   #     subject_level4 = yes
+    #}
+    #SC1 = {
+     #   subject_level4 = yes
+    #}
+  # SC2 = {
+   #     subject_level4 = yes
+    #}
+   #SC3 = {
+    #    subject_level4 = yes
+    #}
+}

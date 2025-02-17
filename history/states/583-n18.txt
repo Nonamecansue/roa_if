@@ -1,0 +1,22 @@
+state={
+	id=583
+	name="STATE_583"
+	provinces={
+		7286 7289 7292 7296 7303 7307 7309 7310 
+	}
+	history={
+		146.1.1 = {
+			owner = NMN
+			add_core_of = NMN
+			buildings = {
+				infrastructure = 1
+				industrial_complex = 0
+				arms_factory = 0
+			}
+		}
+	}
+	state_category=s2
+	manpower=589
+	buildings_max_level_factor=1.000
+	local_supplies=2.500
+}

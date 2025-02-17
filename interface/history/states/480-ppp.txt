@@ -1,0 +1,31 @@
+state={
+	id=480
+	name="STATE_480"
+	provinces={
+		6230 6240 6246 6250 6258 6262 6264 6266 6273 6275 6280 
+	}
+	resources={
+		energy = 0
+		powder = 4.0
+		metal = 3.0
+		gas=0.000
+		crystal=8.000
+	}
+	history={
+		146.1.1 = {
+			owner = KEK
+			add_core_of = GYK
+			buildings = {
+				infrastructure = 4
+				industrial_complex = 1
+				arms_factory = 1
+
+			}
+
+		}
+	}
+	manpower=427498.0
+	state_category=s10
+	local_supplies=2.5
+	buildings_max_level_factor=1.000
+}

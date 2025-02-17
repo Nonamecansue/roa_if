@@ -1,0 +1,365 @@
+defined_text = {
+	name = GetIdeologyLoc
+	text = {
+		trigger = { has_government = fandong }
+		localization_key = fandong
+	}
+	text = {
+		trigger = { has_government = qinwai }
+		localization_key = qinwai
+	}
+	text = {
+		trigger = {
+			has_government = neworder
+		}
+		localization_key = neworder
+	}
+	text = {
+		trigger = {
+			has_government = oldorder
+		}
+		localization_key = oldorder
+	}
+	text = {
+		trigger = {
+			has_government = jinwai
+		}
+		localization_key = jinwai
+	}
+	text = {
+		trigger = {
+			has_government = guli
+		}
+		localization_key = guli
+	}
+	text = {
+		trigger = { has_government = oldgenso }
+		localization_key = oldgenso
+	}
+}
+defined_text = {
+	name = GetSubIdeologyLoc
+	text = {
+		trigger = { has_government = fandong }
+		localization_key = "[GetSubIdeologyLocFandong]"
+	}
+	text = {
+		trigger = { has_government = qinwai }
+		localization_key = "[GetSubIdeologyLocQinwai]"
+	}
+	text = {
+		trigger = { has_government = jinwai }
+		localization_key = "[GetSubIdeologyLocJinwai]"
+	}
+	text = {
+		trigger = { has_government = neworder }
+		localization_key = "[GetSubIdeologyLocNeworder]"
+	}
+	text = {
+		trigger = { has_government = oldorder }
+		localization_key = "[GetSubIdeologyLocOldorder]"
+	}
+	text = {
+		trigger = { has_government = oldgenso }
+		localization_key = "[GetSubIdeologyLocOldgenso]"
+	}
+	text = {
+		trigger = { has_government = guli }
+		localization_key = "[GetSubIdeologyLocGuli]"
+	}
+}
+
+defined_text = {
+	name = GetSubIdeologyLocFandong
+	text = {
+		trigger = {
+			has_country_leader_ideology = fandong_type
+		}
+		localization_key = fandong
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = fandong_gemingzhuyi
+		}
+		localization_key = fandong_gemingzhuyi
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = fandong_geminganbaozhuyi
+		}
+		localization_key = fandong_geminganbaozhuyi
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = fandong_quanweigemingzhuyi
+		}
+		localization_key = fandong_quanweigemingzhuyi
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = fandong_jijinminzhugeming
+		}
+		localization_key = fandong_jijinminzhugeming
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = fandong_gemingjunguozhuyi
+		}
+		localization_key = fandong_gemingjunguozhuyi
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = fandong_hongsediguozhuyi
+		}
+		localization_key = fandong_hongsediguozhuyi
+	}
+	
+}
+
+defined_text = {
+	name = GetSubIdeologyLocQinwai
+	text = {
+		trigger = {
+			has_country_leader_ideology = qinwai_type
+		}
+		localization_key = qinwai
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = qinwai_maoyiziyouzhuyi
+		}
+		localization_key = qinwai_maoyiziyouzhuyi
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = qinwai_jidujijinzhuyi
+		}
+		localization_key = qinwai_jidujijinzhuyi
+	}
+
+
+}
+
+defined_text = {
+	name = GetSubIdeologyLocJinwai
+	text = {
+		trigger = {
+			has_country_leader_ideology = jinwai_type
+		}
+		localization_key = jinwai
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = jinwai_guatouzhengzhi
+		}
+		localization_key = jinwai_guatouzhengzhi
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = jinwai_linshizhengfu
+		}
+		localization_key = jinwai_linshizhengfu
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = jinwai_eryuanjunzhulixian
+		}
+		localization_key = jinwai_eryuanjunzhulixian
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = jinwai_jiduminzhuzhuyi
+		}
+		localization_key = jinwai_jiduminzhuzhuyi
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = jinwai_zhongzubaoshouzhuyi
+		}
+		localization_key = jinwai_zhongzubaoshouzhuyi
+	}
+}
+
+defined_text = {
+	name = GetSubIdeologyLocNeworder
+		text = {
+		trigger = {
+			has_country_leader_ideology = neworder_type
+		}
+		localization_key = neworder
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = neworder_guojiazhuyi
+		}
+		localization_key = neworder_guojiazhuyi
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = neworder_guojiagemingzhuyi
+		}
+		localization_key = neworder_guojiagemingzhuyi
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = neworder_shenquanfuguzhuyi
+		}
+		localization_key = neworder_shenquanfuguzhuyi
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = neworder_yuanjiaozhizhuyi
+		}
+		localization_key = neworder_yuanjiaozhizhuyi
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = neworder_fuquanzhuyi
+		}
+		localization_key = neworder_fuquanzhuyi
+	}
+	
+}
+defined_text = {
+	name = GetSubIdeologyLocOldorder
+		text = {
+		trigger = {
+			has_country_leader_ideology = oldorder_type
+		}
+		localization_key = oldorder
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = fandong_nongyegemingzhuyi
+		}
+		localization_key = fandong_nongyegemingzhuyi
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = oldorder_huancaoyuanxiakeshang
+		}
+		localization_key = oldorder_huancaoyuanxiakeshang
+	}
+	
+}
+defined_text = {
+	name = GetSubIdeologyLocOldgenso
+		text = {
+		trigger = {
+			has_country_leader_ideology = oldgenso_type
+		}
+		localization_key = oldgenso
+	}
+	
+}
+defined_text = {
+	name = GetSubIdeologyLocGuli
+	text = {
+		trigger = {
+			has_country_leader_ideology = guli_type
+		}
+		localization_key = guli
+	}
+		text = {
+		trigger = {
+			has_country_leader_ideology = guli_junzhengfu
+		}
+		localization_key = guli_junzhengfu
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = guli_junzhuzhuanzhi
+		}
+		localization_key = guli_junzhuzhuanzhi
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = guli_wenguanducai
+		}
+		localization_key = guli_wenguanducai
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = guli_junfa
+		}
+		localization_key = guli_junfa
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = guli_tufei
+		}
+		localization_key = guli_tufei
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = guli_zhiminzhengfu
+		}
+		localization_key = guli_zhiminzhengfu
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = guli_yirenducai
+		}
+		localization_key = guli_yirenducai
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = guli_qiyetongzhi
+		}
+		localization_key = guli_qiyetongzhi
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = guli_guatouzhengzhi
+		}
+		localization_key = guli_guatouzhengzhi
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = guli_guoduzhengfu
+		}
+		localization_key = guli_guoduzhengfu
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = guli_shenquanzhi
+		}
+		localization_key = guli_shenquanzhi
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = guli_guihuashizhimin
+		}
+		localization_key = guli_guihuashizhimin
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = guli_chuantongtizhi
+		}
+		localization_key = guli_chuantongtizhi
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = guli_jianguanzhengfu
+		}
+		localization_key = guli_jianguanzhengfu
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = guli_wuzhengfuzhuangtai
+		}
+		localization_key = guli_wuzhengfuzhuangtai
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = guli_jidubaoshouzhuyi
+		}
+		localization_key = guli_jidubaoshouzhuyi
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = guli_xingdongzhuyi
+		}
+		localization_key = guli_xingdongzhuyi
+	}
+}

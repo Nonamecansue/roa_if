@@ -1,0 +1,47 @@
+ideas = {
+	country = {
+
+
+    BYA_duirenliedexiji_idea = {
+	    	picture = man_five_year_plan_industry
+	    	allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				war_support_weekly = 0.005
+				consumer_goods_expected_value = -0.1
+				MONTHLY_POPULATION = -0.1
+				research_speed_factor = -0.05
+
+			}
+		}
+	BYA_yanzhongfenliedelianmeng_idea = {
+	    	picture = man_five_year_plan_industry
+	    	allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				stability_factor = -0.25
+				stability_weekly = -0.005
+				POLITICAL_POWER_GAIN = -0.75
+
+			}
+		}
+	
+		
+		
+
+	}
+}

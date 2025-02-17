@@ -1,0 +1,343 @@
+ideas = {
+#===============================
+    country = {
+	=========================
+	HUM_xianfengbingtuanjingshen = {
+			picture = FRA_army_of_aggression_focus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				special_forces_attack_factor = 0.2
+				special_forces_defence_factor = 0.2
+				special_forces_cap = 0.2
+				conscription_factor = 0.1
+				war_support_factor = 0.2
+			}
+		}
+		HUM_keyanxianzhitiaoyue = {
+			picture = generic_deal_with_the_devil2
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			available = {
+			    has_war = no
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				consumer_goods_factor = -0.01
+				political_power_factor = 0.25
+			}
+			research_bonus = {
+				military = -0.25
+			}
+		}
+		HUM_zongzumaodun = {
+			picture = generic_deal_with_the_devil2
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			available = {
+			    
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				CONV_RULE_cannot_convert = 1
+				ST_race_penalty_all_factor = 0.2
+				stability_factor = -0.1
+			}
+		}
+		HUM_bukekaodeshiliquan = {
+			picture = generic_deal_with_the_devil2
+
+			allowed = {
+				
+			}
+
+			allowed_civil_war = {
+			}
+
+			available = {
+			    has_war = no
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				SS_cant_low_subjects = 1
+			}
+		}
+		HUM_jihubengkuidejingji = {
+			picture = HUM_jihubengkuidejingji_js
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			available = {
+			    
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				stability_weekly = -0.002
+				consumer_goods_factor = 0.1
+				political_power_factor = -0.5
+				production_speed_buildings_factor = -0.3
+				stability_factor = -0.3
+
+			}
+		}
+		HUM_daguimoshiye = {
+			picture = HUM_daguimoshiye_js
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			available = {
+			    
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.25
+				production_factory_max_efficiency_factor = -0.25
+				industrial_capacity_factory = -0.4
+				stability_factor = -0.1
+			}
+		}
+		HUM_caijunhouyizheng = {
+			picture = HUM_caijunhouyizheng_js
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			available = {
+			    
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				max_dig_in_factor = -0.30
+				command_power_gain_mult = -0.25
+				conscription_factor = -0.2
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+				stability_factor = -0.1
+				
+
+			}
+		}
+		HUM_test = {
+			picture = HUM_caijunhouyizheng_js
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			available = {
+			    
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				conscription = 2
+				
+
+			}
+		}
+		HUM_fuyonggongyezhengshou = {
+			picture = generic_deal_with_the_devil2
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			available = {
+			    
+			}
+			
+			removal_cost = -1
+			targeted_modifier = { 
+				tag = HUM
+	
+				cic_to_target_factor = 0.25
+				mic_to_target_factor = 0.25
+				
+			}
+	
+			modifier = {
+				
+
+			}
+		}
+		HUM_liangshiqianshou = {
+			picture = generic_deal_with_the_devil2
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			available = {
+			    
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+			stability_weekly = -0.005
+			weekly_manpower = -1
+			MONTHLY_POPULATION = -0.8
+
+			}
+		}
+		HUM_pujijidongzhuangbei = {
+			picture = generic_deal_with_the_devil2
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			available = {
+			    
+			}
+			
+			removal_cost = -1
+			equipment_bonus = {
+			jixiezhuangbei_a = {
+				build_cost_ic = -0.2
+				instant = yes
+			}
+		}
+	
+			modifier = {
+				
+
+			}
+		}
+		HUM_tankebuduizhengshihua = {
+			picture = generic_deal_with_the_devil2
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			available = {
+			    
+			}
+			
+			removal_cost = -1
+			equipment_bonus = {
+			tank_a = {
+				build_cost_ic = -0.2
+				instant = yes
+			}
+		}
+	
+			modifier = {
+				
+
+			}
+		}
+		HUM_tongyikuangre = {
+			picture = generic_deal_with_the_devil2
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			available = {
+				has_war = yes
+			    
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				army_core_attack_factor = 0.5
+				army_core_defence_factor = 0.5
+				army_speed_factor = 0.1
+				ai_focus_aggressive_factor = 0.8
+				
+
+			}
+		}
+		HUM_tongyizhanzheng = {
+			picture = generic_deal_with_the_devil2
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			available = {
+				has_war = yes
+			    
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				ai_focus_aggressive_factor = 0.8
+				
+
+			}
+		}
+		
+
+}

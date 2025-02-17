@@ -1,0 +1,57 @@
+SEJ_passive_magician_decline_category = {
+    SEJ_passive_magician_decline = {
+        allowed = {
+            or = {
+                tag = NAR
+                tag = MRS
+                tag = ELL
+                tag = ALI
+                tag = MFA
+                tag = MYK
+                tag = MTM
+            }
+        }
+        visible = {
+            or = {
+                check_variable = {
+                    SEJ.SEJ_support_NAR_times > 0
+                }
+                check_variable = {
+                    SEJ_jungongjianshecishu > 0
+                }
+                check_variable = {
+                    SEJ_mingongjianshecishu > 0
+                }
+            }
+            
+        }
+        fire_only_once = yes
+        available = {
+
+        }
+        complete_effect = {
+            SEJ = { country_event = { days = 2 id = sej.41} }
+            set_country_flag = SEJ_passive_decline_support
+            effect_tooltip = {
+                if = {
+                    limit = {
+                        tag = NAR
+                        SEJ = {
+                            has_idea = SEJ_yuanzhumofasenlindegemingzhe_idea
+                        }
+                    }
+                    SEJ = {
+                        remove_ideas = SEJ_yuanzhumofasenlindegemingzhe_idea
+                    }
+                }
+            }
+        }
+        ai_will_do = {
+            base = 0
+            modifier = {
+                tag = MFA
+                add = 1000
+            }
+        }
+    }
+}

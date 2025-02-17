@@ -1,0 +1,44 @@
+state={
+	id=376
+	name="STATE_376"
+	provinces={
+		389 2731 5103 5105 5107 
+	}
+	resources={
+
+		powder = 0.0
+		metal = 24.0
+		gas=0.000
+		crystal=5.000
+	}
+
+	history={
+		143.7.1 = {
+			owner = HU1
+			add_core_of = HU1
+			buildings = {
+				infrastructure = 0
+				industrial_complex = 0
+				arms_factory = 2
+
+			}
+
+		}
+		146.1.1 = {
+			owner = HU1
+			add_core_of = HU1
+			buildings = {
+				infrastructure = 0
+				industrial_complex = 0
+				arms_factory = 2
+
+			}
+
+		}
+
+	}
+	state_category=s2
+	local_supplies=2.5
+	manpower=125.0
+	buildings_max_level_factor=1.000
+}

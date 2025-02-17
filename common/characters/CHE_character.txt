@@ -1,0 +1,73 @@
+characters={
+	CHE_che ={
+		name = CHE_che
+		portraits={
+			civilian={
+				large="gfx/leaders/CHE/CHE_che.dds"
+				small="gfx/leaders/CHE/CHE_che_small.dds"
+			}
+			army = {
+				large="gfx/leaders/CHE/CHE_che.dds"
+				small="gfx/leaders/CHE/CHE_che_small.dds"
+			}
+		}
+		corps_commander = {
+            traits = {  th_original_character th_character  th_trait_chongjizhuanjia  }
+            attack_skill = 2
+            defense_skill = 3
+            planning_skill = 1
+            logistics_skill = 1
+            skill = 3
+        }
+		advisor = {
+			slot = character_coop
+			idea_token = CHE_che
+			name = CHE_che
+			cost = 200
+			modifier = {
+				army_speed_factor = 0.05
+				land_night_attack = 0.25
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	CHE_che_leader ={
+		name = CHE_che_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/CHE/CHE_che.dds"
+				small="gfx/leaders/CHE/CHE_che_small.dds"
+			}
+			army = {
+				large="gfx/leaders/CHE/CHE_che.dds"
+				small="gfx/leaders/CHE/CHE_che_small.dds"
+			}
+		}
+		country_leader={
+			ideology=qinwai_type
+			id=-1
+		}
+		country_leader={
+			ideology=guli_type
+			id=-1
+		}
+		country_leader={
+			ideology=neworder_type
+			id=-1
+		}
+		country_leader={
+			ideology=fandong_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldorder_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldgenso_type
+			id=-1
+		}
+	}
+}

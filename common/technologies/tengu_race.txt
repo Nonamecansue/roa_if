@@ -1,0 +1,633 @@
+technologies = {
+	tengu_tech = {
+    
+	    research_cost = 1
+
+	    path = {
+			leads_to_tech = tiangoujidong1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = junguankaohe1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tiangouqingbaoban1
+			research_cost_coeff = 1
+		}
+
+	   folder = {
+	      name = Tenggu_race_tech_folder
+	      position = { x = 10 y = 0 }
+	    }
+
+	    melee_infantry = {
+	      max_strength = 10
+	    }
+	    melee_infantry = {
+	      max_strength = 10
+	    }     
+	    sc_infantry = {
+	      max_strength = 10
+	    }
+	    ma_infantry = {
+	      max_strength = 10
+	    }  
+	    sc_light_infantry = {
+	      max_strength = 10
+	    }
+	    ma_light_infantry = {
+	      max_strength = 10
+	    } 
+	    sc_sf_infantry = {
+	      max_strength = 10
+	    }
+	    ma_sf_infantry = {
+	      max_strength = 10
+	    } 
+	    sc_shield_infantry = {
+	      max_strength = 10
+	    }
+	    ma_shield_infantry = {
+	      max_strength = 10
+	    } 
+	    
+	    categories = {
+	      secret
+	    }
+	    dependencies = {
+	       abandoned = 1
+	    }
+	    
+	    ai_will_do = {
+	      factor = 1
+	    }
+	}
+
+	tiangoujidong1 = {
+	
+		path = {
+			leads_to_tech = tiangoujidong2
+			research_cost_coeff = 1
+		}
+
+		sc_infantry = {
+			maximum_speed = 0.05
+		}
+		ma_infantry = {
+			maximum_speed = 0.05
+		}
+		
+		research_cost = 2.2
+		start_year = 147
+
+		folder = {
+			name = Tenggu_race_tech_folder
+			position = { x = 4 y = 2 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	tiangoujidong2 = {
+	
+		path = {
+			leads_to_tech = tiangoujidong3
+			research_cost_coeff = 1
+		}
+
+		sc_light_infantry = {
+			maximum_speed = 0.1
+			forest = {
+				attack = 0.05
+				defence = 0.05
+			}
+
+			hills = {
+				attack = 0.05
+				defence = 0.05
+			}
+
+			mountain = {
+				attack = 0.05
+				defence = 0.05
+			}
+
+			jungle = {
+				attack = 0.05
+				defence = 0.05
+			}
+
+			bamboo = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+		ma_light_infantry = {
+			maximum_speed = 0.1
+			forest = {
+				attack = 0.05
+				defence = 0.05
+			}
+
+			hills = {
+				attack = 0.05
+				defence = 0.05
+			}
+
+			mountain = {
+				attack = 0.05
+				defence = 0.05
+			}
+
+			jungle = {
+				attack = 0.05
+				defence = 0.05
+			}
+
+			bamboo = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+
+		
+		research_cost = 2.2
+		start_year = 152
+
+		folder = {
+			name = Tenggu_race_tech_folder
+			position = { x = 4 y = 4 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	tiangoujidong3 = {
+	
+		path = {
+			leads_to_tech = tiangoujidong4
+			research_cost_coeff = 1
+		}
+
+		
+		research_cost = 2.2
+		start_year = 157
+
+		folder = {
+			name = Tenggu_race_tech_folder
+			position = { x = 4 y = 6 }
+		}
+
+		sc_infantry = {
+			breakthrough = 0.1
+		}
+		ma_infantry = {
+			breakthrough = 0.1
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	tiangoujidong4 = {
+	
+		path = {
+			leads_to_tech = tiangoujidong5
+			research_cost_coeff = 1
+		}
+
+		sc_infantry = {
+			maximum_speed = 0.05
+		}
+		ma_infantry = {
+			maximum_speed = 0.05
+		}
+
+		
+		research_cost = 2.2
+		start_year = 162
+
+		folder = {
+			name = Tenggu_race_tech_folder
+			position = { x = 4 y = 8 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	tiangoujidong5 = {
+
+		research_speed_factor = 0.03
+		
+		research_cost = 2.2
+		start_year = 167
+
+		sc_light_infantry = {
+			maximum_speed = 0.1
+			forest = {
+				attack = 0.05
+				defence = 0.05
+			}
+
+			hills = {
+				attack = 0.05
+				defence = 0.05
+			}
+
+			mountain = {
+				attack = 0.05
+				defence = 0.05
+			}
+
+			jungle = {
+				attack = 0.05
+				defence = 0.05
+			}
+
+			bamboo = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+		ma_light_infantry = {
+			maximum_speed = 0.1
+			forest = {
+				attack = 0.05
+				defence = 0.05
+			}
+
+			hills = {
+				attack = 0.05
+				defence = 0.05
+			}
+
+			mountain = {
+				attack = 0.05
+				defence = 0.05
+			}
+
+			jungle = {
+				attack = 0.05
+				defence = 0.05
+			}
+
+			bamboo = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+
+		folder = {
+			name = Tenggu_race_tech_folder
+			position = { x = 4 y = 10 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	junguankaohe1 = {
+	
+		path = {
+			leads_to_tech = junguankaohe2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.2
+		start_year = 147
+
+		army_leader_start_logistics_level = 1
+		army_leader_start_planning_level = 1
+
+		
+
+		folder = {
+			name = Tenggu_race_tech_folder
+			position = { x = 10 y = 2 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	junguankaohe2 = {
+	
+		path = {
+			leads_to_tech = junguankaohe3
+			research_cost_coeff = 1
+		}
+
+		army_leader_start_attack_level = 1
+		army_leader_start_defense_level = 1
+
+		
+		research_cost = 2.2
+		start_year = 152
+
+		folder = {
+			name = Tenggu_race_tech_folder
+			position = { x = 10 y = 4 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	junguankaohe3 = {
+	
+		path = {
+			leads_to_tech = junguankaohe4
+			research_cost_coeff = 1
+		}
+
+		army_leader_start_level = 1
+
+		
+		research_cost = 2.2
+		start_year = 157
+
+		folder = {
+			name = Tenggu_race_tech_folder
+			position = { x = 10 y = 6 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	junguankaohe4 = {
+	
+		path = {
+			leads_to_tech = junguankaohe5
+			research_cost_coeff = 1
+		}
+
+		army_leader_start_logistics_level = 1
+		army_leader_start_planning_level = 1
+
+		
+		research_cost = 2.2
+		start_year = 162
+
+		folder = {
+			name = Tenggu_race_tech_folder
+			position = { x = 10 y = 8 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	junguankaohe5 = {
+
+		
+		research_cost = 2.2
+		start_year = 167
+
+		army_leader_start_attack_level = 1
+		army_leader_start_defense_level = 1
+
+		folder = {
+			name = Tenggu_race_tech_folder
+			position = { x = 10 y = 10 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	tiangouqingbaoban1 = {
+	
+		path = {
+			leads_to_tech = tiangouqingbaoban2
+			research_cost_coeff = 1
+		}
+
+		ma_light_infantry = {
+			maximum_speed = 0.2
+		}
+		ma_sf_infantry = {
+			maximum_speed = 0.2
+		}
+		sc_light_infantry = {
+			maximum_speed = 0.2
+		}
+		sc_sf_infantry = {
+			maximum_speed = 0.2
+		}
+		
+		research_cost = 2.2
+		start_year = 147
+
+		folder = {
+			name = Tenggu_race_tech_folder
+			position = { x = 16 y = 2 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	tiangouqingbaoban2 = {
+	
+		path = {
+			leads_to_tech = tiangouqingbaoban3
+			research_cost_coeff = 1
+		}
+
+		ma_light_infantry = {
+			breakthrough = 0.2
+			defense = 0.2
+		}
+		ma_sf_infantry = {
+			breakthrough = 0.2
+			defense = 0.2
+		}
+		sc_light_infantry = {
+			breakthrough = 0.2
+			defense = 0.2
+		}
+		sc_sf_infantry = {
+			breakthrough = 0.2
+			defense = 0.2
+		}
+		
+		research_cost = 2.2
+		start_year = 152
+
+		folder = {
+			name = Tenggu_race_tech_folder
+			position = { x = 16 y = 4 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	tiangouqingbaoban3 = {
+	
+		path = {
+			leads_to_tech = tiangouqingbaoban4
+			research_cost_coeff = 1
+		}
+
+		ma_shield_infantry = {
+			maximum_speed = 0.2
+		}
+		sc_shield_infantry = {
+			maximum_speed = 0.2
+		}
+
+		
+		research_cost = 2.2
+		start_year = 157
+
+		folder = {
+			name = Tenggu_race_tech_folder
+			position = { x = 16 y = 6 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	tiangouqingbaoban4 = {
+	
+		path = {
+			leads_to_tech = tiangouqingbaoban5
+			research_cost_coeff = 1
+		}
+
+		ma_shield_infantry = {
+			breakthrough = 0.2
+			defense = 0.2
+		}
+		sc_shield_infantry = {
+			breakthrough = 0.2
+			defense = 0.2
+		}
+		
+		research_cost = 2.2
+		start_year = 162
+
+		folder = {
+			name = Tenggu_race_tech_folder
+			position = { x = 16 y = 8 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	tiangouqingbaoban5 = {
+		
+		research_cost = 2.2
+		start_year = 167
+
+		ma_light_infantry = {
+			combat_width = -5
+		}
+		ma_sf_infantry = {
+			combat_width = -5
+		}
+		sc_light_infantry = {
+			combat_width = -5
+		}
+		sc_sf_infantry = {
+			combat_width = -5
+		}
+		ma_shield_infantry = {
+			combat_width = -5
+		}
+		sc_shield_infantry = {
+			combat_width = -5
+		}
+
+		folder = {
+			name = Tenggu_race_tech_folder
+			position = { x = 16 y = 10 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

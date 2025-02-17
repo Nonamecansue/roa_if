@@ -1,0 +1,7 @@
+CIR_kuanggongyimin_state = {
+	enable = {
+		is_owned_by = CIR
+	}
+	icon = GFX_NMS_zise_state
+	state_resources_factor = 0.5
+}

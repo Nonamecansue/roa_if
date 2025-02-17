@@ -1,0 +1,35 @@
+
+state={
+	id=46
+	name="STATE_46"
+	resources={
+
+		powder = 0.0
+		metal = 0.0
+		gas=15.000
+		crystal=1.000
+	}
+
+	history={
+		146.1.1 = {
+			owner = LIL
+			add_core_of = LIL
+			buildings = {
+				infrastructure =2
+				industrial_complex = 3
+				arms_factory = 0
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		734 852 1546 2327 2621 2636 5375 5380 5384 5387 5391 5393 5397 
+	}
+	manpower=18935.0
+	buildings_max_level_factor=1.000
+	state_category=s5
+	local_supplies=2.5
+}

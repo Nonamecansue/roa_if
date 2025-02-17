@@ -1,0 +1,245 @@
+﻿add_namespace = xn
+##########事件###########
+country_event = { #HU3,MEL选胜利者
+	id = xn.1
+	title = xn.1.t
+	desc = xn.1.d
+
+	# major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+	trigger = {
+	}
+
+	option = {
+		name = xn.1.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base = 50
+		}
+		
+		random_list = {
+                    60 = {
+                       add_ideas = XN_hu3vsmel_hu3_idea
+                    }
+                    40 = {
+                        MEL = {
+							add_ideas = XN_hu3vsmel_mel_idea
+						}
+                    }
+                }
+		add_ideas = XN_hu3vsmel_fangtouxiang_idea
+
+		MEL = {
+			add_ideas = XN_hu3vsmel_fangtouxiang_idea
+		}
+		
+
+
+	}
+}
+country_event = { #HU3赢了
+	id = xn.2
+	title = xn.2.t
+	desc = xn.2.d
+
+	# major = yes
+	fire_only_once = yes
+	is_triggered_only = no
+	hidden = yes
+	trigger = {
+		tag = HU3
+		194 = { is_controlled_by = HU3 }
+		194 = { is_owned_by = MEL }
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = xn.2.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base = 50
+		}
+		#add_ideas = XN_hu3vsmel_hu3_idea
+		HU3 = {
+			white_peace = MEL
+		}
+		MEL = {
+			every_owned_state = {
+				if = {
+				limit = { is_core_of = MEL }
+				add_core_of = HU3
+			}
+			}
+		}
+		HU3 = {
+			annex_country = { target = MEL transfer_troops = no }
+		}
+		 
+		MEL = {
+           MEL_mel = {
+                set_nationality = XXX
+            }
+        }
+
+
+	}
+}
+country_event = { #MEL赢了
+	id = xn.3
+	title = xn.3.t
+	desc = xn.3.d
+
+	# major = yes
+	fire_only_once = yes
+	is_triggered_only = no
+	hidden = yes
+	trigger = {
+		tag = MEL
+		144 = { is_controlled_by = MEL }
+		144 = { is_owned_by = HU3 }
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = xn.3.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base = 50
+		}
+		#add_ideas = XN_hu3vsmel_hu3_idea
+		MEL = {
+			white_peace = HU3
+		}
+		HU3 = {
+			every_owned_state = {
+				if = {
+				limit = { is_core_of = HU3 }
+				add_core_of = MEL
+			}
+			}
+		}
+		MEL = {
+			annex_country = { target = HU3 transfer_troops = no }
+		}
+		HU3 = {
+            HU3_den = {
+                set_nationality = XXX
+            }
+        }
+		HU3 = {
+            HU3_tian = {
+                set_nationality = XXX
+            }
+        }
+		HU3 = {
+           HU3_gang = {
+                set_nationality = XXX
+            }
+        }
+
+
+	}
+}
+country_event = { #HU4宣SGS
+	id = xn.4
+	title = xn.4.t
+	desc = xn.4.d
+
+	# major = yes
+	fire_only_once = yes
+	is_triggered_only = no
+	hidden = no
+	trigger = {
+		date > 146.8.15
+		tag = HU4
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = xn.4.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base = 50
+		}
+		#add_ideas = XN_sgsvshu4_hu4_idea
+		random_list = {
+                    60 = {
+                       add_ideas = XN_sgsvshu4_hu4_idea
+                    }
+                    40 = {
+                        SGS = {
+							add_ideas = XN_sgsvshu4_sgs_idea
+						}
+                    }
+                }
+		declare_war_on = {
+				    target = SGS
+				    type = annex_everything
+			}
+		
+
+
+	}
+}
+country_event = { #宣GH2
+	id = xn.5
+	title = xn.5.t
+	desc = xn.5.d
+
+	# major = yes
+	fire_only_once = yes
+	is_triggered_only = no
+	hidden = no
+	trigger = {
+		date > 147.1.15
+		or = {
+			tag = HU4
+			tag = SGS
+		}
+		not = {
+			has_war = yes
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = xn.4.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base = 50
+		}
+		#add_ideas = XN_sgsvshu4_hu4_idea
+		declare_war_on = {
+				    target = GH2
+				    type = annex_everything
+			}
+		
+
+
+	}
+}

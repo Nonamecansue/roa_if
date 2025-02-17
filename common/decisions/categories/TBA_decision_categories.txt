@@ -1,0 +1,33 @@
+TBA_anbaojishuyanjiu = {
+	priority = 100
+}
+TBA_yancaogongji = {
+	priority = 100
+}
+TBA_kuozhangjihua = {
+	priority = 100
+}
+TBA_guyongshibing = {
+	priority = 100
+}
+TBA_zosijunhuo = {
+	priority = 100
+}
+TBA_junhuochuko = {
+	priority = 100
+}
+TBA_shichangguanli = {
+	priority = 100
+}
+TBA_bihusuojihua = {
+	priority = 100
+}
+TBA_zhiyuanMRY = {
+	priority = 90
+}
+TBA_bowulan = {
+	priority = 110
+}
+TBA_mengjing = {
+	priority = 110
+}

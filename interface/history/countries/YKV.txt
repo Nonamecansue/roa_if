@@ -1,0 +1,19 @@
+﻿capital = 246
+146.1.1={
+    oob = "TEST"
+    add_ideas = {
+        Pri_youkai
+    }
+    set_politics = {
+    	ruling_party = neworder
+    	election_frequency = 48
+    	elections_allowed = no
+    }
+    set_popularities = {
+        qinwai = 0 
+        guli = 0
+        neworder = 100
+        oldorder = 0
+        fandong = 0
+    }
+}

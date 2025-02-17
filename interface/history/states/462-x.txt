@@ -1,0 +1,36 @@
+
+state={
+	id=462
+	name="STATE_462"
+	resources={
+		energy=0.000
+		powder = 0.0
+		metal = 0.0
+		gas=0.000
+		crystal=0.000
+	}
+
+	history={
+		146.1.1 = {
+			owner = ZYL
+			add_core_of = CLO
+			add_core_of = ZYL
+			buildings = {
+				infrastructure = 1
+				industrial_complex = 0
+				arms_factory = 0
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		54 626 712 967 983 1100 2239 2385 2434 6027 6042 6051 6052 6074 6416 6422 6425 6426 6429 
+	}
+	manpower=142092
+	buildings_max_level_factor=1.000
+	state_category=s5
+	local_supplies=2.5
+}

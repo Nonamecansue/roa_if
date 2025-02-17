@@ -1,0 +1,78 @@
+# All infantry equipment
+
+equipments = {
+
+	tank_a = {
+		year = 146
+	
+		is_archetype = yes
+		picture = archetype_infantry_equipment		
+		is_buildable = no
+		type = armor
+		group_by = archetype
+		
+		interface_category = interface_category_land
+
+		upgrades = {
+			upgrade_reliability
+          	upgrade_softattack
+          	upgrade_hardattack
+          	upgrade_aaattack
+          	upgrade_defense
+          	upgrade_breakthrough
+          	upgrade_ic
+          	upgrade_ic_reverse
+          	upgrade_reliability_reverse
+		}
+		upgrades = {
+			up_sc_attack
+			up_defense
+			up_speed_type2
+		}
+		
+		
+
+		
+		
+		#Defensive Abilities
+		defense = 20
+		breakthrough = 7.5
+		hardness = 0.35
+		armor_value = 25
+
+		#Offensive Abilities
+		soft_attack = 18
+		hard_attack = 3
+		ap_attack = 6
+		air_attack = 1
+
+		#Misc Abilities
+		reliability = 0.65
+		maximum_speed = 5
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+		
+		build_cost_ic = 12
+
+		
+		
+	}
+
+	tank146 = {
+		year = 146
+	
+		archetype = tank_a
+		
+		priority = 10
+		visual_level = 0
+
+		resources = {
+			gas = 1
+			powder = 1
+			metal = 1
+		}
+	}
+
+	
+}

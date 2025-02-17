@@ -1,0 +1,61 @@
+﻿division_template = {
+	name = "魔法使魔炮支援编制"
+	is_locked = yes
+	regiments = {
+		ma_infantry = { x = 0 y = 0 }
+		ma_infantry = { x = 0 y = 1 }
+		ma_infantry = { x = 0 y = 2 }
+		ma_infantry = { x = 0 y = 3 }
+		ma_infantry = { x = 0 y = 4 }
+		ma_magic_energy_brigade = { x = 1 y = 0 }
+	}
+	support = {
+	}
+}
+
+
+units = {
+	division = {
+		name = "魔法使魔炮支援编制"
+		location = 7
+		division_template = "魔法使魔炮支援编制"
+		start_experience_factor = 0.35
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "魔法使魔炮支援编制"
+		location = 7
+		division_template = "魔法使魔炮支援编制"
+		start_experience_factor = 0.35
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "魔法使魔炮支援编制"
+		location = 7
+		division_template = "魔法使魔炮支援编制"
+		start_experience_factor = 0.35
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "魔法使魔炮支援编制"
+		location = 7
+		division_template = "魔法使魔炮支援编制"
+		start_experience_factor = 0.35
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "魔法使魔炮支援编制"
+		location = 7
+		division_template = "魔法使魔炮支援编制"
+		start_experience_factor = 0.35
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "魔法使魔炮支援编制"
+		location = 7
+		division_template = "魔法使魔炮支援编制"
+		start_experience_factor = 0.35
+		start_equipment_factor = 1
+	}
+}
+

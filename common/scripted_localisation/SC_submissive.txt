@@ -1,0 +1,10 @@
+defined_text = {
+	name = GetSubIdeology
+	
+	text = {
+		trigger = {
+			has_country_leader_ideology = guli_junzhengfu
+		}
+		localization_key = guli_junzhengfu
+	}
+}

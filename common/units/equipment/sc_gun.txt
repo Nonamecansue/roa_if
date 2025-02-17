@@ -1,0 +1,183 @@
+# All infantry equipment
+
+equipments = {
+
+	gun_a = {
+		year = 117
+	
+		is_archetype = yes
+		picture = archetype_infantry_equipment		
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		
+		interface_category = interface_category_land
+
+		upgrades = {
+			upgrade_reliability
+          	upgrade_softattack
+          	upgrade_hardattack
+          	upgrade_aaattack
+          	upgrade_defense
+          	upgrade_breakthrough
+          	upgrade_ic
+          	upgrade_ic_reverse
+          	upgrade_reliability_reverse
+		}
+		upgrades = {
+			up_sc_attack
+			up_defense
+			up_speed
+		}
+		
+		
+
+		
+		
+		#Defensive Abilities
+		defense = 14
+		breakthrough = 1
+		hardness = 0
+		armor_value = 0
+
+		#Offensive Abilities
+		soft_attack = 1
+		hard_attack = 0.5
+		ap_attack = 0.5
+		air_attack = 0.0
+
+		#Misc Abilities
+		reliability = 0.9
+		maximum_speed = 4
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+		
+		build_cost_ic = 0.29
+
+		
+		
+	}
+
+	gun117 = {
+		year = 117
+	
+		archetype = gun_a
+		
+		priority = 10
+		visual_level = 0
+
+		resources = {
+			powder = 1
+		}
+	}
+
+	gun141 = {
+		year = 141
+	
+		archetype = gun_a
+		parent = gun117
+		priority = 10
+		visual_level = 1
+
+		resources = {
+			powder = 1
+		}
+		
+		defense = 16
+		breakthrough = 2
+		soft_attack = 2
+		hard_attack = 0.5
+		air_attack = 0.0
+		ap_attack = 1
+		build_cost_ic = 0.36
+	}
+
+	gun146 = {
+		year = 144
+	
+		archetype = gun_a
+		parent = gun141
+		priority = 10
+		visual_level = 2
+
+		resources = {
+			gas = 1
+			powder = 1
+		}
+		
+		defense = 20
+		breakthrough = 2
+		soft_attack = 3
+		hard_attack = 0.5
+		air_attack = 0.0
+		ap_attack = 1
+		build_cost_ic = 0.43
+	}
+
+	gun153 = {
+		year = 153
+	
+		archetype = gun_a
+		parent = gun147
+		priority = 10
+		visual_level = 3
+
+		resources = {
+			gas = 1
+			powder = 1
+		}
+		
+		defense = 22
+		breakthrough = 3
+		soft_attack = 6
+		hard_attack = 1
+		ap_attack = 4
+		air_attack = 0.0
+		build_cost_ic = 0.5
+	}
+
+	gun159 = {
+		year = 159
+	
+		archetype = gun_a
+		parent = gun153
+		priority = 10
+		visual_level = 4
+
+		resources = {
+			gas = 1
+			powder = 2
+		}
+		
+		defense = 28
+		breakthrough = 4
+		soft_attack = 9
+		hard_attack = 1.5
+		ap_attack = 5
+		air_attack = 0.0
+		build_cost_ic = 0.58
+	}
+
+	gun165 = {
+		year = 165
+	
+		archetype = gun_a
+		parent = gun159
+		priority = 10
+		visual_level = 5
+
+		resources = {
+			gas = 1
+			powder = 2
+		}
+		
+		defense = 34
+		breakthrough = 5
+		soft_attack = 12
+		hard_attack = 2
+		air_attack = 0
+		ap_attack = 10
+		build_cost_ic = 0.69
+	}
+}

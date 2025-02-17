@@ -1,0 +1,29 @@
+
+state={
+	id=451
+	name="STATE_451"
+
+	history={
+		146.1.1 = {
+			owner = CJM
+			add_core_of = AOO
+			add_core_of = CJM
+			buildings = {
+				infrastructure = 1
+				industrial_complex = 0
+				arms_factory = 0
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		200 981 1895 2053 6333 6337 6340 6348 6354 6355 7624 7625 
+	}
+	manpower=75028
+	buildings_max_level_factor=1.000
+	state_category=s2
+	local_supplies=2.500
+}

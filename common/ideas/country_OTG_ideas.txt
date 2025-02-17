@@ -1,0 +1,53 @@
+ideas = {
+	country = {
+
+		OTG_yanzhongderenkosunshi_idea = {
+			picture = OTG_yanzhongderenkosunshi_js
+			modifier = {
+				war_support_factor = -0.5
+				war_stability_factor = -0.25
+				mobilization_speed = -0.5
+				conscription_factor = -0.8
+
+			}
+			available = {
+
+			}
+		}
+
+		
+	
+	OTG_riyigaozhangdeminzhuyundong_idea = {
+			picture = chi_war_of_resistance3
+			modifier = {
+				qinwai_drift = 0.05
+				stability_weekly = -0.005
+
+			}
+			available = {
+
+			}
+		}
+	
+	OTG_neibufenhuadejundui_idea = {
+			picture = chi_war_of_resistance3
+			modifier = {
+				stability_factor = -0.1
+				planning_speed = -0.50
+				training_time_army_factor = 0.25
+				army_org_factor = -0.20				
+				army_org_regain = -0.20
+				command_power_gain_mult = -0.20
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+
+			}
+			available = {
+
+			}
+	}
+		
+	}
+}
+
+		

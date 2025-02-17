@@ -1,0 +1,28 @@
+
+state={
+	id=544
+	name="STATE_544"
+
+	history={
+		146.1.1 = {
+			owner = OKI
+			add_core_of = OKI
+			buildings = {
+				infrastructure = 4
+				industrial_complex = 1
+				arms_factory = 0
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		233 1035 1228 2398 
+	}
+	manpower=972
+	buildings_max_level_factor=1.000
+	state_category=s5
+	local_supplies=2.500
+}

@@ -1,0 +1,1249 @@
+﻿add_namespace = ls
+##
+country_event = { #第一次西部竹林战争(改为测试事件)
+	id = ls.1
+	title = ls.1.t
+	desc = ls.1.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		
+	}
+
+	option = {
+		name = ls.1.1
+		ai_chance = {
+			base = 100
+		}
+		MOK = {
+
+			leave_faction = yes
+			declare_war_on = {
+				type = annex_everything
+				target = BYA	
+			}
+		}
+		NZY = {
+
+			#leave_faction = yes
+			declare_war_on = {
+				type = annex_everything
+				target = BYA	
+			}
+		}
+	}
+	option = {
+		name = ls.1.2
+		ai_chance = {
+			base = 0
+		}
+		YZQ = {
+
+			#leave_faction = yes
+			declare_war_on = {
+				type = annex_everything
+				target = JJC	
+			}
+			declare_war_on = {
+				type = annex_everything
+				target = XYL	
+			}
+			622 = {
+				add_claim_by = YZQ
+			}
+			553 = {
+				add_claim_by = YZQ
+			}
+			551 = {
+				add_claim_by = YZQ
+			}
+		}
+	}
+	option = {
+		name = ls.1.3
+		ai_chance = {
+			base = 0
+		}
+		YUK = {
+			YUK_yuk_leader = {
+        set_portraits = {
+          civilian={
+				large="gfx/leaders/YUK/YUK_yuk_98.dds"
+				small="gfx/leaders/YUK/YUK_yuk_98_small.dds"
+			}
+			army = {
+				large="gfx/leaders/YUK/YUK_yuk_98.dds"
+				small="gfx/leaders/YUK/YUK_yuk_98_small.dds"
+			}
+        }
+      }
+		}
+		
+	}
+}
+country_event = { #第一次西部竹林战争联军胜利
+	id = ls.2
+	title = ls.2.t
+	desc = ls.2.d
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+			or = {
+				BYA = {
+                is_subject_of = MOK
+				}
+				BYA = {
+				is_subject_of = NZY
+				}
+				not = {
+					country_exists = BYA
+				}
+              }
+			  tag = MOK
+		}
+	
+
+	option = {
+		name = ls.2.1
+		ai_chance = {
+			base = 100
+		}
+		NZY = {
+        transfer_state = 516
+        transfer_state = 517
+        transfer_state = 292
+        transfer_state = 300
+      }
+	  MOK = {
+        transfer_state = 515
+        transfer_state = 514
+        transfer_state = 286
+        transfer_state = 512
+      }
+	}
+
+}
+country_event = { #反怨灵军团进攻间歇泉
+	id = ls.3
+	title = ls.3.t
+	desc = ls.3.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		
+
+		}
+	
+
+	option = {
+		name = ls.3.1
+		ai_chance = {
+			base = 100
+		}
+		FYJ = {
+        transfer_state = 672
+      }
+	  672 = {
+		add_core_of = FYJ
+		}
+		FYJ = {
+			declare_war_on = {
+				    target = ACE
+				    type = annex_everything
+			}
+			       declare_war_on = {
+				   target = ONS
+				   type = annex_everything
+			}
+			hidden_effect = {
+			load_oob = "FYJ_146"
+			}
+		}
+		FYJ = {
+		add_equipment_to_stockpile = {
+          type = gun147
+          amount = 1000
+        }
+		add_equipment_to_stockpile = {
+          type = mortar143
+          amount = 50
+        }
+		add_ideas = { FYJ_yuanlingtegong_idea_1 }
+		}
+		hidden_effect = {
+			news_event = {id = ls.4 days = 2}
+		}
+	
+	}
+	option = {
+		name = ls.3.2
+		ai_chance = {
+			base = 0
+		}
+		FYJ = {
+        transfer_state = 672
+      }
+	  672 = {
+		add_core_of = FYJ
+		}
+		FYJ = {
+			declare_war_on = {
+				    target = ACE
+				    type = annex_everything
+			}
+			       declare_war_on = {
+				   target = ONS
+				   type = annex_everything
+			}
+			hidden_effect = {
+			load_oob = "FYJ_146"
+			}
+		}
+		FYJ = {
+		add_equipment_to_stockpile = {
+          type = gun147
+          amount = 1000
+        }
+		add_equipment_to_stockpile = {
+          type = mortar143
+          amount = 50
+        }
+		add_ideas = { FYJ_yuanlingtegong_idea_2 }
+		FYJ = {
+			change_tag_from = ROOT
+		}
+		}
+		hidden_effect = {
+			news_event = {id = ls.4 days = 2}
+		}
+
+	
+	}
+
+}
+news_event = { # 反怨灵军团进攻间歇泉新闻
+	id = ls.4
+	title = ls.4
+	desc = ls.4
+	picture = 1
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = ls.4.1
+		trigger = {
+			not = { 
+			capital_scope = {
+             is_on_continent = Gensokyo
+			}
+            }
+			capital_scope = {
+             is_on_continent = Underground
+			}
+		}
+	}
+	option = {
+		name = ls.4.2
+		trigger = {
+			not = { 
+			capital_scope = {
+             is_on_continent = Underground
+			}
+            }
+			capital_scope = {
+             is_on_continent = Gensokyo
+			}
+		}
+	}
+	option = {
+		name = ls.4.3
+		trigger = {
+			not = { 
+			capital_scope = {
+             is_on_continent = Underground
+			}
+			capital_scope = {
+             is_on_continent = Gensokyo
+			}
+            }
+			
+		}
+	}
+}
+country_event = { #魔法森林内战前
+	id = ls.7
+	title = ls.7.t
+	desc = ls.7.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	#	date > 146.5.1
+	#	tag = OTG
+	}
+
+	option = {
+		name = ls.7.1
+		ai_chance = {
+			base = 100
+		}
+		673 = {
+			add_core_of = DJW
+		}
+		183 = {
+			add_core_of = DJW
+		}
+		354 = {
+			add_core_of = ALI
+		}
+		169 = {
+			add_core_of = ALI
+		}
+		191 = {
+			add_core_of = ALI
+		}
+		206 = {
+			add_core_of = ALI
+		}
+		147 = {
+			add_core_of = ALI
+		}
+		182 = {
+			add_core_of = NAR
+		}
+		355 = {
+			add_core_of = NAR
+		}
+		547 = {
+			add_core_of = NAR
+		}
+		151 = {
+			add_core_of = NAR
+		}
+		154 = {
+			add_core_of = NAR
+		}
+		162 = {
+			add_core_of = NAR
+		}
+		138 = {
+			add_core_of = NAR
+		}
+		175 = {
+			add_core_of = NAR
+		}
+		185 = {
+			add_core_of = ELL
+		}
+		465 = {
+			add_core_of = ELL
+		}
+		172 = {
+			add_core_of = ELL
+		}
+		170 = {
+			add_core_of = ELL
+		}
+		153 = {
+			add_core_of = ELL
+		}
+		213 = {
+			add_core_of = RNS
+		}
+		225 = {
+			add_core_of = RNS
+		}
+		430 = {
+			add_core_of = RNS
+		}
+		429 = {
+			add_core_of = RNS
+		}
+		427 = {
+			add_core_of = TXS
+		}
+		426 = {
+			add_core_of = TXS
+		}
+		350 = {
+			add_core_of = RMI
+		}
+		681 = {
+			add_core_of = RMI
+		}
+		135 = {
+			add_core_of = RMI
+		}
+		680 = {
+			add_core_of = RMI
+		}
+		674 = {
+			add_core_of = JHJ
+		}
+		140 = {
+			add_core_of = JHJ
+		}
+
+		
+	}
+	
+}
+country_event = { #魔法森林内战后
+	id = ls.8
+	title = ls.8.t
+	desc = ls.8.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	#	date > 146.5.1
+	#	tag = OTG
+	}
+
+	option = {
+		name = ls.8.1
+		ai_chance = {
+			base = 100
+		}
+		hidden_effect = {
+		MRS = {
+			set_country_flag = MRS_youguoneizhan
+			
+
+
+		}
+		}
+		MRS = {
+			delete_unit_template_and_units = { 
+						division_template = "武装魔法使"
+						disband = no 
+					}
+			delete_unit_template_and_units = { 
+						division_template = "魔炮编制"
+						disband = no 
+					}
+			delete_unit_template_and_units = { 
+						division_template = "近卫兵团"
+						disband = no 
+					}
+	    add_ideas = { Town }
+		add_ideas = { strict_border }
+		add_popularity = {
+				ideology = qinwai
+				popularity = -1
+			}
+		}
+		
+		MRS = {
+		every_owned_state = {
+					limit = {
+						is_core_of = ALI
+					}
+					ALI = {
+						transfer_state = PREV
+					}
+	
+				}
+		every_owned_state = {
+					limit = {
+						is_core_of = NAR
+					}
+					NAR = {
+						transfer_state = PREV
+					}
+	
+				}
+		every_owned_state = {
+					limit = {
+						is_core_of = ELL
+					}
+					ELL = {
+						transfer_state = PREV
+					}
+	
+				}
+		every_owned_state = {
+					limit = {
+						is_core_of = RNS
+					}
+					RNS = {
+						transfer_state = PREV
+					}
+	
+				}
+		every_owned_state = {
+					limit = {
+						is_core_of = TXS
+					}
+					TXS = {
+						transfer_state = PREV
+					}
+	
+				}
+		every_owned_state = {
+					limit = {
+						is_core_of = DJW
+					}
+					DJW = {
+						transfer_state = PREV
+					}
+	
+				}
+		every_owned_state = {
+					limit = {
+						is_core_of = RMI
+					}
+					RMI = {
+						transfer_state = PREV
+					}
+	
+				}
+		every_owned_state = {
+					limit = {
+						is_core_of = JHJ
+					}
+					JHJ = {
+						transfer_state = PREV
+					}
+	
+				}
+				hidden_effect = {
+			load_oob = "MRS_neizhan"
+			}
+		}
+	RMI = {
+		680 = { set_demilitarized_zone = no }
+		135 = { set_demilitarized_zone = no }
+		681 = { set_demilitarized_zone = no }
+		350 = { set_demilitarized_zone = no }
+	}
+	JHJ = {
+		140 = { set_demilitarized_zone = no }
+		674 = { set_demilitarized_zone = no }
+	}
+	DJW = {
+		673 = { set_demilitarized_zone = no }
+		183 = { set_demilitarized_zone = no }
+	}
+	MRS = {
+                end_puppet = NIB
+            }
+	MRS = {
+                end_puppet = SEJ
+            }
+	MRS = {
+                end_puppet =MYJ
+            }
+	MRS = {
+			every_owned_state = {
+				add_core_of = ELL
+	
+				}
+			every_owned_state = {
+				add_core_of = ALI
+	
+				}
+		}
+		ELL = {
+			declare_war_on = {
+				   target = MRS
+				   type = MAF_united_wargoal
+			}
+			inherit_technology = MRS
+			hidden_effect = {
+			load_oob = "ELL_146"
+			every_owned_state = {
+				add_core_of = MRS
+	
+				}
+			every_owned_state = {
+				add_core_of = ALI
+	
+				}
+			every_owned_state = {
+				add_core_of = NAR
+	
+				}
+			}
+		}
+		NAR = {
+			inherit_technology = MRS
+			declare_war_on = {
+				   target = ALI
+				   type = civil_war
+			}
+			hidden_effect = {
+				every_owned_state = {
+				add_core_of = ALI
+	
+				}
+				load_oob = NAR_146
+			}
+		}
+		ALI = {
+			declare_war_on = {
+				   target = NAR
+				   type = civil_war
+			}
+			inherit_technology = MRS
+			hidden_effect = {
+			load_oob = "ALI_146"
+			set_technology = {
+				zhanshujiejiehexin1 = 1
+				
+			}
+			set_technology = {
+				core_shield1 = 1
+				
+			}
+			every_owned_state = {
+				add_core_of= NAR
+	
+				}
+			set_country_flag = MRS_youguoneizhan
+				
+			
+			}
+		}
+		TXS = {
+			declare_war_on = {
+				   target =RNS
+				   type = annex_everything
+			}
+		}
+		RNS = {
+			inherit_technology = MRS
+		}
+		RMI = {
+			declare_war_on = {
+				   target = DJW
+				   type = annex_everything
+			}
+		}
+		RMI = {
+			declare_war_on = {
+				   target = JHJ
+				   type = annex_everything
+			}
+		}
+		ALI_ali = {
+					set_nationality = ALI
+				}
+	    ELL_ellen = {
+					set_nationality = ELL
+				}
+		NAR_narumi = {
+					set_nationality = NAR
+				}
+		RNS_rns = {
+					set_nationality = RNS
+				}
+		NAR = {
+		add_equipment_to_stockpile = {
+          type = magic_core_a
+          amount = 5000
+        }
+		add_equipment_to_stockpile = {
+          type = magic_energy_a
+          amount = 400
+        }
+		}
+		ELL = {
+		add_equipment_to_stockpile = {
+          type = magic_core_a
+          amount = 10000
+        }
+		add_equipment_to_stockpile = {
+          type = magic_energy_a
+          amount = 400
+        }
+		}
+		MRS = {
+		add_equipment_to_stockpile = {
+          type = magic_core_a
+          amount = 5000
+        }
+		add_equipment_to_stockpile = {
+          type = magic_energy_a
+          amount = 800
+        }
+		}
+		ALI = {
+		add_equipment_to_stockpile = {
+          type = magic_core_a
+          amount = 5000
+        }
+		add_equipment_to_stockpile = {
+          type = magic_energy_a
+          amount = 400
+        }
+		add_equipment_to_stockpile = {
+          type = core_shield_a
+          amount = 250
+        }
+		add_equipment_to_stockpile = {
+          type = tactical_core_a
+          amount = 150
+        }
+		add_equipment_to_stockpile = {
+          type = shield_a
+          amount = 300
+        }
+		
+		}
+	}
+	
+}
+country_event = { #神佑宣战铃兰
+	id = ls.9
+	title = ls.9.t
+	desc = ls.9.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		
+
+		}
+	
+
+	option = {
+		name = ls.9.1
+		ai_chance = {
+			base = 100
+		}
+		HU3 = {
+			declare_war_on = {
+				    target = MEL
+				    type = annex_everything
+			}
+		}
+	
+	}
+	
+
+}
+country_event = { #MRS获得残军
+	id = ls.10
+	title = ls.10.t
+	desc = ls.10.d
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		tag = MRS
+		has_country_flag = MRS_youguoneizhan
+		owns_state = 172
+		not = {
+			country_exists = ELL
+		}
+
+		}
+	
+
+	option = {
+		name = ls.10.1
+		ai_chance = {
+			base = 100
+		}
+		custom_effect_tooltip = LS_10_1_1
+		hidden_effect = {
+			load_oob = MRS_ellfulu
+		}
+	
+	}
+	
+
+}
+country_event = { #	ALI获得残军
+	id = ls.11
+	title = ls.11.t
+	desc = ls.11.d
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		tag = ALI
+		
+		has_country_flag = MRS_youguoneizhan
+
+		
+		
+		owns_state = 154
+		not = {
+			country_exists =NAR
+		}
+
+		}
+	
+
+	option = {
+		name = ls.11.1
+		ai_chance = {
+			base = 100
+		}
+		custom_effect_tooltip = LS_11_1_1
+		hidden_effect = {
+			load_oob = ALI_narfulu
+		}
+		country_event = {id = ls.12 days = 1 }
+	
+	}
+	
+
+}
+country_event = { #	ALI改政体
+	id = ls.12
+	title = ls.12.t
+	desc = ls.12.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		
+
+		}
+	
+
+	option = {
+		name = ls.12.1
+		ai_chance = {
+			base = 25
+		}
+		add_popularity = {
+        ideology = oldgenso
+        popularity = 0.3
+      }
+      set_politics = {
+        ruling_party = oldgenso
+      }
+      custom_effect_tooltip = ALI_ski_tt
+      hidden_effect = {
+        XXX = {
+            ALI_ski = {
+                set_nationality = ALI
+            }
+        }
+      }
+	  hidden_effect = {
+        XXX = {
+          ALI_yumeko = {
+            set_nationality = ROOT
+          }
+        }
+      }
+      custom_effect_tooltip = ALI_yumeko_tt
+	  ALI_ali = {
+		add_trait = {
+					trait = th_trait_huoqiangzhuanjia
+				}
+        add_attack = 2
+        add_defense = 1
+          set_portraits = {
+          civilian={
+            large="gfx/leaders/ALI/ALI_ali_98.dds"
+            small="gfx/leaders/ALI/ALI_ali_98_small.dds"
+          }
+          army = {
+            large="gfx/leaders/ALI/ALI_ali_98.dds"
+            small="gfx/leaders/ALI/ALI_ali_98_small.dds"
+          }
+        }
+        }
+      
+      ALI_ali_leader = {
+        set_portraits = {
+          civilian={
+            large="gfx/leaders/ALI/ALI_ali_98.dds"
+            small="gfx/leaders/ALI/ALI_ali_98_small.dds"
+          }
+          army = {
+            large="gfx/leaders/ALI/ALI_ali_98.dds"
+            small="gfx/leaders/ALI/ALI_ali_98_small.dds"
+          }
+        }
+      }
+      custom_effect_tooltip = ALI_mojiejingjimofa_tt
+	  set_cosmetic_tag = ALI_mojietequ
+	PO_add10 = yes
+    PO_add10 = yes
+	add_stability = -0.1
+	}
+	option = {
+		name = ls.12.2
+		ai_chance = {
+			base = 25
+		}
+		add_popularity = {
+        ideology = fandong
+        popularity = 0.3
+      }
+      set_politics = {
+        ruling_party = fandong
+      }
+	  ALI_ali = {
+		set_nationality = XXX
+	  }
+	  ALI_ali_leader = {
+		set_nationality = XXX
+	  }
+	  add_stability = -0.1
+	  outlook_to_weiwu = yes
+
+	
+	}
+	option = {
+		name = ls.12.3
+		ai_chance = {
+			base = 25
+		}
+		add_popularity = {
+        ideology = oldorder
+        popularity = 0.3
+      }
+      set_politics = {
+        ruling_party = oldorder
+      }
+	  ALI_ali = {
+		set_nationality = XXX
+	  }
+	  ALI_ali_leader = {
+		set_nationality = XXX
+	  }
+	  add_stability = -0.25
+
+	
+	}
+	option = {
+		name = ls.12.4
+		ai_chance = {
+			base = 25
+		}
+		add_popularity = {
+        ideology = qinwai
+        popularity = 0.3
+      }
+      
+
+
+	
+	}
+	
+
+}
+news_event = { #第二次灵力危机爆发
+	id = ls.13
+	title = ls.13.t
+	desc = ls.13.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+	trigger = {
+		
+		
+
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
+
+
+	option = {
+		name = ls.13.1
+		
+		ai_chance = {
+			base = 95
+		}
+		every_country = {
+			limit = {
+			capital_scope = {
+				is_on_continent = Gensokyo
+			}
+			not = { has_idea = gensoukyo_creator_idea }
+		}
+		PO_minus10 = yes
+		hidden_effect = {
+			country_event = {id = DBG.4 hours = 1 }
+		}
+		
+
+
+		}
+		
+		
+		
+	}
+		
+			
+
+	
+
+
+}
+country_event = { #平静的一天
+	id = ls.14
+	title = ls.14.t
+	desc = ls.14.d
+
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		date > 146.10.1
+		or = {
+			tag = CIR
+			tag = DHC
+			tag = HCY
+			tag = LIL
+
+
+		}
+		
+	}
+	#mean_time_to_happen = {
+	#	days = 2
+	#}
+
+
+	option = {
+		name = ls.14.1
+		
+		ai_chance = {
+			base = 95
+		}
+		
+		
+		
+	}
+		
+			
+
+	
+
+
+}
+country_event = { #幻草原结界事件
+	id = ls.15
+	title = ls.15.t
+	desc = ls.15.d
+
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		#date > 146.2.5
+		date > 146.1.1
+		or = {
+			tag = CIR
+			tag = DHC
+			tag = HCY
+			tag = LIL
+
+
+		}
+		
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
+
+
+	option = {
+		name = ls.15.1
+		
+		ai_chance = {
+			base = 95
+		}
+		trigger = {
+			or = {
+			tag = DHC
+			tag = HCY
+			tag = LIL
+		}
+		not = {
+			tag = CIR
+		}
+
+		}
+		
+		
+		
+	}
+	option = {
+		name = ls.15.2
+		
+		ai_chance = {
+			base = 20
+		}
+		trigger = {
+			tag = CIR
+
+		}
+		hidden_effect = {
+			news_event = {id = ls.13 days = 1 }
+		}
+		
+		
+		
+	}
+	option = {
+		name = ls.15.3
+		
+		ai_chance = {
+			base = 80
+		}
+		trigger = {
+			tag = CIR
+
+		}
+		hidden_effect = {
+			news_event = {id = ls.13 days = 1 }
+			country_event = {id = ls.16 days = 2 }
+		}
+		
+		
+		
+	}
+		
+			
+
+	
+
+
+}
+country_event = { #9失踪
+	id = ls.16
+	title = ls.16.t
+	desc = ls.16.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		
+	}
+
+
+	option = {
+		name = ls.16.1
+		
+		ai_chance = {
+			base = 95
+		}
+		trigger = {
+
+		}
+		hidden_effect = {
+			complete_national_focus = CIR_2_NEW
+			CIR_cir = {
+					set_nationality = XXX
+				}
+				CIR_cir_leader = {
+					set_nationality = XXX
+				}
+
+		}
+		add_stability = -0.4
+		add_ideas = close_border
+		CIR_linshiweiyuanhui_leader = {
+			add_country_leader_role = {
+				promote_leader = yes
+				country_leader = {
+					ideology = guli_type
+				}
+			}
+		}
+		CIR_linshiweiyuanhui_leader = {
+			add_country_leader_role = {
+				promote_leader = yes
+				country_leader = {
+					ideology = fandong_gemingzhuyi
+				}
+			}
+		}
+		CIR_linshiweiyuanhui_leader = {
+			add_country_leader_role = {
+				promote_leader = yes
+				country_leader = {
+					ideology = oldgenso_type
+				}
+			}
+		}
+		CIR_linshiweiyuanhui_leader = {
+			add_country_leader_role = {
+				promote_leader = yes
+				country_leader = {
+					ideology = qinwai_type
+				}
+			}
+		}
+		CIR_linshiweiyuanhui_leader = {
+			add_country_leader_role = {
+				promote_leader = yes
+				country_leader = {
+					ideology = jinwai_type
+				}
+			}
+		}
+		CIR_linshiweiyuanhui_leader = {
+			add_country_leader_role = {
+				promote_leader = yes
+				country_leader = {
+					ideology = neworder_type
+				}
+			}
+		}
+		CIR_linshiweiyuanhui_leader = {
+			add_country_leader_role = {
+				promote_leader = yes
+				country_leader = {
+					ideology = oldorder
+				}
+			}
+		}
+
+		
+		
+		
+		
+	}
+	
+		
+			
+
+	
+
+
+}
+country_event = { #平安无事
+	id = ls.17
+	title = ls.17.t
+	desc = ls.17.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		
+	}
+	#mean_time_to_happen = {
+	#	days = 2
+	#}
+
+
+	option = {
+		name = ls.17.1
+		
+		ai_chance = {
+			base = 95
+		}
+		hidden_effect = {
+			complete_national_focus = CIR_3_NEW
+
+		}
+		
+		
+		
+	}
+		
+			
+
+	
+
+
+}
+

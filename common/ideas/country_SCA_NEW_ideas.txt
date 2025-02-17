@@ -1,0 +1,511 @@
+ideas = {
+#===============================
+    country = {
+	#=========================
+		SCA_jihudulidedifanggeji_idea = {
+			picture = FRA_matignon_agreements
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				SS_cant_low_subjects = 1
+				SS_subject_modifier_factor = -1
+
+
+			}
+		}
+		SCA_xinxiutushuguan_idea = {
+			picture = FRA_matignon_agreements
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				research_speed_factor = 0.1
+
+
+			}
+		}
+		SCA_junliangshengchan_idea = {
+			picture = FRA_matignon_agreements
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				stability_factor = -0.05
+				no_supply_grace = 48
+
+
+			}
+		}
+		SCA_chongzunvpujun_idea = {
+			picture = FRA_matignon_agreements
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				army_org_factor = 0.15
+				CONSCRIPTION_factor = 0.05
+
+
+			}
+		}
+		SCA_dicengyaojingjunguan_idea = {
+			picture = FRA_matignon_agreements
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				planning_speed = 0.05
+				max_planning = 0.05
+				max_command_power = 10
+				command_power_gain_mult = 0.05
+				experience_gain_factor = 0.05
+				CONSCRIPTION_factor = 0.05
+
+
+			}
+		}
+		SCA_chuantongyaojingjunguan_idea = {
+			picture = FRA_matignon_agreements
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				planning_speed = 0.15
+				max_planning = 0.1
+				max_command_power = 20
+				command_power_gain_mult = 0.1
+				experience_gain_factor = 0.1
+
+
+			}
+		}
+		SCA_sikaleitiejiaguilai_idea = {
+			picture = FRA_matignon_agreements
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				stability_factor = -0.3
+				CONSCRIPTION_factor = -0.1
+				industrial_capacity_factory = -0.1
+				mobilization_laws_cost_factor = 0.25
+
+
+			}
+		}
+		SCA_baorongxinzhengbingzhengce_idea = {
+			picture = FRA_matignon_agreements
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				CONSCRIPTION_factor = 0.15
+
+
+			}
+		}
+		SCA_xinxingshengchanfangshi_idea = {
+			picture = FRA_matignon_agreements
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+
+
+			}
+		}
+		SCA_junshichongjianjihua_idea = {
+			picture = FRA_matignon_agreements
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_arms_factory_factor = 0.25
+
+
+			}
+		}
+		SCA_huifuzhongdejunduitixi_idea = {
+			picture = FRA_matignon_agreements
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				army_org_factor = -0.10
+				army_morale_factor = -0.10
+				org_loss_when_moving = 0.10
+				army_speed_factor = -0.05
+				recon_factor = -0.25
+				dig_in_speed_factor = -0.25
+				max_dig_in_factor = -0.25
+				army_attack_factor = -0.30
+				land_reinforce_rate = -0.05
+				training_time_factor = -0.4
+				ai_desired_divisions_factor = 0.25
+				max_command_power = -50
+
+
+			}
+		}
+		SCA_junbeixianzhitiaoyue_idea_1 = {
+	    	picture = tfv_can_conscription_crisis
+
+			available = {
+
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				CONSCRIPTION_factor = -0.75
+				political_power_factor = -0.2
+				war_support_factor = -0.4
+				training_time_factor = 0.6
+				industrial_capacity_factory = -0.35
+				generate_wargoal_tension = 1
+				production_speed_arms_factory_factor = -0.5
+				mobilization_laws_cost_factor = 1
+				mobilization_speed = -0.25
+				research_bonus = {
+				military = -0.8
+			}
+
+			}
+		}
+		SCA_junbeixianzhitiaoyue_idea_2 = {
+	    	picture = tfv_can_conscription_crisis
+
+			available = {
+
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				CONSCRIPTION_factor = -0.4
+				political_power_factor = -0.05
+				war_support_factor = -0.1
+				training_time_factor = 0.2
+				industrial_capacity_factory = -0.35
+				generate_wargoal_tension = 0.9
+				production_speed_arms_factory_factor = -0.25
+				mobilization_laws_cost_factor = 0.5
+				mobilization_speed = -0.1
+				research_bonus = {
+				military = -0.8
+			}
+
+			}
+		}
+		SCA_mimijunbeishengchan_idea = {
+	    	picture = tfv_can_conscription_crisis
+
+			available = {
+
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				industrial_capacity_factory = 0.25
+				production_factory_efficiency_gain_factor = 0.25
+
+			}
+		}
+		SCA_jiduluohoudezhishishuiping_idea = {
+	    	picture = tfv_can_conscription_crisis
+
+			available = {
+
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				research_speed_factor = -0.5
+				political_power_factor = -0.25
+				mobilization_speed = -0.2
+				INDUSTRIAL_CAPACITY_FACTORy = -0.1
+				production_speed_buildings_factor = -0.1
+				mobilization_laws_cost_factor = 0.2
+				economy_cost_factor = 0.2
+
+
+			}
+			research_bonus = {
+				military = -0.45
+			}
+		}
+		SCA_xinshijundui_idea = {
+	    	picture = tfv_can_conscription_crisis
+
+			available = {
+
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+				org_loss_when_moving = -0.05
+				dig_in_speed_factor = 0.05
+				max_dig_in_factor = 0.1
+				land_reinforce_rate = 0.05
+				training_time_factor = 0.05
+				max_command_power = 5
+
+
+			}
+			
+		}
+		SCA_waichuliuxue_idea = {
+	    	picture = tfv_can_conscription_crisis
+
+			available = {
+				has_war = no
+
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				qinwai_drift = 0.05
+				research_speed_factor = 0.1
+				political_power_factor = 0.1
+				stability_weekly = -0.005
+				stability_factor = -0.1
+				qinwai_acceptance = 10
+
+
+			}
+			
+			
+		}
+		SCA_renxinsiluan_idea = {
+	    	picture = tfv_can_conscription_crisis
+
+			available = {
+				has_war = yes
+
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				qinwai_drift = 0.02
+				stability_weekly = -0.02
+				army_attack_factor = -0.05
+				army_core_defence_factor -0.05
+				army_org_factor = -0.2
+
+
+			}
+			
+			
+		}
+		SCA_zujiequ_idea_1 = {
+	    	picture = tfv_can_conscription_crisis
+
+			available = {
+
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				global_building_slots_factor = -0.2
+
+			}
+			targeted_modifier = { 
+				tag = HUM
+	
+				cic_to_target_factor = 0.15
+				#mic_to_target_factor = 0.90
+				
+			}
+			targeted_modifier = { 
+				tag = OTG
+	
+				cic_to_target_factor = 0.15
+				#mic_to_target_factor = 0.90
+				
+			}
+			targeted_modifier = { 
+				tag = MRS
+	
+				cic_to_target_factor = 0.1
+				#mic_to_target_factor = 0.90
+				
+			}
+			targeted_modifier = { 
+				tag = KAP
+	
+				cic_to_target_factor = 0.1
+				#mic_to_target_factor = 0.90
+				
+			}
+			targeted_modifier = { 
+				tag = AKI
+	
+				cic_to_target_factor = 0.05
+				#mic_to_target_factor = 0.90
+				
+			}
+
+		}
+		SCA_zujiequ_idea_2 = {
+	    	picture = tfv_can_conscription_crisis
+
+			available = {
+
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				global_building_slots_factor = -0.2
+
+			}
+			targeted_modifier = { 
+				tag = OTG
+	
+				cic_to_target_factor = 0.15
+				#mic_to_target_factor = 0.90
+				
+			}
+			targeted_modifier = { 
+				tag = MRS
+	
+				cic_to_target_factor = 0.1
+				#mic_to_target_factor = 0.90
+				
+			}
+			targeted_modifier = { 
+				tag = KAP
+	
+				cic_to_target_factor = 0.1
+				#mic_to_target_factor = 0.90
+				
+			}
+			targeted_modifier = { 
+				tag = AKI
+	
+				cic_to_target_factor = 0.05
+				#mic_to_target_factor = 0.90
+				
+			}
+
+		}
+	}
+		
+}

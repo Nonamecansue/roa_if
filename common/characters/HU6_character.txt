@@ -1,0 +1,74 @@
+characters={
+  HU6_kog_leader ={
+    name = HU6_kog_leader
+    portraits={
+      civilian={
+        large="gfx/leaders/TKM/TKM_kog.dds"
+        small="gfx/leaders/TKM/TKM_kog_small.dds"
+      }
+      army = {
+        large="gfx/leaders/TKM/TKM_benben.dds"
+        small="gfx/leaders/TKM/TKM_benben_small.dds"
+      }
+    }
+    country_leader={
+      ideology=fandong_waige
+      id=-1
+    }
+    country_leader={
+      ideology=guli_type
+      id=-1
+    }
+    country_leader={
+      ideology=qinwai_type
+      id=-1
+    }
+    country_leader={
+      ideology=oldorder_type
+      id=-1
+    }
+    country_leader={
+      ideology=neworder_type
+      id=-1
+    }
+    country_leader={
+      ideology=oldgenso_type
+      id=-1
+    }
+  }
+    HU6_kog ={
+    name = HU6_kog
+    portraits={
+      civilian={
+        large="gfx/leaders/TKM/TKM_kog.dds"
+        small="gfx/leaders/TKM/TKM_kog_small.dds"
+      }
+      army = {
+        large="gfx/leaders/TKM/TKM_kog.dds"
+        small="gfx/leaders/TKM/TKM_kog_small.dds"
+      }
+    }
+    corps_commander = {
+      traits = {  th_original_character th_character  war_hero old_guard }
+      attack_skill = 4
+      defense_skill = 5
+      planning_skill = 6
+      logistics_skill = 7
+      # id = 29            
+      skill = 6
+    }
+    advisor = {
+      slot = character_coop
+      idea_token = HU6_kog
+      name = HU6_kog
+      cost = 200
+      modifier = {
+        stability_weekly = 0.002
+        war_support_factor = 0.1
+      }
+      ai_will_do = {
+        factor = 1
+      }
+    }
+  }
+}

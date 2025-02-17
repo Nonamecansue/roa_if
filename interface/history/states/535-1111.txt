@@ -1,0 +1,37 @@
+
+state={
+	id=535
+	name="STATE_535"
+	resources={
+		energy=0.000
+		powder=0.000
+		metal=0.000
+		gas=0.000
+		crystal=2.000
+	}
+
+	history={
+		146.1.1 = {
+			owner = YZQ
+			add_core_of = AKO
+			add_core_of = HGH
+			add_core_of = YZQ
+			buildings = {
+				infrastructure = 0
+				industrial_complex = 0
+				arms_factory = 0
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		6945 6961 6967 6972 6974 6982 6986 6989 6991 6995 
+	}
+	manpower=73954
+	buildings_max_level_factor=1.000
+	state_category=s2
+	local_supplies=2.500
+}

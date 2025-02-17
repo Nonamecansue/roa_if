@@ -1,0 +1,15 @@
+on_actions = {
+	on_daily_HCY = {
+		effect = {		
+			
+			set_variable = { HCY_TEST0 = HCY_TEST }
+			set_variable = { HCY_CESHI0 = HCY_CESHI }
+			set_variable = { HCY_CS0 = HCY_CS }
+			set_variable = { HCY_SC0 = HCY_SC }
+			set_variable = { HCY_BS0 = HCY_BS }
+			set_variable = { HCY_SJ0 = HCY_SJ }
+			set_variable = { HCY_JUNBIAN0 = HCY_JUNBIAN }
+			set_variable = { HCY_CHAJUEDU0 = HCY_CHAJUEDU }
+		}
+	}
+}

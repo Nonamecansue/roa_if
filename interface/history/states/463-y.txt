@@ -1,0 +1,30 @@
+state={
+	id=463
+	name="STATE_463"
+	provinces={
+		354 1530 1576 2098 6014 6018 6023 6032 
+	}
+	resources={
+		energy = 0
+		powder = 0.0
+		metal = 0.0
+		gas=5.000
+		crystal=2.000
+	}
+	history={
+		146.1.1 = {
+			owner = SKI
+			add_core_of = SKI
+			buildings = {
+				infrastructure = 5
+				industrial_complex = 5
+				arms_factory = 0
+
+			}
+		}
+	}
+	manpower=3675
+	state_category=s7
+	local_supplies=2.5
+	buildings_max_level_factor=1.000
+}

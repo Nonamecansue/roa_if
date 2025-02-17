@@ -1,0 +1,309 @@
+ideas = {
+	country = {
+
+		MOK_renleixunlianfangshi_idea = {
+			picture = chi_war_of_resistance3
+			modifier = {
+				
+
+			}
+			available = {
+
+			}
+		}
+		MOK_bianjingchongtu_idea = {
+			picture = chi_war_of_resistance3
+			modifier = {
+				MONTHLY_POPULATION = -0.2
+				production_speed_buildings_factor = -0.25
+				research_speed_factor = -0.25
+
+			}
+			available = {
+				not = {
+					has_war_with = BYA
+				}
+			 country_exists = BYA
+
+			}
+		}
+		MOK_bukekaodepantaobudui_idea = {
+			picture = chi_war_of_resistance3
+			modifier = {
+				stability_factor = -0.25
+				stability_weekly = -0.002
+				political_power_factor = -0.15
+				CONSCRIPTION_factor = -0.25
+				industrial_capacity_factory = -0.1
+				power_balance_weekly = -0.002
+
+			}
+			available = {
+
+			}
+		}
+		MOK_chuantongzijingtuan_idea = {
+			picture = chi_war_of_resistance3
+			modifier = {
+				stability_factor = 0.1
+				army_core_attack_factor = 0.1
+                army_core_defence_factor = 0.1
+			}
+			available = {
+
+			}
+		}
+		MOK_gaocengdeduanzantuanjie_idea = {
+			picture = chi_war_of_resistance3
+			modifier = {
+				stability_factor = 0.25
+				war_support_factor = 0.25
+				breakthrough_factor = 0.05
+				land_reinforce_rate = 0.05
+			}
+			available = {
+
+			}
+		}
+		MOK_mianqiangweichidetuanjie_idea = {
+			picture = chi_war_of_resistance3
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.10
+				stability_weekly = -0.005
+				POLITICAL_POWER_GAIN = -0.25
+			}
+			available = {
+
+			}
+		}
+		MOK_yanzhongdezhengzhifenqi_idea = {
+			picture = chi_war_of_resistance3
+			modifier = {
+				stability_factor = -0.10
+				war_support_factor = -0.10
+				stability_weekly = -0.005
+				POLITICAL_POWER_GAIN = -0.5
+			}
+			available = {
+
+			}
+		}
+		MOK_bianjingxiji_idea = {
+			picture = chi_war_of_resistance3
+			modifier = {
+				MONTHLY_POPULATION = -0.3
+				production_speed_buildings_factor = -0.25
+			}
+			available = {
+				not = {
+					has_war_with = BYA
+				}
+			 country_exists = BYA
+
+			}
+		}
+		MOK_bianjingxiji_idea_1 = {
+			picture = chi_war_of_resistance3
+			modifier = {
+				MONTHLY_POPULATION = -0.3
+				production_speed_buildings_factor = -0.25
+				power_balance_weekly = -0.02
+			}
+			available = {
+				not = {
+					has_war_with = BYA
+				}
+			 country_exists = BYA
+
+			}
+		}
+		MOK_minbingbudui_idea_1 = {
+			picture = chi_war_of_resistance3
+			modifier = {
+				training_time_factor = -0.25
+				
+			}
+			available = {
+
+			}
+		}
+		MOK_minbingbudui_idea_2 = {
+			picture = chi_war_of_resistance3
+			modifier = {
+				training_time_factor = -0.1
+				
+			}
+			available = {
+
+			}
+		}
+		MOK_ganzhongshengchan_idea = {
+			picture = chi_war_of_resistance3
+			modifier = {
+				industrial_capacity_factory = 0.25
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.3
+				CONSUMER_GOODS_FACTOR = -0.1
+				production_speed_buildings_factor = 0.3
+				stability_factor = -0.15
+			}
+			available = {
+
+			}
+		}
+		MOK_zhulinkaifayundong_idea = {
+			picture = chi_war_of_resistance3
+			modifier = {
+                local_resources_factor = 0.10
+                consumer_goods_factor = -0.02
+                global_building_slots_factor = 0.1
+
+			}
+			available = {
+
+			}
+		}
+		MOK_xinshibuji_idea = {
+			picture = chi_war_of_resistance3
+			modifier = {
+			out_of_supply_factor = -0.25
+			supply_node_range = 0.25
+
+			}
+			available = {
+
+			}
+		}
+		MOK_xijisuodewu_idea = {
+			picture = chi_war_of_resistance3
+			modifier = {
+			industrial_capacity_factory = 0.1
+			production_factory_max_efficiency_factor = 0.05
+			production_factory_efficiency_gain_factor = 0.05
+
+			}
+			available = {
+
+			}
+		}
+		MOK_yunshudeshengchanjichuang_idea = {
+			picture = chi_war_of_resistance3
+			modifier = {
+			industrial_capacity_factory = 0.1
+			production_factory_max_efficiency_factor = 0.05
+			production_factory_efficiency_gain_factor = 0.05
+
+			}
+			available = {
+
+			}
+		}
+		MOK_zhulinyunshuxuanchuan_idea = {
+			picture = chi_war_of_resistance3
+			modifier = {
+			weekly_manpower = 5
+			weekly_war_support = 0.005
+			war_support_factor = 0.1
+			industrial_capacity_factory = 0.1
+			supply_node_range = 0.05
+
+			}
+			available = {
+
+			}
+		}
+		MOK_zhongshibubing_idea = {
+			picture = chi_war_of_resistance3
+			modifier = {
+			#modifier_army_sub_unit_sc_infantry_attack_factor = 0.15
+			#modifier_army_sub_unit_sc_infantry_defence_factor = 0.15
+
+			}
+			available = {
+
+			}
+			equipment_bonus = {
+				gun_a = {
+				 	build_cost_ic = -0.15 instant = yes
+				}
+			}
+		}
+		MOK_zhongshihuopao_idea = {
+			picture = chi_war_of_resistance3
+			modifier = {
+			#army_artillery_attack_factor = 0.15
+			#army_artillery_defence_factor = 0.15
+
+			}
+			available = {
+
+			}
+			equipment_bonus = {
+				mortar_a = {
+					build_cost_ic = -0.15 instant = yes
+				}
+	
+			}
+		}
+		MOK_xiujianbujixian_idea = {
+			picture = chi_war_of_resistance3
+			modifier = {
+			production_speed_rail_way_factor = 0.3
+
+			}
+			available = {
+
+			}
+			
+		}
+		MOK_zhanzhengdejinxing_idea = {
+			picture = chi_war_of_resistance3
+			modifier = {
+			power_balance_weekly = -0.01
+			war_support_weekly = -0.005
+			stability_weekly = -0.005
+
+			}
+			available = {
+				has_war = yes
+
+			}
+			
+		}
+		MOK_fanyaoshoutongmeng_idea = {
+			picture = chi_war_of_resistance3
+			modifier = {
+			
+
+			}
+			rule = {
+				can_create_factions = yes
+			}
+			available = {
+				country_exists = BYA
+
+			}
+			
+		}
+		MOK_test_idea = {
+			picture = chi_war_of_resistance3
+			modifier = {
+			
+
+			}
+			rule = {
+				can_create_factions = yes
+			}
+			available = {
+				not = {
+					has_country_flag = MOK_zhanzhengdejinxing1
+				}
+
+			}
+			
+		}
+	}
+}
+
+		

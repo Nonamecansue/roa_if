@@ -1,0 +1,99 @@
+characters={
+	WAK_wak ={
+		name = WAK_wak
+		portraits={
+			civilian={
+				large="gfx/leaders/WAK/WAK_wak.dds"
+				small="gfx/leaders/WAK/WAK_wak_small.dds"
+			}
+			army = {
+				large="gfx/leaders/WAK/WAK_wak.dds"
+				small="gfx/leaders/WAK/WAK_wak_small.dds"
+			}
+		}
+		corps_commander = {
+            traits = {  th_original_character th_character  trait_cautious  }
+            attack_skill = 3
+            defense_skill = 6
+            planning_skill = 4
+            logistics_skill = 4
+            
+            skill = 5
+        }
+		advisor = {
+			slot = character_coop
+			idea_token = WAK_wak
+			name = WAK_wak
+			cost = 200
+			research_bonus = {
+				sf_force = 0.15
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	WAK_wak_leader ={
+		name = WAK_wak_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/WAK/WAK_wak.dds"
+				small="gfx/leaders/WAK/WAK_wak_small.dds"
+			}
+			army = {
+				large="gfx/leaders/WAK/WAK_wak.dds"
+				small="gfx/leaders/WAK/WAK_wak_small.dds"
+			}
+		}
+		country_leader={
+			ideology=qinwai_type
+			id=-1
+		}
+		country_leader={
+			ideology=guli_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldorder_type
+			id=-1
+		}
+		country_leader={
+			ideology=fandong_type
+			id=-1
+		}
+		country_leader={
+			ideology=neworder_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldgenso_type
+			id=-1
+		}
+	}
+	WAK_flan_leader ={
+		name = WAK_flan_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/SCA/SCA_flan.dds"
+				small="gfx/leaders/SCA/SCA_flan_small.dds"
+			}
+			army = {
+				large="gfx/leaders/SCA/SCA_flan.dds"
+				small="gfx/leaders/SCA/SCA_flan_small.dds"
+			}
+		}
+	}
+	WAK_rem_leader ={
+		name = WAK_rem_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/SCA/SCA_rem.dds"
+				small="gfx/leaders/SCA/SCA_rem_small.dds"
+			}
+			army = {
+				large="gfx/leaders/SCA/SCA_rem.dds"
+				small="gfx/leaders/SCA/SCA_rem_small.dds"
+			}
+		}
+	}
+}

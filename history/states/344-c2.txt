@@ -1,0 +1,35 @@
+
+state={
+	id=344
+	name="STATE_344"
+	resources={
+		powder=0.000
+		metal=0.000
+		gas=0.000
+		crystal=0.000
+	}
+
+	history={
+		146.1.1 = {
+			owner = WHR
+			add_core_of = WHR
+			add_claim_by = MRS
+			buildings = {
+				infrastructure = 2
+				industrial_complex = 0
+				arms_factory = 0
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		509 1289 2819 3833 3834 3837 3838 
+	}
+	manpower=1138
+	buildings_max_level_factor=1.000
+	state_category=s2
+	local_supplies=2.500
+}

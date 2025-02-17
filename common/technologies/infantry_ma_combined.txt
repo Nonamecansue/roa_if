@@ -1,0 +1,1336 @@
+technologies = {
+	@x1 = 1
+	@x2 = 4
+	@x3 = 7
+	@x4 = 10
+	@x5 = 13
+	@x6 = 16
+	@x7 = 19
+	@x8 = 22
+	@x9 = 25
+	@x10 = 28
+	@x11 = 31
+	@x12 = 34
+	@x13 = 37
+	@x14 = 40
+	@x15 = 43
+	@x16 = 46
+	@x17 = 49
+	@x18 = 52
+	@x19 = 55
+	@x20 = 58
+	@y1 = 1
+	@y2 = 3
+	@y3 = 5
+	@y4 = 7
+	@y5 = 9
+	@y6 = 11
+	@y7 = 13
+	@y8 = 15
+	@y9 = 17
+	@y10 = 19
+	################
+	ma_shield1 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.1
+		
+		path = {
+			leads_to_tech = ma_linglixishou
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = tezhonglinglidanyuan1
+			research_cost_coeff = 1
+		}
+
+		enable_equipments = {
+			shield146
+		}
+		enable_subunits = {
+			melee_cavalry
+		}
+		on_research_complete = {
+			hidden_effect = {
+				load_oob = melee_cavalry
+			}
+			custom_effect_tooltip = shield_oob
+		}
+
+		research_cost = 2
+		start_year = 146
+		folder = {
+			name = infantry_ma_combined_folder
+			position = { x = @x2 y = @y1 }
+		}
+		
+		categories = {
+			military
+			infantry
+			shield
+			combined
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ma_linglixishou = {
+		
+		path = {
+			leads_to_tech = ma_shield2
+			research_cost_coeff = 1
+		}
+
+		melee_infantry = {
+			breakthrough = 0.5
+			defense = 0.5
+		}
+		melee_cavalry = {
+			breakthrough = 0.25
+		}
+
+		research_cost = 2
+		start_year = 146
+		folder = {
+			name = infantry_ma_combined_folder
+			position = { x = @x2 y = @y2 }
+		}
+		
+		categories = {
+			military
+			infantry
+			shield
+			combined
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ma_shield2 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.1
+
+		path = {
+			leads_to_tech = ma_shield3
+			research_cost_coeff = 1
+		}
+
+		enable_equipments = {
+			shield149
+		}
+
+		research_cost = 2
+		start_year = 149
+		folder = {
+			name = infantry_ma_combined_folder
+			position = { x = @x2 y = @y3 }
+		}
+		
+		categories = {
+			military
+			infantry
+			shield
+			combined
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ma_shield3 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.1
+
+		path = {
+			leads_to_tech = ma_shield4
+			research_cost_coeff = 1
+		}
+
+		enable_equipments = {
+			shield153
+		}
+
+		research_cost = 2
+		start_year = 153
+		folder = {
+			name = infantry_ma_combined_folder
+			position = { x = @x2 y = @y4 }
+		}
+		
+		categories = {
+			military
+			infantry
+			shield
+			combined
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ma_shield4 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.1
+
+		path = {
+			leads_to_tech = ma_shield5
+			research_cost_coeff = 1
+		}
+
+		enable_equipments = {
+			shield157
+		}
+
+		research_cost = 2
+		start_year = 157
+		folder = {
+			name = infantry_ma_combined_folder
+			position = { x = @x2 y = @y5 }
+		}
+		
+		categories = {
+			military
+			infantry
+			shield
+			combined
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ma_shield5 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.1
+		
+		path = {
+			leads_to_tech = ma_shield6
+			research_cost_coeff = 1
+		}
+
+		enable_equipments = {
+			shield161
+		}
+
+		research_cost = 2
+		start_year = 161
+		folder = {
+			name = infantry_ma_combined_folder
+			position = { x = @x2 y = @y6 }
+		}
+		
+		categories = {
+			military
+			infantry
+			shield
+			combined
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ma_shield6 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.1
+		
+		path = {
+			leads_to_tech = ma_shield7
+			research_cost_coeff = 1
+		}
+
+		enable_equipments = {
+			shield165
+		}
+
+		research_cost = 2
+		start_year = 165
+		folder = {
+			name = infantry_ma_combined_folder
+			position = { x = @x2 y = @y7 }
+		}
+		
+		categories = {
+			military
+			infantry
+			shield
+			combined
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ma_shield7 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.1
+		
+		# path = {
+		# 	leads_to_tech = ma_shield8
+		# 	research_cost_coeff = 1
+		# }
+
+		enable_equipments = {
+			shield169
+		}
+
+		research_cost = 2
+		start_year = 169
+		folder = {
+			name = infantry_ma_combined_folder
+			position = { x = @x2 y = @y8 }
+		}
+		
+		categories = {
+			military
+			infantry
+			shield
+			combined
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ma_junyongyunshuchiliang1 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.1
+		
+		path = {
+			leads_to_tech = ma_zhuangjiache1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = ma_yizhantanke
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = ma_junyongyunshuchiliang2
+			research_cost_coeff = 1
+		}
+
+		
+
+		enable_equipments = {
+			jixiezhuangbei144
+		}
+		enable_subunits = {
+			melee_jixiehuabudui
+		}
+		enable_subunits = {
+			melee_jixiehuabudui_ma
+		}
+#		on_research_complete = {
+#			hidden_effect = {
+#				load_oob = melee_cavalry
+#			}
+#			custom_effect_tooltip = shield_oob
+#		}
+
+		research_cost = 2
+		start_year = 146
+		folder = {
+			name = infantry_ma_combined_folder
+			position = { x = @x4 y = @y1 }
+		}
+		
+		categories = {
+			military
+			infantry
+			shield
+			combined
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ma_junyongyunshuchiliang2 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.1
+		
+#		path = {
+#			leads_to_tech = sc_zhuangjiache1
+#			research_cost_coeff = 1
+#		}
+		path = {
+		leads_to_tech = ma_jixiehuacheliang1
+			research_cost_coeff = 1
+		}
+
+		
+
+		enable_equipments = {
+			jixiezhuangbei146
+		}
+#		on_research_complete = {
+#			hidden_effect = {
+#				load_oob = melee_cavalry
+#			}
+#			custom_effect_tooltip = shield_oob
+#		}
+
+		research_cost = 2
+		start_year = 146
+		folder = {
+			name = infantry_ma_combined_folder
+			position = { x = @x4 y = @y2 }
+		}
+		
+		categories = {
+			military
+			infantry
+			shield
+			combined
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ma_jixiehuacheliang1 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.1
+		
+		path = {
+			leads_to_tech = ma_jixiehuacheliang2
+			research_cost_coeff = 1
+		}
+
+		
+
+		enable_equipments = {
+			jixiehuacheliang148
+		}
+		enable_subunits = {
+			sc_jixiehuacheliang
+		}
+#		on_research_complete = {
+#			hidden_effect = {
+#				load_oob = melee_cavalry
+#			}
+#			custom_effect_tooltip = shield_oob
+#		}
+
+		research_cost = 2
+		start_year = 148
+		folder = {
+			name = infantry_ma_combined_folder
+			position = { x = @x4 y = @y3 }
+		}
+		
+		categories = {
+			military
+			infantry
+			shield
+			combined
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ma_jixiehuacheliang2 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.1
+		
+		path = {
+			leads_to_tech = ma_jixiehuacheliang3
+			research_cost_coeff = 1
+		}
+
+		
+
+		enable_equipments = {
+			jixiehuacheliang150
+		}
+#		on_research_complete = {
+#			hidden_effect = {
+#				load_oob = melee_cavalry
+#			}
+#			custom_effect_tooltip = shield_oob
+#		}
+
+		research_cost = 2
+		start_year = 150
+		folder = {
+			name = infantry_ma_combined_folder
+			position = { x = @x4 y = @y4 }
+		}
+		
+		categories = {
+			military
+			infantry
+			shield
+			combined
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ma_jixiehuacheliang3 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.1
+		
+#		path = {
+#			leads_to_tech = sc_yizhantanke
+#			research_cost_coeff = 1
+#		}
+
+		
+
+		enable_equipments = {
+			jixiehuacheliang152
+		}
+#		on_research_complete = {
+#			hidden_effect = {
+#				load_oob = melee_cavalry
+#			}
+#			custom_effect_tooltip = shield_oob
+#		}
+
+		research_cost = 2
+		start_year = 152
+		folder = {
+			name = infantry_ma_combined_folder
+			position = { x = @x4 y = @y5 }
+		}
+		
+		categories = {
+			military
+			infantry
+			shield
+			combined
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ma_zhuangjiache1 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.1
+		
+		path = {
+			leads_to_tech = ma_zhuangjiache2
+			research_cost_coeff = 1
+		}
+
+		
+
+		enable_equipments = {
+			zhuangjiahce144
+		}
+		enable_subunits = {
+			sc_zhuangjiache
+		}
+#		on_research_complete = {
+#			hidden_effect = {
+#				load_oob = melee_cavalry
+#			}
+#			custom_effect_tooltip = shield_oob
+#		}
+
+		research_cost = 2
+		start_year = 146
+		folder = {
+			name = infantry_ma_combined_folder
+			position = { x = @x5 y = @y2 }
+		}
+		
+		categories = {
+			military
+			infantry
+			shield
+			combined
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ma_zhuangjiache2 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.1
+		
+		path = {
+			leads_to_tech = ma_zhuangjiache3
+			research_cost_coeff = 1
+	}
+
+		
+
+		enable_equipments = {
+			zhuangjiahce146
+		}
+#		on_research_complete = {
+#			hidden_effect = {
+#				load_oob = melee_cavalry
+#			}
+#			custom_effect_tooltip = shield_oob
+#		}
+
+		research_cost = 2
+		start_year = 146
+		folder = {
+			name = infantry_ma_combined_folder
+			position = { x = @x5 y = @y3 }
+		}
+		
+		categories = {
+			military
+			infantry
+			shield
+			combined
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ma_zhuangjiache3 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.1
+		
+		path = {
+			leads_to_tech = ma_zhuangjiache4
+			research_cost_coeff = 1
+		}
+
+		
+
+		enable_equipments = {
+			zhuangjiahce149
+		}
+#		on_research_complete = {
+#			hidden_effect = {
+#				load_oob = melee_cavalry
+#			}
+#			custom_effect_tooltip = shield_oob
+#		}
+
+		research_cost = 2
+		start_year = 149
+		folder = {
+			name = infantry_ma_combined_folder
+			position = { x = @x5 y = @y4 }
+		}
+		
+		categories = {
+			military
+			infantry
+			shield
+			combined
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ma_zhuangjiache4 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.1
+		
+
+		
+
+		enable_equipments = {
+			zhuangjiahce152
+		}
+#		on_research_complete = {
+#			hidden_effect = {
+#				load_oob = melee_cavalry
+#			}
+#			custom_effect_tooltip = shield_oob
+#		}
+
+		research_cost = 2
+		start_year = 152
+		folder = {
+			name = infantry_ma_combined_folder
+			position = { x = @x5 y = @y5 }
+		}
+		
+		categories = {
+			military
+			infantry
+			shield
+			combined
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ma_yizhantanke = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.1
+		
+		path = {
+			leads_to_tech = ma_xuanzhuanpaota
+			research_cost_coeff = 1
+		}
+
+		
+
+		enable_equipments = {
+			ma_yizhantan144
+		}
+		enable_subunits = {
+			ma_yizhantan
+		}
+		
+#		on_research_complete = {
+#			hidden_effect = {
+#				load_oob = melee_cavalry
+#			}
+#			custom_effect_tooltip = shield_oob
+#		}
+
+		research_cost = 2
+		start_year = 144
+		folder = {
+			name = infantry_ma_combined_folder
+			position = { x = @x8 y = @y2 }
+		}
+		
+		categories = {
+			military
+			infantry
+			shield
+			combined
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ma_xuanzhuanpaota = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.1
+		
+		path = {
+			leads_to_tech = ma_qingtan1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = ma_zhongtan1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = ma_zhontan1
+			research_cost_coeff = 1
+		}
+
+		
+
+		
+#		on_research_complete = {
+#			hidden_effect = {
+#				load_oob = melee_cavalry
+#			}
+#			custom_effect_tooltip = shield_oob
+#		}
+
+		research_cost = 2
+		start_year = 144
+		folder = {
+			name = infantry_ma_combined_folder
+			position = { x = @x8 y = @y3 }
+		}
+		
+		categories = {
+			military
+			infantry
+			shield
+			combined
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ma_qingtan1 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.1
+		
+		path = {
+			leads_to_tech = ma_qingtan2
+			research_cost_coeff = 1
+		}
+
+       enable_equipments = {
+			ma_qingtan146
+		}
+		enable_subunits = {
+			ma_qingtan
+		}
+
+		
+
+		
+#		on_research_complete = {
+#			hidden_effect = {
+#				load_oob = melee_cavalry
+#			}
+#			custom_effect_tooltip = shield_oob
+#		}
+
+		research_cost = 2
+		start_year = 146
+		folder = {
+			name = infantry_ma_combined_folder
+			position = { x = @x7 y = @y4 }
+		}
+		
+		categories = {
+			military
+			infantry
+			shield
+			combined
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ma_qingtan2 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.1
+		
+		path = {
+			leads_to_tech = ma_qingtan3
+			research_cost_coeff = 1
+		}
+
+       enable_equipments = {
+			ma_qingtan149
+		}
+
+		
+
+		
+#		on_research_complete = {
+#			hidden_effect = {
+#				load_oob = melee_cavalry
+#			}
+#			custom_effect_tooltip = shield_oob
+#		}
+
+		research_cost = 2
+		start_year = 149
+		folder = {
+			name = infantry_ma_combined_folder
+			position = { x = @x7 y = @y5 }
+		}
+		
+		categories = {
+			military
+			infantry
+			shield
+			combined
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ma_qingtan3 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.1
+		
+#		path = {
+#			leads_to_tech = sc_qingtan3
+#			research_cost_coeff = 1
+#		}
+
+       enable_equipments = {
+			ma_qingtan152
+		}
+
+		
+
+		
+#		on_research_complete = {
+#			hidden_effect = {
+#				load_oob = melee_cavalry
+#			}
+#			custom_effect_tooltip = shield_oob
+#		}
+
+		research_cost = 2
+		start_year = 149
+		folder = {
+			name = infantry_ma_combined_folder
+			position = { x = @x7 y = @y6 }
+		}
+		
+		categories = {
+			military
+			infantry
+			shield
+			combined
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ma_zhongtan1 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.1
+		
+		path = {
+			leads_to_tech = ma_zhongtan2
+			research_cost_coeff = 1
+		}
+
+       enable_equipments = {
+			ma_zhongtan146
+		}
+		enable_subunits = {
+			ma_zhongtan
+		}
+
+		
+
+		
+#		on_research_complete = {
+#			hidden_effect = {
+#				load_oob = melee_cavalry
+#			}
+#			custom_effect_tooltip = shield_oob
+#		}
+
+		research_cost = 2
+		start_year = 146
+		folder = {
+			name = infantry_ma_combined_folder
+			position = { x = @x8 y = @y4 }
+		}
+		
+		categories = {
+			military
+			infantry
+			shield
+			combined
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ma_zhongtan2 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.1
+		
+		path = {
+			leads_to_tech = ma_zhongtan3
+			research_cost_coeff = 1
+		}
+
+       enable_equipments = {
+			ma_zhongtan149
+		}
+
+		
+
+		
+#		on_research_complete = {
+#			hidden_effect = {
+#				load_oob = melee_cavalry
+#			}
+#			custom_effect_tooltip = shield_oob
+#		}
+
+		research_cost = 2
+		start_year = 149
+		folder = {
+			name = infantry_ma_combined_folder
+			position = { x = @x8 y = @y5 }
+		}
+		
+		categories = {
+			military
+			infantry
+			shield
+			combined
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ma_zhongtan3 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.1
+		
+		path = {
+			leads_to_tech = ma_zhongtan4
+			research_cost_coeff = 1
+		}
+
+       enable_equipments = {
+			ma_zhongtan151
+		}
+
+		
+
+		
+#		on_research_complete = {
+#			hidden_effect = {
+#				load_oob = melee_cavalry
+#			}
+#			custom_effect_tooltip = shield_oob
+#		}
+
+		research_cost = 2
+		start_year = 151
+		folder = {
+			name = infantry_ma_combined_folder
+			position = { x = @x8 y = @y6 }
+		}
+		
+		categories = {
+			military
+			infantry
+			shield
+			combined
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ma_zhongtan4 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.1
+		
+#		path = {
+#			leads_to_tech = sc_zhongtan3
+#			research_cost_coeff = 1
+#		}
+
+       enable_equipments = {
+			ma_zhongtan154
+		}
+
+		
+
+		
+#		on_research_complete = {
+#			hidden_effect = {
+#				load_oob = melee_cavalry
+#			}
+#			custom_effect_tooltip = shield_oob
+#		}
+
+		research_cost = 2
+		start_year = 154
+		folder = {
+			name = infantry_ma_combined_folder
+			position = { x = @x8 y = @y7 }
+		}
+		
+		categories = {
+			military
+			infantry
+			shield
+			combined
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ma_zhontan1 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.1
+		
+		path = {
+			leads_to_tech = ma_zhontan2
+			research_cost_coeff = 1
+	}
+	path = {
+			leads_to_tech = ma_chaozhongtan1
+			research_cost_coeff = 1
+		}
+
+       enable_equipments = {
+			ma_zhontan146
+		}
+		enable_subunits = {
+			ma_zhontan
+		}
+
+		
+
+		
+#		on_research_complete = {
+#			hidden_effect = {
+#				load_oob = melee_cavalry
+#			}
+#			custom_effect_tooltip = shield_oob
+#		}
+
+		research_cost = 2
+		start_year = 146
+		folder = {
+			name = infantry_ma_combined_folder
+			position = { x = @x9 y = @y4 }
+		}
+		
+		categories = {
+			military
+			infantry
+			shield
+			combined
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ma_zhontan2 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.1
+		
+		path = {
+			leads_to_tech = ma_zhontan3
+			research_cost_coeff = 1
+		}
+
+       enable_equipments = {
+			ma_zhontan149
+		}
+
+		
+
+		
+#		on_research_complete = {
+#			hidden_effect = {
+#				load_oob = melee_cavalry
+#			}
+#			custom_effect_tooltip = shield_oob
+#		}
+
+		research_cost = 2
+		start_year = 149
+		folder = {
+			name = infantry_ma_combined_folder
+			position = { x = @x9 y = @y5 }
+		}
+		
+		categories = {
+			military
+			infantry
+			shield
+			combined
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ma_zhontan3 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.1
+		
+		path = {
+			leads_to_tech = ma_zhontan4
+			research_cost_coeff = 1
+		}
+
+       enable_equipments = {
+			ma_zhontan151
+		}
+
+		
+
+		
+#		on_research_complete = {
+#			hidden_effect = {
+#				load_oob = melee_cavalry
+#			}
+#			custom_effect_tooltip = shield_oob
+#		}
+
+		research_cost = 2
+		start_year = 151
+		folder = {
+			name = infantry_ma_combined_folder
+			position = { x = @x9 y = @y6 }
+		}
+		
+		categories = {
+			military
+			infantry
+			shield
+			combined
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ma_zhontan4 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.1
+		
+#		path = {
+#			leads_to_tech = sc_zhontan4
+#			research_cost_coeff = 1
+#		}
+
+       enable_equipments = {
+			ma_zhontan154
+		}
+
+		
+
+		
+#		on_research_complete = {
+#			hidden_effect = {
+#				load_oob = melee_cavalry
+#			}
+#			custom_effect_tooltip = shield_oob
+#		}
+
+		research_cost = 2
+		start_year = 154
+		folder = {
+			name = infantry_ma_combined_folder
+			position = { x = @x9 y = @y7 }
+		}
+		
+		categories = {
+			military
+			infantry
+			shield
+			combined
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ma_chaozhongtan1 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.1
+		
+		path = {
+			leads_to_tech = ma_chaozhongtan2
+		research_cost_coeff = 1
+		}
+
+       enable_equipments = {
+			ma_chaozhongtan149
+		}
+		enable_subunits = {
+			sp_ma_chaozhongtan
+		}
+
+		
+
+		
+#		on_research_complete = {
+#			hidden_effect = {
+#				load_oob = melee_cavalry
+#			}
+#			custom_effect_tooltip = shield_oob
+#		}
+
+		research_cost = 2
+		start_year = 149
+		folder = {
+			name = infantry_ma_combined_folder
+			position = { x = @x10 y = @y5 }
+		}
+		
+		categories = {
+			military
+			infantry
+			shield
+			combined
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	ma_chaozhongtan2 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.1
+		
+#		path = {
+#			leads_to_tech = sc_zhontan3
+#			research_cost_coeff = 1
+#		}
+
+       enable_equipments = {
+			ma_chaozhongtan152
+		}
+
+		
+
+		
+#		on_research_complete = {
+#			hidden_effect = {
+#				load_oob = melee_cavalry
+#			}
+#			custom_effect_tooltip = shield_oob
+#		}
+
+		research_cost = 2
+		start_year = 152
+		folder = {
+			name = infantry_ma_combined_folder
+			position = { x = @x10 y = @y6 }
+		}
+		
+		categories = {
+			military
+			infantry
+			shield
+			combined
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,30 @@
+
+state={
+	id=181
+	name="STATE_181"
+
+	history={
+		146.1.1 = {
+			owner = ZYL
+			add_core_of = CLO
+			add_core_of = AOO
+			add_core_of = ZYL
+			buildings = {
+				infrastructure = 1
+				industrial_complex = 0
+				arms_factory = 0
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		352 898 901 1141 1412 2226 2525 2812 6438 6444 6447 
+	}
+	manpower=112572.0
+	state_category=s2
+	local_supplies=2.5
+	buildings_max_level_factor=1.000
+}

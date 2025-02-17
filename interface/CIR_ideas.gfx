@@ -1,0 +1,10 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_idea_CIR_biyaodeguli_js"
+		texturefile = "gfx/interface/ideas/idea_biyaodeguli.png"
+	}	
+	spriteType = {
+		name = "GFX_idea_CIR_sikalietejiadeyichan_js"
+		texturefile = "gfx/interface/ideas/idea_sikalietejiadeyichan.png"
+	}	
+}

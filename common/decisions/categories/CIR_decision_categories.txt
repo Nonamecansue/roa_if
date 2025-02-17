@@ -1,0 +1,27 @@
+CIR_zizhizhouyihui_decision_category = { #自治州议会
+	priority = 20
+}
+CIR_quanmingjungongjihua_decision_category = { #全民军工计划
+	priority = 20
+}
+CIR_jiadajichugongyetouzi_decision_category = { #基础工业投资
+	priority = 20
+}
+CIR_yaojinghezhongguo_decision_category = { #妖精合众国的扩大
+	priority = 20
+}
+CIR_bangzhuyaojinggemingzhe_decision_category = { #帮助妖精革命者
+priority = 20
+}
+
+
+# NMS_chongzheng_category = {
+# 	priority = 20
+# 	visible_when_empty = yes
+# 	visible = {
+# 		tag = NMS
+# 		not = {
+# 			has_country_flag = NMS_wending
+# 		}
+# 	}
+# }

@@ -1,0 +1,153 @@
+# All infantry equipment
+
+equipments = {
+
+	ma_qingtan_a = {
+		year = 144
+	
+		is_archetype = yes
+		picture = archetype_infantry_equipment		
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		
+		interface_category = interface_category_land
+
+		upgrades = {
+			upgrade_reliability
+          	upgrade_softattack
+          	upgrade_hardattack
+          	upgrade_aaattack
+          	upgrade_defense
+          	upgrade_breakthrough
+          	upgrade_ic
+          	upgrade_ic_reverse
+          	upgrade_reliability_reverse
+		}
+		upgrades = {
+			up_ma_attack
+			up_defense
+			up_speed
+		}
+		
+		
+
+		
+		
+		#Defensive Abilities
+		defense = 6
+		breakthrough = 20
+		hardness = 0.7
+		armor_value = 10
+
+		#Offensive Abilities
+		soft_attack = 5
+		hard_attack = 8
+		ap_attack = 15
+		air_attack = 0
+
+		#Mima Abilities
+		reliability = 0.7
+		maximum_speed = 6
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+		
+		build_cost_ic = 6
+
+		
+		
+	}
+	ma_qingtan144 = {
+		year = 144
+	
+		archetype = ma_qingtan_a
+		
+		priority = 10
+		visual_level = 0
+
+		resources = {
+			metal = 1
+		}
+	}
+	ma_qingtan146 = {
+		year = 146
+	
+		archetype = ma_qingtan_a
+		
+		priority = 10
+		visual_level = 1
+
+		defense = 6
+		breakthrough = 28
+		hardness = 0.7
+		armor_value = 15
+
+		#Offensive Abilities
+		soft_attack = 10
+		hard_attack = 8
+		ap_attack = 10
+		air_attack = 0
+		maximum_speed = 10
+		build_cost_ic = 7
+
+		resources = {
+			metal = 1
+			crystal = 1
+		}
+	}
+	ma_qingtan149 = {
+		year = 149
+	
+		archetype = ma_qingtan_a
+		
+		priority = 10
+		visual_level = 2
+
+		defense = 5
+		breakthrough = 36
+		hardness = 0.7
+		armor_value = 15
+
+		#Offensive Abilities
+		soft_attack = 13
+		hard_attack = 10
+		ap_attack = 35
+		air_attack = 0
+		maximum_speed = 12
+		build_cost_ic = 8
+
+		resources = {
+			metal = 2
+			crystal = 1
+		}
+	}
+	ma_qingtan152 = {
+		year = 152
+	
+		archetype = ma_qingtan_a
+		
+		priority = 10
+		visual_level = 3
+
+		defense = 6
+		breakthrough = 46
+		hardness = 0.7
+		armor_value = 30
+
+		#Offensive Abilities
+		soft_attack = 19
+		hard_attack = 13
+		ap_attack = 55
+		air_attack = 0
+		maximum_speed = 14
+		build_cost_ic = 9
+
+		resources = {
+			metal = 3
+			crystal = 1
+		}
+	}
+
+
+}

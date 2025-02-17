@@ -1,0 +1,36 @@
+﻿l_simp_chinese:
+ MOK_1:0 "西部竹林危机"
+ MOK_1_desc:0 "早在结界危机之前，竹林地区的妖兽们就经常会去袭击那些误入竹林的人们。而到了现在，由于北部人类政府的阻碍，她们难以向着竹林外部进行扩展，于是便将目光转向了竹林内部，而我们则成了她们的第一个目标。尽管到目前为止她们仅仅只是在边界地区制造了些许冲突并拿走了一些东西，但谁能保证她们不会在某天突然向我们不宣而战，打我们个措手不及呢？"
+ MOK_2:0 "团结叛逃者"
+ MOK_3:0 "巩固自警团地位"
+ MOK_4:0 "启动紧急军事建设"
+
+
+
+
+
+ #HU1_yuejingerlaidenongmin_idea:0 "越境而来的农民"
+ #HU1_yuejingerlaidenongmin_idea_desc:0 "我们农民议会的名声早已传入了我们西边的神明信仰联盟那里，有相当多对秋神失去希望的人越过边境加入到我们的阵线当中，当然，我们会欢迎一切想要加入我们的人的。"
+ MOK_junguanduoquan_power_balance:0 "高层权力斗争"
+ MOK_geren_junguanduoquan_1:0 "青年军官团掌控政局"
+ MOK_geren_junguanduoquan_2:0 "青年军官团干涉政局"
+ MOK_geren_junguanduoquan_3:0 "青年军官团影响政局"
+ MOK_geren_junguanduoquan_4:0 "青年军官团优势巨大"
+ MOK_geren_junguanduoquan_5:0 "青年军官团轻微占优"
+ MOK_geren_junguanduoquan_6:0 "自警队轻微占优"
+ MOK_geren_junguanduoquan_7:0 "自警队优势巨大"
+ MOK_geren_junguanduoquan_8:0 "自警队控制政局"
+ MOK_geren_junguanduoquan_9:0 "自警队全面控制政局"
+ MOK_geren_junguanduoquan_10:0 "自警队主导政局"
+
+
+
+
+ MOK_guli_party_1:0 "青年军官团"
+ MOK_fandong_party_1:0 "青年军官团"
+ MOK_oldgenso_party_1:0 "青年军官团"
+
+
+
+ MOK_zhengbian_1:0 "竹林军阀"
+

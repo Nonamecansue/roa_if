@@ -1,0 +1,1491 @@
+TBA_anbaojishuyanjiu = {
+	TBA_anbaojishuyanjiu_jichu = {
+		available = {
+			NOT = {
+				has_country_flag = TBA_anbaojishuyanjiu_flag
+			}
+		}
+		visible = {
+			has_completed_focus = TBA_13
+		}
+		cost = 100
+		days_remove = 90
+		complete_effect = {
+			set_country_flag = TBA_anbaojishuyanjiu_flag
+		}
+		remove_effect = {
+			add_tech_bonus = {
+				bonus = 1.5
+				ahead_reduction = 1.0
+				uses = 1.0
+				category = primary_weapons
+			}
+			clr_country_flag = TBA_anbaojishuyanjiu_flag
+		}
+	}
+	TBA_anbaojishuyanjiu_huopao = {
+		available = {
+			NOT = {
+				has_country_flag = TBA_anbaojishuyanjiu_flag
+			}
+		}
+		visible = {
+			has_completed_focus = TBA_13
+		}
+		cost = 100
+		days_remove = 90
+		complete_effect = {
+			set_country_flag = TBA_anbaojishuyanjiu_flag
+		}
+		remove_effect = {
+			add_tech_bonus = {
+				bonus = 1.5
+				ahead_reduction = 1.0
+				uses = 1.0
+				category = artillery_tech
+			}
+			clr_country_flag = TBA_anbaojishuyanjiu_flag
+		}
+	}
+	TBA_anbaojishuyanjiu_zhiyuan = {
+		available = {
+			NOT = {
+				has_country_flag = TBA_anbaojishuyanjiu_flag
+			}
+		}
+		visible = {
+			has_completed_focus = TBA_13
+		}
+		cost = 100
+		days_remove = 90
+		complete_effect = {
+			set_country_flag = TBA_anbaojishuyanjiu_flag
+		}
+		remove_effect = {
+			add_tech_bonus = {
+				bonus = 1.5
+				ahead_reduction = 1.0
+				uses = 1.0
+				category = support_tech
+			}
+			clr_country_flag = TBA_anbaojishuyanjiu_flag
+		}
+	}
+	TBA_anbaojishuyanjiu_xinshi = {
+		available = {
+			NOT = {
+				has_country_flag = TBA_anbaojishuyanjiu_flag
+			}
+		}
+		visible = {
+			has_completed_focus = TBA_13
+		}
+		cost = 100
+		days_remove = 90
+		complete_effect = {
+			set_country_flag = TBA_anbaojishuyanjiu_flag
+		}
+		remove_effect = {
+			add_tech_bonus = {
+				bonus = 1.5
+				ahead_reduction = 1.0
+				uses = 1.0
+				category = shield_weapons
+				category = heavy
+			}
+			clr_country_flag = TBA_anbaojishuyanjiu_flag
+		}
+	}
+	TBA_anbaojishuyanjiu_kongjun = {
+		available = {
+			NOT = {
+				has_country_flag = TBA_anbaojishuyanjiu_flag
+			}
+		}
+		visible = {
+			has_completed_focus = TBA_13
+		}
+		cost = 100
+		days_remove = 90
+		complete_effect = {
+			set_country_flag = TBA_anbaojishuyanjiu_flag
+		}
+		remove_effect = {
+			add_tech_bonus = {
+				bonus = 1.5
+				ahead_reduction = 1.0
+				uses = 1.0
+				category = air_equipment
+			}
+			clr_country_flag = TBA_anbaojishuyanjiu_flag
+		}
+	}
+	TBA_anbaojishuyanjiu_junshi = {
+		available = {
+			NOT = {
+				has_country_flag = TBA_anbaojishuyanjiu_flag
+			}
+		}
+		visible = {
+			has_completed_focus = TBA_13
+		}
+		cost = 100
+		days_remove = 90
+		complete_effect = {
+			set_country_flag = TBA_anbaojishuyanjiu_flag
+		}
+		remove_effect = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.75
+				uses = 1
+				category = basic_doctrine
+			}
+			clr_country_flag = TBA_anbaojishuyanjiu_flag
+		}
+	}
+}
+TBA_yancaogongji = {
+	TBA_zengjiayancao_1 = {
+		available = {
+			NOT = {
+				has_country_flag = TBA_yancaobianhua_flag
+				has_idea = TBA_yancaogongji_5
+			}
+		}
+		visible = {
+			has_completed_focus = TBA_26
+			NOT = {
+				has_completed_focus = TBA_65
+			}
+		}
+		cost = 20
+		days_remove = 15
+		complete_effect = {
+			set_country_flag = TBA_yancaobianhua_flag
+		}
+		remove_effect = {
+			TBA_yancaogongji_shang = yes
+			clr_country_flag = TBA_yancaobianhua_flag
+		}
+	}
+	TBA_jianshaoyancao_1 = {
+		available = {
+			NOT = {
+				has_country_flag = TBA_yancaobianhua_flag
+				has_idea = TBA_yancaogongji_1
+			}
+		}
+		visible = {
+			has_completed_focus = TBA_26
+			NOT = {
+				has_completed_focus = TBA_65
+			}
+		}
+		cost = 20
+		days_remove = 15
+		complete_effect = {
+			set_country_flag = TBA_yancaobianhua_flag
+		}
+		remove_effect = {
+			TBA_yancaogongji_jian = yes
+			clr_country_flag = TBA_yancaobianhua_flag
+		}
+	}
+	TBA_jianshaoyancao_1_x = {
+		available = {
+			NOT = {
+				has_country_flag = TBA_yancaobianhua_flag
+				has_idea = TBA_yancaogongji_1
+			}
+		}
+		visible = {
+			has_completed_focus = TBA_26
+			NOT = {
+				has_completed_focus = TBA_65
+			}
+		}
+		cost = 0
+		days_remove = 15
+		complete_effect = {
+			add_stability = -0.25
+			set_country_flag = TBA_yancaobianhua_flag
+		}
+		remove_effect = {
+			TBA_yancaogongji_jian = yes
+			clr_country_flag = TBA_yancaobianhua_flag
+		}
+	}
+	TBA_zengjiayancao_2 = {
+		available = {
+			NOT = {
+				has_country_flag = TBA_yancaobianhua_flag
+				has_idea = TBA_yancaogongji_5_x
+			}
+		}
+		visible = {
+			has_completed_focus = TBA_65
+		}
+		cost = 20
+		days_remove = 15
+		complete_effect = {
+			set_country_flag = TBA_yancaobianhua_flag
+		}
+		remove_effect = {
+			TBA_yancaogongji_shang_1 = yes
+			clr_country_flag = TBA_yancaobianhua_flag
+		}
+	}
+	TBA_jianshaoyancao_2 = {
+		available = {
+			NOT = {
+				has_country_flag = TBA_yancaobianhua_flag
+				has_idea = TBA_yancaogongji_1
+			}
+		}
+		visible = {
+			has_completed_focus = TBA_65
+		}
+		cost = 20
+		days_remove = 15
+		complete_effect = {
+			set_country_flag = TBA_yancaobianhua_flag
+		}
+		remove_effect = {
+			TBA_yancaogongji_jian_1 = yes
+			clr_country_flag = TBA_yancaobianhua_flag
+		}
+	}
+	TBA_jianshaoyancao_2_x = {
+		available = {
+			NOT = {
+				has_country_flag = TBA_yancaobianhua_flag
+				has_idea = TBA_yancaogongji_1
+			}
+		}
+		visible = {
+			has_completed_focus = TBA_65
+		}
+		cost = 0
+		days_remove = 15
+		complete_effect = {
+			add_stability = -0.25
+			set_country_flag = TBA_yancaobianhua_flag
+		}
+		remove_effect = {
+			TBA_yancaogongji_jian_1 = yes
+			clr_country_flag = TBA_yancaobianhua_flag
+		}
+	}
+}
+TBA_kuozhangjihua = {
+	TBA_yaoguaishang = {
+		available = {
+			threat > 0.5
+		}
+		visible = {
+			FROM = {
+				NOT = {
+					has_country_flag = TBA_yaoguaishang_flag
+				}
+			}
+			has_completed_focus = TBA_14
+			is_neighbor_of = FROM
+		}
+		cost = 50
+		days_remove = 30
+		complete_effect = {
+			
+		}
+		target_trigger = {
+			FROM = {
+				OR = {
+					tag = CHE
+					tag = NMN
+				}
+			}
+		}
+		complete_effect = {
+			FROM = {
+				set_country_flag = TBA_yaoguaishang_flag
+			}
+		}
+		remove_effect = {
+			hidden_effect = {
+				FROM = {
+					country_event = {
+						id = tba.1
+						days = 2
+					}
+				}
+			}
+			declare_war_on = {
+                type = annex_everything
+                target = FROM
+            }
+		}
+	}
+	TBA_xinanhuanxx = {
+		available = {
+			threat > 0.5
+		}
+		visible = {
+			FROM = {
+				NOT = {
+					has_country_flag = TBA_xinanhuanxx_flag
+				}
+			}
+			has_completed_focus = TBA_17
+			is_neighbor_of = FROM
+		}
+		cost = 50
+		days_remove = 30
+		complete_effect = {
+			
+		}
+		target_trigger = {
+			FROM = {
+				OR = {
+					tag = ZYD
+					tag = HU6
+					tag = GH1
+					tag = HU3
+					tag = MEL
+					tag = SGS
+					tag = GH2
+					tag = GH3
+				}
+			}
+		}
+		complete_effect = {
+			FROM = {
+				set_country_flag = TBA_xinanhuanxx_flag
+			}
+		}
+		remove_effect = {
+			hidden_effect = {
+				FROM = {
+					country_event = {
+						id = tba.1
+						days = 2
+					}
+				}
+			}
+			declare_war_on = {
+                type = annex_everything
+                target = FROM
+            }
+		}
+	}
+	TBA_tiango = {
+		available = {
+			threat > 0.5
+		}
+		visible = {
+			FROM = {
+				NOT = {
+					has_country_flag = TBA_tiango_flag
+				}
+			}
+			has_completed_focus = TBA_18
+			is_neighbor_of = FROM
+		}
+		cost = 50
+		days_remove = 30
+		complete_effect = {
+			
+		}
+		target_trigger = {
+			FROM = {
+				OR = {
+					tag = TEG
+					tag = OTG
+				}
+			}
+		}
+		complete_effect = {
+			FROM = {
+				set_country_flag = TBA_tiango_flag
+			}
+		}
+		remove_effect = {
+			hidden_effect = {
+				FROM = {
+					country_event = {
+						id = tba.1
+						days = 2
+					}
+				}
+			}
+			declare_war_on = {
+                type = annex_everything
+                target = FROM
+            }
+		}
+	}
+}
+TBA_guyongshibing = {
+	TBA_guyongshibing_1 = {
+		available = {
+			
+		}
+		visible = {
+			has_completed_focus = TBA_43
+		}
+		cost = 100
+		days_remove = 15
+		days_re_enable = 30
+		remove_effect = {
+			add_manpower = 300
+			add_stability = -0.05
+		}
+	}
+}
+TBA_zosijunhuo = {
+	TBA_zosijunhuo_buqiang = {
+		available = {
+			
+		}
+		visible = {
+			has_completed_focus = TBA_44
+		}
+		cost = 75
+		days_remove = 10
+		days_re_enable = 30
+		remove_effect = {
+			if = {
+				limit = {
+					has_tech = gun3
+					NOT = {
+						has_tech = gun4
+						has_tech = gun5
+						has_tech = gun6
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = gun147
+					amount = 1000
+					producer = TBA
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = gun4
+					NOT = {
+						has_tech = gun5
+						has_tech = gun6
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = gun153
+					amount = 1000
+					producer = TBA
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = gun5
+					NOT = {
+						has_tech = gun6
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = gun159
+					amount = 1000
+					producer = TBA
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = gun6
+				}
+				add_equipment_to_stockpile = {
+					type = gun165
+					amount = 1000
+					producer = TBA
+				}
+			}
+		}
+	}
+	TBA_zosijunhuo_fuka = {
+		available = {
+			
+		}
+		visible = {
+			has_completed_focus = TBA_44
+		}
+		cost = 75
+		days_remove = 10
+		days_re_enable = 30
+		remove_effect = {
+			if = {
+				limit = {
+					has_tech = spell_card2
+					NOT = {
+						has_tech = spell_card3
+						has_tech = spell_card4
+						has_tech = spell_card5
+						has_tech = spell_card6
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = magic_core141
+					amount = 1000
+					producer = TBA
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = spell_card3
+					NOT = {
+						has_tech = spell_card4
+						has_tech = spell_card5
+						has_tech = spell_card6
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = magic_core147
+					amount = 1000
+					producer = TBA
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = spell_card4
+					NOT = {
+						has_tech = spell_card5
+						has_tech = spell_card6
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = magic_core153
+					amount = 1000
+					producer = TBA
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = spell_card5
+					NOT = {
+						has_tech = spell_card6
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = magic_core159
+					amount = 1000
+					producer = TBA
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = spell_card6
+				}
+				add_equipment_to_stockpile = {
+					type = magic_core165
+					amount = 1000
+					producer = TBA
+				}
+			}
+		}
+	}
+	TBA_zosijunhuo_huopao = {
+		available = {
+			
+		}
+		visible = {
+			has_completed_focus = TBA_44
+		}
+		cost = 75
+		days_remove = 10
+		days_re_enable = 30
+		remove_effect = {
+			if = {
+				limit = {
+					has_tech = mortar1
+					NOT = {
+						has_tech = mortar2
+						has_tech = mortar3
+						has_tech = mortar4
+						has_tech = mortar5
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = mortar143
+					amount = 100
+					producer = TBA
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = mortar2
+					NOT = {
+						has_tech = mortar3
+						has_tech = mortar4
+						has_tech = mortar5
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = mortar149
+					amount = 100
+					producer = TBA
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = mortar3
+					NOT = {
+						has_tech = mortar4
+						has_tech = mortar5
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = mortar155
+					amount = 100
+					producer = TBA
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = mortar4
+					NOT = {
+						has_tech = mortar5
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = mortar161
+					amount = 100
+					producer = TBA
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = mortar5
+				}
+				add_equipment_to_stockpile = {
+					type = mortar167
+					amount = 100
+					producer = TBA
+				}
+			}
+		}
+	}
+	TBA_zosijunhuo_maopao = {
+		available = {
+			
+		}
+		visible = {
+			has_completed_focus = TBA_44
+		}
+		cost = 75
+		days_remove = 10
+		days_re_enable = 30
+		remove_effect = {
+			if = {
+				limit = {
+					has_tech = magic_energy1
+					NOT = {
+						has_tech = magic_energy2
+						has_tech = magic_energy3
+						has_tech = magic_energy4
+						has_tech = magic_energy5
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = magic_energy143
+					amount = 100
+					producer = TBA
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = magic_energy2
+					NOT = {
+						has_tech = magic_energy3
+						has_tech = magic_energy4
+						has_tech = magic_energy5
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = magic_energy149
+					amount = 100
+					producer = TBA
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = magic_energy3
+					NOT = {
+						has_tech = magic_energy4
+						has_tech = magic_energy5
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = magic_energy155
+					amount = 100
+					producer = TBA
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = magic_energy4
+					NOT = {
+						has_tech = magic_energy5
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = magic_energy161
+					amount = 100
+					producer = TBA
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = magic_energy5
+				}
+				add_equipment_to_stockpile = {
+					type = magic_energy167
+					amount = 100
+					producer = TBA
+				}
+			}
+		}
+	}
+}
+TBA_junhuochuko = {
+	TBA_junhuochuko_buqiang = {
+		available = {
+			has_equipment = { 
+				gun_a > 999
+			}
+		}
+		visible = {
+			FROM = {
+				capital_scope = {
+					is_on_continent = Gensokyo
+				}
+				NOT = {
+					has_war_with = TBA
+				}
+			}
+			has_completed_focus = TBA_107
+		}
+		days_re_enable = 30
+		complete_effect = {
+			
+		}
+		target_trigger = {
+			FROM = {
+				is_major = yes
+			}
+		}
+		complete_effect = {
+			FROM = {
+				country_event = {
+					days = 1
+					id = tba.3
+				}
+			}
+		}
+		remove_effect = {
+			
+		}
+	}
+	TBA_junhuochuko_huopao = {
+		available = {
+			has_equipment = { 
+				mortar_a > 99
+			}
+		}
+		visible = {
+			FROM = {
+				capital_scope = {
+					is_on_continent = Gensokyo
+				}
+				NOT = {
+					has_war_with = TBA
+				}
+			}
+			has_completed_focus = TBA_107
+		}
+		days_re_enable = 30
+		complete_effect = {
+			
+		}
+		target_trigger = {
+			FROM = {
+				is_major = yes
+			}
+		}
+		complete_effect = {
+			FROM = {
+				country_event = {
+					days = 1
+					id = tba.4
+				}
+			}
+		}
+		remove_effect = {
+			
+		}
+	}
+	TBA_junhuochuko_fuka = {
+		available = {
+			has_equipment = { 
+				magic_core_a > 999 
+			}
+		}
+		visible = {
+			FROM = {
+				capital_scope = {
+					is_on_continent = Gensokyo
+				}
+				NOT = {
+					has_war_with = TBA
+				}
+			}
+			has_completed_focus = TBA_107
+		}
+		days_re_enable = 30
+		complete_effect = {
+			
+		}
+		target_trigger = {
+			FROM = {
+				is_major = yes
+			}
+		}
+		complete_effect = {
+			FROM = {
+				country_event = {
+					days = 1
+					id = tba.5
+				}
+			}
+		}
+		remove_effect = {
+			
+		}
+	}
+	TBA_junhuochuko_mopao = {
+		available = {
+			has_equipment = { 
+				magic_energy_a > 99
+			}
+		}
+		visible = {
+			FROM = {
+				capital_scope = {
+					is_on_continent = Gensokyo
+				}
+				NOT = {
+					has_war_with = TBA
+				}
+			}
+			has_completed_focus = TBA_107
+		}
+		days_re_enable = 30
+		complete_effect = {
+			
+		}
+		target_trigger = {
+			FROM = {
+				is_major = yes
+			}
+		}
+		complete_effect = {
+			FROM = {
+				country_event = {
+					days = 1
+					id = tba.6
+				}
+			}
+		}
+		remove_effect = {
+			
+		}
+	}
+}
+TBA_shichangguanli = {
+	TBA_shichangguanli_shichanggongyejianshe = {
+		available = {
+			always = no
+		}
+
+		visible = {
+			has_completed_focus = TBA_40
+		}
+
+		activation = {
+			has_completed_focus = TBA_40
+		}
+
+		cancel_trigger = {
+			always = no
+		}
+
+		days_mission_timeout = 90
+		is_good = yes
+		timeout_effect = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+				    type = 	industrial_complex
+				    level = 1
+				    instant_build = yes
+				}
+			}
+		}
+	}
+	TBA_shichangguanli_gongyejianshe = {
+		available = {
+			always = no
+		}
+
+		visible = {
+			has_completed_focus = TBA_40
+		}
+
+		activation = {
+			has_completed_focus = TBA_40
+		}
+
+		cancel_trigger = {
+			always = no
+		}
+
+		days_mission_timeout = 120
+		is_good = yes
+		timeout_effect = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	TBA_shichangguanli_shichanggongyejianshe_1 = {
+		available = {
+			
+		}
+		visible = {
+			has_completed_focus = TBA_40
+			NOT = {
+				has_completed_focus = TBA_49
+			}
+		}
+		cost = 60
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = TBA_shichangguanli_shichanggongyejianshe
+				days = -45
+			}
+		}
+	}
+	TBA_shichangguanli_gongyejianshe_1 = {
+		available = {
+			
+		}
+		visible = {
+			has_completed_focus = TBA_40
+			NOT = {
+				has_completed_focus = TBA_49
+			}
+		}
+		cost = 60
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = TBA_shichangguanli_gongyejianshe
+				days = -45
+			}
+		}
+	}
+	TBA_shichangguanli_shichanggongyejianshe_2 = {
+		available = {
+			
+		}
+		visible = {
+			OR = {
+				has_completed_focus = TBA_49
+			}
+			NOT = {
+				has_completed_focus = TBA_77
+				has_completed_focus = TBA_51
+			}
+		}
+		cost = 50
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = TBA_shichangguanli_shichanggongyejianshe
+				days = -45
+			}
+		}
+	}
+	TBA_shichangguanli_gongyejianshe_2 = {
+		available = {
+			
+		}
+		visible = {
+			OR = {
+				has_completed_focus = TBA_49
+			}
+			NOT = {
+				has_completed_focus = TBA_77
+				has_completed_focus = TBA_51
+			}
+		}
+		cost = 50
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = TBA_shichangguanli_gongyejianshe
+				days = -45
+			}
+		}
+	}
+	TBA_shichangguanli_shichanggongyejianshe_3 = {
+		available = {
+			
+		}
+		visible = {
+			OR = {
+				AND = {
+					has_completed_focus = TBA_51
+					has_completed_focus = TBA_49
+					NOT = {
+						has_completed_focus = TBA_77
+					}
+				}
+				AND = {
+					has_completed_focus = TBA_49
+					has_completed_focus = TBA_77
+					NOT = {
+						has_completed_focus = TBA_51
+					}
+				}
+			}	
+		}
+		cost = 40
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = TBA_shichangguanli_shichanggongyejianshe
+				days = -45
+			}
+		}
+	}
+	TBA_shichangguanli_gongyejianshe_3 = {
+		available = {
+			
+		}
+		visible = {
+			OR = {
+				AND = {
+					has_completed_focus = TBA_51
+					has_completed_focus = TBA_49
+					NOT = {
+						has_completed_focus = TBA_77
+					}
+				}
+				AND = {
+					has_completed_focus = TBA_49
+					has_completed_focus = TBA_77
+					NOT = {
+						has_completed_focus = TBA_51
+					}
+				}
+			}
+		}
+		cost = 40
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = TBA_shichangguanli_gongyejianshe
+				days = -45
+			}
+		}
+	}
+	TBA_shichangguanli_shichanggongyejianshe_4 = {
+		available = {
+			
+		}
+		visible = {
+			has_completed_focus = TBA_77
+			has_completed_focus = TBA_51
+		}
+		cost = 30
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = TBA_shichangguanli_shichanggongyejianshe
+				days = -45
+			}
+		}
+	}
+	TBA_shichangguanli_gongyejianshe_4 = {
+		available = {
+			
+		}
+		visible = {
+			has_completed_focus = TBA_77
+			has_completed_focus = TBA_51
+		}
+		cost = 30
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = TBA_shichangguanli_gongyejianshe
+				days = -45
+			}
+		}
+	}
+	TBA_fanrongdutisheng_1 = {
+		available = {
+			num_of_civilian_factories > 20
+		}
+		visible = {
+			has_completed_focus = TBA_40
+			check_variable = {
+				TBA_fanrongdutishengshu = 0
+			}
+		}
+		fire_only_once = yes
+		complete_effect = {
+			add_to_variable = {
+				TBA_fanrongdutishengshu = 1
+			}
+			TBA_shichangfanrongdu_True = yes
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	TBA_fanrongdutisheng_2 = {
+		available = {
+			num_of_civilian_factories > 50
+		}
+		visible = {
+			has_completed_focus = TBA_40
+			check_variable = {
+				TBA_fanrongdutishengshu = 1
+			}
+		}
+		fire_only_once = yes
+		complete_effect = {
+			add_to_variable = {
+				TBA_fanrongdutishengshu = 1
+			}
+			TBA_shichangfanrongdu_True = yes
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	TBA_fanrongdutisheng_3 = {
+		available = {
+			num_of_civilian_factories > 90
+		}
+		visible = {
+			has_completed_focus = TBA_40
+			check_variable = {
+				TBA_fanrongdutishengshu = 2
+			}
+		}
+		fire_only_once = yes
+		complete_effect = {
+			add_to_variable = {
+				TBA_fanrongdutishengshu = 1
+			}
+			TBA_shichangfanrongdu_True = yes
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	TBA_yaoqingtozi = {
+		available = {
+			
+		}
+		visible = {
+			has_completed_focus = TBA_62
+		}
+		cost = 100
+		days_remove = 60
+		days_re_enable = 60
+		complete_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = TBA_yaoqingtozi_flag
+					}
+				}
+				set_country_flag = TBA_yaoqingtozi_flag
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		modifier = {
+			consumer_goods_factor = -0.07
+			production_speed_buildings_factor = 0.25
+		}
+	}
+	TBA_paiqianshangdui = {
+		available = {
+			
+		}
+		visible = {
+			has_completed_focus = TBA_63
+		}
+		cost = 50
+		days_remove = 45
+		days_re_enable = 45
+		complete_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = TBA_paiqianshangdui_flag
+					}
+				}
+				set_country_flag = TBA_paiqianshangdui_flag
+			}
+			random_list = {
+				10 = {
+					add_manpower = -100
+				}
+				20 = {
+					add_political_power = 50
+				}
+				40 = {
+					add_political_power = 70
+				}
+				20 = {
+					add_political_power = 90
+				}
+				20 = {
+					add_political_power = 150
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	TBA_bowulan_1 = {
+		available = {
+			custom_trigger_tooltip = {
+                tooltip = Gensokyo_claim_tt
+                check_variable = {
+                    RE_Gensokyo_ratio > 0.5
+                }
+            }
+		}
+		visible = {
+			has_completed_focus = TBA_99
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+		ai_will_do = {
+			base = 100
+		}
+		complete_effect = {
+			TBA = {
+				country_event = {
+					days = 1
+					id = tba.11
+				}
+			}
+		}
+	}
+}
+TBA_bihusuojihua = {
+	TBA_bihusuojihua_TEG = {
+		available = {
+			NOT = {
+				is_puppet = yes
+				TEG = {
+					is_in_faction_with = TBA
+				}	
+				TEG = {
+					is_puppet_of = TBA
+				}
+			}
+		}
+		custom_cost_trigger = {
+			command_power > 49
+		}
+		visible = {
+			has_completed_focus = TBA_87
+		}
+		cost = 0
+		days_remove = 360
+		days_re_enable = 30
+		custom_cost_text = TBA_bihusuojihua_TEG_cost_tt
+		targeted_modifier = { 
+			tag = TEG
+			attack_bonus_against = 0.20
+			defense_bonus_against = 0.20
+		}
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -50
+			}
+			declare_war_on = {
+				target = TEG
+				type = annex_everything
+			}
+		}
+		remove_effect = {
+			
+		}
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				factor = -40
+				has_war = yes
+			}
+		}
+	}
+	TBA_bihusuojihua_OTG = {
+		available = {
+			NOT = {
+				is_puppet = yes
+				OTG = {
+					is_in_faction_with = TBA
+				}	
+				OTG = {
+					is_puppet_of = TBA
+				}
+			}	
+		}
+		custom_cost_trigger = {
+			command_power > 49
+		}
+		visible = {
+			has_completed_focus = TBA_87
+		}
+		cost = 0
+		days_remove = 360
+		days_re_enable = 30
+		custom_cost_text = TBA_bihusuojihua_TEG_cost_tt
+		targeted_modifier = { 
+			tag = OTG
+			attack_bonus_against = 0.20
+			defense_bonus_against = 0.20
+		}
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -50
+			}
+			declare_war_on = {
+				target = OTG
+				type = annex_everything
+			}
+		}
+		remove_effect = {
+			
+		}
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				factor = -40
+				has_war = yes
+			}
+		}
+	}
+	TBA_bihusuojihua_bihusuo = {
+		available = {
+			has_war = no
+			controls_state = 406
+			controls_state = 594
+			controls_state = 407
+			controls_state = 408
+			controls_state = 409
+			controls_state = 399
+			NOT = {
+				country_exists = OTG
+				country_exists = TEG
+			}
+		}
+		visible = {
+			has_completed_focus = TBA_87
+		}
+		cost = 0
+		fire_only_once = no
+		complete_effect = {
+			TEG = {
+				every_core_state = {
+					limit = {
+						is_core_of = TEG
+					}
+					add_core_of = TUZ
+				}
+			}
+			OTG = {
+				every_core_state = {
+					limit = {
+						is_core_of = OTG
+					}
+					add_core_of = TUZ
+				}
+			}
+			every_owned_state = {
+				limit = {
+					is_core_of = TUZ
+				}
+				transfer_state_to = TUZ
+			}
+			puppet = TUZ
+			OTG = {
+				every_unit_leader = {
+					set_nationality = TUZ
+				}
+			}
+			TEG = {
+				every_unit_leader = {
+					set_nationality = TUZ
+				}
+			}
+			TUZ = {
+				can_core = yes
+				add_country_leader_role = {
+					character = TEG_aya
+					promote_leader = yes
+					country_leader = {
+						ideology = qinwai_type
+						expire = "1965.1.1.1"
+						traits = {  }
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}
+TBA_zhiyuanMRY = {
+	TBA_zhiyuanMRY_1 = {
+		available = {
+			MRY = {
+				has_war_with = TEG
+			}
+			is_neighbor_of = TEG
+			NOT = {
+				is_puppet = yes
+				TEG = {
+					is_in_faction_with = TBA
+				}	
+				TEG = {
+					is_puppet_of = TBA
+				}
+			}
+		}
+		visible = {
+			has_completed_focus = TBA_104
+		}
+		fire_only_once = yes
+		days_remove = 30
+		remove_effect = {
+			declare_war_on = {
+                target = TEG
+                type = annex_everything
+            }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}

@@ -1,0 +1,23 @@
+state={
+	id=518
+	name="STATE_518"
+	provinces={
+		6525 6531 
+	}
+	history={
+		146.1.1 = {
+			owner = NZY
+			add_core_of = BYA
+			add_core_of = NZY
+			buildings = {
+				infrastructure = 1
+				industrial_complex = 0
+				arms_factory = 1
+			}
+		}
+	}
+	state_category=s2
+	local_supplies=2.5
+	manpower=200.0
+	buildings_max_level_factor=1.000
+}

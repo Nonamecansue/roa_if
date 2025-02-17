@@ -1,0 +1,396 @@
+HUM_category = {
+   huM_paichayapianwenti = {
+        icon = generic_political_actions
+
+        available = {
+            always = no
+        }
+        visible = {
+            has_country_flag = hum_neizhan_flag
+            
+        }
+
+        days_mission_timeout = 30
+
+        fire_only_once = no
+        is_good = no
+        activation = {
+            OR = {
+      has_ideas =	HUM_fangdunkeng_0
+      has_ideas =	HUM_fangdunkeng_1
+			has_ideas =	HUM_fangdunkeng_2
+			has_ideas =	HUM_fangdunkeng_3
+			has_ideas =	HUM_fangdunkeng_4
+			has_ideas =	HUM_fangdunkeng_5
+			has_ideas =	HUM_fangdunkeng_6
+			has_ideas =	HUM_fangdunkeng_7
+			has_ideas =	HUM_fangdunkeng_8
+			has_ideas =	HUM_fangdunkeng_9
+			has_ideas =	HUM_fangdunkeng_10
+            }
+        }
+
+        cancel_trigger = {
+          NOT = { has_idea = HUM_fangdunkeng_0 }
+            NOT = { has_idea = HUM_fangdunkeng_1 }
+            NOT = { has_idea = HUM_fangdunkeng_2 }
+            NOT = { has_idea = HUM_fangdunkeng_3 }
+            NOT = { has_idea = HUM_fangdunkeng_4 }
+            NOT = { has_idea = HUM_fangdunkeng_5 }
+            NOT = { has_idea = HUM_fangdunkeng_6 }
+            NOT = { has_idea = HUM_fangdunkeng_7 }
+            NOT = { has_idea = HUM_fangdunkeng_8 }
+            NOT = { has_idea = HUM_fangdunkeng_9 }
+            NOT = { has_idea = HUM_fangdunkeng_10 }
+        }
+
+        timeout_effect = {
+            if = {
+                limit = {
+          has_idea = HUM_fangdunkeng_0
+                 not = {
+					has_idea = HUM_fangdunkeng_1
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_2
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_3
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_4
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_5
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_6
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_7
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_8
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_9
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_10
+				 }
+                 }
+				add_ideas = { HUM_fangdunkeng_1 }
+        remove_ideas =	HUM_fangdunkeng_0
+        }
+            else_if = {
+                limit = {
+					has_idea = HUM_fangdunkeng_1
+                 not = {
+					has_idea = HUM_fangdunkeng_2
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_3
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_4
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_5
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_6
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_7
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_8
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_9
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_10
+				 }
+                 }
+				add_ideas = { HUM_fangdunkeng_2 }
+				remove_ideas =	HUM_fangdunkeng_1
+        }
+            else_if = {
+                limit = {
+				not = {
+					has_idea = HUM_fangdunkeng_1
+				 }
+					has_idea = HUM_fangdunkeng_2
+                 not = {
+					has_idea = HUM_fangdunkeng_3
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_4
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_5
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_6
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_7
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_8
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_9
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_10
+				 }
+                 }
+				add_ideas = { HUM_fangdunkeng_3 }
+				remove_ideas =	HUM_fangdunkeng_2
+        }
+            else_if = {
+                limit = {
+					not = {
+					has_idea = HUM_fangdunkeng_1
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_2
+				 }
+					has_idea = HUM_fangdunkeng_3
+                 not = {
+					has_idea = HUM_fangdunkeng_4
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_5
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_6
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_7
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_8
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_9
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_10
+				 }
+                 }
+				add_ideas = { HUM_fangdunkeng_4 }
+				remove_ideas =	HUM_fangdunkeng_3
+        }
+        else_if = {
+                limit = {
+					not = {
+					has_idea = HUM_fangdunkeng_1
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_2
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_3
+				 }
+					has_idea = HUM_fangdunkeng_4
+                 not = {
+					has_idea = HUM_fangdunkeng_5
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_6
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_7
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_8
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_9
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_10
+				 }
+
+                 }
+				add_ideas = { HUM_fangdunkeng_5 }
+				remove_ideas =	HUM_fangdunkeng_4
+        }
+        else_if = {
+                limit = {
+				not = {
+					has_idea = HUM_fangdunkeng_1
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_2
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_3
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_4
+				 }
+					has_idea = HUM_fangdunkeng_5
+                 not = {
+					has_idea = HUM_fangdunkeng_6
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_7
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_8
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_9
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_10
+				 }
+                 }
+				add_ideas = { HUM_fangdunkeng_6 }
+				remove_ideas =	HUM_fangdunkeng_5
+        }
+        lse_if = {
+                limit = {
+				not = {
+					has_idea = HUM_fangdunkeng_1
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_2
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_3
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_4
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_5
+				 }
+					has_idea = HUM_fangdunkeng_6
+                 not = {
+					has_idea = HUM_fangdunkeng_7
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_8
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_9
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_10
+				 }
+                 }
+				add_ideas = { HUM_fangdunkeng_7}
+				remove_ideas =	HUM_fangdunkeng_6
+        }
+        else_if = {
+                limit = {
+				not = {
+					has_idea = HUM_fangdunkeng_1
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_2
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_3
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_4
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_5
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_6
+				 }
+					has_idea = HUM_fangdunkeng_7
+                 not = {
+					has_idea = HUM_fangdunkeng_8
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_9
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_10
+				 }
+                 }
+				add_ideas = { HUM_fangdunkeng_8 }
+				remove_ideas =	HUM_fangdunkeng_7
+        }
+        else_if = {
+                limit = {
+				not = {
+					has_idea = HUM_fangdunkeng_1
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_2
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_3
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_4
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_5
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_6
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_7
+				 }
+					has_idea = HUM_fangdunkeng_8
+                 not = {
+					has_idea = HUM_fangdunkeng_9
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_10
+				 }
+                 }
+				add_ideas = { HUM_fangdunkeng_9 }
+				remove_ideas =	HUM_fangdunkeng_8
+        }
+        else_if = {
+                limit = {
+				not = {
+					has_idea = HUM_fangdunkeng_1
+				 }
+				not = {
+					has_idea = HUM_fangdunkeng_2
+				 }
+				not = {
+					has_idea = HUM_fangdunkeng_3
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_4
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_5
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_6
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_7
+				 }
+				 not = {
+					has_idea = HUM_fangdunkeng_8
+				 }
+					has_idea = HUM_fangdunkeng_9
+                 not = {
+					has_idea = {HUM_fangdunkeng_10}
+				 }
+                 }
+				add_ideas = { HUM_fangdunkeng_10 }
+				remove_ideas =	HUM_fangdunkeng_9
+        }
+            
+        }
+    }
+
+}

@@ -1,0 +1,394 @@
+focus_tree = {
+  id = OTG_focus_1
+  country = {
+    factor = 0
+    modifier = {
+      add = 10
+      tag = OTG
+    }
+  }
+
+  shared_focus = ty_medium_main 
+
+  continuous_focus_position = { x = 20 y = 1700 }
+
+  focus = {
+      id = OTG_1
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 4
+      x = 24
+      y = 0
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      
+      }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = OTG_2
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 4
+      relative_position_id = OTG_1
+      x = 0
+      y = 2
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      
+      }
+      prerequisite = { 
+      focus = OTG_1
+       }
+
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = OTG_3
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 4
+      relative_position_id = OTG_1
+      x = 0
+      y = 4
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      
+      }
+      prerequisite = { 
+      focus = OTG_2
+       }
+
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = OTG_4
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 4
+      relative_position_id = OTG_1
+      x = -4
+      y = 6
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      
+      }
+      prerequisite = { 
+      focus = OTG_3
+       }
+
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = OTG_4_1
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 4
+      relative_position_id = OTG_4
+      x = -2
+      y = 2
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      
+      }
+      prerequisite = { 
+      focus = OTG_4
+       }
+
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = OTG_4_1_1
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 4
+      relative_position_id = OTG_4_1
+      x = -2
+      y = 4
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      
+      }
+      mutually_exclusive = {
+      focus = OTG_4_1_2
+    }
+      prerequisite = { 
+      focus = OTG_4_1
+       }
+
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = OTG_4_1_2
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 4
+      relative_position_id = OTG_4_1
+      x = 2
+      y = 4
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      
+      }
+      prerequisite = { 
+      focus = OTG_4_1
+       }
+     mutually_exclusive = {
+      focus = OTG_4_1_1
+    }
+
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = OTG_4_2
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 4
+      relative_position_id = OTG_4
+      x = 4
+      y = 2
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      
+      }
+      prerequisite = { 
+      focus = OTG_4
+       }
+
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = OTG_5
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 4
+      relative_position_id = OTG_1
+      x = 4
+      y = 6
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      
+      
+      }
+      prerequisite = { 
+      focus = OTG_3
+       }
+
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  

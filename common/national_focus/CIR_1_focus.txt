@@ -1,0 +1,1518 @@
+focus_tree = {
+	id = CIR_1_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CIR
+		}
+	}
+	default = no
+	shared_focus = ty_medium_main 
+	
+	shared_focus = LIL_136_2 
+	shared_focus = LIL_4 
+	continuous_focus_position = { x = 2700 y = 1900 }
+	focus = {
+		id = CIR_1_NEW
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 1.00
+		x = 55
+		y = 0
+		completion_reward = {
+		add_political_power = 50
+		
+		}
+		ai_will_do = {
+        factor = 1
+      }
+		cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+
+	}
+	focus = {
+		id = CIR_2_NEW
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 1.00
+		x = 55
+		y = 2
+		prerequisite = { focus = CIR_1_NEW }
+		available ={
+      
+      }
+	  allow_branch = {									
+			has_completed_focus = CIR_2_NEW								    					   
+        }
+
+
+     
+
+      bypass = {
+
+      }
+		completion_reward = {
+		add_political_power = 50
+		mark_focus_tree_layout_dirty = yes
+		
+		}
+		ai_will_do = {
+        factor = 1
+      }
+		cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+
+	}
+	focus = {
+		id = CIR_2_1_NEW
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 1.00
+		x = 0
+		y = 2
+		relative_position_id = CIR_2_NEW
+		prerequisite = { focus = CIR_2_NEW }
+		available ={
+      
+      }
+	  allow_branch = {									
+			has_completed_focus = CIR_2_NEW								    					   
+        }
+
+
+     
+
+      bypass = {
+
+      }
+		completion_reward = {
+		add_political_power = 50
+		
+		}
+		ai_will_do = {
+        factor = 1
+      }
+		cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+
+	}
+	focus = {
+		id = CIR_2_2_NEW
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 1.00
+		x = 0
+		y = 4
+		relative_position_id = CIR_2_NEW
+		prerequisite = { focus = CIR_2_1_NEW }
+		available ={
+      
+      }
+	  allow_branch = {									
+			has_completed_focus = CIR_2_NEW								    					   
+        }
+
+
+     
+
+      bypass = {
+
+      }
+		completion_reward = {
+		add_political_power = 50
+		
+		}
+		ai_will_do = {
+        factor = 1
+      }
+		cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+
+	}
+	focus = {
+		id = CIR_2_3_NEW
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 1.00
+		x = -2
+		y = 6
+		relative_position_id = CIR_2_NEW
+		prerequisite = { focus = CIR_2_2_NEW }
+		available ={
+      
+      }
+	  allow_branch = {									
+			has_completed_focus = CIR_2_NEW								    					   
+        }
+
+
+     
+
+      bypass = {
+
+      }
+		completion_reward = {
+		add_political_power = 50
+		
+		}
+		ai_will_do = {
+        factor = 1
+      }
+		cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+
+	}
+	focus = {
+		id = CIR_2_4_NEW
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 1.00
+		x = 0
+		y = 6
+		relative_position_id = CIR_2_NEW
+		prerequisite = { focus = CIR_2_2_NEW }
+		available ={
+      
+      }
+	  allow_branch = {									
+			has_completed_focus = CIR_2_NEW								    					   
+        }
+
+
+     
+
+      bypass = {
+
+      }
+		completion_reward = {
+		add_political_power = 50
+		
+		}
+		ai_will_do = {
+        factor = 1
+      }
+		cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+
+	}
+	focus = {
+		id = CIR_2_5_NEW
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 1.00
+		x = 2
+		y = 6
+		relative_position_id = CIR_2_NEW
+		prerequisite = { focus = CIR_2_2_NEW }
+		available ={
+      
+      }
+	  allow_branch = {									
+			has_completed_focus = CIR_2_NEW								    					   
+        }
+
+
+     
+
+      bypass = {
+
+      }
+		completion_reward = {
+		add_political_power = 50
+		
+		}
+		ai_will_do = {
+        factor = 1
+      }
+		cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+
+	}
+	focus = {
+		id = CIR_2_6_NEW
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 1.00
+		x = 0
+		y = 8
+		relative_position_id = CIR_2_NEW
+		prerequisite = { 
+		focus = CIR_2_5_NEW
+		 }
+		 prerequisite = { 
+		focus = CIR_2_4_NEW
+		 }
+		 prerequisite = { 
+		focus = CIR_2_3_NEW
+		 }
+		available ={
+      
+      }
+	  allow_branch = {									
+			has_completed_focus = CIR_2_NEW								    					   
+        }
+
+
+     
+
+      bypass = {
+
+      }
+		completion_reward = {
+		add_political_power = 50
+		
+		}
+		ai_will_do = {
+        factor = 1
+      }
+		cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+
+	}
+	focus = {
+		id = CIR_2_7_NEW
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 1.00
+		x = -6
+		y = 10
+		relative_position_id = CIR_2_NEW
+		prerequisite = { 
+		focus = CIR_2_6_NEW
+		 }
+		 mutually_exclusive = {
+      focus = CIR_2_8_NEW
+      focus = CIR_2_9_NEW
+    }
+		available ={
+      
+      }
+	  allow_branch = {									
+			has_completed_focus = CIR_2_NEW								    					   
+        }
+
+
+     
+
+      bypass = {
+
+      }
+		completion_reward = {
+		add_political_power = 50
+		
+		}
+		ai_will_do = {
+        factor = 1
+      }
+		cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+
+	}
+	focus = {
+		id = CIR_2_7_1_NEW
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 1.00
+		x = -8
+		y = 12
+		relative_position_id = CIR_2_NEW
+		prerequisite = { 
+		focus = CIR_2_7_NEW
+		 }
+		 mutually_exclusive = {
+      focus = CIR_2_7_2_NEW
+    }
+		available ={
+      
+      }
+	  allow_branch = {									
+			has_completed_focus = CIR_2_NEW								    					   
+        }
+
+
+     
+
+      bypass = {
+
+      }
+		completion_reward = {
+		add_political_power = 50
+		
+		}
+		ai_will_do = {
+        factor = 1
+      }
+		cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+
+	}
+	focus = {
+		id = CIR_2_7_2_NEW
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 1.00
+		x = -4
+		y = 12
+		relative_position_id = CIR_2_NEW
+		prerequisite = { 
+		focus = CIR_2_7_NEW
+		 }
+		 mutually_exclusive = {
+      focus = CIR_2_7_2_NEW
+    }
+		available ={
+      
+      }
+	  allow_branch = {									
+			has_completed_focus = CIR_2_NEW								    					   
+        }
+
+
+     
+
+      bypass = {
+
+      }
+		completion_reward = {
+		add_political_power = 50
+		
+		}
+		ai_will_do = {
+        factor = 1
+      }
+		cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+
+	}
+	focus = {
+		id = CIR_2_7_3_NEW
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 1.00
+		x = -6
+		y = 14
+		relative_position_id = CIR_2_NEW
+		prerequisite = { 
+		focus = CIR_2_7_1_NEW
+		 }
+		 prerequisite = { 
+		focus = CIR_2_7_2_NEW
+		 }
+		available ={
+      
+      }
+	  allow_branch = {									
+			has_completed_focus = CIR_2_NEW								    					   
+        }
+
+
+     
+
+      bypass = {
+
+      }
+		completion_reward = {
+		add_political_power = 50
+		
+		}
+		ai_will_do = {
+        factor = 1
+      }
+		cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+
+	}
+	focus = {
+		id = CIR_2_8_NEW
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 1.00
+		x = 0
+		y = 10
+		relative_position_id = CIR_2_NEW
+		prerequisite = { 
+		focus = CIR_2_6_NEW
+		 }
+		 mutually_exclusive = {
+      focus = CIR_2_7_NEW
+      focus = CIR_2_9_NEW
+    }
+		available ={
+      
+      }
+	  allow_branch = {									
+			has_completed_focus = CIR_2_NEW								    					   
+        }
+
+
+     
+
+      bypass = {
+
+      }
+		completion_reward = {
+		add_political_power = 50
+		
+		}
+		ai_will_do = {
+        factor = 1
+      }
+		cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+
+	}
+	focus = {
+		id = CIR_2_8_1_NEW
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 1.00
+		x = 0
+		y = 12
+		relative_position_id = CIR_2_NEW
+		prerequisite = { 
+		focus = CIR_2_8_NEW
+		}
+		available ={
+      
+      }
+	  allow_branch = {									
+			has_completed_focus = CIR_2_NEW								    					   
+        }
+
+
+     
+
+      bypass = {
+
+      }
+		completion_reward = {
+		add_political_power = 50
+		
+		}
+		ai_will_do = {
+        factor = 1
+      }
+		cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+
+	}
+	focus = {
+		id = CIR_2_8_2_NEW
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 1.00
+		x = 0
+		y = 14
+		relative_position_id = CIR_2_NEW
+		prerequisite = { 
+		focus = CIR_2_8_1_NEW
+		}
+		available ={
+      
+      }
+	  allow_branch = {									
+			has_completed_focus = CIR_2_NEW								    					   
+        }
+
+
+     
+
+      bypass = {
+
+      }
+		completion_reward = {
+		add_political_power = 50
+		
+		}
+		ai_will_do = {
+        factor = 1
+      }
+		cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+
+	}
+	focus = {
+		id = CIR_2_9_NEW
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 1.00
+		x = 6
+		y = 10
+		relative_position_id = CIR_2_NEW
+		prerequisite = { 
+		focus = CIR_2_6_NEW
+		 }
+		 mutually_exclusive = {
+      focus = CIR_2_7_NEW
+      focus = CIR_2_8_NEW
+    }
+		available ={
+      
+      }
+	  allow_branch = {									
+			has_completed_focus = CIR_2_NEW								    					   
+        }
+
+
+     
+
+      bypass = {
+
+      }
+		completion_reward = {
+		add_political_power = 50
+		
+		}
+		ai_will_do = {
+        factor = 1
+      }
+		cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+
+	}
+	focus = {
+		id = CIR_2_9_1_NEW
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 1.00
+		x = 4
+		y = 12
+		relative_position_id = CIR_2_NEW
+		prerequisite = { 
+		focus = CIR_2_9_NEW
+		 }
+		 mutually_exclusive = {
+      focus = CIR_2_9_2_NEW
+    }
+		available ={
+      
+      }
+	  allow_branch = {									
+			has_completed_focus = CIR_2_NEW								    					   
+        }
+
+
+     
+
+      bypass = {
+
+      }
+		completion_reward = {
+		add_political_power = 50
+		
+		}
+		ai_will_do = {
+        factor = 1
+      }
+		cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+
+	}
+	focus = {
+		id = CIR_2_9_2_NEW
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 1.00
+		x = 8
+		y = 12
+		relative_position_id = CIR_2_NEW
+		prerequisite = { 
+		focus = CIR_2_9_NEW
+		 }
+		 mutually_exclusive = {
+      focus = CIR_2_9_1_NEW
+    }
+		available ={
+      
+      }
+	  allow_branch = {									
+			has_completed_focus = CIR_2_NEW								    					   
+        }
+
+
+     
+
+      bypass = {
+
+      }
+		completion_reward = {
+		add_political_power = 50
+		
+		}
+		ai_will_do = {
+        factor = 1
+      }
+		cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+
+	}
+	focus = {
+		id = CIR_2_9_3_NEW
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 1.00
+		x = 6
+		y = 14
+		relative_position_id = CIR_2_NEW
+		prerequisite = { 
+		focus = CIR_2_9_1_NEW
+		 }
+		prerequisite = { 
+		focus = CIR_2_9_2_NEW
+		 }
+		available ={
+      
+      }
+	  allow_branch = {									
+			has_completed_focus = CIR_2_NEW								    					   
+        }
+
+
+     
+
+      bypass = {
+
+      }
+		completion_reward = {
+		add_political_power = 50
+		
+		}
+		ai_will_do = {
+        factor = 1
+      }
+		cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+
+	}
+	focus = {
+		id = CIR_2_10_NEW
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 1.00
+		x = 0
+		y = 16
+		relative_position_id = CIR_2_NEW
+		prerequisite = { 
+		focus = CIR_2_9_3_NEW
+		focus = CIR_2_8_2_NEW
+		focus = CIR_2_7_3_NEW
+		 }
+		available ={
+      
+      }
+	  allow_branch = {									
+			has_completed_focus = CIR_2_NEW								    					   
+        }
+
+
+     
+
+      bypass = {
+
+      }
+		completion_reward = {
+		add_political_power = 50
+		
+		}
+		ai_will_do = {
+        factor = 1
+      }
+		cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+
+	}
+	focus = {
+		id = CIR_3_NEW
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 1.00
+		x = 55
+		y = 2
+		prerequisite = { focus = CIR_1_NEW }
+		available ={
+      
+      }
+	  allow_branch = {									
+			has_completed_focus = CIR_3_NEW								    					   
+        }
+
+
+     
+
+      bypass = {
+
+      }
+		completion_reward = {
+		add_political_power = 50
+		
+		}
+		ai_will_do = {
+        factor = 1
+      }
+		cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+
+	}
+	focus = {
+		id = CIR_3_0_NEW
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 1.00
+		x = 45
+		y = 4
+		prerequisite = { focus = CIR_3_NEW }
+		available ={
+      
+      }
+	  allow_branch = {									
+			has_completed_focus = CIR_3_NEW								    					   
+        }
+
+
+     
+
+      bypass = {
+
+      }
+		completion_reward = {
+		add_political_power = 50
+		
+		}
+		ai_will_do = {
+        factor = 1
+      }
+		cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+
+	}
+	focus = {
+		id = CIR_3_1_NEW
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 1.00
+		x = -6
+		y = 2
+		relative_position_id = CIR_3_0_NEW
+		prerequisite = { focus = CIR_3_0_NEW }
+		available ={
+      
+      }
+	  allow_branch = {									
+			has_completed_focus = CIR_3_NEW								    					   
+        }
+
+
+     
+
+      bypass = {
+
+      }
+		completion_reward = {
+		add_political_power = 50
+		
+		}
+		ai_will_do = {
+        factor = 1
+      }
+		cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+
+	}
+	focus = {
+		id = CIR_3_1_1_NEW
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 1.00
+		x = -6
+		y = 4
+		relative_position_id = CIR_3_0_NEW
+		prerequisite = { focus = CIR_3_1_NEW }
+		available ={
+      
+      }
+	  allow_branch = {									
+			has_completed_focus = CIR_3_NEW								    					   
+        }
+
+
+     
+
+      bypass = {
+
+      }
+		completion_reward = {
+		add_political_power = 50
+		
+		}
+		ai_will_do = {
+        factor = 1
+      }
+		cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+
+	}
+	focus = {
+		id = CIR_3_1_2_NEW
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 1.00
+		x = -8
+		y = 6
+		relative_position_id = CIR_3_0_NEW
+		prerequisite = { focus = CIR_3_1_1_NEW }
+		available ={
+      
+      }
+	  allow_branch = {									
+			has_completed_focus = CIR_3_NEW								    					   
+        }
+
+
+     
+
+      bypass = {
+
+      }
+		completion_reward = {
+		add_political_power = 50
+		
+		}
+		ai_will_do = {
+        factor = 1
+      }
+		cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+
+	}
+	focus = {
+		id = CIR_3_1_2_1_NEW
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 1.00
+		x = -8
+		y = 8
+		relative_position_id = CIR_3_0_NEW
+		prerequisite = { focus = CIR_3_1_2_NEW }
+		available ={
+      
+      }
+	  allow_branch = {									
+			has_completed_focus = CIR_3_NEW								    					   
+        }
+
+
+     
+
+      bypass = {
+
+      }
+		completion_reward = {
+		add_political_power = 50
+		
+		}
+		ai_will_do = {
+        factor = 1
+      }
+		cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+
+	}
+	focus = {
+		id = CIR_3_1_3_NEW
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 1.00
+		x = -4
+		y = 6
+		relative_position_id = CIR_3_0_NEW
+		prerequisite = { focus = CIR_3_1_1_NEW }
+		available ={
+      
+      }
+	  allow_branch = {									
+			has_completed_focus = CIR_3_NEW								    					   
+        }
+
+
+     
+
+      bypass = {
+
+      }
+		completion_reward = {
+		add_political_power = 50
+		
+		}
+		ai_will_do = {
+        factor = 1
+      }
+		cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+
+	}
+	focus = {
+		id = CIR_3_1_3_1_NEW
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 1.00
+		x = -4
+		y = 8
+		relative_position_id = CIR_3_0_NEW
+		prerequisite = { focus = CIR_3_1_3_NEW }
+		available ={
+      
+      }
+	  allow_branch = {									
+			has_completed_focus = CIR_3_NEW								    					   
+        }
+
+
+     
+
+      bypass = {
+
+      }
+		completion_reward = {
+		add_political_power = 50
+		
+		}
+		ai_will_do = {
+        factor = 1
+      }
+		cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+
+	}
+	focus = {
+		id = CIR_3_1_4_NEW
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 1.00
+		x = -6
+		y = 10
+		relative_position_id = CIR_3_0_NEW
+		prerequisite = { focus = CIR_3_1_2_1_NEW }
+		prerequisite = { focus = CIR_3_1_3_1_NEW }
+		available ={
+      
+      }
+	  allow_branch = {									
+			has_completed_focus = CIR_3_NEW								    					   
+        }
+
+
+     
+
+      bypass = {
+
+      }
+		completion_reward = {
+		add_political_power = 50
+		
+		}
+		ai_will_do = {
+        factor = 1
+      }
+		cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+
+	}
+	focus = {
+		id = CIR_3_2_NEW
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 1.00
+		x = 6
+		y = 2
+		relative_position_id = CIR_3_0_NEW
+		prerequisite = { focus = CIR_3_0_NEW }
+		available ={
+      
+      }
+	  allow_branch = {									
+			has_completed_focus = CIR_3_NEW								    					   
+        }
+
+
+     
+
+      bypass = {
+
+      }
+		completion_reward = {
+		add_political_power = 50
+		
+		}
+		ai_will_do = {
+        factor = 1
+      }
+		cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+
+	}
+	focus = {
+		id = CIR_3_2_1_NEW
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 1.00
+		x = 6
+		y = 4
+		relative_position_id = CIR_3_0_NEW
+		prerequisite = { focus = CIR_3_2_NEW }
+		available ={
+      
+      }
+	  allow_branch = {									
+			has_completed_focus = CIR_3_NEW								    					   
+        }
+
+
+     
+
+      bypass = {
+
+      }
+		completion_reward = {
+		add_political_power = 50
+		
+		}
+		ai_will_do = {
+        factor = 1
+      }
+		cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+
+	}
+	focus = {
+		id = CIR_3_2_2_NEW
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 1.00
+		x = 6
+		y = 6
+		relative_position_id = CIR_3_0_NEW
+		prerequisite = { focus = CIR_3_2_1_NEW }
+		available ={
+      
+      }
+	  allow_branch = {									
+			has_completed_focus = CIR_3_NEW								    					   
+        }
+
+
+     
+
+      bypass = {
+
+      }
+		completion_reward = {
+		add_political_power = 50
+		
+		}
+		ai_will_do = {
+        factor = 1
+      }
+		cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+
+	}
+	focus = {
+		id = CIR_3_2_3_NEW
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 1.00
+		x = 6
+		y = 8
+		relative_position_id = CIR_3_0_NEW
+		prerequisite = { focus = CIR_3_2_2_NEW }
+		available ={
+      
+      }
+	  allow_branch = {									
+			has_completed_focus = CIR_3_NEW								    					   
+        }
+
+
+     
+
+      bypass = {
+
+      }
+		completion_reward = {
+		add_political_power = 50
+		
+		}
+		ai_will_do = {
+        factor = 1
+      }
+		cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+
+	}
+	focus = {
+		id = CIR_3_2_4_NEW
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 1.00
+		x = 6
+		y = 8
+		relative_position_id = CIR_3_0_NEW
+		prerequisite = { focus = CIR_3_2_3_NEW }
+		available ={
+      
+      }
+	  allow_branch = {									
+			has_completed_focus = CIR_3_NEW								    					   
+        }
+
+
+     
+
+      bypass = {
+
+      }
+		completion_reward = {
+		add_political_power = 50
+		
+		}
+		ai_will_do = {
+        factor = 1
+      }
+		cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+
+	}
+	focus = {
+		id = CIR_3_3_NEW
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 1.00
+		x = 0
+		y = 12
+		relative_position_id = CIR_3_0_NEW
+		prerequisite = { focus = CIR_3_2_4_NEW }
+		prerequisite = { focus = CIR_3_1_4_NEW }
+		available ={
+      
+      }
+	  allow_branch = {									
+			has_completed_focus = CIR_3_NEW								    					   
+        }
+
+
+     
+
+      bypass = {
+
+      }
+		completion_reward = {
+		add_political_power = 50
+		
+		}
+		ai_will_do = {
+        factor = 1
+      }
+		cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+
+	}
+	focus = {
+		id = CIR_4_NEW
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 1.00
+		x = 55
+		y = 4
+		prerequisite = { focus = CIR_3_NEW }
+		available ={
+      
+      }
+	  allow_branch = {									
+			has_completed_focus = CIR_3_NEW								    					   
+        }
+
+
+     
+
+      bypass = {
+
+      }
+		completion_reward = {
+		add_political_power = 50
+		
+		}
+		ai_will_do = {
+        factor = 1
+      }
+		cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+
+	}
+	focus = {
+		id = CIR_4_1_NEW
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 1.00
+		x = 0
+		y = 2
+		prerequisite = { focus = CIR_4_NEW }
+		relative_position_id = CIR_4_NEW
+		available ={
+      
+      }
+	  allow_branch = {									
+			has_completed_focus = CIR_3_NEW								    					   
+        }
+
+
+     
+
+      bypass = {
+
+      }
+		completion_reward = {
+		add_political_power = 50
+		
+		}
+		ai_will_do = {
+        factor = 1
+      }
+		cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+
+	}
+	focus = {
+		id = CIR_4_2_NEW
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 1.00
+		x = 0
+		y = 6
+		prerequisite = { focus = CIR_4_1_NEW }
+		relative_position_id = CIR_4_NEW
+		available ={
+      
+      }
+	  allow_branch = {									
+			has_completed_focus = CIR_3_NEW								    					   
+        }
+
+
+     
+
+      bypass = {
+
+      }
+		completion_reward = {
+		add_political_power = 50
+		
+		}
+		ai_will_do = {
+        factor = 1
+      }
+		cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+
+	}
+	focus = {
+		id = CIR_4_3_NEW
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 1.00
+		x = 0
+		y = 10
+		prerequisite = { focus = CIR_4_2_NEW }
+		relative_position_id = CIR_4_NEW
+		available ={
+      
+      }
+	  allow_branch = {									
+			has_completed_focus = CIR_3_NEW								    					   
+        }
+
+
+     
+
+      bypass = {
+
+      }
+		completion_reward = {
+		add_political_power = 50
+		
+		}
+		ai_will_do = {
+        factor = 1
+      }
+		cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+
+	}
+	focus = {
+		id = CIR_4_4_NEW
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 1.00
+		x = 0
+		y = 12
+		prerequisite = { focus = CIR_4_3_NEW }
+		relative_position_id = CIR_4_NEW
+		available ={
+      
+      }
+	  allow_branch = {									
+			has_completed_focus = CIR_3_NEW								    					   
+        }
+
+
+     
+
+      bypass = {
+
+      }
+		completion_reward = {
+		add_political_power = 50
+		
+		}
+		ai_will_do = {
+        factor = 1
+      }
+		cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+
+	}
+	focus = {
+		id = CIR_4_5_NEW
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 1.00
+		x = -4
+		y = 14
+		prerequisite = { focus = CIR_4_4_NEW }
+		prerequisite = { focus = CIR_3_3_NEW }
+		relative_position_id = CIR_4_NEW
+		available ={
+      
+      }
+	  allow_branch = {									
+			has_completed_focus = CIR_3_NEW								    					   
+        }
+
+
+     
+
+      bypass = {
+
+      }
+		completion_reward = {
+		add_political_power = 50
+		
+		}
+		ai_will_do = {
+        factor = 1
+      }
+		cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+
+	}
+	focus = {
+		id = CIR_4_6_NEW
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 1.00
+		x = -6
+		y = 16
+		prerequisite = { focus = CIR_4_5_NEW }
+		relative_position_id = CIR_4_NEW
+		available ={
+      
+      }
+	  allow_branch = {									
+			has_completed_focus = CIR_3_NEW								    					   
+        }
+
+
+     
+
+      bypass = {
+
+      }
+		completion_reward = {
+		add_political_power = 50
+		
+		}
+		ai_will_do = {
+        factor = 1
+      }
+		cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+
+	}
+	focus = {
+		id = CIR_4_7_NEW
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 1.00
+		x = -2
+		y = 16
+		prerequisite = { focus = CIR_4_5_NEW }
+		relative_position_id = CIR_4_NEW
+		available ={
+      
+      }
+	  allow_branch = {									
+			has_completed_focus = CIR_3_NEW								    					   
+        }
+
+
+     
+
+      bypass = {
+
+      }
+		completion_reward = {
+		add_political_power = 50
+		
+		}
+		ai_will_do = {
+        factor = 1
+      }
+		cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+
+	}
+	focus = {
+		id = CIR_4_8_NEW
+		icon = GFX_focus_LIL_dongquchunlai
+		cost = 1.00
+		x = -4
+		y = 18
+		prerequisite = { focus = CIR_4_6_NEW }
+		prerequisite = { focus = CIR_4_7_NEW }
+		relative_position_id = CIR_4_NEW
+		available ={
+      
+      }
+	  allow_branch = {									
+			has_completed_focus = CIR_3_NEW								    					   
+        }
+
+
+     
+
+      bypass = {
+
+      }
+		completion_reward = {
+		add_political_power = 50
+		
+		}
+		ai_will_do = {
+        factor = 1
+      }
+		cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+
+	}
+}

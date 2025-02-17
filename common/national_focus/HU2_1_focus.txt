@@ -1,0 +1,175 @@
+focus_tree = {
+  id = HU2_focus_2
+  country = {
+    factor = 0
+    modifier = {
+      add = 10
+      tag = 
+    }
+  }
+
+  shared_focus = ty_medium_main 
+
+  continuous_focus_position = { x = 20 y = 1700 }
+
+  focus = {
+      id = HU2_quanjingjieyan
+      icon = GFX_goal_generic_occupy_states_ongoing_war
+      cost = 2
+      x = 4
+      y = 0
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+
+      available ={
+      NOT = { country_exists = AKI }
+      
+      }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        conservativedecrease = yes
+      }
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HU2_zhuijipanluanfenzi
+      icon = GFX_goal_generic_war_with_comintern
+      relative_position_id = HU2_quanjingjieyan
+      cost = 2
+      x = 2
+      y = 1
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+      prerequisite = { focus = HU2_quanjingjieyan }
+
+      available ={
+      
+      }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        add_timed_idea = {days = 180 idea = HU2_qingsuangaigepaifenzi_idea}
+        
+    }
+
+
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HU2_yumeimeitantan
+      icon = GFX_focus_SGS_yuqiushenxieshang
+      relative_position_id = HU2_quanjingjieyan
+      cost = 2
+      x = 0
+      y = 1
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+      prerequisite = { focus = HU2_quanjingjieyan }
+
+      available ={
+      
+      }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        country_event = { id = hu2.2 hours = 6 }
+        
+    }
+
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  focus = {
+      id = HU2_1
+      icon = GFX_goal_generic_war_with_comintern
+      relative_position_id = HU2_quanjingjieyan
+      cost = 2
+      x = -2
+      y = 1
+
+      # prerequisite = {
+      #    focus = ty_kejichuangxin
+      # }
+
+
+      # relative_position_id = ty_medium_main
+      prerequisite = { focus = HU2_quanjingjieyan }
+
+      available ={
+      
+      }
+
+     
+
+      bypass = {
+      
+      }
+
+      completion_reward = {
+        add_timed_idea = {days = 180 idea = HU2_qingsuangaigepaifenzi_idea}
+        
+    }
+
+
+
+      ai_will_do = {
+        factor = 1
+      }
+
+      cancel_if_invalid = no
+      continue_if_invalid = yes
+      available_if_capitulated = yes
+  }
+  
+  

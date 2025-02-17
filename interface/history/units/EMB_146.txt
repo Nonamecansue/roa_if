@@ -1,0 +1,85 @@
+﻿division_template = {
+	name = "扫荡编制"
+	regiments = {
+		sc_light_infantry = { x = 0 y = 0 }
+		sc_light_infantry = { x = 0 y = 1 }
+		sc_light_infantry = { x = 0 y = 2 }
+		sc_light_infantry = { x = 0 y = 3 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "自警队编制"
+	regiments = {
+		sc_infantry = { x = 0 y = 0 }
+		sc_infantry = { x = 0 y = 1 }
+		sc_infantry = { x = 0 y = 2 }
+		sc_infantry = { x = 0 y = 3 }
+		sc_infantry = { x = 0 y = 4 }
+	}
+}
+division_template = {
+	name = "机动警卫队"
+	regiments = {
+		melee_jixiehuabudui = { x = 0 y = 0 }
+		melee_jixiehuabudui = { x = 0 y = 1 }
+		melee_jixiehuabudui = { x = 0 y = 2 }
+		melee_jixiehuabudui = { x = 0 y = 3 }
+	}
+}
+
+units = {
+	division = {
+		name = "自警队编制"
+		location = 3366
+		division_template = "自警队编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "自警队编制"
+		location = 3366
+		division_template = "自警队编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "自警队编制"
+		location = 3366
+		division_template = "自警队编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "机动警卫队"
+		location = 3366
+		division_template = "机动警卫队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "自警队编制"
+		location = 240
+		division_template = "自警队编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "自警队编制"
+		location = 240
+		division_template = "自警队编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "机动警卫队"
+		location = 240
+		division_template = "机动警卫队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+
+
+
+}

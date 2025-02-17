@@ -1,0 +1,34 @@
+state={
+	id=476
+	name="STATE_476"
+	provinces={
+		6242 6252 6257 6265 6267 6272 6276 6284 
+	}
+	resources={
+		energy = 0
+		powder = 5.0
+		metal = 4.0
+		gas=0.000
+		crystal=15.000
+	}
+	history={
+		146.1.1 = {
+			owner = KEK
+			add_core_of = KEK
+			add_core_of = GYK
+			add_core_of = SAK
+			add_core_of = YCE
+			buildings = {
+				infrastructure = 4
+				industrial_complex = 4
+				arms_factory = 2
+
+			}
+
+		}
+	}
+	manpower=2254345.0
+	state_category=s12
+	local_supplies=2.5
+	buildings_max_level_factor=1.000
+}

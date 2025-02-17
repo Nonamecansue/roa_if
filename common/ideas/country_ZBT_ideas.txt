@@ -1,0 +1,35 @@
+ideas = {
+	country = {
+
+		ZBT_xiangshoudujinjun_idea = {
+			picture = chi_war_of_resistance3
+			modifier = {
+				ai_focus_aggressive_factor = 0.8
+				army_speed_factor = 0.15
+
+
+			}
+			available = {
+
+			}
+		}
+		ZBT_duidikongju_idea = {
+			picture = chi_war_of_resistance3
+			modifier = {
+				army_speed_factor = -0.05
+				army_attack_factor = -0.25
+				army_defence_factor = -0.25
+
+
+			}
+			available = {
+				has_war = yes
+
+			}
+		}
+
+		
+	}
+}
+
+		

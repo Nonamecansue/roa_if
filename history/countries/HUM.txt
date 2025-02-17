@@ -1,0 +1,292 @@
+﻿capital = 246
+143.7.1 = {
+    set_technology = {
+        #通用武器线
+        spell_card1 = 1
+        spear1 = 1
+        gun1 = 1
+        linglicunchu = 1
+        linglizhufu = 1
+        linglidanyao = 1
+        spell_card2 = 1
+        spear2 = 1
+        gun2 = 1
+        lingliliushuixian = 1
+        gun3 = 1
+            
+        #辅助
+        zhiyuanzhuangbei = 1
+        zhihuixiaodui146 = 1
+        gongjianpao149 = 1
+
+        #专用辅助
+        mortar1 = 1
+
+        science_scout1 = 1
+        
+        wunvzhiyuan149 = 1
+
+        #专用基础
+
+        #专用进阶
+
+        #混合系
+        sc_shield1 = 1
+        smg1 = 1
+
+        #陆军学说
+        zhanchangzhihui140 = 1
+        zuzhihuazhanzheng142 = 1
+        zhanchangzhihui145=  1
+            
+        #工程学 
+        jichushuxue = 1
+        shuxuegongju = 1
+        waike = 1
+        jisuangongju144 = 1
+        tongxunlilun = 1
+
+        #专用工程学
+
+        #工业
+        production_theory = 1
+        org_production = 1
+        jianzaojishu130 = 1
+        yunshudui140 = 1
+        yunshucheliang146 = 1
+            
+        #专用工业
+        fangwaijieshengchan130 = 1
+        fangwaijieshengchan140 = 1
+        fangwaijieshengchan145 = 1
+
+        #种族
+        kongjuyizhiji1 = 1
+            
+    }
+    recruit_character = ZBT_kosuzu
+    recruit_character = HUM_sek_leader
+    recruit_character = HUM_council_leader
+}
+146.1.1 = {
+    set_technology = {
+        #通用武器线
+        spell_card1 = 1
+        spear1 = 1
+        gun1 = 1
+        linglicunchu = 1
+        linglizhufu = 1
+        linglidanyao = 1
+        spell_card2 = 1
+        spear2 = 1
+        gun2 = 1
+        lingliliushuixian = 1
+        spear3 = 1
+        gun3 = 1
+        spell_card3 = 1
+            
+        #辅助
+        zhiyuanzhuangbei = 1
+        zhihuixiaodui146 = 1
+
+        #专用辅助
+        mortar1 = 1
+        tuiyaopopian1 = 1
+        
+        wunvzhiyuan149 = 1
+
+        #专用基础
+        special_shield1 = 1
+        tangxiangailiang = 1
+        weichongjiaqiang1 = 1
+        smg1 = 1
+
+
+        #专用进阶
+        sc_fighter1 = 1
+        sc_bomber1 = 1
+
+        #混合系
+        sc_shield1 = 1
+        sc_yizhantanke = 1
+        
+        sc_tank1
+        sc_junyongyunshuchiliang1 = 1
+        sc_yaoshouxunhua = 1
+        sc_linglixishou = 1
+        
+
+        #陆军学说
+        zhanchangzhihui140 = 1
+        zuzhihuazhanzheng142 = 1
+        zhanchangzhihui145=  1
+            
+        #工程学 
+        jichushuxue = 1
+        shuxuegongju = 1
+        waike = 1
+        jisuangongju144 = 1
+        tongxunlilun = 1
+        jiemi137 = 1
+        jiemi142 = 1
+        jiemi147 = 1
+        jiami137 = 1
+        jiami142 = 1
+        lingganleida142 = 1
+
+
+
+        #专用工程学
+
+        #工业
+        production_theory = 1
+        org_production = 1
+        jianzaojishu130 = 1
+        yunshudui140 = 1
+        yunshucheliang146 = 1
+        jianzaojishu140 = 1
+        jianzaojishu146 = 1
+        jijianjianzao140 = 1
+        jijianjianzao146 = 1
+        minyongjianzao146 = 1
+        ziyuankaifa130 = 1
+        ziyuankaifa140 = 1
+        ziyuankaifa146 = 1
+            
+        #专用工业
+        fangwaijieshengchan130 = 1
+        fangwaijieshengchan140 = 1
+        fangwaijieshengchan145 = 1
+        linglifuzhushengchan147 = 1
+
+        #种族
+        kongjuyizhiji1 = 1
+        chuanchongpao1 = 1
+            
+    }
+    recruit_character = HUM_kosuzu
+    recruit_character = HUM_kosuzu_leader
+    
+}
+
+143.7.1 = {
+    add_ideas = {
+        Human
+        sub_Pri_youkai
+        Town
+        type3_manpowerlv4
+        war_economy
+         
+        dove1
+        open2
+        forbidden_magic
+        strict_border
+        jibenanbao
+        xianzhiguowaimeiti
+
+        gongyeguo
+        diwenmang
+        banzhongzupingdeng
+        jibenkejihua
+
+
+    }
+    if = {
+        limit = {
+            has_start_date < 143.7.2
+        }
+        #country_lock_all_division_template = yes
+    }
+    oob = "HUM_143"
+	# set_research_slots = 1
+    
+	set_politics = {
+    	ruling_party = guli
+    }
+    set_popularities = {
+        qinwai = 0
+        guli = 70
+        fandong = 30
+        oldorder = 0
+        neworder = 0
+    } 
+
+    
+}
+
+
+
+
+146.1.1={
+ set_country_flag = bunengsuiyiqiehuanzhengti
+    
+    set_air_oob = "HUM_air_146"
+    oob = "HUM_146"
+    # set_research_slots = 6
+    # Starting tech
+    set_party_name = { ideology = neworder long_name = HUM_neworder_main_party name = HUM_neworder_main_party }
+
+    TKM = {
+        set_cosmetic_tag = TKM_HUM
+    }
+
+    remove_ideas = {
+        renli144
+    }
+    
+
+    add_ideas = {
+        Human
+        Country
+
+        HUM_caibing
+         
+        civilian_economy
+        HUM_war_fear
+       # HUM_keyanxianzhitiaoyue
+        HUM_zongzumaodun
+        HUM_bukekaodeshiliquan
+        HUM_jihubengkuidejingji
+        HUM_daguimoshiye
+        HUM_caijunhouyizheng
+        
+        hawk1
+        open1
+        normal_border
+        sc_rule
+    }
+    #########调整
+    #SRB = { give_guarantee = HUM}
+    #TKM = { give_guarantee = HUM}
+    
+    set_politics = {
+
+    	ruling_party = guli
+    	election_frequency = 48
+    	elections_allowed = no
+    }
+    set_popularities = {
+        qinwai = 15
+        guli = 50
+        neworder = 15
+        oldorder = 0
+        fandong = 5
+        jinwai = 15
+    }
+    country_lock_all_division_template = yes
+    
+
+    TKM = {
+        subject_level3 = yes
+    }
+    NMS = {
+        subject_level3 = yes
+    }
+    MAM = {
+        subject_level3 = yes
+    }
+    YKR = {
+        subject_level4 = yes
+    }
+    set_truce = {target = SCA days = 365}
+}

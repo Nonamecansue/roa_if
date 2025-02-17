@@ -1,0 +1,28 @@
+ideas = {
+#===============================
+    country = {
+	#=========================
+		KAP_fanduilingligongxiang = {
+			picture = FRA_matignon_agreements
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			
+	
+			modifier = {
+				war_support_factor = -0.1
+				stability_factor = -0.1
+				neworder_drift = 0.005
+				local_resources_factor = -0.2
+
+
+			}
+		}
+		
+	}
+}

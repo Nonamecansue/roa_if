@@ -1,0 +1,78 @@
+FYJ_penquanzhanshi = {
+
+    FYJ_zhanlingpenquandiqu = {
+        visible = {
+        tag = FYJ
+
+        }
+        available = {
+          NOT = { country_exists = ACE }
+          NOT = { country_exists = ONS }
+        }
+
+        fire_only_once = yes
+
+        cost = 0
+
+        ai_will_do = {
+          factor = 100
+        }
+
+        complete_effect = {
+        add_ideas = Town
+        set_cosmetic_tag = FYJ_gzq
+        every_owned_state = {
+					limit = {
+						is_core_of = ONS
+					}
+					add_core_of = FYJ
+					
+				}
+        every_owned_state = {
+					limit = {
+						is_core_of = ACE
+					}
+					add_core_of = FYJ
+					
+				}
+      }
+
+    }
+    FYJ_bujixiujian = {
+        visible = {
+        tag = FYJ
+
+        }
+        available = {
+          89 = {
+       CONTROLLER = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+          }
+        }
+
+        fire_only_once = yes
+
+        cost = 10
+        days_remove = 10
+
+        ai_will_do = {
+          factor = 1000
+        }
+
+        complete_effect = {
+        build_railway = {
+                level = 1           
+                    path = { 
+                        2003 690 1347 2710 2215 2299
+                    }
+            }
+      }
+
+    }
+      
+       
+  }

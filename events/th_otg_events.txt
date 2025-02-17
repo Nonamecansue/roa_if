@@ -1,0 +1,336 @@
+﻿add_namespace = otg
+country_event = { #天狗内战前
+	id = otg.1
+	title = otg.1.t
+	desc = otg.1.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	#	date > 146.5.1
+	#	tag = OTG
+	}
+
+	option = {
+		name = otg.1.1
+		ai_chance = {
+			base = 100
+		}
+		399 = {
+			add_core_of = TEG
+		}
+		408 = {
+			add_core_of = TEG
+		}
+		407 = {
+			add_core_of = TEG
+		}
+		409 = {
+			add_core_of = TEG
+		}
+		590 = {
+			add_core_of = TEG
+		}
+		606 = {
+			add_core_of = TEG
+		}
+		387 = {
+			add_core_of = TEG
+		}
+		73 = {
+			add_core_of = TEG
+		}
+		87 = {
+			add_core_of = TEG
+		}
+		306 = {
+			add_core_of = TEG
+		}
+		339 = {
+			add_core_of = TEG
+		}
+		605 = {
+			add_core_of = TEG
+		}
+		78 = {
+			add_core_of = TEG
+		}
+		56 = {
+			add_core_of = TEG
+		}
+		34 = {
+			add_core_of = TEG
+		}
+		hidden_effect = {
+			country_event = {id = otg.2 days = 10 }
+		}
+	}
+	
+}
+country_event = { #天狗内战后
+	id = otg.2
+	title = otg.2.t
+	desc = otg.2.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	#	date > 146.5.1
+	#	tag = OTG
+	}
+
+	option = {
+		name = otg.2.1
+		ai_chance = {
+			base = 100
+		}
+		trigger = {
+         has_country_flag = OTG_qunanfang
+		}
+		OTG = {
+                end_puppet = KRD
+            }
+		OTG = {
+		every_owned_state = {
+					limit = {
+						is_core_of = TEG
+					}
+					TEG = {
+						transfer_state = PREV
+					}
+	
+				}
+		}
+		TEG = {
+			declare_war_on = {
+				   target = OTG
+				   type = civil_war
+			}
+		}
+		OTG = {
+		every_owned_state = {
+					limit = {
+						is_core_of = TEG
+					}
+					add_core_of = TEG
+	
+				}
+		}
+		country_event = {id = otg.4 days = 10 }
+		hidden_effect = {
+			YAW = {
+				country_event = {id = otg.5 days = 1 }
+			}
+		}
+	}
+	option = {
+		name = otg.2.2
+		ai_chance = {
+			base = 100
+		}
+		trigger = {
+			not = {
+				has_country_flag = OTG_qunanfang
+			}
+         
+		}
+		OTG = {
+                end_puppet = KRD
+            }
+		OTG = {
+		every_owned_state = {
+					limit = {
+						is_core_of = TEG
+					}
+					TEG = {
+						transfer_state = PREV
+					}
+	
+				}
+		}
+		TEG = {
+			declare_war_on = {
+				   target = OTG
+				   type = civil_war
+			}
+		}
+		OTG = {
+		every_owned_state = {
+					add_core_of = TEG
+	
+				}
+		}
+	}
+	
+}
+country_event = { #去视察
+	id = otg.3
+	title = otg.3.t
+	desc = otg.3.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	#	date > 146.5.1
+	#	tag = OTG
+	}
+
+	option = {
+		name = otg.3.1
+		ai_chance = {
+			base = 50
+		}
+		add_stability = 0.1
+		hidden_effect = {
+			set_country_flag = OTG_qunanfang
+			country_event = {id = otg.1 days = 10 }
+		}
+
+	}
+	option = {
+		name = otg.3.2
+		ai_chance = {
+			base = 50
+		}
+		add_stability = -0.1
+		hidden_effect = {
+			country_event = {id = otg.1 days = 10 }
+		}
+
+	}
+	
+}
+country_event = { #otg主动投降
+	id = otg.4
+	title = otg.4.t
+	desc = otg.4.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	#	date > 146.5.1
+	#	tag = OTG
+	}
+
+	option = {
+		name = otg.4.1
+		ai_chance = {
+			base = 50
+		}
+		hidden_effect = {
+			TEG = {
+			change_tag_from = ROOT
+		}
+		TEG = {
+			annex_country = { target = OTG transfer_troops = yes }
+		}
+		}
+
+	}
+	
+}
+country_event = { #进洞
+	id = otg.5
+	title = otg.5.t
+	desc = otg.5.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	#	date > 146.5.1
+	#	tag = OTG
+	}
+
+	option = {
+		name = otg.5.1
+		ai_chance = {
+			base = 0
+		}
+		
+
+	}
+	option = {
+		name = otg.5.2
+		ai_chance = {
+			base = 50
+		}
+		KRD = {
+			country_event = {id = otg.6 days = 1 }
+		}
+		
+
+	}
+	
+
+}
+country_event = { #YAW要求附庸
+	id = otg.6
+	title = otg.6.t
+	desc = otg.6.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	#	date > 146.5.1
+	#	tag = OTG
+	}
+
+	option = {
+		name = otg.6.1
+		ai_chance = {
+			base = 0
+		}
+		YAW = {
+			country_event = {id = otg.7 days = 1 }
+		}
+		
+
+	}
+	option = {
+		name = otg.6.2
+		ai_chance = {
+			base = 50
+		}
+		YAW = {
+				KRD = {
+					subject_level2 = yes
+				}
+				transfer_state = 416
+			}
+          
+        
+		
+
+	}
+	
+}
+country_event = { #KRD拒绝
+	id = otg.7
+	title = otg.7.t
+	desc = otg.7.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	#	date > 146.5.1
+	#	tag = OTG
+	}
+
+	option = {
+		name = otg.7.1
+		ai_chance = {
+			base = 0
+		}
+		
+
+	}
+	option = {
+		name = otg.7.2
+		ai_chance = {
+			base = 50
+		}
+		YAW = {
+			declare_war_on = {
+    target = KRD
+    type = annex_everything
+    }
+		}
+        
+		
+
+	}
+	
+}

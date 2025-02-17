@@ -1,0 +1,176 @@
+ideas = {
+	country = {
+
+
+    XN_hu3vsmel_hu3_idea = {
+	    	picture = man_five_year_plan_industry
+	    	allowed = {
+				always = no
+			}
+			available = {
+				HU3 = {
+			is_ai = yes
+		}
+		MEL = {
+			is_ai = yes
+		}
+		HU3 = {
+			has_war_with = MEL
+		}
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+
+			}
+			targeted_modifier = { 
+				tag = MEL
+				attack_bonus_against = 2.5
+				defense_bonus_against = 2.5
+			}
+		}
+		XN_hu3vsmel_mel_idea = {
+	    	picture = man_five_year_plan_industry
+	    	allowed = {
+				always = no
+			}
+			available = {
+				HU3 = {
+			is_ai = yes
+		}
+		MEL = {
+			is_ai = yes
+		}
+		HU3 = {
+			has_war_with = MEL
+		}
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+
+			}
+			targeted_modifier = { 
+				tag = HU3
+				attack_bonus_against = 5
+				defense_bonus_against = 3
+			}
+		}
+		XN_hu3vsmel_fangtouxiang_idea = {
+	    	picture = man_five_year_plan_industry
+	    	allowed = {
+				always = no
+			}
+			available = {
+		HU3 = {
+			has_war_with = MEL
+		}
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				surrender_limit = 1
+
+			}
+		}
+		XN_sgsvshu4_fangtouxiang_idea = {
+	    	picture = man_five_year_plan_industry
+	    	allowed = {
+				always = no
+			}
+			available = {
+		HU4 = {
+			has_war_with = SGS
+		}
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				surrender_limit = 1
+
+			}
+		}
+		XN_sgsvshu4_hu4_idea = {
+	    	picture = man_five_year_plan_industry
+	    	allowed = {
+				always = no
+			}
+			available = {
+				HU4 = {
+			is_ai = yes
+		}
+		SGS = {
+			is_ai = yes
+		}
+		SGS = {
+			has_war_with = HU4
+		}
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+
+			}
+			targeted_modifier = { 
+				tag = SGS
+				attack_bonus_against = 1
+				defense_bonus_against = 1
+			}
+		}
+		XN_sgsvshu4_sgs_idea = {
+	    	picture = man_five_year_plan_industry
+	    	allowed = {
+				always = no
+			}
+			available = {
+				HU4 = {
+			is_ai = yes
+		}
+		SGS = {
+			is_ai = yes
+		}
+		SGS = {
+			has_war_with = HU4
+		}
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+
+			}
+			targeted_modifier = { 
+				tag = HU4
+				attack_bonus_against = 2.5
+				defense_bonus_against = 2.5
+			}
+		}
+	
+		
+		
+
+	}
+}

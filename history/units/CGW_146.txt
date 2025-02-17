@@ -1,0 +1,101 @@
+﻿division_template = {
+	name = "妖精骑兵队"
+	regiments = {
+		melee_cavalry = { x = 0 y = 0 }
+		melee_cavalry = { x = 0 y = 1 }
+		melee_cavalry = { x = 0 y = 2 }
+		melee_cavalry = { x = 0 y = 3 }
+		melee_cavalry = { x = 0 y = 4 }
+		melee_cavalry = { x = 1 y = 0 }
+		melee_cavalry = { x = 1 y = 1 }
+	}
+	
+	support = {
+	}
+}
+division_template = {
+	name = "步兵分队"
+	regiments = {
+		ma_light_infantry = { x = 0 y = 0 }
+		ma_infantry = { x = 0 y = 1 }
+		ma_infantry = { x = 0 y = 2 }
+		ma_infantry = { x = 0 y = 3 }
+		ma_infantry = { x = 0 y = 4 }
+	}
+	
+	support = {
+	}
+}
+units = {
+	division = {
+		name = "妖精骑兵队"
+		location = 290
+		division_template = "妖精骑兵队"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "妖精骑兵队"
+		location = 5870
+		division_template = "妖精骑兵队"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "妖精骑兵队"
+		location = 5862
+		division_template = "妖精骑兵队"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "妖精骑兵队"
+		location = 1826
+		division_template = "妖精骑兵队"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "妖精骑兵队"
+		location = 5861
+		division_template = "妖精骑兵队"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "步兵分队"
+		location = 290
+		division_template = "步兵分队"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "步兵分队"
+		location = 5870
+		division_template = "步兵分队"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "步兵分队"
+		location = 3678
+		division_template = "步兵分队"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "步兵分队"
+		location = 5878
+		division_template = "步兵分队"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "步兵分队"
+		location = 996
+		division_template = "步兵分队"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	
+}

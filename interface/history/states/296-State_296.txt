@@ -1,0 +1,33 @@
+
+state={
+	id=296
+	name="STATE_296"
+
+	resources={
+		powder = 1.0
+		metal = 0.0
+		gas=3.000
+		crystal=0.000
+	}
+
+	history={
+		146.1.1 = {
+			owner = MOK
+			add_core_of = MOK
+			add_core_of = BYA
+			buildings = {
+				infrastructure = 1
+				industrial_complex = 1
+				arms_factory = 1
+			}
+		}
+	}
+
+	provinces={
+		8 83 644 1656 5478 5487 5488 5489 5497 
+	}
+	state_category=s5
+	local_supplies=2.5
+	manpower=620.0
+	buildings_max_level_factor=1.000
+}

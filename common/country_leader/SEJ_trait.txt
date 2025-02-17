@@ -1,0 +1,84 @@
+leader_traits = {
+	# cir_cirno_leader = {
+	# 	random = no
+	# 	#generic
+
+	# 	stability_factor = 0.25
+	# 	war_support_factor = 0.1
+		
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# }
+	# cir_cirno_leader2 = {
+	# 	random = no
+	# 	#generic
+
+	# 	political_power_factor = 0.1
+		
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# }
+	# nms_bkr = {
+	# 	random = no
+	# 	#generic
+
+		
+		
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# }
+	# gensoukyo_creator_idea = {
+	# 	random = no
+	# 	#generic
+
+		
+		
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# }
+#=========生产商通用============
+    SEJ_nib_traits = {
+		random = no
+		#generic
+
+		stability_factor = 0.05
+		production_speed_buildings_factor = 0.1
+		land_night_attack = 0.25 #这下面两条对应的是角色修正里，修改时需一起修改。
+		planning_speed = 0.1
+
+		ai_will_do = {
+			factor = -5
+		}
+	}
+    SEJ_rmi_traits = {
+		random = no
+		#generic
+
+		war_stability_factor = 0.05
+		production_factory_max_efficiency_factor = 0.1
+		army_morale_factor = 0.1 #这下面两条对应的是角色修正里，修改时需一起修改。
+		land_night_attack = 0.25
+		
+		ai_will_do = {
+			factor = -5
+		}
+	}
+    SEJ_smm_traits = {
+		random = no
+		#generic
+		stability_factor = 0.1
+		war_stability_factor = 0.1
+		PO_good_influence_factor = 0.2
+		army_org_factor = 0.05
+		army_attack_factor = 0.1
+		army_defence_factor = 0.1
+		
+		ai_will_do = {
+			factor = -5
+		}
+	}
+}

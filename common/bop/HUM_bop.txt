@@ -1,0 +1,164 @@
+
+HUM_dashenpan_power_balance = {
+	initial_value = -1
+	left_side = HUM_jiaoshou_left_side
+	right_side = HUM_jiaoshou_right_side
+	decision_category = HUM_jiaoshoudashenpan
+	side = {
+		id = HUM_jiaoshou_left_side
+		range = {
+			id = HUM_geren_jiaoshou_1
+			min = -1
+			max = 0
+			modifier = {
+				
+			}	
+			
+			on_activate = {
+				
+			}
+		}
+	}
+	side = {
+		id = HUM_jiaoshou_right_side
+		range = {
+			id = HUM_geren_jiaoshou_2
+			min = 0
+			max = 0.20
+			modifier = {
+				
+			}
+			on_activate = {
+				
+			}
+		}
+		range = {
+			id = HUM_geren_jiaoshou_3
+			min = 0.20
+			max = 0.40
+			modifier = {
+				
+			}
+			on_activate = {
+				
+			}
+		}
+		range = {
+			id = HUM_geren_jiaoshou_4
+			min = 0.40
+			max = 0.60
+			modifier = {
+				
+			}	
+			
+			on_activate = {
+				
+			}
+		}
+		range = {
+			id = HUM_geren_jiaoshou_5
+			min = 0.60
+			max = 0.80
+			modifier = {
+			
+			}	
+			
+			on_activate = {
+			
+			}
+		}
+		range = {
+			id = HUM_geren_jiaoshou_6
+			min = 0.80
+			max = 1.00
+			modifier = {
+				
+			}	
+			
+			on_activate = {
+				
+			}
+		}
+	}
+	side = {
+		id = HUM_jiaoshoushenpan_right_side
+		range = {
+			id = HUM_geren_jiaoshoushenpan_2
+			min = 0
+			max = 0.20
+			modifier = {
+				army_attack_factor = 0.03
+				army_defence_factor = 0.03
+				army_org_factor = 0.03
+				army_morale_factor = 0.03
+				org_loss_when_moving = -0.03
+			}
+			on_activate = {
+				
+			}
+		}
+		range = {
+			id = HUM_geren_jiaoshoushenpan_3
+			min = 0.20
+			max = 0.40
+			modifier = {
+				army_attack_factor = 0.06
+				army_defence_factor = 0.06
+				army_org_factor = 0.06
+				army_morale_factor = 0.06
+				org_loss_when_moving = -0.06
+			}
+			on_activate = {
+				
+			}
+		}
+		range = {
+			id = HUM_geren_jiaoshoushenpan_4
+			min = 0.40
+			max = 0.60
+			modifier = {
+				army_attack_factor = 0.09
+				army_defence_factor = 0.09
+				army_org_factor = 0.09
+				army_morale_factor = 0.09
+				org_loss_when_moving = -0.09
+			}	
+			
+			on_activate = {
+				
+			}
+		}
+		range = {
+			id = HUM_geren_jiaoshoushenpan_5
+			min = 0.60
+			max = 0.80
+			modifier = {
+				army_attack_factor = 0.12
+				army_defence_factor = 0.12
+				army_org_factor = 0.12
+				army_morale_factor = 0.12
+				org_loss_when_moving = -0.12
+			}	
+			
+			on_activate = {
+				
+			}
+		}
+		range = {
+			id = HUM_geren_jiaoshoushenpan_6
+			min = 0.80
+			max = 1.00
+			modifier = {
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				army_org_factor = 0.15
+				army_morale_factor = 0.15
+				org_loss_when_moving = -0.15
+			}	
+			
+			on_activate = {
+				
+			}
+		}
+	}
+}

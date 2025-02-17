@@ -1,0 +1,123 @@
+characters={
+	DHC_spl ={
+		name = DHC_spl
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+				small="gfx/leaders/leader_unknown.dds"
+			}
+			army = {
+				large="gfx/leaders/leader_unknown.dds"
+				small="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		corps_commander = {
+			traits = { th_original_character }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 5
+		}
+		#advisor = {
+			#slot = character_coop
+			#idea_token = GYK_yuma
+			#name = GYK_yuma
+			#cost = 200
+			#modifier = {
+			#	army_defence_factor = 0.1
+			#}
+			#ai_will_do = {
+			#	factor = 1
+			#}
+		#}
+	}
+	DHC_spl_leader ={
+		name = DHC_spl_leader
+
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+				small="gfx/leaders/leader_unknown.dds"
+			}
+			army = {
+				large="gfx/leaders/leader_unknown.dds"
+				small="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=qinwai_type
+			id=-1
+			#traits={ YZQ_xibuermeng_trait }
+		}
+		country_leader={
+			ideology=guli_junfa
+			id=-1
+			#traits={ YZQ_xibuermeng_trait }
+		}
+		country_leader={
+			ideology=oldorder_type
+			id=-1
+			#traits={ YZQ_xibuermeng_trait }
+		}
+		country_leader={
+			ideology=fandong_type
+			id=-1
+			#traits={ YZQ_xibuermeng_trait }
+		}
+		country_leader={
+			ideology=neworder_type
+			id=-1
+			#traits={ YZQ_xibuermeng_trait }
+		}
+		country_leader={
+			ideology=oldgenso_type
+			id=-1
+			#traits={ YZQ_xibuermeng_trait }
+		}
+	}
+	DHC_jzf_leader ={
+		name = DHC_jzf_leader
+
+		portraits={
+			civilian={
+				large="gfx/leaders/ZYD/ZYD_council.dds"
+				small="gfx/leaders/ZYD/ZYD_council_small.dds"
+			}
+			army = {
+				large="gfx/leaders/ZYD/ZYD_council.dds"
+				small="gfx/leaders/ZYD/ZYD_council_small.dds"
+			}
+		}
+		country_leader={
+			ideology=qinwai_type
+			id=-1
+			#traits={ YZQ_xibuermeng_trait }
+		}
+		country_leader={
+			ideology=guli_junfa
+			id=-1
+			#traits={ YZQ_xibuermeng_trait }
+		}
+		country_leader={
+			ideology=oldorder_huancaoyuanxiakeshang
+			id=-1
+			#traits={ YZQ_xibuermeng_trait }
+		}
+		country_leader={
+			ideology=fandong_type
+			id=-1
+			#traits={ YZQ_xibuermeng_trait }
+		}
+		country_leader={
+			ideology=neworder_type
+			id=-1
+			#traits={ YZQ_xibuermeng_trait }
+		}
+		country_leader={
+			ideology=oldgenso_type
+			id=-1
+			#traits={ YZQ_xibuermeng_trait }
+		}
+	}
+}
