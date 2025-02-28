@@ -66,6 +66,8 @@
     nongye_gongye
     zhongshikejihua
     AKI_tudijiaoyisuode_idea
+    AKI_TheEndlessSurgeOfGhost_idea
+    AKI_SmugglingCrisis_idea
     partial_economic_mobilisation
     }
     

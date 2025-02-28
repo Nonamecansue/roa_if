@@ -1516,6 +1516,64 @@ ideas = {
 				PO_influence_factor = 0.1
 			}
 		}
+
+
+		#民族精神_不断涌现的亡灵
+		AKI_TheEndlessSurgeOfGhost_idea = {
+			#图片
+			picture = generic_economic_increase
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				is_subject = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				#稳定度-20%
+				stability_factor = -0.20
+				#政治点数-10%
+				political_power_factor = -0.1
+				#战争支持的+10%
+				war_support_factor = 0.1
+			}
+		}
+
+
+		#民族精神_走私危机
+		AKI_SmugglingCrisis_idea = {
+			#图片
+			picture = generic_economic_increase
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				is_subject = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				#稳定度-10%
+				stability_factor = -0.10
+				#政治点数-10%
+				political_power_factor = -0.1
+				#战略资源-10%
+				local_resources_factor = -0.1
+			}
+		}
 		
 	}
 }

@@ -241,6 +241,12 @@
   AKI_tudijiaoyisuode_idea:0 "土地交易所得" 
   AKI_tudijiaoyisuode_idea_desc:0 "实际上我们才是东边村落土地交易的最大买家兼卖家，似乎目前他们的情况有点不太好并且开始对我们产生敌意，可是商人不就该这样吗？！"   
 
+  AKI_TheEndlessSurgeOfGhost_idea:0 "不断涌现的亡灵"
+  AKI_TheEndlessSurgeOfGhost_idea_desc:0 "由于三途河关闭了和我们之间的道路，那些本来奔向冥界的亡灵不得不滞留在我们的土地上。尽管我们已努力在想办法安置他们，但随着时间的推移，他们的数量任在增长，并和我们发生了严重冲突，我们必须尽快解决他们！要么接纳他们作为我们的一员，要么就送他们立地成佛！"  
+  
+  AKI_SmugglingCrisis_idea:0 "走私危机"
+  AKI_SmugglingCrisis_idea_desc:0 "中有道曾是一个繁荣的商业国度，和周边国家展开了良好的贸易合作。然而，随着亡灵对社会秩序的冲击，开始有一些不法分子在我们视线之外进行非法贸易，暗中操控黑市和走私网络。这些走私活动不仅吞噬了我们珍贵的资源，也严重侵蚀了国家的财政和社会秩序。"
+  
   AKI_laiziqiushendezhichi_idea:0 "来自[AKI.GetName]的支持" 
   AKI_laiziqiushendezhichi_idea_desc:0 "不同于[AKI.GetName]属下的其他村庄，[HU3.GetName]仅仅保持着与[AKI.GetName]名义上的从属关系并进行着利益上的合作。秋神默许部分相对好战的人类前往这里进行对南方妖怪的“收复失地”运动，而[HU3.GetName]要做的则是将部分战利品上交给秋神即可，似乎这是秋穰子解决人类鹰派的一个手段，毫无疑问这只是将威胁转嫁给了无缘冢的妖怪而已。[HU3.GetName]无意参与[AKI.GetName]内部的纷争，无论谁当权都可以只要别干涉这里的征服行动...由于在鹰派方面的一致性他们在部分层面上亲近于秋静叶及“凋零者”，可或许他们并不了解这位神明的真实想法吧。" 
 
