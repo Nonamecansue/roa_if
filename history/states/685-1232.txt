@@ -13,14 +13,14 @@ state={
 			}
 		}
 		146.1.1 = {
-			owner = EMB
+			owner = BWH
 			add_core_of = SCA
-			add_core_of = EMB
+			add_core_of = BWH
 			
 			buildings = {
 				infrastructure =3
-				industrial_complex = 0
-				arms_factory = 0
+				industrial_complex = 6
+				arms_factory = 2
 
 			}
 
@@ -32,6 +32,6 @@ state={
 	}
 	manpower=114514
 	buildings_max_level_factor=1.000
-	state_category=s2
+	state_category=s10
 	local_supplies=2.5
 }

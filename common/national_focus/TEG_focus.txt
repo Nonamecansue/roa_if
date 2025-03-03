@@ -4,7 +4,7 @@
     factor = 0
     modifier = {
       add = 10
-      tag =  
+      tag = TEG
     }
   }
 
@@ -2819,10 +2819,10 @@
       relative_position_id = TEG_lajinhehetongdeguanxi
 
       available ={
-        67 = {
+        590 = {
           is_controlled_by = ROOT
         }
-        416 = {
+        606 = {
           is_controlled_by = ROOT
         }
       }
@@ -2830,7 +2830,7 @@
       completion_reward = {
         random_owned_controlled_state = {
           limit = {
-            state = 67
+            state = 590
           }
           add_building_construction = {
             type = infrastructure 
@@ -2840,7 +2840,7 @@
         }
         random_owned_controlled_state = {
           limit = {
-            state = 416
+            state = 606
           }
           add_building_construction = {
             type = infrastructure 

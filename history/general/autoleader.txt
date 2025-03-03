@@ -22,6 +22,9 @@
 			tag = YYG
 			tag = YYH
 			tag = ONS
+			tag = XYL
+			tag = ZYL
+			tag = HLY
 		}
 	}
 	generate_character = {
@@ -115,11 +118,118 @@ every_possible_country = { #未知怨灵
 			tag = UUG
 			tag = ACE
 			tag = DYL
+			tag = PQY
+			tag = YLD
+			tag = YLZ
+			tag = YLS
 		}
 	}
 	generate_character = {
 		token_base = unghost_leader
 		name = unghost_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+				small="gfx/leaders/leader_unknown.dds"
+			}
+			army = {
+				large="gfx/leaders/leader_unknown.dds"
+				small="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=qinwai_type
+			id=-1
+		}
+		country_leader={
+			ideology=guli_chuantongtizhi
+			id=-1
+		}
+		country_leader={
+			ideology=oldorder_type
+			id=-1
+		}
+		country_leader={
+			ideology=fandong_type
+			id=-1
+		}
+		country_leader={
+			ideology=neworder_type
+			id=-1
+		}
+		country_leader={
+			ideology=jinwai_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldgenso_type
+			id=-1
+		}
+	}
+}
+every_possible_country = { #未知妖怪
+	limit = {
+		or = {
+			tag = JZS
+			tag = JGZ
+			tag = WTL
+			tag = ZZS
+			tag = LZZ
+			tag = JJC
+		}
+	}
+	generate_character = {
+		token_base = unyoukai_leader
+		name = unyoukai_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+				small="gfx/leaders/leader_unknown.dds"
+			}
+			army = {
+				large="gfx/leaders/leader_unknown.dds"
+				small="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=qinwai_type
+			id=-1
+		}
+		country_leader={
+			ideology=guli_chuantongtizhi
+			id=-1
+		}
+		country_leader={
+			ideology=oldorder_type
+			id=-1
+		}
+		country_leader={
+			ideology=fandong_type
+			id=-1
+		}
+		country_leader={
+			ideology=neworder_type
+			id=-1
+		}
+		country_leader={
+			ideology=jinwai_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldgenso_type
+			id=-1
+		}
+	}
+}
+every_possible_country = { #未知妖精
+	limit = {
+		or = {
+			tag = DYJ
+		}
+	}
+	generate_character = {
+		token_base = unfairy_leader
+		name = unfairy_leader
 		portraits={
 			civilian={
 				large="gfx/leaders/leader_unknown.dds"

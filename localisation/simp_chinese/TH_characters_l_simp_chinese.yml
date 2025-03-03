@@ -320,10 +320,13 @@
  UND_sara:0 "萨拉"
  UND_kotohime:0 "小兔姬"
  UND_kana:0 "卡娜·安娜贝拉尔"
+ UND_miz:0 "宫出口瑞灵"
 
 #路人
  ghost_leader:0 "§Y§!未知幽灵"
  unghost_leader:0 "§Y§!未知怨灵"
+ unyoukai_leader:0 "§Y§!未知妖怪"
+ unfairy_leader:0 "§Y§!未知妖精"
  random_leader:0 "§Y§!领导人商讨中"
  village_leader:0 "§Y§!村委会"
  zuigaonominyihui_leader:0 "§Y§!最高农民议会"

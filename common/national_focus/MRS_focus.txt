@@ -8,10 +8,11 @@ focus_tree = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag =  
+			tag = MRS
 		}
 	}
 	continuous_focus_position = { x = 100 y = 850 }
+	shared_focus = MSH2_determine_the_situation
 	shared_focus = MSH_mofasenlinqingkuang
 	shared_focus = MSH_mofasenlinzhengtiguihua
 	shared_focus = MSH_tongyizhengbei
@@ -110,10 +111,7 @@ focus_tree = {
 			base = 1
 		}
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = MSH_united_tt
-				has_cosmetic_tag = MAF_united
-			}
+			has_country_flag = MAF_united
 			has_completed_focus = MRS_pingzishengyin
 		}
 		completion_reward = {
@@ -138,10 +136,7 @@ focus_tree = {
 		y = 0
 		relative_position_id = MRS_meimoxinyang
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = MSH_united_tt
-				has_cosmetic_tag = MAF_united
-			}
+			has_country_flag = MAF_united
 			or = {
 				has_completed_focus = MRS_putongmofashi
 				has_completed_focus = MRS_kexuemofashi
@@ -169,10 +164,7 @@ focus_tree = {
 		y = 0
 		relative_position_id = MRS_meimoxinyang
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = MSH_united_tt
-				has_cosmetic_tag = MAF_united
-			}
+			has_country_flag = MAF_united
 			has_completed_focus = MRS_juebufangqiquanli
 		}
 		ai_will_do = {

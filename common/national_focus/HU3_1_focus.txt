@@ -945,6 +945,14 @@ focus_tree = {
       }
 
       completion_reward = {
+      144 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory 
+					level = 2
+					instant_build = yes
+				}
+			}
         
       
         
@@ -988,7 +996,18 @@ focus_tree = {
       }
 
       completion_reward = {
-        
+              144 = {
+				add_extra_state_shared_building_slots = 2
+				
+			}
+			              144 = {
+				add_extra_state_shared_building_slots = 2
+				
+			}
+			              144 = {
+				add_extra_state_shared_building_slots = 2
+				
+			}
       
         
       }
@@ -1031,6 +1050,10 @@ focus_tree = {
       }
 
       completion_reward = {
+swap_ideas = {
+				remove_idea = HU3_fuzhichuantongchanye_idea_3
+				add_idea = HU3_fuzhichuantongchanye_idea_3_1
+			}
         
       
         
@@ -1074,6 +1097,14 @@ focus_tree = {
       }
 
       completion_reward = {
+              381 = {
+        add_extra_state_shared_building_slots = 1
+          add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+      }
         
       
         
@@ -1117,6 +1148,15 @@ focus_tree = {
       }
 
       completion_reward = {
+      381 = {
+        add_extra_state_shared_building_slots = 1
+          add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+      }
+      add_ideas = { HU3_feipinhuishou_a_idea }
         
       
         
@@ -1163,6 +1203,10 @@ focus_tree = {
       }
 
       completion_reward = {
+      swap_ideas = {
+				remove_idea = HU3_fuzhichuantongchanye_idea_3_1
+				add_idea = HU3_fuzhichuantongchanye_idea_3_2
+			}
         
       
         

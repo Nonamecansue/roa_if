@@ -5,7 +5,7 @@ focus_tree = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag =  
+			tag = ALI
 		}
 	}
 
@@ -1640,7 +1640,7 @@ focus_tree = {
   }
   focus = {
     id = ALI_renoushengdi
-    icon = GFX_goal_generic_construct_civilian
+    icon = GFX_focus_generic_catholic_dominion
     cost = 7
     x = 0
     y = 1
@@ -2578,6 +2578,7 @@ focus = {
       custom_effect_tooltip = ALI_gailiangrenougongfang_tt
       set_country_flag = ALI_gailiangrenougongfang
       add_ideas = ALI_gailiangrenougongfang_idea
+      MSH_gehe_chanchu = yes
       ALI_ali = {
         add_attack = 1
       }
@@ -2619,6 +2620,7 @@ focus = {
           instant_build = yes
         }
       }
+      MSH_gehe_jianzao = yes
     }
     ai_will_do = {
       factor = 3
@@ -2687,6 +2689,7 @@ focus = {
 
     completion_reward = {
       add_ideas = ALI_gengdagengshiyonggengwanmei_idea
+      
     }
     ai_will_do = {
       factor = 3
@@ -3304,6 +3307,9 @@ focus = {
         name = ALI_xuanbufeirenounuli
       }
       add_ideas = ALI_xuanbufeirenounuli_1_idea
+      remove_dynamic_modifier = {
+        modifier = MSH_mofashigehe_modifier
+      }
     }
     ai_will_do = {
       factor = 3
@@ -3654,6 +3660,7 @@ focus = {
 
     completion_reward = {
       add_ideas = ALI_wuxianmofakongzhi_idea
+      MSH_gehe_xiaolv = yes
     }
 
     ai_will_do = {
@@ -3782,6 +3789,7 @@ focus = {
         add_logistics = 1
       }
       swap_ideas = {add_idea = ALI_renougailiangjishu_idea remove_idea = ALI_renouwuqikaifa_idea}
+      MSH_gehe_jianzao = yes
     }
 
     ai_will_do = {
@@ -3895,6 +3903,7 @@ focus = {
           level = 1
         }
       }
+      MSH_gehe_chanchu = yes
     }
 
     ai_will_do = {
@@ -4116,6 +4125,7 @@ focus = {
         }
         add_resource = { type = gas amount = -1}
       }
+      set_country_flag = ALI_mojiehua
       custom_effect_tooltip = ALI_ski_tt
       hidden_effect = {
         XXX = {
@@ -4234,6 +4244,7 @@ focus = {
           instant_build = yes
         }
       }
+      MSH_gehe_xiaolv = yes
     }
 
     ai_will_do = {
@@ -4386,6 +4397,7 @@ focus = {
     completion_reward = {
       PO_add5 = yes
       add_ideas = ALI_pujimojiejiaoyu_idea
+      MSH_gehe_chanchu = yes
     }
 
     ai_will_do = {
@@ -4479,6 +4491,7 @@ focus = {
         uses = 2
         bonus = 0.55
       }
+      MSH_gehe_jianzao = yes
     }
 
     ai_will_do = {
@@ -4521,8 +4534,9 @@ focus = {
       }
       add_ideas = ALI_zhichidaliangyimin_idea
       custom_effect_tooltip = ALI_zhichidaliangyimin_tt
-      set_politics = {
-        ruling_party = oldgenso
+      swap_ideas = {
+        remove_idea = ALI_mojiehua_idea
+        add_idea = ALI_mojiehua_2_idea
       }
       hidden_effect = {
         set_temp_variable = {
@@ -4561,6 +4575,30 @@ focus = {
         multiply_temp_variable = {
           v6 = 100
         }
+        set_temp_variable = {
+          v7 = 100
+        }
+        subtract_from_temp_variable = {
+          v7 = v1
+        }
+        subtract_from_temp_variable = {
+          v7 = v2
+        }
+        subtract_from_temp_variable = {
+          v7 = v3
+        }
+        subtract_from_temp_variable = {
+          v7 = v4
+        }
+        subtract_from_temp_variable = {
+          v7 = v5
+        }
+        subtract_from_temp_variable = {
+          v7 = v6
+        }
+        add_to_temp_variable = {
+          v5 = v7
+        }
         set_popularities = {
           fandong = v1
           neworder = v2
@@ -4569,6 +4607,9 @@ focus = {
           guli = v4
           qinwai = v6
         }
+      }
+      set_politics = {
+        ruling_party = oldgenso
       }
     }
       
@@ -5367,7 +5408,7 @@ focus = {
       focus = ALI_quelizhongzuxiangzheng
     }
     prerequisite = {
-      focus = ALI_jinjimofa
+      focus = ALI_renoubixiu
     }
     available ={
 
@@ -5418,16 +5459,10 @@ focus = {
       focus = ALI_touximofashidejia
     }
     available ={
-      custom_trigger_tooltip = {
-				tooltip = MSH_united_tt
-				has_cosmetic_tag = MAF_united
-			}
+      has_country_flag = MAF_united
     }
     bypass = {
-      custom_trigger_tooltip = {
-				tooltip = MSH_united_tt
-				has_cosmetic_tag = MAF_united
-			}
+      has_country_flag = MAF_united
     }
 
     completion_reward = {

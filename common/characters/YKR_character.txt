@@ -148,30 +148,7 @@ characters={
 				small="gfx/leaders/YKR/YKR_ykm_small.dds"
 			}
 		}
-		country_leader={
-			ideology=qinwai_type
-			id=-1
-		}
-		country_leader={
-			ideology=guli_chuantongtizhi
-			id=-1
-		}
-		country_leader={
-			ideology=oldorder_type
-			id=-1
-		}
-		country_leader={
-			ideology=fandong_type
-			id=-1
-		}
-		country_leader={
-			ideology=neworder_type
-			id=-1
-		}
-		country_leader={
-			ideology=oldgenso_type
-			id=-1
-		}
+		
 	}
 	YKR_shan_leader ={
 		name = YKR_shan_leader

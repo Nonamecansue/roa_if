@@ -13,8 +13,8 @@ state={
 			add_core_of = SCA
 			buildings = {
 				infrastructure = 3
-				industrial_complex = 0
-				arms_factory = 0
+				industrial_complex = 1
+				arms_factory = 1
 				radar_station = 0
 			}
 		}
@@ -25,8 +25,8 @@ state={
 			
 			buildings = {
 				infrastructure =3
-				industrial_complex = 0
-				arms_factory = 0
+				industrial_complex = 2
+				arms_factory = 1
 
 			}
 
@@ -38,6 +38,6 @@ state={
 	}
 	manpower=32680
 	buildings_max_level_factor=1.000
-	state_category=s15
+	state_category=s5
 	local_supplies=2.500
 }

@@ -1,0 +1,1198 @@
+focus_tree = {
+	id = ELL_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ELL
+		}
+	}
+	shared_focus = MSH_mofasenlinqingkuang
+	shared_focus = MSH_mofasenlinzhengtiguihua
+	shared_focus = MSH_tongyizhengbei
+	shared_focus = MSH_xinshidaiwaijiao
+	continuous_focus_position = { x = 4300 y = 100 }
+	default = no
+	focus = {
+		id = ELL_weichijiuchuantong
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 10.00
+		x = 32
+		y = 0
+		completion_reward = {
+			add_stability = 0.05
+			add_popularity = {
+				ideology = oldgenso
+				popularity = 0.05
+			}
+			conservativedecrease = yes
+		}
+		ai_will_do = {
+			base = 1
+		}
+	}
+	focus = {
+		id = ELL_quchengzhenhua
+		icon = GFX_focus_generic_industry_1
+		cost = 10.00
+		prerequisite = {
+			focus = ELL_weichijiuchuantong
+		}
+		x = -1
+		y = 1
+		relative_position_id = ELL_weichijiuchuantong
+		completion_reward = {
+			add_dynamic_modifier = {
+				modifier = ELL_quchengzhenhua_modifier
+			}
+			custom_effect_tooltip = ELL_quchengzhenhua_tt
+		}
+		ai_will_do = {
+			base = 1	
+		}
+	}
+	focus = {
+		id = ELL_mofayizhan
+		icon = GFX_focus_spa_the_spanish_miracle
+		cost = 10.00
+		prerequisite = {
+			focus = ELL_quchengzhenhua
+		}
+		x = 0
+		y = 1
+		relative_position_id = ELL_quchengzhenhua
+		completion_reward = {
+			custom_effect_tooltip = ELL_mofayizhan_tt
+			hidden_effect = {
+				every_owned_state = {
+					every_neighbor_state = {
+						limit = {
+							is_owned_by = ROOT
+							# rail_way < 1
+						}
+						ROOT = {
+							build_railway = {
+								level = 1
+								fallback = no
+								start_state = PREV
+								target_state = prev.PREV
+							}
+						}
+					}
+				}
+			}
+			
+			
+		}
+		ai_will_do = {
+			base = 1	
+		}
+	}
+	focus = {
+		id = ELL_qiangquyihui
+		icon = GFX_goal_generic_demand_territory
+		cost = 10.00
+		prerequisite = {
+			focus = ELL_weichijiuchuantong
+		}
+		x = 1
+		y = 1
+		relative_position_id = ELL_weichijiuchuantong
+		will_lead_to_war_with = MRS
+		completion_reward = {
+			every_country = {
+				limit = {
+					owns_state = 188
+				}
+				ROOT = {
+					declare_war_on = {
+						target = PREV
+						type = take_state_focus
+						generator = {
+							188
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 1	
+		}
+	}
+	focus = {
+		id = ELL_gulizizhuyanjiu
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 10.00
+		prerequisite = {
+			focus = ELL_weichijiuchuantong
+		}
+		x = 3
+		y = 0
+		relative_position_id = ELL_liyongziyuan
+		completion_reward = {
+			add_ideas = ELL_gulizizhuyanjiu_idea
+		}
+		ai_will_do = {
+			base = 1	
+		}
+	}
+	focus = {
+		id = ELL_liyongziyuan
+		icon = GFX_goal_generic_construction2
+		cost = 10.00
+		prerequisite = {
+			focus = ELL_weichijiuchuantong
+		}
+		x = 5
+		y = 1
+		relative_position_id = ELL_weichijiuchuantong
+		completion_reward = {
+			add_tech_bonus = {
+				category = resource
+				uses = 3
+				bonus = 1
+				ahead_reduction = 2
+			}
+		}
+		ai_will_do = {
+			base = 1	
+		}
+	}
+	focus = {
+		id = ELL_qiangxingjiesanyihui
+		icon = GFX_goal_tfv_burn_the_royal_portraits
+		cost = 10.00
+		prerequisite = {
+			focus = ELL_qiangquyihui
+		}
+		x = 0
+		y = 1
+		relative_position_id = ELL_qiangquyihui
+		completion_reward = {
+			add_stability = -0.1
+			add_political_power = 300
+			capital_scope = {
+				add_extra_state_shared_building_slots = -1
+			}
+			add_timed_idea = {
+				idea = ELL_qiangxingjiesanyihui_idea
+				days = 730
+			}
+		}
+		ai_will_do = {
+			base = 1	
+		}
+	}
+	focus = {
+		id = ELL_buluolianhe
+		icon = GFX_focus_generic_magician_forest_1_map
+		cost = 10.00
+		prerequisite = {
+			focus = ELL_mofayizhan
+		}
+		prerequisite = {
+			focus = ELL_qiangxingjiesanyihui
+		}
+		x = 1
+		y = 1
+		relative_position_id = ELL_mofayizhan
+		completion_reward = {
+			add_ideas = Tribal
+			custom_effect_tooltip = ELL_buluolianhe_tt
+			set_country_flag = bunengzhuanbian
+		}
+		ai_will_do = {
+			base = 1	
+		}
+	}
+	focus = {
+		id = ELL_mofajiaodou
+		icon = GFX_focus_EST_fight_the_vaps
+		cost = 10.00
+		prerequisite = {
+			focus = ELL_buluolianhe
+		}
+		x = 1
+		y = 1
+		relative_position_id = ELL_buluolianhe
+		completion_reward = {
+			army_experience = 15
+			add_ideas = ELL_mofajiaodou_idea
+		}
+		ai_will_do = {
+			base = 1	
+		}
+	}
+	focus = {
+		id = ELL_buluoqiuzhang
+		icon = GFX_focus_ger_return_of_the_kaiser
+		cost = 10.00
+		prerequisite = {
+			focus = ELL_mofajiaodou
+		}
+		x = 0
+		y = 1
+		relative_position_id = ELL_mofajiaodou
+		completion_reward = {
+			add_stability = 0.2
+			add_war_support = 0.15
+			add_ideas = ELL_buluoqiuzhang_idea
+			every_unit_leader = {
+				limit = {
+					has_trait = th_character
+				}
+				add_attack = 1
+				add_defense = 1
+			}
+		}
+		ai_will_do = {
+			base = 1	
+		}
+	}
+	focus = {
+		id = ELL_shaoshuzhongzuyingdui
+		icon = GFX_focus_generic_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = ELL_buluolianhe
+		}
+		x = -3
+		y = 1
+		relative_position_id = ELL_buluolianhe
+		completion_reward = {
+			add_political_power = 150
+		}
+		ai_will_do = {
+			base = 1	
+		}
+	}
+	focus = {
+		id = ELL_shentoufangan
+		icon = GFX_focus_prc_infiltration
+		cost = 10.00
+		prerequisite = {
+			focus = ELL_shaoshuzhongzuyingdui
+		}
+		mutually_exclusive = {
+			focus = ELL_zizhiqujihua
+			focus = ELL_mofatonghua
+		}
+		x = -2
+		y = 1
+		relative_position_id = ELL_shaoshuzhongzuyingdui
+		completion_reward = {
+			add_ideas = ELL_shentoufangan_idea
+		}
+		ai_will_do = {
+			base = 1	
+		}
+	}
+	focus = {
+		id = ELL_zizhiqujihua
+		icon = GFX_goal_continuous_boost_freedom
+		cost = 10.00
+		prerequisite = {
+			focus = ELL_shaoshuzhongzuyingdui
+		}
+		mutually_exclusive = {
+			focus = ELL_shentoufangan
+			focus = ELL_mofatonghua
+		}
+		x = 2
+		y = 0
+		relative_position_id = ELL_shentoufangan
+		completion_reward = {
+			add_dynamic_modifier = {
+				modifier = ELL_zizhiqujihua_modifier
+			}
+			custom_effect_tooltip = ELL_zizhiqujihua_tt
+		}
+		ai_will_do = {
+			base = 1	
+		}
+	}
+	focus = {
+		id = ELL_mofatonghua
+		icon = GFX_focus_jap_manchurian_project
+		cost = 10.00
+		prerequisite = {
+			focus = ELL_shaoshuzhongzuyingdui
+		}
+		mutually_exclusive = {
+			focus = ELL_zizhiqujihua
+			focus = ELL_shentoufangan
+		}
+		x = 2
+		y = 0
+		relative_position_id = ELL_zizhiqujihua
+		completion_reward = {
+			add_ideas = ELL_mofatonghua_idea
+		}
+		ai_will_do = {
+			base = 1	
+		}
+	}
+	focus = {
+		id = ELL_monvdesenlin
+		icon = GFX_focus_LIL_daziranjiaohui
+		cost = 10.00
+		prerequisite = {
+			focus = ELL_buluoqiuzhang
+			focus = ELL_mofatonghua
+			focus = ELL_zizhiqujihua
+			focus = ELL_shentoufangan
+		}
+		x = -1
+		y = 2
+		relative_position_id = ELL_buluoqiuzhang
+		available ={
+			has_country_flag = MAF_united
+		}
+		completion_reward = {
+			add_ideas = ELL_monvdesenlin_idea
+			remove_dynamic_modifier = {
+				modifier = MSH_mofashigehe_modifier
+			}
+		}
+		ai_will_do = {
+			base = 1	
+		}
+	}
+	focus = {
+		id = ELL_yishilishuohua
+		icon = GFX_goal_generic_political_pressure
+		cost = 10.00
+		prerequisite = {
+			focus = ELL_weichijiuchuantong
+		}
+		x = -11
+		y = 1
+		relative_position_id = ELL_weichijiuchuantong
+		completion_reward = {
+			army_experience = 50
+			add_tech_bonus = {
+				category = military
+				uses = 1
+				bonus = 0.25
+			}
+		}
+		ai_will_do = {
+			base = 1	
+		}
+	}
+	focus = {
+		id = ELL_zhishiwuqi
+		icon = GFX_goal_generic_small_arms
+		cost = 10.00
+		prerequisite = {
+			focus = ELL_yishilishuohua
+		}
+		mutually_exclusive = {
+			focus = ELL_zizhiwuqi
+		}
+		x = -1
+		y = 1
+		relative_position_id = ELL_yishilishuohua
+		completion_reward = {
+			add_stability = 0.3
+			add_ideas = ELL_zhishiwuqi_idea
+			custom_effect_tooltip = ELL_zhishiwuqi_tt
+		}
+		ai_will_do = {
+			base = 1	
+		}
+	}
+	focus = {
+		id = ELL_zujianjianxibudui
+		icon = GFX_focus_generic_manpower
+		cost = 10.00
+		prerequisite = {
+			focus = ELL_zhishiwuqi
+			focus = ELL_zizhiwuqi
+		}
+		x = 0
+		y = 1
+		relative_position_id = ELL_zhishiwuqi
+		completion_reward = {
+			if = {
+				limit = {
+					has_completed_focus = ELL_zhishiwuqi
+				}
+				add_ideas = ELL_zujianjianxibudui_idea2
+				else = {
+					add_ideas = ELL_zujianjianxibudui_idea1
+				}
+			}
+		}
+		ai_will_do = {
+			base = 1	
+		}
+	}
+	focus = {
+		id = ELL_danyuanbiaozhun
+		icon = GFX_focus_generic_Basic_Weapons
+		cost = 10.00
+		prerequisite = {
+			focus = ELL_zujianjianxibudui
+		}
+		x = 0
+		y = 1
+		relative_position_id = ELL_zujianjianxibudui
+		completion_reward = {
+			if = {
+				limit = {
+					has_completed_focus = ELL_zhishiwuqi
+				}
+				add_tech_bonus = {
+					category = primary_weapons
+					bonus = 1
+					ahead_reduction = 2
+					uses = 5
+				}
+				add_ideas = ELL_danyuanbiaozhun_idea
+				else = {
+					add_tech_bonus = {
+						category = primary_weapons
+						bonus = 1
+						ahead_reduction = 2
+						uses = 4
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 1	
+		}
+	}
+	focus = {
+		id = ELL_mopaobiaozhun
+		icon = GFX_focus_generic_Artillery_Weapons
+		cost = 10.00
+		prerequisite = {
+			focus = ELL_danyuanbiaozhun
+		}
+		x = 0
+		y = 1
+		relative_position_id = ELL_danyuanbiaozhun
+		completion_reward = {
+			if = {
+				limit = {
+					has_completed_focus = ELL_zhishiwuqi
+				}
+				add_tech_bonus = {
+					category = artillery_tech
+					bonus = 1
+					ahead_reduction = 2
+					uses = 5
+				}
+				add_ideas = ELL_mopaobiaozhun_idea
+				else = {
+					add_tech_bonus = {
+						category = artillery_tech
+						bonus = 1
+						ahead_reduction = 2
+						uses = 4
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 1	
+		}
+	}
+	focus = {
+		id = ELL_zizhiwuqi
+		icon = GFX_focus_focus_fra_maquis
+		cost = 10.00
+		prerequisite = {
+			focus = ELL_yishilishuohua
+		}
+		mutually_exclusive = {
+			focus = ELL_zhishiwuqi
+		}
+		x = 1
+		y = 1
+		relative_position_id = ELL_yishilishuohua
+		completion_reward = {
+			add_stability = -0.1
+			add_ideas = ELL_zizhiwuqi_idea
+			custom_effect_tooltip = ELL_zhishiwuqi_tt
+		}
+		ai_will_do = {
+			base = 1	
+		}
+	}
+	focus = {
+		id = ELL_zizhixingnengkaohe
+		icon = GFX_focus_generic_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = ELL_zhishiwuqi
+			focus = ELL_zizhiwuqi
+		}
+		x = 1
+		y = 1
+		relative_position_id = ELL_zizhiwuqi
+		completion_reward = {
+			if = {
+				limit = {
+					has_completed_focus = ELL_zizhiwuqi
+				}
+				add_ideas = ELL_zizhixingnengkaohe_idea2
+				else = {
+					add_ideas = ELL_zizhixingnengkaohe_idea1
+				}
+			}
+		}
+		ai_will_do = {
+			base = 1	
+		}
+	}
+	focus = {
+		id = ELL_bingzhongkaohebiaozhun
+		icon = GFX_goal_generic_army_doctrines
+		cost = 10.00
+		prerequisite = {
+			focus = ELL_zizhixingnengkaohe
+		}
+		x = 0
+		y = 1
+		relative_position_id = ELL_zizhixingnengkaohe
+		completion_reward = {
+			add_dynamic_modifier = {
+				modifier = ELL_bingzhongkaohebiaozhun_modifier
+			}
+			custom_effect_tooltip = ELL_bingzhongkaohebiaozhun_tt
+		}
+		ai_will_do = {
+			base = 1	
+		}
+	}
+	focus = {
+		id = ELL_qiangximonvfangan
+		icon = GFX_focus_eng_special_air_service
+		cost = 10.00
+		prerequisite = {
+			focus = ELL_bingzhongkaohebiaozhun
+		}
+		mutually_exclusive = {
+			focus = ELL_fangkuanruwubiaozhun
+		}
+		x = -1
+		y = 1
+		relative_position_id = ELL_bingzhongkaohebiaozhun
+		completion_reward = {
+			custom_effect_tooltip = ELL_qiangximonvfangan_tt
+		}
+		ai_will_do = {
+			base = 1	
+		}
+	}
+	focus = {
+		id = ELL_fangkuanruwubiaozhun
+		icon = GFX_focus_generic_military_academy
+		cost = 10.00
+		prerequisite = {
+			focus = ELL_bingzhongkaohebiaozhun
+		}
+		mutually_exclusive = {
+			focus = ELL_qiangximonvfangan
+		}
+		x = 1
+		y = 1
+		relative_position_id = ELL_bingzhongkaohebiaozhun
+		completion_reward = {
+			if = {
+				limit = {
+					has_completed_focus = ELL_zizhiwuqi
+				}
+				add_ideas = ELL_fangkuanruwubiaozhun_idea2
+				else = {
+					add_ideas = ELL_fangkuanruwubiaozhun_idea1
+				}
+			}
+		}
+		ai_will_do = {
+			base = 1	
+		}
+	}
+	focus = {
+		id = ELL_fanxiangyanjiu
+		icon = GFX_focus_research2
+		cost = 10.00
+		prerequisite = {
+			focus = ELL_mopaobiaozhun
+			focus = ELL_qiangximonvfangan
+			focus = ELL_fangkuanruwubiaozhun
+		}
+		prerequisite = {
+			focus = ELL_monvdesenlin
+		}
+		mutually_exclusive = {
+			focus = ELL_monvzhijia
+		}
+		x = -1
+		y = 3
+		relative_position_id = ELL_mopaobiaozhun
+		completion_reward = {
+			if = {
+				limit = {
+					has_completed_focus = ELL_zhishiwuqi
+				}
+				add_research_slot = 2
+				else = {
+					add_research_slot = 1
+				}
+			}
+		}
+		ai_will_do = {
+			base = 1	
+		}
+	}
+	focus = {
+		id = ELL_monvzhijia
+		icon = GFX_focus_usa_build_the_pentagon
+		cost = 10.00
+		prerequisite = {
+			focus = ELL_qiangximonvfangan
+			focus = ELL_fangkuanruwubiaozhun
+		}
+		prerequisite = {
+			focus = ELL_monvdesenlin
+		}
+		mutually_exclusive = {
+			focus = ELL_fanxiangyanjiu
+		}
+		x = 1
+		y = 3
+		relative_position_id = ELL_qiangximonvfangan
+		completion_reward = {
+			custom_effect_tooltip = ELL_monvzhijia_tt
+		}
+		ai_will_do = {
+			base = 1	
+		}
+	}
+	focus = {
+		id = ELL_michuanzhandoumofa
+		icon = GFX_focus_chi_army_reform
+		cost = 10.00
+		prerequisite = {
+			focus = ELL_liyongziyuan
+		}
+		x = -1
+		y = 1
+		relative_position_id = ELL_liyongziyuan
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				category = industrys
+				uses = 3
+				ahead_reduction = 2
+				bonus = 1
+			}
+		}
+		ai_will_do = {
+			base = 1	
+		}
+	}
+	focus = {
+		id = ELL_michuanjianzaomofa
+		icon = GFX_focus_generic_modernize_industry
+		cost = 10.00
+		prerequisite = {
+			focus = ELL_liyongziyuan
+		}
+		x = 1
+		y = 1
+		relative_position_id = ELL_liyongziyuan
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				category = build
+				uses = 3
+				ahead_reduction = 2
+				bonus = 1
+			}
+		}
+		ai_will_do = {
+			base = 1	
+		}
+	}
+	focus = {
+		id = ELL_difangyanjiuzhongxin
+		icon = GFX_focus_generic_improve_the_administration
+		cost = 10.00
+		prerequisite = {
+			focus = ELL_gulizizhuyanjiu
+		}
+		x = 0
+		y = 1
+		relative_position_id = ELL_gulizizhuyanjiu
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					is_core_of = ROOT
+					or = {
+						region = 58
+						region = 59
+						region = 57
+						region = 64
+						region = 63
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				set_state_flag = ELL_difangyanjiuzhongxin_flag
+				add_to_variable = {
+					ROOT.ELL_difangyanjiuzhongxin_VAR = 0.005
+				}
+			}
+			clamp_variable = {
+				var = ELL_difangyanjiuzhongxin_VAR
+				max = 0.1
+			}
+			custom_effect_tooltip = ELL_difangyanjiuzhongxin_tt2
+			add_dynamic_modifier = {
+				modifier = ELL_difangyanjiuzhongxin_modifier
+			}
+			custom_effect_tooltip = ELL_difangyanjiuzhongxin_tt
+		}
+		ai_will_do = {
+			base = 1	
+		}
+	}
+	focus = {
+		id = ELL_jihuamofayanjiu
+		icon = GFX_focus_SOV_the_supreme_soviet
+		cost = 10.00
+		prerequisite = {
+			focus = ELL_difangyanjiuzhongxin
+		}
+		mutually_exclusive = {
+			focus = ELL_ziyoufangrenyanjiu
+		}
+		x = -1
+		y = 1
+		relative_position_id = ELL_difangyanjiuzhongxin
+		completion_reward = {
+			custom_effect_tooltip = ELL_jihuamofayanjiu_tt
+		}
+		ai_will_do = {
+			base = 1	
+		}
+	}
+	focus = {
+		id = ELL_ziyoufangrenyanjiu
+		icon = GFX_goal_continuous_research
+		cost = 10.00
+		prerequisite = {
+			focus = ELL_difangyanjiuzhongxin
+		}
+		mutually_exclusive = {
+			focus = ELL_jihuamofayanjiu
+		}
+		x = 1
+		y = 1
+		relative_position_id = ELL_difangyanjiuzhongxin
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ELL_gulizizhuyanjiu_idea
+				add_idea = ELL_ziyoufangrenyanjiu_idea
+			}
+		}
+		ai_will_do = {
+			base = 1	
+		}
+	}
+	focus = {
+		id = ELL_sugeladiyanjiusuo
+		icon = GFX_focus_research
+		cost = 10.00
+		prerequisite = {
+			focus = ELL_jihuamofayanjiu
+			focus = ELL_ziyoufangrenyanjiu
+		}
+		prerequisite = {
+			focus = ELL_michuanzhandoumofa
+		}
+		prerequisite = {
+			focus = ELL_michuanjianzaomofa
+		}
+		x = -1
+		y = 1
+		relative_position_id = ELL_jihuamofayanjiu
+		completion_reward = {
+			add_research_slot = 1
+		}
+		ai_will_do = {
+			base = 1	
+		}
+	}
+	focus = {
+		id = ELL_kaicaikuangshi
+		icon = GFX_focus_resource_1
+		cost = 10.00
+		prerequisite = {
+			focus = ELL_monvdesenlin
+		}
+		x = -4
+		y = 1
+		relative_position_id = ELL_monvdesenlin
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					is_core_of = ROOT
+					has_resources_amount = {
+						resource = crystal
+						amount > 0
+					}
+				}
+				add_resource = {
+					type = crystal
+					amount = 4
+				}
+			}
+			every_owned_state = {
+				limit = {
+					is_core_of = ROOT
+					has_resources_amount = {
+						resource = energy
+						amount > 0
+					}
+				}
+				add_resource = {
+					type = energy
+					amount = 1
+				}
+			}
+		}
+		ai_will_do = {
+			base = 1	
+		}
+	}
+	focus = {
+		id = ELL_jiadaziyuanchukou
+		icon = GFX_focus_generic_open_up
+		cost = 10.00
+		prerequisite = {
+			focus = ELL_kaicaikuangshi
+		}
+		x = -2
+		y = 1
+		relative_position_id = ELL_kaicaikuangshi
+		completion_reward = {
+			add_ideas = ELL_jiadaziyuanchukou_idea
+		}
+		ai_will_do = {
+			base = 1	
+		}
+	}
+	focus = {
+		id = ELL_wuzhililiang
+		icon = GFX_focus_generic_promotion_of_spiritual_power
+		cost = 10.00
+		prerequisite = {
+			focus = ELL_kaicaikuangshi
+		}
+		x = 0
+		y = 1
+		relative_position_id = ELL_kaicaikuangshi
+		completion_reward = {
+			add_tech_bonus = {
+				category = oil_res
+				uses = 2
+				ahead_reduction = 2
+				bonus = 1
+			}
+			add_ideas = ELL_wuzhililiang_idea
+		}
+		ai_will_do = {
+			base = 1	
+		}
+	}
+	focus = {
+		id = ELL_liaojieshijie
+		icon = GFX_goal_generic_propaganda
+		cost = 10.00
+		prerequisite = {
+			focus = ELL_monvdesenlin
+		}
+		x = -1
+		y = 1
+		relative_position_id = ELL_monvdesenlin
+		completion_reward = {
+			add_ideas = ELL_liaojieshijie_idea
+			every_country = {
+				reverse_add_opinion_modifier = {
+					target = ROOT
+					modifier = ELL_liaojieshijie_op
+				}
+			}
+		}
+		ai_will_do = {
+			base = 1	
+		}
+	}
+	focus = {
+		id = ELL_liaojiekexue
+		icon = GFX_focus_generic_science_research
+		cost = 10.00
+		prerequisite = {
+			focus = ELL_monvdesenlin
+		}
+		x = 1
+		y = 1
+		relative_position_id = ELL_monvdesenlin
+		available = {
+			any_country = {
+				or = {
+					is_ally_with = ROOT
+					is_subject_of = ROOT
+				}
+				has_tech = waike
+			}
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = science
+				uses = 1
+				bonus = 1
+			}
+			add_ideas = ELL_liaojiekexue_idea
+		}
+		ai_will_do = {
+			base = 1	
+		}
+	}
+	focus = {
+		id = ELL_ruanmianmianfendian
+		icon = GFX_focus_SWE_hygienic_housing
+		cost = 10.00
+		prerequisite = {
+			focus = ELL_liaojieshijie
+		}
+		x = -1
+		y = 1
+		relative_position_id = ELL_liaojieshijie
+		completion_reward = {
+			custom_effect_tooltip = ELL_ruanmianmianfendian_tt
+		}
+		ai_will_do = {
+			base = 1	
+		}
+	}
+	focus = {
+		id = ELL_xuexikexue
+		icon = GFX_goal_generic_improve_relations
+		cost = 10.00
+		prerequisite = {
+			focus = ELL_liaojieshijie
+		}
+		prerequisite = {
+			focus = ELL_liaojiekexue
+		}
+		x = 1
+		y = 1
+		relative_position_id = ELL_liaojieshijie
+		completion_reward = {
+			custom_effect_tooltip = ELL_xuexikexue_tt
+		}
+		ai_will_do = {
+			base = 1	
+		}
+	}
+	focus = {
+		id = ELL_qujingdiankeji
+		icon = GFX_focus_wonderweapons
+		cost = 10.00
+		prerequisite = {
+			focus = ELL_liaojiekexue
+		}
+		x = 1
+		y = 1
+		relative_position_id = ELL_liaojiekexue
+		completion_reward = {
+			add_tech_bonus = {
+				category = science
+				uses = 2
+				bonus = 1
+			}
+			add_tech_bonus = {
+				category = combined
+				uses = 2
+				bonus = 1
+			}
+			add_tech_bonus = {
+				category = secret
+				uses = 1
+				bonus = 1
+			}
+			every_unit_leader = {
+				limit = {
+					has_trait = th_character
+				}
+				add_logistics = 1
+			}
+			add_ideas = ELL_qujingdiankeji_idea
+		}
+		ai_will_do = {
+			base = 1	
+		}
+	}
+	focus = {
+		id = ELL_xinshidaimonv
+		icon = GFX_focus_fra_loyalty_stalin
+		cost = 10.00
+		prerequisite = {
+			focus = ELL_xuexikexue
+		}
+		prerequisite = {
+			focus = ELL_qujingdiankeji
+		}
+		prerequisite = {
+			focus = ELL_ruanmianmianfendian
+		}
+		x = 0
+		y = 1
+		relative_position_id = ELL_xuexikexue
+		completion_reward = {
+			add_ideas = qinwaijiaqiang
+		}
+		ai_will_do = {
+			base = 1	
+		}
+	}
+	focus = {
+		id = ELL_huimofademao
+		icon = GFX_focus_ETH_scavenging_tactics
+		cost = 10.00
+		prerequisite = {
+			focus = ELL_monvdesenlin
+		}
+		x = 6
+		y = 1
+		relative_position_id = ELL_monvdesenlin
+		available = {
+			or = {
+				SAT = {
+					has_opinion = {
+						target = ROOT
+						value > 49
+					}
+				}
+				TBA = {
+					has_opinion = {
+						target = ROOT
+						value > 49
+					}
+				}
+				CHE = {
+					has_opinion = {
+						target = ROOT
+						value > 49
+					}
+				}
+				NMS = {
+					has_opinion = {
+						target = ROOT
+						value > 49
+					}
+				}
+				UTH = {
+					has_opinion = {
+						target = ROOT
+						value > 49
+					}
+				}
+			}
+		}
+		completion_reward = {
+			add_ideas = ELL_huimofademao_idea
+		}
+		ai_will_do = {
+			base = 1	
+		}
+	}
+	focus = {
+		id = ELL_maomaojiao
+		icon = GFX_focus_ETH_scavenging_tactics
+		cost = 10.00
+		prerequisite = {
+			focus = ELL_huimofademao
+		}
+		mutually_exclusive = {
+			focus = ELL_mofayaoshou
+		}
+		x = -1
+		y = 1
+		relative_position_id = ELL_huimofademao
+		
+		completion_reward = {
+			SAT = {
+				can_core = yes
+			}
+			NMS = {
+				can_core = yes
+			}
+			CHE = {
+				can_core = yes
+			}
+			TBA = {
+				can_core = yes
+			}
+			UTH = {
+				can_core = yes
+			}
+		}
+		ai_will_do = {
+			base = 1	
+		}
+	}
+	focus = {
+		id = ELL_mofayaoshou
+		icon = GFX_focus_generic_spirit_power_research
+		cost = 10.00
+		prerequisite = {
+			focus = ELL_huimofademao
+		}
+		mutually_exclusive = {
+			focus = ELL_maomaojiao
+		}
+		x = 1
+		y = 1
+		relative_position_id = ELL_huimofademao
+		completion_reward = {
+			hidden_effect = {
+				every_owned_state = {
+					limit = {
+						ST_race_is_Beast = yes
+					}
+					add_to_variable = {
+						PREV.ELL_mofayaoshou_VAR = 1
+					}
+				}
+			}
+			add_dynamic_modifier = {
+				modifier = ELL_mofayaoshou_modifier
+			}
+			custom_effect_tooltip = ELL_mofayaoshou_tt
+		}
+		ai_will_do = {
+			base = 1	
+		}
+	}
+}

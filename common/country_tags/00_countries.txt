@@ -29,6 +29,7 @@ XBW = "countries/xby.txt"	         #########西北雾之湖
 #DYS = "countries/daiyousei.txt"		#####大妖精
 PRI = "countries/pri.txt"         #####骚灵
 #SWL = "countries/swl.txt"      #####斯卡雷特西雾之湖
+BWH = "countries/bwh.txt"      #####北雾之湖
 GRS = "countries/grs.txt"     #####玄武湖
 XXC = "countries/xxc.txt"     #####下玄武川
 CGW = "countries/cgw.txt"    #######草原叛军

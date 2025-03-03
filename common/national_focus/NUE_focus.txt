@@ -5,7 +5,7 @@ focus_tree = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag =  
+			tag = NUE
 		}
 	}
 	shared_focus = ty_medium_main 

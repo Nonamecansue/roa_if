@@ -16,7 +16,7 @@ characters={
       id=-1
     }
     country_leader={
-      ideology=guli_type
+      ideology=guli_qiyetongzhi
       id=-1
     }
     country_leader={

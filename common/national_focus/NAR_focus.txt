@@ -8,7 +8,7 @@ focus_tree = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag =  
+			tag = NAR
 		}
 	}
 	default = no
@@ -50,14 +50,14 @@ focus_tree = {
 			base = 1
 		}
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = MSH_united_tt
-				has_cosmetic_tag = MAF_united
-			}
+			has_country_flag = MAF_united
 		}
 		completion_reward = {
 			add_ideas = Country
 			add_ideas = NAR_mofasenlinlianbang_idea
+			remove_dynamic_modifier = {
+				modifier = MSH_mofashigehe_modifier
+			}
 			hidden_effect = {
 				news_event = { id = nar.6 days = 2 }
 			}

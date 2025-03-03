@@ -8,7 +8,7 @@ focus_tree = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag = 
+			tag = CIR
 		}
 	}
 	default = no
@@ -699,7 +699,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CIR_gemingdiyibu
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_CIR_gemingdiyibu
 		cost = 10.00
 		prerequisite = {
 			focus = CIR_tuanjieyaojingliliang
@@ -1830,7 +1830,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CIR_houfangbuchong
+		id = CIR_liyongdirendegongchanghejishu
 		icon = GFX_goal_continuous_repairments
 		cost = 10.00
 		prerequisite = {
@@ -1844,8 +1844,8 @@ focus_tree = {
 			base = 1
 		}
 		completion_reward = {
-			add_ideas = CIR_houfangbuchong_idea
-			custom_effect_tooltip = CIR_houfangbuchong_tt
+			add_ideas = CIR_liyongdirendegongchanghejishu_idea
+			custom_effect_tooltip = CIR_liyongdirendegongchanghejishu_tt
 			every_owned_state = {
 				limit = {
 					region = 64
@@ -2496,19 +2496,23 @@ focus_tree = {
 			base = 1
 		}
 		available = {
-			has_war_with = SCA
-			SCA = {
-				or = {
-					not = {
-						controls_state = 61
+			or = {
+				SCA = {
+					has_war_with = CIR
+					or = {
+						not = {
+							controls_state = 61
+						}
+						not = {
+							controls_state = 122
+						}
+						surrender_progress > 0.5
 					}
-					not = {
-						controls_state = 122
-					}
-					surrender_progress > 0.5
 				}
-				
+				has_subject = SCA
+				controls_state = 122
 			}
+				
 		}
 		completion_reward = {
 			country_event = cir2.33
@@ -2770,7 +2774,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CIR_yaojingdekaisa
-		icon = GFX_focus_ITA_capo_supremo
+		icon = GFX_CIR_yaojingdekaisa
 		cost = 10.00
 		prerequisite = {
 			focus = CIR_qilunuoyaojingdiguo
@@ -2825,7 +2829,7 @@ focus_tree = {
 			}
 			modifier = {
 				any_country = {
-					has_cosmetic_tag = MAF_united
+					has_country_flag = MAF_united
 					has_government = fandong
 				}
 				factor = 0
@@ -2865,11 +2869,9 @@ focus_tree = {
 		}
 		bypass = {
 			or = {
-				has_war_with = MAF
+				has_war_with_MAF = yes
 				has_war_with = MFA
-				MAF = {
-					is_subject_of = ROOT
-				}
+				MAF_is_subject_of_ROOT = yes
 				MFA = {
 					is_subject_of = ROOT
 				}
@@ -2882,7 +2884,7 @@ focus_tree = {
 				limit = {
 					or = {
 						tag = MFA
-						has_cosmetic_tag = MAF_united
+						has_country_flag = MAF_united
 						tag = MYK
 						tag = MTM
 						tag = NAR

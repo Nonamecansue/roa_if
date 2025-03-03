@@ -345,4 +345,37 @@ characters={
 			ideology = neworder_type
 		}
 	}
+	UND_miz ={
+		name = UND_miz
+		portraits={
+			civilian={
+				large="gfx/leaders/UND/UND_miz.dds"
+				small="gfx/leaders/UND/UND_miz_small.dds"
+			}
+			army = {
+				large="gfx/leaders/UND/UND_miz.dds"
+				small="gfx/leaders/UND/UND_miz_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { th_character  }
+			skill = 7
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		# advisor = {
+		# 	slot = character_coop
+		# 	idea_token = UND_zanmu
+		# 	name = UND_zanmu
+		# 	cost = 200
+		# 	modifier = {
+		# 		
+		# 	}
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# }
+	}
 }

@@ -6,8 +6,8 @@ state={
 	}
 	history={
 		146.1.1 = {
-			owner = MYC
-			add_core_of = MYC
+			owner = YYK
+			add_core_of = YYK
 			buildings = {
 				infrastructure = 3
 				industrial_complex = 1

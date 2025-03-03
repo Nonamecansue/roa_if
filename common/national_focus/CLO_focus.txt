@@ -5,7 +5,7 @@ focus_tree = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag =  
+			tag = KAP
 		}
 	}
 	continuous_focus_position = { x = 3500 y = 900 }

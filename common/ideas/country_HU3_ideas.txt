@@ -847,6 +847,21 @@ ideas = {
 
 			}
 		}
+			HU3_feipinhuishou_a_idea = {
+			picture = FRA_matignon_agreements
+			modifier = {
+				consumer_goods_expected_value = -0.2
+
+
+			}
+			research_bonus = {
+				industrys = 0.1
+				build = 0.1
+			}
+			available = {
+
+			}
+		}
 		HU3_jiaqiangxunlian_idea = {
 			picture = FRA_matignon_agreements
 			modifier = {
@@ -953,8 +968,45 @@ ideas = {
 				production_factory_efficiency_gain_factor = 0.05
 				industrial_capacity_factory = 0.05
 				production_factory_max_efficiency_factor = 0.05
-				production_speed_buildings_factor = 0.1
+				
 				stability_factor = -0.15
+
+				
+
+			}
+			available = {
+
+			}
+		}
+    	HU3_fuzhichuantongchanye_idea_3_1 = {
+			picture = FRA_matignon_agreements
+			modifier = {
+				consumer_goods_expected_value = -0.1
+				production_speed_buildings_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.05
+				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				
+	research_speed_factor = 0.05
+				stability_factor = -0.15
+
+				
+
+			}
+			available = {
+
+			}
+		}
+	HU3_fuzhichuantongchanye_idea_3_2 = {
+			picture = FRA_matignon_agreements
+			modifier = {
+				consumer_goods_expected_value = -0.1
+				production_speed_buildings_factor = 0.25
+				production_factory_efficiency_gain_factor = 0.1
+				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.1
+	research_speed_factor = 0.05
+				stability_factor = -0.1
 
 				
 
@@ -988,6 +1040,20 @@ ideas = {
 			}
 		}
 		HU3_yapianmaoyi_new_idea = {
+			picture = FRA_matignon_agreements
+			modifier = {
+				political_power_factor = 0.15
+				consumer_goods_expected_value = -0.15
+				stability_factor = -0.15
+
+				
+
+			}
+			available = {
+
+			}
+		}
+		HU3_junshitouzijianshe_new_idea = {
 			picture = FRA_matignon_agreements
 			modifier = {
 				political_power_factor = 0.15

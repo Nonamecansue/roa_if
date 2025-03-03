@@ -13,7 +13,7 @@ state={
 	}
 	history={
 		146.1.1 = {
-			owner = ZON
+			owner = DHC
 			add_core_of = DHC
 			add_core_of = SCA
 			add_core_of = LIL

@@ -94,7 +94,7 @@ characters={
 			id=-1
 		}
 		country_leader={
-			ideology=fandong_hongsediguozhuyi
+			ideology=fandong_gemingzhuyi
 			id=-1
 		}
 	}

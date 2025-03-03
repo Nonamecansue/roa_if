@@ -1,0 +1,25 @@
+#!gfx:interface\TH_focus.gfx
+focus_tree = {
+	id = MSH_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+      or = {
+        tag = MFA
+        tag = MYK
+        tag = MTM
+      }
+		}
+	}
+  continuous_focus_position = { x = 1800 y = 100 }
+
+  shared_focus = MSH2_determine_the_situation
+  shared_focus = ty_early_main 
+  shared_focus = ty_medium_main 
+  shared_focus = MSH_mofasenlinqingkuang
+  shared_focus = MSH_mofasenlinzhengtiguihua
+  shared_focus = MSH_tongyizhengbei
+  shared_focus = MSH_xinshidaiwaijiao
+  
+}

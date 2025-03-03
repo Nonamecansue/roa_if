@@ -13,7 +13,7 @@ state={
 	}
 	history={
 		146.1.1 = {
-			owner = ZON
+			owner = HKR
 			add_core_of = HKR
 			buildings = {
 				infrastructure = 0

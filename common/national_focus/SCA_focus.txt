@@ -5,7 +5,7 @@ focus_tree = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag =  SCA
+			tag = SCA
 		}
 	}
 	
@@ -255,7 +255,7 @@ focus_tree = {
 		# continue_if_invalid = yes
 		# available_if_capitulated = yes
 	default = no
-	#################内部政治�?###################
+	#################内部政治�?###################
 	focus = {
 		id = SCA_hongmochengshijian
 		icon = GFX_focus_generic_air_defense
@@ -798,9 +798,9 @@ focus_tree = {
 	    	}
 	    }
 	}
-	#################内部政治线结�?###################
+	#################内部政治线结�?###################
 
-	#################经济�?###################
+	#################经济�?###################
 
 	focus = {
 		id = SCA_jingjichongzheng
@@ -1528,9 +1528,9 @@ focus_tree = {
 	    }
 	}
 
-	##########经济线结�?#########
+	##########经济线结�?#########
 
-	#########外交线开�?#######
+	#########外交线开�?#######
 
 	focus = {
 		id = SCA_kuodayingxiangli
@@ -4083,7 +4083,7 @@ focus_tree = {
 			}
 	    }
 	}
-	##################军事�?###########
+	##################军事�?###########
 	focus = {
 		id = SCA_zhianzhandejiaoxun
 		icon = GFX_focus_generic_Basic_Weapons
@@ -4580,7 +4580,7 @@ focus_tree = {
 	    }
 	}
 
-	#########军事线结�?########\
+	#########军事线结�?########\
 
 	# focus = {
 	# 	id = SCA_xianedewaijiaohuanjing

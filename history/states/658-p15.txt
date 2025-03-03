@@ -14,8 +14,9 @@ state={
 
 	history={
        	146.1.1 = {
-			owner = ZON
+			owner = YYK
 			add_core_of = NG3
+                                                add_core_of = YYK
 			buildings = {
 				infrastructure = 0
 				industrial_complex = 0

@@ -49,6 +49,7 @@ XXX = { #same in initial_leader_setting(scripted_effects) only to decrease error
     recruit_character = UND_sara
     recruit_character = UND_kotohime
     recruit_character = UND_luize
+    recruit_character = UND_miz
 # }
 # AKO = {
     recruit_character = UND_hisami
@@ -88,8 +89,6 @@ ALI = {
 }
 CHE = {
     recruit_character = CHE_che
-    recruit_character = YKR_ykm
-    recruit_character = YKR_ykm_leader
     recruit_character = CHE_che_leader
 }
 CLO = {
@@ -465,10 +464,10 @@ YCE = {
     recruit_character = YCE_yce_leader
 }
 YKR = {
-    #recruit_character = YKR_ykr
-    #recruit_character = YKR_ykr_leader
-    recruit_character = YKR_shan_leader
-    recruit_character = YKR_shan
+    recruit_character = YKR_ykm
+    recruit_character = YKR_ykm_leader
+    recruit_character = YKR_ykr_leader
+    recruit_character = YKR_ykr
     
 }
 YMM = {

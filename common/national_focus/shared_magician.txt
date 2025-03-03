@@ -51,10 +51,7 @@
 			}
 		}
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = MSH_united_tt
-				has_cosmetic_tag = MAF_united
-			}
+			has_country_flag = MAF_united
 		}
 		ai_will_do = {
 			base = 1
@@ -89,10 +86,7 @@
 			}
 		}
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = MSH_united_tt
-				has_cosmetic_tag = MAF_united
-			}
+			has_country_flag = MAF_united
 		}
 		completion_reward = {
 			add_tech_bonus = {
@@ -135,11 +129,15 @@
 				tag = ALI
 			}
 		}		
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = MSH_united_tt
-				has_cosmetic_tag = MAF_united
+		offset = {
+			x = 25
+			y = 0
+			trigger = {
+				tag = ELL
 			}
+		}		
+		available = {
+			has_country_flag = MAF_united
 		}
 		ai_will_do = {
 			base = 1
@@ -309,7 +307,7 @@
 	}
 	shared_focus = {
 		id = MSH_burentong
-		icon = GFX_focus_renounce_the_treaty_of_trianon
+		icon = GFX_focus_generic_magician_forest_2_map
 		cost = 1
 		prerequisite = {
 			focus = MSH_baochichenmo
@@ -1883,7 +1881,7 @@
 	}
 	shared_focus = {
 		id = MSH_wanmeitongyi
-		icon = GFX_focus_chi_united_front
+		icon = GFX_focus_generic_magician_forest_1_map
 		cost = 9.00
 		prerequisite = {
 			focus = MSH_xinshidaiwaijiao

@@ -1,0 +1,1077 @@
+ideas = {
+	country = {
+
+	    HU3_jingyiejuntuandi_idea = {
+			picture = chi_war_of_resistance2
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = 0.1
+				surrender_limit = 0.05
+				political_power_factor = -0.1
+				army_org_factor = 0.05
+				
+
+			}
+			available = {
+
+			}
+		}
+		 HU3_beiqizhiren_idea = {
+			picture = chi_war_of_resistance2
+			modifier = {
+				stability_factor = -0.25
+				war_support_factor = 0.15
+				stability_weekly = -0.005
+				weekly_war_support = 0.05
+
+				
+
+			}
+			available = {
+				not = {
+					owns_state = 125
+				}
+
+			}
+		}
+
+		HU3_jingyiejuntuanzhongdeng_idea = {
+			picture = chi_war_of_resistance2
+			modifier = {
+				stability_factor = -0.3
+				war_support_factor = 0.2
+				surrender_limit = 0.10
+				political_power_factor = -0.1
+				army_org_factor = 0.1
+				
+
+			}
+			available = {
+
+			}
+		}
+		HU3_jingyiejuntuangao_idea = {
+			picture = chi_war_of_resistance2
+			modifier = {
+				stability_factor = -0.4
+				war_support_factor = 0.4
+				surrender_limit = 0.25
+				political_power_factor = -0.4
+				army_org_factor = 0.2
+				
+
+			}
+			available = {
+
+			}
+		}
+		HU3_jingyiejuntuanjigao_idea = {
+			picture = chi_war_of_resistance2
+			modifier = {
+				stability_factor = -0.6
+				war_support_factor = 0.6
+				surrender_limit = 0.5
+				political_power_factor = -0.6
+				army_org_factor = 0.3
+				
+
+			}
+			available = {
+
+			}
+		}
+		HU3_shenyoujuntuanzhizheng_idea = {
+			picture = FRA_la_deluge
+			modifier = {
+				stability_factor = 0.25
+				war_support_factor = 0.1
+				political_power_factor = 0.15
+			}
+			available = {
+
+			}
+		}
+		
+		HU3_wumingqiujuntuanzhizheng_idea = {
+			picture = FRA_la_deluge
+			modifier = {
+				stability_factor = 0.3
+				war_support_factor = 0.15
+				political_power_factor = 0.15
+				ST_race_penalty_all_factor = -0.6
+			}
+			available = {
+
+			}
+		}
+		HU3_jingyejuntuanzhizheng_idea = {
+			picture = FRA_la_deluge
+			modifier = {
+				stability_factor = 0.3
+				war_support_factor = 0.3
+				political_power_factor = 0.1
+				army_attack_factor = 0.1
+                army_defence_factor = 0.1
+			}
+			available = {
+
+			}
+		}
+		HU3_wumingjuntuandi_idea = {
+			picture = generic_victors_of_ww1
+			modifier = {
+				stability_factor = -0.1
+				ST_race_penalty_all_factor = -0.05
+				war_support_factor = 0.05
+				political_power_factor = -0.05
+
+			}
+			available = {
+
+			}
+		}
+		HU3_wumingjuntuanzhongdeng_idea = {
+			picture = generic_victors_of_ww1
+			modifier = {
+				stability_factor = -0.3
+				ST_race_penalty_all_factor = -0.2
+				war_support_factor = 0.15
+				political_power_factor = -0.1
+				planning_speed = 0.1
+
+			}
+			available = {
+
+			}
+		}
+		HU3_wumingjuntuangao_idea = {
+			picture = generic_victors_of_ww1
+			modifier = {
+				stability_factor = -0.4
+				ST_race_penalty_all_factor = -0.4
+				war_support_factor = 0.2
+				political_power_factor = -0.2
+				planning_speed = 0.2
+				max_planning = 0.2
+
+			}
+			available = {
+
+			}
+		}
+		HU3_wumingjuntuanjigao_idea = {
+			picture = generic_victors_of_ww1
+			modifier = {
+				stability_factor = -0.5
+				ST_race_penalty_all_factor = -0.6
+				war_support_factor = 0.3
+				political_power_factor = -0.3
+				planning_speed = 0.4
+				max_planning = 0.4
+
+			}
+			available = {
+
+			}
+		}
+		HU3_shenyoujuntuancanzheng_idea = {
+			picture = FRA_matignon_agreements
+			modifier = {
+				stability_factor = -0.25
+				war_support_factor = 0.1
+				political_power_factor = 0.15
+
+			}
+			available = {
+
+			}
+		}
+		HU3_weixintiaozheng_idea = {
+			picture = generic_victors_of_ww1
+			modifier = {
+				OL_daily_gain = -30
+
+			}
+			available = {
+
+			}
+		}
+		 HU3_waizuyunshubudui_idea = {
+			picture = prc_low_popular_support2
+			modifier = {
+				supply_node_range = 0.25
+
+			}
+			available = {
+
+			}
+		}
+		HU3_xinanrenleifuquanzhenxian_idea = {
+			picture = bul_imro
+			modifier = {
+				war_support_factor = 0.1
+				conscription_factor = 0.05
+				stability_factor = 0.1
+
+
+			}
+			available = {
+
+			}
+		}
+		HU3_zhengshidexinanrenleifuquanzhenxian_idea = {
+			picture = bul_imro
+			modifier = {
+				ST_race_penalty_all_factor = 0.5
+				war_support_factor = 0.4
+				conscription_factor = 0.2
+				stability_factor = 0.2
+				political_power_factor = 0.2
+
+
+			}
+			available = {
+
+			}
+		}
+		HU3_jichufeipinhuishoujigou_idea = {
+			picture = TES_tianting_qianzhi_3_js
+			modifier = {
+				consumer_goods_factor = -0.03
+				industrial_capacity_factory = 0.1
+
+
+
+			}
+			available = {
+
+			}
+		}
+		HU3_jichufeipinhuishoujigou_idea_2 = {
+			picture = TES_tianting_qianzhi_3_js
+			modifier = {
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.15
+
+
+
+			}
+			available = {
+
+			}
+		}
+		HU3_jibenjichujiaoyu_idea = {
+			picture = sgs_kaizhangjiaoyu
+			modifier = {
+				research_speed_factor = 0.10
+				political_power_factor = 0.1
+				
+
+
+			}
+			available = {
+
+			}
+		}
+		HU3_baorongxingjichujiaoyu_idea = {
+			picture = sgs_kaizhangjiaoyu
+			modifier = {
+				research_speed_factor = 0.10
+				ST_race_penalty_all_factor = -0.1
+				
+
+
+			}
+			available = {
+
+			}
+		}
+		HU3_shenxuexingjichujiaoyu_idea = {
+			picture = sgs_kaizhangjiaoyu
+			modifier = {
+				research_speed_factor = 0.05
+				army_defence_factor = 0.05
+				army_attack_factor = 0.05
+
+
+			}
+			available = {
+
+			}
+		}
+		HU3_shangyexieding_idea = {
+			picture = generic_constitutional_guarantees
+			modifier = {
+				consumer_goods_factor = -0.05
+
+
+			}
+			available = {
+
+			}
+		}
+		HU3_waijierenyuanshuru_idea = {
+			picture = generic_fascism_drift_2
+			modifier = {
+				research_speed_factor = 0.10
+				weekly_manpower = 5
+
+
+			}
+			available = {
+
+			}
+		}
+		HU3_qiangzhizhengshoutudi_idea = {
+			picture = man_five_year_plan_industry
+			modifier = {
+				global_building_slots_factor = 0.25
+				ST_race_penalty_all_factor = 0.4
+				stability_factor = -0.15
+
+
+			}
+			available = {
+
+			}
+		}
+		HU3_tezhongzhiwuzhongzhizhongxin_idea = {
+			picture = TES_kuojiantaoyuan_js
+			modifier = {
+				consumer_goods_factor = -0.05
+
+
+
+			}
+			available = {
+
+			}
+		}
+		HU3_youjiwuzhiyanjiusuo_idea = {
+			picture = generic_research_bonus
+			modifier = {
+				research_speed_factor = 0.15
+
+
+
+			}
+			available = {
+
+			}
+		}
+		HU3_junduiyapianfanlan_idea_1 = {
+			picture = TBA_yancaogongji_1
+			modifier = {
+				
+
+
+
+			}
+			available = {
+
+			}
+		}
+
+		HU3_junduiyapianfanlan_idea_2 = {
+			picture = TBA_yancaogongji_2
+			modifier = {
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+				conscription_factor = -0.05
+				army_org_factor = -0.05
+				org_loss_when_moving = 0.05
+				max_planning_factor = -0.05
+
+
+
+			}
+			available = {
+
+			}
+		}
+		HU3_junduiyapianfanlan_idea_3 = {
+			picture = TBA_yancaogongji_3
+			modifier = {
+				army_attack_factor = -0.15
+				army_defence_factor = -0.15
+				conscription_factor = -0.15
+				army_org_factor = -0.15
+				org_loss_when_moving = 0.15
+				max_planning_factor = -0.15
+				 planning_speed = -0.15
+				 army_morale_factor = -0.15
+				 supply_consumption_factor = 0.2
+				attrition = 0.2
+				surrender_limit = -0.1
+
+
+
+			}
+			available = {
+
+			}
+		}
+		HU3_junduiyapianfanlan_idea_4 = {
+			picture = TBA_yancaogongji_4
+			modifier = {
+				army_attack_factor = -0.25
+				army_defence_factor = -0.25
+				conscription_factor = -0.25
+				army_org_factor = -0.25
+				org_loss_when_moving = 0.25
+				max_planning_factor = -0.25
+				 planning_speed = -0.25
+				 army_morale_factor = -0.25
+				 supply_consumption_factor = 0.4
+				attrition = 0.4
+				ST_race_penalty_all_factor = 0.2
+				stability_factor = -0.15
+				war_support_factor = -0.2
+				surrender_limit = -0.2
+				army_speed_factor = -0.1
+
+
+
+			}
+			available = {
+
+			}
+		}
+		HU3_junduiyapianfanlan_idea_5 = {
+			picture = TBA_yancaogongji_5
+			modifier = {
+				army_attack_factor = -0.4
+				army_defence_factor = -0.4
+				conscription_factor = -0.4
+				army_org_factor = -0.4
+				org_loss_when_moving = 0.4
+				max_planning_factor = -0.4
+				 planning_speed = -0.4
+				 army_morale_factor = -0.4
+				 supply_consumption_factor = 0.6
+				attrition = 0.6
+				ST_race_penalty_all_factor = 0.4
+				stability_factor = -0.3
+				war_support_factor = -0.4
+				surrender_limit = -0.4
+				army_speed_factor = -0.25
+
+
+
+			}
+			available = {
+
+			}
+		}
+		HU3_yapianmaoyi_idea_1 = {
+			picture = chi_hyper_inflation
+			modifier = {
+			consumer_goods_factor = -0.05
+			industrial_capacity_factory = 0.1
+			political_power_factor = 0.1
+			production_speed_buildings_factor = 0.1
+			production_factory_max_efficiency_factor = 0.1
+			production_factory_efficiency_gain_factor = 0.1
+			production_speed_buildings_factor = 0.1
+				
+
+
+
+			}
+			available = {
+
+			}
+		}
+		HU3_yapianmaoyi_idea_2 = {
+			picture = chi_hyper_inflation2
+			modifier = {
+			consumer_goods_factor = -0.15
+			industrial_capacity_factory = 0.2
+			political_power_factor = 0.2
+			production_speed_buildings_factor = 0.2
+			production_factory_efficiency_gain_factor = 0.2
+			production_factory_max_efficiency_factor = 0.2
+			production_speed_buildings_factor = 0.2
+				
+
+
+
+			}
+			available = {
+
+			}
+		}
+		HU3_yapianmaoyi_idea_3 = {
+			picture = chi_hyper_inflation3
+			modifier = {
+			consumer_goods_factor = -0.25
+			industrial_capacity_factory = 0.3
+			political_power_factor = 0.3
+			production_speed_buildings_factor = 0.3
+			production_factory_efficiency_gain_factor = 0.3
+			production_factory_max_efficiency_factor = 0.3
+			production_speed_buildings_factor = 0.3
+			monthly_population = 0.05
+
+				
+
+
+
+			}
+			available = {
+
+			}
+		}
+		HU3_yapianmaoyi_idea_4 = {
+			picture = chi_hyper_inflation4
+			modifier = {
+			consumer_goods_factor = -0.5
+			industrial_capacity_factory = 0.45
+			political_power_factor = 0.45
+			production_speed_buildings_factor = 0.45
+			production_factory_efficiency_gain_factor = 0.45
+			production_factory_max_efficiency_factor = 0.45
+			production_speed_buildings_factor = 0.45
+			monthly_population = 0.1
+
+				
+
+
+
+			}
+			available = {
+
+			}
+		}
+		HU3_paosheduqi_idea = {
+		picture = the_long_lance
+		modifier = {
+			army_attack_factor = 0.2
+			army_defence_factor = 0.2
+			industrial_capacity_factory = -0.3
+			}
+
+       
+
+
+				
+
+
+
+			
+			available = {
+
+			}
+		}
+		HU3_rengongtoufangduqi_idea = {
+		picture = TBA_caokongjinshen
+		modifier = {
+		army_attack_factor = 0.1
+	    army_defence_factor = 0.1		
+
+
+        attrition = 0.05
+        army_org_factor = -0.05
+
+       }
+
+
+				
+
+
+
+			
+			available = {
+
+			}
+		}
+		HU3_shenyoujuntuanweizhutidejunshijiaoyu_idea = {
+		picture = general_staff
+		modifier = {
+		max_dig_in_factor = 0.15
+		land_doctrine_cost_factor = -0.15
+		promote_cost_factor = 0.2
+		army_leader_cost_factor = 0.1
+		command_power_gain_mult = 0.25
+		political_power_factor = 0.2
+
+       }
+
+
+				
+
+
+
+			
+			available = {
+
+			}
+		}
+		HU3_wumingqiujuntuanweizhutidejunshijiaoyu_idea = {
+		picture = general_staff
+		modifier = {
+		max_dig_in_factor = 0.1
+		land_doctrine_cost_factor = -0.15
+		promote_cost_factor = -0.25
+		army_leader_cost_factor = -0.25
+		command_power_gain_mult = 0.25
+		
+
+       }
+       available = {
+
+			}
+		}
+
+
+       HU3_xinjingyejuntuanweizhutidejunshijiaoyu_idea = {
+		picture = general_staff
+		modifier = {
+		max_dig_in_factor = 0.1
+		land_doctrine_cost_factor = 0.15
+		promote_cost_factor = 0.1
+		army_leader_cost_factor = 0.1
+		command_power_gain_mult = 0.35
+		army_org_factor = 0.15
+		
+
+       }
+
+
+				
+
+
+
+			
+			available = {
+
+			}
+		}
+	HU3_nanwangzhiqiji_idea = {
+			picture = FRA_matignon_agreements
+			modifier = {
+				army_org_factor = 0.15
+				conscription = 0.02
+			}
+			available = {
+
+			}
+		}
+		HU3_zaoqigongyejingyan_idea = {
+			picture = FRA_matignon_agreements
+			modifier = {
+				
+			}
+			research_bonus = {
+				industrys = 0.25
+				build = 0.25
+			}
+			available = {
+
+			}
+		}
+		HU3_jiduyingxiang_1_idea = {
+			picture = FRA_matignon_agreements
+			modifier = {
+				
+			}
+			research_bonus = {
+				
+			}
+			available = {
+
+			}
+		}
+		HU3_jiduyingxiang_2_idea = {
+			picture = FRA_matignon_agreements
+			modifier = {
+				war_support_factor = 0.1
+				stability_factor = 0.1
+				conscription_factor = 0.05
+			}
+			research_bonus = {
+				
+			}
+			available = {
+
+			}
+		}
+		HU3_xiaozongjiaoxuanchuan_idea = {
+			picture = FRA_matignon_agreements
+			modifier = {
+				war_support_weekly = 0.005
+				conscription_factor = 0.1
+
+			}
+			research_bonus = {
+				
+			}
+			available = {
+
+			}
+		}
+		HU3_dazongjiaoxuanchuan_idea = {
+			picture = FRA_matignon_agreements
+			modifier = {
+				war_support_weekly = 0.01
+				stability_weekly = -0.01
+				conscription_factor = 0.25
+				MONTHLY_POPULATION = -0.05
+
+			}
+			research_bonus = {
+				
+			}
+			available = {
+
+			}
+		}
+		HU3_chafengfeifaxinyang_idea = {
+			picture = FRA_matignon_agreements
+			modifier = {
+				stability_weekly = -0.02
+				MONTHLY_POPULATION = -0.05
+				political_power_factor = -0.1
+
+			}
+			research_bonus = {
+				
+			}
+			available = {
+
+			}
+		}
+		HU3_guanzhifeifaxinyang_idea = {
+			picture = FRA_matignon_agreements
+			modifier = {
+				stability_weekly = -0.005
+				MONTHLY_POPULATION = -0.01
+				political_power_factor = -0.05
+
+			}
+			research_bonus = {
+				
+			}
+			available = {
+
+			}
+		}
+		HU3_fengjinsuodewu_1_idea = {
+			picture = FRA_matignon_agreements
+			modifier = {
+				consumer_goods_expected_value = -0.3
+				production_speed_buildings_factor = 0.3
+				political_power_factor = 0.3
+
+			}
+			research_bonus = {
+				
+			}
+			available = {
+
+			}
+		}
+		HU3_fengjinsuodewu_2_idea = {
+			picture = FRA_matignon_agreements
+			modifier = {
+				consumer_goods_expected_value = -0.15
+				production_speed_buildings_factor = 0.15
+				political_power_factor = 0.15
+
+			}
+			research_bonus = {
+				
+			}
+			available = {
+
+			}
+		}
+		HU3_tongyizhihuibu_1_idea = {
+			picture = FRA_matignon_agreements
+			modifier = {
+				max_command_power = 5
+				command_power_gain_mult = 0.15
+				max_planning_factor = 0.1
+				planning_speed = 0.1
+				political_power_factor = -0.15	
+			}
+			research_bonus = {
+				
+			}
+			available = {
+
+			}
+		}
+		HU3_gongyeduanqijianshe_1_idea = {
+			picture = FRA_matignon_agreements
+			modifier = {
+				production_speed_arms_factory_factor = 0.75
+				production_speed_buildings_factor = 0.1
+			}
+			research_bonus = {
+				
+			}
+			available = {
+
+			}
+		}
+		HU3_dupingzhongzhi_1_idea = {
+			picture = FRA_matignon_agreements
+			modifier = {
+				political_power_factor = 0.15
+				consumer_goods_expected_value = -0.1
+				stability_factor = -0.05
+				trade_opinion_factor = 0.2
+				improve_relations_maintain_cost_factor = -0.15
+			}
+			research_bonus = {
+				
+			}
+			available = {
+
+			}
+		}
+		HU3_feipinhuishou_1_idea = {
+			picture = FRA_matignon_agreements
+			modifier = {
+				consumer_goods_expected_value = -0.2
+				research_speed_factor = 0.3
+				production_speed_buildings_factor = 0.3
+
+			}
+			research_bonus = {
+				industrys = 0.3
+				build = 0.3
+			}
+			available = {
+
+			}
+		}
+			HU3_feipinhuishou_a_idea = {
+			picture = FRA_matignon_agreements
+			modifier = {
+				consumer_goods_expected_value = -0.2
+
+
+			}
+			research_bonus = {
+				industrys = 0.1
+				build = 0.1
+			}
+			available = {
+
+			}
+		}
+		HU3_jiaqiangxunlian_idea = {
+			picture = FRA_matignon_agreements
+			modifier = {
+				max_command_power = 75
+				command_power_gain_mult = 0.15
+				experience_gain_army_factor = 0.25
+				#experience_gain_air_factor = 0.15
+
+			}
+			available = {
+
+			}
+		}
+		HU3_tongyigongyeshengchan_idea = {
+			picture = FRA_matignon_agreements
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.25
+
+			}
+			available = {
+
+			}
+		}
+		HU3_fuzhichuantongchanye_idea = {
+			picture = FRA_matignon_agreements
+			modifier = {
+				consumer_goods_expected_value = -0.1
+				
+
+			}
+			available = {
+
+			}
+		}
+		HU3_fuzhichuantongchanye_idea_2 = {
+			picture = FRA_matignon_agreements
+			modifier = {
+				consumer_goods_expected_value = -0.2
+				MONTHLY_POPULATION = 0.4
+				supply_node_range = 0.1
+				supply_consumption_factor = -0.05
+				
+
+			}
+			available = {
+
+			}
+		}
+		HU3_fuzhichuantongchanye_idea_2_1 = {
+			picture = FRA_matignon_agreements
+			modifier = {
+				consumer_goods_expected_value = -0.3
+				MONTHLY_POPULATION = 0.55
+				supply_node_range = 0.15
+				supply_consumption_factor = -0.05
+				trade_opinion_factor = 0.4
+				
+
+			}
+			available = {
+
+			}
+		}
+		HU3_fuzhichuantongchanye_idea_2_2 = {
+			picture = FRA_matignon_agreements
+			modifier = {
+				consumer_goods_expected_value = -0.35
+				MONTHLY_POPULATION = 0.85
+				supply_node_range = 0.15
+				supply_consumption_factor = -0.05
+				trade_opinion_factor = 0.4
+				
+
+			}
+			available = {
+
+			}
+		}
+		HU3_fuzhichuantongchanye_idea_2_3 = {
+			picture = FRA_matignon_agreements
+			modifier = {
+				consumer_goods_expected_value = -0.4
+				MONTHLY_POPULATION = 0.9
+				supply_node_range = 0.25
+				supply_consumption_factor = -0.1
+				trade_opinion_factor = 0.4
+				stability_factor = 0.15
+				
+
+			}
+			available = {
+
+			}
+		}
+		HU3_fuzhichuantongchanye_idea_3 = {
+			picture = FRA_matignon_agreements
+			modifier = {
+				consumer_goods_expected_value = -0.1
+				production_speed_buildings_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.05
+				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				
+				stability_factor = -0.15
+
+				
+
+			}
+			available = {
+
+			}
+		}
+    	HU3_fuzhichuantongchanye_idea_3_1 = {
+			picture = FRA_matignon_agreements
+			modifier = {
+				consumer_goods_expected_value = -0.1
+				production_speed_buildings_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.05
+				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				
+	research_speed_factor = 0.15
+				stability_factor = -0.15
+
+				
+
+			}
+			available = {
+
+			}
+		}
+	HU3_fuzhichuantongchanye_idea_3_2 = {
+			picture = FRA_matignon_agreements
+			modifier = {
+				consumer_goods_expected_value = -0.1
+				production_speed_buildings_factor = 0.25
+				production_factory_efficiency_gain_factor = 0.1
+				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.1
+	research_speed_factor = 0.15
+				stability_factor = -0.1
+
+				
+
+			}
+			available = {
+
+			}
+		}
+		HU3_jishdailaiyiqie_idea = {
+			picture = FRA_matignon_agreements
+			modifier = {
+				research_speed_factor = 0.1
+				
+
+			}
+			available = {
+
+			}
+		}
+		HU3_dianqihua_idea = {
+			picture = FRA_matignon_agreements
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05
+				
+
+			}
+			available = {
+
+			}
+		}
+		HU3_yapianmaoyi_new_idea = {
+			picture = FRA_matignon_agreements
+			modifier = {
+				political_power_factor = 0.15
+				consumer_goods_expected_value = -0.15
+				stability_factor = -0.15
+
+				
+
+			}
+			available = {
+
+			}
+		}
+		HU3_junshitouzijianshe_new_idea = {
+			picture = FRA_matignon_agreements
+			modifier = {
+				political_power_factor = 0.15
+				consumer_goods_expected_value = -0.15
+				stability_factor = -0.15
+
+				
+
+			}
+			available = {
+
+			}
+		}
+	}
+}
+
+
+
+
+
+		

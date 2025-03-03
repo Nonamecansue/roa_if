@@ -13,7 +13,7 @@ state={
 	}
 	history={
 		146.1.1 = {
-			owner = ZON
+			owner = CHE
 			add_core_of = CHE
 			buildings = {
 				infrastructure = 0

@@ -1288,11 +1288,11 @@ on_startup = {
 		effect = {
 			if = {
 				limit = {
-					country_exists = GRS
+					country_exists = XXC
 				}
-				GRS = {
-					give_resource_rights = { receiver = KAP state = 69 }
-					give_resource_rights = { receiver = OTG state = 93 }
+				XXC = {
+					give_resource_rights = { receiver = KAP state = 93 }
+					give_resource_rights = { receiver = OTG state = 69 }
 					give_resource_rights = { receiver = MRY state = 372 }
 				}
 			}

@@ -13,7 +13,7 @@ state={
 	}
 	history={
 		146.1.1 = {
-			owner = ZON
+			owner = HUM
 			add_core_of = KAG
 			add_core_of = HUM
 			buildings = {

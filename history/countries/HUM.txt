@@ -285,8 +285,8 @@
     MAM = {
         subject_level3 = yes
     }
-    YKR = {
-        subject_level4 = yes
+    BWH = {
+        subject_level3 = yes
     }
     set_truce = {target = SCA days = 365}
 }

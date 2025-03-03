@@ -49,8 +49,7 @@ set_technology = {
         #种族
             
     }
-    recruit_character = YZQ_slk_leader
-    recruit_character = YZQ_slk
+
     
 }
 146.1.1={
