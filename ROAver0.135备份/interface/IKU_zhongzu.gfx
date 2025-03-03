@@ -1,0 +1,50 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_IKU_map_tianjie"
+		texturefile = "gfx/interface/zhongzu/tianjie_ditu.png"
+	}
+	spriteType = {
+		name = "GFX_IKU_map_deities"
+		texturefile = "gfx/interface/zhongzu/deities.png"
+	}
+	spriteType = {
+		name = "GFX_IKU_map_goblin"
+		texturefile = "gfx/interface/zhongzu/goblin.png"
+	}
+	spriteType = {
+		name = "GFX_IKU_map_monster_d"
+		texturefile = "gfx/interface/zhongzu/monster_d.png"
+	}
+	spriteType = {
+		name = "GFX_IKU_map_monster_i"
+		texturefile = "gfx/interface/zhongzu/monster_i.png"
+	}
+	spriteType = {
+		name = "GFX_IKU_map_goblin_t"
+		texturefile = "gfx/interface/zhongzu/goblin_t.png"
+	}
+	spriteType = {
+		name = "GFX_IKU_map_deities_t"
+		texturefile = "gfx/interface/zhongzu/deities_t.png"
+	}
+	spriteType = {
+		name = "GFX_IKU_map_monster_t"
+		texturefile = "gfx/interface/zhongzu/monster_t.png"
+	}
+	spriteType = {
+		name = "GFX_IKU_zhengfuguanxi"
+		texturefile = "gfx/interface/zhongzu/zhengfuguanxi.png"
+	}
+	spriteType = {
+		name = "GFX_IKU_zhongzushili"
+		texturefile = "gfx/interface/zhongzu/zhongzushili.png"
+	}
+	spriteType = {
+		name = "GFX_IKU_hxx_map"
+		texturefile = "gfx/interface/zhongzu/hxx_map.png"
+	}
+	spriteType = {
+		name = "GFX_IKU_map_shangyiye"
+		texturefile = "gfx/interface/zhongzu/heaven.png"
+	}
+}

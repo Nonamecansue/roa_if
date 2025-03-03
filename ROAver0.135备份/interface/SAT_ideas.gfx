@@ -1,0 +1,80 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_sat_beast_army"
+		texturefile = "gfx//interface//ideas//idea_sat_beast_army.png"
+	}
+	spriteType = {
+		name = "GFX_idea_sat_chireidan_isolationism"
+		texturefile = "gfx//interface//ideas//idea_sat_chireidan_isolationism.png"
+	}
+	spriteType = {
+		name = "GFX_idea_sat_chireidan_the_third_idea"
+		texturefile = "gfx//interface//ideas//idea_sat_chireidan_the_third_idea.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_sat_keep_on_guard_1"
+		texturefile = "gfx//interface//ideas//idea_sat_keep_on_guard_1.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_sat_keep_on_guard_2"
+		texturefile = "gfx//interface//ideas//idea_sat_keep_on_guard_2.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_sat_mry_influence_handshake"
+		texturefile = "gfx//interface//ideas//idea_sat_mry_influence_handshake.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_sat_ski_influence_handshake"
+		texturefile = "gfx//interface//ideas//idea_sat_ski_influence_handshake.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_sat_ykr_influence_handshake"
+		texturefile = "gfx//interface//ideas//idea_sat_ykr_influence_handshake.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_sat_volunteer"
+		texturefile = "gfx//interface//ideas//idea_sat_volunteer.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_sat_pact_with_ski"
+		texturefile = "gfx//interface//ideas//idea_sat_pact_with_ski.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_sat_nuclear_normal"
+		texturefile = "gfx//interface//ideas//idea_sat_nuclear_normal.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_sat_nuclear_raging"
+		texturefile = "gfx//interface//ideas//idea_sat_nuclear_raging.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_sat_nuclear_stable"
+		texturefile = "gfx//interface//ideas//idea_sat_nuclear_stable.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_sat_nuclear_stablized"
+		texturefile = "gfx//interface//ideas//idea_sat_nuclear_stablized.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_sat_nuclear_unstable"
+		texturefile = "gfx//interface//ideas//idea_sat_nuclear_unstable.png"
+	}
+
+	spriteType = {
+		name = "GFX_idea_sat_chireiden_coins"
+		texturefile = "gfx//interface//ideas//idea_sat_chireiden_coins.png"
+	}
+
+}

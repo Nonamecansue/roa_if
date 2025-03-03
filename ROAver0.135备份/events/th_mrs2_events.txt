@@ -1,0 +1,985 @@
+﻿add_namespace = mrs2
+##########新闻###########
+news_event = {#
+	id = mrs2.1
+	title = mrs2.1.t
+	desc = mrs2.1.d
+###图片预留###picture = GFX_news_event_mrs2.1
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = mrs2.1.1
+		trigger = {
+			tag = MRS
+		}
+	}
+
+	option = {
+		name = mrs2.1.2
+		trigger = {
+			not = { tag = MRS }
+		}
+	}
+
+}
+
+news_event = {#
+	id = mrs2.2
+	title = mrs2.2.t
+	desc = mrs2.2.d
+###图片预留###picture = GFX_news_event_mrs2.2
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = mrs2.2.1
+		trigger = {
+			tag = MRS
+		}
+	}
+
+	option = {
+		name = mrs2.2.2
+		trigger = {
+			not = { tag = MRS }
+		}
+	}
+
+}
+
+news_event = {#
+	id = mrs2.3
+	title = mrs2.3.t
+	desc = mrs2.3.d
+###图片预留###picture = GFX_news_event_mrs2.3
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = mrs2.3.1
+		trigger = {
+			tag = MRS
+		}
+	}
+
+	option = {
+		name = mrs2.3.2
+		trigger = {
+			not = { tag = MRS }
+		}
+	}
+
+}
+
+news_event = {#
+	id = mrs2.4
+	title = mrs2.4.t
+	desc = mrs2.4.d
+###图片预留###picture = GFX_news_event_mrs2.4
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = mrs2.4.1
+		trigger = {
+			tag = MRS
+		}
+	}
+
+	option = {
+		name = mrs2.4.2
+		trigger = {
+			not = { tag = MRS }
+		}
+	}
+
+}
+
+news_event = {#
+	id = mrs2.5
+	title = mrs2.5.t
+	desc = mrs2.5.d
+###图片预留###picture = GFX_news_event_mrs2.5
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = mrs2.5.1
+		trigger = {
+			tag = MRS
+		}
+	}
+
+	option = {
+		name = mrs2.5.2
+		trigger = {
+			not = { tag = MRS }
+		}
+	}
+
+}
+
+news_event = {#
+	id = mrs2.6
+	title = mrs2.6.t
+	desc = mrs2.6.d
+###图片预留###picture = GFX_news_event_mrs2.6
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = mrs2.6.1
+		trigger = {
+			tag = MRS
+		}
+	}
+
+	option = {
+		name = mrs2.6.2
+		trigger = {
+			not = { tag = MRS }
+		}
+	}
+
+}
+
+news_event = {#
+	id = mrs2.7
+	title = mrs2.7.t
+	desc = mrs2.7.d
+###图片预留###picture = GFX_news_event_mrs2.7
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = mrs2.7.1
+		trigger = {
+			tag = MRS
+		}
+	}
+
+	option = {
+		name = mrs2.7.2
+		trigger = {
+			not = { tag = MRS }
+		}
+	}
+
+}
+
+news_event = {#
+	id = mrs2.8
+	title = mrs2.8.t
+	desc = mrs2.8.d
+###图片预留###picture = GFX_news_event_mrs2.8
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = mrs2.8.1
+		trigger = {
+			tag = MRS
+		}
+	}
+
+	option = {
+		name = mrs2.8.2
+		trigger = {
+			not = { tag = MRS }
+		}
+	}
+
+}
+
+news_event = {#
+	id = mrs2.9
+	title = mrs2.9.t
+	desc = mrs2.9.d
+###图片预留###picture = GFX_news_event_mrs2.9
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = mrs2.9.1
+		trigger = {
+			tag = MRS
+		}
+	}
+
+	option = {
+		name = mrs2.9.2
+		trigger = {
+			not = { tag = MRS }
+		}
+	}
+
+}
+
+news_event = {#
+	id = mrs2.10
+	title = mrs2.10.t
+	desc = mrs2.10.d
+###图片预留###picture = GFX_news_event_mrs2.10
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = mrs2.10.1
+		trigger = {
+			tag = MRS
+		}
+	}
+
+	option = {
+		name = mrs2.10.2
+		trigger = {
+			not = { tag = MRS }
+		}
+	}
+
+}
+
+news_event = {#
+	id = mrs2.11
+	title = mrs2.11.t
+	desc = mrs2.11.d
+###图片预留###picture = GFX_news_event_mrs2.11
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = mrs2.11.1
+		trigger = {
+			tag = MRS
+		}
+	}
+
+	option = {
+		name = mrs2.11.2
+		trigger = {
+			not = { tag = MRS }
+		}
+	}
+
+}
+
+news_event = {#
+	id = mrs2.12
+	title = mrs2.12.t
+	desc = mrs2.12.d
+###图片预留###picture = GFX_news_event_mrs2.12
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = mrs2.12.1
+		trigger = {
+			tag = MRS
+		}
+	}
+
+	option = {
+		name = mrs2.12.2
+		trigger = {
+			not = { tag = MRS }
+		}
+	}
+
+}
+
+news_event = {#
+	id = mrs2.13
+	title = mrs2.13.t
+	desc = mrs2.13.d
+###图片预留###picture = GFX_news_event_mrs2.13
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = mrs2.13.1
+		trigger = {
+			tag = MRS
+		}
+	}
+
+	option = {
+		name = mrs2.13.2
+		trigger = {
+			not = { tag = MRS }
+		}
+	}
+
+}
+
+news_event = {#
+	id = mrs2.14
+	title = mrs2.14.t
+	desc = mrs2.14.d
+###图片预留###picture = GFX_news_event_mrs2.14
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = mrs2.14.1
+		trigger = {
+			tag = MRS
+		}
+	}
+
+	option = {
+		name = mrs2.14.2
+		trigger = {
+			not = { tag = MRS }
+		}
+	}
+
+}
+
+news_event = {#
+	id = mrs2.15
+	title = mrs2.15.t
+	desc = mrs2.15.d
+###图片预留###picture = GFX_news_event_mrs2.15
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = mrs2.15.1
+		trigger = {
+			tag = MRS
+		}
+	}
+
+	option = {
+		name = mrs2.15.2
+		trigger = {
+			not = { tag = MRS }
+		}
+	}
+
+}
+
+news_event = {#
+	id = mrs2.16
+	title = mrs2.16.t
+	desc = mrs2.16.d
+###图片预留###picture = GFX_news_event_mrs2.16
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = mrs2.16.1
+		trigger = {
+			tag = MRS
+		}
+	}
+
+	option = {
+		name = mrs2.16.2
+		trigger = {
+			not = { tag = MRS }
+		}
+	}
+
+}
+
+news_event = {#
+	id = mrs2.17
+	title = mrs2.17.t
+	desc = mrs2.17.d
+###图片预留###picture = GFX_news_event_mrs2.17
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = mrs2.17.1
+		trigger = {
+			tag = MRS
+		}
+	}
+
+	option = {
+		name = mrs2.17.2
+		trigger = {
+			not = { tag = MRS }
+		}
+	}
+
+}
+
+news_event = {#
+	id = mrs2.18
+	title = mrs2.18.t
+	desc = mrs2.18.d
+###图片预留###picture = GFX_news_event_mrs2.18
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = mrs2.18.1
+		trigger = {
+			tag = MRS
+		}
+	}
+
+	option = {
+		name = mrs2.18.2
+		trigger = {
+			not = { tag = MRS }
+		}
+	}
+
+}
+country_event = {#
+	id = mrs2.19
+	title = mrs2.19.t
+	desc = mrs2.19.d
+###图片预留###picture = GFX_news_event_mrs2.19
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = mrs2.19.1
+		trigger = {
+			tag = MRS
+		}
+	}
+
+	option = {
+		name = mrs2.19.2
+		trigger = {
+			tag = RNS
+		}
+	}
+}
+
+country_event = {#
+	id = mrs2.20
+	title = mrs2.20.t
+	desc = mrs2.20.d
+###图片预留###picture = GFX_news_event_mrs2.20
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = mrs2.20.1
+		trigger = {
+			tag = MRS
+		}
+
+	}
+
+	option = {
+		name = mrs2.20.2
+		trigger = {
+			tag = SCA
+		}
+	}
+}
+
+country_event = {#
+	id = mrs2.21
+	title = mrs2.21.t
+	desc = mrs2.21.d
+###图片预留###picture = GFX_news_event_mrs2.21
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = mrs2.21.1
+		trigger = {
+			tag = MRS
+		}
+	}
+
+	option = {
+		name = mrs2.21.2
+		trigger = {
+			tag = OKI
+		}
+	}
+}
+
+country_event = {#
+	id = mrs2.22
+	title = mrs2.22.t
+	desc = mrs2.22.d
+###图片预留###picture = GFX_news_event_mrs2.22
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = mrs2.22.1
+		trigger = {
+			tag = MRS
+		}
+	}
+
+	option = {
+		name = mrs2.22.2
+		trigger = {
+			tag = OKI
+		}
+	}
+}
+
+country_event = {#
+	id = mrs2.23
+	title = mrs2.23.t
+	desc = mrs2.23.d
+###图片预留###picture = GFX_news_event_mrs2.23
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = mrs2.23.1
+		FROM = {
+			HKR = {
+				subject_level2 = yes
+				can_core = yes
+			}
+		}
+		FROM = {
+			country_event = { id = glo.2001 days = 2 }
+		}
+		hidden_effect = {
+			news_event = { id = mrs2.15 days = 2 }
+		}
+		ai_chance = {
+			base = 90
+		}
+	}
+
+	option = {
+		name = mrs2.23.2
+		FROM = {
+			country_event = { id = glo.2002 days = 2 }
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+
+country_event = {#
+	id = mrs2.24
+	title = mrs2.24.t
+	desc = mrs2.24.d
+###图片预留###picture = GFX_news_event_mrs2.24
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = mrs2.24.1
+		FROM = {
+			country_event = { days = 2 id = glo.2001 }
+			xianghubaodu = yes
+		}
+		
+		custom_effect_tooltip = MRS_ailisixujiu_tt
+		set_country_flag = MRS_ailisixujiu
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = {
+		name = mrs2.24.2
+		FROM = {
+			country_event = { days = 2 id = glo.2002 }
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+country_event = {#
+	id = mrs2.25
+	title = mrs2.25.t
+	desc = mrs2.25.d
+###图片预留###picture = GFX_news_event_mrs2.25
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = mrs2.25.1
+		diplomatic_relation = {
+			country = FROM
+			relation = non_aggression_pact
+			active = yes
+		}
+		FROM = {
+			country_event = { days = 2 id = glo.2001 }
+		}
+		ai_chance = {
+			base = 85
+		}
+	}
+
+	option = {
+		name = mrs2.25.2
+		FROM = {
+			country_event = { days = 2 id = glo.2002 }
+		}
+		ai_chance = {
+			base = 15
+		}
+	}
+}
+
+country_event = {#
+	id = mrs2.26
+	title = mrs2.26.t
+	desc = mrs2.26.d
+###图片预留###picture = GFX_news_event_mrs2.26
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = mrs2.26.1
+
+	}
+
+	option = {
+		name = mrs2.26.2
+		MRS_mima_leader = {
+			add_country_leader_role = {
+				promote_leader = yes
+				Country_leader = {
+					ideology = oldorder_type
+				}
+			}
+		}
+	}
+}
+
+country_event = {#
+	id = mrs2.27
+	title = mrs2.27.t
+	desc = mrs2.27.d
+###图片预留###picture = GFX_news_event_mrs2.27
+	fire_only_once = no
+	is_triggered_only = yes
+	trigger = {
+		tag = MRS
+		has_completed_focus = MRS_hepingjingying
+		has_war = no
+		not = {
+			has_idea = MRS_hepingjingying_idea
+		}
+	}
+
+	option = {
+		name = mrs2.27.1
+		add_ideas = MRS_hepingjingying_idea
+	}
+}
+
+country_event = {#
+	id = mrs2.28
+	title = mrs2.28.t
+	desc = mrs2.28.d
+###图片预留###picture = GFX_news_event_mrs2.28
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = mrs2.28.1
+
+	}
+
+	option = {
+		name = mrs2.28.2
+
+	}
+}
+
+country_event = {#
+	id = mrs2.29
+	title = mrs2.29.t
+	desc = mrs2.29.d
+###图片预留###picture = GFX_news_event_mrs2.29
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = mrs2.29.1
+
+	}
+
+	option = {
+		name = mrs2.29.2
+
+	}
+}
+
+country_event = {#
+	id = mrs2.30
+	title = mrs2.30.t
+	desc = mrs2.30.d
+###图片预留###picture = GFX_news_event_mrs2.30
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = mrs2.30.1
+
+	}
+
+	option = {
+		name = mrs2.30.2
+
+	}
+}
+
+country_event = {#
+	id = mrs2.31
+	title = mrs2.31.t
+	desc = mrs2.31.d
+###图片预留###picture = GFX_news_event_mrs2.31
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = mrs2.31.1
+
+	}
+
+	option = {
+		name = mrs2.31.2
+
+	}
+}
+
+country_event = {#
+	id = mrs2.32
+	title = mrs2.32.t
+	desc = mrs2.32.d
+###图片预留###picture = GFX_news_event_mrs2.32
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = mrs2.32.1
+
+	}
+
+	option = {
+		name = mrs2.32.2
+
+	}
+}
+
+country_event = {#
+	id = mrs2.33
+	title = mrs2.33.t
+	desc = mrs2.33.d
+###图片预留###picture = GFX_news_event_mrs2.33
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = mrs2.33.1
+		add_to_variable = {
+			MRS_kexuemofashi_var_ad = 0.03
+		}
+		custom_effect_tooltip = MRS_kexuemofashi_decision_ad_tt
+	}
+
+	option = {
+		name = mrs2.33.2
+		add_to_variable = {
+			MRS_kexuemofashi_var_re = 0.025
+		}
+		custom_effect_tooltip = MRS_kexuemofashi_decision_re_tt
+	}
+
+	option = {
+		name = mrs2.33.3
+		add_to_variable = {
+			MRS_kexuemofashi_var_org = 0.05
+		}
+		custom_effect_tooltip = MRS_kexuemofashi_decision_org_tt
+	}
+
+	option = {
+		name = mrs2.33.4
+		add_to_variable = {
+			MRS_kexuemofashi_var_ra = 0.015
+		}
+		custom_effect_tooltip = MRS_kexuemofashi_decision_ra_tt
+	}
+}
+
+country_event = {#
+	id = mrs2.34
+	title = mrs2.34.t
+	desc = mrs2.34.d
+###图片预留###picture = GFX_news_event_mrs2.34
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = mrs2.34.1
+
+	}
+
+	option = {
+		name = mrs2.34.2
+
+	}
+}
+
+country_event = {#
+	id = mrs2.35
+	title = mrs2.35.t
+	desc = mrs2.35.d
+###图片预留###picture = GFX_news_event_mrs2.35
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = mrs2.35.1
+
+	}
+
+	option = {
+		name = mrs2.35.2
+
+	}
+}
+
+news_event = {#
+	id = mrs2.36
+	title = mrs2.36.t
+	desc = mrs2.36.d
+###图片预留###picture = GFX_news_event_mrs2.36
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = mrs2.36.1
+		trigger = {
+			tag = MRS
+		}
+	}
+
+	option = {
+		name = mrs2.36.2
+		trigger = {
+			not = { tag = MRS }
+		}
+	}
+
+}
+
+country_event = {#
+	id = mrs2.37
+	title = mrs2.37.t
+	desc = mrs2.37.d
+###图片预留###picture = GFX_news_event_mrs2.37
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = mrs2.37.1
+
+	}
+}

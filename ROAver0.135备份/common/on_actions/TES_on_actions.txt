@@ -1,0 +1,1633 @@
+on_actions = {
+	on_daily = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = TES
+					has_country_flag = tiantingfuchu
+					NOT = {
+						has_cosmetic_tag = Celestial_united
+					}
+				}
+				set_cosmetic_tag = TES_tianting
+			}
+			else_if = {
+				limit = {
+					original_tag = TES
+					has_country_flag = tiantingfuchu
+					has_cosmetic_tag = Celestial_united
+				}
+				set_cosmetic_tag = TES_tianting_tianjie
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					original_tag = TES
+					has_cosmetic_tag = Celestial_united
+					has_completed_focus = TES.135
+					NOT = {
+						tag = TES_lingshi
+					}
+				}
+				set_cosmetic_tag = TES_lingshi
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					tag = TES
+					has_country_flag = qidong_yihui
+				}
+				zongzhichidu_quzhi = yes
+			}
+		}
+		effect = {    #选举
+			if ={
+				limit = {
+					check_variable = {
+						Tenshi_yxl > iku_yxl
+					}
+				}
+				set_temp_variable = {
+					Tenshi_yxl_lingshi = Tenshi_yxl
+				}
+				set_temp_variable = {
+					iku_yxl_lingshi = iku_yxl
+				}
+				subtract_from_temp_variable = {
+					Tenshi_yxl_lingshi = iku_yxl_lingshi
+				}
+				set_variable = {
+					tianziyingxiangzhi = Tenshi_yxl_lingshi
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						Tenshi_yxl < iku_yxl
+					}
+				}
+				set_temp_variable = {
+					Tenshi_yxl_lingshi = Tenshi_yxl
+				}
+				set_temp_variable = {
+					iku_yxl_lingshi = iku_yxl
+				}
+				subtract_from_temp_variable = {
+					iku_yxl_lingshi = Tenshi_yxl_lingshi
+				}
+				set_variable = {
+					yijiuyingxiangzhi = iku_yxl_lingshi
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						Tenshi_yxl = iku_yxl
+					}
+				}
+				set_temp_variable = {
+					Tenshi_yxl_lingshi = Tenshi_yxl
+				}
+				set_temp_variable = {
+					iku_yxl_lingshi = iku_yxl
+				}
+				subtract_from_temp_variable = {
+					iku_yxl_lingshi = Tenshi_yxl_lingshi
+				}
+				set_variable = {
+					xiaongtongyingxiangli = 0
+				}
+			}
+		}
+		effect = {  #启动作弊
+			if = {
+				limit = {
+					has_country_flag = kaiqizuobi
+				}
+				set_variable = { 
+					iku_yxl = 100 
+				}
+				set_variable = {
+					Tenshi_yxl = 100
+				}
+			}
+		}
+	}
+	on_weekly = {
+		effect = {
+			if = {
+				limit = {
+					tag = LTS
+					check_variable = {
+						heihua_zengzhang = 1
+					}
+				}
+				add_to_variable = {
+					TES_GUI_heihuazhi = 1
+				}
+			}
+			if = {
+				limit = {
+					tag = LTS
+					check_variable = {
+						heihua_zengzhang = 2
+					}
+				}
+				add_to_variable = {
+					TES_GUI_heihuazhi = 2
+				}
+			}
+			if = {
+				limit = {
+					tag = LTS
+					check_variable = {
+						heihua_zengzhang = 3
+					}
+				}
+				add_to_variable = {
+					TES_GUI_heihuazhi = 3
+				}
+			}
+		}
+		effect = {  ##选举
+			if = {
+				limit = {
+					has_country_flag = kaiqixuanju
+				}
+				add_to_variable = { ##天子
+					Tenshi_yxl = Tenshi_yxl_meizhou
+				}
+				add_to_variable = { ##天子
+					iku_yxl = iku_yxl_meizhou
+				}
+			}
+		}
+	}
+	on_peaceconference_ended = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						tag = TES
+					}
+					FROM = {
+						tag = CCA
+					}
+					has_country_flag = tescfavscca
+					check_variable = {
+						tenshi_yonghuzhi > 5
+					}
+				}
+				country_event = { id = ten.11 days = 1 }
+			}
+			else_if = {
+				limit = {
+					ROOT = {
+						tag = TES
+					}
+					FROM = {
+						tag = CCA
+					}
+					has_country_flag = tescfavscca
+				}
+				country_event = { id = ten.10 days = 1 }
+			}
+			else_if = {
+				limit = {
+					ROOT = {
+						tag = TES
+					}
+					FROM = {
+						tag = CCA
+					}
+				}
+				country_event = { id = ten.16 days = 1 }
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			TES = {
+				add_country_leader_trait = gaoguidetianren_1
+			}
+		}
+	}
+	on_daily = {
+		effect = {
+			if = {
+				limit = {
+					has_completed_focus = TES.94
+				}
+				if = {
+					limit = {
+						check_variable = {
+							TES_chongbai_du > -1
+						}
+						check_variable = {
+							TES_chongbai_du < 11
+						}
+					}
+					set_variable = {
+						TES_chongbai_wendingdu = -0.5
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							TES_chongbai_du > 9
+						}
+						check_variable = {
+							TES_chongbai_du < 21
+						}
+					}
+					set_variable = {
+						TES_chongbai_wendingdu = -0.25
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							TES_chongbai_du > 19
+						}
+						check_variable = {
+							TES_chongbai_du < 71
+						}
+					}
+					set_variable = {
+						TES_chongbai_wendingdu = 0.1
+					}
+					set_variable = {
+						TES_chongbai_changchu = 0.15
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							TES_chongbai_du > 69
+						}
+						check_variable = {
+							TES_chongbai_du < 81
+						}
+					}
+					set_variable = {
+						TES_chongbai_wendingdu = -0.1
+					}
+					set_variable = {
+						TES_chongbai_changchu = -0.15
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							TES_chongbai_du > 79
+						}
+					}
+					set_variable = {
+						TES_chongbai_wendingdu = -0.3
+					}
+					set_variable = {
+						TES_chongbai_changchu = -0.3
+					}
+				}
+			}
+		}
+	}
+	on_declare_war = { #和平主义
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						tag = TES
+					}
+				}
+				hepingzhuyi_xiajiang = yes
+			}
+		}
+	}
+	on_peaceconference_ended = { 
+		effect = {
+			if = {
+				limit ={
+					has_country_flag = TES_YYK_mengyue
+					FROM = {
+						tag = AOO
+					}
+					ROOT = {
+						tag = TES
+					}
+				}
+				TES = {
+					country_event = ten.26
+				}
+			}
+			if = {
+				limit ={
+					has_country_flag = TES_YYK_mengyue
+					FROM = {
+						tag = AKO
+					}
+					ROOT = {
+						tag = TES
+					}
+				}
+				TES = {
+					country_event = ten.28
+				}
+			}
+			if = {
+				limit ={
+					has_country_flag = TES_YYK_mengyue
+					FROM = {
+						tag = HGH
+					}
+					ROOT = {
+						tag = TES
+					}
+				}
+				TES = {
+					country_event = ten.29
+				}
+			}
+			if = {
+				limit ={
+					has_country_flag = TES_YYK_mengyue
+					FROM = {
+						tag = SKI
+					}
+					ROOT = {
+						tag = TES
+					}
+				}
+				TES = {
+					country_event = ten.30
+				}
+			}
+		}
+	}
+	on_daily = { #衣玖种族
+		effect  = {
+			if = {  #天人1
+				limit = {
+					check_variable = {
+						tianren_shili = 1
+					}
+				}
+				set_variable = {
+					toxiang_tianren = -0.5
+				}
+				set_variable = {
+					zhengzhi_tianren = -0.5
+				}
+				set_variable = {
+					meizhouwendingdu_tianren = -0.005
+				}
+			}
+			if = { #天人2
+				limit = {
+					check_variable = {
+						tianren_shili = 2
+					}
+				}
+				set_variable = {
+					wendingdu_tianren = 0
+				}
+				set_variable = {
+					xiaofeiping_tianren = 0
+				}
+			}
+			if = {  #天人3
+				limit = {
+					check_variable = {
+						tianren_shili = 3
+					}
+				}
+				set_variable = {
+					wendingdu_tianren = 0.05
+				}
+				set_variable = {
+					xiaofeiping_tianren = -0.06
+				}
+				if = { #1.2.3级关系
+					limit = {
+						OR = {
+							check_variable = {
+								tianren_guanxi = 1
+							}
+							check_variable = {
+								tianren_guanxi = 2
+							}
+							check_variable = {
+								tianren_guanxi = 3
+							}
+						}	
+					}
+					multiply_variable = {
+						wendingdu_tianren = 1
+					}
+					multiply_variable = {
+						xiaofeiping_tianren = 1
+					}
+				}
+				if = { #4级关系
+					limit = {
+						check_variable = {
+							tianren_guanxi = 4
+						}
+					}
+					multiply_variable = {
+						wendingdu_tianren = 1.5
+					}
+					multiply_variable = {
+						xiaofeiping_tianren = 1.5
+					}
+				}
+				if = { #5级关系
+					limit = {
+						check_variable = {
+							tianren_guanxi = 5
+						}
+					}
+					multiply_variable = {
+						wendingdu_tianren = 2
+					}
+					multiply_variable = {
+						xiaofeiping_tianren = 2
+					}
+				}
+			}
+			if = {  #天人4
+				limit = {
+					check_variable = {
+						tianren_shili = 4
+					}
+				}
+				set_variable = {
+					wendingdu_tianren = 0.1
+				}
+				set_variable = {
+					xiaofeiping_tianren = -0.1
+				}
+				set_variable = {
+					meizhouzhanzhneg_tianren = -0.001
+				}
+				if = { #1.2.3级关系
+					limit = {
+						OR = {
+							check_variable = {
+								tianren_guanxi = 1
+							}
+							check_variable = {
+								tianren_guanxi = 2
+							}
+							check_variable = {
+								tianren_guanxi = 4
+							}
+						}	
+					}
+					multiply_variable = {
+						wendingdu_tianren = 1
+					}
+					multiply_variable = {
+						xiaofeiping_tianren = 1
+					}
+				}
+				if = { #4级关系
+					limit = {
+						check_variable = {
+							tianren_guanxi = 4
+						}
+					}
+					multiply_variable = {
+						wendingdu_tianren = 1.5
+					}
+					multiply_variable = {
+						xiaofeiping_tianren = 1.5
+					}
+				}
+				if = { #5级关系
+					limit = {
+						check_variable = {
+							tianren_guanxi = 5
+						}
+					}
+					multiply_variable = {
+						wendingdu_tianren = 2
+					}
+					multiply_variable = {
+						xiaofeiping_tianren = 2
+					}
+				}
+			}
+			if = {  #天女1
+				limit = {
+					check_variable = {
+						tianjieyaoguai_shili = 1
+					}
+				}
+				set_variable = {
+					changchu_tianjieyaoguai = 0
+				}
+				set_variable = {
+					jianzhu_tianjieyaoguai = 0
+				}
+				set_variable = {
+					keyan_tianjieyaoguai = 0
+				}
+				set_variable = {
+					xiaofeiping_tianjieyaoguai = 0
+				}
+				if = {
+					limit = {
+						check_variable = {
+							tianjieyaoguai_guanxi = 1
+						}
+					}
+					multiply_variable = {
+						changchu_tianjieyaoguai = 0
+					}
+					multiply_variable = {
+						jianzhu_tianjieyaoguai = 0
+					}
+					multiply_variable = {
+						keyan_tianjieyaoguai = 0
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							tianjieyaoguai_guanxi = 2
+						}
+					}
+					multiply_variable = {
+						changchu_tianjieyaoguai = 0.5
+					}
+					multiply_variable = {
+						jianzhu_tianjieyaoguai = 0.5
+					}
+					multiply_variable = {
+						keyan_tianjieyaoguai = 0.5
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							tianjieyaoguai_guanxi = 3
+						}
+					}
+					multiply_variable = {
+						changchu_tianjieyaoguai = 1
+					}
+					multiply_variable = {
+						jianzhu_tianjieyaoguai = 1
+					}
+					multiply_variable = {
+						keyan_tianjieyaoguai = 1
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							tianjieyaoguai_guanxi = 4
+						}
+					}
+					multiply_variable = {
+						changchu_tianjieyaoguai = 1.5
+					}
+					multiply_variable = {
+						jianzhu_tianjieyaoguai = 1.5
+					}
+					multiply_variable = {
+						keyan_tianjieyaoguai = 1.5
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							tianjieyaoguai_guanxi = 5
+						}
+					}
+					multiply_variable = {
+						changchu_tianjieyaoguai = 2
+					}
+					multiply_variable = {
+						jianzhu_tianjieyaoguai = 2
+					}
+					multiply_variable = {
+						keyan_tianjieyaoguai = 2
+					}
+				}
+			}
+			if = {  #天女2
+				limit = {
+					check_variable = {
+						tianjieyaoguai_shili = 2
+					}
+				}
+				set_variable = {
+					changchu_tianjieyaoguai = 0.04
+				}
+				set_variable = {
+					jianzhu_tianjieyaoguai = 0
+				}
+				set_variable = {
+					keyan_tianjieyaoguai = 0
+				}
+				set_variable = {
+					xiaofeiping_tianjieyaoguai = 0
+				}
+				if = {
+					limit = {
+						check_variable = {
+							tianjieyaoguai_guanxi = 1
+						}
+					}
+					multiply_variable = {
+						changchu_tianjieyaoguai = 0
+					}
+					multiply_variable = {
+						jianzhu_tianjieyaoguai = 0
+					}
+					multiply_variable = {
+						keyan_tianjieyaoguai = 0
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							tianjieyaoguai_guanxi = 2
+						}
+					}
+					multiply_variable = {
+						changchu_tianjieyaoguai = 0.5
+					}
+					multiply_variable = {
+						jianzhu_tianjieyaoguai = 0.5
+					}
+					multiply_variable = {
+						keyan_tianjieyaoguai = 0.5
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							tianjieyaoguai_guanxi = 3
+						}
+					}
+					multiply_variable = {
+						changchu_tianjieyaoguai = 1
+					}
+					multiply_variable = {
+						jianzhu_tianjieyaoguai = 1
+					}
+					multiply_variable = {
+						keyan_tianjieyaoguai = 1
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							tianjieyaoguai_guanxi = 4
+						}
+					}
+					multiply_variable = {
+						changchu_tianjieyaoguai = 1.5
+					}
+					multiply_variable = {
+						jianzhu_tianjieyaoguai = 1.5
+					}
+					multiply_variable = {
+						keyan_tianjieyaoguai = 1.5
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							tianjieyaoguai_guanxi = 5
+						}
+					}
+					multiply_variable = {
+						changchu_tianjieyaoguai = 2
+					}
+					multiply_variable = {
+						jianzhu_tianjieyaoguai = 2
+					}
+					multiply_variable = {
+						keyan_tianjieyaoguai = 2
+					}
+				}
+			}
+			if = {  #天女3
+				limit = {
+					check_variable = {
+						tianjieyaoguai_shili = 3
+					}
+				}
+				set_variable = {
+					changchu_tianjieyaoguai = 0.08
+				}
+				set_variable = {
+					jianzhu_tianjieyaoguai = 0.08
+				}
+				set_variable = {
+					keyan_tianjieyaoguai = 0
+				}
+				set_variable = {
+					xiaofeiping_tianjieyaoguai = 0
+				}
+				if = {
+					limit = {
+						check_variable = {
+							tianjieyaoguai_guanxi = 1
+						}
+					}
+					multiply_variable = {
+						changchu_tianjieyaoguai = 0
+					}
+					multiply_variable = {
+						jianzhu_tianjieyaoguai = 0
+					}
+					multiply_variable = {
+						keyan_tianjieyaoguai = 0
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							tianjieyaoguai_guanxi = 2
+						}
+					}
+					multiply_variable = {
+						changchu_tianjieyaoguai = 0.5
+					}
+					multiply_variable = {
+						jianzhu_tianjieyaoguai = 0.5
+					}
+					multiply_variable = {
+						keyan_tianjieyaoguai = 0.5
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							tianjieyaoguai_guanxi = 3
+						}
+					}
+					multiply_variable = {
+						changchu_tianjieyaoguai = 1
+					}
+					multiply_variable = {
+						jianzhu_tianjieyaoguai = 1
+					}
+					multiply_variable = {
+						keyan_tianjieyaoguai = 1
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							tianjieyaoguai_guanxi = 4
+						}
+					}
+					multiply_variable = {
+						changchu_tianjieyaoguai = 1.5
+					}
+					multiply_variable = {
+						jianzhu_tianjieyaoguai = 1.5
+					}
+					multiply_variable = {
+						keyan_tianjieyaoguai = 1.5
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							tianjieyaoguai_guanxi = 5
+						}
+					}
+					multiply_variable = {
+						changchu_tianjieyaoguai = 2
+					}
+					multiply_variable = {
+						jianzhu_tianjieyaoguai = 2
+					}
+					multiply_variable = {
+						keyan_tianjieyaoguai = 2
+					}
+				}
+			}
+			if = { #天女4
+				limit = {
+					check_variable = {
+						tianjieyaoguai_shili = 4
+					}
+				}
+				set_variable = {
+					changchu_tianjieyaoguai = 0.1
+				}
+				set_variable = {
+					jianzhu_tianjieyaoguai = 0.1
+				}
+				set_variable = {
+					keyan_tianjieyaoguai = 0.1
+				}
+				set_variable = {
+					xiaofeiping_tianjieyaoguai = 0.1
+				}
+				if = {
+					limit = {
+						check_variable = {
+							tianjieyaoguai_guanxi = 1
+						}
+					}
+					multiply_variable = {
+						changchu_tianjieyaoguai = 0
+					}
+					multiply_variable = {
+						jianzhu_tianjieyaoguai = 0
+					}
+					multiply_variable = {
+						keyan_tianjieyaoguai = 0
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							tianjieyaoguai_guanxi = 2
+						}
+					}
+					multiply_variable = {
+						changchu_tianjieyaoguai = 0.5
+					}
+					multiply_variable = {
+						jianzhu_tianjieyaoguai = 0.5
+					}
+					multiply_variable = {
+						keyan_tianjieyaoguai = 0.5
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							tianjieyaoguai_guanxi = 3
+						}
+					}
+					multiply_variable = {
+						changchu_tianjieyaoguai = 1
+					}
+					multiply_variable = {
+						jianzhu_tianjieyaoguai = 1
+					}
+					multiply_variable = {
+						keyan_tianjieyaoguai = 1
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							tianjieyaoguai_guanxi = 4
+						}
+					}
+					multiply_variable = {
+						changchu_tianjieyaoguai = 1.5
+					}
+					multiply_variable = {
+						jianzhu_tianjieyaoguai = 1.5
+					}
+					multiply_variable = {
+						keyan_tianjieyaoguai = 1.5
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							tianjieyaoguai_guanxi = 5
+						}
+					}
+					multiply_variable = {
+						changchu_tianjieyaoguai = 2
+					}
+					multiply_variable = {
+						jianzhu_tianjieyaoguai = 2
+					}
+					multiply_variable = {
+						keyan_tianjieyaoguai = 2
+					}
+				}
+			}
+			if = { #妖精1
+				limit = {
+					check_variable = {
+						yaojing_shili = 1
+					}
+				}
+				set_variable = {
+					renko_yaojing = 0
+				}
+				set_variable = {
+					gongchang_yaojinng = 0
+				}
+				set_variable = {
+					meizhouwendingdu_yaojing = 0
+				}
+				set_variable = {
+					zhengzhi_yaojing = 0
+				}
+				if = {
+					limit = {
+						check_variable = {
+							yaojing_guanxi = 1
+						}
+					}
+					multiply_variable = {
+						renko_yaojing = 0
+					}
+					multiply_variable = {
+						gongchang_yaojinng = 0
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							yaojing_guanxi = 2
+						}
+					}
+					multiply_variable = {
+						renko_yaojing = 0.5
+					}
+					multiply_variable = {
+						gongchang_yaojinng = 0.5
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							yaojing_guanxi = 3
+						}
+					}
+					multiply_variable = {
+						renko_yaojing = 1
+					}
+					multiply_variable = {
+						gongchang_yaojinng = 1
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							yaojing_guanxi = 4
+						}
+					}
+					multiply_variable = {
+						renko_yaojing = 1.5
+					}
+					multiply_variable = {
+						gongchang_yaojinng = 1.5
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							yaojing_guanxi = 5
+						}
+					}
+					multiply_variable = {
+						renko_yaojing = 2
+					}
+					multiply_variable = {
+						gongchang_yaojinng = 2
+					}
+				}
+			}
+			if = { #妖精2
+				limit = {
+					check_variable = {
+						yaojing_shili = 2
+					}
+				}
+				set_variable = {
+					renko_yaojing = 0.04
+				}
+				set_variable = {
+					gongchang_yaojinng = 0
+				}
+				set_variable = {
+					meizhouwendingdu_yaojing = 0
+				}
+				set_variable = {
+					zhengzhi_yaojing = 0
+				}
+				if = {
+					limit = {
+						check_variable = {
+							yaojing_guanxi = 1
+						}
+					}
+					multiply_variable = {
+						renko_yaojing = 0
+					}
+					multiply_variable = {
+						gongchang_yaojinng = 0
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							yaojing_guanxi = 2
+						}
+					}
+					multiply_variable = {
+						renko_yaojing = 0.5
+					}
+					multiply_variable = {
+						gongchang_yaojinng = 0.5
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							yaojing_guanxi = 3
+						}
+					}
+					multiply_variable = {
+						renko_yaojing = 1
+					}
+					multiply_variable = {
+						gongchang_yaojinng = 1
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							yaojing_guanxi = 4
+						}
+					}
+					multiply_variable = {
+						renko_yaojing = 1.5
+					}
+					multiply_variable = {
+						gongchang_yaojinng = 1.5
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							yaojing_guanxi = 5
+						}
+					}
+					multiply_variable = {
+						renko_yaojing = 2
+					}
+					multiply_variable = {
+						gongchang_yaojinng = 2
+					}
+				}
+			}
+			if = { #妖精3
+				limit = {
+					check_variable = {
+						yaojing_shili = 3
+					}
+				}
+				set_variable = {
+					renko_yaojing = 0.1
+				}
+				set_variable = {
+					gongchang_yaojinng = 0
+				}
+				set_variable = {
+					meizhouwendingdu_yaojing = 0
+				}
+				set_variable = {
+					zhengzhi_yaojing = 0
+				}
+				if = {
+					limit = {
+						check_variable = {
+							yaojing_guanxi = 1
+						}
+					}
+					multiply_variable = {
+						renko_yaojing = 0
+					}
+					multiply_variable = {
+						gongchang_yaojinng = 0
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							yaojing_guanxi = 2
+						}
+					}
+					multiply_variable = {
+						renko_yaojing = 0.5
+					}
+					multiply_variable = {
+						gongchang_yaojinng = 0.5
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							yaojing_guanxi = 3
+						}
+					}
+					multiply_variable = {
+						renko_yaojing = 1
+					}
+					multiply_variable = {
+						gongchang_yaojinng = 1
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							yaojing_guanxi = 4
+						}
+					}
+					multiply_variable = {
+						renko_yaojing = 1.5
+					}
+					multiply_variable = {
+						gongchang_yaojinng = 1.5
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							yaojing_guanxi = 5
+						}
+					}
+					multiply_variable = {
+						renko_yaojing = 2
+					}
+					multiply_variable = {
+						gongchang_yaojinng = 2
+					}
+				}
+			}
+			if = { #妖精4
+				limit = {
+					check_variable = {
+						yaojing_shili = 4
+					}
+				}
+				set_variable = {
+					renko_yaojing = 0.2
+				}
+				set_variable = {
+					gongchang_yaojinng = 0.1
+				}
+				set_variable = {
+					meizhouwendingdu_yaojing = -0.002
+				}
+				set_variable = {
+					zhengzhi_yaojing = 0.3
+				}
+				if = {
+					limit = {
+						check_variable = {
+							yaojing_guanxi = 1
+						}
+					}
+					multiply_variable = {
+						renko_yaojing = 0
+					}
+					multiply_variable = {
+						gongchang_yaojinng = 0
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							yaojing_guanxi = 2
+						}
+					}
+					multiply_variable = {
+						renko_yaojing = 0.5
+					}
+					multiply_variable = {
+						gongchang_yaojinng = 0.5
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							yaojing_guanxi = 3
+						}
+					}
+					multiply_variable = {
+						renko_yaojing = 1
+					}
+					multiply_variable = {
+						gongchang_yaojinng = 1
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							yaojing_guanxi = 4
+						}
+					}
+					multiply_variable = {
+						renko_yaojing = 1.5
+					}
+					multiply_variable = {
+						gongchang_yaojinng = 1.5
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							yaojing_guanxi = 5
+						}
+					}
+					multiply_variable = {
+						renko_yaojing = 2
+					}
+					multiply_variable = {
+						gongchang_yaojinng = 2
+					}
+				}
+			}
+			if = { #地狱妖怪1
+				limit = {
+					check_variable = {
+						diyuyaoguai_shili = 1
+					}
+				}
+				set_variable = {
+					zhichidu_diyuyaoguai = 0
+				}
+				set_variable = {
+					gongji_diyuyaoguai = 0
+				}
+				set_variable = {
+					xiaofeiping_diyuyaoguai = 0
+				}
+				if = {
+					limit = {
+						check_variable = {
+							diyuyaoguai_guanxi = 1
+						}
+					}
+					multiply_variable = {
+						zhichidu_diyuyaoguai = 0
+					}
+					multiply_variable = {
+						gongji_diyuyaoguai = 0
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							diyuyaoguai_guanxi = 2
+						}
+					}
+					multiply_variable = {
+						zhichidu_diyuyaoguai = 0.5
+					}
+					multiply_variable = {
+						gongji_diyuyaoguai = 0.5
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							diyuyaoguai_guanxi = 3
+						}
+					}
+					multiply_variable = {
+						zhichidu_diyuyaoguai = 1
+					}
+					multiply_variable = {
+						gongji_diyuyaoguai = 1
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							diyuyaoguai_guanxi = 4
+						}
+					}
+					multiply_variable = {
+						zhichidu_diyuyaoguai = 1.5
+					}
+					multiply_variable = {
+						gongji_diyuyaoguai = 1.5
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							diyuyaoguai_guanxi = 5
+						}
+					}
+					multiply_variable = {
+						zhichidu_diyuyaoguai = 2
+					}
+					multiply_variable = {
+						gongji_diyuyaoguai = 2
+					}
+				}
+			}
+			if = { #地狱妖怪2
+				limit = {
+					check_variable = {
+						diyuyaoguai_shili = 2
+					}
+				}
+				set_variable = {
+					zhichidu_diyuyaoguai = 0.04
+				}
+				set_variable = {
+					gongji_diyuyaoguai = 0
+				}
+				set_variable = {
+					xiaofeiping_diyuyaoguai = 0
+				}
+				if = {
+					limit = {
+						check_variable = {
+							diyuyaoguai_guanxi = 1
+						}
+					}
+					multiply_variable = {
+						zhichidu_diyuyaoguai = 0
+					}
+					multiply_variable = {
+						gongji_diyuyaoguai = 0
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							diyuyaoguai_guanxi = 2
+						}
+					}
+					multiply_variable = {
+						zhichidu_diyuyaoguai = 0.5
+					}
+					multiply_variable = {
+						gongji_diyuyaoguai = 0.5
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							diyuyaoguai_guanxi = 3
+						}
+					}
+					multiply_variable = {
+						zhichidu_diyuyaoguai = 1
+					}
+					multiply_variable = {
+						gongji_diyuyaoguai = 1
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							diyuyaoguai_guanxi = 4
+						}
+					}
+					multiply_variable = {
+						zhichidu_diyuyaoguai = 1.5
+					}
+					multiply_variable = {
+						gongji_diyuyaoguai = 1.5
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							diyuyaoguai_guanxi = 5
+						}
+					}
+					multiply_variable = {
+						zhichidu_diyuyaoguai = 2
+					}
+					multiply_variable = {
+						gongji_diyuyaoguai = 2
+					}
+				}
+			}
+			if = { #地狱妖怪3
+				limit = {
+					check_variable = {
+						diyuyaoguai_shili = 1
+					}
+				}
+				set_variable = {
+					zhichidu_diyuyaoguai = 0.1
+				}
+				set_variable = {
+					gongji_diyuyaoguai = 0
+				}
+				set_variable = {
+					xiaofeiping_diyuyaoguai = 0
+				}
+				if = {
+					limit = {
+						check_variable = {
+							diyuyaoguai_guanxi = 1
+						}
+					}
+					multiply_variable = {
+						zhichidu_diyuyaoguai = 0
+					}
+					multiply_variable = {
+						gongji_diyuyaoguai = 0
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							diyuyaoguai_guanxi = 2
+						}
+					}
+					multiply_variable = {
+						zhichidu_diyuyaoguai = 0.5
+					}
+					multiply_variable = {
+						gongji_diyuyaoguai = 0.5
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							diyuyaoguai_guanxi = 3
+						}
+					}
+					multiply_variable = {
+						zhichidu_diyuyaoguai = 1
+					}
+					multiply_variable = {
+						gongji_diyuyaoguai = 1
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							diyuyaoguai_guanxi = 4
+						}
+					}
+					multiply_variable = {
+						zhichidu_diyuyaoguai = 1.5
+					}
+					multiply_variable = {
+						gongji_diyuyaoguai = 1.5
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							diyuyaoguai_guanxi = 5
+						}
+					}
+					multiply_variable = {
+						zhichidu_diyuyaoguai = 2
+					}
+					multiply_variable = {
+						gongji_diyuyaoguai = 2
+					}
+				}
+			}
+			if = { #地狱妖怪4
+				limit = {
+					check_variable = {
+						diyuyaoguai_shili = 1
+					}
+				}
+				set_variable = {
+					zhichidu_diyuyaoguai = 0.2
+				}
+				set_variable = {
+					gongji_diyuyaoguai = 0.1
+				}
+				set_variable = {
+					xiaofeiping_diyuyaoguai = 0.1
+				}
+				if = {
+					limit = {
+						check_variable = {
+							diyuyaoguai_guanxi = 1
+						}
+					}
+					multiply_variable = {
+						zhichidu_diyuyaoguai = 0
+					}
+					multiply_variable = {
+						gongji_diyuyaoguai = 0
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							diyuyaoguai_guanxi = 2
+						}
+					}
+					multiply_variable = {
+						zhichidu_diyuyaoguai = 0.5
+					}
+					multiply_variable = {
+						gongji_diyuyaoguai = 0.5
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							diyuyaoguai_guanxi = 3
+						}
+					}
+					multiply_variable = {
+						zhichidu_diyuyaoguai = 1
+					}
+					multiply_variable = {
+						gongji_diyuyaoguai = 1
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							diyuyaoguai_guanxi = 4
+						}
+					}
+					multiply_variable = {
+						zhichidu_diyuyaoguai = 1.5
+					}
+					multiply_variable = {
+						gongji_diyuyaoguai = 1.5
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							diyuyaoguai_guanxi = 5
+						}
+					}
+					multiply_variable = {
+						zhichidu_diyuyaoguai = 2
+					}
+					multiply_variable = {
+						gongji_diyuyaoguai = 2
+					}
+				}
+			}
+		}
+	}
+	on_daily = {
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = kaiqi_diyu_yaoguai
+					}
+					OR = {
+						controls_state = 456
+						has_country_flag = zhongzhuanzhang_kongzhi
+					}
+				}
+				set_country_flag = kaiqi_diyu_yaoguai
+				set_variable = {
+					diyuyaoguai_guanxi = 4
+				}
+				set_variable = {
+					diyuyaoguai_shili = 2
+				}
+				add_dynamic_modifier = { modifier = diyuyaoguai_dy } 
+			}
+		}
+	}
+	on_monthly = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = TES
+					has_completed_focus = TES.143
+				}
+				add_to_variable = {
+					zhongzu_yue = 1
+				}
+			}
+		}
+	}
+	on_daily = {
+		effect = {
+			if = {
+				limit =  {
+					original_tag = TES
+					check_variable = {
+						zhongzu_yue = 3
+					}
+				}
+				zhongzu_shijian = yes
+				set_variable = {
+					zhongzu_yue = 0
+				}
+			}
+		}
+	}
+}

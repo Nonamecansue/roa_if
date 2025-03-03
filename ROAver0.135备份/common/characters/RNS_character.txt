@@ -1,0 +1,121 @@
+characters={
+	RNS_rns ={
+		name = RNS_rns
+		portraits={
+			civilian={
+				large="gfx/leaders/RNS/RNS_rns.dds"
+				small="gfx/leaders/RNS/RNS_rns_small.dds"
+			}
+			army = {
+				large="gfx/leaders/RNS/RNS_rns.dds"
+				small="gfx/leaders/RNS/RNS_rns_small.dds"
+			}
+		}
+		corps_commander = {
+            traits = {  th_original_character th_character trait_cautious   }
+            attack_skill = 2
+            defense_skill = 4
+            planning_skill = 4
+            logistics_skill = 4
+            
+            skill = 4
+        }
+		advisor = {
+			slot = character_coop
+			idea_token = RNS_rns
+			name = RNS_rns
+			cost = 200
+			modifier = {
+				trade_opinion_factor = 1
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	RNS_tokiko ={
+		name = RNS_tokiko
+		portraits={
+			civilian={
+				large="gfx/leaders/RNS/RNS_tokiko.dds"
+				small="gfx/leaders/RNS/RNS_tokiko_small.dds"
+			}
+			army = {
+				large="gfx/leaders/RNS/RNS_tokiko.dds"
+				small="gfx/leaders/RNS/RNS_tokiko_small.dds"
+			}
+		}
+		corps_commander = {
+            traits = {  th_original_character th_character  th_trait_chongjizhuanjia  }
+            attack_skill = 3
+            defense_skill = 3
+            planning_skill = 1
+            logistics_skill = 2
+            
+            skill = 4
+        }
+		advisor = {
+			slot = character_coop
+			idea_token = RNS_tokiko
+			name = RNS_tokiko
+			cost = 200
+			modifier = {
+				modifier_army_sub_unit_melee_infantry_attack_factor = 0.2
+				modifier_army_sub_unit_melee_cavalry_attack_factor = 0.2
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	RNS_rns_leader ={
+		name = RNS_rns_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/RNS/RNS_rns.dds"
+				small="gfx/leaders/RNS/RNS_rns_small.dds"
+			}
+			army = {
+				large="gfx/leaders/RNS/RNS_rns.dds"
+				small="gfx/leaders/RNS/RNS_rns_small.dds"
+			}
+		}
+		country_leader={
+			ideology=guli_type
+			id=-1
+		}
+	}
+	RNS_tokiko_leader ={
+		name = RNS_tokiko_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/RNS/RNS_tokiko.dds"
+				small="gfx/leaders/RNS/RNS_tokiko_small.dds"
+			}
+			army = {
+				large="gfx/leaders/RNS/RNS_tokiko.dds"
+				small="gfx/leaders/RNS/RNS_tokiko_small.dds"
+			}
+		}
+		country_leader={
+			ideology=qinwai_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldorder_type
+			id=-1
+		}
+		country_leader={
+			ideology=fandong_type
+			id=-1
+		}
+		country_leader={
+			ideology=neworder_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldgenso_type
+			id=-1
+		}
+	}
+}

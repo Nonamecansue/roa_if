@@ -1,0 +1,23 @@
+
+state={
+	id=593
+	name="STATE_593"
+	provinces={
+		376 1260 3892 3893 3894 5028 5042 5048 5056 
+	}
+	history={
+		146.1.1 = {
+			owner = KAS
+			add_core_of = KAS
+			buildings = {
+				infrastructure = 4
+				industrial_complex = 1
+				arms_factory = 3
+			}
+		}
+	}
+	manpower=1587
+	buildings_max_level_factor=1.000
+	state_category=s5
+	local_supplies=2.500
+}

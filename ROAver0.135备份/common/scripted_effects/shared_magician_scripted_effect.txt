@@ -1,0 +1,225 @@
+MSH_add_boyi1 = {
+	add_to_variable = {
+		MSH_boyili = 1
+	}
+	custom_effect_tooltip = MSH_add_boyi1_tt
+}
+MSH_add_boyi2 = {
+	add_to_variable = {
+		MSH_boyili = 2
+	}
+	custom_effect_tooltip = MSH_add_boyi2_tt
+}
+MSH_add_boyi3 = {
+    add_to_variable = {
+        MSH_boyili = 3
+    }
+    custom_effect_tooltip = MSH_add_boyi3_tt
+}
+
+MSH_add_boyi4 = {
+    add_to_variable = {
+        MSH_boyili = 4
+    }
+    custom_effect_tooltip = MSH_add_boyi4_tt
+}
+
+MSH_add_boyi5 = {
+    add_to_variable = {
+        MSH_boyili = 5
+    }
+    custom_effect_tooltip = MSH_add_boyi5_tt
+}
+
+MSH_add_boyi6 = {
+    add_to_variable = {
+        MSH_boyili = 6
+    }
+    custom_effect_tooltip = MSH_add_boyi6_tt
+}
+
+MSH_add_boyi7 = {
+    add_to_variable = {
+        MSH_boyili = 7
+    }
+    custom_effect_tooltip = MSH_add_boyi7_tt
+}
+
+MSH_add_boyi8 = {
+    add_to_variable = {
+        MSH_boyili = 8
+    }
+    custom_effect_tooltip = MSH_add_boyi8_tt
+}
+
+MSH_add_boyi9 = {
+    add_to_variable = {
+        MSH_boyili = 9
+    }
+    custom_effect_tooltip = MSH_add_boyi9_tt
+}
+
+MSH_add_boyi10 = {
+    add_to_variable = {
+        MSH_boyili = 10
+    }
+    custom_effect_tooltip = MSH_add_boyi10_tt
+}
+
+MSH_add_boyi11 = {
+    add_to_variable = {
+        MSH_boyili = 11
+    }
+    custom_effect_tooltip = MSH_add_boyi11_tt
+}
+
+MSH_add_boyi12 = {
+    add_to_variable = {
+        MSH_boyili = 12
+    }
+    custom_effect_tooltip = MSH_add_boyi12_tt
+}
+
+MSH_add_boyi13 = {
+    add_to_variable = {
+        MSH_boyili = 13
+    }
+    custom_effect_tooltip = MSH_add_boyi13_tt
+}
+
+MSH_add_boyi14 = {
+    add_to_variable = {
+        MSH_boyili = 14
+    }
+    custom_effect_tooltip = MSH_add_boyi14_tt
+}
+
+MSH_add_boyi15 = {
+    add_to_variable = {
+        MSH_boyili = 15
+    }
+    custom_effect_tooltip = MSH_add_boyi15_tt
+}
+
+MSH_add_boyi20 = {
+    add_to_variable = {
+        MSH_boyili = 20
+    }
+    custom_effect_tooltip = MSH_add_boyi20_tt
+}
+
+MSH_boyi_cal = {
+    if = {
+        limit = {
+            is_subject = no
+            not = {
+                has_country_flag = MAF_united
+            }
+        } 
+        set_variable = {
+            MSH_boyili_gain = party_popularity@ruling_party
+        }
+        multiply_variable = {
+            MSH_boyili_gain = 0.25
+        }
+        clamp_variable = {
+            var = MSH_boyili_gain
+            min = 0
+        }
+        set_temp_variable = {
+            pp = political_power_growth
+        }
+        multiply_temp_variable = {
+            pp = 0.25
+        }
+        clamp_temp_variable = {
+            var = pp
+            min = 0
+        }
+
+        add_to_variable = {
+            MSH_boyili_gain = pp
+        }
+        set_temp_variable = {
+            stab = stability
+        }
+        multiply_temp_variable = {
+            stab = 0.25
+        }
+        clamp_temp_variable = {
+            var = stab
+            min = 0
+        }
+        add_to_variable = {
+            MSH_boyili_gain = stab
+        }
+        if = {
+            limit = {
+                controls_state = 188
+            }
+            add_to_variable = {
+                MSH_boyili_gain = 0.5
+            }
+        }
+        if = {
+            limit = {
+                all_owned_state = {
+                    not = {
+                        ST_race_is_Magician = yes
+                    }
+                }
+            }
+            multiply_variable = {
+                MSH_boyili_gain = 0.75
+            }
+        }
+
+        set_temp_variable = {
+            factor = modifier@MSH_boyili_factor
+        }
+        add_to_temp_variable = {
+            factor = 1
+        }
+        multiply_variable = {
+            MSH_boyili_gain = factor
+        }
+        add_to_variable = {
+            MSH_boyili = modifier@MSH_boyili_add
+        }
+        add_to_variable = {
+            MSH_boyili = MSH_boyili_gain
+        }
+    }
+}
+MSH_duel_ability = {
+    MRS = {
+        MRS_mrs = {
+            set_variable = {
+                global.MRS_mrs = duel_ability
+            }
+        }
+    }
+    ELL = {
+        ELL_ellen = {
+            set_variable = {
+                global.ELL_ellen = duel_ability
+            }
+        }
+    }
+    ALI = {
+        ALI_ali = {
+            set_variable = {
+                global.ALI_ali = duel_ability
+            }
+        }
+    }
+    NAR = {
+        NAR_narumi = {
+            set_variable = {
+                global.NAR_narumi = duel_ability
+            }
+        }
+    }
+}
+
+        

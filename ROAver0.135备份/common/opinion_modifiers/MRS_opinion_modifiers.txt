@@ -1,0 +1,53 @@
+#########################################################################
+# OPINION MODIFIERS
+##########################################################################
+# value
+# min_trust
+# max_trust
+# decay
+# months/years/days = timer
+# trade = yes/no
+
+opinion_modifiers = {
+	MRS_hongmoguantoushu_op = {
+		value = -20
+	}
+	MRS_baifangxianglintang_op = {
+		value = 20
+	}
+	MRS_xianglintangxuetu_op = {
+		value = 20
+	}
+	MRS_baifanghouhuzhiguo_op = {
+		value = 20
+	}
+	MRS_jianxitongzi_op = {
+		value = 35
+	}
+	MRS_mofashilaoshi_op = {
+		value = -50
+	}
+
+
+
+
+
+
+
+	MRS_xianzheyouhao_op = {
+		value = 30
+	}
+	MRS_fazhanguanxi_op = {
+		value = 30
+	}
+	MRS_caogenyaoguailianxi_op = {
+		value = 20
+	}
+	MRS_bangzhu_op = {
+		value = 50
+	}
+	MRS_quganshaoshuzuyi_op = {
+		value = -60
+	}
+}	
+

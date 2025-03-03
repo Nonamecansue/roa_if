@@ -1,0 +1,57 @@
+guiTypes = {
+	containerWindowType = {
+		name = "TES_xuanju_GUI"
+		size = { width = 482 height = 300 }
+		iconType = {
+			name = "TES_Tenshi"
+			spriteType = "GFX_TES_Tenshi"
+			position = { x = 18 y = 0 }
+		}
+		iconType = {
+			name = "TES_Iku"
+			spriteType = "GFX_TES_Iku"
+			position = { x = 325 y = 0 }
+		}
+		instantTextBoxType = {
+			name = "TES_Tenshi_influence"
+			position = { x = 18 y = 240 }
+			text = TES_Tenshi_influence_1
+			font = "vic_22"
+			format = center
+			maxWidth = 175
+			pdx_tooltip = TES_Tenshi_tt
+		}
+		instantTextBoxType = {
+			name = "TES_Iku_influence"
+			position = { x = 325 y = 240 }
+			text = TES_Iku_influence_2
+			font = "vic_22"
+			format = center 
+			maxWidth = 164
+			pdx_tooltip = TES_iku_tt
+		}
+		instantTextBoxType = {
+			name = "TES_linxianzhe"
+			position = { x = 165 y = 20 }
+			text = TES_linxianzhe_1
+			font = "vic_22"
+			format = center 
+			maxWidth = 164
+		}
+		iconType = {
+			name = "TES_tianping"
+			spriteType = "GFX_TES_tianping"
+			position = { x = 210 y = 135 }
+		}
+		iconType = {
+			name = "TES_tianpingzuo"
+			spriteType = "GFX_TES_tianpingzuo"
+			position = { x = 210 y = 135 }
+		}
+		iconType = {
+			name = "TES_tianpingyou"
+			spriteType = "GFX_TES_tianpingyou"
+			position = { x = 210 y = 135 }
+		}
+	}
+}

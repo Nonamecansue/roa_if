@@ -1,0 +1,17 @@
+﻿l_simp_chinese:
+#############
+ Gensokyo:0 "幻想乡"
+ Underground:0 "旧地狱"
+ Celestial:0 "天界"
+ Hell:0 "地狱"
+ Netherworld:0 "冥界"
+ ############
+ bamboo:0 "竹林"
+ bamboo_desc:0 "" 
+ farms:0 "农田"
+ farms_desc:0 ""
+ volcano:0 "火山"
+ volcano_desc:0 ""
+ zone:0 "境界"
+ zone_desc:0 ""
+ urban:0 "村落"

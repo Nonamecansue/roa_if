@@ -1,0 +1,40 @@
+
+state={
+	id=310
+	name="STATE_310"
+
+	history={
+		143.7.1 = {
+			add_core_of = SC2
+			add_core_of = SCA
+			owner = SCA
+			buildings = {
+				infrastructure = 3
+				industrial_complex = 0
+				arms_factory = 0
+				radar_station = 0
+			}
+		}
+		146.1.1 = {
+			add_core_of = SC2
+			add_core_of = SCA
+			owner = SCA
+			buildings = {
+				infrastructure =3
+				industrial_complex = 0
+				arms_factory = 0
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		59 938 1775 2043 2688 3068 3069 3105 3370 4018 4026 4036 4039 4044 4046 4060 4063 4068 4082 4083 
+	}
+	manpower=6713.0
+	buildings_max_level_factor=1.000
+	state_category=s5
+	local_supplies=2.5
+}

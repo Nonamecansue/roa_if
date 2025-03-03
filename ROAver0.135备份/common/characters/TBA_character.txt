@@ -1,0 +1,165 @@
+characters={
+	TBA_sannyo ={
+		name = TBA_sannyo
+		portraits={
+			civilian={
+				large="gfx/leaders/TBA/TBA_sannyo.dds"
+				small="gfx/leaders/TBA/TBA_sannyo_small.dds"
+			}
+			army = {
+				large="gfx/leaders/TBA/TBA_sannyo.dds"
+				small="gfx/leaders/TBA/TBA_sannyo_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { th_character th_original_character th_trait_huoqiangzhuanjia }
+			skill = 6
+			attack_skill = 5
+			defense_skill = 7
+			planning_skill = 4
+			logistics_skill = 6
+		}
+		advisor = {
+			slot = character_coop
+			idea_token = TBA_sannyo
+			name = TBA_sannyo
+			cost = 200
+			modifier = {
+				ST_race_penalty_all_factor = -0.4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	TBA_mike ={
+		name = TBA_mike
+		portraits={
+			civilian={
+				large="gfx/leaders/TBA/TBA_mike.dds"
+				small="gfx/leaders/TBA/TBA_mike_small.dds"
+			}
+			army = {
+				large="gfx/leaders/TBA/TBA_mike.dds"
+				small="gfx/leaders/TBA/TBA_mike_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { th_character th_original_character trait_cautious }
+			skill = 4
+			attack_skill = 2
+			defense_skill = 5
+			planning_skill = 1
+			logistics_skill = 5
+		}
+		advisor = {
+			slot = character_coop
+			idea_token = TBA_mike
+			name = TBA_mike
+			cost = 200
+			modifier = {
+				conscription_factor = 0.1
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	TBA_chimata ={
+		name = TBA_chimata
+		portraits={
+			civilian={
+				large="gfx/leaders/TBA/TBA_chimata.dds"
+				small="gfx/leaders/TBA/TBA_chimata_small.dds"
+			}
+			army = {
+				large="gfx/leaders/TBA/TBA_chimata.dds"
+				small="gfx/leaders/TBA/TBA_chimata_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { th_character th_original_character th_trait_tezhongzhuanjia }
+			skill = 10
+			attack_skill = 6
+			defense_skill = 9
+			planning_skill = 10
+			logistics_skill = 10
+		}
+		advisor = {
+			slot = character_coop
+			idea_token = TBA_chimata
+			name = TBA_chimata
+			cost = 200
+			modifier = {
+				production_factory_max_efficiency_factor = 0.3
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	TBA_sannyo_leader ={
+		name = TBA_sannyo_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/TBA/TBA_sannyo.dds"
+				small="gfx/leaders/TBA/TBA_sannyo_small.dds"
+			}
+			army = {
+				large="gfx/leaders/TBA/TBA_sannyo.dds"
+				small="gfx/leaders/TBA/TBA_sannyo_small.dds"
+			}
+		}
+		country_leader={
+			ideology=guli_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldgenso_type
+			id=-1
+		}
+	}
+	TBA_mike_leader ={
+		name = TBA_mike_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/TBA/TBA_mike.dds"
+				small="gfx/leaders/TBA/TBA_mike_small.dds"
+			}
+			army = {
+				large="gfx/leaders/TBA/TBA_mike.dds"
+				small="gfx/leaders/TBA/TBA_mike_small.dds"
+			}
+		}
+		country_leader={
+			ideology=qinwai_type
+			id=-1
+		}
+		country_leader={
+			ideology=fandong_type
+			id=-1
+		}
+	}
+	TBA_chimata_leader ={
+		name = TBA_chimata_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/TBA/TBA_chimata.dds"
+				small="gfx/leaders/TBA/TBA_chimata_small.dds"
+			}
+			army = {
+				large="gfx/leaders/TBA/TBA_chimata.dds"
+				small="gfx/leaders/TBA/TBA_chimata_small.dds"
+			}
+		}
+		country_leader={
+			ideology=neworder_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldorder_type
+			id=-1
+		}
+		
+	}
+}

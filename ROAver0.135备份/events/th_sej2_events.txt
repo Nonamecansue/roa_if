@@ -1,0 +1,1982 @@
+add_namespace = sej
+##########其他国家的被动触发事件###########
+country_event = { #境外的支持者(正邪线）
+	id = sej.1
+	title = sej.1.t
+	desc = sej.1.d
+
+	fire_only_once = no
+	is_triggered_only = no
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	trigger = {
+		SEJ = {
+			has_completed_focus = SEJ_jingwaizhichizhe
+		}
+		has_war_with = SEJ
+		not = {
+			has_idea = SEJ_jingwaizhichizhe_idea
+		}
+	}
+
+	option = { #
+		name = sej.1.1
+		add_ideas = SEJ_jingwaizhichizhe_idea
+	}
+}
+country_event = { #幻想乡反革命先锋(小碗）
+	id = sej.2
+	title = sej.2.t
+	desc = sej.2.d
+
+	fire_only_once = no
+	is_triggered_only = no
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	trigger = {
+		has_completed_focus = SEJ_huanxiangxiangfangemingxianfeng
+		tag = SEJ
+		not = {
+			has_idea = SEJ_huanxiangxiangfangemingxianfeng_idea
+		}
+		any_country = {
+			has_war_with = ROOT
+			has_government = fandong
+		}
+	}
+
+	option = { #
+		name = sej.2.1
+		add_ideas = SEJ_huanxiangxiangfangemingxianfeng_idea
+	}
+}
+country_event = { #与蕾蒂的商谈
+	id = sej.3
+	title = sej.3.t
+	desc = sej.3.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { #同意
+		name = sej.3.1
+		every_state = {
+			limit = {
+				has_dynamic_modifier = {
+					modifier = SEJ_WHR_border_modifier
+				}
+			}
+			remove_dynamic_modifier = {
+				modifier = SEJ_WHR_border_modifier
+			}
+		}
+		ai_chance = {
+			base = 60
+		}
+		FROM = {
+			country_event = { id = glo.2001 days = 2 }
+		}
+	}
+	option = { #不同意
+		name = sej.3.1
+		ai_chance = {
+			base = 40
+			modifier = {
+				ROOT = {
+					has_opinion = {
+						target = FROM
+						value > 0
+					}
+				}
+				factor = 0.5
+			}
+			modifier = {
+				ROOT = {
+					has_opinion = {
+						target = FROM
+						value > 19
+					}
+				}
+				factor = 0
+			}
+		}
+		FROM = {
+			country_event = { id = glo.2002 days = 2 }
+		}
+	}
+}
+country_event = { #建立冰霜特区
+	id = sej.4
+	title = sej.4.t
+	desc = sej.4.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = { #同意
+		name = sej.4.1
+		FROM = {
+			ROOT = {
+				can_core = yes
+				subject_level4 = yes
+				set_cosmetic_tag = WHR_SEJ
+			}
+			set_country_flag = SEJ_bingshuangsenlintequ
+		}
+		ai_chance = {
+			base = 30
+		}
+		FROM = {
+			country_event = { id = glo.2001 days = 2 }
+		}
+	}
+	option = { #不同意
+		name = sej.4.2
+		ai_chance = {
+			base = 70
+			modifier = {
+				ROOT = {
+					has_opinion = {
+						target = FROM
+						value > 24
+					}
+				}
+				factor = 0.5
+			}
+			modifier = {
+				ROOT = {
+					has_opinion = {
+						target = FROM
+						value > 39
+					}
+				}
+				factor = 0.5
+			}
+			modifier = {
+				ROOT = {
+					has_opinion = {
+						target = FROM
+						value > 54
+					}
+				}
+				factor = 0
+			}
+		}
+		FROM = {
+			country_event = { id = glo.2002 days = 2 }
+		}
+	}
+}
+
+news_event = {#夺取妖怪神社
+	id = sej.5
+	title = sej.5.t
+	desc = sej.5.d
+###图片预留###picture = GFX_news_event_sej.5
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = sej.5.1
+		trigger = {
+			tag = SEJ
+		}
+	}
+
+	option = {
+		name = sej.5.2
+		trigger = {
+			tag = HKR
+		}
+	}
+
+	option = {
+		name = sej.5.3
+		trigger = {
+			not = {
+				tag = SEJ
+				tag = HKR
+			}
+		}
+	}
+}
+
+news_event = {#直取幕后大妖怪
+	id = sej.6
+	title = sej.6.t
+	desc = sej.6.d
+###图片预留###picture = GFX_news_event_sej.6
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = sej.6.1
+		trigger = {
+			tag = SEJ
+		}
+	}
+
+	option = {
+		name = sej.6.2
+		trigger = {
+			tag = YKR
+		}
+	}
+
+	option = {
+		name = sej.6.3
+		trigger = {
+			not = {
+				tag = SEJ
+				tag = YKR
+			}
+		}
+	}
+}
+
+news_event = {#剿灭第二个鬼人正邪
+	id = sej.7
+	title = sej.7.t
+	desc = sej.7.d
+###图片预留###picture = GFX_news_event_sej.7
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = sej.7.1
+		trigger = {
+			tag = SEJ
+		}
+	}
+
+	option = {
+		name = sej.7.2
+		trigger = {
+			tag = CIR
+		}
+	}
+
+	option = {
+		name = sej.7.3
+		trigger = {
+			not = {
+				tag = SEJ
+				tag = CIR
+			}
+		}
+	}
+}
+
+news_event = {#向地底的“鬼之国”复仇
+	id = sej.8
+	title = sej.8.t
+	desc = sej.8.d
+###图片预留###picture = GFX_news_event_sej.8
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = sej.8.1
+		trigger = {
+			tag = SEJ
+		}
+	}
+
+	option = {
+		name = sej.8.2
+		trigger = {
+			tag = YUG
+		}
+	}
+
+	option = {
+		name = sej.8.3
+		trigger = {
+			not = {
+				tag = SEJ
+				tag = YUG
+			}
+		}
+	}
+}
+
+news_event = {#刺瞎“西方的鬼族”的双眼
+	id = sej.9
+	title = sej.9.t
+	desc = sej.9.d
+###图片预留###picture = GFX_news_event_sej.9
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = sej.9.1
+		trigger = {
+			tag = SEJ
+		}
+	}
+
+	option = {
+		name = sej.9.2
+		trigger = {
+			tag = SCA
+		}
+	}
+
+	option = {
+		name = sej.9.3
+		trigger = {
+			not = {
+				tag = SEJ
+				tag = SCA
+			}
+		}
+	}
+}
+
+news_event = {#幻想乡无“神”论
+	id = sej.10
+	title = sej.10.t
+	desc = sej.10.d
+###图片预留###picture = GFX_news_event_sej.10
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = sej.10.1
+		trigger = {
+			tag = SEJ
+		}
+	}
+
+	option = {
+		name = sej.10.2
+		trigger = {
+			or = {
+				has_idea = God
+				has_idea = Shrine
+			}
+		}
+	}
+
+	option = {
+		name = sej.10.3
+		trigger = {
+			not = { 
+				tag = SEJ 
+				has_idea = God
+				has_idea = Shrine
+			}
+		}
+	}
+
+}
+
+news_event = {#幻想乡的底层联合起来！
+	id = sej.11
+	title = sej.11.t
+	desc = sej.11.d
+###图片预留###picture = GFX_news_event_sej.11
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = sej.11.1
+		trigger = {
+			tag = SEJ
+		}
+	}
+
+	option = {
+		name = sej.11.2
+		trigger = {
+			not = {
+				tag = SEJ
+			}
+			or = {
+				has_government = fandong
+				has_idea = Fairy
+				has_idea = Pri_youkai
+				has_idea = Ghost
+				has_idea = Beast
+			}
+		}
+	}
+
+	option = {
+		name = sej.11.3
+		trigger = {
+			not = { 
+				tag = SEJ 
+				has_government = fandong
+				has_idea = Fairy
+				has_idea = Pri_youkai
+				has_idea = Ghost
+				has_idea = Beast
+			}
+		}
+	}
+
+}
+
+news_event = {#最后的革命之火
+	id = sej.12
+	title = sej.12.t
+	desc = sej.12.d
+###图片预留###picture = GFX_news_event_sej.12
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = sej.12.1
+		trigger = {
+			tag = SEJ
+		}
+	}
+
+	option = {
+		name = sej.12.2
+		trigger = {
+			not = { 
+				tag = SEJ 
+			}
+			has_government = fandong
+		}
+	}
+
+	option = {
+		name = sej.12.3
+		trigger = {
+			not = { 
+				tag = SEJ 
+				has_government = fandong
+			}
+		}
+	}
+
+}
+
+news_event = {#绝不与大妖怪妥协！
+	id = sej.13
+	title = sej.13.t
+	desc = sej.13.d
+###图片预留###picture = GFX_news_event_sej.13
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = sej.13.1
+		trigger = {
+			tag = SEJ
+		}
+	}
+
+	option = {
+		name = sej.13.2
+		trigger = {
+			or = {
+				has_idea = Youkai
+				has_idea = gensoukyo_creator_idea
+			}
+		}
+	}
+
+	option = {
+		name = sej.13.3
+		trigger = {
+			not = { 
+				tag = SEJ 
+				has_idea = Youkai
+				has_idea = gensoukyo_creator_idea
+			}
+		}
+	}
+
+}
+
+news_event = {#囚禁正邪
+	id = sej.14
+	title = sej.14.t
+	desc = sej.14.d
+###图片预留###picture = GFX_news_event_sej.14
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = sej.14.1
+		trigger = {
+			tag = SEJ
+		}
+	}
+
+	option = {
+		name = sej.14.2
+		trigger = {
+			not = { tag = SEJ }
+			has_government = fandong
+		}
+	}
+
+	option = {
+		name = sej.14.3
+		trigger = {
+			not = { 
+				tag = SEJ 
+				has_government = fandong
+			}
+		}
+	}
+
+}
+
+news_event = {#“板子毽”外交
+	id = sej.15
+	title = sej.15.t
+	desc = sej.15.d
+###图片预留###picture = GFX_news_event_sej.15
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = sej.15.1
+		trigger = {
+			tag = SEJ
+		}
+	}
+
+	option = {
+		name = sej.15.2
+		trigger = {
+			or = {
+				has_idea = Youkai
+				has_idea = gensoukyo_creator_idea
+			}
+		}
+	}
+
+	option = {
+		name = sej.15.3
+		trigger = {
+			not = { 
+				tag = SEJ 
+				has_idea = Youkai
+				has_idea = gensoukyo_creator_idea
+			}
+		}
+	}
+
+}
+
+news_event = {#幻想乡反暴乱先锋
+	id = sej.16
+	title = sej.16.t
+	desc = sej.16.d
+###图片预留###picture = GFX_news_event_sej.16
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = sej.16.1
+		trigger = {
+			tag = SEJ
+		}
+	}
+
+	option = {
+		name = sej.16.2
+		trigger = {
+			not = { tag = SEJ }
+			has_government = fandong
+		}
+	}
+
+	option = {
+		name = sej.16.3
+		trigger = {
+			not = { 
+				tag = SEJ 
+				has_government = fandong
+			}
+		}
+	}
+
+}
+
+news_event = {#建立辉光帝国
+	id = sej.17
+	title = sej.17.t
+	desc = sej.17.d
+###图片预留###picture = GFX_news_event_sej.17
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = sej.17.1
+		trigger = {
+			tag = SEJ
+		}
+	}
+
+	option = {
+		name = sej.17.2
+		trigger = {
+			not = { tag = SEJ }
+		}
+	}
+
+}
+
+news_event = {#小人乃巨人
+	id = sej.18
+	title = sej.18.t
+	desc = sej.18.d
+###图片预留###picture = GFX_news_event_sej.18
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = sej.18.1
+		trigger = {
+			tag = SEJ
+		}
+	}
+
+	option = {
+		name = sej.18.2
+		trigger = {
+			not = { tag = SEJ }
+		}
+	}
+
+}
+country_event = {#支援矢田寺成美同志在魔法森林的行动
+	id = sej.19
+	title = sej.19.t
+	desc = sej.19.d
+###图片预留###picture = GFX_news_event_sej.19
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = sej.19.1
+		effect_tooltip = {
+			add_equipment_to_stockpile = {
+				type = magic_core_a
+				amount = 2000
+				producer = SEJ
+			}
+			add_equipment_to_stockpile = {
+				type = magic_energy_a
+				amount = 100
+				producer = SEJ
+			}
+		}
+	}
+}
+
+country_event = {#帮助革命魔法使的进行思想改造
+	id = sej.20
+	title = sej.20.t
+	desc = sej.20.d
+###图片预留###picture = GFX_news_event_sej.20
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = sej.20.1
+		effect_tooltip = {
+			every_country = {
+				limit = {
+					is_subject_of = ROOT
+				}
+				low_puppet_level = yes
+			}
+		}
+	}
+}
+
+country_event = {#向怨灵宣传革命理念
+	id = sej.21
+	title = sej.21.t
+	desc = sej.21.d
+###图片预留###picture = GFX_news_event_sej.21
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = sej.21.1
+		effect_tooltip = {
+			add_ideas = SEJ_geminglinian_idea
+		}
+	}
+}
+
+country_event = {#参加下克上的怨灵
+	id = sej.22
+	title = sej.22.t
+	desc = sej.22.d
+###图片预留###picture = GFX_news_event_sej.22
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = sej.22.1
+		effect_tooltip = {
+			conservative_set_p3 = yes
+			lobby_set_p2 = yes
+			set_politics = {
+				ruling_party = fandong
+			}
+			subject_level3 = yes
+		}
+	}
+}
+
+country_event = {#边境的虫族妖怪间谍(正邪)
+	id = sej.23
+	title = sej.23.t
+	desc = sej.23.d
+###图片预留###picture = GFX_news_event_sej.23
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		has_completed_focus = SEJ_chongyaoguaijiandie
+		tag = SEJ
+		has_war_with = SCA
+		SCA = {
+			controls_state = 59
+			controls_state = 312
+		}
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
+	immediate = {
+		hidden_effect = {
+			load_oob = SEJ_chongyaoguaijiandie_oob
+			SCA = {
+				country_event = sej.24
+			}
+		}
+	}
+	option = {
+		name = sej.23.1
+		goto_state = 59
+		add_ideas = SEJ_chongyaoguaijiandie_idea
+	}
+}
+
+country_event = {#边境的虫族妖怪间谍(蕾米）
+	id = sej.24
+	title = sej.24.t
+	desc = sej.24.d
+###图片预留###picture = GFX_news_event_sej.24
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = sej.24.1
+
+	}
+}
+
+country_event = {#力量与权力
+	id = sej.25
+	title = sej.25.t
+	desc = sej.25.d
+###图片预留###picture = GFX_news_event_sej.25
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = sej.25.1
+		clr_country_flag = bunengqie_oldorder
+		add_ideas = SEJ_liliangquanli_idea1
+		add_stability = -0.1
+		custom_effect_tooltip = SEJ_liliangquanli_tt
+		add_popularity = {
+			ideology = oldorder
+			popularity = 0.05
+		}
+	}
+
+	option = {
+		name = sej.25.2
+		add_ideas = SEJ_liliangquanli_idea2
+		add_stability = 0.05
+		add_popularity = {
+			ideology = qinwai
+			popularity = 0.05
+		}
+	}
+}
+
+country_event = {#向八云紫投去投名状（八云紫）
+	id = sej.26
+	title = sej.26.t
+	desc = sej.26.d
+###图片预留###picture = GFX_news_event_sej.26
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = sej.26.1
+		custom_effect_tooltip = SEJ_bayunzidetoumingzhuang_tt
+		SEJ = { 
+			set_country_flag = SEJ_weihuoderenke_flag 
+			country_event = { id = sej.27 days = 2 }
+		}
+		ai_chance = {
+			base = 80
+			modifier = {
+				check_variable = {
+					SEJ.all_value_plus_manpower > 999
+				}
+				factor = 0.9
+			}
+			modifier = {
+				check_variable = {
+					SEJ.all_value_plus_manpower > 1499
+				}
+				factor = 0.9
+			}
+			modifier = {
+				check_variable = {
+					SEJ.all_value_plus_manpower > 1999
+				}
+				factor = 0.7
+			}
+			modifier = {
+				check_variable = {
+					SEJ.all_value_plus_manpower > 2499
+				}
+				factor = 0.7
+			}
+			modifier = {
+				SEJ = { num_subjects > 1 }
+				factor = 0.9
+			}
+			modifier = {
+				SEJ = { num_subjects > 3 }
+				factor = 0.8
+			}
+			modifier = {
+				SEJ = { num_subjects > 5 }
+				factor = 0.7
+			}
+			modifier = {
+				is_subject_of = SEJ
+				factor = 0
+			}
+		}
+	}
+
+	option = {
+		name = sej.26.2
+		custom_effect_tooltip = SEJ_bayunzidetoumingzhuang_tt
+		SEJ = { 
+			set_country_flag = SEJ_qiangzhederenke_flag 
+			country_event = { id = sej.28 days = 2 }
+		}
+		ai_chance = {
+			base = 20
+			modifier = {
+				SEJ = { not = { has_government = oldorder } }
+				factor = 0
+			}
+			modifier = {
+				has_opinion = {
+					target = SEJ
+					value < 0
+				}
+				factor = 0
+			}
+			modifier = {
+				has_opinion = {
+					target = SEJ
+					value > 9
+				}
+				add = 5
+			}
+			modifier = {
+				has_opinion = {
+					target = SEJ
+					value > 24
+				}
+				add = 5
+			}
+			modifier = {
+				has_opinion = {
+					target = SEJ
+					value > 49
+				}
+				add = 10
+			}
+			modifier = {
+				has_opinion = {
+					target = SEJ
+					value > 99
+				}
+				add = 20
+			}
+			modifier = {
+				has_opinion = {
+					target = SEJ
+					value > 139
+				}
+				add = 20
+			}
+		}
+	}
+}
+country_event = {#向八云紫投去投名状(未获得认可）
+	id = sej.27
+	title = sej.27.t
+	desc = sej.27.d
+###图片预留###picture = GFX_news_event_sej.27
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = sej.27.1
+	}
+}
+
+country_event = {#向八云紫投去投名状(获得了认可）
+	id = sej.28
+	title = sej.28.t
+	desc = sej.28.d
+###图片预留###picture = GFX_news_event_sej.28
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = sej.28.1
+	}
+}
+
+country_event = {#优先支持琪露诺的革命路程（琪露诺）
+	id = sej.29
+	title = sej.29.t
+	desc = sej.29.d
+###图片预留###picture = GFX_news_event_sej.29
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = sej.29.1
+		effect_tooltip = {
+			add_ideas = SEJ_youxianqilunuo2_idea
+		}
+	}
+}
+
+news_event = {#捣毁博丽神社
+	id = sej.30
+	title = sej.30.t
+	desc = sej.30.d
+###图片预留###picture = GFX_news_event_sej.30
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = sej.30.1
+		trigger = {
+			tag = SEJ
+		}
+	}
+
+	option = {
+		name = sej.30.2
+		trigger = {
+			tag = HKR
+		}
+	}
+
+	option = {
+		name = sej.30.3
+		trigger = {
+			not = {
+				tag = SEJ
+				tag = HKR
+			}
+		}
+	}
+}
+country_event = {#支援成美决议的提示（民工）
+	id = sej.31
+	title = sej.31.t
+	desc = sej.31.d
+###图片预留###picture = GFX_news_event_sej.31
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = sej.31.1
+		random_owned_controlled_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				is_core_of = ROOT
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+country_event = {#支援成美决议的提示（军工）
+	id = sej.32
+	title = sej.32.t
+	desc = sej.32.d
+###图片预留###picture = GFX_news_event_sej.32
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = sej.32.1
+		random_owned_controlled_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				is_core_of = ROOT
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+country_event = {#支援成美决议的提示（步枪）
+	id = sej.33
+	title = sej.33.t
+	desc = sej.33.d
+###图片预留###picture = GFX_news_event_sej.33
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = sej.33.1
+		effect_tooltip = {
+			add_equipment_to_stockpile = {
+				type = magic_core_a
+				amount = 200
+				producer = SEJ
+			}
+		}
+	}
+}
+
+country_event = {#支援成美决议的提示（炮）
+	id = sej.34
+	title = sej.34.t
+	desc = sej.34.d
+###图片预留###picture = GFX_news_event_sej.34
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = sej.34.1
+		effect_tooltip = {
+			add_equipment_to_stockpile = {
+				type = magic_energy_a
+				amount = 30
+				producer = SEJ
+			}
+		}
+	}
+}
+
+country_event = {#支援成美决议的提示（结盟）
+	id = sej.35
+	title = sej.35.t
+	desc = sej.35.d
+###图片预留###picture = GFX_news_event_sej.35
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = sej.35.1
+		effect_tooltip = {
+			SEJ = {
+				qiangjiemeng = yes
+			}
+		}
+	}
+}
+
+country_event = {#支援成美决议的提示（附庸）
+	id = sej.36
+	title = sej.36.t
+	desc = sej.36.d
+###图片预留###picture = GFX_news_event_sej.36
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = sej.36.1
+		effect_tooltip = {
+			FROM = {
+				ROOT = {
+					subject_level4 = yes
+				}
+			}
+		}
+	}
+}
+
+country_event = {#煽动每个种族的革命心（被煽动的国家）
+	id = sej.37
+	title = sej.37.t
+	desc = sej.37.d
+###图片预留###picture = GFX_news_event_sej.37
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = sej.37.1
+		effect_tooltip = {
+			add_timed_idea = {
+				idea = SEJ_shandonggemingxin_idea
+				days = 100
+			}
+		}
+	}
+}
+
+country_event = {#煽动每个种族的革命心（被宣战的国家）
+	id = sej.38
+	title = sej.38.t
+	desc = sej.38.d
+###图片预留###picture = GFX_news_event_sej.38
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = sej.38.1
+		effect_tooltip = {
+			add_dynamic_modifier = {
+				modifier = SEJ_shandonggemingxin_modifier
+			}
+		}
+	}
+}
+
+country_event = {#魔法森林共同建设方案（民工）（被建设的国家）
+	id = sej.39
+	title = sej.39.t
+	desc = sej.39.d
+###图片预留###picture = GFX_news_event_sej.39
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = sej.39.1
+
+		##为了显示
+		if = {
+			limit = {
+				check_variable = {
+					SEJ_mingongjianshecishu > 10
+				}
+			}
+			custom_effect_tooltip = SEJ_mofasenlinjianshefangan_hint_tt3
+		}
+		##为了显示
+
+		random_owned_controlled_state = {
+			limit = {
+				is_core_of = ROOT
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+country_event = {#魔法森林共同建设方案（军工）（被建设的国家）
+	id = sej.40
+	title = sej.40.t
+	desc = sej.40.d
+###图片预留###picture = GFX_news_event_sej.40
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = sej.40.1
+
+		##为了显示
+		if = {
+			limit = {
+				check_variable = {
+					SEJ_jungongjianshecishu > 10
+				}
+			}
+			custom_effect_tooltip = SEJ_mofasenlinjianshefangan_hint_tt3
+		}
+		##为了显示
+
+		random_owned_controlled_state = {
+			limit = {
+				is_core_of = ROOT
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+country_event = {#魔法森林共同建设方案&支援成美决议的（正邪&小碗）
+	id = sej.41
+	title = sej.41.t
+	desc = sej.41.d
+###图片预留###picture = GFX_news_event_sej.41
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = sej.41.1
+		custom_effect_tooltip = SEJ_passive_magician_decline_tt
+		if = {
+			limit = {
+				FROM = {
+					tag = NAR
+				}
+				SEJ = {
+					has_idea = SEJ_yuanzhumofasenlindegemingzhe_idea
+				}
+			}
+			SEJ = {
+				remove_ideas = SEJ_yuanzhumofasenlindegemingzhe_idea
+			}
+		}
+	}
+}
+
+country_event = {#和琪露诺加深联系（琪露诺）
+	id = sej.42
+	title = sej.42.t
+	desc = sej.42.d
+###图片预留###picture = GFX_news_event_sej.42
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = sej.42.1
+		add_timed_idea = {
+			idea = SEJ_heCIRjiashenlianxi_idea
+			days = 1000
+		}
+	}
+}
+
+country_event = {#密会八云紫（紫）
+	id = sej.43
+	title = sej.43.t
+	desc = sej.43.d
+###图片预留###picture = GFX_news_event_sej.43
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = sej.43.1
+		add_timed_idea = {
+			idea = SEJ_mihuizi_idea
+			days = 1000
+		}
+	}
+}
+
+country_event = {#删除内战无用的编制（正邪）
+	id = sej.44
+	title = sej.44.t
+	desc = sej.44.d
+###图片预留###picture = GFX_news_event_sej.44
+	fire_only_once = no
+	is_triggered_only = no
+	trigger = {
+		tag = SEJ
+		or = {
+			has_country_flag = SEJ_zujianpinbingtuan
+			has_country_flag = SEJ_touruhuizhenchengweidui
+			has_country_flag = SEJ_dongyongmofashidemopaobudui
+		}
+		not = {
+			has_war_with = NIB
+			has_war_with = RMI
+		}
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = sej.44.1
+		if = {
+			limit = {
+				has_country_flag = SEJ_zujianpinbingtuan
+			}
+			delete_unit_template_and_units = {
+				division_template = "民兵编制"
+				disband = no
+			}
+			clr_country_flag = SEJ_zujianpinbingtuan
+		}
+		if = {
+			limit = {
+				has_country_flag = SEJ_touruhuizhenchengweidui
+			}
+			delete_unit_template_and_units = {
+				division_template = "辉针城卫兵编制"
+				disband = no
+			}
+			clr_country_flag = SEJ_touruhuizhenchengweidui
+		}
+		if = {
+			limit = {
+				has_country_flag = SEJ_dongyongmofashidemopaobudui
+			}
+			delete_unit_template_and_units = {
+				division_template = "魔法使魔炮支援编制"
+				disband = no
+			}
+			clr_country_flag = SEJ_dongyongmofashidemopaobudui
+		}
+	}
+}
+news_event = {#辉针城爆炸案
+	id = sej.45
+	title = sej.45.t
+	desc = sej.45.d
+###图片预留###picture = GFX_news_event_sej.45
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = sej.45.1
+		trigger = {
+			tag = SEJ
+		}
+	}
+
+	option = {
+		name = sej.45.2
+		trigger = {
+			tag = CIR
+		}
+	}
+
+	option = {
+		name = sej.45.3
+		trigger = {
+			or = {
+				tag = NIB
+				tag = RMI
+			}
+		}
+	}
+
+	option = {
+		name = sej.45.4
+		trigger = {
+			not = {
+				tag = SEJ
+				tag = CIR
+				tag = NIB
+				tag = RMI
+			}
+		}
+	}
+}
+news_event = {#辉针城政变
+	id = sej.46
+	title = sej.46.t
+	desc = sej.46.d
+###图片预留###picture = GFX_news_event_sej.46
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = sej.46.1
+		trigger = {
+			tag = SEJ
+		}
+	}
+
+	option = {
+		name = sej.46.2
+		trigger = {
+			tag = CIR
+		}
+	}
+
+	option = {
+		name = sej.46.3
+		trigger = {
+			or = {
+				tag = NIB
+				tag = RMI
+			}
+		}
+	}
+
+	option = {
+		name = sej.46.4
+		trigger = {
+			not = {
+				tag = SEJ
+				tag = CIR
+				tag = NIB
+				tag = RMI
+			}
+		}
+	}
+}
+# news_event = {#暂时的停战
+# 	id = sej.47
+# 	title = sej.47.t
+# 	desc = sej.47.d
+# ###图片预留###picture = GFX_news_event_sej.47
+# 	major = yes
+# 	fire_only_once = no
+# 	is_triggered_only = yes
+
+# 	immediate = {
+
+# 	}
+
+# 	option = {
+# 		name = sej.47.1
+# 		trigger = {
+# 			tag = SEJ
+# 		}
+# 	}
+
+# 	option = {
+# 		name = sej.47.2
+# 		trigger = {
+# 			tag = CIR
+# 		}
+# 	}
+
+# 	option = {
+# 		name = sej.47.3
+# 		trigger = {
+# 			or = {
+# 				tag = NIB
+# 				tag = RMI
+# 			}
+# 		}
+# 	}
+
+# 	option = {
+# 		name = sej.47.4
+# 		trigger = {
+# 			not = {
+# 				tag = SEJ
+# 				tag = CIR
+# 				tag = NIB
+# 				tag = RMI
+# 			}
+# 		}
+# 	}
+# }
+country_event = {#割据势力选择
+	id = sej.48
+	title = sej.48.t
+	desc = sej.48.d
+###图片预留###picture = GFX_news_event_sej.48
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = sej.48.1
+		country_lock_all_division_template = no
+	}
+	option = {
+		name = sej.48.2
+		country_lock_all_division_template = no
+		RMI = {
+			change_tag_from = ROOT
+		}
+		trigger = {
+			RMI = {
+				has_war_with = ROOT
+			}
+		}
+	}
+	option = {
+		name = sej.48.3
+		country_lock_all_division_template = no
+		NIB = {
+			change_tag_from = ROOT
+		}
+		trigger = {
+			NIB = {
+				has_war_with = ROOT
+			}
+		}
+	}
+}
+# country_event = {#内战对莉格露的处置
+# 	id = sej.49
+# 	title = sej.49.t
+# 	desc = sej.49.d
+# ###图片预留###picture = GFX_news_event_sej.49
+# 	fire_only_once = no
+# 	is_triggered_only = yes
+
+# 	option = {
+# 		name = sej.49.1
+
+# 	}
+
+# 	option = {
+# 		name = sej.49.2
+
+# 	}
+# }
+
+# country_event = {#内战对露米娅的处置
+# 	id = sej.50
+# 	title = sej.50.t
+# 	desc = sej.50.d
+# ###图片预留###picture = GFX_news_event_sej.50
+# 	fire_only_once = no
+# 	is_triggered_only = yes
+
+# 	option = {
+# 		name = sej.50.1
+
+# 	}
+
+# 	option = {
+# 		name = sej.50.2
+
+# 	}
+# }
+
+news_event = {#正邪VS莉格露（正邪胜利）
+	id = sej.51
+	title = sej.51.t
+	desc = sej.51.d
+###图片预留###picture = GFX_news_event_sej.51
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = sej.51.1
+		trigger = {
+			tag = SEJ
+		}
+	}
+
+	option = {
+		name = sej.51.2
+		trigger = {
+			tag = YKR
+		}
+	}
+
+	option = {
+		name = sej.51.3
+		trigger = {
+			tag = CIR
+		}
+	}
+
+	option = {
+		name = sej.51.4
+		trigger = {
+			not = {
+				tag = CIR
+				tag = SEJ
+				tag = YKR
+			}
+		}
+	}
+
+}
+
+news_event = {#正邪VS莉格露（莉格露胜利）
+	id = sej.52
+	title = sej.52.t
+	desc = sej.52.d
+###图片预留###picture = GFX_news_event_sej.52
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = sej.52.1
+		trigger = {
+			tag = NIB
+		}
+	}
+
+	option = {
+		name = sej.52.2
+		trigger = {
+			tag = YKR
+		}
+	}
+
+	option = {
+		name = sej.52.3
+		trigger = {
+			tag = CIR
+		}
+	}
+
+	option = {
+		name = sej.52.4
+		trigger = {
+			not = {
+				tag = CIR
+				tag = NIB
+				tag = YKR
+			}
+		}
+	}
+
+}
+
+news_event = {#小碗VS露米娅（小碗胜利）
+	id = sej.53
+	title = sej.53.t
+	desc = sej.53.d
+###图片预留###picture = GFX_news_event_sej.53
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = sej.53.1
+		trigger = {
+			tag = SEJ
+		}
+	}
+
+	option = {
+		name = sej.53.2
+		trigger = {
+			tag = YKR
+		}
+	}
+
+	option = {
+		name = sej.53.3
+		trigger = {
+			tag = CIR
+		}
+	}
+
+	option = {
+		name = sej.53.4
+		trigger = {
+			not = {
+				tag = CIR
+				tag = SEJ
+				tag = YKR
+			}
+		}
+	}
+
+}
+
+news_event = {#小碗VS露米娅（露米娅胜利）
+	id = sej.54
+	title = sej.54.t
+	desc = sej.54.d
+###图片预留###picture = GFX_news_event_sej.54
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = sej.54.1
+		trigger = {
+			tag = RMI
+		}
+	}
+
+	option = {
+		name = sej.54.2
+		trigger = {
+			tag = YKR
+		}
+	}
+
+	option = {
+		name = sej.54.3
+		trigger = {
+			tag = CIR
+		}
+	}
+
+	option = {
+		name = sej.54.4
+		trigger = {
+			not = {
+				tag = CIR
+				tag = RMI
+				tag = YKR
+			}
+		}
+	}
+
+}
+
+news_event = {#强制和平停战
+	id = sej.55
+	title = sej.55.t
+	desc = sej.55.d
+###图片预留###picture = GFX_news_event_sej.55
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = sej.55.1
+		trigger = {
+			or = {
+				tag = SEJ
+				tag = NIB
+				tag = RMI
+			}
+		}
+	}
+
+	option = {
+		name = sej.55.2
+		trigger = {
+			tag = YKR
+		}
+	}
+
+	option = {
+		name = sej.55.3
+		trigger = {
+			not = {
+				tag = SEJ
+				tag = NIB
+				tag = RMI
+				tag = YKR
+			}
+		}
+	}
+
+}
+
+country_event = { #第一平叛后，给叛乱地块加精神
+	id = sej.56
+	title = sej.56.t
+	desc = sej.56.d
+###图片预留###picture = GFX_news_event_sej.56
+	fire_only_once = yes
+	is_triggered_only = no
+
+	mean_time_to_happen = {
+		days = 2
+	}
+	trigger = {
+		tag = SEJ
+		has_completed_focus = SEJ_neizhandekaishi
+		or = {
+			not = {
+				country_exists = NIB
+				country_exists = RMI
+			}
+			NIB = {
+				is_subject = yes
+			}
+			RMI = {
+				is_subject = yes
+			}
+		}
+	}
+
+	option = {
+		name = sej.56.1
+		set_global_flag = SEJ_civil_war_win
+		if = {
+			limit = {
+				has_completed_focus = SEJ_huizhenchengzhengbian
+			}
+			set_global_flag = {
+				flag = SEJ_sej_ready_to_esacpe
+				days = 730
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				country_exists = NIB
+			}
+			annex_country = {
+				target = NIB
+			}
+		}
+		if = {
+			limit = {
+				country_exists = RMI
+			}
+			annex_country = {
+				target = RMI
+			}
+		}
+		if = {
+			limit = {
+				has_completed_focus = SEJ_huizhenchengzhengbian
+			}
+			every_owned_state = {
+				limit = {
+					is_core_of = RMI
+				}
+				add_dynamic_modifier = {
+					modifier = SEJ_after_civil_war_modifier
+				}
+				add_core_of = ROOT
+			}
+		}
+		if = {
+			limit = {
+				has_completed_focus = SEJ_baozhaan
+			}
+			every_owned_state = {
+				limit = {
+					is_core_of = NIB
+				}
+				add_dynamic_modifier = {
+					modifier = SEJ_after_civil_war_modifier
+				}
+				add_core_of = ROOT
+			}
+		}
+	}
+}

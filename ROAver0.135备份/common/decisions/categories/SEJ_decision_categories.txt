@@ -1,0 +1,31 @@
+SEJ_pingluan_category = { #平乱决议组
+	priority = 20
+}
+SEJ_xiaozhuijiaqiang_category = {
+	priority = 20
+}
+SEJ_dihouhuodong_category = {
+	priority = 20
+}
+SEJ_zhiyuanchengmei_category = {
+	priority = 20
+}
+SEJ_shandonggeming_category = {
+	priority = 20
+}
+SEJ_mofasenlinjianshefangan_category = {
+	priority = 20
+}
+SEJ_civilwar_category = {
+	priority = 20
+}
+# NMS_chongzheng_category = {
+# 	priority = 20
+# 	visible_when_empty = yes
+# 	visible = {
+# 		tag = NMS
+# 		not = {
+# 			has_country_flag = NMS_wending
+# 		}
+# 	}
+# }

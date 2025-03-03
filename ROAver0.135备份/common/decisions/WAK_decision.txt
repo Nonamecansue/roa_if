@@ -1,0 +1,71 @@
+WAK_yuwuzhihugongheguodehezuo = { #与雾之湖共和国的合作
+    WAK_junshihezuo = { #军事合作
+        icon = generic_political_actions
+
+        visible = { has_country_flag = hewuzhihugongheguodehezuo }
+
+        fire_only_once = yes
+       
+        available = { has_army_experience > 40 }
+       
+        cost = 1
+
+        complete_effect = {
+            if = {
+                limit = { 
+                    SCA  = { has_idea = SCA_disloyal_Officer_idea_1 }
+                }
+                SCA = { remove_ideas = { SCA_disloyal_Officer_idea_1 } }
+                else = { army_experience = 30 }
+            }
+    }
+          ai_will_do = {
+            factor = 100
+        }
+    }
+    WAK_gongyehezuo = { #工业合作
+        icon = generic_political_actions
+
+        visible = { has_country_flag = hewuzhihugongheguodehezuo }
+
+        fire_only_once = yes
+
+        available = { always = yes }
+
+        cost = 1
+
+        complete_effect = {
+            165 = {
+              remove_building = {
+                type = arms_factory
+                level = 3
+              }							
+            }
+            
+            122 = {
+              remove_building = {
+                type = arms_factory
+                level = 3
+              }							
+            }
+            }
+            ai_will_do = {
+            factor = 100
+            }
+         }
+    WAK_jichusheshihezuo = { #基础设施合作
+        icon = generic_political_actions
+
+        visible = { has_country_flag = hewuzhihugongheguodehezuo }
+
+        fire_only_once = yes
+
+        available = { always = yes }
+
+        cost = 1
+        complete_effect = {
+            ROOT = { add_ideas = bianlidewuzhihu }
+            SCA = { add_ideas = bianlidewuzhihu }
+        }
+    }
+}

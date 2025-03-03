@@ -1,0 +1,39 @@
+
+state={
+	id=131
+	name="STATE_131"
+
+	history={
+		143.7.1 = {
+			owner = PRI
+			add_core_of = PRI
+			buildings = {
+				infrastructure = 3
+				industrial_complex = 0
+				arms_factory = 0
+
+			}
+
+		}
+		146.1.1 = {
+			owner = PRI
+			add_core_of = PRI
+			buildings = {
+				infrastructure = 3
+				industrial_complex = 0
+				arms_factory = 0
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		217 1043 1421 1975 2518 5449 7282 
+	}
+	manpower=30012
+	buildings_max_level_factor=1.000
+	state_category=s2
+	local_supplies=2.500
+}

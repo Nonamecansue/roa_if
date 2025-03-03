@@ -1,0 +1,707 @@
+#defined_text = {
+#	name = GetLTSTianzizhilu
+#	text = {
+#		trigger = {
+#			check_variable = { GetLTSTianzizhilu_difang = 0 }
+#		}
+#		localization_key = GetLTSTianzizhilu_key.0
+#	}
+#}
+defined_text = {
+	name = TES_seat_party
+	text = {
+		trigger = {
+			check_variable = { TES_seat_frame^seat_idx = 1 }
+		}
+		localization_key = TES_party_1
+	}
+    text = {
+		trigger = {
+			check_variable = { TES_seat_frame^seat_idx = 2 }
+		}
+		localization_key = TES_party_2
+	}
+    text = {
+		trigger = {
+			check_variable = { TES_seat_frame^seat_idx = 3 }
+		}
+		localization_key = TES_party_3
+	}
+    text = {
+		trigger = {
+			check_variable = { TES_seat_frame^seat_idx = 4 }
+		}
+		localization_key = TES_party_4
+	}
+	text = {
+		trigger = {
+			check_variable = { TES_seat_frame^seat_idx = 5 }
+		}
+		localization_key = TES_party_5
+	}
+}
+defined_text = {
+	name = GetTES_tianting_huiyi_yiti
+	text = {
+		trigger = {
+			has_country_flag = dangqianmeiyouyiti
+		}
+		localization_key = yihui_meiyou
+	}
+}
+defined_text = {
+	name = GetTES_tianting_huiyi_yiti_yuce
+	text = {
+		trigger = {
+			check_variable = {
+				tianting_zhichi > tianting_fandui
+			}
+		}
+		localization_key = yihui_jiance_tongguo
+	}
+	text = {
+		trigger = {
+			OR = {
+				check_variable = {
+					tianting_zhichi > tianting_fandui
+				}
+				check_variable = {
+					tianting_zhichi = tianting_fandui
+				}
+			}
+		}
+		localization_key = yihui_jiance_meiyoutongguo
+	}
+}
+defined_text = {
+	name = GetTES_xuanjulxz
+	text = {
+		trigger = {
+			if = {
+				limit = {
+					check_variable = {
+						Tenshi_yxl > iku_yxl
+					}
+				}
+				check_variable = { 
+					tianziyingxiangzhi > 12
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						Tenshi_yxl < iku_yxl
+					}	
+				}
+				check_variable = { 
+					yijiuyingxiangzhi < -2
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						Tenshi_yxl = iku_yxl
+					}
+				}
+				check_variable = { 
+					xiaongtongyingxiangli = 114
+				}
+			}
+		}
+		localization_key = GetTES_xuanjulxz_1
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = {
+					check_variable = {
+						Tenshi_yxl > iku_yxl
+					}
+				}
+				check_variable = {
+					tianziyingxiangzhi < 10
+				}
+				check_variable = {
+					tianziyingxiangzhi > -1
+				}
+			} 
+			else_if = {
+				limit = {
+					check_variable = {
+						Tenshi_yxl < iku_yxl
+					}	
+				}
+				check_variable = { 
+					yijiuyingxiangzhi > -1
+				}
+				check_variable = {
+					yijiuyingxiangzhi < 11
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						Tenshi_yxl = iku_yxl
+					}
+				}
+				check_variable = {
+					xiaongtongyingxiangli = 0
+				}
+			}
+		}
+		localization_key = GetTES_xuanjulxz_2
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = {
+					check_variable = {
+						Tenshi_yxl > iku_yxl
+					}
+				}
+				check_variable = { 
+					tianziyingxiangzhi < -2
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						Tenshi_yxl < iku_yxl
+					}	
+				}
+				check_variable = { 
+					yijiuyingxiangzhi > 12
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						Tenshi_yxl = iku_yxl
+					}
+				}
+				check_variable = { 
+					xiaongtongyingxiangli = 114
+				}
+			}
+		}
+		localization_key = GetTES_xuanjulxz_3
+	}
+}
+defined_text = {
+	name = GetTES_panluanorno
+	text = {
+		trigger = {
+			if = {
+				limit = {
+					has_country_flag = yaojingpanluankaishi
+				}
+			}
+		}
+		localization_key = GetTES_panluanorno_1
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = {
+					has_country_flag = heyaojinghezuo
+				}
+			}
+		}
+		localization_key = GetTES_panluanorno_2
+	}
+}
+defined_text = {
+	name = GetTES_zhongzushili
+	text = {
+		trigger = {
+			if = {
+				limit = {
+					has_country_flag = deities_xuanzhong
+				}
+				check_variable = {
+					tianren_shili = 1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = goblin_xuanzhong
+				}
+				check_variable = {
+					yaojing_shili = 1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = monster_d_xuanzhong
+				}
+				check_variable = {
+					diyuyaoguai_shili = 1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = monster_i_xuanzhong
+				}
+				check_variable = {
+					tianjieyaoguai_shili = 1
+				}
+			}
+		}
+		localization_key = GetTES_zhongzushili_1
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = {
+					has_country_flag = deities_xuanzhong
+				}
+				check_variable = {
+					tianren_shili = 2
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = goblin_xuanzhong
+				}
+				check_variable = {
+					yaojing_shili = 2
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = monster_d_xuanzhong
+				}
+				check_variable = {
+					diyuyaoguai_shili = 2
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = monster_i_xuanzhong
+				}
+				check_variable = {
+					tianjieyaoguai_shili = 2
+				}
+			}
+		}
+		localization_key = GetTES_zhongzushili_2
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = {
+					has_country_flag = deities_xuanzhong
+				}
+				check_variable = {
+					tianren_shili = 3
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = goblin_xuanzhong
+				}
+				check_variable = {
+					yaojing_shili = 3
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = monster_d_xuanzhong
+				}
+				check_variable = {
+					diyuyaoguai_shili = 3
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = monster_i_xuanzhong
+				}
+				check_variable = {
+					tianjieyaoguai_shili = 3
+				}
+			}
+		}
+		localization_key = GetTES_zhongzushili_3
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = {
+					has_country_flag = deities_xuanzhong
+				}
+				check_variable = {
+					tianren_shili = 4
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = goblin_xuanzhong
+				}
+				check_variable = {
+					yaojing_shili = 4
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = monster_d_xuanzhong
+				}
+				check_variable = {
+					diyuyaoguai_shili = 4
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = monster_i_xuanzhong
+				}
+				check_variable = {
+					tianjieyaoguai_shili = 4
+				}
+			}
+		}
+		localization_key = GetTES_zhongzushili_4
+	}
+}
+defined_text = {
+	name = GetTES_zhengfuguanxi
+	text = {
+		trigger = {
+			if = {
+				limit = {
+					has_country_flag = deities_xuanzhong
+				}
+				check_variable = {
+					tianren_guanxi = 1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = goblin_xuanzhong
+				}
+				check_variable = {
+					yaojing_guanxi = 1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = monster_d_xuanzhong
+				}
+				check_variable = {
+					diyuyaoguai_guanxi = 1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = monster_i_xuanzhong
+				}
+				check_variable = {
+					tianjieyaoguai_guanxi = 1
+				}
+			}
+		}
+		localization_key = GetTES_zhengfuguanxi_1
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = {
+					has_country_flag = deities_xuanzhong
+				}
+				check_variable = {
+					tianren_guanxi = 2
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = goblin_xuanzhong
+				}
+				check_variable = {
+					yaojing_guanxi = 2
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = monster_d_xuanzhong
+				}
+				check_variable = {
+					diyuyaoguai_guanxi = 2
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = monster_i_xuanzhong
+				}
+				check_variable = {
+					tianjieyaoguai_guanxi = 2
+				}
+			}
+		}
+		localization_key = GetTES_zhengfuguanxi_2
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = {
+					has_country_flag = deities_xuanzhong
+				}
+				check_variable = {
+					tianren_guanxi = 3
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = goblin_xuanzhong
+				}
+				check_variable = {
+					yaojing_guanxi = 3
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = monster_d_xuanzhong
+				}
+				check_variable = {
+					diyuyaoguai_guanxi = 3
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = monster_i_xuanzhong
+				}
+				check_variable = {
+					tianjieyaoguai_guanxi = 3
+				}
+			}
+		}
+		localization_key = GetTES_zhengfuguanxi_3
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = {
+					has_country_flag = deities_xuanzhong
+				}
+				check_variable = {
+					tianren_guanxi = 4
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = goblin_xuanzhong
+				}
+				check_variable = {
+					yaojing_guanxi = 4
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = monster_d_xuanzhong
+				}
+				check_variable = {
+					diyuyaoguai_guanxi = 4
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = monster_i_xuanzhong
+				}
+				check_variable = {
+					tianjieyaoguai_guanxi = 4
+				}
+			}
+		}
+		localization_key = GetTES_zhengfuguanxi_4
+	}
+	text = {
+		trigger = {
+			if = {
+				limit = {
+					has_country_flag = deities_xuanzhong
+				}
+				check_variable = {
+					tianren_guanxi = 5
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = goblin_xuanzhong
+				}
+				check_variable = {
+					yaojing_guanxi = 5
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = monster_d_xuanzhong
+				}
+				check_variable = {
+					diyuyaoguai_guanxi = 5
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = monster_i_xuanzhong
+				}
+				check_variable = {
+					tianjieyaoguai_guanxi = 5
+				}
+			}
+		}
+		localization_key = GetTES_zhengfuguanxi_5
+	}
+}
+defined_text = {
+	name = GetTES_weibuzudao
+	text = {
+		trigger = {
+			has_country_flag = deities_xuanzhong
+			check_variable = {
+				tianren_shili = 1
+			}
+		}
+		localization_key = GetTES_weibuzudao_1
+	}
+	text = {
+		trigger = {
+			has_country_flag = goblin_xuanzhong
+			check_variable = {
+				yaojing_shili = 1
+			}
+		}
+		localization_key = GetTES_weibuzudao_2
+	}
+	text = {
+		trigger = {
+			has_country_flag = monster_d_xuanzhong
+			check_variable = {
+				diyuyaoguai_shili = 1
+			}
+		}
+		localization_key = GetTES_weibuzudao_3
+	}
+	text = {
+		trigger = {
+			has_country_flag = monster_i_xuanzhong
+			check_variable = {
+				tianjieyaoguai_shili = 1
+			}
+		}
+		localization_key = GetTES_weibuzudao_4
+	}
+}
+defined_text = {
+	name = GetTES_shidanlibo
+	text = {
+		trigger = {
+			has_country_flag = deities_xuanzhong
+			check_variable = {
+				tianren_shili = 2
+			}
+		}
+		localization_key = GetTES_shidanlibo_1
+	}
+	text = {
+		trigger = {
+			has_country_flag = goblin_xuanzhong
+			check_variable = {
+				yaojing_shili = 2
+			}
+		}
+		localization_key = GetTES_shidanlibo_2
+	}
+	text = {
+		trigger = {
+			has_country_flag = monster_d_xuanzhong
+			check_variable = {
+				diyuyaoguai_shili = 2
+			}
+		}
+		localization_key = GetTES_shidanlibo_3
+	}
+	text = {
+		trigger = {
+			has_country_flag = monster_i_xuanzhong
+			check_variable = {
+				tianjieyaoguai_shili = 2
+			}
+		}
+		localization_key = GetTES_shidanlibo_4
+	}
+}
+defined_text = {
+	name = GetTES_xiaoyoushili
+	text = {
+		trigger = {
+			has_country_flag = deities_xuanzhong
+			check_variable = {
+				tianren_shili = 3
+			}
+		}
+		localization_key = GetTES_xiaoyoushili_1
+	}
+	text = {
+		trigger = {
+			has_country_flag = goblin_xuanzhong
+			check_variable = {
+				yaojing_shili = 3
+			}
+		}
+		localization_key = GetTES_xiaoyoushili_2
+	}
+	text = {
+		trigger = {
+			has_country_flag = monster_d_xuanzhong
+			check_variable = {
+				diyuyaoguai_shili = 3
+			}
+		}
+		localization_key = GetTES_xiaoyoushili_3
+	}
+	text = {
+		trigger = {
+			has_country_flag = monster_i_xuanzhong
+			check_variable = {
+				tianjieyaoguai_shili = 3
+			}
+		}
+		localization_key = GetTES_xiaoyoushili_4
+	}
+}
+defined_text = {
+	name = GetTES_shibukedang
+	text = {
+		trigger = {
+			has_country_flag = deities_xuanzhong
+			check_variable = {
+				tianren_shili = 4
+			}
+		}
+		localization_key = GetTES_shibukedang_1
+	}
+	text = {
+		trigger = {
+			has_country_flag = goblin_xuanzhong
+			check_variable = {
+				yaojing_shili = 4
+			}
+		}
+		localization_key = GetTES_shibukedang_2
+	}
+	text = {
+		trigger = {
+			has_country_flag = monster_d_xuanzhong
+			check_variable = {
+				diyuyaoguai_shili = 4
+			}
+		}
+		localization_key = GetTES_shibukedang_3
+	}
+	text = {
+		trigger = {
+			has_country_flag = monster_i_xuanzhong
+			check_variable = {
+				tianjieyaoguai_shili = 4
+			}
+		}
+		localization_key = GetTES_shibukedang_4
+	}
+}

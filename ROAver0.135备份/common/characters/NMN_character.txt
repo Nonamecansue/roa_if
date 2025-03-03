@@ -1,0 +1,75 @@
+characters={
+	NMN_nmn ={
+		name = NMN_nmn
+		portraits={
+			civilian={
+				large="gfx/leaders/NMN/NMN_nmn.dds"
+				small="gfx/leaders/NMN/NMN_nmn_small.dds"
+			}
+			army = {
+				large="gfx/leaders/NMN/NMN_nmn.dds"
+				small="gfx/leaders/NMN/NMN_nmn_small.dds"
+			}
+		}
+		field_marshal = {
+            traits = {  th_original_character th_character  th_trait_chongjizhuanjia  }
+            attack_skill = 4
+            defense_skill = 8
+            planning_skill = 3
+            logistics_skill = 2
+            
+            skill = 5
+        }
+		advisor = {
+			slot = character_coop
+			idea_token = NMN_nmn
+			name = NMN_nmn
+			cost = 200
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				production_speed_bunker_factor = 0.4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	NMN_nmn_leader ={
+		name = NMN_nmn_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/NMN/NMN_nmn.dds"
+				small="gfx/leaders/NMN/NMN_nmn_small.dds"
+			}
+			army = {
+				large="gfx/leaders/NMN/NMN_nmn.dds"
+				small="gfx/leaders/NMN/NMN_nmn_small.dds"
+			}
+		}
+		country_leader={
+			ideology=qinwai_type
+			id=-1
+		}
+		country_leader={
+			ideology=guli_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldorder_type
+			id=-1
+		}
+		country_leader={
+			ideology=fandong_type
+			id=-1
+		}
+		country_leader={
+			ideology=neworder_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldgenso_type
+			id=-1
+		}
+	}
+}

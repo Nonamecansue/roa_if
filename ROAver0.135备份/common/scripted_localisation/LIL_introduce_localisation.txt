@@ -1,0 +1,106 @@
+defined_text = { 
+	name = LIL_gemingbai_loc
+	text = {
+		trigger = {
+			LIL = {
+				NOT = {
+					has_country_flag = LIL_yaoqingemingbai_flag
+				}
+			}
+		}
+		localization_key = LIL_gemingbai_loc_1
+	}
+	text = {
+		trigger = {
+			LIL = {
+				has_country_flag = LIL_yaoqingemingbai_flag
+			}
+		}
+		localization_key = LIL_gemingbai_loc_2
+	}
+}
+defined_text = { 
+	name = LIL_jinbupai_loc
+	text = {
+		trigger = {
+			LIL = {
+				NOT = {
+					has_country_flag = LIL_yaoqinjinbubai_flag
+				}
+			}
+		}
+		localization_key = LIL_jinbupai_loc_1
+	}
+	text = {
+		trigger = {
+			LIL = {
+				has_country_flag = LIL_yaoqinjinbubai_flag
+			}
+		}
+		localization_key = LIL_jinbupai_loc_2
+	}
+}
+defined_text = { 
+	name = LIL_chongbaizhe_loc
+	text = {
+		trigger = {
+			LIL = {
+				NOT = {
+					has_country_flag = LIL_yaoqinchongbaizhe_flag
+				}
+			}
+		}
+		localization_key = LIL_chongbaizhe_loc_1
+	}
+	text = {
+		trigger = {
+			LIL = {
+				has_country_flag = LIL_yaoqinchongbaizhe_flag
+			}
+		}
+		localization_key = LIL_chongbaizhe_loc_2
+	}
+}
+defined_text = { 
+	name = LIL_baoshipai_loc
+	text = {
+		trigger = {
+			LIL = {
+				NOT = {
+					has_country_flag = LIL_yaoqinbaoshobai_flag
+				}
+			}
+		}
+		localization_key = LIL_baoshipai_loc_1
+	}
+	text = {
+		trigger = {
+			LIL = {
+				has_country_flag = LIL_yaoqinbaoshobai_flag
+			}
+		}
+		localization_key = LIL_baoshipai_loc_2
+	}
+}
+defined_text = { 
+	name = LIL_huahaigeshe_loc
+	text = {
+		trigger = {
+			LIL = {
+				NOT = {
+					has_country_flag = LIL_yaoqinhuahaigeshe_flag
+				}
+			}
+		}
+		localization_key = LIL_huahaigeshe_loc_1
+	}
+	text = {
+		trigger = {
+			LIL = {
+				has_country_flag = LIL_yaoqinhuahaigeshe_flag
+			}
+		}
+		localization_key = LIL_huahaigeshe_loc_2
+	}
+}
+

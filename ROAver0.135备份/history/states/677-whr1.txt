@@ -1,0 +1,32 @@
+state={
+	id=677
+	name="STATE_677"
+	provinces={
+		1634 2765 3850 3852 3856 
+	}
+	resources={
+		powder=5.000
+		metal=0.000
+		gas=5.000
+		crystal=0.000
+	}
+
+	history={
+		146.1.1 = {
+			owner = WHR
+			add_core_of = WHR
+			buildings = {
+				infrastructure = 3
+				industrial_complex = 0
+				arms_factory = 0
+
+			}
+
+		}
+
+	}
+	manpower=988
+	state_category=s5
+	buildings_max_level_factor=1.000
+	local_supplies=2.50
+}

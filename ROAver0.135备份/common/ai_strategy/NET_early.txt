@@ -1,0 +1,48 @@
+# unit_base is the base value used for evaluating how important it is to deploy the various categories
+# Written by Henrik "Groogy" Hansson
+#AI 倾向
+
+NET_civil_war = {
+	 enable = {
+		or = {
+			country_exists = NG1
+			country_exists = NG2
+			country_exists = NG3
+			country_exists = NG4
+		}
+		or = {
+			tag = NG1
+			tag = NG2
+			tag = NG3
+			tag = NG4
+		}
+	 }
+	 abort = {
+	 	not = {
+			country_exists = NG1
+			country_exists = NG2
+			country_exists = NG3
+			country_exists = NG4
+		}
+	 }
+	 ai_strategy = {
+		 type = antagonize
+		 id = NG1
+		 value = 100000
+	 }
+	 ai_strategy = {
+		 type = antagonize
+		 id = NG2
+		 value = 100000
+	 }
+	 ai_strategy = {
+		 type = antagonize
+		 id = NG3
+		 value = 100000
+	 }
+	 ai_strategy = {
+		 type = antagonize
+		 id = NG4
+		 value = 100000
+	 }
+}

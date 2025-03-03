@@ -1,0 +1,29 @@
+bookmarks = {
+	bookmark = {
+		name = "scenario140_NAME"
+		desc = "scenario140_DESCS"
+		date = 140.4.6.7
+		picture = "GFX_Scenario140"
+		default_country = "SEJ"
+		default = no
+		
+
+		# "--0"={
+			# history = "JINYONG_DESC"
+			# ideas = { 
+			# }
+		# }
+		
+		"SEJ"={
+			history = "SEJ_scnario140_DESC"
+			ideas = { 
+			}
+		}
+
+		
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

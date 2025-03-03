@@ -1,0 +1,175 @@
+characters={
+	OKI_oki ={
+		name = OKI_oki
+		portraits={
+			civilian={
+				large="gfx/leaders/OKI/OKI_oki.dds"
+				small="gfx/leaders/OKI/OKI_oki_small.dds"
+			}
+			army = {
+				large="gfx/leaders/OKI/OKI_oki.dds"
+				small="gfx/leaders/OKI/OKI_oki_small.dds"
+			}
+		}
+		field_marshal = {
+            traits = {  th_original_character th_character  th_trait_moulvedashi th_trait_dayaoguai old_guard th_trait_shiyingjianxi }
+            attack_skill = 5
+            defense_skill = 5
+            planning_skill = 5
+            logistics_skill = 6
+            
+            skill = 12
+        }
+		advisor = {
+			slot = character_coop
+			idea_token = OKI_oki
+			name = OKI_oki
+			cost = 200
+			modifier = {
+				army_artillery_attack_factor = 0.15
+				army_artillery_defence_factor = 0.15
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	OKI_mai ={
+		name = OKI_mai
+		portraits={
+			civilian={
+				large="gfx/leaders/OKI/OKI_mai.dds"
+				small="gfx/leaders/OKI/OKI_mai_small.dds"
+			}
+			army = {
+				large="gfx/leaders/OKI/OKI_mai.dds"
+				small="gfx/leaders/OKI/OKI_mai_small.dds"
+			}
+		}
+		corps_commander = {
+            traits = {  th_original_character th_character  th_trait_huoqiangzhuanjia th_trait_shiyingjianxi }
+            attack_skill = 2
+            defense_skill = 4
+            planning_skill = 2
+            logistics_skill = 5
+            
+            skill = 4
+        }
+		advisor = {
+			slot = character_coop
+			idea_token = OKI_mai
+			name = OKI_mai
+			cost = 200
+			modifier = {
+				PO_good_influence_factor = 0.3
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	OKI_satono ={
+		name = OKI_satono
+		portraits={
+			civilian={
+				large="gfx/leaders/OKI/OKI_satono.dds"
+				small="gfx/leaders/OKI/OKI_satono_small.dds"
+			}
+			army = {
+				large="gfx/leaders/OKI/OKI_satono.dds"
+				small="gfx/leaders/OKI/OKI_satono_small.dds"
+			}
+		}
+		corps_commander = {
+            traits = {  th_original_character th_character  th_trait_huoqiangzhuanjia th_trait_shiyingjianxi }
+            attack_skill = 5
+            defense_skill = 2
+            planning_skill = 2
+            logistics_skill = 4
+            
+            skill = 4
+        }
+		advisor = {
+			slot = character_coop
+			idea_token = OKI_satono
+			name = OKI_satono
+			cost = 200
+			modifier = {
+				army_org_factor = 0.15
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	OKI_kikuri ={
+		name = OKI_kikuri
+		portraits={
+			civilian={
+				large="gfx/leaders/OKI/OKI_kikuri.dds"
+				small="gfx/leaders/OKI/OKI_kikuri_small.dds"
+			}
+			army = {
+				large="gfx/leaders/OKI/OKI_kikuri.dds"
+				small="gfx/leaders/OKI/OKI_kikuri_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { th_character th_original_character trait_cautious th_trait_shiyingjianxi }
+			skill = 8
+			attack_skill = 7
+			defense_skill = 8
+			planning_skill = 6
+			logistics_skill = 7
+		}
+		advisor = {
+			slot = character_coop
+			idea_token = OKI_kikuri
+			name = OKI_kikuri
+			cost = 200
+			modifier = {
+				decryption = 5
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	OKI_oki_leader ={
+		name = OKI_oki_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/OKI/OKI_oki.dds"
+				small="gfx/leaders/OKI/OKI_oki_small.dds"
+			}
+			army = {
+				large="gfx/leaders/OKI/OKI_oki.dds"
+				small="gfx/leaders/OKI/OKI_oki_small.dds"
+			}
+		}
+		country_leader={
+			ideology=qinwai_type
+			id=-1
+		}
+		country_leader={
+			ideology=guli_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldorder_type
+			id=-1
+		}
+		country_leader={
+			ideology=fandong_type
+			id=-1
+		}
+		country_leader={
+			ideology=neworder_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldgenso_type
+			id=-1
+		}
+	}
+}

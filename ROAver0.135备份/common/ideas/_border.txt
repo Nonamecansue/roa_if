@@ -1,0 +1,101 @@
+ideas = {
+
+	border_policy = { 
+		law = yes
+		loose_border = {
+
+		    available = {
+		       has_country_flag = {
+		          flag = openvalue
+		          value > 2
+		       }
+		    }
+									
+			on_add = {
+				add_stability = -0.03
+			}
+			cost = 200
+			cancel_if_invalid = no
+			removal_cost = -1
+			level = 1
+
+			modifier = {
+				stability_factor = -0.08
+				monthly_population = 0.1
+				consumer_goods_factor = 0.05
+				encryption = -3
+				production_speed_buildings_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				ST_race_penalty_all_factor = -0.3
+			}
+			
+		}
+		normal_border = {
+									
+			on_add = {
+			#刚切换时的动乱效果？
+			}
+			default = yes
+			cost = 200
+			cancel_if_invalid = no
+			removal_cost = -1
+			level = 2
+
+			on_add = {
+				add_stability = -0.05
+			}
+
+			modifier = {
+				stability_factor = -0.04
+				monthly_population = 0.05
+				encryption = -1
+				production_speed_buildings_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.03
+
+				ST_race_penalty_all_factor = -0.15
+			}
+		}
+		strict_border = {
+									
+			on_add = {
+				add_stability = -0.05
+			}
+
+			modifier = {
+
+			}
+			cost = 200
+			level = 3
+			cancel_if_invalid = no
+			removal_cost = -1
+		}
+		close_border = {
+
+		    available = {
+		       has_country_flag = {
+		          flag = openvalue
+		          value < -2
+		       }
+		    }
+
+		    on_add = {
+				add_stability = -0.05
+			}
+									
+			
+			
+			modifier = {
+				stability_factor = 0.05
+				encryption = 2
+				ST_race_penalty_all_factor = 0.1
+			}
+			on_add = {
+			#刚切换时的动乱效果？
+			}
+			cost = 150
+			level = 4
+			cancel_if_invalid = no
+			removal_cost = -1
+		}
+	}
+}

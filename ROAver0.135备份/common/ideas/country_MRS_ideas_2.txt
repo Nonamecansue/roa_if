@@ -1,0 +1,463 @@
+ideas = {
+	country = {
+		#mrs
+	    MRS_nulibuzaibeirenke_idea = {
+	    	picture = FRA_matignon_agreements
+	    	allowed = {
+          always = no
+        }
+
+        available = {
+          not = {
+            count_triggers = {
+              amount = 2
+              172 = {
+                controlled_by_subject_or_you = yes
+              }
+              191 = {
+                controlled_by_subject_or_you = yes
+              }
+              354 = {
+                controlled_by_subject_or_you = yes
+              }
+            }
+          }
+        }
+
+        allowed_civil_war = {
+        }
+			
+			  removal_cost = -1
+	
+			  modifier = {
+          political_power_factor = -0.3
+			  }
+	    }
+	    MRS_yuanlihexinzhengzhi_idea = {
+	    	picture = FRA_matignon_agreements
+	    	allowed = {
+          always = no
+        }
+
+        available = {
+          not = {
+            has_country_flag = MAF_united
+          }
+        }
+
+        allowed_civil_war = {
+        }
+			
+			  removal_cost = -1
+	
+			  modifier = {
+          political_power_factor = -0.2
+          stability_factor = -0.15
+          war_support_factor = -0.3
+			  }
+	    }
+	    MRS_fangqizhengzhi_idea = {
+	    	picture = FRA_matignon_agreements
+	    	allowed = {
+          always = no
+        }
+
+        available = {
+          not = {
+            has_country_flag = MAF_united
+          }
+        }
+
+        allowed_civil_war = {
+        }
+			
+			  removal_cost = -1
+	
+			  modifier = {
+          political_power_factor = -0.3
+          MSH_boyili_factor = -0.85
+          war_support_factor = -0.4
+			  }
+	    }
+      MRS_jinjimofa_idea = {
+        name = MRS_jinjimofa
+        picture = spa_carlism
+        modifier = {
+          
+        }
+        research_bonus = {
+          magic = 0.15
+        }
+      }
+      MRS_xieemofa_idea = {
+        name = MRS_xieemofa
+        picture = state_shintoism
+        modifier = {
+          oldorder_drift = 0.02
+          army_attack_factor = 0.15
+          army_defence_factor = 0.15
+          
+        }
+      }
+      MRS_mofashilaoshi_idea = {
+        name = MRS_mofashilaoshi
+        picture = wilkies_new_deal
+        available = {
+          not = {
+            has_country_flag = MAF_united
+          }
+        }
+        modifier = {
+          MSH_boyili_factor = 0.5
+        }
+      }
+      MRS_xiaoyibianchongxinkaishi_idea = {
+        name = MRS_xiaoyibianchongxinkaishi
+        picture = generic_volunteer_expedition_bonus
+        modifier = {
+          send_volunteer_size = 10
+        }
+      }
+      MRS_xiantianmofashijiaru_idea = {
+        name = MRS_xiantianmofashijiaru
+        picture = generic_manpower_bonus
+        modifier = {
+          training_time_factor = -0.3
+          weekly_manpower = 4
+        }
+      }
+      MRS_xingxingmofa_idea = {
+        name = MRS_xingxingmofa
+        picture = hol_aloof_neutrality
+        modifier = {
+          improve_relations_maintain_cost_factor = -0.33
+        }
+      }
+      MRS_juebufangqiquanli_idea = {
+        name = MRS_juebufangqiquanli
+        picture = FRA_scw_intervention_republicans_focus
+        available = {
+          not = {
+            has_country_flag = MAF_united
+          }
+        }
+        modifier = {
+          army_morale_factor = 0.1
+          army_attack_factor = 0.05
+          army_defence_factor = 0.05
+        }
+      }
+      MRS_xuanyangyouyuexing_idea = {
+	    	picture = FRA_matignon_agreements
+	    	allowed = {
+          always = no
+        }
+
+        available = {
+          not = {
+            has_country_flag = MAF_united
+          }
+        }
+
+        allowed_civil_war = {
+        }
+			
+			  removal_cost = -1
+	
+			  modifier = {
+          stability_factor = -0.15
+          war_support_factor = -0.25
+			  }
+	    }
+      MRS_zhongdagongsi_idea = {
+        picture = generic_infantry_equipment_manufacturer_2
+        name = MRS_zhongdagongsi
+        modifier = {
+          
+        }
+        equipment_bonus = {
+          yunshudui_a = {
+            build_cost_ic = -0.25 instant = yes
+          }
+        }
+      }
+      MRS_molishademofashu_idea = {
+        name = MRS_molishademofashu
+        picture = generic_pp_unity_bonus
+        modifier = {
+          political_power_factor = 0.15
+        }
+        research_bonus = {
+          magic = 0.05
+        }
+      }
+      MRS_nulibuzaibeirenke2_idea = {
+        name = MRS_nulibuzaibeirenke_idea
+	    	picture = FRA_matignon_agreements
+	    	allowed = {
+          always = no
+        }
+
+        available = {
+          not = {
+            count_triggers = {
+              amount = 2
+              172 = {
+                controlled_by_subject_or_you = yes
+              }
+              191 = {
+                controlled_by_subject_or_you = yes
+              }
+              354 = {
+                controlled_by_subject_or_you = yes
+              }
+            }
+          }
+        }
+
+        allowed_civil_war = {
+        }
+			
+			  removal_cost = -1
+	
+			  modifier = {
+          political_power_factor = -0.15
+			  }
+	    }
+      MRS_yanjiangdetiancai_idea = {
+        name = MRS_yanjiangdetiancai
+        picture = mex_banco_de_mexico
+        modifier = {
+          war_support_factor = 0.15
+          improve_relations_maintain_cost_factor = -0.25
+          MSH_boyili_factor = 0.1
+        }
+      }
+      MRS_ailiandiduixuanchuan_idea = {
+        name = MRS_ailiandiduixuanchuan
+        picture = mas
+        available = {
+          country_exists = ELL
+        }
+        targeted_modifier = {
+          tag = ELL
+          attack_bonus_against = 0.05
+          defense_bonus_against = 0.05
+        }
+      }
+      MRS_qiegerenleiguanxi_idea = {
+        name = MRS_qiegerenleiguanxi
+        picture = can_patriation
+        modifier = {
+          HMIF_change_factor = -0.25
+        }
+      }
+      MRS_jinmilianxirenlei_idea = {
+        name = MRS_jinmilianxirenlei
+        picture = chi_chinese_support
+        modifier = {
+          HMIF_change_factor = 0.33
+        }
+      }
+      MRS_xuanyangxianjinxing_idea = {
+        name = MRS_xuanyangxianjinxing
+        picture = fra_deluge
+        modifier = {
+          HMIF_daily_change = 0.03
+          HMIF_change_factor = 0.33
+          research_speed_factor = 0.05
+          ST_race_penalty_Human_factor = -0.33
+        }
+      }
+      MRS_mofashiyeshidayaoguai_idea = {
+        name = MRS_mofashiyeshidayaoguai
+        picture = generic_fascism_drift_bonus
+        modifier = {
+          HMIF_change_factor = -0.25
+          oldorder_acceptance = 30
+          PO_battle_influence_factor = 0.3
+        }
+      }
+      MRS_mofashiyeshidayaoguai2_idea = {
+        # name = MRS_mofashiyeshidayaoguai
+        picture = generic_communism_drift_bonus
+        modifier = {
+          neworder_drift = 0.02
+        }
+      }
+      MRS_mofashiyeshidayaoguai3_idea = {
+        name = MRS_xuanyangyouyuexing_idea
+	    	picture = FRA_matignon_agreements
+	    	allowed = {
+          always = no
+        }
+
+        available = {
+          not = {
+            has_country_flag = MAF_united
+          }
+        }
+
+        allowed_civil_war = {
+        }
+			
+			  removal_cost = -1
+	
+			  modifier = {
+          stability_factor = -0.15
+          war_support_factor = -0.1
+			  }
+	    }
+      MRS_meimodiaoxiang_idea = {
+        picture = generic_production_bonus
+        name = MRS_meimodiaoxiang
+        modifier = {
+          political_power_gain = 0.15
+        }
+      }
+      MRS_shenmejiedoushiwode_idea = {
+        picture = spr_crush_the_revolution
+        name = MRS_shenmejiedoushiwode
+        modifier = {
+          CO_cost_factor = -0.5
+          CO_core_resistance_required = -100
+          generate_wargoal_tension = -1
+        }
+      }
+      MRS_chenglimeimojiao_idea = {
+        picture = SOV_crowning_jewel_of_russia
+        name = MRS_chenglimeimojiao
+        modifier = {
+          ST_race_penalty_all_factor = -0.5
+          resistance_growth = -0.2
+        }
+      }
+      MRS_buruwodeyueliang_idea = {
+        picture = strategic_bombing_focus
+        name = MRS_buruwodeyueliang
+        available = {
+          country_exists = CLO
+        }
+        targeted_modifier = {
+          tag = CLO
+          attack_bonus_against = 0.15
+          defense_bonus_against = 0.15
+        }
+      }
+      MRS_xinjiumofajiehe_idea = {
+        picture = generic_research_bonus
+        name = MRS_xinjiumofajiehe
+        modifier = {
+          stability_factor = -0.05
+        }
+        research_bonus = {
+          magic = 0.25
+        }
+      }
+      MRS_zhuzhongzhandouli_idea = {
+        picture = ast_volunteer_defence_corps
+        name = MRS_zhuzhongzhandouli
+        modifier = {
+          army_org_factor = 0.1
+          army_attack_factor = 0.1
+          army_defence_factor = 0.1
+          army_core_attack_factor = 0.05
+          army_core_defence_factor = 0.05
+        }
+      }
+      MRS_zhuzhonghuali_idea = {
+        picture = generic_research_bonus
+        name = MRS_zhuzhonghuali
+        modifier = {
+          army_speed_factor = 0.08
+          research_speed_factor = 0.06
+        }
+      }
+      MRS_jiaoao_idea = {
+        picture = home_of_the_revolution
+        name = MRS_jiaoao
+        modifier = {
+          CO_auto_core_Human = 1
+          CO_auto_core_Magician = 1
+        }
+      }
+      MRS_biaozhunhuashengchan_idea = {
+        picture = generic_production_bonus
+        name = MRS_biaozhunhuashengchan
+        modifier = {
+          production_factory_max_efficiency_factor = 0.15
+          production_speed_buildings_factor = 0.1
+        }
+      }
+      MRS_zhishiwuqi_idea = {
+        picture = boeing
+        name = MRS_zhishiwuqi
+        modifier = {
+          equipment_upgrade_xp_cost = -0.4
+        }
+      }
+      MRS_zhenzhengdetongyi_idea = {
+        picture = generic_research_bonus
+        name = MRS_zhenzhengdetongyi
+        modifier = {
+          # equipment_upgrade_xp_cost = -0.4
+        }
+        research_bonus = {
+          magic = 0.2
+        }
+      }
+      MRS_kexuemofashi_idea = {
+        picture = generic_research_bonus
+        name = MRS_kexuemofashi
+        modifier = {
+
+        }
+        research_bonus = {
+          science = 0.1
+        }
+      }
+      MRS_shuofuzhichi_HKR_decision_idea = {
+        picture = german_advisors
+        available = {
+          country_exists = HKR
+          not = {
+            has_war_with = HKR
+          }
+          not = {
+            has_country_flag = MAF_united
+          }
+        }
+        modifier = {
+          army_org_factor = 0.15
+          army_attack_factor = 0.15
+        }
+      }
+      MRS_shuofuzhichi_SCA_decision_idea = {
+        picture = Xgeneric_intel_bonus
+        available = {
+          country_exists = SCA
+          not = {
+            has_war_with = SCA
+          }
+          not = {
+            has_country_flag = MAF_united
+          }
+        }
+        modifier = {
+          land_reinforce_rate = 0.04
+          army_defence_factor = 0.15
+        }
+      }
+      MRS_hepingjingying_idea = {
+        picture = chi_army_corruption3
+        name = MRS_hepingjingying
+        available = {
+          has_war = no
+        }
+        modifier = {
+          army_attack_factor = 0.5
+          army_defence_factor = 0.5
+        }
+      }
+    }
+  }

@@ -1,0 +1,88 @@
+CLO_huifuneibusaoluan = {
+	if = {
+		limit = {
+			has_idea = CLO_neibusaodong5_idea
+		}
+		remove_ideas = CLO_neibusaodong5_idea
+	}
+	if = {
+		limit = {
+			has_idea = CLO_neibusaodong4_idea
+		}
+		swap_ideas = {
+			remove_idea = CLO_neibusaodong4_idea
+			add_idea = CLO_neibusaodong5_idea
+		}
+	}
+	if = {
+		limit = {
+			has_idea = CLO_neibusaodong3_idea
+		}
+		swap_ideas = {
+			remove_idea = CLO_neibusaodong3_idea
+			add_idea = CLO_neibusaodong4_idea
+		}
+	}
+	if = {
+		limit = {
+			has_idea = CLO_neibusaodong2_idea
+		}
+		swap_ideas = {
+			remove_idea = CLO_neibusaodong2_idea
+			add_idea = CLO_neibusaodong3_idea
+		}
+	}
+	if = {
+		limit = {
+			has_idea = CLO_neibusaodong1_idea
+		}
+		swap_ideas = {
+			remove_idea = CLO_neibusaodong1_idea
+			add_idea = CLO_neibusaodong2_idea
+		}
+	}
+}
+CLO_huifuzhengfu = {
+	if = {
+		limit = {
+			has_idea = CLO_zhengfu5_idea
+		}
+		remove_ideas = CLO_zhengfu5_idea
+	}
+	if = {
+		limit = {
+			has_idea = CLO_zhengfu4_idea
+		}
+		swap_ideas = {
+			remove_idea = CLO_zhengfu4_idea
+			add_idea = CLO_zhengfu5_idea
+		}
+	}
+	if = {
+		limit = {
+			has_idea = CLO_zhengfu3_idea
+		}
+		swap_ideas = {
+			remove_idea = CLO_zhengfu3_idea
+			add_idea = CLO_zhengfu4_idea
+		}
+	}
+	if = {
+		limit = {
+			has_idea = CLO_zhengfu2_idea
+		}
+		swap_ideas = {
+			remove_idea = CLO_zhengfu2_idea
+			add_idea = CLO_zhengfu3_idea
+		}
+	}
+	if = {
+		limit = {
+			has_idea = CLO_zhengfu1_idea
+		}
+		swap_ideas = {
+			remove_idea = CLO_zhengfu1_idea
+			add_idea = CLO_zhengfu2_idea
+		}
+	}
+}

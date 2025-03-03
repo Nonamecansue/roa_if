@@ -1,0 +1,1283 @@
+ELL_jihuamofayanjiu_decision_category = {
+	ELL_jihuamofayanjiu_industrys_decision = {
+		allowed = {
+			tag = ELL
+		}
+		visible = {
+			has_completed_focus = ELL_jihuamofayanjiu
+		}
+		available = {
+			not = {
+				has_country_flag = ELL_jihuamofayanjiu_flag
+			}
+		}
+		modifier = {
+			research_speed_factor = -0.2
+		}
+		days_remove = 365
+		cost = 35
+		complete_effect = {
+			set_country_flag = {
+				flag =  ELL_jihuamofayanjiu_flag
+				days = 365
+				value = 1
+			}
+			add_tech_bonus = {
+				category = industrys
+				uses = 1
+				bonus = 1.5
+				ahead_reduction = 3
+			}
+		}
+		remove_effect = {
+
+		}
+		ai_will_do = {
+			base = 1
+		}
+	}
+	ELL_jihuamofayanjiu_build_decision = {
+		allowed = {
+			tag = ELL
+		}
+		visible = {
+			has_completed_focus = ELL_jihuamofayanjiu
+		}
+		available = {
+			not = {
+				has_country_flag = ELL_jihuamofayanjiu_flag
+			}
+		}
+		modifier = {
+			research_speed_factor = -0.2
+		}
+		days_remove = 365
+		cost = 35
+		complete_effect = {
+			set_country_flag = {
+				flag =  ELL_jihuamofayanjiu_flag
+				days = 365
+				value = 1
+			}
+			add_tech_bonus = {
+				category = build
+				uses = 1
+				bonus = 1.5
+				ahead_reduction = 3
+			}
+		}
+		remove_effect = {
+
+		}
+		ai_will_do = {
+			base = 1
+		}
+	}
+	ELL_jihuamofayanjiu_resource_decision = {
+		allowed = {
+			tag = ELL
+		}
+		visible = {
+			has_completed_focus = ELL_jihuamofayanjiu
+		}
+		available = {
+			not = {
+				has_country_flag = ELL_jihuamofayanjiu_flag
+			}
+		}
+		modifier = {
+			research_speed_factor = -0.2
+		}
+		days_remove = 365
+		cost = 35
+		complete_effect = {
+			set_country_flag = {
+				flag =  ELL_jihuamofayanjiu_flag
+				days = 365
+				value = 1
+			}
+			add_tech_bonus = {
+				category = resource
+				uses = 1
+				bonus = 1.5
+				ahead_reduction = 3
+			}
+		}
+		remove_effect = {
+
+		}
+		ai_will_do = {
+			base = 1
+		}
+	}
+	ELL_jihuamofayanjiu_race_decision = {
+		allowed = {
+			tag = ELL
+		}
+		visible = {
+			has_completed_focus = ELL_jihuamofayanjiu
+		}
+		available = {
+			not = {
+				has_country_flag = ELL_jihuamofayanjiu_flag
+			}
+		}
+		modifier = {
+			research_speed_factor = -0.2
+		}
+		days_remove = 365
+		cost = 35
+		complete_effect = {
+			set_country_flag = {
+				flag =  ELL_jihuamofayanjiu_flag
+				days = 365
+				value = 1
+			}
+			add_tech_bonus = {
+				category = race
+				uses = 1
+				bonus = 1.5
+				ahead_reduction = 3
+			}
+		}
+		remove_effect = {
+
+		}
+		ai_will_do = {
+			base = 1
+		}
+	}
+	ELL_jihuamofayanjiu_infantry_decision = {
+		allowed = {
+			tag = ELL
+		}
+		visible = {
+			has_completed_focus = ELL_jihuamofayanjiu
+		}
+		available = {
+			not = {
+				has_country_flag = ELL_jihuamofayanjiu_flag
+			}
+		}
+		modifier = {
+			research_speed_factor = -0.2
+		}
+		days_remove = 365
+		cost = 35
+		complete_effect = {
+			set_country_flag = {
+				flag =  ELL_jihuamofayanjiu_flag
+				days = 365
+				value = 1
+			}
+			add_tech_bonus = {
+				category = infantry
+				uses = 1
+				bonus = 1.5
+				ahead_reduction = 3
+			}
+		}
+		remove_effect = {
+
+		}
+		ai_will_do = {
+			base = 1
+		}
+	}
+	ELL_jihuamofayanjiu_support_tech_decision = {
+		allowed = {
+			tag = ELL
+		}
+		visible = {
+			has_completed_focus = ELL_jihuamofayanjiu
+		}
+		available = {
+			not = {
+				has_country_flag = ELL_jihuamofayanjiu_flag
+			}
+		}
+		modifier = {
+			research_speed_factor = -0.2
+		}
+		days_remove = 365
+		cost = 35
+		complete_effect = {
+			set_country_flag = {
+				flag =  ELL_jihuamofayanjiu_flag
+				days = 365
+				value = 1
+			}
+			add_tech_bonus = {
+				category = support_tech
+				uses = 1
+				bonus = 1.5
+				ahead_reduction = 3
+			}
+		}
+		remove_effect = {
+
+		}
+		ai_will_do = {
+			base = 1
+		}
+	}
+	ELL_jihuamofayanjiu_artillery_tech_decision = {
+		allowed = {
+			tag = ELL
+		}
+		visible = {
+			has_completed_focus = ELL_jihuamofayanjiu
+		}
+		available = {
+			not = {
+				has_country_flag = ELL_jihuamofayanjiu_flag
+			}
+		}
+		modifier = {
+			research_speed_factor = -0.2
+		}
+		days_remove = 365
+		cost = 35
+		complete_effect = {
+			set_country_flag = {
+				flag =  ELL_jihuamofayanjiu_flag
+				days = 365
+				value = 1
+			}
+			add_tech_bonus = {
+				category = artillery_tech
+				uses = 1
+				bonus = 1.5
+				ahead_reduction = 3
+			}
+		}
+		remove_effect = {
+
+		}
+		ai_will_do = {
+			base = 1
+		}
+	}
+	ELL_jihuamofayanjiu_air_equipment_decision = {
+		allowed = {
+			tag = ELL
+		}
+		visible = {
+			has_completed_focus = ELL_jihuamofayanjiu
+		}
+		available = {
+			not = {
+				has_country_flag = ELL_jihuamofayanjiu_flag
+			}
+		}
+		modifier = {
+			research_speed_factor = -0.2
+		}
+		days_remove = 365
+		cost = 35
+		complete_effect = {
+			set_country_flag = {
+				flag =  ELL_jihuamofayanjiu_flag
+				days = 365
+				value = 1
+			}
+			add_tech_bonus = {
+				category = air_equipment
+				uses = 1
+				bonus = 1.5
+				ahead_reduction = 3
+			}
+		}
+		remove_effect = {
+
+		}
+		ai_will_do = {
+			base = 1
+		}
+	}
+	ELL_jihuamofayanjiu_secret_decision = {
+		allowed = {
+			tag = ELL
+		}
+		visible = {
+			has_completed_focus = ELL_jihuamofayanjiu
+		}
+		available = {
+			not = {
+				has_country_flag = ELL_jihuamofayanjiu_flag
+			}
+		}
+		modifier = {
+			research_speed_factor = -0.2
+		}
+		days_remove = 365
+		cost = 150
+		complete_effect = {
+			set_country_flag = {
+				flag =  ELL_jihuamofayanjiu_flag
+				days = 365
+				value = 1
+			}
+			add_tech_bonus = {
+				category = secret
+				uses = 1
+				bonus = 1.5
+				ahead_reduction = 3
+			}
+		}
+		remove_effect = {
+
+		}
+		ai_will_do = {
+			base = 1
+		}
+	}
+}
+
+ELL_ruanmianmianfendian_decision_category = {
+	ELL_ruanmianmianfendian_decision = {
+		allowed = {
+			tag = ELL
+		}
+		target_root_trigger = {
+			has_completed_focus = ELL_ruanmianmianfendian
+		}
+		visible = {
+			FROM = {
+				not = {
+					has_country_flag = ELL_ruanmianmianfendian_flag
+				}
+			}
+			
+		}
+		target_trigger = {
+			FROM = {
+				has_opinion = {
+					target = ROOT
+					value > -1
+				}
+			}
+		}
+		available = {
+			FROM = {
+				has_opinion = {
+					target = ROOT
+					value > 49
+				}
+			}
+		}
+		# target_array = countries
+		cost = 30
+		days_remove = 90
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			FROM = {
+				if = {
+					limit = {
+						tag = HKR
+					}
+					capital_scope = {
+						add_manpower = 500
+						add_extra_state_shared_building_slots = 6
+						add_building_construction = {
+							type = industrial_complex
+							level = 5
+						}
+					}
+				}
+				else = {
+					capital_scope = {
+						add_manpower = 100
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+				}
+				
+				can_use = yes
+			}
+			FROM = {
+				set_country_flag = ELL_ruanmianmianfendian_flag
+			}
+			
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+}
+
+ELL_xuexikexue_decision_category = {
+	ELL_xuexikexue_decision = {
+		allowed = {
+			tag = ELL
+		}
+		target_root_trigger = {
+			has_completed_focus = ELL_xuexikexue
+		}
+		visible = {
+			FROM = {
+				has_opinion = {
+					target = ROOT
+					value > -1
+				}
+				not = {
+					has_country_flag = ELL_xuexikexue_flag2
+				}
+			}
+			check_variable = {
+				ELL_xuexikexue_VAR < 10
+			}
+		}
+		target_trigger = {
+			FROM = {
+				has_tech = waike
+			}
+			
+		}
+		available = {
+			FROM = {
+				has_opinion = {
+					target = ROOT
+					value > 49
+				}
+			}
+			not = {
+				has_country_flag = ELL_xuexikexue_flag
+			}
+			custom_trigger_tooltip = {
+				tooltip = ELL_xuexikexue_decision_tt
+				always = yes
+			}
+		}
+		# target_array = countries
+		cost = 20
+		days_remove = 180
+		complete_effect = {
+			set_country_flag = {
+				days = 180
+				value = 1
+				flag = ELL_xuexikexue_flag
+			}
+		}
+		remove_effect = {
+			FROM = {
+				set_country_flag = ELL_xuexikexue_flag2
+			}
+			random_list = {
+				25 = {
+					ELL_ellen = {
+						add_attack = 1
+					}
+				}
+				25 = {
+					ELL_ellen = {
+						add_defense = 1
+					}
+				}
+				25 = {
+					ELL_ellen = {
+						add_planning = 1
+					}
+				}
+				25 = {
+					ELL_ellen = {
+						add_logistics = 1
+					}
+				}
+			}
+			random_list = {
+				25 = {
+					ELL_ellen = {
+						add_attack = 1
+					}
+				}
+				25 = {
+					ELL_ellen = {
+						add_defense = 1
+					}
+				}
+				25 = {
+					ELL_ellen = {
+						add_planning = 1
+					}
+				}
+				25 = {
+					ELL_ellen = {
+						add_logistics = 1
+					}
+				}
+			}
+			add_to_variable = {
+				ELL_xuexikexue_VAR = 1
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+}
+
+ELL_quchengzhenhua_decision_category = {
+	ELL_quchengzhenhua_decision = {
+		allowed = {
+			tag = ELL
+		}
+		target_root_trigger = {
+			has_completed_focus = ELL_quchengzhenhua
+		}
+		state_target = yes
+		target_array = owned_states
+		visible = {
+			FROM = {
+				is_fully_controlled_by = ROOT
+			}
+			check_variable = {
+				ELL_quchengzhenhua_VAR < 0.3
+			}
+		}
+		target_trigger = {
+			FROM = {
+				or = {
+					region = 58
+					region = 59
+					region = 57
+					region = 64
+					region = 63
+				}
+			}
+			
+		}
+		available = {
+			not = {
+				has_country_flag = ELL_quchengzhenhua_flag
+			}
+			FROM = {
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = no
+				}
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = no
+				}
+				or = {
+					ST_origin_same_race = yes
+					ST_present_same_race = yes
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = ELL_quchengzhenhua_decision_tt2
+				always = yes
+			}
+		}
+		# target_array = countries
+		cost = 40
+		days_remove = 120
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = {
+				flag = ELL_quchengzhenhua_flag
+				days = 120
+				value = 1
+			}
+			FROM = {
+				add_dynamic_modifier = {
+					modifier = ELL_quchengzhenhua_state_modifier
+				}
+				add_manpower = -50
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = ELL_quchengzhenhua_decision_tt
+			add_to_variable = {
+				ELL_quchengzhenhua_VAR = 0.015
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+}
+ELL_difangyanjiuzhongxin_decision_category = {
+	ELL_difangyanjiuzhongxin_decision = {
+		allowed = {
+			tag = ELL
+		}
+		target_root_trigger = {
+			has_completed_focus = ELL_difangyanjiuzhongxin
+		}
+		state_target = yes
+		target_array = core_states
+		visible = {
+			FROM = {
+				is_fully_controlled_by = ROOT
+				is_owned_by = ROOT
+				not = {
+					has_state_flag = ELL_difangyanjiuzhongxin_flag
+				}
+			}
+		}
+		target_trigger = {
+			FROM = {
+				or = {
+					region = 58
+					region = 59
+					region = 57
+					region = 64
+					region = 63
+				}
+			}
+		}
+		available = {
+			not = {
+				has_country_flag = ELL_difangyanjiuzhongxin_flag2
+			}
+		}
+		# target_array = countries
+		cost = 35
+		days_remove = 100
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = {
+				flag = ELL_difangyanjiuzhongxin_flag2
+				days = 100
+				value = 1
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = ELL_difangyanjiuzhongxin_decision_tt
+			FROM = {
+				add_extra_state_shared_building_slots = 1
+				set_state_flag = ELL_difangyanjiuzhongxin_flag
+			}
+			add_to_variable = {
+				ELL_difangyanjiuzhongxin_VAR = 0.005
+			}
+			clamp_variable = {
+				var = ELL_difangyanjiuzhongxin_VAR
+				max = 0.1
+			}
+		}
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 0.001
+				check_variable = {
+					ELL_difangyanjiuzhongxin_VAR = 0.2
+				}
+			}
+			modifier = {
+				factor = 10
+				has_political_power > 799
+			}
+		}
+	}
+}
+ELL_bingzhongkaohebiaozhun_decision_category = {
+	ELL_bingzhongkaohebiaozhun_infantry_decision = {
+		allowed = {
+			tag = ELL
+		}
+		visible = {
+			has_completed_focus = ELL_bingzhongkaohebiaozhun
+			if = {
+				limit = {
+					not = {
+						has_completed_focus = ELL_monvzhijia
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = ELL_bingzhongkaohebiaozhun_trigger_decision_tt1
+					check_variable = {
+						ELL_bingzhongkaohebiaozhun_infantry_times_VAR < 3
+					}
+				}
+			}
+			if = {
+				limit = {
+					not = {
+						has_completed_focus = ELL_zizhiwuqi
+					}
+					has_completed_focus = ELL_monvzhijia
+				}
+				custom_trigger_tooltip = {
+					tooltip = ELL_bingzhongkaohebiaozhun_trigger_decision_tt2
+					check_variable = {
+						ELL_bingzhongkaohebiaozhun_infantry_times_VAR < 4
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = ELL_zizhiwuqi
+					has_completed_focus = ELL_monvzhijia
+				}
+				custom_trigger_tooltip = {
+					tooltip = ELL_bingzhongkaohebiaozhun_trigger_decision_tt3
+					check_variable = {
+						ELL_bingzhongkaohebiaozhun_infantry_times_VAR < 6
+					}
+				}
+			}
+		}
+		available = {
+			if = {
+				limit = {
+					not = {
+						has_completed_focus = ELL_monvzhijia
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = ELL_bingzhongkaohebiaozhun_trigger_decision_tt1
+					check_variable = {
+						ELL_bingzhongkaohebiaozhun_infantry_times_VAR < 3
+					}
+				}
+			}
+			if = {
+				limit = {
+					not = {
+						has_completed_focus = ELL_zizhiwuqi
+					}
+					has_completed_focus = ELL_monvzhijia
+				}
+				custom_trigger_tooltip = {
+					tooltip = ELL_bingzhongkaohebiaozhun_trigger_decision_tt2
+					check_variable = {
+						ELL_bingzhongkaohebiaozhun_infantry_times_VAR < 4
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = ELL_zizhiwuqi
+					has_completed_focus = ELL_monvzhijia
+				}
+				custom_trigger_tooltip = {
+					tooltip = ELL_bingzhongkaohebiaozhun_trigger_decision_tt3
+					check_variable = {
+						ELL_bingzhongkaohebiaozhun_infantry_times_VAR < 6
+					}
+				}
+			}
+		}
+		cost = 150
+		days_remove = 120
+		complete_effect = {
+
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					has_completed_focus = ELL_zizhiwuqi
+				}
+				add_to_variable = {
+					ELL_bingzhongkaohebiaozhun_infantry_VAR = 0.04
+				}
+				custom_effect_tooltip = ELL_bingzhongkaohebiaozhun_infantry_decision_tt1
+				else = {
+					add_to_variable = {
+						ELL_bingzhongkaohebiaozhun_infantry_VAR = 0.03
+					}
+					custom_effect_tooltip = ELL_bingzhongkaohebiaozhun_infantry_decision_tt2
+				}
+				
+			}
+			add_to_variable = {
+				ELL_bingzhongkaohebiaozhun_VAR = -0.025
+			}
+			add_to_variable = {
+				ELL_bingzhongkaohebiaozhun_infantry_times_VAR = 1
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	ELL_bingzhongkaohebiaozhun_light_infantry_decision = {
+		allowed = {
+			tag = ELL
+		}
+		visible = {
+			has_completed_focus = ELL_bingzhongkaohebiaozhun
+			if = {
+				limit = {
+					not = {
+						has_completed_focus = ELL_monvzhijia
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = ELL_bingzhongkaohebiaozhun_trigger_decision_tt1
+					check_variable = {
+						ELL_bingzhongkaohebiaozhun_light_infantry_times_VAR < 3
+					}
+				}
+			}
+			if = {
+				limit = {
+					not = {
+						has_completed_focus = ELL_zizhiwuqi
+					}
+					has_completed_focus = ELL_monvzhijia
+				}
+				custom_trigger_tooltip = {
+					tooltip = ELL_bingzhongkaohebiaozhun_trigger_decision_tt2
+					check_variable = {
+						ELL_bingzhongkaohebiaozhun_light_infantry_times_VAR < 4
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = ELL_zizhiwuqi
+					has_completed_focus = ELL_monvzhijia
+				}
+				custom_trigger_tooltip = {
+					tooltip = ELL_bingzhongkaohebiaozhun_trigger_decision_tt3
+					check_variable = {
+						ELL_bingzhongkaohebiaozhun_light_infantry_times_VAR < 6
+					}
+				}
+			}
+		}
+		available = {
+			if = {
+				limit = {
+					not = {
+						has_completed_focus = ELL_monvzhijia
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = ELL_bingzhongkaohebiaozhun_trigger_decision_tt1
+					check_variable = {
+						ELL_bingzhongkaohebiaozhun_light_infantry_times_VAR < 3
+					}
+				}
+			}
+			if = {
+				limit = {
+					not = {
+						has_completed_focus = ELL_zizhiwuqi
+					}
+					has_completed_focus = ELL_monvzhijia
+				}
+				custom_trigger_tooltip = {
+					tooltip = ELL_bingzhongkaohebiaozhun_trigger_decision_tt2
+					check_variable = {
+						ELL_bingzhongkaohebiaozhun_light_infantry_times_VAR < 4
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = ELL_zizhiwuqi
+					has_completed_focus = ELL_monvzhijia
+				}
+				custom_trigger_tooltip = {
+					tooltip = ELL_bingzhongkaohebiaozhun_trigger_decision_tt3
+					check_variable = {
+						ELL_bingzhongkaohebiaozhun_light_infantry_times_VAR < 6
+					}
+				}
+			}
+		}
+		cost = 150
+		days_remove = 120
+		complete_effect = {
+
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					has_completed_focus = ELL_zizhiwuqi
+				}
+				add_to_variable = {
+					ELL_bingzhongkaohebiaozhun_light_infantry_VAR = 0.04
+				}
+				custom_effect_tooltip = ELL_bingzhongkaohebiaozhun_light_infantry_decision_tt1
+				else = {
+					add_to_variable = {
+						ELL_bingzhongkaohebiaozhun_light_infantry_VAR = 0.03
+					}
+					custom_effect_tooltip = ELL_bingzhongkaohebiaozhun_light_infantry_decision_tt2
+				}
+				
+			}
+			add_to_variable = {
+				ELL_bingzhongkaohebiaozhun_VAR = -0.025
+			}
+			add_to_variable = {
+				ELL_bingzhongkaohebiaozhun_light_infantry_times_VAR = 1
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	ELL_bingzhongkaohebiaozhun_sf_decision = {
+		allowed = {
+			tag = ELL
+		}
+		visible = {
+			has_completed_focus = ELL_qiangximonvfangan
+			if = {
+				limit = {
+					not = {
+						has_completed_focus = ELL_monvzhijia
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = ELL_bingzhongkaohebiaozhun_trigger_decision_tt1
+					check_variable = {
+						ELL_bingzhongkaohebiaozhun_sf_times_VAR < 3
+					}
+				}
+			}
+			if = {
+				limit = {
+					not = {
+						has_completed_focus = ELL_zizhiwuqi
+					}
+					has_completed_focus = ELL_monvzhijia
+				}
+				custom_trigger_tooltip = {
+					tooltip = ELL_bingzhongkaohebiaozhun_trigger_decision_tt2
+					check_variable = {
+						ELL_bingzhongkaohebiaozhun_sf_times_VAR < 4
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = ELL_zizhiwuqi
+					has_completed_focus = ELL_monvzhijia
+				}
+				custom_trigger_tooltip = {
+					tooltip = ELL_bingzhongkaohebiaozhun_trigger_decision_tt3
+					check_variable = {
+						ELL_bingzhongkaohebiaozhun_sf_times_VAR < 6
+					}
+				}
+			}
+		}
+		available = {
+			if = {
+				limit = {
+					not = {
+						has_completed_focus = ELL_monvzhijia
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = ELL_bingzhongkaohebiaozhun_trigger_decision_tt1
+					check_variable = {
+						ELL_bingzhongkaohebiaozhun_sf_times_VAR < 3
+					}
+				}
+			}
+			if = {
+				limit = {
+					not = {
+						has_completed_focus = ELL_zizhiwuqi
+					}
+					has_completed_focus = ELL_monvzhijia
+				}
+				custom_trigger_tooltip = {
+					tooltip = ELL_bingzhongkaohebiaozhun_trigger_decision_tt2
+					check_variable = {
+						ELL_bingzhongkaohebiaozhun_sf_times_VAR < 4
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = ELL_zizhiwuqi
+					has_completed_focus = ELL_monvzhijia
+				}
+				custom_trigger_tooltip = {
+					tooltip = ELL_bingzhongkaohebiaozhun_trigger_decision_tt3
+					check_variable = {
+						ELL_bingzhongkaohebiaozhun_sf_times_VAR < 6
+					}
+				}
+			}
+		}
+		cost = 150
+		days_remove = 120
+		complete_effect = {
+
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					has_completed_focus = ELL_zizhiwuqi
+				}
+				add_to_variable = {
+					ELL_bingzhongkaohebiaozhun_sf_VAR = 0.04
+				}
+				custom_effect_tooltip = ELL_bingzhongkaohebiaozhun_sf_decision_tt1
+				else = {
+					add_to_variable = {
+						ELL_bingzhongkaohebiaozhun_sf_VAR = 0.03
+					}
+					custom_effect_tooltip = ELL_bingzhongkaohebiaozhun_sf_decision_tt2
+				}
+				
+			}
+			add_to_variable = {
+				ELL_bingzhongkaohebiaozhun_VAR = -0.025
+			}
+			add_to_variable = {
+				ELL_bingzhongkaohebiaozhun_sf_times_VAR = 1
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	ELL_bingzhongkaohebiaozhun_light_tank_decision = {
+		allowed = {
+			tag = ELL
+		}
+		visible = {
+			has_completed_focus = ELL_qiangximonvfangan
+			if = {
+				limit = {
+					not = {
+						has_completed_focus = ELL_monvzhijia
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = ELL_bingzhongkaohebiaozhun_trigger_decision_tt1
+					check_variable = {
+						ELL_bingzhongkaohebiaozhun_light_tank_times_VAR < 3
+					}
+				}
+			}
+			if = {
+				limit = {
+					not = {
+						has_completed_focus = ELL_zizhiwuqi
+					}
+					has_completed_focus = ELL_monvzhijia
+				}
+				custom_trigger_tooltip = {
+					tooltip = ELL_bingzhongkaohebiaozhun_trigger_decision_tt2
+					check_variable = {
+						ELL_bingzhongkaohebiaozhun_light_tank_times_VAR < 4
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = ELL_zizhiwuqi
+					has_completed_focus = ELL_monvzhijia
+				}
+				custom_trigger_tooltip = {
+					tooltip = ELL_bingzhongkaohebiaozhun_trigger_decision_tt3
+					check_variable = {
+						ELL_bingzhongkaohebiaozhun_light_tank_times_VAR < 6
+					}
+				}
+			}
+		}
+		available = {
+			if = {
+				limit = {
+					not = {
+						has_completed_focus = ELL_monvzhijia
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = ELL_bingzhongkaohebiaozhun_trigger_decision_tt1
+					check_variable = {
+						ELL_bingzhongkaohebiaozhun_light_tank_times_VAR < 3
+					}
+				}
+			}
+			if = {
+				limit = {
+					not = {
+						has_completed_focus = ELL_zizhiwuqi
+					}
+					has_completed_focus = ELL_monvzhijia
+				}
+				custom_trigger_tooltip = {
+					tooltip = ELL_bingzhongkaohebiaozhun_trigger_decision_tt2
+					check_variable = {
+						ELL_bingzhongkaohebiaozhun_light_tank_times_VAR < 4
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = ELL_zizhiwuqi
+					has_completed_focus = ELL_monvzhijia
+				}
+				custom_trigger_tooltip = {
+					tooltip = ELL_bingzhongkaohebiaozhun_trigger_decision_tt3
+					check_variable = {
+						ELL_bingzhongkaohebiaozhun_light_tank_times_VAR < 6
+					}
+				}
+			}
+		}
+		cost = 150
+		days_remove = 120
+		complete_effect = {
+
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					has_completed_focus = ELL_zizhiwuqi
+				}
+				add_to_variable = {
+					ELL_bingzhongkaohebiaozhun_light_tank_VAR = 0.04
+				}
+				custom_effect_tooltip = ELL_bingzhongkaohebiaozhun_light_tank_decision_tt1
+				else = {
+					add_to_variable = {
+						ELL_bingzhongkaohebiaozhun_light_tank_VAR = 0.03
+					}
+					custom_effect_tooltip = ELL_bingzhongkaohebiaozhun_light_tank_decision_tt2
+				}
+				
+			}
+			add_to_variable = {
+				ELL_bingzhongkaohebiaozhun_VAR = -0.025
+			}
+			add_to_variable = {
+				ELL_bingzhongkaohebiaozhun_light_tank_times_VAR = 1
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	ELL_bingzhongkaohebiaozhun_heavy_tank_decision = {
+		allowed = {
+			tag = ELL
+		}
+		visible = {
+			has_completed_focus = ELL_qiangximonvfangan
+			if = {
+				limit = {
+					not = {
+						has_completed_focus = ELL_monvzhijia
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = ELL_bingzhongkaohebiaozhun_trigger_decision_tt1
+					check_variable = {
+						ELL_bingzhongkaohebiaozhun_heavy_tank_times_VAR < 3
+					}
+				}
+			}
+			if = {
+				limit = {
+					not = {
+						has_completed_focus = ELL_zizhiwuqi
+					}
+					has_completed_focus = ELL_monvzhijia
+				}
+				custom_trigger_tooltip = {
+					tooltip = ELL_bingzhongkaohebiaozhun_trigger_decision_tt2
+					check_variable = {
+						ELL_bingzhongkaohebiaozhun_heavy_tank_times_VAR < 4
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = ELL_zizhiwuqi
+					has_completed_focus = ELL_monvzhijia
+				}
+				custom_trigger_tooltip = {
+					tooltip = ELL_bingzhongkaohebiaozhun_trigger_decision_tt3
+					check_variable = {
+						ELL_bingzhongkaohebiaozhun_heavy_tank_times_VAR < 6
+					}
+				}
+			}
+		}
+		available = {
+			if = {
+				limit = {
+					not = {
+						has_completed_focus = ELL_monvzhijia
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = ELL_bingzhongkaohebiaozhun_trigger_decision_tt1
+					check_variable = {
+						ELL_bingzhongkaohebiaozhun_heavy_tank_times_VAR < 3
+					}
+				}
+			}
+			if = {
+				limit = {
+					not = {
+						has_completed_focus = ELL_zizhiwuqi
+					}
+					has_completed_focus = ELL_monvzhijia
+				}
+				custom_trigger_tooltip = {
+					tooltip = ELL_bingzhongkaohebiaozhun_trigger_decision_tt2
+					check_variable = {
+						ELL_bingzhongkaohebiaozhun_heavy_tank_times_VAR < 4
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = ELL_zizhiwuqi
+					has_completed_focus = ELL_monvzhijia
+				}
+				custom_trigger_tooltip = {
+					tooltip = ELL_bingzhongkaohebiaozhun_trigger_decision_tt3
+					check_variable = {
+						ELL_bingzhongkaohebiaozhun_heavy_tank_times_VAR < 6
+					}
+				}
+			}
+		}
+		cost = 150
+		days_remove = 120
+		complete_effect = {
+
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					has_completed_focus = ELL_zizhiwuqi
+				}
+				add_to_variable = {
+					ELL_bingzhongkaohebiaozhun_heavy_tank_VAR = 0.04
+				}
+				custom_effect_tooltip = ELL_bingzhongkaohebiaozhun_heavy_tank_decision_tt1
+				else = {
+					add_to_variable = {
+						ELL_bingzhongkaohebiaozhun_heavy_tank_VAR = 0.03
+					}
+					custom_effect_tooltip = ELL_bingzhongkaohebiaozhun_heavy_tank_decision_tt2
+				}
+			}
+			add_to_variable = {
+				ELL_bingzhongkaohebiaozhun_VAR = -0.025
+			}
+			add_to_variable = {
+				ELL_bingzhongkaohebiaozhun_heavy_tank_times_VAR = 1
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+}

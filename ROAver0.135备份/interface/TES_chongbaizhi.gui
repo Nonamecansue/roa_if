@@ -1,0 +1,21 @@
+guiTypes = {
+	containerWindowType = {
+		name = "TES_gerenchongbai"
+		position = { x = 0 y = 0}	
+		size = { width = 450 height= 253 }
+		orientation = center
+		origo = center
+		iconType = {
+			name = "TES_bianpan"
+			spriteType = "GFX_TES_biaopan"
+			position = { x = 20 y = 0 }
+			pdx_tooltip = "TES_bianpan_tt"
+		}
+		iconType = {
+			name = "TES_zhizheng"
+			spriteType = "GFX_banyuan_zhizhen"
+			position = { x = 150 y = 130 }
+		}
+	}
+}
+

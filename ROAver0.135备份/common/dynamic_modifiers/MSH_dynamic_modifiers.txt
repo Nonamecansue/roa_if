@@ -1,0 +1,8 @@
+MSH_mofashigehe_modifier = {
+	icon = XXX
+	production_speed_buildings_factor = MSH_mofashigehe_var_ps
+	industrial_capacity_factory = MSH_mofashigehe_var_ic
+	conscription_factor = MSH_mofashigehe_var_co
+	production_factory_efficiency_gain_factor = MSH_mofashigehe_var_pf
+
+}

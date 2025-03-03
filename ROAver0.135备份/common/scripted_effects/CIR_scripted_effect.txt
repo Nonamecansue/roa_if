@@ -1,0 +1,112 @@
+CIR_weidalixiang_add = {
+	if = {
+		limit = {
+			has_idea = CIR_weidalixiang5_idea
+		}
+		swap_ideas = {
+			remove_idea = CIR_weidalixiang5_idea
+			add_idea = CIR_weidalixiang6_idea
+		}
+	}
+	if = {
+		limit = {
+			has_idea = CIR_weidalixiang4_idea
+		}
+		swap_ideas = {
+			remove_idea = CIR_weidalixiang4_idea
+			add_idea = CIR_weidalixiang5_idea
+		}
+	}
+	if = {
+		limit = {
+			has_idea = CIR_weidalixiang3_idea
+		}
+		swap_ideas = {
+			remove_idea = CIR_weidalixiang3_idea
+			add_idea = CIR_weidalixiang4_idea
+		}
+	}
+	if = {
+		limit = {
+			has_idea = CIR_weidalixiang2_idea
+		}
+		swap_ideas = {
+			remove_idea = CIR_weidalixiang2_idea
+			add_idea = CIR_weidalixiang3_idea
+		}
+	}
+	if = {
+		limit = {
+			has_idea = CIR_weidalixiang1_idea
+		}
+		swap_ideas = {
+			remove_idea = CIR_weidalixiang1_idea
+			add_idea = CIR_weidalixiang2_idea
+		}
+	}
+	if = {
+		limit = {
+			has_idea = CIR_weidalixiang0_idea
+		}
+		swap_ideas = {
+			remove_idea = CIR_weidalixiang0_idea
+			add_idea = CIR_weidalixiang1_idea
+		}
+	}
+}
+CIR_weidalixiang_minus = {
+	if = {
+		limit = {
+			has_idea = CIR_weidalixiang1_idea
+		}
+		swap_ideas = {
+			remove_idea = CIR_weidalixiang1_idea
+			add_idea = CIR_weidalixiang0_idea
+		}
+	}
+	if = {
+		limit = {
+			has_idea = CIR_weidalixiang2_idea
+		}
+		swap_ideas = {
+			remove_idea = CIR_weidalixiang2_idea
+			add_idea = CIR_weidalixiang1_idea
+		}
+	}
+	if = {
+		limit = {
+			has_idea = CIR_weidalixiang3_idea
+		}
+		swap_ideas = {
+			remove_idea = CIR_weidalixiang3_idea
+			add_idea = CIR_weidalixiang2_idea
+		}
+	}
+	if = {
+		limit = {
+			has_idea = CIR_weidalixiang4_idea
+		}
+		swap_ideas = {
+			remove_idea = CIR_weidalixiang4_idea
+			add_idea = CIR_weidalixiang3_idea
+		}
+	}
+	if = {
+		limit = {
+			has_idea = CIR_weidalixiang5_idea
+		}
+		swap_ideas = {
+			remove_idea = CIR_weidalixiang5_idea
+			add_idea = CIR_weidalixiang4_idea
+		}
+	}
+	if = {
+		limit = {
+			has_idea = CIR_weidalixiang6_idea
+		}
+		swap_ideas = {
+			remove_idea = CIR_weidalixiang6_idea
+			add_idea = CIR_weidalixiang5_idea
+		}
+	}
+}

@@ -1,0 +1,71 @@
+ELL_jihuamofayanjiu_decision_category = {
+	priority = 20
+  
+	# allowed = {
+	# 	original_tag = MRS
+	# }
+
+	# visible = {
+    # 	original_tag = MRS
+	# }
+}
+ELL_ruanmianmianfendian_decision_category = {
+	priority = 20
+  
+	# allowed = {
+	# 	original_tag = MRS
+	# }
+
+	# visible = {
+    # 	original_tag = MRS
+	# }
+}
+
+ELL_xuexikexue_decision_category = {
+	priority = 20
+  
+	# allowed = {
+	# 	original_tag = MRS
+	# }
+
+	# visible = {
+    # 	original_tag = MRS
+	# }
+}
+
+ELL_quchengzhenhua_decision_category = {
+	priority = 20
+  
+	# allowed = {
+	# 	original_tag = MRS
+	# }
+
+	# visible = {
+    # 	original_tag = MRS
+	# }
+}
+
+ELL_bingzhongkaohebiaozhun_decision_category = {
+	priority = 20
+  
+	# allowed = {
+	# 	original_tag = MRS
+	# }
+
+	# visible = {
+    # 	original_tag = MRS
+	# }
+}
+
+ELL_difangyanjiuzhongxin_decision_category = {
+	priority = 20
+  
+	# allowed = {
+	# 	original_tag = MRS
+	# }
+
+	# visible = {
+    # 	original_tag = MRS
+	# }
+}
+

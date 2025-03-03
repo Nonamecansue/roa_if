@@ -1,0 +1,25 @@
+state={
+	id=459
+	name="STATE_459"
+	provinces={
+		501 1110 1443 1593 1609 1739 6190 6205 6216 6226 
+	}
+	history={
+		146.1.1 = {
+			owner = AOO
+			add_core_of = AOO
+			buildings = {
+				infrastructure = 2
+				industrial_complex = 0
+				arms_factory = 1
+
+			}
+
+		}
+
+	}
+	manpower=110489.0
+	state_category=s5
+	local_supplies=2.5
+	buildings_max_level_factor=1.000
+}

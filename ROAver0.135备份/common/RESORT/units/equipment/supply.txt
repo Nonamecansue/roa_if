@@ -1,0 +1,122 @@
+# truck and trains
+
+equipments = {
+	#truck
+	yunshudui_a = {
+		year = 140
+
+		is_archetype = yes
+		picture = archetype_motorized_equipment		
+		is_buildable = no
+		active = no
+		type = {
+			motorized
+		}
+		group_by = archetype
+		
+		interface_category = interface_category_land
+
+		maximum_speed = 8
+
+		#Space taken in convoy
+		lend_lease_cost = 5
+
+		build_cost_ic = 2.5
+		resources = {
+
+		}
+		
+		# fuel_consumption = 1.2
+		supply_truck = yes
+	}
+
+	yunshudui_ma = {
+		year = 140
+
+		archetype = yunshudui_a
+		priority = 30	
+		resources = {
+			gas = 1
+		}		
+	}
+	yunshudui_sc = {
+		year = 140
+
+		archetype = yunshudui_a
+		priority = 30	
+		resources = {
+			powder = 1
+		}		
+	}
+	#trains
+	truck_a = {
+		year = 146
+
+		is_archetype = yes
+		is_buildable = no
+		active = no
+		type = train
+		picture = archetype_train
+		group_by = archetype
+		sprite = train
+
+		interface_category = interface_category_land
+
+		armor_value = 0 # HP = BASE_TRAIN_HP + armor_value
+
+		build_cost_ic = 70
+		resources = {
+			gas = 2
+			powder = 2
+		}
+	}
+	truck_1 = {
+		year = 146
+
+		archetype = truck_a
+		type = {
+			train
+		}
+
+		armor_value = 0 # HP = BASE_TRAIN_HP + armor_value
+		
+		priority = 10
+
+		build_cost_ic = 70
+		resources = {
+			gas = 2
+			powder = 2
+		}
+	}
+	truck_2 = {
+		year = 151
+
+		archetype = truck_a
+		type = {
+			train
+		}
+
+		armor_value = 250 # HP = BASE_TRAIN_HP + armor_value
+
+		priority = 30
+		build_cost_ic = 105
+		resources = {
+			gas = 3
+			powder = 3
+		}
+	}
+
+	yunshudui_kasha = {
+		year = 144
+
+		archetype = yunshudui_a
+		parent = yunshudui_sc
+		priority = 30	
+		build_cost_ic = 2.0
+		maximum_speed = 12
+		resources = {
+			# powder = 1
+		}		
+		
+	} 
+}

@@ -1,0 +1,31 @@
+
+state={
+	id=589
+	name="STATE_589"
+	provinces={
+		399 665 1512 5176 5182 5195 5196 5204 5209 5212 5227 5232 5242 
+	}
+	resources={
+		energy = 0
+		powder = 16.0
+		metal = 8.0
+		gas=2.000
+		crystal=0.000
+	}
+	history={
+		146.1.1 = {
+			owner = NTR
+			add_core_of = NTR
+			add_claim_by = KAP
+			buildings = {
+				infrastructure = 5
+				industrial_complex = 3
+				arms_factory = 2
+			}
+		}
+	}
+	state_category=s7
+	manpower=3534
+	buildings_max_level_factor=1.000
+	local_supplies=2.500
+}

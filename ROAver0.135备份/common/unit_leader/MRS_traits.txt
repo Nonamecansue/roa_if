@@ -1,0 +1,44 @@
+leader_traits = {
+	MRS_waijiehuojian_trait = {
+		type = all
+		trait_type = personality_trait
+		modifier = {
+			land_reinforce_rate = 0.1
+			recon_factor = 0.05
+			army_speed_factor = 0.05
+		}
+		non_shared_modifier = {
+			# experience_gain_factor = 0.5
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	MRS_shanchangxueximolisha_trait = { 
+		type = all
+		trait_type = personality_trait
+		modifier = {
+			# army_morale_factor = 0.05
+		}
+		non_shared_modifier = {
+			experience_gain_factor = 0.5
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	MRS_molishachengyao_trait = { 
+		type = all
+		trait_type = personality_trait
+		
+		modifier = {
+			army_morale_factor = 0.05
+		}
+		non_shared_modifier = {
+			experience_gain_factor = 1
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+}

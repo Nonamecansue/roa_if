@@ -1,0 +1,75 @@
+characters={
+	NAR_narumi ={
+		name = NAR_narumi
+		portraits={
+			civilian={
+				large="gfx/leaders/NAR/NAR_narumi.dds"
+				small="gfx/leaders/NAR/NAR_narumi_small.dds"
+			}
+			army = {
+				large="gfx/leaders/NAR/NAR_narumi.dds"
+				small="gfx/leaders/NAR/NAR_narumi_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  th_original_character th_character  trait_cautious jungle_rat }
+			# id = 20
+			attack_skill = 2
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 6
+			skill = 5
+		}
+		advisor = {
+			slot = character_coop
+			idea_token = NAR_narumi
+			name = NAR_narumi
+			cost = 200
+			modifier = {
+				weekly_manpower = 2
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	NAR_narumi_leader ={
+		name = NAR_narumi_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/NAR/NAR_narumi.dds"
+				small="gfx/leaders/NAR/NAR_narumi_small.dds"
+			}
+			army = {
+				large="gfx/leaders/NAR/NAR_narumi.dds"
+				small="gfx/leaders/NAR/NAR_narumi_small.dds"
+			}
+		}
+		country_leader={
+			ideology=fandong_type
+			id=-1
+		}
+		country_leader={
+			ideology=qinwai_type
+			id=-1
+		}
+		country_leader={
+			ideology=guli_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldorder_type
+			id=-1
+		}
+		country_leader={
+			ideology=neworder_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldgenso_type
+			id=-1
+		}
+	}
+}

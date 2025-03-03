@@ -1,0 +1,3505 @@
+ideas = {
+	country = {
+		### The Foreign influences
+		### Yakumo 
+		SAT_Yakumo_influence_idea_1 = {
+			picture = sat_ykr_influence_handshake
+	    	allowed = {
+				always = no
+			}
+
+
+			available = {
+				NOT = { is_subject = yes }
+				NOT = { has_war_with = YKR }
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				oldorder_drift = 0.01
+				production_speed_buildings_factor = 0.025
+				army_attack_factor = 0.025
+			}
+
+			research_bonus = {
+				magic = 0.025
+			}
+	    }
+	    
+	    SAT_Yakumo_influence_idea_2 = {
+			picture = sat_ykr_influence_handshake
+	    	allowed = {
+				always = no
+			}
+
+
+			available = {
+				NOT = { is_subject = yes }
+				NOT = { has_war_with = YKR }
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				oldorder_drift = 0.02
+				production_speed_buildings_factor = 0.03
+				army_attack_factor = 0.03
+				political_power_factor = -0.05
+			}
+
+			targeted_modifier = { 
+				tag = YKR
+				extra_trade_to_target_factor = 0.15
+				trade_cost_for_target_factor = -0.15
+				cic_to_target_factor = 0.03
+			}
+
+			research_bonus = {
+				magic = 0.035
+			}
+	    }
+
+		SAT_Yakumo_influence_idea_3 = {
+			picture = sat_ykr_influence_handshake
+	    	allowed = {
+				always = no
+			}
+
+
+			available = {
+				NOT = { is_subject = yes }
+				NOT = { has_war_with = YKR }
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				oldorder_drift = 0.025
+				production_speed_buildings_factor = 0.03
+				army_attack_factor = 0.04
+				political_power_factor = -0.075
+			}
+
+			targeted_modifier = { 
+				tag = YKR
+				extra_trade_to_target_factor = 0.20
+				trade_cost_for_target_factor = -0.20
+				cic_to_target_factor = 0.05
+			}
+
+			research_bonus = {
+				magic = 0.05
+			}
+	    }
+
+	    SAT_Yakumo_influence_idea_4 = {
+			picture = sat_ykr_influence_handshake
+	    	allowed = {
+				always = no
+			}
+
+
+			available = {
+				NOT = { is_subject = yes }
+				NOT = { has_war_with = YKR }
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				oldorder_drift = 0.035
+				production_speed_buildings_factor = 0.035
+				army_attack_factor = 0.05
+				political_power_factor = -0.10
+			}
+
+			targeted_modifier = { 
+				tag = YKR
+				extra_trade_to_target_factor = 0.25
+				trade_cost_for_target_factor = -0.20
+				cic_to_target_factor = 0.075
+			}
+
+			research_bonus = {
+				magic = 0.075
+			}
+	    }
+
+		SAT_Yakumo_influence_idea_5 = {
+			picture = sat_ykr_influence_handshake
+	    	allowed = {
+				always = no
+			}
+
+
+			available = {
+				NOT = { is_subject = yes }
+				NOT = { has_war_with = YKR }
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				oldorder_drift = 0.05
+				production_speed_buildings_factor = 0.05
+				army_attack_factor = 0.065
+				political_power_factor = -0.15
+			}
+
+			targeted_modifier = { 
+				tag = YKR
+				extra_trade_to_target_factor = 0.3
+				trade_cost_for_target_factor = -0.25
+				cic_to_target_factor = 0.10
+			}
+
+			research_bonus = {
+				magic = 0.10
+			}
+	    }
+
+		### Shikierki
+
+	    SAT_Shikierki_influence_idea_1 = {
+			picture = sat_ski_influence_handshake
+	    	allowed = {
+				always = no
+			}
+
+
+			available = {
+				NOT = { is_subject = yes }
+				NOT = { has_war_with = SKI }
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				qinwai_drift = 0.01
+				line_change_production_efficiency_factor = 0.025
+				supply_consumption_factor = -0.025
+			}
+
+			research_bonus = {
+				build = 0.025
+			}
+	    }
+	    
+	    SAT_Shikierki_influence_idea_2 = {
+			picture = sat_ski_influence_handshake
+	    	allowed = {
+				always = no
+			}
+
+
+			available = {
+				NOT = { is_subject = yes }
+				NOT = { has_war_with = SKI }
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				qinwai_drift = 0.02
+				line_change_production_efficiency_factor = 0.03
+				supply_consumption_factor = -0.03
+				political_power_factor = -0.05
+			}
+
+			targeted_modifier = { 
+				tag = SKI
+				extra_trade_to_target_factor = 0.15
+				trade_cost_for_target_factor = -0.15
+				cic_to_target_factor = 0.02
+			}
+
+			research_bonus = {
+				build = 0.035
+			}
+	    }
+
+		SAT_Shikierki_influence_idea_3 = {
+			picture = sat_ski_influence_handshake
+	    	allowed = {
+				always = no
+			}
+
+
+			available = {
+				NOT = { is_subject = yes }
+				NOT = { has_war_with = SKI }
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				qinwai_drift = 0.025
+				line_change_production_efficiency_factor = 0.03
+				supply_consumption_factor = -0.04
+				political_power_factor = -0.075
+			}
+
+			targeted_modifier = { 
+				tag = SKI
+				extra_trade_to_target_factor = 0.20
+				trade_cost_for_target_factor = -0.20
+				cic_to_target_factor = 0.03
+			}
+
+			research_bonus = {
+				build = 0.05
+			}
+	    }
+
+	    SAT_Shikierki_influence_idea_4 = {
+			picture = sat_ski_influence_handshake
+	    	allowed = {
+				always = no
+			}
+
+
+			available = {
+				NOT = { is_subject = yes }
+				NOT = { has_war_with = SKI }
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				qinwai_drift = 0.035
+				line_change_production_efficiency_factor = 0.035
+				supply_consumption_factor = -0.05
+				political_power_factor = -0.10
+			}
+
+			targeted_modifier = { 
+				tag = SKI
+				extra_trade_to_target_factor = 0.25
+				trade_cost_for_target_factor = -0.20
+				cic_to_target_factor = 0.05
+			}
+
+			research_bonus = {
+				build = 0.075
+			}
+	    }
+
+		SAT_Shikierki_influence_idea_5 = {
+			picture = sat_ski_influence_handshake
+	    	allowed = {
+				always = no
+			}
+
+
+			available = {
+				NOT = { is_subject = yes }
+				NOT = { has_war_with = SKI }
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				qinwai_drift = 0.05
+				line_change_production_efficiency_factor = 0.05
+				supply_consumption_factor = -0.065
+				political_power_factor = -0.15
+			}
+
+			targeted_modifier = { 
+				tag = SKI
+				extra_trade_to_target_factor = 0.3
+				trade_cost_for_target_factor = -0.25
+				cic_to_target_factor = 0.075
+			}
+
+			research_bonus = {
+				build = 0.10
+			}
+	    }
+
+		### Moriya
+
+	    SAT_Moriya_influence_idea_1 = {
+			picture = sat_mry_influence_handshake
+	    	allowed = {
+				always = no
+			}
+
+
+			available = {
+				NOT = { is_subject = yes }
+				NOT = { has_war_with = MRY }
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				guli_drift = 0.01
+				industrial_capacity_factory = 0.025
+				max_planning_factor = 0.03
+			}
+
+			research_bonus = {
+				science = 0.025
+			}
+	    }
+	    
+	    SAT_Moriya_influence_idea_2 = {
+			picture = sat_mry_influence_handshake
+	    	allowed = {
+				always = no
+			}
+
+
+			available = {
+				NOT = { is_subject = yes }
+				NOT = { has_war_with = MRY }
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				guli_drift = 0.02
+				industrial_capacity_factory = 0.03
+				max_planning_factor = 0.035
+				political_power_factor = -0.05
+			}
+
+			targeted_modifier = { 
+				tag = MRY
+				extra_trade_to_target_factor = 0.15
+				trade_cost_for_target_factor = -0.15
+				cic_to_target_factor = 0.03
+			}
+
+			research_bonus = {
+				science = 0.035
+			}
+	    }
+
+		SAT_Moriya_influence_idea_3 = {
+			picture = sat_mry_influence_handshake
+	    	allowed = {
+				always = no
+			}
+
+
+			available = {
+				NOT = { is_subject = yes }
+				NOT = { has_war_with = MRY }
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				guli_drift = 0.025
+				industrial_capacity_factory = 0.03
+				max_planning_factor = 0.05
+				political_power_factor = -0.075
+			}
+
+			targeted_modifier = { 
+				tag = MRY
+				extra_trade_to_target_factor = 0.20
+				trade_cost_for_target_factor = -0.20
+				cic_to_target_factor = 0.05
+			}
+
+			research_bonus = {
+				science = 0.05
+			}
+	    }
+
+	    SAT_Moriya_influence_idea_4 = {
+			picture = sat_mry_influence_handshake
+	    	allowed = {
+				always = no
+			}
+
+
+			available = {
+				NOT = { is_subject = yes }
+				NOT = { has_war_with = MRY }
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				guli_drift = 0.035
+				industrial_capacity_factory = 0.035
+				max_planning_factor = 0.075
+				political_power_factor = -0.10
+			}
+
+			targeted_modifier = { 
+				tag = MRY
+				extra_trade_to_target_factor = 0.25
+				trade_cost_for_target_factor = -0.20
+				cic_to_target_factor = 0.075
+			}
+
+			research_bonus = {
+				science = 0.075
+			}
+	    }
+
+		SAT_Moriya_influence_idea_5 = {
+			picture = sat_mry_influence_handshake
+	    	allowed = {
+				always = no
+			}
+
+
+			available = {
+				NOT = { is_subject = yes }
+				NOT = { has_war_with = MRY }
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				guli_drift = 0.05
+				industrial_capacity_factory = 0.05
+				max_planning_factor = 0.10
+				political_power_factor = -0.15
+			}
+
+			targeted_modifier = { 
+				tag = MRY
+				extra_trade_to_target_factor = 0.3
+				trade_cost_for_target_factor = -0.25
+				cic_to_target_factor = 0.10
+			}
+
+			research_bonus = {
+				science = 0.10
+			}
+	    }
+		##################
+		SAT_Pact_of_Geyser = {
+			picture = HUN_treaty_of_triannon
+	    	allowed = {
+				always = no
+			}
+
+
+			available = {
+				NOT = { is_subject = yes }
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				stability_factor = 0.15
+				enemy_declare_war_tension = 0.50
+				generate_wargoal_tension = 0.30
+			}
+
+			# targeted_modifier = { 
+			# 	tag = MRY
+			# 	mic_to_target_factor = 0.025
+			# }
+			# targeted_modifier = { 
+			# 	tag = SCA
+			# 	mic_to_target_factor = 0.025
+			# }
+			# targeted_modifier = { 
+			# 	tag = SEJ
+			# 	mic_to_target_factor = 0.025
+			# }
+
+			rule = {
+				can_join_factions = no
+			}
+	    }
+
+		SAT_Pact_of_Geyser_Gensokyo = {
+			picture = HUN_treaty_of_triannon
+	    	allowed = {
+				always = no
+			}
+
+
+			available = {
+				NOT = { is_subject = yes }
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				stability_factor = 0.05
+			}
+			targeted_modifier = { 
+				tag = PRS
+				generate_wargoal_tension_against = 0.85
+			}
+			targeted_modifier = { 
+				tag = ACE
+				generate_wargoal_tension_against = 0.85
+			}
+			targeted_modifier = { 
+				tag = YMM
+				generate_wargoal_tension_against = 0.85
+			}
+			targeted_modifier = { 
+				tag = UNL
+				generate_wargoal_tension_against = 0.85
+			}
+			targeted_modifier = { 
+				tag = SAT
+				generate_wargoal_tension_against = 0.85
+			}
+			targeted_modifier = { 
+				tag = YUG
+				generate_wargoal_tension_against = 0.85
+			}
+			targeted_modifier = { 
+				tag = UUG
+				generate_wargoal_tension_against = 0.85
+			}
+	    }
+
+		SAT_Chirendan_memorandum = {
+			picture = tur_odpa
+	    	allowed = {
+				always = no
+			}
+
+
+			available = {
+				NOT = { is_subject = yes }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				stability_factor = 0.10
+				generate_wargoal_tension = 0.40
+				production_speed_arms_factory_factor = 0.10
+				ai_focus_defense_factor = 0.50
+				ai_focus_war_production_factor = 0.5
+			}
+
+			targeted_modifier = { 
+				tag = SAT
+				mic_to_target_factor = 0.10
+			}
+
+			rule = {
+				can_join_factions = no
+			}
+		}
+
+		SAT_Komeiji_Isolationism = {
+			
+			picture = sat_chireidan_isolationism
+	    	allowed = {
+				always = no
+			}
+
+
+			available = {
+				NOT = { is_subject = yes }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				generate_wargoal_tension = 0.25
+				justify_war_goal_time = 6.0
+				enemy_justify_war_goal_time = 2.0
+				CONV_RULE_cannot_convert = 1
+			}
+
+			rule = {
+				can_join_factions = no
+			}
+
+		}
+
+		SAT_Komeiji_Isolationism_enhanced = {
+			name = SAT_Komeiji_Isolationism
+			picture = sat_chireidan_isolationism
+	    	allowed = {
+				always = no
+			}
+
+
+			available = {
+				NOT = { is_subject = yes }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				generate_wargoal_tension = 0.25
+				justify_war_goal_time = 6.0
+				enemy_justify_war_goal_time = 2.0
+				army_speed_factor = 0.05
+				CONV_RULE_cannot_convert = 1
+			}
+
+			targeted_modifier = {
+				tag = UNL
+				attack_bonus_against = 0.10
+			}
+
+			targeted_modifier = {
+				tag = UFA
+				attack_bonus_against = 0.15
+			}
+
+			targeted_modifier = {
+				tag = UUG
+				attack_bonus_against = 0.15
+			}
+
+			rule = {
+				can_join_factions = no
+			}
+			
+		}
+
+		SAT_Komeiji_Isolationism_old_order = {
+			name = SAT_Komeiji_Isolationism
+			picture = sat_chireidan_isolationism
+	    	allowed = {
+				always = no
+			}
+
+
+			available = {
+				NOT = { is_subject = yes }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				generate_wargoal_tension = 0.25
+				justify_war_goal_time = 6.0
+				enemy_justify_war_goal_time = 2.0
+			}
+
+			rule = {
+				can_join_factions = no
+			}
+
+		}
+
+		SAT_Komeiji_Isolationism_old_order_enhanced = {
+			name = SAT_Komeiji_Isolationism
+			picture = sat_chireidan_isolationism
+	    	allowed = {
+				always = no
+			}
+
+
+			available = {
+				NOT = { is_subject = yes }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				generate_wargoal_tension = 0.25
+				justify_war_goal_time = 6.0
+				enemy_justify_war_goal_time = 2.0
+				army_speed_factor = 0.05
+			}
+
+			targeted_modifier = {
+				tag = UNL
+				attack_bonus_against = 0.10
+			}
+
+			targeted_modifier = {
+				tag = UFA
+				attack_bonus_against = 0.15
+			}
+
+			targeted_modifier = {
+				tag = UUG
+				attack_bonus_against = 0.15
+			}
+
+			rule = {
+				can_join_factions = no
+			}
+			
+		}
+
+		SAT_Komeiji_PRS_interventionism = {
+			picture = HUN_treaty_of_triannon  ## TODO
+	    	allowed = {
+				always = no
+			}
+
+			available = {
+				OR = {
+					NOT = { is_subject = yes }
+					is_subject_of = SAT
+				}
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				army_speed_factor = 0.05
+			}
+
+			targeted_modifier = {
+				tag = UNL
+				attack_bonus_against = 0.10
+			}
+
+			targeted_modifier = {
+				tag = ACE
+				attack_bonus_against = 0.15
+			}
+
+		}
+
+
+		###############################################################################################################
+		###############################################################################################################
+		###############################################################################################################
+		###############################################################################################################
+		###############################################################################################################
+		###############################################################################################################
+
+		SAT_UUG_unrest_plus_1 = {
+			# name = SAT_UUG_unrest
+			picture = bul_imro
+			allowed = {
+				always = no
+			}
+
+
+			available = {
+				NOT = { is_subject = yes }
+				OR = {
+					tag = SAT
+					AND = {
+						UUG = { exists = yes }
+						UUG = { is_subject = no }
+					}
+					
+				}
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				stability_factor = -0.2
+				industrial_capacity_factory = -0.15
+				production_speed_buildings_factor = -0.10
+			}
+		}
+
+		SAT_UUG_unrest_plus = {
+			# name = SAT_UUG_unrest
+			picture = bul_imro
+			allowed = {
+				always = no
+			}
+
+
+			available = {
+				NOT = { is_subject = yes }
+				OR = {
+					tag = SAT
+					AND = {
+						UUG = { exists = yes }
+						UUG = { is_subject = no }
+					}
+					
+				}
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				stability_factor = -0.175
+				industrial_capacity_factory = -0.1
+				production_speed_buildings_factor = -0.05
+			}
+		}
+
+		SAT_UUG_unrest = {
+			picture = bul_imro
+			allowed = {
+				always = no
+			}
+
+
+			available = {
+				NOT = { is_subject = yes }
+				OR = {
+					tag = SAT
+					AND = {
+						UUG = { exists = yes }
+						UUG = { is_subject = no }
+					}
+					
+				}
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				stability_factor = -0.15
+				industrial_capacity_factory = -0.075
+			}
+		}
+
+		SAT_UUG_unrest_2 = {
+			# name = SAT_UUG_unrest
+			picture = bul_imro
+			allowed = {
+				always = no
+			}
+
+
+			available = {
+				NOT = { is_subject = yes }
+				OR = {
+					tag = SAT
+					AND = {
+						UUG = { exists = yes }
+						UUG = { is_subject = no }
+					}
+					
+				}
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				stability_factor = -0.075
+				industrial_capacity_factory = -0.035
+			}
+		}
+
+		SAT_UUG_unrest_3 = {
+			# name = SAT_UUG_unrest
+			picture = bul_imro
+			allowed = {
+				always = no
+			}
+
+
+			available = {
+				NOT = { is_subject = yes }
+				OR = {
+					tag = SAT
+					AND = {
+						UUG = { exists = yes }
+						UUG = { is_subject = no }
+					}
+					
+				}
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				stability_factor = -0.05
+			}
+		}
+
+		SAT_UUG_unrest_Gensokyo = {
+			name = SAT_UUG_unrest
+			picture = bul_imro
+			allowed = {
+				always = no
+			}
+
+
+			available = {
+				NOT = { is_subject = yes }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				stability_factor = -0.075
+			}
+		}
+
+		UUG_unrest = {
+			name = UUG_unrest
+			picture = bul_imro
+			allowed = {
+				always = no
+			}
+
+
+			available = {
+				NOT = { is_subject = yes }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				war_support_weekly = 0.002
+				PO_daily_gain = 0.20
+				army_attack_factor = 0.10
+				army_defence_factor = 0.10
+			}
+		}
+
+		SAT_the_third_eye_idea = {
+			name = SAT_the_third_eye
+			picture = sat_chireidan_the_third_idea ### TODO: Change
+			allowed = {
+				always = no
+			}
+
+
+			available = {
+				NOT = { is_subject = yes }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				decryption_factor = 0.05
+				civilian_intel_factor = 0.05
+				army_intel_factor = 0.05
+				enemy_operative_capture_chance_factor = 0.1
+				enemy_operative_intel_extraction_rate = 0.1
+			}
+		}
+
+		SAT_the_third_eye_idea_2 = {
+			name = SAT_the_third_eye
+			picture = sat_chireidan_the_third_idea ### TODO: Change
+			allowed = {
+				always = no
+			}
+
+
+			available = {
+				NOT = { is_subject = yes }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				decryption_factor = 0.1
+				civilian_intel_factor = 0.05
+				army_intel_factor = 0.05
+				recon_factor = 0.05
+				crypto_strength = 1
+				enemy_operative_capture_chance_factor = 0.1
+				enemy_operative_intel_extraction_rate = 0.1
+				# operative_slot = 1
+			}
+		}
+
+		SAT_the_third_eye_idea_old_order = {
+			name = SAT_the_third_eye
+			picture = sat_chireidan_the_third_idea ### TODO: Change
+			allowed = {
+				always = no
+			}
+
+
+			available = {
+				NOT = { is_subject = yes }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				oldorder_drift = 0.02
+				decryption_factor = 0.1
+				civilian_intel_factor = 0.05
+				army_intel_factor = 0.05
+				recon_factor = 0.1
+				compliance_growth = 0.05
+				CO_cost_factor = -0.20
+				crypto_strength = 1
+				enemy_operative_capture_chance_factor = 0.2
+				enemy_operative_intel_extraction_rate = 0.2
+				operative_slot = 1
+			}
+		}
+
+		SAT_reestimate_our_industry = {
+			name = SAT_reestimate_our_industry
+			picture = generic_exploit_mines ### TODO: Change
+
+			available = {
+				NOT = { is_subject = yes }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				production_speed_industrial_complex_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.15
+			}
+		}
+
+		SAT_plan_gorgolon = {
+			picture = bul_darzhavna_voenna_fabrika ### TODO: Change
+
+			available = {
+				NOT = { is_subject = yes }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				production_speed_infrastructure_factor = 0.10
+				production_speed_rail_way_factor = 0.10
+			}
+		}
+
+		SAT_plan_gorgolon_2 = {   ### Electricity
+			name = SAT_plan_gorgolon
+			picture = bul_darzhavna_voenna_fabrika ### TODO: Change
+
+			available = {
+				NOT = { is_subject = yes }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				production_speed_infrastructure_factor = 0.10
+				production_speed_rail_way_factor = 0.10
+				production_factory_max_efficiency_factor = 0.05
+				PO_bad_influence_factor = -0.1
+			}
+		}
+
+		SAT_plan_gorgolon_3 = {  ### Spiritual Power
+			name = SAT_plan_gorgolon
+			picture = bul_darzhavna_voenna_fabrika ### TODO: Change
+
+			available = {
+				NOT = { is_subject = yes }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				production_speed_infrastructure_factor = 0.15
+				production_speed_rail_way_factor = 0.15
+				# industrial_capacity_factory = 0.05
+				PO_good_influence_factor = 0.05
+			}
+		}
+
+		SAT_civil_industrial_cost = {  ### Spiritual Power
+			picture = generic_central_management ### TODO: Change
+
+			available = {
+				NOT = { is_subject = yes }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				civilian_factory_use = 4
+			}
+		}
+
+		SAT_civil_industrial_cost_2 = {  ### Spiritual Power
+			name = SAT_civil_industrial_cost
+			picture = generic_central_management ### TODO: Change
+
+			available = {
+				NOT = { is_subject = yes }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				civilian_factory_use = 6
+			}
+		}
+
+		SAT_civil_industrial_cost_3 = {  ### Spiritual Power
+			name = SAT_civil_industrial_cost
+			picture = generic_central_management ### TODO: Change
+
+			available = {
+				NOT = { is_subject = yes }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				civilian_factory_use = 8
+			}
+		}
+
+		SAT_civil_industrial_cost_4 = {  ### Spiritual Power
+			name = SAT_civil_industrial_cost
+			picture = generic_central_management ### TODO: Change
+
+			available = {
+				NOT = { is_subject = yes }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				civilian_factory_use = 10
+			}
+		}
+
+		SAT_military_industrial_cost = {  ### Spiritual Power
+			picture = MEX_politicised_army ### TODO: Change
+
+			available = {
+				NOT = { is_subject = yes }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				industrial_capacity_factory = -0.05
+				experience_gain_army_factor = -0.05
+			}
+		}
+
+		SAT_military_industrial_cost_2 = {  ### Spiritual Power
+			name = SAT_military_industrial_cost
+			picture = MEX_politicised_army ### TODO: Change
+
+			available = {
+				NOT = { is_subject = yes }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				industrial_capacity_factory = -0.075
+				experience_gain_army_factor = -0.075
+			}
+		}
+
+		SAT_military_industrial_cost_3 = {  ### Spiritual Power
+			name = SAT_military_industrial_cost
+			picture = MEX_politicised_army ### TODO: Change
+
+			available = {
+				NOT = { is_subject = yes }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				industrial_capacity_factory = -0.10
+				experience_gain_army_factor = -0.10
+			}
+		}
+
+		SAT_military_industrial_cost_4 = {  ### Spiritual Power
+			name = SAT_military_industrial_cost
+			picture = MEX_politicised_army ### TODO: Change
+
+			available = {
+				NOT = { is_subject = yes }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				industrial_capacity_factory = -0.15
+				experience_gain_army_factor = -0.15
+			}
+		}
+
+		SAT_drink = {
+			picture = ROM_king_carol_ii_hedonist ### TODO: Change
+
+			available = {
+
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				consumer_goods_factor = -0.025
+				political_power_cost = 0.10
+				war_support_factor = 0.05
+			}
+		}
+
+		SAT_artillery_high_temperature = {
+			picture = springfield_armory ### TODO: Change
+
+			available = {
+
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			equipment_bonus = {
+				mortar_a = {
+					reliability = 0.2
+					breakthrough = 0.05
+					build_cost_ic = 0.15
+					instant = yes
+				}
+			}
+		}
+
+		SAT_power_matrix_idea = {
+			picture = bul_ratniks ### TODO: Change
+
+			available = {
+
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				PO_good_battle_influence_factor = 0.15
+			}
+		}
+
+		SAT_SKI_pact_idea = {
+			picture = sat_pact_with_ski ### TODO: Change
+
+			available = {
+				NOT = { SAT = { has_completed_focus = SAT_the_acknowledgement_of_yukari } }
+				NOT = { SAT = { has_government = oldorder } }
+				NOT = { SAT = { has_government = neworder } }
+				NOT = { SAT = { has_government = fandong } }
+				# NOT = { SKI = { has_government = oldorder } }
+				# NOT = { SKI = { has_government = neworder } }
+				# NOT = { SKI = { has_government = fandong } }
+				NOT = { SAT = { is_subject = yes } }
+				NOT = { SKI = { is_subject = yes } }
+				SAT = { NOT = { has_war_with = SKI } }
+				SAT = { NOT = { has_completed_focus = SAT_the_acknowledgement_of_yukari } }
+				SAT = { NOT = { has_completed_focus = SAT_self_defence_alliance } }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+			
+			research_bonus = {
+				magic = 0.05
+			}
+			modifier = {
+				stability_factor = 0.075
+				production_factory_start_efficiency_factor = 0.10
+				experience_gain_army_factor = 0.10
+				qinwai_drift = 0.02
+			}
+
+			targeted_modifier = {
+				tag = AOO
+				attack_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = AOO
+				defense_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = AKO
+				attack_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = AKO
+				defense_bonus_against = 0.10
+			}
+		}
+
+		SAT_keep_on_guard_idea_0 = {
+			name = SAT_keep_on_guard_idea
+			picture = sat_keep_on_guard_1 ### TODO: Change
+
+			available = {
+
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				civilian_intel_factor = 0.01
+				army_intel_factor = 0.01
+			}
+		}
+
+		SAT_keep_on_guard_idea_1 = {
+			name = SAT_keep_on_guard_idea
+			picture = sat_keep_on_guard_1 ### TODO: Change
+
+			available = {
+
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				civilian_intel_factor = 0.01
+				army_intel_factor = 0.01
+				defensive_war_stability_factor = 0.1
+			}
+		}
+
+		SAT_keep_on_guard_idea_2 = {
+			name = SAT_keep_on_guard_idea
+			picture = sat_keep_on_guard_1 ### TODO: Change
+
+			available = {
+
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				civilian_intel_factor = 0.05
+				army_intel_factor = 0.05
+				defensive_war_stability_factor = 0.15
+				training_time_factor = -0.1
+			}
+		}
+
+		SAT_keep_on_guard_idea_3 = {
+			name = SAT_keep_on_guard_idea
+			picture = sat_keep_on_guard_1 ### TODO: Change
+
+			available = {
+
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				civilian_intel_factor = 0.1
+				army_intel_factor = 0.1
+				EXHC_increase_period_factor = 0.10
+				defensive_war_stability_factor = 0.15
+				training_time_factor = -0.10
+			}
+		}
+
+		SAT_keep_on_guard_idea_4 = {
+			name = SAT_keep_on_guard_idea
+			picture = sat_keep_on_guard_2 ### TODO: Change
+
+			available = {
+
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				civilian_intel_factor = 0.1
+				army_intel_factor = 0.1
+				EXHC_increase_period_factor = 0.1
+				defensive_war_stability_factor = 0.15
+				training_time_factor = -0.15
+			}
+		}
+
+		SAT_keep_on_guard_idea_5 = {
+			name = SAT_keep_on_guard_idea
+			picture = sat_keep_on_guard_2 ### TODO: Change
+
+			available = {
+
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				civilian_intel_factor = 0.1
+				army_intel_factor = 0.1
+				EXHC_increase_period_factor = 0.15
+				defensive_war_stability_factor = 0.20
+				training_time_factor = -0.15
+			}
+		}
+
+		SAT_keep_on_guard_idea_6 = {
+			name = SAT_keep_on_guard_idea
+			picture = sat_keep_on_guard_2 ### TODO: Change
+
+			available = {
+
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				civilian_intel_factor = 0.15
+				army_intel_factor = 0.15
+				EXHC_increase_period_factor = 0.2
+				defensive_war_stability_factor = 0.25
+				training_time_factor = -0.20
+			}
+		}
+
+		SAT_volunteer_idea = {
+			picture = sat_volunteer ### TODO: Change
+
+			available = {
+
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				send_volunteers_tension = -0.50
+				send_volunteer_size = 1
+			}
+		}
+
+		SAT_volunteer_idea_2 = {
+			name = SAT_volunteer_idea
+			picture = sat_volunteer ### TODO: Change
+
+			available = {
+
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				send_volunteers_tension = -0.50
+				send_volunteer_size = 2
+				send_volunteer_divisions_required = -0.20
+			}
+		}
+
+		SAT_HUB_invasion_idea = {
+			picture = vittoria_mutilata ### TODO: Change
+
+			available = {
+				is_subject = no
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			targeted_modifier = {
+				tag = HUB
+				attack_bonus_against = 0.15
+			}
+			targeted_modifier = {
+				tag = HUB
+				defense_bonus_against = 0.15
+			}
+
+			targeted_modifier = {
+				tag = AOO
+				attack_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = AOO
+				defense_bonus_against = 0.10
+			}
+
+			targeted_modifier = {
+				tag = YYK
+				attack_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = YYK
+				defense_bonus_against = 0.10
+			}
+		}
+
+		SAT_Higan_Officers = {
+			# name = SAT_volunteer_idea
+			picture = nevskoye_design_bureau ### TODO: Change
+
+			available = {
+				is_subject = no
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				political_power_gain = 0.15
+			}
+		}
+
+		SAT_Higan_Officers_2 = {
+			# name = SAT_volunteer_idea
+			name = SAT_Higan_Officers
+			picture = nevskoye_design_bureau ### TODO: Change
+
+			available = {
+				is_subject = no
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				political_power_gain = 0.15
+				production_speed_arms_factory_factor = 0.05
+				planning_speed = 0.05
+			}
+		}
+
+		SAT_SKI_pact_idea_2 = {
+			name = SAT_SKI_pact_idea
+			picture = sat_pact_with_ski ### TODO: Change
+
+			available = {
+				is_subject = no
+				NOT = { SAT = { has_completed_focus = SAT_the_acknowledgement_of_yukari } }
+				NOT = { SAT = { has_government = oldorder } }
+				NOT = { SAT = { has_government = neworder } }
+				NOT = { SAT = { has_government = fandong } }
+				# NOT = { SKI = { has_government = oldorder } }
+				# NOT = { SKI = { has_government = neworder } }
+				# NOT = { SKI = { has_government = fandong } }
+				NOT = { SAT = { is_subject = yes } }
+				NOT = { SKI = { is_subject = yes } }
+				SAT = { NOT = { has_war_with = SKI } }
+				SAT = { NOT = { has_completed_focus = SAT_the_acknowledgement_of_yukari } }
+				SAT = { NOT = { has_completed_focus = SAT_self_defence_alliance } }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+			
+			research_bonus = {
+				magic = 0.05
+			}
+			modifier = {
+				stability_factor = 0.075
+				production_factory_start_efficiency_factor = 0.10
+				production_speed_arms_factory_factor = 0.10
+				planning_speed = 0.10
+				experience_gain_army_factor = 0.10
+				qinwai_drift = 0.035
+			}
+
+			targeted_modifier = {
+				tag = AOO
+				attack_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = AOO
+				defense_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = AKO
+				attack_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = AKO
+				defense_bonus_against = 0.10
+			}
+		}
+
+		SAT_trade_and_business_idea = {
+			picture = tur_balkan_central_bank_wealthy_greece ### TODO: Change
+
+			available = {
+				is_subject = no
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				consumer_goods_factor = -0.03
+				trade_opinion_factor = 0.25
+			}
+		}
+
+		SAT_trade_and_business_idea_2 = {
+			name = SAT_trade_and_business_idea
+			picture = tur_balkan_central_bank_wealthy_greece ### TODO: Change
+
+			available = {
+				is_subject = no
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				consumer_goods_factor = -0.03
+				trade_opinion_factor = 0.25
+				opinion_gain_monthly_factor = 0.15
+				opinion_gain_monthly_same_ideology_factor = 0.15
+			}
+		}
+
+		SAT_beast_army = {
+			picture = sat_beast_army ### TODO: Change
+
+			available = {
+				# is_subject = no
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				modifier_army_sub_unit_melee_cavalry_attack_factor = 0.10
+				modifier_army_sub_unit_melee_cavalry_defence_factor = 0.10
+				army_artillery_attack_factor = -0.15
+				army_artillery_defence_factor = -0.15
+				army_armor_attack_factor = -0.15
+				army_armor_defence_factor = -0.15
+				army_org_factor = -0.10
+			}
+
+			research_bonus = {
+				combined = 0.1
+			}
+		}
+
+		SAT_beast_army_2 = {
+			name = SAT_beast_army
+			picture = sat_beast_army ### TODO: Change
+
+			available = {
+				# is_subject = no
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				modifier_army_sub_unit_melee_cavalry_attack_factor = 0.10
+				modifier_army_sub_unit_melee_cavalry_defence_factor = 0.10
+				army_artillery_attack_factor = -0.10
+				army_artillery_defence_factor = -0.10
+				army_armor_attack_factor = -0.10
+				army_armor_defence_factor = -0.10
+			}
+
+			research_bonus = {
+				combined = 0.1
+			}
+		}
+
+		SAT_beast_army_3 = {
+			name = SAT_beast_army
+			picture = sat_beast_army ### TODO: Change
+
+			available = {
+				# is_subject = no
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				modifier_army_sub_unit_melee_cavalry_attack_factor = 0.10
+				modifier_army_sub_unit_melee_cavalry_defence_factor = 0.10
+				army_speed_factor = 0.02
+				army_artillery_attack_factor = -0.05
+				army_artillery_defence_factor = -0.05
+				army_armor_attack_factor = -0.05
+				army_armor_defence_factor = -0.05
+			}
+
+			research_bonus = {
+				combined = 0.1
+			}
+		}
+
+		SAT_beast_army_4 = {
+			name = SAT_beast_army
+			picture = sat_beast_army ### TODO: Change
+
+			available = {
+				# is_subject = no
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				modifier_army_sub_unit_melee_cavalry_attack_factor = 0.15
+				modifier_army_sub_unit_melee_cavalry_defence_factor = 0.10
+				army_speed_factor = 0.025
+			}
+
+			research_bonus = {
+				combined = 0.15
+			}
+		}
+
+		SAT_beast_army_5 = {
+			name = SAT_beast_army
+			picture = sat_beast_army ### TODO: Change
+
+			available = {
+				# is_subject = no
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				modifier_army_sub_unit_melee_cavalry_attack_factor = 0.15
+				modifier_army_sub_unit_melee_cavalry_defence_factor = 0.15
+				army_speed_factor = 0.03
+			}
+
+			research_bonus = {
+				combined = 0.15
+			}
+
+			equipment_bonus = {
+				artillery = {
+					breakthrough = 0.05
+					soft_attack = 0.10
+				}
+				shield_a = {
+					breakthrough = 0.05
+					hardness = 0.10
+				}
+			}
+		}
+
+		SAT_planning_center_idea = {
+			name = SAT_planning_center
+			picture = CZE_planning_bonus ### TODO: Change
+
+			available = {
+				is_subject = no
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				air_accidents_factor = -0.15
+				max_planning_factor = 0.05
+			}
+		}
+
+		SAT_planning_center_idea_2 = {
+			name = SAT_planning_center
+			picture = CZE_planning_bonus ### TODO: Change
+
+			available = {
+				is_subject = no
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				air_accidents_factor = -0.2
+				max_planning_factor = 0.10
+				dig_in_speed_factor = 0.15
+			}
+		}
+
+		SAT_general_staff_idea = {
+			name = SAT_general_staff
+			picture = CZE_planning_bonus ### TODO: Change
+
+			available = {
+				is_subject = no
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				air_mission_efficiency = 0.05
+				max_planning_factor = 0.1
+				PO_bad_battle_influence_factor = -0.1
+			}
+		}
+
+		SAT_general_staff_idea_2 = {
+			name = SAT_general_staff
+			picture = CZE_planning_bonus ### TODO: Change
+
+			available = {
+				is_subject = no
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				air_mission_efficiency = 0.1
+				max_planning_factor = 0.1
+				PO_bad_battle_influence_factor = -0.1
+				army_leader_start_planning_level = 1 
+				max_dig_in = 2
+			}
+		}
+
+		SAT_innovative_logistics_idea = {
+			name = SAT_innovative_logistics
+			picture = FRA_motorized_focus ### TODO: Change
+
+			available = {
+				# is_subject = no
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				army_fuel_consumption_factor = -0.05
+				supply_consumption_factor = -0.1
+				out_of_supply_factor = -0.05
+			}
+		}
+
+		SAT_innovative_logistics_idea_2 = {
+			name = SAT_innovative_logistics
+			picture = FRA_motorized_focus ### TODO: Change
+
+			available = {
+				# is_subject = no
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				army_fuel_consumption_factor = -0.05
+				supply_consumption_factor = -0.1
+				out_of_supply_factor = -0.05
+				org_loss_when_moving = -0.10
+				attrition = -0.10
+				heat_attrition = -0.1
+				winter_attrition = -0.1
+				army_leader_start_logistics_level = 1 
+			}
+		}
+
+		SAT_Komeiji_telephone_bureau_idea = {
+			name = SAT_Komeiji_telephone_bureau
+			picture = danieli ### TODO: Change
+			available = {
+				# is_subject = no
+				
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				land_reinforce_rate = 0.02
+				resistance_damage_to_garrison = -0.1
+			}
+		}
+
+		SAT_Komeiji_telephone_bureau_2_idea = {
+			name = SAT_Komeiji_telephone_bureau
+			picture = danieli ### TODO: Change
+			available = {
+				# is_subject = no
+				
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				land_reinforce_rate = 0.03
+				resistance_damage_to_garrison = -0.2
+				army_intel_factor = 0.05
+				planning_speed = 0.1
+			}
+		}
+
+		SAT_passage_defence_HQ_idea = {
+			name = SAT_passage_defence_HQ
+			picture = por_estado_novo ### TODO: Change
+			available = {
+				SAT = { is_subject = no }
+				OR = {
+					is_subject = no
+					NOT = { tag = SAT }  
+				}
+				OR = {
+					tag = SAT
+					NOT = { has_war_with = SAT }
+				}
+			}
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				army_core_attack_factor = 0.10
+				army_core_defence_factor = 0.10
+				production_speed_buildings_factor = 0.05
+			}
+		}
+
+		SAT_passage_defence_HQ_2_idea = {
+			name = SAT_passage_defence_HQ
+			picture = por_estado_novo ### TODO: Change
+			available = {
+				SAT = { is_subject = no }
+				OR = {
+					is_subject = no
+					NOT = { tag = SAT }  
+				}
+				OR = {
+					tag = SAT
+					NOT = { has_war_with = SAT }
+				}
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				army_core_attack_factor = 0.10
+				army_core_defence_factor = 0.10
+				production_speed_buildings_factor = 0.1
+				production_speed_bunker_factor = 0.10
+			}
+		}
+
+		SAT_passage_defence_HQ_1_5_idea = {
+			name = SAT_passage_defence_HQ
+			picture = por_estado_novo ### TODO: Change
+			available = {
+				SAT = { is_subject = no }
+				OR = {
+					is_subject = no
+					NOT = { tag = SAT }  
+				}
+				OR = {
+					tag = SAT
+					NOT = { has_war_with = SAT }
+				}
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				army_core_attack_factor = 0.20
+				army_core_defence_factor = 0.20
+				production_speed_buildings_factor = 0.05
+			}
+		}
+
+		SAT_passage_defence_HQ_3_idea = {
+			name = SAT_passage_defence_HQ
+			picture = por_estado_novo ### TODO: Change
+			available = {
+				SAT = { is_subject = no }
+				OR = {
+					is_subject = no
+					NOT = { tag = SAT }  
+				}
+				OR = {
+					tag = SAT
+					NOT = { has_war_with = SAT }
+				}
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.2
+				production_speed_buildings_factor = 0.1
+				production_speed_bunker_factor = 0.10
+			}
+		}
+
+		YMM_spider_company_idea = {
+			picture = bul_pirin ### TODO: Change
+			available = {
+				OR = {
+					tag = YMM
+					NOT = { has_war_with = YMM }
+				}
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				dig_in_speed_factor = 0.15
+			}
+		}
+
+		SAT_nuclear_fusion_calm = {
+			picture = sat_nuclear_stable ### TODO: Change
+
+			available = {
+				NOT = { is_subject = yes }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				stability_factor = 0.05
+				industrial_capacity_factory = 0.05
+				line_change_production_efficiency_factor = 0.10
+			}
+		}
+
+		SAT_nuclear_fusion_normal = {
+			picture = sat_nuclear_normal ### TODO: Change
+
+			available = {
+				NOT = { is_subject = yes }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				research_speed_factor = 0.025
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		SAT_nuclear_fusion_unstable = {
+			picture = sat_nuclear_unstable ### TODO: Change
+
+			available = {
+				NOT = { is_subject = yes }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				research_speed_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = -0.05
+				stability_factor = -0.05
+			}
+		}
+
+		SAT_nuclear_fusion_rage = {
+			picture = sat_nuclear_raging ### TODO: Change
+
+			available = {
+				NOT = { is_subject = yes }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				research_speed_factor = 0.15
+				production_factory_max_efficiency_factor = 0.10
+				industrial_capacity_factory = -0.15
+				stability_factor = -0.15
+			}
+		}
+
+		SAT_nuclear_fusion_stabilized = {
+			picture = sat_nuclear_stablized ### TODO: Change
+
+			available = {
+				NOT = { is_subject = yes }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				research_speed_factor = 0.10
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+
+		SAT_nuclear_fusion_stabilized_2 = {
+			name = SAT_nuclear_fusion_stabilized
+			picture = sat_nuclear_stablized ### TODO: Change
+
+			available = {
+				NOT = { is_subject = yes }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				research_speed_factor = 0.10
+				stability_factor = 0.05
+				production_factory_max_efficiency_factor = 0.10
+			}
+		}
+
+		SAT_nuclear_fusion_complete = {
+			picture = sat_nuclear_stablized ### TODO: Change
+
+			available = {
+				NOT = { is_subject = yes }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				research_speed_factor = 0.10
+				stability_factor = 0.05
+				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.10
+			}
+		}
+
+		SAT_nuclear_fusion_complete_2 = {
+			name = SAT_nuclear_fusion_complete
+			picture = sat_nuclear_stablized ### TODO: Change
+
+			available = {
+				NOT = { is_subject = yes }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				research_speed_factor = 0.10
+				stability_factor = 0.10
+				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.15
+				PO_daily_gain = 0.01
+			}
+		}
+
+		SAT_nuclear_fusion_SEJ_profit_idea = {
+			name = SAT_nuclear_fusion_SEJ_profit
+			picture = soviet_german_friendship ### TODO: Change
+
+			available = {
+				NOT = { is_subject = yes }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				research_speed_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		SAT_MRY_cooperation = {
+			picture = SOV_organize_wreckers ### TODO: Change
+
+			available = {
+				NOT = { has_war_with = MRY }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				research_speed_factor = 0.04
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = -0.05
+			}
+
+			targeted_modifier = { 
+				tag = MRY
+				cic_to_target_factor = 0.15
+				mic_to_target_factor = 0.10
+			}
+		}
+
+		SAT_MRY_cooperation_MRY = {
+			picture = SOV_organize_wreckers ### TODO: Change
+
+			available = {
+				NOT = { has_war_with = MRY }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+
+		}
+
+		SAT_Moriya_Engineers_idea = {
+			name = SAT_Moriya_Engineers
+			picture = SOV_kirov ### TODO: Change
+
+			available = {
+				NOT = { has_war_with = MRY }
+				SAT_MRY_influence_is_no_less_than_LOW = yes
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				equipment_capture_factor = 0.05
+			}
+
+			equipment_bonus = {
+				support_equipment = {
+					build_cost_ic = -0.20
+					instant = yes
+				}
+			}
+		}
+
+		SAT_yakumo_spirit_induction_facility_idea = {
+			picture = kawasaki ### TODO: Change
+
+			available = {
+
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				PO_bad_humanism_influence_factor = -0.15
+				PO_good_battle_influence_factor = 0.05
+			}
+		}
+
+		SAT_yakumo_spirit_induction_facility_2_idea = {
+			name = SAT_yakumo_spirit_induction_facility_idea
+			picture = kawasaki ### TODO: Change
+
+			available = {
+
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				# PO_daily_gain = 0.01
+				industrial_capacity_factory = 0.05
+				PO_bad_humanism_influence_factor = -0.2
+				PO_good_battle_influence_factor = 0.1
+			}
+		}
+
+		SAT_underworld_airplane_design_idea = {
+			name = SAT_underworld_airplane_design
+			picture = tur_nud ### TODO: Change
+
+			available = {
+
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				# equipment_capture_factor = 0.15
+			}
+
+			equipment_bonus = {
+				sc_fighter_equipment = {
+					build_cost_ic = -0.10
+					air_agility = 0.10
+					reliability = 0.10
+					instant = yes
+				} 
+
+				sc_bomber_equipment = {
+					build_cost_ic = -0.10
+					air_agility = 0.10
+					reliability = 0.10
+					instant = yes
+				} 
+
+				sc_st_bomber_equipment = {
+					build_cost_ic = -0.10
+					air_agility = 0.10
+					reliability = 0.10
+					instant = yes
+				} 
+			}
+		}
+
+		SAT_Yakumo_infrastructure_idea = {
+			name = SAT_Yakumo_infrastructure
+			picture = generic_build_infrastructure ### TODO: Change
+
+			available = {
+
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				production_speed_rail_way_factor = 0.15
+				production_speed_infrastructure_factor = 0.05
+			}
+
+		}
+
+		SAT_Spy_comes_in_ideas = {
+			name = SAT_Spy_comes_in
+			picture = generic_spy_coup ### TODO: Change	
+
+			available = {
+				NOT = { has_completed_focus = SAT_proclaim_our_past_role }
+				NOT = { has_completed_focus = SAT_self_defence_alliance }
+				NOT = { has_war_with = YKR }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				oldorder_drift = 0.02
+				enemy_operative_intel_extraction_rate = 0.25
+				enemy_operative_harmed_time_factor = 0.25
+			}
+
+		}
+
+		SAT_fortify_the_borders_ideas = {
+			name = SAT_fortify_the_borders
+			picture = FRA_fortification_focus
+
+			available = {
+
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				resistance_damage_to_garrison = -0.25
+				production_speed_bunker_factor = 0.25
+			}
+		}
+
+		SAT_Chireidan_currency_ideas = {
+			name = SAT_Chireidan_currency
+			picture = sat_chireiden_coins
+
+			available = {
+
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				consumer_goods_factor = -0.02
+				# production_speed_buildings_factor = 0.05
+				political_power_gain = 0.1
+				trade_opinion_factor = 0.20
+			}
+		}
+
+		SAT_Chireidan_currency_others_ideas = {
+			name = SAT_Chireidan_currency
+			picture = sat_chireiden_coins
+
+			available = {
+				NOT = { has_war_with = SAT }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				consumer_goods_factor = -0.03
+				production_speed_buildings_factor = 0.10
+				political_power_gain = 0.05
+			}
+
+			targeted_modifier = {
+				cic_to_target_factor = 0.05
+				tag = SAT
+			}
+		}
+
+		SAT_Chireidan_currency_others_ideas_2 = {
+			name = SAT_Chireidan_currency
+			picture = sat_chireiden_coins
+
+			available = {
+				NOT = { has_war_with = SAT }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				stability_factor = 0.1
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.15
+				political_power_gain = 0.1
+			}
+
+			targeted_modifier = {
+				cic_to_target_factor = 0.1
+				tag = SAT
+			}
+		}
+
+		SAT_the_strong_alliance_idea = {
+			name = SAT_the_strong_alliance
+			picture = SPA_embrace_the_spanish_destiny
+
+			available = {
+				NOT = { has_war_with = SAT }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				FT_power_factor = 0.4
+			}
+		}
+
+		SAT_broadcast_to_the_dead_idea = {
+			name = SAT_broadcast_to_the_dead
+			picture = usa_magic
+
+			available = {
+				NOT = { has_war_with = SAT }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				stability_weekly = 0.002
+				production_speed_buildings_factor = 0.05
+				compliance_growth = 0.1
+			}
+		}
+
+		SAT_repress_youkai_dissent_idea = {
+			name = SAT_repress_youkai_dissent
+			picture = generic_oppression
+			modifier = {
+				LS_subject_level_low_time_factor = -0.20
+				resistance_damage_to_garrison = -0.1
+				root_out_resistance_effectiveness_factor = 0.15
+			}
+			
+		}
+
+		SAT_establish_order_idea = {
+			name = SAT_establish_order
+			picture = YUG_federal_defense_council
+			available = {
+				is_subject_of = SAT
+			}
+			modifier = {
+				stability_factor = 0.05
+				production_speed_infrastructure_factor = 0.1
+				production_speed_rail_way_factor = 0.1
+				neworder_drift = -0.10
+				fandong_drift = -0.10
+			}
+			
+		}
+
+		SAT_establish_the_chireidan_government_idea = {
+			name = SAT_establish_the_chireidan_government_name
+			picture = received_attache
+			modifier = {
+				qinwai_drift = 0.05
+				ST_race_penalty_all_factor = -0.35
+				LS_subject_level_low_pp_cost = -0.25
+				CONV_RULE_cannot_convert = 1
+			}
+		}
+
+		SAT_establish_the_chireidan_government_democratic_idea = {
+			name = SAT_establish_the_chireidan_government_name
+			picture = received_attache
+			modifier = {
+				qinwai_drift = 0.05
+				political_power_factor = -0.15
+				war_support_factor = -0.10
+				research_speed_factor = 0.10
+				PO_bad_influence_factor = -0.2
+				ST_race_penalty_all_factor = -0.35
+				LS_subject_level_low_pp_cost = -0.15
+				CONV_RULE_cannot_convert = 1
+			}
+		}
+
+		SAT_establish_the_chireidan_government_accoutable_idea = {
+			name = SAT_establish_the_chireidan_government_name
+			picture = received_attache
+			modifier = {
+				qinwai_drift = 0.05
+				consumer_goods_factor = -0.05
+				stability_factor = 0.15
+				army_core_attack_factor = 0.10
+				army_core_defence_factor = 0.15
+				ST_race_penalty_all_factor = -0.65
+				LS_subject_level_low_pp_cost = -0.15
+				CONV_RULE_cannot_convert = 1
+			}
+		}
+
+		SAT_establish_the_chireidan_government_accoutable_democratic_idea = {
+			name = SAT_establish_the_chireidan_government_name
+			picture = received_attache
+			modifier = {
+				qinwai_drift = 0.05
+				consumer_goods_factor = -0.05
+				political_power_factor = -0.15
+				war_support_factor = -0.10
+				research_speed_factor = 0.10
+				PO_bad_influence_factor = -0.2
+				stability_factor = 0.15
+				army_core_attack_factor = 0.10
+				army_core_defence_factor = 0.15
+				ST_race_penalty_all_factor = -0.65
+				LS_subject_level_low_pp_cost = -0.15
+				CONV_RULE_cannot_convert = 1
+			}
+		}
+
+		SAT_chirendan_transform_alliance_idea = {
+			name = SAT_chirendan_transform_alliance
+			picture = can_defence_of_canada_regulations_democratic
+			modifier = {
+				qinwai_drift = 0.05
+				ST_race_penalty_all_factor = -0.15
+				LS_subject_level_low_pp_cost = -0.10
+				CONV_RULE_cannot_convert = 1
+			}
+		}
+
+		SAT_underworld_free_trade_idea = {
+			name = SAT_underworld_free_trade
+			picture = can_wartime_prices_and_trade_board
+			modifier = {
+				research_speed_factor = 0.03
+				industrial_capacity_factory = 0.05
+				trade_opinion_factor = 0.35
+			}
+		}
+
+		SAT_underworld_free_trade_2_idea = {
+			name = SAT_underworld_free_trade
+			picture = can_wartime_prices_and_trade_board
+			modifier = {
+				stability_factor = 0.05
+				research_speed_factor = 0.03
+				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				trade_opinion_factor = 0.35
+			}
+		}
+
+		SAT_underworld_free_trade_3_idea = {
+			name = SAT_underworld_free_trade
+			picture = can_wartime_prices_and_trade_board
+			modifier = {
+				stability_factor = 0.05
+				research_speed_factor = 0.05
+				industrial_capacity_factory = 0.10
+				production_factory_max_efficiency_factor = 0.10
+				trade_opinion_factor = 0.35
+				production_lack_of_resource_penalty_factor = -0.1
+				license_purchase_cost = -0.25
+				# license_tech_difference_speed = -0.50
+			}
+		}
+
+		SAT_the_strong_alliance_2_idea = {
+			name = SAT_the_strong_alliance
+			picture = SPA_embrace_the_spanish_destiny
+
+			available = {
+				NOT = { has_war_with = SAT }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				FT_power_factor = 0.50
+				production_speed_rail_way_factor = 0.10
+				production_speed_infrastructure_factor = 0.10
+			}
+		}
+
+		SAT_winery_idea = {
+			name = SAT_winery
+			picture = ROM_king_carol_ii_hedonist
+
+			available = {
+				NOT = { has_war_with = SAT }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				consumer_goods_factor = -0.05
+				political_power_cost = 0.10
+				war_support_factor = 0.10
+				army_attack_factor = 0.05
+			}
+		}
+
+		SAT_underworld_mutual_aid_pact_idea = {
+			name = SAT_underworld_mutual_aid_pact
+			picture = generic_pp_unity_bonus
+
+			available = {
+				NOT = { has_war_with = SAT }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				guli_drift = 0.05
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+				max_dig_in = 1
+				dig_in_speed_factor = 0.1
+				justify_war_goal_time = 2.00
+			}
+		}
+
+		SAT_underworld_mutual_aid_pact_2_idea = {
+			name = SAT_underworld_mutual_aid_pact
+			picture = generic_pp_unity_bonus
+
+			available = {
+				NOT = { has_war_with = SAT }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				guli_drift = 0.05
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+				max_dig_in = 2
+				dig_in_speed_factor = 0.15
+				production_speed_bunker_factor = 0.1
+				justify_war_goal_time = 2.00
+			}
+		}
+
+		SAT_underworld_mutual_aid_pact_3_idea = {
+			name = SAT_underworld_mutual_aid_pact
+			picture = generic_pp_unity_bonus
+
+			available = {
+				NOT = { has_war_with = SAT }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				guli_drift = 0.05
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+				max_dig_in = 2
+				dig_in_speed_factor = 0.2
+				production_speed_bunker_factor = 0.2
+				justify_war_goal_time = 2.00
+				enemy_justify_war_goal_time = 1.00
+			}
+		}
+
+		SAT_chirendan_corporate_state_congress_idea = {
+			name = SAT_chirendan_corporate_state_congress
+			picture = LAT_neopaganism_4
+
+			available = {
+				NOT = { has_war_with = SAT }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				oldorder_drift = 0.05
+
+			}
+		}
+
+		SAT_chirendan_national_guard_idea = {
+			name = SAT_chirendan_national_guard
+			picture = bul_bulgarian_shipping_chamber
+
+			available = {
+				is_subject = no
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				special_forces_cap = 0.25
+				special_forces_attack_factor = 0.1
+				special_forces_defence_factor = 0.1
+			}
+		}
+
+		SAT_appoint_youkai_bureaucrats_idea = {
+			name = SAT_appoint_youkai_bureaucrats
+			picture = EST_republican_defence_league
+
+			available = {
+				is_subject = no
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				stability_factor = 0.1
+				political_power_cost = 0.25
+				LS_subject_level_low_time_factor = -0.15
+				economy_cost_factor = -0.25
+				mobilization_laws_cost_factor = -0.25
+			}
+		}
+
+		SAT_labour_in_plan_idea = {
+			name = SAT_labour_in_plan
+			picture = gre_schachtplan3
+
+			available = {
+				is_subject = no
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				production_factory_max_efficiency_factor = -0.15
+				production_factory_efficiency_gain_factor = 0.05
+				line_change_production_efficiency_factor = 0.1
+			}
+		}
+
+		SAT_Estado_Novo_idea = {
+			name = SAT_Estado_Novo
+			picture = gre_schachtplan3
+
+			available = {
+				is_subject = no
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				stability_factor = 0.1
+				special_forces_cap = 0.25
+				special_forces_attack_factor = 0.1
+				special_forces_defence_factor = 0.1
+				LS_subject_level_low_time_factor = -0.15
+				economy_cost_factor = -0.25
+				mobilization_laws_cost_factor = -0.25
+				resistance_damage_to_garrison = -0.25
+				political_power_cost = 0.25
+				production_factory_max_efficiency_factor = -0.15
+				production_factory_efficiency_gain_factor = 0.05
+				line_change_production_efficiency_factor = 0.1
+			}
+		}
+
+		SAT_chirendan_corporate_state_congress_2_idea = {
+			name = SAT_chirendan_corporate_state_congress
+			picture = LAT_neopaganism_4
+
+			available = {
+				is_subject = no
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				oldorder_drift = 0.05
+				local_resources_factor = 0.25
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		SAT_trade_authorization_idea = {
+			name = SAT_trade_authorization
+			picture = gre_agricultural_communes2
+
+			available = {
+				is_subject = no
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				political_power_cost = 0.10
+				production_lack_of_resource_penalty_factor = -0.15
+				research_speed_factor = 0.04
+			}
+		}
+
+		SAT_expand_the_zoo_idea = {
+			name = SAT_expand_the_zoo
+			picture = tur_golden_age_of_the_wolf
+
+			available = {
+				
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				modifier_army_sub_unit_melee_cavalry_attack_factor = 0.10
+				modifier_army_sub_unit_melee_cavalry_defence_factor = 0.10
+			}
+
+			research_bonus = {
+				combined = 0.05
+			}
+		}
+
+		SAT_home_for_beasts_idea = {
+			name = SAT_home_for_beasts
+			picture = LIT_iron_wolf_bad_4
+
+			available = {
+				
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				stability_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.1
+				conscription_factor = 0.05
+			}
+
+			research_bonus = {
+				civil = 0.10
+			}
+		}
+
+		SAT_facilitate_warm_pipeline_idea = {
+			name = SAT_facilitate_warm_pipeline
+			picture = SOV_fourth_five_year_plan
+
+			available = {
+				
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				winter_attrition_factor = -0.3
+				heat_attrition_factor = -0.15
+			}
+		}
+
+		SAT_spread_illumination_devices_idea = {
+			name = SAT_spread_illumination_devices
+			picture = LAT_the_sun_shines_equally
+
+			available = {
+				
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				land_night_attack = 0.05
+			}
+		}
+
+		SAT_refine_weapons_idea = {
+			name = SAT_refine_weapons
+			picture = SOV_third_five_year_plan_military
+
+			available = {
+				
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			equipment_bonus = {
+				infantry = {
+					build_cost_ic = -0.05
+					reliability = 0.05
+					instant = yes
+				}
+				artillery = {
+					build_cost_ic = -0.05
+					reliability = 0.05
+					instant = yes
+				}
+			}
+		}
+
+		SAT_crossboundary_pipeline_idea = {
+			name = SAT_crossboundary_pipeline
+			picture = LAT_saeimas
+
+			available = {
+				NOT = { has_war_with = SAT }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				base_fuel_gain_factor = 0.15
+			}
+		}
+
+		SAT_crossboundary_pipeline_MRY_idea = {
+			name = SAT_crossboundary_pipeline
+			picture = LAT_saeimas
+
+			available = {
+				NOT = { has_war_with = SAT }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				industrial_capacity_factory = 0.05
+				base_fuel_gain_factor = 0.15
+			}
+		}
+		SAT_YKR_defence_against_YYK_idea = {
+			name = SAT_YKR_defence_against_YYK
+			picture = POL_ideology_drift_defence
+
+			available = {
+				OR = {
+					NOT = { has_war_with = SAT }
+					tag = SAT
+				}
+				NOT = { SAT = { has_country_flag = SAT_YKR_anti_YYK_pact_enabled } } 
+				SAT = { SAT_YKR_influence_is_no_less_than_SLIGHTLY_LOW = yes }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+
+			}
+		}
+
+		SAT_SKI_defence_against_YYK_idea = {
+			name = SAT_SKI_defence_against_YYK
+			picture = POL_ideology_drift_defence
+
+			available = {
+				OR = {
+					NOT = { has_war_with = SAT }
+					tag = SAT
+				}
+				NOT = { SAT = { has_country_flag = SAT_SKI_anti_YYK_pact_enabled } } 
+				SAT = { SAT_SKI_influence_is_no_less_than_SLIGHTLY_LOW = yes }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+
+			}
+		}
+
+		SAT_TES_cooperation_idea = {
+			name = SAT_TES_cooperation
+			picture = scania
+
+			available = {
+				NOT = { has_war_with = TES }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				air_attack_factor = 0.20
+				air_cas_efficiency = 0.15
+				air_cas_present_factor = 0.10
+				PO_good_influence_factor = 0.1
+			}
+		}
+
+		SAT_TES_cooperation_TES_idea = {
+			name = SAT_TES_cooperation
+			picture = scania
+
+			available = {
+				NOT = { has_war_with = SAT }
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				modifier_army_sub_unit_melee_cavalry_attack_factor = 0.15
+				modifier_army_sub_unit_melee_cavalry_defence_factor = 0.15
+				production_speed_buildings_factor = 0.10
+				production_speed_infrastructure_factor = 0.10
+				local_resources_factor = 0.10
+			}
+		}
+	}
+}
+

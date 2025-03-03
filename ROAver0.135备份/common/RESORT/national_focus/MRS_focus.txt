@@ -1,0 +1,2505 @@
+#!gfx:interface\TH_focus.gfx
+#!gfx:interface\SAT_focus.gfx
+#!gfx:interface\TES_focus.gfx
+#!gfx:interface\SGS_focus.gfx
+focus_tree = {
+	id = MRS_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MRS
+		}
+	}
+	continuous_focus_position = { x = 100 y = 850 }
+	shared_focus = MSH_mofasenlinqingkuang
+	shared_focus = MSH_mofasenlinzhengtiguihua
+	shared_focus = MSH_tongyizhengbei
+	shared_focus = MSH_xinshidaiwaijiao
+	default = no
+	focus = {
+		id = MRS_timianchechu
+		icon = GFX_focus_generic_little_entente
+		cost = 6
+		mutually_exclusive = {
+			focus = MRS_juebufangqiquanli
+		}
+		x = 28
+		y = 0
+		ai_will_do = {
+			base = 1
+		}
+		available = {
+			has_completed_focus = MSH_yingxiangshili
+			not = {
+				has_war_with = ELL
+			}
+		}
+		completion_reward = {
+			add_political_power = 250
+			diplomatic_relation = {
+				country = ELL
+				relation = non_aggression_pact
+				active = yes
+			}
+			
+			country_event = mrs2.34
+			ELL = {
+				transfer_state = 188
+				hidden_effect = {
+					country_event = mrs2.34
+				}
+			}
+			custom_effect_tooltip = MRS_timianchechu_tt
+			swap_ideas = {
+				remove_idea = MRS_yuanlihexinzhengzhi_idea
+				add_idea = MRS_fangqizhengzhi_idea
+			}
+			hidden_effect = {
+				news_event = { days = 2 id = mrs2.1 }
+			}
+		}
+	}
+	
+	focus = {
+		id = MRS_juebufangqiquanli
+		icon = GFX_goal_generic_demand_territory
+		cost = 6
+		mutually_exclusive = {
+			focus = MRS_timianchechu
+		}
+		x = 13
+		y = 0
+		relative_position_id = MRS_timianchechu
+		available = {
+			or = {
+				has_war_with = ELL
+				has_completed_focus = MSH_wulizhengfu
+			}
+		}
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			MSH_add_boyi5 = yes
+			add_ideas = MRS_juebufangqiquanli_idea
+			country_event = mrs2.35
+			hidden_effect = {
+				ELL = {
+					country_event = mrs2.35
+				}
+			}
+			custom_effect_tooltip = MSH_weilecunzai_tt
+			hidden_effect = {
+				news_event = { days = 2 id = mrs2.2 }
+			}
+		}
+	}
+	focus = {
+		id = MRS_meimoxinyang
+		icon = GFX_focus_GRE_an_orthodox_state
+		cost = 9.00
+		mutually_exclusive = {
+			focus = MRS_mofasenlinderentongdian
+			focus = MRS_tiewantongzhi
+		}
+		# relative_position_id = MRS_timianchechu
+		x = 24
+		y = 10
+		ai_will_do = {
+			base = 1
+		}
+		available = {
+			has_country_flag = MAF_united
+			has_completed_focus = MRS_pingzishengyin
+		}
+		completion_reward = {
+			add_stability = 0.05
+			PO_add1 = yes
+			add_popularity = {
+				ideology = oldorder
+				popularity = 0.1
+			}
+			conservativedecrease = yes
+		}
+	}
+	focus = {
+		id = MRS_mofasenlinderentongdian
+		icon = GFX_goal_unknown
+		cost = 9.00
+		mutually_exclusive = {
+			focus = MRS_meimoxinyang
+			focus = MRS_tiewantongzhi
+		}
+		x = 4
+		y = 0
+		relative_position_id = MRS_meimoxinyang
+		available = {
+			has_country_flag = MAF_united
+			or = {
+				has_completed_focus = MRS_putongmofashi
+				has_completed_focus = MRS_kexuemofashi
+			}
+		}
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = guli
+				popularity = 0.1
+			}
+		}
+	}
+	focus = {
+		id = MRS_tiewantongzhi
+		icon = GFX_goal_generic_political_pressure
+		cost = 9.00
+		mutually_exclusive = {
+			focus = MRS_mofasenlinderentongdian
+			focus = MRS_meimoxinyang
+		}
+		x = 15
+		y = 0
+		relative_position_id = MRS_meimoxinyang
+		available = {
+			has_country_flag = MAF_united
+			has_completed_focus = MRS_juebufangqiquanli
+		}
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = neworder
+				popularity = 0.25
+			}
+		}
+	}
+	focus = {
+		id = MRS_zhuanzhumofaxiulian
+		icon = GFX_goal_unknown
+		cost = 6
+		x = -3
+		y = 1
+		relative_position_id = MRS_timianchechu
+		prerequisite = {
+			focus = MRS_timianchechu
+		}		
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			MRS_mrs = {
+				add_attack = 1
+				add_defense = 1
+			}
+			army_experience = 5
+		}
+	}
+	focus = {
+		id = MRS_jinjimofa
+		icon = GFX_focus_wonderweapons
+		cost = 6
+		prerequisite = {
+			focus = MRS_zhuanzhumofaxiulian
+		}
+		mutually_exclusive = {
+			focus = MRS_yanxumofafengge
+		}
+		x = -1
+		y = 1
+		relative_position_id = MRS_zhuanzhumofaxiulian
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_ideas = MRS_jinjimofa_idea
+			MRS_mrs = {
+				add_skill_level = 1
+			}
+		}
+	}
+	focus = {
+		id = MRS_fengyindepingzi
+		icon = GFX_goal_unknown
+		cost = 6
+		prerequisite = {
+			focus = MRS_jinjimofa
+		}
+		x = 0
+		y = 1
+		relative_position_id = MRS_jinjimofa
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			army_experience = 20
+			add_command_power = 20
+		}
+	}
+	focus = {
+		id = MRS_teshujuedoujiqiao
+		icon = GFX_focus_RAJ_lions_of_the_great_war
+		cost = 6
+		prerequisite = {
+			focus = MRS_zhuanzhumofaxiulian
+		}
+		x = -5
+		y = 1
+		relative_position_id = MRS_zhuanzhumofaxiulian
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			army_experience = 15
+			custom_effect_tooltip = MRS_teshujuedoujiqiao_tt
+		}
+	}
+	focus = {
+		id = MRS_yaolixuexi
+		icon = GFX_focus_generic_spirit_power_research
+		cost = 6
+		prerequisite = {
+			focus = MRS_zhuanzhumofaxiulian
+		}
+		x = -3
+		y = 1
+		relative_position_id = MRS_zhuanzhumofaxiulian
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = magic
+				bonus = 1
+				uses = 2
+			}
+		}
+	}
+	focus = {
+		id = MRS_shiliyingxiang
+		icon = GFX_goal_generic_propaganda
+		cost = 6
+		prerequisite = {
+			focus = MRS_teshujuedoujiqiao
+		}
+		prerequisite = {
+			focus = MRS_yaolixuexi
+		}
+		x = 1
+		y = 1
+		relative_position_id = MRS_teshujuedoujiqiao
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_dynamic_modifier = {
+				modifier = MRS_shiliyingxiang_modifier
+			}
+			custom_effect_tooltip = MRS_shiliyingxiang_tt
+		}
+	}
+	focus = {
+		id = MRS_baifangxianglintang
+		icon = GFX_goal_generic_improve_relations
+		cost = 6
+		prerequisite = {
+			focus = MRS_timianchechu
+		}
+		x = 2
+		y = 1
+		relative_position_id = MRS_timianchechu
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			reverse_add_opinion_modifier = {
+				target = RNS
+				modifier = MRS_baifangxianglintang_op
+			}
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = MRS_biaozhunhuashengchan
+		icon = GFX_goal_unknown
+		cost = 9.00
+		prerequisite = {
+			focus = MRS_tiewantongzhi
+		}
+		x = 3
+		y = 1
+		relative_position_id = MRS_tiewantongzhi
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_ideas = MRS_biaozhunhuashengchan_idea
+		}
+	}
+	focus = {
+		id = MRS_chongshixinxin
+		icon = GFX_goal_generic_national_unity
+		cost = 6
+		prerequisite = {
+			focus = MRS_juebufangqiquanli
+		}
+		x = 0
+		y = 1
+		relative_position_id = MRS_juebufangqiquanli
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_political_power = 50
+			MSH_add_boyi10 = yes
+		}
+	}
+	focus = {
+		id = MRS_yanjiangdetiancai
+		icon = GFX_focus_ETH_addressing_the_league_of_nations
+		cost = 6
+		prerequisite = {
+			focus = MRS_chongshixinxin
+		}
+		x = 4
+		y = 1
+		relative_position_id = MRS_chongshixinxin
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_political_power = 100
+			MSH_add_boyi10 = yes
+			add_ideas = MRS_yanjiangdetiancai_idea
+		}
+	}
+	focus = {
+		id = MRS_zhishiwuqi
+		icon = GFX_focus_generic_combined_arms
+		cost = 9.00
+		prerequisite = {
+			focus = MRS_biaozhunhuashengchan
+		}
+		x = 0
+		y = 1
+		relative_position_id = MRS_biaozhunhuashengchan
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			army_experience = 40
+			add_ideas = MRS_zhishiwuqi_idea
+		}
+	}
+	focus = {
+		id = MRS_baifanghouhuzhiguo
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 6
+		prerequisite = {
+			focus = MRS_timianchechu
+			focus = MRS_juebufangqiquanli
+		}
+		x = 6
+		y = 1
+		relative_position_id = MRS_timianchechu
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			reverse_add_opinion_modifier = {
+				target = OKI
+				modifier = MRS_baifanghouhuzhiguo_op
+			}
+			add_political_power = 20
+			PO_add2 = yes
+		}
+	}
+	focus = {
+		id = MRS_pingzishengyin
+		icon = GFX_goal_unknown
+		cost = 6
+		prerequisite = {
+			focus = MRS_fengyindepingzi
+		}
+		mutually_exclusive = {
+			focus = MRS_putongmofashi
+			focus = MRS_kexuemofashi
+		}
+		x = 0
+		y = 1
+		relative_position_id = MRS_fengyindepingzi
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			XXX = {
+				HKR_mima = {
+					set_nationality = ROOT
+				}
+			}
+			
+		}
+	}
+	focus = {
+		id = MRS_meimoweishi
+		icon = GFX_focus_SOV_father_of_nations
+		cost = 6
+		prerequisite = {
+			focus = MRS_pingzishengyin
+		}
+		x = 0
+		y = 1
+		relative_position_id = MRS_pingzishengyin
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			MRS_mrs = {
+				add_planning = 2
+			}
+			add_command_power = 10
+			add_political_power = -100
+			add_popularity = {
+				ideology = oldorder
+				popularity = 0.05
+			}
+			set_politics = {
+				ruling_party = oldorder
+			}
+		}
+	}
+	focus = {
+		id = MRS_xieemofa
+		icon = GFX_goal_unknown
+		cost = 6
+		prerequisite = {
+			focus = MRS_meimoweishi
+		}
+		x = 0
+		y = 1
+		relative_position_id = MRS_meimoweishi
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			PO_add5 = yes
+			add_ideas = MRS_xieemofa_idea
+			add_popularity = {
+				ideology = oldorder
+				popularity = 0.1
+			}
+			MRS_mrs = {
+				set_portraits = {
+					civilian={
+						large="gfx/leaders/MRS/MRS_mrs_98.dds"
+						small="gfx/leaders/MRS/MRS_mrs_98_small.dds"
+					}
+					army = {
+						large="gfx/leaders/MRS/MRS_mrs_98.dds"
+						small="gfx/leaders/MRS/MRS_mrs_98_small.dds"
+					}
+				}
+			}
+			MRS_mrs_leader = {
+				set_portraits = {
+					civilian={
+						large="gfx/leaders/MRS/MRS_mrs_98.dds"
+						small="gfx/leaders/MRS/MRS_mrs_98_small.dds"
+					}
+					army = {
+						large="gfx/leaders/MRS/MRS_mrs_98.dds"
+						small="gfx/leaders/MRS/MRS_mrs_98_small.dds"
+					}
+				}
+			}
+			
+			lobbyincrease = yes
+			lobbyincrease = yes
+		}
+	}
+	focus = {
+		id = MRS_yijiemoli
+		icon = GFX_focus_generic_promotion_of_spiritual_power
+		cost = 6
+		prerequisite = {
+			focus = MRS_xieemofa
+		}
+		x = -1
+		y = 1
+		relative_position_id = MRS_xieemofa
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = race
+				uses = 6
+				ahead_reduction = 3
+				bonus = 2
+			}
+		}
+	}
+	focus = {
+		id = MRS_yijieqiju
+		icon = GFX_focus_generic_Basic_Weapons
+		cost = 6
+		prerequisite = {
+			focus = MRS_xieemofa
+		}
+		x = 1
+		y = 1
+		relative_position_id = MRS_xieemofa
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = primary_weapons
+				uses = 4
+				ahead_reduction = 3
+				bonus = 2
+			}
+			add_tech_bonus = {
+				category = artillery_tech
+				uses = 3
+				ahead_reduction = 2
+				bonus = 1
+			}
+		}
+	}
+	focus = {
+		id = MRS_mofashilaoshi
+		icon = GFX_focus_jap_showa_restoration
+		cost = 6
+		prerequisite = {
+			focus = MRS_yijiemoli
+		}
+		prerequisite = {
+			focus = MRS_yijieqiju
+		}
+		x = 1
+		y = 1
+		relative_position_id = MRS_yijiemoli
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			country_event = mrs2.26
+			add_popularity = {
+				ideology = oldorder
+				popularity = 0.1
+			}
+			MSH_add_boyi15 = yes
+			MSH_add_boyi15 = yes
+			reverse_add_opinion_modifier = {
+				target = ELL
+				modifier = MRS_mofashilaoshi_op
+			}
+			reverse_add_opinion_modifier = {
+				target = ALI
+				modifier = MRS_mofashilaoshi_op
+			}
+			reverse_add_opinion_modifier = {
+				target = NAR
+				modifier = MRS_mofashilaoshi_op
+			}
+			every_country = {
+				limit = {
+					has_non_aggression_pact_with = ROOT
+				}
+				diplomatic_relation = {
+					country = ROOT
+					relation = non_aggression_pact
+					active = no
+				}
+			}
+			custom_effect_tooltip = MRS_mofashilaoshi_tt
+			custom_effect_tooltip = MSH_wulizhengfu_tt
+			add_ideas = MRS_mofashilaoshi_idea
+		}
+	}
+	focus = {
+		id = MRS_yanxumofafengge
+		icon = GFX_goal_unknown
+		cost = 6
+		prerequisite = {
+			focus = MRS_zhuanzhumofaxiulian
+		}
+		mutually_exclusive = {
+			focus = MRS_jinjimofa
+		}
+		x = 1
+		y = 1
+		relative_position_id = MRS_zhuanzhumofaxiulian
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = race
+				uses = 2
+				ahead_reduction = 1
+				bonus = 1
+			}
+		}
+	}
+	focus = {
+		id = MRS_hongmoguantoushu
+		icon = GFX_goal_unknown
+		cost = 6
+		prerequisite = {
+			focus = MRS_yanxumofafengge
+		}
+		x = 0
+		y = 1
+		relative_position_id = MRS_yanxumofafengge
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			reverse_add_opinion_modifier = {
+				target = SCA
+				modifier = MRS_hongmoguantoushu_op
+			}
+			add_tech_bonus = {
+				category = magic
+				uses = 1
+				bonus = 0.5
+			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
+			}
+			hidden_effect = {
+				country_event = mrs2.20
+				SCA = {
+					country_event = mrs2.20
+				}
+			}
+		}
+	}
+	focus = {
+		id = MRS_mofadainzhengli
+		icon = GFX_focus_ITA_devaluate_the_lire
+		cost = 6
+		prerequisite = {
+			focus = MRS_timianchechu
+		}
+		x = 0
+		y = 1
+		relative_position_id = MRS_timianchechu
+		ai_will_do = {
+			base = 1
+		}
+		available = {
+			controls_state = 487
+		}
+		completion_reward = {
+			487 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+	}
+	focus = {
+		id = MRS_xianglintangxuetu
+		icon = GFX_focus_usa_honor_the_confederacy
+		cost = 6
+		prerequisite = {
+			focus = MRS_mofadainzhengli
+		}
+		prerequisite = {
+			focus = MRS_baifangxianglintang
+		}
+		x = 1
+		y = 1
+		relative_position_id = MRS_mofadainzhengli
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			reverse_add_opinion_modifier = {
+				target = RNS
+				modifier = MRS_xianglintangxuetu_op
+			}
+			add_tech_bonus = {
+				category = industrys
+				uses = 1
+				bonus = 1
+			}
+			hidden_effect = {
+				country_event = mrs2.19
+				RNS = {
+					country_event = mrs2.19
+				}
+			}
+		}
+	}
+	focus = {
+		id = MRS_laobagualu
+		icon = GFX_goal_unknown
+		cost = 6
+		prerequisite = {
+			focus = MRS_xianglintangxuetu
+		}
+		x = -1
+		y = 1
+		relative_position_id = MRS_xianglintangxuetu
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = artillery_tech
+				bonus = 1
+				uses = 2
+				ahead_reduction = 1
+			}
+		}
+	}
+	focus = {
+		id = MRS_putongmofashi
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 6
+		prerequisite = {
+			focus = MRS_hongmoguantoushu
+		}
+		prerequisite = {
+			focus = MRS_laobagualu
+		}
+		mutually_exclusive = {
+			focus = MRS_pingzishengyin
+			focus = MRS_kexuemofashi
+		}
+		x = 1
+		y = 1
+		relative_position_id = MRS_hongmoguantoushu
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			MSH_add_boyi6 = yes
+			add_popularity = {
+				ideology = guli
+				popularity = 0.1
+			}
+		}
+	}
+	focus = {
+		id = MRS_shanchangxueximolisha
+		icon = GFX_goal_unknown
+		cost = 6
+		prerequisite = {
+			focus = MRS_putongmofashi
+		}
+		x = 0
+		y = 1
+		relative_position_id = MRS_putongmofashi
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			MRS_mrs = {
+				add_unit_leader_trait = MRS_shanchangxueximolisha_trait
+			}
+		}
+	}
+	focus = {
+		id = MRS_xiaoyibianchongxinkaishi
+		icon = GFX_focus_eng_expose_the_belly_of_the_bear
+		cost = 6
+		prerequisite = {
+			focus = MRS_shanchangxueximolisha
+		}
+		x = 0
+		y = 1
+		relative_position_id = MRS_shanchangxueximolisha
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_ideas = MRS_xiaoyibianchongxinkaishi_idea
+		}
+	}
+	focus = {
+		id = MRS_hepingjingying
+		icon = GFX_focus_generic_dovish
+		cost = 6
+		prerequisite = {
+			focus = MRS_xiaoyibianchongxinkaishi
+		}
+		prerequisite = {
+			focus = MRS_jianlifendain
+		}
+		x = 0
+		y = 2
+		relative_position_id = MRS_xiaoyibianchongxinkaishi
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			army_experience = 10
+			custom_effect_tooltip = MRS_hepingjingying_tt
+			show_ideas_tooltip = MRS_hepingjingying_idea
+		}
+	}
+	focus = {
+		id = MRS_xiantianmofashijiaru
+		icon = GFX_goal_generic_improve_relations
+		cost = 6
+		prerequisite = {
+			focus = MRS_putongmofashi
+			focus = MRS_kexuemofashi
+		}
+		x = 2
+		y = 1
+		relative_position_id = MRS_putongmofashi
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			MSH_add_boyi5 = yes
+			add_popularity = {
+				ideology = guli
+				popularity = 0.05
+			}
+			add_ideas = MRS_xiantianmofashijiaru_idea
+		}
+	}
+	focus = {
+		id = MRS_jianlifendain
+		icon = GFX_focus_usa_guarantee_the_american_dream
+		cost = 6
+		prerequisite = {
+			focus = MRS_xiaoyibianchongxinkaishi
+			focus = MRS_nulijiameili
+		}
+		x = 2
+		y = 1
+		relative_position_id = MRS_xiaoyibianchongxinkaishi
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = MRS_jianlifendain_tt
+		}
+	}
+	focus = {
+		id = MRS_guanzhuwaijiewupin
+		icon = GFX_goal_unknown
+		cost = 6
+		prerequisite = {
+			focus = MRS_baifangxianglintang
+		}
+		x = 1
+		y = 1
+		relative_position_id = MRS_baifangxianglintang
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = science
+				bonus = 0.5
+				uses = 2
+			}
+		}
+	}
+	focus = {
+		id = MRS_waijiehuojian
+		icon = GFX_focus_rocketry
+		cost = 6
+		prerequisite = {
+			focus = MRS_xianglintangxuetu
+		}
+		prerequisite = {
+			focus = MRS_guanzhuwaijiewupin
+		}
+		mutually_exclusive = {
+			focus = MRS_waijiekejichanpin
+		}
+		x = -1
+		y = 1
+		relative_position_id = MRS_guanzhuwaijiewupin
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			MRS_mrs = {
+				add_unit_leader_trait = MRS_waijiehuojian_trait
+			}
+		}
+	}
+	focus = {
+		id = MRS_waijiekejichanpin
+		icon = GFX_goal_generic_radar
+		cost = 6
+		prerequisite = {
+			focus = MRS_guanzhuwaijiewupin
+		}
+		mutually_exclusive = {
+			focus = MRS_waijiehuojian
+		}
+		x = 1
+		y = 1
+		relative_position_id = MRS_guanzhuwaijiewupin
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = fuzhu
+				bonus = 1
+				uses = 2
+			}
+		}
+	}
+	focus = {
+		id = MRS_kexuemofashi
+		icon = GFX_focus_generic_science_research
+		cost = 6
+		prerequisite = {
+			focus = MRS_waijiehuojian
+			focus = MRS_waijiekejichanpin
+		}
+		mutually_exclusive = {
+			focus = MRS_putongmofashi
+			focus = MRS_pingzishengyin
+		}
+		x = 1
+		y = 1
+		relative_position_id = MRS_waijiehuojian
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_ideas = MRS_kexuemofashi_idea
+			add_dynamic_modifier = {
+				modifier = MRS_kexuemofashi_modifier
+			}
+			custom_effect_tooltip = MRS_kexuemofashi_tt
+		}
+	}
+	focus = {
+		id = MRS_xingxingmofa
+		icon = GFX_focus_por_workers_of_iberia
+		cost = 6
+		prerequisite = {
+			focus = MRS_kexuemofashi
+		}
+		x = 1
+		y = 1
+		relative_position_id = MRS_kexuemofashi
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_ideas = MRS_xingxingmofa_idea
+		}
+	}
+	focus = {
+		id = MRS_nulijiameili
+		icon = GFX_goal_generic_national_unity
+		cost = 6
+		prerequisite = {
+			focus = MRS_xingxingmofa
+		}
+		prerequisite = {
+			focus = MRS_xiantianmofashijiaru
+		}
+		prerequisite = {
+			focus = MRS_kexuemofashi
+		}
+		x = -1
+		y = 1
+		relative_position_id = MRS_xingxingmofa
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_dynamic_modifier = {
+				modifier = MRS_nulijiameili_modifier
+			}
+			custom_effect_tooltip = MRS_nulijiameili_tt
+		}
+	}
+	focus = {
+		id = MRS_kexuemofayanjiu
+		icon = GFX_focus_research
+		cost = 6
+		prerequisite = {
+			focus = MRS_jianlifendain
+		}
+		prerequisite = {
+			focus = MRS_nulijiameili
+		}
+		x = 0
+		y = 2
+		relative_position_id = MRS_nulijiameili
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			PO_add5 = yes
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = MRS_jianxitongzi
+		icon = GFX_focus_CZE_german_puppet
+		cost = 6
+		prerequisite = {
+			focus = MRS_baifanghouhuzhiguo
+		}
+		mutually_exclusive = {
+			focus = MRS_tongxueliliang
+		}
+		x = -1
+		y = 1
+		relative_position_id = MRS_baifanghouhuzhiguo
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			reverse_add_opinion_modifier = {
+				target = OKI
+				modifier = MRS_jianxitongzi_op
+			}
+			MSH_add_boyi15 = yes
+			custom_effect_tooltip = MRS_jianxitongzi_tt
+			hidden_effect = {
+				country_event = mrs2.21
+				OKI = {
+					country_event = mrs2.21
+				}
+			}
+		}
+	}
+	focus = {
+		id = MRS_tongxueliliang
+		icon = GFX_focus_prc_infiltration
+		cost = 6
+		prerequisite = {
+			focus = MRS_baifanghouhuzhiguo
+		}
+		mutually_exclusive = {
+			focus = MRS_jianxitongzi
+		}
+		x = 1
+		y = 1
+		relative_position_id = MRS_baifanghouhuzhiguo
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			MRS_mrs = {
+				add_attack = 1
+				add_defense = 1
+				add_logistics = 1
+				add_planning = 1
+			}
+			hidden_effect = {
+				country_event = mrs2.22
+				OKI = {
+					country_event = mrs2.22
+				}
+			}
+		}
+	}
+	focus = {
+		id = MRS_qiangdamofamopao
+		icon = GFX_focus_generic_Artillery_Weapons
+		cost = 6
+		prerequisite = {
+			focus = MRS_chongshixinxin
+		}
+		x = -3
+		y = 1
+		relative_position_id = MRS_chongshixinxin
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_tech_bonus = {
+				category = artillery_tech
+				uses = 1
+				bonus = 1
+				ahead_reduction = 1
+			}
+		}
+	}
+	focus = {
+		id = MRS_butongyumofadeliliang
+		icon = GFX_goal_generic_propaganda
+		cost = 6
+		prerequisite = {
+			focus = MRS_qiangdamofamopao
+		}
+		x = -2
+		y = 1
+		relative_position_id = MRS_qiangdamofamopao
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_stability = 0.1
+			MRS_mrs = {
+				add_attack = 1
+				add_defense = 1
+			}
+		}
+	}
+	focus = {
+		id = MRS_chongshineibuxinxin
+		icon = GFX_goal_generic_national_unity
+		cost = 6
+		prerequisite = {
+			focus = MRS_qiangdamofamopao
+		}
+		x = 0
+		y = 1
+		relative_position_id = MRS_qiangdamofamopao
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_political_power = 200
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = MRS_xuanyangyouyuexing
+		icon = GFX_goal_support_fascism
+		cost = 6
+		prerequisite = {
+			focus = MRS_butongyumofadeliliang
+		}
+		prerequisite = {
+			focus = MRS_chongshineibuxinxin
+		}
+		x = 1
+		y = 1
+		relative_position_id = MRS_butongyumofadeliliang
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = neworder
+				popularity = 0.1
+			}
+			
+			swap_ideas = {
+				remove_idea = MRS_yuanlihexinzhengzhi_idea
+				add_idea = MRS_xuanyangyouyuexing_idea
+			}
+			conservativedecrease = yes
+		}
+	}
+	focus = {
+		id = MRS_qiegerenleiguanxi
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		cost = 6
+		prerequisite = {
+			focus = MRS_xuanyangyouyuexing
+		}
+		mutually_exclusive = {
+			focus = MRS_jinmilianxirenlei
+		}
+		x = -1
+		y = 1
+		relative_position_id = MRS_xuanyangyouyuexing
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = race
+				uses = 2
+				bonus = 1
+			}
+			add_ideas = MRS_qiegerenleiguanxi_idea
+			hidden_effect = {
+				news_event = { days = 2 id = mrs2.3 }
+			}
+		}
+	}
+	focus = {
+		id = MRS_mofashiyeshidayaoguai
+		icon = GFX_goal_unknown
+		cost = 6
+		prerequisite = {
+			focus = MRS_qiegerenleiguanxi
+		}
+		x = 0
+		y = 1
+		relative_position_id = MRS_qiegerenleiguanxi
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = neworder
+				popularity = 0.1
+			}
+			add_timed_idea = {
+				idea = MRS_mofashiyeshidayaoguai2_idea
+				days = 730
+			}
+			swap_ideas = {
+				remove_idea = MRS_qiegerenleiguanxi_idea
+				add_idea = MRS_mofashiyeshidayaoguai_idea
+			}
+			swap_ideas = {
+				remove_idea = MRS_xuanyangyouyuexing_idea
+				add_idea = MRS_mofashiyeshidayaoguai3_idea
+			}
+		}
+	}
+	focus = {
+		id = MRS_jinmilianxirenlei
+		icon = GFX_focus_generic_befriend_HUM
+		cost = 6
+		prerequisite = {
+			focus = MRS_xuanyangyouyuexing
+		}
+		mutually_exclusive = {
+			focus = MRS_qiegerenleiguanxi
+		}
+		x = 1
+		y = 1
+		relative_position_id = MRS_xuanyangyouyuexing
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_named_threat = {
+				threat = 0.5
+				name = MRS_jinmilianxirenlei
+			}
+			add_stability = -0.15
+			add_ideas = MRS_jinmilianxirenlei_idea
+			hidden_effect = {
+				news_event = { days = 2 id = mrs2.4 }
+			}
+		}
+	}
+	focus = {
+		id = MRS_xuanyangxianjinxing
+		icon = GFX_goal_generic_propaganda
+		cost = 6
+		prerequisite = {
+			focus = MRS_jinmilianxirenlei
+		}
+		x = 0
+		y = 1
+		relative_position_id = MRS_jinmilianxirenlei
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = MRS_jinmilianxirenlei_idea
+				add_idea = MRS_xuanyangxianjinxing_idea
+			}
+		}
+	}
+	focus = {
+		id = MRS_renrendouyousaoba
+		icon = GFX_focus_generic_truck
+		cost = 6
+		prerequisite = {
+			focus = MRS_chongshineibuxinxin
+		}
+		x = 1
+		y = 1
+		relative_position_id = MRS_chongshineibuxinxin
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 20
+			add_equipment_to_stockpile = {
+				type = yunshudui_ma
+				amount = 100
+			}
+		}
+	}
+	focus = {
+		id = MRS_zhongdagongsi
+		icon = GFX_focus_jap_zaibatsu
+		cost = 6
+		prerequisite = {
+			focus = MRS_renrendouyousaoba
+		}
+		x = 1
+		y = 1
+		relative_position_id = MRS_renrendouyousaoba
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_ideas = MRS_zhongdagongsi_idea
+		}
+	}
+	focus = {
+		id = MRS_molishademofashu
+		icon = GFX_goal_unknown
+		cost = 6
+		prerequisite = {
+			focus = MRS_chongshixinxin
+		}
+		x = 0
+		y = 1
+		relative_position_id = MRS_chongshixinxin
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_political_power = -20
+			MSH_add_boyi5 = yes
+			add_ideas = MRS_molishademofashu_idea
+		}
+	}
+	focus = {
+		id = MRS_wodenuli
+		icon = GFX_goal_unknown
+		cost = 6
+		prerequisite = {
+			focus = MRS_zhongdagongsi
+		}
+		prerequisite = {
+			focus = MRS_molishademofashu
+		}
+		prerequisite = {
+			focus = MRS_shuofuzhichi
+		}
+		x = 0
+		y = 4
+		relative_position_id = MRS_molishademofashu
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = neworder
+				popularity = 0.15
+			}
+			add_tech_bonus = {
+				category = magic
+				uses = 2
+				bonus = 1
+			}
+			swap_ideas = {
+				remove_idea = MRS_nulibuzaibeirenke_idea
+				add_idea = MRS_nulibuzaibeirenke2_idea
+			}
+			set_politics = {
+				ruling_party = neworder
+			}
+		}
+	}
+	focus = {
+		id = MRS_yibiangongji
+		icon = GFX_goal_generic_propaganda
+		cost = 6
+		prerequisite = {
+			focus = MRS_yanjiangdetiancai
+		}
+		x = 0
+		y = 1
+		relative_position_id = MRS_yanjiangdetiancai
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = neworder
+				popularity = 0.15
+			}
+			conservativedecrease = yes
+		}
+	}
+	focus = {
+		id = MRS_ailisixujiu
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = MRS_yibiangongji
+		}
+		x = -2
+		y = 1
+		relative_position_id = MRS_yibiangongji
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			ALI = {
+				country_event = mrs2.24
+			}
+			custom_effect_tooltip = TEG_accept
+			effect_tooltip = {
+				xianghubaodu = yes
+				custom_effect_tooltip = MRS_ailisixujiu_tt
+			}
+		}
+	}
+	focus = {
+		id = MRS_ailiandiduixuanchuan
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = MRS_yibiangongji
+		}
+		x = 0
+		y = 1
+		relative_position_id = MRS_yibiangongji
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			lobbyincrease = yes
+			add_ideas = MRS_ailiandiduixuanchuan_idea
+		}
+	}
+	focus = {
+		id = MRS_renkechengmei
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = MRS_yibiangongji
+		}
+		x = 2
+		y = 1
+		relative_position_id = MRS_yibiangongji
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			NAR = {
+				country_event = mrs2.25
+			}
+			custom_effect_tooltip = TEG_accept
+			effect_tooltip = {
+				diplomatic_relation = {
+					country = NAR
+					relation = non_aggression_pact
+					active = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = MRS_shuofuzhichi
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 6
+		prerequisite = {
+			focus = MRS_ailisixujiu
+			focus = MRS_ailiandiduixuanchuan
+			focus = MRS_renkechengmei
+		}
+		x = 2
+		y = 1
+		relative_position_id = MRS_ailisixujiu
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = MRS_shuofuzhichi_tt
+		}
+	}
+	focus = {
+		id = MRS_meimodiaoxiang
+		icon = GFX_focus_ETH_lord_of_lords
+		cost = 9.00
+		prerequisite = {
+			focus = MRS_meimoxinyang
+		}
+		x = -1
+		y = 1
+		relative_position_id = MRS_meimoxinyang
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_ideas = MRS_meimodiaoxiang_idea
+		}
+	}
+	focus = {
+		id = MRS_xuanchengweishen
+		icon = GFX_focus_jap_showa_restoration
+		cost = 9.00
+		prerequisite = {
+			focus = MRS_meimoxinyang
+		}
+		x = 1
+		y = 1
+		relative_position_id = MRS_meimoxinyang
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_stability = 0.15
+			HKR_mima = {
+				add_skill_level = 1
+			}
+			remove_dynamic_modifier = {
+				modifier = MSH_mofashigehe_modifier
+			}
+			hidden_effect = {
+				news_event = { days = 2 id = mrs2.5 }
+			}
+		}
+	}
+	focus = {
+		id = MRS_fuhuohoudejihua
+		icon = GFX_goal_unknown
+		cost = 9.00
+		prerequisite = {
+			focus = MRS_meimodiaoxiang
+			focus = MRS_xuanchengweishen
+		}
+		x = 1
+		y = 1
+		relative_position_id = MRS_meimodiaoxiang
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			HKR_mima = {
+				add_skill_level = 2
+			}
+		}
+	}
+	focus = {
+		id = MRS_mofazaoxueliang
+		icon = GFX_goal_unknown
+		cost = 9.00
+		prerequisite = {
+			focus = MRS_fuhuohoudejihua
+		}
+		x = -1
+		y = 1
+		relative_position_id = MRS_fuhuohoudejihua
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_dynamic_modifier = {
+				modifier = MRS_mofazaoxueliang_modifier
+			}
+			custom_effect_tooltip = MRS_mofazaoxueliang_tt
+			hidden_effect = {
+				news_event = { days = 2 id = mrs2.6 }
+			}
+		}
+	}
+	focus = {
+		id = MRS_shenmejiedoushiwode
+		icon = GFX_focus_ALI_shijierenouhua
+		cost = 9.00
+		prerequisite = {
+			focus = MRS_mofazaoxueliang
+		}
+		x = 0
+		y = 1
+		relative_position_id = MRS_mofazaoxueliang
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			every_country = {
+				limit = {
+					is_subject_of = ROOT
+				}
+				can_core = yes
+				low_puppet_level = yes
+			}
+			every_owned_state = {
+				add_core_of = ROOT
+			}
+			add_ideas = MRS_shenmejiedoushiwode_idea
+			every_country = {
+				add_opinion_modifier = { target = ROOT modifier = set_enemy}
+				add_ai_strategy = {
+				type = antagonize
+				id = ROOT
+				value = 20000
+				}
+			}
+			custom_effect_tooltip = MRS_shenmejiedoushiwode_tt
+			lobbyincrease = yes
+			hidden_effect = {
+				news_event = { days = 2 id = mrs2.7 }
+			}
+		}
+	}
+	focus = {
+		id = MRS_xuanchenmuhoushenling
+		icon = GFX_goal_unknown
+		cost = 9.00
+		prerequisite = {
+			focus = MRS_fuhuohoudejihua
+		}
+		x = 1
+		y = 1
+		relative_position_id = MRS_fuhuohoudejihua
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			HKR = {
+				every_owned_state = {
+					add_claim_by = ROOT
+				}
+			}
+			
+		}
+	}
+	focus = {
+		id = MRS_chenshen
+		icon = GFX_focus_jap_spiritual_mobilization
+		cost = 9.00
+		prerequisite = {
+			focus = MRS_xuanchenmuhoushenling
+		}
+		x = 0
+		y = 1
+		relative_position_id = MRS_xuanchenmuhoushenling
+		ai_will_do = {
+			base = 1
+		}
+		available = {
+			or = {
+				HKR = {
+					is_subject_of = ROOT
+				}
+				and = {
+					HKR = {
+						exists = no
+					}
+					owns_state = 192
+				}
+			}
+		}
+		completion_reward = {
+			192 = {
+				add_core_of = ROOT
+			}
+			HKR = {
+				can_core = yes
+				low_puppet_level = yes
+			}
+			HKR_mima = {
+				add_attack = 2
+				add_defense = 2
+			}
+			hidden_effect = {
+				news_event = { days = 2 id = mrs2.8 }
+			}
+		}
+	}
+	focus = {
+		id = MRS_buruwozaodeyueliang
+		icon = GFX_goal_unknown
+		cost = 9.00
+		prerequisite = {
+			focus = MRS_shenmejiedoushiwode
+		}
+		x = -1
+		y = 1
+		relative_position_id = MRS_shenmejiedoushiwode
+		ai_will_do = {
+			base = 1
+			modifier = {
+				has_war = yes
+				factor = 0
+			}
+		}
+		available = {
+			EET = {
+				before_declare_war = yes
+			}
+		}
+		bypass = {
+			EET = {
+				bypass_declare_war = yes
+			}
+		}
+		will_lead_to_war_with = EET
+		completion_reward = {
+			declare_war_on = {
+				target = EET
+				type = MRS_fanshijiezhanzheng
+			}
+		}
+	}
+	focus = {
+		id = MRS_zhenzhengdeeling
+		icon = GFX_goal_unknown
+		cost = 9.00
+		prerequisite = {
+			focus = MRS_shenmejiedoushiwode
+			focus = MRS_chenshen
+		}
+		x = 1
+		y = 1
+		relative_position_id = MRS_shenmejiedoushiwode
+		ai_will_do = {
+			base = 1
+			modifier = {
+				has_war = yes
+				factor = 0
+			}
+		}
+		available = {
+			YYK = {
+				before_declare_war = yes
+			}
+		}
+		bypass = {
+			YYK = {
+				bypass_declare_war = yes
+			}
+		}
+		will_lead_to_war_with = YYK
+		completion_reward = {
+			declare_war_on = {
+				target = YYK
+				type = MRS_fanshijiezhanzheng
+			}
+		}
+	}
+	focus = {
+		id = MRS_chenglimeimojiao
+		icon = GFX_focus_GRE_an_orthodox_state
+		cost = 9.00
+		prerequisite = {
+			focus = MRS_chenshen
+		}
+		x = 1
+		y = 1
+		relative_position_id = MRS_chenshen
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_ideas = MRS_chenglimeimojiao_idea
+			hidden_effect = {
+				news_event = { days = 2 id = mrs2.11 }
+			}
+		}
+	}
+	focus = {
+		id = MRS_zhengfudiyu
+		icon = GFX_goal_unknown
+		cost = 9.00
+		prerequisite = {
+			focus = MRS_zhenzhengdeeling
+		}
+		x = 0
+		y = 1
+		relative_position_id = MRS_zhenzhengdeeling
+		ai_will_do = {
+			base = 1
+			modifier = {
+				has_war = yes
+				factor = 0
+			}
+		}
+		will_lead_to_war_with = HUB
+		will_lead_to_war_with = AOO
+		will_lead_to_war_with = AKO
+		will_lead_to_war_with = HB1
+		will_lead_to_war_with = SAK
+		will_lead_to_war_with = KEK
+		will_lead_to_war_with = GYK
+		will_lead_to_war_with = YCE
+		will_lead_to_war_with = CLO
+		will_lead_to_war_with = HGH
+		will_lead_to_war_with = SKI
+		will_lead_to_war_with = KMC
+		will_lead_to_war_with = URM
+		will_lead_to_war_with = GH1
+		available = {
+			any_country = {
+				capital_scope = {
+					is_on_continent = Hell
+				}
+				is_neighbor_of = ROOT
+			}
+		}
+		completion_reward = {
+			every_country = {
+				limit = {
+					capital_scope = {
+						is_on_continent = Hell
+					}
+					is_neighbor_of = ROOT
+				}
+				declare_war_on = {
+					target = PREV
+					type = MRS_fanshijiezhanzheng
+				}
+			}
+			custom_effect_tooltip = MRS_buruwodeyueliang_tt
+			hidden_effect = {
+				news_event = { days = 2 id = mrs2.12 }
+			}
+		}
+		
+	}
+	focus = {
+		id = MRS_buruwodeyueliang
+		icon = GFX_goal_unknown
+		cost = 9.00
+		prerequisite = {
+			focus = MRS_zhengfudiyu
+		}
+		x = -1
+		y = 1
+		relative_position_id = MRS_zhengfudiyu
+		ai_will_do = {
+			base = 1
+			modifier = {
+				has_war = yes
+				factor = 0
+			}
+		}
+		available = {
+			CLO = {
+				before_declare_war = yes
+			}
+		}
+		bypass = {
+			# CLO = {
+			# 	bypass_declare_war = yes
+			# }
+		}
+		will_lead_to_war_with = CLO
+		completion_reward = {
+			add_ideas = MRS_buruwodeyueliang_idea
+			declare_war_on = {
+				target = CLO
+				type = MRS_fanshijiezhanzheng
+			}
+		}
+	}
+	focus = {
+		id = MRS_xinjiumofajiehe
+		icon = GFX_goal_unknown
+		cost = 9.00
+		prerequisite = {
+			focus = MRS_mofasenlinderentongdian
+		}
+		x = 0
+		y = 1
+		relative_position_id = MRS_mofasenlinderentongdian
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_ideas = MRS_xinjiumofajiehe_idea
+		}
+	}
+	focus = {
+		id = MRS_mofayundonghui
+		icon = GFX_goal_unknown
+		cost = 9.00
+		prerequisite = {
+			focus = MRS_xinjiumofajiehe
+		}
+		x = 0
+		y = 1
+		relative_position_id = MRS_xinjiumofajiehe
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_stability = 0.15
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				category = primary_weapons
+				uses = 1
+				bonus = 1
+			}
+		}
+	}
+	focus = {
+		id = MRS_zhuzhongzhandouli
+		icon = GFX_goal_generic_army_artillery
+		cost = 9.00
+		prerequisite = {
+			focus = MRS_mofayundonghui
+		}
+		mutually_exclusive = {
+			focus = MRS_zhuzhonghuali
+		}
+		x = -1
+		y = 1
+		relative_position_id = MRS_mofayundonghui
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_ideas = MRS_zhuzhongzhandouli_idea
+		}
+	}
+	focus = {
+		id = MRS_zhuzhonghuali
+		icon = GFX_goal_generic_propaganda
+		cost = 9.00
+		prerequisite = {
+			focus = MRS_mofayundonghui
+		}
+		mutually_exclusive = {
+			focus = MRS_zhuzhongzhandouli
+		}
+		x = 1
+		y = 1
+		relative_position_id = MRS_mofayundonghui
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_ideas = MRS_zhuzhonghuali_idea
+		}
+	}
+	focus = {
+		id = MRS_mofayanhuohui
+		icon = GFX_goal_unknown
+		cost = 9.00
+		prerequisite = {
+			focus = MRS_zhuzhongzhandouli
+			focus = MRS_zhuzhonghuali
+		}
+		x = 1
+		y = 1
+		relative_position_id = MRS_zhuzhongzhandouli
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_stability = 0.15
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				category = race
+				uses = 1
+				bonus = 1
+			}
+			hidden_effect = {
+				news_event = { days = 2 id = mrs2.14 }
+			}
+		}
+	}
+	focus = {
+		id = MRS_qitashilipingwei
+		icon = GFX_goal_generic_improve_relations
+		cost = 9.00
+		prerequisite = {
+			focus = MRS_mofayanhuohui
+		}
+		x = 0
+		y = 1
+		relative_position_id = MRS_mofayanhuohui
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_dynamic_modifier = {
+				modifier = MRS_qitashilipingwei_modifier
+			}
+			custom_effect_tooltip = MRS_qitashilipingwei_tt
+		}
+	}
+	focus = {
+		id = MRS_mofajiaoyuchanye
+		icon = GFX_focus_generic_military_academy
+		cost = 9.00
+		prerequisite = {
+			focus = MRS_xinjiumofajiehe
+		}
+		x = 2
+		y = 1
+		relative_position_id = MRS_xinjiumofajiehe
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = math
+				uses = 3
+				ahead_reduction = 2
+				bonus = 1
+			}
+		}
+	}
+	focus = {
+		id = MRS_qitazhongzuliliang
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 9.00
+		prerequisite = {
+			focus = MRS_mofajiaoyuchanye
+		}
+		x = 0
+		y = 2
+		relative_position_id = MRS_mofajiaoyuchanye
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_dynamic_modifier = {
+				modifier = MRS_qitazhongzuliliang_modifier
+			}
+			custom_effect_tooltip = MRS_qitazhongzuliliang_tt
+		}
+	}
+	focus = {
+		id = MRS_chongguiquanlihexin
+		icon = GFX_goal_generic_demand_territory
+		cost = 9.00
+		relative_position_id = MRS_mofasenlinderentongdian
+		prerequisite = {
+			focus = MRS_mofasenlinderentongdian
+			focus = MRS_tiewantongzhi
+		}
+		x = 5
+		y = 1
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_political_power = 125
+		}
+	}
+	focus = {
+		id = MRS_xiaomiemofashizhifen
+		icon = GFX_goal_generic_secret_weapon
+		cost = 9.00
+		prerequisite = {
+			focus = MRS_chongguiquanlihexin
+		}
+		x = 0
+		y = 1
+		relative_position_id = MRS_chongguiquanlihexin
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_stability = -0.1
+			custom_effect_tooltip = MRS_xiaomiemofashizhifen_tt
+		}
+	}
+	focus = {
+		id = MRS_mofatianwensuo
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 9.00
+		prerequisite = {
+			focus = MRS_xiaomiemofashizhifen
+		}
+		x = -1
+		y = 1
+		relative_position_id = MRS_xiaomiemofashizhifen
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = MRS_mofazhayaochang
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 9.00
+		prerequisite = {
+			focus = MRS_xiaomiemofashizhifen
+		}
+		x = 1
+		y = 1
+		relative_position_id = MRS_xiaomiemofashizhifen
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = MRS_jiashenmofashirentong
+		icon = GFX_goal_generic_national_unity
+		cost = 9.00
+		prerequisite = {
+			focus = MRS_mofatianwensuo
+		}
+		prerequisite = {
+			focus = MRS_mofazhayaochang
+		}
+		x = 1
+		y = 1
+		relative_position_id = MRS_mofatianwensuo
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = MRS_jiashenmofashirentong_tt
+			effect_tooltip = {
+				add_dynamic_modifier = {
+					modifier = MRS_jiashenmofashirentong_modifier
+				}
+			}
+		}
+	}
+	focus = {
+		id = MRS_mofashiyouyuexing
+		icon = GFX_goal_generic_propaganda
+		cost = 9.00
+		prerequisite = {
+			focus = MRS_tiewantongzhi
+		}
+		x = -2
+		y = 1
+		relative_position_id = MRS_tiewantongzhi
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = race
+				uses = 3
+				ahead_reduction = 3
+				bonus = 1
+			}
+			conservativedecrease = yes
+		}
+	}
+	focus = {
+		id = MRS_molishachengyao
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 9.00
+		prerequisite = {
+			focus = MRS_mofashiyouyuexing
+		}
+		mutually_exclusive = {
+			focus = MRS_renleitongyizhongzu
+		}
+		x = -1
+		y = 1
+		relative_position_id = MRS_mofashiyouyuexing
+		ai_will_do = {
+			base = 1
+		}
+		available = {
+			has_completed_focus = MRS_qiegerenleiguanxi
+		}
+		completion_reward = {
+			MRS_mrs = {
+				add_unit_leader_trait = MRS_molishachengyao_trait
+			}
+		}
+	}
+	focus = {
+		id = MRS_bangzhuwunvchengyao
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 9.00
+		prerequisite = {
+			focus = MRS_molishachengyao
+		}
+		x = 0
+		y = 1
+		relative_position_id = MRS_molishachengyao
+		ai_will_do = {
+			base = 1
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = MRS_bangzhuwunvchengyao_tt
+			if = {
+				limit = {
+					HKR = {
+						or = {
+							has_country_leader = {
+								character = HKR_hkr_leader
+								ruling_only = yes
+							}
+							# has_country_leader = {
+							# 	character = HKR_hkr_98
+							# 	ruling_only = yes
+							# }
+						}
+					}
+				}
+				HKR = {
+					country_event = mrs2.23
+				}
+				custom_effect_tooltip = TEG_accept
+				effect_tooltip = {
+					HKR = {
+						subject_level2 = yes
+						can_core = yes
+					}
+				}
+				else = {
+					random_list = {
+						100 = {
+							hidden_effect = {
+								every_country = {
+									HKR_hkr = {
+										set_nationality = MRS
+									}
+								}
+							}
+							custom_effect_tooltip = MRS_bangzhuwunvchengyao_tt2
+							country_event = mrs2.37
+							hidden_effect = {
+								news_event = { id = mrs2.36 days = 2 }
+							}
+						}
+						0 = {
+
+						}
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = MRS_zhongshenmodaoshi
+		icon = GFX_focus_ITA_culto_del_duce
+		cost = 9.00
+		prerequisite = {
+			focus = MRS_bangzhuwunvchengyao
+		}
+		x = 0
+		y = 1
+		relative_position_id = MRS_bangzhuwunvchengyao
+		ai_will_do = {
+			base = 1
+		}
+		available = {
+			has_stability > 0.75
+			neworder > 0.6
+		}
+		completion_reward = {
+			add_country_leader_trait = MRS_zhongshenmodaoshi_trait
+			hidden_effect = {
+				news_event = { days = 2 id = mrs2.16 }
+			}
+		}
+	}
+	focus = {
+		id = MRS_renleitongyizhongzu
+		icon = GFX_focus_chi_united_front
+		cost = 9.00
+		prerequisite = {
+			focus = MRS_mofashiyouyuexing
+		}
+		mutually_exclusive = {
+			focus = MRS_molishachengyao
+		}
+		x = 1
+		y = 1
+		relative_position_id = MRS_mofashiyouyuexing
+		ai_will_do = {
+			base = 1
+		}
+		available = {
+			has_completed_focus = MRS_jinmilianxirenlei
+		}
+		completion_reward = {
+			ST_hexie_Human = yes
+		}
+	}
+	focus = {
+		id = MRS_jiekaijiasuo
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		cost = 9.00
+		prerequisite = {
+			focus = MRS_renleitongyizhongzu
+		}
+		x = 0
+		y = 1
+		relative_position_id = MRS_renleitongyizhongzu
+		ai_will_do = {
+			base = 1
+		}
+		will_lead_to_war_with = HUM
+		available = {
+			HUM = {
+				before_declare_war = yes
+			}
+		}
+		bypass = {
+			HUM = {
+				bypass_declare_war = yes
+			}
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = MRS_jiaoao
+		icon = GFX_focus_ETH_the_king_of_kings
+		cost = 9.00
+		prerequisite = {
+			focus = MRS_jiekaijiasuo
+		}
+		x = 0
+		y = 1
+		relative_position_id = MRS_jiekaijiasuo
+		ai_will_do = {
+			base = 1
+		}
+		available = {
+			246 = {
+				owner = {
+					or = {
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
+		completion_reward = {
+			HUM = {
+				low_puppet_level = yes
+			}
+			
+			HU6 = {
+				can_core = yes
+			}
+			add_ideas = MRS_jiaoao_idea
+			hidden_effect = {
+				news_event = { days = 2 id = mrs2.18 }
+			}
+		}
+	}
+	focus = {
+		id = MRS_zhengshoumofashuji
+		icon = GFX_goal_unknown
+		cost = 9.00
+		prerequisite = {
+			focus = MRS_tiewantongzhi
+		}
+		x = 1
+		y = 1
+		relative_position_id = MRS_tiewantongzhi
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = magic
+				uses = 2
+				bonus = 1
+			}
+		}
+	}
+	focus = {
+		id = MRS_mofasenlindatushuguan
+		icon = GFX_focus_generic_improve_the_administration
+		cost = 9.00
+		prerequisite = {
+			focus = MRS_zhengshoumofashuji
+		}
+		x = 0
+		y = 1
+		relative_position_id = MRS_zhengshoumofashuji
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = MRS_zhenzhengdetongyi
+		icon = GFX_goal_support_fascism
+		cost = 9.00
+		prerequisite = {
+			focus = MRS_zhongshenmodaoshi
+			focus = MRS_jiaoao
+		}
+		prerequisite = {
+			focus = MRS_mofasenlindatushuguan
+		}
+		prerequisite = {
+			focus = MRS_zhishiwuqi
+		}
+		x = 5
+		y = 1
+		relative_position_id = MRS_zhongshenmodaoshi
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = race
+				uses = 5
+				ahead_reduction = 4
+				bonus = 2
+			}
+			add_ideas = MRS_zhenzhengdetongyi_idea
+		}
+	}
+}

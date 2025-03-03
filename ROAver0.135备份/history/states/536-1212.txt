@@ -1,0 +1,29 @@
+
+state={
+	id=536
+	name="STATE_536"
+
+	history={
+		146.1.1 = {
+			owner = AKO
+			add_core_of = AKO
+			add_core_of = HGH
+			buildings = {
+				infrastructure = 2
+				industrial_complex = 0
+				arms_factory = 0
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		6888 6900 6905 6908 6913 6919 6921 6925 6933 6934 6937 6938 6939 6943 6953 6957 6965 
+	}
+	manpower=69399
+	buildings_max_level_factor=1.000
+	state_category=s2
+	local_supplies=2.500
+}

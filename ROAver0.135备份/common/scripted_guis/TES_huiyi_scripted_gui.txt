@@ -1,0 +1,69 @@
+scripted_gui = {
+
+	TES_huiyi_gui = {
+		window_name = "TES_huiyi_gui"
+		context_type = decision_category
+
+		visible = {
+			always = yes
+		}
+
+		dynamic_lists = {
+			parliament_diagram = {
+				array = TES_seat_x
+				change_scope = no
+				entry_container = TES_parliament_seat
+				index = seat_idx
+			}
+		}
+
+		properties = {
+			parliament_dot_icon = {
+				x = TES_seat_x^seat_idx
+				y = TES_seat_y^seat_idx
+				frame = TES_seat_frame^seat_idx
+			}
+			TES_tianzi_hehuazhi = {
+				frame = TES_GUI_heihuazhi
+			}
+		}
+
+		effects = {
+			TES_party_1_click = {
+				set_country_flag = TES_party_1_flag
+				clr_country_flag = TES_party_2_flag
+				clr_country_flag = TES_party_3_flag
+				clr_country_flag = TES_party_4_flag
+				clr_country_flag = TES_party_5_flag
+			}
+			TES_party_2_click = {
+				clr_country_flag = TES_party_1_flag
+				set_country_flag = TES_party_2_flag
+				clr_country_flag = TES_party_3_flag
+				clr_country_flag = TES_party_4_flag
+				clr_country_flag = TES_party_5_flag
+			}
+			TES_party_3_click = {
+				clr_country_flag = TES_party_1_flag
+				clr_country_flag = TES_party_2_flag
+				set_country_flag = TES_party_3_flag
+				clr_country_flag = TES_party_4_flag
+				clr_country_flag = TES_party_5_flag
+			}
+			TES_party_4_click = {
+				clr_country_flag = TES_party_1_flag
+				clr_country_flag = TES_party_2_flag
+				clr_country_flag = TES_party_3_flag
+				set_country_flag = TES_party_4_flag
+				clr_country_flag = TES_party_5_flag
+			}
+			TES_party_5_click = {
+				clr_country_flag = TES_party_1_flag
+				clr_country_flag = TES_party_2_flag
+				clr_country_flag = TES_party_3_flag
+				clr_country_flag = TES_party_4_flag
+				set_country_flag = TES_party_5_flag
+			}
+		}
+	}
+}

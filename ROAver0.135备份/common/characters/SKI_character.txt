@@ -1,0 +1,122 @@
+characters={
+	SKI_ski ={
+		name = SKI_ski
+		portraits={
+			civilian={
+				large="gfx/leaders/SKI/SKI_ski.dds"
+				small="gfx/leaders/SKI/SKI_ski_small.dds"
+			}
+			army = {
+				large="gfx/leaders/SKI/SKI_ski.dds"
+				small="gfx/leaders/SKI/SKI_ski_small.dds"
+			}
+		}
+		field_marshal = {
+            traits = {  th_original_character th_character  th_trait_dayaoguai trait_cautious harsh_leader }
+            attack_skill = 2
+            defense_skill = 3
+            planning_skill = 3
+            logistics_skill = 6
+            
+            skill = 10
+        }
+		advisor = {
+			slot = character_coop
+			idea_token = SKI_ski
+			name = SKI_ski
+			cost = 200
+			modifier = {
+				political_power_factor = 0.15
+				decryption = 2
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	SKI_nwt ={
+		name = SKI_nwt
+		portraits={
+			civilian={
+				large="gfx/leaders/SKI/SKI_nwt.dds"
+				small="gfx/leaders/SKI/SKI_nwt_small.dds"
+			}
+			army = {
+				large="gfx/leaders/SKI/SKI_nwt.dds"
+				small="gfx/leaders/SKI/SKI_nwt_small.dds"
+			}
+		}
+		corps_commander = {
+            traits = {  th_original_character th_character trait_cautious  }
+            attack_skill = 4
+            defense_skill = 4
+            planning_skill = 7
+            logistics_skill = 5
+            
+            skill = 5
+        }
+		advisor = {
+			slot = character_coop
+			idea_token = SKI_nwt
+			name = SKI_nwt
+			cost = 200
+			modifier = {
+				consumer_goods_factor = -0.02
+				experience_loss_factor = -0.25
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	SKI_ski_leader ={
+		name = SKI_ski_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/SKI/SKI_ski.dds"
+				small="gfx/leaders/SKI/SKI_ski_small.dds"
+			}
+			army = {
+				large="gfx/leaders/SKI/SKI_ski.dds"
+				small="gfx/leaders/SKI/SKI_ski_small.dds"
+			}
+		}
+		country_leader={
+			ideology=guli_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldorder_type
+			id=-1
+		}
+		country_leader={
+			ideology=neworder_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldgenso_type
+			id=-1
+		}
+	}
+	SKI_nwt_leader ={
+		name = SKI_nwt_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/SKI/SKI_nwt.dds"
+				small="gfx/leaders/SKI/SKI_nwt_small.dds"
+			}
+			army = {
+				large="gfx/leaders/SKI/SKI_nwt.dds"
+				small="gfx/leaders/SKI/SKI_nwt_small.dds"
+			}
+		}
+		country_leader={
+			ideology=qinwai_type
+			id=-1
+		}
+		country_leader={
+			ideology=fandong_type
+			id=-1
+		}
+	}
+}

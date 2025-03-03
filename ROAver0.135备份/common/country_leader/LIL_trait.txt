@@ -1,0 +1,21 @@
+leader_traits = {
+	TBA_leyuanzhiwaang = {
+		political_power_factor = 0.05
+		stability_factor = 0.10
+	}
+	LIL_leyuanzhixin = {
+		political_power_factor = 0.05
+		stability_factor = -0.10
+		war_support_factor = 0.05
+	}
+	LIL_yaojingxianzhi = {
+		political_power_factor = 0.15
+		PO_daily_gain = 0.01
+	}
+	LIL_yonghendexianzhi = {
+		political_power_factor = 0.25
+		PO_daily_gain = 0.01
+		compliance_gain = 0.05
+		conscription = 0.005
+	}
+}

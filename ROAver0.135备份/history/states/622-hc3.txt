@@ -1,0 +1,30 @@
+state={
+	id=622
+	name="STATE_622"
+	provinces={
+		6904 6906 6918 6923 6928 6932 6941 6950 
+	}
+	resources={
+		energy = 0
+		powder = 0.0
+		metal = 4.0
+		gas=5.000
+		crystal=12.000
+	}
+	history={
+		146.1.1 = {
+			owner = AKO
+			add_core_of = AKO
+			add_core_of = HGH
+			buildings = {
+				infrastructure = 1
+				industrial_complex = 1
+				arms_factory = 0
+			}
+		}
+	}
+	state_category=s5
+	manpower=956
+	buildings_max_level_factor=1.000
+	local_supplies=2.500
+}

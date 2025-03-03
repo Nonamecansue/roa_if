@@ -1,0 +1,615 @@
+technologies = {
+	ghost_tech = {
+    
+
+	    research_cost = 1
+	    
+	    folder = {
+	      name = Ghost_race_tech_folder
+	      position = { x = 10 y = 0 }
+	    }
+
+	    path = {
+			leads_to_tech = shitihua1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = ziyuanshentou1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = linghunqinshiban1
+			research_cost_coeff = 1
+		}
+
+	    melee_infantry = {
+	      max_strength = -15
+	      need = {
+			melee_a = -25
+		  }
+	    }
+	    melee_cavalry = {
+	      max_strength = -15
+	      need = {
+			melee_a = -25
+		  }
+	    }     
+	    sc_infantry = {
+	      max_strength = -15
+	      need = {
+			gun_a = -25
+		  }
+	    }
+	    ma_infantry = {
+	      max_strength = -15
+	      need = {
+			magic_core_a = -25
+		  }
+	    }  
+	    sc_light_infantry = {
+	      max_strength = -15
+	      need = {
+			gun_a = -25
+		  }
+	    }
+	    ma_light_infantry = {
+	      max_strength = -15
+	      need = {
+			magic_core_a = -25
+		  }
+	    } 
+	    sc_sf_infantry = {
+	      max_strength = -15
+	      need = {
+			smg_a = -25
+		  }
+	    }
+	    ma_sf_infantry = {
+	      max_strength = -15
+	      need = {
+			special_core_a = -25
+		  }
+	    } 
+	    sc_shield_infantry = {
+	      max_strength = -15
+	      need = {
+			special_shield_a = -25
+		  }
+	    }
+	    ma_shield_infantry = {
+	      max_strength = -15
+	      need = {
+			core_shield_a = -25
+		  }
+	    } 
+	    on_research_complete = {
+			custom_effect_tooltip = ghost_tech_tt
+		}
+
+	    melee_infantry = {
+			combat_width = -5
+		}
+		melee_cavalry = {
+			combat_width = -5
+		}
+		sc_infantry = {
+			combat_width = -5
+		}
+		sc_light_infantry = {
+			combat_width = -5
+		}
+		sc_sf_infantry = {
+			combat_width = -5
+		}
+		sc_shield_infantry = {
+			combat_width = -5
+		}
+		sc_mortar_brigade = {
+			combat_width = -5
+		}
+		sc_anti_shield_brigade = {
+			combat_width = -5
+		}
+		sc_shield_tank = {
+			combat_width = -5
+		}
+		ma_infantry = {
+			combat_width = -5
+		}
+		ma_light_infantry = {
+			combat_width = -5
+		}
+		ma_sf_infantry = {
+			combat_width = -5
+		}
+		ma_magic_energy_brigade = {
+			combat_width = -5
+		}
+		ma_magic_focus_brigade = {
+			combat_width = -5
+		}
+		ma_shield_infantry = {
+			combat_width = -5
+		}
+		ma_shield_tank = {
+			combat_width = -5
+		}
+
+	    
+	    dependencies = {
+	       abandoned = 1
+	    }
+	    
+	    categories = {
+	      secret
+	    }
+	    
+	    ai_will_do = {
+	      factor = 1
+	    }
+	}
+
+	shitihua1 = {
+		path = {
+			leads_to_tech = shitihua2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.2
+		start_year = 147
+
+		conscription_factor = -0.01
+		ARMY_infantry_ATTACK_FACTOR = 0.03
+		ARMY_infantry_defence_FACTOR = 0.03
+
+		folder = {
+			name = Ghost_race_tech_folder
+			position = { x = 4 y = 2 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	shitihua2 = {
+	
+		path = {
+			leads_to_tech = shitihua3
+			research_cost_coeff = 1
+		}
+
+		conscription_factor = -0.01
+		ARMY_infantry_ATTACK_FACTOR = 0.03
+		ARMY_infantry_defence_FACTOR = 0.03
+		
+		research_cost = 2.2
+		start_year = 152
+
+		folder = {
+			name = Ghost_race_tech_folder
+			position = { x = 4 y = 4 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	shitihua3 = {
+	
+		path = {
+			leads_to_tech = shitihua4
+			research_cost_coeff = 1
+		}
+
+		conscription_factor = -0.01
+		ARMY_infantry_ATTACK_FACTOR = 0.03
+		ARMY_infantry_defence_FACTOR = 0.03
+		
+		research_cost = 2.2
+		start_year = 157
+
+		folder = {
+			name = Ghost_race_tech_folder
+			position = { x = 4 y = 6 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	shitihua4 = {
+	
+		path = {
+			leads_to_tech = shitihua5
+			research_cost_coeff = 1
+		}
+
+		conscription_factor = -0.01
+		ARMY_infantry_ATTACK_FACTOR = 0.03
+		ARMY_infantry_defence_FACTOR = 0.03
+		
+		research_cost = 2.2
+		start_year = 162
+
+		folder = {
+			name = Ghost_race_tech_folder
+			position = { x = 4 y = 8 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	shitihua5 = {
+
+		conscription_factor = -0.01
+		ARMY_infantry_ATTACK_FACTOR = 0.03
+		ARMY_infantry_defence_FACTOR = 0.03
+		
+		research_cost = 2.2
+		start_year = 167
+
+		folder = {
+			name = Ghost_race_tech_folder
+			position = { x = 4 y = 10 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ziyuanshentou1 = {
+		path = {
+			leads_to_tech = ziyuanshentou2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.2
+		start_year = 147
+
+		conscription_factor = -0.01
+		local_resources_factor = 0.1
+		attrition = -0.04
+
+		folder = {
+			name = Ghost_race_tech_folder
+			position = { x = 10 y = 2 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ziyuanshentou2 = {
+	
+		path = {
+			leads_to_tech = ziyuanshentou3
+			research_cost_coeff = 1
+		}
+
+		conscription_factor = -0.01
+		local_resources_factor = 0.1
+		attrition = -0.04
+		
+		research_cost = 2.2
+		start_year = 152
+
+		folder = {
+			name = Ghost_race_tech_folder
+			position = { x = 10 y = 4 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ziyuanshentou3 = {
+	
+		path = {
+			leads_to_tech = ziyuanshentou4
+			research_cost_coeff = 1
+		}
+
+		conscription_factor = -0.01
+		local_resources_factor = 0.1
+		attrition = -0.04
+		
+		research_cost = 2.2
+		start_year = 157
+
+		folder = {
+			name = Ghost_race_tech_folder
+			position = { x = 10 y = 6 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ziyuanshentou4 = {
+	
+		path = {
+			leads_to_tech = ziyuanshentou5
+			research_cost_coeff = 1
+		}
+
+		conscription_factor = -0.01
+		local_resources_factor = 0.1
+		attrition = -0.04
+		
+		research_cost = 2.2
+		start_year = 162
+
+		folder = {
+			name = Ghost_race_tech_folder
+			position = { x = 10 y = 8 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ziyuanshentou5 = {
+
+		conscription_factor = -0.01
+		local_resources_factor = 0.1
+		attrition = -0.04
+		
+		research_cost = 2.2
+		start_year = 167
+
+		folder = {
+			name = Ghost_race_tech_folder
+			position = { x = 10 y = 10 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	linghunqinshiban1 = {
+	
+		path = {
+			leads_to_tech = linghunqinshiban2
+			research_cost_coeff = 1
+		}
+
+		ma_infantry = {
+			soft_attack = 0.15
+			hard_attack = 0.05
+		}
+		sc_infantry = {
+			soft_attack = 0.15
+			hard_attack = 0.05
+		}
+		
+		research_cost = 2.2
+		start_year = 147
+
+		folder = {
+			name = Ghost_race_tech_folder
+			position = { x = 16 y = 2 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	linghunqinshiban2 = {
+	
+		path = {
+			leads_to_tech = linghunqinshiban3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.2
+		start_year = 152
+
+		ma_infantry = {
+			ap_attack = 0.1
+		}
+		sc_infantry = {
+			ap_attack = 0.1
+		}
+
+		folder = {
+			name = Ghost_race_tech_folder
+			position = { x = 16 y = 4 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	linghunqinshiban3 = {
+	
+		path = {
+			leads_to_tech = linghunqinshiban4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.2
+		start_year = 157
+
+		folder = {
+			name = Ghost_race_tech_folder
+			position = { x = 16 y = 6 }
+		}
+
+		ma_shield_infantry = {
+			soft_attack = 0.15
+			hard_attack = 0.05
+		}
+		sc_shield_infantry = {
+			soft_attack = 0.15
+			hard_attack = 0.05
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	linghunqinshiban4 = {
+	
+		path = {
+			leads_to_tech = linghunqinshiban5
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.2
+		start_year = 162
+
+		ma_shield_infantry = {
+			ap_attack = 0.1
+		}
+		sc_shield_infantry = {
+			ap_attack = 0.1
+		}
+
+		folder = {
+			name = Ghost_race_tech_folder
+			position = { x = 16 y = 8 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	linghunqinshiban5 = {
+		
+		research_cost = 2.2
+		start_year = 167
+
+		melee_infantry = {
+			combat_width = -5
+		}
+		melee_cavalry = {
+			combat_width = -5
+		}
+		sc_infantry = {
+			combat_width = -5
+		}
+		ma_infantry = {
+			combat_width = -5
+		}
+		sc_light_infantry = {
+			combat_width = -5
+		}
+		ma_light_infantry = {
+			combat_width = -5
+		}
+		sc_sf_infantry = {
+			combat_width = -5
+		}
+		ma_sf_infantry = {
+			combat_width = -5
+		}
+		sc_shield_infantry = {
+			combat_width = -5
+		}
+		ma_shield_infantry = {
+			combat_width = -5
+		}
+		ma_shield_tank = {
+			combat_width = -5
+		}
+		sc_shield_tank = {
+			combat_width = -5
+		}
+		sc_mortar_brigade = {
+			combat_width = -5
+		}
+		ma_magic_energy_brigade = {
+			combat_width = -5
+		}
+		sc_anti_shield_brigade = {
+			combat_width = -5
+		}
+		ma_magic_focus_brigade = {
+			combat_width = -5
+		}
+
+		folder = {
+			name = Ghost_race_tech_folder
+			position = { x = 16 y = 10 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

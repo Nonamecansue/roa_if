@@ -1,0 +1,105 @@
+#xuanju
+spriteTypes = {
+	spriteType = {
+		name = "GFX_TES_Tenshi"
+		texturefile = "gfx/interface/xuanju/TES_Tenshi.dds"
+	}
+	spriteType = {
+		name = "GFX_TES_Iku"
+		texturefile = "gfx/interface/xuanju/TES_Iku.dds"
+	}
+	spriteType = {
+		name = "GFX_TES_tianping"
+		texturefile = "gfx/interface/xuanju/tianping.dds"
+	}
+	spriteType = {
+		name = "GFX_TES_tianpingyou"
+		texturefile = "gfx/interface/xuanju/tianpingyou.dds"
+	}
+	spriteType = {
+		name = "GFX_TES_tianpingzuo"
+		texturefile = "gfx/interface/xuanju/tianpingzuo.dds"
+	}
+}
+#tianzi zhilu
+spriteTypes = {
+	
+
+	spriteType = {
+		name = "GFX_LTS_Tianzihilu_open_button"
+		textureFile = "gfx/interface/Tianzizhilu/LTS_button.dds"
+	}
+	spriteType = {
+		name = "GFX_main_close_button"
+		textureFile = "gfx/interface/Tianzizhilu/main_close_button.dds"
+	}
+	spriteType = {
+		name = "GFX_arrow_right_small"
+		textureFile = "gfx/interface/Tianzizhilu/arrow_right_small.dds"
+	}
+	spriteType = {
+		name = "GFX_arrow_left_small"
+		textureFile = "gfx/interface/Tianzizhilu/arrow_left_small.dds"
+	}
+}
+#renwu
+spriteTypes = {
+	spriteType = {
+		name = "GFX_TES_renwu_anniu"
+		texturefile = "gfx/interface/renwu/TES_renwu_anniu.png"
+	}
+	spriteType = {
+		name = "GFX_TES_renwu_background"
+		texturefile = "gfx/interface/renwu/TES_renwu_background.dds"
+	}
+	spriteType = {
+		name = "GFX_TES_dulizhimeng"
+		texturefile = "gfx/interface/renwu/TES_dulizhimeng.png"
+	}
+	spriteType = {
+		name = "GFX_TES_dulizhimeng_wancheng"
+		texturefile = "gfx/interface/renwu/TES_dulizhimeng_wancheng.png"
+	}
+	spriteType = {
+		name = "GFX_TES_churuhuanx"
+		texturefile = "gfx/interface/renwu/TES_churuhuanx.png"
+	}
+	spriteType = {
+		name = "GFX_TES_churuhuanx_wancheng"
+		texturefile = "gfx/interface/renwu/TES_churuhuanx_wancheng.png"
+	}
+	spriteType = {
+		name = "GFX_TES_diyuzhizhu"
+		texturefile = "gfx/interface/renwu/TES_diyuzhizhu.png"
+	}
+	spriteType = {
+		name = "GFX_TES_diyuzhizhu_wancheng"
+		texturefile = "gfx/interface/renwu/TES_diyuzhizhu_wancheng.png"
+	}
+	spriteType = {
+		name = "GFX_TES_tianzhijun"
+		texturefile = "gfx/interface/renwu/TES_tianzhijun.png"
+	}
+	spriteType = {
+		name = "GFX_TES_tianzhijun_wancheng"
+		texturefile = "gfx/interface/renwu/TES_tianzhijun_wancheng.png"
+	}
+}
+#chongbaizhi
+spriteTypes = {
+	progressbartype = {
+		name = "GFX_banyuan_zhizhen"
+		textureFile1 = "/gfx/interface/dial/TES_zhizheng.dds"
+		textureFile2 = "/gfx/interface/dial/TES_kong.dds"
+		size = {	
+			x = 200
+			y = 200	
+		}
+		effectFile = "gfx/FX/half_dial.shader"
+		horizontal = yes
+	}
+	spriteType = {
+		name = "GFX_TES_biaopan"
+		textureFile = "/gfx/interface/dial/TES_biaopan.png"
+	}
+}

@@ -1,0 +1,585 @@
+technologies = {
+	fairy_tech = {
+    
+	    research_cost = 1
+
+	    path = {
+			leads_to_tech = ziranronghe1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = ziranenhui1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = yaojinggansiban1
+			research_cost_coeff = 1
+		}
+	    
+	   folder = {
+	      name = Fairy_race_tech_folder
+	      position = { x = 10 y = 0 }
+	    }
+
+	    melee_infantry = {
+	      max_strength = -10
+	      need = {
+			melee_a = -10
+		  }
+	    }
+	    melee_cavalry = {
+	      max_strength = -10
+	      need = {
+			melee_a = -10
+		  }
+	    }     
+	    sc_infantry = {
+	      max_strength = -10
+	      need = {
+			gun_a = -10
+		  }
+	    }
+	    ma_infantry = {
+	      max_strength = -10
+	      need = {
+			magic_core_a = -10
+		  }
+	    }  
+	    sc_light_infantry = {
+	      max_strength = -10
+	      need = {
+			gun_a = -10
+		  }
+	    }
+	    ma_light_infantry = {
+	      max_strength = -10
+	      need = {
+			magic_core_a = -10
+		  }
+	    } 
+	    sc_sf_infantry = {
+	      max_strength = -15
+	      need = {
+			smg_a = -10
+		  }
+	    }
+	    ma_sf_infantry = {
+	      max_strength = -10
+	      need = {
+			special_core_a = -10
+		  }
+	    } 
+	    sc_shield_infantry = {
+	      max_strength = -10
+	      need = {
+			special_shield_a = -10
+		  }
+	    }
+	    ma_shield_infantry = {
+	      max_strength = -10
+	      need = {
+			core_shield_a = -10
+		  }
+	    } 
+	    on_research_complete = {
+			custom_effect_tooltip = fairy_tech_tt
+		}
+
+	    dependencies = {
+	       abandoned = 1
+	    }
+	    
+	    categories = {
+	      secret
+	    }
+	    
+	    ai_will_do = {
+	      factor = 1
+	    }
+	}
+	ziranronghe1 = {
+	
+		path = {
+			leads_to_tech = ziranronghe2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.2
+		start_year = 147
+
+		supply_consumption_factor = -0.06
+		production_speed_buildings_factor = 0.04
+
+		folder = {
+			name = Fairy_race_tech_folder
+			position = { x = 4 y = 2 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ziranronghe2 = {
+	
+		path = {
+			leads_to_tech = ziranronghe3
+			research_cost_coeff = 1
+		}
+
+		supply_consumption_factor = -0.06
+		production_speed_buildings_factor = 0.04
+		
+		research_cost = 2.2
+		start_year = 152
+
+		folder = {
+			name = Fairy_race_tech_folder
+			position = { x = 4 y = 4 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ziranronghe3 = {
+	
+		path = {
+			leads_to_tech = ziranronghe4
+			research_cost_coeff = 1
+		}
+
+		supply_consumption_factor = -0.06
+		production_speed_buildings_factor = 0.04
+		
+		research_cost = 2.2
+		start_year = 157
+
+		folder = {
+			name = Fairy_race_tech_folder
+			position = { x = 4 y = 6 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ziranronghe4 = {
+	
+		path = {
+			leads_to_tech = ziranronghe5
+			research_cost_coeff = 1
+		}
+
+		supply_consumption_factor = -0.06
+		production_speed_buildings_factor = 0.04
+		
+		research_cost = 2.2
+		start_year = 162
+
+		folder = {
+			name = Fairy_race_tech_folder
+			position = { x = 4 y = 8 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ziranronghe5 = {
+
+		supply_consumption_factor = -0.06
+		production_speed_buildings_factor = 0.04
+		
+		research_cost = 2.2
+		start_year = 167
+
+		folder = {
+			name = Fairy_race_tech_folder
+			position = { x = 4 y = 10 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ziranenhui1 = {
+	
+		path = {
+			leads_to_tech = ziranenhui2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.2
+		start_year = 147
+
+		global_building_slots_factor = 0.15
+
+		folder = {
+			name = Fairy_race_tech_folder
+			position = { x = 10 y = 2 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ziranenhui2 = {
+	
+		path = {
+			leads_to_tech = ziranenhui3
+			research_cost_coeff = 1
+		}
+
+		global_building_slots_factor = 0.15
+		
+		research_cost = 2.2
+		start_year = 152
+
+		folder = {
+			name = Fairy_race_tech_folder
+			position = { x = 10 y = 4 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ziranenhui3 = {
+	
+		path = {
+			leads_to_tech = ziranenhui4
+			research_cost_coeff = 1
+		}
+
+		global_building_slots_factor = 0.15
+		
+		research_cost = 2.2
+		start_year = 157
+
+		folder = {
+			name = Fairy_race_tech_folder
+			position = { x = 10 y = 6 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ziranenhui4 = {
+	
+		path = {
+			leads_to_tech = ziranenhui5
+			research_cost_coeff = 1
+		}
+
+		global_building_slots_factor = 0.15
+		
+		research_cost = 2.2
+		start_year = 162
+
+		folder = {
+			name = Fairy_race_tech_folder
+			position = { x = 10 y = 8 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ziranenhui5 = {
+
+		global_building_slots_factor = 0.15
+		
+		research_cost = 2.2
+		start_year = 167
+
+		folder = {
+			name = Fairy_race_tech_folder
+			position = { x = 10 y = 10 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	yaojinggansiban1 = {
+	
+		path = {
+			leads_to_tech = yaojinggansiban2
+			research_cost_coeff = 1
+		}
+
+		ma_infantry = {
+			combat_width = -5
+			max_organisation = 15
+		}
+		sc_infantry = {
+			combat_width = -5
+			max_organisation = 15
+		}
+		melee_infantry = {
+			combat_width = -5
+			max_organisation = 15
+		}
+		melee_cavalry = {
+			combat_width = -5
+			max_organisation = 15
+		}
+		
+		research_cost = 2.2
+		start_year = 147
+
+		folder = {
+			name = Fairy_race_tech_folder
+			position = { x = 16 y = 2 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	yaojinggansiban2 = {
+	
+		path = {
+			leads_to_tech = yaojinggansiban3
+			research_cost_coeff = 1
+		}
+
+		ma_infantry = {
+			default_morale = 0.01
+		}
+		sc_infantry = {
+			default_morale = 0.01
+		}
+		melee_infantry = {
+			default_morale = 0.01
+		}
+		melee_cavalry = {
+			default_morale = 0.01
+		}
+		
+		research_cost = 2.2
+		start_year = 152
+
+		folder = {
+			name = Fairy_race_tech_folder
+			position = { x = 16 y = 4 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	yaojinggansiban3 = {
+	
+		path = {
+			leads_to_tech = yaojinggansiban4
+			research_cost_coeff = 1
+		}
+
+		ma_light_infantry = {
+			combat_width = -5
+			max_organisation = 15
+		}
+		sc_light_infantry = {
+			combat_width = -5
+			max_organisation = 15
+		}
+		ma_shield_infantry = {
+			combat_width = -5
+			max_organisation = 15
+		}
+		sc_shield_infantry = {
+			combat_width = -5
+			max_organisation = 15
+		}
+		ma_sf_infantry = {
+			combat_width = -5
+			max_organisation = 15
+		}
+		sc_sf_infantry = {
+			combat_width = -5
+			max_organisation = 15
+		}
+		melee_cavalry = {
+			combat_width = -5
+			max_organisation = 15
+		}
+
+		
+		research_cost = 2.2
+		start_year = 157
+
+		folder = {
+			name = Fairy_race_tech_folder
+			position = { x = 16 y = 6 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	yaojinggansiban4 = {
+	
+		path = {
+			leads_to_tech = yaojinggansiban5
+			research_cost_coeff = 1
+		}
+
+		ma_light_infantry = {
+			default_morale = 0.01
+		}
+		sc_light_infantry = {
+			default_morale = 0.01
+		}
+		ma_shield_infantry = {
+			default_morale = 0.01
+		}
+		sc_shield_infantry = {
+			default_morale = 0.01
+		}
+		ma_sf_infantry = {
+			default_morale = 0.01
+		}
+		sc_sf_infantry = {
+			default_morale = 0.01
+		}
+		melee_cavalry = {
+			default_morale = 0.01
+		}
+		
+		research_cost = 2.2
+		start_year = 162
+
+		folder = {
+			name = Fairy_race_tech_folder
+			position = { x = 16 y = 8 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	yaojinggansiban5 = {
+		
+		research_cost = 2.2
+		start_year = 167
+
+		ma_infantry = {
+			combat_width = -5
+		}
+		sc_infantry = {
+			combat_width = -5
+		}
+		melee_infantry = {
+			combat_width = -5
+		}
+		melee_cavalry = {
+			combat_width = -5
+		}
+		ma_light_infantry = {
+			combat_width = -5
+		}
+		sc_light_infantry = {
+			combat_width = -5
+		}
+		ma_shield_infantry = {
+			combat_width = -5
+		}
+		sc_shield_infantry = {
+			combat_width = -5
+		}
+		ma_sf_infantry = {
+			combat_width = -5
+		}
+		sc_sf_infantry = {
+			combat_width = -5
+		}
+		melee_cavalry = {
+			combat_width = -5
+		}
+
+		folder = {
+			name = Fairy_race_tech_folder
+			position = { x = 16 y = 10 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,16 @@
+scripted_gui = {
+	TES_gerenchongbai = {
+		window_name = "TES_gerenchongbai"
+		context_type = decision_category
+
+		visible = {
+			always = yes
+		}
+
+		properties = {
+			TES_zhizheng = {
+				frame = TES_chongbai_du
+			}
+		}
+	}
+}

@@ -1,0 +1,34 @@
+
+state={
+	id=404
+	name="STATE_404"
+	resources={
+		powder=3.000
+		metal=0.000
+		gas=3.000
+		crystal=2.000
+	}
+
+	history={
+		146.1.1 = {
+			owner = NMN
+			add_core_of = NMN
+			buildings = {
+				infrastructure = 3
+				industrial_complex = 1
+				arms_factory = 2
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		1969 2721 5116 7242 7243 7244 7247 7256 7258 7263 7269 7278 7279 7280 
+	}
+	manpower=933
+	buildings_max_level_factor=1.000
+	state_category=s5
+	local_supplies=2.500
+}

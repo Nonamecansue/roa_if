@@ -1,0 +1,35 @@
+
+state={
+	id=34
+	name="STATE_34"
+	resources={
+		powder=0.000
+		metal=0.000
+		gas=0.000
+		crystal=0.000
+	}
+
+	history={
+		146.1.1 = {
+			owner = TEG
+			add_core_of = TEG
+			add_claim_by = OTG
+			buildings = {
+				infrastructure = 4
+				industrial_complex = 1
+				arms_factory = 0
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		1147 1965 2713 5131 5132 5139 5140 5145 5147 5151 5156 5165 5170 5173 
+	}
+	manpower=363
+	buildings_max_level_factor=1.000
+	state_category=s5
+	local_supplies=2.500
+}

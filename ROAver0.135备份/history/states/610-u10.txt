@@ -1,0 +1,29 @@
+state={
+	id=610
+	name="STATE_610"
+	provinces={
+		7482 7497 7498 7504 7506 7508 7509 7515 7518 7618 7619 7620 7622 
+	}
+	resources={
+		energy = 10
+		powder = 10.0
+		metal = 5.0
+		gas=0.000
+		crystal=40.000
+	}
+	history={
+		146.1.1 = {
+			owner = OIL
+			add_core_of = OIL
+			buildings = {
+				infrastructure = 3
+				industrial_complex = 1
+				arms_factory = 2
+			}
+		}
+	}
+	state_category=s5
+	manpower=127982
+	buildings_max_level_factor=1.000
+	local_supplies=2.500
+}

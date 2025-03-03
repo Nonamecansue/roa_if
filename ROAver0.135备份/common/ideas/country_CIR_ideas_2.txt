@@ -1,0 +1,710 @@
+ideas = {
+	country = {
+		CIR_dongdanghxxdegemingzhuyi_idea = {
+			picture = home_of_revolution
+			modifier = {
+				oldgenso_acceptance = -50
+				oldorder_acceptance = -50
+				fandong_acceptance = 30
+				qinwai_acceptance = 10
+				army_org_Factor = 0.1
+				army_morale_Factor = 0.3
+			}
+		}
+		CIR_weidalixiang5_idea = {
+			picture = generic_victors_of_ww1
+			modifier = {
+				neworder_drift = 0.05
+			}
+			targeted_modifier = {
+				tag =  SCA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		CIR_weidalixiang4_idea = {
+			picture = generic_victors_of_ww1
+			name = CIR_weidalixiang5_idea
+			modifier = {
+				neworder_drift = 0.04
+			}
+			targeted_modifier = {
+				tag =  SCA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		CIR_weidalixiang3_idea = {
+			picture = generic_victors_of_ww1
+			name = CIR_weidalixiang5_idea
+			modifier = {
+				neworder_drift = 0.03
+			}
+			targeted_modifier = {
+				tag =  SCA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		CIR_weidalixiang2_idea = {
+			picture = generic_victors_of_ww1
+			name = CIR_weidalixiang5_idea
+			modifier = {
+				neworder_drift = 0.02
+			}
+			targeted_modifier = {
+				tag =  SCA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		CIR_weidalixiang1_idea = {
+			picture = generic_victors_of_ww1
+			name = CIR_weidalixiang5_idea
+			modifier = {
+				neworder_drift = 0.01
+			}
+			targeted_modifier = {
+				tag =  SCA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		CIR_weidalixiang0_idea = {
+			picture = generic_victors_of_ww1
+			name = CIR_weidalixiang5_idea
+			modifier = {
+			}
+			targeted_modifier = {
+				tag =  SCA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		CIR_weidalixiang6_idea = {
+			picture = generic_victors_of_ww1
+			name = CIR_weidalixiang5_idea
+			modifier = {
+				neworder_drift = 0.06
+			}
+			targeted_modifier = {
+				tag =  SCA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		CIR_gongyechaoyuehongmoguan1_idea = {
+			name = CIR_gongyechaoyuehongmoguan
+			picture = man_five_year_plan_industry
+
+	    	allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				industrial_capacity_factory = 0.20
+				production_factory_efficiency_gain_factor = -0.05
+				production_factory_max_efficiency_factor = -0.05
+			}
+	    }
+	    CIR_gongyechaoyuehongmoguan2_idea = {
+			name = CIR_gongyechaoyuehongmoguan
+			picture = man_five_year_plan_industry
+
+	    	allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				industrial_capacity_factory = 0.20
+			}
+	    }
+		CIR_dayacailiaojiage1_idea = {
+			name = CIR_dayacailiaojiage
+			picture = ger_mefo_bills_payment
+			available = {
+				has_idea = CIR_dayacailiaojiage2_idea
+				set_temp_variable = {
+					v1 = num_of_civilian_factories
+				}
+				set_temp_variable = {
+					v2 = num_of_military_factories
+				}
+				multiply_temp_variable = {
+					v2 = 2
+				}
+				not = {
+					check_variable = {
+						v2 < v1
+					}
+				}
+			}
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = -0.15
+			}
+		}
+		CIR_dayacailiaojiage2_idea = {
+			name = CIR_dayacailiaojiage
+			picture = ger_mefo_bills_payment
+			modifier = {
+				production_speed_arms_factory_factor = 3
+				consumer_goods_factor = -0.35
+				production_speed_buildings_factor = -0.35
+			}
+		}
+		CIR_jitizhuyijungongchang_idea = {
+			name = CIR_jitizhuyijungongchang
+			picture = man_five_year_plan_industry
+			modifier = {
+				global_building_slots_factor = 0.2
+				production_speed_arms_factory_factor = 0.15
+			}
+		}
+		CIR_junshichaoyuehongmoguan1_idea = {
+			name = CIR_junshichaoyuehongmoguan
+			picture = generic_war_preparation
+
+	    	allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				training_time_factor = -0.15
+				army_org_Factor = -0.05
+			}
+	    }
+	    CIR_junshichaoyuehongmoguan2_idea = {
+			name = CIR_junshichaoyuehongmoguan
+			picture = generic_war_preparation
+
+	    	allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				training_time_factor = -0.35
+			}
+	    }
+	    CIR_pujiyaojingxunlian_idea = {
+			name = CIR_pujiyaojingxunlian
+			picture = generic_manpower_bonus
+			modifier = {
+				experience_gain_army = 0.02
+				army_leader_start_attack_level = 1
+				army_leader_start_defense_level = 1
+				army_leader_start_logistics_level = 1
+				army_leader_start_planning_level = 1
+			}
+		}
+		CIR_jicengyaojingjunguan_idea = {
+			name = CIR_jicengyaojingjunguan
+			picture = tur_kemalist_officers
+			modifier = {
+				command_power_gain_mult = 0.3
+			}
+		}
+		CIR_meigeyingxiong_idea = {
+			name = CIR_meigeyingxiong
+			picture = citizen_militia_2
+			modifier = {
+				army_org_Factor = 0.1
+				out_of_supply_factor = -0.33
+			}
+		}
+		CIR_yongdaiqilunuo_idea = {
+			name = CIR_yongdaiqilunuo
+			picture = ETH_imru_prince_regent
+			modifier = {
+				political_power_factor = 0.15
+			}
+		}
+		CIR_zhengzhineiwujujianshe_idea = {
+			name = CIR_zhengzhineiwujujianshe
+			picture = nkvd
+			modifier = {
+				character_coop_cost_factor = -0.25
+			}
+		}
+		CIR_huweigemingguoshi_idea = {
+			name = CIR_huweigemingguoshi
+			picture = YUG_federal_defense_council
+			modifier = {
+				weekly_manpower = 2
+				conscription = 0.02
+			}
+		}
+		CIR_lingligemingzhuyi_idea = {
+			name = CIR_lingligemingzhuyi
+			picture = generic_communism_drift_bonus
+			modifier = {
+				fandong_drift = 1
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
+		CIR_fahuijunduitechang_idea = {
+			name = CIR_fahuijunduitechang
+			picture = LIT_paramilitarists
+			modifier = {
+				army_infantry_attack_factor = 0.05
+				army_infantry_defence_factor = 0.05
+			}
+		}
+		CIR_junduisixiangjiaoyu_idea = {
+			name = CIR_junduisixiangjiaoyu
+			picture = jap_supremacy_of_will
+			modifier = {
+				max_command_power_mult = 0.2
+				max_planning = 0.1
+			}
+		}
+		CIR_jianlixuanchuanbumen_idea = {
+			name = CIR_jianlixuanchuanbumen
+			picture = tokyo_arsenal
+			modifier = {
+				manufacturer_cost_factor = -0.25
+			}
+		}
+		CIR_tuanjieyaojingliliang_idea = {
+			name = CIR_tuanjieyaojingliliang
+			picture = chi_chinese_support
+			modifier = {
+				weekly_manpower = 1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		CIR_tuanjiegemingliliang_idea = {
+			name = CIR_tuanjiegemingliliang
+			picture = MEX_revolutionary_army
+			modifier = {
+				send_volunteer_factor = 0.2
+			}
+		}
+		CIR_fansikaleite_idea = {
+			name = CIR_fansikaleite
+			picture = SPR_anti_fascist_crusade
+			targeted_modifier = {
+				tag = SCA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		CIR_gemingdiyibu_idea = {
+			name = CIR_gemingdiyibu
+			picture = fourth_international
+			modifier = {
+				compliance_gain = 0.1
+				ST_race_penalty_Beast_factor = -0.35
+				ST_race_penalty_Fairy_factor = -0.35
+				ST_race_penalty_Ghost_factor = -0.35
+				ST_race_penalty_Human_factor = -0.35
+				ST_race_penalty_Magician_factor = -0.35
+				ST_race_penalty_Pri_youkai_factor = -0.35
+				ST_race_penalty_Tengu_factor = -0.35
+				ST_race_penalty_Kappa_factor = -0.35
+			}
+		}
+		CIR_yuandamuguang_idea = {
+			name = CIR_yuandamuguang
+			picture = vittoria_mutilata
+			modifier = {
+				political_power_gain = 0.2
+			}
+	    }
+		CIR_zhenzhengdediren_idea = {
+			name = CIR_zhenzhengdediren
+			picture = FRA_army_of_aggression_focus
+			modifier = {
+				drift_defence_factor = 0.25
+				army_morale_factor = 0.1
+			}
+		}
+		CIR_zhenzhengdediren2_idea = {
+			name = CIR_zhenzhengdediren
+			picture = FRA_army_of_aggression_focus
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+		CIR_guoneidetuanjie_idea = {
+			name = CIR_guoneidetuanjie
+			picture = por_iberian_workers_united
+			modifier = {
+				stability_factor = 0.25
+				war_support_factor = 0.15
+				political_power_factor = 0.15
+			}
+		}
+		CIR_wutuobangjihuahui_idea = {
+			name = CIR_wutuobangjihuahui
+			picture = gre_schachtplan3
+			modifier = {
+				operative_slot = 1
+				decryption = 3
+				send_volunteer_factor = 0.3
+			}
+			research_bonus = {
+				jiemi = 0.1
+				jiami = 0.1
+			}
+		}
+		CIR_bangzhuyaojinggemingzhe_idea = {
+			picture = generic_communism_drift_bonus
+			modifier = {
+				fandong_drift = 0.02
+			}
+		}
+		CIR_jihuacanmoubu_idea = {
+			name = CIR_jihuacanmoubu
+			picture = YUG_local_militias
+			modifier = {
+				planning_speed = 0.2
+				max_command_power = 20
+				command_power_gain_mult = 0.15
+			}
+		}
+		CIR_waijiezhiguojingyan_idea = {
+			name = CIR_waijiezhiguojingyan
+			picture = generic_pp_unity_bonus
+			modifier = {
+				qinwai_drift = 0.03
+			}
+		}
+		CIR_waijiaobumen_idea = {
+			name = CIR_waijiaobumen
+			picture = generic_pp_unity_bonus
+			modifier = {
+				improve_relations_maintain_cost_factor = -0.25
+			}
+		}
+		CIR_junshigaige_idea = {
+			name = CIR_junshigaige
+			picture = chi_whampoa_military_academy
+			modifier = {
+				experience_gain_army = 0.02
+			}
+		}
+		CIR_wanshanzhengbingfaan_idea = {
+			name = CIR_wanshanzhengbingfaan
+			picture = all_adults_serve
+			modifier = {
+				mobilization_laws_cost_factor = -0.3
+				war_support_factor = 0.1
+			}
+		}
+		CIR_junshiqiyejianshui_idea = {
+			name = CIR_junshiqiyejianshui
+			picture = SPR_seize_the_gold_reserves
+			modifier = {
+				production_speed_arms_factory_factor = 0.3
+			}
+			research_bonus = {
+				military = 0.05
+			}
+		}
+		CIR_hanweixuanjuzhidu_idea = {
+			name = CIR_hanweixuanjuzhidu
+			picture = YUG_federal_defense_council
+			modifier = {
+				political_power_gain = 0.25
+				stability_factor = 0.1
+			}
+		}
+		CIR_hanweigongheguo_idea = {
+			name = CIR_hanweigongheguo
+			picture = por_the_fifth_empire
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				army_morale_factor = 0.05
+				war_support_factor = 0.1
+				stability_factor = 0.1
+			}
+		}
+		CIR_chanyejiajianshui_idea = {
+			name = CIR_chanyejiajianshui
+			picture = spr_seize_the_gold_reserves
+			modifier = {
+				production_speed_industrial_complex_factor = 0.3
+			}
+			research_bonus = {
+				civil = 0.05
+			}
+		}
+		CIR_xianglintangzhiguoshuji_idea = {
+			name = CIR_xianglintangzhiguoshuji
+			picture = generic_pp_unity_bonus
+			modifier = {
+				political_power_gain = 0.1
+			}
+		}
+		CIR_tiangoukaochatuan1_idea = {
+			picture = generic_pp_unity_bonus
+			modifier = {
+				political_power_factor = 0.1
+			}
+		}
+		CIR_tiangoukaochatuan2_idea = {
+			picture = generic_production_bonus
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		CIR_tiangoukaochatuan3_idea = {
+			picture = generic_industrial_concern_1
+			modifier = {
+				production_factory_max_efficiency_factor = 0.2
+			}
+		}
+		CIR_yaojingyiwujiaoyu_idea = {
+			name = CIR_yaojingyiwujiaoyu
+			picture = generic_research_bonus
+			modifier = {
+				weekly_manpower = 1
+				research_speed_factor = 0.1
+			}
+		}
+		CIR_helishuishouzhidu_idea = {
+			name = CIR_helishuishouzhidu
+			picture = generic_industrial_concern_1
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+		CIR_wuzhihuhuobitixi_idea = {
+			name = CIR_wuzhihuhuobitixi
+			picture = generic_flexible_foreign_policy2
+			modifier = {
+				consumer_goods_factor = -0.05
+				trade_opinion_factor = 0.15
+			}
+		}
+		CIR_jungongchanyetiaozheng_idea = {
+			name = CIR_jungongchanyetiaozheng
+			picture = SOV_third_five_year_plan_military
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.35
+			}
+		}
+		CIR_liyongdirendegongchanghejishu_idea = {
+			name = CIR_liyongdirendegongchanghejishu
+			picture = chi_chinese_support
+
+	    	allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+
+			modifier = { 
+				industry_repair_factor = 0.33
+				industry_free_repair_factor = 0.33
+			}			
+	    }
+		CIR_zhimingdifangkang_idea = {
+			name = CIR_zhimingdifangkang
+			picture = spr_masters_of_our_own_fate
+			available = {
+				or = {
+					has_war_with = GRS
+					has_war_with = WAK
+					has_war_with = PRI
+				}
+			}
+			targeted_modifier = {
+				tag = GRS
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = WAK
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = PRI
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		CIR_fusangshenyuanzhu_idea = {
+			picture = generic_production_bonus
+			available = {
+				not = {
+					has_war_with = TKM
+				}
+				country_exists = TKM
+			}
+			modifier = {
+				production_factory_max_efficiency_factor = 0.15
+			}
+		}
+		CIR_tiangoujunshiyuanzhu_idea = {
+			picture = air_support_focus
+			available = {
+				not = {
+					has_war_with = TEG
+				}
+				country_exists = TEG
+			}
+			equipment_bonus = {
+				mortar_a = {
+					maximum_speed = 0.1
+					instant = yes
+				}
+				magic_energy_a = {
+					maximum_speed = 0.1
+					instant = yes
+				}
+			}
+		}
+		CIR_huanxiangxiangxindaolu_idea = {
+			name = CIR_huanxiangxiangxindaolu
+			picture = new_deal
+			available = {
+				not = {
+					has_war_with = KAS
+				}
+				country_exists = KAS
+			}
+			modifier = {
+				PO_bad_influence_factor = -0.33
+			}
+		}
+		CIR_shanshangshenmingzhichi_idea = {
+			name = CIR_shanshangshenmingzhichi
+			picture = generic_acquire_tanks
+			available = {
+				not = {
+					has_war_with = MRY
+				}
+				country_exists = MRY
+			}
+			equipment_bonus = {
+				tactical_core_a = {
+					build_cost_ic = -0.1
+					reliability = 0.1
+					instant = yes
+				}
+				mecha_a = {
+					build_cost_ic = -0.1
+					reliability = 0.1
+					instant = yes
+				}
+			}
+		}
+		CIR_mingliansizhichi_idea = {
+			name = CIR_mingliansizhichi
+			picture = vickers_armstrong_eng
+			available = {
+				not = {
+					has_war_with = NMS
+				}
+				country_exists = NMS
+			}
+			equipment_bonus = {
+				magic_energy_a = {
+					soft_attack = 0.05
+					hard_attack = 0.05
+					instant = yes
+				}
+				gun_a = {
+					soft_attack = 0.05
+					hard_attack = 0.05
+					instant = yes
+				}
+			}
+		}
+		CIR_xianzhemihui_idea = {
+			name = CIR_xianzhemihui
+			picture = generic_spy_intel
+			available = {
+				not = {
+					has_war_with = YKR
+				}
+				country_exists = YKR
+			}
+			modifier = {
+				PO_good_influence_factor = 0.2
+			}
+		}
+		CIR_xinhuanxiangxiangzhilu_idea = {
+			name = CIR_xinhuanxiangxiangzhilu
+			picture = home_of_revolution
+			modifier = {
+				CO_cost_factor = -0.33
+				CO_core_resistance_required = -15
+			}
+		}
+		CIR_jianlilinglijidi_idea = {
+			name = CIR_jianlilinglijidi
+			picture = home_of_revolution
+			modifier = {
+				ST_race_penalty_all_factor = -0.25
+				SS_subject_modifier_factor = 0.15
+				puppet_cost_factor = -0.4
+			}
+		}
+		CIR_chanyehuzhuweiyuanhui_idea = {
+			picture = home_of_revolution
+			targeted_modifier = {
+				tag = CIR
+				cic_to_target_factor = 0.1
+				mic_to_target_factor = 0.1
+			}
+			available = {
+				is_subject_of = CIR
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+		CIR_yaojingminzuguan_idea = {
+			picture = generic_fascism_drift_2
+			name = CIR_yaojingminzuguan
+			modifier = {
+				stability_weekly = 0.02
+				EXHC_increase_period_factor = 0.2
+			}
+		}
+		CIR_hanchunjiaji_idea = {
+			picture = received_attache
+			name = CIR_hanchunjiaji
+			available = {
+				has_war_with = SCA
+			}
+			targeted_modifier = {
+				tag = SCA
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+		}
+	}
+}

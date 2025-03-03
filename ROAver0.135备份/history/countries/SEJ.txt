@@ -1,0 +1,210 @@
+﻿capital = 119
+143.7.1 = {
+    set_technology = {
+        #通用武器线
+        spell_card1 = 1
+        spear1 = 1
+        gun1 = 1
+        linglicunchu = 1
+        spell_card2 = 1
+        lingliliushuixian = 1
+            
+        #辅助
+
+        #专用辅助
+
+        #专用基础
+
+        #专用进阶
+
+        #混合系
+        sc_shield1 = 1
+
+        #陆军学说
+        zhanchangzhihui140 = 1
+        zuzhihuazhanzheng142 = 1
+            
+        #工程学 
+        jichushuxue = 1
+        shuxuegongju = 1
+
+        #专用工程学
+
+        #工业
+        production_theory = 1
+        org_production = 1
+            
+        #专用工业
+
+        #种族
+            
+    } 
+}
+146.1.1 = {
+    set_technology = {
+        #通用武器线
+        spell_card1 = 1
+        spear1 = 1
+        gun1 = 1
+        linglicunchu = 1
+        linglizhufu = 1
+        linglidanyao = 1
+        spell_card2 = 1
+        spear2 = 1
+        gun2 = 1
+        lingliliushuixian = 1
+        spell_card3 = 1
+        gun3 = 1
+            
+        #辅助
+
+        #专用辅助
+        magic_energy1 = 1
+        #专用基础
+
+        #专用进阶
+
+        #混合系
+        sc_shield1 = 1
+
+        #陆军学说
+        zhanchangzhihui140 = 1
+        zuzhihuazhanzheng142 = 1
+        zhanchangzhihui145 = 1
+        xianlieduixing = 1
+            
+        #工程学 
+        jichushuxue = 1
+        shuxuegongju = 1
+        lingben = 1
+
+        #专用工程学
+
+        #工业
+        production_theory = 1
+        org_production = 1
+        jianzaojishu130 = 1
+        jianzaojishu140 = 1
+        jijianjianzao140 = 1
+            
+        #专用工业
+
+        #种族
+            
+    } 
+}
+143.7.1 = {
+    oob = "SEJ_143"
+    add_ideas = {
+    Pri_youkai
+    sub_Beast
+    low_economic_mobilisation
+    type3_manpowerlv7
+    Village
+    hawk2
+    close2
+    free_magic
+     
+    }
+    set_politics = {
+        ruling_party = fandong
+        election_frequency = 48
+        elections_allowed = no
+    }
+    set_popularities = {
+        qinwai = 0
+        guli = 0
+        neworder = 0
+        oldorder = 0
+        fandong = 100
+    }
+}
+146.1.1={
+    add_manpower = 100
+    set_country_flag = bunengqie_guli
+    set_country_flag = bunengqie_oldorder
+    set_country_flag = bunengqie_oldgenso
+    oob = "SEJ_146"
+    set_major = yes
+    # create_faction = xiakeshanggemingyundong
+    # add_to_faction = NIB
+    # add_to_faction = RMI
+    # add_to_faction = CIR
+    country_lock_all_division_template = yes
+    add_ideas = {
+    Pri_youkai
+    civilian_economy
+    type3_manpowerlv2
+    Town
+    hawk1
+    open0
+    strict_border
+    free_magic
+     
+    }
+
+    # add_ideas = SEJ_zhengzhiweiji_idea
+    add_ideas = SEJ_lingdaocengpianxiang_p2_idea
+    add_ideas = SEJ_minjianqingxiang_n1_idea
+    add_ideas = SEJ_tingzhidexiakeshang_idea
+    add_ideas = SEJ_yuanzhumofasenlindegemingzhe_idea
+    # declare_war_on = {
+    #   target = ONS
+    #   type = take_state_focus
+    #   generator = { 121 }
+    # }
+
+    every_owned_state = {
+        limit = {
+            ST_race_is_Beast = yes
+        }
+        ST_race_penalty_remove = yes
+    }
+
+    # NIB = { add_to_war = { targeted_alliance = SEJ enemy = ONS }}
+    # RMI = { add_to_war = { targeted_alliance = SEJ enemy = ONS }}
+    # CIR = { add_to_war = { targeted_alliance = SEJ enemy = ONS }}
+    set_politics = {
+    	ruling_party = fandong
+    	election_frequency = 48
+    	elections_allowed = no
+    }
+    set_popularities = {
+        qinwai = 0
+        guli = 65
+        neworder = 5
+        oldorder = 0
+        fandong = 30
+    }
+    every_owned_state = {
+        limit = {
+            region = 67
+        }
+        add_dynamic_modifier = {
+            modifier = SEJ_ghost_border_modifier
+        }
+    }
+    674 = {
+        add_dynamic_modifier = {
+            modifier = SEJ_WHR_border_modifier
+        }
+    }
+    673 = {
+        add_dynamic_modifier = {
+            modifier = SEJ_WHR_border_modifier
+        }
+    }
+    183 = {
+        add_dynamic_modifier = {
+            modifier = SEJ_WHR_border_modifier
+        }
+        add_dynamic_modifier = {
+            modifier = SEJ_after_civil_war_modifier
+        }
+    }
+    140 = {
+        add_dynamic_modifier = {
+            modifier = SEJ_WHR_border_modifier
+        }
+    }
+}

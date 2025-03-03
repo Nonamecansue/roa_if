@@ -1,0 +1,29 @@
+state={
+	id=608
+	name="STATE_608"
+	provinces={
+		2040 5331 5333 5347 
+	}
+	resources={
+		energy = 30
+		powder = 5.0
+		metal = 76.0
+		gas=35.000
+		crystal=24.000
+	}
+	history={
+		146.1.1 = {
+			owner = KRD
+			add_core_of = KRD
+			buildings = {
+				infrastructure = 4
+				industrial_complex = 2
+				arms_factory = 2
+			}
+		}
+	}
+	state_category=s7
+	manpower=1239
+	buildings_max_level_factor=1.000
+	local_supplies=2.500
+}

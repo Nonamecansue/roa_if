@@ -1,0 +1,72 @@
+characters={
+	INB_inb ={
+		name = INB_inb
+		portraits={
+			civilian={
+				large="gfx/leaders/INB/INB_inb.dds"
+				small="gfx/leaders/INB/INB_inb_small.dds"
+			}
+			army = {
+				large="gfx/leaders/INB/INB_inb.dds"
+				small="gfx/leaders/INB/INB_inb_small.dds"
+			}
+		}
+		field_marshal = {
+            traits = {  th_original_character th_character  th_trait_moulvedashi  }
+            attack_skill = 4
+            defense_skill = 8
+            planning_skill = 12
+            logistics_skill = 7
+            skill = 9
+        }
+		advisor = {
+			slot = character_coop
+			idea_token = INB_inb
+			name = INB_inb
+			cost = 200
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	INB_inb_leader ={
+		name = INB_inb_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/INB/INB_inb.dds"
+				small="gfx/leaders/INB/INB_inb_small.dds"
+			}
+			army = {
+				large="gfx/leaders/INB/INB_inb.dds"
+				small="gfx/leaders/INB/INB_inb_small.dds"
+			}
+		}
+		country_leader={
+			ideology=qinwai_type
+			id=-1
+		}
+		country_leader={
+			ideology=guli_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldorder_type
+			id=-1
+		}
+		country_leader={
+			ideology=fandong_type
+			id=-1
+		}
+		country_leader={
+			ideology=neworder_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldgenso_type
+			id=-1
+		}
+	}
+}

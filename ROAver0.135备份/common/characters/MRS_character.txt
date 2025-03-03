@@ -1,0 +1,119 @@
+characters={
+	MRS_mrs ={
+		name = MRS_mrs
+		portraits={
+			civilian={
+				large="gfx/leaders/MRS/MRS_mrs.dds"
+				small="gfx/leaders/MRS/MRS_mrs_small.dds"
+			}
+			army = {
+				large="gfx/leaders/MRS/MRS_mrs.dds"
+				small="gfx/leaders/MRS/MRS_mrs_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  th_original_character th_character  th_trait_qianxianzhandou trait_reckless th_trait_huolizhuanjia }
+			# id = 19
+			attack_skill = 11
+			defense_skill = 6
+			planning_skill = 1
+			logistics_skill = 2
+			skill = 6
+		}
+		advisor = {
+			slot = character_coop
+			idea_token = MRS_mrs
+			name = MRS_mrs
+			cost = 200
+			modifier = {
+				army_artillery_attack_factor = 0.2
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	MRS_mrs_98 ={
+		name = MRS_mrs_98
+		portraits={
+			civilian={
+				large="gfx/leaders/MRS/MRS_mrs_98.dds"
+				small="gfx/leaders/MRS/MRS_mrs_98_small.dds"
+			}
+			army = {
+				large="gfx/leaders/MRS/MRS_mrs_98.dds"
+				small="gfx/leaders/MRS/MRS_mrs_98_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { th_character }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		# advisor = {
+		# 	slot = character_coop
+		# 	idea_token = MRS_mrs_98
+		# 	name = MRS_mrs_98
+		# 	cost = 200
+		# 	modifier = {
+		# 		
+		# 	}
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# }
+	}
+	MRS_mrs_leader ={
+		name = MRS_mrs_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/MRS/MRS_mrs.dds"
+				small="gfx/leaders/MRS/MRS_mrs_small.dds"
+			}
+			army = {
+				large="gfx/leaders/MRS/MRS_mrs.dds"
+				small="gfx/leaders/MRS/MRS_mrs_small.dds"
+			}
+		}
+		country_leader={
+			ideology=qinwai_type
+			id=-1
+		}
+		country_leader={
+			ideology=guli_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldorder_type
+			id=-1
+		}
+		country_leader={
+			ideology=neworder_type
+			id=-1
+		}
+		country_leader={
+			ideology=fandong_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldgenso_type
+			id=-1
+		}
+	}
+	MRS_mima_leader ={
+		name = MRS_mima_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/HKR/HKR_mima.dds"
+				small="gfx/leaders/HKR/HKR_mima_small.dds"
+			}
+			army = {
+				large="gfx/leaders/HKR/HKR_mima.dds"
+				small="gfx/leaders/HKR/HKR_mima_small.dds"
+			}
+		}
+	}
+}

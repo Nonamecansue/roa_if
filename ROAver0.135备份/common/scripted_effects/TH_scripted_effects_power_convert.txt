@@ -1,0 +1,87 @@
+POconvert_defines = {
+	set_variable = { global.POconvert_first_fuel_cost_ratio = 0.01 } 
+	set_variable = { global.POconvert_fuel_cost_ratio = 0.08 } 
+	set_variable = { global.POconvert_max_power = 30 }
+	set_variable = { global.POconvert_power_daily_decay = 0.25 }
+	set_variable = { global.POconvert_power_daily_gain = 0.04 }
+}
+POconvert_daily = {
+	set_variable = {
+		POconvert_daily_cost = 0
+	}
+	###fuel cost
+	set_variable = {
+		POconvert_fuel_cost = all_value_plus_manpower
+	}
+	multiply_variable = {
+		POconvert_fuel_cost = global.POconvert_first_fuel_cost_ratio
+	}
+	multiply_variable = {
+		POconvert_fuel_cost = 1000
+	}
+	
+	###fuel daily cost
+	set_variable = {
+		POconvert_daily_cost_display = all_value_plus_manpower
+	}
+	multiply_variable = {
+		POconvert_daily_cost_display = global.POconvert_fuel_cost_ratio
+	}
+	multiply_variable = {
+		POconvert_daily_cost_display = 24
+	}
+	set_temp_variable = {
+		v = 1
+	}
+	add_to_temp_variable = {
+		v = modifier@POconvert_daily_fuel_cost_factor
+	}
+	multiply_variable = {
+		POconvert_daily_cost_display = v
+	}
+
+	###PO max
+	set_variable = {
+		POconvert_PO_max = global.POconvert_max_power
+	}
+	add_to_variable = {
+		POconvert_PO_max = modifier@POconvert_max_PO
+	}
+	###PO gain
+	if = {
+		limit = {
+			has_country_flag = POconvert_on
+		}
+		add_to_variable = {
+			POconvert_power = global.POconvert_power_daily_gain
+		}
+		divide_variable = {
+			POconvert_daily_cost_display = 24
+		}
+		set_variable = {
+			POconvert_daily_cost = POconvert_daily_cost_display
+		}
+		if = {
+			limit = {
+				has_fuel < 1
+			}
+			clr_country_flag = POconvert_on
+		}
+		clamp_variable = {
+			var = POconvert_power
+			min = 0
+			max = POconvert_PO_max
+		}
+	}
+	if = {
+		limit = {
+			not = { has_country_flag = POconvert_on }
+			check_variable = {
+				POconvert_power > 0
+			}
+		}
+		subtract_from_variable = {
+			POconvert_power = global.POconvert_power_daily_decay
+		}
+	}
+}

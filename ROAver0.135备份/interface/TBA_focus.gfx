@@ -1,0 +1,1430 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_focus_TBA_yinduishichangshen"
+		textureFile = "gfx/interface/goals/focus_TBA_yinduishichangshen.png"
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_yinduishichangshen_shine"
+		texturefile = "gfx/interface/goals/focus_TBA_yinduishichangshen.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_yinduishichangshen.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = -90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_yinduishichangshen.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = 90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_duchangjingjiquan"
+		textureFile = "gfx/interface/goals/focus_TBA_duchangjingjiquan.png"
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_duchangjingjiquan_shine"
+		texturefile = "gfx/interface/goals/focus_TBA_duchangjingjiquan.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_duchangjingjiquan.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = -90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_duchangjingjiquan.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = 90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_guifangshangu"
+		textureFile = "gfx/interface/goals/focus_TBA_guifangshangu.png"
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_guifangshangu_shine"
+		texturefile = "gfx/interface/goals/focus_TBA_guifangshangu.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_guifangshangu.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = -90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_guifangshangu.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = 90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_tunyuntuwudeyishu"
+		textureFile = "gfx/interface/goals/focus_TBA_tunyuntuwudeyishu.png"
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_tunyuntuwudeyishu_shine"
+		texturefile = "gfx/interface/goals/focus_TBA_tunyuntuwudeyishu.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_tunyuntuwudeyishu.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = -90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_tunyuntuwudeyishu.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = 90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_weichiduchangzhixu"
+		textureFile = "gfx/interface/goals/focus_TBA_weichiduchangzhixu.png"
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_weichiduchangzhixu_shine"
+		texturefile = "gfx/interface/goals/focus_TBA_weichiduchangzhixu.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_weichiduchangzhixu.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = -90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_weichiduchangzhixu.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = 90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_zhuangbeigongfang"
+		textureFile = "gfx/interface/goals/focus_TBA_zhuangbeigongfang.png"
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_zhuangbeigongfang_shine"
+		texturefile = "gfx/interface/goals/focus_TBA_zhuangbeigongfang.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_zhuangbeigongfang.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = -90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_zhuangbeigongfang.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = 90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_caokonngjingshenndeyannwu"
+		textureFile = "gfx/interface/goals/focus_TBA_caokonngjingshenndeyannwu.png"
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_caokonngjingshenndeyannwu_shine"
+		texturefile = "gfx/interface/goals/focus_TBA_caokonngjingshenndeyannwu.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_caokonngjingshenndeyannwu.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = -90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_zhuangbeigongfang.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = 90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_jingshenqianghyuayancao"
+		textureFile = "gfx/interface/goals/focus_TBA_jingshenqianghyuayancao.png"
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_jingshenqianghyuayancao_shine"
+		texturefile = "gfx/interface/goals/focus_TBA_jingshenqianghyuayancao.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_jingshenqianghyuayancao.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = -90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_jingshenqianghyuayancao.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = 90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_jingshenraoluanyancao"
+		textureFile = "gfx/interface/goals/focus_TBA_jingshenraoluanyancao.png"
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_jingshenraoluanyancao_shine"
+		texturefile = "gfx/interface/goals/focus_TBA_jingshenraoluanyancao.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_jingshenraoluanyancao.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = -90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_jingshenraoluanyancao.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = 90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_yancaojunshihuachangshi"
+		textureFile = "gfx/interface/goals/focus_TBA_yancaojunshihuachangshi.png"
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_yancaojunshihuachangshi_shine"
+		texturefile = "gfx/interface/goals/focus_TBA_yancaojunshihuachangshi.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_yancaojunshihuachangshi.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = -90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_yancaojunshihuachangshi.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = 90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_zhihuanyanwu"
+		textureFile = "gfx/interface/goals/focus_TBA_zhihuanyanwu.png"
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_zhihuanyanwu_shine"
+		texturefile = "gfx/interface/goals/focus_TBA_zhihuanyanwu.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_zhihuanyanwu.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = -90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_zhihuanyanwu.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = 90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_zuozhuangduchangdeyizhihuia"
+		textureFile = "gfx/interface/goals/focus_TBA_zuozhuangduchangdeyizhihuia.png"
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_zuozhuangduchangdeyizhihuia_shine"
+		texturefile = "gfx/interface/goals/focus_TBA_zuozhuangduchangdeyizhihuia.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_zuozhuangduchangdeyizhihuia.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = -90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_zuozhuangduchangdeyizhihuia.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = 90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_shenshishunvmendeshejiaocahng"
+		textureFile = "gfx/interface/goals/focus_TBA_shenshishunvmendeshejiaocahng.png"
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_shenshishunvmendeshejiaocahng_shine"
+		texturefile = "gfx/interface/goals/focus_TBA_shenshishunvmendeshejiaocahng.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_shenshishunvmendeshejiaocahng.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = -90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_shenshishunvmendeshejiaocahng.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = 90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_100haopinglv"
+		textureFile = "gfx/interface/goals/focus_TBA_100haopinglv.png"
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_100haopinglv_shine"
+		texturefile = "gfx/interface/goals/focus_TBA_100haopinglv.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_100haopinglv.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = -90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_100haopinglv.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = 90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_yancaojiagonngchang"
+		textureFile = "gfx/interface/goals/focus_TBA_yancaojiagonngchang.png"
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_yancaojiagonngchang_shine"
+		texturefile = "gfx/interface/goals/focus_TBA_yancaojiagonngchang.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_yancaojiagonngchang.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = -90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_yancaojiagonngchang.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = 90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_jiejipochangzhe"
+		textureFile = "gfx/interface/goals/focus_TBA_jiejipochangzhe.png"
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_jiejipochangzhe_shine"
+		texturefile = "gfx/interface/goals/focus_TBA_jiejipochangzhe.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_jiejipochangzhe.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = -90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_jiejipochangzhe.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = 90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_yanwuliaoraodezhangchang"
+		textureFile = "gfx/interface/goals/focus_TBA_yanwuliaoraodezhangchang.png"
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_yanwuliaoraodezhangchang_shine"
+		texturefile = "gfx/interface/goals/focus_TBA_yanwuliaoraodezhangchang.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_yanwuliaoraodezhangchang.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = -90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_yanwuliaoraodezhangchang.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = 90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_zhaolaikerendesanhuamao"
+		textureFile = "gfx/interface/goals/focus_TBA_zhaolaikerendesanhuamao.png"
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_zhaolaikerendesanhuamao_shine"
+		texturefile = "gfx/interface/goals/focus_TBA_zhaolaikerendesanhuamao.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_zhaolaikerendesanhuamao.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = -90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_zhaolaikerendesanhuamao.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = 90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_zhongshengjiepingdeng"
+		textureFile = "gfx/interface/goals/focus_TBA_zhongshengjiepingdeng.png"
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_zhongshengjiepingdeng_shine"
+		texturefile = "gfx/interface/goals/focus_TBA_zhongshengjiepingdeng.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_zhongshengjiepingdeng.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = -90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_zhongshengjiepingdeng.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = 90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_yuehongzhiye"
+		textureFile = "gfx/interface/goals/focus_TBA_yuehongzhiye.png"
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_yuehongzhiye_shine"
+		texturefile = "gfx/interface/goals/focus_TBA_yuehongzhiye.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_yuehongzhiye.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = -90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_yuehongzhiye.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = 90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_chashoyaoguaishang"
+		textureFile = "gfx/interface/goals/focus_TBA_chashoyaoguaishang.png"
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_chashoyaoguaishang_shine"
+		texturefile = "gfx/interface/goals/focus_TBA_chashoyaoguaishang.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_chashoyaoguaishang.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = -90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_chashoyaoguaishang.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = 90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_zhengbaxinanhuanxx"
+		textureFile = "gfx/interface/goals/focus_TBA_zhengbaxinanhuanxx.png"
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_zhengbaxinanhuanxx_shine"
+		texturefile = "gfx/interface/goals/focus_TBA_zhengbaxinanhuanxx.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_zhengbaxinanhuanxx.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = -90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_zhengbaxinanhuanxx.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = 90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_shalvdeshangzhinvwang"
+		textureFile = "gfx/interface/goals/focus_TBA_shalvdeshangzhinvwang.png"
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_shalvdeshangzhinvwang_shine"
+		texturefile = "gfx/interface/goals/focus_TBA_shalvdeshangzhinvwang.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_shalvdeshangzhinvwang.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = -90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_shalvdeshangzhinvwang.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = 90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_qiangzhisixin"
+		textureFile = "gfx/interface/goals/focus_TBA_qiangzhisixin.png"
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_qiangzhisixin_shine"
+		texturefile = "gfx/interface/goals/focus_TBA_qiangzhisixin.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_qiangzhisixin.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = -90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_qiangzhisixin.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = 90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_xiandaihuachangshi"
+		textureFile = "gfx/interface/goals/focus_TBA_xiandaihuachangshi.png"
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_xiandaihuachangshi_shine"
+		texturefile = "gfx/interface/goals/focus_TBA_xiandaihuachangshi.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_xiandaihuachangshi.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = -90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_xiandaihuachangshi.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = 90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_laopengyoulong"
+		textureFile = "gfx/interface/goals/focus_TBA_laopengyoulong.png"
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_laopengyoulong_shine"
+		texturefile = "gfx/interface/goals/focus_TBA_laopengyoulong.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_laopengyoulong.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = -90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_laopengyoulong.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = 90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_shobeijihua"
+		textureFile = "gfx/interface/goals/focus_TBA_shobeijihua.png"
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_shobeijihua_shine"
+		texturefile = "gfx/interface/goals/focus_TBA_shobeijihua.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_shobeijihua.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = -90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_shobeijihua.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = 90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_yinjinxinxingshengchang"
+		textureFile = "gfx/interface/goals/focus_TBA_yinjinxinxingshengchang.png"
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_yinjinxinxingshengchang_shine"
+		texturefile = "gfx/interface/goals/focus_TBA_yinjinxinxingshengchang.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_yinjinxinxingshengchang.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = -90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_yinjinxinxingshengchang.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = 90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_yinjinxinxingshengchang"
+		textureFile = "gfx/interface/goals/focus_TBA_yinjinxinxingshengchang.png"
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_yinjinxinxingshengchang_shine"
+		texturefile = "gfx/interface/goals/focus_TBA_yinjinxinxingshengchang.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_yinjinxinxingshengchang.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = -90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_yinjinxinxingshengchang.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = 90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_zosijunhuo"
+		textureFile = "gfx/interface/goals/focus_TBA_zosijunhuo.png"
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_zosijunhuo_shine"
+		texturefile = "gfx/interface/goals/focus_TBA_zosijunhuo.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_zosijunhuo.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = -90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_zosijunhuo.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = 90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_xiandaihuashengchang"
+		textureFile = "gfx/interface/goals/focus_TBA_xiandaihuashengchang.png"
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_xiandaihuashengchang_shine"
+		texturefile = "gfx/interface/goals/focus_TBA_xiandaihuashengchang.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_xiandaihuashengchang.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = -90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_xiandaihuashengchang.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = 90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_moheiduchang"
+		textureFile = "gfx/interface/goals/focus_TBA_moheiduchang.png"
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_moheiduchang_shine"
+		texturefile = "gfx/interface/goals/focus_TBA_moheiduchang.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_moheiduchang.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = -90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_moheiduchang.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = 90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_shichangshendeyinmo"
+		textureFile = "gfx/interface/goals/focus_TBA_shichangshendeyinmo.png"
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_shichangshendeyinmo_shine"
+		texturefile = "gfx/interface/goals/focus_TBA_shichangshendeyinmo.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_shichangshendeyinmo.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = -90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_shichangshendeyinmo.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = 90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_yuehongshichangjun"
+		textureFile = "gfx/interface/goals/focus_TBA_yuehongshichangjun.png"
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_yuehongshichangjun_shine"
+		texturefile = "gfx/interface/goals/focus_TBA_yuehongshichangjun.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_yuehongshichangjun.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = -90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_yuehongshichangjun.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = 90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_jianyuejundui"
+		textureFile = "gfx/interface/goals/focus_TBA_jianyuejundui.png"
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_jianyuejundui_shine"
+		texturefile = "gfx/interface/goals/focus_TBA_jianyuejundui.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_jianyuejundui.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = -90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_jianyuejundui.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = 90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_xianggongheguo3"
+		textureFile = "gfx/interface/goals/focus_TBA_xianggongheguo3.png"
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_xianggongheguo3_shine"
+		texturefile = "gfx/interface/goals/focus_TBA_xianggongheguo3.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_xianggongheguo3.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = -90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_xianggongheguo3.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = 90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_xianggongheguo2"
+		textureFile = "gfx/interface/goals/focus_TBA_xianggongheguo2.png"
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_xianggongheguo2_shine"
+		texturefile = "gfx/interface/goals/focus_TBA_xianggongheguo2.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_xianggongheguo2.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = -90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_xianggongheguo2.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = 90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_xianggongheguo1"
+		textureFile = "gfx/interface/goals/focus_TBA_xianggongheguo1.png"
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_xianggongheguo1_shine"
+		texturefile = "gfx/interface/goals/focus_TBA_xianggongheguo1.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_xianggongheguo1.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = -90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_xianggongheguo1.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = 90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_yaoqingshangtongjiaru"
+		textureFile = "gfx/interface/goals/focus_TBA_yaoqingshangtongjiaru.png"
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_yaoqingshangtongjiaru_shine"
+		texturefile = "gfx/interface/goals/focus_TBA_yaoqingshangtongjiaru.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_yaoqingshangtongjiaru.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = -90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_yaoqingshangtongjiaru.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = 90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_penbodeshichang"
+		textureFile = "gfx/interface/goals/focus_TBA_penbodeshichang.png"
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_penbodeshichang_shine"
+		texturefile = "gfx/interface/goals/focus_TBA_penbodeshichang.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_penbodeshichang.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = -90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_penbodeshichang.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = 90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_ziyouzhiyizhi"
+		textureFile = "gfx/interface/goals/focus_TBA_ziyouzhiyizhi.png"
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_ziyouzhiyizhi_shine"
+		texturefile = "gfx/interface/goals/focus_TBA_ziyouzhiyizhi.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_ziyouzhiyizhi.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = -90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_ziyouzhiyizhi.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = 90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_xiraoshichangjinchongxian"
+		textureFile = "gfx/interface/goals/focus_TBA_xiraoshichangjinchongxian.png"
+	}
+	spriteType = {
+		name = "GFX_focus_TBA_xiraoshichangjinchongxian_shine"
+		texturefile = "gfx/interface/goals/focus_TBA_xiraoshichangjinchongxian.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_xiraoshichangjinchongxian.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = -90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+		  animationmaskfile = "gfx/interface/goals/focus_TBA_xiraoshichangjinchongxian.png"
+		  animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		  animationrotation = 90.0
+		  animationlooping = no
+		  animationtime = 0.75
+		  animationdelay = 0
+		  animationblendmode = "add"
+		  animationtype = "scrolling"
+		  animationrotationoffset = { x = 0.0 y = 0.0 }
+		  animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+}

@@ -1,0 +1,15 @@
+opinion_modifiers = {
+	
+	jiemeng_TES = {
+		value = 50
+	}
+	gonghe_TES = {
+		value = 50
+	}
+	hepingzhuyi_xuanchuanng_TES = {
+		value = 50
+	}
+	xuanchengloongshen_TES = {
+		value = -200
+	}
+}

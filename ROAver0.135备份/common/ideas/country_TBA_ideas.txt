@@ -1,0 +1,988 @@
+ideas = {
+	country = {
+		TBA_feizhengguiwuzhuang = {
+
+			picture = TBA_feizhongguiwuzhuang
+
+			modifier = {
+				army_org_factor = -0.2
+				max_planning_factor = -0.2
+				mobilization_speed = -0.1
+			}
+		}
+		TBA_shenghshutongzhi = {
+
+			picture = TBA_shengshutongzhi
+
+			modifier = {
+				political_power_factor = -0.25
+				production_speed_buildings_factor = -0.20
+				conscription_factor = -0.1
+			}
+		}
+		TBA_baoronglinian = {
+
+			picture = TES_tianting_qianzhi_3_js
+
+			modifier = {
+				political_power_factor = -0.05
+				ST_race_penalty_all_factor = -0.2
+				ST_race_penalty_Beast_factor = -0.2
+				ST_race_penalty_Tengu_factor = -0.2
+				ST_race_penalty_Kappa_factor = -0.2
+				ST_race_penalty_Youkai_factor = -0.2
+			}
+		}
+		TBA_fangrenjishi = {
+
+			picture = SOV_second_five_year_plan
+
+			modifier = {
+				political_power_gain = -0.1
+				production_speed_buildings_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		TBA_fangrenjishi_2 = {
+
+			picture = SOV_third_five_year_plan
+
+			modifier = {
+				political_power_gain = 0.1
+				production_speed_buildings_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				stability_factor = 0.15
+			}
+		}
+		TBA_guifangjishi = {
+
+			picture = tur_etatism
+
+			modifier = {
+				political_power_gain = 0.1
+				consumer_goods_factor = -0.03
+			}
+		}
+		TBA_guifangjishi_2 = {
+
+			picture = tur_etatism
+
+			modifier = {
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.05
+				stability_factor = 0.20
+			}
+		}
+		TBA_junshihuaweidui = {
+
+			picture = ast_volunteer_defence_corps
+
+			modifier = {
+				army_org_factor = 0.1
+				army_org_regain = 0.1
+				max_planning_factor = 0.1
+			}
+		}
+		TBA_anbaojishuyanjiushi = {
+
+			picture = generic_research_bonus
+
+			research_bonus = {
+				military = 0.10
+			}
+			modifier = {
+				
+			}
+		}
+		TBA_yancaowenhua = {
+
+			picture = TBA_yancaowenhua
+
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = 0.1
+				war_support_factor = 0.1
+			}
+		}
+		TBA_caokongjinshengdeyanwu = {
+
+			picture = TBA_caokongjinshen
+
+			modifier = {
+				stability_weekly = 0.002
+				stability_factor = 0.2
+				war_support_factor = 0.1
+			}
+		}
+		TBA_caokongjinshengdeyanwu_2 = {
+
+			picture = TBA_caokongjinshen
+
+			modifier = {
+				political_power_factor = 0.1
+				war_support_weekly = 0.002
+				stability_factor = 0.4
+				stability_weekly = 0.002
+				war_support_factor = 0.2
+			}
+		}
+		TBA_jincuanrenxinzhisho = {
+
+			picture = POL_ideology_drift_defence
+
+			modifier = {
+				political_power_factor = -0.25
+				stability_weekly = 0.002
+				war_support_weekly = 0.002
+				resistance_target = -0.2
+				resistance_growth = -0.2
+				compliance_growth = 0.2
+				required_garrison_factor = -0.4
+			}
+		}
+		TBA_yancaoshiyanshi = {
+
+			picture = jap_supremacy_of_technology
+
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+		TBA_yancaogongji_1 = {
+
+			picture = TBA_yancaogongji_1
+
+			modifier = {
+				
+			}
+		}
+		TBA_yancaogongji_2 = {
+
+			picture = TBA_yancaogongji_2
+
+			modifier = {
+				consumer_goods_factor = 0.01
+				political_power_gain = -0.5
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				army_speed_factor = 0.05
+				org_loss_when_moving = -0.05
+				supply_consumption_factor = 0.05
+				attrition = 0.05
+				max_planning_factor = -0.05
+			}
+		}
+		TBA_yancaogongji_3 = {
+
+			picture = TBA_yancaogongji_3
+
+			modifier = {
+				consumer_goods_factor = 0.03
+				political_power_gain = -1
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				army_speed_factor = 0.1
+				org_loss_when_moving = -0.1
+				supply_consumption_factor = 0.1
+				attrition = 0.1
+				max_planning_factor = -0.1
+			}
+		}
+		TBA_yancaogongji_4 = {
+
+			picture = TBA_yancaogongji_4
+
+			modifier = {
+				consumer_goods_factor = 0.06
+				political_power_gain = -1.5
+				army_attack_factor = 0.2
+				army_defence_factor = 0.2
+				army_speed_factor = 0.15
+				org_loss_when_moving = -0.2
+				supply_consumption_factor = 0.15
+				attrition = 0.15
+				max_planning_factor = -0.15
+			}
+		}
+		TBA_yancaogongji_5 = {
+
+			picture = TBA_yancaogongji_5
+
+			modifier = {
+				consumer_goods_factor = 0.1
+				political_power_gain = -2
+				army_attack_factor = 0.3
+				army_defence_factor = 0.3
+				army_speed_factor = 0.2
+				org_loss_when_moving = -0.3
+				supply_consumption_factor = 0.2
+				attrition = 0.2
+				max_planning_factor = -0.2
+			}
+		}
+		TBA_yancaogongji_2_x = {
+
+			picture = TBA_yancaogongji_2
+
+			modifier = {
+				political_power_gain = -0.4
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				army_speed_factor = 0.05
+				org_loss_when_moving = -0.05
+				supply_consumption_factor = 0.05
+				attrition = 0.05
+				max_planning_factor = -0.05
+			}
+		}
+		TBA_yancaogongji_3_x = {
+
+			picture = TBA_yancaogongji_3
+
+			modifier = {
+				consumer_goods_factor = 0.01
+				political_power_gain = -0.8
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				army_speed_factor = 0.1
+				org_loss_when_moving = -0.1
+				supply_consumption_factor = 0.1
+				attrition = 0.1
+				max_planning_factor = -0.1
+			}
+		}
+		TBA_yancaogongji_4_x = {
+
+			picture = TBA_yancaogongji_4
+
+			modifier = {
+				consumer_goods_factor = 0.03
+				political_power_gain = -1.2
+				army_attack_factor = 0.2
+				army_defence_factor = 0.2
+				army_speed_factor = 0.15
+				org_loss_when_moving = -0.2
+				supply_consumption_factor = 0.15
+				attrition = 0.15
+				max_planning_factor = -0.15
+			}
+		}
+		TBA_yancaogongji_5_x = {
+
+			picture = TBA_yancaogongji_5
+
+			modifier = {
+				consumer_goods_factor = 0.06
+				political_power_gain = -1.6
+				army_attack_factor = 0.3
+				army_defence_factor = 0.3
+				army_speed_factor = 0.2
+				org_loss_when_moving = -0.3
+				supply_consumption_factor = 0.2
+				attrition = 0.2
+				max_planning_factor = -0.2
+			}
+		}
+		TBA_jinshenraoluanyancao = {
+
+			picture = generic_artillery_regiments
+
+			modifier = {
+				
+			}
+			equipment_bonus = {
+				mortar_a = {
+					build_cost_ic = 0.1
+					soft_attack = 0.05
+					defense = 0.15
+					breakthrough = 0.15
+					instant = yes
+				}
+			}
+		}
+		TBA_jinshenraoluanyancao_2 = {
+
+			picture = generic_artillery_regiments
+
+			modifier = {
+				
+			}
+			equipment_bonus = {
+				mortar_a = {
+					build_cost_ic = 0.25
+					soft_attack = 0.20
+					hard_attack = 0.10
+					defense = 0.30
+					breakthrough = 0.30
+					instant = yes
+				}
+			}
+		}
+		TBA_qiangzhisixin = {
+
+			picture = strategic_bombing_focus
+
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+			}
+			equipment_bonus = {
+				mortar_a = {
+					build_cost_ic = 0.25
+					soft_attack = 0.50
+					hard_attack = 0.50
+					reliability = -0.2
+					ap_attack = 1
+					instant = yes
+				}
+			}
+		}
+		TBA_yanwuliaoraode = {
+
+			picture = FRA_national_mobilization_focus
+
+			modifier = {
+				army_infantry_attack_factor = 0.1
+				army_infantry_defence_factor = 0.1
+				army_org_factor = 0.1
+				army_org_regain = 0.1
+				recon_factor = 0.2
+				max_planning_factor = 0.1
+			}
+			
+		}
+		TBA_shobeijihua = {
+
+			picture = tur_disorganised_armed_forces
+
+			modifier = {
+				stability_factor = 0.05
+			}
+			
+		}
+		TBA_shobeijihua_2 = {
+
+			picture = tur_disorganised_armed_forces
+
+			modifier = {
+				stability_factor = 0.05
+				dig_in_speed_factor = 0.25
+				max_dig_in_factor = 0.05
+			}
+			
+		}
+		TBA_shobeijihua_3 = {
+
+			picture = tur_disorganised_armed_forces
+
+			modifier = {
+				stability_factor = 0.05
+				dig_in_speed_factor = 0.25
+				max_dig_in_factor = 0.05
+				army_core_defence_factor = 0.2
+				conscription = 0.02
+				production_speed_bunker_factor = 0.4
+			}
+			
+		}
+		TBA_kuozhangjihua = {
+
+			picture = HUN_secret_rearmament
+
+			modifier = {
+				war_support_factor = 0.05
+			}
+			
+		}
+		TBA_kuozhangjihua_2 = {
+
+			picture = HUN_secret_rearmament
+
+			modifier = {
+				war_support_factor = 0.05
+				conscription = 0.05
+				conscription_factor = 0.1
+				mobilization_speed = 0.1
+			}
+			
+		}
+		TBA_kuozhangjihua_3 = {
+
+			picture = HUN_secret_rearmament
+
+			modifier = {
+				war_support_factor = 0.05
+				conscription = 0.05
+				conscription_factor = 0.1
+				mobilization_speed = 0.1
+				supply_consumption_factor = -0.1
+				out_of_supply_factor = -0.1
+				no_supply_grace = 48
+			}
+			
+		}
+		TBA_duitiangozuozhan = {
+
+			picture = warrior_traditions_idea
+
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+			}
+			targeted_modifier = { 
+	    		tag = OTG
+	    		attack_bonus_against = 0.15
+	    		defense_bonus_against = 0.15
+	    	}
+			targeted_modifier = { 
+	    		tag = TEG
+	    		attack_bonus_against = 0.15
+	    		defense_bonus_against = 0.15
+	    	}
+		}
+		TBA_duchangkuojian = {
+
+			picture = TES_kuojiantaoyuan_js
+
+			modifier = {
+				production_speed_buildings_factor = 0.2
+			}
+		}
+		TBA_kuodayuangong = {
+
+			picture = generic_deal_with_the_devil2
+
+			modifier = {
+				weekly_manpower = 1
+				industrial_capacity_factory = 0.1
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}
+		TBA_shelixuanchuangbu = {
+
+			picture = gre_aete
+
+			modifier = {
+				political_power_factor = 0.05
+				EXHC_increase_period_factor = 0.1
+			}
+		}
+		TBA_jiaqiangkongzhi = {
+
+			picture = TES_zhuangzhi_lingytun_js
+
+			modifier = {
+				political_power_factor = 0.05
+				war_support_factor = 0.1
+			}
+		}
+		TBA_weichipinheng = {
+
+			picture = TES_tianting_qianzhi_3_js
+
+			modifier = {
+				stability_factor = 0.1
+				consumer_goods_factor = -0.02
+				enemy_justify_war_goal_time = 0.5
+			}
+		}
+		TBA_shenshishunv = {
+
+			picture = TBA_shenshishunvmenshejiaochang
+
+			modifier = {
+				political_power_gain = 0.1
+				consumer_goods_factor = -0.03
+				army_intel_factor = 0.1
+				civilian_intel_factor = 0.1
+			}
+		}
+		TBA_wandeyukuai = {
+
+			picture = gre_royal_hellenic_naval_shipyard
+
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+				enemy_justify_war_goal_time = 0.5
+				research_speed_factor = 0.05
+			}
+		}
+		TBA_wandeyukuai_2 = {
+
+			picture = gre_royal_hellenic_naval_shipyard
+
+			modifier = {
+				political_power_gain = 0.1
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.1
+				enemy_justify_war_goal_time = 1
+				research_speed_factor = 0.1
+			}
+		}
+		TBA_wandeyukuai_3 = {
+
+			picture = gre_royal_hellenic_naval_shipyard
+
+			modifier = {
+				political_power_gain = 0.1
+				production_speed_buildings_factor = 0.2
+				industrial_capacity_factory = 0.2
+				enemy_justify_war_goal_time = 1.5
+				research_speed_factor = 0.1
+			}
+		}
+		TBA_anxiangcaozuo = {
+
+			picture = EST_democratic_opposition
+
+			modifier = {
+				neworder_drift = 0.03
+				political_power_factor = 0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
+		TBA_jiejipochangzhe = {
+
+			picture = HUN_charles_v
+
+			modifier = {
+				weekly_manpower = 2
+				political_power_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+		TBA_gongyeyongdiguihua = {
+
+			picture = POL_succesful_four_year_plan
+
+			modifier = {
+				global_building_slots_factor = 0.2
+			}
+		}
+		TBA_ziyuankancha = {
+
+			picture = generic_fuel_reserves
+
+			modifier = {
+				local_resources_factor = 0.1
+			}
+		}
+		TBA_guyongyanjiurenyuan = {
+
+			picture = jap_supremacy_of_technology
+
+			modifier = {
+				political_power_gain = -0.15
+				research_speed_factor = 0.35
+			}
+		}
+		TBA_gaoshanggongyequ = {
+
+			picture = spirit_of_the_industrial_revolution
+
+			modifier = {
+				political_power_factor = 0.1
+				production_speed_buildings_factor = 0.2
+				industrial_capacity_factory = 0.2
+				consumer_goods_factor = -0.05
+			}
+		}
+		TBA_xiandaihuashengchang = {
+
+			picture = eng_spirit_of_the_industrial_revolution
+
+			modifier = {
+				political_power_factor = 0.1
+				production_speed_buildings_factor = 0.3
+				industrial_capacity_factory = 0.3
+				consumer_goods_factor = -0.05
+				research_speed_factor = 0.1
+				local_resources_factor = 0.2
+				global_building_slots_factor = 0.3
+				production_factory_start_efficiency_factor = 0.2
+				line_change_production_efficiency_factor = 0.2
+			}
+		}
+		TBA_xuanyangsixiang = {
+
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+				weekly_manpower = 5
+				qinwai_drift = 0.05
+			}
+		}
+		TBA_pinqingjiaoguan = {
+
+			picture = saf_soviet_advisers
+
+			modifier = {
+				political_power_gain = -0.05
+				training_time_factor = -0.15
+				army_org_factor = 0.05
+				army_org_regain = 0.05
+				experience_gain_army = 0.02
+			}
+		}
+		TBA_yuehongshichangjun = {
+
+			picture = generic_women_in_the_army
+
+			modifier = {
+				army_defence_factor = 0.15
+				army_org_factor = 0.2
+				supply_consumption_factor = -0.15
+			}
+		}
+		TBA_duchang = {
+
+			picture = xxx
+
+			modifier = {
+				political_power_factor = -0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+		TBA_shichangshenzhili = {
+
+			picture = SOV_new_old_church
+
+			modifier = {
+				economy_cost_factor = 1
+			}
+		}
+		TBA_shichangshenzhili_1 = {
+
+			picture = SOV_new_old_church
+
+			modifier = {
+				economy_cost_factor = 1
+				PO_RULE_no_bad_influence = 1
+				PO_influence_factor = 0.2
+			}
+		}
+		TBA_shichangfanrongdu_tingzhi = {
+
+		    picture = chi_hyper_inflation
+
+		    modifier = {
+		        consumer_goods_factor = 0.05
+		        production_factory_max_efficiency_factor = -0.1
+		        production_factory_efficiency_gain_factor = -0.05
+		        production_speed_buildings_factor = -0.05
+		    }
+		}
+		TBA_shichangfanrongdu_di = {
+
+		    picture = chi_hyper_inflation2
+
+		    modifier = {
+		        consumer_goods_factor = 0.02
+		        production_factory_max_efficiency_factor = -0.05
+		    }
+		}
+		TBA_shichangfanrongdu_zhong = {
+
+		    picture = chi_hyper_inflation3
+
+		    modifier = {
+		        production_factory_max_efficiency_factor = 0.05
+		        production_factory_efficiency_gain_factor = 0.05
+		        production_speed_buildings_factor = 0.05
+		        industrial_capacity_factory = 0.05
+		    }
+		}
+		TBA_shichangfanrongdu_gao = {
+
+		     picture = chi_hyper_inflation4
+
+		     modifier = {
+		       consumer_goods_factor = -0.05
+		        production_factory_max_efficiency_factor = 0.1
+		        production_factory_efficiency_gain_factor = 0.1
+	            production_speed_buildings_factor = 0.1
+	            industrial_capacity_factory = 0.1
+		        production_speed_industrial_complex_factor = 0.1
+		     }
+		}
+		TBA_shichangfanrongdu_jigao = {
+
+		     picture = chi_hyper_inflation5
+
+		     modifier = {
+		        consumer_goods_factor = -0.1
+		        production_factory_max_efficiency_factor = 0.2
+		        production_factory_efficiency_gain_factor = 0.2
+		        production_speed_buildings_factor = 0.15
+		        industrial_capacity_factory = 0.15
+		        production_speed_industrial_complex_factor = 0.3
+		        research_speed_factor = 0.05
+		    }
+	   }
+	   TBA_ziyouzhiyizhi = {
+
+		     picture = generic_army_war_college
+
+		     modifier = {
+				stability_factor = -0.1
+				conscription_factor = 0.1
+			}
+	  }
+	  TBA_qiangzhipingdeng = {
+
+		     picture = generic_neutrality_drift_bonus
+
+		     modifier = {
+				political_power_factor = -0.05
+				stability_factor = -0.1
+				compliance_growth = 0.1
+				CONV_RULE_cannot_convert = 1
+				CO_core_resistance_required = -20
+				ST_race_penalty_all_factor = -0.4
+			 }
+	  }
+	  TBA_kuodashichang = {
+	  
+			 picture = generic_central_management
+
+		     modifier = {
+				war_support_factor = 0.1
+				generate_wargoal_tension = -0.15
+				justify_war_goal_time = -0.25
+			 }
+	  }
+	  TBA_gengduogongchang = {
+	  
+			 picture = generic_local_self_management
+			 
+		     modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+			 }
+	  }
+	  TBA_tuichenchuxin = {
+	  
+			 picture = generic_flexible_foreign_policy2
+
+		     modifier = {
+				industrial_capacity_factory = 0.05
+			 	research_speed_factor = 0.1
+			 }
+	  }
+	  TBA_jishiling = {
+	  
+			 picture = hol_the_foundations_of_defense
+			 
+		     modifier = {
+				political_power_gain = 0.1
+			 }
+	  }
+	  TBA_nongyegailiang = {
+	  
+			 picture = generic_agrarian_reform
+
+		     modifier = {
+				political_power_gain = 0.15
+				consumer_goods_factor = -0.03
+				monthly_population = 0.05
+			 }
+	  }
+	  TBA_qinlaodexinfu = {
+	  
+			 picture = gre_agricultural_communes
+
+		     modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.1
+			 }
+	  }
+	  TBA_fajuebaozang = {
+	  
+			 picture = jap_zaibatsu
+
+		     modifier = {
+				local_resources_factor = 0.2
+				industrial_capacity_factory = 0.05
+				production_speed_infrastructure_factor = 0.1
+			 }
+	  }
+	  TBA_gulixiaofei = {
+	  
+			 picture = bul_fatherland_front_negative
+
+		     modifier = {
+				political_power_cost = 0.2
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+			 }
+	  }
+	  TBA_chuangzaojiuye = {
+	  
+			 picture = man_five_year_plan_industry
+
+		     modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.1
+			 }
+	  }
+	  TBA_waijiaoshituan = {
+	  
+			 picture = free_trade
+
+		     modifier = {
+				opinion_gain_monthly_factor = 0.25
+				improve_relations_maintain_cost_factor = -0.25
+			 }
+	  }
+	  TBA_qiankewanlai = {
+	  
+			 picture = hol_the_fourth_ally
+
+		     modifier = {
+				political_power_gain = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				trade_opinion_factor = 0.5
+				improve_relations_maintain_cost_factor = -0.25
+			}
+	  }
+	  	TBA_jiansheyuanzhu = {
+	  
+			picture = ETH_joint_african_development_program
+
+			modifier = {
+				production_speed_buildings_factor = 0.25
+		   }
+ 		}
+		TBA_jiansheyuanzhu_TEG = {
+	  
+			picture = chi_chinese_support
+
+			modifier = {
+				industrial_capacity_factory = 0.05
+				political_power_gain = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				production_speed_buildings_factor = 0.05
+		   }
+ 		}
+		TBA_jiansheyuanzhu_TBA = {
+	  
+			picture = chi_chinese_support
+
+			modifier = {
+				consumer_goods_factor = -0.01
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+		   }
+ 		}
+		 TBA_jiansheyuanzhu_TEG_1 = {
+	  
+			picture = chi_chinese_support
+
+			modifier = {
+				industrial_capacity_factory = 0.05
+				research_speed_factor = 0.05
+				experience_gain_army_factor = 0.25
+				political_power_gain = 0.2
+				production_factory_efficiency_gain_factor = 0.05
+				production_speed_buildings_factor = 0.10
+		   }
+ 		}
+		TBA_jiansheyuanzhu_TBA_1 = {
+	  
+			picture = chi_chinese_support
+
+			modifier = {
+				research_speed_factor = 0.02
+				political_power_gain = 0.1
+				consumer_goods_factor = -0.03
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+		   }
+ 		}
+		TBA_yushichanghuoli = {
+	  
+			picture = ETH_coffee_exports
+
+			modifier = {
+				consumer_goods_factor = -0.05
+		   }
+ 		}
+		TBA_hezuo_MRY = {
+	  
+			picture = chi_chinese_support
+
+			modifier = {
+				industrial_capacity_factory = 0.05
+				army_org_factor = 0.05
+				research_speed_factor = 0.07
+				production_speed_buildings_factor = 0.05
+		   }
+ 		}
+		TBA_hezuo_TBA = {
+	  
+			picture = chi_chinese_support
+
+			modifier = {
+				consumer_goods_factor = -0.02
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+		   }
+ 		}
+		TBA_kuohuang = {
+	  
+			picture = FRA_motorized_focus
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				production_speed_infrastructure_factor = 0.4
+		   }
+ 		}
+		TBA_dashozhenhan = {
+	  
+			picture = xxx
+
+			modifier = {
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+				army_speed_factor = -0.3
+		   }
+ 		}
+		TBA_qiangdadeweiwang_daoban = {
+	    	picture = FRA_la_deluge
+
+			available = {
+
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				stability_factor = 0.2
+				war_support_factor = 0.2
+				research_speed_factor = 0.1
+				INDUSTRIAL_CAPACITY_FACTORy = 0.1
+				# CONSCRIPTION_factor = 0.1
+				army_org_factor = 0.15
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				political_power_gain = 0.25
+				production_speed_buildings_factor = 0.1
+				# military_leader_cost_factor = -0.2
+				# army_leader_start_level = 1
+				# army_leader_start_attack_level = 1
+				# army_leader_start_planning_level = 1
+				# army_leader_start_defense_level = 1
+				# army_leader_start_logistics_level = 1
+			}
+		}
+	}
+}

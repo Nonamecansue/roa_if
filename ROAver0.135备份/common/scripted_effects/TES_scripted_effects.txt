@@ -1,0 +1,1079 @@
+tianren_shili_shang = {
+	if = {
+		limit = {
+			check_variable = {
+				tianren_shili = 1
+			}
+		}
+		add_to_variable = {
+			tianren_shili = 1
+		}
+		custom_effect_tooltip = tianren_shili_shang
+	}
+	if = {
+		limit = {
+			check_variable = {
+				tianren_shili = 2
+			}
+		}
+		add_to_variable = {
+			tianren_shili = 1
+		}
+		custom_effect_tooltip = tianren_shili_shang
+	}
+	if = {
+		limit = {
+			check_variable = {
+				tianren_shili = 3
+			}
+		}
+		add_to_variable = {
+			tianren_shili = 1
+		}
+		custom_effect_tooltip = tianren_shili_shang
+	}
+	if = {
+		limit = {
+			check_variable = {
+				tianren_shili = 4
+			}
+		}
+		custom_effect_tooltip = shili_wuxiao
+	}
+}
+tianren_shili_jiang = {
+	if = {
+		limit = {
+			check_variable = {
+				tianren_shili = 1
+			}
+		}
+		custom_effect_tooltip = shili_wuxiao
+	}
+	if = {
+		limit = {
+			check_variable = {
+				tianren_shili = 2
+			}
+		}
+		add_to_variable = {
+			tianren_shili = -1
+		}
+		custom_effect_tooltip = tianren_shili_jiang
+	}
+	if = {
+		limit = {
+			check_variable = {
+				tianren_shili = 3
+			}
+		}
+		add_to_variable = {
+			tianren_shili = -1
+		}
+		custom_effect_tooltip = tianren_shili_jiang
+	}
+	if = {
+		limit = {
+			check_variable = {
+				tianren_shili = 4
+			}
+		}
+		add_to_variable = {
+			tianren_shili = -1
+		}
+		custom_effect_tooltip = tianren_shili_jiang
+	}
+}
+tianren_guanxi_shang = {
+	if = {
+		limit = {
+			check_variable = {
+				tianren_guanxi = 1
+			}
+		}
+		add_to_variable = {
+			tianren_guanxi = 1
+		}
+		custom_effect_tooltip = tianren_guanxi_shang
+	}
+	if = {
+		limit = {
+			check_variable = {
+				tianren_guanxi = 2
+			}
+		}
+		add_to_variable = {
+			tianren_guanxi = 1
+		}
+		custom_effect_tooltip = tianren_guanxi_shang
+	}
+	if = {
+		limit = {
+			check_variable = {
+				tianren_guanxi = 3
+			}
+		}
+		add_to_variable = {
+			tianren_guanxi = 1
+		}
+		custom_effect_tooltip = tianren_guanxi_shang
+	}
+	if = {
+		limit = {
+			check_variable = {
+				tianren_guanxi = 4
+			}
+		}
+		add_to_variable = {
+			tianren_guanxi = 1
+		}
+		custom_effect_tooltip = tianren_guanxi_shang
+	}
+	if = {
+		limit = {
+			check_variable = {
+				tianren_guanxi = 5
+			}
+		}
+		custom_effect_tooltip = guanxi_zuida
+		add_political_power = 100
+		add_stability = 0.1
+	}
+}
+tianren_guanxi_jiang = {
+	if = {
+		limit = {
+			check_variable = {
+				tianren_guanxi = 1
+			}
+		}
+		add_political_power = -200
+		add_stability = -0.2
+		custom_effect_tooltip = guanxi_zuidi
+	}
+	if = {
+		limit = {
+			check_variable = {
+				tianren_guanxi = 2
+			}
+		}
+		add_to_variable = {
+			tianren_guanxi = -1
+		}
+		custom_effect_tooltip = tianren_guanxi_jiang
+	}
+	if = {
+		limit = {
+			check_variable = {
+				tianren_guanxi = 3
+			}
+		}
+		add_to_variable = {
+			tianren_guanxi = -1
+		}
+		custom_effect_tooltip = tianren_guanxi_jiang
+	}
+	if = {
+		limit = {
+			check_variable = {
+				tianren_guanxi = 4
+			}
+		}
+		add_to_variable = {
+			tianren_guanxi = -1
+		}
+		custom_effect_tooltip = tianren_guanxi_jiang
+	}
+	if = {
+		limit = {
+			check_variable = {
+				tianren_guanxi = 5
+			}
+		}
+		add_to_variable = {
+			tianren_guanxi = -1
+		}
+		custom_effect_tooltip = tianren_guanxi_jiang
+	}
+}
+tianjieyaoguai_shili_shang = {
+	if = {
+		limit = {
+			check_variable = {
+				tianjieyaoguai_shili = 1
+			}
+		}
+		add_to_variable = {
+			tianjieyaoguai_shili = 1
+		}
+		custom_effect_tooltip = tianjieyaoguai_shili_shang
+	}
+	if = {
+		limit = {
+			check_variable = {
+				tianjieyaoguai_shili = 2
+			}
+		}
+		add_to_variable = {
+			tianjieyaoguai_shili = 1
+		}
+		custom_effect_tooltip = tianjieyaoguai_shili_shang
+	}
+	if = {
+		limit = {
+			check_variable = {
+				tianjieyaoguai_shili = 3
+			}
+		}
+		add_to_variable = {
+			tianjieyaoguai_shili = 1
+		}
+		custom_effect_tooltip = tianjieyaoguai_shili_shang
+	}
+	if = {
+		limit = {
+			check_variable = {
+				tianjieyaoguai_shili = 4
+			}
+		}
+		custom_effect_tooltip = shili_wuxiao
+	}
+}
+tianjieyaoguai_shili_jiang = {
+	if = {
+		limit = {
+			check_variable = {
+				tianjieyaoguai_shili = 1
+			}
+		}
+		custom_effect_tooltip = shili_wuxiao
+	}
+	if = {
+		limit = {
+			check_variable = {
+				tianjieyaoguai_shili = 2
+			}
+		}
+		add_to_variable = {
+			tianjieyaoguai_shili = -1
+		}
+		custom_effect_tooltip = tianjieyaoguai_shili_jiang
+	}
+	if = {
+		limit = {
+			check_variable = {
+				tianjieyaoguai_shili = 3
+			}
+		}
+		add_to_variable = {
+			tianjieyaoguai_shili = -1
+		}
+		custom_effect_tooltip = tianjieyaoguai_shili_jiang
+	}
+	if = {
+		limit = {
+			check_variable = {
+				tianjieyaoguai_shili = 4
+			}
+		}
+		add_to_variable = {
+			tianjieyaoguai_shili = -1
+		}
+		custom_effect_tooltip = tianjieyaoguai_shili_jiang
+	}
+}
+tianjieyaoguai_guanxi_shang = {
+	if = {
+		limit = {
+			check_variable = {
+				tianjieyaoguai_guanxi = 1
+			}
+		}
+		add_to_variable = {
+			tianjieyaoguai_guanxi = 1
+		}
+		custom_effect_tooltip = tianjieyaoguai_guanxi_shang
+	}
+	if = {
+		limit = {
+			check_variable = {
+				tianjieyaoguai_guanxi = 2
+			}
+		}
+		add_to_variable = {
+			tianjieyaoguai_guanxi = 1
+		}
+		custom_effect_tooltip = tianjieyaoguai_guanxi_shang
+	}
+	if = {
+		limit = {
+			check_variable = {
+				tianjieyaoguai_guanxi = 3
+			}
+		}
+		add_to_variable = {
+			tianjieyaoguai_guanxi = 1
+		}
+		custom_effect_tooltip = tianjieyaoguai_guanxi_shang
+	}
+	if = {
+		limit = {
+			check_variable = {
+				tianjieyaoguai_guanxi = 4
+			}
+		}
+		add_to_variable = {
+			tianjieyaoguai_guanxi = 1
+		}
+		custom_effect_tooltip = tianjieyaoguai_guanxi_shang
+	}
+	if = {
+		limit = {
+			check_variable = {
+				tianjieyaoguai_guanxi = 5
+			}
+		}
+		custom_effect_tooltip = guanxi_zuida
+		add_political_power = 100
+		add_stability = 0.1
+	}
+}
+tianjieyaoguai_guanxi_jiang = {
+	if = {
+		limit = {
+			check_variable = {
+				tianjieyaoguai_guanxi = 1
+			}
+		}
+		custom_effect_tooltip = guanxi_zuidi
+		add_political_power = -200
+		add_stability = -0.2
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				tianjieyaoguai_guanxi = 2
+			}
+		}
+		add_to_variable = {
+			tianjieyaoguai_guanxi = -1
+		}
+		custom_effect_tooltip = tianjieyaoguai_guanxi_jiang
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				tianjieyaoguai_guanxi = 3
+			}
+		}
+		add_to_variable = {
+			tianjieyaoguai_guanxi = -1
+		}
+		custom_effect_tooltip = tianjieyaoguai_guanxi_jiang
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				tianjieyaoguai_guanxi = 4
+			}
+		}
+		add_to_variable = {
+			tianjieyaoguai_guanxi = -1
+		}
+		custom_effect_tooltip = tianjieyaoguai_guanxi_jiang
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				tianjieyaoguai_guanxi = 5
+			}
+		}
+		add_to_variable = {
+			tianjieyaoguai_guanxi = -1
+		}
+		custom_effect_tooltip = tianjieyaoguai_guanxi_jiang
+	}
+}
+yaojing_shili_shang = {
+	if = {
+		limit = {
+			check_variable = {
+				yaojing_shili = 1
+			}
+		}
+		add_to_variable = {
+			yaojing_shili = 1
+		}
+		custom_effect_tooltip = yaojing_shili_shang
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				yaojing_shili = 2
+			}
+		}
+		add_to_variable = {
+			yaojing_shili = 1
+		}
+		custom_effect_tooltip = yaojing_shili_shang
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				yaojing_shili = 3
+			}
+		}
+		add_to_variable = {
+			yaojing_shili = 1
+		}
+		custom_effect_tooltip = yaojing_shili_shang
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				yaojing_shili = 4
+			}
+		}
+		custom_effect_tooltip = shili_wuxiao
+	}
+}
+yaojing_shili_jiang = {
+	if = {
+		limit = {
+			check_variable = {
+				yaojing_shili = 1
+			}
+		}
+		custom_effect_tooltip = shili_wuxiao
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				yaojing_shili = 2
+			}
+		}
+		add_to_variable = {
+			yaojing_shili = -1
+		}
+		custom_effect_tooltip = yaojing_shili_jiang
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				yaojing_shili = 3
+			}
+		}
+		add_to_variable = {
+			yaojing_shili = -1
+		}
+		custom_effect_tooltip = yaojing_shili_jiang
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				yaojing_shili = 4
+			}
+		}
+		add_to_variable = {
+			yaojing_shili = -1
+		}
+		custom_effect_tooltip = yaojing_shili_jiang
+	}
+}
+yaojing_guanxi_shang = {
+	if = {
+		limit = {
+			check_variable = {
+				yaojing_guanxi = 1
+			}
+		}
+		add_to_variable = {
+			yaojing_guanxi = 1
+		}
+		custom_effect_tooltip = yaojing_guanxi_shang
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				yaojing_guanxi = 2
+			}
+		}
+		add_to_variable = {
+			yaojing_guanxi = 1
+		}
+		custom_effect_tooltip = yaojing_guanxi_shang
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				yaojing_guanxi = 3
+			}
+		}
+		add_to_variable = {
+			yaojing_guanxi = 1
+		}
+		custom_effect_tooltip = yaojing_guanxi_shang
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				yaojing_guanxi = 4
+			}
+		}
+		add_to_variable = {
+			yaojing_guanxi = 1
+		}
+		custom_effect_tooltip = yaojing_guanxi_shang
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				yaojing_guanxi = 5
+			}
+		}
+		custom_effect_tooltip = guanxi_zuida
+		add_political_power = 100
+		add_stability = 0.1
+	}
+}
+yaojing_guanxi_jiang = {
+	if = {
+		limit = {
+			check_variable = {
+				yaojing_guanxi = 1
+			}
+		}
+		add_political_power = -200
+		add_stability = -0.2
+		custom_effect_tooltip = guanxi_zuidi
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				yaojing_guanxi = 2
+			}
+		}
+		add_to_variable = {
+			yaojing_guanxi = -1
+		}
+		custom_effect_tooltip = yaojing_guanxi_jiang
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				yaojing_guanxi = 3
+			}
+		}
+		add_to_variable = {
+			yaojing_guanxi = -1
+		}
+		custom_effect_tooltip = yaojing_guanxi_jiang
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				yaojing_guanxi = 4
+			}
+		}
+		add_to_variable = {
+			yaojing_guanxi = -1
+		}
+		custom_effect_tooltip = yaojing_guanxi_jiang
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				yaojing_guanxi = 5
+			}
+		}
+		add_to_variable = {
+			yaojing_guanxi = -1
+		}
+		custom_effect_tooltip = yaojing_guanxi_jiang
+	}
+}
+diyuyaoguai_shili_shang = {
+	if = {
+		limit = {
+			check_variable = {
+				diyuyaoguai_shili = 1
+			}
+		}
+		add_to_variable = {
+			diyuyaoguai_shili = 1
+		}
+		custom_effect_tooltip = diyuyaoguai_shili_shang
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				diyuyaoguai_shili = 2
+			}
+		}
+		add_to_variable = {
+			diyuyaoguai_shili = 1
+		}
+		custom_effect_tooltip = diyuyaoguai_shili_shang
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				diyuyaoguai_shili = 3
+			}
+		}
+		add_to_variable = {
+			diyuyaoguai_shili = 1
+		}
+		custom_effect_tooltip = diyuyaoguai_shili_shang
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				diyuyaoguai_shili = 4
+			}
+		}
+		custom_effect_tooltip = shili_wuxiao
+	}
+}
+diyuyaoguai_shili_jiang = {
+	if = {
+		limit = {
+			check_variable = {
+				diyuyaoguai_shili = 1
+			}
+		}
+		custom_effect_tooltip = shili_wuxiao
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				diyuyaoguai_shili = 2
+			}
+		}
+		add_to_variable = {
+			diyuyaoguai_shili = -1
+		}
+		custom_effect_tooltip = diyuyaoguai_shili_jiang
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				diyuyaoguai_shili = 3
+			}
+		}
+		add_to_variable = {
+			diyuyaoguai_shili = -1
+		}
+		custom_effect_tooltip = diyuyaoguai_shili_jiang
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				diyuyaoguai_shili = 4
+			}
+		}
+		add_to_variable = {
+			diyuyaoguai_shili = -1
+		}
+		custom_effect_tooltip = diyuyaoguai_shili_jiang
+	}
+}
+diyuyaoguai_guanxi_shang = {
+	if = {
+		limit = {
+			check_variable = {
+				diyuyaoguai_guanxi = 1
+			}
+		}
+		add_to_variable = {
+			diyuyaoguai_guanxi = 1
+		}
+		custom_effect_tooltip = diyuyaoguai_guanxi_shang
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				diyuyaoguai_guanxi = 2
+			}
+		}
+		add_to_variable = {
+			diyuyaoguai_guanxi = 1
+		}
+		custom_effect_tooltip = diyuyaoguai_guanxi_shang
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				diyuyaoguai_guanxi = 3
+			}
+		}
+		add_to_variable = {
+			diyuyaoguai_guanxi = 1
+		}
+		custom_effect_tooltip = diyuyaoguai_guanxi_shang
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				diyuyaoguai_guanxi = 4
+			}
+		}
+		add_to_variable = {
+			diyuyaoguai_guanxi = 1
+		}
+		custom_effect_tooltip = diyuyaoguai_guanxi_shang
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				diyuyaoguai_guanxi = 5
+			}
+		}
+		custom_effect_tooltip = guanxi_zuida
+		add_political_power = 100
+		add_stability = 0.1
+	}
+}
+diyuyaoguai_guanxi_jiang = {
+	if = {
+		limit = {
+			check_variable = {
+				diyuyaoguai_guanxi = 1
+			}
+		}
+		custom_effect_tooltip = guanxi_zuidi
+		add_political_power = -200
+		add_stability = -0.2
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				diyuyaoguai_guanxi = 2
+			}
+		}
+		add_to_variable = {
+			diyuyaoguai_guanxi = -1
+		}
+		custom_effect_tooltip = diyuyaoguai_guanxi_jiang
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				diyuyaoguai_guanxi = 3
+			}
+		}
+		add_to_variable = {
+			diyuyaoguai_guanxi = -1
+		}
+		custom_effect_tooltip = diyuyaoguai_guanxi_jiang
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				diyuyaoguai_guanxi = 4
+			}
+		}
+		add_to_variable = {
+			diyuyaoguai_guanxi = -1
+		}
+		custom_effect_tooltip = diyuyaoguai_guanxi_jiang
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				diyuyaoguai_guanxi = 5
+			}
+		}
+		add_to_variable = {
+			diyuyaoguai_guanxi = -1
+		}
+		custom_effect_tooltip = diyuyaoguai_guanxi_jiang
+	}
+}
+
+hepingzhuyi_xiajiang = {
+	if = {
+		limit = {
+			has_idea = TES_hepingzhuyi_1
+		}
+		custom_effect_tooltip = hepingzhuyi_jiang_2
+	}
+	else_if = {
+		limit = {
+			has_idea = TES_hepingzhuyi_2
+		}
+		custom_effect_tooltip = hepingzhuyi_jiang_1
+		swap_ideas = {
+			remove_idea = TES_hepingzhuyi_2
+			add_idea = TES_hepingzhuyi_1
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = TES_hepingzhuyi_3
+		}
+		custom_effect_tooltip = hepingzhuyi_jiang_1
+		swap_ideas = {
+			remove_idea = TES_hepingzhuyi_3
+			add_idea = TES_hepingzhuyi_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = TES_hepingzhuyi_4
+		}
+		custom_effect_tooltip = hepingzhuyi_jiang_1
+		swap_ideas = {
+			remove_idea = TES_hepingzhuyi_4
+			add_idea = TES_hepingzhuyi_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = TES_hepingzhuyi_5
+		}
+		custom_effect_tooltip = hepingzhuyi_jiang_1
+		swap_ideas = {
+			remove_idea = TES_hepingzhuyi_5
+			add_idea = TES_hepingzhuyi_4
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = TES_hepingzhuyi_6
+		}
+		custom_effect_tooltip = hepingzhuyi_jiang_1
+		swap_ideas = {
+			remove_idea = TES_hepingzhuyi_6
+			add_idea = TES_hepingzhuyi_5
+		}
+	}
+}
+hepingzhuyi_shang = {
+	if = {
+		limit = {
+			has_idea = TES_hepingzhuyi_1
+		}
+		custom_effect_tooltip = hepingzhuyi_shang_1
+		swap_ideas = {
+			remove_idea = TES_hepingzhuyi_1
+			add_idea = TES_hepingzhuyi_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = TES_hepingzhuyi_2
+		}
+		custom_effect_tooltip = hepingzhuyi_shang_1
+		swap_ideas = {
+			remove_idea = TES_hepingzhuyi_2
+			add_idea = TES_hepingzhuyi_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = TES_hepingzhuyi_3
+		}
+		custom_effect_tooltip = hepingzhuyi_shang_1
+		swap_ideas = {
+			remove_idea = TES_hepingzhuyi_3
+			add_idea = TES_hepingzhuyi_4
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = TES_hepingzhuyi_4
+		}
+		custom_effect_tooltip = hepingzhuyi_shang_1
+		swap_ideas = {
+			remove_idea = TES_hepingzhuyi_4
+			add_idea = TES_hepingzhuyi_5
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = TES_hepingzhuyi_5
+		}
+		custom_effect_tooltip = hepingzhuyi_shang_1
+		swap_ideas = {
+			remove_idea = TES_hepingzhuyi_5
+			add_idea = TES_hepingzhuyi_6
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = TES_hepingzhuyi_6
+		}
+		custom_effect_tooltip = hepingzhuyi_shang_2
+	}
+}
+zhongzu_shijian = {
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = zhongzu_shijian_1
+				has_country_flag = zhongzu_shijian_2
+				has_country_flag = zhongzu_shijian_3
+				has_country_flag = zhongzu_shijian_4
+				has_country_flag = zhongzu_shijian_5
+			}
+		}
+		random_list = {
+			20 = {
+				country_event = ten.44
+				set_country_flag = zhongzu_shijian_1
+			}
+			20 = {
+				country_event = ten.45
+				set_country_flag = zhongzu_shijian_2
+			}
+			20 = {
+				country_event = ten.46
+				set_country_flag = zhongzu_shijian_3
+			}
+			20 = {
+				country_event = ten.47
+				set_country_flag = zhongzu_shijian_4
+			}
+			20 = {
+				country_event = ten.48
+				set_country_flag = zhongzu_shijian_5
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = zhongzu_shijian_1
+		}
+		random_list = {
+			25 = {
+				country_event = ten.45
+				set_country_flag = zhongzu_shijian_2
+				clr_country_flag = zhongzu_shijian_1
+			}
+			25 = {
+				country_event = ten.46
+				set_country_flag = zhongzu_shijian_3
+				clr_country_flag = zhongzu_shijian_1
+			}
+			25 = {
+				country_event = ten.47
+				set_country_flag = zhongzu_shijian_4
+				clr_country_flag = zhongzu_shijian_1
+			}
+			25 = {
+				country_event = ten.48
+				set_country_flag = zhongzu_shijian_5
+				clr_country_flag = zhongzu_shijian_1
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = zhongzu_shijian_2
+		}
+		random_list = {
+			25 = {
+				country_event = ten.44
+				set_country_flag = zhongzu_shijian_1
+				clr_country_flag = zhongzu_shijian_2
+			}
+			25 = {
+				country_event = ten.46
+				set_country_flag = zhongzu_shijian_3
+				clr_country_flag = zhongzu_shijian_2
+			}
+			25 = {
+				country_event = ten.47
+				set_country_flag = zhongzu_shijian_4
+				clr_country_flag = zhongzu_shijian_2
+			}
+			25 = {
+				country_event = ten.48
+				set_country_flag = zhongzu_shijian_5
+				clr_country_flag = zhongzu_shijian_2
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = zhongzu_shijian_3
+		}
+		random_list = {
+			25 = {
+				country_event = ten.44
+				set_country_flag = zhongzu_shijian_1
+				clr_country_flag = zhongzu_shijian_3
+			}
+			25 = {
+				country_event = ten.45
+				set_country_flag = zhongzu_shijian_2
+				clr_country_flag = zhongzu_shijian_3
+			}
+			25 = {
+				country_event = ten.47
+				set_country_flag = zhongzu_shijian_4
+				clr_country_flag = zhongzu_shijian_3
+			}
+			25 = {
+				country_event = ten.48
+				set_country_flag = zhongzu_shijian_5
+				clr_country_flag = zhongzu_shijian_3
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = zhongzu_shijian_4
+		}
+		random_list = {
+			25 = {
+				country_event = ten.44
+				set_country_flag = zhongzu_shijian_1
+				clr_country_flag = zhongzu_shijian_4
+			}
+			25 = {
+				country_event = ten.45
+				set_country_flag = zhongzu_shijian_2
+				clr_country_flag = zhongzu_shijian_4
+			}
+			25 = {
+				country_event = ten.46
+				set_country_flag = zhongzu_shijian_3
+				clr_country_flag = zhongzu_shijian_4
+			}
+			25 = {
+				country_event = ten.48
+				set_country_flag = zhongzu_shijian_5
+				clr_country_flag = zhongzu_shijian_4
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = zhongzu_shijian_5
+		}
+		random_list = {
+			25 = {
+				country_event = ten.44
+				set_country_flag = zhongzu_shijian_1
+				clr_country_flag = zhongzu_shijian_5
+			}
+			25 = {
+				country_event = ten.45
+				set_country_flag = zhongzu_shijian_2
+				clr_country_flag = zhongzu_shijian_5
+			}
+			25 = {
+				country_event = ten.46
+				set_country_flag = zhongzu_shijian_3
+				clr_country_flag = zhongzu_shijian_5
+			}
+			25 = {
+				country_event = ten.47
+				set_country_flag = zhongzu_shijian_4
+				clr_country_flag = zhongzu_shijian_5
+			}
+		}
+	}
+}

@@ -1,0 +1,72 @@
+characters={
+	PRS_prs ={
+		name = PRS_prs
+		portraits={
+			civilian={
+				large="gfx/leaders/PRS/PRS_prs.dds"
+				small="gfx/leaders/PRS/PRS_prs_small.dds"
+			}
+			army = {
+				large="gfx/leaders/PRS/PRS_prs.dds"
+				small="gfx/leaders/PRS/PRS_prs_small.dds"
+			}
+		}
+		corps_commander = {
+            traits = {  th_original_character th_character th_trait_huoqiangzhuanjia   }
+            attack_skill = 3
+            defense_skill = 6
+            planning_skill = 4
+            logistics_skill = 5
+            skill = 5
+        }
+		advisor = {
+			slot = character_coop
+			idea_token = PRS_prs
+			name = PRS_prs
+			cost = 200
+			modifier = {
+				experience_gain_army = 0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	PRS_prs_leader ={
+		name = PRS_prs_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/PRS/PRS_prs.dds"
+				small="gfx/leaders/PRS/PRS_prs_small.dds"
+			}
+			army = {
+				large="gfx/leaders/PRS/PRS_prs.dds"
+				small="gfx/leaders/PRS/PRS_prs_small.dds"
+			}
+		}
+		country_leader={
+			ideology=qinwai_type
+			id=-1
+		}
+		country_leader={
+			ideology=guli_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldorder_type
+			id=-1
+		}
+		country_leader={
+			ideology=fandong_type
+			id=-1
+		}
+		country_leader={
+			ideology=neworder_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldgenso_type
+			id=-1
+		}
+	}
+}

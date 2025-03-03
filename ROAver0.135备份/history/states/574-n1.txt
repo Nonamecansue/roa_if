@@ -1,0 +1,29 @@
+state={
+	id=574
+	name="STATE_574"
+	provinces={
+		7594 7595 7596 7597 7598 7599 7600 7601 7602 7604 7605 
+	}
+	resources={
+		energy = 0
+		powder = 0.0
+		metal = 0.0
+		gas=8.000
+		crystal=0.000
+	}
+	history={
+		146.1.1 = {
+			owner = MRY
+			add_core_of = MRY
+			buildings = {
+				infrastructure = 4
+				industrial_complex = 3
+				arms_factory = 0
+			}
+		}
+	}
+	state_category=s7
+	manpower=1654
+	buildings_max_level_factor=1.000
+	local_supplies=2.500
+}

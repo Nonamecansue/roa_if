@@ -1,0 +1,48 @@
+
+state={
+	id=187
+	name="STATE_187"
+	resources={
+		powder=0.000
+		metal=0.000
+		gas=0.000
+		crystal=0.000
+	}
+
+	history={
+		143.7.1 = {
+			owner = TKM
+			add_core_of = TKM
+			add_core_of = WAK
+			buildings = {
+				infrastructure = 0
+				industrial_complex = 0
+				arms_factory = 0
+
+			}
+
+		}
+		146.1.1 = {
+			owner = NMS
+			add_core_of = NMS
+			add_claim_by = TKM
+			remove_core_of = TKM
+			buildings = {
+				infrastructure = 1
+				industrial_complex = 0
+				arms_factory = 0
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		1030 2390 3223 3526 3529 4328 5950 7157 7160 7163 7164 
+	}
+	manpower=122
+	buildings_max_level_factor=1.000
+	state_category=s2
+	local_supplies=2.500
+}

@@ -1,0 +1,319 @@
+on_actions = {
+	on_daily_ALI = {
+		effect = {
+			MSH_boyi_cal = yes
+		}
+	}
+	on_daily_NAR = {
+		effect = {
+			MSH_boyi_cal = yes
+		}
+	}
+	on_daily_MRS = {
+		effect = {
+			MSH_boyi_cal = yes
+			if = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = MRS_shiliyingxiang_modifier
+					}
+				}
+				MRS_mrs = {
+					set_variable = {
+						duel_ability = skill_level
+					}
+					multiply_variable = {
+						duel_ability = 2
+					}
+
+					set_temp_variable = {
+						a = attack_level
+					}
+					multiply_temp_variable = {
+						a = 1.5
+					}
+
+					set_temp_variable = {
+						d = defense_level
+					}
+					multiply_temp_variable = {
+						d = 1.5
+					}
+
+					set_temp_variable = {
+						l = logistics_level
+					}
+
+					set_temp_variable = {
+						p = planning_level
+					}
+
+					add_to_variable = {
+						duel_ability = a
+					}
+					add_to_variable = {
+						duel_ability = d
+					}
+					add_to_variable = {
+						duel_ability = l
+					}
+					add_to_variable = {
+						duel_ability = p
+					}
+				}
+				MSH_duel_ability = yes
+
+				set_temp_variable = { MRS_boyi_add = global.MRS_mrs }
+				multiply_temp_variable = { MRS_boyi_add = 0.005 }
+
+				set_temp_variable = { manpower_r = num_equipment@magic_energy_a } #fk paradox can't get army manpower.
+				multiply_temp_variable = { manpower_r = 0.001 }
+
+				add_to_temp_variable = { MRS_boyi_add = manpower_r }
+				set_variable = { MRS_shiliyingxiang_var = MRS_boyi_add }
+				
+				# 
+			}
+
+
+			if = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = MRS_nulijiameili_modifier
+					}
+				}
+				set_variable = { MRS.MRS_nulijiameili_var = 0}
+				every_country = {
+					limit = {
+						has_opinion = {
+							value > 49
+							target = MRS
+						}
+					}
+					add_to_variable = { MRS.MRS_nulijiameili_var = 1}
+				}
+				multiply_variable=  { MRS.MRS_nulijiameili_var = 0.1}
+				clamp_variable = {
+					var = MRS_nulijiameili_var
+					max = 1
+				}
+
+			}
+
+		}
+	}
+	on_daily_ELL = {
+		effect = {
+			MSH_boyi_cal = yes
+			if = {
+				limit = {
+					has_completed_focus = ELL_zizhiqujihua
+				}
+				set_variable = {
+					ELL_zizhiqujihua_VAR = 0
+				}
+				set_variable = {
+					ELL_zizhiqujihua_Beast_VAR = 0
+				}
+				set_variable = {
+					ELL_zizhiqujihua_Ghost_VAR = 0
+				}
+				set_variable = {
+					ELL_zizhiqujihua_Pri_youkai_VAR = 0
+				}
+				set_variable = {
+					ELL_zizhiqujihua_Youkai_VAR = 0
+				}
+				set_variable = {
+					ELL_zizhiqujihua_Fairy_VAR = 0
+				}
+				set_variable = {
+					ELL_zizhiqujihua_Human_VAR = 0
+				}
+				set_variable = {
+					ELL_zizhiqujihua_God_VAR = 0
+				}
+				set_variable = {
+					ELL_zizhiqujihua_Tengu_VAR = 0
+				}
+				set_variable = {
+					ELL_zizhiqujihua_Kappa_VAR = 0
+				}
+				every_country = {
+					limit = {
+						is_subject_of = ROOT
+					}
+					set_temp_variable = {
+						v = all_value_plus_manpower
+					}
+					divide_temp_variable = {
+						v = -10000
+					}
+					divide_temp_variable = {
+						v = 5
+					}
+					add_to_variable = {
+						ELL.ELL_zizhiqujihua_VAR = v
+					}
+					divide_temp_variable = {
+						v = 0.2
+					}
+					if = {
+						limit = {
+							has_idea = Beast
+						}
+						add_to_variable = {
+							ELL.ELL_zizhiqujihua_Beast_VAR = v
+						}
+					}
+					if = {
+						limit = {
+							has_idea = Ghost
+						}
+						add_to_variable = {
+							ELL.ELL_zizhiqujihua_Ghost_VAR = v
+						}
+					}
+					if = {
+						limit = {
+							has_idea = Pri_youkai
+						}
+						add_to_variable = {
+							ELL.ELL_zizhiqujihua_Pri_youkai_VAR = v
+						}
+					}
+					if = {
+						limit = {
+							has_idea = Youkai
+						}
+						add_to_variable = {
+							ELL.ELL_zizhiqujihua_Youkai_VAR = v
+						}
+					}
+					if = {
+						limit = {
+							has_idea = Fairy
+						}
+						add_to_variable = {
+							ELL.ELL_zizhiqujihua_Fairy_VAR = v
+						}
+					}
+					if = {
+						limit = {
+							has_idea = Human
+						}
+						add_to_variable = {
+							ELL.ELL_zizhiqujihua_Human_VAR = v
+						}
+					}
+					if = {
+						limit = {
+							has_idea = God
+						}
+						add_to_variable = {
+							ELL.ELL_zizhiqujihua_God_VAR = v
+						}
+					}
+					if = {
+						limit = {
+							has_idea = Tengu
+						}
+						add_to_variable = {
+							ELL.ELL_zizhiqujihua_Tengu_VAR = v
+						}
+					}
+					if = {
+						limit = {
+							has_idea = Kappa
+						}
+						add_to_variable = {
+							ELL.ELL_zizhiqujihua_Kappa_VAR = v
+						}
+					}
+				}
+				clamp_variable = {
+					var = ELL_zizhiqujihua_Beast_VAR
+					min = -0.6
+				}
+				clamp_variable = {
+					var = ELL_zizhiqujihua_Ghost_VAR
+					min = -0.6
+				}
+				clamp_variable = {
+					var = ELL_zizhiqujihua_Pri_youkai_VAR
+					min = -0.6
+				}
+				clamp_variable = {
+					var = ELL_zizhiqujihua_Youkai_VAR
+					min = -0.6
+				}
+				clamp_variable = {
+					var = ELL_zizhiqujihua_Fairy_VAR
+					min = -0.6
+				}
+				clamp_variable = {
+					var = ELL_zizhiqujihua_Human_VAR
+					min = -0.6
+				}
+				clamp_variable = {
+					var = ELL_zizhiqujihua_God_VAR
+					min = -0.6
+				}
+				clamp_variable = {
+					var = ELL_zizhiqujihua_Tengu_VAR
+					min = -0.6
+				}
+				clamp_variable = {
+					var = ELL_zizhiqujihua_Kappa_VAR
+					min = -0.6
+				}
+				clamp_variable = {
+					var = ELL_zizhiqujihua_VAR
+					min = -0.5
+				}
+			}
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			ROOT = {
+				if = {
+					limit = {
+						tag = ELL
+						has_completed_focus = ELL_mofayaoshou
+					}
+					set_variable = {
+						ELL_mofayaoshou_VAR = 0
+					}
+					every_owned_state = {
+						limit = {
+							ST_race_is_Beast = yes
+						}
+						add_to_variable = {
+							PREV.ELL_mofayaoshou_VAR = 0.01
+						}
+					}
+					clamp_variable = {
+						var = ELL_mofayaoshou_VAR
+						max = 0.25
+					}
+				}
+			}
+		}
+	}
+	on_daily_MYK = {
+		effect = {
+			MSH_boyi_cal = yes
+		}
+	}	
+	on_daily_MFA = {
+		effect = {
+			MSH_boyi_cal = yes
+		}
+	}
+	on_daily_MTM = {
+		effect = {
+			MSH_boyi_cal = yes
+		}
+	}
+}

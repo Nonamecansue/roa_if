@@ -1,0 +1,29 @@
+state={
+	id=543
+	name="STATE_543"
+	provinces={
+		7004 7005 7011 7012 7013 7017 7021 7022 7028 7029 7032 
+	}
+	resources={
+		energy = 0
+		powder = 0.0
+		metal = 10.0
+		gas=2.000
+		crystal=0.000
+	}
+	history={
+		146.1.1 = {
+			owner = YKR
+			add_core_of = YKR
+			buildings = {
+				infrastructure = 4
+				industrial_complex = 0
+				arms_factory = 1
+			}
+		}
+	}
+	manpower=872.0
+	state_category=s2
+	local_supplies=2.5
+	buildings_max_level_factor=1.000
+}

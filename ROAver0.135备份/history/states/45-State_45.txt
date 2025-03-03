@@ -1,0 +1,49 @@
+
+state={
+	id=45
+	name="STATE_45"
+	resources={
+		powder = 0.0
+		metal = 0.0
+		gas=0.000
+		crystal=0.000
+	}
+
+	history={
+		143.7.1 = {
+			owner = SCA
+			add_core_of = SC3
+			add_core_of = SCA
+			
+			buildings = {
+				infrastructure = 0
+				industrial_complex = 0
+				arms_factory = 0
+				radar_station = 0
+			}
+		}
+		146.1.1 = {
+			owner = SCA
+			add_core_of = SC3
+			add_core_of = LIL
+			add_core_of = SCA
+			
+			buildings = {
+				infrastructure =1
+				industrial_complex = 0
+				arms_factory = 0
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		308 327 773 1165 1203 1322 1812 1835 5828 5833 5834 5836 5839 5840 5842 5846 5847 5852 5884 5885 
+	}
+	manpower=6220
+	buildings_max_level_factor=1.000
+	state_category=s5
+	local_supplies=2.5
+}

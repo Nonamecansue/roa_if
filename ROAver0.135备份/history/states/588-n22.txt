@@ -1,0 +1,29 @@
+state={
+	id=588
+	name="STATE_588"
+	provinces={
+		7260 7272 7273 7285 7288 7295 7301 7306 
+	}
+	resources={
+		energy = 0
+		powder = 2.0
+		metal = 2.0
+		gas=2.000
+		crystal=0.000
+	}
+	history={
+		146.1.1 = {
+			owner = CHE
+			add_core_of = CHE
+			buildings = {
+				infrastructure = 0
+				industrial_complex = 0
+				arms_factory = 0
+			}
+		}
+	}
+	state_category=s5
+	manpower=189
+	buildings_max_level_factor=1.000
+	local_supplies=2.500
+}

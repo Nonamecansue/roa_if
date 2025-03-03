@@ -1,0 +1,2328 @@
+TES_xuanju = {
+	TES_xuanze_tianzi = {
+
+		available = {
+			hidden_trigger = {
+				has_country_flag = kaiqixuanju
+				NOT = {
+					has_country_flag = xuanzeyijiu_ai
+				}
+			}
+			
+		}
+
+		visible = {
+			original_tag =TES
+			NOT = {
+				has_country_flag = xuanzeiku
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				add = 100
+				has_game_rule = {
+					rule = TES_paths
+					option = TES_path_neworder
+				}
+			}
+			modifier = {
+				add = -100
+				has_game_rule = {
+					rule = TES_paths
+					option = TES_path_qinwai
+				}
+			}
+		}
+		fire_only_once = yes
+
+		complete_effect = {
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				add_to_variable = {
+					Tenshi_yxl = 300
+				}
+			}
+			set_country_flag = xuanzetianzi 
+			hidden_effect = {
+				activate_mission = TES_iku_zhize_ai
+				activate_mission = TES_zhengzhi_daxuan
+				add_to_variable = {
+					iku_yxl = 30
+				}
+			}
+		}
+
+	}
+	TES_zhengzhi_daxuan = {
+		available = {
+				has_country_flag = xuanzeiku
+				has_country_flag = xuanzetianzi
+		}
+
+		visible = {
+			original_tag =TES
+		}
+
+		activation = {
+			has_country_flag = xuanzeiku
+			has_country_flag = xuanzetianzi
+		}
+
+		cancel_trigger = {
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = xuanzeiku
+				}
+				NOT = {
+					has_country_flag = xuanzetianzi
+				}
+			}
+		}
+
+		days_mission_timeout = 200
+		
+		timeout_effect = {
+			clr_country_flag = kaiqixuanju
+			hidden_effect = {
+				if = {
+					limit = {
+						if = {
+							limit = {
+								check_variable = {
+									Tenshi_yxl > iku_yxl
+								}
+							}
+							check_variable = { 
+								tianziyingxiangzhi > 12
+							}
+						}
+						else_if = {
+							limit = {
+								check_variable = {
+									Tenshi_yxl < iku_yxl
+								}	
+							}
+							check_variable = { 
+								yijiuyingxiangzhi < -2
+							}
+						}
+						else_if = {
+							limit = {
+								check_variable = {
+									Tenshi_yxl = iku_yxl
+								}
+							}
+							check_variable = { 
+								xiaongtongyingxiangli = 114
+							}
+						}
+					}
+					country_event = ten.13
+				}
+				else_if = {
+					limit = {
+						if = {
+							limit = {
+								check_variable = {
+									Tenshi_yxl > iku_yxl
+								}
+							}
+							check_variable = { 
+								tianziyingxiangzhi < -2
+							}
+						}
+						else_if = {
+							limit = {
+								check_variable = {
+									Tenshi_yxl < iku_yxl
+								}	
+							}
+							check_variable = { 
+								yijiuyingxiangzhi > 12
+							}
+						}
+						else_if = {
+							limit = {
+								check_variable = {
+									Tenshi_yxl = iku_yxl
+								}
+							}
+							check_variable = { 
+								xiaongtongyingxiangli = 114
+							}
+						}
+					}
+					country_event = ten.14
+				} 
+				else_if = {
+					limit = {
+						has_completed_focus = TES.33
+					}
+					country_event = ten.15
+				}
+			}
+		}
+	}
+	TES_xuanze_iku = {
+
+		available = {	
+			hidden_trigger = {
+				has_country_flag = kaiqixuanju
+				NOT = {
+					has_country_flag = xuanzetianzi_ai
+				}
+			}
+		}
+
+		visible = {
+			original_tag =TES
+			NOT = {
+				has_country_flag = xuanzetianzi
+			}
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				add = -100
+				has_game_rule = {
+					rule = TES_paths
+					option = TES_path_neworder
+				}
+			}
+			modifier = {
+				add = 100
+				has_game_rule = {
+					rule = TES_paths
+					option = TES_path_qinwai
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				add_to_variable = {
+					iku_yxl = 300
+				}
+			}
+			set_country_flag = xuanzeiku
+			hidden_effect = {
+				activate_mission = TES_yingxiang_TES_yingxiong_ai
+				activate_mission = TES_zhengzhi_daxuan
+				add_to_variable = {
+					Tenshi_yxl = 30
+				}
+			}
+		}
+
+	}
+	TES_yingxiang_TES_yanjiang = {
+		available = {
+			original_tag =TES
+			political_power_daily > 0.10
+			NOT = {
+				has_country_flag = zhengzhiquanli
+			}
+		}
+
+		visible = {
+			original_tag =TES
+			OR = {
+				has_country_flag = xuanzetianzi
+				has_country_flag = xuanzeiku
+			}
+		}
+
+		cost = 50
+
+		days_re_enable = 30
+
+		days_remove = 10
+
+		modifier = {
+			political_power_cost  = 0.10
+		}
+
+		complete_effect = {
+			set_country_flag = zhengzhiquanli
+		}
+
+		remove_effect = {
+			clr_country_flag = zhengzhiquanli
+			if = {
+				limit = {
+					has_country_flag = xuanzetianzi
+				}
+				custom_effect_tooltip = xuanchuang_TES
+				hidden_effect = {
+					random_list = {
+						25 = {
+							add_to_variable = {
+								Tenshi_yxl = 4
+							}
+						}
+						25 = {
+							add_to_variable = {
+								Tenshi_yxl = 5
+							}
+						}
+						25 = {
+							add_to_variable = {
+								Tenshi_yxl = 6
+							}
+						}
+						25 = {
+							add_to_variable = {
+								Tenshi_yxl = 7
+							}
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = xuanzeiku
+				}
+				custom_effect_tooltip = xuanchuang_IKU
+				hidden_effect = {
+					random_list = {
+						25 = {
+							add_to_variable = {
+								iku_yxl = 4
+							}
+						}
+						25 = {
+							add_to_variable = {
+								iku_yxl = 5
+							}
+						}
+						25 = {
+							add_to_variable = {
+								iku_yxl = 6
+							}
+						}
+						25 = {
+							add_to_variable = {
+								iku_yxl = 7
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	tianting_daya = {
+		available = {
+			political_power_daily > 0.10
+			NOT = {
+				has_country_flag = zhengzhiquanli
+			}
+		}
+		visible = {
+			original_tag =TES
+			has_completed_focus = TES.33
+		}
+		cost = 10
+		days_remove = 30
+		modifier = {
+			political_power_cost  = 0.10
+		}
+		complete_effect = {
+			set_country_flag = zhengzhiquanli
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					check_variable = {
+						Tenshi_yxl > iku_yxl
+					}	
+				}
+				add_to_variable = {
+					Tenshi_yxl = -10
+				}
+				custom_effect_tooltip = tenshi_jiangdi_10
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						Tenshi_yxl < iku_yxl
+					}
+				}
+				add_to_variable = {
+					iku_yxl = -10
+				}
+				custom_effect_tooltip = iku_jiangdi_10
+			}
+			clr_country_flag = zhengzhiquanli
+			set_country_flag = yingxiong_tianzi
+		}
+	}
+	TES_yingxiang_TES_yingxiong = {
+		available = {
+			original_tag =TES
+			political_power_daily > 0.10
+			NOT = {
+				has_country_flag = zhengzhiquanli
+			}
+		}
+
+		visible = {
+			original_tag =TES
+			has_country_flag = xuanzetianzi
+		}
+
+		cost = 10
+
+		days_remove = 50
+
+		fire_only_once = yes
+
+		modifier = {
+			political_power_cost  = 0.10
+		}
+
+		complete_effect = {
+			set_country_flag = zhengzhiquanli
+		}
+
+		remove_effect = {
+			add_war_support = 0.05
+			custom_effect_tooltip = yingxiong_TES
+			clr_country_flag = zhengzhiquanli
+			set_country_flag = yingxiong_tianzi
+			add_to_variable = {
+				Tenshi_yxl = 20
+			}
+		}
+	}
+	TES_yingxiang_TES_zhongcheng = {
+		available = {
+			original_tag =TES
+			political_power_daily > 0.10
+			NOT = {
+				has_country_flag = zhengzhiquanli
+			}
+		}
+
+		visible = {
+			original_tag =TES
+			has_country_flag = xuanzetianzi
+			has_country_flag = yingxiong_tianzi
+		}
+
+		cost = 30
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		modifier = {
+			political_power_cost  = 0.10
+		}
+
+		complete_effect = {
+			set_country_flag = zhengzhiquanli
+		}
+
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = TES_zhongchengzhixing
+				add_idea = TES_zhongchengzhixing_2
+			}
+			custom_effect_tooltip = zhongcheng_TES
+			clr_country_flag = zhengzhiquanli
+			add_to_variable = {
+				Tenshi_yxl = 10
+			}
+		}
+	}
+	TES_yingxiang_TES_miantan = { 
+		available = {
+			original_tag =TES
+			political_power_daily > 0.05
+			NOT = {
+				has_country_flag = zhengzhiquanli
+			}
+		}
+
+		visible = {
+			original_tag =TES
+			has_country_flag = xuanzetianzi
+		}
+		cost = 20
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		modifier = {
+			political_power_cost  = 0.05
+		}
+
+		complete_effect = {
+			set_country_flag = zhengzhiquanli
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = miantan_TES
+			clr_country_flag = zhengzhiquanli
+			add_to_variable = {
+				iku_yxl = -16
+			}
+		}
+	}
+	TES_yingxiang_TES_huilu = {
+		available = {
+			original_tag =TES
+			NOT = {
+				has_country_flag = zhengzhiquanli
+			}
+		}
+
+		visible = {
+			original_tag =TES
+			has_country_flag = xuanzetianzi
+			check_variable = {
+				huilucishu < 2
+			}
+		}
+		cost = 50
+
+		days_remove = 10
+
+		fire_only_once = yes
+		
+		modifier = {
+			consumer_goods_factor = 0.05
+		}
+
+		complete_effect = {
+			set_country_flag = zhengzhiquanli
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = huilu_TES
+			clr_country_flag = zhengzhiquanli
+			add_political_power = -20
+			add_to_variable = {
+				huilucishu = 1
+			}
+			hidden_effect = {
+				random_list = {
+					25 = {
+						add_to_variable = {
+							Tenshi_yxl = 6
+						}
+					}
+					25 = {
+						add_to_variable = {
+							Tenshi_yxl = 7
+						}
+					}
+					25 = {
+						add_to_variable = {
+							Tenshi_yxl = 8
+						}
+					}
+					25 = {
+						add_to_variable = {
+							Tenshi_yxl = 9
+						}
+					}
+				}
+			}
+		}
+	}
+	TES_yingxiang_TES_longruo = {
+		available = {
+			original_tag =TES
+			political_power_daily > 0.05
+			NOT = {
+				has_country_flag = zhengzhiquanli
+			}
+		}
+
+		visible = {
+			original_tag =TES
+			has_country_flag = xuanzetianzi
+			check_variable = {
+				huilucishu = 1
+			}
+		}
+
+		cost = 5
+
+		days_remove = 10
+
+		fire_only_once = yes
+
+		modifier = {
+			political_power_cost  = 0.05
+		}
+
+		complete_effect = {
+			set_country_flag = zhengzhiquanli
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = longluo_TES
+			clr_country_flag = zhengzhiquanli
+			add_to_variable = {
+				Tenshi_yxl = 12
+			}
+		}
+	}
+	TES_iku_zhize = {
+		available = {
+			original_tag =TES
+			political_power_daily > 0.10
+			NOT = {
+				has_country_flag = zhengzhiquanli
+			}
+		}
+
+		visible = {
+			original_tag =TES
+			has_country_flag = xuanzeiku
+		}
+		cost = 50
+
+		days_remove = 10
+
+		fire_only_once = yes
+
+		modifier = {
+			political_power_cost  = 0.10
+		}
+
+		complete_effect = {
+			set_country_flag = zhengzhiquanli
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = zhize_iku
+			clr_country_flag = zhengzhiquanli
+			set_country_flag = longgongshidezhize
+			add_to_variable = {
+				iku_yxl = 30
+			}
+		}
+	}
+	TES_iku_tiantingguanyuan = {
+		available = {
+			original_tag =TES
+			political_power_daily > 0.10
+			NOT = {
+				has_country_flag = zhengzhiquanli
+			}
+		}
+
+		visible = {
+			original_tag =TES
+			has_country_flag = xuanzeiku
+			has_country_flag = longgongshidezhize
+		}
+
+		cost = 30
+
+		days_remove = 20
+
+		fire_only_once = yes
+
+		modifier = {
+			political_power_cost  = 0.10
+		}
+
+		complete_effect = {
+			set_country_flag = zhengzhiquanli
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = guawnyuan_iku
+			clr_country_flag = zhengzhiquanli
+			add_to_variable = {
+				iku_yxl = 10
+			}
+		}
+	}
+	TES_iku_tixu = {
+		available = {
+			original_tag =TES
+			political_power_daily > 0.10
+			NOT = {
+				has_country_flag = zhengzhiquanli
+			}
+		}
+
+		visible = {
+			original_tag =TES
+			has_country_flag = xuanzeiku
+			has_country_flag = longgongshidezhize
+		}
+
+		cost = 30
+
+		days_remove = 50
+
+		fire_only_once = yes
+
+		modifier = {
+			political_power_cost  = 0.10
+		}
+
+		complete_effect = {
+			set_country_flag = zhengzhiquanli
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = tixu_iku
+			clr_country_flag = zhengzhiquanli
+			add_to_variable = {
+				iku_yxl = 15
+			}
+		}
+	}
+	TES_iku_weiwen = {
+		available = {
+			original_tag =TES
+			political_power_daily > 0.10
+			NOT = {
+				has_country_flag = zhengzhiquanli
+			}
+		}
+
+		visible = {
+			original_tag =TES
+			has_country_flag = xuanzeiku
+			has_country_flag = longgongshidezhize
+		}
+
+		cost = 10
+
+		days_remove = 40
+
+		fire_only_once = yes
+
+		modifier = {
+			political_power_cost  = 0.10
+		}
+
+		complete_effect = {
+			set_country_flag = zhengzhiquanli
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = weiwen_iku
+			clr_country_flag = zhengzhiquanli
+			set_country_flag = jingjijiansheqidong
+			add_to_variable = {
+				iku_yxl = 15
+			}
+		}
+	}
+
+	TES_iku_jingji = {
+		available = {
+			original_tag =TES
+			political_power_daily > 0.10
+			NOT = {
+				has_country_flag = zhengzhiquanli
+			}
+			num_of_civilian_factories_available_for_projects > 3
+		}
+
+		visible = {
+			original_tag =TES
+			has_country_flag = xuanzeiku
+			has_country_flag = longgongshidezhize
+			has_country_flag = jingjijiansheqidong
+		}
+
+		cost = 50
+
+		days_remove = 30
+
+		fire_only_once = yes
+
+		modifier = {
+			political_power_cost = 0.10
+			civilian_factory_use = 2
+		}
+
+		complete_effect = {
+			set_country_flag = zhengzhiquanli
+		}
+
+		remove_effect = {
+			13 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				    type = industrial_complex
+				    level = 1
+				    instant_build = yes
+				}
+			}
+			build_railway = {
+				level = 2
+				path = { 1641 151 1124 2626 799 1612 1125 197 714 }
+			}
+			62 = {
+				add_building_construction = {
+				    type = infrastructure
+				    level = 2
+				    instant_build = yes
+				}
+			}
+			360 = {
+				add_building_construction = {
+				    type = infrastructure
+				    level = 1
+				    instant_build = yes
+				}
+			}
+			13 = {
+				add_building_construction = {
+				    type = infrastructure
+				    level = 2
+				    instant_build = yes
+				}
+			}
+			57 = {
+				add_building_construction = {
+				    type = infrastructure
+				    level = 1
+				    instant_build = yes
+				}
+			}
+			custom_effect_tooltip = jingji_iku
+			clr_country_flag = zhengzhiquanli
+			add_to_variable = {
+				iku_yxl = 12
+			}
+		}
+	}
+	TES_iku_wode = {
+		available = {
+			original_tag =TES
+			political_power_daily > 0.10
+			NOT = {
+				has_country_flag = zhengzhiquanli
+			}
+		}
+
+		visible = {
+			original_tag =TES
+			has_country_flag = xuanzeiku
+			has_country_flag = longgongshidezhize
+		}
+
+		cost = 5
+
+		days_remove = 10
+
+		fire_only_once = yes
+
+		modifier = {
+			political_power_cost  = 0.10
+		}
+
+		complete_effect = {
+			set_country_flag = zhengzhiquanli
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = woderenwu_iku
+			clr_country_flag = zhengzhiquanli
+			add_to_variable = {
+				Tenshi_yxl = -25
+			}
+		}
+	}
+
+	TES_yingxiang_TES_yingxiong_ai = {  #ai天子
+		available = {
+			NOT = {
+				has_country_flag = xuanzeiku
+			}
+		}
+
+		visible = {
+			
+		}
+
+		activation = {
+			has_country_flag = xuanzeiku
+			has_country_flag = xuanzetianzi
+		}
+
+		cancel_trigger = {
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = xuanzeiku
+				}
+				NOT = {
+					has_country_flag = xuanzetianzi
+				}
+			}
+		}
+
+		days_mission_timeout = 50
+
+		timeout_effect = {
+			hidden_effect = {
+				activate_mission = TES_yingxiang_TES_zhongcheng_ai
+			}
+			custom_effect_tooltip = yingxiong_TES
+			add_to_variable = {
+				Tenshi_yxl = 20
+			}
+		}
+	}
+	TES_yingxiang_TES_zhongcheng_ai = {
+		available = {
+			NOT = {
+				has_country_flag = xuanzeiku
+			}
+		}
+
+		visible = {
+			
+		}
+
+		activation = {
+			has_country_flag = xuanzeiku
+			has_country_flag = xuanzetianzi
+		}
+
+		cancel_trigger = {
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = xuanzeiku
+				}
+				NOT = {
+					has_country_flag = xuanzetianzi
+				}
+			}
+		}
+
+		days_mission_timeout = 40
+
+		timeout_effect = {
+			custom_effect_tooltip = zhongcheng_TES
+			hidden_effect = {
+				activate_mission = TES_yingxiang_TES_miantan_ai
+			}
+			add_to_variable = {
+				Tenshi_yxl = 10
+			}
+		}
+	}
+	TES_yingxiang_TES_miantan_ai = {
+		available = {
+			NOT = {
+				has_country_flag = xuanzeiku
+			}
+		}
+
+		visible = {
+			
+		}
+
+		activation = {
+			has_country_flag = xuanzeiku
+			has_country_flag = xuanzetianzi
+		}
+
+		cancel_trigger = {
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = xuanzeiku
+				}
+				NOT = {
+					has_country_flag = xuanzetianzi
+				}
+			}
+		}
+
+		days_mission_timeout = 40
+
+		timeout_effect = {
+			custom_effect_tooltip = miantan_TES
+			hidden_effect = {
+				activate_mission = TES_yingxiang_TES_huilu_ai
+			}
+			add_to_variable = {
+				iku_yxl = -16
+			}
+		}
+	}
+	TES_yingxiang_TES_huilu_ai = {
+		available = {
+			NOT = {
+				has_country_flag = xuanzeiku
+			}
+		}
+
+		visible = {
+			
+		}
+
+		activation = {
+			has_country_flag = xuanzeiku
+			has_country_flag = xuanzetianzi
+		}
+
+		cancel_trigger = {
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = xuanzeiku
+				}
+				NOT = {
+					has_country_flag = xuanzetianzi
+				}
+			}
+		}
+
+		days_mission_timeout = 40
+		
+		timeout_effect = {
+			custom_effect_tooltip = huilu_TES
+			hidden_effect = {
+				activate_mission = TES_yingxiang_TES_longruo_ai
+			}
+			hidden_effect = {
+				random_list = {
+					25 = {
+						add_to_variable = {
+							Tenshi_yxl = 6
+						}
+					}
+					25 = {
+						add_to_variable = {
+							Tenshi_yxl = 7
+						}
+					}
+					25 = {
+						add_to_variable = {
+							Tenshi_yxl = 8
+						}
+					}
+					25 = {
+						add_to_variable = {
+							Tenshi_yxl = 9
+						}
+					}
+				}
+			}
+		}
+	}
+	TES_yingxiang_TES_longruo_ai = {
+
+		available = {
+			NOT = {
+				has_country_flag = xuanzeiku
+			}
+		}
+
+		visible = {
+			
+		}
+
+		activation = {
+			has_country_flag = xuanzeiku
+			has_country_flag = xuanzetianzi
+		}
+
+		cancel_trigger = {
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = xuanzeiku
+				}
+				NOT = {
+					has_country_flag = xuanzetianzi
+				}
+			}
+		}
+
+		days_mission_timeout = 10
+
+		timeout_effect = {
+			custom_effect_tooltip = longluo_TES
+			add_to_variable = {
+				Tenshi_yxl = 12
+			}
+		}
+	}
+
+	TES_iku_zhize_ai = {  #ai衣玖
+		available = {
+			NOT = {
+				has_country_flag = xuanzetianzi
+			}
+		}
+
+		visible = {
+			
+		}
+
+		activation = {
+			has_country_flag = xuanzetianzi
+			has_country_flag = xuanzeiku
+		}
+
+		cancel_trigger = {
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = xuanzeiku
+				}
+				NOT = {
+					has_country_flag = xuanzetianzi
+				}
+			}
+		}
+
+		days_mission_timeout = 10
+
+		timeout_effect = {
+			custom_effect_tooltip = zhize_iku
+			hidden_effect = {
+				activate_mission = TES_iku_tiantingguanyuan_ai
+			}
+			add_to_variable = {
+				iku_yxl = 30
+			}
+		}
+	}
+	TES_iku_tiantingguanyuan_ai = {
+		available = {
+			NOT = {
+				has_country_flag = xuanzetianzi
+			}
+		}
+
+		visible = {
+			
+		}
+
+		activation = {
+			has_country_flag = xuanzetianzi
+			has_country_flag = xuanzeiku
+		}
+
+		cancel_trigger = {
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = xuanzeiku
+				}
+				NOT = {
+					has_country_flag = xuanzetianzi
+				}
+			}
+		}
+
+		days_mission_timeout = 20
+
+		timeout_effect = {
+			custom_effect_tooltip = guawnyuan_iku
+			hidden_effect = {
+				activate_mission = TES_iku_tixu_ai
+			}
+			add_to_variable = {
+				iku_yxl = 10
+			}
+		}
+	}
+	TES_iku_tixu_ai = {
+		available = {
+			NOT = {
+				has_country_flag = xuanzetianzi
+			}
+		}
+
+		visible = {
+			
+		}
+
+		activation = {
+			has_country_flag = xuanzetianzi
+			has_country_flag = xuanzeiku
+		}
+
+		cancel_trigger = {
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = xuanzeiku
+				}
+				NOT = {
+					has_country_flag = xuanzetianzi
+				}
+			}
+		}
+
+		days_mission_timeout = 50
+
+		timeout_effect = {
+			custom_effect_tooltip = tixu_iku
+			hidden_effect = {
+				activate_mission = TES_iku_weiwen_ai
+			}
+			add_to_variable = {
+				iku_yxl = 15
+			}
+		}
+	}
+	TES_iku_weiwen_ai = {
+		available = {
+			NOT = {
+				has_country_flag = xuanzetianzi
+			}
+		}
+
+		visible = {
+			
+		}
+
+		activation = {
+			has_country_flag = xuanzetianzi
+			has_country_flag = xuanzeiku
+		}
+
+		cancel_trigger = {
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = xuanzeiku
+				}
+				NOT = {
+					has_country_flag = xuanzetianzi
+				}
+			}
+		}
+
+		days_mission_timeout = 40
+
+		timeout_effect = {
+			custom_effect_tooltip = weiwen_iku
+			hidden_effect = {
+				activate_mission = TES_iku_jingji_ai
+			}
+			add_to_variable = {
+				iku_yxl = 15
+			}
+		}
+	}
+
+	TES_iku_jingji_ai = {
+		available = {
+			NOT = {
+				has_country_flag = xuanzetianzi
+			}
+		}
+
+		visible = {
+			
+		}
+
+		activation = {
+			has_country_flag = xuanzetianzi
+			has_country_flag = xuanzeiku
+		}
+
+		cancel_trigger = {
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = xuanzeiku
+				}
+				NOT = {
+					has_country_flag = xuanzetianzi
+				}
+			}
+		}
+
+		days_mission_timeout = 30
+
+		timeout_effect = {
+			custom_effect_tooltip = jingji_iku
+			hidden_effect = {
+				activate_mission = TES_iku_wode_ai
+			}
+			add_to_variable = {
+				iku_yxl = 12
+			}
+		}
+	}
+	TES_iku_wode_ai = {
+		available = {
+			NOT = {
+				has_country_flag = xuanzetianzi
+			}
+		}
+
+		visible = {
+			
+		}
+
+		activation = {
+			has_country_flag = xuanzetianzi
+			has_country_flag = xuanzeiku
+		}
+
+		cancel_trigger = {
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = xuanzeiku
+				}
+				NOT = {
+					has_country_flag = xuanzetianzi
+				}
+			}
+		}
+
+		days_mission_timeout = 20
+
+		timeout_effect = {
+			custom_effect_tooltip = woderenwu_iku
+			add_to_variable = {
+				Tenshi_yxl = -25
+			}
+		}
+	}
+
+}
+
+CFA_xueruo_ai = { 
+
+	ceshi1 = {
+		visible = {
+			CFA = {
+				is_ai = yes
+			}
+			original_tag =CFA
+		}
+		available = {
+			TES = {
+				has_completed_focus = TES.30
+			}
+			NOT = {
+				has_country_flag = heyaojinghezuo
+			}
+		}
+		cost = 0
+		modifier = {
+			army_attack_factor = -0.5
+			army_defence_factor = -2
+		}
+		complete_effect = {
+			TES = {
+				add_equipment_to_stockpile = {
+					type = magic_core141
+					amount = 5000
+					producer = TES
+				} 
+			}
+		}
+		days_remove = 365
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	ceshi2 = {
+		visible = {
+			CFA = {
+				is_ai = yes
+			}
+			original_tag =CFA
+		}
+		available = {
+			TES = {
+				NOT = {
+					has_completed_focus = TES.30
+				}
+			}
+			NOT = {
+				has_country_flag = heyaojinghezuo
+			}
+		}
+		cost = 0
+		modifier = {
+			army_defence_factor = 0.2
+		}
+		complete_effect = {
+
+		}
+		days_remove = 60
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				factor = 0
+				TES = {
+					has_completed_focus = TES.30
+				}
+			}
+		}
+	}
+}
+
+TES_yuanzhuyaojing = {
+
+	TES_yuanzhu_sc = {
+		visible = {
+		 has_country_flag = tescfavscca
+		}
+		available = {
+			hidden_trigger = {
+				country_exists = CFA
+			}
+			OR = {
+				has_equipment = { 
+					magic_core141 > 200 
+				}
+				has_equipment = { 
+					magic_core147 > 200 
+				}
+			}
+		}
+		days_re_enable = 2
+		cost = 0
+		days_remove = 14
+		remove_effect = {
+			CFA = {
+				add_equipment_to_stockpile = {
+					type = magic_core141
+					amount = 200
+					producer = TES
+				} 
+			}
+			TES = {
+				add_equipment_to_stockpile = {
+					type = magic_core141
+					amount = -200
+					producer = TES
+				} 
+			}
+			add_to_variable = {
+				tenshi_yonghuzhi = 2
+			}
+			custom_effect_tooltip = TES_yuanzhuyaojing_xiaoguo
+		}
+	}
+
+	TES_yuanzhu_gun = {
+		visible = {
+			has_country_flag = tescfavscca
+		}
+		available = {
+			hidden_trigger = {
+				country_exists = CFA
+			}
+			OR = {
+				has_equipment = { 
+					gun141 > 200 
+				}
+				has_equipment = { 
+					gun147 > 200 
+				}
+			}
+		}
+		days_re_enable = 2
+		cost = 0
+		days_remove = 14
+		remove_effect = {
+			CFA = {
+				add_equipment_to_stockpile = {
+					type = gun141
+					amount = 200
+					producer = TES
+				} 
+			}
+			TES = {
+				add_equipment_to_stockpile = {
+					type = gun141
+					amount = -200
+					producer = TES
+				} 
+			}
+			add_to_variable = {
+				tenshi_yonghuzhi = 2
+			}
+			custom_effect_tooltip = TES_yuanzhuyaojing_xiaoguo
+		}
+	}
+
+	TES_yuanzhu_melle = {
+		visible = {
+			has_country_flag = tescfavscca
+		}
+		available = {
+			hidden_trigger = {
+				country_exists = CFA
+			}
+			OR = {
+				has_equipment = { 
+					melee141 > 200 
+				}
+				has_equipment = { 
+					melee147 > 200 
+				}
+			}
+		}
+		days_re_enable = 2
+		cost = 0
+		days_remove = 14
+		remove_effect = {
+			CFA = {
+				add_equipment_to_stockpile = {
+					type = melee141
+					amount = 200
+					producer = TES
+				} 
+			}
+			TES = {
+				add_equipment_to_stockpile = {
+					type = melee141
+					amount = -200
+					producer = TES
+				} 
+			}
+			add_to_variable = {
+				tenshi_yonghuzhi = 2
+			}
+			custom_effect_tooltip = TES_yuanzhuyaojing_xiaoguo
+		}
+	}
+}
+TES_tianjieleyuan = {
+	yunxuhetong_shomai = {
+		visible = {
+			has_completed_focus = TES.56
+		}
+		available = {
+			NOT = {
+				has_country_flag = zhengzai_jingxing_huodong
+			}
+		}
+		modifier = {
+			research_speed_factor = 0.08
+		}
+		cost = 50
+		days_remove = 60
+		days_re_enable = 60
+		complete_effect = {
+			set_country_flag = zhengzai_jingxing_huodong
+		} 
+		remove_effect = {
+			random_list = {
+				25 = {
+					add_tech_bonus = {
+						category = magic
+						ahead_reduction = 1
+						bonus = 1.0
+						uses = 1
+					}
+				}
+				25 = {
+					add_tech_bonus = {
+						category = combined
+						ahead_reduction = 1
+						bonus = 1.0
+						uses = 1
+					}
+				}
+				25 = {
+					add_tech_bonus = {
+						category = civil
+						ahead_reduction = 1
+						bonus = 1.0
+						uses = 1
+					}
+				}
+				25 = {
+					add_tech_bonus = {
+						category = military
+						ahead_reduction = 1
+						bonus = 1.0
+						uses = 1
+					}
+				}
+			}
+			clr_country_flag = zhengzai_jingxing_huodong
+		}
+	}
+	yunxuzhanluan_binan = {
+		visible = {
+			has_completed_focus = TES.56
+		}
+		available = {
+			NOT = {
+				has_country_flag = zhengzai_jingxing_huodong
+			}
+		}
+		modifier = {
+			weekly_manpower = 10
+		}
+		cost = 50
+		days_remove = 60
+		days_re_enable = 60
+		complete_effect = {
+			set_country_flag = zhengzai_jingxing_huodong
+		} 
+		remove_effect = {
+			add_manpower = 100
+			clr_country_flag = zhengzai_jingxing_huodong
+		}
+	}
+	xiyingwailaitozi = {
+		visible = {
+			has_completed_focus = TES.56
+		}
+		available = {
+			NOT = {
+				has_country_flag = zhengzai_jingxing_huodong
+			}
+		}
+		modifier = {
+			political_power_gain = -0.1
+		}
+		cost = 50
+		days_remove = 60
+		days_re_enable = 60
+		complete_effect = {
+			set_country_flag = zhengzai_jingxing_huodong
+		} 
+		remove_effect = {
+			random_list = {
+				40 = {
+					add_offsite_building = { 
+						type = industrial_complex 
+						level = 1 
+					}
+				}
+				40 = {
+					add_offsite_building = { 
+						type = arms_factory 
+						level = 1 
+					}
+				}
+				10 = {
+					add_offsite_building = { 
+						type = industrial_complex 
+						level = 2
+					}
+				}
+				10 = {
+					add_offsite_building = { 
+						type = arms_factory 
+						level = 2 
+					}
+				}
+			}
+			clr_country_flag = zhengzai_jingxing_huodong
+		}
+	}
+	yunxudajianxuancxingyang = {
+		visible = {
+			has_completed_focus = TES.56
+		}
+		available = {
+			NOT = {
+				has_country_flag = zhengzai_jingxing_huodong
+			}
+		}
+		modifier = {
+			drift_defence_factor = -0.25
+			political_power_gain = 0.1
+			consumer_goods_factor = -0.05
+		}
+		cost = 50
+		days_remove = 60
+		days_re_enable = 60
+		complete_effect = {
+			set_country_flag = zhengzai_jingxing_huodong
+		} 
+		remove_effect = {
+			clr_country_flag = zhengzai_jingxing_huodong
+			add_political_power = 10
+		}
+	}
+}
+TES_zhenduirodian = {
+
+	TES_zhenduirodian_jueyi = {
+
+		available = {
+			
+		}
+
+		visible = {
+			original_tag =TES
+			has_completed_focus = TES.69
+			NOT = {
+				has_completed_focus = TES.85
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				has_war_with = TES
+			}
+		}
+
+		targeted_modifier = { 
+			tag = FROM
+			attack_bonus_against = 0.10
+			defense_bonus_against = 0.10
+		}
+
+		cost = 100
+
+		days_remove = 90
+
+		days_re_enable = 10
+
+		complete_effect = {
+			
+		}
+		ai_will_do = {
+			base = 1
+		}
+	}
+	TES_zhenduirodian_jueyi_qianghua = {
+
+		available = {
+			
+		}
+
+		visible = {
+			original_tag =TES
+			has_completed_focus = TES.69
+			has_completed_focus = TES.85
+		}
+
+		target_trigger = {
+			FROM = {
+				has_war_with = TES
+			}
+		}
+
+		targeted_modifier = { 
+			tag = FROM
+			attack_bonus_against = 0.15
+			defense_bonus_against = 0.15
+		}
+
+		cost = 100
+
+		days_remove = 90
+
+		days_re_enable = 10
+
+		complete_effect = {
+			
+		}
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+}
+TES_geren_chongbai = {
+	shijiandetuiyi = {
+		available = {
+			always = no
+		}
+		activation = {
+			has_completed_focus = TES.94
+		}
+		cancel_trigger = {
+			
+		}
+		days_mission_timeout = 90
+		fire_only_once = no
+		timeout_effect = {	
+			add_to_variable = {
+				TES_chongbai_du = -5
+			}
+			if = {
+				limit = {
+					TES = {
+						is_ai = yes
+					}
+				}
+				add_to_variable = {
+					TES_chongbai_du = 5
+				}
+			}
+			custom_effect_tooltip = shijiandetuiyi_tt
+			clamp_variable = { var = TES_chongbai_du min = 0 max = 100 }
+			hidden_effect = {
+				activate_mission = shijiandetuiyi
+			}
+		}
+	}
+	gerenyangjiang = {
+		available = {
+			
+		}
+		visible = {
+			original_tag =TES
+			has_completed_focus = TES.94
+		}
+		cost = 70
+		days_re_enable = 100
+		complete_effect = {
+			add_to_variable = {
+				TES_chongbai_du = 15
+			}
+			custom_effect_tooltip = gerenyangjiang_tt
+			clamp_variable = { var = TES_chongbai_du min = 0 max = 100 }
+		}
+	}
+	weirenguanyuanxuannchuang = {
+		available = {
+			
+		}
+		visible = {
+			original_tag =TES
+			has_completed_focus = TES.94
+		}
+		cost = 50
+		days_re_enable = 120
+		complete_effect = {
+			add_to_variable = {
+				TES_chongbai_du = 10
+			}
+			custom_effect_tooltip = weirenguanyuanxuannchuang_tt
+			clamp_variable = { var = TES_chongbai_du min = 0 max = 100 }
+		}
+	}
+	zhidingfulizhengce = {
+		available = {
+			
+		}
+		visible = {
+			original_tag = TES
+			has_completed_focus = TES.94
+		}
+		cost = 50
+		days_re_enable = 100
+		days_remove = 50
+		modifier = {
+			consumer_goods_factor = 0.1
+		}
+		remove_effect = {
+			add_to_variable = {
+				TES_chongbai_du = 10
+			}
+			custom_effect_tooltip = weirenguanyuanxuannchuang_tt
+			clamp_variable = { var = TES_chongbai_du min = 0 max = 100 }
+		}
+	}
+	gaishanggongzuohuangjing = {
+		available = {
+			
+		}
+		visible = {
+			original_tag =TES
+			has_completed_focus = TES.94
+		}
+		cost = 50
+		days_re_enable = 100
+		days_remove = 50
+		modifier = {
+			industrial_capacity_factory = -0.15
+		}
+		remove_effect = {
+			add_to_variable = {
+				TES_chongbai_du = 10
+			}
+			custom_effect_tooltip = weirenguanyuanxuannchuang_tt
+			clamp_variable = { var = TES_chongbai_du min = 0 max = 100 }
+		}
+	}
+}
+IKU_zhongzuxitong = {
+	dakai_GUI_zhongzu = {
+		available = {
+			
+		}
+		visible = {
+			original_tag =TES
+		}
+		complete_effect = {
+			set_country_flag = zhongzu_xitong_IKU
+		}
+	}
+
+	tianren_zizhifaan = {
+		visible = {
+			has_country_flag = deities_xuanzhong
+			has_completed_focus = TES.145
+		}
+		available = {
+			NOT = {
+				has_country_flag = zhiding_zhengce
+			}
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 60
+		complete_effect = {
+			set_country_flag = zhiding_zhengce
+		} 
+		remove_effect = {
+			tianren_guanxi_shang = yes
+			tianren_shili_shang = yes
+			clr_country_flag = zhiding_zhengce
+		}
+	}
+	tianren_shili_shang = {
+		visible = {
+			has_country_flag = deities_xuanzhong
+		}
+		available = {
+			NOT = {
+				has_country_flag = zhiding_zhengce
+			}
+		}
+		days_re_enable = 14
+		cost = 150
+		days_remove = 120
+		complete_effect = {
+			set_country_flag = zhiding_zhengce
+		} 
+		remove_effect = {
+			tianren_shili_shang = yes
+			clr_country_flag = zhiding_zhengce
+		}
+	}
+	tianren_shili_jiang = {
+		visible = {
+			has_country_flag = deities_xuanzhong
+		}
+		available = {
+			NOT = {
+				has_country_flag = zhiding_zhengce
+			}
+		}
+		days_re_enable = 14
+		cost = 150
+		days_remove = 120
+		complete_effect = {
+			set_country_flag = zhiding_zhengce
+		}
+		remove_effect = {
+			tianren_shili_jiang = yes
+			clr_country_flag = zhiding_zhengce
+		}
+	}
+	tianren_guanxi_shang = {
+		visible = {
+			has_country_flag = deities_xuanzhong
+		}
+		available = {
+			NOT = {
+				has_country_flag = zhiding_zhengce
+			}
+		}
+		days_re_enable = 14
+		cost = 150
+		days_remove = 120
+		complete_effect = {
+			set_country_flag = zhiding_zhengce
+		}
+		remove_effect = {
+			tianren_guanxi_shang = yes
+			clr_country_flag = zhiding_zhengce
+		}
+	}
+
+	tianjieyaoguai_zizhifaan = {
+		visible = {
+			has_country_flag = monster_i_xuanzhong
+			has_completed_focus = TES.145
+		}
+		available = {
+			NOT = {
+				has_country_flag = zhiding_zhengce
+			}
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 60
+		complete_effect = {
+			set_country_flag = zhiding_zhengce
+		} 
+		remove_effect = {
+			tianjieyaoguai_guanxi_shang = yes
+			tianjieyaoguai_shili_shang = yes
+			clr_country_flag = zhiding_zhengce
+		}
+	}
+	tianjieyaoguai_shili_shang = {
+		visible = {
+			has_country_flag = monster_i_xuanzhong
+		}
+		available = {
+			NOT = {
+				has_country_flag = zhiding_zhengce
+			}
+		}
+		days_re_enable = 14
+		cost = 150
+		days_remove = 120
+		complete_effect = {
+			set_country_flag = zhiding_zhengce
+		} 
+		remove_effect = {
+			tianjieyaoguai_shili_shang = yes
+			clr_country_flag = zhiding_zhengce
+		}
+	}
+	tianjieyaoguai_shili_jiang = {
+		visible = {
+			has_country_flag = monster_i_xuanzhong
+		}
+		available = {
+			NOT = {
+				has_country_flag = zhiding_zhengce
+			}
+		}
+		days_re_enable = 14
+		cost = 150
+		days_remove = 120
+		complete_effect = {
+			set_country_flag = zhiding_zhengce
+		}
+		remove_effect = {
+			tianjieyaoguai_shili_jiang = yes
+			clr_country_flag = zhiding_zhengce
+		}
+	}
+	tianjieyaoguai_guanxi_shang = {
+		visible = {
+			has_country_flag = monster_i_xuanzhong
+		}
+		available = {
+			NOT = {
+				has_country_flag = zhiding_zhengce
+			}
+		}
+		days_re_enable = 14
+		cost = 150
+		days_remove = 120
+		complete_effect = {
+			set_country_flag = zhiding_zhengce
+		}
+		remove_effect = {
+			tianjieyaoguai_guanxi_shang = yes
+			clr_country_flag = zhiding_zhengce
+		}
+	}
+
+	diyuyaoguai_zizhifaan = {
+		visible = {
+			has_country_flag = monster_d_xuanzhong
+			has_completed_focus = TES.145
+		}
+		available = {
+			NOT = {
+				has_country_flag = zhiding_zhengce
+			}
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 60
+		complete_effect = {
+			set_country_flag = zhiding_zhengce
+		} 
+		remove_effect = {
+			diyuyaoguai_guanxi_shang = yes
+			diyuyaoguai_shili_shang = yes
+			clr_country_flag = zhiding_zhengce
+		}
+	}
+	diyuyaoguai_shili_shang = {
+		visible = {
+			has_country_flag = monster_d_xuanzhong
+		}
+		available = {
+			NOT = {
+				has_country_flag = zhiding_zhengce
+			}
+		}
+		days_re_enable = 14
+		cost = 150
+		days_remove = 120
+		complete_effect = {
+			set_country_flag = zhiding_zhengce
+		} 
+		remove_effect = {
+			diyuyaoguai_shili_shang = yes
+			clr_country_flag = zhiding_zhengce
+		}
+	}
+	diyuyaoguai_shili_jiang = {
+		visible = {
+			has_country_flag = monster_d_xuanzhong
+		}
+		available = {
+			NOT = {
+				has_country_flag = zhiding_zhengce
+			}
+		}
+		days_re_enable = 14
+		cost = 150
+		days_remove = 120
+		complete_effect = {
+			set_country_flag = zhiding_zhengce
+		}
+		remove_effect = {
+			diyuyaoguai_shili_jiang = yes
+			clr_country_flag = zhiding_zhengce
+		}
+	}
+	diyuyaoguai_guanxi_shang = {
+		visible = {
+			has_country_flag = monster_d_xuanzhong
+		}
+		available = {
+			NOT = {
+				has_country_flag = zhiding_zhengce
+			}
+		}
+		days_re_enable = 14
+		cost = 150
+		days_remove = 120
+		complete_effect = {
+			set_country_flag = zhiding_zhengce
+		}
+		remove_effect = {
+			diyuyaoguai_guanxi_shang = yes
+			clr_country_flag = zhiding_zhengce
+		}
+	}
+
+	yaojing_zizhifaan = {
+		visible = {
+			has_country_flag = goblin_xuanzhong
+			has_completed_focus = TES.145
+		}
+		available = {
+			NOT = {
+				has_country_flag = zhiding_zhengce
+			}
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 60
+		complete_effect = {
+			set_country_flag = zhiding_zhengce
+		} 
+		remove_effect = {
+			yaojing_guanxi_shang = yes
+			yaojing_shili_shang = yes
+			clr_country_flag = zhiding_zhengce
+		}
+	}
+	yaojing_shili_shang = {
+		visible = {
+			has_country_flag = goblin_xuanzhong
+		}
+		available = {
+			NOT = {
+				has_country_flag = zhiding_zhengce
+			}
+		}
+		days_re_enable = 14
+		cost = 150
+		days_remove = 120
+		complete_effect = {
+			set_country_flag = zhiding_zhengce
+		} 
+		remove_effect = {
+			yaojing_shili_shang = yes
+			clr_country_flag = zhiding_zhengce
+		}
+	}
+	yaojing_shili_jiang = {
+		visible = {
+			has_country_flag = goblin_xuanzhong
+		}
+		available = {
+			NOT = {
+				has_country_flag = zhiding_zhengce
+			}
+		}
+		days_re_enable = 14
+		cost = 150
+		days_remove = 120
+		complete_effect = {
+			set_country_flag = zhiding_zhengce
+		}
+		remove_effect = {
+			yaojing_shili_jiang = yes
+			clr_country_flag = zhiding_zhengce
+		}
+	}
+	yaojing_guanxi_shang = {
+		visible = {
+			has_country_flag = goblin_xuanzhong
+		}
+		available = {
+			NOT = {
+				has_country_flag = zhiding_zhengce
+			}
+		}
+		days_re_enable = 14
+		cost = 150
+		days_remove = 120
+		complete_effect = {
+			set_country_flag = zhiding_zhengce
+		}
+		remove_effect = {
+			yaojing_guanxi_shang = yes
+			clr_country_flag = zhiding_zhengce
+		}
+	}
+}
+IKU_hepingzhuyi = {
+	hepingzhuyi_xiajiang_1 = {
+		available = {
+			has_war = no
+		}
+		activation = {
+			has_completed_focus = TES.136
+			has_war = yes
+		}
+		cancel_trigger = {
+			
+		}
+		days_mission_timeout = 180
+		fire_only_once = no
+		timeout_effect = {	
+			hepingzhuyi_xiajiang = yes
+		}
+	}	
+	hepingzhuyi_shang_1 = {
+		available = {
+			has_war = yes
+		}
+		activation = {
+			has_completed_focus = TES.136
+			has_war = no
+		}
+		cancel_trigger = {
+			
+		}
+		days_mission_timeout = 180
+		fire_only_once = no
+		timeout_effect = {	
+			hepingzhuyi_shang = yes
+		}
+	}	
+}
+IKU_yaoqing = {
+	yaoqing_IKU_jueyi = {
+		available = {
+			
+		}
+		visible = {
+			has_completed_focus = TES.171
+		}
+		target_trigger = {
+			FROM = {
+				is_in_faction = no
+				is_neighbor_of = TES
+				NOT =   {
+					has_country_flag = yicixinng_IKU
+				}
+				OR = {
+					has_government = guli
+					has_government = qinwai
+				}
+			}
+		}
+		cost = 100
+		complete_effect = {
+			FROM = {
+				set_country_flag = yicixinng_IKU
+				country_event = {
+					id = ten.43
+					days = 2
+				}
+			}
+		}
+	}
+}
+IKU_yuanzhu = {
+	IKU_yuanzhu_jueyi = {
+		available = {
+			NOT = {
+				has_idea = TES_yuanzhuzhong_idea
+			}
+		}
+		visible = {
+			has_completed_focus = TES.186
+		}
+		target_trigger = {
+			FROM = {
+				is_in_faction_with = TES
+			}
+		}
+		cost = 0
+		days_remove = 90
+		complete_effect = {
+			FROM = {
+				add_timed_idea = {
+					idea = TES_beiyuanzhuzhong_idea
+					days = 90
+				}
+			}
+			add_timed_idea = {
+				idea = TES_yuanzhuzhong_idea
+				days = 90
+			}
+		}
+		remove_effect = {
+			FROM = {
+				add_offsite_building = { type = industrial_complex level = 3 }
+			}
+		}
+	}
+}
+IKU_bianyishixintai = {
+	IKU_bianyishixintai_jueyi = {
+		available = {
+			
+		}
+		visible = {
+			has_completed_focus = TES.189
+		}
+		target_trigger = {
+			FROM = {
+				is_in_faction_with = TES
+				NOT = {
+					has_government = qinwai
+				}
+			}
+		}
+		cost = 100
+		days_remove = 10
+		remove_effect = {
+			FROM = {
+				add_popularity = {
+					ideology = qinwai
+					popularity = 0.5
+				}
+			}
+		}
+	}
+}

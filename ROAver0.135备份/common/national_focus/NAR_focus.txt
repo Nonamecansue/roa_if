@@ -1,0 +1,1410 @@
+#!gfx:interface\TH_focus.gfx
+#!gfx:interface\SAT_focus.gfx
+#!gfx:interface\TES_focus.gfx
+#!gfx:interface\SGS_focus.gfx
+focus_tree = {
+	id = NAR_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = NAR
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 100 y = 800 }
+	shared_focus = MSH_mofasenlinqingkuang
+	shared_focus = MSH_mofasenlinzhengtiguihua
+	shared_focus = MSH_tongyizhengbei
+	shared_focus = MSH_xinshidaiwaijiao
+	focus = {
+		id = NAR_jiashencaogenlianxi
+		icon = GFX_goal_generic_improve_relations
+		cost = 7.00
+		x = 28
+		y = 0
+		ai_will_do = {
+			base = 1
+		}
+		available = {
+			or = {
+				has_completed_focus = MSH_yingxiangshili
+				has_completed_focus = MSH_wulizhengfu
+			}
+		}
+		completion_reward = {
+			reverse_add_opinion_modifier = {
+				target = SEJ
+				modifier = NAR_jiashencaogenlianxi_op
+			}
+		}
+	}
+	focus = {
+		id = NAR_mofasenlinlianbang
+		icon = GFX_focus_eng_unite_the_anglosphere
+		cost = 7.00
+		x = 0
+		y = 9
+		relative_position_id = NAR_jiashencaogenlianxi
+		ai_will_do = {
+			base = 1
+		}
+		available = {
+			has_country_flag = MAF_united
+		}
+		completion_reward = {
+			add_ideas = Country
+			add_ideas = NAR_mofasenlinlianbang_idea
+			remove_dynamic_modifier = {
+				modifier = MSH_mofashigehe_modifier
+			}
+			hidden_effect = {
+				news_event = { id = nar.6 days = 2 }
+			}
+		}
+	}
+	focus = {
+		id = NAR_ruozhelun
+		icon = GFX_focus_CZE_german_puppet
+		cost = 7.00
+		prerequisite = {
+			focus = NAR_jiashencaogenlianxi
+		}
+		x = 0
+		y = 1
+		relative_position_id = NAR_jiashencaogenlianxi
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			MSH_add_boyi5 = yes
+			add_political_power = 100
+			add_stability = -0.1
+			hidden_effect = {
+				country_event = nar.9
+			}
+			
+		}
+	}
+	focus = {
+		id = NAR_dayaxiantian
+		icon = GFX_goal_generic_political_pressure
+		cost = 7.00
+		prerequisite = {
+			focus = NAR_ruozhelun
+		}
+		x = -5
+		y = 1
+		relative_position_id = NAR_ruozhelun
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			
+			add_popularity = {
+				ideology = oldgenso
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = oldorder
+				popularity = -0.05
+			}
+			add_ideas = NAR_dayaxiantian_idea
+			custom_effect_tooltip = MSH_weilecunzai_tt
+			hidden_effect = {
+				country_event = nar.10
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = NAR_buzaijinji
+		icon = GFX_goal_generic_propaganda
+		cost = 7.00
+		prerequisite = {
+			focus = NAR_dayaxiantian
+		}
+		x = -2
+		y = 1
+		relative_position_id = NAR_dayaxiantian
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_ideas = NAR_buzaijinji_idea
+			add_popularity = {
+				ideology = oldgenso
+				popularity = -0.1
+			}
+			add_tech_bonus = {
+				category = magic
+				uses = 2
+				ahead_reduction = 2
+				bonus = 1
+			}
+		}
+	}
+	focus = {
+		id = NAR_gaojihudun
+		icon = GFX_focus_generic_Shield
+		cost = 7.00
+		prerequisite = {
+			focus = NAR_buzaijinji
+		}
+		x = -1
+		y = 1
+		relative_position_id = NAR_buzaijinji
+		ai_will_do = {
+			base = 1
+		}
+		available = {
+			191 = {
+				owner = {
+					or = {
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = shield
+				uses = 2
+				ahead_reduction = 2
+				bonus = 2
+			}
+		}
+	}
+	focus = {
+		id = NAR_jinjilichang
+		icon = GFX_goal_generic_army_doctrines
+		cost = 7.00
+		prerequisite = {
+			focus = NAR_buzaijinji
+		}
+		x = 1
+		y = 1
+		relative_position_id = NAR_buzaijinji
+		ai_will_do = {
+			base = 1
+		}
+		available = {
+			172 = {
+				owner = {
+					or = {
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
+		completion_reward = {
+			set_technology = {
+				linglijiejie155 = 1
+			}
+			add_tech_bonus = {
+				technology = linglijiejie161
+				technology = linglijiejie167
+				uses = 1
+				bonus = 1
+			}
+		}
+	}
+	focus = {
+		id = NAR_sixiangjiaoyu
+		icon = GFX_goal_generic_national_unity
+		cost = 7.00
+		prerequisite = {
+			focus = NAR_jinjilichang
+			focus = NAR_gaojihudun
+		}
+		prerequisite = {
+			focus = NAR_renoukongzhimofa
+		}
+		x = 3
+		y = 1
+		relative_position_id = NAR_gaojihudun
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_ideas = NAR_sixiangjiaoyu_idea
+		}
+	}
+	focus = {
+		id = NAR_boduorenou
+		icon = GFX_focus_generic_annex_country
+		cost = 7.00
+		prerequisite = {
+			focus = NAR_dayaxiantian
+		}
+		x = 2
+		y = 1
+		relative_position_id = NAR_dayaxiantian
+		ai_will_do = {
+			base = 1
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = oldorder
+				popularity = -0.1
+			}
+			add_manpower = 200
+		}
+	}
+	focus = {
+		id = NAR_renoukongzhimofa
+		icon = GFX_focus_generic_military_academy
+		cost = 7.00
+		prerequisite = {
+			focus = NAR_boduorenou
+		}
+		x = 0
+		y = 1
+		relative_position_id = NAR_boduorenou
+		ai_will_do = {
+			base = 1
+		}
+		available = {
+			191 = {
+				owner = {
+					or = {
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
+		completion_reward = {
+			add_ideas = NAR_renoukongzhimofa_idea
+			add_tech_bonus = {
+				category = industrys
+				uses = 1
+				bonus = 1.5
+			}
+			add_tech_bonus = {
+				category = build
+				uses = 1
+				bonus = 1.5
+			}
+		}
+	}
+	focus = {
+		id = NAR_geiyushenming
+		icon = GFX_focus_generic_japanese_imperial_glory
+		cost = 7.00
+		prerequisite = {
+			focus = NAR_renoukongzhimofa
+		}
+		x = 0
+		y = 1
+		relative_position_id = NAR_renoukongzhimofa
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			
+			add_tech_bonus = {
+				category = race
+				uses = 1
+				bonus = 0.5
+			}
+			add_ideas = NAR_geiyushenming_idea
+		}
+	}
+	focus = {
+		id = NAR_jianta
+		icon = GFX_goal_generic_secret_weapon
+		cost = 7.00
+		prerequisite = {
+			focus = NAR_geiyushenming
+		}
+		prerequisite = {
+			focus = NAR_daliangjianzaoshixiang
+		}
+		x = 1
+		y = 1
+		relative_position_id = NAR_geiyushenming
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			NAR_narumi = {
+				add_unit_leader_trait = th_trait_chongjizhuanjia
+			}
+			add_ideas = NAR_jianta_idea
+			add_tech_bonus = {
+				category = melee
+				uses = 2
+				bonus = 2
+				ahead_reduction = 3
+			}
+		}
+	}
+	focus = {
+		id = NAR_moxiang
+		icon = GFX_goal_generic_secret_weapon
+		cost = 7.00
+		prerequisite = {
+			focus = NAR_sixiangjiaoyu
+		}
+		prerequisite = {
+			focus = NAR_jianta
+		}
+		x = 0
+		y = 2
+		relative_position_id = NAR_sixiangjiaoyu
+		ai_will_do = {
+			base = 1
+		}
+		available = {
+			has_tech = ma_shield1
+		}
+		completion_reward = {
+			custom_effect_tooltip = NAR_moxiang_tt
+			set_technology = {
+				zhanshujiejiehexin1 = 1
+			}
+			add_ideas = NAR_moxiang_idea
+			add_tech_bonus = {
+				category = heavy
+				uses = 2
+				bonus = 1
+				ahead_reduction = 2
+			}
+			hidden_effect = {
+				load_oob = NAR_moxiang
+			}
+		}
+	}
+	focus = {
+		id = NAR_ningjudizang
+		icon = GFX_goal_generic_national_unity
+		cost = 7.00
+		prerequisite = {
+			focus = NAR_ruozhelun
+		}
+		x = -1
+		y = 1
+		relative_position_id = NAR_ruozhelun
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_ideas = NAR_ningjudizang_idea
+			custom_effect_tooltip = MSH_weilecunzai_tt
+		}
+	}
+	focus = {
+		id = NAR_dizangshengming
+		icon = GFX_focus_generic_population_growth
+		cost = 7.00
+		prerequisite = {
+			focus = NAR_ningjudizang
+		}
+		x = 0
+		y = 1
+		relative_position_id = NAR_ningjudizang
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_ideas = NAR_dizangshengming_idea
+		}
+	}
+	focus = {
+		id = NAR_daliangjianzaoshixiang
+		icon = GFX_goal_generic_construct_civilian
+		cost = 7.00
+		prerequisite = {
+			focus = NAR_dizangshengming
+		}
+		x = 0
+		y = 1
+		relative_position_id = NAR_dizangshengming
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = NAR_dizangshengming_idea
+				add_idea = NAR_daliangjianzaoshixiang_idea
+			}
+		}
+	}
+	focus = {
+		id = NAR_kaochaxianjinshili
+		icon = GFX_focus_generic_military_mission
+		cost = 7.00
+		prerequisite = {
+			focus = NAR_ruozhelun
+		}
+		x = 1
+		y = 1
+		relative_position_id = NAR_ruozhelun
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			country_event = nar.12
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = NAR_kejihuzhu
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 1.00
+		prerequisite = {
+			focus = NAR_kaochaxianjinshili
+		}
+		x = 0
+		y = 1
+		relative_position_id = NAR_kaochaxianjinshili
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = NAR_kejihuzhu_idea1
+				days = 730
+			}
+			if = {
+				limit = {
+					has_country_flag = NAR_kaochaxianjinshili_CIR
+				}
+				CIR = {
+					add_timed_idea = {
+						idea = NAR_kejihuzhu_idea2
+						days = 730
+					}
+					hidden_effect = {
+						country_event = nar.15
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = NAR_kaochaxianjinshili_SEJ
+				}
+				SEJ = {
+					add_timed_idea = {
+						idea = NAR_kejihuzhu_idea2
+						days = 730
+					}
+					hidden_effect = {
+						country_event = nar.16
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = NAR_kaochaxianjinshili_TKM
+				}
+				TKM = {
+					add_timed_idea = {
+						idea = NAR_kejihuzhu_idea2
+						days = 730
+					}
+					hidden_effect = {
+						country_event = nar.17
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = NAR_kaochaxianjinshili_TEG
+				}
+				TEG = {
+					add_timed_idea = {
+						idea = NAR_kejihuzhu_idea2
+						days = 730
+					}
+					hidden_effect = {
+						country_event = nar.18
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = NAR_jiemengfeimofashi
+		icon = GFX_goal_generic_improve_relations
+		cost = 7.00
+		prerequisite = {
+			focus = NAR_kejihuzhu
+		}
+		mutually_exclusive = {
+			focus = NAR_tiangoujunshi
+		}
+		x = 0
+		y = 1
+		relative_position_id = NAR_kejihuzhu
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = MSH_weilecunzai_tt
+			add_ideas = NAR_jiemengfeimofashi_idea
+			if = {
+				limit = {
+					has_completed_focus = MSH_yingxiangshili
+				}
+				MSH_add_boyi10 = yes
+				MSH_add_boyi10 = yes
+				custom_effect_tooltip = NAR_jiemengfeimofashi_tt1
+				every_country = {
+					limit = {
+						or = {
+							tag = MFA
+							tag = MTM
+							tag = MYK
+						}
+					}
+					add_to_variable = {
+						ROOT.MSH_influence_times_to_@THIS = 1
+					}
+					add_opinion_modifier = {
+						target = root
+						modifier = MSH_boyili_influence_op
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = NAR_kaochaxianjinshili_CIR
+					}
+					MFA = {
+						add_to_variable = {
+							ROOT.MSH_influence_times_to_@THIS = 1
+						}
+						add_opinion_modifier = {
+							target = root
+							modifier = MSH_boyili_influence_op
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = NAR_kaochaxianjinshili_SEJ
+					}
+					MYK = {
+						add_to_variable = {
+							ROOT.MSH_influence_times_to_@THIS = 1
+						}
+						add_opinion_modifier = {
+							target = root
+							modifier = MSH_boyili_influence_op
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = NAR_kaochaxianjinshili_TKM
+					}
+					MTM = {
+						add_to_variable = {
+							ROOT.MSH_influence_times_to_@THIS = 1
+						}
+						add_opinion_modifier = {
+							target = root
+							modifier = MSH_boyili_influence_op
+						}
+					}
+				}
+
+			}
+			if = {
+				limit = {
+					has_completed_focus = MSH_wulizhengfu
+				}
+				custom_effect_tooltip = NAR_jiemengfeimofashi_tt2
+			}
+		}
+	}
+	focus = {
+		id = NAR_tiangoujunshi
+		icon = GFX_focus_TEG_tactics_of_new_ages
+		cost = 7.00
+		prerequisite = {
+			focus = NAR_kejihuzhu
+		}
+		mutually_exclusive = {
+			focus = NAR_jiemengfeimofashi
+		}
+		x = 2
+		y = 1
+		relative_position_id = NAR_kejihuzhu
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_ideas = NAR_tiangoujunshi_idea
+		}
+	}
+	focus = {
+		id = NAR_chuanbosixiang
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 7.00
+		prerequisite = {
+			focus = NAR_jiemengfeimofashi
+			focus = NAR_tiangoujunshi
+		}
+		prerequisite = {
+			focus = NAR_daliangjianzaoshixiang
+		}
+		x = 1
+		y = 1
+		relative_position_id = NAR_daliangjianzaoshixiang
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_stability = 0.35
+			add_popularity = {
+				ideology = fandong
+				popularity = 0.35
+			}
+		}
+	}
+	focus = {
+		id = NAR_mofasenlingemingzuzhi
+		icon = GFX_focus_hol_philips
+		cost = 7.00
+		prerequisite = {
+			focus = NAR_chuanbosixiang
+		}
+		x = 1
+		y = 1
+		relative_position_id = NAR_chuanbosixiang
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			create_intelligence_agency = yes
+			add_ideas = NAR_mofasenlingemingzuzhi_idea
+			custom_effect_tooltip = MSH_weilecunzai_tt
+			every_country = {
+				limit = {
+					is_subject_of = ROOT
+				}
+				can_core = yes
+				low_puppet_level = yes
+				low_puppet_level = yes
+			}
+			custom_effect_tooltip = NAR_mofasenlingemingzuzhi_tt
+			hidden_effect = {
+				news_event = { id = nar.1 days = 2 }
+			}
+		}
+	}
+	focus = {
+		id = NAR_lalongzhiyemofashi
+		icon = GFX_focus_ITA_corpo_volontari_della_liberta
+		cost = 7.00
+		prerequisite = {
+			focus = NAR_ruozhelun
+		}
+		x = 5
+		y = 1
+		relative_position_id = NAR_ruozhelun
+		ai_will_do = {
+			base = 1
+		}
+		available = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				or = {
+					MFA = {
+						has_opinion = {
+							target = ROOT
+							value > 9
+						}
+					}
+					MTM = {
+						has_opinion = {
+							target = ROOT
+							value > 9
+						}
+					}
+					MYK = {
+						has_opinion = {
+							target = ROOT
+							value > 9
+						}
+					}
+				}
+			}
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = guli
+				popularity = -0.15
+			}
+			add_ideas = NAR_lalongzhiyemofashi_idea
+			custom_effect_tooltip = MSH_weilecunzai_tt
+			hidden_effect = {
+				country_event = nar.11
+			}
+			
+		}
+	}
+	focus = {
+		id = NAR_mofajiaoyuzhidu
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 7.00
+		prerequisite = {
+			focus = NAR_lalongzhiyemofashi
+		}
+		x = 0
+		y = 1
+		relative_position_id = NAR_lalongzhiyemofashi
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_ideas = NAR_mofajiaoyuzhidu_idea
+		}
+	}
+	focus = {
+		id = NAR_feimofashixuexiao
+		icon = GFX_focus_spa_save_the_alcazar
+		cost = 7.00
+		prerequisite = {
+			focus = NAR_mofajiaoyuzhidu
+		}
+		x = 0
+		y = 1
+		relative_position_id = NAR_mofajiaoyuzhidu
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = NAR_mofajiaoyuzhidu_idea
+				add_idea = NAR_feimofashixuexiao_idea
+			}
+		}
+	}
+	focus = {
+		id = NAR_qingxiejiaoyu
+		icon = GFX_focus_ITA_devaluate_the_lire
+		cost = 7.00
+		prerequisite = {
+			focus = NAR_feimofashixuexiao
+		}
+		x = 0
+		y = 1
+		relative_position_id = NAR_feimofashixuexiao
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			PO_add5 = yes
+			swap_ideas = {
+				remove_idea = NAR_feimofashixuexiao_idea
+				add_idea = NAR_qingxiejiaoyu_idea
+			}
+		}
+	}
+	focus = {
+		id = NAR_jiushu
+		icon = GFX_focus_CZE_german_puppet
+		cost = 7.00
+		prerequisite = {
+			focus = NAR_lalongzhiyemofashi
+		}
+		x = 3
+		y = 1
+		relative_position_id = NAR_lalongzhiyemofashi
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_political_power = 100
+			reverse_add_opinion_modifier = {
+				target = HKR
+				modifier = NAR_jiushu_op1
+			}
+			reverse_add_opinion_modifier = {
+				target = MRS
+				modifier = NAR_jiushu_op1
+			}
+			every_country = {
+				limit = {
+					not = {
+						has_idea = Human
+						has_idea = Magician
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = NAR_jiushu_op2
+				}
+			}
+			lobbydecrease = yes
+			hidden_effect = {
+				news_event = { id = nar.2 days = 2 }
+			}
+		}
+	}
+	focus = {
+		id = NAR_kaifangmofadian
+		icon = GFX_focus_SOV_rebuild_the_savior_cathedral
+		cost = 7.00
+		prerequisite = {
+			focus = NAR_jiushu
+		}
+		x = 0
+		y = 1
+		relative_position_id = NAR_jiushu
+		ai_will_do = {
+			base = 1
+		}
+		available = {
+			487 = {
+				owner = {
+					or = {
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
+		completion_reward = {
+			reverse_add_opinion_modifier = {
+				target = MRS
+				modifier = NAR_kaifangmofadian_op
+			}
+			487 = {
+				add_extra_state_shared_building_slots = 3
+			}
+			conservativeincrease = yes
+		}
+	}
+	focus = {
+		id = NAR_guihuanbeidaowupin
+		icon = GFX_goal_generic_national_unity
+		cost = 7.00
+		prerequisite = {
+			focus = NAR_kaifangmofadian
+		}
+		x = 0
+		y = 1
+		relative_position_id = NAR_kaifangmofadian
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_political_power = 250
+			add_ideas = NAR_guihuanbeidaowupin_idea
+			reverse_add_opinion_modifier = {
+				target = HKR
+				modifier = NAR_guihuanbeidaowupin_op
+			}
+			reverse_add_opinion_modifier = {
+				target = SAT
+				modifier = NAR_guihuanbeidaowupin_op
+			}
+			reverse_add_opinion_modifier = {
+				target = SCA
+				modifier = NAR_guihuanbeidaowupin_op
+			}
+			reverse_add_opinion_modifier = {
+				target = NTR
+				modifier = NAR_guihuanbeidaowupin_op
+			}
+			hidden_effect = {
+				news_event = { id = nar.4 days = 2 }
+			}
+		}
+	}
+	focus = {
+		id = NAR_sijidekending
+		icon = GFX_goal_generic_improve_relations
+		cost = 7.00
+		prerequisite = {
+			focus = NAR_guihuanbeidaowupin
+		}
+		x = -1
+		y = 1
+		relative_position_id = NAR_guihuanbeidaowupin
+		ai_will_do = {
+			base = 1
+		}
+		mutually_exclusive = {
+			focus = NAR_mingliansichanhui
+		}
+		completion_reward = {
+			reverse_add_opinion_modifier = {
+				target = SKI
+				modifier = NAR_sijidekending_op
+			}
+			SKI = {
+				can_use = yes
+			}
+			add_stability = 0.15
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = NAR_mingliansichanhui
+		icon = GFX_goal_generic_improve_relations
+		cost = 7.00
+		prerequisite = {
+			focus = NAR_guihuanbeidaowupin
+		}
+		mutually_exclusive = {
+			focus = NAR_sijidekending
+		}
+		x = 1
+		y = 1
+		relative_position_id = NAR_guihuanbeidaowupin
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			reverse_add_opinion_modifier = {
+				target = NMS
+				modifier = NAR_mingliansichanhui_op
+			}
+			NMS = {
+				can_use = yes
+			}
+			add_war_support = 0.3
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = NAR_ruohuagainian
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		cost = 7.00
+		prerequisite = {
+			focus = NAR_qingxiejiaoyu
+		}
+		x = -2
+		y = 1
+		relative_position_id = NAR_qingxiejiaoyu
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_stability = -0.05
+			add_ideas = NAR_ruohuagainian_idea
+			custom_effect_tooltip = NAR_ruohuagainian_tt
+			show_ideas_tooltip = NAR_ruohuagainian_idea2
+			custom_effect_tooltip = MSH_weilecunzai_tt
+			conservativeincrease = yes
+		}
+	}
+	focus = {
+		id = NAR_feichutouxian
+		icon = GFX_goal_tfv_burn_the_royal_portraits
+		cost = 7.00
+		prerequisite = {
+			focus = NAR_mofasenlingemingzuzhi
+		}
+		prerequisite = {
+			focus = NAR_ruohuagainian
+		}
+		x = 1
+		y = 1
+		relative_position_id = NAR_mofasenlingemingzuzhi
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_political_power = 400
+			add_stability = -0.05
+			add_popularity = {
+				ideology = fandong
+				popularity = 0.2
+			}
+			add_popularity = {
+				ideology = qinwai
+				popularity = 0.2
+			}
+			hidden_effect = {
+				news_event = { id = nar.5 days = 2 }
+			}
+		}
+	}
+	focus = {
+		id = NAR_jiujizhongsheng
+		icon = GFX_focus_SOV_the_path_of_marxism_leninism
+		cost = 7.00
+		prerequisite = {
+			focus = NAR_mofasenlinlianbang
+		}
+		mutually_exclusive = {
+			focus = NAR_burudiyu
+		}
+		x = -1
+		y = 1
+		relative_position_id = NAR_mofasenlinlianbang
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = fandong
+				popularity = 0.05
+			}
+			lobbyincrease = yes
+			set_politics = {
+				ruling_party = fandong
+			}
+		}
+	}
+	focus = {
+		id = NAR_linglipingdenglinian
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		cost = 7.00
+		prerequisite = {
+			focus = NAR_jiujizhongsheng
+		}
+		x = -1
+		y = 1
+		relative_position_id = NAR_jiujizhongsheng
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_ideas = NAR_linglipingdenglinian_idea
+			add_popularity = {
+				ideology = fandong
+				popularity = 0.05
+			}
+			lobbyincrease = yes
+			conservativeincrease = yes
+		}
+	}
+	focus = {
+		id = NAR_jienasixiang
+		icon = GFX_focus_ITA_democratic_leadership
+		cost = 7.00
+		prerequisite = {
+			focus = NAR_linglipingdenglinian
+		}
+		x = -2
+		y = 1
+		relative_position_id = NAR_linglipingdenglinian
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_research_slot = 1
+			add_ideas = NAR_jienasixiang_idea
+		}
+	}
+	focus = {
+		id = NAR_senlinzhouyu
+		icon = GFX_focus_prc_agrarian_socialism
+		cost = 7.00
+		prerequisite = {
+			focus = NAR_linglipingdenglinian
+			focus = NAR_baochijingjie
+		}
+		x = 2
+		y = 1
+		relative_position_id = NAR_linglipingdenglinian
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_ideas = NAR_senlinzhouyu_idea
+		}
+	}
+	focus = {
+		id = NAR_sangexiaomie
+		icon = GFX_focus_prc_remove_chiang_kai_shek
+		cost = 7.00
+		prerequisite = {
+			focus = NAR_linglipingdenglinian
+		}
+		x = 0
+		y = 1
+		relative_position_id = NAR_linglipingdenglinian
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_named_threat = {
+				threat = 4
+				name = NAR_sangexiaomie
+			}
+			every_country = {
+				limit = {
+					or = {
+						has_government = fandong
+						has_government = qinwai
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = NAR_sangexiaomie_op1
+				}
+			}
+			every_country = {
+				limit = {
+					or = {
+						has_government = oldgenso
+						has_government = oldorder
+						has_government = neworder
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = NAR_sangexiaomie_op2
+				}
+			}
+		}
+	}
+	focus = {
+		id = NAR_xiaomielinglichaju
+		icon = GFX_goal_generic_political_pressure
+		cost = 7.00
+		prerequisite = {
+			focus = NAR_sangexiaomie
+		}
+		x = -2
+		y = 1
+		relative_position_id = NAR_sangexiaomie
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_dynamic_modifier = {
+				modifier = NAR_xiaomielinglichaju_modifier
+			}
+			custom_effect_tooltip = NAR_xiaomielinglichaju_tt
+		}
+	}
+	focus = {
+		id = NAR_xiaomiezhongzuchayi
+		icon = GFX_focus_generic_infiltration
+		cost = 7.00
+		prerequisite = {
+			focus = NAR_sangexiaomie
+		}
+		x = 0
+		y = 1
+		relative_position_id = NAR_sangexiaomie
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_dynamic_modifier = {
+				modifier = NAR_xiaomiezhongzuchayi_modifier
+			}
+			custom_effect_tooltip = NAR_xiaomiezhongzuchayi_tt
+		}
+	}
+	focus = {
+		id = NAR_xiaomiedayaoguai
+		icon = GFX_focus_eng_bring_the_dominions_back_into_the_fold
+		cost = 7.00
+		prerequisite = {
+			focus = NAR_sangexiaomie
+			focus = NAR_senlinzhouyu
+		}
+		x = 2
+		y = 1
+		relative_position_id = NAR_sangexiaomie
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = NAR_xiaomiedayaoguai_tt
+			hidden_effect = {
+				news_event = { id = nar.7 days = 2 }
+			}
+		}
+	}
+	focus = {
+		id = NAR_xiwang
+		icon = GFX_goal_generic_propaganda
+		cost = 7.00
+		prerequisite = {
+			focus = NAR_xiaomiezhongzuchayi
+		}
+		prerequisite = {
+			focus = NAR_xiaomielinglichaju
+		}
+		prerequisite = {
+			focus = NAR_xiaomiedayaoguai
+		}
+		x = 0
+		y = 1
+		relative_position_id = NAR_xiaomiezhongzuchayi
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_war_support = 0.1
+			add_stability = 0.1
+			add_ideas = NAR_xiwang_idea
+			custom_effect_tooltip = NAR_xiwang_tt
+			hidden_effect = {
+				news_event = { id = nar.8 days = 2 }
+			}
+		}
+	}
+	focus = {
+		id = NAR_burudiyu
+		icon = GFX_goal_tripartite_pact
+		cost = 7.00
+		prerequisite = {
+			focus = NAR_mofasenlinlianbang
+		}
+		mutually_exclusive = {
+			focus = NAR_jiujizhongsheng
+		}
+		relative_position_id = NAR_jiujizhongsheng
+		x = 2
+		y = 0
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = qinwai
+				popularity = 0.2
+			}
+			set_politics = {
+				ruling_party = qinwai
+			}
+			lobbydecrease = yes
+		}
+	}
+	focus = {
+		id = NAR_baochijingjie
+		icon = GFX_goal_generic_defence
+		cost = 7.00
+		prerequisite = {
+			focus = NAR_burudiyu
+		}
+		x = 1
+		y = 1
+		relative_position_id = NAR_burudiyu
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_war_support = 0.25
+			lobbydecrease = yes
+		}
+	}
+	focus = {
+		id = NAR_dalikaifa
+		icon = GFX_focus_resource_1
+		cost = 7.00
+		prerequisite = {
+			focus = NAR_baochijingjie
+		}
+		x = 0
+		y = 1
+		relative_position_id = NAR_baochijingjie
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_ideas = NAR_dalikaifa_idea
+			add_tech_bonus = {
+				category = oil_res
+				uses = 2
+				ahead_reduction = 2
+				bonus = 1
+			}
+		}
+	}
+	focus = {
+		id = NAR_chukouguo
+		icon = GFX_goal_generic_trade
+		cost = 7.00
+		prerequisite = {
+			focus = NAR_dalikaifa
+		}
+		x = 0
+		y = 1
+		relative_position_id = NAR_dalikaifa
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_ideas = NAR_chukouguo_idea
+		}
+	}
+	focus = {
+		id = NAR_mimi
+		icon = GFX_focus_wonderweapons
+		cost = 7.00
+		prerequisite = {
+			focus = NAR_dalikaifa
+		}
+		x = 2
+		y = 1
+		relative_position_id = NAR_dalikaifa
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = NAR_mimi_modifier
+				}
+			}
+			add_tech_bonus = {
+				category = secret
+				uses = 4
+				ahead_reduction = 2
+				bonus = 1
+			}
+			custom_effect_tooltip = NAR_mimi_tt
+		}
+	}
+	focus = {
+		id = NAR_gaonenglingqizhuanhua
+		icon = GFX_focus_generic_stockpile_fuel
+		cost = 7.00
+		prerequisite = {
+			focus = NAR_dalikaifa
+		}
+		x = 4
+		y = 1
+		relative_position_id = NAR_dalikaifa
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_ideas = NAR_gaonenglingqizhuanhua_idea
+		}
+	}
+	focus = {
+		id = NAR_fuhanmolidetudi
+		icon = GFX_focus_generic_land_reclamation
+		cost = 7.00
+		prerequisite = {
+			focus = NAR_chukouguo
+		}
+		prerequisite = {
+			focus = NAR_mimi
+		}
+		prerequisite = {
+			focus = NAR_gaonenglingqizhuanhua
+		}
+		x = 2
+		y = 1
+		relative_position_id = NAR_chukouguo
+		ai_will_do = {
+			base = 1
+		}
+		completion_reward = {
+			add_ideas = NAR_fuhanmolidetudi_idea
+		}
+	}
+}

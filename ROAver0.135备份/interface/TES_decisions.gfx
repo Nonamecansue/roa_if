@@ -1,0 +1,6 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_decision_category_TES_yxldz"
+		texturefile = "gfx/interface/decisions/decision_TES_yxldz.dds"
+	}
+}

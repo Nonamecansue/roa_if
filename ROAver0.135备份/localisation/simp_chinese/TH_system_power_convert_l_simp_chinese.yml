@@ -1,0 +1,10 @@
+﻿l_simp_chinese:
+  ############灵力转换系统###########
+  fuel_decision:0 "$FUEL$的转化"
+  fuel_decision_desc:0 "$FUEL$作为伊奘诺物质的产物，能够用来做很多事情，比如增强我们国民的灵力。"
+  POconvert_cost:0 "消耗[?POconvert_fuel_cost|0R]$FUEL$"
+  POconvert_cost_blocked:0 "消耗[?POconvert_fuel_cost|0R]$FUEL$"
+  POconvert_on:0 "将$FUEL$转化为灵力"
+  POconvert_on_tt:0 "每日消耗[?POconvert_daily_cost_display|R]$FUEL$，并增长[?global.POconvert_power_daily_gain|G]点灵力，上限为[?POconvert_PO_max|Y]。"
+  POconvert_off:0 "停止将$FUEL$转化为灵力"
+  POconvert_off_tt:0 "通过$FUEL$获得的灵力将以每日[?global.POconvert_power_daily_decay|R]衰退。"

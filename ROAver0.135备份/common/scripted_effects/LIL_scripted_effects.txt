@@ -1,0 +1,169 @@
+LIL_baochun_30 = {
+	###春回大地，万物复苏
+	if = {
+		limit = {
+			LIL = {
+				has_country_flag = LIL_chunhuidadi
+			}
+			NOT = {
+				has_idea = LIL_chuntiandaola_1
+			}
+		}
+		add_timed_idea = {
+			idea = LIL_chuntiandaola_1
+			days = 30
+		}
+	}
+	else_if = {
+		limit = { 
+			LIL = {
+				has_country_flag = LIL_chunhuidadi
+			}
+			has_idea = LIL_chuntiandaola_1
+		}
+		modify_timed_idea = {
+			idea = LIL_chuntiandaola_1
+			days = 30
+		}
+	}
+	###如丝细雨，润物无声
+	else_if = {
+		limit = { 
+			LIL = {
+				has_country_flag = LIL_chunhuidadi_2
+			}
+			NOT = {
+				has_idea = LIL_chuntiandaola_2
+			}
+		}
+		add_timed_idea = {
+			idea = LIL_chuntiandaola_2
+			days = 30
+		}
+	}
+	else_if = {
+		limit = { 
+			LIL = {
+				has_country_flag = LIL_chunhuidadi_2
+			}
+			has_idea = LIL_chuntiandaola_2
+		}
+		modify_timed_idea = {
+			idea = LIL_chuntiandaola_2
+			days = 30
+		}
+	}
+	###勃勃生机，千枝吐翠
+	else_if = {
+		limit = { 
+			LIL = {
+				has_country_flag = LIL_chunhuidadi_3
+			}
+			NOT = {
+				has_idea = LIL_chuntiandaola_3
+			}
+		}
+		add_timed_idea = {
+			idea = LIL_chuntiandaola_3
+			days = 30
+		}
+	}
+	else_if = {
+		limit = { 
+			LIL = {
+				has_country_flag = LIL_chunhuidadi_3
+			}
+			has_idea = LIL_chuntiandaola_3
+		}
+		modify_timed_idea = {
+			idea = LIL_chuntiandaola_3
+			days = 30
+		}
+	}
+	###繁花似锦，万象更新
+	else_if = {
+		limit = { 
+			LIL = {
+				has_country_flag = LIL_chunhuidadi_4
+			}
+			NOT = {
+				has_idea = LIL_chuntiandaola_4
+			}
+		}
+		add_timed_idea = {
+			idea = LIL_chuntiandaola_4
+			days = 30
+		}
+	}
+	else_if = {
+		limit = { 
+			LIL = {
+				has_country_flag = LIL_chunhuidadi_4
+			}
+			has_idea = LIL_chuntiandaola_4
+		}
+		modify_timed_idea = {
+			idea = LIL_chuntiandaola_4
+			days = 30
+		}
+	}
+}
+LIL_chunzhizhong_1 = {
+	add_to_variable = {
+		LIL_chunzhizhong = 1
+	}
+	custom_effect_tooltip = LIL_chunzhizhong_1_tt
+}
+LIL_chunzhizhong_2 = {
+	add_to_variable = {
+		LIL_chunzhizhong = 2
+	}
+	custom_effect_tooltip = LIL_chunzhizhong_2_tt
+}
+LIL_leyuangongjinhui = {
+	if = {
+		limit = {
+			has_idea = LIL_leyuangongjinhui_1
+		}
+		swap_ideas = {
+			remove_idea = LIL_leyuangongjinhui_1
+			add_idea = LIL_leyuangongjinhui_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = LIL_leyuangongjinhui_2
+		}
+		swap_ideas = {
+			remove_idea = LIL_leyuangongjinhui_2
+			add_idea = LIL_leyuangongjinhui_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = LIL_leyuangongjinhui_3
+		}
+		swap_ideas = {
+			remove_idea = LIL_leyuangongjinhui_3
+			add_idea = LIL_leyuangongjinhui_4
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = LIL_leyuangongjinhui_4
+		}
+		swap_ideas = {
+			remove_idea = LIL_leyuangongjinhui_4
+			add_idea = LIL_leyuangongjinhui_5
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = LIL_leyuangongjinhui_5
+		}
+		swap_ideas = {
+			remove_idea = LIL_leyuangongjinhui_5
+			add_idea = LIL_leyuangongjinhui_6
+		}
+	}
+}

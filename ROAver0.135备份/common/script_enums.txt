@@ -1,0 +1,356 @@
+script_enum_operative_mission_type = {
+	build_intel_network
+	counter_intelligence
+	quiet_network
+	root_out_resistance
+	control_trade
+}
+
+script_enum_advisor_slot_type = {
+	character_coop
+}
+
+script_enum_equipment_stat = {	
+								#Viktors note for modders and future CDs: If you want to use a stat in the MIOs it has to be in the equipment category itself, not on the battalion level. So stuff like defense works because its contained within the equipment, but stuff like recon will not work because its owned by the battalion. Adding stuff like recon will not throw an error, but it will _not_ work. Moving stats to the equipment level from the bat-level might fix this if you are brave enough, but it is very risk and might break other stuff. Ive commented what is currently on the battalion level below and should not be used with MIOs.
+
+	default_morale 					#Cannot be used with MIOS
+	defense
+	breakthrough
+	hardness
+	soft_attack
+	hard_attack
+	recon 							#Cannot be used with MIOS
+	entrenchment					# ONLY works for tanks with dozer blades, NOT infantry
+	initiative 						#Cannot be used with MIOS
+	casualty_trickleback 			#Cannot be used with MIOS
+	supply_consumption_factor 		#Cannot be used with MIOS
+	supply_consumption 				#Cannot be used with MIOS
+	suppression 					#Cannot be used with MIOS
+	suppression_factor 				#Cannot be used with MIOS
+	experience_loss_factor 			#Cannot be used with MIOS
+	equipment_capture_factor 		#Cannot be used with MIOS
+	recovery
+	additional_collateral_damage
+	fuel_capacity
+	surface_detection
+	sub_detection
+	surface_visibility
+	sub_visibility
+	lg_attack
+	lg_armor_piercing
+	hg_attack
+	hg_armor_piercing
+	torpedo_attack
+	sub_attack
+	anti_air_attack
+	amphibious_defense
+	naval_speed
+	naval_range
+	mines_planting
+	mines_sweeping
+	naval_light_gun_hit_chance_factor
+	naval_heavy_gun_hit_chance_factor
+	naval_torpedo_hit_chance_factor
+	naval_torpedo_damage_reduction_factor
+	naval_torpedo_enemy_critical_chance_factor
+	convoy_raiding_coordination
+	patrol_coordination
+	search_and_destroy_coordination
+	air_range
+	air_defence
+	air_attack
+	air_agility
+	air_bombing
+	air_superiority
+	naval_strike_attack
+	naval_strike_targetting
+	air_ground_attack
+	air_visibility_factor
+	railway_gun_attack 			#Cannot be used with MIOS
+	railway_gun_attack_range_index_in_define # This cannot be used with MIOs or equipment_bonus - only in equipment definition
+	railway_gun_annex_ratio
+	railway_gun_hours_between_redistribution
+	max_organisation			#Cannot be used with MIOS
+	max_strength				##Cannot be used with MIOS
+	maximum_speed	
+	armor_value
+	ap_attack
+	reliability
+	reliability_factor
+	weight
+	thrust 						#DLC Only be careful and avoid unless needed
+	fuel_consumption
+	fuel_consumption_factor
+	strategic_attack
+	carrier_size
+	acclimatization_hot_climate_gain_factor			#Cannot be used with MIOS
+	acclimatization_cold_climate_gain_factor		#Cannot be used with MIOS
+	night_penalty				#Cannot be used with MIOS
+	build_cost_ic
+	naval_weather_penalty_factor
+}
+
+script_enum_production_stat = {
+	production_cost_factor
+	production_capacity_factor
+	production_efficiency_cap_factor
+	production_efficiency_gain_factor
+	production_resource_need_factor
+	production_resource_penalty_factor
+	production_conversion_speed_factor
+}
+
+script_enum_equipment_category = {
+	land_cruiser
+	emplacement_gun_ammo
+	ballistic_missile
+	nuclear_missile
+	sam_missile
+	infantry
+	artillery
+	flame
+	missile_launcher
+	convoy
+	amphibious
+	armor
+	anti_air
+	anti_tank
+	rocket
+	mechanized
+	motorized
+	capital_ship
+	submarine
+	carrier
+	support
+	maritime_patrol_plane
+	fighter
+	cas
+	naval_bomber
+	interceptor
+	tactical_bomber
+	strategic_bomber
+	screen_ship
+	heavy_fighter
+	air_transport
+	missile
+	suicide
+	scout_plane
+	train
+	floating_harbor
+	railway_gun
+	 
+}
+
+script_enum_equipment_bonus_type = {
+	## This script enum contains all equipment types that can be used in equipment_bonus
+	## or in game/common/military_industrial_organization scripts.
+
+	## This list contains either equipment category (see script_enum_equipment_category above)
+	## or equipment archetypes & types defined in game/common/units/equipments
+
+	## This enum should be updated every time either of those is updated
+	## (there will be a log error at startup as a reminder)
+
+	# Equipment categories
+	land_cruiser
+	emplacement_gun_ammo
+	ballistic_missile
+	nuclear_missile
+	sam_missile
+	infantry
+	artillery
+	flame
+	missile_launcher
+	convoy
+	amphibious
+	armor
+	anti_air
+	anti_tank
+	rocket
+	mechanized
+	motorized
+	capital_ship
+	submarine
+	carrier
+	support
+	maritime_patrol_plane
+	fighter
+	cas
+	naval_bomber
+	interceptor
+	tactical_bomber
+	strategic_bomber
+	screen_ship
+	heavy_fighter
+	air_transport
+	missile
+	suicide
+	scout_plane
+	train
+	floating_harbor
+	railway_gun
+	convoy_1
+	##############################
+	## Air
+	ma_bomber_equipment
+	ma_bomber148
+	ma_bomber153
+	ma_bomber158
+	ma_bomber163
+	ma_bomber168
+
+	ma_fighter_equipment
+	ma_fighter148
+	ma_fighter153
+	ma_fighter158
+	ma_fighter163
+	ma_fighter168
+
+	ma_scout_equipment
+	ma_scout146
+	ma_scout155
+	ma_scout164
+
+	ma_st_bomber_equipment
+	ma_st_bomber148
+	ma_st_bomber153
+	ma_st_bomber158
+	ma_st_bomber163
+	ma_st_bomber168
+
+	sc_fighter_equipment
+	sc_fighter148
+	sc_fighter153
+	sc_fighter158
+	sc_fighter163
+	sc_fighter168
+
+	sc_bomber_equipment
+	sc_bomber148
+	sc_bomber153
+	sc_bomber158
+	sc_bomber163
+	sc_bomber168
+
+	sc_scout_equipment
+	sc_scout146
+	sc_scout155
+	sc_scout164
+
+	sc_st_bomber_equipment
+	sc_st_bomber148
+	sc_st_bomber153
+	sc_st_bomber158
+	sc_st_bomber163
+	sc_st_bomber168
+
+	## Land
+	melee_a
+	melee117
+	melee141
+	melee147
+	melee149
+	melee157
+	melee165
+
+	shield_a
+	shield146
+	shield149
+	shield153
+	shield157
+	shield161
+	shield165
+	shield169
+
+	support_equipment
+	support_equipment_1
+	support_equipment_2
+
+	yunshudui_a
+	yunshudui_ma
+	yunshudui_sc
+	yunshudui_kasha
+
+	truck_a
+	truck_1
+	truck_2
+	
+	magic_core_a
+	magic_core117
+	magic_core141
+	magic_core147
+	magic_core153
+	magic_core159
+	magic_core165
+
+	magic_focus_a
+	magic_focus152
+	magic_focus158
+	magic_focus164
+	magic_focus170
+
+	magic_energy_a
+	magic_energy143
+	magic_energy149
+	magic_energy155
+	magic_energy161
+	magic_energy167
+
+	core_shield_a #轻坦
+	core_shield150
+	core_shield159
+	core_shield168
+
+	special_core_a #SF
+	special_core146
+    special_core153
+    special_core161
+    special_core169
+
+	tactical_core_a #中坦
+	tactical_core153
+    tactical_core157
+    tactical_core161
+    tactical_core165
+    tactical_core169
+
+	gun_a
+	gun117
+	gun141
+	gun147
+	gun153
+	gun159
+	gun165
+
+	anti_shield_a
+	anti_shield152
+	anti_shield158
+	anti_shield164
+	anti_shield170
+
+	mortar_a
+	mortar143
+	mortar149
+	mortar155
+	mortar161
+	mortar167
+
+	special_shield_a #轻坦
+	special_shield150
+	special_shield159
+	special_shield168
+
+	smg_a #SF
+	smg146
+	smg153
+	smg161
+	smg169
+
+	mecha_a #中坦
+	mecha153
+	mecha157
+	mecha161
+	mecha165
+	mecha169
+
+}

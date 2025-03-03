@@ -1,0 +1,638 @@
+# #Adjacencyrulesdetermineifanarmy,navyortradecanpassthroughtheadjacency(e.g.acanalorstrait).
+# #
+# #Iftwocountriesatwarcontrolprovincesintheadjacencyitisconsideredcontested.
+# #Theoptionaltriggersis_enemy,is_friendandis_neutralareevaluatedinorderandifoneevaluatestotruethecorrespondingruleisused.
+# #Ifis_enemyandis_friendevaluatestofalsetheneutralruleisused. In this case the is_neutral trigger will not be evaluated at all.
+# #Ifis_friendandis_neutralevaluatestofalsetheenemyruleisused.
+# #Ifis_enemyandis_neutralevaluatestofalsethefriendruleisused.
+# #Ifanyadjacencyprovincecontrollerisatwarwiththecountrytheenemyruleisused,unlessis_enemyevaluatestofalse,thentheneutralruleisused.
+# #Ifanyadjacencyprovincecontrollerisanallyofisgivingmilitaryaccesstothecountrythefriendruleisused,unlessis_friendevaluatestofalse,thentheneutralruleisused.
+# #Otherwisetheneutralruleisused,unlessis_neutralevaluatestofalse,thentheenemyruleisused.
+# #
+# #The'name'propertyishowyourefertotheruleinadjacencies.csv
+
+#Suez Canal
+adjacency_rule =
+{
+	name = "SUKIMA_SRB"
+
+	is_disabled = {
+		not = { has_tech = kongjianmonijishu }
+		tooltip = portal_tt
+	}
+	contested =
+	{
+		army = yes
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = yes
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	
+	required_provinces = { 7130 7131 }
+		
+	icon = 7130
+	offset = { 1 0 -6 }
+}
+adjacency_rule =
+{
+	name = "SUKIMA_OKI-HEL1"
+
+	is_disabled = {
+		not = { has_tech = kongjianmonijishu }
+		tooltip = portal_tt
+	}
+	contested =
+	{
+		army = yes
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = yes
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	
+	required_provinces = { 7133 7630 }
+		
+	icon = 7133
+	offset = { 1 0 -6 }
+}
+adjacency_rule =
+{
+	name = "SUKIMA_OKI-HEL2"
+
+	is_disabled = {
+		not = { has_tech = kongjianmonijishu }
+		tooltip = portal_tt
+	}
+	contested =
+	{
+		army = yes
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = yes
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	
+	required_provinces = { 7135 7483 }
+		
+	icon = 7135
+	offset = { 1 0 -6 }
+}
+adjacency_rule =
+{
+	name = "SUKIMA_OKI-SCA"
+
+	is_disabled = {
+		not = { has_tech = kongjianmonijishu }
+		tooltip = portal_tt
+	}
+	contested =
+	{
+		army = yes
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = yes
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	
+	required_provinces = { 7144 7192 }
+		
+	icon = 7144
+	offset = { 1 0 -6 }
+}
+adjacency_rule =
+{
+	name = "SUKIMA_OKI-GEN"
+
+	is_disabled = {
+		not = { has_tech = kongjianmonijishu }
+		tooltip = portal_tt
+	}
+	contested =
+	{
+		army = yes
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = yes
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	
+	required_provinces = { 7143 7145 }
+		
+	icon = 7143
+	offset = { 1 0 -6 }
+}
+adjacency_rule =
+{
+	name = "SUKIMA_OKI-HUM"
+
+	is_disabled = {
+		not = { has_tech = kongjianmonijishu }
+		tooltip = portal_tt
+	}
+	contested =
+	{
+		army = yes
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = yes
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	
+	required_provinces = { 7137 7154 }
+		
+	icon = 7137
+	offset = { 1 0 -6 }
+}
+adjacency_rule =
+{
+	name = "SUKIMA_OKI-BYA"
+
+	is_disabled = {
+		not = { has_tech = kongjianmonijishu }
+		tooltip = portal_tt
+	}
+	contested =
+	{
+		army = yes
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = yes
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	
+	required_provinces = { 7132 7125 }
+		
+	icon = 7132
+	offset = { 1 0 -6 }
+}
+adjacency_rule =
+{
+	name = "SUKIMA_YKR-SCA"
+
+	is_disabled = {
+		not = { has_tech = kongjianmonijishu }
+		tooltip = portal_tt
+	}
+	contested =
+	{
+		army = yes
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = yes
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	
+	required_provinces = { 7195 7513 }
+    
+  icon = 7195
+	offset = { 1 0 -6 }
+}
+adjacency_rule =
+{
+	name = "SUKIMA_YKR-CHE"
+
+	is_disabled = {
+		not = { has_tech = kongjianmonijishu }
+		tooltip = portal_tt
+	}
+	contested =
+	{
+		army = yes
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = yes
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	
+	required_provinces = { 7204 7321 }
+    
+  icon = 7204
+	offset = { 1 0 -6 }
+}
+adjacency_rule =
+{
+  name = "SUKIMA_YKR-NET"
+
+  is_friend = {
+    has_tech = kongjianmonijishu
+  }
+  contested =
+  {
+    army = yes
+    navy = no
+    submarine = no
+    trade = no
+  }
+  enemy =
+  {
+    army = yes
+    navy = no
+    submarine = no
+    trade = no
+  }
+  friend =
+  {
+    army = yes
+    navy = no
+    submarine = no
+    trade = yes
+  }
+  neutral =
+  {
+    army = yes
+    navy = no
+    submarine = no
+    trade = yes
+  }
+  
+  required_provinces = { 7216 7180 }
+    
+  icon = 7216
+  offset = { 1 0 -6 }
+}
+adjacency_rule =
+{
+  name = "SUKIMA_YKR-HKR"
+
+  is_friend = {
+    has_tech = kongjianmonijishu
+  }
+  contested =
+  {
+    army = yes
+    navy = no
+    submarine = no
+    trade = no
+  }
+  enemy =
+  {
+    army = yes
+    navy = no
+    submarine = no
+    trade = no
+  }
+  friend =
+  {
+    army = yes
+    navy = no
+    submarine = no
+    trade = yes
+  }
+  neutral =
+  {
+    army = yes
+    navy = no
+    submarine = no
+    trade = yes
+  }
+  
+  required_provinces = { 7149 7153 }
+    
+  icon = 7149
+  offset = { 1 0 -6 }
+}
+adjacency_rule =
+{
+  name = "SUKIMA_YKR-KAG"
+
+  is_friend = {
+    has_tech = kongjianmonijishu
+  }
+  contested =
+  {
+    army = yes
+    navy = no
+    submarine = no
+    trade = no
+  }
+  enemy =
+  {
+    army = yes
+    navy = no
+    submarine = no
+    trade = no
+  }
+  friend =
+  {
+    army = yes
+    navy = no
+    submarine = no
+    trade = yes
+  }
+  neutral =
+  {
+    army = yes
+    navy = no
+    submarine = no
+    trade = yes
+  }
+  
+  required_provinces = { 7141 7134 }
+    
+  icon = 7141
+  offset = { 1 0 -6 }
+}
+adjacency_rule =
+{
+  name = "SUKIMA_YKR-EMB"
+
+  is_friend = {
+    has_tech = kongjianmonijishu
+  }
+  contested =
+  {
+    army = yes
+    navy = no
+    submarine = no
+    trade = no
+  }
+  enemy =
+  {
+    army = yes
+    navy = no
+    submarine = no
+    trade = no
+  }
+  friend =
+  {
+    army = yes
+    navy = no
+    submarine = no
+    trade = yes
+  }
+  neutral =
+  {
+    army = yes
+    navy = no
+    submarine = no
+    trade = yes
+  }
+  
+  required_provinces = { 7146 7148 }
+    
+  icon = 7146
+  offset = { 1 0 -6 }
+}
+adjacency_rule =
+{
+  name = "SUKIMA_KAS-ZBT"
+
+  is_friend = {
+    has_tech = kongjianmonijishu
+  }
+  contested =
+  {
+    army = yes
+    navy = no
+    submarine = no
+    trade = no
+  }
+  enemy =
+  {
+    army = yes
+    navy = no
+    submarine = no
+    trade = no
+  }
+  friend =
+  {
+    army = yes
+    navy = no
+    submarine = no
+    trade = yes
+  }
+  neutral =
+  {
+    army = yes
+    navy = no
+    submarine = no
+    trade = yes
+  }
+  
+  required_provinces = { 3903 7142 }
+    
+  icon = 3903
+  offset = { 1 0 -6 }
+}
+adjacency_rule =
+{
+  name = "SUKIMA_KAS-YUG"
+
+  is_friend = {
+    has_tech = kongjianmonijishu
+  }
+  contested =
+  {
+    army = yes
+    navy = no
+    submarine = no
+    trade = no
+  }
+  enemy =
+  {
+    army = yes
+    navy = no
+    submarine = no
+    trade = no
+  }
+  friend =
+  {
+    army = yes
+    navy = no
+    submarine = no
+    trade = yes
+  }
+  neutral =
+  {
+    army = yes
+    navy = no
+    submarine = no
+    trade = yes
+  }
+  
+  required_provinces = { 7608 7606 }
+    
+  icon = 7608
+  offset = { 1 0 -6 }
+}

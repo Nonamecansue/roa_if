@@ -1,0 +1,57 @@
+leader_traits = {
+	# cir_cirno_leader = {
+	# 	random = no
+	# 	#generic
+
+	# 	stability_factor = 0.25
+	# 	war_support_factor = 0.1
+		
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# }
+	# cir_cirno_leader2 = {
+	# 	random = no
+	# 	#generic
+
+	# 	political_power_factor = 0.1
+		
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# }
+	# nms_bkr = {
+	# 	random = no
+	# 	#generic
+
+		
+		
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# }
+	# gensoukyo_creator_idea = {
+	# 	random = no
+	# 	#generic
+
+		
+		
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# }
+#=========生产商通用============
+    CIR_yaojingdekaisa_traits = {
+		random = no
+		#generic
+
+		training_time_factor = -0.1
+		political_power_gain = 0.3
+		PO_good_battle_influence_factor = 0.3
+		army_leader_cost_factor = -0.2
+
+		ai_will_do = {
+			factor = -5
+		}
+	}
+}

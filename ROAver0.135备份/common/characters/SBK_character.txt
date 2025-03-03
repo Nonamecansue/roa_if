@@ -1,0 +1,73 @@
+characters={
+	SBK_sek ={
+		name = SBK_sek
+		portraits={
+			civilian={
+				large="gfx/leaders/SBK/SBK_sek.dds"
+				small="gfx/leaders/SBK/SBK_sek_small.dds"
+			}
+			army = {
+				large="gfx/leaders/SBK/SBK_sek.dds"
+				small="gfx/leaders/SBK/SBK_sek_small.dds"
+			}
+		}
+		corps_commander = {
+            traits = {  th_original_character th_character  th_trait_huoqiangzhuanjia  }
+            attack_skill = 3
+            defense_skill = 6
+            planning_skill = 3
+            logistics_skill = 5
+            
+            skill = 5
+        }
+		advisor = {
+			slot = character_coop
+			idea_token = SBK_sek
+			name = SBK_sek
+			cost = 200
+			modifier = {
+				production_speed_industrial_complex_factor = 0.2
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	SBK_sek_leader ={
+		name = SBK_sek_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/SBK/SBK_sek.dds"
+				small="gfx/leaders/SBK/SBK_sek_small.dds"
+			}
+			army = {
+				large="gfx/leaders/SBK/SBK_sek.dds"
+				small="gfx/leaders/SBK/SBK_sek_small.dds"
+			}
+		}
+		country_leader={
+			ideology=qinwai_type
+			id=-1
+		}
+		country_leader={
+			ideology=guli_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldorder_type
+			id=-1
+		}
+		country_leader={
+			ideology=fandong_type
+			id=-1
+		}
+		country_leader={
+			ideology=neworder_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldgenso_type
+			id=-1
+		}
+	}
+}

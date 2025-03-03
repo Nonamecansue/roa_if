@@ -1,0 +1,166 @@
+characters={
+	KMC_kmc ={
+		name = KMC_kmc
+		portraits={
+			civilian={
+				large="gfx/leaders/KMC/KMC_kmc.dds"
+				small="gfx/leaders/KMC/KMC_kmc_small.dds"
+			}
+			army = {
+				large="gfx/leaders/KMC/KMC_kmc.dds"
+				small="gfx/leaders/KMC/KMC_kmc_small.dds"
+			}
+		}
+		corps_commander = {
+            traits = {  th_original_character th_character  th_trait_chongjizhuanjia  }
+            attack_skill = 8
+            defense_skill = 7
+            planning_skill = 2
+            logistics_skill = 7
+            
+            skill = 7
+        }
+		advisor = {
+			slot = character_coop
+			idea_token = KMC_kmc
+			name = KMC_kmc
+			cost = 200
+			modifier = {
+				army_speed_factor = 0.05
+				trade_opinion_factor = 0.5
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	KMC_elis ={
+		name = KMC_elis
+		portraits={
+			civilian={
+				large="gfx/leaders/KMC/KMC_elis.dds"
+				small="gfx/leaders/KMC/KMC_elis_small.dds"
+			}
+			army = {
+				large="gfx/leaders/KMC/KMC_elis.dds"
+				small="gfx/leaders/KMC/KMC_elis_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { th_character th_original_character th_trait_huoqiangzhuanjia }
+			skill = 8
+			attack_skill = 6
+			defense_skill = 8
+			planning_skill = 4
+			logistics_skill = 9
+		}
+		advisor = {
+			slot = character_coop
+			idea_token = KMC_elis
+			name = KMC_elis
+			cost = 200
+			modifier = {
+				attrition = -0.4
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	KMC_sariel ={
+		name = KMC_sariel
+		portraits={
+			civilian={
+				large="gfx/leaders/KMC/KMC_sariel.dds"
+				small="gfx/leaders/KMC/KMC_sariel_small.dds"
+			}
+			army = {
+				large="gfx/leaders/KMC/KMC_sariel.dds"
+				small="gfx/leaders/KMC/KMC_sariel_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { th_character th_original_character th_trait_huoqiangzhuanjia th_trait_dayaoguai }
+			skill = 10
+			attack_skill = 2
+			defense_skill = 6
+			planning_skill = 0
+			logistics_skill = 3
+		}
+		advisor = {
+			slot = character_coop
+			idea_token = KMC_sariel
+			name = KMC_sariel
+			cost = 200
+			modifier = {
+				global_building_slots_factor = 0.2
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	KMC_kmc_leader ={
+		name = KMC_kmc_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/KMC/KMC_kmc.dds"
+				small="gfx/leaders/KMC/KMC_kmc_small.dds"
+			}
+			army = {
+				large="gfx/leaders/KMC/KMC_kmc.dds"
+				small="gfx/leaders/KMC/KMC_kmc_small.dds"
+			}
+		}
+		country_leader={
+			ideology=qinwai_type
+			id=-1
+		}
+		country_leader={
+			ideology=guli_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldorder_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldgenso_type
+			id=-1
+		}
+	}
+	KMC_elis_leader ={
+		name = KMC_elis_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/KMC/KMC_elis.dds"
+				small="gfx/leaders/KMC/KMC_elis_small.dds"
+			}
+			army = {
+				large="gfx/leaders/KMC/KMC_elis.dds"
+				small="gfx/leaders/KMC/KMC_elis_small.dds"
+			}
+		}
+		country_leader={
+			ideology=fandong_type
+			id=-1
+		}
+	}
+	KMC_sariel_leader ={
+		name = KMC_sariel_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/KMC/KMC_sariel.dds"
+				small="gfx/leaders/KMC/KMC_sariel_small.dds"
+			}
+			army = {
+				large="gfx/leaders/KMC/KMC_sariel.dds"
+				small="gfx/leaders/KMC/KMC_sariel_small.dds"
+			}
+		}
+		country_leader={
+			ideology=neworder_type
+			id=-1
+		}
+	}
+}

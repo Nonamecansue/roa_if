@@ -1,0 +1,372 @@
+# This file is here to show how to add a custom province artwork for a province
+# The artwork is displayed over the terrain picture in the state view when the player click on the province
+buildings = {
+
+	# Entry exemple, you then need to add the building in the state
+	#dummy_buildings = {
+	#	show_on_map = 0
+	#	is_buildable = no
+	#	base_cost = 12000
+	#	per_controlled_building_extra_cost = 5000
+	#	damage_factor = 0 # This building can't be damaged by regular strat bombing
+	#	spawn_point = dummy_spawn
+	#	disabled_in_dmz = no
+	#	always_shown = yes
+	#	only_display_if_exists = yes
+	#	special_icon = GFX_exemple_custom_province
+	#	level_cap = {
+	#		province_max = 1
+	#	}
+	#}
+	terrain_baiyulou_province = {
+		show_on_map = 0
+		is_buildable = no
+		base_cost = 12000
+		per_controlled_building_extra_cost = 5000
+		damage_factor = 0 # This building can't be damaged by regular strat bombing
+		spawn_point = dummy_spawn
+		disabled_in_dmz = no
+		always_shown = yes
+		only_display_if_exists = yes
+		special_icon = GFX_terrain_baiyulou
+		level_cap = {
+			province_max = 1
+		}
+	}
+	terrain_bolishenshe_province = {
+		show_on_map = 0
+		is_buildable = no
+		base_cost = 12000
+		per_controlled_building_extra_cost = 5000
+		damage_factor = 0 # This building can't be damaged by regular strat bombing
+		spawn_point = dummy_spawn
+		disabled_in_dmz = no
+		always_shown = yes
+		only_display_if_exists = yes
+		special_icon = GFX_terrain_bolishenshe
+		level_cap = {
+			province_max = 1
+		}
+	}
+	terrain_dilingdian_province = {
+		show_on_map = 0
+		is_buildable = no
+		base_cost = 12000
+		per_controlled_building_extra_cost = 5000
+		damage_factor = 0 # This building can't be damaged by regular strat bombing
+		spawn_point = dummy_spawn
+		disabled_in_dmz = no
+		always_shown = yes
+		only_display_if_exists = yes
+		special_icon = GFX_terrain_dilingdian
+		level_cap = {
+			province_max = 1
+		}
+	}
+	terrain_hongmoguan_province = {
+		show_on_map = 0
+		is_buildable = no
+		base_cost = 12000
+		per_controlled_building_extra_cost = 5000
+		damage_factor = 0 # This building can't be damaged by regular strat bombing
+		spawn_point = dummy_spawn
+		disabled_in_dmz = no
+		always_shown = yes
+		only_display_if_exists = yes
+		special_icon = GFX_terrain_hongmoguan
+		level_cap = {
+			province_max = 1
+		}
+	}
+	terrain_huizhencheng_province = {
+		show_on_map = 0
+		is_buildable = no
+		base_cost = 12000
+		per_controlled_building_extra_cost = 5000
+		damage_factor = 0 # This building can't be damaged by regular strat bombing
+		spawn_point = dummy_spawn
+		disabled_in_dmz = no
+		always_shown = yes
+		only_display_if_exists = yes
+		special_icon = GFX_terrain_huizhencheng
+		level_cap = {
+			province_max = 1
+		}
+	}
+	terrain_mingliansi_province = {
+		show_on_map = 0
+		is_buildable = no
+		base_cost = 12000
+		per_controlled_building_extra_cost = 5000
+		damage_factor = 0 # This building can't be damaged by regular strat bombing
+		spawn_point = dummy_spawn
+		disabled_in_dmz = no
+		always_shown = yes
+		only_display_if_exists = yes
+		special_icon = GFX_terrain_mingliansi
+		level_cap = {
+			province_max = 1
+		}
+	}
+	terrain_taiyanghuatian_province = {
+		show_on_map = 0
+		is_buildable = no
+		base_cost = 12000
+		per_controlled_building_extra_cost = 5000
+		damage_factor = 0 # This building can't be damaged by regular strat bombing
+		spawn_point = dummy_spawn
+		disabled_in_dmz = no
+		always_shown = yes
+		only_display_if_exists = yes
+		special_icon = GFX_terrain_taiyanghuatian
+		level_cap = {
+			province_max = 1
+		}
+	}
+	terrain_xianglintang_province = {
+		show_on_map = 0
+		is_buildable = no
+		base_cost = 12000
+		per_controlled_building_extra_cost = 5000
+		damage_factor = 0 # This building can't be damaged by regular strat bombing
+		spawn_point = dummy_spawn
+		disabled_in_dmz = no
+		always_shown = yes
+		only_display_if_exists = yes
+		special_icon = GFX_terrain_xianglintang
+		level_cap = {
+			province_max = 1
+		}
+	}
+	terrain_yongyuanting_province = {
+		show_on_map = 0
+		is_buildable = no
+		base_cost = 12000
+		per_controlled_building_extra_cost = 5000
+		damage_factor = 0 # This building can't be damaged by regular strat bombing
+		spawn_point = dummy_spawn
+		disabled_in_dmz = no
+		always_shown = yes
+		only_display_if_exists = yes
+		special_icon = GFX_terrain_yongyuanting
+		level_cap = {
+			province_max = 1
+		}
+	}
+	terrain_xianglintang_province = {
+		show_on_map = 0
+		is_buildable = no
+		base_cost = 12000
+		per_controlled_building_extra_cost = 5000
+		damage_factor = 0 # This building can't be damaged by regular strat bombing
+		spawn_point = dummy_spawn
+		disabled_in_dmz = no
+		always_shown = yes
+		only_display_if_exists = yes
+		special_icon = GFX_terrain_xianglintang
+		level_cap = {
+			province_max = 1
+		}
+	}
+	terrain_shenlingmiao_province = {
+		show_on_map = 0
+		is_buildable = no
+		base_cost = 12000
+		per_controlled_building_extra_cost = 5000
+		damage_factor = 0 # This building can't be damaged by regular strat bombing
+		spawn_point = dummy_spawn
+		disabled_in_dmz = no
+		always_shown = yes
+		only_display_if_exists = yes
+		special_icon = GFX_terrain_shenlingmiao
+		level_cap = {
+			province_max = 1
+		}
+	}
+	terrain_shoushishenshe_province = {
+		show_on_map = 0
+		is_buildable = no
+		base_cost = 12000
+		per_controlled_building_extra_cost = 5000
+		damage_factor = 0 # This building can't be damaged by regular strat bombing
+		spawn_point = dummy_spawn
+		disabled_in_dmz = no
+		always_shown = yes
+		only_display_if_exists = yes
+		special_icon = GFX_terrain_shoushishenshe
+		level_cap = {
+			province_max = 1
+		}
+	}
+	terrain_chirediyu_province = {
+		show_on_map = 0
+		is_buildable = no
+		base_cost = 12000
+		per_controlled_building_extra_cost = 5000
+		damage_factor = 0 # This building can't be damaged by regular strat bombing
+		spawn_point = dummy_spawn
+		disabled_in_dmz = no
+		always_shown = yes
+		only_display_if_exists = yes
+		special_icon = GFX_terrain_chirediyu
+		level_cap = {
+			province_max = 1
+		}
+	}
+	terrain_dajimiao_province = {
+		show_on_map = 0
+		is_buildable = no
+		base_cost = 12000
+		per_controlled_building_extra_cost = 5000
+		damage_factor = 0 # This building can't be damaged by regular strat bombing
+		spawn_point = dummy_spawn
+		disabled_in_dmz = no
+		always_shown = yes
+		only_display_if_exists = yes
+		special_icon = GFX_terrain_dajimiao
+		level_cap = {
+			province_max = 1
+		}
+	}
+	terrain_dizangqun_province = {
+		show_on_map = 0
+		is_buildable = no
+		base_cost = 12000
+		per_controlled_building_extra_cost = 5000
+		damage_factor = 0 # This building can't be damaged by regular strat bombing
+		spawn_point = dummy_spawn
+		disabled_in_dmz = no
+		always_shown = yes
+		only_display_if_exists = yes
+		special_icon = GFX_terrain_dizangqun
+		level_cap = {
+			province_max = 1
+		}
+	}
+	terrain_huashandexianjie_province = {
+		show_on_map = 0
+		is_buildable = no
+		base_cost = 12000
+		per_controlled_building_extra_cost = 5000
+		damage_factor = 0 # This building can't be damaged by regular strat bombing
+		spawn_point = dummy_spawn
+		disabled_in_dmz = no
+		always_shown = yes
+		only_display_if_exists = yes
+		special_icon = GFX_terrain_huashandexianjie
+		level_cap = {
+			province_max = 1
+		}
+	}
+	terrain_jiudu_province = {
+		show_on_map = 0
+		is_buildable = no
+		base_cost = 12000
+		per_controlled_building_extra_cost = 5000
+		damage_factor = 0 # This building can't be damaged by regular strat bombing
+		spawn_point = dummy_spawn
+		disabled_in_dmz = no
+		always_shown = yes
+		only_display_if_exists = yes
+		special_icon = GFX_terrain_jiudu
+		level_cap = {
+			province_max = 1
+		}
+	}
+	terrain_renleicunluo_province = {
+		show_on_map = 0
+		is_buildable = no
+		base_cost = 12000
+		per_controlled_building_extra_cost = 5000
+		damage_factor = 0 # This building can't be damaged by regular strat bombing
+		spawn_point = dummy_spawn
+		disabled_in_dmz = no
+		always_shown = yes
+		only_display_if_exists = yes
+		special_icon = GFX_terrain_renleicunluo
+		level_cap = {
+			province_max = 1
+		}
+	}
+	terrain_shifeiquzhiting_province = {
+		show_on_map = 0
+		is_buildable = no
+		base_cost = 12000
+		per_controlled_building_extra_cost = 5000
+		damage_factor = 0 # This building can't be damaged by regular strat bombing
+		spawn_point = dummy_spawn
+		disabled_in_dmz = no
+		always_shown = yes
+		only_display_if_exists = yes
+		special_icon = GFX_terrain_shifeiquzhiting
+		level_cap = {
+			province_max = 1
+		}
+	}
+	terrain_tengyuanyinjudi_province = {
+		show_on_map = 0
+		is_buildable = no
+		base_cost = 12000
+		per_controlled_building_extra_cost = 5000
+		damage_factor = 0 # This building can't be damaged by regular strat bombing
+		spawn_point = dummy_spawn
+		disabled_in_dmz = no
+		always_shown = yes
+		only_display_if_exists = yes
+		special_icon = GFX_terrain_tengyuanyinjudi
+		level_cap = {
+			province_max = 1
+		}
+	}
+	terrain_xuanwuze_province = {
+		show_on_map = 0
+		is_buildable = no
+		base_cost = 12000
+		per_controlled_building_extra_cost = 5000
+		damage_factor = 0 # This building can't be damaged by regular strat bombing
+		spawn_point = dummy_spawn
+		disabled_in_dmz = no
+		always_shown = yes
+		only_display_if_exists = yes
+		special_icon = GFX_terrain_xuanwuze
+		level_cap = {
+			province_max = 1
+		}
+	}
+	terrain_yushendemuchang_province = {
+		show_on_map = 0
+		is_buildable = no
+		base_cost = 12000
+		per_controlled_building_extra_cost = 5000
+		damage_factor = 0 # This building can't be damaged by regular strat bombing
+		spawn_point = dummy_spawn
+		disabled_in_dmz = no
+		always_shown = yes
+		only_display_if_exists = yes
+		special_icon = GFX_terrain_yushendemuchang
+		level_cap = {
+			province_max = 1
+		}
+	}
+	terrain_youdingtian_province = {
+		show_on_map = 0
+		is_buildable = no
+		base_cost = 12000
+		per_controlled_building_extra_cost = 5000
+		damage_factor = 0 # This building can't be damaged by regular strat bombing
+		spawn_point = dummy_spawn
+		disabled_in_dmz = no
+		always_shown = yes
+		only_display_if_exists = yes
+		special_icon = GFX_terrain_youdingtian
+		level_cap = {
+			province_max = 1
+		}
+	}
+}
+spawn_points = {
+	dummy_spawn = {
+		type = province
+		max = 1
+	}
+}

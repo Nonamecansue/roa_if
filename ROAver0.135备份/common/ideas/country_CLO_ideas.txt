@@ -1,0 +1,574 @@
+ideas = {
+	country = {
+		CLO_neibusaodong1_idea = {
+			picture = chi_war_of_resistance3
+			modifier = {
+				stability_factor = -0.3
+				guli_drift = -0.05
+				training_time_factor = 0.25
+			}
+		}
+		CLO_neibusaodong2_idea = {
+			name = CLO_neibusaodong1_idea
+			picture = chi_war_of_resistance3
+			modifier = {
+				stability_factor = -0.24
+				guli_drift = -0.04
+				training_time_factor = 0.2
+			}
+		}
+		CLO_neibusaodong3_idea = {
+			name = CLO_neibusaodong1_idea
+			picture = chi_war_of_resistance3
+			modifier = {
+				stability_factor = -0.18
+				guli_drift = -0.03
+				training_time_factor = 0.15
+			}
+		}
+		CLO_neibusaodong4_idea = {
+			name = CLO_neibusaodong1_idea
+			picture = chi_war_of_resistance3
+			modifier = {
+				stability_factor = -0.12
+				guli_drift = -0.02
+				training_time_factor = 0.1
+			}
+		}
+		CLO_neibusaodong5_idea = {
+			name = CLO_neibusaodong1_idea
+			picture = chi_war_of_resistance3
+			modifier = {
+				stability_factor = -0.06
+				guli_drift = -0.01
+				training_time_factor = 0.05
+			}
+		}
+		CLO_zhengfu1_idea = {
+			picture = generic_disjointed_gov
+			modifier = {
+				political_power_factor = -0.25
+				production_speed_buildings_factor = -0.2
+				industrial_capacity_factory = -0.2
+			}
+		}
+		CLO_zhengfu2_idea = {
+			picture = generic_disjointed_gov
+			modifier = {
+				political_power_factor = -0.20
+				production_speed_buildings_factor = -0.16
+				industrial_capacity_factory = -0.16
+			}
+		}
+		CLO_zhengfu3_idea = {
+			picture = generic_disjointed_gov
+			modifier = {
+				political_power_factor = -0.15
+				production_speed_buildings_factor = -0.12
+				industrial_capacity_factory = -0.12
+			}
+		}
+		CLO_zhengfu4_idea = {
+			picture = generic_disjointed_gov
+			modifier = {
+				political_power_factor = -0.1
+				production_speed_buildings_factor = -0.08
+				industrial_capacity_factory = -0.08
+			}
+		}
+		CLO_zhengfu5_idea = {
+			picture = generic_disjointed_gov
+			modifier = {
+				political_power_factor = -0.05
+				production_speed_buildings_factor = -0.04
+				industrial_capacity_factory = -0.04
+			}
+		}
+		CLO_yuezhanbianzhi_idea = {
+			name = CLO_yuezhanbianzhi
+			picture = v_partial_economic_mobilisation
+			modifier = {
+				political_power_gain = 0.05
+				command_power_gain_mult = 0.5
+				max_command_power_mult = 1
+			}
+		}
+		CLO_xiandaihuadiyubdui_idea = {
+			name = CLO_xiandaihuadiyubdui
+			picture = tur_kemalist_officers
+			research_bonus = {
+				military = 0.15
+			}
+		}
+		CLO_leirenxiandaihua_idea = {
+			name = CLO_leirenxiandaihua
+			picture = hol_expand_the_colonial_army
+			research_bonus = {
+				science = 0.1
+			}
+		}
+		CLO_linglixiandaihua_idea = {
+			name = CLO_linglixiandaihua
+			picture = jap_supremacy_of_will
+			research_bonus = {
+				magic = 0.1
+			}
+		}
+		CLO_shenchanxianyure_idea = {
+			name = CLO_shenchanxianyure
+			picture = v_tot_economic_mobilisation
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.2
+			}
+		}
+		CLO_diyuhuoyaogongsi_idea = {
+			name = CLO_diyuhuoyaogongsi
+			picture = jap_zaibatsu
+			equipment_bonus = {
+				gun_a = {
+					soft_attack = 0.1
+					instant = yes
+				}
+				mortar_a = {
+					soft_attack = 0.1
+					instant = yes
+				}
+			}
+		}
+		CLO_yaojinggulifaan1_idea = {
+			picture = v_tot_economic_mobilisation
+			modifier = {
+				production_speed_buildings_factor = -0.05
+				industrial_capacity_factory = -0.05
+			}
+		}
+		CLO_yaojinggulifaan2_idea = {
+			picture = v_tot_economic_mobilisation
+			modifier = {
+				
+			}
+		}
+		CLO_yaojinggulifaan3_idea = {
+			picture = v_tot_economic_mobilisation
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		CLO_yaojinggulifaan4_idea = {
+			picture = v_tot_economic_mobilisation
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+		CLO_yaojinggulifaan5_idea = {
+			picture = v_tot_economic_mobilisation
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.15
+			}
+		}
+		CLO_yaojinggulifaan6_idea = {
+			picture = v_tot_economic_mobilisation
+			modifier = {
+				production_speed_buildings_factor = 0.2
+				industrial_capacity_factory = 0.2
+			}
+		}
+		CLO_yaojinggulifaan7_idea = {
+			picture = v_tot_economic_mobilisation
+			modifier = {
+				production_speed_buildings_factor = 0.25
+				industrial_capacity_factory = 0.25
+			}
+		}
+		CLO_diyulinglijiejing_idea = {
+			picture = FRA_national_resistance_council
+			name = CLO_diyulinglijiejing
+			research_bonus = {
+				industrys = 0.1
+			}
+		}
+		CLO_danmugongsi_idea = {
+			name = CLO_danmugongsi
+			picture = breda
+			equipment_bonus = {
+				magic_energy_a = {
+					instant = yes
+					soft_attack = 0.2
+					hard_attack = 0.05
+					build_cost_ic = 0.1
+				}
+			}
+		}
+		CLO_yaojingjitihua_idea = {
+			name = CLO_yaojingjitihua
+			picture = por_iberian_workers_united
+			modifier = {
+				industrial_capacity_factory = 0.15
+				conscription = -0.01
+			}
+		}
+		CLO_yaojingtudigaige_idea1 = {
+			picture = FRA_matignon_agreements
+			modifier = {
+				production_speed_buildings_factor = -0.3
+				political_power_gain = -0.2
+			}
+		}
+		CLO_yaojingtudigaige_idea2 = {
+			name = CLO_yaojingtudigaige
+			picture = jap_the_unthinkable_option
+			modifier = {
+				production_speed_buildings_factor = 0.25
+				political_power_gain = 0.15
+			}
+		}
+		CLO_liliangjiexi_idea = {
+			name = CLO_liliangjiexi
+			picture = jap_supremacy_of_technology
+			modifier = {
+				research_speed_factor = 0.15
+			}
+		}
+		CLO_yishitongren_idea = {
+			name = CLO_yishitongren
+			picture = jap_the_unthinkable_option
+			modifier = {
+				compliance_growth = 0.15
+				resistance_growth = -0.35
+			}
+		}
+		CLO_xindiyu_idea = {
+			name = CLO_xindiyu
+			picture = gre_venerate_the_ancient_hellenes_complete
+			modifier = {
+				monthly_population = 0.15
+				consumer_goods_factor = -0.1
+			}
+		}
+		CLO_meiyouzhongzuchayi_idea = {
+			name = CLO_meiyouzhongzuchayi
+			picture = eng_the_kings_party
+			modifier = {
+				ST_race_penalty_all_factor = -0.3
+				CONV_RULE_cannot_convert = 1
+			}
+		}
+		CLO_yaojingrangbu_idea = {
+			name = CLO_yaojingrangbu
+			picture = chi_war_of_resistance
+			modifier = {
+				stability_factor = -0.05
+				FAPO_RULE_forbidden = 1
+			}
+		}
+		CLO_sixiangqingxi_idea = {
+			name = CLO_sixiangqingxi
+			picture = generic_fascism_banned
+			modifier = {
+				stability_weekly = 0.006
+				OL_daily_gain = -0.03
+			}
+		}
+		CLO_diyuwaiyaojing_idea = {
+			name = CLO_diyuwaiyaojing
+			picture = chi_army_corruption3
+			modifier = {
+				send_volunteer_factor = 0.2
+			}
+		}
+		CLO_quanlidefensan_idea = {
+			name = CLO_quanlidefensan
+			picture = generic_disjointed_gov
+			modifier = {
+				political_power_factor = -0.08
+			}
+		}
+		CLO_shenhua_idea = {
+			name = CLO_shenhua
+			picture = gre_venerate_the_ancient_hellenes
+			modifier = {
+				political_power_factor = 0.15
+				stability_weekly = 0.001
+			}
+		}
+		CLO_pisifaan_idea = {
+			name = CLO_pisifaan
+			picture = HUN_treaty_of_triannon
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				mobilization_laws_cost_factor = -0.1
+			}
+		}
+		CLO_zhenghegebuluo_idea = {
+			name = CLO_zhenghegebuluo
+			picture = chi_warlord_integration5
+			modifier = {
+				conscription = 0.02
+			}
+		}
+		CLO_zhenzhengyaojingzhiwang_idea = {
+			name = CLO_zhenzhengyaojingzhiwang
+			picture = danieli
+			modifier = {
+				political_power_factor = 0.15
+			}
+		}
+		CLO_xuexichushengjie_idea = {
+			name = CLO_xuexichushengjie
+			picture = generic_production_bonus
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+		CLO_zhaoliangdiyu_idea = {
+			name = CLO_zhaoliangdiyu
+			picture = generic_democratic_drift_bonus
+			modifier = {
+				max_command_power_mult = 1
+				special_forces_cap = 0.1
+			}
+		}
+		CLO_xuanchenyanmo_idea = {
+			name = CLO_xuanchenyanmo
+			picture = generic_fascism_drift_bonus
+			modifier = {
+				ST_race_penalty_Ghost_factor = -0.25
+			}
+		}
+		CLO_tiaozhanhxx_idea = {
+			name = CLO_tiaozhanhxx
+			picture = generic_intel_bonus
+			modifier = {
+				justify_war_goal_time = -0.5
+			}
+		}
+		CLO_zhaojiqitashijie_idea = {
+			name = CLO_zhaojiqitashijie
+			picture = generic_research_bonus
+			modifier = {
+				stability_factor = -0.1
+				research_speed_factor = 0.1
+			}
+		}
+		CLO_tibayaojing_idea = {
+			name = CLO_tibayaojing
+			picture = FRA_scw_intervention_nationalists_focus
+			modifier = {
+				army_leader_cost_factor = -0.15
+			}
+		}
+		CLO_santiheyi_idea = {
+			name = CLO_santiheyi
+			picture = generic_pp_unity_bonus
+			modifier = {
+				political_power_gain = 0.2
+			}
+		}
+		CLO_geiyubufenliliang_idea = {
+			name = CLO_geiyubufenliliang
+			picture = FRA_national_mobilization_focus
+			modifier = {
+				army_morale_factor = 0.05
+			}
+			research_bonus = {
+				race = 0.1
+			}
+		}
+		CLO_zujianweiwenbudui_idea = {
+			name = CLO_zujianweiwenbudui
+			picture = generic_infantry_bonus
+			modifier = {
+				training_time_factor = -0.1
+			}
+		}
+		CLO_jiejinhuayaojing_idea = {
+			name = CLO_jiejinhuayaojing
+			picture = generic_agrarian_society
+			modifier = {
+				conscription_factor = -0.13
+			}
+		}
+		CLO_yanjiang_idea = {
+			name = CLO_yanjiang
+			picture = vittoria_mutilata
+			modifier = {
+				guli_drift = 0.001
+			}
+		}
+		CLO_yaojingcishang_idea = {
+			name = CLO_yaojingcishang
+			picture = warrior_traditions_idea
+			modifier = {
+				army_morale_factor = 0.05
+				army_org_Factor = 0.1
+				political_power_cost = -0.05
+			}
+		}
+		CLO_yaojingjunguansuo_idea = {
+			name = CLO_yaojingjunguansuo
+			picture = chi_whampoa_military_academy
+			modifier = {
+				army_leader_cost_factor = -0.1
+				army_leader_start_level = 1
+			}
+		}
+		CLO_zhaomuxinbing_idea = {
+			name = CLO_zhaomuxinbing
+			picture = generic_manpower_bonus
+			modifier = {
+				conscription = 0.03
+			}
+		}
+		CLO_diyushengminghua_idea1 = {
+			picture = chi_war_of_resistance
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = -0.05
+			}
+		}
+		CLO_diyushengminghua_idea2 = {
+			name = CLO_diyushengminghua
+			picture = bul_tobacco_exports
+			modifier = {
+				consumer_goods_factor = -0.05
+				local_resources_factor = 0.1
+			}
+		}
+		CLO_guijizhixu_idea = {
+			picture = chi_army_corruption3
+			available = {
+				CLO = {
+					exists = yes
+					not = {
+						has_war_with = ROOT
+					}
+				}
+			}
+			modifier = {
+				compliance_gain = 0.1
+			}
+		}
+		CLO_nvshendeshili_idea = {
+			name = CLO_nvshendeshili
+			picture = gre_venerate_the_ancient_hellenes_complete
+			modifier = {
+				modifier_army_sub_unit_ma_shield_infantry_attack_factor = 0.2
+				modifier_army_sub_unit_ma_shield_infantry_defence_factor = 0.2
+				modifier_army_sub_unit_ma_shield_tank_attack_factor = 0.2
+				modifier_army_sub_unit_ma_shield_tank_defence_factor = 0.2
+				modifier_army_sub_unit_sc_shield_infantry_attack_factor = 0.2
+				modifier_army_sub_unit_sc_shield_infantry_defence_factor = 0.2
+				modifier_army_sub_unit_sc_shield_tank_attack_factor = 0.2
+				modifier_army_sub_unit_sc_shield_tank_defence_factor = 0.2
+			}
+		}
+		CLO_chunhuadeyaojing_idea = {
+			name = CLO_chunhuadeyaojing
+			picture = jap_militarism_showa
+			modifier = {
+				army_org_Factor = 0.15
+				army_attack_factor = 0.2
+				army_defence_factor = 0.2
+				land_night_attack = 1
+				conscription_factor = -0.25
+				mobilization_laws_cost_factor = 0.2
+			}
+			research_bonus = {
+				race = -0.25
+			}
+		}
+		CLO_yueqiuzuozhanjingyan_idea = {
+			name = CLO_yueqiuzuozhanjingyan
+			picture = air_support_focus
+			targeted_modifier = {
+				tag = EET
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+		}
+		CLO_yueqiushentoujingyan_idea = {
+			name = CLO_yueqiushentoujingyan
+			picture = generic_spy_intel
+			modifier = {
+				operative_slot = 1
+				intel_network_gain_factor = 0.25
+			}
+		}
+		CLO_chuncuiyaojing_idea = {
+			name = CLO_chuncuiyaojing
+			picture = gre_venerate_the_ancient_hellenes_hoplite
+			modifier = {
+				army_org_Factor = 0.15
+				army_attack_factor = 0.2
+				army_defence_factor = 0.2
+				land_night_attack = 1
+				conscription_factor = -0.25
+				mobilization_laws_cost_factor = 0.2
+				PO_RULE_no_bad_influence = 1
+				PO_daily_gain = 0.01
+			}
+			research_bonus = {
+				race = -0.75
+			}
+		}
+		CLO_hekaxinzhixu_idea = {
+			name = CLO_hekaxinzhixu
+			picture = gre_venerate_the_ancient_hellenes
+			modifier = {
+				LS_subject_level_low_time_factor = -0.5
+			}
+		}
+		CLO_gongping_idea = {
+			picture = hol_depillarization
+			modifier = {
+				research_speed_factor = 0.1
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.2
+				training_time_factor = -0.2
+				political_power_factor = 0.25
+				weekly_manpower = 5
+				PO_daily_gain = 0.03
+			}
+		}
+		CLO_gongping1_idea = {
+			picture = hol_depillarization
+			name = CLO_gongping_idea
+			modifier = {
+				research_speed_factor = -0.1
+				production_speed_buildings_factor = -0.15
+				industrial_capacity_factory = -0.2
+				training_time_factor = 0.2
+				political_power_factor = -0.25
+				weekly_manpower = -5
+				PO_daily_gain = -0.03
+			}
+		}
+		CLO_yiliaozhiwaiqinglizhizhong_idea = {
+			picture = generic_communism_drift_bonus
+			modifier = {
+				fandong_drift = 0.03
+				stability_weekly = 0.003
+				political_power_factor = 0.05
+			}
+		}
+		CLO_zhengrujihua_idea = {
+			picture = generic_fascism_drift_bonus
+			modifier = {
+				neworder_drift = 0.01
+				political_power_factor = 0.15
+			}
+		}
+		CLO_diyudahan_idea = {
+			name = CLO_diyudahan
+			picture = generic_fascism_drift_bonus
+			modifier = {
+				LOOT_no_cd = 1
+			}
+		}
+	}
+}

@@ -1,0 +1,556 @@
+﻿add_namespace = nar
+##########新闻###########
+news_event = {#
+	id = nar.1
+	title = nar.1.t
+	desc = nar.1.d
+###图片预留###picture = GFX_news_event_nar.1
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = nar.1.1
+		trigger = {
+			tag = NAR
+		}
+	}
+
+	option = {
+		name = nar.1.2
+		trigger = {
+			not = { tag = NAR }
+		}
+	}
+
+}
+
+news_event = {#
+	id = nar.2
+	title = nar.2.t
+	desc = nar.2.d
+###图片预留###picture = GFX_news_event_nar.2
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = nar.2.1
+		trigger = {
+			tag = NAR
+		}
+	}
+
+	option = {
+		name = nar.2.2
+		trigger = {
+			not = { tag = NAR }
+		}
+	}
+
+}
+
+news_event = {#
+	id = nar.3
+	title = nar.3.t
+	desc = nar.3.d
+###图片预留###picture = GFX_news_event_nar.3
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = nar.3.1
+		trigger = {
+			tag = NAR
+		}
+	}
+
+	option = {
+		name = nar.3.2
+		trigger = {
+			not = { tag = NAR }
+		}
+	}
+
+}
+
+news_event = {#
+	id = nar.4
+	title = nar.4.t
+	desc = nar.4.d
+###图片预留###picture = GFX_news_event_nar.4
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = nar.4.1
+		trigger = {
+			tag = NAR
+		}
+	}
+
+	option = {
+		name = nar.4.2
+		trigger = {
+			not = { tag = NAR }
+		}
+	}
+
+}
+
+news_event = {#
+	id = nar.5
+	title = nar.5.t
+	desc = nar.5.d
+###图片预留###picture = GFX_news_event_nar.5
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = nar.5.1
+		trigger = {
+			tag = NAR
+		}
+	}
+
+	option = {
+		name = nar.5.2
+		trigger = {
+			not = { tag = NAR }
+		}
+	}
+
+}
+
+news_event = {#
+	id = nar.6
+	title = nar.6.t
+	desc = nar.6.d
+###图片预留###picture = GFX_news_event_nar.6
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = nar.6.1
+		trigger = {
+			tag = NAR
+		}
+	}
+
+	option = {
+		name = nar.6.2
+		trigger = {
+			not = { tag = NAR }
+		}
+	}
+
+}
+
+news_event = {#
+	id = nar.7
+	title = nar.7.t
+	desc = nar.7.d
+###图片预留###picture = GFX_news_event_nar.7
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = nar.7.1
+		trigger = {
+			tag = NAR
+		}
+	}
+
+	option = {
+		name = nar.7.2
+		trigger = {
+			not = { tag = NAR }
+		}
+	}
+
+}
+
+news_event = {#
+	id = nar.8
+	title = nar.8.t
+	desc = nar.8.d
+###图片预留###picture = GFX_news_event_nar.8
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = nar.8.1
+		trigger = {
+			tag = NAR
+		}
+	}
+
+	option = {
+		name = nar.8.2
+		trigger = {
+			not = { tag = NAR }
+		}
+	}
+
+}
+
+country_event = {#
+	id = nar.9
+	title = nar.9.t
+	desc = nar.9.d
+###图片预留###picture = GFX_news_event_nar.9
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = nar.9.1
+
+	}
+}
+
+country_event = {#
+	id = nar.10
+	title = nar.10.t
+	desc = nar.10.d
+###图片预留###picture = GFX_news_event_nar.10
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = nar.10.1
+
+	}
+}
+
+country_event = {#
+	id = nar.11
+	title = nar.11.t
+	desc = nar.11.d
+###图片预留###picture = GFX_news_event_nar.11
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = nar.11.1
+
+	}
+}
+
+country_event = {#
+	id = nar.12
+	title = nar.12.t
+	desc = nar.12.d
+###图片预留###picture = GFX_news_event_nar.12
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = nar.12.1
+		add_ideas = NAR_kaochaxianjinshili_idea1
+		set_country_flag = NAR_kaochaxianjinshili_CIR
+		custom_effect_tooltip = MSH_weilecunzai_tt
+		CIR = {
+			can_use = yes
+			ROOT = {
+				can_use = yes
+			}
+		}
+	}
+
+	option = {
+		name = nar.12.2
+		add_ideas = NAR_kaochaxianjinshili_idea2
+		set_country_flag = NAR_kaochaxianjinshili_SEJ
+		custom_effect_tooltip = MSH_weilecunzai_tt
+		MSH_add_boyi10 = yes
+		MSH_add_boyi10 = yes
+		SEJ = {
+			can_use = yes
+			ROOT = {
+				can_use = yes
+			}
+		}
+	}
+
+	option = {
+		name = nar.12.3
+		add_ideas = NAR_kaochaxianjinshili_idea3
+		set_country_flag = NAR_kaochaxianjinshili_TKM
+		custom_effect_tooltip = MSH_weilecunzai_tt
+		TKM = {
+			can_use = yes
+			ROOT = {
+				can_use = yes
+			}
+		}
+	}
+
+	option = {
+		name = nar.12.4
+		add_ideas = NAR_kaochaxianjinshili_idea4
+		set_country_flag = NAR_kaochaxianjinshili_TEG
+		custom_effect_tooltip = MSH_weilecunzai_tt
+		TEG = {
+			can_use = yes
+			ROOT = {
+				can_use = yes
+			}
+		}
+	}
+}
+
+news_event = {#
+	id = nar.13
+	title = nar.13.t
+	desc = nar.13.d
+###图片预留###picture = GFX_news_event_nar.13
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = nar.13.1
+		trigger = {
+			tag = NAR
+		}
+	}
+
+	option = {
+		name = nar.13.2
+		trigger = {
+			not = { tag = NAR }
+		}
+	}
+
+}
+
+news_event = {#
+	id = nar.14
+	title = nar.14.t
+	desc = nar.14.d
+###图片预留###picture = GFX_news_event_nar.14
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = nar.14.1
+		trigger = {
+			tag = NAR
+		}
+	}
+
+	option = {
+		name = nar.14.2
+		trigger = {
+			not = { tag = NAR }
+		}
+	}
+
+}
+
+
+country_event = {#
+	id = nar.15
+	title = nar.15.t
+	desc = nar.15.d
+###图片预留###picture = GFX_news_event_nar.15
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = nar.15.1
+		FROM = {
+			can_use = yes
+		}
+		add_timed_idea = {
+			idea = NAR_kejihuzhu_idea2
+			days = 730
+		}
+	}
+}
+
+
+country_event = {#
+	id = nar.16
+	title = nar.16.t
+	desc = nar.16.d
+###图片预留###picture = GFX_news_event_nar.16
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = nar.16.1
+		FROM = {
+			can_use = yes
+		}
+		add_timed_idea = {
+			idea = NAR_kejihuzhu_idea2
+			days = 730
+		}
+	}
+}
+
+country_event = {#
+	id = nar.17
+	title = nar.17.t
+	desc = nar.17.d
+###图片预留###picture = GFX_news_event_nar.17
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = nar.17.1
+		FROM = {
+			can_use = yes
+		}
+		add_timed_idea = {
+			idea = NAR_kejihuzhu_idea2
+			days = 730
+		}
+	}
+}
+
+country_event = {#
+	id = nar.18
+	title = nar.18.t
+	desc = nar.18.d
+###图片预留###picture = GFX_news_event_nar.18
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = nar.18.1
+		FROM = {
+			can_use = yes
+		}
+		add_timed_idea = {
+			idea = NAR_kejihuzhu_idea2
+			days = 730
+		}
+	}
+}
+
+country_event = {#
+	id = nar.19
+	title = nar.19.t
+	desc = nar.19.d
+###图片预留###picture = GFX_news_event_nar.19
+	fire_only_once = no
+	is_triggered_only = no
+	mean_time_to_happen = {
+		days = 2
+	}
+	trigger = {
+		is_subject_of = MRS
+		MRS = {
+			has_idea = NAR_ruohuagainian_idea
+		}
+		not = {
+			has_idea = NAR_ruohuagainian_idea2
+		}
+		
+	}
+	option = {
+		name = nar.19.1
+		add_ideas = NAR_ruohuagainian_idea2
+	}
+}
+
+country_event = {#
+	id = nar.20
+	title = nar.20.t
+	desc = nar.20.d
+###图片预留###picture = GFX_news_event_nar.20
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = nar.20.1
+		every_country = {
+			MRS_mrs = {
+				set_nationality = ROOT
+			}
+		}
+		hidden_effect = {
+			news_event = { days = 2 id = nar.14 }
+		}
+	}
+}
+
+country_event = {#
+	id = nar.21
+	title = nar.21.t
+	desc = nar.21.d
+###图片预留###picture = GFX_news_event_nar.21
+	fire_only_once = no
+	is_triggered_only = yes
+	hidden = yes
+	option = {
+
+	}
+	immediate = {
+		if = {
+			limit = {
+				MRS = { has_completed_focus = MRS_jianxitongzi}
+			}
+			OKI = { country_event = nar.20 }
+			else = {
+				random_list = {
+					50 = {
+						OKI = { country_event = nar.20 }
+					}
+					50 = {
+
+					}
+				}
+			}
+		}
+		
+	}
+}

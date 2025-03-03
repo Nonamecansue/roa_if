@@ -1,0 +1,294 @@
+defined_text = {
+	name = GetSGS_gongyehuanjieduan
+	text = {
+		trigger = {
+			SGS = {
+				check_variable = {
+					SGS_gongyehua = 1
+				}
+			}
+		}
+		localization_key = GetSGS_gongyehuanjieduan_1
+	}
+	text = {
+		trigger = {
+			SGS = {
+				check_variable = {
+					SGS_gongyehua = 2
+				}
+			}
+		}
+		localization_key = GetSGS_gongyehuanjieduan_2
+	}
+	text = {
+		trigger = {
+			SGS = {
+				check_variable = {
+					SGS_gongyehua = 3
+				}
+			}
+		}
+		localization_key = GetSGS_gongyehuanjieduan_3
+	}
+	text = {
+		trigger = {
+			SGS = {
+				check_variable = {
+					SGS_gongyehua = 4
+				}
+			}
+		}
+		localization_key = GetSGS_gongyehuanjieduan_4
+	}
+}
+defined_text = {
+	name = GetSGS_jiquanxiaoguo
+	text = {
+		trigger = {
+			SGS = {
+				check_variable = {
+					SGS_jiquandu < 40
+				}
+			}
+		}
+		localization_key = GetSGS_jiquanxiaoguo_1
+	}
+	text = {
+		trigger = {
+			SGS = {
+				check_variable = {
+					SGS_jiquandu > 39.99
+					SGS_jiquandu < 60
+				}
+			}
+		}
+		localization_key = GetSGS_jiquanxiaoguo_2
+	}
+	text = {
+		trigger = {
+			SGS = {
+				check_variable = {
+					SGS_jiquandu > 59.99
+					SGS_jiquandu < 90
+				}
+			}
+		}
+		localization_key = GetSGS_jiquanxiaoguo_3
+	}
+	text = {
+		trigger = {
+			SGS = {
+				check_variable = {
+					SGS_jiquandu > 89.99
+				}
+			}
+		}
+		localization_key = GetSGS_jiquanxiaoguo_4
+	}
+	
+}
+defined_text = {
+	name = GetSGS_xiudashaxiaoguo
+	text = {
+		trigger = {
+			SGS = {
+				check_variable = {
+					SGS_jiandasha < 50
+				}
+			}
+		}
+		localization_key = GetSGS_xiudashaxiaoguo_1
+	}
+	text = {
+		trigger = {
+			SGS = {
+				check_variable = {
+					SGS_jiandasha > 49.99
+					SGS_jiandasha < 75
+				}
+			}
+		}
+		localization_key = GetSGS_xiudashaxiaoguo_2
+	}
+	text = {
+		trigger = {
+			SGS = {
+				check_variable = {
+					SGS_jiandasha > 74.99
+					SGS_jiandasha < 100
+				}
+			}
+		}
+		localization_key = GetSGS_xiudashaxiaoguo_3
+	}
+	text = {
+		trigger = {
+			SGS = {
+				check_variable = {
+					SGS_jiandasha > 99.99
+				}
+			}
+		}
+		localization_key = GetSGS_xiudashaxiaoguo_4
+	}
+	
+}
+defined_text = {
+	name = GetSGS_lingshifaanzhengbing
+	text = {
+		trigger = {
+			SGS = {
+				has_country_flag = SGS_yaojingzhengbingfaan_flag
+			}
+		}
+		localization_key = GetSGS_lingshifaanzhengbing_1
+	}
+	text = {
+		trigger = {
+			SGS = {
+				not = {has_country_flag = SGS_yaojingzhengbingfaan_flag}
+			}
+		}
+		localization_key = GetSGS_lingshifaanzhengbing_2
+	}
+}
+defined_text = {
+	name = GetSGS_lingshifaangongye
+	text = {
+		trigger = {
+			SGS = {
+				has_country_flag = SGS_jingjigongyefaan_flag
+			}
+		}
+		localization_key = GetSGS_lingshifaangongye_1
+	}
+	text = {
+		trigger = {
+			SGS = {
+				not = {has_country_flag = SGS_jingjigongyefaan_flag}
+			}
+		}
+		localization_key = GetSGS_lingshifaangongye_2
+	}
+}
+defined_text = {
+	name = GetSGS_jingjijingling
+	text = {
+		trigger = {
+			SGS = {
+				has_country_flag = SGS_jingjijingling_flag
+			}
+		}
+		localization_key = GetSGS_jingjijingling_1
+	}
+	text = {
+		trigger = {
+			SGS = {
+				not = {has_country_flag = SGS_jingjijingling_flag}
+			}
+		}
+		localization_key = GetSGS_jingjijingling_2
+	}
+}
+defined_text = {
+	name = GetSGS_zhengshoufaan
+	text = {
+		trigger = {
+			SGS = {
+				has_country_flag = SGS_zhengshoufaan_flag
+			}
+		}
+		localization_key = GetSGS_zhengshoufaan_1
+	}
+	text = {
+		trigger = {
+			SGS = {
+				not = {has_country_flag = SGS_zhengshoufaan_flag}
+			}
+		}
+		localization_key = GetSGS_zhengshoufaan_2
+	}
+}
+defined_text = {
+	name = GetSGS_zhengzhijizhongfaan
+	text = {
+		trigger = {
+			SGS = {
+				has_country_flag = SGS_zhengzhijizhongfaan_flag
+			}
+		}
+		localization_key = GetSGS_zhengzhijizhongfaan_1
+	}
+	text = {
+		trigger = {
+			SGS = {
+				not = {has_country_flag = SGS_zhengzhijizhongfaan_flag}
+			}
+		}
+		localization_key = GetSGS_zhengzhijizhongfaan_2
+	}
+}
+defined_text = {
+	name = GetSGS_yurenleijiaohao
+	text = {
+		trigger = {
+			SGS = {
+				has_country_flag = SGS_yurenleijiaohao_flag
+			}
+		}
+		localization_key = GetSGS_yurenleijiaohao_1
+	}
+	text = {
+		trigger = {
+			SGS = {
+				not = {has_country_flag = SGS_yurenleijiaohao_flag}
+			}
+		}
+		localization_key = GetSGS_yurenleijiaohao_2
+	}
+}
+defined_text = {
+	name = GetSGS_gongyehuajingdu
+	text = {
+		trigger = {
+			SGS = {
+				check_variable = {
+					SGS_gongyehua = 1
+				}
+			}
+		}
+		localization_key = GetSGS_gongyehuajingdu_1
+	}
+	text = {
+		trigger = {
+			SGS = {
+				check_variable = {
+					SGS_gongyehua = 2
+				}
+			}
+		}
+		localization_key = GetSGS_gongyehuajingdu_2
+	}
+	text = {
+		trigger = {
+			SGS = {
+				check_variable = {
+					SGS_gongyehua = 3
+				}
+			}
+		}
+		localization_key = GetSGS_gongyehuajingdu_3
+	}
+	text = {
+		trigger = {
+			SGS = {
+				check_variable = {
+					SGS_gongyehua = 4
+				}
+			}
+		}
+		localization_key = GetSGS_gongyehuajingdu_4
+	}
+}
+
+

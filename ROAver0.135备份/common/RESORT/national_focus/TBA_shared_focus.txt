@@ -1,0 +1,136 @@
+shared_focus = {
+	id = TBA_101
+	icon = GFX_focus_TBA_qiangzhisixin
+	cost = 10
+	prerequisite = {
+		focus = TBA_66
+	}
+	allow_branch = {
+		has_completed_focus = TBA_74
+	}
+	x = 13
+	y = 10
+	completion_reward = {
+		add_ideas = TBA_qiangzhisixin
+	}
+}
+shared_focus = {
+	id = TBA_83
+	icon = GFX_focus_TBA_xianggongheguo1
+	cost = 10
+	prerequisite = {
+		focus = TBA_76
+		focus = TBA_78
+	}
+	mutually_exclusive = {
+		focus = TBA_85
+		focus = TBA_88
+	}
+	available = {
+		NOT = {
+			has_war_with = TEG
+		}
+		country_exists = TEG
+	}
+	allow_branch = {
+		TEG = {
+			OR = {
+				has_government = qinwai
+			}
+			NOT = {
+				has_government = fandong
+				has_government = neworder
+				has_government = oldorder
+				has_government = oldgenso
+				has_government = guli
+			}
+		}
+	}
+	x = 25
+	y = 7
+	completion_reward = {
+		TEG = {
+			qiangjiemeng = yes
+		}
+	}
+}
+shared_focus = {
+	id = TBA_108
+	icon = GFX_focus_TBA_xianggongheguo2
+	cost = 10
+	prerequisite = {
+		focus = TBA_76
+		focus = TBA_78
+	}
+	mutually_exclusive = {
+		focus = TBA_85
+		focus = TBA_88
+	}
+	available = {
+		NOT = {
+			has_war_with = TEG
+		}
+		country_exists = TEG
+	}
+	allow_branch = {
+		TEG = {
+			OR = {
+				has_government = fandong
+				has_government = neworder
+			}
+			NOT = {
+				has_government = oldorder
+				has_government = oldgenso
+				has_government = guli
+				has_government = qinwai
+			}
+		}
+	}
+	x = 25
+	y = 7
+	completion_reward = {
+		TEG = {
+			qiangjiemeng = yes
+		}
+	}
+}
+shared_focus = {
+	id = TBA_109
+	icon = GFX_focus_TBA_xianggongheguo3
+	cost = 10
+	prerequisite = {
+		focus = TBA_76
+		focus = TBA_78
+	}
+	mutually_exclusive = {
+		focus = TBA_85
+		focus = TBA_88
+	}
+	available = {
+		NOT = {
+			has_war_with = TEG
+		}
+		country_exists = TEG
+	}
+	allow_branch = {
+		TEG = {
+			OR = {
+				has_government = oldorder
+				has_government = oldgenso
+				has_government = guli
+			}
+			NOT = {
+				has_government = fandong
+				has_government = neworder
+				has_government = qinwai
+			}
+		}
+	}
+	x = 25
+	y = 7
+	completion_reward = {
+		TEG = {
+			qiangjiemeng = yes
+		}
+	}
+}

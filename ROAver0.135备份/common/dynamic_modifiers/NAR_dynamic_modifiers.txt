@@ -1,0 +1,20 @@
+NAR_xiaomiezhongzuchayi_modifier = {
+	icon = XXX
+	compliance_growth = NAR_xiaomiezhongzuchayi_var_cg
+	CO_core_resistance_required = NAR_xiaomiezhongzuchayi_var_cr
+	resistance_growth = NAR_xiaomiezhongzuchayi_var_rg
+	required_garrison_factor = NAR_xiaomiezhongzuchayi_var_rg2
+	ST_race_penalty_all_factor = NAR_xiaomiezhongzuchayi_var_rp
+}
+NAR_xiaomielinglichaju_modifier = {
+	icon = XXX
+	PO_bad_influence_factor = NAR_xiaomielinglichaju_var_bi
+	POconvert_daily_fuel_cost_factor = NAR_xiaomielinglichaju_var_df
+	POconvert_max_PO = NAR_xiaomielinglichaju_var_max
+	PO_RULE_no_bad_influence = NAR_xiaomielinglichaju_var_bi2
+}
+NAR_mimi_modifier = {
+	fuel_cost = NAR_mimi_sf_fuel
+	fuel_cost = NAR_mimi_shield_fuel
+	fuel_cost = NAR_mimi_tank_fuel
+}

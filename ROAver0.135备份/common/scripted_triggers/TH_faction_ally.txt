@@ -1,0 +1,325 @@
+#	Triggers to control if diplomatic actions are enabled:
+#		Format:
+#
+#		<diplomatic action tag>_enabled_trigger = {
+#			<trigger contents>
+#		}
+#
+#		ROOT is the country initiating the diplomatic action.
+#		FROM is the recipient or target of the diplomatic action.
+#
+#		Note:  For cleaner tooltips, it is recommended that you use
+#			if triggers within the enable triggers, and a single
+#			custom_trigger_tooltip trigger within each if trigger.
+#
+#		Example: (Germany is prevented from declaring war on the Soviet Union.)
+#
+#		DIPLOMACY_WAR_ENABLE_TRIGGER = {
+#			if = {
+#				limit = {
+#					tag = GER
+#				}
+#				custom_trigger_tooltip = {
+#					tooltip = PREVENT_GER_WAR_ON_SOV
+#					FROM = {
+#						NOT = {
+#							tag = SOV
+#						}
+#					}
+#				}
+#			}
+#		}
+DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = {
+	NOT = {
+		FROM = {
+			tag = ZON
+		}
+	}
+	###RULE
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_wargoals
+				option = ALWAYS_FREE
+			}
+		}
+		always = yes
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_wargoals
+				option = LIMITED
+			}
+		}
+		always = yes
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_wargoals
+				option = FREE_25
+			}
+		}
+		threat > 0.24
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_wargoals
+				option = FREE_50
+			}
+		}
+		threat > 0.49
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_wargoals
+				option = FREE_75
+			}
+		}
+		threat > 0.74
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_wargoals
+				option = FREE_100
+			}
+		}
+		threat > 0.99
+	}
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_wargoals
+				option = FOCUSES_ONLY
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_WARGOALS_BLOCKED_TT
+			always = no
+		}
+	}
+	##FOR SAGE
+	if = {
+		limit = {
+			ROOT = {
+				has_idea = gensoukyo_creator_idea2
+			}
+			any_country = {
+				is_in_faction_with = FROM
+				has_idea = gensoukyo_creator_idea2
+			}
+			not = {
+				has_global_flag = SAGE_war_started
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = sage.11_tt3
+			always = no
+		}
+	}
+	### FOR NONE
+	if = {
+		limit = {
+			any_country = {
+				is_subject = no
+				has_idea = gensoukyo_creator_idea2
+			}
+			ROOT = {
+				not = {
+					has_idea = gensoukyo_creator_idea2
+				}
+			}
+			not = {
+				has_global_flag = SAGE_war_started
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = sage.11_tt4
+			always = no
+		}
+	}
+}
+DIPLOMACY_WAR_ENABLE_TRIGGER = {
+	##FOR SAGE
+	if = {
+		limit = {
+			ROOT = {
+				has_idea = gensoukyo_creator_idea2
+			}
+			any_country = {
+				is_in_faction_with = FROM
+				has_idea = gensoukyo_creator_idea2
+			}
+			not = {
+				has_global_flag = SAGE_war_started
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = sage.11_tt3
+			always = no
+		}
+	}
+	### FOR NONE
+	if = {
+		limit = {
+			any_country = {
+				is_subject = no
+				has_idea = gensoukyo_creator_idea2
+			}
+			ROOT = {
+				not = {
+					has_idea = gensoukyo_creator_idea2
+				}
+			}
+			not = {
+				has_global_flag = SAGE_war_started
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = sage.11_tt4
+			always = no
+		}
+	}
+	
+}
+DIPLOMACY_DISMANTLE_FACTION_ENABLE_TRIGGER = { 
+	always = no
+}
+DIPLOMACY_LEAVE_FACTION_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_leave_faction
+				option = BLOCKED
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_ALLOW_LEAVE_FACTION_BLOCKED_TOOLTIP
+			always = no
+		}
+	}
+	if = {
+		limit = {
+			is_in_faction = yes
+			faction_leader = {
+				has_idea = gensoukyo_creator_idea2
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = gensoukyo_creator_tt
+			always = no
+		}
+	}
+}
+DIPLOMACY_KICK_FROM_FACTION_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_kick_faction
+				option = BLOCKED
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_KICK_FROM_FACTION_BLOCKED_TOOLTIP
+			always = no
+		}
+	}
+	if = {
+		limit = {
+			is_in_faction = yes
+			faction_leader = {
+				has_idea = gensoukyo_creator_idea2
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = gensoukyo_creator_tt
+			always = no
+		}
+	}
+}
+
+DIPLOMACY_CALL_ALLY_ENABLE_TRIGGER = { 
+	if = {
+		limit = {
+			is_in_faction = yes
+			faction_leader = {
+				has_idea = can_create_defense_faction_idea
+			}
+			ROOT = {
+				is_faction_leader = no
+				has_offensive_war = yes
+				has_defensive_war = no
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = defense_faction_call_tt
+			always = no
+		}
+	}
+	if = {
+		limit = {
+			is_in_faction = yes
+			faction_leader = {
+				has_idea = gensoukyo_creator_idea2
+			}
+			ROOT = {
+				is_faction_leader = no
+				has_offensive_war = yes
+				has_defensive_war = no
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = gensoukyo_creator_tt2
+			always = no
+		}
+	}
+}
+DIPLOMACY_JOIN_ALLY_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			is_in_faction = yes
+			faction_leader = {
+				has_idea = can_create_defense_faction_idea
+			}
+			FROM = {
+				is_faction_leader = no
+				has_offensive_war = yes
+				has_defensive_war = no
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = defense_faction_join_tt
+			always = no
+		}
+	}
+	if = {
+		limit = {
+			is_in_faction = yes
+			faction_leader = {
+				has_idea = gensoukyo_creator_idea2
+			}
+			FROM = {
+				is_faction_leader = no
+				has_offensive_war = yes
+				has_defensive_war = no
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = gensoukyo_creator_tt2
+			always = no
+		}
+	}
+}
+DIPLOMACY_JOIN_FACTION_ENABLE_TRIGGER = { #Ask to join Faction
+	JOIN_FACTION = yes
+}
+DIPLOMACY_CREATE_FACTION_ENABLE_TRIGGER = { #Create Faction
+	JOIN_FACTION = yes
+}
+DIPLOMACY_OFFER_JOIN_FACTION_ENABLE_TRIGGER = { #Invite to faction
+	JOIN_FACTION = yes
+}

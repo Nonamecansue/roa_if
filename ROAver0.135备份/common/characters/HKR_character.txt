@@ -1,0 +1,387 @@
+characters={
+	HKR_hkr ={
+		name = HKR_hkr
+		portraits={
+			civilian={
+				large="gfx/leaders/HKR/HKR_hkr.dds"
+				small="gfx/leaders/HKR/HKR_hkr_small.dds"
+			}
+			army = {
+				large="gfx/leaders/HKR/HKR_hkr.dds"
+				small="gfx/leaders/HKR/HKR_hkr_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  th_original_character th_character th_trait_qianxianzhandou war_hero trait_reckless th_trait_yinyangshi }
+			# id = 1
+			skill = 9
+			attack_skill = 14
+			defense_skill = 11
+			planning_skill = 2
+			logistics_skill = 4
+		}
+		advisor = {
+			slot = character_coop
+			idea_token = HKR_hkr
+			name = HKR_hkr
+			cost = 200
+			modifier = {
+				PO_good_battle_influence_factor = 0.5
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	HKR_aunn ={
+		name = HKR_aunn
+		portraits={
+			civilian={
+				large="gfx/leaders/HKR/HKR_aunn.dds"
+				small="gfx/leaders/HKR/HKR_aunn_small.dds"
+			}
+			army = {
+				large="gfx/leaders/HKR/HKR_aunn.dds"
+				small="gfx/leaders/HKR/HKR_aunn_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  th_original_character th_character th_trait_huoqiangzhuanjia }
+			# id = 3
+			skill = 4
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 7
+		}
+		advisor = {
+			slot = character_coop
+			idea_token = HKR_aunn
+			name = HKR_aunn
+			cost = 200
+			modifier = {
+				weekly_manpower = 2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	HKR_suika ={
+		name = HKR_suika
+		portraits={
+			civilian={
+				large="gfx/leaders/HKR/HKR_suika.dds"
+				small="gfx/leaders/HKR/HKR_suika_small.dds"
+			}
+			army = {
+				large="gfx/leaders/HKR/HKR_suika.dds"
+				small="gfx/leaders/HKR/HKR_suika_small.dds"
+			}
+		}
+		field_marshal = {
+			traits = {  th_character th_trait_chongjizhuanjia th_trait_dayaoguai th_trait_qianxianzhandou }
+			skill = 11
+			attack_skill = 6
+			defense_skill = 9
+			planning_skill = 1
+			logistics_skill = 4
+		}
+		# advisor = {
+		# 	slot = character_coop
+		# 	idea_token = HKR_suika
+		# 	name = HKR_suika
+		# 	cost = 200
+		# 	modifier = {
+		# 		
+		# 	}
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# }
+	}
+	HKR_jyo ={
+		name = HKR_jyo
+		portraits={
+			civilian={
+				large="gfx/leaders/HKR/HKR_jyo.dds"
+				small="gfx/leaders/HKR/HKR_jyo_small.dds"
+			}
+			army = {
+				large="gfx/leaders/HKR/HKR_jyo.dds"
+				small="gfx/leaders/HKR/HKR_jyo_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  th_character media_personality }
+			# id = 15
+			skill = 6
+			attack_skill = 3
+			defense_skill = 6
+			planning_skill = 8
+			logistics_skill = 7
+		}
+		# advisor = {
+		# 	slot = character_coop
+		# 	idea_token = HKR_jyo
+		# 	name = HKR_jyo
+		# 	cost = 200
+		# 	modifier = {
+		# 		
+		# 	}
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# }
+	}
+	HKR_son ={
+		name = HKR_son
+		portraits={
+			civilian={
+				large="gfx/leaders/HKR/HKR_son.dds"
+				small="gfx/leaders/HKR/HKR_son_small.dds"
+			}
+			army = {
+				large="gfx/leaders/HKR/HKR_son.dds"
+				small="gfx/leaders/HKR/HKR_son_small.dds"
+			}
+		}	
+		corps_commander = {
+			traits = {  th_character th_trait_huolizhuanjia th_trait_huoqiangzhuanjia }
+			# id = 14
+			skill = 7
+			attack_skill = 8
+			defense_skill = 7
+			planning_skill = 3
+			logistics_skill = 6
+		}
+		# advisor = {
+		# 	slot = character_coop
+		# 	idea_token = HKR_son
+		# 	name = HKR_son
+		# 	cost = 200
+		# 	modifier = {
+		# 		
+		# 	}
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# }
+	}
+	HKR_hkr_98 ={
+		name = HKR_hkr_98
+		portraits={
+			civilian={
+				large="gfx/leaders/HKR/HKR_hkr_98.dds"
+				small="gfx/leaders/HKR/HKR_hkr_98_small.dds"
+			}
+			army = {
+				large="gfx/leaders/HKR/HKR_hkr_98.dds"
+				small="gfx/leaders/HKR/HKR_hkr_98_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { th_character }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		# advisor = {
+		# 	slot = character_coop
+		# 	idea_token = HKR_hkr_98
+		# 	name = HKR_hkr_98
+		# 	cost = 200
+		# 	modifier = {
+		# 		
+		# 	}
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# }
+	}
+	HKR_genjii ={
+		name = HKR_genjii
+		portraits={
+			civilian={
+				large="gfx/leaders/HKR/HKR_genjii.dds"
+				small="gfx/leaders/HKR/HKR_genjii_small.dds"
+			}
+			army = {
+				large="gfx/leaders/HKR/HKR_genjii.dds"
+				small="gfx/leaders/HKR/HKR_genjii_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { th_character trait_cautious }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+		# advisor = {
+		# 	slot = character_coop
+		# 	idea_token = HKR_genjii
+		# 	name = HKR_genjii
+		# 	cost = 200
+		# 	modifier = {
+		# 		
+		# 	}
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# }
+	}
+	HKR_meira ={
+		name = HKR_meira
+		portraits={
+			civilian={
+				large="gfx/leaders/HKR/HKR_meira.dds"
+				small="gfx/leaders/HKR/HKR_meira_small.dds"
+			}
+			army = {
+				large="gfx/leaders/HKR/HKR_meira.dds"
+				small="gfx/leaders/HKR/HKR_meira_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { th_character th_original_character trait_reckless th_trait_chongjizhuanjia }
+			skill = 5
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 5
+			logistics_skill = 4
+		}
+		advisor = {
+			slot = character_coop
+			idea_token = HKR_meira
+			name = HKR_meira
+			cost = 200
+			modifier = {
+				army_org_factor = 0.15
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	HKR_mima ={
+		name = HKR_mima
+		portraits={
+			civilian={
+				large="gfx/leaders/HKR/HKR_mima.dds"
+				small="gfx/leaders/HKR/HKR_mima_small.dds"
+			}
+			army = {
+				large="gfx/leaders/HKR/HKR_mima.dds"
+				small="gfx/leaders/HKR/HKR_mima_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { th_character th_trait_qianxianzhandou th_trait_dayaoguai media_personality th_trait_moulvedashi }
+			skill = 11
+			attack_skill = 2
+			defense_skill = 6
+			planning_skill = 5
+			logistics_skill = 3
+		}
+		# advisor = {
+		# 	slot = character_coop
+		# 	idea_token = HKR_mima
+		# 	name = HKR_mima
+		# 	cost = 200
+		# 	modifier = {
+		# 		
+		# 	}
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# }
+	}
+	HKR_ruukoto ={
+		name = HKR_ruukoto
+		portraits={
+			civilian={
+				large="gfx/leaders/HKR/HKR_ruukoto.dds"
+				small="gfx/leaders/HKR/HKR_ruukoto_small.dds"
+			}
+			army = {
+				large="gfx/leaders/HKR/HKR_ruukoto.dds"
+				small="gfx/leaders/HKR/HKR_ruukoto_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { th_character trait_cautious }
+			skill = 4
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 4
+		}
+		# advisor = {
+		# 	slot = character_coop
+		# 	idea_token = HKR_ruukoto
+		# 	name = HKR_ruukoto
+		# 	cost = 200
+		# 	modifier = {
+		# 		
+		# 	}
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# }
+	}
+	HKR_hkr_leader ={
+		name = HKR_hkr_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/HKR/HKR_hkr.dds"
+				small="gfx/leaders/HKR/HKR_hkr_small.dds"
+			}
+			army = {
+				large="gfx/leaders/HKR/HKR_hkr.dds"
+				small="gfx/leaders/HKR/HKR_hkr_small.dds"
+			}
+		}
+		country_leader={
+			ideology=qinwai_type
+			id=-1
+		}
+		country_leader={
+			ideology=guli_type
+			id=-1
+		}
+		country_leader={
+			ideology=neworder_type
+			id=-1
+		}
+		country_leader={
+			ideology=fandong_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldorder_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldgenso_type
+			id=-1
+		}
+	}
+	HKR_aunn_leader ={
+		name = HKR_aunn_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/HKR/HKR_aunn.dds"
+				small="gfx/leaders/HKR/HKR_aunn_small.dds"
+			}
+			army = {
+				large="gfx/leaders/HKR/HKR_aunn.dds"
+				small="gfx/leaders/HKR/HKR_aunn_small.dds"
+			}
+		}
+	}
+}

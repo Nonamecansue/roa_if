@@ -1,0 +1,107 @@
+﻿division_template = {
+	name = "扫荡编制"
+	regiments = {
+		ma_light_infantry = { x = 0 y = 0 }
+		ma_light_infantry = { x = 0 y = 1 }
+		ma_light_infantry = { x = 0 y = 2 }
+		ma_light_infantry = { x = 0 y = 3 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "风洞维和编制"
+	regiments = {
+		ma_infantry = { x = 0 y = 0 }
+		ma_infantry = { x = 0 y = 1 }
+		melee_infantry = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	division = {
+		name = "风洞维和编制"
+		location = 2583
+		division_template = "风洞维和编制"
+		start_experience_factor = 0.25
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "风洞维和编制"
+		location = 220
+		division_template = "风洞维和编制"
+		start_experience_factor = 0.25
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "风洞维和编制"
+		location = 220
+		division_template = "风洞维和编制"
+		start_experience_factor = 0.25
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "风洞维和编制"
+		location = 2583
+		division_template = "风洞维和编制"
+		start_experience_factor = 0.25
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "风洞维和编制"
+		location = 220
+		division_template = "风洞维和编制"
+		start_experience_factor = 0.25
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "风洞维和编制"
+		location = 220
+		division_template = "风洞维和编制"
+		start_experience_factor = 0.25
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "风洞维和编制"
+		location = 2583
+		division_template = "风洞维和编制"
+		start_experience_factor = 0.25
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "风洞维和编制"
+		location = 220
+		division_template = "风洞维和编制"
+		start_experience_factor = 0.25
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "风洞维和编制"
+		location = 220
+		division_template = "风洞维和编制"
+		start_experience_factor = 0.25
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "风洞维和编制"
+		location = 2583
+		division_template = "风洞维和编制"
+		start_experience_factor = 0.25
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "风洞维和编制"
+		location = 220
+		division_template = "风洞维和编制"
+		start_experience_factor = 0.25
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "风洞维和编制"
+		location = 220
+		division_template = "风洞维和编制"
+		start_experience_factor = 0.25
+		start_equipment_factor = 1
+	}
+	
+}

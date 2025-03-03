@@ -1,0 +1,177 @@
+# unit_base is the base value used for evaluating how important it is to deploy the various categories
+# Written by Henrik "Groogy" Hansson
+#AI 倾向
+NMS_neizhan_prepare1 = {
+	enable = {
+		tag = NMS
+		country_exists = NUE
+		country_exists = MNM
+	}
+	abort = {
+		NUE = { 
+			or = {
+				exists = no 
+				is_subject = yes
+			}
+		}
+		MNM = { 
+			or = {
+				exists = no 
+				is_subject = yes
+			}
+		}
+	}
+	ai_strategy = {
+		type = invade
+		id = "NUE"			
+		value = 1000
+	}	
+	ai_strategy = {
+		type = invade
+		id = "MNM"			
+		value = 1000
+	}	
+}
+NMS_neizhan_prepare2 = {
+	enable = {
+		or = {
+			tag = MNM
+			tag = NUE
+		}
+		country_exists = NMS
+	}
+	abort = {
+		NMS = { 
+			or = {
+				exists = no 
+				is_subject = yes
+			}
+		}
+	}
+	ai_strategy = {
+		type = invade
+		id = "NMS"			
+		value = 1000
+	}	
+}
+NMS_neizhan1 = {
+	enable = {
+		NMS = {
+			has_completed_focus = NMS_zunxunhepingdejiaoyi
+			is_subject = no
+		}
+		or = {
+			tag = SRB
+			tag = TKM
+		}
+		or = {
+			has_government = qinwai
+			has_government = guli
+		}
+		NMS = {
+			or = {
+				has_war_with = MNM
+				has_war_with = NUE
+			}
+		}
+	}
+	abort = {
+		has_global_flag = xinshidai
+		NMS = {
+			is_subject = yes
+		}
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "NMS"			
+		value = 100
+	}	
+}
+NMS_neizhan2 = {
+	enable = {
+		date > 147.1.1
+		NMS = {
+			has_completed_focus = NMS_zunxunhepingdejiaoyi
+			is_subject = no
+		}
+		tag = KAS
+		or = {
+			has_government = qinwai
+			has_government = guli
+		}
+		NMS = {
+			or = {
+				has_war_with = MNM
+				has_war_with = NUE
+			}
+		}
+	}
+	abort = {
+		has_global_flag = xinshidai
+		NMS = {
+			is_subject = yes
+		}
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "NMS"			
+		value = 100
+	}	
+}
+NMS_neizhan3 = {
+	enable = {
+		date > 147.4.1
+		NMS = {
+			has_completed_focus = NMS_zunxunhepingdejiaoyi
+			is_subject = no
+		}
+		tag = TEG
+		or = {
+			has_government = qinwai
+			has_government = guli
+		}
+		NMS = {
+			or = {
+				has_war_with = MNM
+				has_war_with = NUE
+			}
+		}
+	}
+	abort = {
+		has_global_flag = xinshidai
+		NMS = {
+			is_subject = yes
+		}
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "NMS"			
+		value = 100
+	}	
+}
+NMS_neizhan4 = {
+	enable = {
+		tag = MAM
+		NMS = {
+			has_completed_focus = NMS_zunxunhepingdejiaoyi
+		}
+		or = {
+			has_government = neworder
+			has_government = guli
+		}
+		NMS = {
+			or = {
+				has_war_with = MNM
+				has_war_with = NUE
+			}
+		}
+	}
+	abort = {
+		has_global_flag = xinshidai
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "NUE"			
+		value = 100
+	}	
+}

@@ -1,0 +1,118 @@
+characters={
+	KRD_misumaru ={
+		name = KRD_misumaru
+		portraits={
+			civilian={
+				large="gfx/leaders/KRD/KRD_misumaru.dds"
+				small="gfx/leaders/KRD/KRD_misumaru_small.dds"
+			}
+			army = {
+				large="gfx/leaders/KRD/KRD_misumaru.dds"
+				small="gfx/leaders/KRD/KRD_misumaru_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { th_character th_original_character th_trait_dayaoguai }
+			skill = 10
+			attack_skill = 0
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 7
+		}
+		advisor = {
+			slot = character_coop
+			idea_token = KKRD_misumaru
+			name = KKRD_misumaru
+			cost = 200
+			modifier = {
+				PO_good_battle_influence_factor = 0.5
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	KRD_momoyo ={
+		name = KRD_momoyo
+		portraits={
+			civilian={
+				large="gfx/leaders/KRD/KRD_momoyo.dds"
+				small="gfx/leaders/KRD/KRD_momoyo_small.dds"
+			}
+			army = {
+				large="gfx/leaders/KRD/KRD_momoyo.dds"
+				small="gfx/leaders/KRD/KRD_momoyo_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { th_character th_original_character th_trait_chongjizhuanjia }
+			skill = 10
+			attack_skill = 11
+			defense_skill = 10
+			planning_skill = 5
+			logistics_skill = 9
+		}
+		advisor = {
+			slot = character_coop
+			idea_token = KRD_momoyo
+			name = KRD_momoyo
+			cost = 200
+			modifier = {
+				local_resources_factor = 0.2
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	KRD_misumaru_leader ={
+		name = KRD_misumaru_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/KRD/KRD_misumaru.dds"
+				small="gfx/leaders/KRD/KRD_misumaru_small.dds"
+			}
+			army = {
+				large="gfx/leaders/KRD/KRD_misumaru.dds"
+				small="gfx/leaders/KRD/KRD_misumaru_small.dds"
+			}
+		}
+		country_leader={
+			ideology=guli_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldorder_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldgenso_type
+			id=-1
+		}
+	}
+	KRD_momoyo_leader ={
+		name = KRD_momoyo_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/KRD/KRD_momoyo.dds"
+				small="gfx/leaders/KRD/KRD_momoyo_small.dds"
+			}
+			army = {
+				large="gfx/leaders/KRD/KRD_momoyo.dds"
+				small="gfx/leaders/KRD/KRD_momoyo_small.dds"
+			}
+		}
+		country_leader={
+			ideology=qinwai_type
+			id=-1
+		}
+		country_leader={
+			ideology=neworder_type
+			id=-1
+		}
+		country_leader={
+			ideology=fandong_type
+			id=-1
+		}
+	}
+}

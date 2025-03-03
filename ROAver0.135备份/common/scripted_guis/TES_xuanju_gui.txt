@@ -1,0 +1,115 @@
+scripted_gui = {
+	TES_xuanju_GUI = {
+		context_type = decision_category
+		window_name = "TES_xuanju_GUI"
+
+		visible = {
+			always = yes
+		}
+
+		triggers = {
+			TES_tianping_visible = {
+				if = {
+					limit = {
+						check_variable = {
+							Tenshi_yxl > iku_yxl
+						}
+					}
+					check_variable = {
+						tianziyingxiangzhi < 11
+					}
+					check_variable = {
+						tianziyingxiangzhi > -1
+					}
+				} 
+				else_if = {
+					limit = {
+						check_variable = {
+							Tenshi_yxl < iku_yxl
+						}	
+					}
+					check_variable = { 
+						yijiuyingxiangzhi > -1
+					}
+					check_variable = {
+						yijiuyingxiangzhi < 11
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							Tenshi_yxl = iku_yxl
+						}
+					}
+					check_variable = {
+						xiaongtongyingxiangli = 0
+					}
+				}
+			}
+			TES_tianpingzuo_visible = {
+				if = {
+					limit = {
+						check_variable = {
+							Tenshi_yxl > iku_yxl
+						}
+					}
+					check_variable = { 
+						tianziyingxiangzhi > 12
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							Tenshi_yxl < iku_yxl
+						}	
+					}
+					check_variable = { 
+						yijiuyingxiangzhi < -2
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							Tenshi_yxl = iku_yxl
+						}
+					}
+					check_variable = { 
+						xiaongtongyingxiangli = 114
+					}
+				}
+			}
+			TES_tianpingyou_visible = {
+				if = {
+					limit = {
+						check_variable = {
+							Tenshi_yxl > iku_yxl
+						}
+					}
+					check_variable = { 
+						tianziyingxiangzhi < -2
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							Tenshi_yxl < iku_yxl
+						}	
+					}
+					check_variable = { 
+						yijiuyingxiangzhi > 12
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							Tenshi_yxl = iku_yxl
+						}
+					}
+					check_variable = { 
+						xiaongtongyingxiangli = 114
+					}
+				}
+			}
+		}
+	}
+}

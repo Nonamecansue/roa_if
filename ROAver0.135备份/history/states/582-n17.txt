@@ -1,0 +1,31 @@
+
+state={
+	id=582
+	name="STATE_582"
+	provinces={
+		2115 7294 7304 7308 7312 7317 7325 7326 7330 
+	}
+	resources={
+		energy = 0
+		powder = 0.0
+		metal = 0.0
+		gas=0.000
+		crystal=0.000
+	}
+	history={
+		146.1.1 = {
+			owner = TEG
+			add_core_of = TEG
+			add_claim_by = OTG
+			buildings = {
+				infrastructure = 1
+				industrial_complex = 0
+				arms_factory = 0
+			}
+		}
+	}
+	state_category=s2
+	manpower=285
+	buildings_max_level_factor=1.000
+	local_supplies=2.500
+}

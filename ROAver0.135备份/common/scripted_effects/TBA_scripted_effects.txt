@@ -1,0 +1,304 @@
+TBA_yancaogongji_shang = {
+	if = {
+		limit = {
+			has_idea = TBA_yancaogongji_1
+		}
+		swap_ideas = {
+			remove_idea = TBA_yancaogongji_1
+			add_idea = TBA_yancaogongji_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = TBA_yancaogongji_2
+		}
+		swap_ideas = {
+			remove_idea = TBA_yancaogongji_2
+			add_idea = TBA_yancaogongji_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = TBA_yancaogongji_3
+		}
+		swap_ideas = {
+			remove_idea = TBA_yancaogongji_3
+			add_idea = TBA_yancaogongji_4
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = TBA_yancaogongji_4
+		}
+		swap_ideas = {
+			remove_idea = TBA_yancaogongji_4
+			add_idea = TBA_yancaogongji_5
+		}
+	}
+}
+TBA_yancaogongji_jian = {
+	if = {
+		limit = {
+			has_idea = TBA_yancaogongji_2
+		}
+		swap_ideas = {
+			remove_idea = TBA_yancaogongji_2
+			add_idea = TBA_yancaogongji_1
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = TBA_yancaogongji_3
+		}
+		swap_ideas = {
+			remove_idea = TBA_yancaogongji_3
+			add_idea = TBA_yancaogongji_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = TBA_yancaogongji_4
+		}
+		swap_ideas = {
+			remove_idea = TBA_yancaogongji_4
+			add_idea = TBA_yancaogongji_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = TBA_yancaogongji_5
+		}
+		swap_ideas = {
+			remove_idea = TBA_yancaogongji_5
+			add_idea = TBA_yancaogongji_4
+		}
+	}
+}
+TBA_yancaogongji_shang_1 = {
+	if = {
+		limit = {
+			has_idea = TBA_yancaogongji_1
+		}
+		swap_ideas = {
+			remove_idea = TBA_yancaogongji_1
+			add_idea = TBA_yancaogongji_2_x
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = TBA_yancaogongji_2_x
+		}
+		swap_ideas = {
+			remove_idea = TBA_yancaogongji_2_x
+			add_idea = TBA_yancaogongji_3_x
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = TBA_yancaogongji_3_x
+		}
+		swap_ideas = {
+			remove_idea = TBA_yancaogongji_3_x
+			add_idea = TBA_yancaogongji_4_x
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = TBA_yancaogongji_4_x
+		}
+		swap_ideas = {
+			remove_idea = TBA_yancaogongji_4_x
+			add_idea = TBA_yancaogongji_5_x
+		}
+	}
+}
+TBA_yancaogongji_jian_1 = {
+	if = {
+		limit = {
+			has_idea = TBA_yancaogongji_2_x
+		}
+		swap_ideas = {
+			remove_idea = TBA_yancaogongji_2_x
+			add_idea = TBA_yancaogongji_1
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = TBA_yancaogongji_3_x
+		}
+		swap_ideas = {
+			remove_idea = TBA_yancaogongji_3_x
+			add_idea = TBA_yancaogongji_2_x
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = TBA_yancaogongji_4_x
+		}
+		swap_ideas = {
+			remove_idea = TBA_yancaogongji_4_x
+			add_idea = TBA_yancaogongji_3_x
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = TBA_yancaogongji_5_x
+		}
+		swap_ideas = {
+			remove_idea = TBA_yancaogongji_5_x
+			add_idea = TBA_yancaogongji_4_x
+		}
+	}
+}
+TBA_shichangfanrongdu_True = {
+	if = {
+		limit = {
+			has_idea = TBA_shichangfanrongdu_tingzhi
+		}
+		PO_add3 = yes
+		swap_ideas = {
+			remove_idea = TBA_shichangfanrongdu_tingzhi
+			add_idea = TBA_shichangfanrongdu_di
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = TBA_shichangfanrongdu_di
+		}
+		PO_add3 = yes
+		swap_ideas = {
+			remove_idea = TBA_shichangfanrongdu_di
+			add_idea = TBA_shichangfanrongdu_zhong
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = TBA_shichangfanrongdu_zhong
+		}
+		PO_add3 = yes
+		swap_ideas = {
+			remove_idea = TBA_shichangfanrongdu_zhong
+			add_idea = TBA_shichangfanrongdu_gao
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = TBA_shichangfanrongdu_gao
+		}
+		PO_add3 = yes
+		swap_ideas = {
+			remove_idea = TBA_shichangfanrongdu_gao
+			add_idea = TBA_shichangfanrongdu_jigao
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = TBA_shichangfanrongdu_jigao
+		}
+		PO_add3 = yes
+		add_political_power = 300
+		custom_effect_tooltip = TBA_shichangfanrongdu_True_tt
+	}
+}
+TBA_shichangfanrongdu_False = {
+	if = {
+		limit = {
+			has_idea = TBA_shichangfanrongdu_jigao
+		}
+		swap_ideas = {
+			remove_idea = TBA_shichangfanrongdu_jigao
+			add_idea = TBA_shichangfanrongdu_gao
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = TBA_shichangfanrongdu_gao
+		}
+		swap_ideas = {
+			remove_idea = TBA_shichangfanrongdu_gao
+			add_idea = TBA_shichangfanrongdu_zhong
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = TBA_shichangfanrongdu_zhong
+		}
+		swap_ideas = {
+			remove_idea = TBA_shichangfanrongdu_zhong
+			add_idea = TBA_shichangfanrongdu_di
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = TBA_shichangfanrongdu_di
+		}
+		swap_ideas = {
+			remove_idea = TBA_shichangfanrongdu_di
+			add_idea = TBA_shichangfanrongdu_tingzhi
+		}
+	}
+}
+TBA_lingli_jisuan = {
+	set_temp_variable = { PO_mp_add_temp = PO_mp_add }
+	set_temp_variable = { PO_mp_add_temp_2 = PO_mp_add }
+	if = {
+		limit = {
+			check_variable = {
+				PO_mp_add > 50
+			}
+		}
+		add_to_temp_variable = { PO_mp_add_temp = -50 }
+	}
+	if = {
+		limit = {
+			check_variable = {
+				PO_mp_add < 50
+			}
+		}
+		set_temp_variable = { PO_mp_add_temp_1 = 50 }
+		subtract_from_temp_variable = { PO_mp_add_temp_1 = PO_mp_add_temp }
+		set_temp_variable = { PO_mp_add_temp = PO_mp_add_temp_1 }
+	}
+	divide_temp_variable = { PO_mp_add_temp = 10 }
+	add_to_temp_variable = { PO_mp_add_temp = -0.5 }
+	round_temp_variable = PO_mp_add_temp
+	if = {
+		limit = {
+			check_variable = {
+				PO_mp_add > 50
+			}
+		}
+		multiply_temp_variable = { PO_mp_add_temp = 0.04 }
+	}
+	if = {
+		limit = {
+			check_variable = {
+				PO_mp_add < 50
+			}
+		}
+		multiply_temp_variable = { PO_mp_add_temp = -0.04 }
+	}
+
+	set_variable = { TBA_xiaofei = PO_mp_add_temp }
+}
+TBA_lingli_jisuan_jia = {
+	set_temp_variable = { PO_mp_add_temp = PO_mp_add }
+	add_to_temp_variable = { PO_mp_add_temp = -50 }
+	divide_temp_variable = { PO_mp_add_temp = 10 }
+	add_to_temp_variable = { PO_mp_add_temp = -0.5 }
+	round_temp_variable = PO_mp_add_temp
+	multiply_temp_variable = { PO_mp_add_temp = -0.03 }
+	set_variable = { TBA_xiaofei = PO_mp_add_temp }
+}
+TBA_lingli_jisuan_jian = {
+	set_temp_variable = { PO_mp_add_temp = PO_mp_add }
+	add_to_temp_variable = { PO_mp_add_temp = 50 }
+	set_temp_variable = { PO_mp_add_temp_1 = 50 }
+	subtract_from_temp_variable = { PO_mp_add_temp_1 = PO_mp_add_temp }
+	set_temp_variable = { PO_mp_add_temp = PO_mp_add_temp_1 }
+	divide_temp_variable = { PO_mp_add_temp = 10 }
+	add_to_temp_variable = { PO_mp_add_temp = -1.5 }
+	round_temp_variable = PO_mp_add_temp
+	multiply_temp_variable = { PO_mp_add_temp = 0.04 }
+	set_variable = { TBA_xiaofei = PO_mp_add_temp }
+}

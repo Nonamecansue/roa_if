@@ -1,0 +1,31 @@
+state={
+	id=473
+	name="STATE_473"
+	provinces={
+		6183 6186 6188 6201 6207 6212 6213 6223 6231 6235 6241 6243 
+	}
+	resources={
+		energy = 0
+		powder = 6.0
+		metal = 5.0
+		gas=2.000
+		crystal=5.000
+	}
+	history={
+		146.1.1 = {
+			owner = YCE
+			add_core_of = YCE
+			buildings = {
+				infrastructure = 5
+				industrial_complex = 4
+				arms_factory = 2
+
+			}
+
+		}
+	}
+	manpower=360428.0
+	state_category=s12
+	local_supplies=2.5
+	buildings_max_level_factor=1.000
+}

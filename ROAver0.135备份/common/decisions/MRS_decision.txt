@@ -1,0 +1,1147 @@
+MRS_jianlifendain_category = {
+    MRS_jianlifendain_decision = {
+        allowed = {
+          tag = MRS
+        }
+        target_trigger = {
+          FROM = {
+            has_opinion = {
+              target = ROOT
+              value > 0
+            }
+          }
+        }
+        target_root_trigger = {
+          has_completed_focus = MRS_jianlifendain
+        }
+        visible = {
+          check_variable = {
+            MRS_jianlifendain < 10
+          }
+          FROM = {
+            has_opinion = {
+              target = ROOT
+              value > 19
+            }
+          }
+          not = {
+            or = {
+              tag = ELL
+              tag = ALI
+              tag = NAR
+              tag = MRS
+              tag = MYK
+              tag = MTM
+              tag = MFA
+            }
+          }
+        }
+        fire_only_once = yes
+        available = {
+          FROM = {
+            if = {
+              limit = {
+                or = {
+                  tag = SCA
+                  tag = SEJ
+                  tag = CIR
+                  tag = YKR
+                  tag = TKM
+                }
+                not = {
+                  ROOT = { 
+                    is_MAF = yes
+                  }
+                }
+              }
+              has_opinion = {
+                target = ROOT
+                value > 149
+              }
+              else = {
+                has_opinion = {
+                  target = ROOT
+                  value > 49
+                }
+              }
+            }
+          }
+        }
+        cost = 10
+        days_remove = 20
+        ai_will_do = {
+          base = 1000
+        }
+        complete_effect = {
+          add_to_variable = {
+            MRS_jianlifendain = 1
+          }
+          custom_effect_tooltip = MRS_jianlifendain_decision_tt
+        }
+        remove_effect = {
+          add_offsite_building = {
+            type = industrial_complex
+            level = 1
+          }
+          
+        }
+    }
+}
+MRS_kexuemofashi_category = {
+  MRS_kexuemofashi_decision = {
+        allowed = {
+          tag = MRS
+        }
+        target_trigger = {
+          FROM = {
+            or = {
+              has_idea = hum_tech
+              has_idea = kap_tech
+            }
+          }
+        }
+        target_root_trigger = {
+          has_completed_focus = MRS_kexuemofashi
+        }
+        visible = {
+          FROM = {
+            if = {
+              limit = {
+                not = {
+                  has_war_with = ROOT
+                }
+              }
+            }
+            FROM = {
+              has_opinion = {
+                target = ROOT
+                value > 19
+              }
+            }
+          }
+        }
+        fire_only_once = yes
+        available = {
+          FROM = {
+            or = {
+              has_opinion = {
+                target = ROOT
+                value > 49
+              }
+              has_war_with = ROOT
+            }
+          }
+        }
+        cost = 40
+        days_remove = 30
+        ai_will_do = {
+          base = 1000
+        }
+        complete_effect = {
+   
+        }
+        remove_effect = {
+          country_event = mrs2.33
+          custom_effect_tooltip = MRS_kexuemofashi_decision_tt
+          custom_effect_tooltip = MRS_kexuemofashi_decision_ad_tt
+          custom_effect_tooltip = MRS_kexuemofashi_decision_re_tt
+          custom_effect_tooltip = MRS_kexuemofashi_decision_org_tt
+          custom_effect_tooltip = MRS_kexuemofashi_decision_ra_tt
+          
+        }
+  }
+}
+
+MRS_shuofuzhichi_category = {
+  MRS_shuofuzhichi_HKR_decision = {
+        allowed = {
+          tag = MRS
+        }
+        visible = {
+          has_completed_focus = MRS_shuofuzhichi
+          check_variable = {
+            MRS_shuofuzhichi < 2
+          }
+          not = {
+            has_country_flag = MAF_united
+          }
+        }
+        fire_only_once = yes
+        available = {
+          HKR = {
+              has_opinion = {
+                target = ROOT
+                value > 19
+              }
+          }
+        }
+        cost = 50
+        days_remove = 60
+        complete_effect = {
+          add_to_variable = {
+            MRS_shuofuzhichi = 1
+          }
+        }
+        remove_effect = {
+          add_ideas = MRS_shuofuzhichi_HKR_decision_idea
+          custom_effect_tooltip = MSH_weilecunzai_tt
+          hidden_effect = {
+            country_event = mrs2.28
+            HKR = {
+              country_event = mrs2.28
+            }
+          }
+        }
+        ai_will_do = {
+          base = 1000
+          modifier = {
+            factor = 20
+          }
+        }
+  }
+  MRS_shuofuzhichi_SAT_decision = {
+        allowed = {
+          tag = MRS
+        }
+        visible = {
+          has_completed_focus = MRS_shuofuzhichi
+          check_variable = {
+            MRS_shuofuzhichi < 2
+          }
+          not = {
+            has_country_flag = MAF_united
+          }
+        }
+        fire_only_once = yes
+        available = {
+          SAT = {
+              has_opinion = {
+                target = ROOT
+                value > 19
+              }
+          }
+        }
+        cost = 50
+        days_remove = 60
+        complete_effect = {
+          add_to_variable = {
+            MRS_shuofuzhichi = 1
+          }
+        }
+        remove_effect = {
+          hidden_effect = {
+            country_event = mrs2.31
+            HKR = {
+              country_event = mrs2.31
+            }
+          }
+          SAT = {
+            can_use = yes
+            SAT_koishi = {
+              set_nationality = ROOT
+            }
+          }
+          activate_targeted_decision = {
+            target = SAT
+            decision = MRS_shuofuzhichi_koishi_return
+          }
+          hidden_effect = {
+            SAT = {
+                activate_targeted_decision = {
+                  target = ROOT
+                  decision = MRS_shuofuzhichi_koishi_return
+                }
+            }
+          }
+          
+          custom_effect_tooltip = MRS_shuofuzhichi_SAT_decision_tt
+        }
+        ai_will_do = {
+          base = 1000
+        }
+  }
+  MRS_shuofuzhichi_SCA_decision = {
+        allowed = {
+          tag = MRS
+        }
+        visible = {
+          has_completed_focus = MRS_shuofuzhichi
+          check_variable = {
+            MRS_shuofuzhichi < 2
+          }
+          not = {
+            has_country_flag = MAF_united
+          }
+        }
+        fire_only_once = yes
+        available = {
+          SCA = {
+              has_opinion = {
+                target = ROOT
+                value > 19
+              }
+          }
+        }
+        cost = 50
+        days_remove = 60
+        complete_effect = {
+          add_to_variable = {
+            MRS_shuofuzhichi = 1
+          }
+        }
+        remove_effect = {
+          add_ideas = MRS_shuofuzhichi_SCA_decision_idea
+          custom_effect_tooltip = MSH_weilecunzai_tt
+          hidden_effect = {
+            country_event = mrs2.30
+            HKR = {
+              country_event = mrs2.30
+            }
+          }
+        }
+        ai_will_do = {
+          base = 1000
+          modifier = {
+            factor = 20
+          }
+        }
+  }
+  MRS_shuofuzhichi_NTR_decision = {
+        allowed = {
+          tag = MRS
+        }
+        visible = {
+          has_completed_focus = MRS_shuofuzhichi
+          check_variable = {
+            MRS_shuofuzhichi < 2
+          }
+          not = {
+            has_country_flag = MAF_united
+          }
+        }
+        fire_only_once = yes
+        available = {
+          NTR = {
+              has_opinion = {
+                target = ROOT
+                value > 19
+              }
+          }
+          controls_state = 487
+        }
+        cost = 50
+        days_remove = 60
+        complete_effect = {
+          add_to_variable = {
+            MRS_shuofuzhichi = 1
+          }
+        }
+        remove_effect = {
+          hidden_effect = {
+            load_oob = "MRS_NTR_zhiyuan"
+          }
+          add_equipment_to_stockpile = {
+            type = magic_energy_a
+            amount = 250
+          }
+          custom_effect_tooltip = MRS_shuofuzhichi_NTR_decision_tt
+          hidden_effect = {
+            country_event = mrs2.29
+            HKR = {
+              country_event = mrs2.29
+            }
+          }
+        }
+        ai_will_do = {
+          base = 1000
+          modifier = {
+            factor = 20
+          }
+        }
+  }
+  MRS_shuofuzhichi_koishi_return = {
+
+        allowed = {
+            always = no
+        }
+        activation = {
+            always = no
+        }
+        target_trigger = {
+            always = no
+        }
+        available = {
+            MRS = {
+              or = {
+                has_country_flag = MAF_united
+                is_subject = yes
+                exists = no
+              }
+            }
+        }
+
+        modifier = {
+
+        }
+        complete_effect = {
+            MRS = {
+              SAT_koishi = {
+                set_nationality = SAT
+              }
+            }
+            hidden_effect = {
+              country_event = mrs2.32
+            }
+        }
+        timeout_effect = {
+            MRS = {
+              SAT_koishi = {
+                set_nationality = SAT
+              }
+            }
+            hidden_effect = {
+              country_event = mrs2.32
+            }
+        }
+
+        is_good = yes
+
+        days_mission_timeout = 1095
+
+        fire_only_once = no
+
+        ai_will_do = {
+           factor = 100
+        }
+    }
+}
+MRS_qitashilipingwei_category = {
+  MRS_qitashilipingwei_decision = {
+        allowed = {
+          tag = MRS
+        }
+        visible = {
+          FROM = {
+            has_opinion = {
+              target = ROOT
+              value > 19
+            }
+          }
+        }
+        target_root_trigger = {
+          has_completed_focus = MRS_qitashilipingwei
+        }
+        target_trigger = {
+          
+        }
+        fire_only_once = yes
+        available = {
+          FROM = {
+              has_opinion = {
+                target = ROOT
+                value > 49
+              }
+          }
+        }
+        cost = 50
+        days_remove = 30
+        complete_effect = {
+
+        }
+        remove_effect = {
+          add_to_variable = {
+            MRS_qitashilipingwei_var_po = 0.05
+          }
+          add_to_variable = {
+            MRS_qitashilipingwei_var_ma = -0.05
+          }
+          add_to_variable = {
+            MRS_qitashilipingwei_ic = 0.02
+          }
+          clamp_variable = {
+            var = MRS_qitashilipingwei_var_po
+            max = 0.5
+          }
+          clamp_variable = {
+            var = MRS_qitashilipingwei_var_ma
+            min = -0.5
+          }
+          custom_effect_tooltip = MRS_qitashilipingwei_decision_tt
+        }
+        ai_will_do = {
+          base = 1000
+        }
+  }
+}
+MRS_jiashenmofashirentong_category = {
+  MRS_jiashenmofashirentong_decision = {
+        allowed = {
+          tag = MRS
+        }
+        visible = {
+         
+        }
+        target_root_trigger = {
+          has_completed_focus = MRS_jiashenmofashirentong
+        }
+        target_trigger = {
+          FROM = {
+            ST_race_is_Magician = yes
+          }
+        }
+        state_target = yes
+        fire_only_once = yes
+        available = {
+ 
+        }
+        target_array = owned_controlled_states
+        cost = 15
+        days_remove = 45
+        complete_effect = {
+
+        }
+        modifier = {
+          
+        }
+        remove_effect = {
+          FROM = {
+            add_dynamic_modifier = {
+              modifier = MRS_jiashenmofashirentong_modifier
+            }
+          }
+        }
+        ai_will_do = {
+          base = 1000
+        }
+  }
+}
+MRS_xiaomiemofashizhifen_category = {
+  MRS_xiaomiemofashizhifen_decision_1 = {
+        allowed = {
+          tag = MRS
+        }
+        fire_only_once = yes
+        visible = {
+          has_completed_focus = MRS_xiaomiemofashizhifen
+        }
+        cost = 30
+        days_remove = 45
+        complete_effect = {
+
+        }
+        modifier = {
+          
+        }
+        remove_effect = {
+          add_to_variable = {
+            MSH_mofashigehe_var_ps = 0.2
+          }
+          if = {
+            limit = {
+              check_variable = {
+                MSH_mofashigehe_var_ps = 0
+              }
+              check_variable = {
+                MSH_mofashigehe_var_ic = 0
+              }
+              check_variable = {
+                MSH_mofashigehe_var_co = 0
+              }
+              check_variable = {
+                MSH_mofashigehe_var_pf = 0
+              }
+            }
+            remove_dynamic_modifier = {
+              modifier = MSH_mofashigehe_modifier
+            }
+          }
+          custom_effect_tooltip = MRS_xiaomiemofashizhifen_decision_1_tt
+        }
+        ai_will_do = {
+          base = 1000
+        }
+  }
+  MRS_xiaomiemofashizhifen_decision_2 = {
+        allowed = {
+          tag = MRS
+        }
+        fire_only_once = yes
+        visible = {
+          has_completed_focus = MRS_xiaomiemofashizhifen
+        }
+        cost = 30
+        days_remove = 45
+        complete_effect = {
+
+        }
+        modifier = {
+          
+        }
+        remove_effect = {
+          add_to_variable = {
+            MSH_mofashigehe_var_ic = 0.2
+          }
+          if = {
+            limit = {
+              check_variable = {
+                MSH_mofashigehe_var_ps = 0
+              }
+              check_variable = {
+                MSH_mofashigehe_var_ic = 0
+              }
+              check_variable = {
+                MSH_mofashigehe_var_co = 0
+              }
+              check_variable = {
+                MSH_mofashigehe_var_pf = 0
+              }
+            }
+            remove_dynamic_modifier = {
+              modifier = MSH_mofashigehe_modifier
+            }
+          }
+          custom_effect_tooltip = MRS_xiaomiemofashizhifen_decision_2_tt
+        }
+        ai_will_do = {
+          base = 1000
+        }
+  }
+  MRS_xiaomiemofashizhifen_decision_3 = {
+        allowed = {
+          tag = MRS
+        }
+        fire_only_once = yes
+        visible = {
+          has_completed_focus = MRS_xiaomiemofashizhifen
+        }
+        cost = 30
+        days_remove = 45
+        complete_effect = {
+
+        }
+        modifier = {
+          
+        }
+        remove_effect = {
+          add_to_variable = {
+            MSH_mofashigehe_var_co = 0.1
+          }
+          if = {
+            limit = {
+              check_variable = {
+                MSH_mofashigehe_var_ps = 0
+              }
+              check_variable = {
+                MSH_mofashigehe_var_ic = 0
+              }
+              check_variable = {
+                MSH_mofashigehe_var_co = 0
+              }
+              check_variable = {
+                MSH_mofashigehe_var_pf = 0
+              }
+            }
+            remove_dynamic_modifier = {
+              modifier = MSH_mofashigehe_modifier
+            }
+          }
+          custom_effect_tooltip = MRS_xiaomiemofashizhifen_decision_3_tt
+        }
+        ai_will_do = {
+          base = 1000
+        }
+  }
+  MRS_xiaomiemofashizhifen_decision_4 = {
+        allowed = {
+          tag = MRS
+        }
+        fire_only_once = yes
+        visible = {
+          has_completed_focus = MRS_xiaomiemofashizhifen
+        }
+        cost = 30
+        days_remove = 45
+        complete_effect = {
+
+        }
+        modifier = {
+          
+        }
+        remove_effect = {
+          add_to_variable = {
+            MSH_mofashigehe_var_pf = 0.2
+          }
+          if = {
+            limit = {
+              check_variable = {
+                MSH_mofashigehe_var_ps = 0
+              }
+              check_variable = {
+                MSH_mofashigehe_var_ic = 0
+              }
+              check_variable = {
+                MSH_mofashigehe_var_co = 0
+              }
+              check_variable = {
+                MSH_mofashigehe_var_pf = 0
+              }
+            }
+            remove_dynamic_modifier = {
+              modifier = MSH_mofashigehe_modifier
+            }
+          }
+          custom_effect_tooltip = MRS_xiaomiemofashizhifen_decision_4_tt
+        }
+        ai_will_do = {
+          base = 1000
+        }
+  }
+}
+MRS_qitazhongzuliliang_category = {
+  MRS_qitazhongzuliliang_Human_decision = {
+        allowed = {
+          tag = MRS
+        }
+        fire_only_once = yes
+        visible = {
+          has_completed_focus = MRS_qitazhongzuliliang
+        }
+        cost = 50
+        days_remove = 60
+        complete_effect = {
+
+        }
+        available = {
+          any_country = {
+            or = {
+              is_subject_of = ROOT
+              is_neighbor_of = ROOT
+            }
+            has_idea = Human
+            custom_trigger_tooltip = {
+                tooltip = MRS_qitazhongzuliliang_decision_tt
+                check_variable = { all_value_plus_manpower > 699}
+            }
+          }
+        }
+        modifier = {
+          
+        }
+        remove_effect = {
+          add_to_variable = {
+            MRS_qitazhongzuliliang_Human_power = 0.1
+          }
+          custom_effect_tooltip = MRS_qitazhongzuliliang_Human_decision_tt
+        }
+        ai_will_do = {
+          base = 1000
+        }
+  }
+  MRS_qitazhongzuliliang_Fairy_decision = {
+        allowed = {
+          tag = MRS
+        }
+        fire_only_once = yes
+        visible = {
+          has_completed_focus = MRS_qitazhongzuliliang
+        }
+        cost = 50
+        days_remove = 60
+        complete_effect = {
+
+        }
+        available = {
+          any_country = {
+            or = {
+              is_subject_of = ROOT
+              is_neighbor_of = ROOT
+            }
+            has_idea = Fairy
+            custom_trigger_tooltip = {
+                tooltip = MRS_qitazhongzuliliang_decision_tt
+                check_variable = { all_value_plus_manpower > 699}
+            }
+          }
+        }
+        modifier = {
+          
+        }
+        remove_effect = {
+          add_to_variable = {
+            MRS_qitazhongzuliliang_Fairy_power = -0.15
+          }
+          custom_effect_tooltip = MRS_qitazhongzuliliang_Fairy_decision_tt
+        }
+        ai_will_do = {
+          base = 1000
+        }
+  }
+  MRS_qitazhongzuliliang_Pri_youkai_decision = {
+        allowed = {
+          tag = MRS
+        }
+        fire_only_once = yes
+        visible = {
+          has_completed_focus = MRS_qitazhongzuliliang
+        }
+        cost = 50
+        days_remove = 60
+        complete_effect = {
+
+        }
+        available = {
+          any_country = {
+            or = {
+              is_subject_of = ROOT
+              is_neighbor_of = ROOT
+            }
+            has_idea = Pri_youkai
+            custom_trigger_tooltip = {
+                tooltip = MRS_qitazhongzuliliang_decision_tt
+                check_variable = { all_value_plus_manpower > 699}
+            }
+          }
+        }
+        modifier = {
+          
+        }
+        remove_effect = {
+          add_to_variable = {
+            MRS_qitazhongzuliliang_Pri_youkai_power = 0.1
+          }
+          custom_effect_tooltip = MRS_qitazhongzuliliang_Pri_youkai_decision_tt
+        }
+        ai_will_do = {
+          base = 1000
+        }
+  }
+  MRS_qitazhongzuliliang_Beast_decision = {
+        allowed = {
+          tag = MRS
+        }
+        fire_only_once = yes
+        visible = {
+          has_completed_focus = MRS_qitazhongzuliliang
+        }
+        cost = 50
+        days_remove = 60
+        complete_effect = {
+
+        }
+        available = {
+          any_country = {
+            or = {
+              is_subject_of = ROOT
+              is_neighbor_of = ROOT
+            }
+            has_idea = Beast
+            custom_trigger_tooltip = {
+                tooltip = MRS_qitazhongzuliliang_decision_tt
+                check_variable = { all_value_plus_manpower > 699}
+            }
+          }
+        }
+        modifier = {
+          
+        }
+        remove_effect = {
+          add_to_variable = {
+            MRS_qitazhongzuliliang_Beast_power = 0.15
+          }
+          custom_effect_tooltip = MRS_qitazhongzuliliang_Beast_decision_tt
+        }
+        ai_will_do = {
+          base = 1000
+        }
+  }
+  MRS_qitazhongzuliliang_Youkai_decision = {
+        allowed = {
+          tag = MRS
+        }
+        fire_only_once = yes
+        visible = {
+          has_completed_focus = MRS_qitazhongzuliliang
+        }
+        cost = 50
+        days_remove = 60
+        complete_effect = {
+
+        }
+        available = {
+          any_country = {
+            or = {
+              is_subject_of = ROOT
+              is_neighbor_of = ROOT
+            }
+            has_idea = Youkai
+            custom_trigger_tooltip = {
+                tooltip = MRS_qitazhongzuliliang_decision_tt
+                check_variable = { all_value_plus_manpower > 699}
+            }
+          }
+        }
+        modifier = {
+          
+        }
+        remove_effect = {
+          add_to_variable = {
+            MRS_qitazhongzuliliang_Youkai_power = 0.1
+          }
+          custom_effect_tooltip = MRS_qitazhongzuliliang_Youkai_decision_tt
+        }
+        ai_will_do = {
+          base = 1000
+        }
+  }
+  MRS_qitazhongzuliliang_God_decision = {
+        allowed = {
+          tag = MRS
+        }
+        fire_only_once = yes
+        visible = {
+          has_completed_focus = MRS_qitazhongzuliliang
+        }
+        cost = 50
+        days_remove = 60
+        complete_effect = {
+
+        }
+        available = {
+          any_country = {
+            or = {
+              is_subject_of = ROOT
+              is_neighbor_of = ROOT
+            }
+            has_idea = God
+            custom_trigger_tooltip = {
+                tooltip = MRS_qitazhongzuliliang_decision_tt
+                check_variable = { all_value_plus_manpower > 699}
+            }
+          }
+        }
+        modifier = {
+          
+        }
+        remove_effect = {
+          add_to_variable = {
+            MRS_qitazhongzuliliang_God_power = 7.5
+          }
+          custom_effect_tooltip = MRS_qitazhongzuliliang_God_decision_tt
+        }
+        ai_will_do = {
+          base = 1000
+        }
+  }
+  MRS_qitazhongzuliliang_Kappa_decision = {
+        allowed = {
+          tag = MRS
+        }
+        fire_only_once = yes
+        visible = {
+          has_completed_focus = MRS_qitazhongzuliliang
+        }
+        cost = 50
+        days_remove = 60
+        complete_effect = {
+
+        }
+        available = {
+          any_country = {
+            or = {
+              is_subject_of = ROOT
+              is_neighbor_of = ROOT
+            }
+            has_idea = Kappa
+            custom_trigger_tooltip = {
+                tooltip = MRS_qitazhongzuliliang_decision_tt
+                check_variable = { all_value_plus_manpower > 699}
+            }
+          }
+        }
+        modifier = {
+          
+        }
+        remove_effect = {
+          add_to_variable = {
+            MRS_qitazhongzuliliang_Kappa_power = 0.2
+          }
+          custom_effect_tooltip = MRS_qitazhongzuliliang_Kappa_decision_tt
+        }
+        ai_will_do = {
+          base = 1000
+        }
+  }
+  MRS_qitazhongzuliliang_Tengu_decision = {
+        allowed = {
+          tag = MRS
+        }
+        fire_only_once = yes
+        visible = {
+          has_completed_focus = MRS_qitazhongzuliliang
+        }
+        cost = 50
+        days_remove = 60
+        complete_effect = {
+
+        }
+        available = {
+          any_country = {
+            or = {
+              is_subject_of = ROOT
+              is_neighbor_of = ROOT
+            }
+            has_idea = Tenggu
+            custom_trigger_tooltip = {
+                tooltip = MRS_qitazhongzuliliang_decision_tt
+                check_variable = { all_value_plus_manpower > 699}
+            }
+          }
+        }
+        modifier = {
+          
+        }
+        remove_effect = {
+          add_to_variable = {
+            MRS_qitazhongzuliliang_Tengu_power = 0.1
+          }
+          custom_effect_tooltip = MRS_qitazhongzuliliang_Tengu_decision_tt
+        }
+        ai_will_do = {
+          base = 1000
+        }
+  }
+}
+MRS_mofazaoxueliang_category = {
+  MRS_mofazaoxueliang_decision_1 = {
+        allowed = {
+          tag = MRS
+        }
+        
+        visible = {
+          has_completed_focus = MRS_mofazaoxueliang
+          check_variable = {
+            MRS_mofazaoxueliang_var_ad < 0.5
+          }
+        }
+        cost = 0
+        days_remove = 90
+        complete_effect = {
+          custom_effect_tooltip = MRS_mofazaoxueliang_decision_1_tt2
+          add_to_variable = {
+            MRS_mofazaoxueliang_var_ic = -0.04
+          }
+        }
+        available = {
+          custom_trigger_tooltip = {
+            tooltip = MRS_mofazaoxueliang_decision_tt
+            check_variable = {
+              MRS_mofazaoxueliang_var_ad < 0.5
+            }
+          }
+        }
+        modifier = {
+          
+        }
+        remove_effect = {
+          add_to_variable = {
+            MRS_mofazaoxueliang_var_ad = 0.05
+          }
+          custom_effect_tooltip = MRS_mofazaoxueliang_decision_1_tt
+        }
+        ai_will_do = {
+          base = 1000
+        }
+  }
+  MRS_mofazaoxueliang_decision_2 = {
+        allowed = {
+          tag = MRS
+        }
+        
+        visible = {
+          has_completed_focus = MRS_mofazaoxueliang
+          check_variable = {
+            MRS_mofazaoxueliang_var_ln < 0.75
+          }
+        }
+        cost = 0
+        days_remove = 90
+        complete_effect = {
+          PO_minus4 = yes
+        }
+        available = {
+          custom_trigger_tooltip = {
+            tooltip = MRS_mofazaoxueliang_decision_2_tt2
+            check_variable = {
+              PO_average_mp > 3.99
+            }
+          }
+          custom_trigger_tooltip = {
+            tooltip = MRS_mofazaoxueliang_decision_tt
+            check_variable = {
+              MRS_mofazaoxueliang_var_ln < 0.75
+            }
+          }
+        }
+        modifier = {
+          
+        }
+        remove_effect = {
+          add_to_variable = {
+            MRS_mofazaoxueliang_var_ln = 0.075
+          }
+          custom_effect_tooltip = MRS_mofazaoxueliang_decision_2_tt
+        }
+        ai_will_do = {
+          base = 1000
+        }
+  }
+  MRS_mofazaoxueliang_decision_3 = {
+        allowed = {
+          tag = MRS
+        }
+        
+        visible = {
+          has_completed_focus = MRS_mofazaoxueliang
+          check_variable = {
+            MRS_mofazaoxueliang_var_co < 0.5
+          }
+        }
+        cost = 0
+        days_remove = 90
+        complete_effect = {
+          every_owned_state = {
+            hidden_effect = {
+              set_temp_variable = {
+                v = state_population_k
+              }
+              multiply_temp_variable = {
+                v = -20
+              }
+              add_manpower = v
+            }
+            
+            custom_effect_tooltip = MRS_mofazaoxueliang_decision_3_tt2
+          }
+        }
+        available = {
+          custom_trigger_tooltip = {
+            tooltip = MRS_mofazaoxueliang_decision_tt
+            check_variable = {
+              MRS_mofazaoxueliang_var_co < 0.5
+            }
+          }
+        }
+        modifier = {
+          
+        }
+        remove_effect = {
+          add_to_variable = {
+            MRS_mofazaoxueliang_var_co = 0.05
+          }
+          custom_effect_tooltip = MRS_mofazaoxueliang_decision_3_tt
+        }
+        ai_will_do = {
+          base = 1000
+        }
+  }
+}

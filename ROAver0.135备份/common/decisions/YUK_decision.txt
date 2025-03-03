@@ -1,0 +1,136 @@
+YUK_dikanglinianchuanbo_category = { 
+	YUK_fanzhichuanbo_decision = {
+		icon = generic_arrest
+		ai_will_do = {
+			factor = 1000000
+		}
+		allowed = {
+			tag = YUK
+		}
+		
+		visible = {
+			SGS = {
+				has_completed_focus = SGS_xiangtaiyanghuatian
+			}
+			SGS = {
+				has_country_flag = SGS_weikaizhan_flag
+			}
+		}
+		cancel_trigger = {
+			SGS = {
+				has_completed_focus = SGS_tiaodonghuatian
+			}
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = YUK_linianshengfen_tt
+				check_variable = {
+					SGS_linianshengfen < 1
+				}
+			}
+			SGS = {
+				not = {
+					has_completed_focus = SGS_tiaodonghuatian
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = YUK_zhengzaifanzhichuanbo_tt
+				not = {
+					has_country_flag = YUK_fanzhichuanbo_flag
+				}
+			}
+		}
+		target_trigger = {
+			FROM = { 
+				is_owned_and_controlled_by = YUK 
+				is_core_of = YS1
+			}
+		}
+		
+		# highlight_state_targets = { state = FROM }	
+		state_target = yes
+		
+		cost = 10
+	
+		days_remove = 40
+	
+		fire_only_once = no
+		
+		complete_effect = {  
+			set_country_flag = YUK_fanzhichuanbo_flag
+		}
+
+		remove_effect = {
+			FROM = {
+				remove_core_of = YS1
+			}
+			SGS = {
+				add_to_variable = {
+					SGS_linianshengfen = -1
+				}
+			}
+			clr_country_flag = YUK_fanzhichuanbo_flag
+		}
+	}
+	YUK_xianfazhiren_decision = {
+		icon = generic_ignite_civil_war
+		ai_will_do = {
+			factor = 1
+		}
+		allowed = {
+			tag = YUK
+		}
+		visible = {
+			SGS = {
+				has_completed_focus = SGS_tiaodonghuatian
+			}
+		}
+		cost = 10
+		fire_only_once = yes
+		remove_effect = {
+			set_country_flag = YUK_zhunbeikaizhan_flag
+			SGS = {
+				country_event = sgs.29
+			}
+		}
+	}
+	YUK_zhuibeixuanzhan_decision = {
+		icon = generic_ignite_civil_war
+		activation = {
+			has_country_flag = YUK_zhunbeikaizhan_flag
+		}
+		available = {                           
+			or = {
+				SGS = {
+					is_subject = yes
+				}
+				not = {
+					country_exists = SGS
+				}
+				YUK = {
+					is_subject = yes
+				}
+				not = {
+					country_exists = YUK
+				}
+			
+				SGS = {
+					not = {has_country_flag = SGS_weikaizhan2_flag}
+				}
+			}
+		}
+		days_mission_timeout = 30
+		timeout_effect = {                      
+			declare_war_on = { 
+				target = SGS 
+				type = puppet_wargoal_focus 
+			}
+		}
+		timeout_effect = {                      
+			declare_war_on = { 
+				target = YS1 
+				type = puppet_wargoal_focus 
+			}
+		}
+	}
+}

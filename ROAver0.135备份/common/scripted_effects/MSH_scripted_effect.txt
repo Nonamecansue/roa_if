@@ -1,0 +1,100 @@
+MSH_gehe_chanchu = {
+	custom_effect_tooltip = MSH_mofashigehe_var_ic_tt
+	set_variable = {
+	MSH_mofashigehe_var_ic = 0
+	}
+	if = {
+		limit = {
+			check_variable = {
+			MSH_mofashigehe_var_ps = 0
+			}
+			check_variable = {
+			MSH_mofashigehe_var_ic = 0
+			}
+			check_variable = {
+			MSH_mofashigehe_var_co = 0
+			}
+			check_variable = {
+			MSH_mofashigehe_var_pf = 0
+			}
+		}
+		remove_dynamic_modifier = {
+			modifier = MSH_mofashigehe_modifier
+		}
+	}
+}
+MSH_gehe_jianzao = {
+	custom_effect_tooltip = MSH_mofashigehe_var_ps_tt
+	set_variable = {
+		MSH_mofashigehe_var_ps = 0
+	}
+	if = {
+		limit = {
+			check_variable = {
+			MSH_mofashigehe_var_ps = 0
+			}
+			check_variable = {
+			MSH_mofashigehe_var_ic = 0
+			}
+			check_variable = {
+			MSH_mofashigehe_var_co = 0
+			}
+			check_variable = {
+			MSH_mofashigehe_var_pf = 0
+			}
+		}
+		remove_dynamic_modifier = {
+			modifier = MSH_mofashigehe_modifier
+		}
+	}
+}
+MSH_gehe_xiaolv = {
+	custom_effect_tooltip = MSH_mofashigehe_var_pf_tt
+	set_variable = {
+		MSH_mofashigehe_var_pf = 0
+	}
+	if = {
+		limit = {
+			check_variable = {
+			MSH_mofashigehe_var_ps = 0
+			}
+			check_variable = {
+			MSH_mofashigehe_var_ic = 0
+			}
+			check_variable = {
+			MSH_mofashigehe_var_co = 0
+			}
+			check_variable = {
+			MSH_mofashigehe_var_pf = 0
+			}
+		}
+		remove_dynamic_modifier = {
+			modifier = MSH_mofashigehe_modifier
+		}
+	}
+}
+MSH_gehe_renli = {
+	custom_effect_tooltip = MSH_mofashigehe_var_co_tt
+	set_variable = {
+		MSH_mofashigehe_var_co = 0
+	}
+	if = {
+		limit = {
+			check_variable = {
+			MSH_mofashigehe_var_ps = 0
+			}
+			check_variable = {
+			MSH_mofashigehe_var_ic = 0
+			}
+			check_variable = {
+			MSH_mofashigehe_var_co = 0
+			}
+			check_variable = {
+			MSH_mofashigehe_var_pf = 0
+			}
+		}
+		remove_dynamic_modifier = {
+			modifier = MSH_mofashigehe_modifier
+		}
+	}
+}

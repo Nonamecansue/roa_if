@@ -1,0 +1,50 @@
+ELL_quchengzhenhua_modifier = {
+	icon = GFX_man_five_year_plan_industry
+	
+	army_attack_factor = ELL_quchengzhenhua_VAR
+	army_defence_factor = ELL_quchengzhenhua_VAR
+	global_building_slots_factor = -0.2
+}
+ELL_quchengzhenhua_state_modifier = {
+	icon = GFX_man_five_year_plan_industry
+	
+	global_building_slots_factor = -0.1
+	
+}
+ELL_difangyanjiuzhongxin_modifier = {
+	icon = GFX_man_five_year_plan_industry
+	research_speed_factor = ELL_difangyanjiuzhongxin_VAR
+}
+ELL_zizhiqujihua_modifier = {
+	icon = GFX_man_five_year_plan_industry
+	ST_race_penalty_Ghost_factor = ELL_zizhiqujihua_Ghost_VAR
+	ST_race_penalty_Beast_factor = ELL_zizhiqujihua_Beast_VAR
+	ST_race_penalty_Tengu_factor = ELL_zizhiqujihua_Tengu_VAR
+	ST_race_penalty_Fairy_factor = ELL_zizhiqujihua_Fairy_VAR
+	ST_race_penalty_Human_factor = ELL_zizhiqujihua_Human_VAR
+	ST_race_penalty_God_factor = ELL_zizhiqujihua_God_VAR
+	ST_race_penalty_Pri_youkai_factor = ELL_zizhiqujihua_Pri_youkai_VAR
+	ST_race_penalty_Youkai_factor = ELL_zizhiqujihua_Youkai_VAR
+	ST_race_penalty_Kappa_factor = ELL_zizhiqujihua_Kappa_VAR
+	resistance_growth = ELL_zizhiqujihua_VAR
+}
+ELL_mofayaoshou_modifier = {
+	icon = GFX_man_five_year_plan_industry
+	land_night_attack = ELL_mofayaoshou_VAR
+}
+
+ELL_bingzhongkaohebiaozhun_modifier = {
+	icon = GFX_man_five_year_plan_industry
+	conscription_factor = ELL_bingzhongkaohebiaozhun_VAR
+	modifier_army_sub_unit_ma_infantry_attack_factor = ELL_bingzhongkaohebiaozhun_infantry_VAR
+	modifier_army_sub_unit_ma_infantry_defence_factor = ELL_bingzhongkaohebiaozhun_infantry_VAR
+	modifier_army_sub_unit_ma_light_infantry_attack_factor = ELL_bingzhongkaohebiaozhun_light_infantry_VAR
+	modifier_army_sub_unit_ma_light_infantry_defence_factor = ELL_bingzhongkaohebiaozhun_light_infantry_VAR
+
+	modifier_army_sub_unit_ma_sf_infantry_attack_factor = ELL_bingzhongkaohebiaozhun_sf_VAR   
+	modifier_army_sub_unit_ma_sf_infantry_defence_factor = ELL_bingzhongkaohebiaozhun_sf_VAR   
+	modifier_army_sub_unit_ma_shield_infantry_attack_factor = ELL_bingzhongkaohebiaozhun_light_tank_VAR   
+	modifier_army_sub_unit_ma_shield_infantry_defence_factor = ELL_bingzhongkaohebiaozhun_light_tank_VAR 
+	modifier_army_sub_unit_ma_shield_tank_attack_factor = ELL_bingzhongkaohebiaozhun_heavy_tank_VAR 
+	modifier_army_sub_unit_ma_shield_tank_defence_factor = ELL_bingzhongkaohebiaozhun_heavy_tank_VAR 
+}

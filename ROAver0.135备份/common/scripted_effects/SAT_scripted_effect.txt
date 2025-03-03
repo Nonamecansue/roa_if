@@ -1,0 +1,1004 @@
+SAT_enhance_YKR_influence = {
+	custom_effect_tooltip = SAT_YKR_influence_up_tt
+	if = {
+		limit = { has_idea = SAT_Yakumo_influence_idea_1 }
+		swap_ideas = {
+			remove_idea = SAT_Yakumo_influence_idea_1
+			add_idea = SAT_Yakumo_influence_idea_2
+		}
+	}
+	else_if = {
+		limit = { has_idea = SAT_Yakumo_influence_idea_2 }
+		swap_ideas = {
+			remove_idea = SAT_Yakumo_influence_idea_2
+			add_idea = SAT_Yakumo_influence_idea_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = SAT_Yakumo_influence_idea_3 }
+		swap_ideas = {
+			remove_idea = SAT_Yakumo_influence_idea_3
+			add_idea = SAT_Yakumo_influence_idea_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = SAT_Yakumo_influence_idea_4 }
+		swap_ideas = {
+			remove_idea = SAT_Yakumo_influence_idea_4
+			add_idea = SAT_Yakumo_influence_idea_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = SAT_Yakumo_influence_idea_5 }
+		custom_effect_tooltip = SAT_couldnot_increase_influence_tt
+		add_political_power = 50
+	}
+	else = {
+		add_ideas = { SAT_Yakumo_influence_idea_1 }
+	}
+}
+
+SAT_resist_YKR_influence = {
+	custom_effect_tooltip = SAT_YKR_influence_down_tt
+	if = {
+		limit = { has_idea = SAT_Yakumo_influence_idea_5 }
+		swap_ideas = {
+			remove_idea = SAT_Yakumo_influence_idea_5
+			add_idea = SAT_Yakumo_influence_idea_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = SAT_Yakumo_influence_idea_4 }
+		swap_ideas = {
+			remove_idea = SAT_Yakumo_influence_idea_4
+			add_idea = SAT_Yakumo_influence_idea_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = SAT_Yakumo_influence_idea_3 }
+		swap_ideas = {
+			remove_idea = SAT_Yakumo_influence_idea_3
+			add_idea = SAT_Yakumo_influence_idea_2
+		}
+	}
+	else_if = {
+		limit = { has_idea = SAT_Yakumo_influence_idea_2 }
+		swap_ideas = {
+			remove_idea = SAT_Yakumo_influence_idea_2
+			add_idea = SAT_Yakumo_influence_idea_1
+		}
+	}
+	else_if = {
+		limit = { has_idea = SAT_Yakumo_influence_idea_1 }
+		remove_ideas = { SAT_Yakumo_influence_idea_1 }
+	}
+	else_if = {
+		limit = {
+			NOT = { has_idea = SAT_Yakumo_influence_idea_1 }
+			NOT = { has_idea = SAT_Yakumo_influence_idea_2 }
+			NOT = { has_idea = SAT_Yakumo_influence_idea_3 }
+			NOT = { has_idea = SAT_Yakumo_influence_idea_4 }
+			NOT = { has_idea = SAT_Yakumo_influence_idea_5 }
+		}
+		custom_effect_tooltip = SAT_couldnot_reduce_influence_tt
+		add_political_power = 50
+	}
+}
+
+SAT_enhance_SKI_influence = {
+	custom_effect_tooltip = SAT_SKI_influence_up_tt
+	if = {
+		limit = { has_idea = SAT_Shikierki_influence_idea_1 }
+		swap_ideas = {
+			remove_idea = SAT_Shikierki_influence_idea_1
+			add_idea = SAT_Shikierki_influence_idea_2
+		}
+	}
+	else_if = {
+		limit = { has_idea = SAT_Shikierki_influence_idea_2 }
+		swap_ideas = {
+			remove_idea = SAT_Shikierki_influence_idea_2
+			add_idea = SAT_Shikierki_influence_idea_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = SAT_Shikierki_influence_idea_3 }
+		swap_ideas = {
+			remove_idea = SAT_Shikierki_influence_idea_3
+			add_idea = SAT_Shikierki_influence_idea_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = SAT_Shikierki_influence_idea_4 }
+		swap_ideas = {
+			remove_idea = SAT_Shikierki_influence_idea_4
+			add_idea = SAT_Shikierki_influence_idea_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = SAT_Shikierki_influence_idea_5 }
+		custom_effect_tooltip = SAT_couldnot_increase_influence_tt
+		add_political_power = 50
+	}
+	else = {
+		add_ideas = { SAT_Shikierki_influence_idea_1 }
+	}
+}
+
+SAT_resist_SKI_influence = {
+	custom_effect_tooltip = SAT_SKI_influence_down_tt
+	if = {
+		limit = { has_idea = SAT_Shikierki_influence_idea_5 }
+		swap_ideas = {
+			remove_idea = SAT_Shikierki_influence_idea_5
+			add_idea = SAT_Shikierki_influence_idea_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = SAT_Shikierki_influence_idea_4 }
+		swap_ideas = {
+			remove_idea = SAT_Shikierki_influence_idea_4
+			add_idea = SAT_Shikierki_influence_idea_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = SAT_Shikierki_influence_idea_3 }
+		swap_ideas = {
+			remove_idea = SAT_Shikierki_influence_idea_3
+			add_idea = SAT_Shikierki_influence_idea_2
+		}
+	}
+	else_if = {
+		limit = { has_idea = SAT_Shikierki_influence_idea_2 }
+		swap_ideas = {
+			remove_idea = SAT_Shikierki_influence_idea_2
+			add_idea = SAT_Shikierki_influence_idea_1
+		}
+	}
+	else_if = {
+		limit = { has_idea = SAT_Shikierki_influence_idea_1 }
+		remove_ideas = { SAT_Shikierki_influence_idea_1 }
+	}
+	else_if = {
+		limit = {
+			NOT = { has_idea = SAT_Shikierki_influence_idea_1 }
+			NOT = { has_idea = SAT_Shikierki_influence_idea_2 }
+			NOT = { has_idea = SAT_Shikierki_influence_idea_3 }
+			NOT = { has_idea = SAT_Shikierki_influence_idea_4 }
+			NOT = { has_idea = SAT_Shikierki_influence_idea_5 }
+		}
+		custom_effect_tooltip = SAT_couldnot_reduce_influence_tt
+		add_political_power = 50
+	}
+}
+
+
+SAT_enhance_MRY_influence = {
+	custom_effect_tooltip = SAT_MRY_influence_up_tt
+	if = {
+		limit = { has_idea = SAT_Moriya_influence_idea_1 }
+		swap_ideas = {
+			remove_idea = SAT_Moriya_influence_idea_1
+			add_idea = SAT_Moriya_influence_idea_2
+		}
+	}
+	else_if = {
+		limit = { has_idea = SAT_Moriya_influence_idea_2 }
+		swap_ideas = {
+			remove_idea = SAT_Moriya_influence_idea_2
+			add_idea = SAT_Moriya_influence_idea_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = SAT_Moriya_influence_idea_3 }
+		swap_ideas = {
+			remove_idea = SAT_Moriya_influence_idea_3
+			add_idea = SAT_Moriya_influence_idea_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = SAT_Moriya_influence_idea_4 }
+		swap_ideas = {
+			remove_idea = SAT_Moriya_influence_idea_4
+			add_idea = SAT_Moriya_influence_idea_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = SAT_Moriya_influence_idea_5 }
+		custom_effect_tooltip = SAT_couldnot_increase_influence_tt
+		add_political_power = 50
+	}
+	else = {
+		add_ideas = { SAT_Moriya_influence_idea_1 }
+	}
+}
+
+SAT_resist_MRY_influence = {
+	custom_effect_tooltip = SAT_MRY_influence_down_tt
+	if = {
+		limit = { has_idea = SAT_Moriya_influence_idea_5 }
+		swap_ideas = {
+			remove_idea = SAT_Moriya_influence_idea_5
+			add_idea = SAT_Moriya_influence_idea_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = SAT_Moriya_influence_idea_4 }
+		swap_ideas = {
+			remove_idea = SAT_Moriya_influence_idea_4
+			add_idea = SAT_Moriya_influence_idea_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = SAT_Moriya_influence_idea_3 }
+		swap_ideas = {
+			remove_idea = SAT_Moriya_influence_idea_3
+			add_idea = SAT_Moriya_influence_idea_2
+		}
+	}
+	else_if = {
+		limit = { has_idea = SAT_Moriya_influence_idea_2 }
+		swap_ideas = {
+			remove_idea = SAT_Moriya_influence_idea_2
+			add_idea = SAT_Moriya_influence_idea_1
+		}
+	}
+	else_if = {
+		limit = { has_idea = SAT_Moriya_influence_idea_1 }
+		remove_ideas = { SAT_Moriya_influence_idea_1 }
+	}
+	else_if = {
+		limit = {
+			NOT = { has_idea = SAT_Moriya_influence_idea_1 }
+			NOT = { has_idea = SAT_Moriya_influence_idea_2 }
+			NOT = { has_idea = SAT_Moriya_influence_idea_3 }
+			NOT = { has_idea = SAT_Moriya_influence_idea_4 }
+			NOT = { has_idea = SAT_Moriya_influence_idea_5 }
+		}
+		custom_effect_tooltip = SAT_couldnot_reduce_influence_tt
+		add_political_power = 50
+	}
+}
+
+SAT_YKR_influence_clear_all = {
+	custom_effect_tooltip = SAT_YKR_influence_clear_all_tt
+	if = { limit = { has_idea = SAT_Yakumo_influence_idea_1 } remove_ideas = { SAT_Yakumo_influence_idea_1 } }
+	if = { limit = { has_idea = SAT_Yakumo_influence_idea_2 } remove_ideas = { SAT_Yakumo_influence_idea_2 } }
+	if = { limit = { has_idea = SAT_Yakumo_influence_idea_3 } remove_ideas = { SAT_Yakumo_influence_idea_3 } }
+	if = { limit = { has_idea = SAT_Yakumo_influence_idea_4 } remove_ideas = { SAT_Yakumo_influence_idea_4 } }
+	if = { limit = { has_idea = SAT_Yakumo_influence_idea_5 } remove_ideas = { SAT_Yakumo_influence_idea_5 } }
+}
+
+SAT_SKI_influence_clear_all = {
+	custom_effect_tooltip = SAT_SKI_influence_clear_all_tt
+	if = { limit = { has_idea = SAT_Shikierki_influence_idea_1 } remove_ideas = { SAT_Shikierki_influence_idea_1 } }
+	if = { limit = { has_idea = SAT_Shikierki_influence_idea_2 } remove_ideas = { SAT_Shikierki_influence_idea_2 } }
+	if = { limit = { has_idea = SAT_Shikierki_influence_idea_3 } remove_ideas = { SAT_Shikierki_influence_idea_3 } }
+	if = { limit = { has_idea = SAT_Shikierki_influence_idea_4 } remove_ideas = { SAT_Shikierki_influence_idea_4 } }
+	if = { limit = { has_idea = SAT_Shikierki_influence_idea_5 } remove_ideas = { SAT_Shikierki_influence_idea_5 } }
+}
+
+SAT_MRY_influence_clear_all = {
+	custom_effect_tooltip = SAT_MRY_influence_clear_all_tt
+	if = { limit = { has_idea = SAT_Moriya_influence_idea_1 } remove_ideas = { SAT_Moriya_influence_idea_1 } }
+	if = { limit = { has_idea = SAT_Moriya_influence_idea_2 } remove_ideas = { SAT_Moriya_influence_idea_2 } }
+	if = { limit = { has_idea = SAT_Moriya_influence_idea_3 } remove_ideas = { SAT_Moriya_influence_idea_3 } }
+	if = { limit = { has_idea = SAT_Moriya_influence_idea_4 } remove_ideas = { SAT_Moriya_influence_idea_4 } }
+	if = { limit = { has_idea = SAT_Moriya_influence_idea_5 } remove_ideas = { SAT_Moriya_influence_idea_5 } }
+}
+
+MRY_influence_down_if_reformist = {
+	custom_effect_tooltip = MRY_influence_if_reformist_tt
+	effect_tooltip = {
+		SAT_resist_MRY_influence = yes
+	}
+	hidden_effect = {
+		if = {
+			limit = { MRY = { has_government = qinwai } }
+			SAT_resist_MRY_influence = yes
+		}
+	}
+}
+
+MRY_influence_up_if_reformist = {
+	custom_effect_tooltip = MRY_influence_if_reformist_tt
+	effect_tooltip = {
+		SAT_enhance_MRY_influence = yes
+	}
+	hidden_effect = {
+		if = {
+			limit = { MRY = { has_government = qinwai } }
+			SAT_enhance_MRY_influence = yes
+		}
+	}
+}
+
+MRY_influence_down_if_neworder = {
+	custom_effect_tooltip = MRY_influence_if_neworder_tt
+	effect_tooltip = {
+		SAT_resist_MRY_influence = yes
+	}
+	hidden_effect = {
+		if = {
+			limit = { MRY = { has_government = qinwai } }
+			SAT_resist_MRY_influence = yes
+		}
+	}
+}
+
+MRY_influence_up_if_neworder = {
+	custom_effect_tooltip = MRY_influence_if_neworder_tt
+	effect_tooltip = {
+		SAT_enhance_MRY_influence = yes
+	}
+	hidden_effect = {
+		if = {
+			limit = { MRY = { has_government = qinwai } }
+			SAT_enhance_MRY_influence = yes
+		}
+	}
+}
+
+SAT_YUG_prestige_increase = {
+	custom_effect_tooltip = SAT_YUG_prestige_increase_tt
+	hidden_effect = {
+		add_to_variable = {
+			var = SAT_YUG_prestige
+			value = 1
+		}
+	}
+}
+
+SAT_PRS_prestige_increase = {
+	custom_effect_tooltip = SAT_PRS_prestige_increase_tt
+	hidden_effect = {
+		add_to_variable = {
+			var = SAT_PRS_prestige
+			value = 1
+		}
+	}
+}
+
+SAT_YMM_prestige_increase = {
+	custom_effect_tooltip = SAT_YMM_prestige_increase_tt
+	hidden_effect = {
+		add_to_variable = {
+			var = SAT_YMM_prestige
+			value = 1
+		}
+	}
+}
+
+SAT_UNL_prestige_increase = {
+	custom_effect_tooltip = SAT_UNL_prestige_increase_tt
+	hidden_effect = {
+		add_to_variable = {
+			var = SAT_UNL_prestige
+			value = 1
+		}
+	}
+}
+
+SAT_YUG_prestige_increase_2 = {
+	custom_effect_tooltip = SAT_YUG_prestige_increase_2_tt
+	hidden_effect = {
+		add_to_variable = {
+			var = SAT_YUG_prestige
+			value = 2
+		}
+	}
+}
+
+SAT_PRS_prestige_increase_2 = {
+	custom_effect_tooltip = SAT_PRS_prestige_increase_2_tt
+	hidden_effect = {
+		add_to_variable = {
+			var = SAT_PRS_prestige
+			value = 2
+		}
+	}
+}
+
+SAT_YMM_prestige_increase_2 = {
+	custom_effect_tooltip = SAT_YMM_prestige_increase_2_tt
+	hidden_effect = {
+		add_to_variable = {
+			var = SAT_YMM_prestige
+			value = 2
+		}
+	}
+}
+
+SAT_UNL_prestige_increase_2 = {
+	custom_effect_tooltip = SAT_UNL_prestige_increase_2_tt
+	hidden_effect = {
+		add_to_variable = {
+			var = SAT_UNL_prestige
+			value = 2
+		}
+	}
+}
+
+SAT_YUG_prestige_increase_3 = {
+	custom_effect_tooltip = SAT_YUG_prestige_increase_3_tt
+	hidden_effect = {
+		add_to_variable = {
+			var = SAT_YUG_prestige
+			value = 3
+		}
+	}
+}
+
+SAT_PRS_prestige_increase_3 = {
+	custom_effect_tooltip = SAT_PRS_prestige_increase_3_tt
+	hidden_effect = {
+		add_to_variable = {
+			var = SAT_PRS_prestige
+			value = 3
+		}
+	}
+}
+
+SAT_YMM_prestige_increase_3 = {
+	custom_effect_tooltip = SAT_YMM_prestige_increase_3_tt
+	hidden_effect = {
+		add_to_variable = {
+			var = SAT_YMM_prestige
+			value = 3
+		}
+	}
+}
+
+SAT_UNL_prestige_increase_3 = {
+	custom_effect_tooltip = SAT_UNL_prestige_increase_3_tt
+	hidden_effect = {
+		add_to_variable = {
+			var = SAT_UNL_prestige
+			value = 3
+		}
+	}
+}
+
+SAT_YUG_prestige_increase_4 = {
+	custom_effect_tooltip = SAT_YUG_prestige_increase_4_tt
+	hidden_effect = {
+		add_to_variable = {
+			var = SAT_YUG_prestige
+			value = 4
+		}
+	}
+}
+
+SAT_PRS_prestige_increase_4 = {
+	custom_effect_tooltip = SAT_PRS_prestige_increase_4_tt
+	hidden_effect = {
+		add_to_variable = {
+			var = SAT_PRS_prestige
+			value = 4
+		}
+	}
+}
+
+SAT_YMM_prestige_increase_4 = {
+	custom_effect_tooltip = SAT_YMM_prestige_increase_4_tt
+	hidden_effect = {
+		add_to_variable = {
+			var = SAT_YMM_prestige
+			value = 4
+		}
+	}
+}
+
+SAT_UNL_prestige_increase_4 = {
+	custom_effect_tooltip = SAT_UNL_prestige_increase_4_tt
+	hidden_effect = {
+		add_to_variable = {
+			var = SAT_UNL_prestige
+			value = 4
+		}
+	}
+}
+
+SAT_YUG_prestige_decrease = {
+	custom_effect_tooltip = SAT_YUG_prestige_decrease_tt
+	hidden_effect = {
+		subtract_from_variable = {
+			var = SAT_YUG_prestige
+			value = 1
+		}
+	}
+}
+
+SAT_PRS_prestige_decrease = {
+	custom_effect_tooltip = SAT_PRS_prestige_decrease_tt
+	hidden_effect = {
+		subtract_from_variable = {
+			var = SAT_PRS_prestige
+			value = 1
+		}
+	}
+}
+
+SAT_YMM_prestige_decrease = {
+	custom_effect_tooltip = SAT_YMM_prestige_decrease_tt
+	hidden_effect = {
+		subtract_from_variable = {
+			var = SAT_YMM_prestige
+			value = 1
+		}
+	}
+}
+
+SAT_UNL_prestige_decrease = {
+	custom_effect_tooltip = SAT_UNL_prestige_decrease_tt
+	hidden_effect = {
+		subtract_from_variable = {
+			var = SAT_UNL_prestige
+			value = 1
+		}
+	}
+}
+
+SAT_YUG_prestige_decrease_2 = {
+	custom_effect_tooltip = SAT_YUG_prestige_decrease_2_tt
+	hidden_effect = {
+		subtract_from_variable = {
+			var = SAT_YUG_prestige
+			value = 2
+		}
+	}
+}
+
+SAT_PRS_prestige_decrease_2 = {
+	custom_effect_tooltip = SAT_PRS_prestige_decrease_2_tt
+	hidden_effect = {
+		subtract_from_variable = {
+			var = SAT_PRS_prestige
+			value = 2
+		}
+	}
+}
+
+SAT_YMM_prestige_decrease_2 = {
+	custom_effect_tooltip = SAT_YMM_prestige_decrease_2_tt
+	hidden_effect = {
+		subtract_from_variable = {
+			var = SAT_YMM_prestige
+			value = 2
+		}
+	}
+}
+
+SAT_UNL_prestige_decrease_2 = {
+	custom_effect_tooltip = SAT_UNL_prestige_decrease_2_tt
+	hidden_effect = {
+		subtract_from_variable = {
+			var = SAT_UNL_prestige
+			value = 2
+		}
+	}
+}
+
+SAT_YUG_prestige_decrease_3 = {
+	custom_effect_tooltip = SAT_YUG_prestige_decrease_3_tt
+	hidden_effect = {
+		subtract_from_variable = {
+			var = SAT_YUG_prestige
+			value = 3
+		}
+	}
+}
+
+SAT_PRS_prestige_decrease_3 = {
+	custom_effect_tooltip = SAT_PRS_prestige_decrease_3_tt
+	hidden_effect = {
+		subtract_from_variable = {
+			var = SAT_PRS_prestige
+			value = 3
+		}
+	}
+}
+
+SAT_YMM_prestige_decrease_3 = {
+	custom_effect_tooltip = SAT_YMM_prestige_decrease_3_tt
+	hidden_effect = {
+		subtract_from_variable = {
+			var = SAT_YMM_prestige
+			value = 3
+		}
+	}
+}
+
+SAT_UNL_prestige_decrease_3 = {
+	custom_effect_tooltip = SAT_UNL_prestige_decrease_3_tt
+	hidden_effect = {
+		subtract_from_variable = {
+			var = SAT_UNL_prestige
+			value = 3
+		}
+	}
+}
+
+SAT_YUG_prestige_decrease_4 = {
+	custom_effect_tooltip = SAT_YUG_prestige_decrease_4_tt
+	hidden_effect = {
+		subtract_from_variable = {
+			var = SAT_YUG_prestige
+			value = 4
+		}
+	}
+}
+
+SAT_PRS_prestige_decrease_4 = {
+	custom_effect_tooltip = SAT_PRS_prestige_decrease_4_tt
+	hidden_effect = {
+		subtract_from_variable = {
+			var = SAT_PRS_prestige
+			value = 4
+		}
+	}
+}
+
+SAT_YMM_prestige_decrease_4 = {
+	custom_effect_tooltip = SAT_YMM_prestige_decrease_4_tt
+	hidden_effect = {
+		subtract_from_variable = {
+			var = SAT_YMM_prestige
+			value = 4
+		}
+	}
+}
+
+SAT_UNL_prestige_decrease_4 = {
+	custom_effect_tooltip = SAT_UNL_prestige_decrease_4_tt
+	hidden_effect = {
+		subtract_from_variable = {
+			var = SAT_UNL_prestige
+			value = 4
+		}
+	}
+}
+
+SAT_UUG_unrest_reduce = {
+	if = {
+		limit = { has_idea = SAT_UUG_unrest_plus_1 }
+		swap_ideas = {
+			remove_idea = SAT_UUG_unrest_plus_1
+			add_idea = SAT_UUG_unrest_plus
+		}
+	}
+	else_if = {
+		limit = { has_idea = SAT_UUG_unrest_plus }
+		swap_ideas = {
+			remove_idea = SAT_UUG_unrest_plus
+			add_idea = SAT_UUG_unrest
+		}
+	}
+	else_if = {
+		limit = { has_idea = SAT_UUG_unrest }
+		swap_ideas = {
+			remove_idea = SAT_UUG_unrest
+			add_idea = SAT_UUG_unrest_2
+		}
+	}
+	else_if = {
+		limit = { has_idea = SAT_UUG_unrest_2 }
+		swap_ideas = {
+			remove_idea = SAT_UUG_unrest_2
+			add_idea = SAT_UUG_unrest_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = SAT_UUG_unrest_3 }
+		remove_ideas = { SAT_UUG_unrest_3 }
+	}
+}
+
+SAT_UUG_unrest_increase = {
+	if = {
+		limit = { has_idea = SAT_UUG_unrest_3 }
+		swap_ideas = {
+			remove_idea = SAT_UUG_unrest_3
+			add_idea = SAT_UUG_unrest_2
+		}
+	}
+	else_if = {
+		limit = { has_idea = SAT_UUG_unrest_2 }
+		swap_ideas = {
+			remove_idea = SAT_UUG_unrest_2
+			add_idea = SAT_UUG_unrest
+		}
+	}
+	else_if = {
+		limit = { has_idea = SAT_UUG_unrest_2 }
+		swap_ideas = {
+			remove_idea = SAT_UUG_unrest_2
+			add_idea = SAT_UUG_unrest
+		}
+	}
+	else_if = {
+		limit = { has_idea = SAT_UUG_unrest }
+		swap_ideas = {
+			remove_idea = SAT_UUG_unrest
+			add_idea = SAT_UUG_unrest_plus
+		}
+	}
+	else_if = {
+		limit = { has_idea = SAT_UUG_unrest_plus }
+		swap_ideas = {
+			remove_idea = SAT_UUG_unrest_plus
+			add_idea = SAT_UUG_unrest_plus_1
+		}
+	}
+	else = {
+		add_ideas = { SAT_UUG_unrest_3 }
+	}
+}
+
+SAT_UUG_unrest_clear_all = {
+	if = {
+		limit = { has_idea = SAT_UUG_unrest_plus_1 }
+		remove_ideas = SAT_UUG_unrest_plus_1
+	}
+	else_if = {
+		limit = { has_idea = SAT_UUG_unrest_plus }
+		remove_ideas = SAT_UUG_unrest_plus
+	}
+	else_if = {
+		limit = { has_idea = SAT_UUG_unrest }
+		remove_ideas = SAT_UUG_unrest
+	}
+	else_if = {
+		limit = { has_idea = SAT_UUG_unrest_2 }
+		remove_ideas = SAT_UUG_unrest_2
+	}
+	else_if = {
+		limit = { has_idea = SAT_UUG_unrest_3 }
+		remove_ideas = SAT_UUG_unrest_3
+	}
+	else = {
+		add_political_power = 5
+	}
+}
+
+SAT_civil_factory_used_clear = {
+	if = { limit = { has_idea = SAT_civil_industrial_cost } remove_ideas = { SAT_civil_industrial_cost } }
+	if = { limit = { has_idea = SAT_civil_industrial_cost_2 } remove_ideas = { SAT_civil_industrial_cost_2 } }
+	if = { limit = { has_idea = SAT_civil_industrial_cost_3 } remove_ideas = { SAT_civil_industrial_cost_3 } }
+	if = { limit = { has_idea = SAT_civil_industrial_cost_4 } remove_ideas = { SAT_civil_industrial_cost_4 } }
+}
+
+SAT_military_spend_used_clear = {
+	if = { limit = { has_idea = SAT_military_industrial_cost } remove_ideas = { SAT_military_industrial_cost } }
+	if = { limit = { has_idea = SAT_military_industrial_cost_2 } remove_ideas = { SAT_military_industrial_cost_2 } }
+	if = { limit = { has_idea = SAT_military_industrial_cost_3 } remove_ideas = { SAT_military_industrial_cost_3 } }
+	if = { limit = { has_idea = SAT_military_industrial_cost_4 } remove_ideas = { SAT_military_industrial_cost_4 } }
+}
+
+SAT_guard_level_up = {
+	if = {
+		limit = { has_idea = SAT_keep_on_guard_idea_5 }
+		swap_ideas = {
+			remove_idea = SAT_keep_on_guard_idea_5
+			add_idea = SAT_keep_on_guard_idea_6
+		}
+	}
+	if = {
+		limit = { has_idea = SAT_keep_on_guard_idea_4 }
+		swap_ideas = {
+			remove_idea = SAT_keep_on_guard_idea_4
+			add_idea = SAT_keep_on_guard_idea_5
+		}
+	}
+	if = {
+		limit = { has_idea = SAT_keep_on_guard_idea_3 }
+		swap_ideas = {
+			remove_idea = SAT_keep_on_guard_idea_3
+			add_idea = SAT_keep_on_guard_idea_4
+		}
+	}
+	if = {
+		limit = { has_idea = SAT_keep_on_guard_idea_2 }
+		swap_ideas = {
+			remove_idea = SAT_keep_on_guard_idea_2
+			add_idea = SAT_keep_on_guard_idea_3
+		}
+	}
+	if = {
+		limit = { has_idea = SAT_keep_on_guard_idea_1 }
+		swap_ideas = {
+			remove_idea = SAT_keep_on_guard_idea_1
+			add_idea = SAT_keep_on_guard_idea_2
+		}
+	}
+	if = {
+		limit = { has_idea = SAT_keep_on_guard_idea_0 }
+		swap_ideas = {
+			remove_idea = SAT_keep_on_guard_idea_0
+			add_idea = SAT_keep_on_guard_idea_1
+		}
+	}
+}
+
+
+SAT_Ghost_assimilate_increase = {
+	custom_effect_tooltip = SAT_Ghost_assimilate_increase_tt
+	hidden_effect = {
+		add_to_variable = {
+			var = ROOT.SAT_GHOST_IMMIGRANT
+			value = 1
+		}
+	}
+}
+
+SAT_nuclear_fusion_calm = {
+	custom_effect_tooltip = SAT_nuclear_fusion_calm_down_tt
+	if = {
+		limit = { has_idea = SAT_nuclear_fusion_calm }
+		custom_effect_tooltip = SAT_nuclear_fusion_could_not_more_calm_tt
+	}
+	else_if = {
+		limit = { has_idea = SAT_nuclear_fusion_normal }
+		swap_ideas = {
+			remove_idea = SAT_nuclear_fusion_normal
+			add_idea = SAT_nuclear_fusion_calm
+		}
+	}
+	else_if = {
+		limit = { has_idea = SAT_nuclear_fusion_unstable }
+		swap_ideas = {
+			remove_idea = SAT_nuclear_fusion_unstable
+			add_idea = SAT_nuclear_fusion_normal
+		}
+	}
+	else_if = {
+		limit = { has_idea = SAT_nuclear_fusion_rage }
+		swap_ideas = {
+			remove_idea = SAT_nuclear_fusion_rage
+			add_idea = SAT_nuclear_fusion_unstable
+		}
+	}
+}
+
+SAT_nuclear_fusion_crazy = {
+	custom_effect_tooltip = SAT_nuclear_fusion_go_crazy_tt
+	if = {
+		limit = { has_idea = SAT_nuclear_fusion_rage }
+		custom_effect_tooltip = SAT_nuclear_fusion_could_not_more_crazy_tt
+	}
+	else_if = {
+		limit = { has_idea = SAT_nuclear_fusion_unstable }
+		swap_ideas = {
+			remove_idea = SAT_nuclear_fusion_unstable
+			add_idea = SAT_nuclear_fusion_rage
+		}
+	}
+	else_if = {
+		limit = { has_idea = SAT_nuclear_fusion_normal }
+		swap_ideas = {
+			remove_idea = SAT_nuclear_fusion_normal
+			add_idea = SAT_nuclear_fusion_unstable
+		}
+	}
+	else_if = {
+		limit = { has_idea = SAT_nuclear_fusion_calm }
+		swap_ideas = {
+			remove_idea = SAT_nuclear_fusion_calm
+			add_idea = SAT_nuclear_fusion_normal
+		}
+	}
+}
+
+SAT_stabilize_nuclear_fusion = {
+	custom_effect_tooltip = SAT_nuclear_fusion_stabilized_tt
+	if = {
+		limit = { has_idea = SAT_nuclear_fusion_rage }
+		swap_ideas = {
+			remove_idea = SAT_nuclear_fusion_rage
+			add_idea = SAT_nuclear_fusion_stabilized
+		}
+	}
+	else_if = {
+		limit = { has_idea = SAT_nuclear_fusion_unstable }
+		swap_ideas = {
+			remove_idea = SAT_nuclear_fusion_unstable
+			add_idea = SAT_nuclear_fusion_stabilized
+		}
+	}
+	else_if = {
+		limit = { has_idea = SAT_nuclear_fusion_normal }
+		swap_ideas = {
+			remove_idea = SAT_nuclear_fusion_normal
+			add_idea = SAT_nuclear_fusion_stabilized
+		}
+	}
+	else_if = {
+		limit = { has_idea = SAT_nuclear_fusion_calm }
+		swap_ideas = {
+			remove_idea = SAT_nuclear_fusion_calm
+			add_idea = SAT_nuclear_fusion_stabilized
+		}
+	}
+}
+
+SAT_make_agreement_bonus = {
+	set_country_flag = SAT_has_deal_with_MRY_flag
+	custom_effect_tooltip = SAT_decision_will_be_boosted_tt
+	if = {
+		limit = { has_idea = SAT_Moriya_influence_idea_2 }
+		if = {
+			limit = { SAT = { has_country_flag = SAT_invited_flag } }
+			set_variable = {
+				var = ROOT.SAT_NUCLEAR_COMPLETE_DAYS
+				value = 320 
+			}
+		}
+		else = {
+			set_variable = {
+				var = ROOT.SAT_NUCLEAR_COMPLETE_DAYS
+				value = 360 
+			}
+		}
+	}
+
+	if = {
+		limit = { has_idea = SAT_Moriya_influence_idea_3 }
+		if = {
+			limit = { SAT = { has_country_flag = SAT_invited_flag } }
+			set_variable = {
+				var = ROOT.SAT_NUCLEAR_COMPLETE_DAYS
+				value = 260 
+			}
+		}
+		else = {
+			set_variable = {
+				var = ROOT.SAT_NUCLEAR_COMPLETE_DAYS
+				value = 300
+			}
+		}
+	}
+
+	if = {
+		limit = { has_idea = SAT_Moriya_influence_idea_4 }
+		if = {
+			limit = { SAT = { has_country_flag = SAT_invited_flag } }
+			set_variable = {
+				var = ROOT.SAT_NUCLEAR_COMPLETE_DAYS
+				value = 180 
+			}
+		}
+		else = {
+			set_variable = {
+				var = ROOT.SAT_NUCLEAR_COMPLETE_DAYS
+				value = 220 
+			}
+		}
+	}
+
+	if = {
+		limit = { has_idea = SAT_Moriya_influence_idea_5 }
+		if = {
+			limit = { SAT = { has_country_flag = SAT_invited_flag } }
+			set_variable = {
+				var = ROOT.SAT_NUCLEAR_COMPLETE_DAYS
+				value = 100 
+			}
+		}
+		else = {
+			set_variable = {
+				var = ROOT.SAT_NUCLEAR_COMPLETE_DAYS
+				value = 140 
+			}
+		}
+	}
+}
+
+SAT_set_one_state_manpower_to_zero = {
+	set_temp_variable = { manpower_start = state_population_k }
+	multiply_temp_variable = { manpower_start = -250 }
+	###########
+	add_manpower = manpower_start
+	add_manpower = manpower_start
+	add_manpower = manpower_start
+	add_manpower = manpower_start
+}

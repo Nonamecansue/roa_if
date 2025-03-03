@@ -1,0 +1,518 @@
+technologies = {
+	pri_youkai_tech = {
+    
+	    research_cost = 1
+
+	    path = {
+			leads_to_tech = caogenchuantong1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = qinlvetianxing1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = yexingxiaodui1
+			research_cost_coeff = 1
+		}
+
+		melee_infantry = {
+	      max_strength = 5
+	    }
+	    melee_cavalry = {
+	      max_strength = 5
+	    }     
+	    sc_infantry = {
+	      max_strength = 5
+	    }
+	    ma_infantry = {
+	      max_strength = 5
+	    }  
+	    sc_light_infantry = {
+	      max_strength = 5
+	    }
+	    ma_light_infantry = {
+	      max_strength = 5
+	    } 
+	    sc_sf_infantry = {
+	      max_strength = 5
+	    }
+	    ma_sf_infantry = {
+	      max_strength = 5
+	    } 
+	    sc_shield_infantry = {
+	      max_strength = 5
+	    }
+	    ma_shield_infantry = {
+	      max_strength = 5
+	    }
+	    
+	   folder = {
+	      name = Pri_youkai_race_tech_folder
+	      position = { x = 10 y = 0 }
+	    }
+	    
+	    categories = {
+	      secret
+	    }
+	    dependencies = {
+	       abandoned = 1
+	    }
+	    
+	    ai_will_do = {
+	      factor = 1
+	    }
+	}
+
+	caogenchuantong1 = {
+	
+		path = {
+			leads_to_tech = caogenchuantong2
+			research_cost_coeff = 1
+		}
+
+		compliance_gain = 0.01
+		resistance_growth = -0.05
+		
+		research_cost = 2.2
+		start_year = 147
+
+		folder = {
+			name = Pri_youkai_race_tech_folder
+			position = { x = 4 y = 2 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	caogenchuantong2 = {
+	
+		path = {
+			leads_to_tech = caogenchuantong3
+			research_cost_coeff = 1
+		}
+
+		compliance_gain = 0.01
+		resistance_growth = -0.05
+
+		
+		research_cost = 2.2
+		start_year = 152
+
+		folder = {
+			name = Pri_youkai_race_tech_folder
+			position = { x = 4 y = 4 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	caogenchuantong3 = {
+	
+		path = {
+			leads_to_tech = caogenchuantong4
+			research_cost_coeff = 1
+		}
+
+		compliance_gain = 0.01
+		resistance_growth = -0.05
+
+		
+		research_cost = 2.2
+		start_year = 157
+
+		folder = {
+			name = Pri_youkai_race_tech_folder
+			position = { x = 4 y = 6 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	caogenchuantong4 = {
+	
+		path = {
+			leads_to_tech = caogenchuantong5
+			research_cost_coeff = 1
+		}
+
+		compliance_gain = 0.01
+		resistance_growth = -0.05
+
+		
+		research_cost = 2.2
+		start_year = 162
+
+		folder = {
+			name = Pri_youkai_race_tech_folder
+			position = { x = 4 y = 8 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	caogenchuantong5 = {
+
+		compliance_gain = 0.01
+		resistance_growth = -0.05
+		
+		research_cost = 2.2
+		start_year = 167
+
+		folder = {
+			name = Pri_youkai_race_tech_folder
+			position = { x = 4 y = 10 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	qinlvetianxing1 = {
+	
+		path = {
+			leads_to_tech = qinlvetianxing2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.2
+		start_year = 147
+
+		justify_war_goal_time = -0.05
+		generate_wargoal_tension = -0.05
+
+		
+
+		folder = {
+			name = Pri_youkai_race_tech_folder
+			position = { x = 10 y = 2 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	qinlvetianxing2 = {
+	
+		path = {
+			leads_to_tech = qinlvetianxing3
+			research_cost_coeff = 1
+		}
+
+		army_attack_factor = 0.04
+		army_defence_factor = 0.04
+
+		
+		research_cost = 2.2
+		start_year = 152
+
+		folder = {
+			name = Pri_youkai_race_tech_folder
+			position = { x = 10 y = 4 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	qinlvetianxing3 = {
+	
+		path = {
+			leads_to_tech = qinlvetianxing4
+			research_cost_coeff = 1
+		}
+
+		army_attack_factor = 0.04
+		army_defence_factor = 0.04
+
+		
+		research_cost = 2.2
+		start_year = 157
+
+		folder = {
+			name = Pri_youkai_race_tech_folder
+			position = { x = 10 y = 6 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	qinlvetianxing4 = {
+	
+		path = {
+			leads_to_tech = qinlvetianxing5
+			research_cost_coeff = 1
+		}
+
+		army_attack_factor = 0.04
+		army_defence_factor = 0.04
+
+		
+		research_cost = 2.2
+		start_year = 162
+
+		folder = {
+			name = Pri_youkai_race_tech_folder
+			position = { x = 10 y = 8 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	qinlvetianxing5 = {
+
+		
+		research_cost = 2.2
+		start_year = 167
+
+		folder = {
+			name = Pri_youkai_race_tech_folder
+			position = { x = 10 y = 10 }
+		}
+
+		army_attack_factor = 0.04
+		army_defence_factor = 0.04
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	yexingxiaodui1 = {
+	
+		path = {
+			leads_to_tech = yexingxiaodui2
+			research_cost_coeff = 1
+		}
+
+		ma_infantry = {
+			hardness = 0.4
+		}
+		ma_light_infantry = {
+			hardness = 0.4
+		}
+		sc_infantry = {
+			hardness = 4
+		}
+		sc_light_infantry = {
+			hardness = 4
+		}
+		
+		research_cost = 2.2
+		start_year = 147
+
+		folder = {
+			name = Pri_youkai_race_tech_folder
+			position = { x = 16 y = 2 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	yexingxiaodui2 = {
+	
+		path = {
+			leads_to_tech = yexingxiaodui3
+			research_cost_coeff = 1
+		}
+
+		ma_infantry = {
+			hardness = 0.4
+		}
+		ma_light_infantry = {
+			hardness = 0.4
+		}
+		sc_infantry = {
+			hardness = 4
+		}
+		sc_light_infantry = {
+			hardness = 4
+		}
+		
+		research_cost = 2.2
+		start_year = 152
+
+		folder = {
+			name = Pri_youkai_race_tech_folder
+			position = { x = 16 y = 4 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	yexingxiaodui3 = {
+	
+		path = {
+			leads_to_tech = yexingxiaodui4
+			research_cost_coeff = 1
+		}
+
+		ma_infantry = {
+			hardness = 0.4
+		}
+		ma_light_infantry = {
+			hardness = 0.4
+		}
+		sc_infantry = {
+			hardness = 4
+		}
+		sc_light_infantry = {
+			hardness = 4
+		}
+
+		
+		research_cost = 2.2
+		start_year = 157
+
+		folder = {
+			name = Pri_youkai_race_tech_folder
+			position = { x = 16 y = 6 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	yexingxiaodui4 = {
+	
+		path = {
+			leads_to_tech = yexingxiaodui5
+			research_cost_coeff = 1
+		}
+
+		ma_infantry = {
+			hardness = 0.4
+		}
+		ma_light_infantry = {
+			hardness = 0.4
+		}
+		sc_infantry = {
+			hardness = 4
+		}
+		sc_light_infantry = {
+			hardness = 4
+		}
+		
+		research_cost = 2.2
+		start_year = 162
+
+		folder = {
+			name = Pri_youkai_race_tech_folder
+			position = { x = 16 y = 8 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	yexingxiaodui5 = {
+		
+		research_cost = 2.2
+		start_year = 167
+
+
+
+		ma_infantry = {
+			hardness = 0.4
+		}
+		ma_light_infantry = {
+			hardness = 0.4
+		}
+		sc_infantry = {
+			hardness = 4
+		}
+		sc_light_infantry = {
+			hardness = 4
+		}
+
+		folder = {
+			name = Pri_youkai_race_tech_folder
+			position = { x = 16 y = 10 }
+		}
+		
+		categories = {
+			race
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,36 @@
+
+state={
+	id=623
+	name="STATE_623"
+	resources={
+		energy=0.000
+		powder=0.000
+		metal=0.000
+		gas=0.000
+		crystal=0.000
+	}
+
+	history={
+		146.1.1 = {
+			owner = TEG
+			add_core_of = TEG
+			add_claim_by = OTG
+			buildings = {
+				infrastructure = 4
+				industrial_complex = 1
+				arms_factory = 1
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		930 2247 3110 3386 5293 5295 5300 5302 5305 5309 5315 
+	}
+	manpower=739
+	buildings_max_level_factor=1.000
+	state_category=s5
+	local_supplies=2.500
+}

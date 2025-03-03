@@ -1,0 +1,20 @@
+CIR_fensanzhongyangliliang_modifier = {
+	icon = GFX_XXX
+	state_production_speed_buildings_factor = 0.1
+	
+}
+CIR_zizhizhouyihui_modifier1 = {
+	icon = GFX_XXX
+	state_production_speed_buildings_factor = 0.1
+	recruitable_population_factor = 0.1
+	
+}
+CIR_zizhizhouyihui_modifier2 = {
+	icon = GFX_XXX
+	industrial_capacity_factory = CIR_zizhizhouyihui_output
+}
+CIR_lalongqitaruoshizhongzu_modifier = {
+	icon = GFX_XXX
+	political_power_factor = CIR_lalongqitaruoshizhongzu_VAR
+}
+

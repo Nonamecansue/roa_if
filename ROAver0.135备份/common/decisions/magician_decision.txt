@@ -1,0 +1,2578 @@
+magician_united_category = {
+    mu_aim_to_unite = {
+        allowed = {
+          or = {
+            original_tag = MRS
+            original_tag = NAR
+            original_tag = ELL
+            original_tag = ALI
+            original_tag = MFA
+            original_tag = MTM
+            original_tag = MYK
+          }
+        }
+      visible = {    
+        not = {
+          has_country_flag = MAF_united
+        }
+      }
+      available = {
+        count_triggers = {
+          amount = 3
+          172 = {
+            owner = {
+              or = {
+                tag = ROOT
+                is_subject_of = ROOT
+              }
+            }
+          }
+          154 = {
+            owner = {
+              or = {
+                tag = ROOT
+                is_subject_of = ROOT
+              }
+            }
+          }
+          188 = {
+            owner = {
+              or = {
+                tag = ROOT
+                is_subject_of = ROOT
+              }
+            }
+          }
+          191 = {
+            owner = {
+              or = {
+                tag = ROOT
+                is_subject_of = ROOT
+              }
+            }
+          }
+          185 = {
+            owner = {
+              or = {
+                tag = ROOT
+                is_subject_of = ROOT
+              }
+            }
+          }
+          138 = {
+            owner = {
+              or = {
+                tag = ROOT
+                is_subject_of = ROOT
+              }
+            }
+          }
+          355 = {
+            owner = {
+              or = {
+                tag = ROOT
+                is_subject_of = ROOT
+              }
+            }
+          }
+        }
+      }
+
+      cost = 0
+
+      fire_only_once = yes
+
+      ai_will_do = {
+        factor = 1000
+      }
+    
+      complete_effect = {
+        custom_effect_tooltip = MAF_aim_to_unite_tt
+        swap_ideas = {
+          remove_idea = MAF_divided_region_1
+          add_idea = MAF_divided_region_2
+        }
+        if = {
+          limit = {
+            not = {
+              tag = ELL
+            }
+          }
+          add_ideas = Village
+        }
+        add_offsite_building = {
+          type = industrial_complex
+          level = 1
+        }
+        every_country = {
+          limit = {
+            or = {
+              tag = MFA
+              tag = MTM
+              tag = MYK
+              tag = ELL
+              tag = MRS
+              tag = NAR
+              tag = ALI
+            }
+            is_subject_of = ROOT
+          }
+          ROOT = {
+            PREV = {
+              can_core = yes
+              low_puppet_level = yes
+            }
+          }
+        }
+        hidden_effect = {
+          every_state = {
+            limit = {
+              or = {
+                is_core_of = MFA
+                is_core_of = MTM
+                is_core_of = MYK
+                is_core_of = MRS
+                is_core_of = ELL
+                is_core_of = ALI
+                is_core_of = NAR
+              }
+              is_owned_by = ROOT
+            }
+            add_core_of = ROOT
+            remove_claim_by = ROOT
+          }
+          every_state = {
+            limit = {
+              or = {
+                and = {
+                  is_core_of = MFA
+                  is_owned_by = MFA
+                }
+                and = {
+                  is_core_of = MTM
+                  is_owned_by = MTM
+                }
+                and = {
+                  is_core_of = MYK
+                  is_owned_by = MYK
+                }
+                and = {
+                  is_core_of = MRS
+                  is_owned_by = MRS
+                }
+                and = {
+                  is_core_of = ELL
+                  is_owned_by = ELL
+                }
+                and = {
+                  is_core_of = ALI
+                  is_owned_by = ALI
+                }
+                and = {
+                  is_core_of = NAR
+                  is_owned_by = NAR
+                }
+              }
+              not = {
+                is_core_of = ROOT
+              }
+            }
+            add_claim_by = ROOT
+          }
+        }
+        
+      }
+    }
+    mu_united = {
+      allowed = {
+        or = {
+          original_tag = MRS
+          original_tag = NAR
+          original_tag = ELL
+          original_tag = ALI
+          original_tag = MFA
+          original_tag = MTM
+          original_tag = MYK
+        }
+      }
+      visible = {   
+        not = {
+          has_country_flag = MAF_united
+        } 
+      }
+      available = {
+        custom_trigger_tooltip = {
+          tooltip = mu_united_tt
+          has_idea = MAF_divided_region_2
+        }
+        188 = {
+          owner = {
+            or = {
+              tag = ROOT
+              is_subject_of = ROOT
+            }
+          }
+        }
+        count_triggers = {
+          amount = 2
+          172 = {
+            owner = {
+              or = {
+                tag = ROOT
+                is_subject_of = ROOT
+              }
+            }
+          }
+          154 = {
+            owner = {
+              or = {
+                tag = ROOT
+                is_subject_of = ROOT
+              }
+            }
+          }
+          
+          191 = {
+            owner = {
+              or = {
+                tag = ROOT
+                is_subject_of = ROOT
+              }
+            }
+          }
+        }
+        count_triggers = {
+          amount = 2
+          185 = {
+            owner = {
+              or = {
+                tag = ROOT
+                is_subject_of = ROOT
+              }
+            }
+          }
+          138 = {
+            owner = {
+              or = {
+                tag = ROOT
+                is_subject_of = ROOT
+              }
+            }
+          }
+          355 = {
+            owner = {
+              or = {
+                tag = ROOT
+                is_subject_of = ROOT
+              }
+            }
+          }
+        }
+      }
+
+      cost = 0
+
+      fire_only_once = yes
+
+      ai_will_do = {
+        factor = 1000
+      }
+    
+      complete_effect = {
+        every_country = {
+          limit = {
+            has_country_flag = MAF_united
+          }
+          drop_cosmetic_tag = yes
+          clr_country_flag = MAF_united
+        }
+        remove_ideas = MAF_divided_region_2
+        set_country_flag = MAF_united
+        set_cosmetic_tag = MAF_united
+        set_division_template_lock = {
+            division_template = "使魔部队"
+            is_locked = no
+        }
+        set_division_template_lock = {
+            division_template = "高级使魔部队"
+            is_locked = no
+        }
+        custom_effect_tooltip = MAF_united_tt
+        custom_effect_tooltip = MAF_united_tt2
+        if = {
+          limit = {
+            not = {
+              tag = ELL
+            }
+          }
+          add_ideas = Town
+        }
+        add_offsite_building = {
+          type = industrial_complex
+          level = 2
+        }
+        add_offsite_building = {
+          type = arms_factory
+          level = 1
+        }
+        add_dynamic_modifier = {
+          modifier = MSH_mofashigehe_modifier
+        }
+        add_to_variable = {
+          MSH_mofashigehe_var_ps = -0.2
+        }
+        add_to_variable = {
+          MSH_mofashigehe_var_ic = -0.2
+        }
+        add_to_variable = {
+          MSH_mofashigehe_var_pf = -0.2
+        }
+        add_to_variable = {
+          MSH_mofashigehe_var_co = -0.1
+        }
+        if = {
+          limit = {
+            tag = ALI
+          }
+          add_to_variable = {
+            MSH_mofashigehe_var_co = 0.1
+          }
+          add_to_variable = {
+            MSH_mofashigehe_var_ps = -0.05
+          }
+          add_to_variable = {
+            MSH_mofashigehe_var_ic = -0.05
+          }
+          add_to_variable = {
+            MSH_mofashigehe_var_pf = -0.05
+          }
+        }
+        hidden_effect = {
+          every_state = {
+            limit = {
+              or = {
+                and = {
+                  is_core_of = MFA
+                  or = {
+                    is_owned_by = MFA
+                    is_owned_by = ROOT
+                  }
+                }
+                and = {
+                  is_core_of = MTM
+                  or = {
+                    is_owned_by = MTM
+                    is_owned_by = ROOT
+                  }
+                }
+                and = {
+                  is_core_of = MYK
+                  or = {
+                    is_owned_by = MYK
+                    is_owned_by = ROOT
+                  }
+                }
+                and = {
+                  is_core_of = MRS
+                  or = {
+                    is_owned_by = MRS
+                    is_owned_by = ROOT
+                  }
+                }
+                and = {
+                  is_core_of = ELL
+                  or = {
+                    is_owned_by = ELL
+                    is_owned_by = ROOT
+                  }
+                }
+                and = {
+                  is_core_of = ALI
+                  or = {
+                    is_owned_by = ALI
+                    is_owned_by = ROOT
+                  }
+                }
+                and = {
+                  is_core_of = NAR
+                  or = {
+                    is_owned_by = NAR
+                    is_owned_by = ROOT
+                  }
+                }
+              }
+              not = {
+                is_core_of = ROOT
+              }
+            }
+            remove_claim_by = ROOT
+            add_core_of = ROOT
+          }
+          every_state = {
+            limit = {
+              or = {
+                region = 58
+                region = 57
+                region = 59
+                region = 64
+                region = 63
+              }
+              not = {
+                is_claimed_by = ROOT
+                is_core_of = ROOT
+              }
+            }
+            add_claim_by = ROOT
+          }
+          every_country = {
+            limit = {
+              or = {
+                 tag = MRS
+                 tag = NAR
+                 tag = ELL
+                 tag = ALI
+                 tag = MFA
+                 tag = MTM
+                 tag = MYK
+              }
+            }
+            diplomatic_relation = {
+              country = ROOT
+              relation = non_aggression_pact
+              active = no
+            }
+            remove_opinion_modifier = {
+              target = ROOT
+              modifier = MSH_boyili_influence_op
+            }
+          }
+          every_country = {
+            limit = {
+              or = {
+                 tag = SCA
+                 tag = CIR
+                 tag = SEJ
+                 tag = TKM
+                 tag = YKR
+              }
+            }
+            remove_opinion_modifier = {
+              target = ROOT
+              modifier = MSH_boyili_relation_op
+            }
+          }
+        }
+      }
+    }
+}
+MSH_xiaoshi_category = {
+  MSH_xiaoshi_ic = {
+    allowed = {
+        or = {
+          tag = MRS
+          tag = NAR
+          tag = ELL
+          tag = ALI
+          tag = MFA
+          tag = MTM
+          tag = MYK
+        }
+    }
+    activation = {
+        has_country_flag = MAF_united
+        check_variable = {
+          MSH_boyili_ic > 0
+        }
+    }
+    available = {
+        always = no
+    }
+
+    modifier = {
+
+    }
+
+    timeout_effect = {
+      add_to_variable = {
+        MSH_boyili_ic = -1
+      }
+      add_offsite_building = {
+        type = industrial_complex
+        level = -1
+      }
+    }
+
+    is_good = no
+
+    days_mission_timeout = 20
+
+
+    ai_will_do = {
+        factor = 100
+    }
+  }
+  MSH_xiaoshi_af = {
+    allowed = {
+        or = {
+          tag = MRS
+          tag = NAR
+          tag = ELL
+          tag = ALI
+          tag = MFA
+          tag = MTM
+          tag = MYK
+        }
+    }
+    activation = {
+        has_country_flag = MAF_united
+        check_variable = {
+          MSH_boyili_af > 0
+        }
+    }
+    available = {
+        always = no
+    }
+
+    modifier = {
+
+    }
+
+    timeout_effect = {
+      add_to_variable = {
+        MSH_boyili_af = -1
+      }
+      add_offsite_building = {
+        type = arms_factory
+        level = -1
+      }
+    }
+
+    is_good = no
+
+    days_mission_timeout = 20
+
+
+    ai_will_do = {
+        factor = 100
+    }
+  }
+}
+MSH_boyi_category = {
+  MSH_boyili_duel = {
+      allowed = {
+        or = {
+          original_tag = MRS
+          original_tag = NAR
+          original_tag = ELL
+          original_tag = ALI
+        }
+      }
+      visible = {    
+        is_subject = no
+        not = { has_country_flag = MAF_united }
+      }
+      custom_cost_text = MSH_boyili_6
+      custom_cost_trigger = {
+          check_variable = { MSH_boyili > 5.99}
+      }
+      days_remove = 5
+      days_re_enable = 75
+      complete_effect = {
+        add_to_variable = {
+          MSH_boyili = -6
+        }
+      }
+      remove_effect = {
+        leader_duel_ability_refresh = yes
+        MSH_duel_ability = yes
+        country_event = msh.9
+      }
+      ai_will_do = {
+        factor = 0.1
+        modifier = {
+          set_temp_variable = {
+            block = mtth:MSH_block_decision_for_war
+          }
+          factor = block
+        }
+        modifier = {
+          set_temp_variable = {
+            block = mtth:MSH_block_decision_for_subject
+          }
+          factor = block
+        }
+        modifier = {
+          set_temp_variable = {
+            block = mtth:MSH_block_decision_for_non_aggress
+          }
+          factor = block
+        }
+      }
+  }
+  MSH_boyili_relation = {
+      allowed = {
+        or = {
+          original_tag = MRS
+          original_tag = NAR
+          original_tag = ELL
+          original_tag = ALI
+          original_tag = MYK
+          original_tag = MTM
+          original_tag = MFA
+        }
+      }
+      target_root_trigger = {
+        has_completed_focus = MSH_jiezhuwailailiang
+        not = { has_country_flag = MAF_united }
+        is_subject = no
+      }
+      target_trigger = {
+        
+      }
+      targets = { YKR CIR SEJ SCA TKM }
+      visible = {    
+        custom_trigger_tooltip = {
+          check_variable = {
+            MSH_boyili_relation_to_@FROM < 10
+          }
+          tooltip = MSH_boyili_relation_tt
+        }
+      }
+      custom_cost_text = MSH_boyili_5
+      custom_cost_trigger = {
+          check_variable = { MSH_boyili > 4.99}
+      }
+      available = {
+        custom_trigger_tooltip = {
+          check_variable = {
+            MSH_boyili_relation_to_@FROM < 10
+          }
+          tooltip = MSH_boyili_relation_tt
+        }
+      }
+      days_remove = 45
+      complete_effect = {
+        add_to_variable = {
+          MSH_boyili = -5
+        }
+      }
+      remove_effect = {
+        add_to_variable = {
+          MSH_boyili_relation_to_@FROM = 1
+        }
+        reverse_add_opinion_modifier = {
+          target = FROM
+          modifier = MSH_boyili_relation_op
+        }
+      }
+      ai_will_do = {
+        factor = 1
+        modifier = {
+          factor = 0
+          FROM = {
+            has_opinion = {
+              target = ROOT
+              value > 59
+            }
+          }
+        }
+        modifier = {
+          set_temp_variable = {
+            block = mtth:MSH_block_decision_for_war
+          }
+          factor = block
+        }
+        modifier = {
+          set_temp_variable = {
+            block = mtth:MSH_block_decision_for_subject
+          }
+          factor = block
+        }
+        modifier = {
+          set_temp_variable = {
+            block = mtth:MSH_block_decision_for_non_aggress
+          }
+          factor = block
+        }
+      }
+  }
+  MSH_boyili_weapons_support = {
+      allowed = {
+        or = {
+          original_tag = MRS
+          original_tag = NAR
+          original_tag = ELL
+          original_tag = ALI
+          original_tag = MYK
+          original_tag = MTM
+          original_tag = MFA
+        }
+      }
+      target_root_trigger = {
+        has_completed_focus = MSH_jiezhuwailailiang
+        not = {
+          has_country_flag = MAF_united
+        }
+        is_subject = no
+      }
+      target_trigger = {
+        
+      }
+      days_remove = 30
+      targets = { YKR CIR SEJ SCA TKM }
+      visible = {    
+
+      }
+      custom_cost_text = MSH_boyili_6
+      custom_cost_trigger = {
+          check_variable = { MSH_boyili > 5.99}
+      }
+      available = {
+        FROM = {
+          has_opinion = {
+            target = ROOT
+            value > 29
+          }
+        }
+      }
+      complete_effect = {
+        add_to_variable = {
+          MSH_boyili = -6
+        }
+        
+      }
+      remove_effect = {
+        add_equipment_to_stockpile = {
+          type = magic_core_a
+          amount = 250
+          producer = FROM
+        }
+        add_equipment_to_stockpile = {
+          type = gun_a
+          amount = 250
+          producer = FROM
+        }
+      }
+      ai_will_do = {
+        factor = 20
+        modifier = {
+          set_temp_variable = {
+            block = mtth:MSH_block_decision_for_war
+          }
+          factor = block
+        }
+        modifier = {
+          set_temp_variable = {
+            block = mtth:MSH_block_decision_for_subject
+          }
+          factor = block
+        }
+        modifier = {
+          set_temp_variable = {
+            block = mtth:MSH_block_decision_for_non_aggress
+          }
+          factor = block
+        }
+      }
+  }
+  MSH_boyili_advanced_weapons_support = {
+      allowed = {
+        or = {
+          original_tag = MRS
+          original_tag = NAR
+          original_tag = ELL
+          original_tag = ALI
+          original_tag = MYK
+          original_tag = MTM
+          original_tag = MFA
+        }
+      }
+      target_root_trigger = {
+        has_completed_focus = MSH_jiezhuwailailiang
+        not = { 
+          has_country_flag = MAF_united
+        }
+        is_subject = no
+      }
+      target_trigger = {
+        
+      }
+      days_remove = 30
+      targets = { YKR CIR SEJ SCA TKM }
+      visible = {    
+
+      }
+      custom_cost_text = MSH_boyili_12
+      custom_cost_trigger = {
+          check_variable = { MSH_boyili > 11.99}
+      }
+      available = {
+        FROM = {
+          has_opinion = {
+            target = ROOT
+            value > 59
+          }
+        }
+      }
+      complete_effect = {
+        add_to_variable = {
+          MSH_boyili = -12
+        }
+        
+      }
+      remove_effect = {
+        add_equipment_to_stockpile = {
+          type = mortar_a
+          amount = 50
+          producer = FROM
+        }
+        add_equipment_to_stockpile = {
+          type = magic_energy_a
+          amount = 50
+          producer = FROM
+        }
+      }
+      ai_will_do = {
+        factor = 50
+        modifier = {
+          set_temp_variable = {
+            block = mtth:MSH_block_decision_for_war
+          }
+          factor = block
+        }
+        modifier = {
+          set_temp_variable = {
+            block = mtth:MSH_block_decision_for_subject
+          }
+          factor = block
+        }
+        modifier = {
+          set_temp_variable = {
+            block = mtth:MSH_block_decision_for_non_aggress
+          }
+          factor = block
+        }
+      }
+  }
+  # MSH_boyili_tech_support_SCA = {
+  #     allowed = {
+  #       or = {
+  #         original_tag = MRS
+  #         original_tag = NAR
+  #         original_tag = ELL
+  #         original_tag = ALI
+  #         original_tag = MYK
+  #         original_tag = MTM
+  #         original_tag = MFA
+  #       }
+  #     }
+  #     target_root_trigger = {
+  #       has_completed_focus = MSH_jiezhuwailailiang
+  #     }
+  #     target_trigger = {
+        
+  #     }
+  #     days_remove = 60
+  #     targets = { SCA }
+  #     visible = {    
+  #       not = { has_cosmetic_tag = MAF_united }
+  #       is_subject = no
+  #     }
+  #     custom_cost_text = MSH_boyili_15
+  #     custom_cost_trigger = {
+  #         check_variable = { MSH_boyili > 14.99}
+  #     }
+  #     available = {
+  #       FROM = {
+  #         has_opinion = {
+  #           target = ROOT
+  #           value > 74
+  #         }
+  #       }
+  #     }
+  #     modifier = {
+
+  #     }
+  #     complete_effect = {
+  #       add_to_variable = {
+  #         MSH_boyili = -15
+  #       }
+        
+  #     }
+  #     remove_effect = {
+  #       add_tech_bonus = {
+  #         category = all
+  #         bonus = 0.3
+  #         uses = 2
+  #       }
+  #     }
+  #     ai_will_do = {
+  #       factor = 5
+  #       modifier = {
+  #         set_temp_variable = {
+  #           block = mtth:MSH_block_decision_for_war
+  #         }
+  #         factor = block
+  #       }
+  #       modifier = {
+  #         set_temp_variable = {
+  #           block = mtth:MSH_block_decision_for_subject
+  #         }
+  #         factor = block
+  #       }
+  #       modifier = {
+  #         set_temp_variable = {
+  #           block = mtth:MSH_block_decision_for_non_aggress
+  #         }
+  #         factor = block
+  #       }
+  #     }
+  # }
+  # MSH_boyili_tech_support_rest = {
+  #     allowed = {
+  #       or = {
+  #         original_tag = MRS
+  #         original_tag = NAR
+  #         original_tag = ELL
+  #         original_tag = ALI
+  #         original_tag = MYK
+  #         original_tag = MTM
+  #         original_tag = MFA
+  #       }
+  #     }
+  #     target_root_trigger = {
+  #       has_completed_focus = MSH_jiezhuwailailiang
+  #     }
+  #     target_trigger = {
+        
+  #     }
+  #     days_remove = 45
+  #     targets = { YKR CIR SEJ TKM }
+  #     visible = {    
+  #       not = { has_cosmetic_tag = MAF_united }
+  #       is_subject = no
+  #     }
+  #     custom_cost_text = MSH_boyili_12
+  #     custom_cost_trigger = {
+  #         check_variable = { MSH_boyili > 11.99}
+  #     }
+  #     available = {
+  #       FROM = {
+  #         has_opinion = {
+  #           target = ROOT
+  #           value > 74
+  #         }
+  #       }
+  #     }
+  #     modifier = {
+  #       research_speed_factor = 0.2
+  #     }
+  #     complete_effect = {
+  #       add_to_variable = {
+  #         MSH_boyili = -12
+  #       }
+  #       add_tech_bonus = {
+  #         category = all
+  #         bonus = 0.25
+  #         uses = 1
+  #       }
+        
+  #     }
+  #     ai_will_do = {
+  #       factor = 5
+  #       modifier = {
+  #         set_temp_variable = {
+  #           block = mtth:MSH_block_decision_for_war
+  #         }
+  #         factor = block
+  #       }
+  #       modifier = {
+  #         set_temp_variable = {
+  #           block = mtth:MSH_block_decision_for_subject
+  #         }
+  #         factor = block
+  #       }
+  #       modifier = {
+  #         set_temp_variable = {
+  #           block = mtth:MSH_block_decision_for_non_aggress
+  #         }
+  #         factor = block
+  #       }
+  #     }
+  # }
+  MSH_boyili_pp = {
+      allowed = {
+        or = {
+          original_tag = MRS
+          original_tag = NAR
+          original_tag = ELL
+          original_tag = ALI
+          original_tag = MYK
+          original_tag = MTM
+          original_tag = MFA
+        }
+      }
+      visible = {    
+        not = { 
+          has_country_flag = MAF_united
+        }
+        is_subject = no
+      }
+      custom_cost_text = MSH_boyili_6
+      custom_cost_trigger = {
+          check_variable = { MSH_boyili > 5.99}
+      }
+      days_remove = 60
+      modifier = {
+        political_power_factor = 0.3
+      }
+      complete_effect = {
+        add_to_variable = {
+          MSH_boyili = -6
+        }
+      }
+      ai_will_do = {
+        factor = 1000
+        modifier = {
+          set_temp_variable = {
+            block = mtth:MSH_block_decision_for_war
+          }
+          factor = block
+        }
+        modifier = {
+          set_temp_variable = {
+            block = mtth:MSH_block_decision_for_subject
+          }
+          factor = block
+        }
+        modifier = {
+          set_temp_variable = {
+            block = mtth:MSH_block_decision_for_non_aggress
+          }
+          factor = block
+        }
+      }
+  }
+  MSH_boyili_output = {
+      allowed = {
+        or = {
+          original_tag = MRS
+          original_tag = NAR
+          original_tag = ELL
+          original_tag = ALI
+          original_tag = MYK
+          original_tag = MTM
+          original_tag = MFA
+        }
+      }
+      visible = {    
+        not = { 
+          has_country_flag = MAF_united
+        }
+        is_subject = no
+      }
+      custom_cost_text = MSH_boyili_9
+      custom_cost_trigger = {
+          check_variable = { MSH_boyili > 8.99}
+      }
+      days_remove = 30
+      modifier = {
+        industrial_capacity_factory = 0.3
+      }
+      complete_effect = {
+        add_to_variable = {
+          MSH_boyili = -9
+        }
+      }
+      ai_will_do = {
+        factor = 10
+        modifier = {
+          set_temp_variable = {
+            block = mtth:MSH_block_decision_for_war
+          }
+          factor = block
+        }
+        modifier = {
+          set_temp_variable = {
+            block = mtth:MSH_block_decision_for_subject
+          }
+          factor = block
+        }
+        modifier = {
+          set_temp_variable = {
+            block = mtth:MSH_block_decision_for_non_aggress
+          }
+          factor = block
+        }
+      }
+  }
+  MSH_boyili_training = {
+      allowed = {
+        or = {
+          original_tag = MRS
+          original_tag = NAR
+          original_tag = ELL
+          original_tag = ALI
+          original_tag = MYK
+          original_tag = MTM
+          original_tag = MFA
+        }
+      }
+      visible = {    
+        not = { 
+          has_country_flag = MAF_united
+        }
+        is_subject = no
+      }
+      custom_cost_text = MSH_boyili_9
+      custom_cost_trigger = {
+          check_variable = { MSH_boyili > 8.99}
+      }
+      days_remove = 30
+      modifier = {
+        training_time_factor = -0.4
+      }
+      complete_effect = {
+        add_to_variable = {
+          MSH_boyili = -9
+        }
+      }
+      ai_will_do = {
+        factor = 0.05
+        modifier = {
+          set_temp_variable = {
+            block = mtth:MSH_block_decision_for_war
+          }
+          factor = block
+        }
+        modifier = {
+          set_temp_variable = {
+            block = mtth:MSH_block_decision_for_subject
+          }
+          factor = block
+        }
+        modifier = {
+          set_temp_variable = {
+            block = mtth:MSH_block_decision_for_non_aggress
+          }
+          factor = block
+        }
+      }
+  }
+  MSH_boyili_1L = {
+      allowed = {
+        or = {
+          original_tag = MRS
+          original_tag = NAR
+          original_tag = ELL
+          original_tag = ALI
+          original_tag = MYK
+          original_tag = MTM
+          original_tag = MFA
+        }
+      }
+      visible = {    
+        not = { 
+          has_country_flag = MAF_united
+        }
+        is_subject = no
+        is_subject = no
+        custom_trigger_tooltip = {
+          tooltip = MSH_boyili_1L_tt
+          check_variable = {
+            MSH_boyili_1L < 10
+          }
+        }
+      }
+      custom_cost_text = MSH_boyili_6
+      custom_cost_trigger = {
+          check_variable = { MSH_boyili > 5.99}
+      }
+      available = {
+        capital_scope = {
+          is_controlled_by = ROOT
+        }
+        custom_trigger_tooltip = {
+          tooltip = MSH_boyili_1L_tt
+          check_variable = {
+            MSH_boyili_1L < 10
+          }
+        }
+        has_war = no
+      }
+      days_remove = 30
+      modifier = {
+
+      }
+      remove_effect = {
+        hidden_effect = {
+          if = {
+            limit = {
+              check_variable = {
+                MSH_boyili_1L < 2
+              }
+            }
+            load_oob = MSH_boyili_1L
+          }
+        }
+        capital_scope = {
+          create_unit = {
+              division = "division_template = \"使魔部队\" start_experience_factor = 0.25 start_equipment_factor = 1"
+              owner = ROOT
+              allow_spawning_on_enemy_provs = yes
+          }
+        }
+      }
+      complete_effect = {
+        add_to_variable = {
+          MSH_boyili = -6
+        }
+        add_to_variable = {
+          MSH_boyili_1L = 1
+        }
+      }
+      ai_will_do = {
+        factor = 5
+        modifier = {
+          set_temp_variable = {
+            block = mtth:MSH_block_decision_for_war
+          }
+          factor = block
+        }
+        modifier = {
+          set_temp_variable = {
+            block = mtth:MSH_block_decision_for_subject
+          }
+          factor = block
+        }
+        modifier = {
+          set_temp_variable = {
+            block = mtth:MSH_block_decision_for_non_aggress
+          }
+          factor = block
+        }
+      }
+  }
+  MSH_boyili_3I = {
+      allowed = {
+        or = {
+          original_tag = MRS
+          original_tag = NAR
+          original_tag = ELL
+          original_tag = ALI
+          original_tag = MYK
+          original_tag = MTM
+          original_tag = MFA
+        }
+      }
+      visible = {    
+        not = { 
+          has_country_flag = MAF_united
+        }
+        is_subject = no
+        custom_trigger_tooltip = {
+          tooltip = MSH_boyili_1L_tt
+          check_variable = {
+            MSH_boyili_3I < 5
+          }
+        }
+      }
+      custom_cost_text = MSH_boyili_10
+      custom_cost_trigger = {
+          check_variable = { MSH_boyili > 9.99}
+      }
+      available = {
+        capital_scope = {
+          is_controlled_by = ROOT
+        }
+        custom_trigger_tooltip = {
+          tooltip = MSH_boyili_3I_tt
+          check_variable = {
+            MSH_boyili_3I < 5
+          }
+        }
+        has_war = no
+      }
+      days_remove = 45
+      modifier = {
+
+      }
+      remove_effect = {
+        hidden_effect = {
+          if = {
+            limit = {
+              check_variable = {
+                MSH_boyili_3I < 2
+              }
+            }
+            load_oob = MSH_boyili_3I
+          }
+        }
+        capital_scope = {
+          create_unit = {
+              division = "division_template = \"高级使魔部队\" start_experience_factor = 0.25 start_equipment_factor = 1"
+              owner = ROOT
+              allow_spawning_on_enemy_provs = yes
+          }
+        }
+      }
+      complete_effect = {
+        add_to_variable = {
+          MSH_boyili_3I = 1
+        }
+        add_to_variable = {
+          MSH_boyili = -10
+        }
+      }
+      ai_will_do = {
+        factor = 15
+        modifier = {
+          set_temp_variable = {
+            block = mtth:MSH_block_decision_for_war
+          }
+          factor = block
+        }
+        modifier = {
+          set_temp_variable = {
+            block = mtth:MSH_block_decision_for_subject
+          }
+          factor = block
+        }
+        modifier = {
+          set_temp_variable = {
+            block = mtth:MSH_block_decision_for_non_aggress
+          }
+          factor = block
+        }
+      }
+  }
+  MSH_boyili_bonus_against = {
+      allowed = {
+        or = {
+          original_tag = MRS
+          original_tag = NAR
+          original_tag = ELL
+          original_tag = ALI
+          original_tag = MYK
+          original_tag = MTM
+          original_tag = MFA
+        }
+      }
+      target_root_trigger = {
+        not = {
+          has_country_flag = MAF_united
+        }
+        is_subject = no
+      }
+      target_trigger = {
+        not = {
+          tag = FROM
+        }
+      }
+      targets = {
+        ELL ALI MYK MTM MFA MRS NAR
+      }
+      modifier = {
+        war_support_weekly = 0.004
+      }
+      visible = {    
+        has_war_with = FROM
+      }
+      custom_cost_text = MSH_boyili_20
+      custom_cost_trigger = {
+          check_variable = { MSH_boyili > 19.99}
+      }
+      available = {
+
+      }
+      days_remove = 60
+      targeted_modifier = {
+        tag = FROM
+        attack_bonus_against = 0.1
+        defense_bonus_against = 0.1
+      }
+      remove_effect = {
+
+      }
+      complete_effect = {
+        add_to_variable = {
+          MSH_boyili = -20
+        }
+      }
+      ai_will_do = {
+        factor = 0
+        modifier = {
+          add = 100
+          has_war_with = FROM
+        }
+        modifier = {
+          set_temp_variable = {
+            block = mtth:MSH_block_decision_for_war
+          }
+          factor = block
+        }
+        modifier = {
+          set_temp_variable = {
+            block = mtth:MSH_block_decision_for_subject
+          }
+          factor = block
+        }
+        modifier = {
+          set_temp_variable = {
+            block = mtth:MSH_block_decision_for_non_aggress
+          }
+          factor = block
+        }
+      }
+  }
+  MSH_boyili_ic = {
+      allowed = {
+        or = {
+          original_tag = MRS
+          original_tag = NAR
+          original_tag = ELL
+          original_tag = ALI
+          original_tag = MYK
+          original_tag = MTM
+          original_tag = MFA
+        }
+      }
+      visible = {    
+        not = { 
+          has_country_flag = MAF_united
+        }
+        is_subject = no
+        check_variable = {
+          MSH_boyili_ic < 5
+        }
+        is_subject = no
+      }
+      custom_cost_text = MSH_boyili_6
+      custom_cost_trigger = {
+          check_variable = { MSH_boyili > 5.99}
+      }
+      available = {
+        custom_trigger_tooltip = {
+          tooltip = MSH_boyili_ic_tt
+          check_variable = {
+            MSH_boyili_ic < 5
+          }
+        }
+      }
+      days_remove = 30
+      complete_effect = {
+        add_to_variable = {
+          MSH_boyili = -6
+        }
+      }
+      remove_effect = {
+        add_offsite_building = {
+          type = industrial_complex
+          level = 1
+        }
+        add_to_variable = {
+          MSH_boyili_ic = 1
+        }
+      }
+      ai_will_do = {
+        factor = 10
+        modifier = {
+          set_temp_variable = {
+            block = mtth:MSH_block_decision_for_war
+          }
+          factor = block
+        }
+        modifier = {
+          set_temp_variable = {
+            block = mtth:MSH_block_decision_for_subject
+          }
+          factor = block
+        }
+        modifier = {
+          set_temp_variable = {
+            block = mtth:MSH_block_decision_for_non_aggress
+          }
+          factor = block
+        }
+      }
+  }
+  MSH_boyili_af = {
+      allowed = {
+        or = {
+          original_tag = MRS
+          original_tag = NAR
+          original_tag = ELL
+          original_tag = ALI
+          original_tag = MYK
+          original_tag = MTM
+          original_tag = MFA
+        }
+      }
+      visible = {    
+        not = { 
+          has_country_flag = MAF_united
+        }
+        is_subject = no
+        check_variable = {
+          MSH_boyili_af < 5
+        }
+        is_subject = no
+      }
+      custom_cost_text = MSH_boyili_9
+      custom_cost_trigger = {
+          check_variable = { MSH_boyili > 8.99}
+      }
+      available = {
+        custom_trigger_tooltip = {
+          tooltip = MSH_boyili_af_tt
+          check_variable = {
+            MSH_boyili_af < 5
+          }
+        }
+      }
+      days_remove = 30
+      complete_effect = {
+        add_to_variable = {
+          MSH_boyili = -9
+        }
+      }
+      remove_effect = {
+        add_offsite_building = {
+          type = arms_factory
+          level = 1
+        }
+        add_to_variable = {
+          MSH_boyili_af = 1
+        }
+      }
+      ai_will_do = {
+        factor = 50
+        modifier = {
+          set_temp_variable = {
+            block = mtth:MSH_block_decision_for_war
+          }
+          factor = block
+        }
+        modifier = {
+          set_temp_variable = {
+            block = mtth:MSH_block_decision_for_subject
+          }
+          factor = block
+        }
+        modifier = {
+          set_temp_variable = {
+            block = mtth:MSH_block_decision_for_non_aggress
+          }
+          factor = block
+        }
+      }
+  }
+  MSH_boyili_war_on_magician = {
+      allowed = {
+        or = {
+          original_tag = MRS
+          original_tag = NAR
+          original_tag = ELL
+          original_tag = ALI
+          original_tag = MYK
+          original_tag = MTM
+          original_tag = MFA
+        }
+      }
+      target_root_trigger = {
+        has_completed_focus = MSH_wulizhengfu
+        not = { 
+          has_country_flag = MAF_united
+        }
+        is_subject = no
+      }
+      visible = {    
+        not = {
+          has_war_with = from
+        }
+      }
+      target_trigger = {
+        not = {
+          tag = FROM
+        }
+      }
+      targets = {
+        ELL NAR MRS ALI
+      }
+      custom_cost_text = MSH_boyili_40
+      custom_cost_trigger = {
+          check_variable = { MSH_boyili > 39.99}
+      }
+      available = {
+        FROM = {
+          before_declare_war = yes
+        }
+      }
+      days_remove = 15
+      complete_effect = {
+        set_country_flag = {
+          flag = select_MSH_boyili_war_on
+          value = 1
+          days = 365
+        }
+        add_to_variable = {
+          MSH_boyili = -40
+        }
+        ROOT = {
+          add_ai_strategy = {
+            type = prepare_for_war
+            id = FROM
+            value = 100
+          }
+        }
+        FROM = {
+          activate_targeted_decision = { target = ROOT decision = ongoing_war_on_decision_days_15 }
+          add_ai_strategy = {
+            type = prepare_for_war
+            id = ROOT
+            value = 100
+          }
+        }
+      }
+      remove_effect = {
+        declare_war_on = {
+          target = FROM
+          type = MAF_united_wargoal
+        }
+      }
+      cancel_trigger = {
+        or = {
+          has_war_with = FROM
+          is_subject = yes
+        }
+      }
+      ai_will_do = {
+        factor = 0
+        modifier = {
+          date > 146.7.15
+          add = 50
+        }
+        modifier = {
+          FROM = {
+            has_war = yes
+          }
+          factor = 1.5
+        }
+        modifier = {
+          factor = 0 
+          has_country_flag = select_MSH_boyili_war_on
+        }
+        modifier = {
+          factor = 0 
+          has_war = yes
+        }
+        modifier = {
+          factor = 0.6
+          from = {
+            tag = MRS
+            not = {
+              owns_state = 188
+            }
+          }
+        }
+      }
+  }
+  MSH_boyili_war_on_none_magician = {
+      allowed = {
+        or = {
+          original_tag = MRS
+          original_tag = NAR
+          original_tag = ELL
+          original_tag = ALI
+          original_tag = MYK
+          original_tag = MTM
+          original_tag = MFA
+        }
+      }
+      target_root_trigger = {
+        has_completed_focus = MSH_wulizhengfu
+        not = { 
+          has_country_flag = MAF_united
+        }
+        is_subject = no
+      }
+      visible = {    
+        not = {
+          has_war_with = FROM
+        }
+      }
+      target_trigger = {
+        not = {
+          tag = FROM
+        }
+      }
+      targets = {
+        MYK MTM MFA
+      }
+      custom_cost_text = MSH_boyili_25
+      custom_cost_trigger = {
+          check_variable = { MSH_boyili > 24.99}
+      }
+      available = {
+        FROM = {
+          before_declare_war = yes
+        }
+      }
+      days_remove = 15
+      complete_effect = {
+        set_country_flag = {
+          flag = select_MSH_boyili_war_on
+          value = 1
+          days = 365
+        }
+        add_to_variable = {
+          MSH_boyili = -25
+        }
+        ROOT = {
+          add_ai_strategy = {
+            type = prepare_for_war
+            id = FROM
+            value = 100
+          }
+        }
+        FROM = {
+          activate_targeted_decision = { target = ROOT decision = ongoing_war_on_decision_days_15 }
+          add_ai_strategy = {
+            type = prepare_for_war
+            id = ROOT
+            value = 100
+          }
+        }
+      }
+      remove_effect = {
+        declare_war_on = {
+          target = FROM
+          type = MAF_united_wargoal
+        }
+      }
+      cancel_trigger = {
+        or = {
+          has_war_with = FROM
+          is_subject = yes
+        }
+      }
+      ai_will_do = {
+        factor = 0
+        modifier = {
+          date > 146.7.15
+          add = 25
+        }
+        modifier = {
+          FROM = {
+            has_war = yes
+          }
+          factor = 1.5
+        }
+        modifier = {
+          factor = 0 
+          has_country_flag = select_MSH_boyili_war_on
+        }
+        modifier = {
+          factor = 0 
+          has_war = yes
+        }
+      }
+  }
+  MSH_boyili_influence_on_magician = {
+      allowed = {
+        or = {
+          original_tag = MRS
+          original_tag = NAR
+          original_tag = ELL
+          original_tag = ALI
+          original_tag = MYK
+          original_tag = MTM
+          original_tag = MFA
+        }
+      }
+      target_root_trigger = {
+        has_completed_focus = MSH_yingxiangshili
+        not = { 
+          has_country_flag = MAF_united
+        }
+        is_subject = no
+      }
+      visible = {    
+        custom_trigger_tooltip = {
+          tooltip = MSH_boyili_influence_on_magician_tt
+          check_variable = {
+            MSH_influence_times_to_@FROM < 15
+          }
+        }
+        FROM = {
+          is_subject = no
+        }
+      }
+      target_trigger = {
+        not = {
+          tag = FROM
+        }
+      }
+      targets = {
+        ELL NAR MRS ALI
+      }
+      custom_cost_text = MSH_boyili_7
+      custom_cost_trigger = {
+          check_variable = { MSH_boyili > 6.99}
+      }
+      available = {
+        custom_trigger_tooltip = {
+          tooltip = MSH_boyili_influence_on_magician_tt
+          check_variable = {
+            MSH_influence_times_to_@FROM < 15
+          }
+        }
+      }
+      days_remove = 30
+      complete_effect = {
+        add_to_variable = {
+          MSH_boyili = -7
+        }
+      }
+      remove_effect = {
+        add_to_variable = {
+          MSH_influence_times_to_@FROM = 1
+        }
+        reverse_add_opinion_modifier = {
+          target = FROM
+          modifier = MSH_boyili_influence_op
+        }
+        
+      }
+      ai_will_do = {
+        factor = 5
+        modifier = {
+          factor = 0
+          check_variable = {
+            MSH_influence_times_to_@FROM > 5
+          }
+          FROM = {
+            has_opinion = {
+              target = ROOT
+              value > 99
+            }
+          }
+        }
+        modifier = {
+          factor = 0
+          FROM = {
+            num_subjects > 0 
+          }
+        }
+        modifier = {
+          set_temp_variable = {
+            block = mtth:MSH_block_decision_for_subject
+          }
+          factor = block
+        }
+        modifier = {
+          set_temp_variable = {
+            block = mtth:MSH_block_decision_for_non_aggress
+          }
+          factor = block
+        }
+        modifier = {
+          set_temp_variable = {
+            o = FROM.opinion@ROOT
+          }
+          clamp_temp_variable = {
+            var = o
+            min = 1
+          }
+          factor = o
+        }
+      }
+  }
+  MSH_boyili_influence_on_none_magician = {
+      allowed = {
+        or = {
+          original_tag = MRS
+          original_tag = NAR
+          original_tag = ELL
+          original_tag = ALI
+          original_tag = MYK
+          original_tag = MTM
+          original_tag = MFA
+        }
+      }
+      target_root_trigger = {
+        has_completed_focus = MSH_yingxiangshili
+        not = { 
+          has_country_flag = MAF_united
+        }
+        is_subject = no
+      }
+      visible = {    
+        custom_trigger_tooltip = {
+          tooltip = MSH_boyili_influence_on_magician_tt
+          check_variable = {
+            MSH_influence_times_to_@FROM < 15
+          }
+        }
+        FROM = {
+          is_subject = no
+        }
+      }
+      target_trigger = {
+        not = {
+          tag = FROM
+        }
+      }
+      targets = {
+        MYK MTM MFA
+      }
+      custom_cost_text = MSH_boyili_5
+      custom_cost_trigger = {
+          check_variable = { MSH_boyili > 4.99}
+      }
+      available = {
+        custom_trigger_tooltip = {
+          tooltip = MSH_boyili_influence_on_magician_tt
+          check_variable = {
+            MSH_influence_times_to_@FROM < 15
+          }
+        }
+      }
+      days_remove = 30
+      complete_effect = {
+        add_to_variable = {
+          MSH_boyili = -5
+        }
+      }
+      remove_effect = {
+        add_to_variable = {
+          MSH_influence_times_to_@FROM = 1
+        }
+        reverse_add_opinion_modifier = {
+          target = FROM
+          modifier = MSH_boyili_influence_op
+        }
+      }
+      ai_will_do = {
+        factor = 30
+        modifier = {
+          tag = NAR
+          factor = 2
+        }
+        modifier = {
+          factor = 0
+          FROM = {
+            num_subjects > 0 
+          }
+        }
+        modifier = {
+          factor = 0
+          check_variable = {
+            MSH_influence_times_to_@FROM > 5
+          }
+          FROM = {
+            has_opinion = {
+              target = ROOT
+              value > 99
+            }
+          }
+        }
+        modifier = {
+          set_temp_variable = {
+            block = mtth:MSH_block_decision_for_subject
+          }
+          factor = block
+        }
+        modifier = {
+          set_temp_variable = {
+            block = mtth:MSH_block_decision_for_non_aggress
+          }
+          factor = block
+        }
+        modifier = {
+          set_temp_variable = {
+            o = FROM.opinion@ROOT
+          }
+          clamp_temp_variable = {
+            var = o
+            min = 1
+          }
+          factor = o
+        }
+      }
+  }
+  MSH_boyili_non_aggression = {
+      allowed = {
+        or = {
+          original_tag = MRS
+          original_tag = NAR
+          original_tag = ELL
+          original_tag = ALI
+          original_tag = MYK
+          original_tag = MTM
+          original_tag = MFA
+        }
+      }
+      target_root_trigger = {
+        has_completed_focus = MSH_yingxiangshili
+        not = { 
+          has_country_flag = MAF_united
+        }
+        is_subject = no
+      }
+      visible = {    
+        not = {
+          has_non_aggression_pact_with = FROM
+        }
+        FROM = {
+          is_subject = no
+        }
+      }
+      target_trigger = {
+        not = {
+          tag = FROM
+        }
+      }
+      targets = {
+        MYK MTM MFA MRS ELL ALI NAR
+      }
+      custom_cost_text = MSH_boyili_16
+      custom_cost_trigger = {
+          check_variable = { MSH_boyili > 15.99}
+      }
+      available = {
+        custom_trigger_tooltip = {
+          tooltip = MSH_boyili_non_aggression_tt
+          check_variable = {
+            MSH_influence_times_to_@FROM > 1
+          }
+        }
+        FROM = {
+          has_opinion = {
+            target = ROOT
+            value > 49
+          }
+        }
+        
+      }
+      days_remove = 30
+      complete_effect = {
+        set_country_flag = {
+          flag = select_MSH_boyili_non_aggress
+          value = 1
+          days = 30
+        }
+        add_to_variable = {
+          MSH_boyili = -16
+        }
+      }
+      remove_effect = {
+        diplomatic_relation = {
+          country = FROM
+          relation = non_aggression_pact
+          active = yes
+        }
+      }
+      ai_will_do = {
+        factor = 1000
+        modifier = {
+          set_temp_variable = {
+            block = mtth:MSH_block_decision_for_subject
+          }
+          factor = block
+        }
+        modifier = {
+          factor = 0
+          FROM = {
+            num_subjects > 0 
+          }
+        }
+      }
+  }
+  MSH_boyili_influence = {
+      allowed = {
+        or = {
+          original_tag = MRS
+          original_tag = NAR
+          original_tag = ELL
+          original_tag = ALI
+          original_tag = MYK
+          original_tag = MTM
+          original_tag = MFA
+        }
+      }
+      target_root_trigger = {
+        has_completed_focus = MSH_yingxiangshili
+        not = { 
+          has_country_flag = MAF_united
+        }
+        is_subject = no
+      }
+      visible = {    
+        from = {
+          is_subject = no
+        }
+      }
+      target_trigger = {
+        not = {
+          tag = FROM
+        }
+        if = {
+          limit = {
+            has_completed_focus = NAR_jiemengfeimofashi
+          }
+          FROM = {
+            not = {
+              tag = MFA
+              tag = MTM
+              tag = MYK
+            }
+          }
+        }
+      }
+      targets = {
+        MYK MTM MFA MRS ELL ALI NAR
+      }
+      custom_cost_text = MSH_boyili_25
+      custom_cost_trigger = {
+          check_variable = { MSH_boyili > 24.99}
+      }
+      available = {
+        has_war = no
+        custom_trigger_tooltip = {
+          tooltip = MSH_boyili_influence_tt
+          check_variable = {
+            MSH_influence_times_to_@FROM > 5
+          }
+        }
+        FROM = {
+          has_opinion = {
+            target = ROOT
+            value > 99
+          }
+          not = {
+            controls_state = 188
+          }
+          num_subjects < 1
+          has_war = no
+        }
+      }
+      days_remove = 30
+      complete_effect = {
+        add_to_variable = {
+          MSH_boyili = -25
+        }
+        set_country_flag = {
+          flag = select_MSH_boyili_subject
+          value = 1
+          days = 90
+        }
+      }
+      remove_effect = {
+        FROM = {
+          country_event = msh.5
+          custom_effect_tooltip = TEG_accept
+          effect_tooltip = {
+            can_core = yes
+				    subject_level1 = yes
+          }
+        }
+      }
+      cancel_trigger = {
+        FROM = {
+          or = {
+            is_subject = yes
+            has_war = yes
+            num_subjects > 0
+          }
+        }
+      }
+      ai_will_do = {
+        factor = 1000
+      }
+  }
+  MSH_boyili_influence_NAR = {
+      allowed = {
+        or = {
+          original_tag = MRS
+          original_tag = NAR
+          original_tag = ELL
+          original_tag = ALI
+          original_tag = MYK
+          original_tag = MTM
+          original_tag = MFA
+        }
+      }
+      target_root_trigger = {
+        has_completed_focus = MSH_yingxiangshili
+        has_completed_focus = NAR_jiemengfeimofashi
+        not = { 
+          has_country_flag = MAF_united
+        }
+        is_subject = no
+      }
+      visible = {    
+        from = {
+          is_subject = no
+        }
+      }
+      target_trigger = {
+        not = {
+          tag = FROM
+        }
+      }
+      targets = {
+        MYK MTM MFA
+      }
+      custom_cost_text = MSH_boyili_16
+      custom_cost_trigger = {
+          check_variable = { MSH_boyili > 15.99}
+      }
+      available = {
+        has_war = no
+        custom_trigger_tooltip = {
+          tooltip = MSH_boyili_influence_NAR_tt
+          check_variable = {
+            MSH_influence_times_to_@FROM > 4
+          }
+        }
+        FROM = {
+          has_opinion = {
+            target = ROOT
+            value > 69
+          }
+          not = {
+            controls_state = 188
+          }
+          num_subjects < 1
+          has_war = no
+        }
+      }
+      days_remove = 20
+      complete_effect = {
+        add_to_variable = {
+          MSH_boyili = -16
+        }
+        set_country_flag = {
+          flag = select_MSH_boyili_subject
+          value = 1
+          days = 90
+        }
+      }
+      remove_effect = {
+        FROM = {
+          country_event = msh.5
+          custom_effect_tooltip = TEG_accept
+          effect_tooltip = {
+            can_core = yes
+				    subject_level1 = yes
+          }
+        }
+      }
+      cancel_trigger = {
+         FROM = {
+          or = {
+            is_subject = yes
+            has_war = yes
+            num_subjects > 0
+          }
+        }
+      }
+      ai_will_do = {
+        factor = 1000
+      }
+  }
+}
+MSH_manzu_category = {
+  MSH_manzu_MTM = {
+      allowed = {
+        or = {
+          original_tag = MRS
+          original_tag = NAR
+          original_tag = ELL
+          original_tag = ALI
+          original_tag = MYK
+          # original_tag = MTM
+          original_tag = MFA
+        }
+      }
+      visible = {    
+        is_subject = no
+        has_completed_focus = MSH_manzufusangshen
+      }
+      available = {
+        185 = {
+          controller = {
+            or = {
+              tag = ROOT
+              is_subject_of = ROOT
+            }
+          }
+        }
+        465 = {
+          controller = {
+            or = {
+              tag = ROOT
+              is_subject_of = ROOT
+            }
+          }
+        }
+      }
+      days_remove = 365
+      fire_only_once = yes
+      cost = 150
+      modifier = {
+        political_power_factor = -0.15
+	    	line_change_production_efficiency_factor = -0.2
+        production_factory_max_efficiency_factor = -0.2
+      }
+      remove_effect = {
+        set_country_flag = MSH_manzu_MTM
+        185 = {
+          ST_race_penalty_remove = yes
+        }
+        465 = {
+          ST_race_penalty_remove = yes
+        }
+      }
+      ai_will_do = {
+        factor = 1000
+      }
+  }
+  MSH_manzu_MFA = {
+      allowed = {
+        or = {
+          original_tag = MRS
+          original_tag = NAR
+          original_tag = ELL
+          original_tag = ALI
+          original_tag = MYK
+          original_tag = MTM
+          # original_tag = MFA
+        }
+      }
+      visible = {    
+        is_subject = no
+        has_completed_focus = MSH_manzuyaojing
+      }
+      available = {
+        153 = {
+          controller = {
+            or = {
+              tag = ROOT
+              is_subject_of = ROOT
+            }
+          }
+        }
+        552 = {
+          controller = {
+            or = {
+              tag = ROOT
+              is_subject_of = ROOT
+            }
+          }
+        }
+        138 = {
+          controller = {
+            or = {
+              tag = ROOT
+              is_subject_of = ROOT
+            }
+          }
+        }
+      }
+      days_remove = 365
+      fire_only_once = yes
+      cost = 150
+      modifier = {
+        production_speed_buildings_factor = -0.2
+        political_power_factor = -0.15
+      }
+      complete_effect = {
+        153 = {
+          add_extra_state_shared_building_slots = -1
+        }
+        552 = {
+          add_extra_state_shared_building_slots = -1
+        }
+        138 = {
+          add_extra_state_shared_building_slots = -1
+        }
+      }
+      remove_effect = {
+        set_country_flag = MSH_manzu_MFA
+        153 = {
+          ST_race_penalty_remove = yes
+        }
+        552 = {
+          ST_race_penalty_remove = yes
+        }
+        138 = {
+          ST_race_penalty_remove = yes
+        }
+      }
+      ai_will_do = {
+        factor = 1000
+      }
+  }
+  MSH_manzu_MYK = {
+      allowed = {
+        or = {
+          original_tag = MRS
+          original_tag = NAR
+          original_tag = ELL
+          original_tag = ALI
+          # original_tag = MYK
+          original_tag = MTM
+          original_tag = MFA
+        }
+      }
+      visible = {    
+        is_subject = no
+        has_completed_focus = MSH_manzuyaoguai
+      }
+      available = {
+        182 = {
+          controller = {
+            or = {
+              tag = ROOT
+              is_subject_of = ROOT
+            }
+          }
+        }
+        355 = {
+          controller = {
+            or = {
+              tag = ROOT
+              is_subject_of = ROOT
+            }
+          }
+        }
+        175 = {
+          controller = {
+            or = {
+              tag = ROOT
+              is_subject_of = ROOT
+            }
+          }
+        }
+        547 = {
+          controller = {
+            or = {
+              tag = ROOT
+              is_subject_of = ROOT
+            }
+          }
+        }
+      }
+      days_remove = 365
+      fire_only_once = yes
+      cost = 150
+      modifier = {
+        stability_weekly = -0.006
+        political_power_factor = -0.15
+      }
+      complete_effect = {
+        
+      }
+      remove_effect = {
+        set_country_flag = MSH_manzu_MYK
+        182 = {
+          ST_race_penalty_remove = yes
+        }
+        355 = {
+          ST_race_penalty_remove = yes
+        }
+        175 = {
+          ST_race_penalty_remove = yes
+        }
+        547 = {
+          ST_race_penalty_remove = yes
+        }
+      }
+      ai_will_do = {
+        factor = 1000
+      }
+  }
+}
+MSH_xianzhe_category = {
+  MSH_jiaohao = {
+      allowed = {
+        or = {
+          original_tag = MRS
+          original_tag = NAR
+          original_tag = ELL
+          original_tag = ALI
+          original_tag = MYK
+          original_tag = MTM
+          original_tag = MFA
+        }
+      }
+      targets = { OKI YKR KAS}
+      target_root_trigger = {
+        has_completed_focus = MSH_jiaohaoxianzhe
+      }
+      target_trigger = {
+        
+      }
+      visible = {    
+        FROM = {
+          is_subject = no
+        }
+        not = {
+          has_country_flag = MSH_jiaohao
+        }
+        is_subject = no
+      }
+      available = {
+        not = {
+          has_war_with = FROM
+        }
+        FROM = {
+          has_opinion = {
+            target = ROOT
+            value > 99
+          }
+        }
+      }
+      days_remove = 90
+      fire_only_once = yes
+      cost = 200
+      modifier = {
+
+      }
+      complete_effect = {
+        set_country_flag = MSH_jiaohao
+        custom_effect_tooltip = MSH_jiaohao_tt
+      }
+      remove_effect = {
+        FROM = {
+          qiangjiemeng = yes
+        }
+      }
+      ai_will_do = {
+        base = 1000
+        modifier = {
+          FROM = {
+            tag = YKR
+          }
+          tag = ELL
+          factor = 10
+        }
+        modifier = {
+          FROM = {
+            tag = OKI
+          }
+          tag = ELL
+          factor = 5
+        }
+        modifier = {
+          FROM = {
+            tag = OKI
+          }
+          tag = MRS
+          factor = 10
+        }
+      }
+  }
+}

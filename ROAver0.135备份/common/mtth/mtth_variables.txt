@@ -1,0 +1,216 @@
+
+# this mtth entries can be used as variables
+# example set_variable = { a = mtth:entry_name }
+# and define entry_name here
+#
+test_mtth = {
+	base = 100
+	modifier = {
+		tag = YKR
+		add = 100
+	}
+}
+
+MSH_block_decision_for_war = {
+	factor = 1
+	modifier = {
+		or = {
+			has_completed_focus = MSH_wulizhengfu
+			has_completed_focus = MRS_mofashilaoshi
+		}
+		or = {
+			and = {
+				date > 146.9.1
+				or = {
+					tag = MRS
+					tag = ELL
+					tag = ALI
+					tag = NAR
+				}
+			}
+			and = {
+				date > 147.6.1
+				or = {
+					tag = MFA
+					tag = MTM
+					tag = MYK
+				}
+			}
+		}
+		has_war = no
+		not = {
+			has_country_flag = select_MSH_boyili_war_on
+		}
+		check_variable = {
+			MSH_boyili < 50 
+		}
+		any_country = {
+			if = {
+				limit = {
+					or = {
+						tag = MFA
+						tag = MTM
+						tag = MYK
+						tag = ELL
+						tag = MRS
+						tag = ALI
+						tag = NAR
+					}
+					not = {
+						tag = ROOT
+					}
+				}
+				is_neighbor_of = ROOT
+				not = {
+					has_non_aggression_pact_with = ROOT
+					has_war_with = ROOT
+				}
+			}
+		}
+		factor = 0
+	}
+}
+
+MSH_block_decision_for_subject = {
+	factor = 1
+	modifier = {
+		has_completed_focus = MSH_yingxiangshili
+		not = {
+			has_completed_focus = MRS_mofashilaoshi
+		}
+		or = {
+			and = {
+				date > 146.7.1
+				or = {
+					tag = MRS
+					tag = ELL
+					tag = ALI
+					tag = NAR
+				}
+			}
+			and = {
+				date > 147.1.1
+				or = {
+					tag = MFA
+					tag = MTM
+					tag = MYK
+				}
+			}
+		}
+		not = {
+			has_country_flag = select_MSH_boyili_subject
+		}
+		check_variable = {
+			MSH_boyili < 50 
+		}
+		any_country = {
+			or = {
+				tag = MFA
+				tag = MTM
+				tag = MYK
+				tag = ELL
+				tag = MRS
+				tag = ALI
+				tag = NAR
+			}
+			not = {
+				tag = ROOT
+			}
+			if = {
+				limit = {
+					ROOT = { has_completed_focus = NAR_jiemengfeimofashi }
+				}
+				has_opinion = {
+					target = ROOT
+					value > 69
+				}
+				check_variable = {
+					ROOT.MSH_influence_times_to_@THIS > 4
+				}
+			}
+			if = {
+				limit = {
+					not = { ROOT = { has_completed_focus = NAR_jiemengfeimofashi } }
+				}
+				has_opinion = {
+					target = ROOT
+					value > 99
+				}
+				check_variable = {
+					ROOT.MSH_influence_times_to_@THIS > 5
+				}
+			}
+			is_subject = no
+			has_war = no
+			num_subjects < 1
+			not = {
+				owns_state = 188
+			}
+		}
+		factor = 0
+	}
+}
+
+MSH_block_decision_for_non_aggress = {
+	factor = 1
+	modifier = {
+		has_completed_focus = MSH_yingxiangshili
+		not = {
+			has_completed_focus = MRS_mofashilaoshi
+		}
+		or = {
+			and = {
+				date > 146.7.1
+				or = {
+					tag = MRS
+					tag = ELL
+					tag = ALI
+					tag = NAR
+				}
+			}
+			and = {
+				date > 147.1.1
+				or = {
+					tag = MFA
+					tag = MTM
+					tag = MYK
+				}
+			}
+		}
+		check_variable = {
+			MSH_boyili < 30
+		}
+		not = {
+			has_country_flag = select_MSH_boyili_non_aggress
+		}
+		any_country = {
+			or = {
+				tag = MFA
+				tag = MTM
+				tag = MYK
+				tag = ELL
+				tag = MRS
+				tag = ALI
+				tag = NAR
+			}
+			not = {
+				tag = ROOT
+			}
+			has_opinion = {
+				target = ROOT
+				value > 49
+			}
+			check_variable = {
+				ROOT.MSH_influence_times_to_@THIS > 1
+			}
+			is_subject = no
+			has_war = no
+			num_subjects < 1
+			not = {
+				owns_state = 188
+				has_non_aggression_pact_with = ROOT
+			}
+		}
+		factor = 0
+	}
+}

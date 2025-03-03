@@ -1,0 +1,409 @@
+# MAIN THEME
+music = {
+	name = "maintheme"
+	file = "hoi4mainthemeallies.ogg"
+	volume = 0.65
+}
+# New
+music = {
+	name = "song_t1"
+	file = "t1.ogg" #"=NEUTRAL= - 亡き王女の为のセプテット.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t2"
+	file = "t2.ogg" #"Floating Cloud - 空中庭园(原曲：廃狱ララバイ／东方地霊)　arranged：Toshimasa&さわら.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t3"
+	file = "t3.ogg" #"SOUND OCTA - 少女が见た日本の原风景.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t4"
+	file = "t4.ogg" #"TAMUSIC - 花の映る塚.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t5"
+	file = "t5.ogg" #"Tutti Sound - 天空の花の都　-PHANTOM ENSEMBLE-.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t6"
+	file = "t6.ogg" #"はちみつれもん - 砕月.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t7"
+	file = "t7.ogg" #"交響アクティブNEETs - 厄神様の通り道.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t8"
+	file = "t8.ogg" #"流派未階堂 - 十二賢者の決断 ~Decision of twelve sage ~.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t9"
+	file = "t9.ogg" #"流派未確定 - 妖叶乱舞.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t10"
+	file = "t10.ogg" #"趣味工房にんじんわいん - 阳炎の都、白日の租界　　(上海红茶馆~Chinese Tea).ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t11"
+	file = "t11.ogg" #"幽閉サテライト - 三千世界 (Orchestra version).ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t12"
+	file = "t12.ogg" #"グーシャンダグー - 坤徳磊嵬.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t13"
+	file = "t13.ogg" #"趣味工房にんじんわいん - 飒のごとく.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t14"
+	file = "t14.ogg" #"CROW'SCLAW - Little Hero.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t15"
+	file = "t15.ogg" #"CROW'SCLAW - Ending ： Eastern Dream.ogg"
+	volume = 0.65
+}
+#music = {
+#	name = "song_t16"
+#	file = "豚乙女 - 人の住む里.ogg"
+#	volume = 0.65
+#}
+music = {
+	name = "song_t17"
+	file = "t17.ogg" #"かっつん - 今昔幻想郷.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t18"
+	file = "t18.ogg" #"豚乙女 - 鏡の中は別の顔.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t19"
+	file = "t19.ogg" #"FallingNight - 上海アリス幻樂団 - 白い旅人.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t20"
+	file = "t20.ogg" #"流派未階堂 - Geminus Spira　～ 無限の種.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t21"
+	file = "t21.ogg" #"dBu music - 星条旗の道化.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t22"
+	file = "t22.ogg" #"流派未階堂 - 後海.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t23"
+	file = "t23.ogg" #"ありおと - 亡失のエモーション.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t24"
+	file = "t24.ogg" #"ORANGE★JAM - flowing into you.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t25"
+	file = "t25.ogg" #"dBu music - 暗闇の風穴.ogg"
+	volume = 0.65
+}
+# music = {
+# 	name = "song_t26"
+# 	file = "TAMUSIC - 恋色マスタースパーク.ogg"
+# 	volume = 0.65
+# }
+music = {
+	name = "song_t27"
+	file = "t27.ogg" #"趣味工房にんじんわいん - 心の瞳.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t28"
+	file = "t28.ogg" #"Dark PHOENiX - 緑眼のジェラシー.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t29"
+	file = "t29.ogg" #"TAMUSIC - 神さびた古戦場 ~ Suwa Foughten Field.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t30"
+	file = "t30.ogg" #"流派未月亭 - 行雲流水.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t31"
+	file = "t31.ogg" #"流派未月亭 - 神楽舞.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t32"
+	file = "t32.ogg" #"上海アリス幻樂団 - 少女綺想曲 ～ Dream Battle.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t33"
+	file = "t33.ogg" #"A.S.C.Y. - The Doll Maker of Ceausescu.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t34"
+	file = "t34.ogg" #"Dark PHOENiX - 竹取飞翔.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t35"
+	file = "t35.ogg" #"dBu music - Bamboo Forest Under the Fullmoon.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t36"
+	file = "t36.ogg" #"dBu music - 幻想バラードドラマ.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t37"
+	file = "t37.ogg" #"dBu music - 柳の下の飛頭蛮.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t38"
+	file = "t38.ogg" #"dBu music - 逆転主義 ～ Reverse Ideology.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t39"
+	file = "t39.ogg" #"dBu music - 耀く針の小人族 ～ Descendant of the Hero.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t40"
+	file = "t40.ogg" #"Foxtail-Grass Studio - 泪苔.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t41"
+	file = "t41.ogg" #"kz-sat - 恋色マスタースパーク.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t42"
+	file = "t42.ogg" #"凋叶棕 - 狂言「九十九星降」.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t43"
+	file = "t43.ogg" #"凋叶棕 - 至高を求める意思.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t44"
+	file = "t44.ogg" #"アンヘル - 月时计 ~ ルナ_ダイアル.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t45"
+	file = "t45.ogg" #"地鐵交響樂團（MetroSymphonyOrchestra） - 封印されし神々.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t46"
+	file = "t46.ogg" #"SOUTH OF HEAVEN - Prelude-赤より紅い夢.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t47"
+	file = "t47.ogg" #"アベニュールーム - 百花繚乱.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t48"
+	file = "t48.ogg" #"ばんばんしー - 秋姉妹のなく頃に in the autumn sky.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t49"
+	file = "t49.ogg" #"大江戸宅急便 - 神話幻想 ～ Infinite Being ～.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t50"
+	file = "t50.ogg" #"Melodic Taste - 稲田姫様大激怒!!.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t51"
+	file = "t51.ogg" #"Melodic Taste - 死地のハクレイ.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t52"
+	file = "t52.ogg" #"凋叶棕 - 五重変奏「永夜の報い」.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t53"
+	file = "t53.ogg" #"地鐵交響樂團（MetroSymphonyOrchestra） - 红より儚い永远.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t54"
+	file = "t54.ogg" #"地鐵交響樂團（MetroSymphonyOrchestra） - 妖魔夜行.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t55"
+	file = "t55.ogg" #"地鐵交響樂團（MetroSymphonyOrchestra） - 蠢々秋月　～ Mooned Insect.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t56"
+	file = "t56.ogg" #"Melodic Taste - Alice of Alice.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t57"
+	file = "t57.ogg" #"黄昏フロンティア - おてんば恋娘.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t58"
+	file = "t58.ogg" #"黄昏フロンティア,上海アリス幻樂団 - ラクトガール　～ 少女密室.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t59"
+	file = "t59.ogg" #"黄昏フロンティア,上海アリス幻樂団 - 黒い海に紅く　～ Legendary Fish.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t60"
+	file = "t60.ogg" #"黄昏フロンティア,上海アリス幻樂団 - 天衣無縫.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t61"
+	file = "t61.ogg" #"黄昏フロンティア,上海アリス幻樂団 - 有頂天変　～ Wonderful Heaven.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t62"
+	file = "t62.ogg" #"黄昏フロンティア,上海アリス幻樂団 - 幼心地の有頂天.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t63"
+	file = "t63.ogg" #"交響アクティブNEETs - 恋色マスタースパーク.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t64"
+	file = "t64.ogg" #"流派未階堂,幻楽工房 - いたちごっこ.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t65"
+	file = "t65.ogg" #"埼玉最終兵器,Aether - 夜雀の歌声 ～ Night Bird(Alternative Ver.) ～ from Eternal eclipse.ogg"
+	volume = 0.65
+}
+
+
+music = {
+	name = "song_t66"
+	file = "t66.ogg" #"[Touhou]-Utsuho's Theme- Solar Sect of Mystic Wisdom-Nuclear Fusion ~ 2ºRemix"
+	volume = 0.65
+}
+music = {
+	name = "song_t67"
+	file = "t67.ogg" #"【東方Metal／Rock】 RECALL A TRAUMATIC EXPERIENCE 「Xenoglossy」_3.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t68"
+	file = "t68.ogg" #"【東方アレンジ】 【凋叶棕】 弦奏交響曲「少女さとり」.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t69"
+	file = "t69.ogg" #"☆東方 Flamenco☆ 激情サトリ・オーレ！ [Xenoglossy].ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t70"
+	file = "t70.ogg" #"MA.S ATTACK - 少女さとり -3rd eye-.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t71"
+	file = "t71.ogg" #"Subterranean Rhythmos - 3 - Fantasia sul trauma nel sogno.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t72"
+	file = "t72.ogg" #"α music - Wiederbelebung Erinnerungen.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t73"
+	file = "t73.ogg" #"古明地觉主题 - 苏联风格 by 勿语沙.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t74"
+	file = "t74.ogg" #"古明地觉主题 remix by 极音对置.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t75"
+	file = "t75.ogg" #"交響アクティブNEETs - 廃獄ララバイ.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t76"
+	file = "t76.ogg" #"流派未階堂 - Awakened.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t77"
+	file = "t77.ogg" #"流派未確定 - become visible crow？三足乌？.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t78"
+	file = "t78.ogg" #"趣味工房にんじんわいん - 廃獄の弦楽四獣葬.ogg"
+	volume = 0.65
+}
+music = {
+	name = "song_t79"
+	file = "t79.ogg" #"趣味工房にんじんわいん - 古明地　さとり／少女さとり　～3rd eye.ogg"
+	volume = 0.65
+}
+music = {
+	name = "sgs1"
+	file = "sgs1.ogg" #"Yoshika_DK - 三月精之舞.ogg"
+	volume = 0.65
+}

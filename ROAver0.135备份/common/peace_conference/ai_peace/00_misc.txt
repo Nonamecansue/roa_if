@@ -1,0 +1,71 @@
+# Scripted AI desire for peace actions.
+# See documentation.info file for more detailed scripting information.
+
+peace_ai_desires = {
+    # test = {
+    #     peace_action_type = { take_states puppet liberate force_government }
+    #     enable = {
+    #         always = yes
+    #     }
+
+    #     ai_desire = -1000000
+    # }
+    # test3 = {
+    #     peace_action_type = take_states
+    #     enable = {
+    #         always = yes
+    #     }
+
+    #     ai_desire = -1000000
+    # }
+    # test2 = {
+    #     peace_action_type = { puppet }
+    #     enable = {
+    #         always = yes
+    #     }
+    #     # ROOT.FROM.FROM = {
+    #     #     tag = SEJ
+    #     # }
+    #     # ROOT.FROM.FROM = {
+    #     #     tag = SEJ
+    #     # }
+    #     ai_desire = -1000
+    # }
+    # test3 = {
+    #     peace_action_type = { liberate }
+    #     enable = {
+    #         always = yes
+    #     }
+    #     ROOT = { tag = ROOT.FROM }
+    #     # ROOT.FROM.FROM = {
+    #     #     tag = SEJ
+    #     # }
+    #     ROOT.FROM.FROM.FROM = {
+    #         # not = {
+    #             is_core_of = NIB
+    #         # }
+    #     }
+    #     ai_desire = 1000
+    # }
+    force_gov_puppets = {
+        peace_action_type = puppet
+        enable = {
+            ROOT.FROM = {
+                exists = no
+            }
+            any_owned_state = {
+                any_country_with_core = {
+                    exists = no
+                    ROOT.FROM = {
+                        not = {
+                            tag = PREV
+                        }
+                    }
+                }
+            }
+            
+        }
+        ai_desire = 10000
+    }
+
+}

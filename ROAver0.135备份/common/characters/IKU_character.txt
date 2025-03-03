@@ -1,0 +1,74 @@
+characters={
+	IKU_iku ={
+		name = IKU_iku
+		portraits={
+			civilian={
+				large="gfx/leaders/IKU/IKU_iku.dds"
+				small="gfx/leaders/IKU/IKU_iku_small.dds"
+			}
+			army = {
+				large="gfx/leaders/IKU/IKU_iku.dds"
+				small="gfx/leaders/IKU/IKU_iku_small.dds"
+			}
+		}
+		corps_commander = {
+            traits = {  th_original_character th_character th_trait_huolizhuanjia th_trait_jijiacaokongzhe   }
+            attack_skill = 3
+            defense_skill = 6
+            planning_skill = 5
+            logistics_skill = 10
+            
+            skill = 6
+        }
+		advisor = {
+			slot = character_coop
+			idea_token = IKU_iku
+			name = IKU_iku
+			cost = 200
+			modifier = {
+				modifier_army_sub_unit_ma_light_infantry_speed_factor = 0.15
+				modifier_army_sub_unit_sc_light_infantry_speed_factor = 0.15
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	IKU_iku_leader ={
+		name = IKU_iku_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/IKU/IKU_iku.dds"
+				small="gfx/leaders/IKU/IKU_iku_small.dds"
+			}
+			army = {
+				large="gfx/leaders/IKU/IKU_iku.dds"
+				small="gfx/leaders/IKU/IKU_iku_small.dds"
+			}
+		}
+		country_leader={
+			ideology=qinwai_type
+			id=-1
+		}
+		country_leader={
+			ideology=guli_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldorder_type
+			id=-1
+		}
+		country_leader={
+			ideology=fandong_type
+			id=-1
+		}
+		country_leader={
+			ideology=neworder_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldgenso_type
+			id=-1
+		}
+	}
+}

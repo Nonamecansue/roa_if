@@ -1,0 +1,30 @@
+
+SGS_yangguangxianfajingshen = {
+	icon = "GFX_idea_sgs_riguangfadian"
+	enable = {
+		always = yes
+	}
+	army_speed_factor = sgs_yangguang_1
+	army_org_factor = sgs_yangguang_2
+	research_speed_factor = sgs_yangguang_3
+	CO_cost_factor = sgs_yangguang_4
+	ST_race_penalty_all_factor = sgs_yangguang_5
+	command_power_gain = sgs_yangguang_6
+	political_power_factor = sgs_yangguang_7
+	stability_weekly = sgs_yangguang_8
+	stability_factor = sgs_yangguang_9
+	mobilization_laws_cost_factor = sgs_yangguang_10
+	resistance_growth = sgs_yangguang_11
+	CO_core_resistance_required = sgs_yangguang_12
+	compliance_growth = sgs_yangguang_13
+	production_speed_infrastructure_factor = sgs_yangguang_14
+}
+SGS_yaojingzhicheng_modifier = {
+	icon = GFX_idea_sgs_yaojingzhicheng
+	local_building_slots_factor = 0.3
+	attrition = -0.5
+	army_core_attack_factor = 0.3
+	army_core_defence_factor = 0.3
+	
+}
+

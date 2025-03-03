@@ -1,0 +1,88 @@
+
+# is_diplomatic_action_valid_TOKEN can be used for diplo action validity checks. if not valid it won't appear
+# scope is target country
+# from is action initatior country
+
+# in some cases this trigger is checked for only initatior country, in that case both from & this is same
+
+is_diplomatic_action_valid_stage_coup = {
+	always = no
+}
+
+is_diplomatic_action_valid_boost_party_popularity = {
+	always = no
+}
+
+# is_diplomatic_action_valid_REQUEST_ACCESS_TO_LICENCE_PRODUCTION = {
+# 	always = no
+# }
+
+# is_diplomatic_action_valid_GENERATE_WARGOAL = {
+# 	always = no
+# }
+
+# is_diplomatic_action_valid_WAR = {
+# 	always = no
+# }
+
+# is_diplomatic_action_valid_GUARANTEE = {
+# 	always = no
+# }
+
+# is_diplomatic_action_valid_MILACC = {
+# 	always = no
+# }
+
+# is_diplomatic_action_valid_OFFER_MILACC = {
+# 	always = no
+# }
+
+is_diplomatic_action_valid_DOCKING_RIGHTS = {
+	always = no
+}
+is_diplomatic_action_valid_OFFER_DOCKING_RIGHTS = {
+	always = no
+}
+# is_diplomatic_action_valid_IMPROVERELATION = {
+# 	always = no
+# }
+
+# is_diplomatic_action_valid_SEND_ATTACHE = {
+# 	always = no
+# }
+
+# is_diplomatic_action_valid_NONAGGRESSIONPACT = {
+# 	always = no
+# }
+
+# is_diplomatic_action_valid_OFFER_JOIN_FACTION = {
+# 	always = no
+# }
+
+# is_diplomatic_action_valid_CREATE_FACTION = {
+# 	always = no
+# }
+
+# is_diplomatic_action_valid_JOIN_FACTION = {
+# 	always = no
+# }
+
+# is_diplomatic_action_valid_LEND_LEASE = {
+# 	always = no
+# }
+
+# is_diplomatic_action_valid_INCOMING_LEND_LEASE = {
+# 	always = no
+# }
+
+# is_diplomatic_action_valid_SEND_VOLUNTEERS = {
+# 	always = no
+# }
+
+# is_diplomatic_action_valid_SEND_EXP_FORCE = {
+# 	always = no
+# }
+
+# is_diplomatic_action_valid_RETURN_EXP_FORCE = {
+# 	always = no
+# }

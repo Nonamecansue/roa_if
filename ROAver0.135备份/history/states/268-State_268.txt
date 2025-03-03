@@ -1,0 +1,40 @@
+
+state={
+	id=268
+	name="STATE_268"
+
+	history={
+		143.7.1 = {
+			owner = KAG
+			controller = HUM
+			add_core_of = KAG
+			buildings = {
+				infrastructure = 3
+				industrial_complex = 1
+				arms_factory = 0
+
+			}
+		}
+		146.1.1 = {
+			owner = KAG
+			add_core_of = KAG
+			add_claim_by = INB
+			buildings = {
+				infrastructure = 3
+				industrial_complex = 1
+				arms_factory = 1
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		353 369 1065 2556 2916 3147 3148 3150 3804 3805 5565 5586 5600 
+	}
+	manpower=425
+	buildings_max_level_factor=1.000
+	state_category=s2
+	local_supplies=2.5
+}

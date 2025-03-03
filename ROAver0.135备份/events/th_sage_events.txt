@@ -1,0 +1,1312 @@
+# add_namespace = sage
+# country_event = { #贤者第一阶段加强
+# 	id = sage.1
+# 	title = sage.1.t
+# 	desc = sage.1.d
+# 	trigger = {
+# 		date > 150.1.1 #150.1.1
+# 		or = {
+# 			tag = YKR
+# 			tag = OKI
+# 			tag = KAS
+# 		}
+# 		check_variable = {
+# 			sage_stage = 0
+# 		}
+# 		is_subject = no
+# 	}
+# 	immediate = {
+# 		hidden_effect = {
+# 			add_to_variable = {
+# 				sage_stage = 1
+# 			}
+# 		}
+# 	}
+# 	mean_time_to_happen = {
+# 		days = 1 #1500
+# 		modifier = {
+# 			threat > 0.99
+# 			add = -200
+# 		}
+# 		modifier = {
+# 			any_country = {
+# 				is_faction_leader = yes
+# 				add_to_temp_variable = {
+# 					global.v = 1
+# 				}
+# 			}
+# 			check_variable = {
+# 				global.v > 4
+# 			}
+# 			add = -300
+# 		}
+# 		modifier = {
+# 			any_country = {
+# 				is_subject = no
+# 				set_temp_variable = {
+# 					v = num_subjects
+# 				}
+# 				check_variable = {
+# 					v > 9
+# 				}
+# 			}
+# 			factor = 0.75
+# 		}
+# 		modifier = {
+# 			any_country = {
+# 				is_subject = no
+# 				check_variable = {
+# 					all_value_plus_manpower > 2999
+# 				}
+# 			}
+# 			factor = 0.5
+# 		}
+# 		modifier = {
+# 			check_variable = {
+# 				global.sage_enhanced > 0
+# 			}
+# 			factor = 0.8
+# 		}
+# 	}
+# 	option = {
+# 		name = sage.1.1
+# 		add_to_variable = {
+# 			global.sage_enhanced = 1
+# 		}
+# 		custom_effect_tooltip = sage_tt
+# 		sage_enhanced = yes
+# 		ai_chance = {
+# 			base = 70
+# 		}
+# 	}
+# 	option = {
+# 		name = sage.1.2
+# 		ai_chance = {
+# 			base = 30
+# 			modifier = {
+# 				has_war = yes
+# 				factor = 0.5
+# 			}
+# 			modifier = {
+# 				tag = KAS
+# 				factor = 2
+# 			}
+# 			modifier = {
+# 				check_variable = {
+# 					global.sage_enhanced > 0
+# 				}
+# 				factor = 0
+# 			}
+# 		}
+# 	}
+# }
+# country_event = { #贤者第二阶段加强
+# 	id = sage.2
+# 	title = sage.2.t
+# 	desc = sage.2.d
+# 	trigger = {
+# 		or = {
+# 			tag = YKR
+# 			tag = OKI
+# 			tag = KAS
+# 		}
+# 		check_variable = {
+# 			sage_stage = 1
+# 		}
+# 		is_subject = no
+# 	}
+# 	immediate = {
+# 		hidden_effect = {
+# 			add_to_variable = {
+# 				sage_stage = 1
+# 			}
+# 		}
+# 	}
+# 	mean_time_to_happen = {
+# 		days = 1000 #1000
+# 		modifier = {
+# 			set_temp_variable = {
+# 				v = global.sage_enhanced
+# 			}
+# 			multiply_temp_variable = {
+# 				v = -100
+# 			}
+# 			add = v
+# 		}
+# 		modifier = {
+# 			any_country = {
+# 				is_subject = no
+# 				set_temp_variable = {
+# 					v = num_subjects
+# 				}
+# 				check_variable = {
+# 					v > 9
+# 				}
+# 			}
+# 			factor = 0.75
+# 		}
+# 		modifier = {
+# 			any_country = {
+# 				is_subject = no
+# 				check_variable = {
+# 					all_value_plus_manpower > 2999
+# 				}
+# 			}
+# 			factor = 0.5
+# 		}
+# 	}
+# 	option = {
+# 		name = sage.2.1
+# 		add_to_variable = {
+# 			global.sage_enhanced = 1
+# 		}
+# 		custom_effect_tooltip = sage_tt
+# 		sage_enhanced = yes
+# 		ai_chance = {
+# 			base = 70
+# 		}
+# 	}
+# 	option = {
+# 		name = sage.2.2
+# 		ai_chance = {
+# 			base = 30
+# 			modifier = {
+# 				has_war = yes
+# 				factor = 0.5
+# 			}
+# 			modifier = {
+# 				tag = KAS
+# 				factor = 2
+# 			}
+# 			modifier = {
+# 				check_variable = {
+# 					global.sage_enhanced > 2
+# 				}
+# 				factor = 0
+# 			}
+# 			modifier = {
+# 				check_variable = {
+# 					global.sage_enhanced > 1
+# 				}
+# 				factor = 0.5
+# 			}
+# 		}
+# 	}
+# }
+# country_event = { #贤者第三阶段加强
+# 	id = sage.3
+# 	title = sage.3.t
+# 	desc = sage.3.d
+# 	trigger = {
+# 		or = {
+# 			tag = YKR
+# 			tag = OKI
+# 			tag = KAS
+# 		}
+# 		check_variable = {
+# 			sage_stage = 2
+# 		}
+# 		is_subject = no
+# 	}
+# 	immediate = {
+# 		hidden_effect = {
+# 			add_to_variable = {
+# 				sage_stage = 1
+# 			}
+# 		}
+# 	}
+# 	mean_time_to_happen = {
+# 		days = 1150 #1150
+# 		modifier = {
+# 			set_temp_variable = {
+# 				v = global.sage_enhanced
+# 			}
+# 			multiply_temp_variable = {
+# 				v = -100
+# 			}
+# 			add = v
+# 		}
+# 		modifier = {
+# 			any_country = {
+# 				is_subject = no
+# 				set_temp_variable = {
+# 					v = num_subjects
+# 				}
+# 				check_variable = {
+# 					v > 9
+# 				}
+# 			}
+# 			factor = 0.75
+# 		}
+# 		modifier = {
+# 			any_country = {
+# 				is_subject = no
+# 				check_variable = {
+# 					all_value_plus_manpower > 2999
+# 				}
+# 			}
+# 			factor = 0.5
+# 		}
+# 	}
+# 	option = {
+# 		name = sage.3.1
+# 		add_to_variable = {
+# 			global.sage_enhanced = 1
+# 		}
+# 		custom_effect_tooltip = sage_tt
+# 		sage_enhanced = yes
+# 		ai_chance = {
+# 			base = 70
+# 		}
+# 	}
+# 	option = {
+# 		name = sage.3.2
+# 		ai_chance = {
+# 			base = 30
+# 			modifier = {
+# 				has_war = yes
+# 				factor = 0.5
+# 			}
+# 			modifier = {
+# 				tag = KAS
+# 				factor = 2
+# 			}
+# 			modifier = {
+# 				check_variable = {
+# 					global.sage_enhanced > 5
+# 				}
+# 				factor = 0
+# 			}
+# 			modifier = {
+# 				check_variable = {
+# 					global.sage_enhanced > 4
+# 				}
+# 				factor = 0.5
+# 			}
+# 		}
+# 	}
+# }
+# country_event = { #贤者第四阶段加强
+# 	id = sage.4
+# 	title = sage.4.t
+# 	desc = sage.4.d
+# 	trigger = {
+# 		or = {
+# 			tag = YKR
+# 			tag = OKI
+# 			tag = KAS
+# 		}
+# 		check_variable = {
+# 			sage_stage = 3
+# 		}
+# 		is_subject = no
+# 	}
+# 	immediate = {
+# 		hidden_effect = {
+# 			add_to_variable = {
+# 				sage_stage = 1
+# 			}
+# 		}
+# 	}
+# 	mean_time_to_happen = {
+# 		days = 1300 #1300
+# 		modifier = {
+# 			set_temp_variable = {
+# 				v = global.sage_enhanced
+# 			}
+# 			multiply_temp_variable = {
+# 				v = -100
+# 			}
+# 			add = v
+# 		}
+# 		modifier = {
+# 			any_country = {
+# 				is_faction_leader = yes
+# 				add_to_temp_variable = {
+# 					global.v = 1
+# 				}
+# 			}
+# 			check_variable = {
+# 				global.v > 4
+# 			}
+# 			add = -300
+# 		}
+# 		modifier = {
+# 			any_country = {
+# 				is_subject = no
+# 				set_temp_variable = {
+# 					v = num_subjects
+# 				}
+# 				check_variable = {
+# 					v > 9
+# 				}
+# 			}
+# 			factor = 0.75
+# 		}
+# 		modifier = {
+# 			any_country = {
+# 				is_subject = no
+# 				check_variable = {
+# 					all_value_plus_manpower > 2999
+# 				}
+# 			}
+# 			factor = 0.5
+# 		}
+# 	}
+# 	option = {
+# 		name = sage.4.1
+# 		add_to_variable = {
+# 			global.sage_enhanced = 1
+# 		}
+# 		custom_effect_tooltip = sage_tt
+# 		sage_enhanced = yes
+# 		ai_chance = {
+# 			base = 70
+# 		}
+# 	}
+# 	option = {
+# 		name = sage.4.2
+# 		ai_chance = {
+# 			base = 30
+# 			modifier = {
+# 				has_war = yes
+# 				factor = 0.5
+# 			}
+# 			modifier = {
+# 				tag = KAS
+# 				factor = 2
+# 			}
+# 			modifier = {
+# 				check_variable = {
+# 					global.sage_enhanced > 8
+# 				}
+# 				factor = 0
+# 			}
+# 			modifier = {
+# 				check_variable = {
+# 					global.sage_enhanced > 7
+# 				}
+# 				factor = 0.5
+# 			}
+# 		}
+# 	}
+# }
+# country_event = { #贤者第五阶段加强
+# 	id = sage.5
+# 	title = sage.5.t
+# 	desc = sage.5.d
+# 	trigger = {
+# 		or = {
+# 			tag = YKR
+# 			tag = OKI
+# 			tag = KAS
+# 		}
+# 		check_variable = {
+# 			sage_stage = 4
+# 		}
+# 		is_subject = no
+# 	}
+# 	immediate = {
+# 		hidden_effect = {
+# 			add_to_variable = {
+# 				sage_stage = 1
+# 			}
+# 		}
+# 	}
+# 	mean_time_to_happen = {
+# 		days = 1450 #1450
+# 		modifier = {
+# 			set_temp_variable = {
+# 				v = global.sage_enhanced
+# 			}
+# 			multiply_temp_variable = {
+# 				v = -100
+# 			}
+# 			add = v
+# 		}
+# 		modifier = {
+# 			any_country = {
+# 				is_faction_leader = yes
+# 				add_to_temp_variable = {
+# 					global.v = 1
+# 				}
+# 			}
+# 			check_variable = {
+# 				global.v > 4
+# 			}
+# 			add = -300
+# 		}
+# 		modifier = {
+# 			any_country = {
+# 				is_subject = no
+# 				set_temp_variable = {
+# 					v = num_subjects
+# 				}
+# 				check_variable = {
+# 					v > 9
+# 				}
+# 			}
+# 			factor = 0.75
+# 		}
+# 		modifier = {
+# 			any_country = {
+# 				is_subject = no
+# 				check_variable = {
+# 					all_value_plus_manpower > 2999
+# 				}
+# 			}
+# 			factor = 0.5
+# 		}
+# 	}
+# 	option = {
+# 		name = sage.5.1
+# 		add_to_variable = {
+# 			global.sage_enhanced = 1
+# 		}
+# 		custom_effect_tooltip = sage_tt
+# 		sage_enhanced = yes
+# 		ai_chance = {
+# 			base = 70
+# 		}
+# 	}
+# 	option = {
+# 		name = sage.5.2
+# 		ai_chance = {
+# 			base = 30
+# 			modifier = {
+# 				has_war = yes
+# 				factor = 0.5
+# 			}
+# 			modifier = {
+# 				tag = KAS
+# 				factor = 2
+# 			}
+# 			modifier = {
+# 				check_variable = {
+# 					global.sage_enhanced > 8
+# 				}
+# 				factor = 0
+# 			}
+# 			modifier = {
+# 				check_variable = {
+# 					global.sage_enhanced > 7
+# 				}
+# 				factor = 0.5
+# 			}
+# 		}
+# 	}
+# }
+# country_event = { #贤者第六阶段加强
+# 	id = sage.6
+# 	title = sage.6.t
+# 	desc = sage.6.d
+# 	trigger = {
+# 		or = {
+# 			tag = YKR
+# 			tag = OKI
+# 			tag = KAS
+# 		}
+# 		check_variable = {
+# 			sage_stage = 5
+# 		}
+# 		is_subject = no
+# 	}
+# 	immediate = {
+# 		hidden_effect = {
+# 			add_to_variable = {
+# 				sage_stage = 1
+# 			}
+# 		}
+# 	}
+# 	mean_time_to_happen = {
+# 		days = 1600 #1600
+# 		modifier = {
+# 			set_temp_variable = {
+# 				v = global.sage_enhanced
+# 			}
+# 			multiply_temp_variable = {
+# 				v = -100
+# 			}
+# 			add = v
+# 		}
+# 		modifier = {
+# 			any_country = {
+# 				is_faction_leader = yes
+# 				add_to_temp_variable = {
+# 					global.v = 1
+# 				}
+# 			}
+# 			check_variable = {
+# 				global.v > 4
+# 			}
+# 			add = -300
+# 		}
+# 		modifier = {
+# 			any_country = {
+# 				is_subject = no
+# 				set_temp_variable = {
+# 					v = num_subjects
+# 				}
+# 				check_variable = {
+# 					v > 9
+# 				}
+# 			}
+# 			factor = 0.75
+# 		}
+# 		modifier = {
+# 			any_country = {
+# 				is_subject = no
+# 				check_variable = {
+# 					all_value_plus_manpower > 2999
+# 				}
+# 			}
+# 			factor = 0.5
+# 		}
+# 	}
+# 	option = {
+# 		name = sage.6.1
+# 		add_to_variable = {
+# 			global.sage_enhanced = 1
+# 		}
+# 		custom_effect_tooltip = sage_tt
+# 		sage_enhanced = yes
+# 		ai_chance = {
+# 			base = 70
+# 		}
+# 	}
+# 	option = {
+# 		name = sage.6.2
+# 		ai_chance = {
+# 			base = 30
+# 			modifier = {
+# 				has_war = yes
+# 				factor = 0.5
+# 			}
+# 			modifier = {
+# 				tag = KAS
+# 				factor = 2
+# 			}
+# 			modifier = {
+# 				check_variable = {
+# 					global.sage_enhanced > 11
+# 				}
+# 				factor = 0
+# 			}
+# 			modifier = {
+# 				check_variable = {
+# 					global.sage_enhanced > 10
+# 				}
+# 				factor = 0.5
+# 			}
+# 		}
+# 	}
+# }
+# country_event = { #贤者加强的新闻触发
+# 	id = sage.7
+# 	hidden = yes
+# 	option = {
+		
+# 	}
+# 	mean_time_to_happen = {
+# 		days = 80
+# 	}
+# 	immediate = {
+# 		hidden_effect = {
+# 			news_event = { id = sage.8 days = 2 }
+# 		}
+# 	}
+# 	trigger = {
+# 		check_variable = {
+# 			global.sage_enhanced > 4
+# 		}
+# 		or = {
+# 			tag = YKR
+# 			tag = OKI
+# 			tag = KAS
+# 		}
+# 		is_subject = no
+# 	}
+# 	fire_only_once = yes
+# }
+# news_event = { #贤者加强的新闻触发(新闻)
+# 	id = sage.8
+# 	title = sage.8.t
+# 	desc = sage.8.d
+# 	major = yes
+# 	is_triggered_only = yes
+# 	option = { #独立贤者势力
+# 		name = sage.8.1
+# 		trigger = {
+# 			or = {
+# 				tag = YKR
+# 				tag = OKI
+# 				tag = KAS
+# 			}
+# 			is_subject = no
+# 		}
+# 	}
+# 	option = { #贤者势力
+# 		name = sage.8.2
+# 		trigger = {
+# 			not = {
+# 				and = {
+# 					or = {
+# 						tag = YKR
+# 						tag = OKI
+# 						tag = KAS
+# 					}
+# 					is_subject = no
+# 				}
+# 			}
+# 		}
+# 	}
+# }
+# country_event = { #贤者建立阵营
+# 	id = sage.9
+# 	hidden = yes
+# 	option = {
+		
+# 	}
+# 	mean_time_to_happen = {
+# 		days = 100
+# 	}
+# 	immediate = {
+# 		hidden_effect = {
+# 			news_event = { id = sage.10 days = 2 }
+# 		}
+# 	}
+# 	trigger = {
+# 		check_variable = {
+# 			global.sage_enhanced > 7
+# 		}
+# 		or = {
+# 			tag = YKR
+# 			tag = OKI
+# 			tag = KAS
+# 		}
+# 		is_subject = no
+# 	}
+# 	fire_only_once = yes
+# }
+# news_event = { #贤者建立阵营(新闻)
+# 	id = sage.10
+# 	title = sage.10.t
+# 	desc = sage.10.d
+# 	is_triggered_only = yes
+# 	major = yes
+# 	option = { #独立贤者势力
+# 		name = sage.10.1
+# 		swap_ideas = {
+# 			remove_idea = gensoukyo_creator_idea
+# 			add_idea = gensoukyo_creator_idea2
+# 		}
+# 		if = {
+# 			limit = {
+# 				tag = KAS
+# 			}
+# 			create_faction = SAGE_KAS
+# 		}
+# 		if = {
+# 			limit = {
+# 				tag = YKR
+# 			}
+# 			create_faction = SAGE_YKR
+# 		}
+# 		if = {
+# 			limit = {
+# 				tag = OKI
+# 			}
+# 			create_faction = SAGE_OKI
+# 		}
+# 		trigger = {
+# 			or = {
+# 				tag = YKR
+# 				tag = OKI
+# 				tag = KAS
+# 			}
+# 			is_subject = no
+# 		}
+# 	}
+# 	option = { #贤者势力
+# 		name = sage.10.2
+# 		trigger = {
+# 			not = {
+# 				and = {
+# 					or = {
+# 						tag = YKR
+# 						tag = OKI
+# 						tag = KAS
+# 					}
+# 					is_subject = no
+# 				}
+# 			}
+# 		}
+# 	}
+# }
+# country_event = { #贤者要求加入阵营
+# 	id = sage.11
+# 	title = sage.11.t
+# 	desc = sage.11.d
+# 	is_triggered_only = yes
+# 	option = { #加入
+# 		name = sage.11.1
+# 		custom_effect_tooltip = sage.11_tt1
+# 		every_country = {
+# 			limit = {
+# 				has_war_with = ROOT
+# 			}
+# 			white_peace = ROOT
+# 		}
+# 		ROOT = {
+# 			dismantle_faction = yes
+# 		}
+# 		FROM = {
+# 			add_to_faction = ROOT
+# 		}
+# 		ai_chance = {
+# 			base = 50
+# 			modifier = {
+# 				is_major = no
+# 				factor = 10
+# 			}
+# 			modifier = {
+# 				has_government = FROM
+# 				factor = 2
+# 			}
+# 			modifier = {
+# 				is_faction_leader = yes
+# 				add = -30
+# 			}
+# 			modifier = {
+# 				ic_ratio = {
+# 					tag = FROM
+# 					ratio > 2
+# 				}
+# 				factor = 0.5
+# 			}
+# 			modifier = {
+# 				ic_ratio = {
+# 					tag = FROM
+# 					ratio > 5
+# 				}
+# 				factor = 0
+# 			}
+# 			modifier = {
+# 				strength_ratio = {
+# 					tag = FROM
+# 					ratio > 2
+# 				}
+# 				factor = 0.5
+# 			}
+# 			modifier = {
+# 				strength_ratio = {
+# 					tag = FROM
+# 					ratio > 8
+# 				}
+# 				factor = 0
+# 			}
+# 			modifier = {
+# 				has_army_manpower = {
+# 					size > 15000
+# 				}
+# 				factor = 0.5
+# 			}
+# 			modifier = {
+# 				has_army_manpower = {
+# 					size > 100000
+# 				}
+# 				factor = 0
+# 			}
+# 			modifier = {
+# 				check_variable = {
+# 					all_value_plus_manpower > 2999
+# 				}
+# 				factor = 0.5
+# 			}
+# 			modifier = {
+# 				check_variable = {
+# 					all_value_plus_manpower > 5999
+# 				}
+# 				factor = 0
+# 			}
+# 			modifier = {
+# 				num_subjects > 14
+# 				factor = 0.5
+# 			}
+# 			modifier = {
+# 				num_subjects > 24
+# 				factor = 0
+# 			}
+# 			modifier = {
+# 				num_faction_members > 9
+# 				factor = 0.5
+# 			}
+# 			modifier = {
+# 				num_faction_members > 19
+# 				factor = 0
+# 			}
+# 			modifier = {
+# 				has_idea = World
+# 				factor = 0
+# 			}
+# 			modifier = {
+# 				is_in_faction = yes
+# 				factor = 0
+# 			}
+# 			####HKR
+# 			modifier = {
+# 				FROM = {
+# 					tag = YKR
+# 				}
+# 				ROOT = {
+# 					tag = HKR
+# 					has_government = oldorder
+# 				}
+# 				factor = 5
+# 			}
+# 			####SCA
+# 			modifier = {
+# 				FROM = {
+# 					tag = YKR
+# 				}
+# 				ROOT = {
+# 					tag = SCA
+# 					not = {
+# 						has_government = qinwai
+# 					}
+# 				}
+# 				factor = 10
+# 			}
+# 			modifier = {
+# 				FROM = {
+# 					tag = KAS
+# 				}
+# 				ROOT = {
+# 					tag = SCA
+# 					has_government = qinwai
+# 				}
+# 				factor = 5
+# 			}
+# 			####YOUKAI MOUNTAIN COUNTRY
+# 			modifier = {
+# 				FROM = {
+# 					tag = KAS
+# 				}
+# 				ROOT = {
+# 					youkai_mountain_country = yes
+# 				}
+# 				factor = 2
+# 			}
+# 			####TEG
+# 			modifier = {
+# 				FROM = {
+# 					tag = KAS
+# 				}
+# 				ROOT = {
+# 					tag = TEG
+# 					not = {
+# 						has_government = fandong
+# 					}
+# 				}
+# 				factor = 5
+# 			}
+# 			####MRY
+# 			modifier = {
+# 				FROM = {
+# 					tag = YKR
+# 				}
+# 				ROOT = {
+# 					tag = MRY
+# 					not = {
+# 						has_government = qinwai
+# 						has_government = guli
+# 					}
+# 				}
+# 				factor = 10
+# 			}
+# 			####SEJ
+# 			modifier = {
+# 				FROM = {
+# 					tag = YKR
+# 				}
+# 				ROOT = {
+# 					tag = SEJ
+# 					or = {
+# 						has_government = neworder
+# 						has_government = oldorder
+# 					}
+# 				}
+# 				factor = 2
+# 			}
+# 			####CIR
+# 			modifier = {
+# 				FROM = {
+# 					tag = KAS
+# 				}
+# 				ROOT = {
+# 					tag = CIR
+# 					has_government = qinwai
+# 				}
+# 				factor = 2
+# 			}
+# 			####TKM
+# 			modifier = {
+# 				FROM = {
+# 					tag = KAS
+# 				}
+# 				ROOT = {
+# 					tag = TKM
+# 					has_government = qinwai
+# 				}
+# 				factor = 5
+# 			}
+# 			####NMS
+# 			modifier = {
+# 				FROM = {
+# 					tag = KAS
+# 				}
+# 				ROOT = {
+# 					tag = NMS
+# 				}
+# 				factor = 10
+# 			}
+# 			####NUE
+# 			modifier = {
+# 				FROM = {
+# 					tag = YKR
+# 				}
+# 				ROOT = {
+# 					tag = NUE
+# 				}
+# 				factor = 2
+# 			}
+# 			####MNM
+# 			modifier = {
+# 				FROM = {
+# 					tag = YKR
+# 				}
+# 				ROOT = {
+# 					tag = MNM
+# 				}
+# 				factor = 2
+# 			}
+# 			####KYK
+# 			modifier = {
+# 				FROM = {
+# 					tag = KAS
+# 				}
+# 				ROOT = {
+# 					tag = KYK
+# 				}
+# 				factor = 10
+# 			}
+# 			####SRB
+# 			modifier = {
+# 				FROM = {
+# 					tag = OKI
+# 				}
+# 				ROOT = {
+# 					tag = SRB
+# 					not = {
+# 						has_government = fandong
+# 					}
+# 				}
+# 				factor = 5
+# 			}
+# 			####YUK
+# 			modifier = {
+# 				FROM = {
+# 					tag = OKI
+# 				}
+# 				ROOT = {
+# 					tag = YUK
+# 				}
+# 				factor = 5
+# 			}
+# 			####EET
+# 			modifier = {
+# 				FROM = {
+# 					tag = OKI
+# 				}
+# 				ROOT = {
+# 					tag = EET
+# 				}
+# 				factor = 2
+# 			}
+# 			modifier = {
+# 				FROM = {
+# 					not = { tag = OKI }
+# 				}
+# 				ROOT = {
+# 					tag = EET
+# 				}
+# 				factor = 0
+# 			}
+# 			####INB
+# 			modifier = {
+# 				FROM = {
+# 					EET = { is_in_faction_with = FROM }
+# 				}
+# 				ROOT = {
+# 					tag = INB
+# 				}
+# 				factor = 10
+# 			}
+			
+# 		}
+# 	}
+# 	option = { #拒绝
+# 		name = sage.11.2
+# 		set_country_flag = SAGE_rejected_@FROM
+# 		if = {
+# 			limit = {
+# 				ROOT = {
+# 					capital_scope = {
+# 						is_on_continent = Gensokyo
+# 					}
+# 					is_in_faction = no
+# 				}
+# 			}
+# 			FROM = {
+# 				add_ai_strategy = {
+# 					type = antagonize
+# 					id = ROOT
+# 					value = 100000
+# 				}
+# 			}
+# 			custom_effect_tooltip = sage.11_tt2
+# 		}
+# 		ai_chance = {
+# 			base = 50
+# 		}
+# 	}
+# }
+# country_event = { #贤者之战开始
+# 	id = sage.12
+# 	hidden = yes
+# 	option = {
+		
+# 	}
+# 	immediate = {
+# 		if = {
+# 			limit = {
+# 				KAS = { is_subject = no }
+# 				YKR = { is_subject = no }
+# 			}
+# 			KAS = {
+# 				declare_war_on = {
+# 					type = SAGE_WAR
+# 					target = YKR
+# 				}
+# 				set_variable = {
+# 					EXHC_current_exhaustion = -100
+# 				}
+# 			}
+# 		}
+# 		if = {
+# 			limit = {
+# 				KAS = { is_subject = no }
+# 				OKI = { is_subject = no }
+# 			}
+# 			OKI = {
+# 				declare_war_on = {
+# 					type = SAGE_WAR
+# 					target = KAS
+# 				}
+# 				set_variable = {
+# 					EXHC_current_exhaustion = -100
+# 				}
+# 			}
+# 		}
+# 		if = {
+# 			limit = {
+# 				YKR = { is_subject = no }
+# 				OKI = { is_subject = no }
+# 			}
+# 			YKR = {
+# 				declare_war_on = {
+# 					type = SAGE_WAR
+# 					target = OKI
+# 				}
+# 				set_variable = {
+# 					EXHC_current_exhaustion = -100
+# 				}
+# 			}
+# 		}
+# 		set_global_flag = SAGE_war_started
+# 		news_event = { days = 2 id = sage.13 }
+# 	}
+# 	trigger = {
+# 		count_triggers = {
+# 			amount = 2
+# 			KAS = {
+# 				has_idea = gensoukyo_creator_idea2
+# 			}
+# 			YKR = {
+# 				has_idea = gensoukyo_creator_idea2
+# 			}
+# 			OKI = {
+# 				has_idea = gensoukyo_creator_idea2
+# 			}
+# 		}
+# 		has_idea = gensoukyo_creator_idea2
+# 		is_subject = no
+# 	}
+# 	fire_only_once = yes
+# 	mean_time_to_happen = {
+# 		days = 700
+# 	}
+# }
+# news_event = { #贤者之争开始（新闻）
+# 	id = sage.13
+# 	title = sage.13.t
+# 	desc = sage.13.d
+# 	major = yes
+# 	is_triggered_only = yes
+# 	option = { #独立贤者势力
+# 		name = sage.13.1
+# 		trigger = {
+# 			or = {
+# 				tag = YKR
+# 				tag = OKI
+# 				tag = KAS
+# 			}
+# 			is_subject = no
+# 		}
+# 	}
+# 	option = { #非独立贤者势力
+# 		name = sage.13.2
+# 		trigger = {
+# 			not = {
+# 				and = {
+# 					or = {
+# 						tag = YKR
+# 						tag = OKI
+# 						tag = KAS
+# 					}
+# 					is_subject = no
+# 				}
+# 			}
+# 		}
+# 	}
+# }
+# country_event = { #贤者之战结束
+# 	id = sage.14
+# 	hidden = yes
+# 	option = {
+		
+# 	}
+# 	immediate = {
+# 		news_event = { days = 2 id = sage.15 }
+# 	}
+# 	trigger = {
+# 		count_triggers = {
+# 			amount = 2
+# 			KAS = {
+# 				not = { has_idea = gensoukyo_creator_idea2 }
+# 			}
+# 			YKR = {
+# 				not = { has_idea = gensoukyo_creator_idea2 }
+# 			}
+# 			OKI = {
+# 				not = { has_idea = gensoukyo_creator_idea2 }
+# 			}
+# 		}
+# 		has_idea = gensoukyo_creator_idea2
+# 		is_subject = no
+# 	}
+# 	fire_only_once = yes
+# 	mean_time_to_happen = {
+# 		days = 5
+# 	}
+# }
+# news_event = { #贤者之争结束，有贤者（新闻）
+# 	id = sage.15
+# 	title = sage.15.t
+# 	desc = sage.15.d
+# 	major = yes
+# 	is_triggered_only = yes
+# 	option = { #独立贤者势力
+# 		name = sage.15.1
+# 		trigger = {
+# 			or = {
+# 				tag = YKR
+# 				tag = OKI
+# 				tag = KAS
+# 			}
+# 			is_subject = no
+# 		}
+# 	}
+# 	option = { #失败的独立贤者势力
+# 		name = sage.15.2
+# 		trigger = {
+# 			or = {
+# 				tag = YKR
+# 				tag = OKI
+# 				tag = KAS
+# 			}
+# 			is_subject = yes
+# 		}
+# 	}
+# 	option = { #其它
+# 		name = sage.15.3
+# 		trigger = {
+# 			not = {
+# 				tag = YKR
+# 				tag = OKI
+# 				tag = KAS
+# 			}
+# 		}
+# 	}
+# }
+# country_event = { #贤者之战结束(没有人赢了）
+# 	id = sage.16
+# 	hidden = yes
+# 	option = {
+		
+# 	}
+# 	immediate = {
+# 		news_event = { days = 2 id = sage.17 }
+# 	}
+# 	trigger = {
+# 		has_global_flag = SAGE_war_started
+# 		any_country = {
+# 			not = {
+# 				has_idea = gensoukyo_creator_idea2
+# 			}
+# 		}
+# 		is_subject = no
+# 	}
+# 	fire_only_once = yes
+# 	mean_time_to_happen = {
+# 		days = 5
+# 	}
+# }
+# news_event = { #贤者之战结束(没有人赢了）（新闻）
+# 	id = sage.17
+# 	title = sage.17.t
+# 	desc = sage.17.d
+# 	major = yes
+# 	is_triggered_only = yes
+# 	option = { #失败的独立贤者势力
+# 		name = sage.17.1
+# 		trigger = {
+# 			or = {
+# 				tag = YKR
+# 				tag = OKI
+# 				tag = KAS
+# 			}
+# 			is_subject = yes
+# 		}
+# 	}
+# 	option = { #其它
+# 		name = sage.17.2
+# 		trigger = {
+# 			not = {
+# 				tag = YKR
+# 				tag = OKI
+# 				tag = KAS
+# 			}
+# 		}
+# 	}
+# }

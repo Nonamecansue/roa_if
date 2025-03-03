@@ -1,0 +1,163 @@
+# unit_base is the base value used for evaluating how important it is to deploy the various categories
+# Written by Henrik "Groogy" Hansson
+#AI 倾向
+# changing = {
+
+# 	# reversed = yes
+
+# 	enable = {
+# 		always = yes
+# 	}
+# 	abort = {
+# 		always = no
+
+# 	}
+
+# 	ai_strategy = {
+# 		type = added_military_to_civilian_factory_ratio			
+# 		value = 500
+# 	}	
+
+# }
+
+HUM_start= {
+
+	# reversed = yes
+
+	enable = {
+		has_idea = HUM_youkai_influence
+	}
+	abort = {
+		not = { has_idea = HUM_youkai_influence }
+		# date > "152.1.1"
+		#消除debuff时
+
+	}
+
+	ai_strategy = {
+		type = added_military_to_civilian_factory_ratio			
+		value = -100
+	}	
+
+}
+
+HUM_defense= {
+
+	# reversed = yes
+
+	enable = {
+		or = {
+			tag = OKI
+			tag = YKR
+			tag = KAS
+		}
+		HUM = { 
+			has_government = guli 
+			has_war = yes
+		} 
+	}
+	abort = {
+		not = { HUM ={ has_idea = HUM_youkai_influence } }
+		# date > "152.1.1"
+		#消除debuff时
+
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "HUM"			
+		value = 100
+	}
+
+	ai_strategy = {
+		type = support
+		id = "HUM"			
+		value = 100
+	}
+
+}
+
+HUM_defense2= {
+
+	# reversed = yes
+
+	enable = {
+		or = {
+			tag = TKM
+			tag = SRB
+			tag = EET
+		}
+		HUM = { 
+			has_government = guli 
+			has_war = yes
+			is_subject = no
+		} 
+	}
+	abort = {
+		not = { HUM ={ has_idea = HUM_youkai_influence } }
+		# date > "152.1.1"
+		#消除debuff时
+
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "HUM"			
+		value = 100
+	}
+
+	ai_strategy = {
+		type = support
+		id = "HUM"			
+		value = 100
+	}
+
+	ai_strategy = {
+		type = protect
+		id = "HUM"			
+		value = 25
+	}
+
+}
+
+HUM_prepare_for_war_MRS = {
+	enable = {
+		tag = HUM
+    	has_country_flag = HUM_prepare_for_war_NMS_flag
+	}
+	
+	abort = {
+	  or = {
+		has_war_with = NMS
+      	NOT = { has_country_flag = HUM_prepare_for_war_NMS_flag }
+	  }
+	}
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = "NMS"
+		value = 100
+	}
+
+}
+
+HUM_prepare_for_war_TKM = {
+	enable = {
+		tag = HUM
+    	has_country_flag = HUM_prepare_for_war_TKM_flag
+	}
+	
+	abort = {
+	  or = {
+		has_war_with = TKM
+      	NOT = { has_country_flag = HUM_prepare_for_war_TKM_flag }
+	  }
+	}
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = "TKM"
+		value = 100
+	}
+
+}

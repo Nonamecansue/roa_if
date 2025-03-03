@@ -1,0 +1,809 @@
+﻿# add_namespace = maf
+# country_event = { #与TKM谈判（胜利）
+# 	id = maf.1
+# 	title = maf.1.t
+# 	desc = maf.1.d
+# 	# picture = GFX
+# 	# major = yes
+# 	fire_only_once = no
+# 	is_triggered_only = no
+# 	mean_time_to_happen = {
+# 		days = 2
+# 	}
+# 	trigger = {
+# 		or = {
+# 			tag = MFA
+# 			tag = MTM
+# 			tag = MYK
+# 			tag = MRS
+# 			tag = ALI
+# 			tag = ELL
+# 			tag = NAR
+# 		}
+# 		or = {
+# 			and = {
+# 				not = {
+# 					has_cosmetic_tag = MAF_united
+# 				}
+# 				is_in_faction = no
+# 				has_war_with = TKM
+# 				TKM = {
+# 					is_in_faction = no
+# 					or = {	
+# 						any_owned_state = {
+# 							is_controlled_by = ROOT
+# 						}
+# 						surrender_progress > 0.05
+# 					}
+# 				}
+				
+# 			}
+# 			has_country_flag = MAF_treaty_with_TKM
+# 		}
+# 	}
+# 	option = {
+# 		name = maf.1.1 
+# 		add_political_power = 20
+# 		add_stability = 0.05
+# 		army_experience = 15
+# 		white_peace = TKM
+# 		clr_country_flag = MAF_treaty_with_TKM
+# 		TKM = {
+# 			country_event = maf.10
+# 		}
+# 	}
+# }
+# country_event = { #与TKM谈判（失败）
+# 	id = maf.2
+# 	title = maf.2.t
+# 	desc = maf.2.d
+# 	# picture = GFX
+# 	# major = yes
+# 	fire_only_once = no
+# 	is_triggered_only = no
+# 	mean_time_to_happen = {
+# 		days = 2
+# 	}
+# 	trigger = {
+# 		or = {
+# 			tag = MFA
+# 			tag = MTM
+# 			tag = MYK
+# 			tag = MRS
+# 			tag = ALI
+# 			tag = ELL
+# 			tag = NAR
+# 		}
+# 		not = {
+# 			has_cosmetic_tag = MAF_united
+# 		}
+# 		has_offensive_war_with = TKM
+# 		or = {
+# 			surrender_progress > 0.2
+# 			and = {
+# 				not = {
+# 					has_war_with = MTM
+# 				}
+# 				not = {
+# 					185 = {
+# 						or = {
+# 							is_controlled_by = ROOT
+# 							controller = {
+# 								is_subject_of = ROOT
+# 							}
+# 						}
+# 					}
+# 				}
+# 				not = {
+# 					465 = {
+# 						or = {
+# 							is_controlled_by = ROOT
+# 							controller = {
+# 								is_subject_of = ROOT
+# 							}
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
+# 		is_in_faction = no
+# 		is_subject = no
+# 		TKM = {
+# 			is_in_faction = no
+# 		}
+# 	}
+# 	option = {
+# 		name = maf.2.1 
+# 		white_peace = TKM
+# 		if = {
+# 			limit = {
+# 				country_exists = MTM
+# 			}
+# 			white_peace = MTM
+# 			end_puppet = MTM
+# 		}
+# 		MTM = {
+# 			transfer_state = 185
+# 			transfer_state = 465
+# 		}
+# 		TKM = {
+# 			give_guarantee = MTM
+# 			country_event = maf.11
+# 		}
+# 	}
+# }
+# country_event = { #与CIR谈判（胜利）
+# 	id = maf.3
+# 	title = maf.3.t
+# 	desc = maf.3.d
+# 	# picture = GFX
+# 	# major = yes
+# 	fire_only_once = no
+# 	is_triggered_only = no
+# 	mean_time_to_happen = {
+# 		days = 2
+# 	}
+# 	trigger = {
+# 		or = {
+# 			tag = MFA
+# 			tag = MTM
+# 			tag = MYK
+# 			tag = MRS
+# 			tag = ALI
+# 			tag = ELL
+# 			tag = NAR
+# 		}
+# 		or = {
+# 			and = {
+# 				not = {
+# 					has_cosmetic_tag = MAF_united
+# 				}
+# 				is_in_faction = no
+# 				has_war_with = CIR
+# 				CIR = {
+# 					is_in_faction = no
+# 					or = {	
+# 						any_owned_state = {
+# 							is_controlled_by = ROOT
+# 						}
+# 						surrender_progress > 0.05
+# 					}
+# 				}
+				
+# 			}
+# 			has_country_flag = MAF_treaty_with_CIR
+# 		}
+# 	}
+# 	option = {
+# 		name = maf.3.1 
+# 		add_political_power = 20
+# 		add_stability = 0.05
+# 		army_experience = 15
+# 		white_peace = CIR
+# 		clr_country_flag = MAF_treaty_with_CIR
+# 		CIR = {
+# 			country_event = maf.10
+# 		}
+# 	}
+# }
+# country_event = { #与CIR谈判（失败）
+# 	id = maf.4
+# 	title = maf.4.t
+# 	desc = maf.4.d
+# 	# picture = GFX
+# 	# major = yes
+# 	fire_only_once = no
+# 	is_triggered_only = no
+# 	mean_time_to_happen = {
+# 		days = 2
+# 	}
+# 	trigger = {
+# 		or = {
+# 			tag = MFA
+# 			tag = MTM
+# 			tag = MYK
+# 			tag = MRS
+# 			tag = ALI
+# 			tag = ELL
+# 			tag = NAR
+# 		}
+# 		not = {
+# 			has_cosmetic_tag = MAF_united
+# 		}
+# 		has_offensive_war_with = CIR
+# 		or = {
+# 			surrender_progress > 0.2
+# 			and = {
+# 				not = {
+# 					has_war_with = MFA
+# 				}
+# 				not = {
+# 					153 = {
+# 						or = {
+# 							is_controlled_by = ROOT
+# 							controller = {
+# 								is_subject_of = ROOT
+# 							}
+# 						}
+# 					}
+# 				}
+# 				not = {
+# 					552 = {
+# 						or = {
+# 							is_controlled_by = ROOT
+# 							controller = {
+# 								is_subject_of = ROOT
+# 							}
+# 						}
+# 					}
+# 				}
+# 				not = {
+# 					138 = {
+# 						or = {
+# 							is_controlled_by = ROOT
+# 							controller = {
+# 								is_subject_of = ROOT
+# 							}
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
+# 		is_in_faction = no
+# 		is_subject = no
+# 		CIR = {
+# 			is_in_faction = no
+# 		}
+# 	}
+# 	option = {
+# 		name = maf.4.1 
+# 		white_peace = CIR
+# 		if = {
+# 			limit = {
+# 				country_exists = MFA
+# 			}
+# 			white_peace = MFA
+# 			end_puppet = MFA
+# 		}
+# 		MFA = {
+# 			transfer_state = 153
+# 			transfer_state = 552
+# 			transfer_state = 138
+# 		}
+# 		CIR = {
+# 			give_guarantee = MFA
+# 			country_event = maf.11
+# 		}
+# 	}
+# }
+# country_event = { #与MSD谈判（胜利）
+# 	id = maf.5
+# 	title = maf.5.t
+# 	desc = maf.5.d
+# 	# picture = GFX
+# 	# major = yes
+# 	fire_only_once = no
+# 	is_triggered_only = no
+# 	mean_time_to_happen = {
+# 		days = 2
+# 	}
+# 	trigger = {
+# 		or = {
+# 			tag = MFA
+# 			tag = MTM
+# 			tag = MYK
+# 			tag = MRS
+# 			tag = ALI
+# 			tag = ELL
+# 			tag = NAR
+# 		}
+# 		or = {
+# 			and = {
+# 				not = {
+# 					has_cosmetic_tag = MAF_united
+# 				}
+# 				is_in_faction = no
+# 				has_war_with = MSD
+# 				MSD = {
+# 					is_in_faction = no
+# 					or = {	
+# 						any_owned_state = {
+# 							is_controlled_by = ROOT
+# 						}
+# 						surrender_progress > 0.05
+# 					}
+# 				}
+				
+# 			}
+# 			has_country_flag = MAF_treaty_with_MSD
+# 		}
+# 	}
+# 	option = {
+# 		name = maf.5.1 
+# 		add_political_power = 20
+# 		add_stability = 0.05
+# 		army_experience = 15
+# 		white_peace = MSD
+# 		clr_country_flag = MAF_treaty_with_MSD
+# 		MSD = {
+# 			country_event = maf.10
+# 		}
+# 	}
+# }
+# country_event = { #与SEJ谈判（胜利）(MYK)
+# 	id = maf.6
+# 	title = maf.6.t
+# 	desc = maf.6.d
+# 	# picture = GFX
+# 	# major = yes
+# 	fire_only_once = no
+# 	is_triggered_only = no
+# 	mean_time_to_happen = {
+# 		days = 2
+# 	}
+# 	trigger = {
+# 		or = {
+# 			tag = MFA
+# 			tag = MTM
+# 			tag = MYK
+# 			tag = MRS
+# 			tag = ALI
+# 			tag = ELL
+# 			tag = NAR
+# 		}
+# 		or = {
+# 			and = {
+# 				not = {
+# 					has_cosmetic_tag = MAF_united
+# 				}
+# 				is_in_faction = no
+# 				has_war_with = SEJ
+# 				SEJ = {
+# 					is_in_faction = no
+# 					or = {	
+# 						any_owned_state = {
+# 							is_controlled_by = ROOT
+# 						}
+# 						surrender_progress > 0.05
+# 					}
+# 				}
+				
+# 			}
+# 			has_country_flag = MAF_treaty_with_SEJ_MYK
+# 		}
+# 	}
+# 	option = {
+# 		name = maf.6.1 
+# 		add_political_power = 20
+# 		add_stability = 0.05
+# 		army_experience = 15
+# 		white_peace = SEJ
+# 		if = {
+# 			limit = {
+# 				not = { has_country_flag = MAF_treaty_with_SEJ_MYK }
+# 			}
+# 			diplomatic_relation = {
+# 				country = NAR
+# 				relation = guarantee
+# 				active = no
+# 			}
+# 		}
+# 		clr_country_flag = MAF_treaty_with_SEJ_MYK
+# 		SEJ = {
+# 			country_event = maf.10
+# 		}
+# 	}
+# }
+# country_event = { #与MSD、SEJ谈判（失败）
+# 	id = maf.7
+# 	title = maf.7.t
+# 	desc = maf.7.d
+# 	# picture = GFX
+# 	# major = yes
+# 	fire_only_once = no
+# 	is_triggered_only = no
+# 	mean_time_to_happen = {
+# 		days = 2
+# 	}
+# 	trigger = {
+# 		or = {
+# 			tag = MFA
+# 			tag = MTM
+# 			tag = MYK
+# 			tag = MRS
+# 			tag = ALI
+# 			tag = ELL
+# 			tag = NAR
+# 		}
+# 		not = {
+# 			has_cosmetic_tag = MAF_united
+# 		}
+# 		or = {
+# 			MSD = {
+# 				is_in_faction = no
+# 				has_defensive_war_with = ROOT
+# 			}
+# 			SEJ = {
+# 				is_in_faction = no
+# 				has_defensive_war_with = ROOT
+# 			}
+# 		}
+# 		or = {
+# 			surrender_progress > 0.2
+# 			and = {
+# 				not = {
+# 					has_war_with = MYK
+# 				}
+# 				not = {
+# 					182 = {
+# 						or = {
+# 							is_controlled_by = ROOT
+# 							controller = {
+# 								is_subject_of = ROOT
+# 							}
+# 						}
+# 					}
+# 				}
+# 				not = {
+# 					355 = {
+# 						or = {
+# 							is_controlled_by = ROOT
+# 							controller = {
+# 								is_subject_of = ROOT
+# 							}
+# 						}
+# 					}
+# 				}
+# 				not = {
+# 					175 = {
+# 						or = {
+# 							is_controlled_by = ROOT
+# 							controller = {
+# 								is_subject_of = ROOT
+# 							}
+# 						}
+# 					}
+# 				}
+# 				not = {
+# 					547 = {
+# 						or = {
+# 							is_controlled_by = ROOT
+# 							controller = {
+# 								is_subject_of = ROOT
+# 							}
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
+# 		is_in_faction = no
+# 		is_subject = no
+# 	}
+# 	option = {
+# 		name = maf.7.1 
+# 		if = {
+# 			limit = {
+# 				country_exists = MYK
+# 			}
+# 			white_peace = MYK
+# 			end_puppet = MYK
+# 		}
+# 		MYK = {
+# 			transfer_state = 547
+# 			transfer_state = 175
+# 			transfer_state = 355
+# 			transfer_state = 182
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_war_with = MSD
+# 			}
+# 			white_peace = MSD
+# 			MSD = {
+# 				give_guarantee = MYK
+# 				country_event = maf.11
+# 			}
+# 		}
+# 		if = {
+# 			limit = {
+# 				has_war_with = SEJ
+# 			}
+# 			white_peace = SEJ
+# 			SEJ = {
+# 				give_guarantee = MYK
+# 				country_event = maf.11
+# 			}
+# 		}
+# 	}
+# }
+# country_event = { #与SEJ谈判（胜利）(NAR)
+# 	id = maf.8
+# 	title = maf.8.t
+# 	desc = maf.8.d
+# 	# picture = GFX
+# 	# major = yes
+# 	fire_only_once = no
+# 	is_triggered_only = no
+# 	mean_time_to_happen = {
+# 		days = 2
+# 	}
+# 	trigger = {
+# 		or = {
+# 			tag = MFA
+# 			tag = MTM
+# 			tag = MYK
+# 			tag = MRS
+# 			tag = ALI
+# 			tag = ELL
+# 			tag = NAR
+# 		}
+# 		or = {
+# 			and = {
+# 				not = {
+# 					has_cosmetic_tag = MAF_united
+# 				}
+# 				is_in_faction = no
+# 				has_war_with = SEJ
+# 				SEJ = {
+# 					is_in_faction = no
+# 					or = {	
+# 						any_owned_state = {
+# 							is_controlled_by = ROOT
+# 						}
+# 						surrender_progress > 0.05
+# 					}
+# 				}
+				
+# 			}
+# 			has_country_flag = MAF_treaty_with_SEJ_NAR
+# 		}
+# 	}
+# 	option = {
+# 		name = maf.8.1 
+# 		add_political_power = 20
+# 		add_stability = 0.05
+# 		army_experience = 15
+# 		white_peace = SEJ
+# 		if = {
+# 			limit = {
+# 				not = { has_country_flag = MAF_treaty_with_SEJ_NAR }
+# 			}
+# 			diplomatic_relation = {
+# 				country = MYK
+# 				relation = guarantee
+# 				active = no
+# 			}
+# 		}
+# 		clr_country_flag = MAF_treaty_with_SEJ_NAR
+# 		SEJ = {
+# 			country_event = maf.10
+# 		}
+# 	}
+# }
+# country_event = { #与SEJ谈判（失败）(NAR)
+# 	id = maf.9
+# 	title = maf.9.t
+# 	desc = maf.9.d
+# 	# picture = GFX
+# 	# major = yes
+# 	fire_only_once = no
+# 	is_triggered_only = no
+# 	mean_time_to_happen = {
+# 		days = 2
+# 	}
+# 	trigger = {
+# 		or = {
+# 			tag = MFA
+# 			tag = MTM
+# 			tag = MYK
+# 			tag = MRS
+# 			tag = ALI
+# 			tag = ELL
+# 			tag = NAR
+# 		}
+# 		not = {
+# 			has_cosmetic_tag = MAF_united
+# 		}
+# 		has_offensive_war_with = SEJ
+# 		or = {
+# 			surrender_progress > 0.2
+# 			and = {
+# 				not = {
+# 					has_war_with = NAR
+# 				}
+# 				not = {
+# 					151 = {
+# 						or = {
+# 							is_controlled_by = ROOT
+# 							controller = {
+# 								is_subject_of = ROOT
+# 							}
+# 						}
+# 					}
+# 				}
+# 				not = {
+# 					154 = {
+# 						or = {
+# 							is_controlled_by = ROOT
+# 							controller = {
+# 								is_subject_of = ROOT
+# 							}
+# 						}
+# 					}
+# 				}
+# 				not = {
+# 					162 = {
+# 						or = {
+# 							is_controlled_by = ROOT
+# 							controller = {
+# 								is_subject_of = ROOT
+# 							}
+# 						}
+# 					}
+# 				}
+# 				not = {
+# 					354 = {
+# 						or = {
+# 							is_controlled_by = ROOT
+# 							controller = {
+# 								is_subject_of = ROOT
+# 							}
+# 						}
+# 					}
+# 				}
+# 			}
+# 		}
+# 		is_in_faction = no
+# 		is_subject = no
+# 		SEJ = {
+# 			is_in_faction = no
+# 		}
+# 	}
+# 	option = {
+# 		name = maf.9.1 
+# 		white_peace = SEJ
+# 		if = {
+# 			limit = {
+# 				country_exists = NAR
+# 			}
+# 			white_peace = NAR
+# 			end_puppet = NAR
+# 		}
+# 		NAR = {
+# 			transfer_state = 151
+# 			transfer_state = 154
+# 			transfer_state = 162
+# 			transfer_state = 354
+# 		}
+# 		SEJ = {
+# 			give_guarantee = NAR
+# 			country_event = maf.11
+# 		}
+# 	}
+# }
+# country_event = { #被谈判方的事件(魔法森林势力成功）
+# 	id = maf.10
+# 	title = maf.10.t
+# 	desc = maf.10.d
+# 	# picture = GFX
+# 	# major = yes
+# 	fire_only_once = no
+# 	is_triggered_only = yes
+# 	option = {
+# 		name = maf.10.1 
+# 	}
+# }
+# country_event = { #被谈判方的事件(魔法森林势力失败）
+# 	id = maf.11
+# 	title = maf.11.t
+# 	desc = maf.11.d
+# 	# picture = GFX
+# 	# major = yes
+# 	fire_only_once = no
+# 	is_triggered_only = yes
+# 	option = {
+# 		name = maf.11.1 
+# 	}
+# }
+# country_event = { #被AI决议宣战的准备
+# 	id = maf.12
+# 	title = maf.12.t
+# 	desc = maf.12.d
+# 	# picture = GFX
+# 	# major = yes
+# 	fire_only_once = no
+# 	is_triggered_only = yes
+# 	option = {
+# 		name = maf.12.1 
+# 	}
+# }
+# country_event = { #msd win
+# 	id = maf.13
+# 	title = maf.13.t
+# 	desc = maf.13.d
+# 	# picture = GFX
+# 	# major = yes
+# 	fire_only_once = no
+# 	is_triggered_only = yes
+# 	option = {
+# 		MSD = {
+# 			transfer_state = 147
+# 			transfer_state = 206
+# 		}
+# 		army_experience = 10
+# 		if = {
+# 			limit = {
+# 				tag = MSD
+# 			}
+# 			army_experience = 10
+# 			add_war_support = 0.05
+# 		}
+# 		if = {
+# 			limit = {
+# 				tag = ALI
+# 			}
+# 			army_experience = 30
+# 			add_war_support = -0.05
+# 		}
+# 		name = maf.13.1 
+# 	}
+# }
+# country_event = { #msd lose
+# 	id = maf.14
+# 	title = maf.14.t
+# 	desc = maf.14.d
+# 	# picture = GFX
+# 	# major = yes
+# 	fire_only_once = no
+# 	is_triggered_only = yes
+# 	option = {
+# 		name = maf.14.1 
+# 		if = {
+# 			limit = {
+# 				tag = MSD
+# 			}
+# 			army_experience = 15
+# 			add_war_support = -0.05
+# 		}
+# 		if = {
+# 			limit = {
+# 				tag = ALI
+# 			}
+# 			army_experience = 25
+# 			add_war_support = 0.05
+# 		}
+# 		MSD = {
+# 			diplomatic_relation = {
+# 				country = MYK
+# 				relation = guarantee
+# 				active = no
+# 			}
+# 		}
+# 	}
+# }
+# country_event = { #draw
+# 	id = maf.15
+# 	title = maf.15.t
+# 	desc = maf.15.d
+# 	# picture = GFX
+# 	# major = yes
+# 	fire_only_once = no
+# 	is_triggered_only = yes
+# 	option = {
+# 		name = maf.15.1 
+# 		if = {
+# 			limit = {
+# 				tag = MSD
+# 			}
+# 			army_experience = 20
+# 			add_war_support = -0.02
+# 		}
+# 		if = {
+# 			limit = {
+# 				tag = ALI
+# 			}
+# 			army_experience = 20
+# 			add_war_support = 0.03
+# 		}
+# 	}
+# }

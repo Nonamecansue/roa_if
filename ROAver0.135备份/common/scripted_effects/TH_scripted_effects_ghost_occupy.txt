@@ -1,0 +1,21 @@
+GO_defines = {
+	set_variable = { global.GO_time_base = 120 }
+	set_variable = { global.GO_attack_defence_nerf_base = -0.3 }
+}
+
+GO_set_daily = {
+	###set time
+	set_variable = {
+		GO_time_current = global.GO_time_base	
+	}
+	add_to_variable = { 
+		GO_time_current = ROOT.modifier@GO_time_duration	
+	}
+	###set nerf
+	set_variable = {
+		GO_attack_defence_nerf_base_current = global.GO_attack_defence_nerf_base	
+	}
+	add_to_variable = { 
+		GO_attack_defence_nerf_base_current = ROOT.modifier@GO_attack_defence_nerf 
+	}
+}

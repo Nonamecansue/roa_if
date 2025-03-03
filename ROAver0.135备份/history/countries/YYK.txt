@@ -1,0 +1,110 @@
+﻿capital = 231
+138.8.13 = {
+
+}
+141.6.2 = {
+    
+}
+142.3.8 = {
+    
+}
+144.2.5 = {
+    
+}
+146.1.1 = {
+    set_country_flag = bunengsuiyiqiehuanzhengti
+    # set_cosmetic_tag = YYK_B
+    set_technology = {
+        #通用武器线
+        spell_card1 = 1
+        linglicunchu = 1
+        spell_card2 = 1
+        spear1 = 1
+        linglizhufu = 1
+        #辅助
+
+        #专用辅助
+
+        #专用基础
+
+        #专用进阶
+
+        #混合系
+
+        #陆军学说
+        zhanchangzhihui140 = 1
+        zuzhihuazhanzheng142 = 1
+            
+        #工程学 
+        jichushuxue = 1
+        shuxuegongju = 1
+
+        #专用工程学
+
+        #工业
+        production_theory = 1
+        org_production = 1
+            
+        #专用工业
+
+        #种族
+        shitihua1 = 1
+    }
+    
+}
+set_technology = {
+    ghost_tech = 1
+}
+146.1.1={
+    country_lock_all_division_template = yes
+    oob = "YYK_146"
+    
+    NG1 = {
+        subject_level3 = yes
+    }
+    NG2 = {
+        subject_level3 = yes
+    }
+    NG3 = {
+        subject_level3 = yes
+    }
+    NG4 = {
+        subject_level3 = yes
+    }
+    give_guarantee = HUB
+    set_country_flag = ghost_jinzhizhanju
+    set_country_flag = world_limit
+    set_variable = { YYK_sihoushijie_conscription = -0.3 }
+    add_dynamic_modifier = {
+        modifier = YYK_sihoushijie_dy
+    }
+    add_ideas = {
+
+    Ghost
+    Village
+    close2
+    hawk1
+    loose_border
+    free_magic
+    type0_manpowerlv2
+    pingmingehe_idea
+
+    YYK_sijidezhicai_idea
+    YYK_sihoushijie_idea
+    YYK_duibayunzideyuanzhu_idea
+    YYK_mingjiedongdang6_idea
+    }
+    
+    set_politics = {
+    	ruling_party = oldorder
+    	election_frequency = 48
+    	elections_allowed = no
+    }
+    set_popularities = {
+        qinwai = 0
+        guli = 15
+        neworder = 3
+        oldorder = 82
+        fandong = 0
+    }
+}

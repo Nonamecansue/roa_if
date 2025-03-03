@@ -1,0 +1,1624 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_focus_SAT_generic_girls_third_eye"
+		texturefile = "gfx/interface/goals/focus_SAT_generic_girls_third_eye.png"
+	}
+	spriteType = {
+		name = "GFX_focus_komeiji_satori"
+		texturefile = "gfx/interface/goals/focus_komeiji_satori.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SAT_Chireidan_Security_Bureau"
+		texturefile = "gfx/interface/goals/focus_SAT_Chireidan_Security_Bureau.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SAT_deal_with_SKI_handshake"
+		texturefile = "gfx/interface/goals/focus_SAT_deal_with_SKI_handshake.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SAT_deal_with_yuyuko"
+		texturefile = "gfx/interface/goals/focus_SAT_deal_with_yuyuko.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SAT_expand_the_gold_refinery"
+		texturefile = "gfx/interface/goals/focus_SAT_expand_the_gold_refinery.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SAT_fire_on_the_other_side"
+		texturefile = "gfx/interface/goals/focus_SAT_fire_on_the_other_side.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SAT_Generic_Orin"
+		texturefile = "gfx/interface/goals/focus_SAT_Generic_Orin.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SAT_Generic_Utsuho"
+		texturefile = "gfx/interface/goals/focus_SAT_Generic_Utsuho.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SAT_gorgolon_plan"
+		texturefile = "gfx/interface/goals/focus_SAT_gorgolon_plan.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SAT_HUB_infrasturcture"
+		texturefile = "gfx/interface/goals/focus_SAT_HUB_infrasturcture.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SAT_invade_HUB"
+		texturefile = "gfx/interface/goals/focus_SAT_invade_HUB.png"
+	}
+	spriteType = {
+		name = "GFX_Focus_SAT_koishi_phone_call"
+		texturefile = "gfx/interface/goals/Focus_SAT_koishi_phone_call.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SAT_lets_drink"
+		texturefile = "gfx/interface/goals/focus_SAT_lets_drink.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SAT_letter_to_Yukari"
+		texturefile = "gfx/interface/goals/focus_SAT_letter_to_Yukari.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SAT_MRY_machine_introduction"
+		texturefile = "gfx/interface/goals/focus_SAT_MRY_machine_introduction.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SAT_no_deal_with_yuyuko"
+		texturefile = "gfx/interface/goals/focus_SAT_no_deal_with_yuyuko.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SAT_old_pal_Kanako"
+		texturefile = "gfx/interface/goals/focus_SAT_old_pal_Kanako.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SAT_pressure_reactor"
+		texturefile = "gfx/interface/goals/focus_SAT_pressure_reactor.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SAT_puppet_HUB"
+		texturefile = "gfx/interface/goals/focus_SAT_puppet_HUB.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SAT_refactor_the_reactor"
+		texturefile = "gfx/interface/goals/focus_SAT_refactor_the_reactor.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SAT_reply_from_Yukari"
+		texturefile = "gfx/interface/goals/focus_SAT_reply_from_Yukari.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SAT_sink_into_library"
+		texturefile = "gfx/interface/goals/focus_SAT_sink_into_library.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SAT_SKI_handshake"
+		texturefile = "gfx/interface/goals/focus_SAT_SKI_handshake.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SAT_special_artillery"
+		texturefile = "gfx/interface/goals/focus_SAT_special_artillery.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SAT_start_the_investigation"
+		texturefile = "gfx/interface/goals/focus_SAT_start_the_investigation.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SAT_the_beast_war"
+		texturefile = "gfx/interface/goals/focus_SAT_the_beast_war.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SAT_tokamak"
+		texturefile = "gfx/interface/goals/focus_SAT_tokamak.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SAT_underground_alliance_2"
+		texturefile = "gfx/interface/goals/focus_SAT_underground_alliance_2.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SAT_YKR_railway"
+		texturefile = "gfx/interface/goals/focus_SAT_YKR_railway.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_SAT_assess_our_industries"
+		texturefile = "gfx/interface/goals/focus_SAT_assess_our_industries.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SAT_Chireiden_corporate_state_congress"
+		texturefile = "gfx/interface/goals/focus_SAT_Chireiden_corporate_state_congress.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SAT_Chireiden_transform_alliance"
+		texturefile = "gfx/interface/goals/focus_SAT_Chireiden_transform_alliance.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SAT_face_the_deity"
+		texturefile = "gfx/interface/goals/focus_SAT_face_the_deity.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SAT_form_Chireiden_Government"
+		texturefile = "gfx/interface/goals/focus_SAT_form_Chireiden_Government.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SAT_proclaim_our_past_role"
+		texturefile = "gfx/interface/goals/focus_SAT_proclaim_our_past_role.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SAT_surveillance_network"
+		texturefile = "gfx/interface/goals/focus_SAT_surveillance_network.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SAT_the_acknowledgement_of_yukari"
+		texturefile = "gfx/interface/goals/focus_SAT_the_acknowledgement_of_yukari.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SAT_trade_authorization"
+		texturefile = "gfx/interface/goals/focus_SAT_trade_authorization.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SAT_underground_alliance_2"
+		texturefile = "gfx/interface/goals/focus_SAT_underground_alliance_2.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SAT_underground_alliance_prereq"
+		texturefile = "gfx/interface/goals/focus_SAT_underground_alliance_prereq.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SAT_renew_the_treaty"
+		texturefile = "gfx/interface/goals/focus_SAT_renew_the_treaty.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SAT_a_strong_alliance"
+		texturefile = "gfx/interface/goals/focus_SAT_a_strong_alliance.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SAT_all_for_peace"
+		texturefile = "gfx/interface/goals/focus_SAT_all_for_peace.png"
+	}
+	spriteType = {
+		name = "GFX_focus_SAT_state_of_roses"
+		texturefile = "gfx/interface/goals/focus_SAT_state_of_roses.png"
+	}
+
+	spriteType = {
+		name = "GFX_focus_SAT_generic_girls_third_eye_shine"
+		texturefile = "gfx/interface/goals/focus_SAT_generic_girls_third_eye.png"
+	  effectFile = "gfx/FX/buttonstate.lua"
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_generic_girls_third_eye.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+	
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_generic_girls_third_eye.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_focus_komeiji_satori_shine"
+		texturefile = "gfx/interface/goals/focus_komeiji_satori.png"
+	  effectFile = "gfx/FX/buttonstate.lua"
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_komeiji_satori.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+	
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_komeiji_satori.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_focus_SAT_Chireidan_Security_Bureau_shine"
+		texturefile = "gfx/interface/goals/focus_SAT_Chireidan_Security_Bureau.png"
+	  effectFile = "gfx/FX/buttonstate.lua"
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_Chireidan_Security_Bureau.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+	
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_Chireidan_Security_Bureau.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_focus_SAT_deal_with_SKI_handshake_shine"
+		texturefile = "gfx/interface/goals/focus_SAT_deal_with_SKI_handshake.png"
+	  effectFile = "gfx/FX/buttonstate.lua"
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_deal_with_SKI_handshake.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+	
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_deal_with_SKI_handshake.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_focus_SAT_deal_with_yuyuko_shine"
+		texturefile = "gfx/interface/goals/focus_SAT_deal_with_yuyuko.png"
+	  effectFile = "gfx/FX/buttonstate.lua"
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_deal_with_yuyuko.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+	
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_deal_with_yuyuko.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_focus_SAT_expand_the_gold_refinery_shine"
+		texturefile = "gfx/interface/goals/focus_SAT_expand_the_gold_refinery.png"
+	  effectFile = "gfx/FX/buttonstate.lua"
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_expand_the_gold_refinery.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+	
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_expand_the_gold_refinery.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_focus_SAT_fire_on_the_other_side_shine"
+		texturefile = "gfx/interface/goals/focus_SAT_fire_on_the_other_side.png"
+	  effectFile = "gfx/FX/buttonstate.lua"
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_fire_on_the_other_side.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+	
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_fire_on_the_other_side.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_focus_SAT_Generic_Orin_shine"
+		texturefile = "gfx/interface/goals/focus_SAT_Generic_Orin.png"
+	  effectFile = "gfx/FX/buttonstate.lua"
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_Generic_Orin.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+	
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_Generic_Orin.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_focus_SAT_Generic_Utsuho_shine"
+		texturefile = "gfx/interface/goals/focus_SAT_Generic_Utsuho.png"
+	  effectFile = "gfx/FX/buttonstate.lua"
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_Generic_Utsuho.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+	
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_Generic_Utsuho.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_focus_SAT_gorgolon_plan_shine"
+		texturefile = "gfx/interface/goals/focus_SAT_gorgolon_plan.png"
+	  effectFile = "gfx/FX/buttonstate.lua"
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_gorgolon_plan.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+	
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_gorgolon_plan.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_focus_SAT_HUB_infrasturcture_shine"
+		texturefile = "gfx/interface/goals/focus_SAT_HUB_infrasturcture.png"
+	  effectFile = "gfx/FX/buttonstate.lua"
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_HUB_infrasturcture.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+	
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_HUB_infrasturcture.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_focus_SAT_invade_HUB_shine"
+		texturefile = "gfx/interface/goals/focus_SAT_invade_HUB.png"
+	  effectFile = "gfx/FX/buttonstate.lua"
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_invade_HUB.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+	
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_invade_HUB.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_Focus_SAT_koishi_phone_call_shine"
+		texturefile = "gfx/interface/goals/Focus_SAT_koishi_phone_call.png"
+	  effectFile = "gfx/FX/buttonstate.lua"
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/Focus_SAT_koishi_phone_call.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+	
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/Focus_SAT_koishi_phone_call.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_focus_SAT_lets_drink_shine"
+		texturefile = "gfx/interface/goals/focus_SAT_lets_drink.png"
+	  effectFile = "gfx/FX/buttonstate.lua"
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_lets_drink.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+	
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_lets_drink.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_focus_SAT_letter_to_Yukari_shine"
+		texturefile = "gfx/interface/goals/focus_SAT_letter_to_Yukari.png"
+	  effectFile = "gfx/FX/buttonstate.lua"
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_letter_to_Yukari.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+	
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_letter_to_Yukari.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_focus_SAT_MRY_machine_introduction_shine"
+		texturefile = "gfx/interface/goals/focus_SAT_MRY_machine_introduction.png"
+	  effectFile = "gfx/FX/buttonstate.lua"
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_MRY_machine_introduction.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+	
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_MRY_machine_introduction.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_focus_SAT_no_deal_with_yuyuko_shine"
+		texturefile = "gfx/interface/goals/focus_SAT_no_deal_with_yuyuko.png"
+	  effectFile = "gfx/FX/buttonstate.lua"
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_no_deal_with_yuyuko.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+	
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_no_deal_with_yuyuko.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_focus_SAT_old_pal_Kanako_shine"
+		texturefile = "gfx/interface/goals/focus_SAT_old_pal_Kanako.png"
+	  effectFile = "gfx/FX/buttonstate.lua"
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_old_pal_Kanako.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+	
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_old_pal_Kanako.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_focus_SAT_pressure_reactor_shine"
+		texturefile = "gfx/interface/goals/focus_SAT_pressure_reactor.png"
+	  effectFile = "gfx/FX/buttonstate.lua"
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_pressure_reactor.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+	
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_pressure_reactor.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_focus_SAT_puppet_HUB_shine"
+		texturefile = "gfx/interface/goals/focus_SAT_puppet_HUB.png"
+	  effectFile = "gfx/FX/buttonstate.lua"
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_puppet_HUB.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+	
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_puppet_HUB.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_focus_SAT_refactor_the_reactor_shine"
+		texturefile = "gfx/interface/goals/focus_SAT_refactor_the_reactor.png"
+	  effectFile = "gfx/FX/buttonstate.lua"
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_refactor_the_reactor.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+	
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_refactor_the_reactor.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_focus_SAT_reply_from_Yukari_shine"
+		texturefile = "gfx/interface/goals/focus_SAT_reply_from_Yukari.png"
+	  effectFile = "gfx/FX/buttonstate.lua"
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_reply_from_Yukari.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+	
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_reply_from_Yukari.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_focus_SAT_sink_into_library_shine"
+		texturefile = "gfx/interface/goals/focus_SAT_sink_into_library.png"
+	  effectFile = "gfx/FX/buttonstate.lua"
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_sink_into_library.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+	
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_sink_into_library.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_focus_SAT_SKI_handshake_shine"
+		texturefile = "gfx/interface/goals/focus_SAT_SKI_handshake.png"
+	  effectFile = "gfx/FX/buttonstate.lua"
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_SKI_handshake.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+	
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_SKI_handshake.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_focus_SAT_special_artillery_shine"
+		texturefile = "gfx/interface/goals/focus_SAT_special_artillery.png"
+	  effectFile = "gfx/FX/buttonstate.lua"
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_special_artillery.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+	
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_special_artillery.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_focus_SAT_start_the_investigation_shine"
+		texturefile = "gfx/interface/goals/focus_SAT_start_the_investigation.png"
+	  effectFile = "gfx/FX/buttonstate.lua"
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_start_the_investigation.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+	
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_start_the_investigation.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_focus_SAT_the_beast_war_shine"
+		texturefile = "gfx/interface/goals/focus_SAT_the_beast_war.png"
+	  effectFile = "gfx/FX/buttonstate.lua"
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_the_beast_war.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+	
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_the_beast_war.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_focus_SAT_tokamak_shine"
+		texturefile = "gfx/interface/goals/focus_SAT_tokamak.png"
+	  effectFile = "gfx/FX/buttonstate.lua"
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_tokamak.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+	
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_tokamak.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_focus_SAT_underground_alliance_2_shine"
+		texturefile = "gfx/interface/goals/focus_SAT_underground_alliance_2.png"
+	  effectFile = "gfx/FX/buttonstate.lua"
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_underground_alliance_2.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+	
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_underground_alliance_2.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_focus_SAT_YKR_railway_shine"
+		texturefile = "gfx/interface/goals/focus_SAT_YKR_railway.png"
+	  effectFile = "gfx/FX/buttonstate.lua"
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_YKR_railway.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+	
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_YKR_railway.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_focus_SAT_assess_our_industries_shine"
+		texturefile = "gfx/interface/goals/focus_SAT_assess_our_industries.png"
+	  effectFile = "gfx/FX/buttonstate.lua"
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_assess_our_industries.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_assess_our_industries.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_focus_SAT_Chireiden_corporate_state_congress_shine"
+		texturefile = "gfx/interface/goals/focus_SAT_Chireiden_corporate_state_congress.png"
+	  effectFile = "gfx/FX/buttonstate.lua"
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_Chireiden_corporate_state_congress.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_Chireiden_corporate_state_congress.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_focus_SAT_Chireiden_transform_alliance_shine"
+		texturefile = "gfx/interface/goals/focus_SAT_Chireiden_transform_alliance.png"
+	  effectFile = "gfx/FX/buttonstate.lua"
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_Chireiden_transform_alliance.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_Chireiden_transform_alliance.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_focus_SAT_face_the_deity_shine"
+		texturefile = "gfx/interface/goals/focus_SAT_face_the_deity.png"
+	  effectFile = "gfx/FX/buttonstate.lua"
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_face_the_deity.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_face_the_deity.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_focus_SAT_form_Chireiden_Government_shine"
+		texturefile = "gfx/interface/goals/focus_SAT_form_Chireiden_Government.png"
+	  effectFile = "gfx/FX/buttonstate.lua"
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_form_Chireiden_Government.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_form_Chireiden_Government.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_focus_SAT_proclaim_our_past_role_shine"
+		texturefile = "gfx/interface/goals/focus_SAT_proclaim_our_past_role.png"
+	  effectFile = "gfx/FX/buttonstate.lua"
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_proclaim_our_past_role.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_proclaim_our_past_role.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_focus_SAT_surveillance_network_shine"
+		texturefile = "gfx/interface/goals/focus_SAT_surveillance_network.png"
+	  effectFile = "gfx/FX/buttonstate.lua"
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_surveillance_network.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_surveillance_network.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_focus_SAT_the_acknowledgement_of_yukari_shine"
+		texturefile = "gfx/interface/goals/focus_SAT_the_acknowledgement_of_yukari.png"
+	  effectFile = "gfx/FX/buttonstate.lua"
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_the_acknowledgement_of_yukari.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_the_acknowledgement_of_yukari.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_focus_SAT_trade_authorization_shine"
+		texturefile = "gfx/interface/goals/focus_SAT_trade_authorization.png"
+	  effectFile = "gfx/FX/buttonstate.lua"
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_trade_authorization.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_trade_authorization.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_focus_SAT_underground_alliance_2_shine"
+		texturefile = "gfx/interface/goals/focus_SAT_underground_alliance_2.png"
+	  effectFile = "gfx/FX/buttonstate.lua"
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_underground_alliance_2.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_underground_alliance_2.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_focus_SAT_underground_alliance_prereq_shine"
+		texturefile = "gfx/interface/goals/focus_SAT_underground_alliance_prereq.png"
+	  effectFile = "gfx/FX/buttonstate.lua"
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_underground_alliance_prereq.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_underground_alliance_prereq.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_focus_SAT_renew_the_treaty_shine"
+		texturefile = "gfx/interface/goals/focus_SAT_renew_the_treaty.png"
+	  effectFile = "gfx/FX/buttonstate.lua"
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_renew_the_treaty.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_renew_the_treaty.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_focus_SAT_a_strong_alliance_shine"
+		texturefile = "gfx/interface/goals/focus_SAT_a_strong_alliance.png"
+	  effectFile = "gfx/FX/buttonstate.lua"
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_a_strong_alliance.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_a_strong_alliance.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_focus_SAT_all_for_peace_shine"
+		texturefile = "gfx/interface/goals/focus_SAT_all_for_peace.png"
+	  effectFile = "gfx/FX/buttonstate.lua"
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_all_for_peace.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_all_for_peace.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_focus_SAT_state_of_roses_shine"
+		texturefile = "gfx/interface/goals/focus_SAT_state_of_roses.png"
+	  effectFile = "gfx/FX/buttonstate.lua"
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_state_of_roses.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+
+	  animation = {
+		animationmaskfile = "gfx/interface/goals/focus_SAT_state_of_roses.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	  }
+		legacy_lazy_load = no
+	}
+	
+}

@@ -1,0 +1,137 @@
+# unit_base is the base value used for evaluating how important it is to deploy the various categories
+# Written by Henrik "Groogy" Hansson
+#AI 倾向
+SEJ_NAR_help= {
+	enable = {
+		tag = SEJ
+		has_government = fandong
+	}
+	abort = {
+		has_global_flag = xinshidai
+	}
+
+	ai_strategy = {
+		type = support 
+		id = "NAR"			
+		value = 200
+	}	
+	ai_strategy = {
+		type = send_volunteers_desire 
+		id = "NAR"			
+		value = 200
+	}	
+}
+CIR_SEJ_help= {
+	enable = {
+		tag = CIR
+		or = {
+			SEJ = { is_ai = yes }
+			CIR = { has_idea = SEJ_heCIRjiashenlianxi_idea }
+		}
+		SEJ = { has_government = fandong }
+	}
+	abort = {
+		has_global_flag = xinshidai
+	}
+
+	ai_strategy = {
+		type = support 
+		id = "SEJ"			
+		value = 10
+	}	
+	ai_strategy = {
+		type = send_volunteers_desire 
+		id = "SEJ"			
+		value = 100
+	}	
+}
+NAR_SEJ_help= {
+	enable = {
+		tag = NAR
+		SEJ = { has_government = fandong }
+	}
+	abort = {
+		has_global_flag = xinshidai
+	}
+
+	ai_strategy = {
+		type = support 
+		id = "SEJ"			
+		value = 10
+	}	
+	ai_strategy = {
+		type = send_volunteers_desire 
+		id = "SEJ"			
+		value = 100
+	}	
+}
+CIR_RMI_help= {
+	enable = {
+		tag = CIR
+		not = { 
+			SEJ = { has_government = fandong } 
+		}
+		RMI = { has_war_with = SEJ }
+	}
+	abort = {
+		has_global_flag = xinshidai
+	}
+
+	ai_strategy = {
+		type = support 
+		id = "RMI"			
+		value = 10
+	}	
+	ai_strategy = {
+		type = send_volunteers_desire 
+		id = "RMI"			
+		value = 100
+	}	
+}
+YKR_SEJ_help= {
+	enable = {
+		tag = YKR
+		or = {
+			SEJ = { is_ai = yes }
+			YKR = { has_idea = SEJ_mihuizi_idea}
+		}		
+		not = {
+			SEJ = { has_government = fandong }
+		}
+	}
+	abort = {
+		has_global_flag = xinshidai
+	}
+
+	ai_strategy = {
+		type = support 
+		id = "SEJ"			
+		value = 10
+	}	
+	ai_strategy = {
+		type = send_volunteers_desire 
+		id = "SEJ"			
+		value = 100
+	}	
+}
+YKR_NIB_help= {
+	enable = {
+		tag = YKR
+		SEJ = { has_government = fandong } 
+		NIB = { has_war_with = SEJ }
+	}
+	abort = {
+		has_global_flag = xinshidai
+	}
+
+	ai_strategy = {
+		type = support 
+		id = "NIB"			
+		value = 10
+	}	
+	ai_strategy = {
+		type = send_volunteers_desire 
+		id = "NIB"			
+		value = 100
+	}	
+}

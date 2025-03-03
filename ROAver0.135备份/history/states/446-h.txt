@@ -1,0 +1,35 @@
+
+state={
+	id=446
+	name="STATE_446"
+	resources={
+		energy=0.000
+		powder=5.000
+		metal=0.000
+		gas=5.000
+		crystal=8.000
+	}
+
+	history={
+		146.1.1 = {
+			owner = SRB
+			add_core_of = SRB
+			buildings = {
+				infrastructure = 4
+				industrial_complex = 1
+				arms_factory = 1
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		191 718 922 1644 1859 2786 2811 2816 
+	}
+	manpower=1030
+	buildings_max_level_factor=1.000
+	state_category=s5
+	local_supplies=2.500
+}

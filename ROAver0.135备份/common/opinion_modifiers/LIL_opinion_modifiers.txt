@@ -1,0 +1,14 @@
+opinion_modifiers = {	
+	LIL_paiwangshoshi = {
+		value = 50
+	}
+	LIL_paiwanghomoguan = {
+		value = 50
+	}
+	LIL_paiwangdidi = {
+		value = 50
+	}
+	LIL_yongchunyibian = {
+		value = -500
+	}
+}

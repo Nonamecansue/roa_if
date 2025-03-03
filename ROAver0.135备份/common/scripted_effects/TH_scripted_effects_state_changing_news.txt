@@ -1,0 +1,546 @@
+SCC_captured_events = {
+	SCC_sdm_captured = yes
+	SCC_NMS_captured = yes
+	SCC_TEG_captured = yes
+	SCC_MRY_captured = yes
+	SCC_CIR_captured = yes
+}
+SCC_sdm_captured = {
+	#CIR
+	if = {
+		limit = {
+			tag = CIR
+			has_war_with = SCA
+			FROM = {
+				tag = SCA
+			}
+			FROM.FROM = {
+				state = 122
+				is_owned_by = SCA
+			}
+			122 = {
+				not = {
+					has_state_flag = been_capture_first
+				}
+			}
+		}
+		122 = {
+			set_state_flag = been_capture_first
+		}
+		news_event = { days = 1 random = 12 id = scc.1 }
+	}
+	if = {
+		limit = {
+			tag = TKM
+			has_war_with = SCA
+			FROM = {
+				tag = SCA
+			}
+			FROM.FROM = {
+				state = 122
+				is_owned_by = SCA
+			}
+			122 = {
+				not = {
+					has_state_flag = been_capture_first
+				}
+			}
+		}
+		122 = {
+			set_state_flag = been_capture_first
+		}
+		news_event = { days = 1 random = 12 id = scc.2 }
+	}
+	if = {
+		limit = {
+			tag = SEJ
+			has_war_with = SCA
+			FROM = {
+				tag = SCA
+			}
+			FROM.FROM = {
+				state = 122
+				is_owned_by = SCA
+			}
+			122 = {
+				not = {
+					has_state_flag = been_capture_first
+				}
+			}
+		}
+		122 = {
+			set_state_flag = been_capture_first
+		}
+		news_event = { days = 1 random = 12 id = scc.3 }
+	}
+	if = {
+		limit = {
+			tag = AKI
+			has_war_with = SCA
+			FROM = {
+				tag = SCA
+			}
+			FROM.FROM = {
+				state = 122
+				is_owned_by = SCA
+			}
+			122 = {
+				not = {
+					has_state_flag = been_capture_first
+				}
+			}
+		}
+		122 = {
+			set_state_flag = been_capture_first
+		}
+		news_event = { days = 1 random = 12 id = scc.4 }
+	}
+	if = {
+		limit = {
+			tag = TEG
+			has_war_with = SCA
+			FROM = {
+				tag = SCA
+			}
+			FROM.FROM = {
+				state = 122
+				is_owned_by = SCA
+			}
+			122 = {
+				not = {
+					has_state_flag = been_capture_first
+				}
+			}
+		}
+		122 = {
+			set_state_flag = been_capture_first
+		}
+		news_event = { days = 1 random = 12 id = scc.5 }
+	}
+	if = {
+		limit = {
+			tag = MRY
+			has_war_with = SCA
+			FROM = {
+				tag = SCA
+			}
+			FROM.FROM = {
+				state = 122
+				is_owned_by = SCA
+			}
+			122 = {
+				not = {
+					has_state_flag = been_capture_first
+				}
+			}
+		}
+		122 = {
+			set_state_flag = been_capture_first
+		}
+		news_event = { days = 1 random = 12 id = scc.6 }
+	}
+	if = {
+		limit = {
+			tag = MRS
+			has_war_with = SCA
+			FROM = {
+				tag = SCA
+			}
+			FROM.FROM = {
+				state = 122
+				is_owned_by = SCA
+			}
+			122 = {
+				not = {
+					has_state_flag = been_capture_first
+				}
+			}
+		}
+		122 = {
+			set_state_flag = been_capture_first
+		}
+		news_event = { days = 1 random = 12 id = scc.7 }
+	}
+	if = {
+		limit = {
+			tag = ALI
+			has_war_with = SCA
+			FROM = {
+				tag = SCA
+			}
+			FROM.FROM = {
+				state = 122
+				is_owned_by = SCA
+			}
+			122 = {
+				not = {
+					has_state_flag = been_capture_first
+				}
+			}
+		}
+		122 = {
+			set_state_flag = been_capture_first
+		}
+		news_event = { days = 1 random = 12 id = scc.8 }
+	}
+	if = {
+		limit = {
+			tag = HKR
+			has_war_with = SCA
+			FROM = {
+				tag = SCA
+			}
+			FROM.FROM = {
+				state = 122
+				is_owned_by = SCA
+			}
+			122 = {
+				not = {
+					has_state_flag = been_capture_first
+				}
+			}
+		}
+		122 = {
+			set_state_flag = been_capture_first
+		}
+		news_event = { days = 1 random = 12 id = scc.9 }
+	}
+}
+SCC_NMS_captured = {
+	if = {
+		limit = {
+			tag = MNM
+			has_war_with = NMS
+			FROM = {
+				tag = NMS
+			}
+			FROM.FROM = {
+				state = 223
+				is_owned_by = NMS
+			}
+			223 = {
+				not = {
+					has_state_flag = been_capture_first
+				}
+			}
+		}
+		223 = {
+			set_state_flag = been_capture_first
+		}
+		news_event = { days = 1 random = 12 id = scc.10 }
+	}
+	if = {
+		limit = {
+			tag = NUE
+			has_war_with = NMS
+			FROM = {
+				tag = NMS
+			}
+			FROM.FROM = {
+				state = 223
+				is_owned_by = NMS
+			}
+			223 = {
+				not = {
+					has_state_flag = been_capture_first
+				}
+			}
+		}
+		223 = {
+			set_state_flag = been_capture_first
+		}
+		news_event = { days = 1 random = 12 id = scc.11 }
+	}
+	if = {
+		limit = {
+			tag = KYK
+			has_war_with = NMS
+			FROM = {
+				tag = NMS
+			}
+			FROM.FROM = {
+				state = 223
+				is_owned_by = NMS
+			}
+			223 = {
+				not = {
+					has_state_flag = been_capture_first
+				}
+			}
+		}
+		223 = {
+			set_state_flag = been_capture_first
+		}
+		news_event = { days = 1 random = 12 id = scc.12 }
+	}
+	if = {
+		limit = {
+			tag = TKM
+			has_war_with = NMS
+			FROM = {
+				tag = NMS
+			}
+			FROM.FROM = {
+				state = 223
+				is_owned_by = NMS
+			}
+			223 = {
+				not = {
+					has_state_flag = been_capture_first
+				}
+			}
+		}
+		223 = {
+			set_state_flag = been_capture_first
+		}
+		news_event = { days = 1 random = 12 id = scc.13 }
+	}
+	if = {
+		limit = {
+			tag = SRB
+			has_war_with = NMS
+			FROM = {
+				tag = NMS
+			}
+			FROM.FROM = {
+				state = 223
+				is_owned_by = NMS
+			}
+			223 = {
+				not = {
+					has_state_flag = been_capture_first
+				}
+			}
+		}
+		223 = {
+			set_state_flag = been_capture_first
+		}
+		news_event = { days = 1 random = 12 id = scc.14 }
+	}
+}
+SCC_TEG_captured = {
+	if = {
+		limit = {
+			tag = MRY
+			has_war_with = TEG
+			FROM = {
+				tag = TEG
+			}
+			FROM.FROM = {
+				state = 399
+				is_owned_by = TEG
+			}
+			399 = {
+				not = {
+					has_state_flag = been_capture_first
+				}
+			}
+		}
+		399 = {
+			set_state_flag = been_capture_first
+		}
+		news_event = { days = 1 random = 12 id = scc.15 }
+	}
+	if = {
+		limit = {
+			tag = AKI
+			has_war_with = TEG
+			FROM = {
+				tag = TEG
+			}
+			FROM.FROM = {
+				state = 399
+				is_owned_by = TEG
+			}
+			399 = {
+				not = {
+					has_state_flag = been_capture_first
+				}
+			}
+		}
+		399 = {
+			set_state_flag = been_capture_first
+		}
+		news_event = { days = 1 random = 12 id = scc.16 }
+	}
+	if = {
+		limit = {
+			tag = SCA
+			has_war_with = TEG
+			FROM = {
+				tag = TEG
+			}
+			FROM.FROM = {
+				state = 399
+				is_owned_by = TEG
+			}
+			399 = {
+				not = {
+					has_state_flag = been_capture_first
+				}
+			}
+		}
+		399 = {
+			set_state_flag = been_capture_first
+		}
+		news_event = { days = 1 random = 12 id = scc.17 }
+	}
+	if = {
+		limit = {
+			tag = TES
+			has_war_with = TEG
+			FROM = {
+				tag = TEG
+			}
+			FROM.FROM = {
+				state = 399
+				is_owned_by = TEG
+			}
+			399 = {
+				not = {
+					has_state_flag = been_capture_first
+				}
+			}
+		}
+		399 = {
+			set_state_flag = been_capture_first
+		}
+		news_event = { days = 1 random = 12 id = scc.18 }
+	}
+}
+SCC_MRY_captured = {
+	if = {
+		limit = {
+			tag = TEG
+			has_war_with = MRY
+			FROM = {
+				tag = MRY
+			}
+			FROM.FROM = {
+				state = 28
+				is_owned_by = MRY
+			}
+			28 = {
+				not = {
+					has_state_flag = been_capture_first
+				}
+			}
+		}
+		28 = {
+			set_state_flag = been_capture_first
+		}
+		news_event = { days = 1 random = 12 id = scc.19 }
+	}
+	if = {
+		limit = {
+			tag = SCA
+			has_war_with = MRY
+			FROM = {
+				tag = MRY
+			}
+			FROM.FROM = {
+				state = 28
+				is_owned_by = MRY
+			}
+			28 = {
+				not = {
+					has_state_flag = been_capture_first
+				}
+			}
+		}
+		28 = {
+			set_state_flag = been_capture_first
+		}
+		news_event = { days = 1 random = 12 id = scc.20 }
+	}
+}
+SCC_CIR_captured = {
+	if = {
+		limit = {
+			tag = SCA
+			has_war_with = CIR
+			FROM = {
+				tag = CIR
+			}
+			FROM.FROM = {
+				state = 118
+				is_owned_by = CIR
+			}
+			118 = {
+				not = {
+					has_state_flag = been_capture_first
+				}
+			}
+		}
+		118 = {
+			set_state_flag = been_capture_first
+		}
+		news_event = { days = 1 random = 12 id = scc.21 }
+	}
+	if = {
+		limit = {
+			tag = MRS
+			has_war_with = CIR
+			FROM = {
+				tag = CIR
+			}
+			FROM.FROM = {
+				state = 118
+				is_owned_by = CIR
+			}
+			118 = {
+				not = {
+					has_state_flag = been_capture_first
+				}
+			}
+		}
+		118 = {
+			set_state_flag = been_capture_first
+		}
+		news_event = { days = 1 random = 12 id = scc.22 }
+	}
+	if = {
+		limit = {
+			tag = ALI
+			has_war_with = CIR
+			FROM = {
+				tag = CIR
+			}
+			FROM.FROM = {
+				state = 118
+				is_owned_by = CIR
+			}
+			118 = {
+				not = {
+					has_state_flag = been_capture_first
+				}
+			}
+		}
+		118 = {
+			set_state_flag = been_capture_first
+		}
+		news_event = { days = 1 random = 12 id = scc.23 }
+	}
+	if = {
+		limit = {
+			tag = SEJ
+			has_war_with = CIR
+			FROM = {
+				tag = CIR
+			}
+			FROM.FROM = {
+				state = 118
+				is_owned_by = CIR
+			}
+			118 = {
+				not = {
+					has_state_flag = been_capture_first
+				}
+			}
+		}
+		118 = {
+			set_state_flag = been_capture_first
+		}
+		news_event = { days = 1 random = 12 id = scc.24 }
+	}
+}

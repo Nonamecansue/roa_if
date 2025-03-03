@@ -1,0 +1,30 @@
+state={
+	id=25
+	name="STATE_25"
+
+	resources={
+
+		powder = 0.0
+		metal = 5.0
+		gas = 5.0
+		crystal = 0.0
+	}
+	history={
+       	146.1.1 = {
+			owner = PRS
+			add_core_of = PRS
+			buildings = {
+				infrastructure = 3
+				industrial_complex = 1
+				arms_factory = 1
+			}
+       	}
+	}
+	provinces={
+		47 130 279 548 872 1480 1848 2131 2404 2506 2562 2598 2619 
+	}
+	state_category=s5
+	local_supplies=2.5
+	manpower=1696.0
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,190 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_idea_TES_kuojiantaoyuan_js"
+		texturefile = "gfx/interface/ideas/idea_TES_kuojiantaoyuan.png"
+	}		
+	spriteType = {
+		name = "GFX_idea_TES_heyaojinghezuo_js"
+		texturefile = "gfx/interface/ideas/idea_TES_heyaojinghezuo.png"
+	}	
+	spriteType = {
+		name = "GFX_idea_TES_xuedezhanshu_js"
+		texturefile = "gfx/interface/ideas/idea_TES_xuedezhanshu.png"
+	}	
+	spriteType = {
+		name = "GFX_idea_TES_wudezhanshu_js"
+		texturefile = "gfx/interface/ideas/idea_TES_wudezhanshu.png"
+	}	
+	spriteType = {
+		name = "GFX_idea_TES_zhongchengzhixing_js"
+		texturefile = "gfx/interface/ideas/idea_TES_zhongchengzhixing.png"
+	}	
+	spriteType = {
+		name = "GFX_idea_TES_tiantingruodian_idea_js"
+		texturefile = "gfx/interface/ideas/idea_TES_tiantingruodian.png"
+	}	
+	spriteType = {
+		name = "GFX_idea_TES_wozijilai_idea_js"
+		texturefile = "gfx/interface/ideas/idea_wozijilai_idea.png"
+	}	
+	spriteType = {
+		name = "GFX_idea_TES_huzhu_idea_js"
+		texturefile = "gfx/interface/ideas/idea_TES_huzhu_idea.png"
+	}	
+	spriteType = {
+		name = "GFX_idea_TES_tianmohuzhu2_idea_js"
+		texturefile = "gfx/interface/ideas/idea_TES_tianmohuzhu2_idea.png"
+	}	
+	spriteType = {
+		name = "GFX_idea_TES_longgonghuzhu_idea1_js"
+		texturefile = "gfx/interface/ideas/idea_TES_longgonghuzhu_idea1.png"
+	}	
+	spriteType = {
+		name = "GFX_idea_TES_tianting_yuanzhu_js"
+		texturefile = "gfx/interface/ideas/TES_tianting_yuanzhu.png"
+	}	
+	spriteType = {
+		name = "GFX_idea_TES_tianting_jueduitongzhi_js"
+		texturefile = "gfx/interface/ideas/TES_tianting_jueduitongzhi.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TES_tianting_yunie_js"
+		texturefile = "gfx/interface/ideas/TES_tianting_yunie.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TES_tianting_luohozhidu_js"
+		texturefile = "gfx/interface/ideas/TES_tianting_luohozhidu.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TES_tianting_qianzhi_js"
+		texturefile = "gfx/interface/ideas/TES_tianting_qianzhi.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TES_tianting_qianzhi_3_js"
+		texturefile = "gfx/interface/ideas/TES_tianting_qianzhi_3.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TES_buliang_tianren_js"
+		texturefile = "gfx/interface/ideas/TES_buliang_tianren.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TES_dingyu_yizun_js"
+		texturefile = "gfx/interface/ideas/TES_dingyu_yizun.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TES_juedui_zixin_js"
+		texturefile = "gfx/interface/ideas/TES_juedui_zixin.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TES_zhuangzhi_lingytun_js"
+		texturefile = "gfx/interface/ideas/TES_zhuangzhi_lingytun.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TES_bentuzhanlue_js"
+		texturefile = "gfx/interface/ideas/TES_bentuzhanlue.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TES_buchengdeqianxian_js"
+		texturefile = "gfx/interface/ideas/TES_buchengdeqianxian.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TES_daolianzhanlue_js"
+		texturefile = "gfx/interface/ideas/TES_daolianzhanlue.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TES_xingongzuo_js"
+		texturefile = "gfx/interface/ideas/TES_xingongzuo.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TES_xinkecheng_js"
+		texturefile = "gfx/interface/ideas/TES_xinkecheng.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TES_tianjieleyuan_js"
+		texturefile = "gfx/interface/ideas/TES_tianjieleyuan.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TES_feixiangzhijian_js"
+		texturefile = "gfx/interface/ideas/TES_feixiangzhijian.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TES_jishutupo_js"
+		texturefile = "gfx/interface/ideas/TES_jishutupo.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TES_jiekaitianrenjiasuo_1_js"
+		texturefile = "gfx/interface/ideas/TES_jiekaitianrenjiasuo_1.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TES_jiekaitianrenjiasuo_2_js"
+		texturefile = "gfx/interface/ideas/TES_jiekaitianrenjiasuo_2.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TES_longshenzhinu_js"
+		texturefile = "gfx/interface/ideas/TES_longshenzhinu.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TES_yaoshi_js"
+		texturefile = "gfx/interface/ideas/TES_yaoshi.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TES_tianjieqiji_js"
+		texturefile = "gfx/interface/ideas/TES_tianjieqiji.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TES_pingjingxianghe_js"
+		texturefile = "gfx/interface/ideas/TES_pingjingxianghe.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TES_gezulianhehenfu_js"
+		texturefile = "gfx/interface/ideas/TES_gezulianhehenfu.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TES_hepingbubbeirenke_js"
+		texturefile = "gfx/interface/ideas/TES_hepingbubbeirenke.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TES_hepinguanweijiesho_js"
+		texturefile = "gfx/interface/ideas/TES_hepinguanweijiesho.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TES_hepingzhuyihuaiyi_js"
+		texturefile = "gfx/interface/ideas/TES_hepingzhuyihuaiyi.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TES_hepingcansho_js"
+		texturefile = "gfx/interface/ideas/TES_hepingcansho.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TES_rucixuwei_js"
+		texturefile = "gfx/interface/ideas/TES_rucixuwei.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TES_tianjiexianfa_js"
+		texturefile = "gfx/interface/ideas/TES_tianjiexianfa.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TES_tianzicancunshili_js"
+		texturefile = "gfx/interface/ideas/TES_tianzicancunshili.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TES_lianhezhihuibu_js"
+		texturefile = "gfx/interface/ideas/TES_lianhezhihuibu.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TES_showangheping_js"
+		texturefile = "gfx/interface/ideas/TES_showangheping.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TES_tianjiefangyujun_js"
+		texturefile = "gfx/interface/ideas/TES_tianjiefangyujun.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TES_yilonggongshi_js"
+		texturefile = "gfx/interface/ideas/TES_yilonggongshi.png"
+	}
+	spriteType = {
+		name = "GFX_idea_TES_yilongshenzhiming_js"
+		texturefile = "gfx/interface/ideas/TES_yilongshenzhiming.png"
+	}
+}

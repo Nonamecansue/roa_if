@@ -1,0 +1,570 @@
+### Yakumo
+SAT_YKR_influence_is_no_less_than_LOW = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_YKR_influence_is_no_less_than_LOW_tt
+    OR = {
+      has_idea = SAT_Yakumo_influence_idea_1
+      has_idea = SAT_Yakumo_influence_idea_2
+      has_idea = SAT_Yakumo_influence_idea_3
+      has_idea = SAT_Yakumo_influence_idea_4
+      has_idea = SAT_Yakumo_influence_idea_5
+    }
+  }
+}
+
+SAT_YKR_influence_is_no_less_than_SLIGHTLY_LOW = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_YKR_influence_is_no_less_than_SLIGHTLY_LOW_tt
+    OR = {
+      has_idea = SAT_Yakumo_influence_idea_2
+      has_idea = SAT_Yakumo_influence_idea_3
+      has_idea = SAT_Yakumo_influence_idea_4
+      has_idea = SAT_Yakumo_influence_idea_5
+    }
+  }
+}
+
+SAT_YKR_influence_is_no_less_than_MEDIUM = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_YKR_influence_is_no_less_than_MEDIUM_tt
+    OR = {
+      has_idea = SAT_Yakumo_influence_idea_3
+      has_idea = SAT_Yakumo_influence_idea_4
+      has_idea = SAT_Yakumo_influence_idea_5
+    }
+  }
+}
+
+SAT_YKR_influence_is_no_less_than_SLIGHTLY_HIGH = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_YKR_influence_is_no_less_than_SLIGHTLY_HIGH_tt
+    OR = {
+      has_idea = SAT_Yakumo_influence_idea_4
+      has_idea = SAT_Yakumo_influence_idea_5
+    }
+  }
+}
+
+SAT_YKR_influence_is_no_less_than_HIGH = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_YKR_influence_is_no_less_than_HIGH_tt
+    OR = {
+      has_idea = SAT_Yakumo_influence_idea_5
+    }
+  }
+}
+
+
+
+SAT_YKR_influence_is_less_than_LOW = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_YKR_influence_is_less_than_LOW_tt
+    NOT = {
+      has_idea = SAT_Yakumo_influence_idea_1
+      has_idea = SAT_Yakumo_influence_idea_2
+      has_idea = SAT_Yakumo_influence_idea_3
+      has_idea = SAT_Yakumo_influence_idea_4
+      has_idea = SAT_Yakumo_influence_idea_5
+    }
+  }
+}
+
+SAT_YKR_influence_is_less_than_SLIGHTLY_LOW = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_YKR_influence_is_less_than_SLIGHTLY_LOW_tt
+    NOT = {
+      has_idea = SAT_Yakumo_influence_idea_2
+      has_idea = SAT_Yakumo_influence_idea_3
+      has_idea = SAT_Yakumo_influence_idea_4
+      has_idea = SAT_Yakumo_influence_idea_5
+    }
+  }
+}
+
+SAT_YKR_influence_is_less_than_MEDIUM = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_YKR_influence_is_less_than_MEDIUM_tt
+    NOT = {
+      has_idea = SAT_Yakumo_influence_idea_3
+      has_idea = SAT_Yakumo_influence_idea_4
+      has_idea = SAT_Yakumo_influence_idea_5
+    }
+  }
+}
+
+SAT_YKR_influence_is_less_than_SLIGHTLY_HIGH = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_YKR_influence_is_less_than_SLIGHTLY_HIGH_tt
+    NOT = {
+      has_idea = SAT_Yakumo_influence_idea_4
+      has_idea = SAT_Yakumo_influence_idea_5
+    }
+  }
+}
+
+SAT_YKR_influence_is_less_than_HIGH = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_YKR_influence_is_less_than_HIGH_tt
+    NOT = {
+      has_idea = SAT_Yakumo_influence_idea_5
+    }
+  }
+}
+
+### Shikieriki
+
+SAT_SKI_influence_is_no_less_than_LOW = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_SKI_influence_is_no_less_than_LOW_tt
+    OR = {
+      has_idea = SAT_Shikierki_influence_idea_1
+      has_idea = SAT_Shikierki_influence_idea_2
+      has_idea = SAT_Shikierki_influence_idea_3
+      has_idea = SAT_Shikierki_influence_idea_4
+      has_idea = SAT_Shikierki_influence_idea_5
+    }
+  }
+}
+
+SAT_SKI_influence_is_no_less_than_SLIGHTLY_LOW = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_SKI_influence_is_no_less_than_SLIGHTLY_LOW_tt
+    OR = {
+      has_idea = SAT_Shikierki_influence_idea_2
+      has_idea = SAT_Shikierki_influence_idea_3
+      has_idea = SAT_Shikierki_influence_idea_4
+      has_idea = SAT_Shikierki_influence_idea_5
+    }
+  }
+}
+
+SAT_SKI_influence_is_no_less_than_MEDIUM = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_SKI_influence_is_no_less_than_MEDIUM_tt
+    OR = {
+      has_idea = SAT_Shikierki_influence_idea_3
+      has_idea = SAT_Shikierki_influence_idea_4
+      has_idea = SAT_Shikierki_influence_idea_5
+    }
+  }
+}
+
+SAT_SKI_influence_is_no_less_than_SLIGHTLY_HIGH = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_SKI_influence_is_no_less_than_SLIGHTLY_HIGH_tt
+    OR = {
+      has_idea = SAT_Shikierki_influence_idea_4
+      has_idea = SAT_Shikierki_influence_idea_5
+    }
+  }
+}
+
+SAT_SKI_influence_is_no_less_than_HIGH = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_SKI_influence_is_no_less_than_HIGH_tt
+    OR = {
+      has_idea = SAT_Shikierki_influence_idea_5
+    }
+  }
+}
+
+
+
+SAT_SKI_influence_is_less_than_LOW = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_SKI_influence_is_less_than_LOW_tt
+    NOT = {
+      has_idea = SAT_Shikierki_influence_idea_1
+      has_idea = SAT_Shikierki_influence_idea_2
+      has_idea = SAT_Shikierki_influence_idea_3
+      has_idea = SAT_Shikierki_influence_idea_4
+      has_idea = SAT_Shikierki_influence_idea_5
+    }
+  }
+}
+
+SAT_SKI_influence_is_less_than_SLIGHTLY_LOW = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_SKI_influence_is_less_than_SLIGHTLY_LOW_tt
+    NOT = {
+      has_idea = SAT_Shikierki_influence_idea_2
+      has_idea = SAT_Shikierki_influence_idea_3
+      has_idea = SAT_Shikierki_influence_idea_4
+      has_idea = SAT_Shikierki_influence_idea_5
+    }
+  }
+}
+
+SAT_SKI_influence_is_less_than_MEDIUM = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_SKI_influence_is_less_than_MEDIUM_tt
+    NOT = {
+      has_idea = SAT_Shikierki_influence_idea_3
+      has_idea = SAT_Shikierki_influence_idea_4
+      has_idea = SAT_Shikierki_influence_idea_5
+    }
+  }
+}
+
+SAT_SKI_influence_is_less_than_SLIGHTLY_HIGH = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_SKI_influence_is_less_than_SLIGHTLY_HIGH_tt
+    NOT = {
+      has_idea = SAT_Shikierki_influence_idea_4
+      has_idea = SAT_Shikierki_influence_idea_5
+    }
+  }
+}
+
+SAT_SKI_influence_is_less_than_HIGH = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_SKI_influence_is_less_than_HIGH_tt
+    NOT = {
+      has_idea = SAT_Shikierki_influence_idea_5
+    }
+  }
+}
+
+
+SAT_MRY_influence_is_no_less_than_LOW = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_MRY_influence_is_no_less_than_LOW_tt
+    OR = {
+      has_idea = SAT_Moriya_influence_idea_1
+      has_idea = SAT_Moriya_influence_idea_2
+      has_idea = SAT_Moriya_influence_idea_3
+      has_idea = SAT_Moriya_influence_idea_4
+      has_idea = SAT_Moriya_influence_idea_5
+    }
+  }
+}
+
+SAT_MRY_influence_is_no_less_than_SLIGHTLY_LOW = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_MRY_influence_is_no_less_than_SLIGHTLY_LOW_tt
+    OR = {
+      has_idea = SAT_Moriya_influence_idea_2
+      has_idea = SAT_Moriya_influence_idea_3
+      has_idea = SAT_Moriya_influence_idea_4
+      has_idea = SAT_Moriya_influence_idea_5
+    }
+  }
+}
+
+SAT_MRY_influence_is_no_less_than_MEDIUM = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_MRY_influence_is_no_less_than_MEDIUM_tt
+    OR = {
+      has_idea = SAT_Moriya_influence_idea_3
+      has_idea = SAT_Moriya_influence_idea_4
+      has_idea = SAT_Moriya_influence_idea_5
+    }
+  }
+}
+
+SAT_MRY_influence_is_no_less_than_SLIGHTLY_HIGH = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_MRY_influence_is_no_less_than_SLIGHTLY_HIGH_tt
+    OR = {
+      has_idea = SAT_Moriya_influence_idea_4
+      has_idea = SAT_Moriya_influence_idea_5
+    }
+  }
+}
+
+SAT_MRY_influence_is_no_less_than_HIGH = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_MRY_influence_is_no_less_than_HIGH_tt
+    OR = {
+      has_idea = SAT_Moriya_influence_idea_5
+    }
+  }
+}
+
+
+
+SAT_MRY_influence_is_less_than_LOW = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_MRY_influence_is_less_than_LOW_tt
+    NOT = {
+      has_idea = SAT_Moriya_influence_idea_1
+      has_idea = SAT_Moriya_influence_idea_2
+      has_idea = SAT_Moriya_influence_idea_3
+      has_idea = SAT_Moriya_influence_idea_4
+      has_idea = SAT_Moriya_influence_idea_5
+    }
+  }
+}
+
+SAT_MRY_influence_is_less_than_SLIGHTLY_LOW = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_MRY_influence_is_less_than_SLIGHTLY_LOW_tt
+    NOT = {
+      has_idea = SAT_Moriya_influence_idea_2
+      has_idea = SAT_Moriya_influence_idea_3
+      has_idea = SAT_Moriya_influence_idea_4
+      has_idea = SAT_Moriya_influence_idea_5
+    }
+  }
+}
+
+SAT_MRY_influence_is_less_than_MEDIUM = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_MRY_influence_is_less_than_MEDIUM_tt
+    NOT = {
+      has_idea = SAT_Moriya_influence_idea_3
+      has_idea = SAT_Moriya_influence_idea_4
+      has_idea = SAT_Moriya_influence_idea_5
+    }
+  }
+}
+
+SAT_MRY_influence_is_less_than_SLIGHTLY_HIGH = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_MRY_influence_is_less_than_SLIGHTLY_HIGH_tt
+    NOT = {
+      has_idea = SAT_Moriya_influence_idea_4
+      has_idea = SAT_Moriya_influence_idea_5
+    }
+  }
+}
+
+SAT_MRY_influence_is_less_than_HIGH = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_MRY_influence_is_less_than_HIGH_tt
+    NOT = {
+      has_idea = SAT_Moriya_influence_idea_5
+    }
+  }
+}
+
+SAT_YUG_prestige_at_least_8 = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_YUG_prestige_at_least_8_tt
+    check_variable = {
+        var = SAT_YUG_prestige
+        value = 8
+        compare = greater_than_or_equals
+    }
+  }
+}
+
+SAT_PRS_prestige_at_least_8 = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_PRS_prestige_at_least_8_tt
+    check_variable = {
+        var = SAT_PRS_prestige
+        value = 8
+        compare = greater_than_or_equals
+    }
+  }
+}
+
+SAT_YMM_prestige_at_least_8 = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_YMM_prestige_at_least_8_tt
+    check_variable = {
+        var = SAT_YMM_prestige
+        value = 8
+        compare = greater_than_or_equals
+    }
+  }
+}
+
+SAT_UNL_prestige_at_least_8 = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_UNL_prestige_at_least_8_tt
+    check_variable = {
+        var = SAT_UNL_prestige
+        value = 8
+        compare = greater_than_or_equals
+    }
+  }
+}
+
+SAT_YUG_prestige_at_least_6 = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_YUG_prestige_at_least_6_tt
+    check_variable = {
+        var = SAT_YUG_prestige
+        value = 6
+        compare = greater_than_or_equals
+    }
+  }
+}
+
+SAT_PRS_prestige_at_least_6 = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_PRS_prestige_at_least_6_tt
+    check_variable = {
+        var = SAT_PRS_prestige
+        value = 6
+        compare = greater_than_or_equals
+    }
+  }
+}
+
+SAT_YMM_prestige_at_least_6 = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_YMM_prestige_at_least_6_tt
+    check_variable = {
+        var = SAT_YMM_prestige
+        value = 6
+        compare = greater_than_or_equals
+    }
+  }
+}
+
+SAT_UNL_prestige_at_least_6 = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_UNL_prestige_at_least_6_tt
+    check_variable = {
+        var = SAT_UNL_prestige
+        value = 6
+        compare = greater_than_or_equals
+    }
+  }
+}
+
+SAT_YUG_prestige_at_least_4 = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_YUG_prestige_at_least_4_tt
+    check_variable = {
+        var = SAT_YUG_prestige
+        value = 4
+        compare = greater_than_or_equals
+    }
+  }
+}
+
+SAT_PRS_prestige_at_least_4 = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_PRS_prestige_at_least_4_tt
+    check_variable = {
+        var = SAT_PRS_prestige
+        value = 4
+        compare = greater_than_or_equals
+    }
+  }
+}
+
+SAT_YMM_prestige_at_least_4 = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_YMM_prestige_at_least_4_tt
+    check_variable = {
+        var = SAT_YMM_prestige
+        value = 4
+        compare = greater_than_or_equals
+    }
+  }
+}
+
+SAT_UNL_prestige_at_least_4 = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_UNL_prestige_at_least_4_tt
+    check_variable = {
+        var = SAT_UNL_prestige
+        value = 4
+        compare = greater_than_or_equals
+    }
+  }
+}
+
+SAT_YUG_prestige_at_least_2 = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_YUG_prestige_at_least_2_tt
+    check_variable = {
+        var = SAT_YUG_prestige
+        value = 2
+        compare = greater_than_or_equals
+    }
+  }
+}
+
+SAT_PRS_prestige_at_least_2 = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_PRS_prestige_at_least_2_tt
+    check_variable = {
+        var = SAT_PRS_prestige
+        value = 2
+        compare = greater_than_or_equals
+    }
+  }
+}
+
+SAT_YMM_prestige_at_least_2 = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_YMM_prestige_at_least_2_tt
+    check_variable = {
+        var = SAT_YMM_prestige
+        value = 2
+        compare = greater_than_or_equals
+    }
+  }
+}
+
+SAT_UNL_prestige_at_least_2 = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_UNL_prestige_at_least_2_tt
+    check_variable = {
+        var = SAT_UNL_prestige
+        value = 2
+        compare = greater_than_or_equals
+    }
+  }
+}
+
+SAT_no_civilian_factories_using = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_no_civilian_factories_using_tt
+    NOT = { has_idea = SAT_civil_industrial_cost }
+    NOT = { has_idea = SAT_civil_industrial_cost_2 }
+    NOT = { has_idea = SAT_civil_industrial_cost_3 }
+    NOT = { has_idea = SAT_civil_industrial_cost_4 }
+  }
+  
+}
+
+SAT_no_military_spending_using = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_no_military_spending_using_tt
+    NOT = { has_idea = SAT_military_industrial_cost }
+    NOT = { has_idea = SAT_military_industrial_cost_2 }
+    NOT = { has_idea = SAT_military_industrial_cost_3 }
+    NOT = { has_idea = SAT_military_industrial_cost_4 }
+  }
+  
+}
+
+SAT_GHOST_IMMIGRANT_REACH_6 = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_GHOST_IMMIGRANT_REACH_10_tt
+    check_variable = {
+        var = ROOT.SAT_GHOST_IMMIGRANT
+        value = 6
+        compare = greater_than_or_equals
+    }
+  }
+}
+
+SAT_GHOST_IMMIGRANT_REACH_10 = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_GHOST_IMMIGRANT_REACH_10_tt
+    check_variable = {
+        var = ROOT.SAT_GHOST_IMMIGRANT
+        value = 10
+        compare = greater_than_or_equals
+    }
+  }
+}
+
+SAT_GHOST_IMMIGRANT_REACH_20 = {
+  custom_trigger_tooltip = {
+    tooltip = SAT_GHOST_IMMIGRANT_REACH_20_tt
+    check_variable = {
+        var = ROOT.SAT_GHOST_IMMIGRANT
+        value = 20
+        compare = greater_than_or_equals
+    }
+  }
+}

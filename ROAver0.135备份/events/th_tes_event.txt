@@ -1,0 +1,2442 @@
+add_namespace = ten
+# country_event = {
+# 	id = ten.1
+# 	title = ten.1.t
+# 	desc = ten.1.d
+# 	is_triggered_only = yes
+# 	immediate = {
+# 		hidden_effect = {
+# 			TES = {
+# 				remove_ideas = TES_manu2
+# 				add_ideas = CCA_manu2
+# 			}
+# 			LTS = {
+# 				set_victory_points = {
+# 					province = 22
+# 					value = 5  
+# 				}
+# 				transfer_state = 22
+# 				add_state_core = 22
+# 				add_to_variable = { OL_view_value  = 30 }
+# 				add_ideas = TES_manu2
+# 				division_template = {
+# 					name = "流浪天人卫队"
+# 					regiments = {
+# 						sc_infantry = { x = 0 y = 0 }
+# 						sc_infantry = { x = 0 y = 1 }
+# 						sc_infantry = { x = 0 y = 2 }
+# 					}
+# 				}
+# 				division_template = {
+# 					name = "流浪天人战队"
+# 					regiments = {
+# 						ma_infantry = { x = 0 y = 0 }
+# 						ma_infantry = { x = 0 y = 1 }
+# 						ma_infantry = { x = 0 y = 2 }
+# 						ma_infantry = { x = 0 y = 3 }
+# 					}
+# 				}
+# 				22 = {
+# 					create_unit = {
+# 						division = "division_template = \"流浪天人卫队\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+# 						owner = LTS
+# 						prioritize_location = 6654
+# 						allow_spawning_on_enemy_provs = no 
+# 					}
+# 					create_unit = {
+# 						division = "division_template = \"流浪天人卫队\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+# 						owner = LTS
+# 						prioritize_location = 6654
+# 						allow_spawning_on_enemy_provs = no 
+# 					}
+# 					create_unit = {
+# 						division = "division_template = \"流浪天人卫队\" start_experience_factor = 0.1 start_equipment_factor = 0.9"
+# 						owner = LTS
+# 						prioritize_location = 6654
+# 						allow_spawning_on_enemy_provs = no 
+# 					}
+# 					create_unit = {
+# 						division = "division_template = \"流浪天人战队\" start_experience_factor = 0.3 start_equipment_factor = 0.9"
+# 						owner = LTS
+# 						prioritize_location = 6654
+# 						allow_spawning_on_enemy_provs = no 
+# 					}
+# 					create_unit = {
+# 						division = "division_template = \"流浪天人战队\" start_experience_factor = 0.3 start_equipment_factor = 0.9"
+# 						owner = LTS
+# 						prioritize_location = 6654
+# 						allow_spawning_on_enemy_provs = no 
+# 					}
+# 					create_unit = {
+# 						division = "division_template = \"流浪天人战队\" start_experience_factor = 0.3 start_equipment_factor = 0.9"
+# 						owner = LTS
+# 						prioritize_location = 6654
+# 						allow_spawning_on_enemy_provs = no 
+# 					}
+# 					create_unit = {
+# 						division = "division_template = \"流浪天人战队\" start_experience_factor = 0.3 start_equipment_factor = 0.9"
+# 						owner = LTS
+# 						prioritize_location = 6654
+# 						allow_spawning_on_enemy_provs = no 
+# 					}
+# 					22 = {
+# 						add_extra_state_shared_building_slots = 5
+# 								 add_building_construction = {
+# 									 type = infrastructure
+# 									 level = 4
+# 									 instant_build = yes
+# 								 }
+# 								 add_building_construction = {
+# 									type = industrial_complex
+# 									level = 2
+# 									instant_build = yes
+# 								}
+# 								add_building_construction = {
+# 									type = arms_factory
+# 									level = 1
+# 									instant_build = yes
+# 								}
+# 					}
+# 				}
+# 			}
+# 		}
+# 	}
+# 	option = {
+# 		name = ten.1.o.1
+# 		LTS = {
+# 			change_tag_from = TES
+# 		}
+# 	}
+# 	option = {
+# 		name = ten.1.o.2	
+# 	}
+
+# }
+
+country_event = {
+	id = ten.2
+	title = ten.2.t
+	desc = ten.2.d
+	is_triggered_only = yes
+	option = {
+		name = ten.2.o.1
+	}
+}
+
+country_event = { #cfa vs cca
+	id = ten.3
+	title = ten.3.t
+	desc = ten.3.d
+
+	fire_only_once = yes
+	trigger = {
+		date > 146.10.15
+
+		has_global_flag = main_scenario
+		country_exists = CCA
+		country_exists = CFA
+
+		tag = CFA
+		TES = {
+			NOT = {
+				has_country_flag = heyaojinghezuo
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	option = {
+		name = ten.3.1
+		ai_chance = {
+			base = 100
+		}
+		army_experience = 10
+		
+		CFA = {
+			declare_war_on = {
+				target = CCA
+		    	type = puppet_wargoal_focus
+			}
+		    
+		}
+		hidden_effect = {
+			news_event = { days = 2 id = ten.4}	
+		}
+		TES = {
+			mark_focus_tree_layout_dirty = yes
+			set_country_flag = yaojingpanluankaishi
+		}
+	}
+
+	option = {
+		name = ten.3.2
+		ai_chance = {
+			base = 0
+		}
+	}
+	
+}
+news_event = { #news
+	id = ten.4
+	title = ten.4.t
+	desc = ten.4.d
+
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = ten.4.1
+		trigger = {
+			capital_scope = {
+				is_on_continent = Celestial
+			}
+			not = {
+				has_idea = Fairy
+			}
+		}
+	}
+
+	option = {
+		name = ten.4.2
+		trigger = {
+			not = {
+				capital_scope = {
+					is_on_continent = Celestial
+				}
+			}
+			not = {
+				has_idea = Fairy
+			}
+		}
+	}
+	option = {
+		name = ten.4.3
+		trigger = {
+			has_idea = Fairy
+		}
+	}
+}
+news_event = { #天庭宣战
+	id = ten.5
+	title = ten.5.t
+	desc = ten.5.d
+	picture = GFX_news_event_ten.5
+	fire_only_once = no
+	is_triggered_only = yes
+	major = yes
+
+	trigger = {
+
+	}
+	immediate = {
+		hidden_effect = {
+			CCA = {
+				add_ideas = tianting_hidden_problem_jiaqiang
+			}
+		}
+	}
+	option = {
+		name = ten.5.1
+		trigger = {
+			tag = TES
+		}
+	}
+	option = {
+		name = ten.5.2
+		trigger = {
+			not = { 
+				tag = TES 
+				tag = CCA
+			}
+		}
+	}
+	option = {
+		name = ten.5.3
+		trigger = {
+			tag = CCA
+		}
+	}
+}
+country_event = {
+	id = ten.6
+	title = ten.6.t
+	desc = ten.6.d
+	fire_only_once = yes
+	trigger = {
+		date > 146.5.1
+		has_global_flag = main_scenario
+		country_exists = CFA
+		tag = TES
+	}
+	mean_time_to_happen = {
+		days = 10
+	}
+	option = {
+		name = ten.6.o.1
+		ai_chance = {
+			base = 100
+		}
+	}
+	option = {
+		name = ten.6.o.2
+		ai_chance = {
+			base = 0
+		}
+		set_country_flag = keyiheyaojinghezuo
+	}
+}
+country_event = {
+	id = ten.7
+	title = ten.7.t
+	desc = ten.7.d
+	is_triggered_only = yes
+	option = {
+		name = ten.7.o.1
+		ai_chance = {
+			base = 100
+		}
+		country_event = { id = ten.8 days = 2}
+	}
+}
+country_event = {
+	id = ten.8
+	title = ten.8.t
+	desc = ten.8.d
+	is_triggered_only = yes
+	option = {
+		name = ten.8.o.1
+		ai_chance = {
+			base = 100
+		}
+		country_event = { id = ten.9 days = 2}
+	}
+}
+country_event = {
+	id = ten.9
+	title = ten.9.t
+	desc = ten.9.d
+	is_triggered_only = yes
+	option = {
+		name = ten.9.o.1
+		ai_chance = {
+			base = 90 
+		}
+		add_popularity = {
+			ideology = guli
+			popularity = 0.05 			
+		}
+		CFA = {
+			jiemeng = yes
+		}
+		set_country_flag = heyaojinghezuo
+	}
+	option = {
+		name = ten.9.o.2
+		ai_chance = {
+			base = 10
+		}
+		complete_national_focus = TES.11
+	}
+}
+country_event = {
+	id = ten.10
+	title = ten.10.t
+	desc = ten.10.d
+	is_triggered_only = yes
+	option = {
+		name = ten.10.o.1
+		ai_chance = {
+			base = 10
+		}
+		CFA = {
+			transfer_state = 68
+		}
+		TES = {
+			transfer_state = 361
+			transfer_state = 14 
+			transfer_state = 49 
+			transfer_state = 36 
+			transfer_state = 362
+		}
+	}
+	option = {
+		name = ten.10.o.2
+		ai_chance = {
+			base = 90
+		}
+		declare_war_on = {
+			target = CFA
+			type = puppet_wargoal_focus
+		}
+	}
+}
+country_event = {
+	id = ten.11
+	title = ten.11.t
+	desc = ten.11.d
+	is_triggered_only = yes
+	option = {
+		name = ten.11.o.1
+		ai_chance = {
+			base = 0
+		}
+		CFA = {
+			transfer_state = 68
+		}
+		TES = {
+			transfer_state = 361
+			transfer_state = 14 
+			transfer_state = 49 
+			transfer_state = 36 
+			transfer_state = 362
+		}
+	}
+	option = {
+		name = ten.11.o.2
+		ai_chance = {
+			base = 20
+		}
+		declare_war_on = {
+			target = CFA
+			type = puppet_wargoal_focus
+		}
+	}
+	option = {
+		name = ten.11.o.3
+		ai_chance = {
+			base = 80
+		}
+		set_autonomy = {
+			target = CFA
+			autonomy_state = autonomy_puppet_guli_neworder
+			freedom_level = 0.5
+		}
+	}
+}
+news_event = {
+	id = ten.12
+	title = ten.12.t
+	desc = ten.12.d
+	picture = GFX_news_event_ten.12
+	fire_only_once = no
+
+	is_triggered_only = yes
+	major = yes
+
+	option = { 
+		name = ten.12.o.1
+		trigger = {
+			OR = {
+				tag = TES
+			}
+		}
+
+	}
+	option = { 
+		name = ten.12.o.2
+		trigger = {
+			NOT = {
+				tag = TES
+			}
+		}
+	}
+}
+
+news_event = {
+	id = ten.13
+	title = ten.13.t
+	desc = ten.13.d
+	picture = GFX_news_event_ten.13
+	fire_only_once = no
+
+	is_triggered_only = yes
+	major = yes
+	immediate = {
+		hidden_effect = {
+			TES = {
+				if = {
+					limit = {
+						NOT = {
+							has_completed_focus = TES.38
+						}
+					}
+					complete_national_focus = TES.38
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_completed_focus = TES.37
+						}
+					}
+					complete_national_focus = TES.37
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_completed_focus = TES.39
+						}
+					}
+					complete_national_focus = TES.39
+				}
+			}
+			IKU = {
+				subject_level1 = yes
+				can_core = yes
+			}
+			lobbyincrease = yes
+			every_owned_state = {
+				limit = {
+					is_core_of = CFA
+				}
+				add_core_of = TES
+			}
+			annex_country = {
+				target = CFA
+				transfer_troops = no
+			}
+			set_country_flag = TES_tianzi_juxu_zhizheng
+			add_ideas = TES_tianting_yunie_idea
+			remove_ideas = TES_longgonghuzhu_idea1
+			if = {
+				limit = {
+					NOT = {
+						has_idea = TES_wozijilai_idea
+						has_idea = TES_tianmohuzhu2_idea
+						has_idea = TES_heyaojinghezuo
+					}
+				}
+				add_ideas = TES_wozijilai_idea
+			}
+		}
+	}
+	option = { 
+		name = ten.13.o.1
+		trigger = {
+			OR = {
+				tag = TES
+			}
+		}
+	}
+	option = { 
+		name = ten.13.o.2
+		trigger = {
+			NOT = {
+				tag = TES
+			}
+		}
+	}
+}
+news_event = {
+	id = ten.14
+	title = ten.14.t
+	desc = ten.14.d
+	picture = GFX_news_event_ten.14
+	fire_only_once = no
+	immediate = {
+		hidden_effect = {
+			TES = {
+				if = {
+					limit = {
+						NOT = {
+							has_completed_focus = TES.41
+						}
+					}
+					complete_national_focus = TES.41
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_completed_focus = TES.42
+						}
+					}
+					complete_national_focus = TES.42
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_completed_focus = TES.43
+						}
+					}
+					complete_national_focus = TES.43
+				}
+			}
+			set_cosmetic_tag = TES_lingshi
+			annex_country = {
+				target = CFA
+				transfer_troops = no
+			}
+			set_politics = {
+				ruling_party = qinwai
+			}
+			add_popularity = {
+				ideology = qinwai
+				popularity = 0.1
+			}
+			IKU = {
+				low_puppet_level = yes
+				low_puppet_level = yes
+				low_puppet_level = yes
+				low_puppet_level = yes
+			}
+			every_owned_state = {
+				limit = {
+					is_core_of = IKU
+				}
+				add_core_of = TES
+			}
+			every_owned_state = {
+				limit = {
+					is_core_of = CFA
+				}
+				add_core_of = TES
+			}
+			lobbydecrease = yes
+			remove_ideas = God
+			add_ideas = Youkai
+			race_tech_clear = yes
+			remove_ideas = TES_manu2
+			add_ideas = IKU_manu2
+			remove_ideas = TES_buliang_tianren_idea
+			remove_ideas = TES_juedui_zixing_idea
+			remove_ideas = TES_zhongchengzhixing
+			add_ideas = TES_tianting_qianzhi_idea
+			remove_ideas = TES_wozijilai_idea
+			remove_ideas = TES_heyaojinghezuo
+			add_ideas = TES_tianzicancunshili_idea
+			if = {
+				limit = {
+					NOT = {
+						has_idea = TES_longgonghuzhu_idea1
+						has_idea = TES_tianmohuzhu2_idea
+					}
+				}
+				add_ideas = TES_longgonghuzhu_idea1
+			}
+		}
+	}
+	is_triggered_only = yes
+	major = yes
+
+	option = { 
+		name = ten.14.o.1
+		trigger = {
+			OR = {
+				tag = TES
+			}
+		}
+	}
+	option = { 
+		name = ten.14.o.2
+		trigger = {
+			NOT = {
+				tag = TES
+			}
+		}
+	}
+}
+news_event = {
+	id = ten.15
+	title = ten.15.t
+	desc = ten.15.d
+
+	fire_only_once = no
+
+	is_triggered_only = yes
+	major = yes
+	immediate = {
+		hidden_effect = {
+			annex_country = {
+				target = CFA
+				transfer_troops = no
+			}
+			set_cosmetic_tag = TES_tianting
+			set_party_name = { 
+				ideology = oldorder 
+				long_name = TES_tianting
+				name = TES_tianting
+			}
+			set_party_name = { 
+				ideology = qinwai 
+				long_name = TES_tianting
+				name = TES_tianting
+			}
+			set_party_name = { 
+				ideology = neworder 
+				long_name = TES_tianting
+				name = TES_tianting
+			}
+			set_party_name = { 
+				ideology = fandong 
+				long_name = TES_tianting
+				name = TES_tianting
+			}
+			set_party_name = { 
+				ideology = guli 
+				long_name = TES_tianting
+				name = TES_tianting
+			}
+			set_politics = {
+				ruling_party = guli
+			}
+			add_popularity = {
+				ideology = guli
+				popularity = 0.2
+			}
+			IKU = {
+				low_puppet_level = yes
+				low_puppet_level = yes
+				low_puppet_level = yes
+				low_puppet_level = yes
+			}
+			every_owned_state = {
+				limit = {
+					is_core_of = IKU
+				}
+				add_core_of = TES
+			}
+			every_owned_state = {
+				limit = {
+					is_core_of = CFA
+				}
+				add_core_of = TES
+			}
+			lobbydecrease = yes
+			create_country_leader = {
+				name = "天庭"
+				picture = "gfx/leaders/OTG/OTG_council.dds"
+				expire = "1965.1.1"
+				ideology = guli_type
+				traits = {
+					
+				}
+			}
+			create_country_leader = {
+				name = "天庭"
+				picture = "gfx/leaders/OTG/OTG_council.dds"
+				expire = "1965.1.1"
+				ideology = qinwai_type
+				traits = {
+					
+				}
+			}
+			create_country_leader = {
+				name = "天庭"
+				picture = "gfx/leaders/OTG/OTG_council.dds"
+				expire = "1965.1.1"
+				ideology = oldorder_type
+				traits = {
+					
+				}
+			}
+			create_country_leader = {
+				name = "天庭"
+				picture = "gfx/leaders/OTG/OTG_council.dds"
+				expire = "1965.1.1"
+				ideology = fandong_type
+				traits = {
+					
+				}
+			}
+			create_country_leader = {
+				name = "天庭"
+				picture = "gfx/leaders/OTG/OTG_council.dds"
+				expire = "1965.1.1"
+				ideology = neworder_type
+				traits = {
+					
+				}
+			}
+			country_event = { id = ten.17 days = 10 }
+			add_war_support = -0.3
+			add_stability = -0.4 
+			remove_ideas = TES_buliang_tianren_idea
+			remove_ideas = TES_juedui_zixing_idea
+			set_country_flag = tiantingfuchu
+			add_ideas = TES_tianting_zhidu_idea
+			add_ideas = TES_tianting_tongzhi_idea
+			remove_ideas = TES_zhongchengzhixing
+			remove_ideas = TES_wozijilai_idea
+			remove_ideas = TES_longgonghuzhu_idea1
+			if = {
+				limit = {
+					has_idea = TES_heyaojinghezuo
+				}
+				remove_ideas = TES_heyaojinghezuo
+			}
+		}
+	}
+	
+	option = { 
+		name = ten.15.o.1
+		trigger = {
+			OR = {
+				tag = TES
+			}
+		}
+	}
+	option = { 
+		name = ten.15.o.2
+		trigger = {
+			NOT = {
+				tag = TES
+			}
+		}
+	}
+}
+news_event = { 
+	id = ten.16
+	title = ten.16.t
+	desc = ten.16.d
+	picture = GFX_news_event_ten.16
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			TES = {
+				transfer_state  = 361
+				transfer_state  = 14 
+				transfer_state  = 49 
+				transfer_state  = 36 
+				transfer_state  = 362
+			}
+		}
+	}
+	option = {
+		name = ten.16.1
+		trigger = {
+			tag = TES
+		}
+	}
+
+	option = {
+		name = ten.16.2
+		trigger = {
+			NOT = {
+				tag = TES
+			}
+		}
+	}
+
+}
+
+country_event = { 
+	id = ten.17
+	title = ten.17.t
+	desc = ten.17.d
+
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = ten.17.1
+	}
+
+	option = {
+		name = ten.17.2
+	}
+
+	option = {
+		name = ten.17.3
+	}
+
+}
+country_event = { 
+	id = ten.18
+	title = ten.18.t
+	desc = ten.18.d
+
+	major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = TES_jiekaitianren_jiasuo_1
+				add_idea = TES_jiekaitianren_jiasuo_2
+			}
+		}
+	}
+	option = {
+		name = ten.18.1
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = TES_jiekaitianren_jiasuo_1
+				add_idea = TES_jiekaitianren_jiasuo_2
+			}
+		}
+	}
+	option = {
+		name = ten.18.2
+		add_political_power = -300
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = TES_jiekaitianren_jiasuo_1
+				add_idea = TES_jiekaitianren_jiasuo_2
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = ten.19
+				days = 30
+			}
+		}
+	}
+
+}
+country_event = { 
+	id = ten.19
+	title = ten.19.t
+	desc = ten.19.d
+
+	major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = TES_jiekaitianren_jiasuo_2
+				add_idea = TES_jiekaitianren_jiasuo_1
+			}
+		}
+	}
+	option = {
+		name = ten.19.1
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = TES_jiekaitianren_jiasuo_2
+				add_idea = TES_jiekaitianren_jiasuo_1
+			}
+		}
+	}
+}
+country_event = { 
+	id = ten.20
+	title = ten.20.t
+	desc = ten.20.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	immediate = {
+
+	}
+	option = {
+		name = ten.20.1
+		if = {
+			limit = {
+				OTG = {
+					is_ai = yes
+				}
+			}
+			TES = { 
+						OTG = {
+							qiangjiemeng = yes
+							add_ai_strategy = {
+								type = alliance
+								id = PREV
+								value = 10000
+							}
+						}
+						add_to_faction = OTG
+					}
+		}
+		else = {
+			TES = { 
+				OTG = {
+					qiangjiemeng = yes
+					add_ai_strategy = {
+						type = alliance
+						id = PREV
+						value = 10000
+					}
+				}
+				add_to_faction = OTG
+			}
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+	option = {
+		name = ten.20.2
+		hidden_effect = {
+			TES = {
+				complete_national_focus = TES.102
+			}
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+country_event = { 
+	id = ten.21
+	title = ten.21.t
+	desc = ten.21.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	immediate = {
+
+	}
+	option = {
+		name = ten.21.1
+		if = {
+			limit = {
+				MRY = {
+					is_ai = yes
+				}
+			}
+			TES = { 
+						MRY = {
+							qiangjiemeng = yes
+							add_ai_strategy = {
+								type = alliance
+								id = PREV
+								value = 10000
+							}
+						}
+						add_to_faction = MRY 
+					}
+		}
+		else = {
+			TES = { 
+				MRY = {
+					qiangjiemeng = yes
+					add_ai_strategy = {
+						type = alliance
+						id = PREV
+						value = 10000
+					}
+				}
+				add_to_faction = MRY
+			}
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+	option = {
+		name = ten.21.2
+		hidden_effect = {
+			TES = {
+				complete_national_focus = TES.101
+			}
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+country_event = { 
+	id = ten.22
+	title = ten.22.t
+	desc = ten.22.d
+	picture = GFX_news_event_ten.22
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ten.22.1
+		add_popularity = {
+			ideology = qinwai
+			popularity = 0.05 			
+		}
+		add_ideas = TES_longgonghuzhu_idea1
+		IKU = {
+			add_ideas = TES_huzhu_idea
+		}
+		add_to_variable = {
+			iku_yxl_meizhou = 1
+		}
+		hidden_effect = {
+			random_list = {
+				50 = {
+					add_to_variable = {
+						iku_yxl = 12
+					}
+				}
+				50 = {
+					add_to_variable = {
+						iku_yxl = 10
+					}
+				}
+			}
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+country_event = { 
+	id = ten.23
+	title = ten.23.t
+	desc = ten.23.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ten.23.1
+		TES = {
+			country_event = { id = ten.24 days = 2 } 
+			set_country_flag = zhongzhuanzhang_kongzhi
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+	option = {
+		name = ten.23.2
+		TES = {
+			country_event = { id = ten.25 days = 2 } 
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+country_event = { 
+	id = ten.24
+	title = ten.24.t
+	desc = ten.24.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ten.24.1
+		annex_country = {
+			target = FROM
+			transfer_troops = yes
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+country_event = { 
+	id = ten.25
+	title = ten.25.t
+	desc = ten.25.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ten.25.1
+		declare_war_on = {
+			target = FROM
+			type = annex_everything
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+country_event = { 
+	id = ten.26
+	title = ten.26.t
+	desc = ten.26.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ten.26.1
+		every_state = {
+			limit = {
+				is_core_of = AOO
+			}
+			transfer_state_to = YYK
+		}
+		ai_chance = {
+			base = 80
+		}
+	}
+	option = {
+		name = ten.26.2
+		add_to_variable = {
+			YYK_shengqi = 1
+		}
+		YYK = {
+			country_event = ten.27
+		}
+		custom_effect_tooltip = ten.26.2_tt
+		ai_chance = {
+			base = 20
+		}
+	}
+}
+country_event = { 
+	id = ten.27
+	title = ten.27.t
+	desc = ten.27.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = ten.27.1
+		trigger = {
+			NOT = {
+				check_variable = {
+					YYK_shengqi > 1
+				}
+			}
+		}
+		
+		ai_chance = {
+			base = 100
+			modifier = {
+				check_variable = {
+					YYK_shengqi > 1
+				}
+				factor = 0
+			}
+		}
+	}
+	option = {
+		name = ten.27.2
+		TES = {
+			if = {
+				limit = {
+					NG1 = {
+						is_puppet_of = YYK
+					}
+				}
+				remove_from_faction = NG1
+			}
+			if = {
+				limit = {
+					NG2 = {
+						is_puppet_of = YYK
+					}
+				}
+				remove_from_faction = NG2
+			}
+			if = {
+				limit = {
+					NG3 = {
+						is_puppet_of = YYK
+					}
+				}
+				remove_from_faction = NG3
+			}
+			if = {
+				limit = {
+					NG4 = {
+						is_puppet_of = YYK
+					}
+				}
+				remove_from_faction = NG4
+			}
+			remove_from_faction = YYK
+		}
+		declare_war_on = {
+			type = annex_everything
+			target = TES
+		}
+		trigger = {
+			check_variable = {
+				YYK_shengqi > 1
+			}
+		}
+		ai_chance = {
+			base = 1
+			modifier = {
+				check_variable = {
+					YYK_shengqi > 1
+				}
+				factor = 100
+			}
+		}
+	}
+	option = {
+		name = ten.27.3
+		trigger = {
+			check_variable = {
+				YYK_shengqi = 2
+			}
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				check_variable = {
+					YYK_shengqi = 3
+				}
+				factor = 0
+			}
+		}
+	}
+	option = {
+		name = ten.27.4
+		trigger = {
+			check_variable = {
+				YYK_shengqi = 3
+			}
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				check_variable = {
+					YYK_shengqi = 3
+				}
+				factor = 0
+			}
+		}
+	}
+}
+country_event = { 
+	id = ten.28
+	title = ten.28.t
+	desc = ten.28.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ten.26.1
+		every_state = {
+			limit = {
+				is_core_of = AKO
+			}
+			transfer_state_to = YYK
+		}
+		ai_chance = {
+			base = 80
+		}
+	}
+	option = {
+		name = ten.26.2
+		add_to_variable = {
+			YYK_shengqi = 1
+		}
+		YYK = {
+			country_event = ten.27
+		}
+		custom_effect_tooltip = ten.26.2_tt
+		ai_chance = {
+			base = 20
+		}
+	}
+}
+country_event = { 
+	id = ten.29
+	title = ten.29.t
+	desc = ten.29.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ten.26.1
+		every_state = {
+			limit = {
+				is_core_of = HGH
+			}
+			transfer_state_to = YYK
+		}
+		ai_chance = {
+			base = 80
+		}
+	}
+	option = {
+		name = ten.26.2
+		add_to_variable = {
+			YYK_shengqi = 1
+		}
+		YYK = {
+			country_event = ten.27
+		}
+		custom_effect_tooltip = ten.26.2_tt
+		ai_chance = {
+			base = 20
+		}
+	}
+}
+country_event = { 
+	id = ten.30
+	title = ten.30.t
+	desc = ten.30.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ten.26.1
+		every_state = {
+			limit = {
+				is_core_of = SKI
+			}
+			transfer_state_to = YYK
+		}
+		ai_chance = {
+			base = 80
+		}
+	}
+	option = {
+		name = ten.26.2
+		add_to_variable = {
+			YYK_shengqi = 1
+		}
+		YYK = {
+			country_event = ten.27
+		}
+		custom_effect_tooltip = ten.26.2_tt
+		ai_chance = {
+			base = 20
+		}
+	}
+}
+country_event = { 
+	id = ten.31
+	title = ten.31.t
+	desc = ten.31.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	immediate = {
+
+	}
+	option = {
+		name = ten.31.1
+		if = {
+			limit = {
+				SCA = {
+					is_ai = yes
+				}
+			}
+			random_list = {
+				20 = {
+					TES = { 
+						SCA = {
+							qiangjiemeng = yes
+							add_ai_strategy = {
+								type = alliance
+								id = PREV
+								value = 10000
+							}
+						}
+						add_to_faction = SCA 
+					}
+				}
+				80 = {
+					TES = {
+						country_event = ten.32
+					}
+				}
+			}
+		}
+		else = {
+			TES = { 
+				SCA = {
+					qiangjiemeng = yes
+					add_ai_strategy = {
+						type = alliance
+						id = PREV
+						value = 10000
+					}
+				}
+				add_to_faction = SCA
+			}
+			
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+	option = {
+		name = ten.31.2
+		TES = {
+			country_event = ten.32
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+country_event = { 
+	id = ten.32
+	title = ten.32.t
+	desc = ten.32.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ten.32.1
+		ai_chance = {
+			base = 80
+		}
+	}
+	option = {
+		name = ten.32.2
+		ai_chance = {
+			base = 20
+		}
+	}
+}
+country_event = { 
+	id = ten.33
+	title = ten.33.t
+	desc = ten.33.d
+	picture = GFX_news_event_ten.33
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ten.33.1
+		add_popularity = {
+			ideology = neworder
+			popularity = 0.05 			
+		}
+		add_political_power = -20
+		add_ideas = TES_wozijilai_idea
+		add_to_variable = {
+			Tenshi_yxl_meizhou = 1
+		}
+		hidden_effect = {
+			random_list = {
+				50 = {
+					add_to_variable = {
+						Tenshi_yxl = 12
+					}
+				}
+				50 = {
+					add_to_variable = {
+						Tenshi_yxl = 10
+					}
+				}
+			}
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+country_event = { 
+	id = ten.34
+	title = ten.34.t
+	desc = ten.34.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	immediate = {
+
+	}
+	option = {
+		name = ten.34.1
+		add_ai_strategy = {
+			type = alliance
+			id = TEG
+			value = 100000
+		}
+		TES = {
+			set_country_flag = heyaouaishanjiemeng
+			set_country_flag = TEG_jiemeng
+			give_guarantee = TEG
+			give_military_access  = TEG
+		}
+		TES = {
+			TEG = {
+				add_ai_strategy = {
+					type = alliance
+					id = PREV
+					value = 10000
+				}
+				give_guarantee = PREV
+				give_military_access  = PREV
+				jiemeng = yes
+			}
+			NTR = {
+				add_ai_strategy = {
+					type = alliance
+					id = PREV
+					value = 10000
+				}
+				give_guarantee = PREV
+				give_military_access  = PREV
+				jiemeng = yes
+			}
+		}
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 50
+				check_variable = {
+					IKU_jujuecishu = 2
+				}
+			}
+			modifier = {
+				add = 50
+				check_variable = {
+					IKU_jujuecishu = 1
+				}
+				MRY = {
+					has_government = neworder
+				}
+			}
+		}
+	}
+	option = {
+		name = ten.34.2
+		TES = {
+			country_event = ten.35
+		}
+		add_to_variable = {
+			IKU_jujuecishu =1
+		}
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = -50
+				check_variable = {
+					IKU_jujuecishu = 2
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = ten.35
+	title = ten.35.t
+	desc = ten.35.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	immediate = {
+
+	}
+	option = {
+		name = ten.35.1
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+country_event = { 
+	id = ten.36
+	title = ten.36.t
+	desc = ten.36.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	immediate = {
+
+	}
+	option = {
+		name = ten.36.1
+		TES = {
+			set_country_flag = heyaouaishanjiemeng
+			give_guarantee = MRY
+			give_military_access  = MRY
+			set_country_flag = MRY_jiemeng
+		}
+		TES = {
+			MRY = {
+				add_ai_strategy = {
+					type = alliance
+					id = PREV
+					value = 10000
+				}
+				give_guarantee = PREV
+				give_military_access  = PREV
+				jiemeng = yes
+			}
+		}
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 50
+				check_variable = {
+					IKU_jujuecishu = 2
+				}
+			}
+			modifier = {
+				add = 50
+				check_variable = {
+					IKU_jujuecishu = 1
+				}
+				TEG = {
+					has_government = fandong
+				}
+			}
+		}
+	}
+	option = {
+		name = ten.36.2
+		TES = {
+			country_event = ten.35
+		}
+		add_to_variable = {
+			IKU_jujuecishu =1
+		}
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = -50
+				check_variable = {
+					IKU_jujuecishu = 2
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = ten.37
+	title = ten.37.t
+	desc = ten.37.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	immediate = {
+
+	}
+	option = {
+		name = ten.37.1
+		TES = {
+			set_country_flag = heyaouaishanjiemeng
+			give_guarantee = OTG
+			give_military_access = OTG
+			set_country_flag = OTG_jiemeng
+		}
+		TES = {
+			OTG = {
+				add_ai_strategy = {
+					type = alliance
+					id = PREV
+					value = 10000
+				}
+				give_guarantee = PREV
+				give_military_access  = PREV
+				jiemeng = yes
+			}
+		}
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 50
+				check_variable = {
+					IKU_jujuecishu = 2
+				}
+			}
+			modifier = {
+				add = 50
+				MRY = {
+					has_government = neworder
+				}
+				TEG = {
+					has_government = fandong
+				}
+			}
+		}
+	}
+	option = {
+		name = ten.37.2
+		TES = {
+			country_event = ten.35
+		}
+		add_to_variable = {
+			IKU_jujuecishu =1
+		}
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = -50
+				check_variable = {
+					IKU_jujuecishu = 2
+				}
+			}
+		}
+	}
+}
+country_event = { 
+	id = ten.38
+	title = ten.38.t
+	desc = ten.38.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	immediate = {
+
+	}
+	option = {
+		name = ten.38.1
+		TES = { 
+			KEK = {
+				qiangjiemeng = yes
+				add_ai_strategy = {
+					type = alliance
+					id = PREV
+					value = 10000
+				}
+			}
+			add_to_faction = KEK 
+			country_event = ten.39
+		}
+		ai_chance = {
+			base = 75
+		}
+	}
+	option = {
+		name = ten.38.2
+		TES = {
+			country_event = ten.35
+		}
+		ai_chance = {
+			base = 25
+		}
+	}
+}
+country_event = { 
+	id = ten.39
+	title = ten.39.t
+	desc = ten.39.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	immediate = {
+
+	}
+	option = {
+		name = ten.39.1
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+country_event = { 
+	id = ten.40
+	title = ten.38.t
+	desc = ten.38.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	immediate = {
+
+	}
+	option = {
+		name = ten.38.1
+		TES = { 
+			SKI = {
+				qiangjiemeng = yes
+				add_ai_strategy = {
+					type = alliance
+					id = PREV
+					value = 10000
+				}
+			}
+			add_to_faction = SKI 
+			country_event = ten.39
+		}
+		ai_chance = {
+			base = 75
+		}
+	}
+	option = {
+		name = ten.38.2
+		TES = {
+			country_event = ten.35
+		}
+		ai_chance = {
+			base = 25
+		}
+	}
+}
+country_event = { 
+	id = ten.41
+	title = ten.38.t
+	desc = ten.38.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	immediate = {
+
+	}
+	option = {
+		name = ten.38.1
+		TES = { 
+			ROOT = {
+				qiangjiemeng = yes
+				add_ai_strategy = {
+					type = alliance
+					id = PREV
+					value = 10000
+				}
+			}
+			add_to_faction = ROOT 
+			country_event = ten.39
+		}
+		ai_chance = {
+			base = 80
+		}
+	}
+	option = {
+		name = ten.38.2
+		TES = {
+			country_event = ten.35
+		}
+		ai_chance = {
+			base = 20
+		}
+	}
+}
+country_event = { 
+	id = ten.42
+	title = ten.38.t
+	desc = ten.38.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	immediate = {
+
+	}
+	option = {
+		name = ten.38.1
+		TES = { 
+			ROOT = {
+				qiangjiemeng = yes
+				add_ai_strategy = {
+					type = alliance
+					id = PREV
+					value = 10000
+				}
+			}
+			add_to_faction = ROOT 
+			country_event = ten.39
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+	option = {
+		name = ten.38.2
+		TES = {
+			country_event = ten.35
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+country_event = { 
+	id = ten.43
+	title = ten.38.t
+	desc = ten.38.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+	immediate = {
+
+	}
+	option = {
+		name = ten.38.1
+		TES = { 
+			ROOT = {
+				qiangjiemeng = yes
+				add_ai_strategy = {
+					type = alliance
+					id = PREV
+					value = 10000
+				}
+			}
+			add_to_faction = ROOT 
+			country_event = ten.39
+		}
+		ai_chance = {
+			base = 40
+		}
+	}
+	option = {
+		name = ten.38.2
+		TES = {
+			country_event = ten.35
+		}
+		ai_chance = {
+			base = 60
+		}
+	}
+}
+country_event = { 
+	id = ten.44
+	title = ten.44.t
+	desc = ten.44.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ten.44.1
+		add_political_power = -150
+		add_manpower = -150
+		tianren_guanxi_shang = yes
+		ai_chance = {
+			base = 40
+		}
+	}
+	option = {
+		name = ten.44.2
+		add_political_power = -75
+		random_list = {
+			50 = {
+
+			}
+			50 = {
+				tianren_guanxi_jiang = yes
+			}
+		}
+		ai_chance = {
+			base = 50
+		}
+	}
+	option = {
+		name = ten.44.3
+		random_list = {
+			50 = {
+				tianren_guanxi_jiang = yes
+			}
+			50 = {
+				tianren_guanxi_jiang = yes
+				tianren_guanxi_jiang = yes
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+country_event = { 
+	id = ten.45
+	title = ten.45.t
+	desc = ten.45.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ten.45.1
+		add_political_power = -150
+		add_timed_idea = { idea = TES_genghaodedaiyu_idea days = 90 }
+		tianjieyaoguai_guanxi_shang = yes
+		ai_chance = {
+			base = 40
+		}
+	}
+	option = {
+		name = ten.45.2
+		add_political_power = -75
+		random_list = {
+			50 = {
+
+			}
+			50 = {
+				tianjieyaoguai_guanxi_jiang = yes
+			}
+		}
+		ai_chance = {
+			base = 50
+		}
+	}
+	option = {
+		name = ten.45.3
+		random_list = {
+			50 = {
+				tianjieyaoguai_guanxi_jiang = yes
+			}
+			50 = {
+				tianjieyaoguai_guanxi_jiang = yes
+				tianjieyaoguai_guanxi_jiang = yes
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+country_event = { 
+	id = ten.46
+	title = ten.46.t
+	desc = ten.46.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ten.46.1
+		add_political_power = -150
+		random_owned_controlled_state = {
+			remove_building  = {
+				type = 	industrial_complex
+				level = 1
+			}
+		}
+		random_owned_controlled_state = {
+			remove_building  = {
+				type = 	infrastructure
+				level = 1
+			}
+		}
+		yaojing_shili_shang = yes
+		yaojing_guanxi_shang = yes
+		ai_chance = {
+			base = 40
+		}
+	}
+	option = {
+		name = ten.46.2
+		add_political_power = -75
+		random_list = {
+			50 = {
+
+			}
+			50 = {
+				yaojing_guanxi_jiang = yes
+			}
+		}
+		ai_chance = {
+			base = 50
+		}
+	}
+	option = {
+		name = ten.46.3
+		yaojing_shili_jiang = yes
+		yaojing_guanxi_jiang = yes
+		yaojing_guanxi_jiang = yes
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+country_event = { 
+	id = ten.47
+	title = ten.47.t
+	desc = ten.47.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ten.47.1
+		add_political_power = -200
+		ai_chance = {
+			base = 40
+		}
+	}
+	option = {
+		name = ten.47.2
+		add_political_power = -75
+		random_list = {
+			50 = {
+
+			}
+			50 = {
+				tianjieyaoguai_guanxi_jiang = yes
+				diyuyaoguai_guanxi_jiang = yes
+			}
+		}
+		ai_chance = {
+			base = 50
+		}
+	}
+	option = {
+		name = ten.47.3
+		add_stability = -0.1  
+		tianjieyaoguai_guanxi_jiang = yes
+		diyuyaoguai_guanxi_jiang = yes
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+country_event = { 
+	id = ten.48
+	title = ten.48.t
+	desc = ten.48.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ten.48.1
+		add_political_power = -150
+		yaojing_guanxi_jiang = yes
+		ai_chance = {
+			base = 40
+		}
+	}
+	option = {
+		name = ten.48.2
+		add_political_power = -75
+		add_timed_idea = {
+			idea = TES_yaojingchutao_idea
+			days = 90
+		}
+		ai_chance = {
+			base = 50
+		}
+	}
+	option = {
+		name = ten.48.3
+		add_timed_idea = {
+			idea = TES_daliangyaojingchutao_idea
+			days = 90
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+country_event = { 
+	id = ten.49
+	title = ten.49.t
+	desc = ten.49.d
+	picture = GFX_news_event_ten.49
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = ten.49
+				days = 360
+			}
+		}
+	}
+	option = {
+		name = ten.49.1
+		add_political_power = -100
+		tianren_guanxi_shang = yes
+		tianren_shili_shang = yes
+		ai_chance = {
+			base = 40
+		}
+	}
+	option = {
+		name = ten.49.2
+		add_political_power = -100
+		tianjieyaoguai_guanxi_shang = yes
+		tianjieyaoguai_shili_shang = yes
+		diyuyaoguai_guanxi_shang = yes
+		diyuyaoguai_shili_shang = yes
+		ai_chance = {
+			base = 30
+		}
+	}
+	option = {
+		name = ten.49.3
+		add_political_power = -100
+		yaojing_guanxi_shang = yes
+		yaojing_shili_shang = yes
+		ai_chance = {
+			base = 10
+		}
+	}
+	option = {
+		name = ten.49.4
+		add_stability = 0.1  
+		add_political_power = -100
+		ai_chance = {
+			base = 20
+		}
+	}
+}
+country_event = { 
+	id = ten.50
+	title = ten.50.t
+	desc = ten.50.d
+	picture = GFX_news_event_ten.50
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ten.50.1
+		add_political_power = -100
+		remove_ideas = TES_tianzicancunshili_idea
+		custom_effect_tooltip = ten.50.1_tt
+		ai_chance = {
+			base = 70
+		}
+	}
+	option = {
+		name = ten.50.2
+		country_event = {
+			id = ten.51
+			days = 3
+		}
+		custom_effect_tooltip = ten.50.2_tt
+		ai_chance = {
+			base = 30
+		}
+	}
+}
+country_event = { 
+	id = ten.51
+	title = ten.51.t
+	desc = ten.51.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ten.51.1
+		set_country_flag = mimitiaoyue_TES
+		remove_ideas = TES_tianzicancunshili_idea
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+country_event = { 
+	id = ten.52
+	title = ten.52.t
+	desc = ten.52.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ten.52.1
+		ai_chance = {
+			base = 0
+		}
+	}
+	option = {
+		name = ten.52.2
+		ai_chance = {
+			base = 0
+		}
+	}
+	option = {
+		name = ten.52.3
+		news_event = { id = ten.53 days = 1 }
+		create_country_leader = {
+			name = "比那名居天子"
+			picture = "gfx/leaders/TES/TES_tes.dds"
+			expire = "1965.1.1"
+			ideology = qinwai_type
+			traits = {
+				
+			}
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+news_event = {
+	id = ten.53
+	title = ten.53.t
+	desc = ten.53.d
+	picture = GFX_news_event_ten.53
+	fire_only_once = no
+
+	is_triggered_only = yes
+	major = yes
+	option = { 
+		name = ten.53.1
+		trigger = {
+			OR = {
+				tag = TES
+				is_in_faction_with = TES
+				has_government = qinwai
+			}
+		}
+	}
+	option = { 
+		name = ten.53.2
+		trigger = {
+			NOT = {
+				tag = TES
+				is_in_faction_with = TES
+				has_government = qinwai
+			}
+		}
+	}
+}
+country_event = { 
+	id = ten.54
+	title = ten.54.t
+	desc = ten.54.d
+	picture = GFX_news_event_ten.54
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ten.54.1
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+country_event = { 
+	id = ten.55
+	title = ten.55.t
+	desc = ten.55.d
+	picture = GFX_news_event_ten.55
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ten.55.1
+		add_ideas = TES_dingyu_yizun_idea
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+country_event = { 
+	id = ten.56
+	title = ten.56.t
+	desc = ten.56.d
+	picture = GFX_news_event_ten.56
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ten.56.1
+		add_ideas = TES_zhuanzhi_lingyun_idea
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+country_event = { 
+	id = ten.57
+	title = ten.57.t
+	desc = ten.57.d
+	picture = GFX_news_event_ten.57
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ten.57.1
+		ai_chance = {
+			base = 100
+		}
+	}
+	option = {
+		name = ten.57.2
+		custom_effect_tooltip = ten.57.2_tt
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+country_event = { 
+	id = ten.58
+	title = ten.58.t
+	desc = ten.58.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ten.58.1
+		ai_chance = {
+			base = 100
+		}
+	}
+}

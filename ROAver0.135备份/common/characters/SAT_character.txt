@@ -1,0 +1,121 @@
+characters={
+	SAT_sat ={
+		name = SAT_sat
+		portraits={
+			civilian={
+				large="gfx/leaders/SAT/SAT_sat.dds"
+				small="gfx/leaders/SAT/SAT_sat_small.dds"
+			}
+			army = {
+				large="gfx/leaders/SAT/SAT_sat.dds"
+				small="gfx/leaders/SAT/SAT_sat_small.dds"
+			}
+		}
+		field_marshal = {
+            traits = {  th_original_character th_character  th_trait_dayaoguai  }
+            attack_skill = -3
+            defense_skill = 5
+            planning_skill = 1
+            logistics_skill = 9
+            
+            skill = 9
+        }
+		advisor = {
+			slot = character_coop
+			idea_token = SAT_sat
+			name = SAT_sat
+			cost = 200
+			modifier = {
+				decryption = 2
+				enemy_operative_detection_chance_factor = 0.5
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	SAT_koishi ={
+		name = SAT_koishi
+		portraits={
+			civilian={
+				large="gfx/leaders/SAT/SAT_koishi.dds"
+				small="gfx/leaders/SAT/SAT_koishi_small.dds"
+			}
+			army = {
+				large="gfx/leaders/SAT/SAT_koishi.dds"
+				small="gfx/leaders/SAT/SAT_koishi_small.dds"
+			}
+		}
+		corps_commander = {
+            traits = {  th_original_character th_character  th_trait_qianxianzhandou  }
+            attack_skill = 6
+            defense_skill = 15
+            planning_skill = 1
+            logistics_skill = 2
+            
+            skill = 6
+        }
+		advisor = {
+			slot = character_coop
+			idea_token = SAT_koishi
+			name = SAT_koishi
+			cost = 200
+			modifier = {
+				encryption = 5
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	SAT_sat_leader ={
+		name = SAT_sat_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/SAT/SAT_sat.dds"
+				small="gfx/leaders/SAT/SAT_sat_small.dds"
+			}
+			army = {
+				large="gfx/leaders/SAT/SAT_sat.dds"
+				small="gfx/leaders/SAT/SAT_sat_small.dds"
+			}
+		}
+		country_leader={
+			ideology=guli_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldorder_type
+			id=-1
+		}
+		country_leader={
+			ideology=qinwai_type
+			id=-1
+		}
+	}
+	SAT_koishi_leader ={
+		name = SAT_koishi_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/SAT/SAT_koishi.dds"
+				small="gfx/leaders/SAT/SAT_koishi_small.dds"
+			}
+			army = {
+				large="gfx/leaders/SAT/SAT_koishi.dds"
+				small="gfx/leaders/SAT/SAT_koishi_small.dds"
+			}
+		}
+		country_leader={
+			ideology=fandong_type
+			id=-1
+		}
+		country_leader={
+			ideology=neworder_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldgenso_type
+			id=-1
+		}
+	}
+}

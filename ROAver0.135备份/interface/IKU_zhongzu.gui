@@ -1,0 +1,96 @@
+guiTypes = {
+	containerWindowType = {
+		name = "IKU_zhongzu_xitong"
+		size = { width = 1139 height = 588 }
+		moveable = yes
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_IKU_map_tianjie"
+		}
+		buttonType = {
+			name = "map_deities"
+			quadTextureSprite = "GFX_IKU_map_deities"
+			position = { x = 192 y = 81 }
+		}
+		buttonType = {
+			name = "map_goblin"
+			quadTextureSprite = "GFX_IKU_map_goblin"
+			position = { x = 142 y = 28 }
+		}
+		buttonType = {
+			name = "map_monster_d"
+			quadTextureSprite = "GFX_IKU_map_monster_d"
+			position = { x = 241 y = 418 }
+		}
+		buttonType = {
+			name = "map_monster_i"
+			quadTextureSprite = "GFX_IKU_map_monster_i"
+			position = { x = 638 y = 42 }
+		}
+		iconType ={
+			name ="map_goblin_t"
+			spriteType = "GFX_IKU_map_goblin_t"
+			position = { x= 813 y = 407 }
+		}
+		iconType ={
+			name ="map_deities_t"
+			spriteType = "GFX_IKU_map_deities_t"
+			position = { x= 805 y = 419 }
+		}
+		iconType ={
+			name ="map_monster_t"
+			spriteType = "GFX_IKU_map_monster_t"
+			position = { x= 812 y = 449 }
+		}
+		iconType ={
+			name ="IKU_zhengfuguanxi"
+			spriteType = "GFX_IKU_zhengfuguanxi"
+			position = { x= 975 y = 420 }
+			pdx_tooltip = zhengfu_guanxi_tt
+		}
+		iconType ={
+			name ="IKU_zhongzushili"
+			spriteType = "GFX_IKU_zhongzushili"
+			position = { x= 975 y = 504 }
+			pdx_tooltip = zhongzu_shili_tt
+		}
+		buttonType = {
+			name = "IKU_map_guanbi"
+			position = { x = 1107 y = -5 }
+			quadTextureSprite ="GFX_main_close_button"
+			shortcut = "ctrl+k"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+		buttonType = {   
+			name = "IKU_map_xiayiye"
+			position = { x = 1117 y = 565 }
+			quadTextureSprite ="GFX_arrow_right_small"
+			shortcut = "ctrl+l"
+		}
+	}
+	containerWindowType = {
+		name = "IKU_hxx_map"
+		size = { width = 1341 height = 792 }
+		moveable = yes
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_IKU_hxx_map"
+		}
+		buttonType = {
+			name = "IKU_map_2_guanbi"
+			position = { x = 1300 y = 60 }
+			quadTextureSprite ="GFX_main_close_button"
+			shortcut = "ctrl+k"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+		buttonType = {   
+			name = "IKU_map_shangyiye"
+			quadTextureSprite = "GFX_IKU_map_shangyiye"
+			position = { x = 97 y = 71 }
+		}
+	}
+}

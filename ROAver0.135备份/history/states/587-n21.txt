@@ -1,0 +1,30 @@
+
+state={
+	id=587
+	name="STATE_587"
+	provinces={
+		7262 7265 7277 7287 7293 7299 7300 7305 7311 7313 7315 7322 7327 7329 7332 7339 
+	}
+	resources={
+		energy = 0
+		powder = 5.0
+		metal = 0.0
+		gas=2.000
+		crystal=0.000
+	}
+	history={
+		146.1.1 = {
+			owner = CHE
+			add_core_of = CHE
+			buildings = {
+				infrastructure = 2
+				industrial_complex = 1
+				arms_factory = 1
+			}
+		}
+	}
+	state_category=s5
+	manpower=1057
+	buildings_max_level_factor=1.000
+	local_supplies=2.500
+}

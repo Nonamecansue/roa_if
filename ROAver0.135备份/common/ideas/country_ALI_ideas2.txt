@@ -1,0 +1,308 @@
+ideas = {
+	country = {
+		ALI_zhizuojingmirenou_idea = {
+			name = ALI_zhizuojingmirenou
+	    	picture = generic_pp_unity_bonus
+
+			modifier = {
+				political_power_factor = 0.15
+			}
+
+	    }
+	    ALI_jianshirenou_idea = {
+			name = ALI_jianshirenou
+	    	picture = generic_spy_intel
+
+			modifier = {
+				resistance_growth = -0.15
+			}
+		}
+		ALI_kuodabingtuan_idea = {
+			name = ALI_kuodabingtuan
+			picture = generic_manpower_bonus
+			modifier = {
+				conscription = 0.015
+				training_time_factor = -0.25
+			}
+		}
+		ALI_mofajinling_idea = {
+			name = ALI_mofajinling
+			picture = generic_political_support
+			modifier = {
+				stability_weekly = 0.005
+				political_power_cost = 0.2
+			}
+		}
+		ALI_fenshaomofashu_idea = {
+			name = ALI_fenshaomofashu
+			picture = spr_torchbearers_of_tomorrow
+			modifier = {
+				research_speed_factor = -0.08
+				
+			}
+			research_bonus = {
+				magic = 0.25
+			}
+		}
+		ALI_tongyimofashuxie_idea = {
+			name = ALI_tongyimofashuxie
+			picture = spa_recovering_from_the_civil_war
+			modifier = {
+				equipment_upgrade_xp_cost = -0.33
+			}
+		}
+		ALI_renoucailiaobiaozhun_idea = {
+			name = ALI_renoucailiaobiaozhun
+			picture = generic_war_preparation
+			modifier = {
+				
+			}
+			equipment_bonus = {
+				magic_energy_a = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+				magic_core_a = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+				magic_focus_a = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+				special_core_a = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+				core_shield_a = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+				tactical_core_a = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+				
+			}
+		}
+		ALI_renoubixiu_idea = {
+			name = ALI_renoubixiu
+			picture = ast_volunteer_defence_corps
+			modifier = {
+				conscription_factor = 0.1
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				experience_gain_army = 0.03
+			}
+		}
+		ALI_quelizhongzuxiangzheng_idea = {
+			name = ALI_quelizhongzuxiangzheng
+			picture = generic_political_support
+			available = {
+				has_stability < 0.75
+			}
+			modifier = {
+				stability_weekly = 0.003
+				MSH_boyili_factor = 1
+			}
+		}
+		ALI_tuixingtonghuafangan_idea = {
+			name = ALI_tuixingtonghuafangan
+			picture = generic_communist_army
+			modifier = {
+				CO_core_resistance_required = -10
+				compliance_gain = 0.02
+			}
+		}
+		ALI_jinjimofa_decision_ad_idea = {
+			name = ALI_jinjimofa_decision_ad
+			picture = warrior_traditions_idea
+			modifier = {
+				army_attack_factor = 0.33
+				army_defence_factor = 0.33
+			}
+		}
+		ALI_jinjimofa_decision_na_idea = {
+			name = ALI_jinjimofa_decision_na
+			picture = FRA_army_of_aggression_focus
+			modifier = {
+				land_night_attack = 0.8
+			}
+		}
+		ALI_jinjimofa_decision_rbd_idea = {
+			name = ALI_jinjimofa_decision_rbd
+			picture = ETH_scavenging_tactics
+			modifier = {
+				land_reinforce_rate = 0.05
+				army_speed_factor = 0.05
+				breakthrough_factor = 0.25
+			}
+		}
+		ALI_houqinrenou_idea = {
+			name = ALI_houqinrenou
+			picture = XXX
+			modifier = {
+				supply_consumption_factor = -0.25
+			}
+		}
+		ALI_gengdagengshiyonggengwanmei_idea = {
+			name = ALI_gengdagengshiyonggengwanmei
+			picture = XXX
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+			}
+		}
+		ALI_cunzaifusangshen_idea = {
+			name = ALI_cunzaifusangshen
+			picture = XXX
+			modifier = {
+				HMIF_daily_change = 0.02
+			}
+		}
+		ALI_qiegemofashi_idea = {
+			name = ALI_qiegemofashi
+			picture = XXX
+			modifier = {
+				PO_good_influence_factor = 0.25
+			}
+		}
+		ALI_cunzaimofalun_idea = {
+			name = ALI_cunzaimofalun
+			picture = XXX
+			modifier = {
+				political_power_factor = 0.25
+			}
+		}
+		ALI_xuexidurenou_idea = {
+			name = ALI_xuexidurenou
+			picture = XXX
+			research_bonus = {
+				combined = 0.15
+			}
+		}
+		ALI_renoujitizhuyi_idea = {
+			name = ALI_renoujitizhuyi
+			picture = XXX
+			modifier = {
+				line_change_production_efficiency_factor = 0.75
+			}
+		}
+		ALI_xuanbufeirenounuli_1_idea = {
+			name = ALI_xuanbufeirenounuli
+			picture = XXX
+			modifier = {
+				manufacturer_cost_factor = 2.5
+				stability_factor = 0.2
+				stability_weekly = 0.004
+				custom_modifier_tooltip = ALI_xuanbufeirenounuli_tt1
+			}
+		}
+		ALI_xuanbufeirenounuli_2_idea = {
+			name = ALI_xuanbufeirenounuli
+			picture = XXX
+			modifier = {
+				manufacturer_cost_factor = 2.5
+				stability_weekly = -0.009
+				war_support_factor = -0.3
+				custom_modifier_tooltip = ALI_xuanbufeirenounuli_tt2
+			}
+		}
+		ALI_jianlijizhongmoguzhongzhiyuan_idea = {
+			name = ALI_jianlijizhongmoguzhongzhiyuan
+			picture = XXX
+			modifier = {
+				conscription = -0.01
+				local_resources_factor = 0.25
+				production_speed_buildings_factor = 0.25
+			}
+		}
+		ALI_wanmeirenou_idea = {
+			name = ALI_wanmeirenou
+			picture = XXX
+			modifier = {
+				PO_good_influence_factor = 0.15
+				PO_bad_influence_factor = -0.15
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+		ALI_wuxianmofakongzhi_idea = {
+			name = ALI_wuxianmofakongzhi
+			picture = XXX
+			modifier = {
+				land_reinforce_rate = 0.1
+			}
+		}
+		ALI_bafeimofashizuoweiyanjiuduixiang_idea = {
+			name = ALI_wuxianmofakongzhi
+			picture = XXX
+			modifier = {
+				PO_good_influence_factor = 0.25
+			}
+		}
+		ALI_zhenzhengrenoujuntuan_idea = {
+			name = ALI_renougailiangjishu_idea
+			picture = eng_the_kings_party
+			modifier = {
+				conscription_factor = -0.85
+				army_morale_factor = 0.2
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				weekly_manpower = 1
+				experience_loss_factor = -0.6
+			}
+			research_bonus = {
+				jiegou = 0.2
+			}
+			equipment_bonus = {
+				tactical_core_a = {
+					instant = yes
+					reliability = 0.25
+				}
+				core_shield_a = {
+					instant = yes
+					reliability = 0.25
+				}
+			}
+		}
+		ALI_ailisidechongbai_idea = {
+			name = ALI_ailisidechongbai
+			picture = XXX
+			modifier = {
+				political_power_factor = 0.2
+			}
+		}
+		ALI_jianliyouhaoguanxi_idea = {
+			name = ALI_jianliyouhaoguanxi
+			picture = XXX
+			modifier = {
+				improve_relations_maintain_cost_factor = -0.25
+			}
+		}
+		ALI_mojiejiaoliuchu_idea = {
+			name = ALI_mojiejiaoliuchu
+			picture = XXX
+			modifier = {
+				consumer_goods_factor = -0.15
+			}
+		}
+		ALI_changshihuodejuzhuxuke_idea = {
+			name = ALI_changshihuodejuzhuxuke
+			picture = XXX
+			modifier = {
+				monthly_population = 0.75
+			}
+		}
+		ALI_mojiehua_2_idea = {
+			name = ALI_mojiehua_idea
+            picture = HUN_hungarian_monarchy
+
+	    	modifier = {
+	    		army_attack_factor = 0.15
+	    		army_defence_factor = 0.15
+	    	}
+	    }
+	}
+}

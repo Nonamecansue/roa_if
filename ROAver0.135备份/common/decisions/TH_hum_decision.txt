@@ -1,0 +1,141 @@
+
+HUM_qianzhai = {
+    test = {
+        visible = {
+            tag = NMS
+            is_debug = yes
+        }
+        complete_effect = {
+            KYK = {
+                transfer_state = 330
+                transfer_state = 329
+                transfer_state = 227
+                transfer_state = 204
+                transfer_state = 203
+                transfer_state = 187
+                transfer_state = 241
+                every_owned_state = {
+                    add_core_of = PREV
+                }
+                set_cosmetic_tag = KYK_country
+                load_oob = "KYK_146"
+            }
+            MNM = {
+                transfer_state = 163
+                transfer_state = 321
+                transfer_state = 168
+                transfer_state = 328
+                transfer_state = 433
+                every_owned_state = {
+                    add_core_of = PREV
+                }
+                set_cosmetic_tag = MNM_country
+                load_oob = "MNM_146"
+            }
+            NUE = {
+                transfer_state = 327
+                transfer_state = 245
+                transfer_state = 195
+                transfer_state = 238
+                transfer_state = 423
+                every_owned_state = {
+                    add_core_of = PREV
+                }
+                set_cosmetic_tag = NUE_mufu
+                load_oob = "NUE_146"
+            }
+        }
+    }
+    HUM_qiuzhai = {
+        visible = {
+            not = {
+                tag = HUM
+                tag = SBK
+                tag = HKR
+                tag = MRS
+            }
+            or = {
+                tag = SCA
+                tag = WAK
+                tag = SEJ
+                tag = RMI
+                tag = MSD
+                tag = CHE
+                tag = TKM
+                tag = NMS
+                tag = KAG
+            }
+            has_global_flag = main_scenario
+            # not = { has_country_flag = HUM_zhaiwujieshu}
+        }
+        available = {
+            date < 149.1.1
+        }
+
+        modifier = {
+            consumer_goods_factor = -0.03
+        }
+
+
+        days_remove = 548
+
+
+
+        fire_only_once = yes
+
+        ai_will_do = {
+            factor = 10
+        }
+
+        # timeout_effect = {
+        #     set_country_flag = HUM_zhaiwujieshu
+        # }
+    }
+
+    HUM_bangzhu = {
+        visible = {
+            not = {
+                tag = HUM
+                tag = SBK
+                tag = HKR
+                tag = MRS
+            }
+            not = {
+                    tag = SCA
+                    tag = WAK
+                    tag = SEJ
+                    tag = RMI
+                    tag = MSD
+                    tag = CHE
+                    tag = TKM
+                    tag = NMS
+                    tag = KAG
+            }
+            
+            has_global_flag = main_scenario
+            # not = { has_country_flag = HUM_zhaiwujieshu}
+        }
+        available = {
+            date < 149.1.1
+        }
+
+        modifier = {
+            research_speed_factor = 0.04
+            consumer_goods_factor = 0.01
+        }
+
+        cost = 25
+
+        days_remove = 365
+
+        fire_only_once = yes
+
+        ai_will_do = {
+            factor = 10
+        }
+
+        # timeout_effect = {
+        #     set_country_flag = HUM_zhaiwujieshu
+        # }
+    }
+}

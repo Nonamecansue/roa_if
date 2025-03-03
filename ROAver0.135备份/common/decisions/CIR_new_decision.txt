@@ -1,0 +1,375 @@
+CIR_zizhizhouyihui_decision_category = {
+    CIR_zizhizhouyihui_decision = {
+        allowed = {
+            tag = CIR
+        }
+        target_root_trigger = {
+            CIR = {
+                has_completed_focus = CIR_zizhizhouyihui
+            }
+        }
+        visible = {
+            
+        }
+        available = {
+
+        }
+        target_trigger = {
+            FROM = {
+                ST_race_is_Fairy = yes
+                is_fully_controlled_by = ROOT
+            }
+        }
+        target_array = owned_states
+        state_target = yes
+        cost = 30
+        days_remove = 60
+        fire_only_once = yes
+
+        remove_effect = {
+            add_stability = 0.01
+            add_to_variable = {
+                CIR_zizhizhouyihui_output = 0.01
+            }
+            clamp_variable = {
+                var = CIR_zizhizhouyihui_output
+                max = 0.2
+            }
+            custom_effect_tooltip = CIR_zizhizhouyihui_decision_tt
+            FROM = {
+                add_dynamic_modifier = {
+                    modifier = CIR_zizhizhouyihui_modifier1
+                }
+                add_extra_state_shared_building_slots = 1
+            }
+            if = {
+                limit = {
+                    not = {
+                        has_dynamic_modifier = {
+                            modifier = CIR_zizhizhouyihui_modifier2
+                        }
+                    }
+                }
+                add_dynamic_modifier = {
+                    modifier = CIR_zizhizhouyihui_modifier2
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 100
+            modifier = {
+                check_variable = {
+                    CIR_zizhizhouyihui_output = 0.2
+                }
+                factor = 0.01
+            }
+            modifier = {
+                FROM = {
+                    set_temp_variable = {
+                        v = manpower_k
+                    }
+                    check_variable = {
+                        v > 4
+                    }
+                }
+                factor = 10
+            }
+            modifier = {
+                FROM = {
+                    set_temp_variable = {
+                        v = infrastructure_level
+                    }
+                    check_variable = {
+                        v > 7
+                    }
+                }
+                factor = 10
+            }
+        }
+    }
+}
+CIR_quanmingjungongjihua_decision_category = {
+    CIR_quanmingjungongjihua_decision = {
+        allowed = {
+            tag = CIR
+        }
+        target_root_trigger = {
+            CIR = {
+                has_completed_focus = CIR_quanmingjungongjihua
+            }
+        }
+        visible = {
+            
+        }
+        available = {
+
+        }
+        target_trigger = {
+            FROM = {
+                is_fully_controlled_by = ROOT
+                is_owned_by = ROOT
+            }
+        }
+        target_array = core_states
+        state_target = yes
+        cost = 25
+        days_remove = 50
+        fire_only_once = yes
+
+        remove_effect = {
+            FROM = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            
+        }
+
+        ai_will_do = {
+            base = 10
+            modifier = {
+                arms_factory < 70
+                factor = 10
+            }
+            modifier = {
+                ic_ratio = {
+                    tag = SCA
+                    ratio < 0.7
+                }
+                factor = 20
+            }
+        }
+    }
+}
+
+CIR_jiadajichugongyetouzi_decision_category = {
+    CIR_jiadajichugongyetouzi_decision = {
+        allowed = {
+            tag = CIR
+        }
+        target_root_trigger = {
+            CIR = {
+                has_completed_focus = CIR_jiadajichugongyetouzi
+            }
+        }
+        visible = {
+            
+        }
+        available = {
+
+        }
+        target_trigger = {
+            FROM = {
+                is_fully_controlled_by = ROOT
+                is_owned_by = ROOT
+            }
+        }
+        target_array = core_states
+        state_target = yes
+        cost = 35
+        days_remove = 70
+        fire_only_once = yes
+
+        remove_effect = {
+            FROM = {
+                add_extra_state_shared_building_slots = 3
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            
+        }
+
+        ai_will_do = {
+            base = 5
+            modifier = {
+                ic_ratio = {
+                    tag = SCA
+                    ratio < 0.7
+                }
+                factor = 20
+            }
+        }
+    }
+}
+
+CIR_yaojinghezhongguo_decision_category = {
+    CIR_yaojinghezhongguo_decision = {
+        allowed = {
+            tag = CIR
+        }
+        target_root_trigger = {
+            CIR = {
+                has_completed_focus = CIR_yaojinghezhongguo
+            }
+        }
+        visible = {
+            FROM = {
+                is_subject = no
+            }
+        }
+        available = {
+            has_war = no
+            FROM = {
+                has_war = no
+                is_subject = no
+            }
+        }
+        target_trigger = {
+            FROM = { 
+                has_idea = Fairy 
+                Fairy_country_with_fairy_leader = yes
+            }
+        }
+        target_array = neighbors
+        cost = 100
+
+        fire_only_once = yes
+
+        complete_effect = {
+            FROM = {
+                country_event = { id = cir2.43 days = 2 }
+            }
+            custom_effect_tooltip = TEG_accept
+            effect_tooltip = {
+                FROM = {
+                    subject_level3 = yes
+                    can_core = yes
+                }
+            }
+        }
+
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 5
+                has_government = ROOT
+            }
+            modifier = {
+                add = 5
+                FROM = {
+                    has_opinion = {
+                        target = ROOT
+                        value > 59
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+
+CIR_bangzhuyaojinggemingzhe_decision_category = {
+    CIR_bangzhuyaojinggemingzhe_decision = {
+        allowed = {
+            tag = CIR
+        }
+        target_root_trigger = {
+            CIR = {
+                has_completed_focus = CIR_bangzhuyaojinggemingzhe
+            }
+        }
+        visible = {
+            FROM = {
+                is_subject = no
+                any_country = {
+                    has_war_with = PREV
+                    not = {
+                        has_idea = Fairy
+                    }
+                }
+                not = {
+                    has_country_flag = CIR_help_received_flag
+                }
+            }
+            
+        }
+        available = {
+            has_war = no
+        }
+        target_trigger = {
+            FROM = { has_idea = Fairy }
+        }
+        # target_array = neighbors
+        cost = 15
+        days_remove = 15
+        remove_effect = {
+            add_stability = 0.01
+            add_popularity = {
+                ideology = fandong
+                popularity = 0.02
+            }
+            FROM = {
+                set_country_flag = CIR_help_received_flag
+            }
+        }
+
+        ai_will_do = {
+            base = 0
+        }
+    }
+    CIR_bangzhuyaojinggemingzhe_2_decision = {
+        allowed = {
+            tag = CIR
+        }
+        target_root_trigger = {
+            CIR = {
+                has_completed_focus = CIR_bangzhuyaojinggemingzhe
+            }
+            any_country = {
+                has_country_flag = CIR_help_received_flag
+            }
+        }
+        visible = {
+            FROM = {
+                not = {
+                    has_idea = Fairy
+                }
+            }
+        }
+        available = {
+            has_war = no
+        }
+        target_trigger = {
+            FROM = { 
+                any_country = {
+                    has_war_with = PREV
+                    has_country_flag = CIR_help_received_flag
+                }
+            }
+        }
+        complete_effect = {
+            FROM = {
+                country_event = { days = 2 id = cir2.45 }
+            }
+        }
+        # target_array = neighbors
+        cost = 40
+        days_remove = 120
+        targeted_modifier = {
+            tag = FROM
+            attack_bonus_against = 0.25
+            defense_bonus_against = 0.25
+        }
+        modifier = {
+            send_volunteer_size = 2
+        }
+
+        ai_will_do = {
+            base = 0
+        }
+    }
+}
+

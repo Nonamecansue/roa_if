@@ -1,0 +1,30 @@
+state={
+	id=438
+	name="STATE_438"
+	provinces={
+		92 850 982 1171 1178 2122 2493 2917 5969 5975 5977 5979 5981 
+	}
+	resources={
+		energy = 0
+		powder = 0.0
+		metal = 0.0
+		gas=0.000
+		crystal=0.000
+	}
+	history={
+		146.1.1 = {
+			owner = SKI
+			add_core_of = SKI
+			buildings = {
+				infrastructure = 4
+				industrial_complex = 5
+				arms_factory = 2
+
+			}
+		}
+	}
+	manpower=3388
+	state_category=s10
+	local_supplies=2.5
+	buildings_max_level_factor=1.000
+}

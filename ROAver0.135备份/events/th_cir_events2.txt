@@ -1,0 +1,2047 @@
+﻿add_namespace = cir2
+news_event = {#先在一国建立革命基地
+	id = cir2.1
+	title = cir2.1.t
+	desc = cir2.1.d
+###图片预留###picture = GFX_news_event_cir2.1
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = cir2.1.1
+		trigger = {
+			tag = CIR
+		}
+	}
+
+	option = {
+		name = cir2.1.2
+		trigger = {
+			tag = SCA
+		}
+	}
+
+	option = {
+		name = cir2.1.3
+		trigger = {
+			not = {
+				tag = CIR
+			}
+			has_idea = Fairy
+		}
+	}
+
+	option = {
+		name = cir2.1.4
+		trigger = {
+			not = {
+				tag = SCA
+				has_idea = Fairy
+			}
+		}
+	}
+
+}
+
+news_event = {#战争宣传：反斯卡蕾特
+	id = cir2.2
+	title = cir2.2.t
+	desc = cir2.2.d
+###图片预留###picture = GFX_news_event_cir2.2
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = cir2.2.1
+		trigger = {
+			tag = CIR
+		}
+	}
+
+	option = {
+		name = cir2.2.2
+		trigger = {
+			tag = SCA
+		}
+	}
+
+	option = {
+		name = cir2.2.3
+		trigger = {
+			not = {
+				tag = CIR
+			}
+			has_idea = Fairy
+		}
+	}
+
+	option = {
+		name = cir2.2.4
+		trigger = {
+			not = {
+				tag = SCA
+				has_idea = Fairy
+			}
+		}
+	}
+
+}
+
+news_event = {#战争宣传：革命的第一步
+	id = cir2.3
+	title = cir2.3.t
+	desc = cir2.3.d
+###图片预留###picture = GFX_news_event_cir2.3
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = cir2.3.1
+		trigger = {
+			tag = CIR
+		}
+	}
+
+	option = {
+		name = cir2.3.2
+		trigger = {
+			not = { tag = CIR }
+			has_idea = Fairy
+		}
+	}
+
+	option = {
+		name = cir2.3.3
+		trigger = {
+			weak_races = yes
+			not = {
+				has_idea = Fairy
+			}
+		}
+	}
+
+	option = {
+		name = cir2.3.4
+		trigger = {
+			not = {
+				weak_races = yes
+			}
+		}
+	}
+
+}
+
+news_event = {#幻想乡式的乌托邦
+	id = cir2.4
+	title = cir2.4.t
+	desc = cir2.4.d
+###图片预留###picture = GFX_news_event_cir2.4
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = cir2.4.1
+		trigger = {
+			tag = CIR
+		}
+	}
+
+	option = {
+		name = cir2.4.2
+		trigger = {
+			weak_races = yes
+			not = {
+				tag = CIR
+			}
+		}
+	}
+
+	option = {
+		name = cir2.4.3
+		trigger = {
+			not = {
+				weak_races = yes
+			}
+		}
+	}
+
+}
+
+news_event = {#我们真正的敌人——“大妖怪”
+	id = cir2.5
+	title = cir2.5.t
+	desc = cir2.5.d
+###图片预留###picture = GFX_news_event_cir2.5
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = cir2.5.1
+		trigger = {
+			tag = CIR
+		}
+	}
+
+	option = {
+		name = cir2.5.2
+		trigger = {
+			weak_races = yes
+			not = {
+				tag = CIR
+			}
+		}
+	}
+
+	option = {
+		name = cir2.5.3
+		trigger = {
+			not = {
+				weak_races = yes
+			}
+		}
+	}
+
+}
+
+news_event = {#第一次总统选举：琪露诺
+	id = cir2.6
+	title = cir2.6.t
+	desc = cir2.6.d
+###图片预留###picture = GFX_news_event_cir2.6
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = cir2.6.1
+		trigger = {
+			tag = CIR
+		}
+	}
+
+	option = {
+		name = cir2.6.2
+		trigger = {
+			not = { tag = CIR }
+		}
+	}
+
+}
+
+news_event = {#第一次总统选举：大妖精
+	id = cir2.7
+	title = cir2.7.t
+	desc = cir2.7.d
+###图片预留###picture = GFX_news_event_cir2.7
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = cir2.7.1
+		trigger = {
+			tag = CIR
+		}
+	}
+
+	option = {
+		name = cir2.7.2
+		trigger = {
+			not = { tag = CIR }
+		}
+	}
+
+}
+
+news_event = {#妖精义务教育
+	id = cir2.8
+	title = cir2.8.t
+	desc = cir2.8.d
+###图片预留###picture = GFX_news_event_cir2.8
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = cir2.8.1
+		trigger = {
+			tag = CIR
+		}
+	}
+
+	option = {
+		name = cir2.8.2
+		trigger = {
+			has_idea = Fairy
+			not = {
+				tag = CIR
+			}
+		}
+	}
+
+	option = {
+		name = cir2.8.3
+		trigger = {
+			not = {
+				has_idea = Fairy
+			}
+		}
+	}
+
+}
+
+news_event = {#暴风雪计划
+	id = cir2.9
+	title = cir2.9.t
+	desc = cir2.9.d
+###图片预留###picture = GFX_news_event_cir2.9
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = cir2.9.1
+		trigger = {
+			or = {
+				tag = CIR
+				tag = SCA
+			}
+			
+		}
+	}
+
+	option = {
+		name = cir2.9.2
+		trigger = {
+			not = { 
+				tag = CIR 
+				tag = SCA
+			}
+		}
+	}
+
+}
+
+news_event = {#新兴妖怪势力外交政策
+	id = cir2.10
+	title = cir2.10.t
+	desc = cir2.10.d
+###图片预留###picture = GFX_news_event_cir2.10
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = cir2.10.1
+		trigger = {
+			tag = CIR
+		}
+	}
+
+	option = {
+		name = cir2.10.2
+		trigger = {
+			not = { tag = CIR }
+			weak_races = yes
+		}
+	}
+
+	option = {
+		name = cir2.10.3
+		trigger = {
+			not = { weak_races = yes }
+			
+		}
+	}
+
+}
+
+news_event = {#我们未来的目标(全境宣称）
+	id = cir2.11
+	title = cir2.11.t
+	desc = cir2.11.d
+###图片预留###picture = GFX_news_event_cir2.11
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = cir2.11.1
+		trigger = {
+			tag = CIR
+		}
+	}
+
+	option = {
+		name = cir2.11.2
+		trigger = {
+			tag = SCA
+		}
+	}
+
+	option = {
+		name = cir2.11.3
+		trigger = {
+			not = { 
+				tag = CIR 
+				tag = SCA
+			}
+		}
+	}
+
+}
+
+news_event = {#注重强大的旧势力
+	id = cir2.12
+	title = cir2.12.t
+	desc = cir2.12.d
+###图片预留###picture = GFX_news_event_cir2.12
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = cir2.12.1
+		trigger = {
+			tag = CIR
+		}
+	}
+
+	option = {
+		name = cir2.12.2
+		trigger = {
+			not = { weak_races = yes }
+		}
+	}
+
+	option = {
+		name = cir2.12.3
+		trigger = {
+			weak_races = yes
+			not = {
+				tag = CIR
+			}
+		}
+	}
+
+}
+
+news_event = {#消除大妖怪的顾忌
+	id = cir2.13
+	title = cir2.13.t
+	desc = cir2.13.d
+###图片预留###picture = GFX_news_event_cir2.13
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = cir2.13.1
+		trigger = {
+			tag = CIR
+		}
+	}
+
+	option = {
+		name = cir2.13.2
+		trigger = {
+			not = { weak_races = yes }
+		}
+	}
+
+	option = {
+		name = cir2.13.3
+		trigger = {
+			weak_races = yes
+			not = {
+				tag = CIR
+			}
+		}
+	}
+
+}
+
+news_event = {#被贤者认可的妖精
+	id = cir2.14
+	title = cir2.14.t
+	desc = cir2.14.d
+###图片预留###picture = GFX_news_event_cir2.14
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = cir2.14.1
+		trigger = {
+			tag = CIR
+		}
+	}
+
+	option = {
+		name = cir2.14.2
+		trigger = {
+			tag = YKR
+		}
+	}
+	option = {
+		name = cir2.14.3
+		trigger = {
+			tag = SCA
+		}
+	}
+	option = {
+		name = cir2.14.4
+		trigger = {
+			not = {
+				weak_races = yes
+			}
+			not = {
+				tag = CIR
+				tag = YKR
+				tag = SCA
+			}
+		}
+	}
+	option = {
+		name = cir2.14.5
+		trigger = {
+			weak_races = yes
+			not = {
+				tag = CIR
+				tag = YKR
+				tag = SCA
+			}
+		}
+	}
+
+}
+
+news_event = {#新幻想乡之路
+	id = cir2.15
+	title = cir2.15.t
+	desc = cir2.15.d
+###图片预留###picture = GFX_news_event_cir2.15
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = cir2.15.1
+		trigger = {
+			tag = CIR
+		}
+	}
+
+	option = {
+		name = cir2.15.2
+		trigger = {
+			not = { tag = CIR }
+		}
+	}
+
+}
+
+news_event = {#妖精合众国
+	id = cir2.16
+	title = cir2.16.t
+	desc = cir2.16.d
+###图片预留###picture = GFX_news_event_cir2.16
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = cir2.16.1
+		trigger = {
+			tag = CIR
+		}
+	}
+
+	option = {
+		name = cir2.16.2
+		trigger = {
+			not = { tag = CIR }
+		}
+	}
+
+}
+
+news_event = {#琪露诺的妖精帝国
+	id = cir2.17
+	title = cir2.17.t
+	desc = cir2.17.d
+###图片预留###picture = GFX_news_event_cir2.17
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = cir2.17.1
+		trigger = {
+			tag = CIR
+		}
+	}
+
+	option = {
+		name = cir2.17.2
+		trigger = {
+			not = { tag = CIR }
+		}
+	}
+
+}
+
+news_event = {#建立产业互助委员会
+	id = cir2.18
+	title = cir2.18.t
+	desc = cir2.18.d
+###图片预留###picture = GFX_news_event_cir2.18
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = cir2.18.1
+		trigger = {
+			tag = CIR
+		}
+	}
+
+	option = {
+		name = cir2.18.2
+		trigger = {
+			not = { tag = CIR }
+		}
+	}
+
+}
+
+news_event = {#妖精们的凯撒
+	id = cir2.19
+	title = cir2.19.t
+	desc = cir2.19.d
+###图片预留###picture = GFX_news_event_cir2.19
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = cir2.19.1
+		trigger = {
+			tag = CIR
+		}
+	}
+
+	option = {
+		name = cir2.19.2
+		trigger = {
+			not = { tag = CIR }
+		}
+	}
+
+}
+
+country_event = {#每个妖精都是英雄
+	id = cir2.20
+	title = cir2.20.t
+	desc = cir2.20.d
+###图片预留###picture = GFX_news_event_cir2.20
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = cir2.20.1
+
+	}
+
+}
+
+country_event = {#帮助妖精革命者
+	id = cir2.21
+	title = cir2.21.t
+	desc = cir2.21.d
+###图片预留###picture = GFX_news_event_cir2.21
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = cir2.21.1
+
+	}
+
+}
+
+country_event = {#拉拢其他弱势种族
+	id = cir2.22
+	title = cir2.22.t
+	desc = cir2.22.d
+###图片预留###picture = GFX_news_event_cir2.22
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = cir2.22.1
+
+	}
+
+}
+
+country_event = {#天狗社会考察团
+	id = cir2.23
+	title = cir2.23.t
+	desc = cir2.23.d
+###图片预留###picture = GFX_news_event_cir2.23
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = cir2.23.1
+		add_ideas = CIR_tiangoukaochatuan1_idea
+		hidden_effect = {
+			TEG = { country_event = cir2.42 }
+		}
+	}
+
+	option = {
+		name = cir2.23.2
+		add_ideas = CIR_tiangoukaochatuan2_idea
+		hidden_effect = {
+			TEG = { country_event = cir2.42 }
+		}
+	}
+
+	option = {
+		name = cir2.23.3
+		add_ideas = CIR_tiangoukaochatuan3_idea
+		hidden_effect = {
+			TEG = { country_event = cir2.42 }
+		}
+	}
+
+}
+
+country_event = {#借阅香霖堂中的治国书籍
+	id = cir2.24
+	title = cir2.24.t
+	desc = cir2.24.d
+###图片预留###picture = GFX_news_event_cir2.24
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = cir2.24.1
+
+	}
+
+}
+
+country_event = {#捍卫雾之湖的新兴共和国
+	id = cir2.25
+	title = cir2.25.t
+	desc = cir2.25.d
+###图片预留###picture = GFX_news_event_cir2.25
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = cir2.25.1
+
+	}
+
+}
+
+country_event = {#春之妖精的支持
+	id = cir2.26
+	title = cir2.26.t
+	desc = cir2.26.d
+###图片预留###picture = GFX_news_event_cir2.26
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = cir2.26.1
+		FROM = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+			}
+			ROOT = {
+				can_use = yes
+				qiangjiemeng = yes
+				FROM = {
+					can_use = yes
+				}
+			}
+		}
+		FROM = {
+			country_event = { days = 2 id = glo.2001 }
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = {
+		name = cir2.26.2
+		FROM = {
+			country_event = { days = 2 id = glo.2002 }
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+
+}
+
+country_event = {#寒春夹击
+	id = cir2.27
+	title = cir2.27.t
+	desc = cir2.27.d
+###图片预留###picture = GFX_news_event_cir2.27
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = cir2.27.1
+		set_country_flag = CIR_hanchunjiaji
+		custom_effect_tooltip = CIR_hanchunjiaji_tt
+		show_ideas_tooltip = CIR_hanchunjiaji_idea
+		trigger = {
+			LIL = {
+				NOT = {	
+					has_country_flag = LIL_hanchunjiaji_no
+				}
+			}
+		}
+		ai_chance = {
+			base = 100
+			modifier = {
+				LIL = {
+					has_country_flag = LIL_hanchunjiaji_no
+				}
+				add = -1000
+			}
+		}
+		FROM = {
+			country_event = { days = 2 id = glo.2001 }
+		}
+	}
+
+	option = {
+		name = cir2.27.2
+		ai_chance = {
+			base = 0
+		}
+		FROM = {
+			country_event = { days = 2 id = glo.2002 }
+		}
+	}
+
+}
+
+country_event = {#下克上同盟的支持
+	id = cir2.28
+	title = cir2.28.t
+	desc = cir2.28.d
+###图片预留###picture = GFX_news_event_cir2.28
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = cir2.28.1
+		FROM = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+			}
+			ROOT = {
+				can_use = yes
+				qiangjiemeng = yes
+				FROM = {
+					can_use = yes
+				}
+			}
+		}
+		FROM = {
+			country_event = { days = 2 id = glo.2001 }
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = {
+		name = cir2.28.2
+		FROM = {
+			country_event = { days = 2 id = glo.2002 }
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				not = { has_government = fandong }
+				add = 50
+			}
+			modifier = {
+				not = { has_government = fandong }
+				SCA = {
+					is_subject = yes
+				}
+				add = 10000
+			}
+		}
+	}
+
+}
+
+country_event = {#付丧神的援助方案
+	id = cir2.29
+	title = cir2.29.t
+	desc = cir2.29.d
+###图片预留###picture = GFX_news_event_cir2.29
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = cir2.29.1
+		add_political_power = 40
+		FROM = {
+			add_ideas = CIR_fusangshenyuanzhu_idea
+			country_event = { days = 2 id = glo.2001 }
+		}
+		ai_chance = {
+			base = 80
+		}
+	}
+
+	option = {
+		name = cir2.29.2
+		FROM = {
+			country_event = { days = 2 id = glo.2002 }
+		}
+		ai_chance = {
+			base = 20
+		}
+	}
+
+}
+
+country_event = {#寻求付丧神的支持
+	id = cir2.30
+	title = cir2.30.t
+	desc = cir2.30.d
+###图片预留###picture = GFX_news_event_cir2.30
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = cir2.30.1
+		add_political_power = 40
+		FROM = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+			}
+			ROOT = {
+				can_use = yes
+				qiangjiemeng = yes
+				FROM = {
+					can_use = yes
+				}
+			}
+		}
+		ai_chance = {
+			base = 80
+			modifier = {
+				FROM = {
+					has_idea = CIR_fusangshenyuanzhu_idea
+				}
+				factor = 2
+			}
+		}
+	}
+
+	option = {
+		name = cir2.30.2
+		FROM = {
+			country_event = { days = 2 id = glo.2002 }
+		}
+		ai_chance = {
+			base = 20
+		}
+	}
+
+}
+
+country_event = {#天狗的军事援助
+	id = cir2.31
+	title = cir2.31.t
+	desc = cir2.31.d
+###图片预留###picture = GFX_news_event_cir2.31
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = cir2.31.1
+		add_political_power = 60
+		FROM = {
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
+			}
+			ROOT = {
+				can_use = yes
+				qiangjiemeng = yes
+				FROM = {
+					can_use = yes
+				}
+			}
+			add_ideas = CIR_tiangoujunshiyuanzhu_idea
+		}
+		ai_chance = {
+			base = 95
+		}
+	}
+
+	option = {
+		name = cir2.31.2
+		FROM = {
+			country_event = { days = 2 id = glo.2002 }
+		}
+		ai_chance = {
+			base = 5
+		}
+	}
+
+}
+
+country_event = {#幻想乡的新道路
+	id = cir2.32
+	title = cir2.32.t
+	desc = cir2.32.d
+###图片预留###picture = GFX_news_event_cir2.32
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = cir2.32.1
+
+	}
+
+}
+
+country_event = {#我们未来的目标
+	id = cir2.33
+	title = cir2.33.t
+	desc = cir2.33.d
+###图片预留###picture = GFX_news_event_cir2.33
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = cir2.33.1
+		SCA = {
+			every_owned_state = {
+				limit = {
+					is_core_of = SCA
+				}
+				add_claim_by = ROOT
+			}
+		}
+		add_popularity = {
+			ideology = fandong
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = qinwai
+			popularity = 0.1
+		}
+		add_named_threat = {
+			threat = 15
+			name = CIR_womenweilaidemubiao
+		}
+		set_country_flag = CIR_womenweilaidemubiao_1_flag
+		custom_effect_tooltip = CIR_womenweilaidemubiao_1_tt
+		hidden_effect = {
+			news_event = { days = 2 id = cir2.11 }
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				has_government = neworder
+				add = 20
+			}
+		}
+	}
+
+	option = {
+		name = cir2.33.2
+		SCA = {
+			every_owned_state = {
+				limit = {
+					is_core_of = SCA
+					or = {
+						region = 69
+						region = 30
+						region = 31
+					}
+				}
+				add_claim_by = ROOT
+			}
+		}
+		add_popularity = {
+			ideology = qinwai
+			popularity = 0.05
+		}
+		add_named_threat = {
+			threat = 7.5
+			name = CIR_womenweilaidemubiao
+		}
+		set_country_flag = CIR_womenweilaidemubiao_2_flag
+		custom_effect_tooltip = CIR_womenweilaidemubiao_2_tt
+		hidden_effect = {
+			news_event = { days = 2 id = cir2.49 }
+		}
+		ai_chance = {
+			base = 80
+			modifier = {
+				has_government = fandong
+				factor = 2
+			}
+		}
+	}
+
+	option = {
+		name = cir2.33.3
+		SCA = {
+			every_owned_state = {
+				limit = {
+					is_core_of = SCA
+					or = {
+						region = 69
+						region = 30
+					}
+				}
+				add_claim_by = ROOT
+			}
+		}
+		add_popularity = {
+			ideology = neworder
+			popularity = 0.05
+		}
+		set_country_flag = CIR_womenweilaidemubiao_3_flag
+		custom_effect_tooltip = CIR_womenweilaidemubiao_3_tt
+		hidden_effect = {
+			news_event = { days = 2 id = cir2.50 }
+		}
+		ai_chance = {
+			base = 20
+			modifier = {
+				has_government = neworder
+				factor = 0
+			}
+		}
+	}
+
+}
+
+country_event = {#寻求山上神明的支持
+	id = cir2.34
+	title = cir2.34.t
+	desc = cir2.34.d
+###图片预留###picture = GFX_news_event_cir2.34
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = cir2.34.1
+		add_political_power = 80
+		FROM = {
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
+			}
+			ROOT = {
+				can_use = yes
+				qiangjiemeng = yes
+				FROM = {
+					can_use = yes
+				}
+			}
+			add_ideas = CIR_shanshangshenmingzhichi_idea
+		}
+		ai_chance = {
+			base = 75
+		}
+	}
+
+	option = {
+		name = cir2.34.2
+		FROM = {
+			country_event = { days = 2 id = glo.2002 }
+		}
+		ai_chance = {
+			base = 25
+		}
+	}
+
+}
+
+country_event = {#寻求命莲寺的支持
+	id = cir2.35
+	title = cir2.35.t
+	desc = cir2.35.d
+###图片预留###picture = GFX_news_event_cir2.35
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = cir2.35.1
+		add_political_power = 80
+		FROM = {
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
+			}
+			ROOT = {
+				can_use = yes
+				qiangjiemeng = yes
+				FROM = {
+					can_use = yes
+				}
+			}
+			add_ideas = CIR_mingliansizhichi_idea
+		}
+		ai_chance = {
+			base = 75
+		}
+	}
+
+	option = {
+		name = cir2.35.2
+		FROM = {
+			country_event = { days = 2 id = glo.2002 }
+		}
+		ai_chance = {
+			base = 25
+		}
+	}
+
+}
+
+country_event = {#与妖怪贤者的密会
+	id = cir2.36
+	title = cir2.36.t
+	desc = cir2.36.d
+###图片预留###picture = GFX_news_event_cir2.36
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = cir2.36.1
+
+	}
+
+}
+
+country_event = {#要求森林妖精统一
+	id = cir2.37
+	title = cir2.37.t
+	desc = cir2.37.d
+###图片预留###picture = GFX_news_event_cir2.37
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = cir2.37.1
+		if = {
+			limit = {
+				not = {
+					country_exists = MFA
+				}
+			}
+			release = MFA
+			FROM = {
+				MFA = {
+					transfer_state = 153
+					transfer_state = 552
+					transfer_state = 138
+					subject_level3 = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				MFA = {
+					is_subject_of = ROOT
+				}
+			}
+			end_puppet = MFA
+			FROM = {
+				MFA = {
+					transfer_state = 153
+					transfer_state = 552
+					transfer_state = 138
+					subject_level3 = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				MFA = {
+					is_subject = no
+				}
+			}
+			FROM = {
+				MFA = {
+					transfer_state = 153
+					transfer_state = 552
+					transfer_state = 138
+					subject_level3 = yes
+				}
+			}
+		}
+		FROM = {
+			country_event = glo.2001
+		}
+		hidden_effect = {
+			news_event = { days = 2 id = cir2.38 }
+		}
+		ai_chance = {
+			base = 90
+		}
+	}
+	option = {
+		name = cir2.37.2
+		FROM = {
+			country_event = cir2.52
+		}
+		custom_effect_tooltip = CIR_senlinyaojingtongyi_tt
+		ai_chance = {
+			base = 10
+		}
+	}
+
+}
+
+news_event = {#要求森林妖精统一（和平统一）
+	id = cir2.38
+	title = cir2.38.t
+	desc = cir2.38.d
+###图片预留###picture = GFX_news_event_cir2.38
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = cir2.38.1
+		trigger = {
+			or = {
+				tag = CIR
+				tag = MFA
+			}
+		}
+	}
+
+	option = {
+		name = cir2.38.2
+		trigger = {
+			or = {
+				tag = MYK
+				tag = MTM
+				tag = ELL
+				tag = MRS
+				tag = ALI
+				tag = NAR
+			}
+		}
+	}
+
+	option = {
+		name = cir2.38.3
+		trigger = {
+			not = { 
+				tag = CIR 
+				tag = MFA
+				tag = MYK
+				tag = MTM
+				tag = ELL
+				tag = MRS
+				tag = ALI
+				tag = NAR
+			}
+		}
+	}
+
+}
+
+news_event = {#要求森林妖精统一(开战）
+
+	id = cir2.39
+	title = cir2.39.t
+	desc = cir2.39.d
+###图片预留###picture = GFX_news_event_cir2.39
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = cir2.39.1
+		trigger = {
+			or = {
+				tag = CIR
+			}
+		}
+	}
+
+	option = {
+		name = cir2.39.2
+		trigger = {
+			or = {
+				tag = MFA
+				tag = MYK
+				tag = MTM
+				tag = ELL
+				tag = MRS
+				tag = ALI
+				tag = NAR
+			}
+		}
+	}
+
+	option = {
+		name = cir2.39.3
+		trigger = {
+			not = { 
+				tag = CIR 
+				tag = MFA
+				tag = MYK
+				tag = MTM
+				tag = ELL
+				tag = MRS
+				tag = ALI
+				tag = NAR
+			}
+		}
+	}
+
+}
+
+country_event = {#正式划定边界
+	id = cir2.40
+	title = cir2.40.t
+	desc = cir2.40.d
+###图片预留###picture = GFX_news_event_cir2.40
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = cir2.40.1
+		CIR = {
+			add_named_threat = {
+				threat = -1
+				name = CIR_zhengshihuadingbianjie
+			}
+		}
+		
+		MAF = {
+			add_opinion_modifier = {
+				target = FROM
+				modifier = CIR_zhengshihuadingbianjie_op
+			}
+			reverse_add_opinion_modifier = {
+				target = FROM
+				modifier = CIR_zhengshihuadingbianjie_op
+			}
+		}
+		138 = {
+			remove_claim_by = FROM
+		}
+		552 = {
+			remove_claim_by = FROM
+		}
+		153 = {
+			remove_claim_by = FROM
+		}
+		331 = {
+			remove_claim_by = MAF
+		}
+		132 = {
+			remove_claim_by = MAF
+		}
+		143 = {
+			remove_claim_by = MAF
+		}
+		hidden_effect = {
+			news_event = { days = 2 id = cir2.41 }
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = {
+		name = cir2.40.2
+		FROM = {
+			country_event = { days = 2 id = glo.2002 }
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+
+}
+
+
+news_event = {#正式划定边界
+	id = cir2.41
+	title = cir2.41.t
+	desc = cir2.41.d
+###图片预留###picture = GFX_news_event_cir2.41
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = cir2.41.1
+		trigger = {
+			or = {
+				tag = CIR
+				is_MAF = yes
+			}
+			
+		}
+	}
+
+	option = {
+		name = cir2.41.2
+		trigger = {
+			not = { 
+				tag = CIR
+				is_MAF = yes
+			}
+		}
+	}
+
+}
+
+country_event = {#天狗社会考察团
+	id = cir2.42
+	title = cir2.42.t
+	desc = cir2.42.d
+###图片预留###picture = GFX_news_event_cir2.42
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = cir2.42.1
+		effect_tooltip = {
+			add_opinion_modifier = {
+				target = CIR
+				modifier = CIR_tiangoukaochatuan_op
+			}
+			reverse_add_opinion_modifier = {
+				target = CIR
+				modifier = CIR_tiangoukaochatuan_op
+			}
+		}
+	}
+
+}
+
+country_event = {#妖精合众国
+	id = cir2.43
+	title = cir2.43.t
+	desc = cir2.43.d
+###图片预留###picture = GFX_news_event_cir2.42
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = cir2.43.1
+		FROM = {
+			ROOT = {
+				subject_level3 = yes
+				can_core = yes
+			}
+			country_event = glo.2001
+			add_named_threat = {
+				threat = 1
+				name = CIR_yaojinghezhongguo_threat
+			}
+			hidden_effect = {
+				news_event = { days = 2 id = cir2.44 }
+			}
+		}
+		ai_chance = {
+			base = 50
+			modifier = {
+				has_idea = Fairy
+				not = {
+					Fairy_country_with_fairy_leader = yes
+				}
+			}
+		}
+		
+	}
+	option = {
+		name = cir2.43.2
+		FROM = {
+			country_event = glo.2002
+		}
+		ai_chance = {
+			base = 50
+			modifier = {
+				FROM = {
+					is_ai = yes
+				}
+				factor = 0
+			}
+			modifier = {
+				has_opinion = {
+					target = FROM
+					value > 79
+				}
+				factor = 0.5
+			}
+			modifier = {
+				has_government = FROM
+				factor = 0.5
+			}
+			modifier = {
+				has_non_aggression_pact_with = FROM
+				factor = 0.8
+			}
+		}
+	}
+}
+
+news_event = {#妖精合众国
+	id = cir2.44
+	title = cir2.44.t
+	desc = cir2.44.d
+###图片预留###picture = GFX_news_event_cir2.44
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = cir2.44.1
+		trigger = {
+			tag = CIR
+		}
+	}
+
+	option = {
+		name = cir2.44.2
+		trigger = {
+			tag = FROM
+		}
+	}
+
+	option = {
+		name = cir2.44.3
+		trigger = {
+			Fairy_country_with_fairy_leader = yes
+			not = {
+				tag = FROM
+				tag = CIR
+			}
+		}
+	}
+
+	option = {
+		name = cir2.44.4
+		trigger = {
+			not = { 
+				tag = FROM 
+				tag = CIR
+				Fairy_country_with_fairy_leader = yes
+			}
+		}
+	}
+
+}
+
+country_event = {#帮助妖精革命者
+	id = cir2.45
+	title = cir2.45.t
+	desc = cir2.45.d
+###图片预留###picture = GFX_news_event_cir2.45
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = cir2.45.1
+	}
+
+}
+
+country_event = {#帮助妖精革命者（隐藏）
+	id = cir2.46
+	title = cir2.46.t
+	desc = cir2.46.d
+###图片预留###picture = GFX_news_event_cir2.46
+	fire_only_once = no
+	is_triggered_only = no
+	hidden = yes
+	mean_time_to_happen = {
+		days = 35
+	}
+	trigger = {
+		has_country_flag = CIR_help_received_flag
+		not = {
+			any_country = {
+				has_war_with = PREV
+				not = {
+					has_idea = Fairy
+				}
+			}
+			has_idea = Fairy
+		}
+	}
+	immediate = {
+		clr_country_flag = CIR_help_received_flag
+	}
+	option = {
+
+	}
+
+}
+
+country_event = {#建立产业互助委员会
+	id = cir2.47
+	title = cir2.47.t
+	desc = cir2.47.d
+###图片预留###picture = GFX_news_event_cir2.47
+	fire_only_once = no
+	is_triggered_only = no
+	mean_time_to_happen = {
+		days = 2
+	}
+	trigger = {
+		is_subject_of = CIR
+		not = {
+			has_idea = CIR_chanyehuzhuweiyuanhui_idea
+		}
+	}
+	option = {
+		name = cir2.47
+		add_ideas = CIR_chanyehuzhuweiyuanhui_idea
+		add_to_tech_sharing_group = CIR_chanyehuzhuweiyuanhui_sharing
+	}
+
+}
+
+country_event = {#我们未来的目标
+	id = cir2.48
+	title = cir2.48.t
+	desc = cir2.48.d
+###图片预留###picture = GFX_news_event_cir2.48
+	fire_only_once = yes
+	is_triggered_only = no
+	mean_time_to_happen = {
+		days = 15
+	}
+	trigger = {
+		tag = CIR
+		or = {
+			has_country_flag = CIR_womenweilaidemubiao_1_flag
+			has_country_flag = CIR_womenweilaidemubiao_2_flag
+			has_country_flag = CIR_womenweilaidemubiao_3_flag
+		}
+		SCA = {
+			has_war = no
+		}
+	}
+	option = {
+		name = cir2.48
+		if = {
+			limit = {
+				has_country_flag = CIR_womenweilaidemubiao_1_flag
+			}
+			every_owned_state = {
+				limit = {
+					is_core_of = SCA
+				}
+				add_compliance = 15
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = CIR_womenweilaidemubiao_2_flag
+			}
+			every_owned_state = {
+				limit = {
+					is_core_of = SCA
+					or = {
+						region = 69
+						region = 30
+					}
+				}
+				add_compliance = 40
+			}
+			every_owned_state = {
+				limit = {
+					is_core_of = SCA
+					or = {
+						region = 31
+					}
+				}
+				add_compliance = 20
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = CIR_womenweilaidemubiao_3_flag
+			}
+			every_owned_state = {
+				limit = {
+					is_core_of = SCA
+					or = {
+						region = 69
+						region = 30
+					}
+				}
+				add_compliance = 70
+			}
+		}
+		
+	}
+
+}
+
+news_event = {#我们未来的目标(红魔馆、幻草原）
+	id = cir2.49
+	title = cir2.49.t
+	desc = cir2.49.d
+###图片预留###picture = GFX_news_event_cir2.49
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = cir2.49.1
+		trigger = {
+			tag = CIR
+		}
+	}
+
+	option = {
+		name = cir2.49.2
+		trigger = {
+			not = { tag = CIR }
+		}
+	}
+
+}
+
+news_event = {#我们未来的目标(幻草原）
+	id = cir2.50
+	title = cir2.50.t
+	desc = cir2.50.d
+###图片预留###picture = GFX_news_event_cir2.50
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = cir2.50.1
+		trigger = {
+			tag = CIR
+		}
+	}
+
+	option = {
+		name = cir2.50.2
+		trigger = {
+			not = { tag = CIR }
+		}
+	}
+
+}
+
+country_event = {#寒冬夹击
+	id = cir2.51
+	title = cir2.51.t
+	desc = cir2.51.d
+###图片预留###picture = GFX_news_event_cir2.51
+	fire_only_once = yes
+	is_triggered_only = no
+	mean_time_to_happen = {
+		days = 10
+	}
+	trigger = {
+		tag = LIL
+		CIR = {
+			has_war_with = SCA
+		}
+		is_subject = no
+		has_country_flag = CIR_hanchunjiaji
+	}
+	option = {
+		name = cir2.51
+		declare_war_on = {
+			target = SCA
+			type = dahongmoguan_wargoal
+		}
+		CIR = {
+			add_ideas = CIR_hanchunjiaji_idea
+		}
+		LIL = {
+			add_ideas = CIR_hanchunjiaji_idea
+		}
+	}
+
+}
+
+
+country_event = {#要求森林妖精统一（对方不同意）
+	id = cir2.52
+	title = cir2.52.t
+	desc = cir2.52.d
+###图片预留###picture = GFX_news_event_cir2.52
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = cir2.52.1
+		if = {
+			limit = {
+				not = {
+					MAF_is_created = yes
+				}
+			}
+			declare_war_on = {
+				target = MAF
+				type = take_state_focus
+                generator = { 153 552 138 }
+			}
+			else = {
+				declare_war_on = {
+					target = MFA
+					type = puppet_wargoal_focus
+				}
+			}
+		}
+		hidden_effect = {
+			news_event = { days = 2 id = cir2.39 }
+		}
+		ai_chance = {
+			base = 95
+		}
+	}
+	option = {
+		name = cir2.52.2
+		add_stability = -0.05
+		add_war_support = -0.1
+		ai_chance = {
+			base = 5
+		}
+	}
+
+}

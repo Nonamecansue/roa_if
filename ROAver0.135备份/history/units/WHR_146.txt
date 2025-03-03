@@ -1,0 +1,127 @@
+﻿division_template = {
+	name = "扫荡编制"
+	regiments = {
+		ma_light_infantry = { x = 0 y = 0 }
+		ma_light_infantry = { x = 0 y = 1 }
+		ma_light_infantry = { x = 0 y = 2 }
+		ma_light_infantry = { x = 0 y = 3 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "雪女编制"
+	regiments = {
+		ma_infantry = { x = 0 y = 0 }
+		ma_infantry = { x = 0 y = 1 }
+		ma_infantry = { x = 0 y = 2 }
+		ma_infantry = { x = 0 y = 3 }
+		melee_infantry = { x = 1 y = 0 }
+		melee_infantry = { x = 1 y = 1 }
+	}
+	support = {
+	}
+}
+
+
+units = {
+	division = {
+		name = "雪女编制"
+		location = 1920
+		division_template = "雪女编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "雪女编制"
+		location = 1920
+		division_template = "雪女编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "雪女编制"
+		location = 1920
+		division_template = "雪女编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "雪女编制"
+		location = 1920
+		division_template = "雪女编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "雪女编制"
+		location = 1920
+		division_template = "雪女编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "雪女编制"
+		location = 1920
+		division_template = "雪女编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "雪女编制"
+		location = 1920
+		division_template = "雪女编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "雪女编制"
+		location = 1920
+		division_template = "雪女编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "雪女编制"
+		location = 1920
+		division_template = "雪女编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "雪女编制"
+		location = 1920
+		division_template = "雪女编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "雪女编制"
+		location = 1920
+		division_template = "雪女编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "雪女编制"
+		location = 1920
+		division_template = "雪女编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "雪女编制"
+		location = 1920
+		division_template = "雪女编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "雪女编制"
+		location = 1920
+		division_template = "雪女编制"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+}
+

@@ -1,0 +1,216 @@
+# unit_base is the base value used for evaluating how important it is to deploy the various categories
+# Written by Henrik "Groogy" Hansson
+#AI 倾向
+CIR_bangzhuyaojinggemingzhe_1 = {
+	reversed = yes
+
+	enable = {
+		CIR = {
+			not = {
+				has_completed_focus = CIR_bangzhuyaojinggemingzhe
+			}
+		}
+		has_idea = Fairy
+		not = {
+			has_war_with = CIR
+		}
+		is_subject = no
+	}
+	abort = {
+		is_subject = yes
+	}
+	ai_strategy = {
+		type = send_volunteers_desire 
+		id = "CIR"			
+		value = 50
+	}
+	ai_strategy = {
+		type = support
+		id = "CIR"			
+		value = 10
+	}
+}
+CIR_bangzhuyaojinggemingzhe_2 = {
+	reversed = yes
+
+	enable = {
+		CIR = {
+			has_completed_focus = CIR_bangzhuyaojinggemingzhe
+		}
+		has_idea = Fairy
+		not = {
+			has_war_with = CIR
+		}
+		is_subject = no
+	}
+	abort = {
+		is_subject = yes
+	}
+	ai_strategy = {
+		type = send_volunteers_desire 
+		id = "CIR"			
+		value = 200
+	}
+	ai_strategy = {
+		type = support
+		id = "CIR"			
+		value = 100
+	}
+}
+
+CIR_concentrate_fire_on_SCA = {
+	enable = {
+		tag = CIR
+    	has_war_with = SCA
+		OR = {
+		 	OR = {
+		 		is_in_faction_with = NIB
+     			NIB = { is_subject_of = CIR }
+		 	}
+		 	OR = {
+		 		is_in_faction_with = SEJ
+     			SEJ = { is_subject_of = CIR }
+		 	}
+		 	OR = {
+		 		is_in_faction_with = RMI
+     			RMI = { is_subject_of = CIR }
+		 	}
+		 	OR = {
+		 		is_in_faction_with = MRS
+     			MRS = { is_subject_of = CIR }
+		 	}
+		 	OR = {
+			 	is_in_faction_with = TKM
+	     		TKM = { is_subject_of = CIR }
+		 	}
+		 	OR = {
+			 	is_in_faction_with = NMS
+	     		NMS = { is_subject_of = CIR }
+		 	}
+		 	OR = {
+		 		is_in_faction_with = MTM
+     			MTM = { is_subject_of = CIR }
+		 	}
+		 	OR = {
+			 	is_in_faction_with = MYK
+	     		MYK = { is_subject_of = CIR }
+		 	}
+		 	OR = {
+			 	is_in_faction_with = ALI
+	     		ALI = { is_subject_of = CIR }
+		 	}
+		}
+
+	}
+	abort = {
+		OR = {
+	    	SCA = { has_capitulated = yes }
+			NOT = { country_exists = SCA }
+	    	SCA = { is_subject = yes }
+		}
+	}
+	
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "NIB"
+		value = 100
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "SEJ"
+		value = 100
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "RMI"
+		value = 100
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "MRS"
+		value = 100
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "TKM"
+		value = 100
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "NMS"
+		value = 100
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "MTM"
+		value = 100
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "MYK"
+		value = 100
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "ALI"
+		value = 100
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "KYK"
+		value = 100
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "MNM"
+		value = 100
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "ICR"
+		value = 100
+	}
+}
+
+CIR_We_just_need_a_little_bit_of_foundation = {
+	enable = {
+		tag = CIR
+		has_war = no
+	}
+
+	abort = { 
+		OR = {
+			date > 146.3.1
+			has_war = yes
+		}
+	}
+
+	ai_strategy = {
+		type = building_target
+		id = industrial_complex
+		value = 60
+	}
+}
+
+CIR_wants_arms_to_fight_the_vampire = {
+	enable = {
+		tag = CIR
+		date < 148.4.1
+		date > 146.3.1
+		has_war = no
+	}
+
+	abort = { 
+		OR = {
+			date > 148.4.1
+			has_war = yes
+		}
+	}
+
+	ai_strategy = {
+		type = building_target
+		id = arms_factory
+		value = 75
+	}
+}

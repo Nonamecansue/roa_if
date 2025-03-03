@@ -1,0 +1,134 @@
+on_actions = {
+	on_weekly = {
+		effect = {##########集权系统每周
+			if = {
+				limit = {
+					SGS = {
+						has_completed_focus = SGS_qingzhuerxiadexingguang
+					}
+					tag = SGS
+				}
+				SGS = {
+					add_to_variable = {
+						SGS_jiquandu  = SGS_jiquandu_meizhou
+					}
+					add_to_variable = {
+						SGS_yaojingzhishangdang  = SGS_yaojingzhishangdang_meizhou
+					}
+					add_to_variable = {
+						SGS_yaojingshiyetuan  = SGS_yaojingshiyetuan_meizhou
+					}
+				}
+				clamp_variable = {
+					var = SGS_jiquandu
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = SGS_yaojingzhishangdang
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = SGS_yaojingshiyetuan
+					min = 0
+					max = 100
+				}
+			}
+		}
+		effect = {##########修大厦每周增加
+			if = {
+				limit = {
+					SGS = {
+						has_country_flag = SGS_jianlixinanyihuidasha
+					}
+					tag = SGS
+				}
+				SGS = {
+					add_to_variable = {
+						SGS_jiandasha = SGS_jiandasha_meizhou
+					}
+				}
+				clamp_variable = {
+					var = SGS_jiandasha
+					min = 0
+					max = 100
+				}
+			}
+		}
+		effect = {#######联合度宣传每周加
+			if = {
+				limit = {
+					SGS = {
+						has_country_flag = SGS_tuanjiexuanchuan_flag
+					}
+					tag = SGS
+				}
+				SGS = {
+					add_to_variable = {SGS_caogenyaoguai = 0.3}
+					add_to_variable = {SGS_shenming = 0.3}
+					add_to_variable = {SGS_tiangou = 0.3}
+					add_to_variable = {SGS_hetong = 0.3}
+					add_to_variable = {SGS_yaoguai = 0.3}
+					add_to_variable = {SGS_yaojing = 0.3}
+					add_to_variable = {SGS_youling = 0.3}
+					add_to_variable = {SGS_fashi = 0.3}
+					add_to_variable = {SGS_renlei = 0.3}
+					add_to_variable = {SGS_yaoshou = 0.3}
+				}
+				SGS = {
+					clamp_variable = {
+						var = SGS_caogenyaoguai
+						min = 0
+						max = 100
+					}
+					clamp_variable = {
+						var = SGS_shenming
+						min = 0
+						max = 100
+					}
+					clamp_variable = {
+						var = SGS_tiangou
+						min = 0
+						max = 100
+					}
+					clamp_variable = {
+						var = SGS_hetong
+						min = 0
+						max = 100
+					}
+					clamp_variable = {
+						var = SGS_yaoguai
+						min = 0
+						max = 100
+					}
+					clamp_variable = {
+						var = SGS_yaojing
+						min = 0
+						max = 100
+					}
+					clamp_variable = {
+						var = SGS_youling
+						min = 0
+						max = 100
+					}
+					clamp_variable = {
+						var = SGS_fashi
+						min = 0
+						max = 100
+					}
+					clamp_variable = {
+						var = SGS_renlei
+						min = 0
+						max = 100
+					}
+					clamp_variable = {
+						var = SGS_yaoshou
+						min = 0
+						max = 100
+					}
+				}
+			}
+		}
+	}	
+}

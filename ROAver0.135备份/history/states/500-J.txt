@@ -1,0 +1,28 @@
+
+state={
+	id=500
+	name="STATE_500"
+
+	history={
+		146.1.1 = {
+			owner = LIL
+			add_core_of = LIL
+			buildings = {
+				infrastructure = 2
+				industrial_complex = 0
+				arms_factory = 0
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		6691 6700 6705 6730 6750 6783 6792 6797 6816 
+	}
+	manpower=10234
+	buildings_max_level_factor=1.000
+	state_category=s2
+	local_supplies=2.5
+}

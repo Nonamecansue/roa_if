@@ -1,0 +1,267 @@
+ideas = {
+	country = {
+		ELL_qiangxingjiesanyihui_idea = {
+			name = ELL_qiangxingjiesanyihui
+			picture = XXX
+			modifier = {
+				political_power_factor = 0.3
+			}
+		}
+		ELL_gulizizhuyanjiu_idea = {
+			name = ELL_gulizizhuyanjiu
+			picture = XXX
+			modifier = {
+			}
+			research_bonus = {
+				magic = 0.6
+			}
+		}
+		ELL_ziyoufangrenyanjiu_idea = {
+			name = ELL_ziyoufangrenyanjiu
+			picture = XXX
+			modifier = {
+				research_speed_factor = 0.15
+			}
+			research_bonus = {
+				magic = 0.45
+			}
+		}
+		ELL_zhishiwuqi_idea = {
+			name = ELL_zhishiwuqi
+			picture = XXX
+			modifier = {
+				
+			}
+			equipment_bonus = {
+				magic_core_a = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+				magic_energy_a = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+				magic_focus_a = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+				special_core_a = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+				tactical_core_a = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+			}
+		}
+		ELL_zizhiwuqi_idea = {
+			name = ELL_zizhiwuqi
+			picture = XXX
+			modifier = {
+				conscription_factor = -0.05
+				equipment_upgrade_xp_cost = -0.45
+			}
+			equipment_bonus = {
+				magic_core_a = {
+					build_cost_ic = 0.1
+					soft_attack = 0.15
+					hard_attack = 0.15
+					breakthrough = 0.15
+					defense = 0.15
+					instant = yes
+				}
+				magic_energy_a = {
+					build_cost_ic = 0.1
+					soft_attack = 0.15
+					hard_attack = 0.15
+					breakthrough = 0.15
+					defense = 0.15
+					instant = yes
+				}
+				magic_focus_a = {
+					build_cost_ic = 0.1
+					soft_attack = 0.15
+					hard_attack = 0.15
+					breakthrough = 0.15
+					defense = 0.15
+					instant = yes
+				}
+				special_core_a = {
+					build_cost_ic = 0.1
+					soft_attack = 0.15
+					hard_attack = 0.15
+					breakthrough = 0.15
+					defense = 0.15
+					instant = yes
+				}
+				tactical_core_a = {
+					build_cost_ic = 0.1
+					soft_attack = 0.15
+					hard_attack = 0.15
+					breakthrough = 0.15
+					defense = 0.15
+					instant = yes
+				}
+			}
+		}
+		ELL_zujianjianxibudui_idea1 = {
+			name = ELL_zujianjianxibudui
+			picture = XXX
+			modifier = {
+				training_time_factor = -0.15
+			}
+		}
+		ELL_zujianjianxibudui_idea2 = {
+			name = ELL_zujianjianxibudui
+			picture = XXX
+			modifier = {
+				training_time_factor = -0.3
+			}
+		}
+		ELL_danyuanbiaozhun_idea = {
+			name = ELL_danyuanbiaozhun
+			picture = XXX
+			modifier = {
+				magic_core_a = {
+					soft_attack = 0.05
+					hard_attack = 0.05
+					breakthrough = 0.05
+					defense = 0.05
+					instant = yes
+				}
+			}
+		}
+		ELL_mopaobiaozhun_idea = {
+			name = ELL_mopaobiaozhun
+			picture = XXX
+			modifier = {
+				magic_energy_a = {
+					soft_attack = 0.1
+					hard_attack = 0.1
+					breakthrough = 0.1
+					defense = 0.1
+					instant = yes
+				}
+			}
+		}
+		ELL_zizhixingnengkaohe_idea1 = {
+			name = ELL_zizhixingnengkaohe
+			picture = XXX
+			modifier = {
+				experience_gain_army = 0.04
+				experience_loss_factor = -0.15
+			}
+		}
+		ELL_zizhixingnengkaohe_idea2 = {
+			name = ELL_zizhixingnengkaohe
+			picture = XXX
+			modifier = {
+				experience_gain_army = 0.08
+				experience_loss_factor = -0.2
+			}
+		}
+		ELL_fangkuanruwubiaozhun_idea1 = {
+			name = ELL_fangkuanruwubiaozhun
+			picture = XXX
+			modifier = {
+				mobilization_laws_cost_factor = -0.25
+				conscription = 0.03
+			}
+		}
+		ELL_fangkuanruwubiaozhun_idea2 = {
+			name = ELL_fangkuanruwubiaozhun
+			picture = XXX
+			modifier = {
+				mobilization_laws_cost_factor = -0.25
+				conscription = 0.045
+			}
+		}
+		ELL_shentoufangan_idea = {
+			name = ELL_shentoufangan
+			picture = XXX
+			modifier = {
+				SS_subject_modifier_factor = 2.5
+				LS_subject_level_low_time_factor = 1
+			}
+		}
+		ELL_mofatonghua_idea = {
+			name = ELL_mofatonghua
+			picture = XXX
+			modifier = {
+				CO_core_resistance_required = -10
+				CO_cost_factor = -0.35
+			}
+		}
+		ELL_mofajiaodou_idea = {
+			name = ELL_mofajiaodou
+			picture = XXX
+			modifier = {
+				monthly_population = -0.05
+				experience_gain_army = 0.01
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+		ELL_buluoqiuzhang_idea = {
+			name = ELL_buluoqiuzhang
+			picture = XXX
+			modifier = {
+				political_power_gain = 0.25
+			}
+		}
+		ELL_monvdesenlin_idea = {
+			name = ELL_monvdesenlin
+			picture = XXX
+			modifier = {
+				stability_weekly = 0.001
+			}
+		}
+		ELL_jiadaziyuanchukou_idea = {
+			name = ELL_jiadaziyuanchukou
+			picture = XXX
+			modifier = {
+				min_export = 0.05
+				consumer_goods_factor = -0.1
+			}
+		}
+		ELL_wuzhililiang_idea = {
+			name = ELL_wuzhililiang
+			picture = XXX
+			modifier = {
+				fuel_gain_factor = 0.25
+			}
+		}
+		ELL_liaojieshijie_idea = {
+			name = ELL_liaojieshijie
+			picture = XXX
+			modifier = {
+				improve_relations_maintain_cost_factor = -0.15
+			}
+		}
+		ELL_qujingdiankeji_idea = {
+			name = ELL_qujingdiankeji
+			picture = XXX
+			modifier = {
+				army_org_factor = 0.1
+				political_power_factor = 0.1
+				PO_bad_influence_factor = -0.4
+			}
+		}
+		ELL_liaojiekexue_idea = {
+			name = ELL_liaojiekexue
+			picture = XXX
+			research_bonus = {
+				combined = 0.15
+				science = 0.15
+			}
+		}
+		ELL_huimofademao_idea = {
+			name = ELL_huimofademao
+			picture = XXX
+			modifier = {
+				political_power_factor = 0.15
+			}
+		}
+	}
+}

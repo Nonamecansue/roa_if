@@ -1,0 +1,47 @@
+scripted_gui = {
+	TES_heihua_GUI = {
+		context_type = decision_category
+		window_name = "TES_heihua_GUI"
+
+		visible = {
+			always = yes
+		}
+
+		properties = {
+			TES_tianzi_hehuazhi = {
+				frame = TES_GUI_heihuazhi
+			}
+		}
+
+		triggers = {
+			TES_kuan_1_visible = {
+				check_variable = { TES_GUI_heihuazhi < 26 }
+			}
+			TES_kuan_2_visible = {
+				check_variable = { TES_GUI_heihuazhi > 25 }
+				check_variable = { TES_GUI_heihuazhi < 51 }
+			}
+			TES_kuan_3_visible = {
+				check_variable = { TES_GUI_heihuazhi > 50 }
+				check_variable = { TES_GUI_heihuazhi < 76 }
+			}
+			TES_kuan_4_visible = {
+				check_variable = { TES_GUI_heihuazhi > 75 }
+			}
+			TES_Tenshi_1_visible = {
+				check_variable = { TES_GUI_heihuazhi < 51 }
+			}
+			TES_Tenshi_2_visible = {
+				check_variable = { TES_GUI_heihuazhi > 50 }
+				check_variable = { TES_GUI_heihuazhi < 91 }
+			}
+			TES_Tenshi_3_visible = {
+				check_variable = { TES_GUI_heihuazhi > 90 }
+			}
+			#TES_Tenshi_4_visible = {
+			#	check_variable = { TES_GUI_heihuazhi > 75 }
+			#}
+		}
+
+	}
+}

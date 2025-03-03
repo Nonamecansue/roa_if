@@ -1,0 +1,28 @@
+
+state={
+	id=155
+	name="STATE_155"
+
+	history={
+		146.1.1 = {
+			owner = WHR
+			add_core_of = WHR
+			buildings = {
+				infrastructure = 4
+				industrial_complex = 1
+				arms_factory = 1
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		73 75 107 113 1159 2228 2768 2796 3840 3843 3845 3848 3849 3854 4546 7656 7657 7658 7659 7660 7661 
+	}
+	manpower=1726
+	buildings_max_level_factor=1.000
+	state_category=s5
+	local_supplies=2.500
+}

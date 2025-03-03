@@ -1,0 +1,49 @@
+
+state={
+	id=330
+	name="STATE_330"
+	resources={
+		powder=3.000
+		metal=0.000
+		gas=6.000
+		crystal=0.000
+	}
+
+	history={
+		143.7.1 = {
+			owner = HUM
+			add_core_of = HUM
+			buildings = {
+				infrastructure = 3
+				industrial_complex = 0
+				arms_factory = 0
+
+			}
+
+		}
+		146.1.1 = {
+			owner = NMS
+			add_core_of = NMS
+			add_core_of = HUM
+			add_core_of = HU6
+			add_core_of = HU7
+			add_core_of = HU8
+			buildings = {
+				infrastructure = 3
+				industrial_complex = 2
+				arms_factory = 0
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		215 1315 2836 3621 3625 3628 3635 3636 
+	}
+	manpower=1010
+	buildings_max_level_factor=1.000
+	state_category=s5
+	local_supplies=2.500
+}

@@ -1,0 +1,122 @@
+characters={
+	UTH_uth ={
+		name = UTH_uth
+		portraits={
+			civilian={
+				large="gfx/leaders/UTH/UTH_uth.dds"
+				small="gfx/leaders/UTH/UTH_uth_small.dds"
+			}
+			army = {
+				large="gfx/leaders/UTH/UTH_uth.dds"
+				small="gfx/leaders/UTH/UTH_uth_small.dds"
+			}
+		}
+		corps_commander = {
+            traits = {  th_original_character th_character  th_trait_qianxianzhandou trait_reckless th_trait_huolizhuanjia }
+            attack_skill = 13
+            defense_skill = 4
+            planning_skill = 1
+            logistics_skill = 1
+            
+            skill = 5
+        }
+		advisor = {
+			slot = character_coop
+			idea_token = UTH_uth
+			name = UTH_uth
+			cost = 200
+			modifier = {
+				industrial_capacity_factory = 0.1
+				local_resources_factor = 0.15
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	UTH_rin ={
+		name = UTH_rin
+		portraits={
+			civilian={
+				large="gfx/leaders/UTH/UTH_rin.dds"
+				small="gfx/leaders/UTH/UTH_rin_small.dds"
+			}
+			army = {
+				large="gfx/leaders/UTH/UTH_rin.dds"
+				small="gfx/leaders/UTH/UTH_rin_small.dds"
+			}
+		}
+		corps_commander = {
+            traits = {  th_original_character th_character  th_trait_moulvedashi th_trait_jijiacaokongzhe  }
+            attack_skill = 5
+            defense_skill = 4
+            planning_skill = 7
+            logistics_skill = 8
+            
+            skill = 7
+        }
+		advisor = {
+			slot = character_coop
+			idea_token = UTH_rin
+			name = UTH_rin
+			cost = 200
+			modifier = {
+				army_speed_factor = 0.05
+				experience_loss_factor = -0.25
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	UTH_uth_leader ={
+		name = UTH_uth_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/UTH/UTH_uth.dds"
+				small="gfx/leaders/UTH/UTH_uth_small.dds"
+			}
+			army = {
+				large="gfx/leaders/UTH/UTH_uth.dds"
+				small="gfx/leaders/UTH/UTH_uth_small.dds"
+			}
+		}
+		country_leader={
+			ideology=guli_type
+			id=-1
+		}
+		country_leader={
+			ideology=fandong_type
+			id=-1
+		}
+		country_leader={
+			ideology=neworder_type
+			id=-1
+		}
+	}
+	UTH_rin_leader ={
+		name = UTH_rin_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/UTH/UTH_rin.dds"
+				small="gfx/leaders/UTH/UTH_rin_small.dds"
+			}
+			army = {
+				large="gfx/leaders/UTH/UTH_rin.dds"
+				small="gfx/leaders/UTH/UTH_rin_small.dds"
+			}
+		}
+		country_leader={
+			ideology=qinwai_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldorder_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldgenso_type
+			id=-1
+		}
+	}
+}

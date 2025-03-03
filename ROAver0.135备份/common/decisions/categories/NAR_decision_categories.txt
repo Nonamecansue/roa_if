@@ -1,0 +1,13 @@
+
+NAR_xiaomiedayaoguai_category = {
+	priority = 50
+}
+NAR_xiaomiezhongzuchayi_category = {
+	priority = 50
+}
+NAR_xiaomielinglichaju_category = {
+	priority = 50
+}
+NAR_mimi_category = {
+	priority = 50
+}

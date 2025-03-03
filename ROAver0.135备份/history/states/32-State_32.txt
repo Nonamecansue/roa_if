@@ -1,0 +1,28 @@
+
+state={
+	id=32
+	name="STATE_32"
+
+	history={
+		146.1.1 = {
+			owner = MRY
+			add_core_of = MRY
+			buildings = {
+				infrastructure = 3
+				industrial_complex = 1
+				arms_factory = 0
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		1854 4439 4453 4454 4458 7568 7575 7577 7583 7587 7591 
+	}
+	manpower=1825
+	buildings_max_level_factor=1.000
+	state_category=s2
+	local_supplies=2.500
+}

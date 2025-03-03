@@ -1,0 +1,565 @@
+# Extra modifiers can be defined here. Although the game itself won't use those, 
+# you can access those modifiers using modifier@modifier_token in state & country scope 
+# or leader_modifier@modifier_token/unit_modifier@modifier_token in unit leader scope
+# modifier_token will be used for tooltip localization
+
+#modifier_token = {
+#
+#	# the tooltips will be colored accordingly depending if value is positive or not
+#	# one of "good neutral bad". default is bad
+#	color_type = bad 
+#	
+#	# type of values in tooltip. 
+#	# one of "number percentage percentage_in_hundred yes_no". default is number.
+#	value_type = number
+#	
+#	# number of precision for tooltips
+#	precision = 2
+#	
+#	# post fix for values in tooltip
+#	# one of "none days hours daily". default is none
+#	postfix = none
+#	
+#	# cateogies can be defined if wanted. some tooltips only display certain categories
+#	# multiple cateogies can be defined for a single modifier@modifier_token
+#	# categories:
+#	# none all naval air unit_leader country state army peace politics ai defensive aggressive 
+#	# war_production military_advancements military_equipment autonomy government_in_exile intelligence_agency
+#	# default is all, which includes every category
+#	category = army
+#	category = air
+#	category = country
+#}
+
+ST_race_penalty_all_factor = { ##地块的不同种族惩罚百分比修正
+	color_type = bad
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+ST_race_no_penalty_on_Ghost = { ##和谐幽灵
+	color_type = good
+	value_type = yes_no
+	precision = 0
+	postfix = none
+	category = country
+}
+ST_race_no_penalty_on_Beast = { ##和谐妖兽
+	color_type = good
+	value_type = yes_no
+	precision = 0
+	postfix = none
+	category = country
+}
+ST_race_no_penalty_on_Tengu = { ##和谐天狗
+	color_type = good
+	value_type = yes_no
+	precision = 0
+	postfix = none
+	category = country
+}
+ST_race_no_penalty_on_Fairy = { ##和谐妖精
+	color_type = good
+	value_type = yes_no
+	precision = 0
+	postfix = none
+	category = country
+}
+ST_race_no_penalty_on_Human = { ##和谐人类
+	color_type = good
+	value_type = yes_no
+	precision = 0
+	postfix = none
+	category = country
+}
+ST_race_no_penalty_on_Magician = { ##和谐魔法使
+	color_type = good
+	value_type = yes_no
+	precision = 0
+	postfix = none
+	category = country
+}
+ST_race_no_penalty_on_God = { ##和谐神明
+	color_type = good
+	value_type = yes_no
+	precision = 0
+	postfix = none
+	category = country
+}
+ST_race_no_penalty_on_Pri_youkai = { ##和谐草根妖怪
+	color_type = good
+	value_type = yes_no
+	precision = 0
+	postfix = none
+	category = country
+}
+ST_race_no_penalty_on_Youkai = { ##和谐妖怪
+	color_type = good
+	value_type = yes_no
+	precision = 0
+	postfix = none
+	category = country
+}
+ST_race_no_penalty_on_Kappa = { ##和谐河童
+	color_type = good
+	value_type = yes_no
+	precision = 0
+	postfix = none
+	category = country
+}
+
+##########各种族的惩罚百分比修正 和上一个惩罚采用 乘法 的计算方式
+ST_race_penalty_Ghost_factor = {
+	color_type = bad
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+ST_race_penalty_Beast_factor = {
+	color_type = bad
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+ST_race_penalty_Tengu_factor = {
+	color_type = bad
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+ST_race_penalty_Fairy_factor = {
+	color_type = bad
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+ST_race_penalty_Human_factor = {
+	color_type = bad
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+ST_race_penalty_Magician_factor = {
+	color_type = bad
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+ST_race_penalty_God_factor = {
+	color_type = bad
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+ST_race_penalty_Pri_youkai_factor = {
+	color_type = bad
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+ST_race_penalty_Youkai_factor = {
+	color_type = bad
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+ST_race_penalty_Kappa_factor = {
+	color_type = bad
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+
+CONV_RULE_cannot_convert = { ###禁止转换种族 
+	# (注:yes_no的修正要用 0 1 而不是 yes no)
+	# 如 CONV_RULE_cannot_convert = 1 （此时禁止转换种族）
+	color_type = bad
+	value_type = yes_no
+	precision = 2
+	postfix = none
+	category = country
+}
+CONV_convert_cost_factor = { ###转换种族花费的百分比修正
+	color_type = bad
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+CONV_convert_PO_gain_factor = { ###转换种族获得的灵力的百分比修正
+	color_type = good
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+
+FAPO_RULE_forbidden = { ###禁止使用妖精自然化
+	color_type = bad
+	value_type = yes_no
+	precision = 2
+	postfix = none
+	category = country
+}
+
+PO_daily_gain = { ###灵力每日增长
+	color_type = good
+	value_type = percentage_in_hundred
+	precision = 4
+	postfix = none
+	category = country
+}
+
+PO_influence_factor = { ###灵力的影响基础百分比修正
+	color_type = neutral
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+PO_battle_influence_factor = { ###灵力对于战斗力（部队组织度和攻防）影响的基础百分比修正
+	color_type = neutral
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+PO_humanism_influence_factor = { ###灵力对于人文（研究速度和征兆比）影响的基础百分比修正
+	color_type = neutral
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+
+####该修正和灵力的影响采用 乘法 叠加
+PO_good_influence_factor = { ###灵力的正面影响百分比修正
+	color_type = good
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+
+####该修正和灵力的影响采用 乘法 叠加
+PO_bad_influence_factor = { ###灵力的负面影响百分比修正
+	color_type = bad
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+PO_good_battle_influence_factor = { ###灵力对于战斗力（部队组织度和攻防）的#正面#的百分比修正
+	color_type = good
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+PO_good_humanism_influence_factor = { ###灵力对于人文（研究速度和征兆比）的#正面#的百分比修正
+	color_type = good
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+PO_bad_battle_influence_factor = { ###灵力对于战斗力（部队组织度和攻防）的#负面#的百分比修正
+	color_type = bad
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+PO_bad_humanism_influence_factor = { ###灵力对于人文（研究速度和征兆比）的#负面#的百分比修正
+	color_type = bad
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+
+PO_RULE_no_bad_influence = { ###有无灵力的负面影响
+	color_type = good
+	value_type = yes_no
+	precision = 2
+	postfix = none
+	category = country
+}
+PO_root_power_factor = { ###通过掠夺获得的灵力
+	color_type = good
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+
+LS_subject_level_low_time_factor = { ###附庸下降时间的百分比修正
+	color_type = bad
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+LS_subject_level_low_pp_cost = { ###下降附庸等级所需政治点的百分比修正
+	color_type = bad
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+SS_subject_modifier_factor = { ###来自附庸的加成的百分比修正
+	color_type = good
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+
+LOOT_no_cd = { ###无CD掠夺
+	color_type = good
+	value_type = yes_no
+	precision = 2
+	postfix = none
+	category = country
+}
+
+HMIF_daily_base = { ### 每日人里影响力增加的基础（如果要修正 不要用这个 这个只用在种族里面）
+	color_type = good
+	value_type = number
+	precision = 2
+	postfix = none
+	category = country
+}
+HMIF_daily_change = { ### 每日人里影响力变化的常数变化
+	color_type = good
+	value_type = number
+	precision = 2
+	postfix = none
+	category = country
+}
+HMIF_change_factor = { ### 每日人里影响力变化的百分比修正
+	color_type = good
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+
+OL_daily_gain = { ### 每日唯心度变化
+	color_type = neutral
+	value_type = percentage_in_hundred
+	precision = 2
+	postfix = none
+	category = country
+}
+OL_change_cost_factor = { ### 增减唯心度的百分比修正
+	color_type = bad
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+CO_cost_factor = { ###建造核心花费的百分比（同样作用于造核时间）的百分比修正
+	color_type = bad
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+CO_core_resistance_required = { ###建造核心所需顺从度（默认为80，加减该修正）
+	color_type = bad
+	value_type = number
+	precision = 0
+	postfix = none
+	category = country
+}
+#####各大种族自动造核####
+CO_auto_core_Ghost = {
+	color_type = good
+	value_type = yes_no
+	precision = 2
+	postfix = none
+	category = country
+}
+CO_auto_core_Beast = {
+	color_type = good
+	value_type = yes_no
+	precision = 2
+	postfix = none
+	category = country
+}
+CO_auto_core_Tengu = {
+	color_type = good
+	value_type = yes_no
+	precision = 2
+	postfix = none
+	category = country
+}
+CO_auto_core_Fairy = {
+	color_type = good
+	value_type = yes_no
+	precision = 2
+	postfix = none
+	category = country
+}
+CO_auto_core_Human = {
+	color_type = good
+	value_type = yes_no
+	precision = 2
+	postfix = none
+	category = country
+}
+CO_auto_core_Magician = {
+	color_type = good
+	value_type = yes_no
+	precision = 2
+	postfix = none
+	category = country
+}
+CO_auto_core_God = {
+	color_type = good
+	value_type = yes_no
+	precision = 2
+	postfix = none
+	category = country
+}
+CO_auto_core_Pri_youkai = {
+	color_type = good
+	value_type = yes_no
+	precision = 2
+	postfix = none
+	category = country
+}
+CO_auto_core_Youkai = {
+	color_type = good
+	value_type = yes_no
+	precision = 2
+	postfix = none
+	category = country
+}
+CO_auto_core_Kappa = {
+	color_type = good
+	value_type = yes_no
+	precision = 2
+	postfix = none
+	category = country
+}
+
+FT_power_factor = { #处于阵营加成的百分比修正
+	color_type = good
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+
+GO_time_duration = { #对别人执行幽灵占据时的持续天数的常数修正（基础是120 加减该修正）
+	color_type = good
+	value_type = number
+	precision = 0
+	postfix = none
+	category = country
+}
+GO_attack_defence_nerf = { #对别人执行幽灵占据时，对其攻防的常数修正（基础是-30% 加减该修正 注意一般是百分比小数）
+	color_type = bad
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+
+EXHC_increase_period_factor = { #厌战上涨周期的百分比修正
+	color_type = good
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+EXHC_root_decrease_factor = { #掠夺降低厌战的百分比修正
+	color_type = good
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+EXHC_decrease_cost_factor = { #降低厌战花费的百分比修正
+	color_type = bad
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+
+DIP_RULE_cannot_justify = { ###禁止正当化
+	# (注:yes_no的修正要用 0 1 而不是 yes no)
+	color_type = bad
+	value_type = yes_no
+	precision = 2
+	postfix = none
+	category = country
+}
+DIP_RULE_cannot_declare_war = { ###禁止宣战
+	# (注:yes_no的修正要用 0 1 而不是 yes no)
+	color_type = bad
+	value_type = yes_no
+	precision = 2
+	postfix = none
+	category = country
+}
+SS_cant_low_subjects = { ###禁止下降附庸们
+	# (注:yes_no的修正要用 0 1 而不是 yes no)
+	color_type = bad
+	value_type = yes_no
+	precision = 2
+	postfix = none
+	category = country
+}
+SS_cant_being_lowed = { ###禁止宗主下降你的附庸等级
+	# (注:yes_no的修正要用 0 1 而不是 yes no)
+	color_type = good
+	value_type = yes_no
+	precision = 2
+	postfix = none
+	category = country
+}
+MSH_boyili_factor = { ###博弈力获取百分比（只有魔法森林用）
+	# (注:yes_no的修正要用 0 1 而不是 yes no)
+	color_type = good
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+MSH_boyili_add = { ###博弈力额外修正（只有魔法森林用）
+	# (注:yes_no的修正要用 0 1 而不是 yes no)
+	color_type = good
+	value_type = number
+	precision = 2
+	postfix = none
+	category = country
+}
+POconvert_daily_fuel_cost_factor = { ###高能灵气转灵力时的每日消耗
+	color_type = bad
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = country
+}
+POconvert_max_PO = { ###能用高能灵气转化取得的灵力上限
+	color_type = good
+	value_type = number
+	precision = 0
+	postfix = none
+	category = country
+}

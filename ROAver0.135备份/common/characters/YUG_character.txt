@@ -1,0 +1,109 @@
+characters={
+	YUG_yug ={
+		name = YUG_yug
+		portraits={
+			civilian={
+				large="gfx/leaders/YUG/YUG_yug.dds"
+				small="gfx/leaders/YUG/YUG_yug_small.dds"
+			}
+			army = {
+				large="gfx/leaders/YUG/YUG_yug.dds"
+				small="gfx/leaders/YUG/YUG_yug_small.dds"
+			}
+		}
+		field_marshal = {
+            traits = {  th_original_character th_character  th_trait_qianxianzhandou th_trait_chongjizhuanjia th_trait_dayaoguai }
+            attack_skill = 9
+            defense_skill = 8
+            planning_skill = 1
+            logistics_skill = 0
+            
+            skill = 11
+        }
+		advisor = {
+			slot = character_coop
+			idea_token = YUG_yug
+			name = YUG_yug
+			cost = 200
+			modifier = {
+				
+			}
+			research_bonus = {
+				shield = 0.15
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	YUG_konngara ={
+		name = YUG_konngara
+		portraits={
+			civilian={
+				large="gfx/leaders/YUG/YUG_konngara.dds"
+				small="gfx/leaders/YUG/YUG_konngara_small.dds"
+			}
+			army = {
+				large="gfx/leaders/YUG/YUG_konngara.dds"
+				small="gfx/leaders/YUG/YUG_konngara_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { th_character th_original_character old_guard }
+			skill = 10
+			attack_skill = 9
+			defense_skill = 10
+			planning_skill = 7
+			logistics_skill = 9
+		}
+		advisor = {
+			slot = character_coop
+			idea_token = YUG_konngara
+			name = YUG_konngara
+			cost = 200
+			modifier = {
+				planning_speed = 0.2
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	YUG_yug_leader ={
+		name = YUG_yug_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/YUG/YUG_yug.dds"
+				small="gfx/leaders/YUG/YUG_yug_small.dds"
+			}
+			army = {
+				large="gfx/leaders/YUG/YUG_yug.dds"
+				small="gfx/leaders/YUG/YUG_yug_small.dds"
+			}
+		}
+		country_leader={
+			ideology=qinwai_type
+			id=-1
+		}
+		country_leader={
+			ideology=guli_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldorder_type
+			id=-1
+		}
+		country_leader={
+			ideology=fandong_type
+			id=-1
+		}
+		country_leader={
+			ideology=neworder_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldgenso_type
+			id=-1
+		}
+	}
+}

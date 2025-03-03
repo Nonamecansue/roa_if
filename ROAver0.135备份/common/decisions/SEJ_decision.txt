@@ -1,0 +1,1476 @@
+SEJ_pingluan_category = {
+    SEJ_pingluan_state = {
+        allowed = {
+            tag = SEJ
+        }
+        target_root_trigger = {
+            or = {
+                has_completed_focus = SEJ_xiaowansixianggaizao
+                has_completed_focus = SEJ_tiechuideliliang
+            }
+        }
+        state_target = yes
+        target_trigger = {
+            FROM = {
+                is_controlled_by = ROOT
+            }
+        }
+        target_array = controlled_states
+        on_map_mode = map_and_decisions_view
+        visible = {
+            FROM = {
+                has_dynamic_modifier = {
+                    modifier = SEJ_after_civil_war_modifier
+                }
+            }
+        }
+        
+        available = {
+            set_temp_variable = {
+                cost = FROM.state_value
+            }
+            multiply_temp_variable = {
+                cost = 1.5
+            }
+            clamp_temp_variable = {
+                var = cost
+                min = 10
+            }
+            has_political_power > cost
+        }
+        complete_effect = {
+            set_temp_variable = {
+                cost = FROM.state_value
+            }
+            multiply_temp_variable = {
+                cost = 1.5
+            }
+            clamp_temp_variable = {
+                var = cost
+                min = 10
+            }
+            multiply_temp_variable = {
+                cost = -1
+            }
+            add_political_power = cost
+        }
+        days_remove = 45
+        remove_effect = {
+            FROM = {
+                remove_dynamic_modifier = {
+                    modifier = SEJ_after_civil_war_modifier
+                }
+            }
+        }
+        ai_will_do = {
+            base = 10000
+        }
+    }
+}
+SEJ_xiaozhuijiaqiang_category = {
+    SEJ_xiaozhuijiaqiang_gongfang = {
+        allowed = {
+            tag = SEJ
+        }
+        visible = {
+            has_completed_focus = SEJ_liyongxiaozhui
+        }
+        cost = 50
+        available = {
+            not = {
+                has_country_flag = SEJ_xiaozhuijiaqiang_flag
+            }
+        }
+        complete_effect = {
+            set_country_flag = {
+                flag = SEJ_xiaozhuijiaqiang_flag
+                days = 120
+                value = 1
+            }
+        }
+        modifier = {
+            army_attack_factor = 0.05
+            army_defence_factor = 0.05
+        }
+        days_remove = 120
+        days_re_enable = 120
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 200 
+                has_war = yes
+            }
+        }
+    }
+    SEJ_xiaozhuijiaqiang_org = {
+        allowed = {
+            tag = SEJ
+        }
+        visible = {
+            has_completed_focus = SEJ_liyongxiaozhui
+        }
+        cost = 50
+        available = {
+            not = {
+                has_country_flag = SEJ_xiaozhuijiaqiang_flag
+            }
+        }
+        complete_effect = {
+            set_country_flag = {
+                flag = SEJ_xiaozhuijiaqiang_flag
+                days = 120
+                value = 1
+            }
+        }
+        modifier = {
+            army_org_factor = 0.15
+        }
+        days_remove = 120
+        days_re_enable = 120
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 200 
+                has_war = yes
+            }
+        }
+    }
+    SEJ_xiaozhuijiaqiang_morale = {
+        allowed = {
+            tag = SEJ
+        }
+        visible = {
+            has_completed_focus = SEJ_liyongxiaozhui
+        }
+        cost = 50
+        available = {
+            not = {
+                has_country_flag = SEJ_xiaozhuijiaqiang_flag
+            }
+        }
+        complete_effect = {
+            set_country_flag = {
+                flag = SEJ_xiaozhuijiaqiang_flag
+                days = 120
+                value = 1
+            }
+        }
+        modifier = {
+            army_morale_factor = 0.1
+        }
+        days_remove = 120
+        days_re_enable = 120
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 200 
+                has_war = yes
+            }
+        }
+    }
+    SEJ_xiaozhuijiaqiang_armor = {
+        allowed = {
+            tag = SEJ
+        }
+        visible = {
+            has_completed_focus = SEJ_liyongxiaozhui
+        }
+        cost = 50
+        available = {
+            not = {
+                has_country_flag = SEJ_xiaozhuijiaqiang_flag
+            }
+        }
+        complete_effect = {
+            set_country_flag = {
+                flag = SEJ_xiaozhuijiaqiang_flag
+                days = 120
+                value = 1
+            }
+        }
+        modifier = {
+            modifier_army_sub_unit_ma_sf_infantry_attack_factor = 0.1
+            modifier_army_sub_unit_ma_sf_infantry_defence_factor = 0.1
+            modifier_army_sub_unit_ma_shield_infantry_attack_factor = 0.1
+            modifier_army_sub_unit_ma_shield_infantry_defence_factor = 0.1
+            modifier_army_sub_unit_ma_shield_tank_defence_factor = 0.1
+            modifier_army_sub_unit_ma_shield_tank_attack_factor = 0.1
+            modifier_army_sub_unit_sc_sf_infantry_attack_factor = 0.1
+            modifier_army_sub_unit_sc_sf_infantry_defence_factor = 0.1
+            modifier_army_sub_unit_sc_shield_infantry_attack_factor = 0.1
+            modifier_army_sub_unit_sc_shield_infantry_defence_factor = 0.1
+            modifier_army_sub_unit_sc_shield_tank_defence_factor = 0.1
+            modifier_army_sub_unit_sc_shield_tank_attack_factor = 0.1
+        }
+        days_remove = 120
+        days_re_enable = 120
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 200 
+                has_war = yes
+            }
+        }
+    }
+}
+SEJ_dihouhuodong_category = {
+    SEJ_dihouanyingyoujidui = {
+        allowed = {
+            tag = SEJ
+        }
+        target_root_trigger = {
+            has_completed_focus = SEJ_heianyoujidui
+            has_war = yes
+        }
+        state_target = yes
+        target_trigger = {
+            FROM = {
+                is_core_of = ROOT
+            }
+        }
+        target_array = owned_states
+        target_array = core_states
+        on_map_mode = map_and_decisions_view
+        visible = {
+            FROM = {
+                not = { is_controlled_by = ROOT}
+            }
+        }
+        available = {
+            not = {
+                has_country_flag = SEJ_dihouanyingyoujidui_flag
+            }
+            #[（1-红色支持度）*1.5+1]*60
+            set_temp_variable = {
+                cost = party_popularity@ruling_party
+            }
+            multiply_temp_variable = {
+                cost = -1
+            }
+            add_to_temp_variable = {
+                cost = 1
+            }
+            multiply_temp_variable = {
+                cost = 1.5
+            }
+            add_to_temp_variable = {
+                cost = 1
+            }
+            multiply_temp_variable = {
+                cost = 60
+            }
+            has_political_power > cost
+        }
+        days_re_enable = 45
+        days_remove = 15
+        complete_effect = {
+            #[（1-红色支持度）*1.5+1]*60
+            set_temp_variable = {
+                cost = party_popularity@ruling_party
+            }
+            multiply_temp_variable = {
+                cost = -1
+            }
+            add_to_temp_variable = {
+                cost = 1
+            }
+            multiply_temp_variable = {
+                cost = 1.5
+            }
+            add_to_temp_variable = {
+                cost = 1
+            }
+            multiply_temp_variable = {
+                cost = -60
+            }
+            add_political_power = cost
+            set_country_flag = {
+                flag = SEJ_dihouanyingyoujidui_flag
+                days = 60
+                value = 1
+            }
+        }
+        remove_effect = {
+            custom_effect_tooltip = SEJ_dihouanyingyoujidui_tt
+            hidden_effect = {
+                if = {
+                    limit = {
+                        not = { has_country_flag = SEJ_dihouanyingyoujidui_used }
+                    }
+                    load_oob = SEJ_dihouanyingyoujidui_oob
+                    set_country_flag = SEJ_dihouanyingyoujidui_used
+                }
+            }
+            FROM = {
+                create_unit = {
+                    division = "division_template = \"敌后暗影游击队\" start_experience_factor = 0.25 start_equipment_factor = 1"
+                    count = 6
+                    owner = ROOT
+                    allow_spawning_on_enemy_provs = yes
+                }
+            }
+        }
+        ai_will_do = {
+            base = 30
+        }
+    }
+    SEJ_dihouanyingyoujidui_disband = {
+        allowed = {
+            tag = SEJ
+        }
+        visible = {
+            has_country_flag = SEJ_dihouanyingyoujidui_used
+        }
+        available = {
+            has_war = no
+        }
+        days_remove = 10
+        complete_effect = {
+
+        }
+        remove_effect = {
+            clr_country_flag = SEJ_dihouanyingyoujidui_used
+            delete_unit_template_and_units = {
+                division_template = "敌后暗影游击队"
+                disband = yes #will refund equipment and manpower
+            }
+        }
+        ai_will_do = {
+            base = 1000
+        }
+    }
+    SEJ_dihouchongchongyoujidui = {
+        allowed = {
+            tag = SEJ
+        }
+        target_root_trigger = {
+            has_completed_focus = SEJ_chongqunzhixin
+            has_war = yes
+        }
+        state_target = yes
+        target_trigger = {
+            FROM = {
+                owner = {
+                    has_war_with = ROOT
+                    not = { has_government = fandong }  
+                }
+            }
+        }
+        on_map_mode = map_and_decisions_view
+        visible = {
+            FROM = {
+                not = { 
+                    is_fully_controlled_by = owner 
+                    is_owned_by = ROOT
+                }
+            }
+        }
+        available = {
+            not = {
+                has_country_flag = SEJ_dihouchongchongyoujidui_flag
+            }
+            #[(1-敌方红色支持度)*3+2]*70P
+            hidden_trigger = {
+                FROM = {
+                    owner = {
+                        set_temp_variable = {
+                            ROOT.cost = party_popularity@fandong
+                        }
+                    }
+                }
+                multiply_temp_variable = {
+                    cost = -1
+                }
+                add_to_temp_variable = {
+                    cost = 1
+                }
+                multiply_temp_variable = {
+                    cost = 3
+                }
+                add_to_temp_variable = {
+                    cost = 2
+                }
+                multiply_temp_variable = {
+                    cost = 70
+                }
+            }
+            has_political_power > cost
+        }
+        days_re_enable = 150
+        days_remove = 30
+        complete_effect = {
+            #[(1-敌方红色支持度)*3+2]*70P
+            FROM = {
+                owner = {
+                    set_temp_variable = {
+                        ROOT.cost = party_popularity@fandong
+                    }
+                }
+            }
+            multiply_temp_variable = {
+                cost = -1
+            }
+            add_to_temp_variable = {
+                cost = 1
+            }
+            multiply_temp_variable = {
+                cost = 3
+            }
+            add_to_temp_variable = {
+                cost = 2
+            }
+            multiply_temp_variable = {
+                cost = -70
+            }
+            add_political_power = cost
+            set_country_flag = {
+                flag = SEJ_dihouchongchongyoujidui_flag
+                days = 180
+                value = 1
+            }
+        }
+        remove_effect = {
+            custom_effect_tooltip = SEJ_dihouchongchongyoujidui_tt
+            hidden_effect = {
+                if = {
+                    limit = {
+                        not = { has_country_flag = SEJ_dihouchongchongyoujidui_used }
+                    }
+                    load_oob = SEJ_dihouchongchongyoujidui_oob
+                    set_country_flag = SEJ_dihouchongchongyoujidui_used
+                }
+            }
+            
+            FROM = {
+                create_unit = {
+                    division = "division_template = \"敌后虫虫游击队\" start_experience_factor = 0.25 start_equipment_factor = 1"
+                    owner = ROOT
+                    count = 3
+                    allow_spawning_on_enemy_provs = yes
+                }
+            }
+        }
+        ai_will_do = {
+            base = 50
+        }
+    }
+    SEJ_dihouchongchongyoujidui_disband = {
+        allowed = {
+            tag = SEJ
+        }
+        visible = {
+            has_country_flag = SEJ_dihouchongchongyoujidui_used
+        }
+        available = {
+            has_war = no
+        }
+        days_remove = 10
+        complete_effect = {
+
+        }
+        remove_effect = {
+            clr_country_flag = SEJ_dihouchongchongyoujidui_used
+            delete_unit_template_and_units = {
+                division_template = "敌后虫虫游击队"
+                disband = yes #will refund equipment and manpower
+            }
+        }
+        ai_will_do = {
+            base = 1000
+        }
+    }
+}
+SEJ_zhiyuanchengmei_category = {
+    SEJ_zhiyuanchengmei_mingong = {
+        allowed = {
+            tag = SEJ
+        }
+        visible = {
+            has_completed_focus = SEJ_paichuzhijiezhiyuan
+            NAR = {
+                exists = yes
+                or = {
+                    is_subject = no
+                    is_subject_of = ROOT
+                }
+                not = {
+                    has_war_with = ROOT
+                }
+                not = {
+                    has_country_flag = SEJ_passive_decline_support
+                }
+            }
+        }
+        cost = 40
+        available = {
+            NAR = {
+                any_owned_state = {
+                    is_fully_controlled_by = NAR
+                    is_core_of = NAR
+                }
+            }
+            not = {
+                has_country_flag = SEJ_zhiyuanchengmei_flag
+            }
+        }
+        days_re_enable = 45
+        days_remove = 45
+        complete_effect = {
+            set_country_flag  = {
+                flag = SEJ_zhiyuanchengmei_flag
+                days = 45
+                value = 1
+            } 
+        }
+        remove_effect = {
+            custom_effect_tooltip = SEJ_zhiyuanchengmei_mingong_tt
+            NAR = { country_event = { id = sej.31 days = 2 } }
+            add_to_variable = { SEJ_support_NAR_times = 1 }
+        }
+        cancel_trigger = {
+            NAR =  {
+                all_owned_state = {
+                    not = {
+                        is_fully_controlled_by = NAR
+                    }
+                }
+            }
+        }
+        ai_will_do = {
+            base = 1000
+            modifier = {
+                factor = 0
+                NAR = {
+                    surrender_progress > 0.6
+                }
+            }
+            modifier = {
+                factor = 0
+                NAR = { #NAR已经成立魔法森林
+                    has_country_flag = MAF_united
+                }
+            }
+            modifier = {
+                factor = 0
+                has_country_flag = SEJ_NAR_can_core
+            }
+            modifier = {
+                factor = 0
+                has_war = yes
+            }
+        }
+    }
+    SEJ_zhiyuanchengmei_jungong = {
+        allowed = {
+            tag = SEJ
+        }
+        visible = {
+            has_completed_focus = SEJ_paichuzhijiezhiyuan
+            NAR = {
+                exists = yes
+                or = {
+                    is_subject = no
+                    is_subject_of = ROOT
+                }
+                not = {
+                    has_war_with = ROOT
+                }
+                not = {
+                    has_country_flag = SEJ_passive_decline_support
+                }
+            }
+        }
+        cost = 40
+        available = {
+            NAR = {
+                any_owned_state = {
+                    is_fully_controlled_by = NAR
+                    is_core_of = NAR
+                }
+            }
+            not = {
+                has_country_flag = SEJ_zhiyuanchengmei_flag
+            }
+        }
+        days_re_enable = 45
+        days_remove = 45
+        complete_effect = {
+            set_country_flag  = {
+                flag = SEJ_zhiyuanchengmei_flag
+                days = 45
+                value = 1
+            } 
+        }
+        remove_effect = {
+            custom_effect_tooltip = SEJ_zhiyuanchengmei_jungong_tt
+            NAR = { country_event = { id = sej.32 days = 2 } }
+            add_to_variable = { SEJ_support_NAR_times = 1 }
+        }
+        cancel_trigger = {
+            NAR =  {
+                all_owned_state = {
+                    not = {
+                        is_fully_controlled_by = NAR
+                    }
+                }
+            }
+        }
+        ai_will_do = {
+            base = 1000
+            modifier = {
+                factor = 0
+                NAR = {
+                    surrender_progress > 0.6
+                }
+            }
+            modifier = {
+                factor = 0
+                NAR = { #NAR已经成立魔法森林
+                    has_country_flag = MAF_united
+                }
+            }
+            modifier = {
+                factor = 0
+                has_country_flag = SEJ_NAR_can_core
+            }
+            modifier = {
+                factor = 0
+                has_war = yes
+            }
+        }
+    }
+    SEJ_zhiyuanchengmei_bubingwuqi = {
+        allowed = {
+            tag = SEJ
+        }
+        visible = {
+            has_completed_focus = SEJ_paichuzhijiezhiyuan
+            NAR = {
+                exists = yes
+                or = {
+                    is_subject = no
+                    is_subject_of = ROOT
+                }
+                not = {
+                    has_war_with = ROOT
+                }
+                not = {
+                    has_country_flag = SEJ_passive_decline_support
+                }
+            }
+        }
+        cost = 40
+        available = {
+            not = {
+                has_country_flag = SEJ_zhiyuanchengmei_flag
+            }
+        }
+        days_re_enable = 45
+        days_remove = 45
+        complete_effect = {
+            set_country_flag  = {
+                flag = SEJ_zhiyuanchengmei_flag
+                days = 45
+                value = 1
+            } 
+        }
+        remove_effect = {
+            if = {
+                limit = {
+                    has_equipment = {
+                        magic_core_a > 199
+                    }
+                }
+                send_equipment = {
+                    equipment = magic_core_a
+                    amount = 200
+                    target = NAR
+                }
+                else = {
+                    NAR = {
+                        add_equipment_to_stockpile = {
+                            type = magic_core_a
+                            amount = 200
+                            producer = SEJ
+                        }
+                    }
+                }
+            }
+            NAR = { country_event = { id = sej.33 days = 2 } }
+            add_to_variable = { SEJ_support_NAR_times = 1 }
+        }
+        cancel_trigger = {
+            is_ai = no
+            has_equipment = {
+                magic_core_a < 200
+            }
+        }
+        ai_will_do = {
+            base = 1000
+            modifier = {
+                factor = 0
+                NAR = {
+                    surrender_progress > 0.6
+                }
+            }
+            modifier = {
+                factor = 0
+                NAR = { #NAR已经成立魔法森林
+                    has_country_flag = MAF_united
+                }
+            }
+            modifier = {
+                factor = 1.5
+                has_equipment = {
+                    magic_core_a > 2999
+                }
+            }
+            modifier = {
+                factor = 0
+                has_country_flag = SEJ_NAR_can_core
+            }
+            modifier = {
+                factor = 0
+                has_war = yes
+            }
+        }
+    }
+    SEJ_zhiyuanchengmei_huopao = {
+        allowed = {
+            tag = SEJ
+        }
+        visible = {
+            has_completed_focus = SEJ_paichuzhijiezhiyuan
+            NAR = {
+                exists = yes
+                or = {
+                    is_subject = no
+                    is_subject_of = ROOT
+                }
+                not = {
+                    has_war_with = ROOT
+                }
+                not = {
+                    has_country_flag = SEJ_passive_decline_support
+                }
+            }
+        }
+        cost = 40
+        available = {
+            not = {
+                has_country_flag = SEJ_zhiyuanchengmei_flag
+            }
+        }
+        days_re_enable = 45
+        days_remove = 45
+        complete_effect = {
+            set_country_flag  = {
+                flag = SEJ_zhiyuanchengmei_flag
+                days = 45
+                value = 1
+            } 
+        }
+        remove_effect = {
+            if = {
+                limit = {
+                    has_equipment = {
+                        magic_energy_a > 29
+                    }
+                }
+                send_equipment = {
+                    equipment = magic_energy_a
+                    amount = 30
+                    target = NAR
+                }
+                else = {
+                    NAR = {
+                        add_equipment_to_stockpile = {
+                            type = magic_energy_a
+                            amount = 30
+                            producer = SEJ
+                        }
+                    }
+                }
+            }
+            NAR = { country_event = { id = sej.34 days = 2 } }
+            add_to_variable = { SEJ_support_NAR_times = 1 }
+        }
+        cancel_trigger = {
+            is_ai = no
+            has_equipment = {
+                magic_energy_a < 30
+            }
+        }
+        ai_will_do = {
+            base = 1000
+            modifier = {
+                factor = 0
+                NAR = {
+                    surrender_progress > 0.6
+                }
+            }
+            modifier = {
+                factor = 0
+                NAR = { #NAR已经成立魔法森林
+                    has_country_flag = MAF_united
+                }
+            }
+            modifier = {
+                factor = 1.5
+                has_equipment = {
+                    magic_energy_a > 399
+                }
+            }
+            modifier = {
+                factor = 0
+                has_country_flag = SEJ_NAR_can_core
+            }
+            modifier = {
+                factor = 0
+                has_war = yes
+            }
+        }
+    }
+    SEJ_zhiyuanchengmei_jiemeng = {
+        allowed = {
+            tag = SEJ
+        }
+        visible = {
+            has_completed_focus = SEJ_paichuzhijiezhiyuan
+            NAR = {
+                exists = yes
+                or = {
+                    is_subject = no
+                    is_subject_of = ROOT
+                }
+                not = {
+                    has_war_with = ROOT
+                }
+            }
+        }
+        cost = 10
+        available = {
+            not = {
+                has_country_flag = SEJ_zhiyuanchengmei_flag
+            }
+            custom_trigger_tooltip = {
+                tooltip = SEJ_zhiyuanchengmei_jiemeng_tt
+                check_variable = {
+                    SEJ_support_NAR_times > 9
+                }
+            }
+        }
+        days_re_enable = 90
+        days_remove = 45
+        fire_only_once = yes
+        complete_effect = {
+            NAR = {
+                qiangjiemeng = yes
+            }
+            NAR = { country_event = { id = sej.35 days = 2 } }
+            set_country_flag  = {
+                flag = SEJ_zhiyuanchengmei_flag
+                days = 45
+                value = 1
+            } 
+        }
+        ai_will_do = {
+            base = 1000
+        }
+    }
+    SEJ_zhiyuanchengmei_fuyong = {
+        allowed = {
+            tag = SEJ
+        }
+        visible = {
+            has_completed_focus = SEJ_paichuzhijiezhiyuan
+            NAR = {
+                exists = yes
+                or = {
+                    is_subject = no
+                    is_subject_of = ROOT
+                }
+                not = {
+                    has_war_with = ROOT
+                }
+            }
+        }
+        cost = 50
+        available = {
+            not = {
+                has_country_flag = SEJ_zhiyuanchengmei_flag
+            }
+            custom_trigger_tooltip = {
+                tooltip = SEJ_zhiyuanchengmei_fuyong_tt
+                check_variable = {
+                    SEJ_support_NAR_times > 14
+                }
+            }
+        }
+        days_re_enable = 90
+        days_remove = 45
+        fire_only_once = yes
+        complete_effect = {
+            NAR = {
+                subject_level4 = yes
+            }
+            NAR = { country_event = { id = sej.36 days = 2 } }
+            set_country_flag  = {
+                flag = SEJ_zhiyuanchengmei_flag
+                days = 45
+                value = 1
+            } 
+        }
+        ai_will_do = {
+            base = 10000
+        }
+    }
+    SEJ_zhiyuanchengmei_core = {
+        allowed = {
+            tag = SEJ
+        }
+        visible = {
+            has_completed_focus = SEJ_paichuzhijiezhiyuan
+            NAR = {
+                exists = yes
+                or = {
+                    is_subject = no
+                    is_subject_of = ROOT
+                }
+                not = {
+                    has_war_with = ROOT
+                }
+            }
+        }
+        cost = 100
+        available = {
+            not = {
+                has_country_flag = SEJ_zhiyuanchengmei_flag
+            }
+            custom_trigger_tooltip = {
+                tooltip = SEJ_zhiyuanchengmei_core_tt
+                check_variable = {
+                    SEJ_support_NAR_times > 19
+                }
+            }
+        }
+        days_re_enable = 90
+        days_remove = 45
+        fire_only_once = yes
+        complete_effect = {
+            set_country_flag = SEJ_NAR_can_core
+            NAR = {
+                can_core = yes
+            }
+            set_country_flag  = {
+                flag = SEJ_zhiyuanchengmei_flag
+                days = 45
+                value = 1
+            } 
+        }
+        ai_will_do = {
+            base = 10000
+        }
+    }
+}
+SEJ_shandonggeming_category = {
+    SEJ_zengjiazhichilv = {
+        allowed = {
+            tag = SEJ
+        }
+        target_root_trigger = {
+            has_completed_focus = SEJ_shandonggemingxin
+        }
+        target_trigger = {
+            FROM = {
+                is_neighbor_of = ROOT
+                not = {
+                    is_subject_of = ROOT
+                }
+            }
+        }
+        visible = {
+            FROM = {
+                if = {
+                    limit = {
+                        is_subject = yes
+                    }
+                    OVERLORD = {
+                        not = {
+                            has_government = fandong
+                            is_in_faction_with = ROOT
+                            has_non_aggression_pact_with = ROOT
+                            has_war_with = ROOT
+                        }
+                    }
+                }
+                else = {
+                    not = {
+                        has_government = fandong
+                        is_in_faction_with = ROOT
+                        has_non_aggression_pact_with = ROOT
+                        has_war_with = ROOT
+                    }
+                }
+            }
+        }
+        target_array = neighbors
+        available = {
+            set_temp_variable = {
+                cost = FROM.all_value_plus_manpower
+            }
+            multiply_temp_variable = {
+                cost = 0.12
+            }
+            clamp_temp_variable = {
+                var = cost
+                min = 20
+            }
+            has_equipment = {
+                magic_core_a > 1999
+            }
+            not = {
+                has_country_flag = SEJ_shandonggemingxin_flag
+            }
+            has_political_power > cost
+        }
+        days_remove = 100
+        days_re_enable = 1
+        complete_effect = {
+            add_equipment_to_stockpile = {
+                type = magic_core_a
+                amount = -2000
+            }
+            set_country_flag = {
+                flag = SEJ_shandonggemingxin_flag
+                days = 100
+                value = 1
+            }
+            FROM = {
+                add_timed_idea = {
+                    idea = SEJ_shandonggemingxin_idea
+                    days = 100
+                }
+                country_event = { id = sej.37 days = 2 }
+            }
+            set_temp_variable = {
+                cost = FROM.all_value_plus_manpower
+            }
+            multiply_temp_variable = {
+                cost = 0.12
+            }
+            clamp_temp_variable = {
+                var = cost
+                min = 20
+            }
+            multiply_temp_variable = {
+                cost = -1
+            }
+            add_political_power = cost
+
+        }
+        ai_will_do = {
+            base = 15
+            modifier = {
+                has_war = yes
+                factor = 0
+            }
+        }
+    }
+    SEJ_bangzhugemingzhe = {
+        allowed = {
+            tag = SEJ
+        }
+        target_root_trigger = {
+            has_completed_focus = SEJ_shandonggemingxin
+        }
+        target_trigger = {
+            FROM = {
+                is_neighbor_of = ROOT
+                not = {
+                    is_subject_of = ROOT
+                }
+            }
+        }
+        visible = {
+            FROM = {
+                if = {
+                    limit = {
+                        is_subject = yes
+                    }
+                    OVERLORD = {
+                        not = {
+                            has_government = fandong
+                            is_in_faction_with = ROOT
+                            has_non_aggression_pact_with = ROOT
+                            has_war_with = ROOT
+                        }
+                    }
+                }
+                else = {
+                    not = {
+                        has_government = fandong
+                        is_in_faction_with = ROOT
+                        has_non_aggression_pact_with = ROOT
+                        has_war_with = ROOT
+                    }
+                }
+            }
+        }
+        target_array = neighbors
+        available = {
+            FROM = {
+                fandong > 0.1
+            }
+            set_temp_variable = {
+                cost = FROM.party_popularity@fandong
+            }
+            multiply_temp_variable = {
+                cost = -1
+            }
+            add_to_temp_variable = {
+                cost = 1
+            }
+            multiply_temp_variable = {
+                cost = 100
+            }
+            has_political_power > cost
+            not = {
+                has_country_flag = SEJ_shandonggemingxin_flag
+            }
+        }
+        days_remove = 50
+        days_re_enable = 50
+        on_map_mode = map_and_decisions_view
+        complete_effect = {
+            set_temp_variable = {
+                cost = FROM.party_popularity@fandong
+            }
+            multiply_temp_variable = {
+                cost = -1
+            }
+            add_to_temp_variable = {
+                cost = 1
+            }
+            multiply_temp_variable = {
+                cost = -100
+            }
+            add_political_power = cost
+            set_country_flag = {
+                flag = SEJ_shandonggemingxin_flag
+                days = 50
+                value = 1
+            }
+            set_variable = {
+                war_clear = 50
+            }
+            prepare_war_for_FROM = yes
+            FROM = { 
+                set_variable = { SEJ_gongfang = party_popularity@fandong }
+                multiply_variable = {
+                    SEJ_gongfang = -0.5
+                }
+                set_variable = { SEJ_jiami = party_popularity@fandong }
+                multiply_variable = {
+                    SEJ_jiami = -10
+                }
+            }
+            
+        }
+        war_with_on_remove = FROM
+        remove_effect = {
+            declare_war_on = {
+                target = FROM
+                type = SEJ_shandonggeming_cb #自定义一个新的cb
+            }
+            FROM = {
+                add_dynamic_modifier = {
+                    modifier = SEJ_shandonggemingxin_modifier
+                }
+                country_event = { id = sej.38 days = 2 }
+            }
+        }
+        ai_will_do = {
+            base = 15
+            modifier = {
+                has_war = yes
+                factor = 0
+            }
+        }
+    }
+}
+SEJ_mofasenlinjianshefangan_category = {
+    SEJ_mofasenlinjianshefangan_mingong = {
+        allowed = {
+            tag = SEJ
+        }
+        target_root_trigger = {
+            has_completed_focus = SEJ_mofasenlinjianshefangan
+        }
+        target_trigger = {
+            FROM = {
+                or = {
+                    tag = NAR
+                    tag = MRS
+                    tag = ALI
+                    tag = ELL
+                    tag = MFA
+                    tag = MYK
+                    tag = MTM
+                }
+            }
+        }
+        visible = {
+            FROM = {
+                is_subject = no
+                has_war = no
+                not = {
+                    has_country_flag = SEJ_passive_decline_support
+                }
+            }
+        }
+        targets = {
+            NAR MRS ALI ELL MFA MYK MTM
+        }
+        cost = 60
+        available = {
+            
+        }
+        days_remove = 60
+        days_re_enable = 60
+        on_map_mode = map_and_decisions_view
+        remove_effect = {
+            custom_effect_tooltip = SEJ_mofasenlinjianshefangan_mingong_tt2
+            FROM = {
+                SEJ_zhiyuanjiachengxiuzheng = yes
+                add_to_variable = {
+                    SEJ_mingongjianshecishu = 1
+                }
+                country_event = { id = sej.39 days = 2 }
+            }
+        }
+        ai_will_do = {
+            base = 5
+            modifier = {
+                has_war = yes
+                factor = 0
+            }
+            modifier = {
+                MFA = {
+                    exists = yes
+                }
+                factor = 0
+            }
+        }
+    }
+    SEJ_mofasenlinjianshefangan_jungong = {
+        allowed = {
+            tag = SEJ
+        }
+        target_root_trigger = {
+            has_completed_focus = SEJ_mofasenlinjianshefangan
+        }
+        target_trigger = {
+            FROM = {
+                or = {
+                    tag = NAR
+                    tag = MRS
+                    tag = ALI
+                    tag = ELL
+                    tag = MFA
+                    tag = MYK
+                    tag = MTM
+                }
+            }
+        }
+        visible = {
+            FROM = {
+                is_subject = no
+                has_war = no
+                not = {
+                    has_country_flag = SEJ_passive_decline_support
+                }
+            }
+        }
+        targets = {
+            NAR MRS ALI ELL MFA MYK MTM
+        }
+        cost = 60
+        available = {
+        }
+        days_remove = 60
+        days_re_enable = 60
+        on_map_mode = map_and_decisions_view
+        remove_effect = {
+            custom_effect_tooltip = SEJ_mofasenlinjianshefangan_jungong_tt2
+            FROM = {
+                SEJ_zhiyuanjiachengxiuzheng = yes
+                add_to_variable = {
+                    SEJ_jungongjianshecishu = 1
+                }
+                country_event = { id = sej.40 days = 2 }
+            }
+        }
+        ai_will_do = {
+            base = 5
+            modifier = {
+                has_war = yes
+                factor = 0
+            }
+            modifier = {
+                MFA = {
+                    exists = yes
+                }
+                factor = 0
+            }
+        }
+    }
+}
+SEJ_civilwar_category = {
+    SEJ_tingzhan = {
+        allowed = {
+            or = {
+                tag = SEJ
+                tag = NIB
+                tag = RMI
+            }
+        }
+        activation = {
+            or = {
+                has_war_with = NIB
+                has_war_with = RMI
+                has_war_with = SEJ
+            }
+            not = {
+                has_global_flag = SEJ_first_civlwar
+            }
+        }
+        available = {
+            not = {
+                has_war_with = NIB
+                has_war_with = RMI
+                has_war_with = SEJ
+            }
+        }
+        timeout_effect = {
+            if = {
+                limit = {
+                    has_war_with = NIB
+                }
+                white_peace = NIB
+            }
+            if = {
+                limit = {
+                    has_war_with = RMI
+                }
+                white_peace = RMI
+            }
+            if = {
+                limit = {
+                    has_war_with = SEJ
+                }
+                white_peace = SEJ
+            }
+            hidden_effect = {
+                news_event = { days = 2 id = sej.55 }
+            }
+            set_global_flag = SEJ_first_civlwar
+        }
+        complete_effect = {
+            if = {
+                limit = {
+                    tag = SEJ
+                    has_completed_focus = SEJ_baozhaan
+                }
+                #VS 莉格露和小碗
+                country_event = sej.56
+                hidden_effect = {
+                    news_event = { days = 2 id = sej.51 }
+                }
+            }
+            if = {
+                limit = {
+                    tag = SEJ
+                    has_completed_focus = SEJ_huizhenchengzhengbian
+                }
+                #VS 露米娅和正邪
+                country_event = sej.56
+                hidden_effect = {
+                    news_event = { days = 2 id = sej.53 }
+                }
+            }
+            if = {
+                limit = {
+                    tag = NIB
+                }
+                #VS 正邪（作为莉格露叛乱方）
+                # country_event = sej.50
+                hidden_effect = {
+                    news_event = { days = 2 id = sej.52 }
+                }
+            }
+            if = {
+                limit = {
+                    tag = RMI
+                }
+                #VS 露米娅和正邪
+                # country_event = sej.49
+                hidden_effect = {
+                    news_event = { days = 2 id = sej.54 }
+                }
+            }
+            set_global_flag = SEJ_first_civlwar
+        }
+        days_mission_timeout = 365
+        is_good = no
+        ai_will_do = {
+            base = 5
+        }
+    }
+    SEJ_baoguang = {
+        allowed = {
+            or = {
+                tag = SEJ
+            }
+        }
+        activation = {
+            has_war_with = RMI
+            has_completed_focus = SEJ_mihuizi
+            not = {
+                has_global_flag = SEJ_first_civlwar
+            }
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = SEJ_gejushili_tt
+                has_completed_focus = SEJ_neizhandekaishi
+                or = {
+                    not = {
+                        country_exists = NIB
+                        country_exists = RMI
+                    }
+                    NIB = {
+                        is_subject = yes
+                    }
+                    RMI = {
+                        is_subject = yes
+                    }
+                }
+            }   
+        }
+        timeout_effect = {
+            add_timed_idea = {
+                idea = SEJ_mihuizi2_idea
+                days = 730
+            }
+        }
+        complete_effect = {
+
+        }
+        days_mission_timeout = SEJ_mihui
+        is_good = no
+        ai_will_do = {
+            base = 5
+        }
+    }
+}

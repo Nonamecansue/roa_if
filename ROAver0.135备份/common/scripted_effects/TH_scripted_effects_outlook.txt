@@ -1,0 +1,243 @@
+outlook_defines = {
+	set_variable = { global.OL_border1 = -50}
+	set_variable = { global.OL_border2 = 50}
+	set_variable = { global.OL_view0_mid = 75}
+	set_variable = { global.OL_view1_mid = 0}
+	set_variable = { global.OL_view2_mid = -75}
+	set_variable = { global.OL_maxest = 100}
+	set_variable = { global.OL_lowest = -100}
+
+	set_variable = { global.OL_view1_border1 = -35}
+	set_variable = { global.OL_view1_border2 = 35}
+
+	set_variable = { global.OL_view_time = 182}
+
+	set_variable = { global.OL_change_cost = 80 }
+}
+
+
+######################
+#
+#世界观对内容也有一定的修正，无法用游戏内修正表示，相关内容有
+#TH_scripted_effects_outlook: 世界观和唯心度对于稳定度的修正
+#TH_scripted_effects_convert: 世界观对于转换种族时获得灵力的修正
+#TH_scripted_effects_power: 对于战斗力的修正
+######################
+
+outlook_daily_change = {
+	add_to_variable = {
+		OL_view_value = modifier@OL_daily_gain
+	}
+	clamp_variable = {
+		var = OL_view_value
+		max = global.OL_maxest
+		min = global.OL_lowest
+	}
+	##### change OL cost
+	set_variable = { OL_to_change_cost = global.OL_change_cost }
+	set_temp_variable = { percentage = 1 }
+	add_to_temp_variable = { percentage = ROOT.modifier@OL_change_cost_factor }
+	clamp_temp_variable = {	var = percentage min = 0 }
+	multiply_variable = { OL_to_change_cost = percentage }
+	
+	#stability calculate
+	set_variable = { OL_stability = OL_view_value }
+	if = {
+		limit = {
+			check_variable = { OL_view_type = 0}
+		}
+		subtract_from_variable = { OL_stability = global.OL_border2}
+		if = {
+			limit = {
+				check_variable = { OL_stability < 0 }
+			}
+			multiply_variable ={ OL_stability = 0.01}
+			else = {
+				multiply_variable ={ OL_stability = 0.005}
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { OL_view_type = 2}
+		}
+		subtract_from_variable = { OL_stability = global.OL_border1}
+		multiply_variable ={ OL_stability = -1}
+		if = {
+			limit = {
+				check_variable = { OL_stability < 0 }
+			}
+			multiply_variable ={ OL_stability = 0.01}
+			else = {
+				multiply_variable ={ OL_stability = 0.005}
+			}
+		}
+	}
+
+	if = {
+		limit = {
+			check_variable = { OL_view_type = 1}
+		}
+		if = {
+			limit = {
+				check_variable = { OL_stability > 0 }
+			}
+			multiply_variable ={ OL_stability = -1}
+		}
+		add_to_variable = { OL_stability = global.OL_border2}
+
+		if = {
+			limit = {
+				check_variable = { OL_stability < 0 }
+			}
+			multiply_variable ={ OL_stability = 0.01}
+			else = {
+				multiply_variable ={ OL_stability = 0.005}
+			}
+		}
+	}
+	multiply_variable ={ OL_stability = 2 }
+}
+
+outlook_to_weixin = {
+	if = {
+		limit = {
+			not = { check_variable = { OL_view_type = 0} }
+		}
+		if = {
+			limit = {
+				check_variable = { OL_view_type = 1}
+
+			}
+			custom_effect_tooltip = outlook_to_weixin_tt
+			else = {
+				custom_effect_tooltip = outlook_to_pingheng1_tt
+			}
+		}
+		subtract_from_variable = { OL_view_type = 1}  
+	    hidden_effect = {
+			country_event = glo.3000
+		}
+	}
+}
+
+outlook_to_weiwu = {
+	if = {
+		limit = {
+			not = { check_variable = { OL_view_type = 2} }
+		}
+		if = {
+			limit = {
+				check_variable = { OL_view_type = 1}
+			}
+			custom_effect_tooltip = outlook_to_weiwu_tt
+			else = {
+				custom_effect_tooltip = outlook_to_pingheng2_tt
+			}
+		}
+		add_to_variable = { OL_view_type = 1 }  
+		hidden_effect = {
+			country_event = glo.3000
+		}
+	    
+	}
+}
+
+
+OL_minus1 = {
+	custom_effect_tooltip = OL_d1_tt
+	add_to_variable = { OL_view_value = -1}
+}
+OL_minus2 = {
+	custom_effect_tooltip = OL_d2_tt
+	add_to_variable = { OL_view_value = -2}
+}
+OL_minus2.5 = {
+	custom_effect_tooltip = OL_d2.5_tt
+	add_to_variable = { OL_view_value = -2.5}
+}
+OL_minus3 = {
+	custom_effect_tooltip = OL_d3_tt
+	add_to_variable = { OL_view_value = -3}
+}
+OL_minus4 = {
+	custom_effect_tooltip = OL_d4_tt
+	add_to_variable = { OL_view_value = -4}
+}
+OL_minus5 = {
+	custom_effect_tooltip = OL_d5_tt
+	add_to_variable = { OL_view_value = -5}
+}
+OL_minus6 = {
+	custom_effect_tooltip = OL_d6_tt
+	add_to_variable = { OL_view_value = -6}
+}
+OL_minus7 = {
+	custom_effect_tooltip = OL_d7_tt
+	add_to_variable = { OL_view_value = -7}
+}
+OL_minus7.5 = {
+	custom_effect_tooltip = OL_d7.5_tt
+	add_to_variable = { OL_view_value = -7.5}
+}
+OL_minus8 = {
+	custom_effect_tooltip = OL_d8_tt
+	add_to_variable = { OL_view_value = -8}
+}
+OL_minus9 = {
+	custom_effect_tooltip = OL_d9_tt
+	add_to_variable = { OL_view_value = -9}
+}
+OL_minus10 = {
+	custom_effect_tooltip = OL_d10_tt
+	add_to_variable = { OL_view_value = -10}
+}
+
+OL_add1 = {
+	custom_effect_tooltip = OL_i1_tt
+	add_to_variable = { OL_view_value = 1}
+}
+OL_add2 = {
+	custom_effect_tooltip = OL_i2_tt
+	add_to_variable = { OL_view_value = 2}
+}
+OL_add2.5 = {
+	custom_effect_tooltip = OL_i2.5_tt
+	add_to_variable = { OL_view_value = 2.5}
+}
+OL_add3 = {
+	custom_effect_tooltip = OL_i3_tt
+	add_to_variable = { OL_view_value = 3}
+}
+OL_add4 = {
+	custom_effect_tooltip = OL_i4_tt
+	add_to_variable = { OL_view_value = 4}
+}
+OL_add5 = {
+	custom_effect_tooltip = OL_i5_tt
+	add_to_variable = { OL_view_value = 5}
+}
+OL_add6 = {
+	custom_effect_tooltip = OL_i6_tt
+	add_to_variable = { OL_view_value = 6}
+}
+OL_add7 = {
+	custom_effect_tooltip = OL_i7_tt
+	add_to_variable = { OL_view_value = 7}
+}
+OL_add7.5 = {
+	custom_effect_tooltip = OL_i7.5_tt
+	add_to_variable = { OL_view_value = 7.5}
+}
+OL_add8 = {
+	custom_effect_tooltip = OL_i8_tt
+	add_to_variable = { OL_view_value = 8}
+}
+OL_add9 = {
+	custom_effect_tooltip = OL_i9_tt
+	add_to_variable = { OL_view_value = 9}
+}
+OL_add10 = {
+	custom_effect_tooltip = OL_i10_tt
+	add_to_variable = { OL_view_value = 10}
+}

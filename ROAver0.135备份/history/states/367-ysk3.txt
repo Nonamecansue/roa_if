@@ -1,0 +1,33 @@
+state={
+	id=367
+	name="STATE_367"
+	provinces={
+		430 1690 2246 3426 3430 3432 3433 4419 4425 4431 4440 4445 
+	}
+	resources={
+
+		powder = 0.0
+		metal = 0.0
+		gas=0.000
+		crystal=0.000
+	}
+
+	history={
+		146.1.1 = {
+			owner = MRY
+			add_core_of = MRY
+			buildings = {
+				infrastructure =4
+				industrial_complex = 0
+				arms_factory = 0
+
+			}
+
+		}
+
+	}
+	state_category=s2
+	local_supplies=2.5
+	manpower=230.0
+	buildings_max_level_factor=1.000
+}

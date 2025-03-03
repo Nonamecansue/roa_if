@@ -1,0 +1,52 @@
+on_actions = {
+	on_daily = {
+		effect = {
+			if = {
+				limit = {
+					has_idea = TBA_shichangshenzhili
+					check_variable = {
+						PO_mp_add > 50
+					}
+				}
+				TBA_lingli_jisuan_jia = yes
+			}
+			else = {
+				TBA_lingli_jisuan_jian = yes
+			}
+		}
+	}
+	on_declare_war = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						tag = TBA
+						has_completed_focus = TBA_66
+						NOt = {
+							has_country_flag = TBA_dashozhenhan_tt
+						}
+					}
+					FROM = {
+						OR = {
+							tag = CIR
+							tag = LIL
+							tag = SGS
+							tag = SCA
+							tag = MFA
+							tag = YUK
+							tag = CLO
+						}
+					}
+				}
+				TBA = {
+					set_country_flag = TBA_dashozhenhan_tt
+					country_event = {
+						id = tba.12
+						days = 1
+					}
+				}
+			}
+			
+		}
+	}
+}

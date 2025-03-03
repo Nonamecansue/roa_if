@@ -1,0 +1,71 @@
+spriteTypes = {
+	#logo
+	spriteType = {
+		name = "GFX_idea_sgs_kaizhangjiaoyu"
+		texturefile = "gfx//interface//ideas//idea_sgs_kaizhangjiaoyu.png"
+}
+spriteType = {
+		name = "GFX_idea_sgs_jianhuafukashengchan"
+		texturefile = "gfx//interface//ideas//idea_sgs_jianhuafukashengchan.png"
+}
+spriteType = {
+		name = "GFX_idea_sgs_liangchanhuopao"
+		texturefile = "gfx//interface//ideas//idea_sgs_liangchanhuopao.png"
+}
+spriteType = {
+		name = "GFX_idea_sgs_shangweikaifadetudi"
+		texturefile = "gfx//interface//ideas//idea_sgs_shangweikaifadetudi.png"
+}
+spriteType = {
+		name = "GFX_idea_sgs_zhengzaikaifadetudi"
+		texturefile = "gfx//interface//ideas//idea_sgs_zhengzaikaifadetudi.png"
+}
+spriteType = {
+		name = "GFX_idea_sgs_qiankuan"
+		texturefile = "gfx//interface//ideas//idea_sgs_qiankuan.png"
+}
+spriteType = {
+		name = "GFX_idea_sgs_huankuan"
+		texturefile = "gfx//interface//ideas//idea_sgs_huankuan.png"
+}
+spriteType = {
+		name = "GFX_idea_sgs_yingshenzhanshu"
+		texturefile = "gfx//interface//ideas//idea_sgs_yingshenzhanshu.png"
+}
+spriteType = {
+		name = "GFX_idea_sgs_zhanzhengguihuaju"
+		texturefile = "gfx//interface//ideas//idea_sgs_zhanzhengguihuaju.png"
+}
+spriteType = {
+		name = "GFX_idea_SGS_dazirandejundui"
+		texturefile = "gfx//interface//ideas//idea_SGS_dazirandejundui.png"
+}
+spriteType = {
+		name = "GFX_idea_SGS_yingshenzhanzhu"
+		texturefile = "gfx//interface//ideas//idea_SGS_yingshenzhanzhu.png"
+}
+spriteType = {
+		name = "GFX_idea_sgs_riguangfadian"
+		texturefile = "gfx//interface//ideas//idea_sgs_riguangfadian.png"
+}
+spriteType = {
+		name = "GFX_idea_sgs_gongyefaan"
+		texturefile = "gfx//interface//ideas//idea_sgs_gongyefaan.png"
+}
+spriteType = {
+		name = "GFX_idea_sgs_yaojingzhicheng"
+		texturefile = "gfx//interface//ideas//idea_sgs_yaojingzhicheng.png"
+}
+spriteType = {
+		name = "GFX_idea_sgs_yaojingzhicheng2"
+		texturefile = "gfx//interface//ideas//idea_sgs_yaojingzhicheng2.png"
+}
+spriteType = {
+		name = "GFX_idea_sgs_xingguangzhengchawangluo"
+		texturefile = "gfx//interface//ideas//idea_sgs_xingguangzhengchawangluo.png"
+}
+spriteType = {
+		name = "GFX_idea_sgs_yaojingdewuqi"
+		texturefile = "gfx//interface//ideas//idea_sgs_yaojingdewuqi.png"
+}
+}

@@ -1,0 +1,63 @@
+#########################################################################
+# OPINION MODIFIERS
+##########################################################################
+# value
+# min_trust
+# max_trust
+# decay
+# months/years/days = timer
+# trade = yes/no
+
+opinion_modifiers = {
+	SGS_gemingtongmeng_op = {
+		value = 80
+	}
+	SGS_yaojingwenhua_op = {
+		value = 30
+	}
+	SGS_gansheneizheng_op = {
+		value = -200
+	}
+	SGS_jujuelexieyi_op = {
+		value = -30
+	}
+	SGS_xinanyihuidasha_op = {
+		value = 30
+	}
+	SGS_tongyilexieyi_op = {
+		value = 30
+	}
+	SGS_zhongzuzhuyizhe_op = {
+		value = -60
+	}
+	SGS_tongyiyuanzhu_op = {
+		value = 80
+	}
+	SGS_jujueyuanzhu_op = {
+		value = -30
+	}
+	SGS_youtiaojiandeyuanzhu_op = {
+		value = -10
+	}
+	SGS_jujuehuankuan_op = {
+		value = -200
+	}
+	SGS_kongbuxiji_op = {
+		value = -200
+	}
+	SGS_sihuixieding_op = {
+		value = -30
+	}
+	SGS_shanziyihe_op = {
+		value = -50
+	}
+	SGS_fangxiazhengduan_op = {
+		value = 100
+	}
+	SGS_anliuyongdong_op = {
+		value = -50
+	}
+}	
+
+
+

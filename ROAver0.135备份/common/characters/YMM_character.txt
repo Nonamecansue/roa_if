@@ -1,0 +1,118 @@
+characters={
+	YMM_yamame ={
+		name = YMM_yamame
+		portraits={
+			civilian={
+				large="gfx/leaders/YMM/YMM_yamame.dds"
+				small="gfx/leaders/YMM/YMM_yamame_small.dds"
+			}
+			army = {
+				large="gfx/leaders/YMM/YMM_yamame.dds"
+				small="gfx/leaders/YMM/YMM_yamame_small.dds"
+			}
+		}
+		corps_commander = {
+            traits = {  th_original_character th_character  trait_cautious  }
+            attack_skill = 6
+            defense_skill = 3
+            planning_skill = 4
+            logistics_skill = 4
+            skill = 5
+        }
+		advisor = {
+			slot = character_coop
+			idea_token = YMM_yamame
+			name = YMM_yamame
+			cost = 200
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	YMM_kisume ={
+		name = YMM_kisume
+		portraits={
+			civilian={
+				large="gfx/leaders/YMM/YMM_kisume.dds"
+				small="gfx/leaders/YMM/YMM_kisume_small.dds"
+			}
+			army = {
+				large="gfx/leaders/YMM/YMM_kisume.dds"
+				small="gfx/leaders/YMM/YMM_kisume_small.dds"
+			}
+		}
+		corps_commander = {
+            traits = {  th_original_character th_character  th_trait_huoqiangzhuanjia  }
+            attack_skill = 3
+            defense_skill = 3
+            planning_skill = 1
+            logistics_skill = 2
+            skill = 3
+        }
+		advisor = {
+			slot = character_coop
+			idea_token = YMM_kisume
+			name = YMM_kisume
+			cost = 200
+			modifier = {
+				production_speed_rail_way_factor = 0.25
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	YMM_yamame_leader ={
+		name = YMM_yamame_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/YMM/YMM_yamame.dds"
+				small="gfx/leaders/YMM/YMM_yamame_small.dds"
+			}
+			army = {
+				large="gfx/leaders/YMM/YMM_yamame.dds"
+				small="gfx/leaders/YMM/YMM_yamame_small.dds"
+			}
+		}
+		country_leader={
+			ideology=qinwai_type
+			id=-1
+		}
+		country_leader={
+			ideology=guli_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldorder_type
+			id=-1
+		}
+		country_leader={
+			ideology=neworder_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldgenso_type
+			id=-1
+		}
+	}
+	YMM_kisume_leader ={
+		name = YMM_kisume_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/YMM/YMM_kisume.dds"
+				small="gfx/leaders/YMM/YMM_kisume_small.dds"
+			}
+			army = {
+				large="gfx/leaders/YMM/YMM_kisume.dds"
+				small="gfx/leaders/YMM/YMM_kisume_small.dds"
+			}
+		}
+		country_leader={
+			ideology=fandong_type
+			id=-1
+		}
+	}
+}

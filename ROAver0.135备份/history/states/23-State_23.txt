@@ -1,0 +1,34 @@
+
+state={
+	id=23
+	name="STATE_23"
+	resources={
+		powder=0.000
+		metal=0.000
+		gas=8.000
+		crystal=0.000
+	}
+
+	history={
+		146.1.1 = {
+			owner = PRS
+			add_core_of = PRS
+			buildings = {
+				infrastructure = 3
+				industrial_complex = 1
+				arms_factory = 0
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		1 462 561 830 1329 1425 1831 2383 2529 2604 
+	}
+	manpower=1218
+	buildings_max_level_factor=1.000
+	state_category=s5
+	local_supplies=2.5.000
+}

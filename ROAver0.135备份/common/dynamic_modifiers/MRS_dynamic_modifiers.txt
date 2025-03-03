@@ -1,0 +1,81 @@
+MRS_shiliyingxiang_modifier = {
+	icon = XXX
+	MSH_boyili_add = MRS_shiliyingxiang_var
+	enable = {
+		not = {
+			has_country_flag = MAF_united
+		}
+	}
+}
+MRS_nulijiameili_modifier = {
+	icon = XXX
+	MSH_boyili_add = MRS_nulijiameili_var
+	enable = {
+		not = {
+			has_country_flag = MAF_united
+		}
+	}
+}
+MRS_kexuemofashi_modifier = {
+	icon = XXX
+	army_attack_factor = MRS_kexuemofashi_var_ad
+	army_defence_factor = MRS_kexuemofashi_var_ad
+	research_speed_factor = MRS_kexuemofashi_var_re
+	army_org_factor = MRS_kexuemofashi_var_org
+	land_reinforce_rate = MRS_kexuemofashi_var_ra
+}
+MRS_qitashilipingwei_modifier = {
+	icon = XXX
+	political_power_factor = MRS_qitashilipingwei_var_po
+	manufacturer_cost_factor = MRS_qitashilipingwei_var_ma
+	industrial_capacity_factory = MRS_qitashilipingwei_ic
+	
+}
+MRS_jiashenmofashirentong_modifier = {
+	icon = XXX
+	remove_trigger = {
+		ROOT = {
+			not = {
+				ST_race_is_Magician = yes
+			}
+		}
+	}
+	conscription_factor = 0.1
+    state_production_speed_buildings_factor = 0.1
+	
+}
+MRS_qitazhongzuliliang_modifier = {
+	icon = XXX
+	
+	conscription_factor = MRS_qitazhongzuliliang_Ghost_power
+
+	supply_consumption_factor = MRS_qitazhongzuliliang_Fairy_power
+
+	army_org_factor = MRS_qitazhongzuliliang_Human_power
+
+	army_morale_factor = MRS_qitazhongzuliliang_Pri_youkai_power
+
+	army_attack_factor = MRS_qitazhongzuliliang_Youkai_power
+	army_defence_factor = MRS_qitazhongzuliliang_Youkai_power
+
+	army_speed_factor = MRS_qitazhongzuliliang_Tengu_power
+
+	industrial_capacity_factory = MRS_qitazhongzuliliang_Kappa_power
+
+	encryption = MRS_qitazhongzuliliang_God_power
+	decryption = MRS_qitazhongzuliliang_God_power
+
+	# research_speed_factor = SS_Magician_power
+
+	land_night_attack = MRS_qitazhongzuliliang_Beast_power
+}
+MRS_mofazaoxueliang_modifier = {
+	icon = XXX
+	
+	conscription_factor = MRS_mofazaoxueliang_var_co
+	land_night_attack = MRS_mofazaoxueliang_var_ln
+
+	industrial_capacity_factory = MRS_mofazaoxueliang_var_ic
+	army_attack_factor = MRS_mofazaoxueliang_var_ad
+	army_defence_factor = MRS_mofazaoxueliang_var_ad
+}

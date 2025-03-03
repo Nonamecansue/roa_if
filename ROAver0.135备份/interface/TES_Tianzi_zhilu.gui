@@ -1,0 +1,221 @@
+guiTypes = {
+	
+	containerWindowType = {
+		name = "LTS_Tianzizhilu_menu_Open"
+		size = { width = 482 height = 70 }
+		
+		buttonType ={
+			name ="LTS_Tianzihilu_open_button"
+			spriteType = "GFX_LTS_Tianzihilu_open_button"
+			position = { x=13 y=22 }
+			pdx_tooltip = "LTS_zhaopoan_shoji"
+		}
+		buttonType ={
+			name ="LTS_Tianzihilu_open_map"
+			spriteType = "GFX_LTS_Tianzihilu_open_button"
+			position = { x=60 y=22 }
+			pdx_tooltip = "LTS_map"
+		}
+	}
+
+	containerWindowType = {
+		name = "TES_LTS_Tianzizhilu_picture"
+		size = { width = 1200 height = 900 }
+		position = { x = 540 y = 78 }
+		moveable = yes
+		
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_transparent"
+		}
+
+		iconType ={
+			name ="LTS_beijing_bg_1"
+			spriteType = "GFX_LTS_beijing_bg_1"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+		
+		buttonType = {
+			name = "LTS_Tianzizhilu_close_button"
+			position = { x = -42 y = 15 }
+			quadTextureSprite ="GFX_main_close_button"
+			Orientation = "UPPER_RIGHT"
+			shortcut = "ctrl+k"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+        #下一页
+		buttonType = {   
+			name = "LTS_Tianzihilu_open_button_2"
+			position = { x = -42 y = 830 }
+			quadTextureSprite ="GFX_arrow_right_small"
+			Orientation = "UPPER_RIGHT"
+			shortcut = "ctrl+l"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	    buttonType = {
+			name = "TES_LTS_Tianzizhilu_zhaopian_1"
+			spriteType = "GFX_TES_LTS_Tianzizhilu_zhaopian_1"
+			position = { x=99 y=99 }
+		}
+		buttonType = {
+			name = "TES_LTS_Tianzizhilu_zhaopian_2"
+			spriteType = "GFX_TES_LTS_Tianzizhilu_zhaopian_2"
+			position = { x=756 y=79 }
+			pdx_tooltip = "zhaopian_1_2"
+			pdx_tooltip_delayed = "zhaopian_1_2_xiaoguo"
+		}
+		buttonType = {
+			name = "TES_LTS_Tianzizhilu_zhaopian_2_R18"
+			spriteType = "GFX_TES_LTS_Tianzizhilu_zhaopian_2_R18"
+			position = { x=756 y=79 }
+			pdx_tooltip = "zhaopian_1_2_R18"
+		}
+		buttonType = {
+			name = "TES_LTS_Tianzizhilu_zhaopian_3"
+			spriteType = "GFX_TES_LTS_Tianzizhilu_zhaopian_3"
+			position = { x=116 y=494 }
+			pdx_tooltip = "zhaopian_1_3"
+			pdx_tooltip_delayed = "zhaopian_1_3_xiaoguo"
+		}
+	}
+
+	containerWindowType = {
+		name = "TES_LTS_Tianzizhilu_picture_2"
+		size = { width = 1200 height = 900 }
+		position = { x = 540 y = 78 }
+		moveable = yes
+		
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_transparent"
+		}
+
+		iconType ={
+			name ="COG_LTS_beijing_bg_2"
+			spriteType = "GFX_LTS_beijing_bg_2"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+		
+		buttonType = {
+			name = "LTS_Tianzizhilu_close_button_2"
+			position = { x = -42 y = 15 }
+			quadTextureSprite ="GFX_main_close_button"
+			shortcut = "ctrl+k"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+		buttonType = {   
+			name = "LTS_Tianzihilu_open_button_shang_1"
+			position = { x = -1200 y = 830 }
+			quadTextureSprite ="GFX_arrow_left_small"
+			Orientation = "UPPER_RIGHT"
+			shortcut = "ctrl+l"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+		buttonType = {   
+			name = "LTS_Tianzihilu_open_button_xia_1"
+			position = { x = -42 y = 830 }
+			quadTextureSprite ="GFX_arrow_right_small"
+			Orientation = "UPPER_RIGHT"
+			shortcut = "ctrl+l"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+	containerWindowType = {
+		name = "TES_LTS_Tianzizhilu_picture_3"
+		size = { width = 1200 height = 900 }
+		position = { x = 540 y = 78 }
+		moveable = yes
+		
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_transparent"
+		}
+
+		iconType ={
+			name ="COG_LTS_beijing_bg_3"
+			spriteType = "GFX_LTS_beijing_bg_3"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "TES_LTS_Tianzizhilu_zhaopian_12"
+			spriteType = "GFX_TES_LTS_Tianzizhilu_zhaopian_12"
+			position = { x=730 y=406 }
+			pdx_tooltip = "zhaopian_3_4"
+			pdx_tooltip_delayed = "zhaopian_3_4_xiaoguo"
+		}
+		
+		buttonType = {
+			name = "LTS_Tianzizhilu_close_button_3"
+			position = { x = -42 y = 15 }
+			quadTextureSprite ="GFX_main_close_button"
+			shortcut = "ctrl+k"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+		buttonType = {   
+			name = "LTS_Tianzihilu_open_button_shang_2"
+			position = { x = -1200 y = 830 }
+			quadTextureSprite ="GFX_arrow_left_small"
+			Orientation = "UPPER_RIGHT"
+			shortcut = "ctrl+l"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+	containerWindowType = {      ##大图
+		name = "TES_LTS_Tianzizhilu_Picture_datu"
+		size = { width = 1920 height = 1080 }
+		position = { x = 0 y = 0 }
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_transparent"
+		}
+
+		iconType ={
+			name ="COG_LTS_beijing_datu_bg"
+			spriteType = "GFX_LTS_beijing_datu_bg"
+			position = { x= 0 y = 0 }
+		}
+
+		iconType ={
+			name ="TES_LTS_Tianzizhilu_zhaopian_1_2_datu"
+			spriteType = "GFX_TES_LTS_Tianzizhilu_zhaopian_1_2_datu"
+			position = { x= 642 y = 90 }
+		}
+		iconType ={
+			name ="TES_LTS_Tianzizhilu_zhaopian_1_2_R18_datu"
+			spriteType = "GFX_TES_LTS_Tianzizhilu_zhaopian_1_2_R18_datu"
+			position = { x= 642 y = 90 }
+		}
+		iconType ={
+			name ="TES_LTS_Tianzizhilu_zhaopian_1_3_datu"
+			spriteType = "GFX_TES_LTS_Tianzizhilu_zhaopian_1_3_datu"
+			position = { x= 183 y = 115 }
+		}
+		iconType ={
+			name ="TES_LTS_Tianzizhilu_zhaopian_3_4_datu"
+			spriteType = "GFX_TES_LTS_Tianzizhilu_zhaopian_3_4_datu"
+			position = { x= 649 y = 87 }
+		}
+		buttonType = {
+			name = "TES_datu_close_button"
+			position = { x = -150 y = 100 }
+			quadTextureSprite ="GFX_main_close_button"
+			Orientation = "UPPER_RIGHT"
+			shortcut = "ctrl+l"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+}

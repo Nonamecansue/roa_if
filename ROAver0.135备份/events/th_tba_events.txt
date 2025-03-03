@@ -1,0 +1,531 @@
+﻿add_namespace = tba
+country_event = {
+	id = tba.1
+	title = tba.1.t
+	desc = tba.1.d
+  #	picture = xxx
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = tba.1.1
+	}
+}
+country_event = {
+	id = tba.2
+	title = tba.2.t
+	desc = tba.2.d
+  #	picture = xxx
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			remove_ideas = TBA_manu2
+			add_ideas = TBA_shichang_manu2
+		}
+	}
+
+	option = {
+		name = tba.2.1
+		add_manpower = 100
+		add_popularity = {
+			ideology = qinwai
+			popularity = 0.2		
+		}
+		create_country_leader = {
+			name = "天弓千亦"
+			picture = "gfx/leaders/TBA/TBA_chimata.dds"
+			expire = "1965.1.1"
+			ideology = qinwai_type
+			traits = {
+				
+			}
+		}
+		create_country_leader = {
+			name = "天弓千亦"
+			picture = "gfx/leaders/TBA/TBA_chimata.dds"
+			expire = "1965.1.1"
+			ideology = fandong_type
+			traits = {
+				
+			}
+		}
+		set_politics = {
+			ruling_party = qinwai
+		}
+		conservativeincrease = yes
+		swap_ideas = {
+			remove_idea = duchang_jingji
+			add_idea = civilian_economy
+		}
+		set_cosmetic_tag = TBA_new
+		remove_ideas = TBA_shenghshutongzhi
+		add_ideas = TBA_duchang
+		add_dynamic_modifier = { modifier = shichangshenzhili_dy } 
+		add_ideas = TBA_shichangshenzhili
+        add_ideas = TBA_shichangfanrongdu_tingzhi
+	}
+}
+country_event = {
+	id = tba.3
+	title = tba.3.t
+	desc = tba.3.d
+  #	picture = xxx
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = tba.3.1
+		TBA = {
+			send_equipment = {
+				equipment = magic_energy143
+				amount = 1000
+				target = ROOT
+			}
+			add_political_power = 100
+		}
+		add_political_power = -50
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 50
+				OR = {
+					has_idea = hum_tech
+					has_idea = kap_tech
+				}
+			}
+			modifier = {
+				add = -45
+				OR = {
+					has_idea = p_youkai_tech
+					has_idea = big_youkai_tech
+				}
+			}
+		}
+	}
+	option = {
+		name = tba.3.2
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = -50
+				OR = {
+					has_idea = hum_tech
+					has_idea = kap_tech
+				}
+			}
+			modifier = {
+				add = 45
+				OR = {
+					has_idea = p_youkai_tech
+					has_idea = big_youkai_tech
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = tba.4
+	title = tba.4.t
+	desc = tba.4.d
+  #	picture = xxx
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = tba.4.1
+		TBA = {
+			send_equipment = {
+				equipment = mortar143
+				amount = 100
+				target = ROOT
+			}
+			add_political_power = 100
+		}
+		add_political_power = -50
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 50
+				OR = {
+					has_idea = hum_tech
+					has_idea = kap_tech
+				}
+			}
+			modifier = {
+				add = -45
+				OR = {
+					has_idea = p_youkai_tech
+					has_idea = big_youkai_tech
+				}
+			}
+		}
+	}
+	option = {
+		name = tba.4.2
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = -50
+				OR = {
+					has_idea = hum_tech
+					has_idea = kap_tech
+				}
+			}
+			modifier = {
+				add = 45
+				OR = {
+					has_idea = p_youkai_tech
+					has_idea = big_youkai_tech
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = tba.5
+	title = tba.5.t
+	desc = tba.5.d
+  #	picture = xxx
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = tba.5.1
+		TBA = {
+			send_equipment = {
+				equipment = magic_core147
+				amount = 1000
+				target = ROOT
+			}
+			add_political_power = 100
+		}
+		add_political_power = -50
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = -45
+				OR = {
+					has_idea = hum_tech
+					has_idea = kap_tech
+				}
+			}
+			modifier = {
+				add = 50
+				OR = {
+					has_idea = p_youkai_tech
+					has_idea = big_youkai_tech
+				}
+			}
+		}
+	}
+	option = {
+		name = tba.5.2
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 45
+				OR = {
+					has_idea = hum_tech
+					has_idea = kap_tech
+				}
+			}
+			modifier = {
+				add = -50
+				OR = {
+					has_idea = p_youkai_tech
+					has_idea = big_youkai_tech
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = tba.6
+	title = tba.6.t
+	desc = tba.6.d
+  #	picture = xxx
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = tba.6.1
+		TBA = {
+			send_equipment = {
+				equipment = magic_energy143
+				amount = 100
+				target = ROOT
+			}
+			add_political_power = 100
+		}
+		add_political_power = -50
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = -45
+				OR = {
+					has_idea = hum_tech
+					has_idea = kap_tech
+				}
+			}
+			modifier = {
+				add = 50
+				OR = {
+					has_idea = p_youkai_tech
+					has_idea = big_youkai_tech
+				}
+			}
+		}
+	}
+	option = {
+		name = tba.6.2
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 45
+				OR = {
+					has_idea = hum_tech
+					has_idea = kap_tech
+				}
+			}
+			modifier = {
+				add = -50
+				OR = {
+					has_idea = p_youkai_tech
+					has_idea = big_youkai_tech
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = tba.7
+	title = tba.7.t
+	desc = tba.7.d
+  #	picture = xxx
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = tba.7.1
+		TBA = {
+			swap_ideas = {
+				remove_idea = TBA_jiansheyuanzhu_TEG
+				add_idea = TBA_jiansheyuanzhu_TEG_1
+			}
+		}
+		swap_ideas = {
+			remove_idea = TBA_jiansheyuanzhu_TBA
+			add_idea = TBA_jiansheyuanzhu_TBA_1
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+	option = {
+		name = tba.7.2
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+country_event = {
+	id = tba.8
+	title = tba.8.t
+	desc = tba.8.d
+  #	picture = xxx
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = tba.8.1
+		TBA = {
+			add_ideas = TBA_yushichanghuoli
+			puppet = YAW
+			YAW = {
+				can_core = yes
+			}
+		}
+		ai_chance = {
+			base = 80
+		}
+	}
+	option = {
+		name = tba.8.2
+		TBA = {
+			declare_war_on = {
+				target = YAW
+				type = TBA_tunbingshichang
+			}
+		}
+		ai_chance = {
+			base = 20
+		}
+	}
+}
+country_event = {
+	id = tba.9
+	title = tba.7.t
+	desc = tba.7.d
+  #	picture = xxx
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = tba.7.1
+		TBA = {
+			add_ideas = TBA_hezuo_MRY
+		}
+		add_ideas = TBA_hezuo_TBA
+		ai_chance = {
+			base = 100
+		}
+	}
+	option = {
+		name = tba.7.2
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+country_event = {
+	id = tba.10
+	title = tba.10.t
+	desc = tba.10.d
+  #	picture = xxx
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = tba.10.1
+		TBA = {
+			puppet = CHE
+			CHE = {
+				can_core = yes
+			}
+		}
+		ai_chance = {
+			base = 10
+		}
+	}
+	option = {
+		name = tba.10.2
+		TBA = {
+			declare_war_on = {
+				target = CHE
+				type = TBA_tunbingshichang
+			}
+		}
+		ai_chance = {
+			base = 90
+		}
+	}
+}
+country_event = {
+	id = tba.11
+	title = tba.11.t
+	desc = tba.11.d
+  #	picture = xxx
+	fire_only_once = no
+	is_triggered_only = yes
+	major = yes
+	immediate = {
+
+	}
+
+	option = {
+		name = tba.11.1
+		TBA = {
+			add_ideas = TBA_qiangdadeweiwang_daoban
+			set_country_flag = formed_before 
+            every_state = {
+                limit = {
+                    is_on_continent = Gensokyo
+                    not = {
+                        is_core_of = ROOT
+                        is_claimed_by = ROOT
+                    }
+                }
+                add_claim_by = ROOT
+            }
+            every_owned_state = {
+                limit = {
+                    is_on_continent = Gensokyo
+                }
+                add_compliance = 45
+                add_resistance = -100
+            }
+            country_event = world.2
+            add_ideas = World
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+country_event = {
+	id = tba.12
+	title = tba.12.t
+	desc = tba.12.d
+  #	picture = xxx
+	fire_only_once = no
+	is_triggered_only = yes
+	major = yes
+	immediate = {
+
+	}
+	
+	option = {
+		name = tba.12.1
+		every_country = {
+			limit = {
+				has_idea = Fairy
+				has_war_with = TBA
+			}
+			add_timed_idea = {
+				idea = TBA_dashozhenhan
+				days = 90
+			}
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+}

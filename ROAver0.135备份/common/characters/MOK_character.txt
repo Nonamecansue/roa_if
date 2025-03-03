@@ -1,0 +1,75 @@
+characters={
+	MOK_mokou ={
+		name = MOK_mokou
+		portraits={
+			civilian={
+				large="gfx/leaders/MOK/MOK_mokou.dds"
+				small="gfx/leaders/MOK/MOK_mokou_small.dds"
+			}
+			army = {
+				large="gfx/leaders/MOK/MOK_mokou.dds"
+				small="gfx/leaders/MOK/MOK_mokou_small.dds"
+			}
+		}
+		corps_commander = {
+            traits = {  th_original_character th_character  th_trait_qianxianzhandou th_trait_huoqiangzhuanjia }
+            attack_skill = 13
+            defense_skill = 13
+            planning_skill = 4
+            logistics_skill = 4
+            skill = 9
+        }
+		advisor = {
+			slot = character_coop
+			idea_token = MOK_mokou
+			name = MOK_mokou
+			cost = 200
+			modifier = {
+				modifier_army_sub_unit_ma_light_infantry_attack_factor = 0.15
+				modifier_army_sub_unit_ma_light_infantry_defence_factor = 0.15
+				modifier_army_sub_unit_sc_light_infantry_attack_factor = 0.15
+				modifier_army_sub_unit_sc_light_infantry_defence_factor = 0.15
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	MOK_mokou_leader ={
+		name = MOK_mokou_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/MOK/MOK_mokou.dds"
+				small="gfx/leaders/MOK/MOK_mokou_small.dds"
+			}
+			army = {
+				large="gfx/leaders/MOK/MOK_mokou.dds"
+				small="gfx/leaders/MOK/MOK_mokou_small.dds"
+			}
+		}
+		country_leader={
+			ideology=qinwai_type
+			id=-1
+		}
+		country_leader={
+			ideology=guli_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldorder_type
+			id=-1
+		}
+		country_leader={
+			ideology=fandong_type
+			id=-1
+		}
+		country_leader={
+			ideology=neworder_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldgenso_type
+			id=-1
+		}
+	}
+}

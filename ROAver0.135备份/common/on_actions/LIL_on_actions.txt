@@ -1,0 +1,54 @@
+on_actions = {
+	on_weekly = {
+		# effect = {
+		# 	if = {
+		# 		limit = {
+		# 			LIL = {
+		# 				has_completed_focus = LIL_18
+		# 			}
+		# 		}
+		# 		clear_array = LIL_shodu_baochun
+		# 		every_state = {
+		# 			limit = {
+		# 				is_capital = yes
+		# 			}
+		# 			add_to_array = {
+		# 				LIL.shodu_baochun = THIS
+		# 			}
+		# 		}
+		# 	}
+		# }
+		# every_state = {
+		# 	limit = {
+		# 		is_on_continent = Gensokyo
+		# 		is_capital = yes
+		# 	}
+		# 	add_to_array = {
+		# 		array = global.capital_gensokyo
+		# 	}
+		# }
+	}
+
+	on_declare_war = {
+		effect = {
+			if = {
+				limit = {
+					tag = SCA
+					FROM = {
+						tag = LIL
+					}
+				}
+				set_country_flag = LIL_yusikltjiaozahn
+			}
+			if = {
+				limit = {
+					tag = LIL
+					FROM = {
+						tag = SCA
+					}
+				}
+				set_country_flag = LIL_yusikltjiaozahn
+			}
+		}
+	}
+}

@@ -1,0 +1,62 @@
+# unit_base is the base value used for evaluating how important it is to deploy the various categories
+# Written by Entarogan
+#AI 倾向
+
+SAT_support_YYK = {
+	enable = {
+		SAT = { has_completed_focus = SAT_reinforce_yuyuko } 
+		SAT = { has_country_flag = SAT_support_yuyuko_flag }
+		tag = SAT
+		YYK = {
+			OR = {
+				has_war_with = NG1
+				has_war_with = NG2
+				has_war_with = NG3
+				has_war_with = NG4
+			}
+		}
+		is_subject = no
+	}
+	abort = {
+		YYK= {	
+			OR = {
+				has_war_with = SAT
+				has_war = no
+			}
+		}
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = YYK
+		value = 5000
+	}
+}
+
+SAT_support_PRS = {
+	enable = {
+		NOT = { has_war_with = PRS }
+		SAT = { has_completed_focus = SAT_start_our_agenda } 
+		tag = SAT
+		is_subject = no
+	}
+	abort = {
+		PRS= {	
+			OR = {
+				has_war_with = SAT
+				AND = {
+					is_subject = yes
+					NOT = { is_subject_of = SAT }
+				}
+				AND = {
+					is_in_faction = yes
+					NOT = { is_in_faction_with = SAT }
+				}
+			}
+		}
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = PRS
+		value = 5000
+	}
+}

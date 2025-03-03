@@ -1,0 +1,120 @@
+TES_xuanju = {
+
+	priority = 100
+	
+	scripted_gui = TES_xuanju_GUI
+
+	icon = TES_yxldz
+	visible = {
+		has_country_flag = kaiqixuanju
+	}
+	
+}
+LTS_Tianzizhilu = {
+	priority = 200
+
+    scripted_gui = LTS_Tianzizhilu_menu_Open
+
+	visible_when_empty = yes
+
+	visible = {
+		original_tag =LTS
+	}
+
+}
+LTS_TianZi_heihua = {
+	priority = 1
+
+    scripted_gui = TES_heihua_GUI
+	
+	visible_when_empty = yes
+
+	visible = {
+		original_tag =LTS
+	}
+}
+TES_yuanzhuyaojing = {
+	priority = 100
+
+}
+TES_tianjieleyuan = {
+	priority = 100
+	
+	
+}
+TES_zhenduirodian = {
+	priority = 120
+
+	visible = {
+		original_tag =TES
+		has_completed_focus = TES.69
+	}
+}
+TES_geren_chongbai = {
+	priority = 120
+	visible = {
+		original_tag =TES
+	}
+	scripted_gui = TES_gerenchongbai
+}
+CFA_xueruo_ai = {
+	priority = 100
+}
+parliament_TES_category = {
+	icon = category_usa_congress
+	
+	priority = 100
+
+	scripted_gui = TES_huiyi_gui
+	
+	visible = {
+		always = no
+	}
+	
+}
+IKU_zhongzuxitong = {
+	icon = xxx
+	
+	priority = 100
+	
+	visible = {
+		has_completed_focus = TES.143
+	}
+	
+}
+IKU_hepingzhuyi = {
+	icon = xxx
+	
+	priority = 100
+	
+	visible = {
+		
+	}
+}
+IKU_yaoqing = {
+	icon = xxx
+	
+	priority = 100
+	
+	visible = {
+		
+	}
+}
+IKU_yuanzhu = {
+	icon = xxx
+	
+	priority = 100
+	
+	visible = {
+		
+	}
+}
+IKU_bianyishixintai = {
+	icon = xxx
+	
+	priority = 100
+	
+	visible = {
+		
+	}
+}

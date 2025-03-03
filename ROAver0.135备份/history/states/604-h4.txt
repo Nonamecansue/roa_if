@@ -1,0 +1,29 @@
+state={
+	id=604
+	name="STATE_604"
+	provinces={
+		7234 7245 7250 7271 7275 7298 7302 
+	}
+	resources={
+		energy = 0
+		powder = 0.0
+		metal = 0.0
+		gas=0.000
+		crystal=0.000
+	}
+	history={
+		146.1.1 = {
+			owner = HUB
+			add_core_of = HUB
+			buildings = {
+				infrastructure = 0
+				industrial_complex = 0
+				arms_factory = 0
+			}
+		}
+	}
+	state_category=s0
+	manpower=120
+	buildings_max_level_factor=1.000
+	local_supplies=2.500
+}

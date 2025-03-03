@@ -1,0 +1,28 @@
+
+state={
+	id=534
+	name="STATE_534"
+
+	history={
+		146.1.1 = {
+			owner = AKO
+			add_core_of = AKO
+			buildings = {
+				infrastructure = 1
+				industrial_complex = 0
+				arms_factory = 0
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		7054 7055 7057 7059 7060 7061 7062 7065 7067 7068 7069 7071 7073 7074 7075 7076 7077 7079 
+	}
+	manpower=178999
+	buildings_max_level_factor=1.000
+	state_category=s2
+	local_supplies=2.500
+}

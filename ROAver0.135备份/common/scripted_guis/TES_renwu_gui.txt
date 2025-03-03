@@ -1,0 +1,227 @@
+scripted_gui = {
+
+	TES_renwu_anniu_GUI = {
+		context_type = player_context
+        window_name = "TES_renwu_anniu_GUI"
+		parent_window_token = top_bar
+
+		visible = {
+			tag = TES
+		}
+		effects = {
+			TES_renwu_anniu_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = kaiqi_renwu_TES
+						}
+					}
+					set_country_flag = kaiqi_renwu_TES
+				}
+				else_if = {
+					limit = {
+						has_country_flag = kaiqi_renwu_TES
+					}
+					clr_country_flag = kaiqi_renwu_TES
+				}
+			}
+		}
+		triggers = {
+			TES_renwu_anniu_visible = {
+				tag = TES
+				NOT = {
+					has_country_flag = yijiuxian
+				}
+			}
+		}
+	}
+	TES_renwu_jiemian_GUI = {
+		context_type = player_context
+        window_name = "TES_renwu_jiemian_GUI"
+
+		visible = {
+			tag = TES
+			has_country_flag = kaiqi_renwu_TES
+		}
+		triggers = {
+			#独立之梦
+			TES_dulizhimeng_enabled = {
+				OR = {
+					NOT = {
+						country_exists = CCA
+					}
+					CCA = {
+						is_puppet = yes
+					}
+				}
+				TES = {
+					is_puppet = no
+				}
+			}
+			TES_dulizhimeng_1_visible = {
+				NOT = {
+					has_country_flag = tianzixian
+				}
+				NOT = {
+					OR = {
+						NOT = {
+							country_exists = CCA
+						}
+						CCA = {
+							is_puppet = yes
+						}
+					}
+					TES = {
+						is_puppet = no
+					}
+				}	
+			}
+			TES_dulizhimeng_visible = {
+				NOT = {
+					has_country_flag = tianzixian
+					has_country_flag = wangcheng_duilizhimeng
+				}
+				OR = {
+					NOT = {
+						country_exists = CCA
+					}
+					CCA = {
+						is_puppet = yes
+					}
+				}
+				TES = {
+					is_puppet = no
+				}
+			}
+			TES_dulizhimeng_wancheng_visible = {
+				NOT = {
+					has_country_flag = tianzixian
+				}
+				has_country_flag = wangcheng_duilizhimeng
+			}
+			#初入幻想乡
+			TES_churuhxx_enabled = {
+				custom_trigger_tooltip = {
+					tooltip = TES_churuhxx_tt
+					check_variable = {
+						RE_Gensokyo_ratio > 0
+					}
+				}
+			}
+			TES_churuhxx_1_visible = {
+				has_country_flag = tianzixian
+				custom_trigger_tooltip = {
+					tooltip = TES_churuhxx_tt
+					NOT = {
+						check_variable = {
+							RE_Gensokyo_ratio > 0
+						}
+					}
+				}
+			}
+			TES_churuhxx_visible = {
+				has_country_flag = tianzixian
+				custom_trigger_tooltip = {
+					tooltip = TES_churuhxx_tt
+					check_variable = {
+						RE_Gensokyo_ratio > 0
+					}
+				}
+				NOT = {
+					has_country_flag = wangcheng_churuhuanxx
+				}
+			}
+			TES_churuhxx_wancheng_visible = {
+				has_country_flag = wangcheng_churuhuanxx
+			}
+			#地狱的统治者
+			TES_diyuzhizhu_enabled = {
+				custom_trigger_tooltip = {
+					tooltip = Hell_claim_tt
+					check_variable = {
+						RE_Hell_ratio > 0.5
+					}
+				}
+			}
+			TES_diyuzhizhu_1_visible = {
+				has_country_flag = tianzixian
+				NOT = {
+					custom_trigger_tooltip = {
+						tooltip = Hell_claim_tt
+						check_variable = {
+							RE_Hell_ratio > 0.5
+						}
+					}
+				}
+			}
+			TES_diyuzhizhu_visible = {
+				has_country_flag = tianzixian
+				custom_trigger_tooltip = {
+					tooltip = Hell_claim_tt
+					check_variable = {
+						RE_Hell_ratio > 0.5
+					}
+				}
+				NOT = {
+					has_country_flag = wangcheng_diyuzhiwang
+				}
+			}
+			TES_diyuzhizhu_wancheng_visible = {
+				has_country_flag = wangcheng_diyuzhiwang
+			}
+			#天之军
+			TES_tianzhijun_enabled = {
+				has_army_manpower = {
+					size > 5000
+				}
+			}
+			TES_tianzhijun_1_visible = {
+				has_country_flag = tianzixian
+				NOT = {
+					has_army_manpower = {
+						size > 5000
+					}
+				}
+			}
+			TES_tianzhijun_visible = {
+				has_army_manpower = {
+					size > 5000
+				}
+				has_country_flag = tianzixian
+				NOT = {
+					has_country_flag = wangcheng_tianzhijun
+				}
+			}
+			TES_tianzhijun_wancheng_visible = {
+				has_country_flag = wangcheng_tianzhijun
+			}
+		}
+		effects = {
+			exit_exit_click = {
+				clr_country_flag = kaiqi_renwu_TES
+			}
+			TES_dulizhimeng_click = {
+				set_country_flag = wangcheng_duilizhimeng
+				add_political_power = 100
+				add_war_support = 0.1  
+                add_stability = 0.1  
+			}
+			TES_churuhxx_click = {
+				set_country_flag = wangcheng_churuhuanxx
+				add_threat = 5
+				add_to_variable = {
+					TES_chongbai_du = 10 
+				}
+				custom_effect_tooltip = weirenguanyuanxuannchuang_tt
+			}
+			TES_diyuzhizhu_click = {
+				set_country_flag = wangcheng_diyuzhiwang
+				add_country_leader_trait = diyuzhiwang
+			}
+			TES_tianzhijun_click = {
+				set_country_flag = wangcheng_tianzhijun
+				add_country_leader_trait = tianjuntongshuai
+			}
+		}
+	}
+}

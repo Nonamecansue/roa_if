@@ -1,0 +1,12 @@
+﻿l_simp_chinese:
+  MAF_united_wargoal:0 "魔法森林混战"
+  WAR_MAF_united:0 "魔法森林混战"
+  mu_aim_to_unite:0 "统一魔法森林的雄心"
+  mu_united:0 "重建魔法森林"
+  MAF_divided_region_1:0 "混乱的魔法森林"
+  MAF_divided_region_2:0 "混乱的魔法森林"
+  MAF_aim_to_unite_tt:0 "§Y[MFA.GetFlag][MFA.GetName]、[MTM.GetFlag][MTM.GetName]、[MYK.GetFlag][MYK.GetName]、[MRS.GetFlag][MRS.GetName]、[ELL.GetFlag][ELL.GetName]、[NAR.GetFlag][NAR.GetName]和[ALI.GetFlag][ALI.GetName]§!所拥有的核心地块获取§Y宣称§!。\n如果上述势力的核心地块已被你拥有，则直接获得核心。\n§R如果上述势力已被你附庸，则下降一级附庸等级并吞并附庸后可获得核心。§!\n\n§R将不能再使用魔法森林混战的战争借口。§!"
+  MAF_united_tt:0 "§Y[MFA.GetFlag][MFA.GetName]、[MTM.GetFlag][MTM.GetName]、[MYK.GetFlag][MYK.GetName]、[MRS.GetFlag][MRS.GetName]、[ELL.GetFlag][ELL.GetName]、[NAR.GetFlag][NAR.GetName]和[ALI.GetFlag][ALI.GetName]§!所拥有的核心地块获取§R核心§!。\n§Y[STRATEGICREGION_58]、[STRATEGICREGION_57]、[STRATEGICREGION_59]、[STRATEGICREGION_64]和[STRATEGICREGION_63]§!区域内的地块获得§Y宣称§!。"
+  need_to_updated:0 "国策需要等待更新。"
+  MAF_created:0 "魔法森林已重建"
+  MAF_not_created:0 "魔法森林未重建"

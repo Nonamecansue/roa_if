@@ -1,0 +1,2069 @@
+add_namespace = sgs
+country_event = {#与花田的协议(花田方
+	id = sgs.1
+	title = sgs.1.t
+	desc = sgs.1.d
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		ai_chance= {
+			base = 200
+		}
+		name = sgs.1.1#同意
+		YUK = {
+			add_ideas = YUK_yaojingdebangzhu_idea
+		}
+		SGS = {
+			country_event = sgs.2
+		}
+	}
+	option = {
+		name = sgs.1.2#拒绝
+		ai_chance = {
+			base = 10
+		}
+		SGS = {
+			country_event = sgs.3
+		}
+	}
+}
+country_event = {#与花田的协议(花田同意)
+		id = sgs.2
+		title = sgs.2.t
+		desc = sgs.2.d
+		fire_only_once = no
+		is_triggered_only = yes
+		option = {
+			name = sgs.2.1
+			SGS = {
+				add_opinion_modifier = {
+					target = YUK
+					modifier = SGS_tongyilexieyi_op
+				}
+				add_offsite_building = { type = industrial_complex level = 2 }
+				set_country_flag = SGS_huatiantongyi2_flag
+			}
+		}
+}
+country_event = {#与花田的协议(花田拒绝)
+		id = sgs.3
+		title = sgs.3.t
+		desc = sgs.3.d
+		fire_only_once = no
+		is_triggered_only = yes
+		option = {
+			SGS = {
+				add_opinion_modifier = {
+					target = YUK
+					modifier = SGS_jujuelexieyi_op
+				}
+				set_country_flag = SGS_huatianjujue
+			}
+			name = sgs.3.1
+		}
+}
+country_event = {#取消与花田的协议
+	id = sgs.4
+	title = sgs.4.t
+	desc = sgs.4.d
+	fire_only_once = yes
+	trigger = {
+		SGS = {
+			has_completed_focus = SGS_yuhuatiandexieyi
+			NOT = {has_country_flag = SGS_huatianjujue}
+			has_country_flag = SGS_huatiantongyi2_flag
+		}
+		tag = SGS
+		or = {
+			YUK = {
+				has_opinion = { 
+					target = SGS
+					value < -50
+				}
+			}
+			YUK = {
+				is_subject = yes
+			}
+			not = {country_exists = YUK}
+		}
+	}
+	option = {
+		name = sgs.4.1
+		SGS = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = -2
+			}
+			clr_country_flag = SGS_huatiantongyi2_flag
+		}
+	}
+}
+country_event = {#琪露诺的援助
+	id = sgs.5
+	title = sgs.5.t
+	desc = sgs.5.d
+	is_triggered_only = yes
+	option = {
+		ai_chance= {
+			base = 200
+		}
+		name = sgs.5.1
+		SGS = {
+			country_event = {
+				id = sgs.7
+				days = 1
+			}
+		}
+		CIR = {
+			add_timed_idea = {
+				idea = CIR_zhiyuansanyuejing_idea
+				days = 90
+			}
+		}
+	}
+	option = {
+		ai_chance= {
+			base = 200
+		}
+		name = sgs.5.2
+		SGS = {
+			country_event = {
+				id = sgs.12
+				days = 1
+			}
+			
+		}
+
+		
+	}
+	option = {
+		ai_chance= {
+			base = 10
+		}
+		name = sgs.5.3
+		SGS = {
+			country_event = {
+				id = sgs.6 
+				days = 1
+			}
+		}
+	}
+}
+country_event = {#琪露诺拒绝
+	id = sgs.6
+	title = sgs.6.t
+	desc = sgs.6.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = sgs.6.1
+		SGS = {
+			add_opinion_modifier = {
+					target = CIR
+					modifier = SGS_jujueyuanzhu_op
+				}
+		}
+	}
+}
+
+country_event = {#琪露诺同意
+	id = sgs.7
+	title = sgs.7.t
+	desc = sgs.7.d
+	is_triggered_only = yes
+	option = {
+		name = sgs.7.1
+		SGS = {
+			add_opinion_modifier = {
+					target = CIR
+					modifier = SGS_tongyiyuanzhu_op
+				}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = SGS
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+}
+country_event = {#还款
+	id = sgs.8
+	title = sgs.8.t
+	desc = sgs.8.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = sgs.8.1
+		SGS = {
+			add_timed_idea = {
+				idea = SGS_huankuan_idea
+				days = 90
+			}
+			set_country_flag = zhengzaihuankuan
+			remove_ideas = SGS_qiankuan_idea
+		}
+		CIR = {
+			country_event = {
+				id = sgs.10
+				days = 1
+			}
+		}
+
+	}
+	option = {
+		name = sgs.8.2
+		CIR = {
+			country_event = sgs.11
+		}
+	}
+}
+country_event = {#收款
+	id = sgs.9
+	title = sgs.9.t
+	desc = sgs.9.d
+	fire_only_once = yes
+	 
+		trigger = {
+			tag = CIR
+			CIR = {
+				NOT = {has_war_with = SGS}
+				has_war = yes
+				has_country_flag = sanyuejingdeqiankuan
+			}
+
+		}
+	option = {
+		name = sgs.9.1
+		SGS = {
+			country_event = {
+			id = sgs.8
+			days = 1
+			}
+		}
+	}
+}
+country_event = {#同意还款
+	id = sgs.10
+	title = sgs.10.t
+	desc = sgs.10.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = sgs.10.1
+		CIR = {
+			add_timed_idea = {
+				idea = CIR_shoukuan_idea
+				days = 90
+			}
+			remove_ideas = CIR_sanyuejingdeqiankuan_idea
+		}
+	}
+}
+country_event = {#不还款
+	id = sgs.11
+	title = sgs.11.t
+	desc = sgs.11.d
+	fire_only_once = yes
+	 
+		trigger = {
+			tag = CIR
+			SGS = {
+				or = {
+					has_idea = SGS_huankuan_idea
+					has_idea = SGS_qiankuan_idea
+				}
+			}
+			or = {
+				SGS = {
+				has_war_with = CIR
+				has_country_flag = SGS_womencaishilingxiu_flag
+			}	
+		
+			}
+		}
+	option = {
+		name = sgs.11.1
+		SGS = {
+			remove_ideas = SGS_qiankuan_idea
+			remove_ideas = SGS_huankuan_idea
+		}
+		CIR = {
+			add_opinion_modifier = {
+					target = SGS
+					modifier = SGS_jujuehuankuan_op
+				}
+			remove_ideas = CIR_sanyuejingdeqiankuan_idea
+			remove_ideas = CIR_shoukuan_idea
+		}
+	}
+}
+country_event = {#有要求
+	id = sgs.12
+	title = sgs.12.t
+	desc = sgs.12.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = sgs.12.1
+		CIR = {
+			country_event = {
+				id = sgs.14
+				days = 1
+			}
+		}
+		SGS = {
+			add_opinion_modifier = {
+					target = CIR
+					modifier = SGS_youtiaojiandeyuanzhu_op
+				}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = SGS
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+			add_ideas = SGS_qiankuan_idea
+			set_country_flag = qianqian
+		}
+			
+	}
+	option = {
+		name = sgs.12.2
+
+		CIR = {
+			country_event = {
+				id = sgs.13
+				days = 1
+			}
+		}
+	}
+}
+country_event = {#三月精拒绝
+	id = sgs.13
+	title = sgs.13.t
+	desc = sgs.13.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = sgs.13.1
+	}
+
+}
+country_event = {#三月精同意
+	id = sgs.14
+	title = sgs.14.t
+	desc = sgs.14.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = sgs.14.1
+		CIR = {
+			add_ideas = CIR_sanyuejingdeqiankuan_idea
+			add_timed_idea = {
+				idea = CIR_zhiyuansanyuejing_idea
+				days = 90
+			}
+			set_country_flag = sanyuejingdeqiankuan
+		}
+
+	}
+}
+country_event = {#决定队长
+	id = sgs.15
+	title = sgs.15.t
+	desc = sgs.15.d
+	picture = GFX_country_event_sgs.1
+	is_triggered_only = yes
+	option = {
+		name = sgs.15.1
+		ai_chance = {
+	    	base = 1
+	    	modifier = {
+				factor = 0
+				or = {
+					has_game_rule = {
+						rule = SGS_paths
+						option = SGS_path_fandong
+					}
+					has_game_rule = {
+						rule = SGS_paths
+						option = SGS_path_qinwai
+					}
+				}
+			}
+	    }
+		set_politics = {
+			ruling_party = neworder
+		}
+		set_country_flag = SGS_jiudingduizhang_flag
+	}
+	option = {
+		name = sgs.15.2
+		ai_chance = {
+	    	base = 1
+	    	modifier = {
+				factor = 0
+				or = {
+					has_game_rule = {
+						rule = SGS_paths
+						option = SGS_path_neworder
+					}
+					has_game_rule = {
+						rule = SGS_paths
+						option = SGS_path_qinwai
+					}
+				}
+			}
+	    }
+		set_politics = {
+			ruling_party = fandong
+		}
+		set_country_flag = SGS_jiudingduizhang_flag
+	}
+	option = {
+		name = sgs.15.3
+		ai_chance = {
+	    	base = 1
+	    	modifier = {
+				factor = 0
+				or = {
+					has_game_rule = {
+						rule = SGS_paths
+						option = SGS_path_fandong
+					}
+					has_game_rule = {
+						rule = SGS_paths
+						option = SGS_path_neworder
+					}
+				}
+			}
+	    }
+		set_politics = {
+			ruling_party = qinwai
+		}
+		set_country_flag = SGS_jiudingduizhang_flag
+		set_country_flag = SGS_qinwai_flag
+		set_country_flag = SGS_jingmideyueguang_flag
+		
+	}
+}
+country_event = {#决定队长
+	id = sgs.16
+	title = sgs.16.t
+	desc = sgs.16.d
+	picture = GFX_country_event_sgs.1
+	is_triggered_only = yes
+	option = {
+		name = sgs.16.1
+		country_event = sgs.17
+	}
+}
+country_event = {#决定队长
+	id = sgs.17
+	title = sgs.17.t
+	desc = sgs.17.d
+	picture = GFX_country_event_sgs.1
+	is_triggered_only = yes
+	option = {
+		name = sgs.17.1
+		country_event = sgs.15
+	}
+}
+country_event = {#撕毁协定
+	id = sgs.22
+	title = sgs.22.t
+	desc = sgs.22.d
+	is_triggered_only = yes
+	option = {
+		name = sgs.22.1
+		remove_ideas = SGS_tuanjiexieding_idea
+		MEL = {
+			add_opinion_modifier = {
+					target = SGS
+					modifier = SGS_sihuixieding_op
+				}
+		}
+	}
+}
+country_event = {#铃兰军队被袭击
+	id = sgs.23
+	title = sgs.23.t
+	desc = sgs.23.d
+	is_triggered_only = yes
+	option = {
+		name = sgs.23.1
+		add_timed_idea = {
+			idea = MEL_junduihunluan_idea
+			days = 30
+		}
+	}
+}
+country_event = {#进行过战争
+	id = sgs.24
+	 
+	fire_only_once = yes
+	hidden = yes
+	trigger = {
+		SGS = {
+			has_war = yes
+		}
+		tag = SGS
+	}
+	immediate = {
+		country_event = {
+			id = sgs.25
+			days = 30
+		}
+	}
+	
+}
+country_event = {#进行过战争2
+	id = sgs.25
+	 
+	fire_only_once = yes
+	hidden = yes
+	trigger = {
+		tag = SGS
+		SGS = {
+			has_war = yes
+		}
+	}
+	immediate = {
+		set_country_flag = SGS_jingxingguozhanzheng_flag
+	
+	}
+	
+}
+country_event = {#传播理念花妈
+	id = sgs.26
+	title = sgs.26.t
+	desc = sgs.26.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = sgs.26.1
+	
+	}	
+}
+country_event = {#花妈爆国家
+	id = sgs.27
+	title = sgs.27.t
+	desc = sgs.27.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = sgs.27.1
+		every_state = {
+			limit = { is_core_of = YS1 }
+			YS1 = {  transfer_state = PREV  }
+		}
+	}
+}
+country_event = {#革命军设定
+	id = sgs.28
+	 
+	fire_only_once = yes
+	hidden = yes
+	trigger = {
+		tag = YS1
+		country_exists = YS1
+	}
+	immediate = {
+		add_ideas = {
+			Tribal
+			Fairy
+			open1
+			hawk1
+			normal_border
+			free_magic
+			type1_manpowerlv3
+     
+		}
+		set_politics = {
+			ruling_party = fandong
+			election_frequency = 48
+			elections_allowed = no
+		}
+		set_popularities = {
+			qinwai = 0
+			guli = 0
+			neworder = 50
+			oldorder = 0
+			fandong = 50
+		}
+		load_oob = "YS1_1"
+		YS1 = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = YS1
+				}
+				create_unit = {
+					division = "name = \"妖精革命军\"division_template = \"妖精革命军\"start_experience_base = 0.2" 
+					owner = YS1
+
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = YS1
+				}
+				create_unit = {
+					division = "name = \"妖精革命军\"division_template = \"妖精革命军\"start_experience_base = 0.2" 
+					owner = YS1
+
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = YS1
+				}
+				create_unit = {
+					division = "name = \"妖精革命军\"division_template = \"妖精革命军\"start_experience_base = 0.2" 
+					owner = YS1
+
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = YS1
+				}
+				create_unit = {
+					division = "name = \"妖精国民卫队\"division_template = \"妖精国民卫队\"start_experience_base = 0.2" 
+					owner = YS1
+
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = YS1
+				}
+				create_unit = {
+					division = "name = \"妖精国民卫队\"division_template = \"妖精国民卫队\"start_experience_base = 0.2" 
+					owner = YS1
+
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = YS1
+				}
+				create_unit = {
+					division = "name = \"妖精国民卫队\"division_template = \"妖精国民卫队\"start_experience_base = 0.2" 
+					owner = YS1
+
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = YS1
+				}
+				create_unit = {
+					division = "name = \"妖精国民卫队\"division_template = \"妖精国民卫队\"start_experience_base = 0.2" 
+					owner = YS1
+
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = YS1
+				}
+				create_unit = {
+					division = "name = \"妖精国民卫队\"division_template = \"妖精国民卫队\"start_experience_base = 0.2" 
+					owner = YS1
+
+				}
+			}
+			add_ai_strategy = {
+				type = alliance
+				id = "SGS"
+				value = 1000
+			}
+		}
+	}
+}
+country_event = {#花妈先发制人警告
+	id = sgs.29
+	title = sgs.29.t 
+	desc = sgs.29.d 
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = sgs.29.1
+	}
+}
+country_event = {#三月精与花妈开战取消标记
+	id = sgs.30 
+	fire_only_once = yes
+	 
+	hidden = yes
+	trigger = {
+		tag = SGS
+		SGS = {
+			has_war_with = YUK
+		}
+	}
+	immediate = {
+		SGS = {
+			clr_country_flag = SGS_weikaizhan2_flag
+		}
+	}
+}
+country_event = {#革命军开始叛乱警告
+	id = sgs.31
+	title = sgs.31.t 
+	desc = sgs.31.d 
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = sgs.31.1
+	}
+}
+country_event = {#三月精下场干涉警告
+	id = sgs.32
+	title = sgs.32.t 
+	desc = sgs.32.d 
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = sgs.32.1
+	}
+}
+country_event = {#战后分地
+	id = sgs.33
+	title = sgs.33.t
+	desc = sgs.33.d
+	fire_only_once = yes
+	 
+	trigger = {
+		SGS = {
+			has_completed_focus = SGS_tiaodonghuatian
+		}
+		tag = SGS
+		or = {
+			YUK = {
+				is_subject_of = YS1
+			}
+			YUK = {
+				is_subject_of = SGS
+			}
+			and = {
+				not = {country_exists = YUK}
+				SGS = {
+					any_controlled_state = { 
+						is_core_of = YUK
+					}
+				}
+			}
+			and = {
+				not = {country_exists = YUK}
+				YS1 = {
+					any_controlled_state = {
+						is_core_of = YUK
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = sgs.33.1
+		YUK = {
+			YUK_yuk = {
+				set_nationality = YS1
+			}
+		}
+		YUK = {
+			YUK_larva = {
+				set_nationality = YS1
+			}
+		}
+		YS1 = {
+			annex_country = {
+				target = YUK
+				transfer_troops = yes
+			}
+		}	
+		
+		YUK = {
+			every_core_state = {
+				transfer_state_to = YS1
+			}
+		}
+			
+		YS1 = {
+			subject_level2 = yes
+		}
+		YS1 = { can_core = yes }
+		YS1 = {
+			country_event = sgs.34
+		}
+		YS1 = {
+			set_cosmetic_tag = SGS_zhiziling
+		}
+		clr_country_flag = SGS_weikaizhan2_flag
+	}
+	option = {
+		name = sgs.33.2
+		YUK = { 
+			YUK_yuk = {
+				set_nationality = YS1
+			}
+		}
+		YUK = {
+			YUK_larva = {
+				set_nationality = YS1
+			}
+		}
+		YS1 = {
+			annex_country = {
+				target = YUK
+				transfer_troops = yes
+			}
+		}	
+		YS1 = {
+			subject_level2 = yes
+		}
+		YS1 = { can_core = yes }
+		YS1 = {
+			country_event = sgs.34
+		}
+		YS1 = {
+			set_cosmetic_tag = SGS_zhiziling
+		}
+		clr_country_flag = SGS_weikaizhan2_flag
+	}
+} 
+country_event = {#给革命军核心
+	id = sgs.34
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+		YUK = {
+			every_core_state = {
+				add_core_of = YS1
+			}
+		}
+	}
+}
+country_event = {#起义事件1
+	id = sgs.35
+	title = sgs.35.t
+	desc = sgs.35.d 
+	fire_only_once  = yes
+	 
+	trigger = {
+		tag = SGS
+		SGS = {
+			has_completed_focus = SGS_xiangtaiyanghuatian
+		}
+	}
+	option = {
+		name = sgs.35.1
+	}
+}
+country_event = {#起义事件2
+	id = sgs.36
+	title = sgs.36.t
+	desc = sgs.36.d 
+	fire_only_once = yes
+	 
+	trigger = {
+		tag = SGS
+		check_variable = {
+			SGS_linianshengfen > 1
+		}
+	}
+	option = {
+		name = sgs.36.1
+	}
+} 
+country_event = {#起义事件3
+	id = sgs.37
+	title = sgs.37.t
+	desc = sgs.37.d 
+	fire_only_once  = yes
+	 
+	trigger = {
+		tag = SGS
+		YS1 = {
+			has_war_with = YUK
+		}
+	}
+	option = {
+		name = sgs.37.1
+	}
+}
+country_event = {#起义事件4
+	id = sgs.38
+	title = sgs.38.t
+	desc = sgs.38.d 
+	fire_only_once  = yes
+	 
+	trigger = {
+		tag = SGS
+		YS1 = {
+			has_war_with = YUK
+		}
+		YUK = {
+			surrender_progress > 0.65
+		}
+	}
+	option = {
+		name = sgs.38.1
+	}
+}
+country_event = {#起义事件5
+	id = sgs.39
+	title = sgs.39.t
+	desc = sgs.39.d 
+	fire_only_once = yes
+	 
+	trigger = {
+		tag = SGS
+		YUK = {
+			country_exists = no
+		}
+	}
+	option = {
+		name = sgs.39.1
+	}
+}
+country_event = {#与秋神协商
+	id = sgs.40
+	title = sgs.40.t
+	desc = sgs.40.d 
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = sgs.40.1
+	}
+}
+country_event = {#统一西南添加效果
+	id = sgs.41
+	title = sgs.41.t 
+	desc = sgs.41.d
+	fire_only_once = yes
+	 
+	trigger = {  
+		has_completed_focus = SGS_jianlixinantongyizhengquan 
+	}
+	option = {
+		name = sgs.41.1
+		if = {
+			limit = {
+				not = {
+					or = {
+						has_idea = World
+						has_idea = Town
+						has_idea = Country
+						has_idea = Empire
+						has_idea = Shrine
+						has_idea = Village
+					}
+				}
+			}
+			add_ideas = Village
+		}
+		else_if = {
+				add_political_power = 100
+		}
+		set_cosmetic_tag =  SGS_xinanyaojinglianmeng
+		add_ideas = SGS_jixingdejingji_idea
+	}
+}
+country_event = {#######铃兰单独议和
+	id = sgs.42
+	title = sgs.42.t 
+	desc = sgs.42.d 
+	is_triggered_only = yes
+	option = {
+		ai_chance = {
+			base = 1
+		}
+		name = sgs.42.1
+		SGS = { white_peace = HU3 }
+	}
+	option = {
+		ai_chance = {
+			base = 15
+		}
+		name = sgs.42.2
+	}
+}
+country_event = {######调解矛盾开始
+	id = sgs.43
+	title = sgs.43.t 
+	desc = sgs.43.d 
+	is_triggered_only = yes
+	option = {
+		name = sgs.43.1
+		MEL = {
+			country_event = sgs.44
+		}
+		if = {
+			limit = {
+				country_exists = GH2
+			}
+			GH2 = {
+				country_event = sgs.45
+			}
+		}
+		else_if = {
+			GH3 = {
+				country_event = sgs.45
+			}
+		}
+	}
+}
+country_event = {######调解矛盾铃兰
+	id = sgs.44
+	title = sgs.44.t 
+	desc = sgs.44.d 
+	is_triggered_only = yes
+	option = {
+		ai_chance = {
+			base = 10
+		}
+		name = sgs.44.1
+		SGS = {
+			set_country_flag = SGS_linglantouyitiaojie_flag
+		}
+	}
+	option = {
+		ai_chance = {
+			base = 2
+		}
+		name = sgs.44.2
+		SGS = {
+			set_country_flag = SGS_linglantouyitiaojie2_flag
+		}
+		GH2 = {
+			country_event = {
+				id = sgs.48
+				days = 1
+			}
+		}
+		GH3 = {
+			country_event = {
+				id = sgs.48
+				days = 1
+			}
+		}
+	}
+}
+country_event = {######调解矛盾幽灵
+	id = sgs.45
+	title = sgs.45.t 
+	desc = sgs.45.d 
+	is_triggered_only = yes
+	option = {
+		ai_chance = {
+			base = 10
+		}
+		name = sgs.45.1
+		SGS = {
+			set_country_flag = SGS_youlingtouyitiaojie_flag
+		}
+	}
+	option = {
+		ai_chance = {
+			base = 2
+		}
+		name = sgs.45.2
+		SGS = {
+			set_country_flag = SGS_youlingtouyitiaojie2_flag
+		}
+		MEL = {
+			country_event = {
+				id = sgs.49
+				days = 1
+			}
+		}
+	}
+}
+country_event = {##########调节成功
+	id = sgs.46
+	title = sgs.46.t 
+	desc = sgs.46.d 
+	fire_only_once = yes
+	 
+	trigger = {
+		SGS = {
+			has_country_flag = SGS_youlingtouyitiaojie_flag
+			has_country_flag = SGS_linglantouyitiaojie_flag
+		}
+		tag = SGS
+	}
+	option = {
+		name = sgs.46.1
+		SGS = {
+			white_peace = GH2
+			white_peace = GH3
+			add_ideas = SGS_zanshifangxiamaodun_idea
+			diplomatic_relation = {
+				country = GH2
+				relation = non_aggression_pact
+				active = yes
+			}
+			diplomatic_relation = {
+				country = GH3
+				relation = non_aggression_pact
+				active = yes
+			}
+			GH2 = {
+				add_opinion_modifier = {
+					target = SGS
+					modifier = SGS_fangxiazhengduan_op
+				}
+			}
+			GH3 = {
+				add_opinion_modifier = {
+					target = SGS
+					modifier = SGS_fangxiazhengduan_op
+				}
+			}
+			add_to_faction = GH2
+			add_to_faction = GH3
+			add_to_faction = MEL
+		}
+		MEL = {
+			white_peace = GH2
+			white_peace = GH3
+			add_ideas = SGS_zanshifangxiamaodun_idea
+			diplomatic_relation = {
+				country = GH2
+				relation = non_aggression_pact
+				active = yes
+			}
+			diplomatic_relation = {
+				country = GH3
+				relation = non_aggression_pact
+				active = yes
+			}
+			MEL = {
+				add_opinion_modifier = {
+					target = SGS
+					modifier = SGS_fangxiazhengduan_op
+				}
+			}
+		}
+		GH2 = {
+			add_ideas = SGS_zanshifangxiamaodun_idea
+		}
+		GH3 = {
+			add_ideas = SGS_zanshifangxiamaodun_idea
+		}		
+		country_event = sgs.53
+	}
+}
+country_event = {##########调节失败
+	id = sgs.47
+	title = sgs.47.t 
+	desc = sgs.47.d 
+	fire_only_once = yes
+	 
+	trigger = {
+		or = {
+			SGS = {
+				has_country_flag = SGS_youlingtouyitiaojie2_flag
+			}
+			SGS = {
+				has_country_flag = SGS_linglantouyitiaojie2_flag
+			}
+		}
+		tag = SGS
+	}
+	option = {
+		name = sgs.47.1
+		
+	}
+}
+country_event = {##########调节失败幽灵
+	id = sgs.48
+	title = sgs.48.t 
+	desc = sgs.48.d 
+	is_triggered_only = yes
+	option = {
+		name = sgs.48.1
+		
+	}
+}
+country_event = {##########调节失败铃兰
+	id = sgs.49
+	title = sgs.49.t 
+	desc = sgs.49.d 
+	is_triggered_only = yes
+	option = {
+		name = sgs.49.1
+		
+	}
+}
+country_event = {##########打完秋神后内乱
+	id = sgs.50
+	fire_only_once = yes
+	 
+	hidden = yes
+	trigger = {
+		tag = SGS
+		SGS = {
+			has_completed_focus = SGS_tiaojiemaodun
+			has_country_flag = SGS_youlingtouyitiaojie_flag
+			has_country_flag = SGS_linglantouyitiaojie_flag
+		}
+		or = {
+			not = {country_exists = AKI}
+			AKI = {is_subject = yes}
+		}
+	}
+	immediate = {
+		SGS = {
+			country_event = {
+				id = sgs.51
+				days = 30
+			}
+		}
+		MEL = {
+			country_event = {
+				id = sgs.51
+				days = 30
+			}
+		}
+		GH2 = {
+			country_event = {
+				id = sgs.51
+				days = 30
+			}
+		}
+		GH3 = {
+			country_event = {
+				id = sgs.51
+				days = 30
+			}
+		}
+	}
+}
+country_event = {#######内乱开始
+	id = sgs.51
+	title = sgs.51.t
+	desc = sgs.51.d
+	is_triggered_only = yes
+	option = {
+		name = sgs.51.1
+		ROOT = {
+			set_country_flag = SGS_anliu_flag
+		}
+		remove_ideas = SGS_zanshifangxiamaodun_idea
+		GH2 = {
+			remove_opinion_modifier = {
+				target = SGS
+				modifier = SGS_fangxiazhengduan_op
+			}
+		}
+		GH3 = {
+			remove_opinion_modifier = {
+				target = SGS
+				modifier = SGS_fangxiazhengduan_op
+			}
+		}
+		MEL = {
+			remove_opinion_modifier = {
+				target = SGS
+				modifier = SGS_fangxiazhengduan_op
+			}
+		}
+		GH2 = {
+			add_opinion_modifier = {
+				target = SGS
+				modifier = SGS_anliuyongdong_op
+			}
+			add_opinion_modifier = {
+				target = MEL
+				modifier = SGS_anliuyongdong_op
+			}
+		}
+		GH3 = {
+			add_opinion_modifier = {
+				target = SGS
+				modifier = SGS_anliuyongdong_op
+			}
+			add_opinion_modifier = {
+				target = MEL
+				modifier = SGS_anliuyongdong_op
+			}
+		}
+		MEL = {
+			add_opinion_modifier = {
+				target = SGS
+				modifier = SGS_anliuyongdong_op
+			}
+			add_opinion_modifier = {
+				target = GH2
+				modifier = SGS_anliuyongdong_op
+			}
+			add_opinion_modifier = {
+				target = GH3
+				modifier = SGS_anliuyongdong_op
+			}
+		}
+		SGS = {remove_from_faction  = GH2	}
+		SGS = {remove_from_faction  = GH3	}
+		SGS = {remove_from_faction  = MEL	}
+	}
+}
+country_event = {#######内乱被打的提示
+	id = sgs.52
+	title = sgs.52.t
+	desc = sgs.52.d 
+	is_triggered_only = yes
+	option = {
+		name = sgs.52.1	
+	}
+}
+news_event = {######西南联合新闻
+	id = sgs.53
+	title = sgs.53.t
+	desc = sgs.53.d
+
+	fire_only_once = no
+	is_triggered_only = yes
+    major = yes
+	option = {
+		trigger = {
+			NOT = {tag = AKI}
+		}
+		name = sgs.53.1
+	}
+	option = {
+		trigger = {
+			tag = AKI
+		}
+		name = sgs.53.2
+	}
+}
+country_event = {########西南动乱加宣称
+	id = sgs.54
+	fire_only_once = yes
+	 
+	hidden = yes
+	trigger = {
+		tag = SGS
+	}
+	immediate = { 
+		add_state_claim = 179
+		add_state_claim = 395
+		add_state_claim = 396
+	}
+	
+}
+country_event = {########修大厦效果1 
+	id = sgs.55
+	 
+	fire_only_once = yes
+	hidden = yes
+	trigger = {
+		SGS = {
+			check_variable = {
+				SGS_jiandasha > 49.99
+			}
+		}
+	}
+	immediate = {
+		SGS = {
+			add_ideas = SGS_xiudashaxiaoguo_1_idea
+		}
+	}
+}
+country_event = {########修大厦效果2
+	id = sgs.56
+	 
+	fire_only_once = yes
+	hidden = yes
+	trigger = {
+		SGS = {
+			check_variable = {
+				SGS_jiandasha > 74.99
+			}
+		}
+	}
+	immediate = {
+		SGS = {
+			add_ideas = SGS_xiudashaxiaoguo_2_idea
+			remove_ideas = SGS_xiudashaxiaoguo_1_idea
+		}
+	}
+}
+country_event = {########修大厦效果3
+	id = sgs.57
+	 
+	fire_only_once = yes
+	hidden = yes
+	trigger = {
+		SGS = {
+			check_variable = { 
+				SGS_jiandasha > 99.99
+			}
+		}
+	}
+	immediate = {
+		SGS = {
+			remove_ideas = SGS_xiudashaxiaoguo_2_idea
+			add_ideas = SGS_xiudashaxiaoguo_3_idea
+			
+		}
+		every_country = {
+			add_opinion_modifier = {
+				target = SGS
+				modifier = SGS_xinanyihuidasha_op
+			}
+		}
+	}
+}
+country_event = {###########添加阳光宪法
+	id = sgs.58
+	fire_only_once = yes
+	 
+	hidden = yes
+	trigger = {
+		SGS = {
+			has_completed_focus = SGS_yangguangxianfa
+			not = {has_idea = SGS_zhengzaiyanjiuxianfa_idea}
+		}
+		tag = SGS
+		
+	}
+	immediate = {
+		add_dynamic_modifier = {modifier = SGS_yangguangxianfajingshen  } 
+		add_to_variable = {
+			sgs_yangguang_8 = 0.001
+		}
+	}
+}
+
+country_event = {############步话机事件
+	id = sgs.60
+	desc = sgs.60.d 
+	title = sgs.60.t
+	 
+	fire_only_once = yes
+	trigger = {
+		date > 147.2.10	
+		tag = SGS
+	}
+	option = {
+		name = sgs.60.1
+		set_technology = { zhiyuanzhuangbei = 1 }
+		set_technology = { zhihuixiaodui146 = 1 }
+		custom_effect_tooltip = SGS_buhuaji_tt
+		SGS = {
+			country_event = sgs.61
+		}
+	}
+}
+country_event = {##########步话机事件
+	id = sgs.61
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		add_equipment_to_stockpile = {
+			type = support_equipment_1
+			amount = 250
+			producer = SGS
+			
+		}
+	}
+}
+country_event = {###########妖精移民
+	id = sgs.62
+	title = sgs.62.t 
+	desc = sgs.62.d 
+	is_triggered_only = yes
+	option = {
+		name = sgs.62.1
+		swap_ideas = {
+			remove_idea = SGS_yimingdeyaojing_idea
+			add_idea = SGS_yimingdeyaojing2_idea
+		}
+		SCA = {
+			add_ideas = SGS_yaojingwailiu_idea
+		}
+	}
+
+}
+
+country_event = {###########实业团影响力过高
+	id = sgs.66
+	title = sgs.66.t 
+	desc = sgs.66.d 
+	fire_only_once = no
+	trigger = {
+		SGS = {
+			check_variable = {
+				SGS_yaojingshiyetuan > 79.99
+			}
+			not = {has_idea = SGS_guojiabeishiyetuankongzhi_idea}
+		}
+		tag = SGS
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
+	option = {
+		name = sgs.66.1
+		add_ideas = SGS_guojiabeishiyetuankongzhi_idea
+	}
+
+}
+country_event = {########集权效果1 
+	id = sgs.67
+	 
+	fire_only_once = yes
+	hidden = yes
+	trigger = {
+		SGS = {
+			check_variable = {
+				SGS_jiquandu > 39.99
+			}
+		}
+		tag = SGS
+	}
+	immediate = {
+		SGS = {
+			add_ideas = SGS_jiquandu_1_idea
+		}
+	}
+}
+country_event = {########集权效果2
+	id = sgs.68
+	 
+	fire_only_once = yes
+	hidden = yes
+	trigger = {
+		SGS = {
+			check_variable = {
+				SGS_jiquandu > 59.99
+			}
+		}
+		tag = SGS
+	}
+	immediate = {
+		SGS = {
+			add_ideas = SGS_jiquandu_2_idea
+			remove_ideas = SGS_jiquandu_1_idea
+		}
+	}
+}
+country_event = {########集权效果3
+	id = sgs.69
+	 
+	fire_only_once = yes
+	hidden = yes
+	trigger = {
+		SGS = {
+			check_variable = { 
+				SGS_jiquandu > 89.99
+			}
+		}
+		tag = SGS
+	}
+	immediate = {
+		SGS = {
+			remove_ideas = SGS_jiquandu_2_idea
+			add_ideas = SGS_jiquandu_3_idea
+			
+		}
+	}
+}
+
+country_event = {#对铃兰最后一战
+	id = sgs.71
+	title = sgs.71.t 
+	desc = sgs.71.d 
+	fire_only_once = yes
+	
+	trigger = {
+		has_war_with = MEL
+		tag = SGS
+	}
+	option = {
+		name = sgs.71.1
+	}
+}
+country_event = {#实业团影响力影响集权度
+	id = sgs.72
+	hidden = yes
+	trigger = {
+		SGS = {
+			check_variable = {
+				SGS_yaojingshiyetuan > 39.99
+			}
+			check_variable = {
+				SGS_yaojingshiyetuanyingxiang = 0
+			}
+		}
+		tag = SGS
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
+	immediate = {
+		set_variable = {
+			SGS_yaojingshiyetuanyingxiang = 1
+		}
+		add_to_variable = {
+			SGS_jiquandu_meizhou  = 0.1
+		}
+	}
+}
+country_event = {#实业团影响力影响集权度
+	id = sgs.73
+	hidden = yes
+	trigger = {
+		SGS = {
+			check_variable = {
+				SGS_yaojingshiyetuan < 40
+			}
+			check_variable = {
+				SGS_yaojingshiyetuanyingxiang = 1
+			}
+		}
+		tag = SGS
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
+	immediate = {
+		set_variable = {
+			SGS_yaojingshiyetuanyingxiang = 0
+		}
+		add_to_variable = {
+			SGS_jiquandu_meizhou  = -0.1
+		}
+	}
+}
+country_event = {#实业团影响力影响集权度
+	id = sgs.74
+	hidden = yes
+	trigger = {
+		SGS = {
+			check_variable = {
+				SGS_yaojingshiyetuan > 54.99
+			}
+			check_variable = {
+				SGS_yaojingshiyetuanyingxiang = 1
+			}
+		}
+		tag = SGS
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
+	immediate = {
+		set_variable = {
+			SGS_yaojingshiyetuanyingxiang = 2
+		}
+		add_to_variable = {
+			SGS_jiquandu_meizhou  = 0.1
+		}
+	}
+}
+country_event = {#实业团影响力影响集权度
+	id = sgs.75
+	hidden = yes
+	trigger = {
+		SGS = {
+			check_variable = {
+				SGS_yaojingshiyetuan < 55
+			}
+			check_variable = {
+				SGS_yaojingshiyetuanyingxiang = 2
+			}
+		}
+		tag = SGS
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
+	immediate = {
+		set_variable = {
+			SGS_yaojingshiyetuanyingxiang = 1
+		}
+		add_to_variable = {
+			SGS_jiquandu_meizhou  = -0.1
+		}
+	}
+}
+country_event = {#实业团影响力影响集权度
+	id = sgs.76
+	hidden = yes
+	trigger = {
+		SGS = {
+			check_variable = {
+				SGS_yaojingshiyetuan > 69.99
+			}
+			check_variable = {
+				SGS_yaojingshiyetuanyingxiang = 2
+			}
+		}
+		tag = SGS
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
+	immediate = {
+		set_variable = {
+			SGS_yaojingshiyetuanyingxiang = 3
+		}
+		add_to_variable = {
+			SGS_jiquandu_meizhou  = 0.1
+		}
+	}
+}
+country_event = {#实业团影响力影响集权度
+	id = sgs.77
+	hidden = yes
+	trigger = {
+		SGS = {
+			check_variable = {
+				SGS_yaojingshiyetuan < 70
+			}
+			check_variable = {
+				SGS_yaojingshiyetuanyingxiang = 3
+			}
+		}
+		tag = SGS
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
+	immediate = {
+		set_variable = {
+			SGS_yaojingshiyetuanyingxiang = 2
+		}
+		add_to_variable = {
+			SGS_jiquandu_meizhou  = -0.1
+		}
+	}
+}
+country_event = {###空军事件
+	id = sgs.78
+	title = sgs.78.t
+	desc = sgs.78.d 
+	fire_only_once = yes
+	trigger = {
+		SGS = {
+			not = {
+				has_tech = ma_bomber1
+				has_tech = ma_fighter1
+				has_tech = ma_st_bomber1
+			}
+			has_tech = lingganleida142
+		}
+		date > 147.5.1
+		tag = SGS
+	}
+	option = {
+		name = sgs.78.1
+		add_tech_bonus = {
+			bonus = 1
+			uses = 1 
+			category = fighter
+		}
+		add_tech_bonus = {
+			bonus = 1
+			uses = 1 
+			category = bomber
+		}
+		SGS = {
+			set_country_flag = SGS_kongjun_flag
+		}
+	}	
+}
+
+
+country_event = {###空军事件
+	id = sgs.79
+	title = sgs.79.t
+	desc = sgs.79.d 
+	fire_only_once = yes
+	trigger = {
+		tag = SGS
+		SGS = {
+			has_country_flag = SGS_kongjun_flag
+			or = {
+				has_tech = ma_bomber1
+				has_tech = ma_fighter1
+				has_tech = ma_st_bomber1
+			}
+		}
+	}
+	option = {
+		name = sgs.79.1
+		add_equipment_to_stockpile = {
+			type = ma_fighter_equipment
+			amount = 30
+			producer = SGS
+		}
+	}
+}
+country_event = {####雷达事件
+	id = sgs.80
+	title = sgs.80.t
+	desc = sgs.80.d 
+	fire_only_once = yes
+	trigger = {
+		date > 147.1.1
+		tag = SGS
+		SGS = {
+			not = {has_tech = lingganleida142}
+		}
+	}
+	option = {
+		name = sgs.80.1
+		set_technology = {lingganleida142 = 1}
+	}
+
+}
+country_event = {####联合度故事1
+	id = sgs.81
+	title = sgs.81.t 
+	desc = sgs.81.d 
+	fire_only_once = yes 
+	trigger = {
+		tag = SGS 
+		SGS = {
+			has_completed_focus = SGS_jingmideyueguang
+			not = {has_country_flag = SGS_lianhedushijian1_flag}
+		}
+	}
+	option = {
+		name = sgs.81.1
+		add_timed_idea = {
+			idea = SGS_zhaomuhetong_idea
+			days = 300
+			
+		}
+		custom_effect_tooltip = SGS_lianhedugushi11_tt
+		SGS = {
+			add_to_variable = {
+				SGS_yaojing = -5
+			}
+			add_to_variable = {
+				SGS_hetong = 5
+			}
+		}
+	}
+	option = {
+		name = sgs.81.2
+		
+		custom_effect_tooltip = SGS_lianhedugushi12_tt
+		SGS = {
+			add_to_variable = {
+				SGS_yaojing = 5
+			}
+			add_to_variable = {
+				SGS_hetong = -5
+			}
+		}
+	}
+	option = {
+		name = sgs.81.3
+		custom_effect_tooltip = SGS_lianhedugushi13_tt
+		SGS = {
+			add_to_variable = {
+				SGS_yaojing = 2
+			}
+			add_to_variable = {
+				SGS_hetong = 2
+			}
+		}
+		add_timed_idea = {
+			idea = SGS_ewaizhaomuhetong_idea
+			days = 300
+			
+		}
+	}
+}
+country_event = {#联合度故事2
+	id = sgs.82
+	title = sgs.82.t 
+	desc = sgs.82.d 
+	fire_only_once = yes
+	trigger = {
+		tag = SGS 
+		SGS = {
+			has_completed_focus = SGS_jingmideyueguang
+			not = {has_country_flag = SGS_lianhedushijian2_flag}
+		}
+	}
+	option = {
+		name = sgs.82.1
+		custom_effect_tooltip = SGS_lianhedugushi21_tt
+		SGS = {
+			add_to_variable = {SGS_caogenyaoguai = 5}
+			add_to_variable = {SGS_shenming = 5}
+			add_to_variable = {SGS_tiangou = 5}
+			add_to_variable = {SGS_hetong = 5}
+			add_to_variable = {SGS_yaoguai = 5}
+			add_to_variable = {SGS_youling = 5}
+			add_to_variable = {SGS_fashi = 5}
+			add_to_variable = {SGS_renlei = 5}
+			add_to_variable = {SGS_yaoshou = 5}
+		}
+		add_ideas = SGS_zhongzujvjv_idea
+	}
+	option = {
+		name = sgs.82.2
+		custom_effect_tooltip = SGS_lianhedugushi22_tt
+		SGS = {
+			add_to_variable = {SGS_caogenyaoguai = -5}
+			add_to_variable = {SGS_shenming = -5}
+			add_to_variable = {SGS_tiangou = -5}
+			add_to_variable = {SGS_hetong = -5}
+			add_to_variable = {SGS_yaoguai = -5}
+			add_to_variable = {SGS_youling = -5}
+			add_to_variable = {SGS_fashi = -5}
+			add_to_variable = {SGS_renlei = -5}
+			add_to_variable = {SGS_yaoshou = -5}
+		}
+		add_ideas = SGS_zhongzujiaocuozajv_idea
+		add_timed_idea = {
+			idea = SGS_fuzadexingdong_idea
+			days = 120
+		}
+	}
+}
+country_event = {#########革命的领导权
+	id = sgs.59
+	desc = sgs.59.d 
+	title = sgs.59.t
+	is_triggered_only = yes
+	option = {
+		name = sgs.59.1
+		create_faction = SGS_gemingyaojingtongmeng
+		set_rule = { can_create_factions = yes }
+	}
+	option = {
+		name = sgs.59.2
+		CIR = {
+			country_event = sgs.83
+		}
+	}
+}
+country_event = {###########革命领导权邀请琪露诺
+	id = sgs.63
+	title = sgs.63.t 
+	desc = sgs.63.d 
+	is_triggered_only = yes
+	option = {
+		name = sgs.63.1
+		SGS = {country_event = sgs.64}
+	}
+	option = {
+		name = sgs.63.2
+		SGS = {country_event = sgs.65}
+	}
+
+}
+country_event = {###########革命领导权邀请琪露诺回复
+	id = sgs.64
+	title = sgs.64.t 
+	desc = sgs.64.d 
+	is_triggered_only = yes
+	option = {
+		name = sgs.64.1
+		SGS = {add_to_faction = CIR}
+		SGS = {
+			add_opinion_modifier = {
+				target = CIR 
+				modifier = SGS_gemingtongmeng_op
+			}
+		}
+		CIR = {
+			add_opinion_modifier = {
+				target = SGS 
+				modifier = SGS_gemingtongmeng_op
+			}
+		}
+	}
+
+}
+country_event = {###########革命领导权邀请琪露诺回复
+	id = sgs.65
+	title = sgs.65.t 
+	desc = sgs.65.d 
+	is_triggered_only = yes
+	option = {
+		name = sgs.65.1
+	}
+
+}
+country_event = {###########革命领导权加入琪露诺琪露诺的选择
+	id = sgs.83
+	title = sgs.83.t 
+	desc = sgs.83.d 
+	is_triggered_only = yes
+	option = {
+		name = sgs.83.1
+		SGS = {
+			country_event = sgs.84
+		}
+	}
+	option = [
+		name = sgs.83.2
+		SGS = {
+			country_event = sgs.85
+		}
+	}
+
+}
+country_event = {###########革命领导权加入琪露诺琪露诺同意
+	id = sgs.84
+	title = sgs.84.t 
+	desc = sgs.84.d 
+	is_triggered_only = yes
+	option = {
+		name = sgs.84.1
+		CIR = {
+			add_to_faction = SGS
+		}
+	}
+}
+country_event = {###########革命领导权加入琪露诺琪露诺拒绝
+	id = sgs.85
+	title = sgs.85.t 
+	desc = sgs.85.d 
+	is_triggered_only = yes
+	option = {
+		name = sgs.85.1
+	}
+}
+country_event = {#######修大厦
+	id = sgs.86	
+	hidden = yes	
+	trigger = {
+		SGS = {
+			check_variable = {
+				SGS_jiandasha > 99.999
+			}
+			has_country_flag = SGS_jianlixinanyihuidasha
+		}
+		tag = SGS
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
+	immediate = {
+		clr_country_flag = SGS_jianlixinanyihuidasha
+	}
+}

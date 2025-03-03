@@ -1,0 +1,118 @@
+characters={
+	OTG_tsukasa ={
+		name = OTG_tsukasa
+		portraits={
+			civilian={
+				large="gfx/leaders/OTG/OTG_tsukasa.dds"
+				small="gfx/leaders/OTG/OTG_tsukasa_small.dds"
+			}
+			army = {
+				large="gfx/leaders/OTG/OTG_tsukasa.dds"
+				small="gfx/leaders/OTG/OTG_tsukasa_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { th_character th_original_character th_trait_moulvedashi }
+			skill = 6
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 7
+			logistics_skill = 4
+		}
+		advisor = {
+			slot = character_coop
+			idea_token = OTG_tsukasa
+			name = OTG_tsukasa
+			cost = 200
+			modifier = {
+				intel_network_gain_factor = 0.5
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	OTG_megumu ={
+		name = OTG_megumu
+		portraits={
+			civilian={
+				large="gfx/leaders/OTG/OTG_megumu.dds"
+				small="gfx/leaders/OTG/OTG_megumu_small.dds"
+			}
+			army = {
+				large="gfx/leaders/OTG/OTG_megumu.dds"
+				small="gfx/leaders/OTG/OTG_megumu_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { th_character th_original_character th_trait_dayaoguai th_trait_moulvedashi harsh_leader }
+			skill = 9
+			attack_skill = 0
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 3
+		}
+		advisor = {
+			slot = character_coop
+			idea_token = OTG_megumu
+			name = OTG_megumu
+			cost = 200
+			modifier = {
+				army_leader_start_level = 1
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	OTG_megumu_leader ={
+		name = OTG_megumu_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/OTG/OTG_megumu.dds"
+				small="gfx/leaders/OTG/OTG_megumu_small.dds"
+			}
+			army = {
+				large="gfx/leaders/OTG/OTG_megumu.dds"
+				small="gfx/leaders/OTG/OTG_megumu_small.dds"
+			}
+		}
+		country_leader={
+			ideology=oldorder_type
+			id=-1
+		}
+		country_leader={
+			ideology=guli_type
+			id=-1
+		}
+	}
+	OTG_council_leader ={
+		name = OTG_council_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/OTG/OTG_megumu.dds"
+				small="gfx/leaders/OTG/OTG_megumu_small.dds"
+			}
+			army = {
+				large="gfx/leaders/OTG/OTG_megumu.dds"
+				small="gfx/leaders/OTG/OTG_megumu_small.dds"
+			}
+		}
+		country_leader={
+			ideology=qinwai_type
+			id=-1
+		}
+		country_leader={
+			ideology=neworder_type
+			id=-1
+		}
+		country_leader={
+			ideology=fandong_type
+			id=-1
+		}
+		country_leader={
+			ideology=oldgenso_type
+			id=-1
+		}
+	}
+}

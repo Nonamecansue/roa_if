@@ -1,0 +1,82 @@
+﻿capital = 355
+146.1.1 = {
+    set_technology = {
+        #通用武器线
+        spell_card1 = 1
+        spear1 = 1
+        gun1 = 1
+        linglicunchu = 1
+        linglizhufu = 1
+        spell_card2 = 1
+        gun2 = 1
+            
+        #辅助
+
+        #专用辅助
+
+        #专用基础
+
+        #专用进阶
+
+        #混合系
+
+        #陆军学说
+        zhanchangzhihui140 = 1
+        zuzhihuazhanzheng142 = 1
+        zhanchangzhihui145 = 1
+            
+        #工程学 
+        jichushuxue = 1
+        shuxuegongju = 1
+        lingben = 1
+
+        #专用工程学
+
+        #工业
+        production_theory = 1
+        org_production = 1
+        jianzaojishu130 = 1
+        ziyuankaifa130 = 1
+            
+        #专用工业
+        linglishengchan130 = 1
+
+        #种族
+        # yanjiujingshen1 = 1
+            
+    }
+    
+}
+146.1.1={
+    # add_manpower = 150
+    add_ideas = {
+        type3_manpowerlv3
+        Pri_youkai
+        Tribal
+        dove1
+        close1
+        normal_border
+        sc_rule
+        MSH_ziyuanfeng_idea
+        MAF_divided_region_1
+    }
+    add_to_variable = {
+        MSH_boyili = 2
+    }
+    oob = "MYK_146"
+    # set_research_slots = 4
+    # Starting tech
+    #########局势修改
+    set_politics = {
+        ruling_party = fandong
+        election_frequency = 48
+        elections_allowed = no
+    }
+    set_popularities = {
+        qinwai = 0
+        guli = 0
+        neworder = 40
+        oldorder = 0
+        fandong = 60
+    }
+}

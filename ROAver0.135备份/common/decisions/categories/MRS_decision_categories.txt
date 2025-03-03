@@ -1,0 +1,113 @@
+
+MRS_Offer_peace_MSD = {
+
+	icon = generic_political_actions
+
+	priority = 95
+  
+	# allowed = {
+	# 	original_tag = MRS
+	# }
+
+	# visible = {
+    # 	original_tag = MRS
+	# }
+}
+
+MRS_Magic_Forest_Management = {
+
+	icon = generic_political_actions
+
+	priority = 90
+  
+  	# allowed = {
+	# 	OR = {
+	# 		original_tag = MRS
+	# 		original_tag = ALI
+	# 	}
+	# }
+
+	# visible = {
+	#     OR = {
+	# 		original_tag = MRS
+	# 		original_tag = ALI
+	# 	}
+	# }
+}
+
+MRS_Literature_Center = {
+
+	icon = generic_political_actions
+
+	priority = 85
+  
+#   	allowed = {
+#     	OR = {
+# 			original_tag = MRS
+# 			original_tag = ALI
+# 		}
+# 	}
+
+# 	visible = {
+# 	    OR = {
+# 			original_tag = MRS
+# 			original_tag = ALI
+# 		}
+# 	}
+# }
+}
+
+
+MRS_enemies_in_all_direction = {
+
+	icon = generic_political_actions
+
+	priority = 80
+  
+  	# allowed = {
+    # 	OR = {
+	# 		original_tag = MRS
+	# 		original_tag = ALI
+	# 	}
+	# }
+
+	# visible = {
+	# 	OR = {
+	# 		original_tag = MRS
+	# 		original_tag = ALI
+	# 	}
+	# }
+}
+
+
+MRS_jianlifendain_category = {
+	priority = 50
+}
+
+MRS_kexuemofashi_category = {
+	priority = 50
+}
+
+MRS_shuofuzhichi_category = {
+	priority = 50
+}
+
+MRS_qitashilipingwei_category = {
+	priority = 50
+}
+
+MRS_jiashenmofashirentong_category = {
+	priority = 50
+}
+
+MRS_xiaomiemofashizhifen_category = {
+	priority = 50
+}
+
+MRS_qitazhongzuliliang_category = {
+	priority = 50
+}
+
+MRS_mofazaoxueliang_category = {
+	priority = 50
+}

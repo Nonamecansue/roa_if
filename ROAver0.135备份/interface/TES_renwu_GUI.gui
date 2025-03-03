@@ -1,0 +1,119 @@
+guiTypes = {
+	containerWindowType = {
+		name = "TES_renwu_anniu_GUI"
+		position = { x = 12 y = -245 }
+		orientation = LOWER_RIGHT
+		origo = lower_right
+		size = { width = 88 height = 88 }
+
+		buttonType = {
+			name = "TES_renwu_anniu"
+			quadTextureSprite = "GFX_TES_renwu_anniu"
+			position = { x = 0 y = 0 }
+			shortcut = "v"
+			pdx_tooltip = "TES_renwu_anniu_tt"
+			clicksound = click_ok
+			oversound = ui_menu_over
+		}
+	}
+	containerWindowType = {
+		name = "TES_renwu_jiemian_GUI"
+		size = { width = 450 height = 150 }
+		position = { x = 500 y = 500 }
+		moveable = yes
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_TES_renwu_background"
+		}
+		buttonType = {
+			name = "exit_exit"
+			quadTextureSprite = "GFX_main_close_button"
+			position = { x = 0 y = 0 }
+			shortcut = "l"
+			pdx_tooltip = "[TES_renwu_tuichu_tt]"
+			clicksound = click_close
+			oversound = ui_menu_over
+		}
+		#独立之梦
+		iconType = {
+			name = "TES_dulizhimeng_wancheng"
+			quadTextureSprite = "GFX_TES_dulizhimeng_wancheng"
+			position = { x = 20 y = 15 }
+		}
+		buttonType = {
+			name = "TES_dulizhimeng_1"
+			quadTextureSprite = "GFX_TES_dulizhimeng"
+			position = { x = 20 y = 15 }
+			pdx_tooltip = "TES_dulizhimeng_tt"
+			oversound = ui_menu_over
+		}
+		buttonType = {
+			name = "TES_dulizhimeng"
+			quadTextureSprite = "GFX_TES_dulizhimeng"
+			position = { x = 20 y = 15 }
+			pdx_tooltip = "TES_dulizhimeng_tt"
+			oversound = ui_menu_over
+		}
+		#初入幻想
+		iconType = {
+			name = "TES_churuhxx_wancheng"
+			quadTextureSprite = "GFX_TES_churuhuanx_wancheng"
+			position = { x = 20 y = 12 }
+		}
+		buttonType = {
+			name = "TES_churuhxx_1"
+			quadTextureSprite = "GFX_TES_churuhuanx"
+			position = { x = 20 y = 12 }
+			pdx_tooltip = "TES_churuhuanx_tt"
+			oversound = ui_menu_over
+		}
+		buttonType = {
+			name = "TES_churuhxx"
+			quadTextureSprite = "GFX_TES_churuhuanx"
+			position = { x = 20 y = 12 }
+			pdx_tooltip = "TES_churuhuanx_tt"
+			oversound = ui_menu_over
+		}
+		#地狱之主
+		iconType = {
+			name = "TES_diyuzhizhu_wancheng"
+			quadTextureSprite = "GFX_TES_diyuzhizhu_wancheng"
+			position = { x = 160 y = 15 }
+		}
+		buttonType = {
+			name = "TES_diyuzhizhu_1"
+			quadTextureSprite = "GFX_TES_diyuzhizhu"
+			position = { x = 160 y = 15 }
+			pdx_tooltip = "TES_diyuzhizhu_tt"
+			oversound = ui_menu_over
+		}
+		buttonType = {
+			name = "TES_diyuzhizhu"
+			quadTextureSprite = "GFX_TES_diyuzhizhu"
+			position = { x = 160 y = 15 }
+			pdx_tooltip = "TES_diyuzhizhu_tt"
+			oversound = ui_menu_over
+		}
+		#天之军
+		iconType = {
+			name = "TES_tianzhijun_wancheng"
+			quadTextureSprite = "GFX_TES_tianzhijun_wancheng"
+			position = { x = 310 y = 28 }
+		}
+		buttonType = {
+			name = "TES_tianzhijun_1"
+			quadTextureSprite = "GFX_TES_tianzhijun"
+			position = { x = 310 y = 28 }
+			pdx_tooltip = "TES_tianzhijun_tt"
+			oversound = ui_menu_over
+		}
+		buttonType = {
+			name = "TES_tianzhijun"
+			quadTextureSprite = "GFX_TES_tianzhijun"
+			position = { x = 310 y = 28 }
+			pdx_tooltip = "TES_tianzhijun_tt"
+			oversound = ui_menu_over
+		}
+	}
+}

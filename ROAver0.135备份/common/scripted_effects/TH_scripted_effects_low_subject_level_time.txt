@@ -1,0 +1,273 @@
+# 冷却时间:只和等级有关
+# 1J:25
+# 2J:50
+# 3J:100
+# 4J:200
+
+# 下降所需时间:
+# (50+对面人力总发展度*对面的发展度/你的发展度)*附庸等级
+
+# 1j 0.75
+# 2j 1
+# 3j 1.1
+# 4j 1.2
+
+# 可以同时吞并多个附庸，吞并一个附庸每天所用为0.6
+
+# 加成修正
+# 下降所需时间-10% -20% -30% -40% -50%
+
+# PP消耗 -10% -20% -30% -40% -50%
+
+
+LS_defines = {
+	set_variable = { global.LS_cooldown_level1 = 25}
+	set_variable = { global.LS_cooldown_level2 = 50}
+	set_variable = { global.LS_cooldown_level3 = 100}
+	set_variable = { global.LS_cooldown_level4 = 200}
+
+	set_variable = { global.LS_low_time_factor_level1 = 1}
+	set_variable = { global.LS_low_time_factor_level2 = 2}
+	set_variable = { global.LS_low_time_factor_level3 = 3}
+	set_variable = { global.LS_low_time_factor_level4 = 4}
+
+	set_variable = { global.LS_low_per_PP_cost = 0.6}
+}
+
+LS_time_caculator = {
+
+	set_variable = { LS_base_time = all_value_plus_manpower}
+	OVERLORD = {
+		ROOT = {
+			divide_variable = { LS_base_time = PREV.all_value}
+		}
+	}
+	multiply_variable = { LS_base_time = all_value}
+	
+	add_to_variable = { LS_base_time = 50}
+
+	#等级
+	if = {
+		limit = {
+			or = {
+				has_autonomy_state = autonomy_integrated_puppet_guli_neworder
+				has_autonomy_state = autonomy_integrated_puppet_oldorder_oldgenso
+				has_autonomy_state = autonomy_integrated_puppet_qinwai_fandong
+			}
+		}
+		multiply_variable = { LS_base_time = global.LS_low_time_factor_level1}
+	}
+	if = {
+		limit = {
+			or = {
+				has_autonomy_state = autonomy_puppet_guli_neworder
+				has_autonomy_state = autonomy_puppet_oldorder_oldgenso
+				has_autonomy_state = autonomy_puppet_qinwai_fandong
+			}
+		}
+		multiply_variable = { LS_base_time = global.LS_low_time_factor_level2}
+	}
+	if = {
+		limit = {
+			has_autonomy_state = autonomy_colony
+		}
+		multiply_variable = { LS_base_time = global.LS_low_time_factor_level3}
+	}
+	if = {
+		limit = {
+			has_autonomy_state = autonomy_dominion
+		}
+		multiply_variable = { LS_base_time = global.LS_low_time_factor_level4}
+	}
+	
+
+	OVERLORD = {
+		PREV = {
+			#AI
+			if = {
+				limit = {
+					PREV = { is_ai = yes }
+				}
+				multiply_variable = { LS_base_time = 0.75 }
+			}
+			#STABILITY
+			set_temp_variable = { st = PREV.stability}
+			add_to_temp_variable = { st = -0.5}
+			clamp_temp_variable = { var = st min = 0 max = 1}
+			multiply_temp_variable = { st = -0.5}
+			add_to_temp_variable = { st = 1}
+			multiply_variable = { LS_base_time = st}
+			#MODIFIER
+			set_variable = { LS_base_time_factor = 1}
+			add_to_variable = { LS_base_time_factor = PREV.LS_base_time_add }
+			add_to_variable = { LS_base_time_factor = PREV.modifier@LS_subject_level_low_time_factor }
+			multiply_variable = { LS_base_time = LS_base_time_factor}
+			######上下限
+			clamp_variable = {
+				var = LS_base_time
+				# min = 50
+				max = 600
+			}
+			if = {
+				limit = {
+					has_country_flag = SS_dikangduli
+				}
+				multiply_variable = { LS_base_time = 2}
+			}
+		}
+
+	}
+}
+
+LS_start_lowing = {
+	set_country_flag = LS_start_lowing
+	set_variable = { LS_current_time = LS_base_time }
+	set_variable = { LS_lowing_progress = 0 }
+	OVERLORD = {
+		save_event_target_as = annexed_overlord
+	}
+	every_owned_state = {
+		limit = {
+			is_core_of = PREV
+			not = {
+				has_state_flag = will_be_annexed_by_@event_target:annexed_overlord
+			}
+		}
+		set_state_flag =  will_be_annexed_by_@event_target:annexed_overlord
+	}
+	country_event = gen.13
+}
+
+LS_stop_lowing = {
+	clr_country_flag = LS_start_lowing
+	set_variable = { LS_lowing_progress = 0 }
+}
+
+LS_daily = {
+	####counting 
+	if = {
+		limit = {
+			or = {
+				has_country_flag = LS_start_lowing
+				has_country_flag = LS_is_cooling_down
+				has_country_flag = LS_cooldown_completed
+			}
+			is_subject = no
+		}
+		clr_country_flag = LS_start_lowing
+		clr_country_flag = LS_is_cooling_down
+		clr_country_flag = LS_cooldown_completed
+	}
+
+	####time
+	if = {
+		limit = {
+			is_subject = yes
+		}
+		LS_time_caculator = yes
+	}
+
+	###OVERLORD PP cost
+	set_variable = { LS_lowing_number = 0}
+	every_country = {
+		limit = {
+			has_country_flag = LS_start_lowing
+			OVERLORD = {
+				tag = ROOT
+			}
+		}
+		ROOT = { add_to_variable = { LS_lowing_number = 1} }
+	}
+	
+	set_variable = { LS_lowing_pp_cost = global.LS_low_per_PP_cost}
+	multiply_variable = { LS_lowing_pp_cost = LS_lowing_number}
+
+	set_temp_variable = { percentage = 1}
+	add_to_temp_variable = { percentage = ROOT.modifier@LS_subject_level_low_pp_cost }
+	clamp_temp_variable = {	var = percentage min = 0 }
+	multiply_variable = { LS_lowing_pp_cost = percentage }
+
+	###subject lowing
+	if = {
+		limit = {
+			has_country_flag = LS_start_lowing
+		}
+		add_to_variable = { LS_lowing_progress = 1}
+		if = {
+			limit = {
+				check_variable = { LS_lowing_progress > LS_current_time}
+			}
+			low_puppet_level = yes
+			clr_country_flag = LS_start_lowing
+			clr_country_flag = LS_is_cooling_down
+			clr_country_flag = LS_cooldown_completed
+		}
+	}
+
+	###subject low cooldown
+	if = {
+		limit = {
+			is_subject = yes
+			not = {
+				has_country_flag = LS_is_cooling_down
+			}
+		}
+		set_country_flag = LS_is_cooling_down
+		if = {
+			limit = {
+				or = {
+					has_autonomy_state = autonomy_integrated_puppet_guli_neworder
+					has_autonomy_state = autonomy_integrated_puppet_oldorder_oldgenso
+					has_autonomy_state = autonomy_integrated_puppet_qinwai_fandong
+				}
+			}
+			set_variable = { LS_cooldown_time = global.LS_cooldown_level1}
+		}
+		if = {
+			limit = {
+				or = {
+					has_autonomy_state = autonomy_puppet_guli_neworder
+					has_autonomy_state = autonomy_puppet_oldorder_oldgenso
+					has_autonomy_state = autonomy_puppet_qinwai_fandong
+				}
+			}
+			set_variable = { LS_cooldown_time = global.LS_cooldown_level2}
+		}
+		if = {
+			limit = {
+				has_autonomy_state = autonomy_colony
+			}
+			set_variable = { LS_cooldown_time = global.LS_cooldown_level3}
+		}
+		if = {
+			limit = {
+				has_autonomy_state = autonomy_dominion
+			}
+			set_variable = { LS_cooldown_time = global.LS_cooldown_level4}
+		}
+	}
+	if = {
+		limit = {
+			is_subject = yes
+			has_country_flag = LS_is_cooling_down
+			not = {
+				has_country_flag = LS_cooldown_completed
+			}
+		}
+		add_to_variable = { LS_cooldown_time = -1 }
+		if = {
+			limit = {
+				check_variable = { LS_cooldown_time < 0 }
+			}
+			set_variable = { LS_cooldown_progress = 0}
+			set_country_flag = LS_cooldown_completed
+		}
+	}
+	if = { #当PP为0时还在下降可为负数
+		limit = {
+			has_political_power < 0.1
+			political_power_daily < 0
+		}
+		add_political_power = political_power_daily
+	}
+}

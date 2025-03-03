@@ -1,0 +1,165 @@
+ideas = {
+
+	sub_races = { 
+		law = yes
+		sub_Beast = {
+									
+			allowed_to_remove = {
+				always = no
+			}
+			picture = Beast
+			modifier = {
+				ST_race_no_penalty_on_Beast = 1
+			}
+
+			research_bonus = {
+
+			}
+
+			cost = 0
+			
+			cancel_if_invalid = no
+		}
+		
+		sub_Human = {
+			picture = Human						
+			allowed_to_remove = {
+				always = no
+			}
+			modifier = {
+				ST_race_no_penalty_on_Human = 1
+			}
+
+			research_bonus = {
+				science = 0.05
+			}
+
+			cost = 0
+			
+			cancel_if_invalid = no
+		}
+		
+		sub_Pri_youkai = {
+			picture = Pri_youkai
+			allowed_to_remove = {
+				always = no
+			}
+			modifier = {
+				ST_race_no_penalty_on_Pri_youkai = 1
+			}
+			cost = 0
+			cancel_if_invalid = no
+		}
+
+		sub_Youkai = {
+			picture = Youkai						
+			allowed_to_remove = {
+				always = no
+			}
+
+			modifier = {		
+				ST_race_no_penalty_on_Youkai  = 1
+			}
+			cost = 0
+			cancel_if_invalid = no
+			
+		}
+
+		sub_Magician = {
+			picture = Magician					
+			allowed_to_remove = {
+				always = no
+			}
+			modifier = {
+				ST_race_no_penalty_on_Magician  = 1
+			}
+			cost = 0
+			cancel_if_invalid = no
+		}
+
+		sub_Kappa = {
+			picture = Kappa					
+			allowed_to_remove = {
+				always = no
+			}
+			modifier = {
+				ST_race_no_penalty_on_Kappa  = 1
+			}
+			cost = 0
+			cancel_if_invalid = no
+		}
+
+		sub_Tenggu = {
+			picture = Tenggu
+			allowed_to_remove = {
+				always = no
+			}
+			
+			modifier = {
+				ST_race_no_penalty_on_Tengu  = 1
+			}
+			cost = 0
+			cancel_if_invalid = no
+		}
+
+		sub_God = {
+			picture = God		
+			allowed_to_remove = {
+				always = no
+			}
+			
+			modifier = {
+				ST_race_no_penalty_on_God  = 1
+			}
+			cost = 0
+			cancel_if_invalid = no
+		}
+
+
+		sub_Fairy = {
+			picture = Fairy	
+			allowed_to_remove = {
+				always = no
+			}
+			
+			modifier = {
+				ST_race_no_penalty_on_Fairy  = 1
+
+			}
+			
+			
+
+			cost = 0
+			
+			cancel_if_invalid = no
+		}
+		
+		sub_Ghost = {
+			picture = Ghost			
+			allowed_to_remove = {
+				always = no
+			}
+			
+			modifier = {
+				ST_race_no_penalty_on_Ghost  = 1
+			}
+			cost = 0
+			cancel_if_invalid = no
+		}
+
+		sub_none = {
+			picture = none_theory		
+			allowed_to_remove = {
+				always = no
+			}
+			
+			modifier = {
+				stability_factor = 0.2
+				custom_modifier_tooltip = sub_none_tt
+			}
+			cost = 0
+			cancel_if_invalid = no
+			default = yes
+		}
+	}
+}
