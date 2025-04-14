@@ -1,0 +1,143 @@
+focus_tree = {
+  id = ZYD_focus_1
+  country = {
+    factor = 0
+    modifier = {
+      add = 10
+      tag = ZYD
+    }
+  }
+
+  shared_focus = ty_medium_main 
+
+  continuous_focus_position = { x = 20 y = 1700 }
+
+
+  focus = {
+    #中有道_投资民用建设
+    id = ZYD_touziminyongjianshe
+    icon = GFX_focus_eng_concessions_to_the_trade_unions
+    cost = 1
+    x = 4
+    y = 0
+
+    # prerequisite = {
+    #    focus = ty_kejichuangxin
+    # }
+
+    # relative_position_id = ty_medium_main
+
+    available ={
+    
+    }
+
+    bypass = {
+    
+    }
+
+    completion_reward = {
+      add_timed_idea = {days = 365 idea = ZYD_touziminyongjianshe_focus}
+
+      142 ={
+        add_extra_state_shared_building_slots = 1
+        add_building_construction = {
+          type = industrial_complex
+          level = 1
+          instant_build = yes
+        }
+      }
+    }
+
+    ai_will_do = {
+      factor = 1
+    }
+
+    cancel_if_invalid = no
+    continue_if_invalid = yes
+    available_if_capitulated = yes
+  }
+
+  focus = {
+    #中有道_打击走私
+    id = ZYD_dajizous
+    icon = GFX_focus_eng_concessions_to_the_trade_unions
+    cost = 1
+    x = 3
+    y = 1
+
+    prerequisite = {
+      focus = ZYD_touziminyongjianshe
+    }
+
+    mutually_exclusive = {
+      focus = ZYD_jiecuzousizhe
+    }
+    # relative_position_id = ty_medium_main
+
+
+    available ={
+    
+    }
+
+    bypass = {
+    
+    }
+
+    completion_reward = {
+      add_stability = 0.05
+      add_war_support = 0.05
+    }
+
+    ai_will_do = {
+      factor = 1
+    }
+
+    cancel_if_invalid = no
+    continue_if_invalid = yes
+    available_if_capitulated = yes
+  }
+
+  focus = {
+    #中有道_接触走私者
+    id = ZYD_jiecuzousizhe
+    icon = GFX_focus_eng_concessions_to_the_trade_unions
+    cost = 1
+    x = 5
+    y = 1
+
+    prerequisite = {
+      focus = ZYD_touziminyongjianshe
+    }
+    mutually_exclusive = {
+      focus = ZYD_dajizous
+    }
+
+    # relative_position_id = ty_medium_main
+
+    available ={
+    
+    }
+
+    bypass = {
+    
+    }
+
+    completion_reward = {
+      swap_ideas = {
+        remove_idea = AKI_SmugglingCrisis_idea
+        add_idea = AKI_BacktheSmugglingNetwork_idea
+      }
+    }
+
+    ai_will_do = {
+      factor = 1
+    }
+
+    cancel_if_invalid = no
+    continue_if_invalid = yes
+    available_if_capitulated = yes
+  }
+}
+
+
+

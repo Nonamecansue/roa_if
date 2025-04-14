@@ -1069,6 +1069,17 @@ Ge_race_setting = {
 		set_variable = { ST_present_race = 4 }
 	}
 
+	425 = {
+		set_variable = { ST_origin_race = 4	 }
+		set_variable = { ST_present_race = 7 }
+	}
+
+	186 = {
+		set_variable = { ST_origin_race = 4	 }
+		set_variable = { ST_present_race = 7 }
+	}
+	
+
 	#KAS
 	every_state = {
 		limit = {

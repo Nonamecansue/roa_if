@@ -957,6 +957,25 @@ ideas = {
 				HMIF_daily_change = 0.03
 			}
 		}
+
+
+		ZYD_touziminyongjianshe_focus = {
+			picture = man_five_year_plan_air
+
+		    allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+			     production_speed_industrial_complex_factor = 0.1
+			}
+		}
 	}
 }
 		

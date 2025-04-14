@@ -1537,12 +1537,41 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
+				186 = {
+					weekly_manpower = 50
+				}
+
+				425 = {
+					weekly_manpower = 50
+				}
+			}
+		}
+
+		#民族精神_生与死的隔阂
+		AKI_TheRiftofLifeandDeath_idea = {
+			#图片
+			picture = generic_economic_increase
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				is_subject = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+
+			modifier = {
 				#稳定度-20%
 				stability_factor = -0.20
 				#政治点数-10%
 				political_power_factor = -0.1
-				#战争支持的+10%
-				war_support_factor = 0.1
+				#战争支持度-10%
+				war_support_factor = -0.1
 			}
 		}
 
@@ -1575,5 +1604,34 @@ ideas = {
 			}
 		}
 		
+		#民族精神_支持走私网络
+		AKI_BacktheSmugglingNetwork_idea = {
+			#图片
+			picture = generic_economic_increase
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				is_subject = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				#稳定度-20%
+				stability_factor = -0.2
+				#政治点数-10%
+				political_power_factor = -0.1
+				#战略资源-20%
+				local_resources_factor = -0.2
+				#生活消费品 20%
+				consumer_goods_factor = 0.20
+			}
+		}
 	}
 }
