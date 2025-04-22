@@ -1,7 +1,91 @@
 ﻿ l_simp_chinese:
   ZYD_touziminyongjianshe:0 "投资民用建设" 
   ZYD_touziminyongjianshe_desc:0 "我们应该建立一个民用建设投资基金，这对我们未来的发展有好处！" 
+
   ZYD_dajizous:0 "打击走私" 
   ZYD_dajizous_desc:0 "我们要对走私行为出重拳！" 
+
   ZYD_jiecuzousizhe:0 "接触走私者" 
   ZYD_jiecuzousizhe_desc:0 "走私行为已经无法阻止了，我们应该接触他们！" 
+
+  ZYD_jiechubianjingguankong:0 "解除边境管控"
+  ZYD_jiechubianjingguankong_desc:0 ""
+
+  ZYD_quxiaorujingshencha:0 "取消入境审查"
+  ZYD_quxiaorujingshencha_desc:0 ""
+
+  ZYD_fangqihaiguan:0 "放弃海关"
+  ZYD_fangqihaiguan_desc:0 ""
+
+  ZYD_fangzongzousijituan:0 "放纵走私集团"
+  ZYD_fangzongzousijituan_desc:0 ""
+
+  ZYD_guanbijingchaju:0 "关闭警察局"
+  ZYD_guanbijingchaju_desc:0 ""
+
+  ZYD_jiesanjundui:0 "解散军队"
+  ZYD_jiesanjundui_desc:0 ""
+
+  ZYD_zizhuzousi:0 "资助走私"
+  ZYD_zizhuzousi_desc:0 ""
+
+  ZYD_rangzousizhejinruzhengfu:0 "让走私者进入政府"
+  ZYD_rangzousizhejinruzhengfu_desc:0 ""
+
+  ZYD_kaichuzhengchangren:0 "开除正常人"
+  ZYD_kaichuzhengchangren_desc:0 ""
+
+  ZYD_zhongyoudaofanzuidiguo:0 "中有道犯罪帝国"
+  ZYD_zhongyoudaofanzuidiguo_desc:0 ""
+
+  ZYD_xiyinwailaifanzuizhe:0 "吸引外来犯罪者"
+  ZYD_zhongyoudaofanzuidiguo_desc:0 ""
+
+  ZYD_rangzousichengweixindeyanjing:0 "让走私成为新的眼睛"
+  ZYD_zhongyoudaofanzuidiguo_desc:0 ""
+
+  ZYD_shentoutaguomaoyiluxian:0 "渗透他国贸易路线"
+  ZYD_zhongyoudaofanzuidiguo_desc:0 ""
+
+  ZYD_shentoutaguojundui:0 "渗透他国军队"
+  ZYD_zhongyoudaofanzuidiguo_desc:0 ""
+
+  ZYD_shentoutaguozhengfu:0 "渗透他国政府"
+  ZYD_zhongyoudaofanzuidiguo_desc:0 ""
+
+  ZYD_jieshouwuzhuzhidi:0 "接手无主之地"
+  ZYD_zhongyoudaofanzuidiguo_desc:0 ""
+
+  ZYD_wuzhuangxindezousituanti:0 "武装新的走私团体"
+  ZYD_zhongyoudaofanzuidiguo_desc:0 ""
+
+  ZYD_rangzousituantichengdanzhixu:0 "让走私团体承担秩序"
+  ZYD_zhongyoudaofanzuidiguo_desc:0 ""
+
+
+
+
+
+
+  ZYD_tudijiaoyisuode_idea:0 "土地交易所得" 
+  ZYD_tudijiaoyisuode_idea_desc:0 "实际上我们才是东边村落土地交易的最大买家兼卖家，似乎目前他们的情况有点不太好并且开始对我们产生敌意，可是商人不就该这样吗？！"   
+
+  ZYD_TheEndlessSurgeOfGhost_idea:0 "不断涌现的亡灵"
+  ZYD_TheEndlessSurgeOfGhost_idea_desc:0 "由于三途河关闭了和我们之间的道路，那些本来奔向冥界的亡灵不得不滞留在我们的土地上。尽管我们已努力在想办法安置他们，但随着时间的推移，他们的数量任在增长，并和我们发生了严重冲突，我们必须尽快解决他们！要么接纳他们作为我们的一员，要么就送他们立地成佛！"
+
+  ZYD_TheRiftofLifeandDeath_idea:0 "生与死的隔阂"
+  ZYD_TheRiftofLifeandDeath_idea_desc:0 "亡灵的涌来彻底打破了我们社会的旧有秩序。在这个新旧交替的时代，生者对亡灵的猜忌与敌意日益加剧，而亡灵也在社会边缘寻求自己的位置。信任正在崩塌，冲突正在酝酿，中有道正走向分裂的未来。"
+
+  ZYD_SmugglingCrisis_idea:0 "走私危机"
+  ZYD_SmugglingCrisis_idea_desc:0 "中有道曾是一个繁荣的商业国度，和周边国家展开了良好的贸易合作。然而，随着亡灵对社会秩序的冲击，开始有一些不法分子在我们视线之外进行非法贸易，暗中操控黑市和走私网络。这些走私活动不仅吞噬了我们珍贵的资源，也严重侵蚀了国家的财政和社会秩序。"
+
+  ZYD_BacktheSmugglingNetwork_idea:0 "支持走私网络"
+  ZYD_BacktheSmugglingNetwork_idea_desc:0 "尽管他们控制的走私网络腐蚀了国家的根基，但这些地下组织在物资流通方面有着我们难以比拟的效率。如今，我们可以选择继续打击他们，也可以将他们纳入体制，予以扶持和监管，让这股暗流为我们所用——哪怕代价是进一步模糊法律与权力的界限。"
+
+
+
+
+
+
+  ZYD_TheEndlessSurgeOfGhost_category:0 "亡灵涌来"
+  ZYD_ghost_arrival:0 "亡灵到来"

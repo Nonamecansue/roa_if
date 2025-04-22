@@ -1,0 +1,66 @@
+ZYD_TheEndlessSurgeOfGhost_category = {
+	#亡灵到来
+    ZYD_ghost_arrival = {
+
+		icon = generic_civil_support
+
+		visible = {
+			tag = ZYD
+		}
+
+		allowed = {
+			tag = ZYD
+		}
+
+		available = {
+			NOT = { has_idea = ZYD_TheEndlessSurgeOfGhost_idea }
+		}
+
+		days_mission_timeout = 7
+
+		activation = {
+			has_idea = ZYD_TheEndlessSurgeOfGhost_idea
+		}
+
+		fire_only_once = no
+
+		days_remove = 0
+
+		remove_on_complete = yes
+
+		timeout_effect = {
+			# 1. 把当前世界紧张度存入临时变量 temp_mp
+			if = {
+				limit = { threat > 0.79 }
+				set_temp_variable = { var = temp_mp value = 1 }
+			}
+			else_if = {
+				limit = { threat > 0.49 }
+				set_temp_variable = { var = temp_mp value = 0.5 }
+			}
+			else_if = {
+				limit = { threat > 0.24 }
+				set_temp_variable = { var = temp_mp value = 0.25 }
+			}
+			else = {
+				set_temp_variable = { var = temp_mp value = 0 }
+			}
+
+			# 2. 将 temp_mp 乘以 2000
+			multiply_temp_variable = { var = temp_mp value = 2000 } 
+		
+			# 3. 在结果上再加 20
+			add_to_temp_variable = { var = temp_mp value = 20 }
+
+			186 = { add_manpower = var:temp_mp } 
+
+
+			set_temp_variable = { var = temp_mp2 value = temp_mp }
+
+			multiply_temp_variable = { var = temp_mp2 value = 0.5 }
+
+			425 = { add_manpower = temp_mp2 }
+		}
+
+    }
+}

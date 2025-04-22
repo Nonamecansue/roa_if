@@ -65,10 +65,10 @@
     type2_manpowerlv4
     nongye_gongye
     zhongshikejihua
-    AKI_tudijiaoyisuode_idea
-    AKI_TheEndlessSurgeOfGhost_idea
-    AKI_TheRiftofLifeandDeath_idea
-    AKI_SmugglingCrisis_idea
+    ZYD_tudijiaoyisuode_idea
+    ZYD_TheEndlessSurgeOfGhost_idea
+    ZYD_TheRiftofLifeandDeath_idea
+    ZYD_SmugglingCrisis_idea
     partial_economic_mobilisation
     }
     

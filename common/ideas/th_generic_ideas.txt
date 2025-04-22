@@ -959,7 +959,7 @@ ideas = {
 		}
 
 
-		ZYD_touziminyongjianshe_focus = {
+		ZYD_guojiatouziminyongjianshe_focus = {
 			picture = man_five_year_plan_air
 
 		    allowed = {

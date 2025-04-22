@@ -1,0 +1,143 @@
+ideas = {
+	country = {
+		#土地交易所
+		ZYD_tudijiaoyisuode_idea = {
+
+			picture = generic_economic_increase
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+			is_subject = no
+	        NOT = { has_global_flag = AKI_yizhitudijianbing_FLAG }
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.03
+			}
+		}
+
+		#民族精神_不断涌现的亡灵
+		ZYD_TheEndlessSurgeOfGhost_idea = {
+			#图片
+			picture = generic_economic_increase
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				is_subject = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				186 = {
+					weekly_manpower = 50
+				}
+
+				425 = {
+					weekly_manpower = 50
+				}
+			}
+		}
+
+		#民族精神_生与死的隔阂
+		ZYD_TheRiftofLifeandDeath_idea = {
+			#图片
+			picture = generic_economic_increase
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				is_subject = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				#稳定度-20%
+				stability_factor = -0.20
+				#政治点数-10%
+				political_power_factor = -0.1
+				#战争支持度-10%
+				war_support_factor = -0.1
+			}
+		}
+
+
+		#民族精神_走私危机
+		ZYD_SmugglingCrisis_idea = {
+			#图片
+			picture = generic_economic_increase
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				is_subject = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				#稳定度-10%
+				stability_factor = -0.10
+				#政治点数-10%
+				political_power_factor = -0.1
+				#战略资源-10%
+				local_resources_factor = -0.1
+			}
+		}
+		
+		#民族精神_支持走私网络
+		ZYD_BacktheSmugglingNetwork_idea = {
+			#图片
+			picture = generic_economic_increase
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				is_subject = no
+			}
+
+			allowed_civil_war = {
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				#稳定度-20%
+				stability_factor = -0.2
+				#政治点数-10%
+				political_power_factor = -0.1
+				#战略资源-20%
+				local_resources_factor = -0.2
+				#生活消费品 20%
+				consumer_goods_factor = 0.20
+			}
+		}
+	}
+}
