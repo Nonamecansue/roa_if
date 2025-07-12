@@ -1,9 +1,0 @@
-ZYD_TheEndlessSurgeOfGhost_category = {
-    icon = hol_draw_up_staff_plans
-
-	priority = 90
-    
-    visible = {
-        tag = ZYD
-    }
-}

@@ -1,6 +1,0 @@
-leader_traits = {
-	XBW_keyoukewudekuilei_trait = {
-
-	}
-	
-}

@@ -1,7 +1,0 @@
-continents = {
-	Gensokyo
-	Underground
-	Celestial
-	Netherworld
-	Hell
-}
