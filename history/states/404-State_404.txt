@@ -1,0 +1,30 @@
+state={
+	id=404
+	name="STATE_404"
+	provinces={
+		1630 3283 4031 4991 5834 8917 9204 9406 9416 10429 10749 13339 13374 13393 13425 13459 13477 13556 13584 
+	}
+	buildings_max_level_factor=1.000
+        manpower=132200
+                 state_category = city
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = WLT
+			add_core_of = WLT
+			victory_points = {1630 8 }
+			buildings = {
+				infrastructure = 3
+				air_base = 0
+				arms_factory = 3
+				industrial_complex = 1
+			}
+		}
+ 
+}

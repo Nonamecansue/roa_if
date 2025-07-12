@@ -1,0 +1,30 @@
+state={
+	id=40
+	name="STATE_40"
+	provinces={
+		2231 2557 2582 2674 3138 3947 6661 8310 9528 10076 11072 11102 
+	}
+	buildings_max_level_factor=1.000
+        manpower=9802
+                 state_category = town
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = SHO
+			add_core_of = SHO
+			victory_points = {3947  8 }
+			buildings = {
+				infrastructure = 2
+				air_base = 0
+				arms_factory = 2
+				industrial_complex = 1
+			}
+		}
+ 
+}

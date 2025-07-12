@@ -1,0 +1,30 @@
+state={
+	id=235
+	name="STATE_235"
+	provinces={
+		258 1713 2562 2734 4153 4607 5676 5781 6378 6399 7600 8551 9036 9865 10127 10187 10407 12150 12158 12209 12252 12253 12267 12294 12295 12339 12397 12432 12450 12503 
+	}
+	buildings_max_level_factor=1.000
+        manpower=6755
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 1 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = HZC
+			add_core_of = HZC
+			victory_points = {4607   1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

@@ -1,0 +1,30 @@
+state={
+	id=998
+	name="STATE_998"
+	provinces={
+		302 472 489 585 1806 2070 2117 2529 3090 3194 3264 3501 3797 4063 4740 4897 5212 5258 5316 5426 5642 6235 6491 6562 6747 6765 6832 7109 8119 8162 9181 9217 9988 10213 17585 17598 17621 17636 17639 17662 17663 17733 17736 17739 17743 17744 17746 17750 17752 17753 
+	}
+	buildings_max_level_factor=1.000
+        manpower=800
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = HHG
+			add_core_of = HHG
+
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

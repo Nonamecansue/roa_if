@@ -1,0 +1,30 @@
+state={
+	id=912
+	name="STATE_912"
+	resources={
+		steel=0.000
+		tungsten=0.000
+		chromium=3.000
+		rubber=0.000
+		aluminium=0.000
+		oil=2.000
+	}
+	provinces={
+		760 976 1267 1472 1531 1597 2350 3402 4380 4539 4639 6163 7299 7586 7642 8863 16961 16993 17024 17101 17102 17142 17178 17771 17906 
+	}
+	history = {
+		owner = TYH
+		add_core_of = TYH
+		victory_points = { 738  1 }
+		buildings = {
+			infrastructure = 0
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+	manpower=8465
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

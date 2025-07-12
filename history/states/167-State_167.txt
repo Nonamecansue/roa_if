@@ -1,0 +1,30 @@
+state={
+	id=167
+	name="STATE_167"
+	provinces={
+		5337 8828 8847 10353 11548 11575 11602 11642 11643 11674 11678 
+	}
+	buildings_max_level_factor=1.000
+        manpower=169877
+                 state_category = city
+	resources={
+		steel=2 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = DHC
+			add_core_of = DHC
+			victory_points = { 5337 30 }
+			buildings = {
+				infrastructure = 4
+				air_base = 0
+				arms_factory = 2
+				industrial_complex = 3
+			}
+		}
+ 
+}

@@ -1,0 +1,30 @@
+state={
+	id=281
+	name="STATE_281"
+	provinces={
+		623 2301 2577 3311 3943 4837 5407 6956 7400 9064 9791 9885 10529 12613 12638 12639 12694 12719 12775 12803 12878 12899 12954 12955 
+	}
+	buildings_max_level_factor=1.000
+        manpower=8728
+                 state_category = town
+	resources={
+		steel=22 #钢铁
+		tungsten = 0 #钨
+		chromium = 16 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = HZH
+			add_core_of = HZH
+			victory_points = {12613  8 }
+			buildings = {
+				infrastructure = 2
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 1
+			}
+		}
+ 
+}

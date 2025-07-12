@@ -1,0 +1,278 @@
+ideas = {
+
+	national_identity = { 
+		law = yes
+
+		GEL_NI_SuperRevolution = {#革命超视
+						
+			cost = 0
+			removal_cost = -1
+			level = 7
+
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no 
+			}
+
+			modifier = {
+				subversive_activites_upkeep = -0.15
+				production_factory_efficiency_gain_factor = 0.08
+			}
+			
+            picture = GFX_idea_GEL_NI_SuperRevolution
+			 
+			cancel_if_invalid = no
+		}
+
+		GEL_NI_Revolution = {#前锋激进 
+						
+			cost = 0
+			removal_cost = -1
+			level = 7
+
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no 
+			}
+
+			modifier = {
+				subversive_activites_upkeep = -0.1
+				production_factory_efficiency_gain_factor = 0.05
+			}
+
+			picture = GFX_idea_GEL_NI_Revolution
+			cancel_if_invalid = no
+		}
+
+		GEL_NI_libertyandopening = {#自由开放 
+						
+			cost = 0
+			removal_cost = -1
+			level = 7
+
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no 
+			}
+
+			modifier = {
+				stability_factor = 0.1
+				justify_war_goal_time = 0.1
+			}
+			picture = GFX_idea_GEL_NI_libertyandopening
+			cancel_if_invalid = no
+		}
+
+		GEL_NI_libertyandconver = {#自由保守
+						
+			cost = 0
+			removal_cost = -1
+			level = 7
+
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no 
+			}
+
+			modifier = {
+				stability_factor = 0.2
+				justify_war_goal_time = 0.1
+			}
+			picture = GFX_idea_GEL_NI_libertyandconver
+			cancel_if_invalid = no
+		}
+
+		GEL_NI_Order = {#秩序中立
+						
+			cost = 0
+			removal_cost = -1
+			level = 7
+
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no 
+			}
+
+			modifier = {
+				war_support_factor = 0.10
+				production_speed_industrial_complex_factor = -0.1
+			}
+			picture = GFX_idea_GEL_NI_Order
+			cancel_if_invalid = no
+		}
+
+		GEL_NI_Equality = { 
+						
+			cost = 0
+			removal_cost = -1
+			level = 7
+
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no 
+			}
+
+			modifier = {
+				army_morale_factor = 0.1
+				political_power_factor = -0.1
+			}
+			picture = GFX_idea_GEL_NI_Equality
+			cancel_if_invalid = no
+		}
+
+		GEL_NI_FakeEquality = {#名义平等
+						
+			cost = 0
+			removal_cost = -1
+			level = 7
+
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no 
+			}
+
+			modifier = {
+				army_morale_factor = 0.1
+				political_power_factor = -0.1
+			}
+			picture = GFX_idea_GEL_NI_FakeEquality
+			cancel_if_invalid = no
+		}
+
+		GEL_NI_Strictclass = {#等级森严
+						
+		cost = 0
+		removal_cost = -1
+		level = 7
+
+		allowed_to_remove = { 
+			always = no 
+		}
+
+		available = { 
+			always = no 
+		}
+
+		modifier = {
+			army_morale_factor = 0.05
+			political_power_factor = -0.25
+		}
+		picture = GFX_idea_GEL_NI_Strictclass
+		cancel_if_invalid = no
+	}
+
+	GEL_NI_theocracy = {#反动神权
+						
+	cost = 0
+	removal_cost = -1
+	level = 7
+
+	allowed_to_remove = { 
+		always = no 
+	}
+
+	available = { 
+		always = no 
+	}
+
+	modifier = {
+		army_morale_factor = -0.3
+		non_core_manpower = 0.1
+	}
+	picture = GFX_idea_GEL_NI_theocracy
+	cancel_if_invalid = no
+}
+
+GEL_NI_Colonial = {#殖民地
+						
+	cost = 0
+	removal_cost = -1
+	level = 7
+
+	allowed_to_remove = { 
+		always = no 
+	}
+
+	available = { 
+		always = no 
+	}
+
+	modifier = {
+		army_morale_factor = -0.4
+		non_core_manpower = 0.2
+	}
+	picture = GFX_idea_GEL_NI_Colonial
+	cancel_if_invalid = no
+}
+
+	GEL_NI_militarism = {#军国社会
+						
+			cost = 0
+			removal_cost = -1
+			level = 7
+
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no 
+			}
+
+			modifier = {
+				army_core_attack_factor = 0.1
+				non_core_manpower = -0.1
+			}
+			picture = GFX_idea_GEL_NI_militarism
+			cancel_if_invalid = no
+		}
+
+		GEL_NI_Ultranationalist = {#狂热性军国 
+						
+			cost = 0
+			removal_cost = -1
+			level = 7
+
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no 
+			}
+
+			modifier = {
+				army_morale_factor = 0.4
+				stability_factor = -0.25
+				non_core_manpower = 0.1
+				#partisan_effect = 0.1
+			}
+			picture = GFX_idea_GEL_NI_Ultranationalist
+			cancel_if_invalid = no
+		}
+
+	}
+
+		
+}

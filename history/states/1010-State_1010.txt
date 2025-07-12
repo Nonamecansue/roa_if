@@ -1,0 +1,30 @@
+state={
+	id=1010
+	name="STATE_1010"
+	provinces={
+		82 352 968 1750 2953 3908 5005 5579 5785 6035 6087 6226 6942 7282 8515 9473 10259 10637 17685 17692 17694 17697 17704 17705 17715 17717 17719 17722 17724 17731 17732 
+	}
+	buildings_max_level_factor=1.000
+        manpower=20985
+                 state_category = city
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 2 #铬
+		rubber=3 #橡胶
+		aluminium=1 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+		owner = YYT
+		add_core_of = YYT
+			victory_points = {  82 20 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

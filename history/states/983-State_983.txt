@@ -1,0 +1,30 @@
+state={
+	id=983
+	name="STATE_983"
+	provinces={
+		105 433 745 801 1882 2939 5414 5440 5703 5935 6045 6141 6205 6303 6535 7725 8852 9410 9685 10560 17474 17487 17488 17492 17521 17525 17545 17551 17552 17558 17562 17564 17573 17581 
+	}
+	buildings_max_level_factor=1.000
+        manpower=6979
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = YYT
+			add_core_of = YYT
+			victory_points = {  105 1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

@@ -1,0 +1,30 @@
+state={
+	id=434
+	name="STATE_434"
+	provinces={
+		355 1575 4182 6869 8435 13653 13669 13784 13819 13820 
+	}
+	buildings_max_level_factor=1.000
+        manpower=10022
+                 state_category = town
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 6 #铬
+		rubber=7 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = HZC
+			add_core_of = HZC
+			victory_points = { 355  10 }
+			buildings = {
+				infrastructure = 2
+				air_base = 0
+				arms_factory =1
+				industrial_complex = 1
+			}
+		}
+ 
+}

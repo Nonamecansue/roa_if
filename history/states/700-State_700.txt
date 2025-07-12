@@ -1,0 +1,30 @@
+state={
+	id=700
+	name="STATE_700"
+	provinces={
+		359 2123 2374 3032 4544 6109 6333 6595 7040 7407 9323 9343 9417 10158 10592 15306 15307 15341 15396 15403 15415 15480 15491 15496 15521 15542 15558 15605 15666 15717 
+	}
+	buildings_max_level_factor=1.000
+        manpower=9878
+                 state_category = city
+	resources={
+		steel=6 #钢铁
+		tungsten = 3 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=5 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = SSL
+			add_core_of = SSL
+			victory_points = { 359  15 }
+			buildings = {
+				infrastructure = 4
+				air_base = 0
+				arms_factory = 5
+				industrial_complex = 3
+			}
+		}
+ 
+}

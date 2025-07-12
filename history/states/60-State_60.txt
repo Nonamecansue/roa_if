@@ -1,0 +1,30 @@
+state={
+	id=60
+	name="STATE_60"
+	provinces={
+		225 1693 2004 2666 2714 5083 8184 11046 11061 11087 11187 
+	}
+	buildings_max_level_factor=1.000
+        manpower=5752
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = YLQ
+			add_core_of = YLQ
+			victory_points = { 225  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

@@ -1,0 +1,30 @@
+state={
+	id=343
+	name="STATE_343"
+	provinces={
+		421 1862 1969 3520 3813 5895 8718 9783 12975 13131 13274 13409 13498 
+	}
+	buildings_max_level_factor=1.000
+        manpower=3737
+                 state_category = town
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = FGJ
+			add_core_of = FGJ
+			victory_points = {  421 15 }
+			buildings = {
+				infrastructure = 1
+				air_base = 0
+				arms_factory = 2
+				industrial_complex = 1
+			}
+		}
+ 
+}

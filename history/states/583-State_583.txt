@@ -1,0 +1,30 @@
+state={
+	id=583
+	name="STATE_583"
+	provinces={
+		1752 3448 6653 7206 8219 8966 10727 14417 14452 14494 14510 14529 14530 14550 14582 14604 14610 14644 14669 
+	}
+	buildings_max_level_factor=1.000
+        manpower=33330
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = SYG
+			add_core_of = SYG
+			victory_points = {1752  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

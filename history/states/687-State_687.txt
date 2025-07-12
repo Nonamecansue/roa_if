@@ -1,0 +1,30 @@
+state={
+	id=687
+	name="STATE_687"
+	provinces={
+		4097 5948 7193 8923 9545 10363 15192 15310 15311 15354 
+	}
+	buildings_max_level_factor=1.000
+        manpower=16044
+                 state_category = town
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 4 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = XHT
+			add_core_of = XHT
+			victory_points = { 4097 10 }
+			buildings = {
+				infrastructure = 2
+				air_base = 0
+				arms_factory = 1
+				industrial_complex = 1
+			}
+		}
+ 
+}

@@ -1,0 +1,30 @@
+state={
+	id=833
+	name="STATE_833"
+	provinces={
+		97 677 851 931 1109 1523 1827 1961 3772 3858 4254 4387 4413 4667 4959 6529 6884 7436 8800 9265 9699 10398 10596 16351 16504 16511 16526 16551 16677 16696 16781 16807 
+	}
+	buildings_max_level_factor=1.000
+        manpower=198
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = JXJ
+			add_core_of = JXJ
+
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

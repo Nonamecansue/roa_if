@@ -1,0 +1,30 @@
+state={
+	id=748
+	name="STATE_748"
+	provinces={
+		836 1240 2283 3021 3588 3674 3825 4534 5148 5451 6283 6594 7091 7380 9623 10236 10486 15645 15712 15748 15831 16028 16090 16119 
+	}
+	buildings_max_level_factor=1.000
+        manpower=3261
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = SBL
+			add_core_of = SBL
+			victory_points = { 836  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

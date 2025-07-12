@@ -1,0 +1,30 @@
+state={
+	id=253
+	name="STATE_253"
+	provinces={
+		772 985 1121 1662 2296 2540 3109 5244 7914 9680 10078 10388 12296 12385 12551 12654 12752 
+	}
+	buildings_max_level_factor=1.000
+        manpower=2567
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = ZZZ
+			add_core_of = ZZZ
+			victory_points = { 772  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

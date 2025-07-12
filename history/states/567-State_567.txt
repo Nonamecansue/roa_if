@@ -1,0 +1,26 @@
+
+state={
+	id=567
+	name="STATE_567"
+
+	history={
+		owner = SYG
+		add_core_of = SYG
+		buildings = {
+			infrastructure = 1
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 1
+
+		}
+		victory_points = { 1195 8 }
+	}
+
+	provinces={
+		1195 1903 2164 2473 3073 3385 3722 4784 4929 6152 8469 8526 9282 9957 14266 14282 14366 14394 14470 14471 14509 14516 14569 14587 14601 14629 
+	}
+	manpower=83044
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

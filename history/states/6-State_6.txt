@@ -1,0 +1,30 @@
+state={
+	id=6
+	name="STATE_6"
+	provinces={
+		3362 3413 4780 5290 6196 7101 7331 10770 10796 
+	}
+	buildings_max_level_factor=1.000
+        manpower=2137
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 1 #钨
+		chromium = 8 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = JIU
+			add_core_of = JIU
+			victory_points = { 3362  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

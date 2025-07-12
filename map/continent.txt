@@ -1,0 +1,15 @@
+continents = {
+	SGensokyo
+	Underground
+	Celestial
+	Netherworld
+	Hell
+	GreatLake
+	GenSouthwest
+        EGensokyo
+	YaokaiMountain
+	MagicForest
+	Bamboo
+	Yakumo
+       Okina
+}

@@ -1,0 +1,30 @@
+state={
+	id=108
+	name="STATE_108"
+	provinces={
+		797 1412 1978 2040 2697 4143 5369 7609 8711 11296 11323 11333 11368 11515 
+	}
+	buildings_max_level_factor=1.000
+        manpower=6832
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 3 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = SYH
+			add_core_of = SYH
+			victory_points = { 797  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

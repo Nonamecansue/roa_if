@@ -1,0 +1,10 @@
+TIR_99_fight = {
+	allowed = {
+           OR = {
+	       tag = TIR
+	    }
+    }
+	priority = 15
+
+	picture = 
+}

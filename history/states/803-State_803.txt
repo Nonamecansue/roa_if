@@ -1,0 +1,30 @@
+state={
+	id=803
+	name="STATE_803"
+	provinces={
+		1711 1809 4459 5474 5654 5664 5675 6259 6420 6608 7411 7602 7643 9631 9891 10277 16155 16175 16215 16253 16264 16304 16359 16365 16384 16385 
+	}
+	buildings_max_level_factor=1.000
+        manpower=10247
+                 state_category = town
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 2 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner =FSS
+			add_core_of = FSS
+			victory_points = { 1711  10 }
+			buildings = {
+				infrastructure = 2
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 2
+			}
+		}
+ 
+}

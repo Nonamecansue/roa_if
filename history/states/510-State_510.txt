@@ -1,0 +1,30 @@
+state={
+	id=510
+	name="STATE_510"
+	provinces={
+		1959 2991 3432 5459 6501 6776 6930 8404 8507 8848 9106 9419 14120 14121 14160 14177 14195 14222 14232 14311 
+	}
+	buildings_max_level_factor=1.000
+        manpower=6277
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = JSS
+			add_core_of = JSS
+			victory_points = { 1959 1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

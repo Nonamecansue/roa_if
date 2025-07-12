@@ -1,0 +1,94 @@
+#——————————开局——————————#
+characters={
+	SMF_starandluna ={ #斯塔与露娜
+		name = SMF_starandluna
+		portraits={
+			civilian={
+				large="gfx/leaders/SMF/SMF_starandluna.dds"
+			}
+		}
+		country_leader={
+			ideology = radicalism_national_liberation_front_subtype
+			id = -1	 
+		}
+	
+		advisor = {
+			slot = character_coop
+			idea_token = SMF_starandluna
+			name = SMF_starandluna
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	SMF_lunachild ={ #露娜.切露德
+	name = SMF_lunachild
+	portraits={
+		civilian={
+			large="gfx/leaders/SMF/SMF_lunachild.dds"
+			small="gfx/leaders/SMF/SMF_lunachild_small.dds"
+		}
+	}
+	country_leader={
+		ideology = progressivism_national_progressivism_subtype
+		id = -1	 
+	}
+
+	advisor = {
+		slot = character_coop
+		idea_token = SMF_lunachild
+		name = SMF_lunachild
+		cost = 200
+		modifier = {
+			# character_coop_cost_factor = -0.15 在这里无效
+			political_power_gain = 0.2
+			consumer_goods_factor = -0.02
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+    SMF_starsapphire ={ #斯塔.萨菲亚
+	name = SMF_starsapphire
+	portraits={
+		civilian={
+			large="gfx/leaders/SMF/SMF_starsapphire.dds"
+			small="gfx/leaders/SMF/SMF_starsapphire_small.dds"
+		}
+	}
+	country_leader={
+		ideology = radicalism_national_liberation_front_subtype
+		id = -1	 
+	}
+
+	advisor = {
+		slot = character_coop
+		idea_token = SMF_starsapphire
+		name = SMF_starsapphire
+		cost = 200
+		modifier = {
+			# character_coop_cost_factor = -0.15 在这里无效
+			political_power_gain = 0.2
+			consumer_goods_factor = -0.02
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+
+
+
+
+
+}

@@ -1,0 +1,30 @@
+state={
+	id=999
+	name="STATE_999"
+	provinces={
+		55 1098 1151 2798 3462 5243 5955 6710 7628 8471 9151 17603 17608 17622 17629 17655 
+	}
+	buildings_max_level_factor=1.000
+        manpower=7857
+                 state_category = town
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 3 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = MHD
+			add_core_of = MHD
+			victory_points = {  55 15 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

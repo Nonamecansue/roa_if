@@ -1,0 +1,8 @@
+MBS_decision_category = {
+	allowed = {
+           OR = {
+	       tag = MBS
+	    }
+    }
+	priority = 15
+}

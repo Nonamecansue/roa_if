@@ -1,0 +1,30 @@
+state={
+	id=774
+	name="STATE_774"
+	provinces={
+		953 3464 4430 5632 9175 9234 9388 15842 15922 15968 15975 15976 
+	}
+	buildings_max_level_factor=1.000
+        manpower=1341
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+		owner = XNG
+		add_core_of = XNG
+			victory_points = { 953 1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

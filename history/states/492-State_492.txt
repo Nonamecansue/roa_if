@@ -1,0 +1,30 @@
+state={
+	id=492
+	name="STATE_492"
+	provinces={
+		1237 1521 1616 5570 9127 10466 
+	}
+	buildings_max_level_factor=1.000
+        manpower=12547
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = DYL
+			add_core_of = DYL
+			victory_points = { 1237  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

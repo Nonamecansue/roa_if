@@ -1,0 +1,86 @@
+characters={
+	CFY_kishidarinsuke = {#岸田林介
+		name = CFY_kishidarinsuke
+		portraits={
+			civilian={
+				large="gfx/leaders/CFY/CFY_kishidarinsuke.dds"
+				small="gfx/leaders/CFY/CFY_kishidarinsuke_small.dds"
+			}
+			army = {
+				large="gfx/leaders/CFY/CFY_kishidarinsuke.dds"
+				small="gfx/leaders/CFY/CFY_kishidarinsuke_small.dds"
+			}
+			
+		}
+		country_leader={
+			ideology = despotism_corporate_republicanism_subtype
+			id=-1
+		}
+		corps_commander = {
+			traits = {  th_original_character trait_cautious }
+			attack_skill = 5
+			defense_skill = 7
+			planning_skill = 5
+			logistics_skill = 5
+			skill = 6
+			# id = 23
+		}
+		advisor = {
+			slot = character_coop
+			idea_token = CFY_kishidarinsuke
+			name = CFY_kishidarinsuke
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	CFY_yamashirotakane = {#山城高岭
+	name = CFY_yamashirotakane
+	portraits={
+		civilian={
+			large="gfx/leaders/CFY/CFY_yamashirotakane.dds"
+			small="gfx/leaders/CFY/CFY_yamashirotakane_small.dds"
+		}
+		army = {
+			large="gfx/leaders/CFY/CFY_yamashirotakane.dds"
+			small="gfx/leaders/CFY/CFY_yamashirotakane_small.dds"
+		}
+		
+	}
+	country_leader={
+		ideology = progressivism_frontworld_liberalism_subtype
+		id=-1
+	}
+	corps_commander = {
+		traits = {  th_original_character trait_cautious }
+		attack_skill = 5
+		defense_skill = 7
+		planning_skill = 5
+		logistics_skill = 5
+		skill = 6
+		# id = 23
+	}
+	advisor = {
+		slot = character_coop
+		idea_token = CFY_yamashirotakane
+		name = CFY_yamashirotakane
+		cost = 200
+		modifier = {
+			# character_coop_cost_factor = -0.15 在这里无效
+			political_power_gain = 0.2
+			consumer_goods_factor = -0.02
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+}

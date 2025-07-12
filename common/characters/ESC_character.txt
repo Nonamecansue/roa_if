@@ -1,0 +1,32 @@
+characters={
+	ESC_yagokoroeirin = {#八意永琳
+		name = ESC_yagokoroeirin
+		portraits={
+			civilian={
+				large="gfx/leaders/ESC/ESC_yagokoroeirin.dds"
+				small="gfx/leaders/ESC/ESC_yagokoroeirin_small.dds"
+			}
+			
+		}
+		country_leader={
+			ideology = republicanism_subtype
+			id=-1
+		}
+		
+			# id = 23
+		}
+		advisor = {
+			slot = character_coop
+			idea_token = ESC_yagokoroeirin
+			name = ESC_yagokoroeirin
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+		}
+	}
+}

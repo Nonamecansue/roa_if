@@ -1,0 +1,31 @@
+state={
+	id=5
+	name="STATE_5"
+	provinces={
+		38 415 798 804 950 1034 1275 1638 2415 2507 2513 2777 2797 3031 3331 4035 4281 4307 4525 4966 5020 5058 5120 5199 5986 6464 6782 6947 7202 7263 7557 7892 8185 8958 9736 9806 10016 10308 10361 10736 10768 10778 10780 10782 10787 10789 10800 10802 10809 10822 10828 10829 10831 10849 10854 10878 10887 
+	}
+	buildings_max_level_factor=1.000
+        manpower=1520
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 9 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = SHO
+			add_core_of = SHO
+			add_core_of = SHO
+			victory_points = { 4281 1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

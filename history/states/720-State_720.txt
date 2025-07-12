@@ -1,0 +1,30 @@
+state={
+	id=720
+	name="STATE_720"
+	provinces={
+		378 692 897 1441 3136 3842 4175 4300 4942 6617 8745 9102 10671 15537 15728 15776 
+	}
+	buildings_max_level_factor=1.000
+        manpower=52470
+                 state_category = large_town
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = SJS
+			add_core_of = SJS
+			victory_points = { 378  15 }
+			buildings = {
+				infrastructure = 3
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 2
+			}
+		}
+ 
+}

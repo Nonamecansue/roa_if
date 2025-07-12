@@ -1,0 +1,8 @@
+DFS_decision_category = {
+	allowed = {
+           OR = {
+	       tag = DFS
+	    }
+    }
+	priority = 15
+}

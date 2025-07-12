@@ -1,0 +1,760 @@
+technologies = {
+
+	basic_genindustry_tools = {
+	
+		production_factory_max_efficiency_factor = 0.03
+		
+		path = {
+			leads_to_tech = basic_izanagi_refination
+			research_cost_coeff = 1
+		}
+
+		
+		research_cost = 1.5
+		start_year = 125
+		folder = {
+			name = genindustry_folder
+			position = { x = -8 y = -4 }
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			cat_genindustry
+		}
+	}
+
+	basic_izanagi_refination = {
+	
+		production_factory_max_efficiency_factor = 0.02
+        manpower = 10000
+		
+
+		path = {
+			leads_to_tech = pro_izanagi_refination
+			research_cost_coeff = 1
+		}
+
+
+		research_cost = 1.5
+		start_year = 125
+		folder = {
+			name = genindustry_folder
+			position = { x = -6 y = -4 }
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			cat_genindustry
+		}
+	}
+
+	pro_izanagi_refination = {
+
+		production_factory_max_efficiency_factor = 0.02
+		civilian_factory_use = 0.02
+
+		path = {
+			leads_to_tech = basic_izanagi_application
+			research_cost_coeff = 1
+		}
+	
+		izanagi_gain = 0.02
+
+
+		research_cost = 1.5
+		start_year = 128
+		folder = {
+			name = genindustry_folder
+			position = { x = -6 y = -2 }
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			cat_genindustry
+		}
+	}
+
+	basic_izanagi_application = {
+	
+		production_factory_max_efficiency_factor = 0.1
+        production_factory_efficiency_gain_factor = 0.02
+		production_factory_start_efficiency_factor = 0.03
+		industrial_capacity_factory = 0.05
+		weekly_manpower = 30
+		
+		path = {
+			leads_to_tech = biological_izanagi_application_1
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = power_izanagi_application_1
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = industrial_izanagi_application_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 130
+		folder = {
+			name = genindustry_folder
+			position = { x = -6 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			cat_genindustry
+		}
+	}
+
+#————————————————生物应用灵能——————————————————#
+    biological_izanagi_application_1 = {
+	
+		weekly_manpower = 30
+	    state_resources_grain_factor = 0.05
+		
+		path = {
+			leads_to_tech = biological_izanagi_application_2
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = biological_izanagi_application_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 130
+		folder = {
+			name = genindustry_folder
+			position = { x = -10 y = 1 }
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			cat_genindustry
+		}
+	}
+
+
+	biological_izanagi_application_2 = {
+	
+		weekly_manpower = 30
+
+		path = {
+			leads_to_tech = biological_izanagi_application_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 130
+		folder = {
+			name = genindustry_folder
+			position = { x = -11 y = 3 }
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			cat_genindustry
+		}
+	}
+
+	biological_izanagi_application_3 = {
+	
+		state_resources_grain_factor = 0.05
+
+		path = {
+			leads_to_tech = biological_izanagi_application_5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 130
+		folder = {
+			name = genindustry_folder
+			position = { x = -9 y = 3 }
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			cat_genindustry
+		}
+	}
+
+	biological_izanagi_application_4 = {
+	
+		weekly_manpower = 30
+
+		path = {
+			leads_to_tech = biological_izanagi_application_6
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 130
+		folder = {
+			name = genindustry_folder
+			position = { x = -11 y = 5 }
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			cat_genindustry
+		}
+	}
+
+	biological_izanagi_application_5 = {
+	
+		state_resources_grain_factor = 0.05
+
+		path = {
+			leads_to_tech = biological_izanagi_application_7
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 130
+		folder = {
+			name = genindustry_folder
+			position = { x = -9 y = 5 }
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			cat_genindustry
+		}
+	}
+
+	biological_izanagi_application_6 = {
+	
+		weekly_manpower = 30
+
+		path = {
+			leads_to_tech = biological_izanagi_application_8
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 130
+		folder = {
+			name = genindustry_folder
+			position = { x = -11 y = 7 }
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			cat_genindustry
+		}
+	}
+
+	biological_izanagi_application_7 = {
+	
+		state_resources_grain_factor = 0.05
+
+		path = {
+			leads_to_tech = biological_izanagi_application_9
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 130
+		folder = {
+			name = genindustry_folder
+			position = { x = -9 y = 7 }
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			cat_genindustry
+		}
+	}
+
+	biological_izanagi_application_8 = {
+	
+		weekly_manpower = 30
+
+		research_cost = 1.5
+		start_year = 130
+		folder = {
+			name = genindustry_folder
+			position = { x = -11 y = 9 }
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			cat_genindustry
+		}
+	}
+
+	biological_izanagi_application_9 = {
+	
+		state_resources_grain_factor = 0.05
+
+		research_cost = 1.5
+		start_year = 130
+		folder = {
+			name = genindustry_folder
+			position = { x = -9 y = 9 }
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+		
+		categories = {
+			cat_genindustry
+		}
+	}
+
+#————————————————能源应用灵能——————————————————#
+    power_izanagi_application_1 = {
+
+	state_resources_izanagi_factor = 1.25
+    fuel_gain_factor = 0.02
+	
+	path = {
+		leads_to_tech = power_izanagi_application_2
+		research_cost_coeff = 1
+	}
+
+	path = {
+		leads_to_tech = power_izanagi_application_3
+		research_cost_coeff = 1
+	}
+
+	research_cost = 1.5
+	start_year = 130
+	folder = {
+		name = genindustry_folder
+		position = { x = -6 y = 2 }
+	}
+	
+	ai_will_do = {
+		factor = 50
+	}
+	
+	categories = {
+		cat_genindustry
+	}
+}
+
+    power_izanagi_application_2 = {
+
+	local_resources_factor = 0.25
+   
+	
+	
+	path = {
+		leads_to_tech = power_izanagi_application_4
+		research_cost_coeff = 1
+	}
+
+	research_cost = 1.5
+	start_year = 130
+	folder = {
+		name = genindustry_folder
+		position = { x = -7 y = 4 }
+	}
+	
+	ai_will_do = {
+		factor = 50
+	}
+	
+	categories = {
+		cat_genindustry
+	}
+}
+
+power_izanagi_application_3 = {
+
+    fuel_gain_factor = 0.02
+
+	path = {
+		leads_to_tech = power_izanagi_application_5
+		research_cost_coeff = 1
+	}
+
+	research_cost = 1.5
+	start_year = 130
+	folder = {
+		name = genindustry_folder
+		position = { x = -5 y = 4 }
+	}
+	
+	ai_will_do = {
+		factor = 50
+	}
+	
+	categories = {
+		cat_genindustry
+	}
+}
+
+power_izanagi_application_4 = {
+
+	local_resources_factor = 0.25
+   
+	
+	path = {
+		leads_to_tech = power_izanagi_application_6
+		research_cost_coeff = 1
+	}
+
+	research_cost = 1.5
+	start_year = 130
+	folder = {
+		name = genindustry_folder
+		position = { x = -7 y = 6 }
+	}
+	
+	ai_will_do = {
+		factor = 50
+	}
+	
+	categories = {
+		cat_genindustry
+	}
+}
+
+power_izanagi_application_5 = {
+
+    fuel_gain_factor = 0.02
+
+	path = {
+		leads_to_tech = power_izanagi_application_7
+		research_cost_coeff = 1
+	}
+
+	research_cost = 1.5
+	start_year = 130
+	folder = {
+		name = genindustry_folder
+		position = { x = -5 y = 6 }
+	}
+	
+	ai_will_do = {
+		factor = 50
+	}
+	
+	categories = {
+		cat_genindustry
+	}
+}
+
+power_izanagi_application_6 = {
+
+	local_resources_factor = 0.25
+
+	research_cost = 1.5
+	start_year = 130
+	folder = {
+		name = genindustry_folder
+		position = { x = -7 y = 8 }
+	}
+	
+	ai_will_do = {
+		factor = 50
+	}
+	
+	categories = {
+		cat_genindustry
+	}
+}
+
+power_izanagi_application_7 = {
+
+    fuel_gain_factor = 0.02
+
+
+	research_cost = 1.5
+	start_year = 130
+	folder = {
+		name = genindustry_folder
+		position = { x = -5 y = 8 }
+	}
+	
+	ai_will_do = {
+		factor = 50
+	}
+	
+	categories = {
+		cat_genindustry
+	}
+}
+
+#————————————————工业应用灵能——————————————————#
+
+industrial_izanagi_application_1 = {
+	
+	production_factory_efficiency_gain_factor = 0.02
+	production_factory_max_efficiency_factor = 0.03
+	
+	path = {
+		leads_to_tech = industrial_izanagi_application_2
+		research_cost_coeff = 1
+	}
+
+	path = {
+		leads_to_tech = industrial_izanagi_application_3
+		research_cost_coeff = 1
+	}
+
+	research_cost = 1.5
+	start_year = 130
+	folder = {
+		name = genindustry_folder
+		position = { x = -2 y = 1 }
+	}
+	
+	ai_will_do = {
+		factor = 50
+	}
+	
+	categories = {
+		cat_genindustry
+	}
+}
+
+industrial_izanagi_application_2 = {
+	
+	production_factory_efficiency_gain_factor = 0.02
+    
+	
+	path = {
+		leads_to_tech = industrial_izanagi_application_4
+		research_cost_coeff = 1
+	}
+
+
+	research_cost = 1.5
+	start_year = 130
+	folder = {
+		name = genindustry_folder
+		position = { x = -3 y = 3 }
+	}
+	
+	ai_will_do = {
+		factor = 50
+	}
+	
+	categories = {
+		cat_genindustry
+	}
+}
+
+industrial_izanagi_application_3 = {
+	
+	production_factory_max_efficiency_factor = 0.03
+	state_resources_steel_factor = 0.02
+	industrial_capacity_factory =0.05
+	path = {
+		leads_to_tech = industrial_izanagi_application_5
+		research_cost_coeff = 1
+	}
+
+	research_cost = 1.5
+	start_year = 130
+	folder = {
+		name = genindustry_folder
+		position = { x = -1 y = 3 }
+	}
+	
+	ai_will_do = {
+		factor = 50
+	}
+	
+	categories = {
+		cat_genindustry
+	}
+}
+
+
+industrial_izanagi_application_4 = {
+	
+	production_factory_efficiency_gain_factor = 0.02
+    industrial_capacity_factory =0.05
+	
+	path = {
+		leads_to_tech = industrial_izanagi_application_6
+		research_cost_coeff = 1
+	}
+
+
+	research_cost = 1.5
+	start_year = 130
+	folder = {
+		name = genindustry_folder
+		position = { x = -3 y = 5 }
+	}
+	
+	ai_will_do = {
+		factor = 50
+	}
+	
+	categories = {
+		cat_genindustry
+	}
+}
+
+industrial_izanagi_application_5 = {
+	
+	production_factory_max_efficiency_factor = 0.03
+	state_resources_steel_factor = 0.02
+
+	path = {
+		leads_to_tech = industrial_izanagi_application_7
+		research_cost_coeff = 1
+	}
+
+	research_cost = 1.5
+	start_year = 130
+	folder = {
+		name = genindustry_folder
+		position = { x = -1 y = 5 }
+	}
+	
+	ai_will_do = {
+		factor = 50
+	}
+	
+	categories = {
+		cat_genindustry
+	}
+}
+
+industrial_izanagi_application_6 = {
+	
+	production_factory_efficiency_gain_factor = 0.02
+    
+	
+	path = {
+		leads_to_tech = industrial_izanagi_application_8
+		research_cost_coeff = 1
+	}
+
+
+	research_cost = 1.5
+	start_year = 130
+	folder = {
+		name = genindustry_folder
+		position = { x = -3 y = 7 }
+	}
+	
+	ai_will_do = {
+		factor = 50
+	}
+	
+	categories = {
+		cat_genindustry
+	}
+}
+
+industrial_izanagi_application_7 = {
+	
+	production_factory_max_efficiency_factor = 0.03
+	state_resources_steel_factor = 0.02
+	industrial_capacity_factory =0.05
+	path = {
+		leads_to_tech = industrial_izanagi_application_9
+		research_cost_coeff = 1
+	}
+
+	research_cost = 1.5
+	start_year = 130
+	folder = {
+		name = genindustry_folder
+		position = { x = -1 y = 7 }
+	}
+	
+	ai_will_do = {
+		factor = 50
+	}
+	
+	categories = {
+		cat_genindustry
+	}
+}
+
+industrial_izanagi_application_8 = {
+	
+	production_factory_efficiency_gain_factor = 0.02
+    industrial_capacity_factory =0.05
+
+	research_cost = 1.5
+	start_year = 130
+	folder = {
+		name = genindustry_folder
+		position = { x = -3 y = 9 }
+	}
+	
+	ai_will_do = {
+		factor = 50
+	}
+	
+	categories = {
+		cat_genindustry
+	}
+}
+
+industrial_izanagi_application_9 = {
+	
+	production_factory_max_efficiency_factor = 0.03
+	state_resources_steel_factor = 0.02
+
+	research_cost = 1.5
+	start_year = 130
+	folder = {
+		name = genindustry_folder
+		position = { x = -1 y = 9 }
+	}
+	
+	ai_will_do = {
+		factor = 50
+	}
+	
+	categories = {
+		cat_genindustry
+	}
+}
+
+
+}

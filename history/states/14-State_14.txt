@@ -1,0 +1,30 @@
+state={
+	id=14
+	name="STATE_14"
+	provinces={
+		4 47 232 454 586 634 960 1103 1338 1560 1631 1779 1802 2006 2080 2157 2492 2816 2980 3104 3253 3491 3759 3776 4461 4643 4796 4817 5203 5342 5442 5525 5987 6490 6630 7493 7540 7667 7863 7886 8569 8571 9310 9571 9669 9921 10328 10406 10554 10746 10784 10785 10793 10797 10815 10816 10825 10861 10879 10881 10888 10929 10930 10931 10938 10969 11029 11073 11076 11100 
+	}
+	buildings_max_level_factor=1.000
+        manpower=2721
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = ZZD
+			add_core_of = ZZD
+			victory_points = { 10931  5 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

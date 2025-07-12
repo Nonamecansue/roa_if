@@ -1,0 +1,30 @@
+state={
+	id=625
+	name="STATE_625"
+	provinces={
+		397 423 468 528 605 1369 2467 2759 3065 3727 3774 3926 4173 5264 6349 6552 7148 8465 9244 15019 15144 15267 15340 
+	}
+	buildings_max_level_factor=1.000
+        manpower=1987
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = WZL
+			add_core_of = WZL
+			victory_points = { 397  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

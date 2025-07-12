@@ -1,0 +1,30 @@
+state={
+	id=442
+	name="STATE_442"
+	provinces={
+		826 958 1772 2096 4506 4645 5573 6957 7452 8070 8550 8650 8739 8972 8985 9163 9241 9567 10056 13735 13736 13752 13758 13794 13800 13801 13813 13833 13842 13892 13908 13921 13947 13951 13970 13998 14001 14066 14069 
+	}
+	buildings_max_level_factor=1.000
+        manpower=10753
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = JYZ
+			add_core_of = JYZ
+			victory_points = {  826 1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

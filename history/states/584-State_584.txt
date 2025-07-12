@@ -1,0 +1,30 @@
+state={
+	id=584
+	name="STATE_584"
+	provinces={
+		65 85 1266 1564 2009 2127 2186 3155 3159 4358 4512 5198 6154 6274 6403 7081 7278 7349 7506 7646 7811 7833 8253 9230 9318 9326 9435 9460 9837 10027 10561 14418 14430 14495 14498 14512 14521 14531 14544 14545 14556 14588 14597 14611 14630 14645 14650 14655 14662 14750 14772 14795 14847 
+	}
+	buildings_max_level_factor=1.000
+        manpower=1000
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 5 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = SXL
+			add_core_of = SXL
+			victory_points = { 65 1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

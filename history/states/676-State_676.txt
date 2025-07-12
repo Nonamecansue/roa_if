@@ -1,0 +1,29 @@
+state={
+	id=676
+	name="STATE_676"
+	provinces={
+		1388 7449 8854 15033 15099 15194 15278 
+	}
+	buildings_max_level_factor=1.000
+        manpower=9879
+                 state_category = town
+	resources={
+		steel=0 #钢铁
+		tungsten = 1 #钨
+		chromium = 2 #铬
+		rubber=5 #橡胶
+		aluminium=0 #铝
+		oil = 8 #石油
+	}		history = {
+			owner = MLS
+			add_core_of = MLS
+			victory_points = {  1388 10 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

@@ -1,0 +1,30 @@
+state={
+	id=845
+	name="STATE_845"
+	provinces={
+		400 886 2815 3381 3790 3933 4224 4974 5472 5666 5710 6206 6356 6835 8114 8217 8312 8367 8537 9002 9356 9391 9587 9907 10440 10448 10458 10502 16411 16493 16513 16525 16559 16604 16622 16635 16657 16658 16668 16673 16690 16694 16700 16708 16712 16726 16742 16758 16770 16815 16836 16875 16890 
+	}
+	buildings_max_level_factor=1.000
+        manpower=446890
+                 state_category = megalopolis
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = REN
+			add_core_of = REN
+			victory_points = { 400  40 }
+			buildings = {
+				infrastructure = 5
+				air_base = 0
+				arms_factory = 6
+				industrial_complex = 8
+			}
+		}
+ 
+}

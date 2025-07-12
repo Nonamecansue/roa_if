@@ -1,0 +1,30 @@
+state={
+	id=715
+	name="STATE_715"
+	provinces={
+		2657 3814 4190 4877 5699 5879 6475 6619 6881 7124 9298 9378 10474 15378 15586 15627 15643 15720 
+	}
+	buildings_max_level_factor=1.000
+        manpower=10120
+                 state_category = town
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = BBW
+			add_core_of = BBW
+			victory_points = { 2657 10 }
+			buildings = {
+				infrastructure = 1
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 1
+			}
+		}
+ 
+}

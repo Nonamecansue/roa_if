@@ -1,0 +1,30 @@
+state={
+	id=735
+	name="STATE_735"
+	provinces={
+		487 2456 2611 4681 5576 9247 15561 15589 15590 15613 15614 
+	}
+	buildings_max_level_factor=1.000
+        manpower=36904
+                 state_category = town
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = FSS
+			add_core_of = FSS
+			victory_points = { 487 3 }
+			buildings = {
+				infrastructure = 2
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 1
+			}
+		}
+ 
+}

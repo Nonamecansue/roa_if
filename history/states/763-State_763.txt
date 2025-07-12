@@ -1,0 +1,29 @@
+state={
+	id=763
+	name="STATE_763"
+	provinces={
+		792 1153 3325 7748 10327 15759 15785 15871 15889 15898 15954 15970 
+	}
+	buildings_max_level_factor=1.000
+        manpower=1021
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium =1 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 6 #石油
+	}		history = {
+			owner = MLS
+			add_core_of = MLS
+			victory_points = { 792  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

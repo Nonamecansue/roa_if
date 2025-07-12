@@ -1,0 +1,30 @@
+state={
+	id=942
+	name="STATE_942"
+	provinces={
+		1066 1568 2369 3180 3301 3447 3634 6458 8033 8353 8360 9452 17147 17286 17291 17354 17400 
+	}
+	buildings_max_level_factor=1.000
+        manpower=5648
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 2 #铬
+		rubber=3 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = LML
+			add_core_of = LML
+			victory_points = { 1066  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

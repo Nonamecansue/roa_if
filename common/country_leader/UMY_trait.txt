@@ -1,0 +1,132 @@
+leader_traits = {
+    UMY_cirno_traits_1 = {
+		random = no
+		#generic
+		political_power_gain = 0.15
+		stability_factor = 0.15
+
+		ai_will_do = {
+			factor = -5
+		}
+	}
+	
+	UMY_cirno_traits_2 = {
+		random = no
+		#generic
+		army_leader_cost_factor = -0.05
+		army_org_factor = 0.08
+		ai_will_do = {
+			factor = -5
+		}
+	}
+
+	UMY_revolyutsiya_traits_1 = {
+		random = no
+		#generic
+		political_power_gain = 0.22
+		consumer_goods_factor = -0.05
+		ai_will_do = {
+			factor = -5
+		}
+	}
+
+    UMY_revolyutsiya_traits_2 = {
+		random = no
+		#generic
+		vanguard_revolutionism_acceptance = 0.03
+		war_support_factor = 0.02
+		ai_will_do = {
+			factor = -5
+		}
+	}
+
+	UMY_freeequelier_traits_1 = {
+		random = no
+		#generic
+		political_power_gain = 0.25
+		consumer_goods_factor = -0.06
+		stability_factor = -0.03
+		ai_will_do = {
+			factor = -5
+		}
+	}
+
+    UMY_freeequelier_traits_2 = {
+		random = no
+		#generic
+		war_support_factor = 0.04
+		army_org_factor = 0.09 
+		production_speed_infrastructure_factor = 0.03 
+		ai_will_do = {
+			factor = -5
+		}
+	}
+
+	UMY_dcdelta_traits_1 = {
+		random = no
+		#generic
+		political_power_gain = 0.20
+		stability_factor = 0.05
+		ai_will_do = {
+			factor = -5
+		}
+	}
+
+	UMY_dcdelta_traits_2 = {
+		random = no
+		#generic
+		progressivism_acceptance = 0.05
+		army_org_factor = 0.02
+		ai_will_do = {
+			factor = -5
+		}
+	}
+
+	UMY_axes_traits_1 = {
+		random = no
+		#generic
+		political_power_gain = 0.23
+		consumer_goods_factor = -0.03
+		stability_factor = -0.06
+		ai_will_do = {
+			factor = -5
+		}
+	}
+
+    UMY_axes_traits_2 = {
+		random = no
+		#generic
+		war_support_factor = 0.06
+		corporatism_drift = 0.06
+		army_org_factor = 0.07
+		ai_will_do = {
+			factor = -5
+		}
+	}
+
+	UMY_bloodyrevenge_traits_1 = {
+		random = no
+		#generic
+		political_power_gain = 0.20
+		stability_factor = -0.09
+		ai_will_do = {
+			factor = -5
+		}
+	}
+
+
+    UMY_bloodyrevenge_traits_2 = {
+		random = no
+		#generic
+		war_support_factor = 0.15
+		ultraism_acceptance = 0.06
+		ai_will_do = {
+			factor = -5
+		}
+	}
+
+	
+
+
+
+}

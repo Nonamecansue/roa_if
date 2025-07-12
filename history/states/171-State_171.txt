@@ -1,0 +1,30 @@
+state={
+	id=171
+	name="STATE_171"
+	provinces={
+		532 955 1258 3152 4263 4684 6198 8531 8803 10382 11589 11703 11727 11758 11790 11800 11861 11865 
+	}
+	buildings_max_level_factor=1.000
+        manpower=7877
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 4 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = DHC
+			add_core_of = DHC
+			victory_points = { 532 1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

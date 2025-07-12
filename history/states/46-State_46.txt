@@ -1,0 +1,29 @@
+state={
+	id=46
+	name="STATE_46"
+	provinces={
+		743 752 2767 3199 3431 5409 6177 7852 8431 10997 
+	}
+	buildings_max_level_factor=1.000
+        manpower=999
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 1 #石油
+	}		history = {
+			owner = TJG
+			add_core_of = TJG
+			victory_points = { 743  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

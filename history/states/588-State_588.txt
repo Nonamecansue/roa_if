@@ -1,0 +1,30 @@
+state={
+	id=588
+	name="STATE_588"
+	provinces={
+		156 1320 1360 2814 3612 3865 5788 7784 9327 9940 10643 14438 14475 14520 14528 14543 14580 14581 14637 
+	}
+	buildings_max_level_factor=1.000
+        manpower=409888
+                 state_category = large_city
+	resources={
+		steel=7 #钢铁
+		tungsten = 0 #钨
+		chromium = 2 #铬
+		rubber=2 #橡胶
+		aluminium=5 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = SYG
+			add_core_of = SYG
+			victory_points = { 156 20 }
+			buildings = {
+				infrastructure = 3
+				air_base = 0
+				arms_factory = 2
+				industrial_complex = 3
+			}
+		}
+ 
+}

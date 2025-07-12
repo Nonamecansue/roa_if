@@ -1,0 +1,60 @@
+state={
+	id=333
+	name="STATE_333"
+	provinces={
+		658 709 4006 6799 8920 9182 12974 12989 13001 13008 13046 13082 13123 13186 
+	}
+	buildings_max_level_factor=1.000
+        manpower=7789
+                 state_category = town
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = HCY
+			add_core_of = HCY
+			victory_points = {709  8 }
+			buildings = {
+				infrastructure = 3
+				air_base = 0
+				arms_factory = 1
+				industrial_complex =0
+13186={
+	bunker = 6
+}
+13123={
+	bunker = 6
+}
+4006={
+	bunker = 6
+}
+13046={
+	bunker = 6
+}
+13008={
+	bunker = 6
+}
+13001={
+	bunker = 6
+}
+6799={
+	bunker = 6
+}
+709={
+	bunker = 6
+}
+658={
+	bunker = 6
+}
+8920={
+	bunker = 6
+}
+			}
+		}
+ 
+}

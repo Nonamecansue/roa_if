@@ -1,0 +1,30 @@
+state={
+	id=832
+	name="STATE_832"
+	provinces={
+		1880 1894 2068 3098 3489 3886 4509 5128 6342 8135 8702 9535 10532 16350 16372 16496 16544 
+	}
+	buildings_max_level_factor=1.000
+        manpower=737
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = BLS
+			add_core_of = BLS
+
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

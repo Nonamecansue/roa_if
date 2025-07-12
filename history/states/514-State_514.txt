@@ -1,0 +1,30 @@
+state={
+	id=514
+	name="STATE_514"
+	provinces={
+		858 2370 2505 4027 4130 4744 6194 6282 6578 6897 7621 7674 7992 8000 8668 9666 10543 14137 14154 14169 14198 14227 14236 14244 14261 14269 14301 14341 14358 14367 14446 
+	}
+	buildings_max_level_factor=1.000
+        manpower=15017
+                 state_category = town
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=4 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = JSS
+			add_core_of = JSS
+			victory_points = { 6194 10 }
+			buildings = {
+				infrastructure = 2
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 2
+			}
+		}
+ 
+}

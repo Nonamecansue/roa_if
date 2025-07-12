@@ -1,0 +1,30 @@
+state={
+	id=398
+	name="STATE_398"
+	provinces={
+		549 957 973 4128 5288 7406 7804 9183 9332 9458 9586 9748 10108 10591 13346 13414 13457 13495 13538 13539 13553 13596 13630 13631 13683 13749 13775 13786 13828 
+	}
+	buildings_max_level_factor=1.000
+        manpower=3777
+                 state_category = town
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 22 #铬
+		rubber=2 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = XBW
+			add_core_of = XBW
+			victory_points = { 549 3 }
+			buildings = {
+				infrastructure = 3
+				air_base = 0
+				arms_factory = 1
+				industrial_complex = 0
+			}
+		}
+ 
+}

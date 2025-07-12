@@ -1,0 +1,30 @@
+state={
+	id=784
+	name="STATE_784"
+	provinces={
+		814 3614 5741 6287 8329 8461 8727 8871 10015 15966 15997 16036 16084 16097 16134 16135 16149 16181 16188 16220 
+	}
+	buildings_max_level_factor=1.000
+        manpower=8001
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 4 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = BBW
+			add_core_of = BBW
+			victory_points = {814  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

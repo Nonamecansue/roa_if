@@ -1,0 +1,71 @@
+#——————————开局——————————#
+characters={
+	DFS_toyosatomiminomiko ={ #丰聪耳神子
+		name = DFS_toyosatomiminomiko
+		portraits={
+			civilian={
+				large="gfx/leaders/DFS/DFS_toyosatomiminomiko.dds"
+				small="gfx/leaders/DFS/DFS_toyosatomiminomiko_small.dds"
+			}
+		}
+		country_leader={
+			ideology = gensokyoism_subtype
+			id = -1	 
+		}
+		country_leader={
+			ideology = despotism_absolute_monarchy_subtype
+			id = -1	 
+		}
+		country_leader={
+			ideology = progressivism_wise_constitutional_monarchy_subtype
+			id = -1	 
+		}
+	
+		advisor = {
+			slot = character_coop
+			idea_token = DFS_toyosatomiminomiko
+			name = DFS_toyosatomiminomiko
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+#————————————共和派————————————#
+
+    DFS_wudeyi ={ #吴德义
+		name = DFS_wudeyi
+		portraits={
+			civilian={
+				large="gfx/leaders/DFS/DFS_wudeyi.dds"
+				small="gfx/leaders/DFS/DFS_wudeyi_small.dds"
+			}
+		}
+		country_leader={
+			ideology = republicanism_taoist_republicanism_subtype
+			id = -1	 
+		}
+		advisor = {
+			slot = character_coop
+			idea_token = DFS_wudeyi
+			name = DFS_wudeyi
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+
+}

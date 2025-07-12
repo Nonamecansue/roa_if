@@ -1,0 +1,30 @@
+state={
+	id=84
+	name="STATE_84"
+	provinces={
+		1021 1218 1268 1333 1401 1435 2122 2430 3049 3435 4445 5508 5621 5622 5941 6952 6958 7312 9340 10177 10305 11143 11175 11182 11183 11216 11232 11237 
+	}
+	buildings_max_level_factor=1.000
+        manpower=14520
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = TGD
+			add_core_of = TGD
+			victory_points = { 1021 1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

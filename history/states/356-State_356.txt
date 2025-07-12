@@ -1,0 +1,30 @@
+state={
+	id=356
+	name="STATE_356"
+	provinces={
+		58 189 2727 2744 3048 3169 4372 4759 5346 5466 5963 6830 6857 6910 7138 7360 7403 7538 8137 8712 8898 9053 9355 9430 10046 13045 13054 13197 13202 13245 13254 13266 13278 13373 13497 13524 
+	}
+	buildings_max_level_factor=1.000
+        manpower=3869
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = SGQ
+			add_core_of = SGQ
+			victory_points = { 58 1 }
+			buildings = {
+				infrastructure = 1
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

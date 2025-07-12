@@ -1,0 +1,30 @@
+state={
+	id=184
+	name="STATE_184"
+	provinces={
+		42 969 1514 1519 1699 2698 2928 3115 3187 4319 4882 5248 7036 7502 8113 8369 8987 9063 9314 9415 9600 10272 10571 11777 11881 12125 12139 12211 12276 12409 
+	}
+	buildings_max_level_factor=1.000
+        manpower=4898
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = MTJ
+			add_core_of = MTJ
+			victory_points = {42  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

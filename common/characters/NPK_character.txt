@@ -1,0 +1,141 @@
+#——————————开局——————————#
+characters={
+	NPK_arielwindsor ={ #阿里尔一世
+		name = NPK_arielwindsor
+		portraits={
+			civilian={
+				large="gfx/leaders/NPK/NPK_arielwindsor.dds"
+				small="gfx/leaders/NPK/NPK_arielwindsor_small.dds"
+			}
+		}
+		country_leader={
+			ideology = republicanism_constitutional_monarchy_subtype
+			id = -1	 
+		}
+		country_leader={
+			ideology = despotism_absolute_monarchy_subtype
+			id = -1	 
+		}
+		country_leader={
+			ideology = progressivism_wise_constitutional_monarchy_subtype
+			id = -1	 
+		}
+	
+		advisor = {
+			slot = character_coop
+			idea_token = NPK_arielwindsor
+			name = NPK_arielwindsor
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+#————————————人偶保守党——————————————#
+
+    NPK_cerisefuyumi ={ #瑟丽丝·冬薇
+		name = NPK_cerisefuyumi
+		portraits={
+			civilian={
+				large="gfx/leaders/NPK/NPK_cerisefuyumi.dds"
+				small="gfx/leaders/NPK/NPK_cerisefuyumi_small.dds"
+			}
+		}
+		country_leader={
+			ideology = republicanism_national_republicanism_subtype
+			id = -1	 
+		}
+	
+		advisor = {
+			slot = head_of_government
+			idea_token = NPK_cerisefuyumi
+			name = NPK_cerisefuyumi
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+#————————————人偶国家进步同盟——————————————#
+
+    NPK_fatrelandeiffel ={ #法特兰.埃菲尔
+		name = NPK_fatrelandeiffel
+		portraits={
+			civilian={
+				large="gfx/leaders/NPK/NPK_fatrelandeiffel.dds"
+				small="gfx/leaders/NPK/NPK_fatrelandeiffel_small.dds"
+			}
+		}
+		country_leader={
+			ideology = progressivism_national_progressivism_subtype
+			id = -1	 
+		}
+	
+		advisor = {
+			slot = head_of_government
+			idea_token = NPK_fatrelandeiffel
+			name = NPK_fatrelandeiffel
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+#————————————人偶解放阵线——————————————————#
+
+    NPK_medicine ={ #梅蒂欣.梅兰可莉
+		name = NPK_medicine
+		portraits={
+			civilian={
+				large="gfx/leaders/NPK/NPK_medicine.dds"
+				small="gfx/leaders/NPK/NPK_medicine_small.dds"
+			}
+		}
+		country_leader={
+			ideology = radicalism_national_liberation_front_subtype
+			id = -1	 
+		}
+		country_leader={
+			ideology = ultraism_pan_pupet_movement_subtype
+			id = -1	 
+		}
+	
+		advisor = {
+			slot = head_of_government
+			idea_token = NPK_medicine
+			name = NPK_medicine
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+
+
+
+
+}

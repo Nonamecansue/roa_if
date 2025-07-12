@@ -1,0 +1,29 @@
+state={
+	id=668
+	name="STATE_668"
+	provinces={
+		1982 2376 2961 3579 3724 4620 5396 6222 6698 7539 7668 8154 8295 8864 9043 9470 9954 15124 15270 15367 15423 15567 
+	}
+	buildings_max_level_factor=1.000
+        manpower=3057
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 1 #钨
+		chromium = 7 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 10 #石油
+	}		history = {
+			owner = WZD
+			add_core_of = WZD
+			victory_points = { 1982  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

@@ -1,0 +1,30 @@
+state={
+	id=618
+	name="STATE_618"
+	provinces={
+		1278 1617 4530 4995 8773 14638 14706 14751 14788 14809 14849 
+	}
+	buildings_max_level_factor=1.000
+        manpower=40045
+                 state_category = large_town
+	resources={
+		steel=4 #钢铁
+		tungsten = 2 #钨
+		chromium = 0 #铬
+		rubber=3 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = SXL
+			add_core_of = SXL
+			victory_points = { 1278 15 }
+			buildings = {
+				infrastructure = 2
+				air_base = 0
+				arms_factory = 2
+				industrial_complex = 1
+			}
+		}
+ 
+}

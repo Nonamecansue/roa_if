@@ -1,0 +1,62 @@
+#——————————开局——————————#
+characters={
+	WPL_reguserna ={ #雷格·瑟纳
+		name = WPL_reguserna
+		portraits={
+			civilian={
+				large="gfx/leaders/WPL/WPL_reguserna.dds"
+				small="gfx/leaders/WPL/WPL_reguserna_small.dds"
+			}
+		}
+		country_leader={
+			ideology = republicanism_temporary_union_subtype
+			id = -1	 
+		}
+	
+		advisor = {
+			slot = character_coop
+			idea_token = WPL_reguserna
+			name = WPL_reguserna
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+#————————————魔法使保守党——————————————#
+
+    WPL_sandriatubsandike ={ #桑德利亚·塔布斯桑德伊克
+		name = WPL_sandriatubsandike
+		portraits={
+			civilian={
+				large="gfx/leaders/WPL/WPL_sandriatubsandike.dds"
+				small="gfx/leaders/WPL/WPL_sandriatubsandike_small.dds"
+			}
+		}
+		country_leader={
+			ideology = despotism_soloparty_dictatorship_subtype
+			id = -1	 
+		}
+	
+		advisor = {
+			slot = character_coop
+			idea_token = WPL_sandriatubsandike
+			name = WPL_sandriatubsandike
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

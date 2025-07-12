@@ -1,0 +1,30 @@
+state={
+	id=259
+	name="STATE_259"
+	provinces={
+		376 782 1302 1633 1901 3350 3539 3598 3666 4898 5996 5997 6398 6631 6975 7153 7248 7730 7918 8270 8481 8705 8840 9661 9886 9939 10672 12384 12493 12543 12594 12602 12633 12660 12683 12692 12731 12732 12793 12842 12883 12929 12939 12940 12950 12973 12980 12999 13000 13020 13038 13071 13129 13137 13170 
+	}
+	buildings_max_level_factor=1.000
+        manpower=3200
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = HMG
+			add_core_of = HMG
+			victory_points = { 376 1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

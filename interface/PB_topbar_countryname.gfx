@@ -1,0 +1,89 @@
+spriteTypes = {	
+	
+	spriteType = {
+		name = "GFX_PB_topbar_background"
+		texturefile = "gfx/interface/PB_topbar_background.dds"
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_SocDev_Progress_Button_Close"
+		texturefile = "gfx/interface/SocDev_Progress_Button_Close.dds"			
+	}
+
+	spriteType = {
+		name = "GFX_PB_topbar_open_icon"
+		texturefile = "gfx/interface/PB_topbar_open_icon.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_PB_Flag_Overlay_Topbar"
+		texturefile = "gfx/B_Flag_Overlay_Topbar.dds"
+		legacy_lazy_load = no
+	}
+
+	####
+	
+
+	spriteType = {
+		name = "GFX_PB_Playerflag_TIR"
+		texturefile = "gfx/infoboxflags/PB_Playerflag_TIR.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_PB_Playerflag_EOT"
+		texturefile = "gfx/infoboxflags/PB_Playerflag_EOT.png"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_PB_Playerflag_POK"
+		texturefile = "gfx/infoboxflags/PB_Playerflag_POK.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_PB_Playerflag_ROT"
+		texturefile = "gfx/infoboxflags/PB_Playerflag_ROT.png"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_PB_Playerflag_ROK"
+		texturefile = "gfx/infoboxflags/PB_Playerflag_ROK.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_PB_Playerflag_MMS"
+		texturefile = "gfx/infoboxflags/PB_Playerflag_MMS.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_PB_Playerflag_Generic"
+		texturefile = "gfx/infoboxflags/PB_Playerflag_Generic.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_PB_invisible_background"
+		texturefile = "gfx/interface/PB_invisible_background.dds"
+		legacy_lazy_load = no
+	}
+	
+
+	###
+	
+	corneredTileSpriteType = {
+		name = "GFX_tiled_bg"
+		size= { x=192 y=192 }
+		textureFile = "gfx//interface//tiles//tiled_bg.dds"
+		borderSize = { x=64 y=64 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	
+}

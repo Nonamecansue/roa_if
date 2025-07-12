@@ -1,0 +1,30 @@
+state={
+	id=600
+	name="STATE_600"
+	provinces={
+		149 318 2398 3251 3585 4457 4603 5375 5461 6175 6181 6572 6813 7774 8284 8957 9260 9526 9677 10490 14539 14552 14657 14666 14671 14672 14680 14719 14724 14739 14742 14743 14755 14782 14807 14810 14830 14850 14861 14888 14917 14960 14969 
+	}
+	buildings_max_level_factor=1.000
+        manpower=10024
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = SLQ
+			add_core_of = SLQ
+			victory_points = {14666  1 }
+			buildings = {
+				infrastructure = 1
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

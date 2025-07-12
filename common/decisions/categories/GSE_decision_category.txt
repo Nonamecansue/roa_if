@@ -1,0 +1,8 @@
+GSE_decision_category = {
+	allowed = {
+           OR = {
+	       tag = GSE
+	    }
+    }
+	priority = 15
+}

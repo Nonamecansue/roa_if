@@ -1,0 +1,30 @@
+state={
+	id=175
+	name="STATE_175"
+	provinces={
+		609 2427 11611 11639 
+	}
+	buildings_max_level_factor=1.000
+        manpower=247841
+                 state_category = large_city
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = HCY
+			add_core_of = HCY
+			victory_points = { 609 30 }
+			buildings = {
+				infrastructure = 4
+				air_base = 0
+				arms_factory = 3
+				industrial_complex = 5
+			}
+		}
+ 
+}

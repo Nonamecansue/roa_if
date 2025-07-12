@@ -1,0 +1,30 @@
+state={
+	id=594
+	name="STATE_594"
+	provinces={
+		1512 4416 4690 6384 7795 9270 9693 14642 14689 14733 14779 
+	}
+	buildings_max_level_factor=1.000
+        manpower=17787
+                 state_category = town
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = DJT
+			add_core_of = DJT
+			victory_points = {  1512 10 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

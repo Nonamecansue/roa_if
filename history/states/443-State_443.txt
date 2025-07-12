@@ -1,0 +1,30 @@
+state={
+	id=443
+	name="STATE_443"
+	provinces={
+		548 696 1510 2387 2731 2956 3161 3343 3909 4011 4156 4505 5017 5206 6217 6357 6461 7057 7461 7551 8476 8874 9110 10358 13700 13731 14189 14309 14320 14340 14354 14362 14384 14424 14463 14596 
+	}
+	buildings_max_level_factor=1.000
+        manpower=9077
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = SXL
+			add_core_of = SXL
+			victory_points = {548  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

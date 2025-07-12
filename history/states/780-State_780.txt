@@ -1,0 +1,30 @@
+state={
+	id=780
+	name="STATE_780"
+	provinces={
+		285 1356 3113 6059 8200 15995 16008 16128 16209 
+	}
+	buildings_max_level_factor=1.000
+        manpower=45057
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 9 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = DXH
+			add_core_of = DXH
+			victory_points = { 285  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

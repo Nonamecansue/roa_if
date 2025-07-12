@@ -1,0 +1,42 @@
+characters={
+	FG1_kurodaniyamame={#黑谷山女
+		name = FG1_kurodaniyamame
+		portraits={
+			civilian={
+				large="gfx/leaders/FG1/FG1_kurodaniyamame.dds"
+				small="gfx/leaders/FG1/FG1_kurodaniyamame_small.dds"
+			}
+			army = {
+				large="gfx/leaders/FG1/FG1_kurodaniyamame.dds"
+				small="gfx/leaders/FG1/FG1_kurodaniyamame_small.dds"
+			}
+		}
+		country_leader={
+			ideology = despotism_military_junta_subtype
+			id=-1
+		}
+		corps_commander = {
+			traits = {  th_original_character trait_cautious }
+			attack_skill = 5
+			defense_skill = 7
+			planning_skill = 5
+			logistics_skill = 5
+			skill = 6
+			# id = 23
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = FG1_kurodaniyamame
+			name = FG1_kurodaniyamame
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

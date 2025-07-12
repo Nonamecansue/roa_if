@@ -1,0 +1,31 @@
+#——————————开局——————————#
+characters={
+	GAP_yakumoyukari ={ #八云紫
+		name = GAP_yakumoyukari
+		portraits={
+			civilian={
+				large="gfx/leaders/GAP/GAP_yakumoyukari.dds"
+				small="gfx/leaders/GAP/GAP_yakumoyukari_small.dds"
+			}
+		}
+		country_leader={
+			ideology = despotism_seji_council_subtype
+			id = -1	 
+		}
+	
+		advisor = {
+			slot = character_coop
+			idea_token = GAP_yakumoyukari
+			name = GAP_yakumoyukari
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

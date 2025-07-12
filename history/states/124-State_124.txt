@@ -1,0 +1,30 @@
+state={
+	id=124
+	name="STATE_124"
+	provinces={
+		733 1190 2408 2977 3116 3617 3895 4289 6312 6694 7964 9184 11410 11536 11649 11805 
+	}
+	buildings_max_level_factor=1.000
+        manpower=10454
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 1 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = GDY
+			add_core_of = GDY
+			victory_points = { 733  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

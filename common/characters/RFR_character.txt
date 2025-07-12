@@ -1,0 +1,31 @@
+#——————————开局——————————#
+characters={
+	RFR_rinbankoushouko ={ #燐番红硝子
+		name = RFR_rinbankoushouko
+		portraits={
+			civilian={
+				large="gfx/leaders/RFR/RFR_rinbankoushouko.dds"
+				small="gfx/leaders/RFR/RFR_rinbankoushouko_small.dds"
+			}
+		}
+		country_leader={
+			ideology = republicanism_national_republicanism_subtype
+			id = -1	 
+		}
+	
+		advisor = {
+			slot = character_coop
+			idea_token = RFR_rinbankoushouko
+			name = RFR_rinbankoushouko
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

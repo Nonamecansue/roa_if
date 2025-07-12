@@ -1,0 +1,8 @@
+URF_decision_category = {
+	allowed = {
+           OR = {
+	       tag = URF
+	    }
+    }
+	priority = 15
+}

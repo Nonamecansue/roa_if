@@ -1,0 +1,8 @@
+NPK_decision_category = {
+	allowed = {
+           OR = {
+	       tag = NPK
+	    }
+    }
+	priority = 15
+}

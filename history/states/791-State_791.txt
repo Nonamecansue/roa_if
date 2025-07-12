@@ -1,0 +1,30 @@
+state={
+	id=791
+	name="STATE_791"
+	provinces={
+		1452 2720 4464 4517 4779 5412 7199 7446 8228 8750 8755 10155 16045 16126 16154 16169 16170 16184 16189 16229 16244 16375 16376 
+	}
+	buildings_max_level_factor=1.000
+        manpower=23033
+                 state_category = large_city
+	resources={
+		steel=3 #钢铁
+		tungsten = 0 #钨
+		chromium = 2 #铬
+		rubber=1 #橡胶
+		aluminium=2 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = SBL
+			add_core_of = SBL
+			victory_points = { 1452  20 }
+			buildings = {
+				infrastructure = 3
+				air_base = 0
+				arms_factory = 6
+				industrial_complex = 5
+			}
+		}
+ 
+}

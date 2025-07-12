@@ -1,0 +1,30 @@
+state={
+	id=409
+	name="STATE_409"
+	provinces={
+		783 1122 1130 1843 2316 2847 3217 3337 5431 5447 14039 
+	}
+	buildings_max_level_factor=1.000
+        manpower=30057
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 18 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = UUZ
+			add_core_of = UUZ
+			victory_points = { 783  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

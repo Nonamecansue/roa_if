@@ -1,0 +1,30 @@
+state={
+	id=465
+	name="STATE_465"
+	provinces={
+		466 869 1163 1644 2240 2451 3766 4513 4787 5534 5881 6662 6771 7753 8622 8759 9237 9487 10610 10756 13838 13869 13902 13903 13911 13912 13935 13944 13956 13972 13980 13993 13997 14010 14020 14049 14057 14072 14082 14097 14134 14211 
+	}
+	buildings_max_level_factor=1.000
+        manpower=6410
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = JSS
+			add_core_of = JSS
+			victory_points = { 466 1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

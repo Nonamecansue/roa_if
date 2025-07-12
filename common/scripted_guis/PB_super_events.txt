@@ -1,0 +1,26 @@
+scripted_gui = {
+
+	Pax_Super_Event_Window = {
+		context_type = player_context
+		window_name = "Super_Event_Window"
+
+		visible = {
+			has_variable = Active_Superevent_ID
+			is_ai = no
+		}
+
+		properties = {
+			Super_Event_Image = {
+				image = "GFX_SPEVNT_[?Active_Superevent_ID]"
+			}
+		}
+
+		effects = {
+			Super_Event_Close_click = {
+				clear_variable = Active_Superevent_ID
+
+				#PB_Clear_Super_Event_Flags = yes
+			}
+		}
+	}
+}

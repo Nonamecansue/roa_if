@@ -1,0 +1,30 @@
+state={
+	id=920
+	name="STATE_920"
+	provinces={
+		311 382 1235 1515 1964 2267 3568 3794 3971 7412 8584 10741 17034 17113 17116 17135 17206 
+	}
+	buildings_max_level_factor=1.000
+        manpower=16045
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 2 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+		owner = XHD
+			add_core_of = XHD
+			victory_points = {311  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

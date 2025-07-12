@@ -1,0 +1,29 @@
+state={
+	id=671
+	name="STATE_671"
+	provinces={
+		215 1497 3176 4719 5108 5956 7197 7954 8264 8628 9459 15020 15076 15185 15186 15211 15231 15243 15251 15326 15389 15460 
+	}
+	buildings_max_level_factor=1.000
+        manpower=16888
+                 state_category = city
+	resources={
+		steel=10 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=3 #铝
+		oil = 3 #石油
+	}		history = {
+			owner = XHT
+			add_core_of = XHT
+			victory_points = {4719 20 }
+			buildings = {
+				infrastructure = 3
+				air_base = 0
+				arms_factory = 2
+				industrial_complex = 4
+			}
+		}
+ 
+}

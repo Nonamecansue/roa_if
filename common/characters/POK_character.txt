@@ -1,0 +1,38 @@
+characters={
+	POK_egawasando={#江川山道
+		name = POK_egawasando
+		portraits={
+			civilian={
+				large="gfx/leaders/POK/POK_egawasando.dds"
+				small="gfx/leaders/POK/POK_egawasando_small.dds"
+			}
+			army = {
+				large="gfx/leaders/POK/POK_egawasando.dds"
+				small="gfx/leaders/POK/POK_egawasando_small.dds"
+			}
+			
+		}
+		country_leader={
+			desc = "POK_egawasando_desc"
+			traits= {
+				POK_egawasando_traits
+			}
+			ideology = republicanism_national_council_subtype
+			id=-1
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = POK_egawasando
+			name = POK_egawasando
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

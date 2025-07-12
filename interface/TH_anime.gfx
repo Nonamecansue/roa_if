@@ -1,0 +1,13 @@
+spriteTypes = {
+	frameAnimatedSpriteType = {
+		name = "GFX_Portrait_anime_jue"
+		texturefile = "gfx/leaders/URF/URF_komeiji.dds"
+		noOfFrames = 28
+		animation_rate_fps = 12
+		looping = yes
+		play_on_show = yes
+	}
+   
+
+
+}

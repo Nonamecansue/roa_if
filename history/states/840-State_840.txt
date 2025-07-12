@@ -1,0 +1,29 @@
+state={
+	id=840
+	name="STATE_840"
+	provinces={
+		521 2132 3556 3712 4832 5286 6281 6738 7769 9815 9819 10173 16441 16454 16491 16519 16562 16571 16591 
+	}
+	buildings_max_level_factor=1.000
+        manpower=12310
+                 state_category = town
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 3 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 2 #石油
+	}		history = {
+			owner = ZJL
+			add_core_of = ZJL
+			victory_points = { 521 10 }
+			buildings = {
+				infrastructure = 2
+				air_base = 0
+				arms_factory =2
+				industrial_complex = 2
+			}
+		}
+ 
+}

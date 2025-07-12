@@ -1,0 +1,44 @@
+characters={
+	EAT_mandaris={#曼达里斯
+		name = EAT_mandaris
+		portraits={
+			civilian={
+				large="gfx/leaders/EAT/EAT_mandaris.dds"
+				small="gfx/leaders/EAT/EAT_mandaris_small.dds"
+			}
+			army = {
+				large="gfx/leaders/EAT/EAT_mandaris.dds"
+				small="gfx/leaders/EAT/EAT_mandaris_small.dds"
+			}
+			
+		}
+		country_leader={
+			ideology = despotism_military_junta_subtype
+			id=-1
+		}
+		
+		corps_commander = {
+			traits = {  th_original_character trait_cautious }
+			attack_skill = 5
+			defense_skill = 7
+			planning_skill = 5
+			logistics_skill = 5
+			skill = 6
+			# id = 23
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = EAT_mandaris
+			name = EAT_mandaris
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

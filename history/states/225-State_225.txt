@@ -1,0 +1,29 @@
+state={
+	id=225
+	name="STATE_225"
+	provinces={
+		888 2615 5669 6038 7371 8001 8949 8968 9527 9900 10535 12066 12111 12117 12167 12216 12227 12229 12238 12289 12356 12373 12402 
+	}
+	buildings_max_level_factor=1.000
+        manpower=55478
+                 state_category = city
+	resources={
+		steel=3 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=3 #橡胶
+		aluminium=0 #铝
+		oil = 15 #石油
+	}		history = {
+			owner = HZH
+			add_core_of = HZH
+			victory_points = { 888  15 }
+			buildings = {
+				infrastructure =5
+				air_base = 0
+				arms_factory = 4
+				industrial_complex = 8
+			}
+		}
+ 
+}

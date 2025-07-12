@@ -1,0 +1,30 @@
+state={
+	id=196
+	name="STATE_196"
+	provinces={
+		1080 1550 2036 4647 5013 5496 11822 11949 12183 
+	}
+	buildings_max_level_factor=1.000
+        manpower=1208
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = SDC
+			add_core_of = SDC
+			victory_points = { 1080 1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

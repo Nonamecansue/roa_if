@@ -1,0 +1,30 @@
+state={
+	id=371
+	name="STATE_371"
+	provinces={
+		130 702 2429 3583 5006 6912 7430 7573 7579 8045 9012 9734 13101 13132 13214 13283 13325 13381 13410 13447 13464 13488 13499 13532 13548 13549 13625 13705 
+	}
+	buildings_max_level_factor=1.000
+        manpower=120597
+                 state_category = large_city
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 5 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = JYZ
+			add_core_of = JYZ
+			victory_points = { 130  30 }
+			buildings = {
+				infrastructure = 5
+				air_base = 0
+				arms_factory = 3
+				industrial_complex = 5
+			}
+		}
+ 
+}

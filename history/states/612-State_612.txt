@@ -1,0 +1,30 @@
+state={
+	id=612
+	name="STATE_612"
+	provinces={
+		424 625 736 867 1269 1972 2287 2642 3020 3119 3398 3511 3894 4058 4353 4538 4850 4888 5818 6266 6443 6495 6676 7130 7167 7438 7462 7982 8116 8208 8305 8559 8751 8965 8995 9280 9281 9371 9560 9667 9687 9721 9832 9909 10034 10471 10700 14627 14641 14658 14709 14763 14814 14827 14837 14865 14877 14878 14879 14942 14977 14978 14998 15026 15043 15056 15106 15116 15171 15175 15209 15230 15248 15304 15305 15324 15351 
+	}
+	buildings_max_level_factor=1.000
+        manpower=1120
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=1 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = BSL
+			add_core_of = BSL
+			victory_points = { 424  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

@@ -1,0 +1,132 @@
+#——————————开局——————————#
+characters={
+	FYP_lilywhite ={ #莉莉.白
+		name = FYP_lilywhite
+		portraits={
+			civilian={
+				large="gfx/leaders/FYP/FYP_lilywhite.dds"
+				small="gfx/leaders/FYP/FYP_lilywhite_small.dds"
+			}
+		}
+		country_leader={
+			ideology = republicanism_greecism_subtype
+			id = -1	 
+		}
+		country_leader={
+			ideology = despotism_absolute_monarchy_subtype
+			id = -1	 
+		}
+		country_leader={
+			ideology = republicanism_constitutional_monarchy_subtype
+			id = -1	 
+		}
+		country_leader={
+			ideology = progressivism_wise_constitutional_monarchy_subtype
+			id = -1	 
+		}
+		advisor = {
+			slot = character_coop
+			idea_token = BSY_tsukireikyo
+			name = BSY_tsukireikyo
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+#————————————共和延续——————————————#
+
+    FYP_flowerrose ={ #芙拉瓦.洛西
+		name = FYP_flowerrose
+		portraits={
+			civilian={
+				large="gfx/leaders/FYP/FYP_flowerrose.dds"
+				small="gfx/leaders/FYP/FYP_flowerrose_small.dds"
+			}
+		}
+		country_leader={
+			ideology = republicanism_greecism_subtype
+			id = -1	 
+		}
+		advisor = {
+			slot = character_coop
+			idea_token = FYP_flowerrose
+			name = FYP_flowerrose
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	FYP_karltulip ={ #卡尔.托利普
+	name = FYP_karltulip
+	portraits={
+		civilian={
+			large="gfx/leaders/FYP/FYP_karltulip.dds"
+			small="gfx/leaders/FYP/FYP_karltulip_small.dds"
+		}
+	}
+	country_leader={
+		ideology = progressivism_leftwing_greecism_subtype
+		id = -1	 
+	}
+	advisor = {
+		slot = character_coop
+		idea_token = FYP_karltulip
+		name = FYP_karltulip
+		cost = 200
+		modifier = {
+			# character_coop_cost_factor = -0.15 在这里无效
+			political_power_gain = 0.2
+			consumer_goods_factor = -0.02
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+#——————————花海赤民党————————————#
+
+    FYP_lucysummer ={ #露西.萨莫
+	name = FYP_lucysummer
+	portraits={
+		civilian={
+			large="gfx/leaders/FYP/FYP_lucysummer.dds"
+			small="gfx/leaders/FYP/FYP_lucysummer_small.dds"
+		}
+	}
+	country_leader={
+		ideology = vanguard_revolutionism_vanguard_socialism_subtype
+		id = -1	 
+	}
+	advisor = {
+		slot = character_coop
+		idea_token = FYP_lucysummer
+		name = FYP_lucysummer
+		cost = 200
+		modifier = {
+			# character_coop_cost_factor = -0.15 在这里无效
+			political_power_gain = 0.2
+			consumer_goods_factor = -0.02
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+
+}

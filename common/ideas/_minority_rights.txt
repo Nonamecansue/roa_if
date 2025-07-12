@@ -1,0 +1,244 @@
+ideas = {
+
+	hidden_ideas = {
+
+		PB_Culture_Civ_Cost = {
+			allowed = { 
+				always = no 
+			}
+			modifier = {
+				civilian_factory_use = 1
+			}
+		}
+		PB_Culture_Civ_Cost2 = {
+			allowed = { 
+				always = no 
+			}
+			modifier = {
+				civilian_factory_use = 1
+			}
+		}
+		PB_Culture_Civ_Cost3 = {
+			allowed = { 
+				always = no 
+			}
+			modifier = {
+				civilian_factory_use = 1
+			}
+		}
+		PB_Culture_Civ_Cost4 = {
+			allowed = { 
+				always = no 
+			}
+			modifier = {
+				civilian_factory_use = 1
+			}
+		}
+		PB_Culture_Civ_Cost5 = {
+			allowed = { 
+				always = no 
+			}
+			modifier = {
+				civilian_factory_use = 1
+			}
+		}
+		PB_Culture_Civ_Cost6 = {
+			allowed = { 
+				always = no 
+			}
+			modifier = {
+				civilian_factory_use = 1
+			}
+		}
+		PB_Culture_Civ_Cost7 = {
+			allowed = { 
+				always = no 
+			}
+			modifier = {
+				civilian_factory_use = 1
+			}
+		}
+		PB_Culture_Civ_Cost8 = {
+			allowed = { 
+				always = no 
+			}
+			modifier = {
+				civilian_factory_use = 1
+			}
+		}
+		PB_Culture_Civ_Cost9 = {
+			allowed = { 
+				always = no 
+			}
+			modifier = {
+				civilian_factory_use = 1
+			}
+		}
+		PB_Culture_Civ_Cost10 = {
+			allowed = { 
+				always = no 
+			}
+			modifier = {
+				civilian_factory_use = 1
+			}
+		}
+	}
+
+	minority_rights = { 
+		law = yes
+		use_list_view = yes
+
+		PB_Affirmitive_Action = {
+						
+			cost = 0
+			removal_cost = -1
+			level = 7
+			
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no
+			}
+			
+            picture = PB_Affirmitive_Action
+                  
+			modifier = {
+				non_core_manpower = 0.6
+				custom_modifier_tooltip = PB_CULTURE_ACCEPT_NINE_TT
+				custom_modifier_tooltip = PB_CULTURE_CANT_CONVERT_TT
+			}
+			
+			cancel_if_invalid = no
+		}
+
+		PB_Significant_Autonomy = {
+						
+			cost = 0
+			removal_cost = -1
+			level = 7
+			
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no
+			}
+			
+            picture = PB_Significant_Autonomy
+                  
+			modifier = {
+				non_core_manpower = 0.4
+				custom_modifier_tooltip = PB_CULTURE_ACCEPT_SIX_TT
+				custom_modifier_tooltip = PB_CULTURE_CONVERT_THREE_TT
+			}
+			
+			cancel_if_invalid = no
+		}
+
+		PB_Limited_Autonomy = {
+						
+			cost = 0
+			removal_cost = -1
+			level = 7
+			
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no
+			}
+			
+            picture = PB_Limited_Autonomy
+                  
+			modifier = {
+				non_core_manpower = 0.2
+				custom_modifier_tooltip = PB_CULTURE_ACCEPT_THREE_TT
+				custom_modifier_tooltip = PB_CULTURE_CONVERT_THREE_TT
+			}
+			
+			cancel_if_invalid = no
+		}
+
+		PB_Racial_Segregation = {
+						
+			cost = 0
+			removal_cost = -1
+			level = 7
+			
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no
+			}
+			
+            picture = PB_Racial_Segregation
+                  
+			modifier = {
+				non_core_manpower = -0.2
+				custom_modifier_tooltip = PB_CULTURE_ACCEPT_THREE_TT
+				custom_modifier_tooltip = PB_CULTURE_CONVERT_SIX_TT
+			}
+			
+			cancel_if_invalid = no
+		}
+
+		PB_Racial_Hierarchy = {
+						
+			cost = 0
+			removal_cost = -1
+			level = 7
+			
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no
+			}
+			
+            picture = PB_Racial_Hierarchy
+                  
+			modifier = {
+				non_core_manpower = -0.4
+				custom_modifier_tooltip = PB_CULTURE_CANT_ACCEPT_TT
+				custom_modifier_tooltip = PB_CULTURE_CONVERT_NINE_TT
+			}
+			
+			cancel_if_invalid = no
+		}
+
+
+		PB_Racial_Pure = {
+						
+			cost = 0
+			removal_cost = -1
+			level = 7
+			
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no
+			}
+			
+            picture = PB_Racial_Hierarchy
+                  
+			modifier = {
+				non_core_manpower = -0.8
+				custom_modifier_tooltip = PB_CULTURE_CANT_ACCEPT_TT
+				custom_modifier_tooltip = PB_CULTURE_CONVERT_NINE_TT
+			}
+			
+			cancel_if_invalid = no
+		}
+
+    }
+	
+}

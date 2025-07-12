@@ -1,0 +1,30 @@
+state={
+	id=266
+	name="STATE_266"
+	provinces={
+		463 878 1344 1672 2039 2194 2783 4252 4722 4770 5251 5352 5677 5800 8522 8783 9381 10144 12481 12516 12544 12576 12603 12625 12634 12703 12725 12737 12750 12836 
+	}
+	buildings_max_level_factor=1.000
+        manpower=6332
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=3 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = HCY
+			add_core_of = HCY
+			victory_points = { 5677 1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

@@ -1,0 +1,644 @@
+
+
+defined_text = { #SUPER EVENT TITLES
+    name = get_super_event_title
+    
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 1 }
+        }
+        localization_key = "SPEVNT_it_started"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 2 }
+        }
+        localization_key = "SPEVNT_mistylake_war_1"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 3 }
+        }
+        localization_key = "SPEVNT_mistylake_war_2"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 4 }
+        }
+        localization_key = "SPEVNT_mistylake_war_3"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 5 }
+        }
+        localization_key = "SPEVNT_mistylake_war_4"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 6 }
+        }
+        localization_key = "SPEVNT_godblessia_civil_war"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 7 }
+        }
+        localization_key = "SPEVNT_mistymount_war_1"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 8 }
+        }
+        localization_key = "SPEVNT_mistymount_war_2"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 9 }
+        }
+        localization_key = "SPEVNT_mistymount_war_3"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 10 }
+        }
+        localization_key = "SPEVNT_mistymount_war_4"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 11 }
+        }
+        localization_key = "SPEVNT_mistylake_war_5"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 12 }
+        }
+        localization_key = "SPEVNT_mistylake_war_6"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 13 }
+        }
+        localization_key = "SPEVNT_mistylake_war_7"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 14 }
+        }
+        localization_key = "SPEVNT_scarlet_collapse"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 15 }
+        }
+        localization_key = "SPEVNT_gegokujyoist_march"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 16 }
+        }
+        localization_key = "SPEVNT_soviet_mistylake_established"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 17 }
+        }
+        localization_key = "SPEVNT_mistymount_war_5"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 18 }
+        }
+        localization_key = "SPEVNT_mistymount_war_6"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 19 }
+        }
+        localization_key = "SPEVNT_human_tsukumo_war"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 20 }
+        }
+        localization_key = "SPEVNT_human_tsukumo_war_2"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 21 }
+        }
+        localization_key = "SPEVNT_southland_war_1"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 22 }
+        }
+        localization_key = "SPEVNT_southland_war_2"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 23 }
+        }
+        localization_key = "SPEVNT_southland_war_3"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 24 }
+        }
+        localization_key = "SPEVNT_southland_war_4"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 25 }
+        }
+        localization_key = "SPEVNT_southland_war_5"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 26 }
+        }
+        localization_key = "SPEVNT_southland_war_6"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 27 }
+        }
+        localization_key = "SPEVNT_southland_war_7"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 28 }
+        }
+        localization_key = "SPEVNT_southland_war_8"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 29 }
+        }
+        localization_key = "SPEVNT_southland_war_9"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 30 }
+        }
+        localization_key = "SPEVNT_all_gone"
+    }
+}
+
+defined_text = { #SUPER EVENT QUOTES
+    name = get_superevent_quote
+    
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 1 }
+        }
+        localization_key = "SPEVNT_it_started_TEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 2 }
+        }
+        localization_key = "SPEVNT_mistylake_war_1_TEXT"
+    }
+    
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 3 }
+        }
+        localization_key = "SPEVNT_mistylake_war_2_TEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 4 }
+        }
+        localization_key = "SPEVNT_mistylake_war_3_TEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 5 }
+        }
+        localization_key = "SPEVNT_mistylake_war_4_TEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 6 }
+        }
+        localization_key = "SPEVNT_godblessia_civil_war_TEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 7 }
+        }
+        localization_key = "SPEVNT_mistymount_war_1_TEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 8 }
+        }
+        localization_key = "SPEVNT_mistymount_war_2_TEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 9 }
+        }
+        localization_key = "SPEVNT_mistymount_war_3_TEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 10 }
+        }
+        localization_key = "SPEVNT_mistymount_war_4_TEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 11 }
+        }
+        localization_key = "SPEVNT_mistylake_war_5_TEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 12 }
+        }
+        localization_key = "SPEVNT_mistylake_war_6_TEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 13 }
+        }
+        localization_key = "SPEVNT_mistylake_war_7_TEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 14 }
+        }
+        localization_key = "SPEVNT_scarlet_collapse_TEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 15 }
+        }
+        localization_key = "SPEVNT_gegokujyoist_march_TEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 16 }
+        }
+        localization_key = "SPEVNT_soviet_mistylake_established_TEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 17 }
+        }
+        localization_key = "SPEVNT_mistymount_war_5_TEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 18 }
+        }
+        localization_key = "SPEVNT_mistymount_war_6_TEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 19 }
+        }
+        localization_key = "SPEVNT_human_tsukumo_war_TEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 20 }
+        }
+        localization_key = "SPEVNT_human_tsukumo_war_2_TEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 21 }
+        }
+        localization_key = "SPEVNT_southland_war_1_TEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 22 }
+        }
+        localization_key = "SPEVNT_southland_war_2_TEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 23 }
+        }
+        localization_key = "SPEVNT_southland_war_3_TEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 24 }
+        }
+        localization_key = "SPEVNT_southland_war_4_TEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 25 }
+        }
+        localization_key = "SPEVNT_southland_war_5_TEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 26 }
+        }
+        localization_key = "SPEVNT_southland_war_6_TEXT"
+    }
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 27 }
+        }
+        localization_key = "SPEVNT_southland_war_7_TEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 28 }
+        }
+        localization_key = "SPEVNT_southland_war_8_TEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 29 }
+        }
+        localization_key = "SPEVNT_southland_war_9_TEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 30 }
+        }
+        localization_key = "SPEVNT_all_gone_TEXT"
+    }
+
+}
+
+defined_text = { #SUPER EVENT QUOTES
+    name = get_superevent_close_text
+    
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 1 }
+        }
+        localization_key = "SPEVNT_it_started_CLOSETEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 2 }
+        }
+        localization_key = "SPEVNT_mistylake_war_1_CLOSETEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 3 }
+        }
+        localization_key = "SPEVNT_mistylake_war_2_CLOSETEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 4 }
+        }
+        localization_key = "SPEVNT_mistylake_war_3_CLOSETEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 5 }
+        }
+        localization_key = "SPEVNT_mistylake_war_4_CLOSETEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 6 }
+        }
+        localization_key = "SPEVNT_godblessia_civil_war_CLOSETEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 7 }
+        }
+        localization_key = "SPEVNT_mistymount_war_1_CLOSETEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 8 }
+        }
+        localization_key = "SPEVNT_mistymount_war_2_CLOSETEXT"
+    }
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 9 }
+        }
+        localization_key = "SPEVNT_mistymount_war_3_CLOSETEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 10 }
+        }
+        localization_key = "SPEVNT_mistymount_war_4_CLOSETEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 11 }
+        }
+        localization_key = "SPEVNT_mistylake_war_5_CLOSETEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 12 }
+        }
+        localization_key = "SPEVNT_mistylake_war_6_CLOSETEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 13 }
+        }
+        localization_key = "SPEVNT_mistylake_war_7_CLOSETEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 14 }
+        }
+        localization_key = "SPEVNT_scarlet_collapse_CLOSETEXT"
+    }
+
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 15 }
+        }
+        localization_key = "SPEVNT_gegokujyoist_march_CLOSETEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 16 }
+        }
+        localization_key = "SPEVNT_soviet_mistylake_established_CLOSETEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 17 }
+        }
+        localization_key = "SPEVNT_mistymount_war_5_CLOSETEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 18 }
+        }
+        localization_key = "SPEVNT_mistymount_war_6_CLOSETEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 19 }
+        }
+        localization_key = "SPEVNT_human_tsukumo_war_CLOSETEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 20 }
+        }
+        localization_key = "SPEVNT_human_tsukumo_war_2_CLOSETEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 21 }
+        }
+        localization_key = "SPEVNT_southland_war_1_CLOSETEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 22 }
+        }
+        localization_key = "SPEVNT_southland_war_2_CLOSETEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 23 }
+        }
+        localization_key = "SPEVNT_southland_war_3_CLOSETEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 24 }
+        }
+        localization_key = "SPEVNT_southland_war_4_CLOSETEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 25 }
+        }
+        localization_key = "SPEVNT_southland_war_5_CLOSETEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 26 }
+        }
+        localization_key = "SPEVNT_southland_war_6_CLOSETEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 27 }
+        }
+        localization_key = "SPEVNT_southland_war_7_CLOSETEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 28 }
+        }
+        localization_key = "SPEVNT_southland_war_8_CLOSETEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 29 }
+        }
+        localization_key = "SPEVNT_southland_war_9_CLOSETEXT"
+    }
+
+    text = { 
+        trigger = {
+            check_variable = { Active_Superevent_ID = 30 }
+        }
+        localization_key = "SPEVNT_all_gone_CLOSETEXT"
+    }
+
+}

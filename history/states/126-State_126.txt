@@ -1,0 +1,30 @@
+state={
+	id=126
+	name="STATE_126"
+	provinces={
+		153 204 651 1397 1801 3175 3294 4967 6203 6300 7356 8187 10182 11327 11396 11402 11425 11438 11440 11499 11510 11557 11612 
+	}
+	buildings_max_level_factor=1.000
+        manpower=6752
+                 state_category = town
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 1 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = DLD
+			add_core_of = DLD
+
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

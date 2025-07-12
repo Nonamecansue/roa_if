@@ -1,0 +1,30 @@
+state={
+	id=193
+	name="STATE_193"
+	provinces={
+		874 1150 1991 2215 2766 3611 4258 5087 5311 5518 6076 6530 6989 7152 7546 7613 7919 8024 8493 8685 8856 8901 9028 9069 9627 9772 10270 10449 10679 11782 11786 11816 11831 11832 11849 11880 11918 11960 11961 11969 11976 12036 12075 12124 12142 12151 12189 12190 
+	}
+	buildings_max_level_factor=1.000
+        manpower=10071
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 12 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = DLD
+			add_core_of = DLD
+			victory_points = { 874  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

@@ -1,0 +1,30 @@
+state={
+	id=146
+	name="STATE_146"
+	provinces={
+		419 1954 2494 3099 3723 4166 4384 4389 5395 5498 5504 5645 5820 6064 6111 6433 6732 6905 7106 7887 7891 8625 8641 8776 8822 8906 8984 9155 9172 9249 9838 10098 10169 10452 10461 10483 10574 10694 11415 11455 11481 11492 11518 11528 11531 11541 11547 11553 11627 11706 11714 11741 11756 11763 11764 11792 11815 11828 11847 11862 11868 11869 11877 11915 11942 11959 11967 12002 12009 
+	}
+	buildings_max_level_factor=1.000
+        manpower=2366
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 4 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = DHC
+			add_core_of = DHC
+			victory_points = { 419 1 }
+			buildings = {
+				infrastructure = 1
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

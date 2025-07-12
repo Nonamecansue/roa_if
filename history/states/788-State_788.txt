@@ -1,0 +1,30 @@
+state={
+	id=788
+	name="STATE_788"
+	provinces={
+		1197 2349 3364 4885 5760 15981 16023 16024 16054 16079 16114 16137 16208 
+	}
+	buildings_max_level_factor=1.000
+        manpower=35725
+                 state_category = large_city
+	resources={
+		steel=18 #钢铁
+		tungsten = 6 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=10 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner =FSS
+			add_core_of = FSS
+			victory_points = { 1197  25 }
+			buildings = {
+				infrastructure = 4
+				air_base = 0
+				arms_factory = 5
+				industrial_complex = 4
+			}
+		}
+ 
+}

@@ -1,0 +1,30 @@
+state={
+	id=854
+	name="STATE_854"
+	provinces={
+		2058 2737 2853 3336 3856 4206 4776 4980 5968 6408 7300 7639 7937 8649 9054 9604 10514 16479 16510 16533 16534 16537 16554 16565 16577 16585 16586 16596 16628 16629 16638 16645 16719 16746 16773 
+	}
+	buildings_max_level_factor=1.000
+        manpower=8722
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=3 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = REN
+			add_core_of = REN
+			victory_points = { 2058  1 }
+			buildings = {
+				infrastructure = 1
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

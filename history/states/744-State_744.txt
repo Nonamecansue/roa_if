@@ -1,0 +1,30 @@
+state={
+	id=744
+	name="STATE_744"
+	provinces={
+		849 3931 4508 5359 6221 9130 9233 10366 15587 15705 15731 15821 15830 15836 15849 15864 15865 15879 15886 15893 15914 15928 15929 
+	}
+	buildings_max_level_factor=1.000
+        manpower=15647
+                 state_category = city
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 5 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = YFG
+			add_core_of = YFG
+			victory_points = { 849 20 }
+			buildings = {
+				infrastructure = 3
+				air_base = 0
+				arms_factory = 3
+				industrial_complex = 3
+			}
+		}
+ 
+}

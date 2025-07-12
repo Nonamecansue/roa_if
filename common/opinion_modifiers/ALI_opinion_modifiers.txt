@@ -1,0 +1,41 @@
+#########################################################################
+# OPINION MODIFIERS
+##########################################################################
+# value
+# min_trust
+# max_trust
+# decay
+# months/years/days = timer
+# trade = yes/no
+
+opinion_modifiers = {
+	ALI_xianzheyouhao_op = {
+		value = 30
+	}
+	ALI_mojiehua_op = {
+		value = -80
+	}
+	ALI_cunzaifusangshen_op = {
+		value = 30
+	}
+	ALI_xuexidurenou_op = {
+		value = 30
+	}
+	ALI_bafeimofashizuoweiyanjiuduixiang_op = {
+		value = -25
+	}
+	ALI_mojiejiaoliuchu_op1 = {
+		value = 25
+	}
+	ALI_mojiejiaoliuchu_op2 = {
+		value = 10
+		trade = yes
+	}
+	ALI_zengsongrenou_op = {
+		value = 10
+	}
+	ALI_gengduodeshiyanduixiang_op = {
+		value = -50
+	}
+}	
+

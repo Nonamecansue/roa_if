@@ -1,0 +1,30 @@
+state={
+	id=37
+	name="STATE_37"
+	provinces={
+		3919 4496 7273 10919 10935 10939 10945 10958 
+	}
+	buildings_max_level_factor=1.000
+        manpower=145425
+                 state_category = city
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 2 #铬
+		rubber=9 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = SHO
+			add_core_of = SHO
+			victory_points = {3919  8 }
+			buildings = {
+				infrastructure = 2
+				air_base = 0
+				arms_factory = 2
+				industrial_complex = 0
+			}
+		}
+ 
+}

@@ -1,0 +1,30 @@
+state={
+	id=777
+	name="STATE_777"
+	provinces={
+		1124 1355 2199 4940 5306 6113 6383 7686 9202 9513 9835 10058 15897 15942 15987 16005 16037 16060 16073 16101 16115 16139 16176 16205 16241 
+	}
+	buildings_max_level_factor=1.000
+        manpower=8011
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner =FSS
+			add_core_of = FSS
+			victory_points = { 1124  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

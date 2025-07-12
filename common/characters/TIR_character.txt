@@ -1,0 +1,201 @@
+#——————————开局——————————#
+characters={
+	TIR_horikawaraiko ={ #崛川雷鼓
+		name = TIR_horikawaraiko
+		portraits={
+			civilian={
+				large="gfx/leaders/TIR/TIR_horikawaraiko.dds"
+				small="gfx/leaders/TIR/TIR_horikawaraiko_small.dds"
+			}
+		}
+
+		country_leader={
+			desc = "TIR_horikawaraiko_desc"
+			traits = {
+				TIR_horikawaraiko_traits_1
+				TIR_horikawaraiko_traits_2
+			}
+			ideology = republicanism_national_republicanism_subtype
+			id = -1	 
+		}
+		country_leader={
+			desc = "TIR_horikawaraiko_desc"
+			traits = {
+				TIR_horikawaraiko_traits_1
+				TIR_horikawaraiko_traits_2
+			}
+			ideology = vanguard_revolutionism_revolutionary_libertarianism_subtype
+
+			id = -1	 
+		}
+	
+		advisor = {
+			slot = character_coop
+			idea_token = TIR_horikawaraiko
+			name = TIR_horikawaraiko
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+#————————————付丧神和平阵线——————————————#
+
+    TIR_tatarakogasa ={ #多多良小伞
+		name = TIR_tatarakogasa
+		portraits={
+			civilian={
+				large="gfx/leaders/TIR/TIR_tatarakogasa.dds"
+				small="gfx/leaders/TIR/TIR_tatarakogasa_small.dds"
+			}
+		}
+		country_leader={
+			ideology = progressivism_national_progressivism_subtype
+			id = -1	 
+		}
+	
+		advisor = {
+			slot = character_coop
+			idea_token = TIR_tatarakogasa
+			name = TIR_tatarakogasa
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+#————————————付丧神准则党————————————#
+
+    TIR_kamibikariyu ={ #纸灯幽
+		name = TIR_kamibikariyu
+		portraits={
+			civilian={
+				large="gfx/leaders/TIR/TIR_kamibikariyu.dds"
+				small="gfx/leaders/TIR/TIR_kamibikariyu_small.dds"
+			}
+		}
+		country_leader={
+			ideology = corporatism_industrial_populism_subtype
+			id = -1	 
+		}
+	
+		advisor = {
+			slot = character_coop
+			idea_token = TIR_kamibikariyu
+			name = TIR_kamibikariyu
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+#————————————幻想乡清洁团——————————————#
+
+    TIR_kigisenri ={ #琦木千璃
+		name = TIR_kigisenri
+		portraits={
+			civilian={
+				large="gfx/leaders/TIR/TIR_kigisenri.dds"
+				small="gfx/leaders/TIR/TIR_kigisenri_small.dds"
+			}
+		}
+		country_leader={
+			ideology = ultraism_racial_puritism_subtype
+			id = -1	 
+		}
+	
+		advisor = {
+			slot = character_coop
+			idea_token = TIR_kigisenri
+			name = TIR_kigisenri
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+#————————————九十九工人盟——————————————#
+
+    TIR_tsukumobenben ={ #九十九弁弁
+		name = TIR_tsukumobenben
+		portraits={
+			civilian={
+				large="gfx/leaders/TIR/TIR_tsukumobenben.dds"
+				small="gfx/leaders/TIR/TIR_tsukumobenben_small.dds"
+			}
+		}
+		country_leader={
+			ideology = radicalism_neo_gegokujyoism_subtype
+			id = -1	 
+		}
+	
+		advisor = {
+			slot = character_coop
+			idea_token = TIR_tsukumobenben
+			name = TIR_tsukumobenben
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+    TIR_tsukumoyatsuhashi ={ #九十九八桥
+		name = TIR_tsukumoyatsuhashi
+		portraits={
+			civilian={
+				large="gfx/leaders/TIR/TIR_tsukumoyatsuhashi.dds"
+				small="gfx/leaders/TIR/TIR_tsukumoyatsuhashi_small.dds"
+			}
+		}
+		country_leader={
+			ideology = radicalism_neo_gegokujyoism_subtype
+			id = -1	 
+		}
+	
+		advisor = {
+			slot = character_coop
+			idea_token = TIR_tsukumoyatsuhashi
+			name = TIR_tsukumoyatsuhashi
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+}

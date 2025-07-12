@@ -1,0 +1,29 @@
+state={
+	id=882
+	name="STATE_882"
+	provinces={
+		610 616 936 938 1069 1161 1194 1250 1540 2084 2170 3269 3523 7335 9075 16731 16873 16975 17001 
+	}
+	buildings_max_level_factor=1.000
+        manpower=103
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil =4 #石油
+	}		history = {
+			owner = SBL
+			add_core_of = SBL
+			victory_points = { 610  1 }
+			buildings = {
+				infrastructure = 1
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

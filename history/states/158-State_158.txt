@@ -1,0 +1,30 @@
+state={
+	id=158
+	name="STATE_158"
+	provinces={
+		1241 2060 4338 5433 5832 6246 6493 7385 9325 9648 11493 11514 11539 11542 11576 11577 11584 11618 11651 11675 11693 11700 11707 11713 11715 11738 
+	}
+	buildings_max_level_factor=1.000
+        manpower=23644
+                 state_category = town
+	resources={
+		steel=2 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = DHC
+			add_core_of = DHC
+			victory_points = { 9325 5 }
+			buildings = {
+				infrastructure = 2
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

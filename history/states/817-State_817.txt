@@ -1,0 +1,30 @@
+state={
+	id=817
+	name="STATE_817"
+	provinces={
+		120 2181 5084 5146 5277 5501 7425 9443 16333 16334 16368 16379 16522 
+	}
+	buildings_max_level_factor=1.000
+        manpower=45388
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 5 #钨
+		chromium = 8 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = SJS
+			add_core_of = SJS
+			victory_points = {  120 1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

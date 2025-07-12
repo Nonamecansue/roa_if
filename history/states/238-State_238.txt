@@ -1,0 +1,30 @@
+state={
+	id=238
+	name="STATE_238"
+	provinces={
+		1224 1323 1445 2187 2890 3244 3434 3544 3951 4220 4685 4880 5408 6284 6544 6716 7237 7405 7578 8359 8415 8658 9912 9916 10384 10557 12293 12314 12315 12326 12333 12334 12338 12350 12351 12368 12407 12436 12437 12445 12457 12466 12467 12468 12477 12482 12488 12495 12496 12538 
+	}
+	buildings_max_level_factor=1.000
+        manpower=4521
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 10 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = WLT
+			add_core_of = WLT
+			victory_points = {1224 1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

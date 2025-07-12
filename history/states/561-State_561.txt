@@ -1,0 +1,30 @@
+state={
+	id=561
+	name="STATE_561"
+	provinces={
+		139 146 831 1187 2403 2874 5952 6033 8684 14458 14615 
+	}
+	buildings_max_level_factor=1.000
+        manpower=67653
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = GZH
+			add_core_of = GZH
+			victory_points = { 139  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

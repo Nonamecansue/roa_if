@@ -1,0 +1,43 @@
+characters={
+	DUS_shinsokyu ={#秦宗久
+		name = DUS_shinsokyu
+		portraits={
+			civilian={
+				large="gfx/leaders/DUS/DUS_shinsokyu.dds"
+				small="gfx/leaders/DUS/DUS_shinsokyu_small.dds"
+			}
+			army = {
+				large="gfx/leaders/DUS/DUS_shinsokyu.dds"
+				small="gfx/leaders/DUS/DUS_shinsokyu_small.dds"
+			}
+			
+		}
+		country_leader={
+			ideology= republicanism_temporary_union_subtype
+			id=-1
+		}
+		corps_commander = {
+			traits = {  th_original_character trait_cautious }
+			attack_skill = 5
+			defense_skill = 7
+			planning_skill = 5
+			logistics_skill = 5
+			skill = 6
+			# id = 23
+		}
+		advisor = {
+			slot = character_coop
+			idea_token = DUS_shinsokyu
+			name = DUS_shinsokyu
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

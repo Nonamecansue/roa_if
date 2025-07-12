@@ -1,0 +1,30 @@
+state={
+	id=16
+	name="STATE_16"
+	provinces={
+		426 1920 2570 2773 4141 4798 5959 7737 7983 9739 10344 10817 10853 10871 
+	}
+	buildings_max_level_factor=1.000
+        manpower=1464
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = LJC
+			add_core_of = LJC
+			victory_points = { 426  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

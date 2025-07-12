@@ -1,0 +1,30 @@
+state={
+	id=15
+	name="STATE_15"
+	provinces={
+		78 117 144 167 392 1028 1062 1111 2993 3003 3486 4108 4386 5068 5533 6605 7479 7486 8115 8323 8422 8989 10805 10810 10823 10830 10885 10907 10912 10920 10944 10956 10975 
+	}
+	buildings_max_level_factor=1.000
+        manpower=8012
+                 state_category = town
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 9 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = JIU
+			add_core_of = JIU
+			victory_points = {  78 15 }
+			buildings = {
+				infrastructure = 1
+				air_base = 0
+				arms_factory = 1
+				industrial_complex = 1
+			}
+		}
+ 
+}

@@ -1,0 +1,30 @@
+state={
+	id=285
+	name="STATE_285"
+	provinces={
+		1537 3275 7986 8018 8382 8789 8819 9057 12614 12646 12665 12697 12712 12721 12749 12755 12813 12821 12855 12856 12889 
+	}
+	buildings_max_level_factor=1.000
+        manpower=1557
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = XXC
+			add_core_of = XXC
+			victory_points = { 1537 1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

@@ -1,0 +1,29 @@
+state={
+	id=768
+	name="STATE_768"
+	provinces={
+		3841 4149 5327 5958 6161 6533 6828 6960 7509 8293 8472 8790 9437 10195 15793 15854 15885 15945 15946 15983 15996 16010 16011 16020 16062 16071 16088 16123 16133 16142 16166 16179 16180 
+	}
+	buildings_max_level_factor=1.000
+        manpower=18855
+                 state_category = city
+	resources={
+		steel=1 #钢铁
+		tungsten = 1 #钨
+		chromium = 5 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 4 #石油
+	}		history = {
+		owner = BBW
+		add_core_of =BBW
+			victory_points = { 6161 15 }
+			buildings = {
+				infrastructure = 3
+				air_base = 0
+				arms_factory = 1
+				industrial_complex = 3
+			}
+		}
+ 
+}

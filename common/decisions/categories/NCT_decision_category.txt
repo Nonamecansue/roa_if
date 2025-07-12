@@ -1,0 +1,8 @@
+NCT_decision_category = {
+	allowed = {
+           OR = {
+	       tag = NCT
+	    }
+    }
+	priority = 15
+}

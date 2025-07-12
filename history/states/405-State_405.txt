@@ -1,0 +1,30 @@
+state={
+	id=405
+	name="STATE_405"
+	provinces={
+		3859 4483 5226 5422 6449 9472 9805 13444 13486 13515 13541 13557 13558 13586 13600 13636 13637 13644 13693 13729 
+	}
+	buildings_max_level_factor=1.000
+        manpower=10200
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 8 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = WLT
+			add_core_of = WLT
+			victory_points = {3859  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

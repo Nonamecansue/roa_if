@@ -1,0 +1,63 @@
+UNY_decision_category = {
+	uny_election_1 = {
+		fire_only_once = yes
+		days_re_enable = no
+        allowed ={
+			tag = UNY
+		}
+		available = {
+			country_exists = UNY
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+        visible = {
+			country_exists = UNY
+		}
+
+		cost = 0
+		days_remove = 3
+		modifier = {
+		        
+	   	}
+		complete_effect = {  
+			
+		}
+		remove_effect = {
+		    set_cosmetic_tag = UNY_technicstate
+		    promote_character = UNY_kochisekitan
+		}
+	}
+
+    uny_election_2 = {
+		fire_only_once = yes
+		days_re_enable = no
+        allowed ={
+			tag = UNY
+		}
+		available = {
+			country_exists = UNY
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+        visible = {
+			country_exists = UNY
+		}
+
+		cost = 0
+		days_remove = 3
+		modifier = {
+		        
+	   	}
+		complete_effect = {  
+			
+		}
+		remove_effect = {
+		    promote_character = UNY_thaliraluminis
+		}
+	}
+
+}

@@ -1,0 +1,30 @@
+state={
+	id=350
+	name="STATE_350"
+	provinces={
+		2047 3920 4056 6858 7541 13011 13033 
+	}
+	buildings_max_level_factor=1.000
+        manpower=6480
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = TGD
+			add_core_of = TGD
+			victory_points = { 2047 1 }
+			buildings = {
+				infrastructure = 1
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

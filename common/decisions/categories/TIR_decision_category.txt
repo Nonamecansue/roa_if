@@ -1,0 +1,8 @@
+TIR_decision_category = {
+	allowed = {
+           OR = {
+	       tag = TIR
+	    }
+    }
+	priority = 15
+}

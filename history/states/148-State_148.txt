@@ -1,0 +1,30 @@
+state={
+	id=148
+	name="STATE_148"
+	provinces={
+		636 1081 1477 1763 1791 2652 2729 3662 4357 4447 4714 4869 4971 5417 5780 6564 6757 6811 7610 8151 8300 9211 9592 9719 10004 10132 11592 11600 11665 11672 11721 11729 11750 11773 11804 11806 11818 11855 11870 11876 11887 
+	}
+	buildings_max_level_factor=1.000
+        manpower=10689
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = STH
+			add_core_of = STH
+			victory_points = { 636 1 }
+			buildings = {
+				infrastructure = 1
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

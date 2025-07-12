@@ -1,0 +1,29 @@
+state={
+	id=655
+	name="STATE_655"
+	provinces={
+		2723 4580 7369 7938 14862 14874 14923 14937 14949 14974 15032 
+	}
+	buildings_max_level_factor=1.000
+        manpower=65540
+                 state_category = town
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 6 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 1 #石油
+	}		history = {
+			owner = FSS
+			add_core_of = FSS
+			victory_points = {2723  3 }
+			buildings = {
+				infrastructure = 3
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 1
+			}
+		}
+ 
+}

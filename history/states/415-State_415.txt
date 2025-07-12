@@ -1,0 +1,30 @@
+state={
+	id=415
+	name="STATE_415"
+	provinces={
+		3592 4145 4245 4296 5394 7310 13440 13581 13617 13632 13739 
+	}
+	buildings_max_level_factor=1.000
+        manpower=296998
+                 state_category = large_city
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 20 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = HMG
+			add_core_of = HMG
+			victory_points = { 13581  20 }
+			buildings = {
+				infrastructure = 4
+				air_base = 0
+				arms_factory = 2
+				industrial_complex = 5
+			}
+		}
+ 
+}

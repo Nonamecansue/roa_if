@@ -1,0 +1,30 @@
+state={
+	id=76
+	name="STATE_76"
+	provinces={
+		226 295 883 1191 1600 2222 2898 3028 3665 3860 4177 5572 5678 5810 6041 6288 6808 6964 8110 8879 9918 11094 11103 11109 11119 11132 11135 11163 11164 11171 11181 
+	}
+	buildings_max_level_factor=1.000
+        manpower=6852
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = LLB
+			add_core_of = LLB
+			victory_points = {226  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

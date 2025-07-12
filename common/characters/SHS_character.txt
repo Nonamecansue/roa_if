@@ -1,0 +1,31 @@
+#——————————开局——————————#
+characters={
+	SHS_shikieikiyamaxanadu ={ #四季映姬.夜摩仙那度
+		name = SHS_shikieikiyamaxanadu
+		portraits={
+			civilian={
+				large="gfx/leaders/SHS/SHS_shikieikiyamaxanadu.dds"
+				small="gfx/leaders/SHS/SHS_shikieikiyamaxanadu_small.dds"
+			}
+		}
+		country_leader={
+			ideology = republicanism_itanjinmon_subtype
+			id = -1	 
+		}
+	
+		advisor = {
+			slot = character_coop
+			idea_token = SHS_shikieikiyamaxanadu
+			name = SHS_shikieikiyamaxanadu
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

@@ -1,0 +1,29 @@
+state={
+	id=349
+	name="STATE_349"
+	provinces={
+		135 1186 2320 2743 3033 4069 4745 4954 6144 6269 6456 6719 7809 8095 8688 9750 10059 12933 12994 13056 13099 13179 13238 13287 13311 13369 13378 
+	}
+	buildings_max_level_factor=1.000
+        manpower=2504
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 10 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 8 #石油
+	}		history = {
+			owner = JXQ
+			add_core_of = JXQ
+			victory_points = {  135 1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

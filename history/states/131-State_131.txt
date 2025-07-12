@@ -1,0 +1,29 @@
+state={
+	id=131
+	name="STATE_131"
+	provinces={
+		94 102 1252 2412 3292 3892 4904 5155 5626 6948 7022 7402 7627 8352 8440 8452 8686 8713 8827 9029 9792 10185 10711 11295 11321 11325 11337 11349 11354 11386 11399 11424 11431 11437 11443 11449 11456 11465 11477 11485 11488 11505 11521 11568 11657 11733 
+	}
+	buildings_max_level_factor=1.000
+        manpower=1988
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 16 #钨
+		chromium = 1 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 6 #石油
+	}		history = {
+			owner = DHC
+			add_core_of = DHC
+			victory_points = { 11349 1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

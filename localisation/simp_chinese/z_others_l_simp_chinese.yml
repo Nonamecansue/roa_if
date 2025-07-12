@@ -1,0 +1,17 @@
+﻿l_simp_chinese:
+ same_ruling_party:0 "相同的流派"
+ different_party_types:0 "不同的流派"
+
+ FE_DIFFICULTY_VERY_EASY:0 "Noob"
+ FE_DIFFICULTY_VERY_EASY_TOOLTIP:0 "§B毕竟只不过是一个臆想世界,没必要太认真§!"
+ FE_DIFFICULTY_EASY:1 "Easy"
+ FE_DIFFICULTY_EASY_TOOLTIP:0 "§G也许生存并没有这么困难§!"
+ FE_DIFFICULTY_NORMAL:1 "Normal"
+ FE_DIFFICULTY_NORMAL_TOOLTIP:0 "我们没在和你开玩笑"
+ FE_DIFFICULTY_HARD:1 "Hard"
+ FE_DIFFICULTY_HARD_TOOLTIP:1 "§Y这也许就是现实罢§!"
+ FE_DIFFICULTY_VERY_HARD:0 "Lunatic"
+ FE_DIFFICULTY_VERY_HARD_TOOLTIP:1 "§R祝你好运§!"
+
+ FE_HISTORICAL:0 "AI使用历史国策（没有历史）"
+ FE_HISTORICAL_TOOLTIP:0 "臆想世界哪来的历史"

@@ -1,0 +1,907 @@
+﻿add_namespace = scc
+news_event = {#CIR cap SCA
+	id = scc.1
+	title = scc.1.t
+	desc = scc.1.d
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+
+	option = {
+		name = scc.1.1
+		trigger = {
+			tag = CIR
+		}
+	}
+
+	option = {
+		name = scc.1.2
+		trigger = {
+			tag = SCA
+		}
+	}
+
+	option = {
+		name = scc.1.3
+		trigger = {
+			not = {
+				tag = SCA
+				tag = CIR
+			}
+		}
+	}
+}
+news_event = {#TKM cap SCA
+	id = scc.2
+	title = scc.2.t
+	desc = scc.2.d
+#	picture = GFX_report_event_chinese_soldiers_01
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = scc.2.1
+		trigger = {
+			tag = TKM
+		}
+	}
+
+	option = {
+		name = scc.2.2
+		trigger = {
+			tag = SCA
+		}
+	}
+
+	option = {
+		name = scc.2.3
+		trigger = {
+			not = {
+				tag = SCA
+				tag = TKM
+			}
+		}
+	}
+}
+
+news_event = {#SEJ cap SCA
+	id = scc.3
+	title = scc.3.t
+	desc = scc.3.d
+#	picture = GFX_report_event_chinese_soldiers_01
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = scc.3.1
+		trigger = {
+			tag = SEJ
+		}
+	}
+
+	option = {
+		name = scc.3.2
+		trigger = {
+			tag = SCA
+		}
+	}
+
+	option = {
+		name = scc.3.3
+		trigger = {
+			not = {
+				tag = SCA
+				tag = SEJ
+			}
+		}
+	}
+}
+
+news_event = {#AKI cap SCA
+	id = scc.4
+	title = scc.4.t
+	desc = scc.4.d
+#	picture = GFX_report_event_chinese_soldiers_01
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = scc.4.1
+		trigger = {
+			tag = AKI
+		}
+	}
+
+	option = {
+		name = scc.4.2
+		trigger = {
+			tag = SCA
+		}
+	}
+
+	option = {
+		name = scc.4.3
+		trigger = {
+			not = {
+				tag = SCA
+				tag = AKI
+			}
+		}
+	}
+}
+
+news_event = {#TEG cap SCA
+	id = scc.5
+	title = scc.5.t
+	desc = scc.5.d
+#	picture = GFX_report_event_chinese_soldiers_01
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = scc.5.1
+		trigger = {
+			tag = TEG
+		}
+	}
+
+	option = {
+		name = scc.5.2
+		trigger = {
+			tag = SCA
+		}
+	}
+
+	option = {
+		name = scc.5.3
+		trigger = {
+			not = {
+				tag = SCA
+				tag = TEG
+			}
+		}
+	}
+}
+
+news_event = {#MRY cap SCA
+	id = scc.6
+	title = scc.6.t
+	desc = scc.6.d
+#	picture = GFX_report_event_chinese_soldiers_01
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = scc.6.1
+		trigger = {
+			tag = MRY
+		}
+	}
+
+	option = {
+		name = scc.6.2
+		trigger = {
+			tag = SCA
+		}
+	}
+
+	option = {
+		name = scc.6.3
+		trigger = {
+			not = {
+				tag = SCA
+				tag = MRY
+			}
+		}
+	}
+}
+
+news_event = {#MRS cap SCA
+	id = scc.7
+	title = scc.7.t
+	desc = scc.7.d
+#	picture = GFX_report_event_chinese_soldiers_01
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = scc.7.1
+		trigger = {
+			tag = MRS
+		}
+	}
+
+	option = {
+		name = scc.7.2
+		trigger = {
+			tag = SCA
+		}
+	}
+
+	option = {
+		name = scc.7.3
+		trigger = {
+			not = {
+				tag = SCA
+				tag = MRS
+			}
+		}
+	}
+}
+
+news_event = {#ALI cap SCA
+	id = scc.8
+	title = scc.8.t
+	desc = scc.8.d
+#	picture = GFX_report_event_chinese_soldiers_01
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = scc.8.1
+		trigger = {
+			tag = ALI
+		}
+	}
+
+	option = {
+		name = scc.8.2
+		trigger = {
+			tag = SCA
+		}
+	}
+
+	option = {
+		name = scc.8.3
+		trigger = {
+			not = {
+				tag = SCA
+				tag = ALI
+			}
+		}
+	}
+}
+
+news_event = {#HKR cap SCA
+	id = scc.9
+	title = scc.9.t
+	desc = scc.9.d
+#	picture = GFX_report_event_chinese_soldiers_01
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = scc.9.1
+		trigger = {
+			tag = HKR
+		}
+	}
+
+	option = {
+		name = scc.9.2
+		trigger = {
+			tag = SCA
+		}
+	}
+
+	option = {
+		name = scc.9.3
+		trigger = {
+			not = {
+				tag = SCA
+				tag = HKR
+			}
+		}
+	}
+}
+
+news_event = {#MNM cap NMS
+	id = scc.10
+	title = scc.10.t
+	desc = scc.10.d
+#	picture = GFX_report_event_chinese_soldiers_01
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = scc.10.1
+		trigger = {
+			tag = MNM
+		}
+	}
+
+	option = {
+		name = scc.10.2
+		trigger = {
+			tag = NMS
+		}
+	}
+
+	option = {
+		name = scc.10.3
+		trigger = {
+			not = {
+				tag = NMS
+				tag = MNM
+			}
+		}
+	}
+}
+
+news_event = {#NUE cap NMS
+	id = scc.11
+	title = scc.11.t
+	desc = scc.11.d
+#	picture = GFX_report_event_chinese_soldiers_01
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = scc.11.1
+		trigger = {
+			tag = NUE
+		}
+	}
+
+	option = {
+		name = scc.11.2
+		trigger = {
+			tag = NMS
+		}
+	}
+
+	option = {
+		name = scc.11.3
+		trigger = {
+			not = {
+				tag = NMS
+				tag = NUE
+			}
+		}
+	}
+}
+
+news_event = {#KYK cap NMS
+	id = scc.12
+	title = scc.12.t
+	desc = scc.12.d
+#	picture = GFX_report_event_chinese_soldiers_01
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = scc.12.1
+		trigger = {
+			tag = KYK
+		}
+	}
+
+	option = {
+		name = scc.12.2
+		trigger = {
+			tag = NMS
+		}
+	}
+
+	option = {
+		name = scc.12.3
+		trigger = {
+			not = {
+				tag = NMS
+				tag = KYK
+			}
+		}
+	}
+}
+
+news_event = {#TKM cap NMS
+	id = scc.13
+	title = scc.13.t
+	desc = scc.13.d
+#	picture = GFX_report_event_chinese_soldiers_01
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = scc.13.1
+		trigger = {
+			tag = TKM
+		}
+	}
+
+	option = {
+		name = scc.13.2
+		trigger = {
+			tag = NMS
+		}
+	}
+
+	option = {
+		name = scc.13.3
+		trigger = {
+			not = {
+				tag = NMS
+				tag = TKM
+			}
+		}
+	}
+}
+
+news_event = {#SRB cap NMS
+	id = scc.14
+	title = scc.14.t
+	desc = scc.14.d
+#	picture = GFX_report_event_chinese_soldiers_01
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = scc.14.1
+		trigger = {
+			tag = SRB
+		}
+	}
+
+	option = {
+		name = scc.14.2
+		trigger = {
+			tag = NMS
+		}
+	}
+
+	option = {
+		name = scc.14.3
+		trigger = {
+			not = {
+				tag = NMS
+				tag = SRB
+			}
+		}
+	}
+}
+
+news_event = {#MRY cap TEG
+	id = scc.15
+	title = scc.15.t
+	desc = scc.15.d
+#	picture = GFX_report_event_chinese_soldiers_01
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = scc.15.1
+		trigger = {
+			tag = MRY
+		}
+	}
+
+	option = {
+		name = scc.15.2
+		trigger = {
+			tag = TEG
+		}
+	}
+
+	option = {
+		name = scc.15.3
+		trigger = {
+			not = {
+				tag = TEG
+				tag = MRY
+			}
+		}
+	}
+}
+
+news_event = {#AKI cap TEG
+	id = scc.16
+	title = scc.16.t
+	desc = scc.16.d
+#	picture = GFX_report_event_chinese_soldiers_01
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = scc.16.1
+		trigger = {
+			tag = AKI
+		}
+	}
+
+	option = {
+		name = scc.16.2
+		trigger = {
+			tag = TEG
+		}
+	}
+
+	option = {
+		name = scc.16.3
+		trigger = {
+			not = {
+				tag = TEG
+				tag = AKI
+			}
+		}
+	}
+}
+
+news_event = {#SCA cap TEG
+	id = scc.17
+	title = scc.17.t
+	desc = scc.17.d
+#	picture = GFX_report_event_chinese_soldiers_01
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = scc.17.1
+		trigger = {
+			tag = SCA
+		}
+	}
+
+	option = {
+		name = scc.17.2
+		trigger = {
+			tag = TEG
+		}
+	}
+
+	option = {
+		name = scc.17.3
+		trigger = {
+			not = {
+				tag = TEG
+				tag = SCA
+			}
+		}
+	}
+}
+
+news_event = {#TES cap TEG
+	id = scc.18
+	title = scc.18.t
+	desc = scc.18.d
+#	picture = GFX_report_event_chinese_soldiers_01
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = scc.18.1
+		trigger = {
+			tag = TES
+		}
+	}
+
+	option = {
+		name = scc.18.2
+		trigger = {
+			tag = TEG
+		}
+	}
+
+	option = {
+		name = scc.18.3
+		trigger = {
+			not = {
+				tag = TEG
+				tag = TES
+			}
+		}
+	}
+}
+
+news_event = {#TEG cap MRY
+	id = scc.19
+	title = scc.19.t
+	desc = scc.19.d
+#	picture = GFX_report_event_chinese_soldiers_01
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = scc.19.1
+		trigger = {
+			tag = TEG
+		}
+	}
+
+	option = {
+		name = scc.19.2
+		trigger = {
+			tag = MRY
+		}
+	}
+
+	option = {
+		name = scc.19.3
+		trigger = {
+			not = {
+				tag = MRY
+				tag = TEG
+			}
+		}
+	}
+}
+
+news_event = {#SCA cap MRY
+	id = scc.20
+	title = scc.20.t
+	desc = scc.20.d
+#	picture = GFX_report_event_chinese_soldiers_01
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = scc.20.1
+		trigger = {
+			tag = SCA
+		}
+	}
+
+	option = {
+		name = scc.20.2
+		trigger = {
+			tag = MRY
+		}
+	}
+
+	option = {
+		name = scc.20.3
+		trigger = {
+			not = {
+				tag = MRY
+				tag = SCA
+			}
+		}
+	}
+}
+
+news_event = {#SCA cap CIR
+	id = scc.21
+	title = scc.21.t
+	desc = scc.21.d
+#	picture = GFX_report_event_chinese_soldiers_01
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = scc.21.1
+		trigger = {
+			tag = SCA
+		}
+	}
+
+	option = {
+		name = scc.21.2
+		trigger = {
+			tag = CIR
+		}
+	}
+
+	option = {
+		name = scc.21.3
+		trigger = {
+			not = {
+				tag = CIR
+				tag = SCA
+			}
+		}
+	}
+}
+
+news_event = {#MRS cap CIR
+	id = scc.22
+	title = scc.22.t
+	desc = scc.22.d
+#	picture = GFX_report_event_chinese_soldiers_01
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = scc.22.1
+		trigger = {
+			tag = MRS
+		}
+	}
+
+	option = {
+		name = scc.22.2
+		trigger = {
+			tag = CIR
+		}
+	}
+
+	option = {
+		name = scc.22.3
+		trigger = {
+			not = {
+				tag = CIR
+				tag = MRS
+			}
+		}
+	}
+}
+
+news_event = {#ALI cap CIR
+	id = scc.23
+	title = scc.23.t
+	desc = scc.23.d
+#	picture = GFX_report_event_chinese_soldiers_01
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = scc.23.1
+		trigger = {
+			tag = ALI
+		}
+	}
+
+	option = {
+		name = scc.23.2
+		trigger = {
+			tag = CIR
+		}
+	}
+
+	option = {
+		name = scc.23.3
+		trigger = {
+			not = {
+				tag = CIR
+				tag = ALI
+			}
+		}
+	}
+}
+
+news_event = {#SEJ cap CIR
+	id = scc.24
+	title = scc.24.t
+	desc = scc.24.d
+#	picture = GFX_report_event_chinese_soldiers_01
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+
+	}
+
+	option = {
+		name = scc.24.1
+		trigger = {
+			tag = SEJ
+		}
+	}
+
+	option = {
+		name = scc.24.2
+		trigger = {
+			tag = CIR
+		}
+	}
+
+	option = {
+		name = scc.24.3
+		trigger = {
+			not = {
+				tag = CIR
+				tag = SEJ
+			}
+		}
+	}
+}

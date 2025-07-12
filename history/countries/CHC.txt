@@ -1,0 +1,41 @@
+﻿capital = 999
+146.1.1 = {
+    set_technology = { 
+        field_kits1 = 1
+        basic_train = 1
+        great_war_infantry_weapons = 1
+        tech_mountaineers = 1
+        hardsuit = 1
+        tech_support = 1	
+        tech_recon = 1
+        gw_artillery = 1
+    }
+    set_stability = 0.5
+    set_war_support = 0.1
+    set_convoys = 32
+    set_research_slots = 3
+}
+146.1.1={
+    oob = "CHC_146"
+    add_ideas = {
+        Youkai
+        Tribal
+        hawk2
+        open0
+        loose_border
+        free_magic
+    }
+    set_politics = {
+    	ruling_party = republicanism
+    	election_frequency = 48
+    	elections_allowed = no
+    }
+    set_popularities = {
+        progressivism = 20
+        vanguard_revolutionism = 20
+        republicanism = 20
+        ultraism = 20
+        despotism = 20
+    }
+    give_guarantee = BPR
+}

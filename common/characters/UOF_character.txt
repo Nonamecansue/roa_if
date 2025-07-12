@@ -1,0 +1,212 @@
+#——————————开局——————————#
+characters={
+	UOF_akiminoriko ={ #秋穰子
+		name = UOF_akiminoriko
+		portraits={
+			civilian={
+				large="gfx/leaders/UOF/UOF_akiminoriko.dds"
+				small="gfx/leaders/UOF/UOF_akiminoriko_small.dds"
+			}
+		}
+		country_leader={
+			ideology = republicanism_agricultural_republicanism_subtype
+			id = -1	 
+		}
+	
+		advisor = {
+			slot = character_coop
+			idea_token = UOF_akiminoriko
+			name = UOF_akiminoriko
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	UOF_akisizuha ={ #秋静叶
+	name = UOF_akisizuha
+	portraits={
+		civilian={
+			large="gfx/leaders/UOF/UOF_akisizuha.dds"
+			small="gfx/leaders/UOF/UOF_akisizuha_small.dds"
+		}
+	}
+	country_leader={
+		ideology = republicanism_agricultural_republicanism_subtype
+		id = -1	 
+	}
+
+	advisor = {
+		slot = character_coop
+		idea_token = UOF_akisizuha
+		name = UOF_akisizuha
+		cost = 200
+		modifier = {
+			# character_coop_cost_factor = -0.15 在这里无效
+			political_power_gain = 0.2
+			consumer_goods_factor = -0.02
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+#——————————————东南妖怪山进步党——————————————#
+
+    UOF_suifurin ={ #翠丰铃
+	    name = UOF_suifurin
+	    portraits={
+		civilian={
+			large="gfx/leaders/UOF/UOF_suifurin.dds"
+			small="gfx/leaders/UOF/UOF_suifurin_small.dds"
+		}
+	}
+	country_leader={
+		ideology = progressivism_neoreligionist_progressivism_subtype
+		id = -1	 
+	}
+
+	advisor = {
+		slot = character_coop
+		idea_token = UOF_suifurin
+		name = UOF_suifurin
+		cost = 200
+		modifier = {
+			# character_coop_cost_factor = -0.15 在这里无效
+			political_power_gain = 0.2
+			consumer_goods_factor = -0.02
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+    UOF_kagiyamahina ={ #键山雏
+	    name = UOF_kagiyamahina
+	    portraits={
+		civilian={
+			large="gfx/leaders/UOF/UOF_kagiyamahina.dds"
+			small="gfx/leaders/UOF/UOF_kagiyamahina_small.dds"
+		}
+	}
+	country_leader={
+		ideology = progressivism_national_progressivism_subtype
+		id = -1	 
+	}
+
+	advisor = {
+		slot = character_coop
+		idea_token = UOF_kagiyamahina
+		name = UOF_kagiyamahina
+		cost = 200
+		modifier = {
+			# character_coop_cost_factor = -0.15 在这里无效
+			political_power_gain = 0.2
+			consumer_goods_factor = -0.02
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+#——————————农业拯救协会——————————#
+
+    UOF_kazamiaiwata ={ #风见葵棉
+	    name = UOF_kazamiaiwata
+	    portraits={
+		civilian={
+			large="gfx/leaders/UOF/UOF_kazamiaiwata.dds"
+			small="gfx/leaders/UOF/UOF_kazamiaiwata_small.dds"
+		}
+	}
+	country_leader={
+		ideology = despotism_agricultural_conservatism_subtype
+		id = -1	 
+	}
+
+	advisor = {
+		slot = character_coop
+		idea_token = UOF_kazamiaiwata
+		name = UOF_kazamiaiwata
+		cost = 200
+		modifier = {
+			# character_coop_cost_factor = -0.15 在这里无效
+			political_power_gain = 0.2
+			consumer_goods_factor = -0.02
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+    UOF_chasokutodo ={ #茶则统道
+	    name = UOF_chasokutodo
+	    portraits={
+		civilian={
+			large="gfx/leaders/UOF/UOF_chasokutodo.dds"
+			small="gfx/leaders/UOF/UOF_chasokutodo_small.dds"
+		}
+	}
+	country_leader={
+		ideology = despotism_premodernism_subtype
+		id = -1	 
+	}
+
+	advisor = {
+		slot = character_coop
+		idea_token = UOF_chasokutodo
+		name = UOF_chasokutodo
+		cost = 200
+		modifier = {
+			# character_coop_cost_factor = -0.15 在这里无效
+			political_power_gain = 0.2
+			consumer_goods_factor = -0.02
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+#————————————死亡崇拜者————————————#
+
+    UOF_seikenmizu ={ #圣献水
+	    name = UOF_seikenmizu
+	    portraits={
+		civilian={
+			large="gfx/leaders/UOF/UOF_seikenmizu.dds"
+			small="gfx/leaders/UOF/UOF_seikenmizu_small.dds"
+		}
+	}
+	country_leader={
+		ideology = ultraism_death_worship_subtype
+		id = -1	 
+	}
+
+	advisor = {
+		slot = character_coop
+		idea_token = UOF_seikenmizu
+		name = UOF_seikenmizu
+		cost = 200
+		modifier = {
+			# character_coop_cost_factor = -0.15 在这里无效
+			political_power_gain = 0.2
+			consumer_goods_factor = -0.02
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+}

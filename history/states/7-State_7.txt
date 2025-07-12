@@ -1,0 +1,30 @@
+state={
+	id=7
+	name="STATE_7"
+	provinces={
+		828 908 918 1620 1656 2077 2143 2538 2549 3234 3670 3862 4155 4326 5140 5190 5596 5609 6707 6895 7311 10649 10738 10791 10806 10852 10857 10876 
+	}
+	buildings_max_level_factor=1.000
+        manpower=3785
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 1 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = JIU
+			add_core_of = JIU
+			victory_points = { 828  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

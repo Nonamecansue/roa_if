@@ -1,0 +1,192 @@
+ideas = {
+
+	citizenship_laws = { 
+		law = yes
+		use_list_view = yes
+
+		PB_vanguarddemocracy = {
+						
+			cost = 0
+			removal_cost = -1
+			level = 7
+			
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no
+			}
+			
+            picture = PB_Universal_Citizenship
+                  
+			modifier = {
+				political_power_gain = 0.10
+			}
+			
+			cancel_if_invalid = no
+		}
+
+		PB_workercouncil = {
+						
+			cost = 0
+			removal_cost = -1
+			level = 7
+			
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no
+			}
+			
+            picture = PB_Universal_Citizenship
+                  
+			modifier = {
+				political_power_gain = 0.15
+			}
+			
+			cancel_if_invalid = no
+		}
+
+		PB_Universal_Citizenship = {
+						
+			cost = 0
+			removal_cost = -1
+			level = 7
+			
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no
+			}
+			
+            picture = PB_Universal_Citizenship
+                  
+			modifier = {
+				political_power_gain = 0.1
+			}
+			
+			cancel_if_invalid = no
+		}
+
+		PB_Limited_Disenfranchisement = {
+						
+			cost = 0
+			removal_cost = -1
+			level = 7
+			
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no
+			}
+			
+            picture = PB_Limited_Disenfranchisement
+                  
+			modifier = {
+				political_power_gain = 0.05
+			}
+			
+			cancel_if_invalid = no
+		}
+
+		PB_Aristocratic_Democracy  = {
+						
+			cost = 0
+			removal_cost = -1
+			level = 7
+			
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no
+			}
+			
+            picture = PB_Aristocratic_Democracy
+                  
+			modifier = {
+				political_power_gain = -0.05
+			}
+			
+			cancel_if_invalid = no
+		}
+
+		PB_Managed_Democracy = {
+						
+			cost = 0
+			removal_cost = -1
+			level = 7
+			
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no
+			}
+			
+            picture = PB_Managed_Democracy
+                  
+			modifier = {
+				political_power_gain = -0.1
+			}
+			
+			cancel_if_invalid = no
+		}
+
+		PB_Single_Party_State = {
+						
+			cost = 0
+			removal_cost = -1
+			level = 7
+			
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no
+			}
+			
+            picture = PB_Single_Party_State
+                  
+			modifier = {
+				political_power_gain = -0.15
+			}
+			
+			cancel_if_invalid = no
+		}
+
+		PB_No_Voting = {
+						
+			cost = 0
+			removal_cost = -1
+			level = 7
+			
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no
+			}
+			
+            picture = PB_No_Voting
+                  
+			modifier = {
+				political_power_gain = -0.2
+			}
+			
+			cancel_if_invalid = no
+		}	
+	}
+}
+	

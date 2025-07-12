@@ -1,0 +1,30 @@
+state={
+	id=726
+	name="STATE_726"
+	provinces={
+		307 1444 1640 2332 2873 6323 6921 7150 8629 9113 9895 10109 15610 16107 
+	}
+	buildings_max_level_factor=1.000
+        manpower=7877
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 4 #钨
+		chromium = 5 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = ZYD
+			add_core_of = ZYD
+			victory_points = { 307 1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

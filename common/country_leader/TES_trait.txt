@@ -1,0 +1,47 @@
+leader_traits = {
+	gaoguidetianren_1 = {
+		political_power_factor = -0.1
+		stability_factor = -0.1
+		war_support_factor = -0.1
+	}
+	gaoguidetianren_2 = {
+		political_power_factor = -0.05
+		stability_factor = -0.05
+		war_support_factor = -0.05
+	}
+	gaoguidetianren_3 = {
+		political_power_factor = 0.1
+		stability_factor = 0.1
+		war_support_factor = 0.1
+		army_org_factor = 0.05
+		neworder_drift = 0.10
+	}
+	gaoguidetianren_4 = {
+		justify_war_goal_time = -0.25
+		political_power_gain = -0.25
+		political_power_factor = 0.1
+		stability_factor = 0.1
+		war_support_factor = 0.1
+		army_org_factor = 0.05
+		neworder_drift = 0.10
+	}
+	gaoguidetianren_5 = {
+		justify_war_goal_time = -0.25
+		political_power_gain = -0.50
+		political_power_factor = 0.2
+		stability_factor = 0.15
+		war_support_factor = 0.15
+		army_org_factor = 0.05
+		neworder_drift = 0.10
+		compliance_gain = 0.015
+		command_power_gain_mult = 0.15
+	}
+	diyuzhiwang = {
+		offensive_war_stability_factor = 0.5
+		compliance_gain = 0.015
+	}
+	tianjuntongshuai = {
+		army_attack_factor = 0.05
+		army_defence_factor = 0.05
+	}
+}

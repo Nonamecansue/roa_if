@@ -1,0 +1,30 @@
+state={
+	id=866
+	name="STATE_866"
+	provinces={
+		219 1950 7453 16569 16624 16665 16765 
+	}
+	buildings_max_level_factor=1.000
+        manpower=120
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = JXJ
+			add_core_of = JXJ
+
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

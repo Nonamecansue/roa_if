@@ -1,0 +1,109 @@
+ROT_decision_category = {
+	elections_one = {
+		fire_only_once = yes
+		days_re_enable = no
+        allowed ={
+			tag = ROT
+		}
+		available = {
+			country_exists = ROT
+			NOT = { country_exists = EOT
+		   } 
+		}
+		ai_will_do = {
+			factor = 0.05
+		}
+
+        visible = {
+			country_exists = ROT
+			NOT = { country_exists = EOT
+		   } 
+		}
+
+		cost = 0
+		days_remove = 3
+		modifier = {
+		        
+	   	}
+		complete_effect = {  
+			
+		}
+		remove_effect = {
+		    promote_character = ROT_shameimaruaya
+		}
+	}
+
+	elections_two = {
+		fire_only_once = yes
+		days_re_enable = no
+        allowed ={
+			tag = ROT
+		}
+		available = {
+			country_exists = ROT
+			NOT = { country_exists = EOT
+		   } 
+		}
+		ai_will_do = {
+			factor = 0.05
+		}
+
+        visible = {
+			country_exists = ROT
+			NOT = { country_exists = EOT
+		   } 
+		}
+
+		cost = 0
+		days_remove = 3
+		modifier = {
+		        
+	   	}
+		complete_effect = {  
+			
+		}
+		remove_effect = {
+		    promote_character = ROT_kurobaneshie
+		}
+	}
+
+	genunkai_revolution = {
+		fire_only_once = yes
+		days_re_enable = no
+        allowed ={
+			tag = ROT
+		}
+		available = {
+			country_exists = ROT
+			NOT = { country_exists = EOT
+		   } 
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+        visible = {
+			country_exists = ROT
+			NOT = { country_exists = EOT
+		   } 
+		}
+
+		cost = 0
+		days_remove = 3
+		modifier = {
+		        
+	   	}
+		complete_effect = {  
+			
+		}
+		remove_effect = {
+		    GDR={
+				annex_country = {
+					target = HCG
+				}
+			}
+		}
+	}
+
+
+}

@@ -1,0 +1,30 @@
+state={
+	id=758
+	name="STATE_758"
+	provinces={
+		207 2775 3055 7480 8609 9547 9678 10125 10432 15689 15729 15739 15747 15773 15792 15899 15906 15965 
+	}
+	buildings_max_level_factor=1.000
+        manpower=4877
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 2 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+		owner = LLH
+		add_core_of = LLH
+			victory_points = {207  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

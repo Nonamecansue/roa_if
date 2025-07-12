@@ -1,0 +1,30 @@
+state={
+	id=327
+	name="STATE_327"
+	provinces={
+		1012 1668 3620 4491 5724 6270 7175 7191 7656 7716 8374 10356 12928 12944 12979 12986 13053 13103 13112 13185 
+	}
+	buildings_max_level_factor=1.000
+        manpower=7988
+                 state_category = town
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = HMG
+			add_core_of = HMG
+			victory_points = { 1012 3 }
+			buildings = {
+				infrastructure =3
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

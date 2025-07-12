@@ -1,0 +1,30 @@
+state={
+	id=149
+	name="STATE_149"
+	provinces={
+		1852 2071 5368 6607 11533 
+	}
+	buildings_max_level_factor=1.000
+        manpower=3735
+                 state_category = town
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 1 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = DLD
+			add_core_of = DLD
+			victory_points = { 1852  40 }
+			buildings = {
+				infrastructure = 3
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 2
+			}
+		}
+ 
+}

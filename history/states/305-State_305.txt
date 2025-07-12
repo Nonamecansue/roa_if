@@ -1,0 +1,29 @@
+state={
+	id=305
+	name="STATE_305"
+	provinces={
+		187 1453 4085 4306 4323 8579 9017 9695 12708 12745 12761 12864 12912 12964 
+	}
+	buildings_max_level_factor=1.000
+        manpower=332155
+                 state_category = metropolis
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 12 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 2 #石油
+	}		history = {
+			owner = LZY
+			add_core_of = LZY
+			victory_points = {187   25 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

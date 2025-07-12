@@ -1,0 +1,29 @@
+state={
+	id=894
+	name="STATE_894"
+	provinces={
+		1854 1885 2722 3548 4972 6406 10716 16801 16939 16989 16990 17772
+	}
+	buildings_max_level_factor=1.000
+        manpower=9800
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 1 #石油
+	}		history = {
+			owner = TYH
+			add_core_of = TYH
+			victory_points = { 1854  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

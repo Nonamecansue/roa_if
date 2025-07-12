@@ -1,0 +1,30 @@
+state={
+	id=77
+	name="STATE_77"
+	provinces={
+		289 1020 1255 2996 3352 3651 3793 4163 6291 8315 8535 8541 9636 10650 11110 11120 11133 11145 11184 11197 11200 11248 
+	}
+	buildings_max_level_factor=1.000
+        manpower=4207
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 10 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = PLX
+			add_core_of = PLX
+			victory_points = { 289  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

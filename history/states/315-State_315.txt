@@ -1,0 +1,30 @@
+state={
+	id=315
+	name="STATE_315"
+	provinces={
+		1113 3829 4036 6279 10515 12963 13010 13061 
+	}
+	buildings_max_level_factor=1.000
+        manpower=43553
+                 state_category = town
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 4 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = GYT
+			add_core_of = GYT
+			victory_points = {  1113 10 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

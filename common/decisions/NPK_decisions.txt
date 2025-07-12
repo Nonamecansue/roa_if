@@ -1,0 +1,102 @@
+NPK_decision_category = {
+	npk_election = {
+		fire_only_once = yes
+		days_re_enable = no
+        allowed ={
+			tag = NPK
+		}
+		available = {
+			country_exists = NPK
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+        visible = {
+			country_exists = NPK
+		}
+
+		cost = 0
+		days_remove = 3
+		modifier = {
+		        
+	   	}
+		complete_effect = {  
+			
+		}
+		remove_effect = {
+		    promote_character = NPK_cerisefuyumi
+		}
+	}
+
+	npk_election_2 = {
+		fire_only_once = yes
+		days_re_enable = no
+        allowed ={
+			tag = NPK
+		}
+		available = {
+			country_exists = NPK
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+        visible = {
+			country_exists = NPK
+		}
+
+		cost = 0
+		days_remove = 3
+		modifier = {
+		        
+	   	}
+		complete_effect = {  
+			
+		}
+		remove_effect = {
+		    promote_character = NPK_fatrelandeiffel
+		}
+	}
+
+
+
+
+
+	npk_liberation = {
+		fire_only_once = yes
+		days_re_enable = no
+        allowed ={
+			tag = NPK
+		}
+		available = {
+			country_exists = NPK
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+        visible = {
+			country_exists = NPK
+		}
+
+		cost = 0
+		days_remove = 3
+		modifier = {
+		        
+	   	}
+		complete_effect = {  
+			
+		}
+		remove_effect = {
+			set_politics = {
+				ruling_party = ultraism
+			}
+			add_popularity = {
+				ideology = ultraism
+				popularity = 100
+			}
+			set_party_name = { ideology = ultraism long_name = NPK_medicine_party name = NPK_medicine_party } 
+		}
+	}
+}

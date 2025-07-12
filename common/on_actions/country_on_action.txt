@@ -1,0 +1,11 @@
+	on_actions = {
+
+	on_startup = {
+		effect = {
+			every_country = {
+				set_variable = { var_Infobox_Open = 1 }
+			}
+		}
+}
+
+}

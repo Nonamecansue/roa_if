@@ -1,0 +1,30 @@
+state={
+	id=79
+	name="STATE_79"
+	provinces={
+		1957 2229 2278 4106 7922 9491 11093 11113 11117 11144 
+	}
+	buildings_max_level_factor=1.000
+        manpower=3548
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=3 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = LWZ
+			add_core_of = LWZ
+			victory_points = { 1957 1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

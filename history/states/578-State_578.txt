@@ -1,0 +1,30 @@
+state={
+	id=578
+	name="STATE_578"
+	provinces={
+		252 2008 5937 7415 8152 14585 14654 
+	}
+	buildings_max_level_factor=1.000
+        manpower=379798
+                 state_category = city
+	resources={
+		steel=0 #钢铁
+		tungsten = 2 #钨
+		chromium = 20 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = CBL
+			add_core_of = CBL
+			victory_points = { 252  25 }
+			buildings = {
+				infrastructure = 4
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 2
+			}
+		}
+ 
+}

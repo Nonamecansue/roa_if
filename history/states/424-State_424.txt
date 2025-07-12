@@ -1,0 +1,31 @@
+state={
+	id=424
+	name="STATE_424"
+	provinces={
+		750 1460 3267 3593 3602 4915 5310 5322 5823 6080 6318 6695 7115 8163 8243 8420 9214 9599 9803 10584 13619 13654 13670 13678 13679 13698 13715 13721 13743 13744 13757 13812 13821 13840 13856 13866 13916 13968 
+	}
+	buildings_max_level_factor=1.000
+        manpower=5240
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+		owner = MLS
+		add_core_of = MLS
+		add_core_of = RAL
+			victory_points = { 750  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

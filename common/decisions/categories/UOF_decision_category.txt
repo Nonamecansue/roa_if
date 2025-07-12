@@ -1,0 +1,8 @@
+UOF_decision_category = {
+	allowed = {
+           OR = {
+	       tag = UOF
+	    }
+    }
+	priority = 15
+}

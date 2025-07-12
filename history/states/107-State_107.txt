@@ -1,0 +1,30 @@
+state={
+	id=107
+	name="STATE_107"
+	provinces={
+		518 574 1243 1370 1406 2205 2331 2607 2893 3030 3208 4093 4186 4346 5293 5575 5593 5674 5845 5990 6692 6898 7470 7545 8037 8057 8273 8942 9859 10400 10733 11247 11277 11293 11298 11310 11311 11338 11357 11364 11381 11388 11389 11447 11468 11475 11476 11497 11502 
+	}
+	buildings_max_level_factor=1.000
+        manpower=10021
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = LLB
+			add_core_of = LLB
+			victory_points = { 518 1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

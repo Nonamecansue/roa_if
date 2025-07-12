@@ -1,0 +1,113 @@
+
+equipments = {
+
+	quadropod_automat_archetype = {
+		year = 142
+	
+		is_archetype = yes
+		is_buildable = no
+		type = armor
+		group_by = archetype
+		
+		interface_category = interface_category_land
+
+		resources = {
+			steel = 3
+		}	
+	}
+
+	quadropod_automat_0 = {
+		year = 142
+	
+		archetype = quadropod_automat_archetype
+		
+		#Misc Abilities
+		maximum_speed = 3.0
+		reliability = 0.4
+
+		#Defensive Abilities
+		defense = 24    
+		breakthrough = 160   
+		hardness = 1.60   
+		armor_value = 280  
+
+		#Offensive Abilities
+		soft_attack = 100   
+		hard_attack = 120  
+		ap_attack = 160  
+		air_attack = 15  
+
+		build_cost_ic = 20
+		fuel_consumption = 5
+
+		resources = {
+			steel = 2
+			tungsten = 1
+			chromium = 1
+		}	
+	}
+
+	quadropod_automat_1 = {
+		year = 146
+	
+		archetype = quadropod_automat_archetype
+		parent = quadropod_automat_0
+		
+		#Misc Abilities
+		maximum_speed = 4
+		reliability = 0.50
+
+		#Defensive Abilities
+		defense = 32  
+		breakthrough = 200  
+		hardness = 1.70 
+		armor_value = 320  
+
+		#Offensive Abilities
+		soft_attack = 132  
+		hard_attack = 160  
+		ap_attack = 240   
+		air_attack = 20  
+
+		build_cost_ic = 25
+		fuel_consumption = 5
+
+		resources = {
+			steel = 2
+			tungsten = 2
+			chromium = 1
+		}	
+	}
+
+	quadropod_automat_2 = {
+		year = 153
+	
+		archetype = quadropod_automat_archetype
+		parent = quadropod_automat_1
+		
+		#Misc Abilities
+		maximum_speed = 4
+		reliability = 0.65
+
+		#Defensive Abilities
+		defense = 40   
+		breakthrough = 300   
+		hardness = 1.80   
+		armor_value = 360   
+
+		#Offensive Abilities
+		soft_attack = 148  
+		hard_attack = 200   
+		ap_attack = 340   
+		air_attack = 25   
+
+		build_cost_ic = 30
+		fuel_consumption = 5
+
+		resources = {
+			steel = 3
+			tungsten = 3
+			chromium = 2
+		}	
+	}
+}

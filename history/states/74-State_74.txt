@@ -1,0 +1,30 @@
+state={
+	id=74
+	name="STATE_74"
+	provinces={
+		1952 5168 5584 6105 6911 7942 11091 11105 
+	}
+	buildings_max_level_factor=1.000
+        manpower=87771
+                 state_category = town
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 7 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = WFQ
+			add_core_of = WFQ
+			victory_points = { 1952  10 }
+			buildings = {
+				infrastructure = 1
+				air_base = 0
+				arms_factory = 1
+				industrial_complex = 1
+			}
+		}
+ 
+}

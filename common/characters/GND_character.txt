@@ -1,0 +1,43 @@
+characters={
+	GND_Totetsuyuma={#饕餮尤魔
+		name = GND_Totetsuyuma
+		portraits={
+			civilian={
+				large="gfx/leaders/GND/GND_Totetsuyuma.dds"
+				small="gfx/leaders/GND/GND_Totetsuyuma_small.dds"
+			}
+			army = {
+				large="gfx/leaders/GND/GND_Totetsuyuma.dds"
+				small="gfx/leaders/GND/GND_Totetsuyuma_small.dds"
+			}
+			
+		}
+		country_leader={
+			ideology = despotism_military_junta_subtype
+			id=-1
+		}
+		corps_commander = {
+			traits = {  th_original_character trait_cautious }
+			attack_skill = 5
+			defense_skill = 7
+			planning_skill = 5
+			logistics_skill = 5
+			skill = 6
+			# id = 23
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = GND_Totetsuyuma
+			name = GND_Totetsuyuma
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

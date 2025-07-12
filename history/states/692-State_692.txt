@@ -1,0 +1,30 @@
+state={
+	id=692
+	name="STATE_692"
+	provinces={
+		1378 4242 4599 7024 7653 8128 8430 8451 8568 9122 9873 15210 15772 
+	}
+	buildings_max_level_factor=1.000
+        manpower=6650
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=3 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = ZYD
+			add_core_of = ZYD
+			victory_points = {1378  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

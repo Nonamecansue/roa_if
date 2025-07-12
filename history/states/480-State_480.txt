@@ -1,0 +1,30 @@
+state={
+	id=480
+	name="STATE_480"
+	provinces={
+		2244 3360 7030 7514 7881 8109 8850 13923 
+	}
+	buildings_max_level_factor=1.000
+        manpower=59720
+                 state_category = city
+	resources={
+		steel=4 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=2 #橡胶
+		aluminium=4 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = SXL
+			add_core_of = SXL
+			victory_points = { 2244 20 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

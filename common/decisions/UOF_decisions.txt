@@ -1,0 +1,94 @@
+UOF_decision_category = {
+	uof_election_1 = {
+		fire_only_once = yes
+		days_re_enable = no
+        allowed ={
+			tag = UOF
+		}
+		available = {
+			country_exists = UOF
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+        visible = {
+			country_exists = UOF
+		}
+
+		cost = 0
+		days_remove = 3
+		modifier = {
+		        
+	   	}
+		complete_effect = {  
+			
+		}
+		remove_effect = {
+		    retire_country_leader = yes
+		    promote_leader = UOF_kagiyamahina
+		}
+	}
+
+	uof_election_2 = {
+		fire_only_once = yes
+		days_re_enable = no
+        allowed ={
+			tag = UOF
+		}
+		available = {
+			country_exists = UOF
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+        visible = {
+			country_exists = UOF
+		}
+
+		cost = 0
+		days_remove = 3
+		modifier = {
+		        
+	   	}
+		complete_effect = {  
+			
+		}
+		remove_effect = {
+		    retire_country_leader = yes
+		    promote_leader = UOF_akisizuha
+		}
+	}
+
+	uof_election_3 = {
+		fire_only_once = yes
+		days_re_enable = no
+        allowed ={
+			tag = UOF
+		}
+		available = {
+			country_exists = UOF
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+        visible = {
+			country_exists = UOF
+		}
+
+		cost = 0
+		days_remove = 3
+		modifier = {
+		        
+	   	}
+		complete_effect = {  
+			
+		}
+		remove_effect = {
+		    retire_country_leader = yes
+		    promote_leader = UOF_chasokutodo
+		}
+	}
+}

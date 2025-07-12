@@ -1,0 +1,30 @@
+state={
+	id=891
+	name="STATE_891"
+	provinces={
+		1487 3837 4115 4211 4989 5438 8591 9615 9651 16796 16805 16820 16854 16855 16889 
+	}
+	buildings_max_level_factor=1.000
+        manpower=15877
+                 state_category = town
+	resources={
+		steel=2 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=3 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = XFS
+			add_core_of = XFS
+			victory_points = { 1487 10 }
+			buildings = {
+				infrastructure = 2
+				air_base = 0
+				arms_factory =1
+				industrial_complex = 1
+			}
+		}
+ 
+}

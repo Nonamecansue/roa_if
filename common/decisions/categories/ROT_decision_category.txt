@@ -1,0 +1,8 @@
+ROT_decision_category = {
+	allowed = {
+           OR = {
+	       tag = ROT
+	    }
+    }
+	priority = 15
+}

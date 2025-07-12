@@ -1,0 +1,30 @@
+state={
+	id=990
+	name="STATE_990"
+	provinces={
+		220 567 731 803 887 1031 1040 1054 1192 1280 1384 2144 2979 3744 4116 4524 6042 7381 7401 7989 8047 10198 10419 10673 17533 17572 17579 17596 17611 
+	}
+	buildings_max_level_factor=1.000
+        manpower=5667
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = LMG
+			add_core_of = LMG
+			victory_points = { 220  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

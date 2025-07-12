@@ -1,0 +1,30 @@
+state={
+	id=41
+	name="STATE_41"
+	provinces={
+		221 342 768 1118 1204 1467 1561 1822 2107 2381 2701 2866 2982 3046 3248 3426 3518 4040 4478 4531 4771 5567 5588 5610 5651 5878 6348 6472 6817 6870 7481 7687 8960 9652 10257 10533 10539 10634 10955 10989 11006 11012 11016 11021 11022 11035 11043 11049 11074 11086 11106 
+	}
+	buildings_max_level_factor=1.000
+        manpower=4210
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = PLX
+			add_core_of = PLX
+			victory_points = {  11049 1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

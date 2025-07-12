@@ -1,0 +1,29 @@
+state={
+	id=746
+	name="STATE_746"
+	provinces={
+		5846 6346 6859 6928 7676 8678 8821 10564 15609 15620 15626 15639 15679 15687 15700 15744 15754 15813 15878 15912 
+	}
+	buildings_max_level_factor=1.000
+        manpower=6738
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 1 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 2 #石油
+	}		history = {
+			owner = SJS
+			add_core_of = SJS
+			victory_points = { 5846  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

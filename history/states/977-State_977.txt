@@ -1,0 +1,30 @@
+state={
+	id=977
+	name="STATE_977"
+	provinces={
+		417 637 1035 1566 2104 2644 2808 2860 2947 3257 3582 4360 4633 6581 6712 7792 7867 7917 8624 8895 10180 17441 17445 17448 17486 17502 17522 17541 17557 
+	}
+	buildings_max_level_factor=1.000
+        manpower=8547
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = LMG
+			add_core_of = LMG
+			victory_points = {  417 1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

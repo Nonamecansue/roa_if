@@ -1,0 +1,30 @@
+state={
+	id=729
+	name="STATE_729"
+	provinces={
+		247 389 485 571 824 860 1447 2418 3819 4382 4709 5036 5132 5154 5338 5356 5604 5726 5736 5774 6071 6110 6335 6370 6373 6825 6836 7182 7440 7535 7799 7831 7948 8100 8321 8574 8632 8924 8936 8939 9114 9390 9582 9780 9845 9960 10194 10309 10473 10687 15449 15624 15632 15638 15649 15698 15715 15726 15737 15769 15770 15771 15847 15863 15875 15884 15890 15905 15909 15937 15944 15955 15963 16007 16034 16039 16068 16117 16140 16165 16173 16177 16185 16217 
+	}
+	buildings_max_level_factor=1.000
+        manpower=1011
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = BLS
+			add_core_of = BLS
+
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

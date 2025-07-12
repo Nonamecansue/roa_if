@@ -1,0 +1,62 @@
+#——————————开局——————————#
+characters={
+	BSY_tsukireikyo ={ #月霊虚
+		name = BSY_tsukireikyo
+		portraits={
+			civilian={
+				large="gfx/leaders/BSY/BSY_tsukireikyo.dds"
+				small="gfx/leaders/BSY/BSY_tsukireikyo_small.dds"
+			}
+		}
+		country_leader={
+			ideology = ultraism_reactionary_buddhism_subtype
+			id = -1	 
+		}
+	
+		advisor = {
+			slot = character_coop
+			idea_token = BSY_tsukireikyo
+			name = BSY_tsukireikyo
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+#————————————抵抗者——————————————#
+
+    BSY_Renkanjo ={ #莲观女
+		name = BSY_Renkanjo
+		portraits={
+			civilian={
+				large="gfx/leaders/BSY/BSY_Renkanjo.dds"
+				small="gfx/leaders/BSY/BSY_Renkanjo_small.dds"
+			}
+		}
+		country_leader={
+			ideology = radicalism_guerrillas_subtype
+			id = -1	 
+		}
+	
+		advisor = {
+			slot = character_coop
+			idea_token = BSY_Renkanjo
+			name = BSY_Renkanjo
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

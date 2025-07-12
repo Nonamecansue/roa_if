@@ -1,0 +1,32 @@
+characters={
+	BRK_tenpouinaba = {#天峰·因幡
+		name = BRK_tenpouinaba
+		portraits={
+			civilian={
+				large="gfx/leaders/BRK/BRK_tenpouinaba.dds"
+				small="gfx/leaders/BRK/BRK_tenpouinaba_small.dds"
+			}
+			
+		}
+		country_leader={
+			ideology = despotism_absolute_monarchy_subtype
+			id=-1
+		}
+		
+			# id = 23
+		}
+		advisor = {
+			slot = character_coop
+			idea_token = BRK_tenpouinaba
+			name = BRK_tenpouinaba
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+		}
+	}
+}

@@ -1,0 +1,30 @@
+state={
+	id=32
+	name="STATE_32"
+	provinces={
+		1136 1303 2647 2906 3013 3051 3844 4458 5098 5630 5927 6290 7392 9360 9857 10900 10943 10946 10952 10974 10982 10983 11032 11039 
+	}
+	buildings_max_level_factor=1.000
+        manpower=2356
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = LWZ
+			add_core_of = LWZ
+			victory_points = { 1136 1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

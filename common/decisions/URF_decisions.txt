@@ -1,0 +1,150 @@
+URF_decision_category = {
+	urf_election_1 = {
+		fire_only_once = yes
+		days_re_enable = no
+        allowed ={
+			tag = URF
+		}
+		available = {
+			country_exists = URF
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		
+
+        visible = {
+			country_exists = URF
+		}
+
+		cost = 0
+		days_remove = 3
+		modifier = {
+		        
+	   	}
+		complete_effect = {  
+			
+		}
+		remove_effect = {
+		    retire_country_leader = yes
+		    promote_leader = URF_kaenbyourin
+		}
+	}
+
+	urf_election_2 = {
+		fire_only_once = yes
+		days_re_enable = no
+        allowed ={
+			tag = URF
+		}
+		available = {
+			country_exists = URF
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		
+
+        visible = {
+			country_exists = URF
+		}
+
+		cost = 0
+		days_remove = 3
+		modifier = {
+		        
+	   	}
+		complete_effect = {  
+			
+		}
+		remove_effect = {
+			set_politics = {
+				ruling_party = despotism
+			}
+			add_popularity = {
+				ideology = despotism
+				popularity = 0.65
+			}
+			URF_komeijisatori = {
+				set_portraits = {
+					civilian = { large = "gfx/leaders/URF/URF_komeijisatori_despotism.dds" }
+				}
+			}
+		}
+	}
+
+	urf_election_3 = {
+		fire_only_once = yes
+		days_re_enable = no
+        allowed ={
+			tag = URF
+		}
+		available = {
+			country_exists = URF
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		
+
+        visible = {
+			country_exists = URF
+		}
+
+		cost = 0
+		days_remove = 3
+		modifier = {
+		        
+	   	}
+		complete_effect = {  
+			
+		}
+		remove_effect = {
+			set_politics = {
+				ruling_party = radicalism
+			}
+			add_popularity = {
+				ideology = radicalism
+				popularity = 0.65
+			}
+		}
+	}
+
+	urf_election_4 = {
+		fire_only_once = yes
+		days_re_enable = no
+        allowed ={
+			tag = URF
+		}
+		available = {
+			country_exists = URF
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		
+
+        visible = {
+			country_exists = URF
+		}
+
+		cost = 0
+		days_remove = 3
+		modifier = {
+		        
+	   	}
+		complete_effect = {  
+			
+		}
+		remove_effect = {
+			set_politics = {
+				ruling_party = ultraism
+			}
+			add_popularity = {
+				ideology = ultraism
+				popularity = 1.00
+			}
+		}
+	}
+
+}

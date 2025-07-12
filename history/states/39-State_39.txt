@@ -1,0 +1,30 @@
+state={
+	id=39
+	name="STATE_39"
+	provinces={
+		1416 1446 2033 2553 2726 6644 8616 9904 10615 10932 11005 
+	}
+	buildings_max_level_factor=1.000
+        manpower=2404
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 9 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+		owner = SHO
+		add_core_of = SHO
+			victory_points = { 1416 1 }
+			buildings = {
+				infrastructure = 2
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

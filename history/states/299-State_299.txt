@@ -1,0 +1,30 @@
+state={
+	id=299
+	name="STATE_299"
+	provinces={
+		3409 5405 6973 8032 12707 12851 12871 12972 12996 13043 13085 13092 13142 
+	}
+	buildings_max_level_factor=1.000
+        manpower=302795
+                 state_category = metropolis
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = LZY
+			add_core_of = LZY
+			victory_points = { 3409 30 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

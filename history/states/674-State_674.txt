@@ -1,0 +1,30 @@
+state={
+	id=674
+	name="STATE_674"
+	provinces={
+		1350 1489 2907 3057 3216 4202 4318 4379 4828 5478 5689 6107 6591 6668 7358 7589 7759 7931 8060 8140 8645 8726 8981 9374 10653 15015 15164 15198 15201 15292 15293 15360 15380 15461 15470 15499 15532 15843 
+	}
+	buildings_max_level_factor=1.000
+        manpower=7883
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = SLQ
+			add_core_of = SLQ
+			victory_points = {  1350 1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

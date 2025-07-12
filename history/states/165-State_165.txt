@@ -1,0 +1,30 @@
+state={
+	id=165
+	name="STATE_165"
+	provinces={
+		778 1420 1465 4412 4697 6570 7238 8379 9926 10093 10588 10666 
+	}
+	buildings_max_level_factor=1.000
+        manpower=5210
+                 state_category = town
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = FYD
+			add_core_of = FYD
+			victory_points = {  778 20 }
+			buildings = {
+				infrastructure = 2
+				air_base = 0
+				arms_factory = 3
+				industrial_complex = 2
+			}
+		}
+ 
+}

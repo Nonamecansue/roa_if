@@ -1,0 +1,29 @@
+state={
+	id=378
+	name="STATE_378"
+	provinces={
+		3948 4840 5158 13216 13248 13303 13349 
+	}
+	buildings_max_level_factor=1.000
+        manpower=89970
+                 state_category = town
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 30 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 2 #石油
+	}		history = {
+			owner = WLT
+			add_core_of = WLT
+			victory_points = {3948  10 }
+			buildings = {
+				infrastructure = 2
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

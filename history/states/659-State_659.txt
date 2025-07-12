@@ -1,0 +1,29 @@
+state={
+	id=659
+	name="STATE_659"
+	provinces={
+		855 1483 1760 2999 4728 5119 5867 15196 15257 
+	}
+	buildings_max_level_factor=1.000
+        manpower=12107
+                 state_category = town
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 9 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 4 #石油
+	}		history = {
+			owner = SJS
+			add_core_of = SJS
+			victory_points = { 855  10 }
+			buildings = {
+				infrastructure = 3
+				air_base = 0
+				arms_factory = 3
+				industrial_complex = 3
+			}
+		}
+ 
+}

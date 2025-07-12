@@ -1,0 +1,30 @@
+state={
+	id=119
+	name="STATE_119"
+	provinces={
+		638 932 993 1071 1092 1200 1558 1965 2074 2458 2770 2989 3070 3335 3831 4310 4790 5301 5401 5538 6207 6238 6660 6734 6850 7354 7422 7596 7605 7836 8341 8348 8536 8912 8964 9034 9052 9534 10122 10324 10383 11266 11342 11361 11498 11503 11509 11596 11716 11743 11908 12043 12089 
+	}
+	buildings_max_level_factor=1.000
+        manpower=34204
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 1 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = FQD
+			add_core_of = FQD
+			victory_points = { 4310  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

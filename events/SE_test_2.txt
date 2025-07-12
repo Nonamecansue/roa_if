@@ -1,0 +1,105 @@
+add_namespace = SE_test_2
+
+
+country_event = { 
+	
+	#debuging,remove this later	
+	id = SE_test.2
+    title = SE_test.1.t
+    desc = SE_test.1.d 
+	is_triggered_only = yes
+	hidden = no 
+	
+	
+	option = { 
+		#how it looks when sth. was not defined properly
+		name = SE_test.2.f
+		hidden_effect = {
+			if = {
+				limit = { is_ai = no }
+				set_variable = { Active_Superevent_ID = 5 }
+				if = {
+					limit = {
+						NOT = { has_country_flag = PB_disable_superevent_sound }
+					}
+					meta_effect = {
+						text = {
+							scoped_play_song = "Super_Event_Sound_5"
+						}
+						ID = "[?5]"
+					}
+				}
+			}
+		}
+	}
+
+	option = { 
+		#how it looks when sth. was not defined properly
+		name = SE_test.2.g
+		hidden_effect = {
+			if = {
+				limit = { is_ai = no }
+				set_variable = { Active_Superevent_ID = 8 }
+				if = {
+					limit = {
+						NOT = { has_country_flag = PB_disable_superevent_sound }
+					}
+					meta_effect = {
+						text = {
+							scoped_play_song = "Super_Event_Sound_8"
+						}
+						ID = "[?8]"
+					}
+				}
+			}
+		}
+	}
+
+
+	option = { 
+		#how it looks when sth. was not defined properly
+		name = SE_test.2.h
+		hidden_effect = {
+			if = {
+				limit = { is_ai = no }
+				set_variable = { Active_Superevent_ID = 6 }
+				if = {
+					limit = {
+						NOT = { has_country_flag = PB_disable_superevent_sound }
+					}
+					meta_effect = {
+						text = {
+							scoped_play_song = "Super_Event_Sound_6"
+						}
+						ID = "[?6]"
+					}
+				}
+			}
+		}
+	}
+
+	option = { 
+		#how it looks when sth. was not defined properly
+		name = SE_test.2.i
+		hidden_effect = {
+			if = {
+				limit = { is_ai = no }
+				set_variable = { Active_Superevent_ID = 7 }
+				if = {
+					limit = {
+						NOT = { has_country_flag = PB_disable_superevent_sound }
+					}
+					meta_effect = {
+						text = {
+							scoped_play_song = "Super_Event_Sound_7"
+						}
+						ID = "[?7]"
+					}
+				}
+			}
+		}
+	}
+
+
+}
+

@@ -1,0 +1,30 @@
+state={
+	id=855
+	name="STATE_855"
+	provinces={
+		437 1328 2688 6236 6272 10511 16540 
+	}
+	buildings_max_level_factor=1.000
+        manpower=8725
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 6 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = ZJL
+			add_core_of = ZJL
+			victory_points = { 437  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

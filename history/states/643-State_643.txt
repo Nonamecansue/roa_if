@@ -1,0 +1,30 @@
+state={
+	id=643
+	name="STATE_643"
+	provinces={
+		7437 9953 14979 15021 15068 
+	}
+	buildings_max_level_factor=1.000
+        manpower=6871
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = CYC
+			add_core_of = CYC
+			victory_points = {7437  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

@@ -1,0 +1,30 @@
+state={
+	id=847
+	name="STATE_847"
+	provinces={
+		510 684 1196 2201 5382 5452 6022 7756 9111 10396 10606 16413 16452 16459 16460 16482 16495 16502 16517 16548 16561 16587 16593 16646 16647 16655 
+	}
+	buildings_max_level_factor=1.000
+        manpower=69798
+                 state_category = large_city
+	resources={
+		steel=7 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=3 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = MLS
+			add_core_of = MLS
+			victory_points = {  510 30 }
+			buildings = {
+				infrastructure =4
+				air_base = 0
+				arms_factory = 2
+				industrial_complex = 4
+			}
+		}
+ 
+}

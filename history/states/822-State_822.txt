@@ -1,0 +1,30 @@
+state={
+	id=822
+	name="STATE_822"
+	provinces={
+		1070 1310 3484 5341 6013 6917 16419 
+	}
+	buildings_max_level_factor=1.000
+        manpower=354
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 19 #钨
+		chromium = 10 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = BLS
+			add_core_of = BLS
+			victory_points = { 1070  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

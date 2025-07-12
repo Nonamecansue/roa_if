@@ -1,0 +1,30 @@
+state={
+	id=264
+	name="STATE_264"
+	provinces={
+		340 494 4765 5672 8011 8120 12510 12545 12859 
+	}
+	buildings_max_level_factor=1.000
+        manpower=1507
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = FGJ
+			add_core_of = FGJ
+			victory_points = { 340  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

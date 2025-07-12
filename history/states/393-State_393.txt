@@ -1,0 +1,30 @@
+state={
+	id=393
+	name="STATE_393"
+	provinces={
+		2488 2703 3872 4640 5242 6146 6365 7421 8565 8647 9086 9333 9572 13358 13396 13417 13435 13454 13478 13485 13503 13512 13569 
+	}
+	buildings_max_level_factor=1.000
+        manpower=23000
+                 state_category = town
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 9 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = WLT
+			add_core_of = WLT
+			victory_points = {2488 4 }
+			buildings = {
+				infrastructure = 2
+				air_base = 0
+				arms_factory = 1
+				industrial_complex = 1
+			}
+		}
+ 
+}

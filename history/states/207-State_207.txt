@@ -1,0 +1,30 @@
+state={
+	id=207
+	name="STATE_207"
+	provinces={
+		979 1117 1426 1812 1985 2434 5329 6351 7219 7522 8098 8547 9189 11854 11873 11957 11984 11992 11996 12005 12039 12046 12086 12099 12177 
+	}
+	buildings_max_level_factor=1.000
+        manpower=7525
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = STH
+			add_core_of = STH
+			victory_points = { 979 1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

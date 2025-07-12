@@ -1,0 +1,29 @@
+state={
+	id=174
+	name="STATE_174"
+	provinces={
+		2380 3754 5488 6971 6983 7296 8482 9420 11608 11645 11679 11709 11736 11751 
+	}
+	buildings_max_level_factor=1.000
+        manpower=45255
+                 state_category = city
+	resources={
+		steel=30 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 8 #石油
+	}		history = {
+			owner = HZH
+			add_core_of = HZH
+			victory_points = {2380  15}
+			buildings = {
+				infrastructure = 4
+				air_base = 0
+				arms_factory = 2
+				industrial_complex = 2
+			}
+		}
+ 
+}

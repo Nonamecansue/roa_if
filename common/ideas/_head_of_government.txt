@@ -1,0 +1,152 @@
+ideas = {
+
+	head_of_government = { 
+		law = yes
+
+# 雾之湖联合体顾问 #
+
+		UMY_cirno = { 
+			
+			cost = 0 
+
+			removal_cost = -1
+			level = 7
+
+			visible = {
+				original_tag = UMY
+				NOT={
+					has_goverment = vanguard_revolutionism
+                    has_goverment = corporatism
+
+				}
+			}
+
+			available = { 
+				always = yes
+			}
+
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			traits = {
+				
+			}
+			
+			cancel_if_invalid = no
+		}
+    #雾革委#
+		UMY_revolyutsiya = { 
+			
+
+			cost = 0 
+
+			removal_cost = -1
+			level = 7
+
+			visible = {
+				original_tag = UMY
+				has_government = vanguard_revolutionism
+			}
+
+			available = { 
+				always = yes
+			}
+
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			traits = {
+				
+			}
+			
+			cancel_if_invalid = no
+		}
+
+		UMY_freeequelier = { 
+			
+			cost = 0 
+
+			removal_cost = -1
+			level = 7
+
+			visible = {
+				original_tag = UMY
+				has_government = vanguard_revolutionism
+			}
+
+			available = { 
+				always = yes
+			}
+
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			traits = {
+				
+			}
+			
+			cancel_if_invalid = no
+		}
+    #新共和派#
+	    UMY_dcdelta = { 
+			
+			cost = 0 
+
+			removal_cost = -1
+			level = 7
+
+			visible = {
+				original_tag = UMY
+				has_government= progressivism
+			}
+
+			available = { 
+				always = no
+			}
+
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			traits = {
+				
+			}
+			
+			cancel_if_invalid = no
+		}
+
+	#沙文党#
+        UMY_axes = { 
+			
+			cost = 0 
+
+			removal_cost = -1
+			level = 7
+
+			visible = {
+				original_tag = UMY
+				has_government = corporatism
+			}
+
+			available = { 
+				always = yes
+			}
+
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			traits = {
+				
+			}
+			
+			cancel_if_invalid = no
+		}
+
+
+
+	}
+}

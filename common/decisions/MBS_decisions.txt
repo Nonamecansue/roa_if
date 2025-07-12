@@ -1,0 +1,33 @@
+MBS_decision_category = {
+	mbs_election_1 = {
+		fire_only_once = yes
+		days_re_enable = no
+        allowed ={
+			tag = MBS
+		}
+		available = {
+			country_exists = MBS
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+        visible = {
+			country_exists = MBS
+		}
+
+		cost = 0
+		days_remove = 3
+		modifier = {
+		        
+	   	}
+		complete_effect = {  
+			
+		}
+		remove_effect = {
+		    retire_country_leader = yes
+		    promote_leader = MBS_kasodanikyouko
+			set_party_name = { ideology = progressivism long_name = MBS_kasodanikyouko_party name = MBS_kasodanikyouko_party } 
+		}
+	}
+}

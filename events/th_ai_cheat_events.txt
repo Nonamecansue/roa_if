@@ -1,0 +1,40 @@
+﻿add_namespace = ac
+# country_event = { #命莲寺跳过国策到宣SCA之前
+# 	id = ac.1
+# 	title = ac.1.t
+# 	desc = ac.1.d
+# 	fire_only_once = yes
+# 	is_triggered_only = no
+# 	trigger = {
+# 		tag = NMS
+# 		date > 148.1.1
+# 		SCA = {	has_war = yes }
+# 		not = {
+# 			has_completed_focus = NMS_hongmoguanyouhao
+# 		}
+# 		is_ai = yes
+# 	}
+# 	mean_time_to_happen = {
+# 		days = 30
+# 	}
+# 	option = {
+# 		name = ac.test
+# 		##NMS_shentouboruodiqu的效果
+# 		add_ideas = NMS_shentouboruodiqu_idea
+# 		complete_national_focus = NMS_shentouboruodiqu
+# 		##
+# 		ai_chance = {
+# 			base = 80
+# 		}
+# 	}
+# 	option = {
+# 		name = ac.test
+# 		ai_chance = {
+# 			base = 20
+# 			modifier = {
+# 				has_government = guli
+# 				add = 60
+# 			}
+# 		}
+# 	}
+# }

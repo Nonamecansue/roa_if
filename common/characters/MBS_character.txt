@@ -1,0 +1,155 @@
+#——————————开局——————————#
+characters={
+	MBS_hijiribyakuren ={ #圣白莲
+		name = MBS_hijiribyakuren
+		portraits={
+			civilian={
+				large="gfx/leaders/MBS/MBS_hijiribyakuren.dds"
+				small="gfx/leaders/MBS/MBS_hijiribyakuren_small.dds"
+			}
+		}
+		country_leader={
+			ideology = gensokyoism_subtype
+			id = -1	 
+		}
+	
+		advisor = {
+			slot = character_coop
+			idea_token = MBS_hijiribyakuren
+			name = MBS_hijiribyakuren
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+#——————————保守派————————————#
+
+    MBS_suikagojin ={ #粹华悟真
+		name = MBS_suikagojin
+		portraits={
+			civilian={
+				large="gfx/leaders/MBS/MBS_suikagojin.dds"
+				small="gfx/leaders/MBS/MBS_suikagojin_small.dds"
+			}
+		}
+		country_leader={
+			ideology = despotism_Theocracy_subtype
+			id = -1	 
+		}
+	
+		advisor = {
+			slot = character_coop
+			idea_token = MBS_suikagojin
+			name = MBS_suikagojin
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+#————————————佛陀共和联盟————————————#
+
+    MBS_bomumyo ={ #钵无明
+		name = MBS_bomumyo
+		portraits={
+			civilian={
+				large="gfx/leaders/MBS/MBS_bomumyo.dds"
+				small="gfx/leaders/MBS/MBS_bomumyo_small.dds"
+			}
+		}
+		country_leader={
+			ideology = republicanism_buddhist_republicanism_subtype
+			id = -1	 
+		}
+	
+		advisor = {
+			slot = character_coop
+			idea_token = MBS_bomumyo
+			name = MBS_bomumyo
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+#——————————世俗进步派——————————#
+
+    MBS_zenpokeiko ={ #善法继光
+		name = MBS_zenpokeiko
+		portraits={
+			civilian={
+				large="gfx/leaders/MBS/MBS_zenpokeiko.dds"
+				small="gfx/leaders/MBS/MBS_zenpokeiko_small.dds"
+			}
+		}
+		country_leader={
+			ideology = progressivism_buddhist_progressivism_subtype
+			id = -1	 
+		}
+	
+		advisor = {
+			slot = character_coop
+			idea_token = MBS_zenpokeiko
+			name = MBS_zenpokeiko
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	MBS_kasodanikyouko ={ #幽谷响子
+	name = MBS_kasodanikyouko
+	portraits={
+		civilian={
+			large="gfx/leaders/MBS/MBS_kasodanikyouko.dds"
+			small="gfx/leaders/MBS/MBS_kasodanikyouko_small.dds"
+		}
+	}
+	country_leader={
+		ideology = progressivism_national_progressivism_subtype
+		id = -1	 
+	}
+
+	advisor = {
+		slot = character_coop
+		idea_token = MBS_kasodanikyouko
+		name = MBS_kasodanikyouko
+		cost = 200
+		modifier = {
+			# character_coop_cost_factor = -0.15 在这里无效
+			political_power_gain = 0.2
+			consumer_goods_factor = -0.02
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+
+}

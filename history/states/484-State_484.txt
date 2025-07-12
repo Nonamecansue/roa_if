@@ -1,0 +1,29 @@
+state={
+	id=484
+	name="STATE_484"
+	provinces={
+		5524 7119 8005 8291 10254 13954 13965 14009 14016 14071 14111 14119 
+	}
+	buildings_max_level_factor=1.000
+        manpower=4477
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 1 #铬
+		rubber=3 #橡胶
+		aluminium=0 #铝
+		oil = 2 #石油
+	}		history = {
+			owner = SXL
+			add_core_of = SXL
+			victory_points = {5524  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

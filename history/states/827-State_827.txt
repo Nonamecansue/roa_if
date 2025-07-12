@@ -1,0 +1,30 @@
+state={
+	id=827
+	name="STATE_827"
+	provinces={
+		316 1608 2536 2709 2780 2957 3029 5836 6115 6411 16329 16345 16346 16374 16416 16463 16473 16523 
+	}
+	buildings_max_level_factor=1.000
+        manpower=24817
+                 state_category = large_city
+	resources={
+		steel=5 #钢铁
+		tungsten = 0 #钨
+		chromium = 3 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = SBL
+			add_core_of = SBL
+			victory_points = { 316  15 }
+			buildings = {
+				infrastructure = 3
+				air_base = 0
+				arms_factory = 2
+				industrial_complex = 6
+			}
+		}
+ 
+}

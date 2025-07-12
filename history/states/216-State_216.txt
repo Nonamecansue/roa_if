@@ -1,0 +1,30 @@
+state={
+	id=216
+	name="STATE_216"
+	provinces={
+		1058 3570 5475 6409 12024 12386 
+	}
+	buildings_max_level_factor=1.000
+        manpower=1880
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 9 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = QBL
+			add_core_of = QBL
+			victory_points = {  1058 1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

@@ -1,0 +1,30 @@
+state={
+	id=649
+	name="STATE_649"
+	provinces={
+		2288 2375 2803 3182 4555 4752 5269 5392 5698 5975 6558 7155 8627 8766 8795 8902 9499 9696 9729 9786 10162 10482 14952 14953 15005 15013 15067 15096 15118 15183 15271 15287 15309 15332 15343 15376 15409 15410 15411 
+	}
+	buildings_max_level_factor=1.000
+        manpower=30011
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = SYG
+			add_core_of = SYG
+			victory_points = {2288  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

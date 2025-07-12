@@ -1,0 +1,240 @@
+#——————————开局——————————#
+characters={
+	UMY_cirno ={ #琪露诺
+		name = UMY_cirno
+		portraits={
+			civilian={
+				large="gfx/leaders/UMY/UMY_cirno.dds"
+				small="gfx/leaders/UMY/UMY_cirno_small.dds"
+			}
+		}
+
+		country_leader={
+			desc = "UMY_cirno_desc"
+			traits = {
+				UMY_cirno_traits_1
+				UMY_cirno_traits_2
+			}
+			ideology = republicanism_temporary_union_subtype
+			id = -1	 
+		}
+	
+		advisor = {
+			slot = internal_minister
+			idea_token = UMY_cirno
+			allowed = {
+				original_tag = UMY
+			}
+			
+			name = UMY_cirno
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+
+#——————————雾之湖革命委员会——————————#	
+
+    UMY_revolyutsiya ={ #列波露琪亚
+		name = UMY_revolyutsiya
+		portraits={
+			civilian={
+				large="gfx/leaders/UMY/UMY_revolyutsiya.dds"
+				small="gfx/leaders/UMY/UMY_revolyutsiya_small.dds"
+			}
+		}
+		country_leader={
+			desc = "UMY_revolyutsiya_desc"
+			traits = {
+				UMY_revolyutsiya_traits_1
+				UMY_revolyutsiya_traits_2
+			}
+
+			ideology = vanguard_revolutionism_vanguard_socialism_subtype
+			id = -1	 
+		}
+
+		advisor = {
+			slot = head_of_government
+			allowed = {
+				original_tag = UMY
+			}
+			idea_token = UMY_revolyutsiya
+			name = UMY_revolyutsiya
+			can_be_fired = no
+			cost = -1
+			modifier = {
+
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+    }
+	
+	UMY_freeequelier ={ #芙莉伊库尔
+	    name = UMY_freeequelier
+	    portraits={
+		civilian={
+			large="gfx/leaders/UMY/UMY_freeequelier.dds"
+			small="gfx/leaders/UMY/UMY_freeequelier_small.dds"
+		}
+	}
+	country_leader={
+		desc = "UMY_freeequelier_desc"
+		traits = {
+			UMY_freeequelier_traits_1
+			UMY_freeequelier_traits_2
+		}
+		ideology = vanguard_revolutionism_vanguard_socialism_subtype
+		id = -1	 
+	}
+
+	advisor = {
+		slot = head_of_government 
+		allowed = {
+			original_tag = UMY
+		}
+		idea_token = UMY_freeequelier
+		name = UMY_freeequelier
+		can_be_fired = no
+		cost = 200
+		modifier = {
+			# character_coop_cost_factor = -0.15 在这里无效
+			political_power_gain = 0.2
+			consumer_goods_factor = -0.02
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+#——————————新共和党——————————#
+
+    UMY_dcdelta ={ #迪西德尔塔
+	    name = UMY_dcdelta
+	    portraits={
+		civilian={
+			large="gfx/leaders/UMY/UMY_dcdelta.dds"
+			small="gfx/leaders/UMY/UMY_dcdelta_small.dds"
+		}
+	}
+	country_leader={
+		desc = "UMY_dcdelta_desc"
+		traits = {
+			UMY_dcdelta_traits_1
+			UMY_dcdelta_traits_2
+		}
+		ideology = progressivism_leftwing_greecism_subtype
+		id = -1	 
+	}
+
+	
+	advisor = {
+		slot = head_of_government
+		allowed = {
+			original_tag = UMY
+		}
+		can_be_fired = no
+		idea_token = UMY_dcdelta
+		name = UMY_dcdelta
+		cost = 200
+		modifier = {
+			# character_coop_cost_factor = -0.15 在这里无效
+			political_power_gain = 0.2
+			consumer_goods_factor = -0.02
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+#——————————东雾之湖沙文党——————————#
+
+    UMY_axes ={ #艾克西斯
+	    name = UMY_axes
+	    portraits={
+		civilian={
+			large="gfx/leaders/UMY/UMY_axes.dds"
+			small="gfx/leaders/UMY/UMY_axes_small.dds"
+		}
+	}
+	country_leader={
+		desc = "UMY_axes_desc"
+		traits = {
+			UMY_axes_traits_1
+			UMY_axes_traits_2
+		}
+		ideology = corporatism_axesism_subtype
+		id = -1	 
+	}
+
+	advisor = {
+		slot = head_of_government
+		desc = "" 
+		allowed = {
+			original_tag = UMY
+		}
+		idea_token = UMY_axes
+		name = UMY_axes
+		can_be_fired = no
+		cost = 200
+		modifier = {
+			# character_coop_cost_factor = -0.15 在这里无效
+			political_power_gain = 0.2
+			consumer_goods_factor = -0.02
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+#——————————绝对派——————————#
+
+    UMY_bloodyrevenge ={ #布拉迪.列文姬
+	    name = UMY_bloodyrevenge
+	    portraits={
+		civilian={
+			large="gfx/leaders/UMY/UMY_bloodyrevenge.dds"
+			small="gfx/leaders/UMY/UMY_bloodyrevenge_small.dds"
+		}
+	}
+	country_leader={
+		desc = "UMY_bloodyrevenge_desc"
+		traits = {
+			UMY_bloodyrevenge_traits_1
+			UMY_bloodyrevenge_traits_2
+		}
+		ideology = ultraism_yosei_revanchism_subtype
+		id = -1	 
+	}
+	
+	    advisor = {
+		    slot = character_coop
+		    idea_token = UMY_bloodyrevenge
+		    name = UMY_bloodyrevenge
+		    cost = 200
+		    modifier = {
+			# character_coop_cost_factor = -0.15 在这里无效
+			      political_power_gain = 0.2
+			      consumer_goods_factor = -0.02
+		    }
+		    ai_will_do = {
+			factor = 1
+		    }
+	    }
+    }
+}

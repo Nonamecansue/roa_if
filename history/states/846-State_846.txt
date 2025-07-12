@@ -1,0 +1,30 @@
+state={
+	id=846
+	name="STATE_846"
+	provinces={
+		10 1706 1919 2917 3089 3326 3910 3957 3970 4987 5041 5172 5427 5830 5967 6135 6389 6485 6616 7018 7333 7348 7536 7670 7680 7846 7913 8392 8875 9324 9756 10230 10301 10423 10495 10504 16401 16417 16456 16457 16490 16494 16514 16515 16532 16536 16542 16560 16572 16576 16605 16606 16613 16617 16636 16661 16662 16669 16684 16685 16691 16701 16705 16713 16723 16727 16734 16735 16771 16778 16794 
+	}
+	buildings_max_level_factor=1.000
+        manpower=15320
+                 state_category = town
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner =FSS
+			add_core_of = FSS
+			victory_points = { 10  10 }
+			buildings = {
+				infrastructure = 3
+				air_base = 0
+				arms_factory = 1
+				industrial_complex = 2
+			}
+		}
+ 
+}

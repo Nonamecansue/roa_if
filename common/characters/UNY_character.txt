@@ -1,0 +1,187 @@
+#——————————开局——————————#
+characters={
+	UNY_fiorawispfire ={ #菲奥拉.维希法
+		name = UNY_fiorawispfire
+		portraits={
+			civilian={
+				large="gfx/leaders/UNY/UNY_fiorawispfire.dds"
+				small="gfx/leaders/UNY/UNY_fiorawispfire_small.dds"
+			}
+		}
+		country_leader={
+			ideology = republicanism_subtype
+			id = -1	 
+		}
+	
+		advisor = {
+			slot = character_coop
+			idea_token = UNY_fiorawispfire
+			name = UNY_fiorawispfire
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+#————————妖怪国家社会工党—————————#
+
+    UNY_korrathhammer ={ #克洛斯.哈摩尔
+		name = UNY_korrathhammer
+		portraits={
+			civilian={
+				large="gfx/leaders/UNY/UNY_korrathhammer.dds"
+				small="gfx/leaders/UNY/UNY_korrathhammer_small.dds"
+			}
+		}
+		country_leader={
+			ideology = corporatism_hammerism_subtype
+			id = -1	 
+		}
+	
+		advisor = {
+			slot = character_coop
+			idea_token = UNY_korrathhammer
+			name = UNY_korrathhammer
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+#——————————兽道全民代表党——————————#
+
+    UNY_edotsukikage ={ #江户月影
+		name = UNY_edotsukikage
+		portraits={
+			civilian={
+				large="gfx/leaders/UNY/UNY_edotsukikage.dds"
+				small="gfx/leaders/UNY/UNY_edotsukikage_small.dds"
+			}
+		}
+		country_leader={
+			ideology = progressivism_neoreligionist_progressivism_subtype
+			id = -1	 
+		}
+	
+		advisor = {
+			slot = character_coop
+			idea_token = UNY_edotsukikage
+			name = UNY_edotsukikage
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+#——————————兽道工业党——————————#
+
+    UNY_kochisekitan ={ #钢齿煤烟
+		name = UNY_kochisekitan
+		portraits={
+			civilian={
+				large="gfx/leaders/UNY/UNY_kochisekitan.dds"
+				small="gfx/leaders/UNY/UNY_kochisekitan_small.dds"
+			}
+		}
+		country_leader={
+			ideology = republicanism_technocratic_republicanism_subtype
+			id = -1	 
+		}
+	
+		advisor = {
+			slot = character_coop
+			idea_token = UNY_kochisekitan
+			name = UNY_kochisekitan
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+#——————————兽道进步风暴.行动派————————#
+
+    UNY_yashuchorai ={ #夜终朝来
+		name = UNY_yashuchorai
+		portraits={
+			civilian={
+				large="gfx/leaders/UNY/UNY_yashuchorai.dds"
+				small="gfx/leaders/UNY/UNY_yashuchorai_small.dds"
+			}
+		}
+		country_leader={
+			ideology = vanguard_revolutionism_subtype
+			id = -1	 
+		}
+	
+		advisor = {
+			slot = character_coop
+			idea_token = UNY_yashuchorai
+			name = UNY_yashuchorai
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+    UNY_thaliraluminis ={ #塔米拉.卢米尼斯
+		name = UNY_thaliraluminis
+		portraits={
+			civilian={
+				large="gfx/leaders/UNY/UNY_thaliraluminis.dds"
+				small="gfx/leaders/UNY/UNY_thaliraluminis_small.dds"
+			}
+		}
+		country_leader={
+			ideology = vanguard_revolutionism_subtype
+			id = -1	 
+		}
+	
+		advisor = {
+			slot = character_coop
+			idea_token = UNY_thaliraluminis
+			name = UNY_thaliraluminis
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+
+
+}

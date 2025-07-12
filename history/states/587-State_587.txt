@@ -1,0 +1,30 @@
+state={
+	id=587
+	name="STATE_587"
+	provinces={
+		1592 1859 1909 2234 2298 4238 5616 5911 7638 10624 14586 14746 14776 14815 
+	}
+	buildings_max_level_factor=1.000
+        manpower=89670
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 2 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = GZH
+			add_core_of = GZH
+			victory_points = { 1592  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

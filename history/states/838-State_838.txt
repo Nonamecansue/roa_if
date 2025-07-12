@@ -1,0 +1,30 @@
+state={
+	id=838
+	name="STATE_838"
+	provinces={
+		483 3646 3972 4486 4910 5531 5853 6285 6820 8338 16342 16390 16391 16445 16453 16484 16573 16614 16630 
+	}
+	buildings_max_level_factor=1.000
+        manpower=8897
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = LLH
+			add_core_of = LLH
+			victory_points = { 483 1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

@@ -1,0 +1,30 @@
+state={
+	id=489
+	name="STATE_489"
+	provinces={
+		453 530 1739 4000 4244 7465 7657 8061 8448 10037 10133 13963 14008 14014 14031 14032 14076 14114 14125 14153 14167 14173 14216 
+	}
+	buildings_max_level_factor=1.000
+        manpower=9377
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = SHY
+			add_core_of = SHY
+			victory_points = { 453  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

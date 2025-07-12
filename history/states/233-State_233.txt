@@ -1,0 +1,30 @@
+state={
+	id=233
+	name="STATE_233"
+	provinces={
+		151 1532 1966 3845 3863 4816 5505 5506 5691 6265 6797 8212 8542 8999 9368 9477 10013 10117 12147 12186 12236 12237 12257 12287 12288 12340 12400 
+	}
+	buildings_max_level_factor=1.000
+        manpower=9990
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = STH
+			add_core_of = STH
+
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

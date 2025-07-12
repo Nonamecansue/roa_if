@@ -1,0 +1,30 @@
+state={
+	id=613
+	name="STATE_613"
+	provinces={
+		1619 1860 3573 3773 4133 4925 5315 6114 6119 9019 10581 14674 14734 14759 14817 14818 14873 14912 
+	}
+	buildings_max_level_factor=1.000
+        manpower=67977
+                 state_category = town
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = SYG
+			add_core_of = SYG
+			victory_points = {1619  8}
+			buildings = {
+				infrastructure = 1
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 1
+			}
+		}
+ 
+}

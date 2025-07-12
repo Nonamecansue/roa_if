@@ -1,0 +1,30 @@
+state={
+	id=47
+	name="STATE_47"
+	provinces={
+		1786 2037 2159 3121 4748 8232 9650 10994 
+	}
+	buildings_max_level_factor=1.000
+        manpower=6758
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = YLQ
+			add_core_of = YLQ
+			victory_points = { 1786  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

@@ -1,0 +1,29 @@
+state={
+	id=930
+	name="STATE_930"
+	provinces={
+		811 1402 1927 4229 5455 9074 10337 17045 17069 17108 17140 17205 17216 17273 
+	}
+	buildings_max_level_factor=1.000
+        manpower=2035
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 1 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 2 #石油
+	}		history = {
+			owner = REN
+			add_core_of = REN
+			victory_points = {  811 1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

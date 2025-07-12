@@ -1,0 +1,30 @@
+state={
+	id=256
+	name="STATE_256"
+	provinces={
+		1513 5280 6543 7117 7684 7768 7921 8487 9246 9316 10376 10664 12383 12413 12414 12420 12464 12474 12502 12548 12561 12562 12563 12564 12593 12624 12667 12722 
+	}
+	buildings_max_level_factor=1.000
+        manpower=7446
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = HMG
+			add_core_of = HMG
+			victory_points = { 1513 1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

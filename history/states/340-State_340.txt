@@ -1,0 +1,30 @@
+state={
+	id=340
+	name="STATE_340"
+	provinces={
+		446 6280 9299 13018 
+	}
+	buildings_max_level_factor=1.000
+        manpower=5598
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = SLB
+			add_core_of = SLB
+			victory_points = {446  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

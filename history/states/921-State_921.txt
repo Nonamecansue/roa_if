@@ -1,0 +1,31 @@
+state={
+	id=921
+	name="STATE_921"
+	provinces={
+		284 566 3114 4788 4928 6044 6211 6537 8820 8830 17022 17145 17220 
+	}
+	buildings_max_level_factor=1.000
+        manpower=13044
+                 state_category = town
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+		owner = REN
+		add_core_of = REN
+		add_core_of = REN
+			victory_points = { 284  10 }
+			buildings = {
+				infrastructure = 3
+				air_base = 0
+				arms_factory = 2
+				industrial_complex =1
+			}
+		}
+ 
+}

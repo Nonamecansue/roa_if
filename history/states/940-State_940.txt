@@ -1,0 +1,30 @@
+state={
+	id=940
+	name="STATE_940"
+	provinces={
+		864 1506 1886 4373 6923 9971 10248 17131 17161 17179 17191 
+	}
+	buildings_max_level_factor=1.000
+        manpower=268000
+                 state_category = large_city
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = REN
+			add_core_of = REN
+			victory_points = { 864  25 }
+			buildings = {
+				infrastructure = 5
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 7
+			}
+		}
+ 
+}

@@ -1,0 +1,29 @@
+state={
+	id=142
+	name="STATE_142"
+	provinces={
+		80 620 1017 1395 1462 1518 1613 1648 2010 2389 2662 4008 4420 5708 6804 7001 9771 10300 10447 11445 11535 11538 11555 11572 11662 11794 11893 11910 
+	}
+	buildings_max_level_factor=1.000
+        manpower=1705
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=13 #橡胶
+		aluminium=0 #铝
+		oil = 60 #石油
+	}		history = {
+		owner = FYD
+		add_core_of = FYD
+			victory_points = { 80  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

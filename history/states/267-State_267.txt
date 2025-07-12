@@ -1,0 +1,29 @@
+state={
+	id=267
+	name="STATE_267"
+	provinces={
+		3422 3994 5569 5966 6151 7893 9357 9379 9663 10072 10405 12505 12542 12549 12591 12609 12632 12658 12680 12696 12701 12724 12740 12804 
+	}
+	buildings_max_level_factor=1.000
+        manpower=10444
+                 state_category = town
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=2 #橡胶
+		aluminium=0 #铝
+		oil = 59 #石油
+	}		history = {
+			owner = XXC
+			add_core_of = XXC
+			victory_points = { 3422 4 }
+			buildings = {
+				infrastructure = 3
+				air_base = 0
+				arms_factory = 1
+				industrial_complex = 2
+			}
+		}
+ 
+}

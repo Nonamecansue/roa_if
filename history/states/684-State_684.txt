@@ -1,0 +1,30 @@
+state={
+	id=684
+	name="STATE_684"
+	provinces={
+		2750 4057 8749 9361 15097 15109 15232 
+	}
+	buildings_max_level_factor=1.000
+        manpower=6990
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = XYL
+			add_core_of = XYL
+			victory_points = { 2750 1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

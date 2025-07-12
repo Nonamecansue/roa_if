@@ -1,0 +1,30 @@
+state={
+	id=154
+	name="STATE_154"
+	provinces={
+		1239 2441 2831 2908 3006 3870 4302 4823 5354 5638 5862 7750 8157 8581 8916 9152 9993 10411 10702 11511 11554 11571 11598 11599 11620 11623 11660 11661 11682 11694 11728 11766 11821 11840 
+	}
+	buildings_max_level_factor=1.000
+        manpower=5544
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=5 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = DLD
+			add_core_of = DLD
+			victory_points = { 1239  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

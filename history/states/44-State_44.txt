@@ -1,0 +1,30 @@
+state={
+	id=44
+	name="STATE_44"
+	provinces={
+		35 60 2049 2254 2543 3279 3783 3866 4118 5166 5179 5276 5296 5385 6438 6914 7455 7595 9913 9961 10611 10978 10999 11001 11045 11083 
+	}
+	buildings_max_level_factor=1.000
+        manpower=12017
+                 state_category = large_town
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 8 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = PLX
+			add_core_of = PLX
+			victory_points = {  35 20 }
+			buildings = {
+				infrastructure = 3
+				air_base = 0
+				arms_factory = 2
+				industrial_complex = 2
+			}
+		}
+ 
+}

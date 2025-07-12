@@ -1,0 +1,30 @@
+state={
+	id=747
+	name="STATE_747"
+	provinces={
+		250 612 749 1123 1148 1297 1988 3410 4874 5001 6058 6865 8143 8207 15650 15787 16202 
+	}
+	buildings_max_level_factor=1.000
+        manpower=200100
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 1 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = STC
+			add_core_of = STC
+			victory_points = { 250  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

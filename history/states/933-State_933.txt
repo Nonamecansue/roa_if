@@ -1,0 +1,30 @@
+state={
+	id=933
+	name="STATE_933"
+	provinces={
+		611 1038 1207 1832 2645 2902 3397 3545 3880 3912 4278 4502 4931 5446 5587 5762 6735 7037 7413 7701 8335 8344 8393 8771 9973 10686 17079 17130 17154 17159 17160 17197 17230 17231 17242 17255 
+	}
+	buildings_max_level_factor=1.000
+        manpower=1051
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = SLM
+			add_core_of = SLM
+			victory_points = {  611 1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

@@ -1,0 +1,30 @@
+state={
+	id=93
+	name="STATE_93"
+	provinces={
+		589 2733 4183 11173 11205 
+	}
+	buildings_max_level_factor=1.000
+        manpower=36669
+                 state_category = city
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 10 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = LLB
+			add_core_of = LLB
+			victory_points = { 589 15 }
+			buildings = {
+				infrastructure = 2
+				air_base = 0
+				arms_factory = 2
+				industrial_complex = 2
+			}
+		}
+ 
+}

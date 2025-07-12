@@ -1,0 +1,30 @@
+state={
+	id=736
+	name="STATE_736"
+	provinces={
+		26 672 885 2569 3734 3743 5493 7810 9141 9617 15699 
+	}
+	buildings_max_level_factor=1.000
+        manpower=60777
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 11 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = DXH
+			add_core_of = DXH
+			victory_points = {26   1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

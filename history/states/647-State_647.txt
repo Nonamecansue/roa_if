@@ -1,0 +1,30 @@
+state={
+	id=647
+	name="STATE_647"
+	provinces={
+		73 480 1794 3956 4091 6452 7287 7599 8195 9273 14885 14897 14907 14947 14954 14955 14956 15000 15006 15036 15184 
+	}
+	buildings_max_level_factor=1.000
+        manpower=5689
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=4 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = WSR
+			add_core_of = WSR
+			victory_points = { 73 1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

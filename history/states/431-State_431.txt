@@ -1,0 +1,30 @@
+state={
+	id=431
+	name="STATE_431"
+	provinces={
+		2884 6831 10620 13673 13682 13768 13774 13815 
+	}
+	buildings_max_level_factor=1.000
+        manpower=10213
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = SXL
+			add_core_of = SXL
+			victory_points = {2884  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

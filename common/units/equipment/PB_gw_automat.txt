@@ -1,0 +1,209 @@
+
+equipments = {
+
+	gw_automat_archetype = {
+		year = 136
+	
+		is_archetype = yes
+		is_buildable = no
+		type = armor
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		#Misc Abilities
+		reliability = 0.5
+		maximum_speed = 1
+
+		resources = {
+			steel = 2
+			aluminium = 1
+		}	
+	}
+
+	gw_automat_0 = {
+		year = 136
+	
+		archetype = gw_automat_archetype
+		
+		#Misc Abilities
+		maximum_speed = 5
+		reliability = 0.5 #Great war mechs are unreliable as fuck
+
+		#Defensive Abilities
+		defense = 5
+		breakthrough = 18
+		hardness = 0.5
+		armor_value = 6
+
+		#Offensive Abilities
+		soft_attack = 12
+		hard_attack = 6
+		ap_attack = 10
+		air_attack = 0
+
+		build_cost_ic = 6
+		fuel_consumption = 2.0
+
+		resources = {
+			steel = 2
+			aluminium = 1
+		}	
+	}
+
+	gw_automat_1 = {
+		year = 142
+	
+		archetype = gw_automat_archetype
+		parent = gw_automat_0
+		
+		#Misc Abilities
+		maximum_speed = 6.0
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 5
+		breakthrough = 20
+		hardness = 0.6
+		armor_value = 6
+
+		#Offensive Abilities
+		soft_attack = 14
+		hard_attack = 6
+		ap_attack = 12
+		air_attack = 0
+
+		build_cost_ic = 6.5
+		fuel_consumption = 2.5
+
+		resources = {
+			steel = 2
+			aluminium = 1
+		}	
+	}
+
+	gw_automat_2 = {
+		year = 149
+	
+		archetype = gw_automat_archetype
+		parent = gw_automat_1
+		
+		#Misc Abilities
+		maximum_speed = 7.0
+		reliability = 0.85
+
+		#Defensive Abilities
+		defense = 5
+		breakthrough = 25
+		hardness = 0.7
+		armor_value = 6
+
+		#Offensive Abilities
+		soft_attack = 21
+		hard_attack = 6
+		ap_attack = 14
+		air_attack = 0
+
+		build_cost_ic = 7
+		fuel_consumption = 3.0
+
+		resources = {
+			steel = 2
+			aluminium = 2
+		}	
+	}
+
+	gw_automat_3 = {
+		year = 153
+	
+		archetype = gw_automat_archetype
+		parent = gw_automat_2
+		
+		#Misc Abilities
+		maximum_speed = 7.5
+		reliability = 0.9
+
+		#Defensive Abilities
+		defense = 6
+		breakthrough = 30
+		hardness = 0.8
+		armor_value = 7
+
+		#Offensive Abilities
+		soft_attack = 25
+		hard_attack = 8
+		ap_attack = 20
+		air_attack = 0
+
+		build_cost_ic = 7.5
+		fuel_consumption = 3.0
+
+		resources = {
+			steel = 2
+			aluminium = 3
+		}	
+	}
+
+
+	gw_automat_4 = {
+		year = 155
+	
+		archetype = gw_automat_archetype
+		parent = gw_automat_3
+		
+		#Misc Abilities
+		maximum_speed = 8.0
+		reliability = 0.95
+
+		#Defensive Abilities
+		defense = 7
+		breakthrough = 35
+		hardness = 0.8
+		armor_value = 7
+
+		#Offensive Abilities
+		soft_attack = 29
+		hard_attack = 10
+		ap_attack = 26
+		air_attack = 0
+
+		build_cost_ic = 7.5
+		fuel_consumption = 3.0
+
+		resources = {
+			steel = 2
+			aluminium = 3
+		}	
+	}
+
+	gw_automat_5 = {
+		year = 160
+	
+		archetype = gw_automat_archetype
+		parent = gw_automat_4
+		
+		#Misc Abilities
+		maximum_speed = 8.5
+		reliability = 1.00
+
+		#Defensive Abilities
+		defense = 8
+		breakthrough = 40
+		hardness = 0.8
+		armor_value = 7
+
+		#Offensive Abilities
+		soft_attack = 32
+		hard_attack = 12
+		ap_attack = 32
+		air_attack = 0
+
+		build_cost_ic = 7.5
+		fuel_consumption = 3.0
+
+		resources = {
+			steel = 2
+			aluminium = 3
+		}	
+	}
+}

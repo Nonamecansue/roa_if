@@ -1,0 +1,29 @@
+state={
+	id=277
+	name="STATE_277"
+	provinces={
+		452 1524 1636 3025 3867 4600 4635 4716 5467 6610 7996 9441 9740 9811 10172 12534 12558 12587 12626 12699 12705 12767 12826 12847 
+	}
+	buildings_max_level_factor=1.000
+        manpower=108801
+                 state_category = town
+	resources={
+		steel=1 #钢铁
+		tungsten = 8 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 1 #石油
+	}		history = {
+			owner = WLT
+			add_core_of = WLT
+			victory_points = {452 5 }
+			buildings = {
+				infrastructure = 2
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 1
+			}
+		}
+ 
+}

@@ -1,0 +1,507 @@
+ideas = {
+
+	economic_system = { 
+		law = yes
+		use_list_view = yes
+
+		PB_Govidea_Free_Market_Capitalism = {#自由市场资本主义
+						
+			cost = 0
+			removal_cost = -1
+			level = 7
+			
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no
+			}
+			
+            picture = PB_Free_Market_Capitalism
+                  
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_speed_buildings_factor = -0.05
+				min_export = 0.05
+			}
+			
+			cancel_if_invalid = no
+		}
+
+		PB_Govidea_Mixed_Market_Capitalism = {#混合市场资本主义
+						
+			cost = 0
+			removal_cost = -1
+			level = 7
+			
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no
+			}
+			
+            picture = PB_Mixed_Market_Capitalism
+                  
+			modifier = {
+				consumer_goods_factor = -0.03
+				production_factory_max_efficiency_factor = 0.03
+				min_export = 0.03
+			}
+			
+			cancel_if_invalid = no
+		}
+
+		PB_Govidea_Welfare_Capitalism = {#调和性资本主义
+	
+						
+			cost = 0
+			removal_cost = -1
+			level = 7
+			
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no
+			}
+			
+            picture = PB_Welfare_Capitalism
+                  
+			modifier = {
+				consumer_goods_factor = -0.02
+				production_factory_max_efficiency_factor = 0.03
+				min_export = 0.02
+			}
+			
+			cancel_if_invalid = no
+		}
+
+		PB_Govidea_State_Capitalism = {#国家统制资本主义
+						
+			cost = 0
+			removal_cost = -1
+			level = 7
+			
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no
+			}
+
+			
+            picture = PB_State_Capitalism
+                  
+			modifier = {
+				consumer_goods_factor = 0.02
+				production_factory_efficiency_gain_factor = -0.02
+				production_speed_buildings_factor = 0.05
+			}
+			
+			cancel_if_invalid = no
+		}
+
+		PB_Govidea_enterprise_Capitalism = {#企业统制资本主义
+						
+		cost = 0
+		removal_cost = -1
+		level = 7
+		
+		allowed_to_remove = { 
+			always = no 
+		}
+
+		available = { 
+			always = no
+		}
+
+	
+		
+		picture = PB_State_Capitalism
+			  
+		modifier = {
+			consumer_goods_factor = 0.04
+			production_factory_efficiency_gain_factor = -0.05
+			production_speed_buildings_factor = 0.02
+		}
+		
+		cancel_if_invalid = no
+	}
+
+	PB_Govidea_comprador_Capitalism = {#买办资本主义
+						
+	cost = 0
+	removal_cost = -1
+	level = 7
+	
+	allowed_to_remove = { 
+		always = no 
+	}
+
+	available = { 
+		always = no
+	}
+
+	picture = PB_State_Capitalism
+		  
+	modifier = {
+		consumer_goods_factor = -0.01
+		production_factory_efficiency_gain_factor = -0.05
+		production_speed_buildings_factor = 0.01
+	}
+	
+	cancel_if_invalid = no
+}
+
+PB_Govidea_Puppet_Economy = {#完全依附性经济
+						
+	cost = 0
+	removal_cost = -1
+	level = 7
+	
+	allowed_to_remove = { 
+		always = no 
+	}
+
+	available = { 
+		always = no
+	}
+
+	picture = PB_State_Capitalism
+		  
+	modifier = {
+		consumer_goods_factor = -0.02
+		production_factory_efficiency_gain_factor = -0.04
+		production_speed_buildings_factor = -0.01
+	}
+	
+	cancel_if_invalid = no
+}
+
+PB_Govidea_State_Corporatism = {#法团主义经济
+						
+		cost = 0
+		removal_cost = -1
+		level = 7
+		
+		allowed_to_remove = { 
+			always = no 
+		}
+
+		available = { 
+			always = no
+		}
+		
+		picture = PB_Planned_Economy
+			  
+		modifier = {
+			consumer_goods_factor = 0.02
+			production_factory_efficiency_gain_factor = 0.02
+			production_speed_buildings_factor = 0.2
+			conversion_cost_civ_to_mil_factor = -0.03
+		}
+		
+		cancel_if_invalid = no
+	}
+
+	PB_Govidea_enterprise_Corporatism = {#企业法团主义经济
+						
+	cost = 0
+	removal_cost = -1
+	level = 7
+	
+	allowed_to_remove = { 
+		always = no 
+	}
+
+	available = { 
+		always = no
+	}
+	
+	picture = PB_Planned_Economy
+		  
+	modifier = {
+		consumer_goods_factor = 0.03
+		production_factory_efficiency_gain_factor = 0.01
+		production_speed_buildings_factor = 0.15
+		conversion_cost_civ_to_mil_factor = -0.02
+	}
+	
+	cancel_if_invalid = no
+}
+
+	PB_Govidea_Planned_Economy = {#计划经济
+						
+			cost = 0
+			removal_cost = -1
+			level = 7
+			
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no
+			}
+			
+            picture = PB_Planned_Economy
+                  
+			modifier = {
+				consumer_goods_factor = 0.02
+				production_factory_efficiency_gain_factor = -0.05
+				production_speed_buildings_factor = 0.1
+				conversion_cost_civ_to_mil_factor = -0.05
+			}
+			
+			cancel_if_invalid = no
+		}
+
+	PB_Govidea_national_accounts_Planned_Economy = {#国家核算计划经济
+						
+			cost = 0
+			removal_cost = -1
+			level = 7
+			
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no
+			}
+			
+            picture = PB_Planned_Economy
+                  
+			modifier = {
+				consumer_goods_factor = 0.04
+				production_factory_efficiency_gain_factor = -0.06
+				production_speed_buildings_factor = 0.05
+				conversion_cost_civ_to_mil_factor = 0.01
+			}
+			
+			cancel_if_invalid = no
+		}
+
+		PB_Govidea_Military_Socailism_Economy = {#战时社会主义经济
+						
+		cost = 0
+		removal_cost = -1
+		level = 7
+		
+		allowed_to_remove = { 
+			always = no 
+		}
+
+		available = { 
+			always = no
+		}
+		
+		picture = PB_Planned_Economy
+			  
+		modifier = {
+			consumer_goods_factor = -0.01
+			production_factory_efficiency_gain_factor = 0.02
+			production_speed_buildings_factor = 0.1
+			conversion_cost_civ_to_mil_factor = -0.2
+		}
+		
+		cancel_if_invalid = no
+	}
+
+		PB_Govidea_Communal_Economy = {#集体公社经济
+						
+			cost = 0
+			removal_cost = -1
+			level = 7
+			
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no
+			}
+			
+            picture = PB_Communal_Economy
+                  
+			modifier = {
+				consumer_goods_factor = 0.03
+				production_factory_efficiency_gain_factor = -0.1
+				production_speed_buildings_factor = 0.15
+				conversion_cost_civ_to_mil_factor = -0.1
+			}
+			
+			cancel_if_invalid = no
+		}
+
+		PB_Govidea_Worker_Economy = {#工人指导经济
+						
+			cost = 0
+			removal_cost = -1
+			level = 7
+			
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no
+			}
+			
+            picture = PB_Communal_Economy
+                  
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_factory_efficiency_gain_factor = -0.05
+				production_speed_buildings_factor = 0.2
+				conversion_cost_civ_to_mil_factor = -0.1
+			}
+			
+			cancel_if_invalid = no
+		}
+
+		PB_Govidea_OAGS_Economy = {#自动化指导经济
+						
+		cost = 0
+		removal_cost = -1
+		level = 7
+		
+		allowed_to_remove = { 
+			always = no 
+		}
+
+		available = { 
+			always = no
+		}
+		
+		picture = PB_Communal_Economy
+			  
+		modifier = {
+			consumer_goods_factor = 0.05
+			production_factory_efficiency_gain_factor = 0.05
+			production_speed_buildings_factor = 0.3
+			conversion_cost_civ_to_mil_factor = -0.3
+		}
+		
+		cancel_if_invalid = no
+	}
+
+
+
+
+
+	PB_Govidea_agricultral_Economy = {#半封建农业经济
+						
+		cost = 0
+		removal_cost = -1
+		level = 7
+		
+		allowed_to_remove = { 
+			always = no 
+		}
+
+		available = { 
+			always = no
+		}
+
+		
+		picture = PB_State_Capitalism
+			  
+		modifier = {
+			consumer_goods_factor = -0.02
+			production_factory_efficiency_gain_factor = -0.02
+			production_speed_buildings_factor = -0.05
+		}
+		
+		cancel_if_invalid = no
+	}
+
+	PB_Govidea_natural_Economy = {#前现代自然经济
+						
+	cost = 0
+	removal_cost = -1
+	level = 7
+	
+	allowed_to_remove = { 
+		always = no 
+	}
+
+	available = { 
+		always = no
+	}
+
+	
+	picture = PB_State_Capitalism
+		  
+	modifier = {
+		consumer_goods_factor = -0.05
+		production_factory_efficiency_gain_factor = -0.06
+		production_speed_buildings_factor = -0.07
+	}
+	
+	cancel_if_invalid = no
+}
+
+
+        PB_Govidea_military_Economy = {#军国经济
+						
+		cost = 0
+		removal_cost = -1
+		level = 7
+		
+		allowed_to_remove = { 
+			always = no 
+		}
+
+		available = { 
+			always = no
+		}
+		
+		picture = PB_Planned_Economy
+			  
+		modifier = {
+			consumer_goods_factor = -0.08
+			production_factory_efficiency_gain_factor = 0.05
+			production_speed_buildings_factor = 0.05
+			conversion_cost_civ_to_mil_factor = -0.5
+		}
+		
+		cancel_if_invalid = no
+	}
+
+	PB_Govidea_bandits_Economy = {#军国经济
+						
+	cost = 0
+	removal_cost = -1
+	level = 7
+	
+	allowed_to_remove = { 
+		always = no 
+	}
+
+	available = { 
+		always = no
+	}
+	
+	picture = PB_Planned_Economy
+		  
+	modifier = {
+		consumer_goods_factor = -0.08
+		production_speed_buildings_factor = -0.03
+	}
+	
+	cancel_if_invalid = no
+}
+
+
+
+
+	}
+}
+	

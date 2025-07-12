@@ -1,0 +1,29 @@
+state={
+	id=376
+	name="STATE_376"
+	provinces={
+		2469 3040 3063 4148 4774 5717 6959 7144 7302 7316 8272 9344 10089 10269 10527 10654 10690 13195 13291 13297 13337 13347 13365 13371 13432 13458 13510 13522 13568 13648 13718 13733 13776 
+	}
+	buildings_max_level_factor=1.000
+        manpower=423111
+        state_category = metropolis
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 5 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 3 #石油
+	}		history = {
+			owner = HMG
+			add_core_of = HMG
+			victory_points = { 13458 20 }
+			buildings = {
+				infrastructure = 4
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 4
+			}
+		}
+ 
+}

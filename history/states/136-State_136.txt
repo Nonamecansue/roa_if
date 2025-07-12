@@ -1,0 +1,30 @@
+state={
+	id=136
+	name="STATE_136"
+	provinces={
+		691 1007 2968 4662 5714 7690 11433 11451 11461 11467 11472 11689 11749 
+	}
+	buildings_max_level_factor=1.000
+        manpower=1752
+                 state_category = rural
+	resources={
+		steel=7 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=6 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = HLD
+			add_core_of = HLD
+			victory_points = { 691 1 }
+			buildings = {
+				infrastructure = 1
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

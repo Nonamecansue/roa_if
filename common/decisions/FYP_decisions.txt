@@ -1,0 +1,71 @@
+FYP_decision_category = {
+	fyp_election_1 = {
+		fire_only_once = yes
+		days_re_enable = no
+        allowed ={
+			tag = FYP
+		}
+		available = {
+			country_exists = FYP
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+        visible = {
+			country_exists = FYP
+		}
+
+		cost = 0
+		days_remove = 3
+		modifier = {
+		        
+	   	}
+		complete_effect = {  
+			
+		}
+		remove_effect = {
+		    retire_country_leader = yes
+			set_politics = {
+				ruling_party = republicanism
+			}
+			promote_character = FYP_flowerrose
+			set_party_name = { ideology = republicanism long_name = FYP_lilywhite_party_2 name = FYP_lilywhite_party_2 } 
+		}
+	}
+
+	fyp_election_ = {
+		fire_only_once = yes
+		days_re_enable = no
+        allowed ={
+			tag = FYP
+		}
+		available = {
+			country_exists = FYP
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+        visible = {
+			country_exists = FYP
+		}
+
+		cost = 0
+		days_remove = 3
+		modifier = {
+		        
+	   	}
+		complete_effect = {  
+			
+		}
+		remove_effect = {
+		    retire_country_leader = yes
+			set_politics = {
+				ruling_party = progressivism
+			}
+			promote_character = FYP_karltulip
+			set_party_name = { ideology = progressivism long_name = FYP_progressivism_party name = FYP_progressivism_party } 
+		}
+	}
+}

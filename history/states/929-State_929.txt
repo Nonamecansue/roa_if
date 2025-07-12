@@ -1,0 +1,30 @@
+state={
+	id=929
+	name="STATE_929"
+	provinces={
+		100 134 1138 1223 1324 1423 1448 1897 1962 2014 2141 2161 2521 2573 2804 2840 3387 3729 3788 4514 4693 4986 5007 5094 5457 5583 5773 6197 6396 6670 6903 7726 7883 8697 9519 10045 10397 10510 10520 10617 17052 17097 17124 17173 17176 17225 17226 17277 17298 17299 17329 17378 17414 17469 17478 
+	}
+	buildings_max_level_factor=1.000
+        manpower=3236
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=3 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = LML
+			add_core_of = LML
+			victory_points = {  100 1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

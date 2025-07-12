@@ -1,0 +1,30 @@
+state={
+	id=491
+	name="STATE_491"
+	provinces={
+		133 266 923 991 995 1025 1372 1627 1671 1748 2356 2693 2710 2994 4678 5716 8357 9005 14061 14249 14312 14435 14554 14600 14728 14801 15009 
+	}
+	buildings_max_level_factor=1.000
+        manpower=67255
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 4 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = UUZ
+			add_core_of = UUZ
+			victory_points = { 133  10 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 1
+				industrial_complex = 1
+			}
+		}
+ 
+}

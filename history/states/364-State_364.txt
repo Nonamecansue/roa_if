@@ -1,0 +1,30 @@
+state={
+	id=364
+	name="STATE_364"
+	provinces={
+		4686 5898 6122 7290 13116 13126 13155 13198 13220 13275 13401 
+	}
+	buildings_max_level_factor=1.000
+        manpower=12870
+                 state_category = town
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = LZY
+			add_core_of = LZY
+			victory_points = { 4686  10 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

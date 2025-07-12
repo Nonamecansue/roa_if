@@ -1,0 +1,8 @@
+UNY_decision_category = {
+	allowed = {
+           OR = {
+	       tag = UNY
+	    }
+    }
+	priority = 15
+}

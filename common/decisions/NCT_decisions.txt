@@ -1,0 +1,101 @@
+NCT_decision_category = {
+	tengu_revolution_wins = {
+		fire_only_once = yes
+		days_re_enable = no
+        allowed ={
+			tag = NCT
+		}
+		available = {
+			country_exists = NCT
+			NOT = {
+				country_exists = ROT
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+        visible = {
+			country_exists = NCT
+			NOT = {
+				country_exists = ROT
+			}
+		} 
+		
+
+		cost = 0
+		days_remove = 3
+		modifier = {
+		        
+	   	}
+		complete_effect = {  
+			
+		}
+		remove_effect = {
+			annex_country = { target = EOT  transfer_troops =  yes }
+            
+		}
+    }
+
+	tengu_republic_established = {
+		fire_only_once = yes
+		days_re_enable = no
+        allowed ={
+			tag = NCT
+		}
+		available = {
+			country_exists = NCT
+			NOT = {
+				country_exists = ROT
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+        visible = {
+			country_exists = NCT
+			NOT = {
+				country_exists = ROT
+			}
+		} 
+		
+
+		cost = 0
+		days_remove = 3
+		modifier = {
+		        
+	   	}
+		complete_effect = {  
+			
+		}
+		remove_effect = {
+			ROT = {
+				annex_country = { target = NCT  transfer_troops =  yes }
+				change_tag_from = ROOT
+			}
+            
+		}
+    }
+
+	xx = {     
+		activation = {                         
+			触发任务的条件（满足这个条件就开始任务）
+		}                                    
+		available = {                           
+			完成任务的条件
+		}
+		
+		is_good = yes/no（决定任务进度条的颜色）                         
+	
+		days_mission_timeout = 任务时限天数
+		timeout_effect = {                      
+			超时未完成任务的效果          
+		}
+		complete_effect = {                    
+			任务完成（满足上方available条件）的效果          
+		}
+	}
+}

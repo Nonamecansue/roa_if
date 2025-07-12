@@ -1,0 +1,30 @@
+state={
+	id=772
+	name="STATE_772"
+	provinces={
+		1004 2699 4422 4615 5605 6422 7147 7377 7429 7582 7650 7813 7859 8681 9481 9632 9848 9962 10005 10118 10410 10494 15824 15923 15978 15979 16029 16030 16051 16052 16112 16113 16144 16192 16284 
+	}
+	buildings_max_level_factor=1.000
+        manpower=5012
+                 state_category = town
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 3 #铬
+		rubber=2 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = FSS
+			add_core_of = FSS
+			victory_points = {  1004 10 }
+			buildings = {
+				infrastructure = 2
+				air_base = 0
+				arms_factory = 1
+				industrial_complex = 1
+			}
+		}
+ 
+}

@@ -1,0 +1,30 @@
+state={
+	id=604
+	name="STATE_604"
+	provinces={
+		2243 2337 2487 3056 3388 3885 4591 5043 7221 8468 8735 14697 14747 14828 14930 14943 14983 
+	}
+	buildings_max_level_factor=1.000
+        manpower=6765
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 3 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = WZD
+			add_core_of = WZD
+			victory_points = { 2243  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

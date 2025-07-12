@@ -1,0 +1,40 @@
+spriteTypes = {	
+
+#雾联体#
+   #开局#
+   spriteType = { 
+      name = "GFX_idea_UMY_cirno"				
+      textureFile = "gfx/leaders/UMY/UMY_cirno_small.dds"  
+      noOfFrames = 2
+   }
+
+   #雾革委#
+   spriteType = { 
+      name = "GFX_idea_UMY_revolyutsiya"				
+      textureFile = "gfx/leaders/UMY/UMY_revolyutsiya_small.dds"  
+      noOfFrames = 2
+   }
+
+   spriteType = { 
+      name = "GFX_idea_UMY_freeequelier"				
+      textureFile = "gfx/leaders/UMY/UMY_freeequelier_small.dds"  
+      noOfFrames = 2
+   }
+   #新共和派#
+   spriteType = { 
+      name = "GFX_idea_UMY_dcdelta"				
+      textureFile = "gfx/leaders/UMY/UMY_dcdelta_small.dds"  
+      noOfFrames = 2
+   }
+   #沙文党#
+   spriteType = { 
+      name = "GFX_idea_UMY_axes"				
+      textureFile = "gfx/leaders/UMY/UMY_axes_small.dds"  
+      noOfFrames = 2
+   }
+
+
+
+   
+
+}

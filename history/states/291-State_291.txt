@@ -1,0 +1,30 @@
+state={
+	id=291
+	name="STATE_291"
+	provinces={
+		1773 2175 3980 6066 7201 12657 12686 12723 12865 
+	}
+	buildings_max_level_factor=1.000
+        manpower=9998
+                 state_category = town
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 8 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+		owner = TGD
+		add_core_of = TGD
+			victory_points = { 1773 4 }
+			buildings = {
+				infrastructure = 1
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 1
+			}
+		}
+ 
+}

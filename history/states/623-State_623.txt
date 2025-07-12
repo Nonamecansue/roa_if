@@ -1,0 +1,29 @@
+state={
+	id=623
+	name="STATE_623"
+	provinces={
+		159 5462 6128 8042 8450 9087 14925 
+	}
+	buildings_max_level_factor=1.000
+        manpower=15377
+                 state_category = town
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium =7 #铬
+		rubber=1 #橡胶
+		aluminium=0 #铝
+		oil = 4 #石油
+	}		history = {
+			owner = DJT
+			add_core_of = DJT
+			victory_points = { 159  10 }
+			buildings = {
+				infrastructure = 1
+				air_base = 0
+				arms_factory = 1
+				industrial_complex = 1
+			}
+		}
+ 
+}

@@ -1,0 +1,30 @@
+state={
+	id=94
+	name="STATE_94"
+	provinces={
+		434 1144 1287 1347 2382 2829 4435 4536 6224 7527 9117 9836 10457 11191 11242 11256 11301 
+	}
+	buildings_max_level_factor=1.000
+        manpower=1032
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = DHC
+			add_core_of = DHC
+			victory_points = { 11301 1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

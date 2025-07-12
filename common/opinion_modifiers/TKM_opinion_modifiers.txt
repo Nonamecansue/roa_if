@@ -1,0 +1,70 @@
+#########################################################################
+# OPINION MODIFIERS
+##########################################################################
+# value
+# min_trust
+# max_trust
+# decay
+# months/years/days = timer
+# trade = yes/no
+
+opinion_modifiers = {
+	TKM_yumofashiyouhao_op = {
+		value = 30
+	}
+	TKM_hongmoguanyouhao_op = {
+		value = 30
+	}
+	TKM_zantonglinian_op = {
+		value = 50
+	}
+	TKM_xuanchengshouhushen_op = {
+		value = 100
+	}
+	TKM_tichumuhoushilideyingxiang_op = {
+		value = -50
+	}
+	TKM_dishihongmoguan_op = {
+		value = -30
+	}
+	TKM_xianglintangdedaoju_op = {
+		value = 30
+	}
+	TKM_yaoguaicunluo_op = {
+		value = 30
+	}
+	TKM_dongmiandebuluo_op = {
+		value = 30
+	}
+	TKM_fanrenzhuyi_op = {
+		value = 30
+	}
+	TKM_Co_prosperity_circle_member_1_op = {
+		value = 10
+	}
+	TKM_Co_prosperity_circle_member_2_op = {
+		value = 30
+	}
+	TKM_Military_cooperation_op = {
+		value = 20
+	}
+	TKM_Stabbed_back_YKR_op = {
+		value = -50
+	}
+	TKM_Stabbed_back_HUM_op = {
+		value = 20
+	}
+	TKM_The_genkokujyo_of_props_op = {
+		value = -15
+	}
+	TKM_Prop_riot_op = {
+		value = -75
+	}
+	TKM_Support_us_in_the_civil_war_op = {
+		value = 10
+	}
+	TKM_Support_our_enemies_in_the_civil_war_op = {
+		value = -15
+	}
+}	
+

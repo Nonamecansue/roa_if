@@ -1,0 +1,30 @@
+
+music_station = "cm_big_event"
+
+music = {
+	song = "my_munt_war_1"	
+	chance = {
+		factor = 0
+	}
+}
+
+music = {
+	song = "my_munt_war_2"	
+	chance = {
+		factor = 0
+	}
+}
+
+music = {
+	song = "snow_storm_plan"	
+	chance = {
+		factor = 0
+	}
+}
+
+music = {
+	song = "snow_storm_plan"	
+	chance = {
+		factor = 0
+	}
+}

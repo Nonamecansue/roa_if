@@ -1,0 +1,30 @@
+state={
+	id=410
+	name="STATE_410"
+	provinces={
+		520 776 1047 1096 1621 1917 2115 2830 2933 3304 3367 3503 3543 3587 4301 5771 6542 6851 8237 8296 8426 8499 8948 9016 9289 9424 9831 10271 10508 13382 13465 13471 13490 13545 13552 13562 13593 13614 13626 13627 13628 13641 13672 13688 13689 13738 13748 13779 13843 13844 13853 13868 13894 
+	}
+	buildings_max_level_factor=1.000
+        manpower=899
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = YXJ
+			add_core_of = YXJ
+
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

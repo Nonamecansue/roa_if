@@ -1,0 +1,63 @@
+MPA_decision_category = {
+	mpa_election_1 = {
+		fire_only_once = yes
+		days_re_enable = no
+        allowed ={
+			tag = MPA
+		}
+		available = {
+			country_exists = MPA
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+        visible = {
+			country_exists = MPA
+		}
+
+		cost = 0
+		days_remove = 3
+		modifier = {
+		        
+	   	}
+		complete_effect = {  
+			
+		}
+		remove_effect = {
+		    retire_country_leader = yes
+			promote_character = MPA_kirisamemarisa
+		}
+	}
+
+	mpa_election_2 = {
+		fire_only_once = yes
+		days_re_enable = no
+        allowed ={
+			tag = MPA
+		}
+		available = {
+			country_exists = MPA
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+        visible = {
+			country_exists = MPA
+		}
+
+		cost = 0
+		days_remove = 3
+		modifier = {
+		        
+	   	}
+		complete_effect = {  
+			
+		}
+		remove_effect = {
+		    retire_country_leader = yes
+			promote_character = MPA_alicemargatroid
+		}
+	}
+}

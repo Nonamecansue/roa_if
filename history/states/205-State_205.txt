@@ -1,0 +1,30 @@
+state={
+	id=205
+	name="STATE_205"
+	provinces={
+		39 508 2216 3550 4866 5410 6010 8089 8363 9000 9023 9624 11823 11903 11924 11931 11977 11978 11995 12007 12008 12010 12045 12076 12153 12192 
+	}
+	buildings_max_level_factor=1.000
+        manpower=5440
+                 state_category = rural
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+		izanagi = 1
+	}		history = {
+			owner = TGD
+			add_core_of = TGD
+			victory_points = {39  1 }
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+ 
+}

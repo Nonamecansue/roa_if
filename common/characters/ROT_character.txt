@@ -1,0 +1,289 @@
+#——————————革命后——————————#
+characters={
+	
+	
+#——————————秋日社——————————#	
+
+	
+	ROT_furaikei ={#风雷启
+		name = ROT_furaikei
+		portraits={
+			civilian={
+					large="gfx/leaders/ROT/ROT_furaikei.dds"
+					small="gfx/leaders/ROT/ROT_furaikei_small.dds"
+				}
+			}
+			country_leader={
+				desc = "ROT_furaikei_desc"
+				traits = {
+					ROT_furaikei_traits_1
+					ROT_furaikei_traits_2
+				}
+				ideology = vanguard_revolutionism_aki_jacobinism_subtype
+				id = -1	 
+			}
+		
+			advisor = {
+				slot = character_coop
+				idea_token = ROT_furaikei
+				name = ROT_furaikei
+				cost = 200
+				modifier = {
+					# character_coop_cost_factor = -0.15 在这里无效
+					political_power_gain = 0.2
+					consumer_goods_factor = -0.02
+				}
+				ai_will_do = {
+					factor = 1
+				}
+			}
+		}
+
+#——————————民主联合阵线(中间左派)——————————#
+
+ROT_keneirikki={ #见影立辉
+	name = ROT_keneirikki
+	portraits={
+		civilian={
+				large="gfx/leaders/ROT/ROT_keneirikki.dds"
+				small="gfx/leaders/ROT/ROT_keneirikki_small.dds"
+			}
+		}
+		country_leader={
+			desc = "ROT_keneirikki_desc"
+			traits = {
+				ROT_keneirikki_traits_1
+				ROT_keneirikki_traits_2
+			}
+			ideology = progressivism_national_progressivism_subtype
+			id = -1	 
+		}
+	
+		advisor = {
+			slot = character_coop
+			idea_token = ROT_keneirikki
+			name = ROT_keneirikki
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	ROT_shameimaruaya={ #射命丸文
+	name = ROT_shameimaruaya
+	portraits={
+		civilian={
+				large="gfx/leaders/ROT/ROT_shameimaruaya.dds"
+				small="gfx/leaders/ROT/ROT_shameimaruaya_small.dds"
+			}
+		}
+
+		country_leader={
+			desc = "ROT_shameimaruaya_desc"
+			traits = {
+				ROT_shameimaruaya_traits_1
+				ROT_shameimaruaya_traits_2
+			}
+			ideology = progressivism_subtype
+			id = -1	 
+		}
+	
+		advisor = {
+			slot = character_coop
+			idea_token = ROT_shameimaruaya
+			name = ROT_shameimaruaya
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+#——————————民主联合阵线（中间右派）——————————#
+
+    ROT_kurobaneshie={ #黑羽紫慧
+	    name = ROT_kurobaneshie
+	    portraits={
+		    civilian={
+				large="gfx/leaders/ROT/ROT_kurobaneshie.dds"
+				small="gfx/leaders/ROT/ROT_kurobaneshie_small.dds"
+			}
+		}
+		country_leader={
+			desc = "ROT_kurobaneshie_desc"
+			traits = {
+				ROT_kurobaneshie_traits_1
+				ROT_kurobaneshie_traits_2
+			}
+			ideology = progressivism_frontworld_liberalism_subtype
+			id = -1	 
+		}
+	
+		advisor = {
+			slot = character_coop
+			idea_token = ROT_kurobaneshie
+			name = ROT_kurobaneshie
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	#——————————天狗爱国协会——————————#
+
+	ROT_kiritukiroen={ #雾月狼烟
+	name = ROT_kiritukiroen
+	portraits={
+		civilian={
+				large="gfx/leaders/ROT/ROT_kiritukiroen.dds"
+				small="gfx/leaders/ROT/ROT_kiritukiroen_small.dds"
+			}
+		}
+		country_leader={
+			desc = "ROT_kiritukiroen_desc"
+			traits = {
+				ROT_kiritukiroen_traits_1
+				ROT_kiritukiroen_traits_2
+			}
+			ideology = republicanism_military_republicanism_subtype
+			id = -1	 
+		}
+	
+		advisor = {
+			slot = character_coop
+			idea_token = ROT_kiritukiroen
+			name = ROT_kiritukiroen
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+#——————————天狗皇家庇护社——————————#
+
+ROT_chibamasahiko={ #千葉雅彦
+	name = ROT_chibamasahiko
+	portraits={
+		civilian={
+				large="gfx/leaders/ROT/ROT_chibamasahiko.dds"
+				small="gfx/leaders/ROT/ROT_chibamasahiko_small.dds"
+			}
+		}
+		country_leader={
+			desc = "ROT_chibamasahiko_desc"
+			traits = {
+				ROT_chibamasahiko_traits_1
+				ROT_chibamasahiko_traits_2
+			}
+			ideology = despotism_aristocratic_absolutism_subtype
+			id = -1	 
+		}
+	
+		advisor = {
+			slot = character_coop
+			idea_token = ROT_chibamasahiko
+			name = ROT_chibamasahiko
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+#——————————天狗种族团结党——————————#
+
+ROT_hironorihiuda={ #弘则德威
+	name = ROT_hironorihiuda
+	portraits={
+		civilian={
+				large="gfx/leaders/ROT/ROT_hironorihiuda.dds"
+				small="gfx/leaders/ROT/ROT_hironorihiuda_small.dds"
+			}
+		}
+		country_leader={
+			desc = "ROT_hironorihiuda_desc"
+			traits = {
+				ROT_hironorihiuda_traits_1
+				ROT_hironorihiuda_traits_2
+			}
+			ideology = corporatism_tengu_solidarism_subtype
+			id = -1	 
+		}
+	
+		advisor = {
+			slot = character_coop
+			idea_token = ROT_hironorihiuda
+			name = ROT_hironorihiuda
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+
+#——————————天狗归化运动————————#
+
+ROT_kyoyaichiki={ #狂野一樹
+	name = ROT_kyoyaichiki
+	portraits={
+		civilian={
+				large="gfx/leaders/ROT/ROT_kyoyaichiki.dds"
+				small="gfx/leaders/ROT/ROT_kyoyaichiki_small.dds"
+			}
+		}
+		country_leader={
+			ideology = corporatism_tengu_naturalization_movement_subtype
+			id = -1	 
+		}
+	
+		advisor = {
+			slot = character_coop
+			idea_token = ROT_kyoyaichiki
+			name = ROT_kyoyaichiki
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+}

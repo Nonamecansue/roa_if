@@ -1,0 +1,131 @@
+#——————————开局——————————#
+characters={
+	HKC_komanoaunn ={ #高丽野阿吽
+		name = HKC_komanoaunn
+		portraits={
+			civilian={
+				large="gfx/leaders/HKC/HKC_komanoaunn.dds"
+				small="gfx/leaders/HKC/HKC_komanoaunn_small.dds"
+			}
+		}
+		country_leader={
+			ideology = republicanism_shrine_council_subtype
+			expire = 147.3.1
+			id = -1	 
+		}
+	
+		advisor = {
+			slot = character_coop
+			idea_token = HKC_komanoaunn
+			name = HKC_komanoaunn
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+#————————————继任——————————————#
+
+    HKC_meira ={ #明罗
+		name = HKC_meira
+		portraits={
+			civilian={
+				large="gfx/leaders/HKC/HKC_meira.dds"
+				small="gfx/leaders/HKC/HKC_meira_small.dds"
+			}
+		}
+		country_leader={
+			ideology = republicanism_shrine_council_subtype
+			id = -1	 
+		}
+	
+		advisor = {
+			slot = character_coop
+			idea_token = HKC_meira
+			name = HKC_meira
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+#————————————革命议会——————————————#
+
+    HKC_hakurei_revolutionary_council ={ #博丽革命议会
+		name = HKC_hakurei_revolutionary_council
+		portraits={
+			civilian={
+				large="gfx/leaders/HKC/HKC_hakurei_revolutionary_council.dds"
+				small="gfx/leaders/HKC/HKC_hakurei_revolutionary_council_small.dds"
+			}
+		}
+		country_leader={
+			ideology = vanguard_revolutionism_revolutionary_council_subtype
+			id = -1	 
+		}
+	
+		advisor = {
+			slot = character_coop
+			idea_token = HKC_hakurei_revolutionary_council
+			name = HKC_hakurei_revolutionary_council
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+
+#————————————你将如闪电般归来————————————#
+
+    HKC_hakureireimu ={ #博丽灵梦
+		name = HKC_hakureireimu
+		portraits={
+			civilian={
+				large="gfx/leaders/HKC/HKC_hakureireimu.dds"
+				small="gfx/leaders/HKC/HKC_hakureireimu_small.dds"
+			}
+		}
+		country_leader={
+			ideology = gensokyoism_subtype
+			id = -1	 
+		}
+		country_leader={
+			ideology = gensokyoism_hakurei_salvationism_subtype
+			id = -1	 
+		}
+	
+		advisor = {
+			slot = character_coop
+			idea_token = HKC_hakureireimu
+			name = HKC_hakureireimu
+			cost = 200
+			modifier = {
+				# character_coop_cost_factor = -0.15 在这里无效
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.02
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+
+}
