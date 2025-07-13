@@ -207,5 +207,3 @@
  CHAT_ERROR_MUTEUNMUTE_SELF:0 "你不能禁言或者解禁你自己！"
  CHAT_ERROR_CHAT_TIMEOUT_MESSAGE_SINGULAR:0 "您发言过快。请先等待§Y1§!秒再继续发言。"
  CHAT_ERROR_CHAT_TIMEOUT_MESSAGE_PLURAL:0 "您发言过快。请先等待$TIME|Y$秒再继续发言。"
- POLL:0 "Next Pax Patch/Update Poll - Community Input"
- DISCORD:0 "Pax Britannica Discord"

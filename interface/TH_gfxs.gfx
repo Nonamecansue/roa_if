@@ -5,22 +5,6 @@ spriteTypes = {
 		texturefile = "gfx//interface//logo_roa.dds"
 		noOfFrames = 2
 	}
-	#menu button
-	spriteType = {
-		name = "GFX_icon_discord"
-		texturefile = "gfx//interface//icon_discord.dds"
-		noOfFrames = 1
-	}
-	spriteType = {
-		name = "GFX_icon_qq"
-		texturefile = "gfx//interface//icon_qq.dds"
-		noOfFrames = 1
-	}
-	spriteType = {
-		name = "GFX_icon_steam"
-		texturefile = "gfx//interface//icon_steam.dds"
-		noOfFrames = 1
-	}
 	#music album
 	spriteType = {
 		name = "GFX_roa_test_album_art"

@@ -14,6 +14,5 @@
         "**/CVS": true,
         "**/.DS_Store": true,
         "**/Thumbs.db": true,
-        "ROAver0.135备份": true,  
     }
 }

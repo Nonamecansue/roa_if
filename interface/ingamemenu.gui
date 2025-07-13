@@ -108,56 +108,6 @@ guiTypes = {
 			name = "playthrough_stats_offset"
 			position = { x = 0 y = 40 }
 		}
-
-		## facebook etc.
-		ButtonType = {
-			name = "homepage_button"
-			position = { x = 59 y = 389 }
-			quadTextureSprite ="GFX_icon_qq"
-			clicksound = click_default
-			pdx_tooltip = "qq_button"
-			# web_link = "https://qun.qq.com/qrcode/index?data=https%3A%2F%2Fqm.qq.com%2Fcgi-bin%2Fqm%2Fqr%3Fk%3DjVIZv5oFe2xdDiQKKkmKrusnVYvRktAY%26jump_from%3Dwebapi%26qr%3D1"
-		}
-		ButtonType = {
-			name = "forum_button"
-			position = { x = 99 y = 389 }
-			quadTextureSprite ="GFX_icon_discord"
-			clicksound = click_default
-			pdx_tooltip = "discord_button"
-			web_link = "https://discord.gg/yMVrzJR"
-		}
-		ButtonType = {
-			name = "facebook_button"
-			position = { x = 139 y = 389 }
-			quadTextureSprite ="GFX_icon_steam"
-			clicksound = click_default
-			pdx_tooltip = "workshop_mod_button"
-			web_link = "https://steamcommunity.com/workshop/filedetails/?id=1100200730"
-		}			
-		
-		ButtonType = {
-			name = "twitter_button"
-			position = { x = 179 y = 389 }
-			quadTextureSprite ="GFX_icon_steam"
-			#clicksound = click_default
-			pdx_tooltip = "workshop_en_button"
-			web_link = "https://steamcommunity.com/sharedfiles/filedetails/?id=2616880932"
-		}
-		
-		ButtonType = {
-			name = "privacy_policy_button"
-			position = { x = 219 y = 389 }
-			quadTextureSprite ="privacy"
-			#clicksound = click_default
-			pdx_tooltip = "MENU_PRIVACY_POLICY"
-		}
-
-		ButtonType = {
-			name = "achievements_button"
-			position = { x = 259 y = 389 }
-			quadTextureSprite ="achievements"
-			pdx_tooltip = "MENU_ACHIEVEMENTS"
-		}
 	}
 	
 	containerWindowType = {

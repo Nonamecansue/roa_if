@@ -64,12 +64,6 @@ spriteTypes = {
 	}
 
 	textSpriteType = {
-		name = "GFX_sort_button_83x29"
-		texturefile = "gfx//interface//sort_button_83x29.tga"
-		noOfFrames = 2
-	}
-
-	textSpriteType = {
 		name = "GFX_sort_button_100x29"
 		texturefile = "gfx//interface//sort_button_100x29.tga"
 		noOfFrames = 2
@@ -301,37 +295,6 @@ spriteTypes = {
 		pause_on_loop = 0.0
 		alwaystransparent = yes
 		effectFile = "gfx/FX/buttonstate_blendframes.lua"
-	}
-
-	spriteType = {
-		name = "forum"
-		texturefile = "gfx//interface//icon_forum.dds"
-		noOfFrames = 1
-	}
-	spriteType = {
-		name = "facebook"
-		texturefile = "gfx//interface//icon_facebook.dds"
-		noOfFrames = 1
-	}
-	spriteType = {
-		name = "twitter"
-		texturefile = "gfx//interface//icon_twitter.dds"
-		noOfFrames = 1
-	}
-	spriteType = {
-		name = "homepage"
-		texturefile = "gfx//interface//icon_homepage.dds"
-		noOfFrames = 1
-	}
-	spriteType = {
-		name = "privacy"
-		texturefile = "gfx//interface//icon_privacy.dds"
-		noOfFrames = 1
-	}
-	spriteType = {
-		name = "achievements"
-		texturefile = "gfx//interface//icon_achievements.dds"
-		noOfFrames = 1
 	}
 	spriteType = {
 		name = "discord"
