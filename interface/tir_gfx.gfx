@@ -1,8 +1,0 @@
-spriteTypes = {
-
-	spriteType = {
-		name = "GFX_99_fight_texticon"
-		texturefile = "gfx/tir_art/99_fight.dds"
-	}
-
-}

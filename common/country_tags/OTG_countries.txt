@@ -1,2 +1,0 @@
-OT2 = "countries/ot2.txt"  
-OT3 = "countries/ot3.txt"  

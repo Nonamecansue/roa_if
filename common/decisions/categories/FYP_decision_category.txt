@@ -1,8 +1,0 @@
-FYP_decision_category = {
-	allowed = {
-           OR = {
-	       tag = FYP
-	    }
-    }
-	priority = 15
-}

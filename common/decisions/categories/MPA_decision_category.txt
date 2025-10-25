@@ -1,8 +1,0 @@
-MPA_decision_category = {
-	allowed = {
-           OR = {
-	       tag = MPA
-	    }
-    }
-	priority = 15
-}

@@ -1,8 +1,0 @@
-ARA_decision_category = {
-	allowed = {
-           OR = {
-	       tag = ARA
-	    }
-    }
-	priority = 15
-}

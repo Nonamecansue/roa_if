@@ -1,8 +1,0 @@
-HKC_decision_category = {
-	allowed = {
-           OR = {
-	       tag = HKC
-	    }
-    }
-	priority = 15
-}

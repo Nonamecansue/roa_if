@@ -1,8 +1,0 @@
-BSY_decision_category = {
-	allowed = {
-           OR = {
-	       tag = BSY
-	    }
-    }
-	priority = 15
-}

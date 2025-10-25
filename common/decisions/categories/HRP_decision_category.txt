@@ -1,8 +1,0 @@
-HRP_decision_category = {
-	allowed = {
-           OR = {
-	       tag = HRP
-	    }
-    }
-	priority = 15
-}

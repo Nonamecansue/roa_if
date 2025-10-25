@@ -1,8 +1,0 @@
-EOT_decision_category = {
-	allowed = {
-           OR = {
-	       tag = EOT
-	    }
-    }
-	priority = 15
-}

@@ -1,8 +1,0 @@
-ROG_decision_category = {
-	allowed = {
-           OR = {
-	       tag = ROG
-	    }
-    }
-	priority = 15
-}

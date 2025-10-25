@@ -1,8 +1,0 @@
-POK_decision_category = {
-	allowed = {
-           OR = {
-	       tag = POK
-	    }
-    }
-	priority = 15
-}

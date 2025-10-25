@@ -1,8 +1,0 @@
-PGK_decision_category = {
-	allowed = {
-           OR = {
-	       tag = PGK
-	    }
-    }
-	priority = 15
-}

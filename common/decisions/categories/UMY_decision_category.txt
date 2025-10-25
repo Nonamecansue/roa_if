@@ -1,8 +1,0 @@
-UMY_decision_category = {
-	allowed = {
-           OR = {
-	       tag = UMY
-	    }
-    }
-	priority = 15
-}
