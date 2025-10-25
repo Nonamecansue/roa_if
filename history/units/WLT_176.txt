@@ -1,0 +1,114 @@
+﻿division_template = {
+	name = "先锋骑兵队"
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	support = {
+		recon  = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "革命卫队"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		artillery_brigade = { x = 2 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division = {
+		name = "先锋骑兵队"
+		location = 6203
+		division_template = "先锋骑兵队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "先锋骑兵队"
+		location = 3633
+		division_template = "先锋骑兵队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "先锋骑兵队"
+		location = 4132
+		division_template = "先锋骑兵队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "革命卫队"
+		location = 6203
+		division_template = "革命卫队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "革命卫队"
+		location = 3633
+		division_template = "革命卫队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "革命卫队"
+		location = 4132
+		division_template = "革命卫队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "革命卫队"
+		location = 4675
+		division_template = "革命卫队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "革命卫队"
+		location = 1623
+		division_template = "革命卫队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "革命卫队"
+		location = 4736
+		division_template = "革命卫队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "革命卫队"
+		location = 2527
+		division_template = "革命卫队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "革命卫队"
+		location = 1963
+		division_template = "革命卫队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "革命卫队"
+		location = 3184
+		division_template = "革命卫队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+}

@@ -1,0 +1,38 @@
+﻿capital = 1
+
+recruit_character = DXH_yizhe
+recruit_character = DXH_yizhe_leader
+
+146.1.1 = {
+    set_technology = { 
+        
+    }
+    set_stability = 0.5
+    set_war_support = 0.1
+    set_convoys = 32
+    set_research_slots = 3
+}
+
+
+
+146.1.1={
+    oob = "ARA_146"
+    add_ideas = {
+        
+    }
+    set_politics = {
+    	ruling_party = baoshou
+    	election_frequency = 48
+    	elections_allowed = no
+    }
+    set_popularities = {
+       genming = 30
+       xiakeshang = 10
+       jijingailiang = 0
+       baoshougailiang = 0
+       baoshou = 60
+       diguo = 0
+       huanxiang = 0
+       yibian = 0
+    }
+}

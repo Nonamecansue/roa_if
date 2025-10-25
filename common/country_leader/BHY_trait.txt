@@ -1,0 +1,11 @@
+leader_traits = {
+	HCY_wubiandelusehuangmo_trait = {
+		army_org_factor = -1
+		training_time_factor = -1
+		conscription = -1
+		consumer_goods_factor = 1
+		stability_factor = -10
+		baoshou_drift = 1
+	}
+	
+}

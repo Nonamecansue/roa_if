@@ -1,0 +1,29 @@
+state={
+	id=384
+	name="STATE_384"
+	provinces={
+		1254 5505 5548 5696 9672 9760 
+	}
+	manpower=2138100
+	buildings_max_level_factor=1.000
+		state_category=large_city
+		local_supplies=0.000
+		resources={
+			steel=3 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = HMG
+		add_core_of = HMG
+		buildings = {
+			infrastructure =3
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 3
+		}
+	}
+}

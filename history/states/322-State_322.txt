@@ -1,0 +1,29 @@
+state={
+	id=322
+	name="STATE_322"
+	provinces={
+		114 275 408 434 693 793 1121 1622 1932 2221 2295 2489 2508 2775 2821 2989 3395 3626 3720 3800 4695 5186 5289 5461 5629 5689 5892 6061 6343 6417 6715 7115 7154 7370 7423 11449 11479 11496 11505 11513 11514 11520 11521 11522 11534 11536 11538 11548 11550 11552 11554 11563 11564 11574 11585 11587 
+	}
+        manpower=1000000
+        buildings_max_level_factor=1.000
+		state_category=small_island
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=3 #铝
+			oil = 0 #石油
+		}
+		history = {
+			owner = YYT
+			add_core_of = YYT
+			buildings = {
+				infrastructure = 1
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+}

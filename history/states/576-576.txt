@@ -1,0 +1,29 @@
+state={
+	id=576
+	name="STATE_576"
+	provinces={
+		445 1246 2590 3362 3593 4371 5753 5802 9275 9338 9359 9388 9389 
+	}
+	manpower=2102000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = GYT
+		add_core_of = GYT
+		buildings = {
+			infrastructure = 0
+			air_base = 0
+			arms_factory = 2
+			industrial_complex = 1
+		}
+	}
+}

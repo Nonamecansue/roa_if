@@ -1,0 +1,29 @@
+state={
+	id=4
+	name="STATE_4"
+	provinces={
+		41 336 679 884 2781 4027 4981 5807 7119 7291 7502 7612 11191 11216 11293 11320 11344 11386 
+	}
+	manpower=1100000
+	state_category=city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = JXJ
+		add_core_of =JXJ
+		buildings = {
+			infrastructure = 4
+			air_base = 0
+			arms_factory = 3
+			industrial_complex = 3
+		}
+	}
+}

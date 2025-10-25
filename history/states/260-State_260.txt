@@ -1,0 +1,29 @@
+state={
+	id=260
+	name="STATE_260"
+	provinces={
+		468 1538 1827 1848 2703 2954 3007 3232 3816 3906 4402 4621 4912 5628 6427 6853 6954 7124 10370 10398 10418 10424 10447 10474 10493 10496 10513 10571 10577 10587 10613 10617 10622 
+	}
+	manpower=733000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = REN
+		add_core_of =REN
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 2
+			industrial_complex = 1
+		}
+	}
+}

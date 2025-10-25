@@ -1,0 +1,29 @@
+state={
+	id=300
+	name="STATE_300"
+	provinces={
+		65 329 569 674 916 1025 2227 2929 3171 3260 3640 4014 4037 4481 4564 4674 5294 5573 6317 6652 6965 7226 11080 11131 11180 11183 11245 11281 11308 11318 11349 11255 
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+		state_category=small_island
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = YYT
+		add_core_of = YYT
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

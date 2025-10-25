@@ -1,0 +1,30 @@
+state={
+	id=203
+	name="STATE_203"
+	provinces={
+		1 94 195 349 976 1013 1439 1964 2083 2170 2211 2639 2925 3022 3509 3569 3714 3807 3891 3981 4139 4586 4719 4744 5122 5346 5578 6080 6160 6898 6988 7269 7287 7339 9373 9438 9451 9454 9492 9572 9579 9640 9644 9723 9795 
+	}
+	manpower=9230
+	impassable = yes
+	buildings_max_level_factor=1.000
+		state_category=tiny_island
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = MLS
+		add_core_of = MLS
+		buildings = {
+			infrastructure = 0
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

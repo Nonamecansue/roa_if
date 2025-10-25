@@ -1,0 +1,29 @@
+state={
+	id=112
+	name="STATE_112"
+	provinces={
+		36 171 176 242 312 479 576 642 729 968 1016 1178 1251 1349 1416 1500 1667 1694 1697 1936 2050 2096 2228 2241 2303 2367 2443 2667 2693 2696 2812 2979 3242 3408 3576 3742 3918 3983 4324 4740 4845 5176 5273 5466 5481 5529 5609 5690 5847 6032 6092 6242 6280 6976 7095 7149 7301 7348 7409 7521 8370 8384 8387 8390 8431 8441 8447 8488 8505 8515 8553 8574 8625 8633 8668 8672 8684 8690 8694 8736 8749 8790 8804 
+	}
+	manpower=201300
+	buildings_max_level_factor=1.000
+		state_category=tiny_island
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = BHY
+		add_core_of =BHY
+		buildings = {
+			infrastructure = 0
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

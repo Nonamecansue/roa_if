@@ -1,0 +1,29 @@
+state={
+	id=539
+	name="STATE_539"
+	resources={
+			steel=0 #钢铁
+			tungsten = 2 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	provinces={
+		146 2953 6064 6082 9767 9777 9796 9814 9817 9832 9845 9855 9859 
+	}
+	history = {
+		owner = HMG
+		add_core_of = HMG
+		buildings = {
+			infrastructure = 4
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 4
+		}
+	}
+	manpower=4836000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

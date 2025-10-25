@@ -1,0 +1,29 @@
+state={
+	id=381
+	name="STATE_381"
+	provinces={
+		340 1556 2419 3126 4397 7512 10377 10435 10442 
+	}
+	manpower=1789000
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=2 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = SLQ
+		add_core_of = SLQ
+		buildings = {
+			infrastructure = 3
+			air_base = 0
+			arms_factory = 2
+			industrial_complex = 1
+		}
+	}
+}

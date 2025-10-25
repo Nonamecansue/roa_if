@@ -1,0 +1,29 @@
+state={
+	id=469
+	name="STATE_469"
+	provinces={
+		3187 3298 4163 6105 6414 6774 10678 10683 
+	}
+	manpower=2987800
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+	resources={
+		steel=8 #钢铁
+		tungsten = 0 #钨
+		chromium = 2 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = REN
+		add_core_of = REN
+		buildings = {
+			infrastructure = 5
+			air_base = 0
+			arms_factory = 3
+			industrial_complex = 4
+		}
+	}
+}

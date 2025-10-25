@@ -1,0 +1,28 @@
+state={
+	id=395
+	name="STATE_395"
+	provinces={
+		912 1664 2840 4195 4562 7430 7657 10304 
+	}
+	manpower=1983000
+	state_category=large_town
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = SYG
+		add_core_of = SYG
+		buildings = {
+			infrastructure = 3
+			air_base = 0
+			arms_factory = 1
+			industrial_complex = 3
+		}
+	}
+}

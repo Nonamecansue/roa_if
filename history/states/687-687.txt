@@ -1,0 +1,29 @@
+state={
+	id=687
+	name="STATE_687"
+	provinces={
+		1123 2621 3043 5358 6347 10090 10110 10132 10188 
+	}
+	manpower=1832000
+	buildings_max_level_factor=1.000
+		state_category=large_town
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = MTJ
+		add_core_of =MTJ
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 2
+			industrial_complex = 2
+		}
+	}
+}

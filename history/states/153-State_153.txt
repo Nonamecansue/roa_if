@@ -1,0 +1,30 @@
+state={
+	id=153
+	name="STATE_153"
+	provinces={
+		238 723 1757 1974 2561 4322 4832 5506 5534 6643 6697 6871 8903 8938 8999 9068 
+	}
+	manpower=1003800
+	buildings_max_level_factor=1.000
+		state_category=large_town
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	local_supplies=0.000
+	history = {
+		owner = XXC
+		add_core_of = XXC
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 2
+			industrial_complex = 1
+		}
+	}
+}

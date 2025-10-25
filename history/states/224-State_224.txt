@@ -1,0 +1,29 @@
+state={
+	id=224
+	name="STATE_224"
+	provinces={
+		91 288 354 384 661 1021 1129 1214 3340 3703 4169 5556 5576 5817 5962 9771 9816 9838 9848 9888 9952 9998 10029 10030 10079 10091 
+	}
+	manpower=1320000
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=3 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = WZL
+		add_core_of =WZL
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 1
+		}
+	}
+}

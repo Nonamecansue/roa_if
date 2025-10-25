@@ -1,0 +1,174 @@
+﻿capital = 460
+
+recruit_character = REN_lingmeng
+recruit_character = REN_lingmeng_leader
+
+146.1.1 = {
+    set_technology = { 
+        #步兵装备
+        infantry_weapons = 1
+
+        #装甲
+        yizhanzhuangjiache = 1
+        gaijinxingzhuangjiache = 1
+        yizhanyidongbaolei = 1
+
+        #火炮
+        gw_artillery = 1
+
+        #支援装备
+        tech_support = 1
+        tech_engineers = 1
+		tech_recon = 1
+
+        #建造
+        construction1 = 1
+        
+    }
+    create_equipment_variant = {
+					name = "十四年造装甲车"
+					type = light_tank_chassis_0
+					parent_version = 0
+					allow_without_tech = yes #Makes no difference since tech is granted above, but makes tooltip shorter and less confusing
+					modules = {
+						main_armament_slot = tank_heavy_machine_gun
+						turret_type_slot = NOR_rikstanken_turret
+						suspension_type_slot = tank_wheeled_suspension
+						armor_type_slot = NOR_tank_rikstanken_armor
+						engine_type_slot = tank_gasoline_engine
+						special_type_slot_1 = empty
+					}
+					upgrades = {
+						tank_nsb_engine_upgrade = 0
+						tank_nsb_armor_upgrade = 0
+					}
+					icon = "GFX_GER_basic_light_tank_medium"
+					obsolete = yes
+				}
+    create_equipment_variant = {
+					name = "二十年造装甲车"
+					type = light_tank_chassis_0
+					parent_version = 0
+					allow_without_tech = yes #Makes no difference since tech is granted above, but makes tooltip shorter and less confusing
+					modules = {
+						main_armament_slot = tank_heavy_machine_gun
+						turret_type_slot = tank_light_one_man_tank_turret
+						suspension_type_slot = tank_wheeled_suspension
+						armor_type_slot = tank_riveted_armor
+						engine_type_slot = tank_gasoline_engine
+						special_type_slot_1 = empty
+					}
+					upgrades = {
+						tank_nsb_engine_upgrade = 0
+						tank_nsb_armor_upgrade = 1
+					}
+					icon = "GFX_GER_basic_light_tank_medium"
+					obsolete = yes
+				}
+    create_equipment_variant = {
+					name = "二十五年造装甲车"
+					type = light_tank_chassis_1
+					parent_version = 0
+					allow_without_tech = yes #Makes no difference since tech is granted above, but makes tooltip shorter and less confusing
+					modules = {
+						main_armament_slot = tank_heavy_machine_gun
+						turret_type_slot = tank_two_one_man_tank_turret
+						suspension_type_slot = tank_wheeled_suspension
+						armor_type_slot = tank_riveted_armor
+						engine_type_slot = tank_gasoline_engine
+						special_type_slot_1 = armor_skirts
+					}
+					upgrades = {
+						tank_nsb_engine_upgrade = 1
+						tank_nsb_armor_upgrade = 2
+					}
+					icon = "GFX_GER_basic_light_tank_medium"
+					obsolete = no
+				}
+				create_equipment_variant = {
+					name = "二十二年造战斗堡垒"
+					type = heavy_tank_chassis_0
+					parent_version = 0
+					allow_without_tech = yes #Makes no difference since tech is granted above, but makes tooltip shorter and less confusing
+					modules = {
+						main_armament_slot = tank_heavy_cannon
+						turret_type_slot = tank_heavy_two_man_tank_turret
+						suspension_type_slot = tank_interleaved_suspension
+						armor_type_slot = tank_riveted_armor
+						engine_type_slot = tank_gasoline_engine
+						special_type_slot_1 = armor_skirts
+                        special_type_slot_2 = secondary_turret_hmg
+                        special_type_slot_3 = secondary_turret_small_cannon
+                        special_type_slot_4 = secondary_turret_small_cannon
+						special_type_slot_5 = secondary_turret_hmg
+					}
+					upgrades = {
+						tank_nsb_engine_upgrade = 1
+						tank_nsb_armor_upgrade = 0
+					}
+					icon = "GFX_GER_basic_light_tank_medium"
+					obsolete = no
+				}
+    create_equipment_variant = {
+					name = "十七年造战斗堡垒"
+					type = heavy_tank_chassis_0
+					parent_version = 0
+					allow_without_tech = yes #Makes no difference since tech is granted above, but makes tooltip shorter and less confusing
+					modules = {
+						main_armament_slot = tank_heavy_cannonn
+						turret_type_slot = tank_heavy_fixed_superstructure_turret
+						suspension_type_slot = tank_bogie_suspension
+						armor_type_slot = tank_riveted_armor
+						engine_type_slot = tank_gasoline_engine
+						special_type_slot_1 = secondary_turret_hmg
+                        special_type_slot_2 = secondary_turret_hmg
+                        special_type_slot_3 = secondary_turret_small_cannon
+                        special_type_slot_4 = secondary_turret_small_cannon
+					}
+					upgrades = {
+						tank_nsb_engine_upgrade = 1
+						tank_nsb_armor_upgrade = 0
+					}
+					icon = "GFX_GER_basic_light_tank_medium"
+					obsolete = yes
+				}
+	
+    set_stability = 0.5
+    set_war_support = 0.1
+    set_convoys = 32
+    set_research_slots = 3
+}
+
+
+
+146.1.1={
+    oob = "REN_176"
+    add_ideas = {
+		free_trade
+		xianzhiguowaimeiti
+		zhongshuishou
+		gongyeguo
+		diwenmang
+		banzhongzupingdeng
+		yizhanhou
+		daxingshebei
+		songsanguankongrunei
+        
+    }
+    set_politics = {
+    	ruling_party = baoshou
+    	election_frequency = 48
+    	elections_allowed = no
+    }
+    set_popularities = {
+       genming = 0
+       xiakeshang = 5
+       jijingailiang = 10
+       baoshougailiang = 20
+       baoshou = 30
+       diguo = 25
+       huanxiang = 10
+       yibian = 0
+    }
+    
+}

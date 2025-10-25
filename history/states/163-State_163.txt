@@ -1,0 +1,29 @@
+state={
+	id=163
+	name="STATE_163"
+	provinces={
+		357 1147 1586 1998 2613 3111 3535 3647 4358 4482 4818 5619 5970 6157 9087 9150 9160 9198 9211 9244 9304 9315 
+	}
+	manpower=1320000
+	buildings_max_level_factor=1.000
+		state_category=large_town
+		local_supplies=0.000
+		resources={
+			steel=8 #钢铁
+			tungsten = 0 #钨
+			chromium = 4 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = BSL
+		add_core_of =BSL
+		buildings = {
+			infrastructure = 3
+			air_base = 0
+			arms_factory = 3
+			industrial_complex = 2
+		}
+	}
+}

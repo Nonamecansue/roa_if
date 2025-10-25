@@ -1,0 +1,29 @@
+state={
+	id=121
+	name="STATE_121"
+	provinces={
+		529 734 2087 2268 3056 3071 3446 4025 5036 6133 6219 6527 8661 8677 8721 8725 8739 8819 8865 
+	}
+	manpower=1303000
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = UUZ
+		add_core_of =UUZ
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

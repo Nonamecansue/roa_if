@@ -1,0 +1,30 @@
+state={
+	id=133
+	name="STATE_133"
+	provinces={
+		267 3464 3682 3740 4556 5199 5546 5726 5946 6051 6090 6707 6849 6851 7233 7403 8638 8652 8706 8707 8728 8729 8761 8772 8784 8813 8868 8878 8887 8910 
+	}
+	manpower=1082000
+	buildings_max_level_factor=1.000
+		state_category=rural
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 4 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	local_supplies=0.000
+	history = {
+		owner = XFS
+		add_core_of = XFS
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 1
+		}
+	}
+}

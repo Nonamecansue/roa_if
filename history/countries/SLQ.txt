@@ -1,0 +1,59 @@
+﻿capital = 499
+
+recruit_character = SLQ_lunasa
+recruit_character = SLQ_lunasa_leader
+
+146.1.1 = {
+    set_technology = { 
+        #步兵装备
+        infantry_weapons = 1
+
+        #装甲
+
+        #火炮
+        gw_artillery = 1
+
+        #支援装备
+        tech_support = 1
+        tech_engineers = 1
+
+        #建造
+        construction1 = 1
+        
+    }
+    set_stability = 0.5
+    set_war_support = 0.05
+    set_convoys = 32
+    set_research_slots = 3
+}
+
+
+
+146.1.1={
+    oob = "SLQ_176"
+    add_ideas = {
+        free_trade
+        dishuishou
+        songsanguankongrunei
+        ziyouxuanju
+        chubugongyehua
+        yizhanhou
+        xiaoxingshebei
+        
+    }
+    set_politics = {
+    	ruling_party = jijingailiang
+    	election_frequency = 48
+    	elections_allowed = no
+    }
+    set_popularities = {
+       genming = 10
+       xiakeshang = 10
+       jijingailiang = 40
+       baoshougailiang = 20
+       baoshou = 10
+       diguo = 10
+       huanxiang = 0
+       yibian = 0
+    }
+}

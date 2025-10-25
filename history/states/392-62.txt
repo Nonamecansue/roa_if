@@ -1,0 +1,29 @@
+state={
+	id=392
+	name="STATE_392"
+	provinces={
+		1934 2671 3662 4778 4954 5019 5453 7313 7623 8679 8685 8710 8734 8766 
+	}
+	manpower=1082000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten =3 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=1 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = SHO
+		add_core_of = SHO
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 1
+			industrial_complex = 0
+		}
+	}
+}

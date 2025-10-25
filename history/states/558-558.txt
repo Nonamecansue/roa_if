@@ -1,0 +1,29 @@
+state={
+	id=558
+	name="STATE_558"
+	provinces={
+		966 1782 2316 3564 4336 6009 7276 8980 8998 9012 9025 9028 9044 9069 9073 9099 9102 9114 9121 
+	}
+	manpower=1480000
+	buildings_max_level_factor=1.000
+		state_category=town
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 2 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = TGD
+		add_core_of = TGD
+		buildings = {
+			infrastructure = 3
+			air_base = 0
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+}

@@ -1,0 +1,29 @@
+state={
+	id=323
+	name="STATE_323"
+	provinces={
+		285 348 393 991 1061 1103 1145 1798 1873 1980 2207 2834 3217 3561 3692 4997 5020 5379 5623 5795 6211 6545 6656 6739 6901 6935 7543 11482 11492 11497 11499 11527 11541 11542 11556 11561 11577 11580 11583 11590 11592 
+	}
+        manpower=1020000
+        buildings_max_level_factor=1.000
+		state_category=small_island
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+		history = {
+			owner = YYT
+			add_core_of = YYT
+			buildings = {
+				infrastructure = 1
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+}

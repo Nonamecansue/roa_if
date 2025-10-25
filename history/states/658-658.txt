@@ -1,0 +1,29 @@
+state={
+	id=658
+	name="STATE_658"
+	provinces={
+		1038 1187 1876 3135 4262 4457 5911 6248 11066 11098 11135 11167 11193 11198 
+	}
+	manpower=990800
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 2 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = SBL
+		add_core_of =SBL
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 1
+		}
+	}
+}

@@ -1,0 +1,29 @@
+state={
+	id=23
+	name="STATE_23"
+	provinces={
+		1481 3174 4938 5013 5150 7766 7776 7782 7793 7805 7828 
+	}
+	manpower=932000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = DLD
+		add_core_of =DLD
+		buildings = {
+			infrastructure = 3
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 1
+		}
+	}
+}

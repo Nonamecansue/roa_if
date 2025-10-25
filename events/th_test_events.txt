@@ -1,0 +1,115 @@
+﻿add_namespace = ceshi
+##########事件###########
+country_event = { #军变
+	id = ceshi.1
+	title = ceshi.1.t
+	desc = ceshi.1.d
+
+	# major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = ceshi.1.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base = 70
+		}
+		TGD = {
+		set_country_flag = ceshi_zhengbianchenggong
+		set_country_flag = ceshi_xuanjujieshu
+		set_cosmetic_tag = TGD_ghg
+		add_stability = 0.5
+		}
+		set_country_flag = ceshi_zhengbianchenggong
+		set_country_flag = ceshi_xuanjujieshu
+		set_cosmetic_tag = TGD_ghg
+		
+		
+		
+
+		
+			
+
+	}
+}
+country_event = { #东南测试
+	id = ceshi.2
+	title = ceshi.2.t
+	desc = ceshi.2.d
+
+	# major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = ceshi.2.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base = 70
+		}
+		SYG = {
+			declare_war_on = {
+				    target = LLH
+				    type = annex_everything
+			}
+			declare_war_on = {
+				    target = ZYD
+				    type = annex_everything
+			}
+			declare_war_on = {
+				    target = SXL
+				    type = annex_everything
+			}
+
+		}
+		
+		
+		
+
+		
+			
+
+	}
+}
+country_event = { #东南测试2
+	id = ceshi.3
+	title = ceshi.3.t
+	desc = ceshi.3.d
+
+	# major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = ceshi.3.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base = 70
+		}
+		NYS = {
+			declare_war_on = {
+				    target = SXL
+				    type = annex_everything
+			}
+			set_country_flag = NYS_qiangduoSXLtudi
+
+		}
+		
+		
+		
+
+		
+			
+
+	}
+}

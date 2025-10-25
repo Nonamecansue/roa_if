@@ -1,0 +1,29 @@
+state={
+	id=284
+	name="STATE_284"
+	provinces={
+		1141 1260 1558 1982 2057 2818 3168 3621 3695 4372 4408 4501 4531 4640 5069 5158 5219 6333 6790 7107 7307 7535 11050 11090 11145 11170 11185 11215 
+	}
+	manpower=1332000
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = WZD
+		add_core_of =WZD
+		buildings = {
+			infrastructure = 1
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

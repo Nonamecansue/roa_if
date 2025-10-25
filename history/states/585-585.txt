@@ -1,0 +1,29 @@
+state={
+	id=585
+	name="STATE_585"
+	provinces={
+		220 702 1758 2429 4673 5662 5889 6100 9544 9551 9589 9596 9654 9662 9701 
+	}
+	manpower=1992000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 3 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = LZY
+		add_core_of = LZY
+		buildings = {
+			infrastructure =2
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 2
+		}
+	}
+}

@@ -1,0 +1,29 @@
+state={
+	id=98
+	name="STATE_98"
+	provinces={
+		487 1175 1227 1458 1731 1865 2219 2357 2374 2381 2596 2992 2997 4107 4463 4541 4742 6583 7058 7130 7238 7490 7559 8208 8354 8382 8422 8423 8426 8467 8578 
+	}
+	manpower=1000000
+	state_category=small_island
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = HHG
+		add_core_of =HHG
+		buildings = {
+			infrastructure = 3
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

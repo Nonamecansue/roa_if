@@ -1,0 +1,29 @@
+state={
+	id=33
+	name="STATE_33"
+	provinces={
+		137 142 168 1108 1382 2507 4196 4697 5044 5315 5768 6125 6168 6658 7558 7775 7783 7786 7796 7817 7829 7840 7856 7866 7888 7893 7921 
+	}
+	manpower=203200
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+	resources={
+		steel=3 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = JIU
+		add_core_of = JIU
+		buildings = {
+			infrastructure = 1
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

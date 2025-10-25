@@ -1,0 +1,29 @@
+state={
+	id=154
+	name="STATE_154"
+	provinces={
+		82 1449 2230 3058 6029 6098 6284 6848 7047 7456 8900 8929 8962 9033 9048 
+	}
+	manpower=992300
+	buildings_max_level_factor=1.000
+		state_category=rural
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = BSL
+		add_core_of =BSL
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 1
+			industrial_complex = 0
+		}
+	}
+}

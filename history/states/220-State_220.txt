@@ -1,0 +1,29 @@
+state={
+	id=220
+	name="STATE_220"
+	provinces={
+		1329 2030 2066 3091 3206 3380 4297 4827 4953 5636 5927 6071 9722 9790 9836 9923 9924 9953 9987 10007 
+	}
+	manpower=1002000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = MLS
+		add_core_of = MLS
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 1
+			industrial_complex = 0
+		}
+	}
+}

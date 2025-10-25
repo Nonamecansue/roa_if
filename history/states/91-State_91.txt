@@ -1,0 +1,29 @@
+state={
+	id=91
+	name="STATE_91"
+	provinces={
+		605 1663 1747 1792 1904 2566 3059 4771 4807 5309 6755 7264 7519 8392 8403 8429 8430 8457 8491 8520 8587 8595 8621 
+	}
+        manpower=523000
+        buildings_max_level_factor=1.000
+		state_category=small_island
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+		history = {
+			owner = XFS
+			add_core_of = XFS
+			buildings = {
+				infrastructure = 1
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+}

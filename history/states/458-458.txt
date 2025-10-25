@@ -1,0 +1,29 @@
+state={
+	id=458
+	name="STATE_458"
+	provinces={
+		383 462 738 1194 1430 2261 2727 3581 4113 4254 5458 6115 6430 6637 7162 11406 11424 11433 11455 11493 11507 11516 11558 
+	}
+	manpower=1002000
+	buildings_max_level_factor=1.000
+		state_category=rural
+		local_supplies=0.000
+		resources={
+			steel=8 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = LMG
+		add_core_of = LMG
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 1
+			industrial_complex = 0
+		}
+	}
+}

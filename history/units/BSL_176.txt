@@ -1,0 +1,130 @@
+﻿
+division_template = {
+	name = "森林常规队"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+		winter_logistics_support = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "民兵小队"
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+	}
+	support = {
+		winter_logistics_support = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division = {
+		name = "森林常规队"
+		location = 1492
+		division_template = "森林常规队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "森林常规队"
+		location = 7461
+		division_template = "森林常规队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "森林常规队"
+		location = 3111
+		division_template = "森林常规队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "森林常规队"
+		location = 7103
+		division_template = "森林常规队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "森林常规队"
+		location = 9319
+		division_template = "森林常规队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "森林常规队"
+		location = 3594
+		division_template = "森林常规队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "森林常规队"
+		location = 6029
+		division_template = "森林常规队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "民兵小队"
+		location = 1492
+		division_template = "民兵小队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "民兵小队"
+		location = 7461
+		division_template = "民兵小队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "民兵小队"
+		location = 3111
+		division_template = "民兵小队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "民兵小队"
+		location = 7103
+		division_template = "民兵小队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "民兵小队"
+		location = 9319
+		division_template = "民兵小队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "民兵小队"
+		location = 3594
+		division_template = "民兵小队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "民兵小队"
+		location = 6029
+		division_template = "民兵小队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+
+}

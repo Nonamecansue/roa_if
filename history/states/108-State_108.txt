@@ -1,0 +1,29 @@
+state={
+	id=108
+	name="STATE_108"
+	provinces={
+		57 466 653 1212 2276 3196 3537 4041 6294 8528 8530 8632 8639 
+	}
+	manpower=158300
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+	resources={
+		steel=2 #钢铁
+		tungsten = 2 #钨
+		chromium = 2 #铬
+		rubber=0 #橡胶
+		aluminium=2 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = SHO
+		add_core_of = SHO
+		buildings = {
+			infrastructure = 0
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

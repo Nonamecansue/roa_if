@@ -1,0 +1,29 @@
+state={
+	id=452
+	name="STATE_452"
+	provinces={
+		149 1165 1348 2167 2322 2643 4233 6592 10348 10388 10396 10467 10562 
+	}
+	manpower=1220000
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = DJT
+		add_core_of = DJT
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

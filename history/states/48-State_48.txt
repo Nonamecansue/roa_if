@@ -1,0 +1,29 @@
+state={
+	id=48
+	name="STATE_48"
+	provinces={
+		361 1008 1825 2071 2150 2495 2620 2701 3234 4009 5340 6185 6215 6471 6776 7079 7963 7970 8035 8066 8076 
+	}
+	manpower=802000
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = DYJ
+		add_core_of = DYJ
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 1
+			industrial_complex = 0
+		}
+	}
+}

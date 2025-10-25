@@ -1,0 +1,28 @@
+state={
+	id=400
+	name="STATE_400"
+	provinces={
+		3212 4795 5445 7087 
+	}
+	manpower=1768000
+	state_category=large_town
+	llocal_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = LLH
+		add_core_of = LLH
+		buildings = {
+			infrastructure = 3
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 3
+		}
+	}
+}

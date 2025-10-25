@@ -1,0 +1,105 @@
+﻿division_template = {
+	name = "群山卫队"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		
+	}
+	support = {
+	}
+}
+
+division_template = {
+	name = "山童特战队"
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+	}
+	support = {
+	}
+}
+
+units = {
+	division = {
+		name = "山童特战队"
+		location = 2615
+		division_template = "山童特战队"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "群山卫队"
+		location = 2615
+		division_template = "群山卫队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "群山卫队"
+		location = 9856
+		division_template = "群山卫队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "群山卫队"
+		location = 2879
+		division_template = "群山卫队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "群山卫队"
+		location = 4923
+		division_template = "群山卫队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "群山卫队"
+		location = 4773
+		division_template = "群山卫队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "群山卫队"
+		location = 4684
+		division_template = "群山卫队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "群山卫队"
+		location = 4124
+		division_template = "群山卫队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "群山卫队"
+		location = 9409
+		division_template = "群山卫队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "群山卫队"
+		location = 6523
+		division_template = "群山卫队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "群山卫队"
+		location = 9697
+		division_template = "群山卫队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+
+}

@@ -1,0 +1,30 @@
+state={
+	id=420
+	name="STATE_420"
+	provinces={
+		306 472 2370 3712 5300 6450 8411 8412 8439 8455 8484 8517 
+	}
+	manpower=10200
+	impassable = yes
+	buildings_max_level_factor=1.000
+	state_category=tiny_island
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten =0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = SHO
+		add_core_of = SHO
+		buildings = {
+			infrastructure = 0
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

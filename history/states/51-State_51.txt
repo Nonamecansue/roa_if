@@ -1,0 +1,29 @@
+state={
+	id=51
+	name="STATE_51"
+	provinces={
+		286 542 751 772 836 851 1100 1152 1328 1638 1698 1763 1867 1893 1976 2026 2388 2458 2750 2982 3006 3089 3103 3267 3302 3355 3452 3612 3811 4030 4460 4478 4493 4979 5077 5255 5596 5661 6081 6151 6644 6831 7219 7220 7278 7433 7514 7955 7992 8063 8124 8173 8203 
+	}
+	manpower=1832000
+	buildings_max_level_factor=1.000
+	state_category=tiny_island
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = YLQ
+		add_core_of = YLQ
+		buildings = {
+			infrastructure = 0
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

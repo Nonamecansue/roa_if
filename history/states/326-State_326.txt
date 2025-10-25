@@ -1,0 +1,29 @@
+state={
+	id=326
+	name="STATE_326"
+	provinces={
+		13 54 557 600 655 792 805 901 1050 1249 1283 1402 1625 1674 1720 1762 1795 1890 2048 2204 2417 2501 2718 2761 2800 2898 2930 3274 3351 3445 3481 3574 3607 3685 3831 3832 3924 4003 4312 4399 4821 4856 4860 5577 5585 5745 5756 6247 6298 6318 6480 6741 6886 7018 7075 7413 7620 11478 11490 11509 11517 11524 11532 11546 11549 11560 11569 11571 11572 11573 11576 11579 11582 11596 11601 11602 11603 11605 11607 11608 11609 11613 11615 11616 11618 
+	}
+        manpower=1082000
+        buildings_max_level_factor=1.000
+		state_category=small_island
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+		history = {
+			owner = YYT
+			add_core_of = YYT
+			buildings = {
+				infrastructure = 1
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+}

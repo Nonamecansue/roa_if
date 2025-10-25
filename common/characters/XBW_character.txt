@@ -1,0 +1,69 @@
+characters={
+	XBW_xrw ={
+		name = XBW_xrw
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+				small="gfx/leaders/leader_unknown.dds"
+			}
+			army = {
+				large="gfx/leaders/leader_unknown.dds"
+				small="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		corps_commander = {
+			traits = { th_original_character }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 5
+		}
+		#advisor = {
+			#slot = character_coop
+			#idea_token = GYK_yuma
+			#name = GYK_yuma
+			#cost = 200
+			#modifier = {
+			#	army_defence_factor = 0.1
+			#}
+			#ai_will_do = {
+			#	factor = 1
+			#}
+		#}
+	}
+	XBW_xrw_leader ={
+		name = XBW_xrw_leader
+
+		portraits={
+			civilian={
+				large="gfx/leaders/leader_unknown.dds"
+				small="gfx/leaders/leader_unknown.dds"
+			}
+			army = {
+				large="gfx/leaders/leader_unknown.dds"
+				small="gfx/leaders/leader_unknown.dds"
+			}
+		}
+		country_leader={
+			ideology=jijingailiang_type
+			id=-1
+		}
+		country_leader={
+			ideology=baoshougailiang_type
+			id=-1
+		}
+		country_leader={
+			ideology=baoshou_type
+			id=-1
+		}
+		country_leader={
+			ideology=diguo_type
+			id=-1
+		}
+		country_leader={
+			ideology=huanxiang_type
+			id=-1
+		}
+	}
+}

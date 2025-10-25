@@ -1,0 +1,29 @@
+state={
+	id=671
+	name="STATE_671"
+	provinces={
+		725 886 1683 2131 3562 4990 5131 8716 8717 8733 8783 8802 
+	}
+	manpower=1782000
+	buildings_max_level_factor=1.000
+		state_category=town
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = XFS
+		add_core_of = XFS
+		buildings = {
+			infrastructure = 3
+			air_base = 0
+			arms_factory = 2
+			industrial_complex = 1
+		}
+	}
+}

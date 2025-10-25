@@ -1,0 +1,29 @@
+state={
+	id=604
+	name="STATE_604"
+	provinces={
+		5197 9552 
+	}
+	manpower=3120020
+	buildings_max_level_factor=1.000
+		state_category=large_city
+		local_supplies=0.000
+		resources={
+			steel=8 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = HCY
+		add_core_of =HCY
+		buildings = {
+			infrastructure = 5
+			air_base = 1
+			arms_factory = 2
+			industrial_complex = 3
+		}
+	}
+}

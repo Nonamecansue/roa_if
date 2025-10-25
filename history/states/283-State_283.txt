@@ -1,0 +1,29 @@
+state={
+	id=283
+	name="STATE_283"
+	provinces={
+		319 363 478 660 863 1356 1978 3672 4311 7581 10593 10694 10758 10912 10939 
+	}
+	manpower=3786550
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+	resources={
+		steel=12 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = REN
+		add_core_of = REN
+		buildings = {
+			infrastructure = 5
+			air_base = 0
+			arms_factory = 4
+			industrial_complex = 4
+		}
+	}
+}

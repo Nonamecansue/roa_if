@@ -1,0 +1,29 @@
+state={
+	id=473
+	name="STATE_473"
+	provinces={
+		2751 3269 3760 4204 7218 9725 9758 9858 
+	}
+	manpower=1000230
+	buildings_max_level_factor=1.000
+		state_category=rural
+		local_supplies=0.000
+		resources={
+			steel=20 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = MYJ
+		add_core_of = MYJ
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

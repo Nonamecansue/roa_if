@@ -1,0 +1,29 @@
+state={
+	id=628
+	name="STATE_628"
+	provinces={
+		116 974 1513 1547 1701 1875 2858 4426 5366 5910 6710 6933 6944 7309 10157 10177 10256 10290 10378 
+	}
+	manpower=1120000
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = QBL
+		add_core_of =QBL
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

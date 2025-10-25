@@ -1,0 +1,138 @@
+ideas = {
+
+	junshi = { 
+		law = yes
+		jiejieqian = {
+			default = yes
+									
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no
+			}
+			level = 1
+			cost = 1
+			cancel_if_invalid = no
+			removal_cost = -1
+			modifier = {
+				
+			}
+			research_bonus = {
+						
+		    }
+			
+		}
+
+		yizhanqian = {
+									
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no
+			}
+			level = 1
+			cost = 1
+			cancel_if_invalid = no
+			removal_cost = -1
+			modifier = {
+				
+			}
+			research_bonus = {
+						
+		    }
+			
+		}
+
+		yizhanzhong = {
+									
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no
+			}
+			level = 1
+			cost = 1
+			cancel_if_invalid = no
+			removal_cost = -1
+			modifier = {
+				
+			}
+			research_bonus = {
+						
+		    }
+			
+		}
+
+		yizhanhou = {
+									
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no
+			}
+			level = 1
+			cost = 1
+			cancel_if_invalid = no
+			removal_cost = -1
+			modifier = {
+				
+			}
+			research_bonus = {
+						
+		    }
+			
+		}
+
+		banxiandaihua = {
+									
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no
+			}
+			level = 1
+			cost = 1
+			cancel_if_invalid = no
+			removal_cost = -1
+			modifier = {
+				
+			}
+			research_bonus = {
+						
+		    }
+			
+		}
+
+		xiandaihua = {
+									
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no
+			}
+			level = 1
+			cost = 1
+			cancel_if_invalid = no
+			removal_cost = -1
+			modifier = {
+				
+			}
+			research_bonus = {
+						
+		    }
+			
+		}
+	}
+}

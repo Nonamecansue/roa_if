@@ -1,0 +1,29 @@
+state={
+	id=170
+	name="STATE_170"
+	provinces={
+		1172 1319 1353 1436 1491 3004 3183 4275 5261 5264 5494 6665 6683 7602 9216 9219 9310 9349 
+	}
+	manpower=1083000
+	buildings_max_level_factor=1.000
+		state_category=rural
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 3 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = MLS
+		add_core_of = MLS
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 1
+			industrial_complex = 0
+		}
+	}
+}

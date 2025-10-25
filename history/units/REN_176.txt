@@ -1,0 +1,529 @@
+﻿
+
+division_template = {
+	name = "帝国常规编制"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "帝国辅助部队"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "装甲车突击队"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		light_armor = { x = 1 y = 2 }
+		light_armor = { x = 1 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "重甲突破军"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		heavy_armor = { x = 1 y = 0 }
+		heavy_armor = { x = 1 y = 1 }
+		heavy_armor = { x = 1 y = 2 }
+		heavy_armor = { x = 1 y = 3 }
+	}
+	support = {
+		light_tank_recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	division = {
+		name = "帝国常规编制"
+		location = 5347
+		division_template = "帝国常规编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国常规编制"
+		location = 5347
+		division_template = "帝国常规编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国常规编制"
+		location = 10206
+		division_template = "帝国常规编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国常规编制"
+		location = 5886
+		division_template = "帝国常规编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国常规编制"
+		location = 10207
+		division_template = "帝国常规编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国常规编制"
+		location = 4401
+		division_template = "帝国常规编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国常规编制"
+		location = 10462
+		division_template = "帝国常规编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国常规编制"
+		location = 6579
+		division_template = "帝国常规编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国常规编制"
+		location = 959
+		division_template = "帝国常规编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国常规编制"
+		location = 5051
+		division_template = "帝国常规编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国常规编制"
+		location = 10509
+		division_template = "帝国常规编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国常规编制"
+		location = 6839
+		division_template = "帝国常规编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国常规编制"
+		location = 103
+		division_template = "帝国常规编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国常规编制"
+		location = 363
+		division_template = "帝国常规编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国常规编制"
+		location = 10683
+		division_template = "帝国常规编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国常规编制"
+		location = 10851
+		division_template = "帝国常规编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国常规编制"
+		location = 4383
+		division_template = "帝国常规编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国常规编制"
+		location = 10620
+		division_template = "帝国常规编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国常规编制"
+		location = 10770
+		division_template = "帝国常规编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国常规编制"
+		location = 10738
+		division_template = "帝国常规编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国常规编制"
+		location = 4054
+		division_template = "帝国常规编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国常规编制"
+		location = 10868
+		division_template = "帝国常规编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国常规编制"
+		location = 7003
+		division_template = "帝国常规编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国常规编制"
+		location = 7109
+		division_template = "帝国常规编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国常规编制"
+		location = 4616
+		division_template = "帝国常规编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国常规编制"
+		location = 3630
+		division_template = "帝国常规编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国常规编制"
+		location = 11015
+		division_template = "帝国常规编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国常规编制"
+		location = 6625
+		division_template = "帝国常规编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国常规编制"
+		location = 1848
+		division_template = "帝国常规编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国常规编制"
+		location = 5369
+		division_template = "帝国常规编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国常规编制"
+		location = 5235
+		division_template = "帝国常规编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国常规编制"
+		location = 10897
+		division_template = "帝国常规编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国常规编制"
+		location = 1835
+		division_template = "帝国常规编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国常规编制"
+		location = 6388
+		division_template = "帝国常规编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国常规编制"
+		location = 10285
+		division_template = "帝国常规编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国常规编制"
+		location = 10667
+		division_template = "帝国常规编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国常规编制"
+		location = 6598
+		division_template = "帝国常规编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国常规编制"
+		location = 6368
+		division_template = "帝国常规编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国常规编制"
+		location = 155
+		division_template = "帝国常规编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国常规编制"
+		location = 1579
+		division_template = "帝国常规编制"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "帝国辅助部队"
+		location = 917
+		division_template = "帝国辅助部队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国辅助部队"
+		location = 10427
+		division_template = "帝国辅助部队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国辅助部队"
+		location = 4606
+		division_template = "帝国辅助部队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国辅助部队"
+		location = 2697
+		division_template = "帝国辅助部队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国辅助部队"
+		location = 4110
+		division_template = "帝国辅助部队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国辅助部队"
+		location = 7564
+		division_template = "帝国辅助部队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国辅助部队"
+		location = 3795
+		division_template = "帝国辅助部队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国辅助部队"
+		location = 11203
+		division_template = "帝国辅助部队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国辅助部队"
+		location = 4203
+		division_template = "帝国辅助部队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "帝国辅助部队"
+		location = 1579
+		division_template = "帝国辅助部队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "装甲车突击队"
+		location = 4383
+		division_template = "装甲车突击队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "装甲车突击队"
+		location = 10738
+		division_template = "装甲车突击队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "装甲车突击队"
+		location = 10620
+		division_template = "装甲车突击队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "装甲车突击队"
+		location = 10770
+		division_template = "装甲车突击队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "装甲车突击队"
+		location = 10683
+		division_template = "装甲车突击队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "装甲车突击队"
+		location = 10851
+		division_template = "装甲车突击队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "装甲车突击队"
+		location = 10868
+		division_template = "装甲车突击队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "装甲车突击队"
+		location = 4054
+		division_template = "装甲车突击队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "装甲车突击队"
+		location = 4110
+		division_template = "装甲车突击队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "装甲车突击队"
+		location = 5347
+		division_template = "装甲车突击队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "重甲突破军"
+		location = 4383
+		division_template = "重甲突破军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "重甲突破军"
+		location = 10738
+		division_template = "重甲突破军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "重甲突破军"
+		location = 363
+		division_template = "重甲突破军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "重甲突破军"
+		location = 10770
+		division_template = "重甲突破军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	
+	
+}

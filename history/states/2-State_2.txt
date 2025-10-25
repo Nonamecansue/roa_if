@@ -1,0 +1,29 @@
+state={
+	id=2
+	name="STATE_2"
+	provinces={
+		107 721 1331 1339 1626 2019 2262 2427 2631 2650 2664 2863 3042 3615 3732 3758 3825 3874 4916 5173 5718 5814 6287 6826 8240 8272 8276 8281 8296 8313 8363 8365 
+	}
+	manpower=1000000
+	state_category=small_island
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = HHG
+		add_core_of =HHG
+		buildings = {
+			infrastructure = 3
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

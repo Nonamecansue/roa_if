@@ -1,0 +1,28 @@
+state={
+	id=643
+	name="STATE_643"
+	provinces={
+		2394 3902 5559 6612 7205 9853 
+	}
+	manpower=1983000
+	state_category=town
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = SXL
+		add_core_of =SXL
+		buildings = {
+			infrastructure = 3
+			air_base = 0
+			arms_factory = 2
+			industrial_complex = 1
+		}
+	}
+}

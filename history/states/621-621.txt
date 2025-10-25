@@ -1,0 +1,29 @@
+state={
+	id=621
+	name="STATE_621"
+	provinces={
+		6599 6737 9490 9536 9555 
+	}
+	manpower=720870
+	buildings_max_level_factor=1.000
+		state_category=town
+		local_supplies=0.000
+		resources={
+			steel=12 #钢铁
+			tungsten = 3 #钨
+			chromium = 4 #铬
+			rubber=0 #橡胶
+			aluminium=4 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = HLD
+		add_core_of =HLD
+		buildings = {
+			infrastructure = 4
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 1
+		}
+	}
+}

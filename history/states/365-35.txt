@@ -1,0 +1,30 @@
+state={
+	id=365
+	name="STATE_365"
+	provinces={
+		108 190 563 832 1549 1684 1962 1963 4682 6227 6366 6895 9011 9038 9062 9125 9158 
+	}
+	manpower=1010000
+	buildings_max_level_factor=1.000
+		state_category=rural
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=3 #铝
+			oil = 0 #石油
+		}
+	local_supplies=0.000
+	history = {
+		owner = WLT
+		add_core_of = WLT
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 1
+			industrial_complex = 0
+		}
+	}
+}

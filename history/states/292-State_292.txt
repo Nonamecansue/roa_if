@@ -1,0 +1,29 @@
+state={
+	id=292
+	name="STATE_292"
+	provinces={
+		404 892 2673 3024 3090 3392 4157 6928 7380 7513 7577 10885 10954 11087 
+	}
+	manpower=1930000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = DJT
+		add_core_of =DJT
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 1
+			industrial_complex = 0
+		}
+	}
+}

@@ -1,0 +1,30 @@
+state={
+	id=499
+	name="STATE_499"
+	provinces={
+		846 861 6031 7390 10352 10382 
+	}
+	manpower=3890500
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 2 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = SLQ
+		add_core_of = SLQ
+		buildings = {
+			infrastructure = 4
+			air_base = 0
+			arms_factory = 3
+			industrial_complex = 2
+			7390={ naval_base = 2}
+		}
+	}
+}

@@ -1,0 +1,29 @@
+state={
+	id=72
+	name="STATE_72"
+	provinces={
+		675 971 1553 2690 2828 3116 3759 5167 5961 6114 8218 8236 8266 8316 
+	}
+	manpower=932000
+	buildings_max_level_factor=1.000
+		state_category=small_island
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = ZZD
+		add_core_of =ZZD
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

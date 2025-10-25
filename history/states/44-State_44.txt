@@ -1,0 +1,29 @@
+state={
+	id=44
+	name="STATE_44"
+	provinces={
+		645 952 1431 1510 1755 5230 5357 7917 
+	}
+	manpower=1832000
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 3 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = YLQ
+		add_core_of =YLQ
+		buildings = {
+			infrastructure = 1
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

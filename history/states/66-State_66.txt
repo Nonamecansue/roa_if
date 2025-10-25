@@ -1,0 +1,29 @@
+state={
+	id=66
+	name="STATE_66"
+	provinces={
+		1150 1677 2243 3559 4345 4706 4880 5059 5533 5995 8084 8094 8133 8149 8170 8171 8180 
+	}
+	manpower=1220000
+	state_category=small_island
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=1 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = UUZ
+		add_core_of = UUZ
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

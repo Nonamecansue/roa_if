@@ -1,0 +1,28 @@
+state={
+	id=415
+	name="STATE_415"
+	provinces={
+		1004 1641 4923 6497 9972 10013 
+	}
+	manpower=1752000
+	state_category=large_town
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 3 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = STH
+		add_core_of = STH
+		buildings = {
+			infrastructure = 3
+			air_base = 0
+			arms_factory = 2
+			industrial_complex = 2
+		}
+	}
+}

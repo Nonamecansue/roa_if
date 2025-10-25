@@ -1,0 +1,54 @@
+﻿capital = 454
+
+recruit_character = YYT_yonglin
+recruit_character = YYT_yonglin_leader
+
+146.1.1 = {
+    set_technology = { 
+        #步兵装备
+        infantry_weapons = 1
+
+        #建造
+        construction1 = 1
+        
+    }
+    set_stability = 0.5
+    set_war_support = 0.05
+    set_convoys = 32
+    set_research_slots = 3
+}
+
+
+
+146.1.1={
+    oob = "YYT_176"
+    add_ideas = {
+        disarmed_nation
+        isolation
+        closed_economy
+        chunnongye
+        qianhuanxiangxiang
+        
+    }
+    set_politics = {
+    	ruling_party = huanxiang
+    	election_frequency = 48
+    	elections_allowed = no
+    }
+    set_popularities = {
+       genming = 5
+       xiakeshang = 5
+       jijingailiang = 5
+       baoshougailiang = 5
+       baoshou = 20
+       diguo = 5
+       huanxiang = 50
+       yibian = 5
+    }
+    LMG = {
+        kuilei4 = yes
+    }
+    MHD = {
+        kuilei4 = yes
+    }
+}

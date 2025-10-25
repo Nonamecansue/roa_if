@@ -1,0 +1,29 @@
+state={
+	id=8
+	name="STATE_8"
+	provinces={
+		1352 2159 2364 4576 7675 7676 7688 7699 7710 7727 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = DLD
+		add_core_of =DLD
+		buildings = {
+			infrastructure = 3
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

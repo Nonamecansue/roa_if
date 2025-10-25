@@ -1,0 +1,30 @@
+state={
+	id=602
+	name="STATE_602"
+	provinces={
+		51 517 1871 2685 2894 2995 3119 5332 5793 6087 7036 7609 10071 10114 10143 10154 10224 10227 
+	}
+	manpower=2013000
+	buildings_max_level_factor=1.000
+		state_category=large_town
+		local_supplies=0.000
+		resources={
+			steel=2 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=4 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = HCY
+		add_core_of =HCY
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 2
+			industrial_complex = 0
+			10143={ naval_base = 1}
+		}
+	}
+}

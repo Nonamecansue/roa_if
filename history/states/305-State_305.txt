@@ -1,0 +1,29 @@
+state={
+	id=305
+	name="STATE_305"
+	provinces={
+		715 818 1583 2301 2415 3854 4528 6657 11251 11265 11387 11394 11423 
+	}
+	manpower=912000
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 2 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = SJS
+		add_core_of =SJS
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

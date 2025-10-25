@@ -1,0 +1,29 @@
+state={
+	id=149
+	name="STATE_149"
+	provinces={
+		27 355 1163 1373 1778 1783 2073 2900 2910 2937 4125 4339 5922 6230 7190 8973 9065 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = JYZ
+		add_core_of = JYZ
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

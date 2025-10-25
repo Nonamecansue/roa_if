@@ -1,0 +1,29 @@
+state={
+	id=147
+	name="STATE_147"
+	provinces={
+		151 474 967 1149 2837 4869 5545 6548 6700 9008 9031 9049 9053 9082 9111 9130 9147 
+	}
+	manpower=2083000
+	buildings_max_level_factor=1.000
+		state_category=city
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=3 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = TGD
+		add_core_of = TGD
+		buildings = {
+			infrastructure = 3
+			air_base = 0
+			arms_factory = 3
+			industrial_complex = 1
+		}
+	}
+}

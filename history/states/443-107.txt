@@ -1,0 +1,29 @@
+state={
+	id=443
+	name="STATE_443"
+	provinces={
+		419 513 1679 2332 2461 2675 2758 2948 3367 3517 3809 4104 4294 5124 5262 5469 5656 5772 6256 7467 10215 10349 
+	}
+	manpower=2020000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = GJZ
+		add_core_of =GJZ
+		buildings = {
+			infrastructure = 3
+			air_base = 0
+			arms_factory = 2
+			industrial_complex = 1
+		}
+	}
+}

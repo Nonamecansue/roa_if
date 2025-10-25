@@ -1,0 +1,72 @@
+﻿
+division_template = {
+	name = "外林防卫队"
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+	}
+	support = {
+	}
+}
+
+units = {
+	division = {
+		name = "外林防卫队"
+		location = 960
+		division_template = "外林防卫队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "外林防卫队"
+		location = 9452
+		division_template = "外林防卫队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "外林防卫队"
+		location = 3134
+		division_template = "外林防卫队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "外林防卫队"
+		location = 7218
+		division_template = "外林防卫队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "外林防卫队"
+		location = 9976
+		division_template = "外林防卫队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "外林防卫队"
+		location = 1219
+		division_template = "外林防卫队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "外林防卫队"
+		location = 9641
+		division_template = "外林防卫队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "外林防卫队"
+		location = 3436
+		division_template = "外林防卫队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+
+}

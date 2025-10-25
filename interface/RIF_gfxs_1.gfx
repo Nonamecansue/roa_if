@@ -1,0 +1,192 @@
+spriteTypes = {
+
+	#############New Ideo
+	spriteType = {
+		name = "GFX_ideology_genming_group"
+		texturefile = "gfx/interface/ideologies/revolution.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_genming_nongyegemingzhuyi"
+		texturefile = "gfx/interface/ideologies/nongyegemingzhuyi.png"
+	}	
+	spriteType = {
+		name = "GFX_ideology_genming_gemingzhuyi"
+		texturefile = "gfx/interface/ideologies/gemingzhuyi.png"
+	}	
+	spriteType = {
+		name = "GFX_ideology_genming_geminganbaozhuyi"
+		texturefile = "gfx/interface/ideologies/geminganbaozhuyi.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_genming_quanweigemingzhuyi"
+		texturefile = "gfx/interface/ideologies/quanweigemingzhuyi.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_genming_jijinminzhugeming"
+		texturefile = "gfx/interface/ideologies/jijinminzhugeming.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_genming_gemingjunguozhuyi"
+		texturefile = "gfx/interface/ideologies/gemingjunguozhuyi.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_genming_hongsediguozhuyi"
+		texturefile = "gfx/interface/ideologies/hongsediguozhuyi.png"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_jijingailiang_group"
+		texturefile = "gfx/interface/ideologies/reform.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_jijingailiang_maoyiziyouzhuyi"
+		texturefile = "gfx/interface/ideologies/maoyiziyouzhuyi.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_jijingailiang_jidujijinzhuyi"
+		texturefile = "gfx/interface/ideologies/jidujijinzhuyi.png"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_baoshou_group"
+		texturefile = "gfx/interface/ideologies/isolation.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_baoshou_junzhengfu"
+		texturefile = "gfx/interface/ideologies/isolation_junzhengfu.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_baoshou_junzhuzhuanzhi"
+		texturefile = "gfx/interface/ideologies/jueduijunzhu.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_baoshou_wenguanducai"
+		texturefile = "gfx/interface/ideologies/wenguanducai.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_baoshou_junfa"
+		texturefile = "gfx/interface/ideologies/junfa.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_baoshou_tufei"
+		texturefile = "gfx/interface/ideologies/tufei.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_baoshou_zhiminzhengfu"
+		texturefile = "gfx/interface/ideologies/zhiminzhengfu.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_baoshou_yirenducai"
+		texturefile = "gfx/interface/ideologies/yirenducai.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_baoshou_qiyetongzhi"
+		texturefile = "gfx/interface/ideologies/qiyetongzhi.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_baoshou_guatouzhengzhi"
+		texturefile = "gfx/interface/ideologies/guatouzhengzhi.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_baoshou_guoduzhengfu"
+		texturefile = "gfx/interface/ideologies/guoduzhengfu.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_baoshou_shenquanzhi"
+		texturefile = "gfx/interface/ideologies/shenquanzhi.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_baoshou_guihuashizhimin"
+		texturefile = "gfx/interface/ideologies/guihuashizhimin.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_baoshou_chuantongtizhi"
+		texturefile = "gfx/interface/ideologies/chuantongtizhi.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_baoshou_jianguanzhengfu"
+		texturefile = "gfx/interface/ideologies/jianguanzhengfu.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_baoshou_wuzhengfuzhuangtai"
+		texturefile = "gfx/interface/ideologies/wuzhengfuzhuangtai.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_baoshou_jidubaoshouzhuyi"
+		texturefile = "gfx/interface/ideologies/jidubaoshouzhuyi.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_baoshou_xingdongzhuyi"
+		texturefile = "gfx/interface/ideologies/xingdongzhuyi.png"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_diguo_group"
+		texturefile = "gfx/interface/ideologies/supremacist.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_diguo_guojiazhuyi"
+		texturefile = "gfx/interface/ideologies/guojazhuyi.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_diguo_guojiagemingzhuyi"
+		texturefile = "gfx/interface/ideologies/guojiagemingzhuyi.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_diguo_shenquanfuguzhuyi"
+		texturefile = "gfx/interface/ideologies/shenquanfuguzhuyi.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_diguo_yuanjiaozhizhuyi"
+		texturefile = "gfx/interface/ideologies/yuanjiaozhizhuyi.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_diguo_fuquanzhuyi"
+		texturefile = "gfx/interface/ideologies/fuquanzhuyi.png"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_xiakeshang_group"
+		texturefile = "gfx/interface/ideologies/ihen.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_xiakeshang_huancaoyuanxiakeshang"
+		texturefile = "gfx/interface/ideologies/huancaoyuanxiakeshang.png"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_baoshougailiang_group"
+		texturefile = "gfx/interface/ideologies/conservative.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_baoshougailiang_guatouzhengzhi"
+		texturefile = "gfx/interface/ideologies/guantouzhengzhi_jw.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_baoshougailiang_linshizhengfu"
+		texturefile = "gfx/interface/ideologies/linshizhengfu.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_baoshougailiang_eryuanjunzhulixian"
+		texturefile = "gfx/interface/ideologies/eryuanjunzhulixian.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_baoshougailiang_jiduminzhuzhuyi"
+		texturefile = "gfx/interface/ideologies/jiduminzhuzhuyi.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_baoshougailiang_zhongzubaoshouzhuyi"
+		texturefile = "gfx/interface/ideologies/zhongzubaoshouzhuyi.png"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_huanxiang_group"
+		texturefile = "gfx/interface/ideologies/huanxiangkyo.png"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_yibian_group"
+		texturefile = "gfx/interface/ideologies/yibian.png"
+	}
+	
+}

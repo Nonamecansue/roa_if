@@ -1,0 +1,29 @@
+state={
+	id=238
+	name="STATE_238"
+	provinces={
+		153 1406 1923 1950 2372 2871 2984 3636 4500 4660 5021 5104 7483 10006 10044 10050 10062 10137 10139 10252 
+	}
+	manpower=1002300
+	buildings_max_level_factor=1.000
+		state_category=rural
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = MLS
+		add_core_of =MLS
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 1
+			industrial_complex = 0
+		}
+	}
+}

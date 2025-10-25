@@ -1,0 +1,29 @@
+state={
+	id=586
+	name="STATE_586"
+	provinces={
+		280 1582 4155 4645 4886 5225 6233 9813 9842 9885 9909 9939 9986 
+	}
+	manpower=142000
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = LZY
+		add_core_of = LZY
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

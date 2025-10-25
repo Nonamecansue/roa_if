@@ -1,0 +1,29 @@
+state={
+	id=425
+	name="STATE_425"
+	provinces={
+		3669 7034 9857 9865 9913 
+	}
+	manpower=902300
+	buildings_max_level_factor=1.000
+		state_category=small_island
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = MTJ
+		add_core_of = MTJ
+		buildings = {
+			infrastructure = 1
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

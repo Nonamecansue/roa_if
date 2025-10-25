@@ -1,0 +1,29 @@
+state={
+	id=477
+	name="STATE_477"
+	provinces={
+		259 637 987 3078 3413 3716 5228 5244 5333 5610 6224 6562 7482 9830 9850 9864 9883 9903 9935 9956 
+	}
+	manpower=1420000
+	buildings_max_level_factor=1.000
+		state_category=large_town
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = MLS
+		add_core_of = MLS
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 3
+			industrial_complex = 0
+		}
+	}
+}

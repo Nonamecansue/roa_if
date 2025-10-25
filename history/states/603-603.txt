@@ -1,0 +1,29 @@
+state={
+	id=603
+	name="STATE_603"
+	provinces={
+		796 4571 4772 10008 10037 
+	}
+	manpower=3208000
+	buildings_max_level_factor=1.000
+		state_category=metropolis
+		local_supplies=0.000
+		resources={
+			steel=8 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = XAG
+		add_core_of =XAG
+		buildings = {
+			infrastructure = 4
+			air_base = 0
+			arms_factory = 4
+			industrial_complex = 3
+		}
+	}
+}

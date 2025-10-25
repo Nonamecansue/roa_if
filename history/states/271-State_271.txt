@@ -1,0 +1,30 @@
+state={
+	id=271
+	name="STATE_271"
+	provinces={
+		48 240 377 508 618 706 791 859 956 965 1064 1125 1213 1396 1652 1824 2107 2152 2379 2512 2759 2778 3434 3519 3765 3952 4201 4382 4542 4950 4992 5107 5286 5451 5593 5839 7352 7353 10502 10610 10631 10640 10701 10709 10792 10800 10859 10867 10886 10908 10915 
+	}
+	manpower=104000
+	impassable = yes
+	state_category=dazhulin
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = REN
+		add_core_of = REN
+		buildings = {
+			infrastructure = 0
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

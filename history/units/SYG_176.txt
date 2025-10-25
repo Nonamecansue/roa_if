@@ -1,0 +1,415 @@
+﻿division_template = {
+	name = "千丘标准军"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		artillery_brigade = { x = 2 y = 0 }
+		
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "千丘骑兵队"
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+	support = {
+	}
+}
+
+division_template = {
+	name = "装甲纵队"
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		light_armor = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+	}
+	support = {
+	}
+}
+
+division_template = {
+	name = "丘岭突击队"
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+	support = {
+	recon = { x = 0 y = 0 }
+	}
+}
+
+units = {
+
+	division = {
+		name = "千丘标准军"
+		location = 4882
+		division_template = "千丘标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "千丘标准军"
+		location = 4882
+		division_template = "千丘标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "千丘标准军"
+		location = 2638
+		division_template = "千丘标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "千丘标准军"
+		location = 10547
+		division_template = "千丘标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "千丘标准军"
+		location = 2176
+		division_template = "千丘标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "千丘标准军"
+		location = 10372
+		division_template = "千丘标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "千丘标准军"
+		location = 4983
+		division_template = "千丘标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "千丘标准军"
+		location = 4086
+		division_template = "千丘标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "千丘标准军"
+		location = 1868
+		division_template = "千丘标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "千丘标准军"
+		location = 6323
+		division_template = "千丘标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "千丘标准军"
+		location = 6268
+		division_template = "千丘标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "千丘标准军"
+		location = 10304
+		division_template = "千丘标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "千丘标准军"
+		location = 10405
+		division_template = "千丘标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "千丘标准军"
+		location = 2795
+		division_template = "千丘标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "千丘标准军"
+		location = 7525
+		division_template = "千丘标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "千丘标准军"
+		location = 2422
+		division_template = "千丘标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "千丘标准军"
+		location = 4882
+		division_template = "千丘标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "千丘标准军"
+		location = 4882
+		division_template = "千丘标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "千丘标准军"
+		location = 2638
+		division_template = "千丘标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "千丘标准军"
+		location = 10547
+		division_template = "千丘标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "千丘标准军"
+		location = 2176
+		division_template = "千丘标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "千丘标准军"
+		location = 10372
+		division_template = "千丘标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "千丘标准军"
+		location = 4983
+		division_template = "千丘标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "千丘标准军"
+		location = 4086
+		division_template = "千丘标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "千丘标准军"
+		location = 1868
+		division_template = "千丘标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "千丘标准军"
+		location = 6323
+		division_template = "千丘标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "千丘标准军"
+		location = 6268
+		division_template = "千丘标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "千丘标准军"
+		location = 10304
+		division_template = "千丘标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "千丘标准军"
+		location = 10405
+		division_template = "千丘标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "千丘标准军"
+		location = 2795
+		division_template = "千丘标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "千丘标准军"
+		location = 7525
+		division_template = "千丘标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "千丘标准军"
+		location = 2422
+		division_template = "千丘标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "千丘标准军"
+		location = 10220
+		division_template = "千丘标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "千丘标准军"
+		location = 4507
+		division_template = "千丘标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "千丘标准军"
+		location = 10094
+		division_template = "千丘标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "千丘标准军"
+		location = 9992
+		division_template = "千丘标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "千丘标准军"
+		location = 10049
+		division_template = "千丘标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "千丘标准军"
+		location = 10175
+		division_template = "千丘标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+    division = {
+		name = "千丘标准军"
+		location = 6654
+		division_template = "千丘标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "千丘骑兵队"
+		location = 6654
+		division_template = "千丘骑兵队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "千丘骑兵队"
+		location = 4882
+		division_template = "千丘骑兵队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "千丘骑兵队"
+		location = 10405
+		division_template = "千丘骑兵队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "千丘骑兵队"
+		location = 10304
+		division_template = "千丘骑兵队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "千丘骑兵队"
+		location = 2795
+		division_template = "千丘骑兵队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "千丘骑兵队"
+		location =4086
+		division_template = "千丘骑兵队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "丘岭突击队"
+		location = 4882
+		division_template = "丘岭突击队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "丘岭突击队"
+		location =10405
+		division_template = "丘岭突击队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "丘岭突击队"
+		location =2795
+		division_template = "丘岭突击队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "丘岭突击队"
+		location = 10304
+		division_template = "丘岭突击队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "装甲纵队"
+		location = 4882
+		division_template = "装甲纵队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+
+}

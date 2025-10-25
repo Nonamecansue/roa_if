@@ -1,0 +1,29 @@
+state={
+	id=73
+	name="STATE_73"
+	provinces={
+		392 414 814 1186 1277 1403 2356 3295 3471 3604 3696 3829 3889 4384 5665 5759 6116 6382 6581 6645 6955 8090 8104 8114 8129 8168 8179 8187 8199 8220 8228 
+	}
+	manpower=732000
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = DYJ
+		add_core_of =DYJ
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

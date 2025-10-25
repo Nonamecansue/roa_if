@@ -1,0 +1,29 @@
+state={
+	id=419
+	name="STATE_419"
+	provinces={
+		265 287 1168 2609 3240 3300 3399 4216 4975 5611 6263 6734 7122 8483 8512 8513 8537 8549 8555 8569 8594 8598 
+	}
+	manpower=643800
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten =0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = SHO
+		add_core_of =SHO
+		buildings = {
+			infrastructure = 1
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

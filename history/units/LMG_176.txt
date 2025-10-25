@@ -1,0 +1,156 @@
+﻿division_template = {
+	name = "各州民兵"
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+	}
+	support = {
+	}
+}
+
+division_template = {
+	name = "联盟主力军"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		artillery_brigade = { x = 2 y = 0 }
+	}
+	support = {
+	}
+}
+
+units = {
+	division = {
+		name = "联盟主力军"
+		location = 7321
+		division_template = "联盟主力军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "联盟主力军"
+		location = 6372
+		division_template = "联盟主力军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "联盟主力军"
+		location = 2153
+		division_template = "联盟主力军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "联盟主力军"
+		location = 4254
+		division_template = "联盟主力军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "联盟主力军"
+		location = 6072
+		division_template = "联盟主力军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "联盟主力军"
+		location = 3676
+		division_template = "联盟主力军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "联盟主力军"
+		location = 7472
+		division_template = "联盟主力军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "各州民兵"
+		location = 11291
+		division_template = "各州民兵"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "各州民兵"
+		location = 5518
+		division_template = "各州民兵"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "各州民兵"
+		location = 3254
+		division_template = "各州民兵"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "各州民兵"
+		location = 6861
+		division_template = "各州民兵"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "各州民兵"
+		location = 7472
+		division_template = "各州民兵"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "各州民兵"
+		location = 2153
+		division_template = "各州民兵"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "各州民兵"
+		location = 7321
+		division_template = "各州民兵"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "各州民兵"
+		location = 3676
+		division_template = "各州民兵"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "各州民兵"
+		location = 5838
+		division_template = "各州民兵"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "各州民兵"
+		location = 6072
+		division_template = "各州民兵"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "各州民兵"
+		location = 4254
+		division_template = "各州民兵"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+
+}

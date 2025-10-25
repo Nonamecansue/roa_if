@@ -1,0 +1,29 @@
+state={
+	id=714
+	name="STATE_714"
+	provinces={
+		163 236 358 402 1915 3552 5446 5515 5658 5668 7327 7580 8374 8440 8479 8480 8544 
+	}
+	manpower=1320000
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = UUZ
+		add_core_of =UUZ
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

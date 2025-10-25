@@ -1,0 +1,29 @@
+state={
+	id=15
+	name="STATE_15"
+	provinces={
+		201 274 324 1375 1710 2410 2624 3137 4973 5392 5441 5721 7227 7603 7717 7730 7739 7764 7784 7821 
+	}
+        manpower=1420000
+        state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+		history = {
+			owner = UUZ
+			add_core_of = UUZ
+			buildings = {
+				infrastructure = 2
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 1
+			}
+		}
+}

@@ -1,0 +1,30 @@
+state={
+	id=177
+	name="STATE_177"
+	provinces={
+		427 635 689 911 1089 1340 2151 2235 2334 3033 3358 4693 5601 6361 6916 7286 9380 9437 9443 9461 9464 9491 9501 9567 9584 9639 9655 9734 
+	}
+        manpower=19200
+		impassable = yes
+        buildings_max_level_factor=1.000
+		state_category=tiny_island
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+		history = {
+			owner = MLS
+			add_core_of = MLS
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+}

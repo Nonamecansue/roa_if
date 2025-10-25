@@ -1,0 +1,29 @@
+state={
+	id=89
+	name="STATE_89"
+	provinces={
+		824 1148 2647 3671 4934 4991 5178 6193 6543 6850 6937 7651 9154 9163 9203 9204 9208 
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+		state_category=rural
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 2 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = BHY
+		add_core_of =BHY
+		buildings = {
+			infrastructure = 1
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 1
+		}
+	}
+}

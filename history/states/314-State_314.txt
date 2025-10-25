@@ -1,0 +1,29 @@
+state={
+	id=314
+	name="STATE_314"
+	provinces={
+		175 629 879 1047 1276 1298 1332 1485 1574 1588 1640 1709 1791 1815 2168 2343 2599 2842 2844 2941 3173 3614 3622 3738 3749 4063 4141 4667 5276 5316 5448 5796 6165 6166 6250 6602 6663 6743 7088 7191 7391 7658 11306 11336 11358 11393 11396 11452 11453 11456 11488 11503 11526 11531 11545 
+	}
+	manpower=1102000
+	buildings_max_level_factor=1.000
+		state_category=rural
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = YYT
+		add_core_of = YYT
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

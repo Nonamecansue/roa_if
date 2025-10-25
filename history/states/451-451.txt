@@ -1,0 +1,29 @@
+state={
+	id=451
+	name="STATE_451"
+	provinces={
+		373 628 1919 2214 3185 3462 3463 3919 5885 6172 6182 6770 10389 10392 10450 10458 10522 
+	}
+	manpower=1220000
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = GZH
+		add_core_of =GZH
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

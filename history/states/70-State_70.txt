@@ -1,0 +1,29 @@
+state={
+	id=70
+	name="STATE_70"
+	provinces={
+		498 703 1629 1702 1847 2023 2646 2721 2753 2916 2994 4386 4505 4662 5114 5205 6453 7241 7290 7557 8198 8226 8229 8247 8250 8259 8271 8277 8278 
+	}
+	manpower=900200
+	buildings_max_level_factor=1.000
+		state_category=small_island
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = PLX
+		add_core_of =PLX
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 1
+		}
+	}
+}

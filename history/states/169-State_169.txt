@@ -1,0 +1,30 @@
+state={
+	id=169
+	name="STATE_169"
+	provinces={
+		1898 2069 2476 4237 4270 4338 5105 6513 6627 7165 7420 9276 9394 9405 9512 
+	}
+	manpower=322000
+	impassable = yes
+	buildings_max_level_factor=1.000
+		state_category=tiny_island
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = MLS
+		add_core_of = MLS
+		buildings = {
+			infrastructure = 0
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

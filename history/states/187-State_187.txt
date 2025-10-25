@@ -1,0 +1,28 @@
+state={
+	id=187
+	name="STATE_187"
+	provinces={
+		367 2328 2453 2582 2882 4124 5253 5284 5311 6223 6574 6941 7410 9468 9483 9498 9523 9530 9535 9549 9554 9566 9583 9621 9627 9643 9676 9716 
+	}
+	manpower=932000
+	state_category=rural
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = STH
+		add_core_of = STH
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 1
+			industrial_complex = 0
+		}
+	}
+}

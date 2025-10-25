@@ -1,0 +1,29 @@
+state={
+	id=130
+	name="STATE_130"
+	provinces={
+		7 708 1090 1250 1472 1618 3603 3677 4024 4396 5144 5564 6940 8636 8637 8640 8671 8744 8777 8789 8827 
+	}
+	manpower=1502000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 3 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = UUZ
+		add_core_of = UUZ
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 1
+		}
+	}
+}

@@ -1,0 +1,30 @@
+state={
+	id=736
+	name="STATE_736"
+	resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = BWH
+		add_core_of = BWH
+		buildings = {
+			infrastructure = 5
+			air_base = 0
+			arms_factory = 2
+			industrial_complex = 4
+			9872={ naval_base = 2}
+		}
+	}
+	provinces={
+		9872 
+	}
+	manpower=1820000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

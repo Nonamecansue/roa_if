@@ -1,0 +1,29 @@
+state={
+	id=507
+	name="STATE_507"
+	provinces={
+		1208 1678 4784 5278 6478 7014 10865 
+	}
+	manpower=1938000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	llocal_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = TYH
+		add_core_of = TYH
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 1
+			industrial_complex = 0
+		}
+	}
+}

@@ -1,0 +1,29 @@
+state={
+	id=332
+	name="STATE_332"
+	provinces={
+		488 1381 1846 2971 3214 3289 3744 3790 11053 11083 11140 
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+		state_category=rural
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = YYT
+		add_core_of = YYT
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

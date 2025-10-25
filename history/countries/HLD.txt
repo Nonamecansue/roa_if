@@ -1,0 +1,42 @@
+﻿capital = 1
+
+recruit_character = HLD_meixuwan
+recruit_character = HLD_meixuwan_leader
+
+146.1.1 = {
+    set_technology = { 
+         #步兵装备
+        infantry_weapons = 1
+
+        #建造
+        construction1 = 1
+    }
+    set_stability = 0.5
+    set_war_support = 0.1
+    set_convoys = 32
+    set_research_slots = 3
+}
+
+
+
+146.1.1={
+    oob = "HLD_176"
+    add_ideas = {
+        
+    }
+    set_politics = {
+    	ruling_party = huanxiang
+    	election_frequency = 48
+    	elections_allowed = no
+    }
+    set_popularities = {
+       genming = 0
+       xiakeshang = 0
+       jijingailiang = 5
+       baoshougailiang = 5
+       baoshou = 30
+       diguo = 0
+       huanxiang = 60
+       yibian = 0
+    }
+}

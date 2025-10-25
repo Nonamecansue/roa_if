@@ -1,0 +1,29 @@
+state={
+	id=132
+	name="STATE_132"
+	provinces={
+		131 438 583 598 649 808 858 1269 1570 1585 1600 2091 2205 2436 2472 2614 3046 3600 3793 3928 3953 4058 4075 4394 4427 4575 4789 5474 6255 7368 8666 8697 8726 8740 8780 8794 8800 8808 8877 8884 8951 
+	}
+	manpower=1000000
+	state_category=small_island
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = HHG
+		add_core_of =HHG
+		buildings = {
+			infrastructure = 3
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

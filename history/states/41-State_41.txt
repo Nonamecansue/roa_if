@@ -1,0 +1,29 @@
+state={
+	id=41
+	name="STATE_41"
+	provinces={
+		878 1142 1576 2098 4106 4337 5175 7935 7939 7951 7958 7985 
+	}
+        manpower=820000
+        buildings_max_level_factor=1.000
+		state_category=small_island
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+		history = {
+			owner = PLX
+			add_core_of = PLX
+			buildings = {
+				infrastructure = 2
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+}

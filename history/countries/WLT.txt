@@ -1,0 +1,61 @@
+﻿capital = 173
+
+recruit_character = WLT_qilunuo
+recruit_character = WLT_qilunuo_leader
+
+146.1.1 = {
+    set_technology = { 
+        #步兵装备
+        infantry_weapons = 1
+
+        #火炮
+        gw_artillery = 1
+
+        #支援装备
+        tech_support = 1
+        tech_engineers = 1
+        tech_recon = 1
+
+        #建造
+        construction1 = 1
+        
+    }
+    set_stability = 0.5
+    set_war_support = 0.1
+    set_convoys = 32
+    set_research_slots = 3
+}
+
+
+
+146.1.1={
+    oob = "WLT_176"
+    add_ideas = {
+        limited_conscription
+        closed_economy
+        partial_economic_mobilisation
+        jinguolimeiti
+        dishuishou
+        guankongrunei
+        chubugongyehua
+        zhongzupingdeng
+        yizhanzhong
+        quanwenmang
+        xiaoxingshebei
+    }
+    set_politics = {
+    	ruling_party = genming
+    	election_frequency = 48
+    	elections_allowed = no
+    }
+    set_popularities = {
+       genming = 30
+       xiakeshang = 30
+       jijingailiang = 5
+       baoshougailiang = 5
+       baoshou = 10
+       diguo = 10
+       huanxiang = 10
+       yibian = 0
+    }
+}

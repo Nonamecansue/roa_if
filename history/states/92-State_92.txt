@@ -1,0 +1,29 @@
+state={
+	id=92
+	name="STATE_92"
+	provinces={
+		1808 1996 3554 3634 3798 4558 5006 5085 5138 5579 6120 6385 6862 7330 8261 8284 8307 8348 
+	}
+	manpower=208300
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten =0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = SHO
+		add_core_of = SHO
+		buildings = {
+			infrastructure = 1
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

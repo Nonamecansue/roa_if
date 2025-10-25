@@ -1,0 +1,30 @@
+state={
+	id=134
+	name="STATE_134"
+	provinces={
+		49 697 1367 1391 2108 2201 2471 2899 3272 3499 3571 3754 4096 4444 4596 5063 5195 5275 5932 6393 6519 6757 7344 8720 8732 8788 8810 8842 8843 8851 8882 8883 8894 8923 8961 8983 8986 9018 9019 9032 9054 9084 9091 
+	}
+	manpower=23400
+	impassable = yes
+	buildings_max_level_factor=1.000
+		state_category=small_island
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = TGD
+		add_core_of = TGD
+		buildings = {
+			infrastructure = 1
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

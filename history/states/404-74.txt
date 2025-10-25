@@ -1,0 +1,28 @@
+state={
+	id=404
+	name="STATE_404"
+	provinces={
+		613 4317 4865 4868 5049 10518 10572 10619 
+	}
+	manpower=1032000
+	state_category=rural
+	local_supplies=0.000
+	resources={
+		steel=2 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = SXL
+		add_core_of = SXL
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 1
+		}
+	}
+}

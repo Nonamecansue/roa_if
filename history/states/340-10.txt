@@ -1,0 +1,29 @@
+state={
+	id=340
+	name="STATE_340"
+	provinces={
+		473 486 647 1581 2036 2039 2312 2868 2922 4479 11283 11289 11319 11334 11359 11375 
+	}
+	manpower=638000
+	buildings_max_level_factor=1.000
+		state_category=tiny_island
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=3 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = SLM
+		add_core_of = SLM
+		buildings = {
+			infrastructure = 1
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

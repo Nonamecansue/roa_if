@@ -1,0 +1,29 @@
+state={
+	id=185
+	name="STATE_185"
+	provinces={
+		510 960 1275 1745 2326 3337 3781 5280 7031 9311 9446 9591 
+	}
+	manpower=1320000
+	buildings_max_level_factor=1.000
+		state_category=large_town
+		local_supplies=0.000
+		resources={
+			steel=8 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = MYJ
+		add_core_of = MYJ
+		buildings = {
+			infrastructure = 3
+			air_base = 0
+			arms_factory = 2
+			industrial_complex = 2
+		}
+	}
+}

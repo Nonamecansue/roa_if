@@ -1,0 +1,29 @@
+state={
+	id=259
+	name="STATE_259"
+	provinces={
+		6 79 111 165 169 420 990 1255 1330 1916 2103 2178 2413 2540 2579 3023 3077 3433 3684 4704 4705 4798 5933 7098 10416 10527 10579 10600 10604 10630 10637 10647 10747 10827 
+	}
+	manpower=1333000
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = DJT
+		add_core_of = DJT
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

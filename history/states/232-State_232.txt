@@ -1,0 +1,29 @@
+state={
+	id=232
+	name="STATE_232"
+	provinces={
+		684 718 769 1515 1928 3066 4068 4218 4496 4864 5535 5943 5987 6500 7505 10271 10291 10321 10331 10366 10397 10451 
+	}
+	manpower=1333300
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = GZH
+		add_core_of =GZH
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 1
+			industrial_complex = 0
+		}
+	}
+}

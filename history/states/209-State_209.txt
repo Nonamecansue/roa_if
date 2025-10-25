@@ -1,0 +1,28 @@
+state={
+	id=209
+	name="STATE_209"
+	provinces={
+		995 2772 2879 3747 6733 9714 9823 9904 9934 
+	}
+	manpower=1983000
+	state_category=city
+	local_supplies=0.000
+	resources={
+		steel=12 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = STH
+		add_core_of = STH
+		buildings = {
+			infrastructure = 4
+			air_base = 0
+			arms_factory = 3
+			industrial_complex = 2
+		}
+	}
+}

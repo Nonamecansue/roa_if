@@ -1,0 +1,29 @@
+state={
+	id=517
+	name="STATE_517"
+	provinces={
+		178 2529 2662 5119 5310 6001 6108 10155 10164 10209 
+	}
+	manpower=1280000
+	buildings_max_level_factor=1.000
+		state_category=large_town
+		local_supplies=0.000
+		resources={
+			steel=3 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = SXL
+		add_core_of = SXL
+		buildings = {
+			infrastructure = 3
+			air_base = 0
+			arms_factory = 2
+			industrial_complex = 2
+		}
+	}
+}

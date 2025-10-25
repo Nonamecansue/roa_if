@@ -1,0 +1,29 @@
+state={
+	id=205
+	name="STATE_205"
+	provinces={
+		4759 5512 5640 7183 7642 9633 9673 9689 9727 9744 
+	}
+	manpower=3098700
+	buildings_max_level_factor=1.000
+		state_category=large_town
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = HMG
+		add_core_of =HMG
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 2
+		}
+	}
+}

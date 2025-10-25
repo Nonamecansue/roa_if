@@ -1,0 +1,29 @@
+state={
+	id=301
+	name="STATE_301"
+	provinces={
+		203 272 666 802 1195 1706 1735 1786 1921 2402 2438 3158 3525 3557 4044 6209 6745 6924 7211 7472 7544 10987 11007 11085 11130 11168 
+	}
+	manpower=1382000
+	buildings_max_level_factor=1.000
+		state_category=town
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = LMG
+		add_core_of = LMG
+		buildings = {
+			infrastructure = 3
+			air_base = 0
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+}

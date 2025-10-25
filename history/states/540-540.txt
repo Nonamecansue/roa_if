@@ -1,0 +1,28 @@
+state={
+	id=540
+	name="STATE_540"
+	provinces={
+		670 1057 3657 3815 4334 6702 6884 6971 9711 9797 9810 9815 
+	}
+	manpower=4490000
+	state_category=large_city
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = HMG
+		add_core_of = HMG
+		buildings = {
+			infrastructure = 4
+			air_base = 0
+			arms_factory = 1
+			industrial_complex = 4
+		}
+	}
+}

@@ -1,0 +1,109 @@
+USA = "countries/USA.txt"
+HMG = "countries/hmg.txt"                     #####大斯卡雷特帝国***          T
+WLT = "countries/wlt.txt"			       #####雾之湖妖精联合体***
+XAG = "countries/xag.txt"			       #####露米娅***        T         
+BHY = "countries/bhy.txt"             #####北幻草原***  
+LWZ = "countries/lwz.txt"                           #####下克上流亡者***              T
+HZC = "countries/hzc.txt"                           #####辉针城***        T
+SLQ = "countries/slq.txt"          #####骚灵
+HCY = "countries/hcy.txt"          #####幻草原
+BWH = "countries/bwh.txt"          #####北雾市
+DHC = "countries/dhc.txt"          #####东幻草原
+XBW = "countries/xbw.txt"          #####幻草原国 
+SGQ = "countries/sgq.txt"          #####使馆区                 
+NYS = "countries/nys.txt"   #####南雾之湖
+XXC = "countries/xxc.txt"               #####下玄武川
+
+TGD = "countries/tgd.txt"                         #####天狗帝国***         
+HZH = "countries/hzh.txt"                    #####河童长老会***
+SHO = "countries/sho.txt"      #####守矢神社***      T
+MTJ = "countries/mtj.txt"      #####迷途之家***      
+STH = "countries/sth.txt"         #####山童        
+HLD = "countries/hld.txt"                 #####虹龙洞
+SDC = "countries/sdc.txt"               #####赌场
+SLB = "countries/slb.txt"                     #####山姥
+YXJ = "countries/yxj.txt"              #####仙境  
+
+SYG = "countries/syg.txt"                   #####神佑***    
+WWZ = "countries/wwz.txt"                   #####神佑***     T
+SXL = "countries/sxl.txt"                           #####神明信仰联盟***             T
+FRC = "countries/frc.txt"                     #####丰饶村落 
+JSS = "countries/jss.txt"      #####金山彦村落
+WSR = "countries/wsr.txt"                     #####未死人
+BBW = "countries/bbw.txt"       #####八百万
+CYC = "countries/cyc.txt"      #####除妖村落
+ZJL = "countries/zjl.txt"                   #####般若
+XHT = "countries/xht.txt"                  #####新玄武川             
+ZYD = "countries/zyd.txt"         #####中有之道
+LLH = "countries/llh.txt"                   #####铃兰花海***
+XHD = "countries/xhd.txt"          #####荒地
+XYL = "countries/xyl.txt"                      #####妖精联军***             T
+ZWJ = "countries/zwj.txt"          #####自卫组织***        T
+YFG = "countries/yfg.txt"        #####妖异佛国***
+XFS = "countries/xfs.txt"        #####下克上先锋社***
+XNG = "countries/xng.txt"        #####西南公司***
+TYH = "countries/tyh.txt"             #####太阳花田***
+
+SBL = "countries/sbl.txt"                   #####命莲寺***
+SLM = "countries/slm.txt"                   #####神灵庙***
+FSS = "countries/fss.txt"              #####付丧神自治领***
+REN = "countries/ren.txt"                       #####人间之里***         T
+BLS = "countries/bls.txt"                  #####博丽神社**
+LML = "countries/lml.txt"                    #####狸猫开发领                         
+MHD = "countries/mhd.txt"           #####妹红
+LMG = "countries/lmg.txt"                   #####竹林联盟国
+YYT = "countries/yyt.txt"                     #####永远亭
+
+MLS = "countries/mls.txt"  #####大魔法森林***
+BSL = "countries/bsl.txt"        #####冰霜森林
+MYJ = "countries/myj.txt"        #####外魔法森林
+
+JXQ = "countries/jxq.txt"          #####间歇泉
+DLD = "countries/dld.txt"            #####地灵殿            T
+FQD = "countries/fqd.txt"        #####废弃通道
+PLX = "countries/plx.txt"        #####通道防卫同盟
+JIU = "countries/jiu.txt"        #####旧都
+DYJ = "countries/dyj.txt"        #####地下妖精
+LJC = "countries/ljc.txt"        #####炼金厂
+YLQ = "countries/ylq.txt"        #####怨灵地区
+FYD = "countries/fyd.txt"        #####反应堆
+ZZD = "countries/zzd.txt"        #####山女
+SYH = "countries/syh.txt"                #####石油海
+ZZZ = "countries/zzz.txt"     #####入冥中转站
+WFQ = "countries/wfq.txt"              #####无法地带
+UUZ = "countries/UUZ.txt"              #####冥界
+
+JXJ = "countries/jxj.txt"                                  #####隙间世界
+HHG = "countries/hhg.txt"                          #####后户之国
+
+STC = "countries/stc.txt"                     #####三途川
+GDY = "countries/gdy.txt"                         #####孤独地狱
+QBL = "countries/qbl.txt"                           #####青鬼部落
+LZY = "countries/lzy.txt"        #####灵长园
+GYT = "countries/gyt.txt"                     #####刚欲同盟
+JYZ = "countries/jyz.txt"                                      #####劲牙组
+GJZ = "countries/gjz.txt"                                         #####鬼杰组
+CBL = "countries/cbl.txt"               #####赤鬼部落
+SJS = "countries/sjs.txt"                       #####四季
+XCY = "countries/xcy.txt"                       #####血池地狱
+DXH = "countries/dxh.txt"                       #####怨灵兄弟会
+WZL = "countries/wzl.txt"                       #####亡灵自由领
+SHY = "countries/shy.txt"                       #####赛河源
+SSL = "countries/ssl.txt"                       #####死神
+WZD = "countries/wzd.txt"                       #####亡者帝国
+DJT = "countries/djt.txt"                       #####地狱祭坛
+GZH = "countries/gzh.txt"                       #####地狱归正会
+ABY = "countries/aby.txt"                       #####阿鼻地狱
+DSD = "countries/dsd.txt"                       #####刀山地狱
+DYL = "countries/dsd.txt"                       #####地狱妖精
+FGJ = "countries/fgj.txt"                       #####反鬼联军
+XXX = "countries/xxx.txt"#ob
+ZON = "countries/zon.txt"#zone
+
+
+
+
+
+
+
+#NOTE: Useful to add a basic default loc entry for each tag in 00_countries.txt so that hovering over a tag will show the tag's name in loc (ie. PAP: "Papal States")

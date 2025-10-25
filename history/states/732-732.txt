@@ -1,0 +1,29 @@
+state={
+	id=732
+	name="STATE_732"
+	provinces={
+		28 1114 1284 1593 2876 2913 3878 4057 4158 4685 7000 7987 8022 8025 8065 
+	}
+	manpower=1920000
+	state_categoryrural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = UUZ
+		add_core_of =UUZ
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 1
+			industrial_complex = 0
+		}
+	}
+}

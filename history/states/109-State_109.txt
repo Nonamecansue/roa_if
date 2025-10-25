@@ -1,0 +1,29 @@
+state={
+	id=109
+	name="STATE_109"
+	provinces={
+		92 308 350 442 464 585 777 938 1146 1210 1961 2068 2116 2603 3092 3175 3632 3950 4165 4176 4582 4700 4770 5100 5671 7169 7271 8398 8424 8558 8617 8655 8658 8702 8711 
+	}
+	manpower=1000000
+	state_category=metropolis
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = HHG
+		add_core_of =HHG
+		buildings = {
+			infrastructure = 4
+			air_base = 0
+			arms_factory = 6
+			industrial_complex = 6
+		}
+	}
+}

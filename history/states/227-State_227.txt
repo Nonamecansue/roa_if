@@ -1,0 +1,29 @@
+state={
+	id=227
+	name="STATE_227"
+	provinces={
+		43 511 1289 1507 1616 2678 3281 3354 3666 4601 4799 5093 6023 6635 7216 7242 9943 9951 9975 9980 9989 10047 
+	}
+	manpower=2003000
+	buildings_max_level_factor=1.000
+		state_category=large_town
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=4 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = HCY
+		add_core_of =HCY
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+}

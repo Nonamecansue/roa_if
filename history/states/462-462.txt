@@ -1,0 +1,29 @@
+state={
+	id=462
+	name="STATE_462"
+	provinces={
+		768 1294 1521 2592 2641 3167 3304 4568 4650 4672 4787 4921 5254 5303 5413 5969 6234 7310 7316 7319 7660 10890 10925 10933 10985 11015 11026 11043 11046 11077 
+	}
+	manpower=1988000
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = REN
+		add_core_of = REN
+		buildings = {
+			infrastructure = 3
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 3
+		}
+	}
+}

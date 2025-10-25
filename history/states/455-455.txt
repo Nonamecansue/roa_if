@@ -1,0 +1,29 @@
+state={
+	id=455
+	name="STATE_455"
+	provinces={
+		118 536 610 1217 1539 1630 2973 3282 3394 4150 4687 5544 6010 7209 7457 11278 11300 11325 11335 11357 11395 11471 
+	}
+	manpower=1832000
+	buildings_max_level_factor=1.000
+		state_category=large_town
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = MHD
+		add_core_of = MHD
+		buildings = {
+			infrastructure = 3
+			air_base = 0
+			arms_factory = 2
+			industrial_complex = 2
+		}
+	}
+}

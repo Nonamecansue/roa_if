@@ -1,0 +1,29 @@
+state={
+	id=524
+	name="STATE_524"
+	provinces={
+		279 4620 4750 4790 5409 6192 6525 6609 6633 8889 8919 8926 8974 8987 8993 
+	}
+	manpower=1380000
+	buildings_max_level_factor=1.000
+		state_category=town
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = HZH
+		add_core_of = HZH
+		buildings = {
+			infrastructure = 3
+			air_base = 0
+			arms_factory = 2
+			industrial_complex = 1
+		}
+	}
+}

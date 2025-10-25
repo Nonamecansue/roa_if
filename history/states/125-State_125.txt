@@ -1,0 +1,30 @@
+state={
+	id=125
+	name="STATE_125"
+	provinces={
+		80 139 580 926 1077 1164 1797 2338 4235 4572 4587 4837 4872 4893 5169 5330 6060 6330 6447 7200 7561 7631 8738 8823 8924 9036 9067 
+	}
+	buildings_max_level_factor=1.000
+	state_category=tiny_island
+	local_supplies=0.000
+	impassable = yes
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+        manpower=32
+		history = {
+			owner = TGD
+			add_core_of = TGD
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+}

@@ -1,0 +1,29 @@
+state={
+	id=264
+	name="STATE_264"
+	provinces={
+		593 2035 2839 4442 5808 6356 6858 7653 10626 10666 10686 10726 10752 10756 10853 10893 10955 
+	}
+        manpower=1000000
+        state_category=small_island
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+		history = {
+			owner = JXJ
+			add_core_of = JXJ
+			buildings = {
+				infrastructure = 3
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+}

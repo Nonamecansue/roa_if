@@ -1,0 +1,129 @@
+ideas = {
+
+	racial = { 
+		law = yes
+		zhongzupingdeng = {
+									
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no
+			}
+			level = 1
+			cost = 1
+			cancel_if_invalid = no
+			removal_cost = -1
+		#	research_bonus = {
+		#		magic = 0.1
+		#		science = -0.1		
+		#	}
+			modifier = {
+				ST_race_penalty_all_factor = -0.15
+				war_support_factor = -0.15			
+			}
+			
+			
+		}
+		banzhongzupingdeng = {
+									
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no
+			}
+			level = 1
+			cost = 1
+			cancel_if_invalid = no
+			removal_cost = -1
+		#	research_bonus = {
+		#		magic = 0.1
+		#		science = -0.1		
+		#	}
+			modifier = {
+				ST_race_penalty_all_factor = -0.075
+				war_support_factor = -0.075	
+				
+			}
+			
+			
+		}
+		chuantongtaidu = {
+			default = yes
+									
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no
+			}
+			level = 1
+			cost = 1
+			cancel_if_invalid = no
+			removal_cost = -1
+		#	research_bonus = {
+		#		magic = 0.1
+		#		science = -0.1		
+		#	}
+			modifier = {
+				
+			}
+			
+			
+		}
+		xianzhuqishi = {
+									
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no
+			}
+			level = 1
+			cost = 1
+			cancel_if_invalid = no
+			removal_cost = -1
+		#	research_bonus = {
+		#		magic = 0.1
+		#		science = -0.1		
+		#	}
+			modifier = {
+				ST_race_penalty_all_factor = 0.075
+				war_support_factor = 0.075	
+				
+			}
+			
+			
+		}
+		benzuzhishang = {
+									
+			allowed_to_remove = { 
+				always = no 
+			}
+
+			available = { 
+				always = no
+			}
+			level = 1
+			cost = 1
+			cancel_if_invalid = no
+			removal_cost = -1
+		#	research_bonus = {
+		#		magic = 0.1
+		#		science = -0.1		
+		#	}
+			modifier = {
+				ST_race_penalty_all_factor = 0.15
+				war_support_factor = 0.15	
+			}
+			
+			
+		}
+
+ }
+}

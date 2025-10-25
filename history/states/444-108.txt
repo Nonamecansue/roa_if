@@ -1,0 +1,29 @@
+state={
+	id=444
+	name="STATE_444"
+	provinces={
+		289 1800 2635 3000 4521 4534 5716 6310 6541 11082 11136 11186 11211 11341 
+	}
+	manpower=1120000
+	buildings_max_level_factor=1.000
+	state_category=tiny_island
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 2 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = WZD
+		add_core_of = WZD
+		buildings = {
+			infrastructure = 0
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

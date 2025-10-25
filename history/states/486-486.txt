@@ -1,0 +1,29 @@
+state={
+	id=486
+	name="STATE_486"
+	provinces={
+		147 382 811 1073 1899 3424 3437 4652 5429 6228 6832 6873 7359 7648 10540 10561 10584 10602 10618 10624 10645 10665 10672 10680 10713 10748 
+	}
+	manpower=794000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = SBL
+		add_core_of = SBL
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 1
+		}
+	}
+}

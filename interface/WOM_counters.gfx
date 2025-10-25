@@ -1,0 +1,19 @@
+spriteTypes = {	
+	spriteType = { 
+		name = "GFX_unit_FXinfantry_icon_medium"								
+		textureFile = "gfx/interface/counters/large_FX_infantry.dds" 
+		noOfFrames = 2 
+	}
+	spriteType = { 
+		name = "GFX_unit_FXinfantry_icon_medium_white"							
+		textureFile = "gfx/interface/counters/small_FX_infantry.dds" 
+		noOfFrames = 2 
+	}
+ 	spriteType = {
+		name = "GFX_unit_FXinfantry_icon_small"
+		texturefile = "gfx/interface/counters/small_FX_infantry.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+
+}

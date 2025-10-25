@@ -1,0 +1,29 @@
+state={
+	id=689
+	name="STATE_689"
+	provinces={
+		3244 3384 6285 
+	}
+	manpower=3683000
+	buildings_max_level_factor=1.000
+	state_category=city
+	llocal_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = TYH
+		add_core_of =TYH
+		buildings = {
+			infrastructure = 4
+			air_base = 0
+			arms_factory = 2
+			industrial_complex = 4
+		}
+	}
+}

@@ -1,0 +1,22 @@
+state={
+	id=217
+	name="STATE_217"
+	provinces={
+		344 502 700 1070 1127 1387 1397 1750 1866 2074 2259 2692 2950 2975 3172 3339 3472 3842 3947 3972 4264 4961 5047 5134 5492 5553 5887 6053 6136 7157 9710 9733 9774 9775 9798 9852 9901 9920 9927 9940 9944 9962 9985 10002 10043 10076 10080 10104 10118 
+	}
+	manpower=9200
+	impassable = yes
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+	history = {
+		owner = MLS
+		add_core_of = MLS
+		buildings = {
+			infrastructure = 0
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

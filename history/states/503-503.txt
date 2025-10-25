@@ -1,0 +1,29 @@
+state={
+	id=503
+	name="STATE_503"
+	provinces={
+		1654 1833 1966 2044 2252 2548 2669 3805 3887 7326 10906 10914 10995 
+	}
+	manpower=1736000
+	buildings_max_level_factor=1.000
+	state_category=town
+	llocal_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = TYH
+		add_core_of = TYH
+		buildings = {
+			infrastructure = 3
+			air_base = 0
+			arms_factory = 1
+			industrial_complex = 2
+		}
+	}
+}

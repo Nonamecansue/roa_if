@@ -1,0 +1,29 @@
+state={
+	id=307
+	name="STATE_307"
+	provinces={
+		581 1417 1643 1939 2134 2199 2242 3051 5112 5297 6251 6744 7321 11227 11258 11266 11277 11295 
+	}
+	manpower=2832000
+	buildings_max_level_factor=1.000
+		state_category=large_city
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = LMG
+		add_core_of = LMG
+		buildings = {
+			infrastructure = 4
+			air_base = 0
+			arms_factory = 3
+			industrial_complex = 2
+		}
+	}
+}

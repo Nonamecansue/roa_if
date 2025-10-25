@@ -1,0 +1,29 @@
+state={
+	id=366
+	name="STATE_366"
+	provinces={
+		96 1634 1700 3153 5520 10817 10833 10834 10864 10880 10918 
+	}
+	manpower=1583000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	llocal_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = TYH
+		add_core_of = TYH
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 2
+			industrial_complex = 0
+		}
+	}
+}

@@ -1,0 +1,30 @@
+state={
+	id=179
+	name="STATE_179"
+	provinces={
+		441 893 1509 1603 1771 2118 2580 3064 3145 3161 3383 3475 3479 3780 3833 4569 4720 4762 4808 5110 5341 5646 5949 6041 6362 6443 6445 6468 6518 6659 6682 6726 6818 7056 7369 7654 9196 9210 9217 9254 9256 9278 9300 9309 9325 9346 9362 9383 9392 9422 9427 9432 9469 9481 9484 9487 9538 9588 9600 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	impassable = yes
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+        manpower=10320
+        state_category = small_island
+		history = {
+			owner = TGD
+			add_core_of = TGD
+			buildings = {
+				infrastructure = 1
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+}

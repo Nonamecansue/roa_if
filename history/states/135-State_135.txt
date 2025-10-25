@@ -1,0 +1,29 @@
+state={
+	id=135
+	name="STATE_135"
+	provinces={
+		1644 2771 3303 3912 3993 4911 5787 5823 6490 8875 8917 8942 
+	}
+	manpower=2018000
+	buildings_max_level_factor=1.000
+		state_category=large_town
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = XFS
+		add_core_of = XFS
+		buildings = {
+			infrastructure = 3
+			air_base = 0
+			arms_factory = 3
+			industrial_complex = 2
+		}
+	}
+}

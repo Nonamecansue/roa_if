@@ -1,0 +1,29 @@
+state={
+	id=180
+	name="STATE_180"
+	provinces={
+		506 592 862 891 1022 1695 1796 2166 2395 3040 3054 3120 3286 3317 4070 4073 4607 4726 5091 5240 5258 5652 5678 6124 6613 6939 6950 7026 7206 7206 7533 7600 9262 9318 9347 9403 9423 9499 9628 9685 9729 9808 
+	}
+	manpower=1120000
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = WZL
+		add_core_of =WZL
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

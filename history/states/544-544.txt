@@ -1,0 +1,29 @@
+state={
+	id=544
+	name="STATE_544"
+	provinces={
+		774 1767 3195 3419 6989 7074 11410 11437 11458 11473 11476 
+	}
+	manpower=1068000
+	buildings_max_level_factor=1.000
+		state_category=town
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=2 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = SLM
+		add_core_of = SLM
+		buildings = {
+			infrastructure = 3
+			air_base = 0
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+}

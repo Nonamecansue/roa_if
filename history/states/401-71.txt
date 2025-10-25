@@ -1,0 +1,29 @@
+state={
+	id=401
+	name="STATE_401"
+	provinces={
+		2355 3404 3870 5378 6902 10642 
+	}
+	manpower=1008000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	llocal_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = LLH
+		add_core_of = LLH
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 1
+			industrial_complex = 0
+		}
+	}
+}

@@ -1,0 +1,29 @@
+state={
+	id=441
+	name="STATE_441"
+	provinces={
+		568 1199 1777 2287 5164 5217 5407 5921 6351 7228 7389 10889 
+	}
+	manpower=1020000
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = SJS
+		add_core_of = SJS
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

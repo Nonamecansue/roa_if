@@ -1,0 +1,29 @@
+state={
+	id=3
+	name="STATE_3"
+	provinces={
+		676 2005 2077 2568 2629 2874 3407 3427 3546 4658 5060 5153 5950 6196 6975 7268 7331 10549 10567 10755 10806 10900 10936 
+	}
+        manpower=1000000
+        state_category=small_island
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+		history = {
+			owner = JXJ
+			add_core_of = JXJ
+			buildings = {
+				infrastructure = 3
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+}

@@ -1,0 +1,29 @@
+state={
+	id=10
+	name="STATE_10"
+	provinces={
+		29 2377 3204 3372 3656 4129 4509 4613 6398 7463 7679 7681 7684 7696 
+	}
+        manpower=702000
+		buildings_max_level_factor=1.000
+		state_category=small_island
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+		history = {
+			owner = DLD
+			add_core_of = DLD
+			buildings = {
+				infrastructure = 2
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+}

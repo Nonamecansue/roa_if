@@ -1,0 +1,146 @@
+	on_actions = {
+
+	on_capitulation = {
+        effect = {
+
+		log = "[GetDateText]: FROM: [From.GetName] ROOT: [Root.GetName] on_capitulation"
+
+			set_global_flag = show_peace_popup_alert
+			FROM = {
+				save_global_event_target_as = winning_country
+			}
+			ROOT = {
+				save_global_event_target_as = losing_country
+			}
+
+			log = "[GetDateText]: winner/loser: FROM: [winning_country.GetName] ROOT: [losing_country.GetName] on_capitulation"
+
+			if = {
+				limit = {
+					event_target:losing_country = {
+						any_allied_country = {
+							has_war_together_with = event_target:losing_country
+						}
+					}
+				}
+				set_global_flag = losing_country_multiple
+			}
+
+			if = {
+				limit = {
+					event_target:winning_country = {
+						any_allied_country = {
+							has_war_together_with = event_target:winning_country
+						}
+					}
+				}
+				set_global_flag = winning_country_multiple
+			}
+
+			
+        
+		#千丘战胜铃兰
+        if = {
+			limit = {
+				FROM = {
+						OR = {
+							tag = SYG
+							}
+						}
+				ROOT = {
+				       tag = LLH
+					}
+			    }
+				FROM = {
+					white_peace = {
+						tag= ROOT
+					}
+					}
+				FROM = {
+					annex_country = {
+						target = ROOT
+					}
+				}
+		    }
+        #千丘战胜秋神
+			if = {
+			limit = {
+				FROM = {
+						OR = {
+							tag = SYG
+							}
+						}
+				ROOT = {
+				       tag = SXL
+					}
+			    }
+				FROM = {
+					white_peace = {
+						tag= ROOT
+					}
+					}
+				FROM = {
+					annex_country = {
+						target = ROOT
+					}
+				}
+				SYG = {
+					set_country_flag = SYG_zhanshengSXL
+				}
+		    }
+			if = {
+			limit = {
+				NYS = {
+					has_country_flag = NYS_qiangduoSXLtudi
+				}
+				SYG = {
+					has_country_flag = SYG_zhanshengSXL
+				}
+			    }
+				NYS = { transfer_state = 518 }
+				NYS = { transfer_state = 511 }
+				NYS = { transfer_state = 663 }
+				NYS = {
+					white_peace = {
+						tag = SXL
+					}
+				}
+				}
+		    
+
+		千丘战胜中有
+			if = {
+			limit = {
+				FROM = {
+						OR = {
+							tag = SYG
+							}
+						}
+				ROOT = {
+				       tag = ZYD
+					}
+			    }
+				FROM = {
+					white_peace = {
+						tag= ROOT
+					}
+					}
+				FROM = {
+					annex_country = {
+						target = ROOT
+					}
+				}
+		    }
+
+
+
+	       
+		}
+	}
+
+	on_declare_war = {
+		effect = {
+			log="[GetDateText]: [Root.GetName] declared war on [From.GetName]"
+		}
+	}
+}

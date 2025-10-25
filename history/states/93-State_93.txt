@@ -1,0 +1,29 @@
+state={
+	id=93
+	name="STATE_93"
+	provinces={
+		345 724 927 944 1238 1775 1821 1975 2522 2935 3209 3421 3857 4146 4431 5755 6043 6363 6383 6473 6722 6936 7138 8473 8487 8490 8507 8540 8542 8559 8579 8585 8586 8601 8650 8651 
+	}
+        manpower=892000
+		buildings_max_level_factor=1.000
+		state_category=small_island
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 3 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+		history = {
+			owner = XFS
+			add_core_of = XFS
+			buildings = {
+				infrastructure = 1
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+}

@@ -1,0 +1,29 @@
+state={
+	id=494
+	name="STATE_494"
+	provinces={
+		2337 3502 3668 3963 5937 6205 6572 10202 10241 10246 10270 
+	}
+	manpower=2038400
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 5 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = SLQ
+		add_core_of = SLQ
+		buildings = {
+			infrastructure = 3
+			air_base = 0
+			arms_factory = 4
+			industrial_complex = 1
+		}
+	}
+}

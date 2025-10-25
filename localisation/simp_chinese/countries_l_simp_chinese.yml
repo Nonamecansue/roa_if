@@ -1,0 +1,399 @@
+﻿l_simp_chinese:0
+#妖怪山
+TGD: "天狗共和国"
+TGD_DEF: "天狗第三共和国"
+TGD_ADJ: "天狗"
+
+TGD_ghg: "天狗共和国"
+TGD_ghg_DEF: "天狗共和国"
+TGD_ghg_ADJ: "天狗共和国"
+
+HZH: "玄武川国"
+HZH_DEF: "玄武川国"
+HZH_ADJ: "玄武川国"
+
+SHO: "守矢神社"
+SHO_DEF: "守矢神社"
+SHO_ADJ: "守矢"
+
+STH: "山童商业会"
+STH_DEF: "山童商业会"
+STH_ADJ: "山童"
+
+HLD: "虹龙洞"
+HLD_DEF: "虹龙洞"
+HLD_ADJ: "虹龙洞"
+
+SDC: "驹草赌场"
+SDC_DEF: "驹草赌场"
+SDC_ADJ: "赌场"
+
+MTJ: "迷途之家"
+MTJ_DEF: "迷途之家"
+MTJ_ADJ: "迷途之家"
+
+SLB: "圣域"
+SLB_DEF: "圣域"
+SLB_ADJ: "圣域"
+
+YXJ: "妖兽仙境"
+YXJ_DEF: "妖兽仙境"
+YXJ_ADJ: "仙境"
+
+#泛雾之湖
+HMG: "红魔馆"
+HMG_DEF: "红魔馆共和国"
+HMG_ADJ: "红魔馆"
+
+SGQ: "联合使馆"
+SGQ_DEF: "联合使馆及军事管制区"
+SGQ_ADJ: "使馆"
+
+BWH: "北雾"
+BWH_DEF: "人里属北雾市"
+BWH_ADJ: "北雾"
+
+WLT: "幻草原联盟"
+WLT_DEF: "幻草原妖精联盟"
+WLT_ADJ: "幻妖联"
+
+BHY: " "
+BHY_DEF: " "
+BHY_ADJ: "北幻草原"
+
+LWZ: "下克上流亡者"
+LWZ_DEF: "下克上流亡者"
+LWZ_ADJ: "流亡者"
+
+XAG: "宵暗国"
+XAG_DEF: "宵暗妖怪国"
+XAG_ADJ: "宵暗"
+
+HCY: "幻草原王国"
+HCY_DEF: "幻草原议会王国"
+HCY_ADJ: "幻草原"
+
+DHC: "东幻草原"
+DHC_DEF: "改编第一军"
+DHC_ADJ: "东幻草原"
+
+XBW: "雾之湖国"
+XBW_DEF: "雾之湖妖精国"
+XBW_ADJ: "雾之湖国"
+
+SLQ: "骚灵共和国"
+SLQ_DEF: "东湖岸骚灵共和国"
+ETO_ADJ: "骚灵"
+
+NYS: "东雾之湖王国"
+NYS_DEF: "东雾之湖王国"
+NYS_ADJ: "东雾之湖"
+
+XXC: "下玄武川"
+XXC_DEF: "河童属下玄武川"
+XXC_ADJ: "下玄武川"
+
+#东南
+
+SYG: "千丘帝国"
+SYG_DEF: "千丘帝国"
+SYG_ADJ: "千丘"
+
+SXL: "八百万同盟"
+SXL_DEF: "八百万同盟"
+SXL_ADJ: "八百万同盟"
+
+FRC: "丰饶村落"
+FRC_DEF: "丰饶村落"
+FRC_ADJ: "丰饶村落"
+
+JSS: "金山彦村落"
+JSS_DEF: "金山彦村落"
+JSS_ADJ: "金山彦村落"
+
+
+
+XNG: "西南开化区"
+XNG_DEF: "西南开化区"
+XNG_ADJ: "西南公司"
+
+WSR: "“未死之人”"
+WSR_DEF: "“未死之人”"
+WSR_ADJ: "“未死之人”"
+
+BBW: "八百万同盟"
+BBW_DEF: "八百万同盟"
+BBW_ADJ: "八百万同盟"
+
+CYC: "除妖村落"
+CYC_DEF: "除妖村落"
+CYC_ADJ: "除妖村落"
+
+ZJL: "般若宗教联盟"
+ZJL_DEF: "般若宗教联盟"
+ZJL_ADJ: "般若"
+
+XHT: "新玄武川"
+XHT_DEF: "新玄武川共和国"
+XHT_ADJ: "新玄武川"
+
+ZYD: "中有之道"
+ZYD_DEF: "中有之道"
+ZYD_ADJ: "中有之道"
+
+LLH: "铃兰花海"
+LLH_DEF: "铃兰花海"
+LLH_ADJ: "铃兰"
+
+XHD: "西南荒地"
+XHD_DEF: "西南荒地"
+XHD_ADJ: "西南荒地"
+
+GBT: "幽灵乱匪"
+GBT_DEF: "幽灵乱匪"
+GBT_ADJ: "幽匪"
+
+XYL: "西南妖精联军"
+XYL_DEF: "西南妖精联军"
+XYL_ADJ: "西南妖精"
+
+ZWJ: "本土自卫组织"
+ZWJ_DEF: "本土自卫组织"
+ZWJ_ADJ: "西南土著"
+
+YFG: "妖异佛国"
+YFG_DEF: "妖怪种族佛陀国"
+YFG_ADJ: "妖异佛国"
+
+WWZ: " "
+WWZ_DEF: " "
+WWZ_ADJ: "三途川畔"
+
+#西南
+
+TYH: "太阳花田"
+TYH_DEF: "太阳花田"
+TYH_ADJ: "花田"
+
+SBL: "命莲寺"
+SBL_DEF: "命莲寺"
+SBL_ADJ: "命莲寺"
+
+SLM: "神灵庙"
+SLM_DEF: "神灵庙"
+SLM_ADJ: "神灵庙"
+
+FSS: "北部付丧神自治领"
+FSS_DEF: "北部付丧神自治领"
+FSS_ADJ: "北付丧神"
+
+REN: "人里帝国"
+REN_DEF: "人里帝国"
+REN_ADJ: "人里"
+
+UNY: "兽道部落"
+UNY_DEF: "兽道部落"
+UNY_ADJ: "兽道"
+
+BLS: "博丽神社"
+BLS_DEF: "博丽神社"
+BLS_ADJ: "博丽"
+
+LML: "狸猫森林"
+LML_DEF: "狸猫森林"
+LML_ADJ: "狸猫"
+
+SAR: "西南狼族自治区"
+SAR_DEF: "西南狼族自治区"
+SAR_ADJ: "狼族自治区"
+
+MHD: "中竹林自治区"
+MHD_DEF: "中竹林自治区"
+MHD_ADJ: "中竹林"
+
+LMG: "十二州联"
+LMG_DEF: "十二州联"
+LMG_ADJ: "十二州"
+
+YYT: "永远亭"
+YYT_DEF: "永远亭"
+YYT_ADJ: "永远亭"
+
+
+#泛魔法森林
+
+MLS: "大魔法森林"
+MLS_DEF: "大魔法森林"
+MLS_ADJ: "魔法森林"
+
+XFS: "辉针国"
+XFS_DEF: "辉针国"
+XFS_ADJ: "辉针城"
+
+
+
+BSL: "冰霜森林"
+BSL_DEF: "冰霜森林"
+BSL_ADJ: "冰霜森林"
+
+MYJ: "外魔法森林整合区"
+MYJ_DEF: "外魔法森林整合区"
+MYJ_ADJ: "外魔法森林"
+
+
+#旧地狱
+
+DLD: "地灵殿"
+DLD_DEF: "地灵殿"
+DLD_ADJ: "地灵殿"
+
+JIU: "旧都"
+JIU_DEF: "旧都"
+JIU_ADJ: "旧都"
+
+DYJ: "山南同盟"
+DYJ_DEF: "山南同盟"
+DYJ_ADJ: "山南"
+
+LJC: "旧地狱炼金厂"
+LJC_DEF: "旧地狱炼金厂"
+LJC_ADJ: "炼金厂"
+
+YLQ: " "
+YLQ_DEF: " "
+YLQ_ADJ: "怨灵地区"
+
+FYD: "旧地狱反应堆"
+FYD_DEF: "旧地狱反应堆"
+FYD_ADJ: "反应堆"
+
+FQD: " "
+FQD_DEF: " "
+FQD_ADJ: "废弃通道"
+
+ZZD: "蜘蛛风洞"
+ZZD_DEF: "蜘蛛风洞"
+ZZD_ADJ: "蜘蛛风洞"
+
+PLX: "桥梁通道"
+PLX_DEF: "桥梁通道"
+PLX_ADJ: "桥梁通道"
+
+ZZZ: "入冥中转站"
+ZZZ_DEF: "入冥中转站"
+ZZZ_ADJ: "入冥中转"
+
+WFQ: "西部针山"
+WFQ_DEF: "西部针山"
+WFQ_ADJ: "西部针山"
+
+SYH: "石油海"
+SYH_DEF: "石油海"
+SYH_ADJ: "石油海"
+
+#冥界
+
+UUZ: "冥界"
+UUZ_DEF: "冥界"
+UUZ_ADJ: "冥界"
+
+#贤者地区
+
+JXJ: "隙间世界"
+JXJ_DEF: "隙间世界"
+JXJ_ADJ: "隙间"
+
+HHG: "后户之国"
+HHG_DEF: "后户之国"
+HHG_ADJ: "后户之国"
+
+#地狱
+
+STC: "三途川"
+STC_DEF: "三途川共和国"
+STC_ADJ: "三途川"
+
+GDY: "孤独地狱"
+GDY_DEF: "孤独地狱"
+GDY_ADJ: "孤独地狱"
+
+SSL: "死神驻地"
+SSL_DEF: "死神驻地"
+SSL_ADJ: "死神"
+
+WZD: "亡者帝国"
+WZD_DEF: "亡者帝国"
+WZD_ADJ: "亡者帝国"
+
+DJT: "地狱祭坛"
+DJT_DEF: "赫卡提亚的地狱祭坛"
+DJT_ADJ: "祭坛"
+
+QBL: "地狱鬼族"
+QBL_DEF: "地狱鬼族"
+QBL_ADJ: "地狱鬼族"
+
+LZY: "灵长园"
+LZY_DEF: "灵长园"
+LZY_ADJ: "灵长园"
+
+#LZY: "争议地区"
+#LZY_DEF: "争议地区"
+#LZY_ADJ: "争议地区"
+
+GJZ: "鬼杰组"
+GJZ_DEF: "鬼杰组"
+GJZ_ADJ: "鬼杰组"
+
+GYT: "刚欲同盟"
+GYT_DEF: "刚欲同盟"
+GYT_ADJ: "刚欲同盟"
+
+DXH: "怨灵联军"
+DXH_DEF: "怨灵联军"
+DXH_ADJ: "联军"
+
+GZH: "地狱归正会"
+GZH_DEF: "地狱归正会"
+GZH_ADJ: "归正会"
+
+WZL: "亡灵自由领"
+WZL_DEF: "亡灵自由领"
+WZL_ADJ: "自由领"
+
+SHY: "赛河源"
+SHY_DEF: "赛河源"
+SHY_ADJ: "赛河源"
+
+JYZ: "劲牙组"
+JYZ_DEF: "劲牙组"
+JYZ_ADJ: "劲牙组"
+
+CBL: "赤鬼部落"
+CBL_DEF: "赤鬼部落"
+CBL_ADJ: "赤鬼"
+
+SJS: "是非曲直厅"
+SJS_DEF: "是非曲直厅"
+SJS_ADJ: "是非曲直"
+
+DYL: "地狱妖精部落"
+DYL_DEF: "地狱妖精部落"
+DYL_ADJ: "地狱妖精"
+
+XCY: "血池地狱"
+XCY_DEF: "血池地狱"
+XCY_ADJ: "血池地狱"
+
+ABY: "阿鼻地狱"
+ABY_DEF: "阿鼻地狱暴动区"
+ABY_ADJ: "阿鼻地狱"
+
+DSD: "刀山地狱"
+DSD_DEF: "刀山地狱暴动区"
+DSD_ADJ: "刀山地狱"
+
+FGJ: "反鬼联军"
+FGJ_DEF: "亡灵反鬼联军"
+FGJ_ADJ: "反鬼联军"
+

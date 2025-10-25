@@ -1,0 +1,30 @@
+state={
+	id=597
+	name="STATE_597"
+	provinces={
+		282 1730 2491 4035 4208 4527 4529 4722 5853 6839 10293 10384 10492 
+	}
+	manpower=1001700
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = REN
+		add_core_of =REN
+		victory_points = { 6839 5 }
+		buildings = {
+			infrastructure = 1
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 1
+		}
+	}
+}

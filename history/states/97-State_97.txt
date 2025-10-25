@@ -1,0 +1,30 @@
+state={
+	id=97
+	name="STATE_97"
+	provinces={
+		14 213 215 668 747 873 961 1355 1532 2136 2694 3047 3585 3653 3803 4001 4040 4649 4730 5025 5216 5236 5417 5685 6173 6191 6456 7085 7120 8432 8452 8566 8588 8649 8681 8746 8775 8798 8847 8858 8895 8902 
+	}
+	manpower=213000
+	buildings_max_level_factor=1.000
+		state_category=tiny_island
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	local_supplies=0.000
+	history = {
+		owner = BHY
+		add_core_of =BHY
+		buildings = {
+			infrastructure = 0
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

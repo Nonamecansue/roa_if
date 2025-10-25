@@ -1,0 +1,29 @@
+state={
+	id=509
+	name="STATE_509"
+	provinces={
+		1524 4071 4083 4228 5376 6675 7059 7160 10677 10692 10705 
+	}
+	manpower=2030000
+	buildings_max_level_factor=1.000
+	state_category=town
+	llocal_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 2 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = TYH
+		add_core_of = TYH
+		buildings = {
+			infrastructure = 3
+			air_base = 0
+			arms_factory = 1
+			industrial_complex = 0
+		}
+	}
+}

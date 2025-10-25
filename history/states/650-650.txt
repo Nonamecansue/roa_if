@@ -1,0 +1,29 @@
+state={
+	id=650
+	name="STATE_650"
+	provinces={
+		461 1176 2556 6509 7260 8460 8462 8472 8481 8482 8500 8506 8529 8554 
+	}
+	manpower=2008100
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten =0 #钨
+		chromium = 0 #铬
+		rubber=3 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = SHO
+		add_core_of =SHO
+		buildings = {
+			infrastructure = 3
+			air_base = 0
+			arms_factory = 3
+			industrial_complex = 2
+		}
+	}
+}

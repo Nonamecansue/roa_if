@@ -1,0 +1,29 @@
+state={
+	id=432
+	name="STATE_432"
+	provinces={
+		770 1017 1809 1901 2851 3114 4816 4960 5245 5507 6008 6073 6521 7243 7263 7671 7682 7705 7706 7716 
+	}
+	manpower=632000
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = JIU
+		add_core_of =JIU
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

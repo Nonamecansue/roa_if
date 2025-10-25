@@ -1,0 +1,29 @@
+state={
+	id=319
+	name="STATE_319"
+	provinces={
+		191 314 822 989 1112 1454 2274 2283 3350 3551 3587 3667 3820 3936 3977 4031 4098 4111 4941 5443 5465 5495 5758 5771 5799 5833 6312 6476 6687 6748 7272 7592 7645 11304 11326 11350 11368 11388 11412 11422 11427 11450 11454 11472 11500 
+	}
+	manpower=1320000
+	buildings_max_level_factor=1.000
+		state_category=town
+		local_supplies=0.000
+		resources={
+			steel=2 #钢铁
+			tungsten = 2 #钨
+			chromium = 2 #铬
+			rubber=2 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = YYT
+		add_core_of = YYT
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 2
+		}
+	}
+}

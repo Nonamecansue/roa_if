@@ -1,0 +1,37 @@
+﻿division_template = {
+	name = "红魔治安军"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "红魔骑兵队"
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+	}
+	support = {
+	}
+}
+
+division_template = {
+	name = "自行车治安队"
+	regiments = {
+		bicycle_battalion = { x = 0 y = 0 }
+		bicycle_battalion = { x = 0 y = 1 }
+		bicycle_battalion = { x = 0 y = 2 }
+	}
+	support = {
+	}
+}
+
+
+units = {
+
+}

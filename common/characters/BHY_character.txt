@@ -1,0 +1,56 @@
+characters={
+	BHY_wzf1_leader ={
+		name = BHY_wzf1_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/HKR/HKR_hkr.dds"
+				small="gfx/leaders/HKR/HKR_hkr_small.dds"
+			}
+			army = {
+				large="gfx/leaders/HKR/HKR_hkr.dds"
+				small="gfx/leaders/HKR/HKR_hkr_small.dds"
+			}
+		}
+		country_leader={
+			ideology=genming_type
+			traits={ HCY_wubiandelusehuangmo_trait }
+			id=-1
+		}
+		country_leader={
+			ideology=xiakeshang_type
+			traits={ HCY_wubiandelusehuangmo_trait }
+			id=-1
+		}
+		country_leader={
+			ideology=jijingailiang_type
+			traits={ HCY_wubiandelusehuangmo_trait }
+			id=-1
+		}
+		country_leader={
+			ideology=baoshougailiang_type
+			traits={ HCY_wubiandelusehuangmo_trait }
+			id=-1
+		}
+		country_leader={
+			ideology=baoshou_wuzhengfuzhuangtai
+			traits={ HCY_wubiandelusehuangmo_trait }
+			id=-1
+		}
+		country_leader={
+			ideology=diguo_type
+			traits={ HCY_wubiandelusehuangmo_trait }
+			id=-1
+		}
+		country_leader={
+			ideology=huanxiang_type
+			traits={ HCY_wubiandelusehuangmo_trait }
+			id=-1
+		}
+		country_leader={
+			ideology=yibian_type
+			traits={ HCY_wubiandelusehuangmo_trait }
+			id=-1
+		}
+	}
+	
+}

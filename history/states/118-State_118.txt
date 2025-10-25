@@ -1,0 +1,29 @@
+state={
+	id=118
+	name="STATE_118"
+	provinces={
+		315 429 688 2424 2990 3002 5423 5648 6221 8605 8654 8704 8714 
+	}
+	manpower=1
+    state_category=tiny_island
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+		history = {
+			owner = FQD
+			add_core_of = FQD
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+}

@@ -1,0 +1,29 @@
+state={
+	id=651
+	name="STATE_651"
+	provinces={
+		521 849 1530 2591 3385 4767 5183 5338 6563 11125 11177 
+	}
+	manpower=1100000
+	state_category=small_island
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = JXJ
+		add_core_of =JXJ
+		buildings = {
+			infrastructure = 3
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

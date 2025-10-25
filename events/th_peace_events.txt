@@ -1,0 +1,38 @@
+﻿add_namespace = peace
+##########事件###########
+country_event = { #千丘被击败
+	id = peace.1
+	title = peace.1.t
+	desc = peace.1.d
+
+	# major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = peace.1.1#
+		trigger = {
+
+		}
+
+		ai_chance = {
+			base = 70
+		}
+		TGD = {
+		set_country_flag = peace_zhengbianchenggong
+		set_country_flag = peace_xuanjujieshu
+		set_cosmetic_tag = TGD_ghg
+		add_stability = 0.5
+		}
+		set_country_flag = peace_zhengbianchenggong
+		set_country_flag = peace_xuanjujieshu
+		set_cosmetic_tag = TGD_ghg
+		
+		
+		
+
+		
+			
+
+	}
+}

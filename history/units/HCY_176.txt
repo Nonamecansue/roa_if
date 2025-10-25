@@ -1,0 +1,146 @@
+﻿division_template = {
+	name = "草原骑兵队"
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 1 y = 3 }
+	}
+	support = {
+		recon  = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "常规步兵团"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		artillery_brigade = { x = 2 y = 0 }
+	}
+	support = {
+	}
+}
+
+units = {
+	division = {
+		name = "草原骑兵队"
+		location = 572
+		division_template = "草原骑兵队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "草原骑兵队"
+		location = 7114
+		division_template = "草原骑兵队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "草原骑兵队"
+		location = 5197
+		division_template = "草原骑兵队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "草原骑兵队"
+		location = 2093
+		division_template = "草原骑兵队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "草原骑兵队"
+		location = 4897
+		division_template = "草原骑兵队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "草原骑兵队"
+		location = 3830
+		division_template = "草原骑兵队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "草原骑兵队"
+		location = 3449
+		division_template = "草原骑兵队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "草原骑兵队"
+		location = 9458
+		division_template = "草原骑兵队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "草原骑兵队"
+		location = 9249
+		division_template = "草原骑兵队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "草原骑兵队"
+		location = 6893
+		division_template = "草原骑兵队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "常规步兵团"
+		location = 2995
+		division_template = "常规步兵团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "常规步兵团"
+		location = 132
+		division_template = "常规步兵团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "常规步兵团"
+		location = 7488
+		division_template = "常规步兵团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "常规步兵团"
+		location = 5197
+		division_template = "常规步兵团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "常规步兵团"
+		location = 2093
+		division_template = "常规步兵团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "常规步兵团"
+		location = 7114
+		division_template = "常规步兵团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+
+}

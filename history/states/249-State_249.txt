@@ -1,0 +1,28 @@
+state={
+	id=249
+	name="STATE_249"
+	provinces={
+		1719 1926 2795 6865 7144 10387 10456 
+	}
+	manpower=1893000
+	state_category=town
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 3 #钨
+		chromium = 2 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = SYG
+		add_core_of =SYG
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 2
+			industrial_complex = 2
+		}
+	}
+}

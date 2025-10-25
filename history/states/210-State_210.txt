@@ -1,0 +1,29 @@
+state={
+	id=210
+	name="STATE_210"
+	provinces={
+		35 338 2469 3592 3861 4266 4273 4352 5232 5928 6320 6441 6747 9751 9835 9895 
+	}
+	manpower=1220000
+	buildings_max_level_factor=1.000
+		state_category=large_town
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 4 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = MLS
+		add_core_of =MLS
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+}

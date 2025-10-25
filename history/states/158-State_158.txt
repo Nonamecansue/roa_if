@@ -1,0 +1,29 @@
+state={
+	id=158
+	name="STATE_158"
+	provinces={
+		160 588 1209 1647 2668 2670 2789 2958 3075 3466 3890 3968 4049 4453 6732 8906 8911 8965 8972 9003 9015 9017 9056 9060 
+	}
+	manpower=608000
+	buildings_max_level_factor=1.000
+		state_category=small_island
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = BHY
+		add_core_of =BHY
+		buildings = {
+			infrastructure = 1
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

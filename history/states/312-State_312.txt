@@ -1,0 +1,29 @@
+state={
+	id=312
+	name="STATE_312"
+	provinces={
+		522 667 696 771 816 866 982 1023 1042 2110 2120 2164 2220 2349 3457 4047 4140 4409 5356 5644 5789 5872 6532 7061 11138 11179 11233 11276 11280 11291 11317 11347 11367 11383 11399 11415 11417 
+	}
+	manpower=1092000
+	buildings_max_level_factor=1.000
+		state_category=rural
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = LMG
+		add_core_of = LMG
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 1
+		}
+	}
+}

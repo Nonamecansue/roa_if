@@ -1,0 +1,275 @@
+﻿division_template = {
+	name = "川上骑兵旅"
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+	support = {
+	}
+}
+
+division_template = {
+	name = "通用装甲旅"
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		light_armor = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+	}
+	support = {
+	}
+}
+
+division_template = {
+	name = "河童标准军"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+	}
+	support = {
+	}
+}
+
+units = {
+	division = {
+		name = "河童标准军"
+		location = 7605
+		division_template = "河童标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "河童标准军"
+		location = 3932
+		division_template = "河童标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "河童标准军"
+		location = 6897
+		division_template = "河童标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "河童标准军"
+		location = 2906
+		division_template = "河童标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "河童标准军"
+		location = 3893
+		division_template = "河童标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "河童标准军"
+		location = 9807
+		division_template = "河童标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "河童标准军"
+		location = 9819
+		division_template = "河童标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "河童标准军"
+		location = 9582
+		division_template = "河童标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "河童标准军"
+		location = 9400
+		division_template = "河童标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "河童标准军"
+		location = 5041
+		division_template = "河童标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "河童标准军"
+		location = 9634
+		division_template = "河童标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "河童标准军"
+		location = 2924
+		division_template = "河童标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "河童标准军"
+		location = 9305
+		division_template = "河童标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "河童标准军"
+		location = 9395
+		division_template = "河童标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "河童标准军"
+		location = 3544
+		division_template = "河童标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "河童标准军"
+		location = 9303
+		division_template = "河童标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "河童标准军"
+		location = 9308
+		division_template = "河童标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "河童标准军"
+		location = 4566
+		division_template = "河童标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "河童标准军"
+		location = 4945
+		division_template = "河童标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "河童标准军"
+		location = 6827
+		division_template = "河童标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "河童标准军"
+		location = 9058
+		division_template = "河童标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "河童标准军"
+		location = 5313
+		division_template = "河童标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "河童标准军"
+		location = 5615
+		division_template = "河童标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "河童标准军"
+		location = 1973
+		division_template = "河童标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "河童标准军"
+		location = 8926
+		division_template = "河童标准军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "川上骑兵旅"
+		location = 5041
+		division_template = "川上骑兵旅"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "川上骑兵旅"
+		location = 2906
+		division_template = "川上骑兵旅"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "川上骑兵旅"
+		location = 3932
+		division_template = "川上骑兵旅"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "川上骑兵旅"
+		location = 9400
+		division_template = "川上骑兵旅"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "通用装甲旅"
+		location = 7605
+		division_template = "通用装甲旅"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "通用装甲旅"
+		location = 5041
+		division_template = "通用装甲旅"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "通用装甲旅"
+		location = 9308
+		division_template = "通用装甲旅"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	
+	
+}

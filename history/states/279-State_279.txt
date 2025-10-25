@@ -1,0 +1,29 @@
+state={
+	id=279
+	name="STATE_279"
+	provinces={
+		154 310 616 1095 1931 2258 2838 3025 3991 4171 4448 4665 4734 5046 5290 5852 6017 7002 7078 10743 10784 10818 10830 10943 10968 10975 11012 11021 11029 11076 11124 
+	}
+	manpower=1320000
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = WZD
+		add_core_of =WZD
+		buildings = {
+			infrastructure = 1
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

@@ -1,0 +1,29 @@
+state={
+	id=45
+	name="STATE_45"
+	provinces={
+		25 40 297 385 1256 1680 2014 2105 2203 2558 2728 2926 3504 3724 3739 3771 4097 4215 4261 4714 5078 5317 5621 5864 6626 6694 6783 7961 7967 7990 7996 8002 8044 8067 8087 8116 
+	}
+	manpower=1320000
+	buildings_max_level_factor=1.000
+	state_category=tiny_island
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = YLQ
+		add_core_of = YLQ
+		buildings = {
+			infrastructure = 0
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

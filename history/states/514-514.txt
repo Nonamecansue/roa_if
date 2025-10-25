@@ -1,0 +1,28 @@
+state={
+	id=514
+	name="STATE_514"
+	provinces={
+		1868 3859 3875 4166 4841 5510 10264 10297 10375 
+	}
+	manpower=1658000
+	state_category=large_town
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = SYG
+		add_core_of = SYG
+		buildings = {
+			infrastructure = 3
+			air_base = 0
+			arms_factory = 1
+			industrial_complex = 2
+		}
+	}
+}

@@ -1,0 +1,30 @@
+state={
+	id=219
+	name="STATE_219"
+	provinces={
+		161 929 1029 1282 1869 2067 2173 2290 2510 2534 3257 4121 4199 4709 4811 4826 5322 6589 6808 6810 7315 7416 7587 9794 9902 9941 9942 9965 10005 10060 10092 10096 10134 10169 
+	}
+	manpower=202000
+	impassable = yes
+	buildings_max_level_factor=1.000
+		state_category=tiny_island
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = MLS
+		add_core_of = MLS
+		buildings = {
+			infrastructure = 0
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

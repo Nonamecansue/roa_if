@@ -1,0 +1,31 @@
+state={
+	id=348
+	name="STATE_348"
+	provinces={
+		1659 2003 4055 5912 6314 7601 9743 9761 9778 9787 9801 9811 9825 
+	}
+	manpower=7891000
+	buildings_max_level_factor=1.000
+		state_category=metropolis
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 3 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+			
+		}
+	history = {
+		owner = HMG
+		add_core_of = HMG
+		buildings = {
+			infrastructure = 5
+			air_base = 0
+			arms_factory = 1
+			industrial_complex = 5
+			1659={ naval_base = 2}
+		}
+	}
+}

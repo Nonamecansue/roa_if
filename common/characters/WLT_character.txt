@@ -1,0 +1,75 @@
+characters={
+	WLT_qilunuo ={
+		name = WLT_qilunuo
+		portraits={
+			civilian={
+				large="gfx/leaders/HKR/HKR_hkr.dds"
+				small="gfx/leaders/HKR/HKR_hkr_small.dds"
+			}
+			army = {
+				large="gfx/leaders/HKR/HKR_hkr.dds"
+				small="gfx/leaders/HKR/HKR_hkr_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  th_original_character th_character th_trait_qianxianzhandou war_hero trait_reckless th_trait_yinyangshi }
+			# id = 1
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		advisor = {
+			slot = character_coop
+			idea_token = WLT_qilunuo
+			name = WLT_qilunuo
+			cost = 200
+			modifier = {
+		#		PO_good_battle_influence_factor = 0.5
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	WLT_qilunuo_leader ={
+		name = WLT_qilunuo_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/HKR/HKR_hkr.dds"
+				small="gfx/leaders/HKR/HKR_hkr_small.dds"
+			}
+			army = {
+				large="gfx/leaders/HKR/HKR_hkr.dds"
+				small="gfx/leaders/HKR/HKR_hkr_small.dds"
+			}
+		}
+		country_leader={
+			ideology=geming_type
+			id=-1
+		}
+		country_leader={
+			ideology=jijingailiang_type
+			id=-1
+		}
+		country_leader={
+			ideology=baoshougailiang_type
+			id=-1
+		}
+		country_leader={
+			ideology=baoshou_type
+			id=-1
+		}
+		country_leader={
+			ideology=diguo_type
+			id=-1
+		}
+		country_leader={
+			ideology=huanxiang_type
+			id=-1
+		}
+		
+	}
+	
+}

@@ -1,0 +1,110 @@
+﻿division_template = {
+	name = "骚灵基础军"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		artillery_brigade = { x = 2 y = 0 }
+		
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "安保巡逻队"
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+	}
+	support = {
+	}
+}
+
+units = {
+division = {
+		name = "骚灵基础军"
+		location = 3963
+		division_template = "骚灵基础军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "骚灵基础军"
+		location = 1556
+		division_template = "骚灵基础军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "骚灵基础军"
+		location = 42
+		division_template = "骚灵基础军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "骚灵基础军"
+		location = 7390
+		division_template = "骚灵基础军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "骚灵基础军"
+		location =10420
+		division_template = "骚灵基础军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "安保巡逻队"
+		location = 5299
+		division_template = "安保巡逻队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "安保巡逻队"
+		location = 5894
+		division_template = "安保巡逻队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "安保巡逻队"
+		location = 1881
+		division_template = "安保巡逻队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "安保巡逻队"
+		location = 812
+		division_template = "安保巡逻队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "安保巡逻队"
+		location = 2318
+		division_template = "安保巡逻队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "安保巡逻队"
+		location = 6150
+		division_template = "安保巡逻队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "安保巡逻队"
+		location = 6947
+		division_template = "安保巡逻队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+}

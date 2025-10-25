@@ -1,0 +1,29 @@
+state={
+	id=16
+	name="STATE_16"
+	provinces={
+		516 939 1179 2198 2299 2327 2463 2855 3083 3784 3914 4008 4188 4713 4727 5809 6553 6800 7133 7351 7704 7714 7718 7788 7790 7809 
+	}
+	manpower=803200
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = WFQ
+		add_core_of = WFQ
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

@@ -1,0 +1,29 @@
+state={
+	id=648
+	name="STATE_648"
+	provinces={
+		417 2101 3539 4441 4820 6648 6945 10870 10942 10991 
+	}
+	manpower=2320000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+	resources={
+		steel=8 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = WZD
+		add_core_of =WZD
+		buildings = {
+			infrastructure = 3
+			air_base = 0
+			arms_factory = 1
+			industrial_complex = 0
+		}
+	}
+}

@@ -1,0 +1,29 @@
+state={
+	id=423
+	name="STATE_423"
+	provinces={
+		1784 2658 3061 4420 4552 9586 9587 9647 
+	}
+	manpower=708390
+	buildings_max_level_factor=1.000
+		state_category=town
+		local_supplies=0.000
+		resources={
+			steel=24 #钢铁
+			tungsten = 8 #钨
+			chromium = 10 #铬
+			rubber=0 #橡胶
+			aluminium=9 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = HLD
+		add_core_of =HLD
+		buildings = {
+			infrastructure = 4
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

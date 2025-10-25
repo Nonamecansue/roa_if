@@ -1,0 +1,29 @@
+state={
+	id=186
+	name="STATE_186"
+	provinces={
+		1884 3544 3579 4980 5102 5774 6991 9418 9435 9467 9475 9543 9565 
+	}
+	manpower=1983000
+	buildings_max_level_factor=1.000
+		state_category=megalopolis
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 3 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = HZH
+		add_core_of = HZH
+		buildings = {
+			infrastructure = 4
+			air_base = 0
+			arms_factory = 1
+			industrial_complex = 4
+		}
+	}
+}

@@ -1,0 +1,29 @@
+state={
+	id=113
+	name="STATE_113"
+	provinces={
+		1754 2680 4205 4584 4647 5348 5482 6022 6190 6956 8608 8643 8688 8689 8698 8719 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten =3 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+        manpower=1038000
+        state_category = rural
+		history = {
+			owner = SHO
+			add_core_of = SHO
+			buildings = {
+				infrastructure = 2
+				air_base = 0
+				arms_factory = 1
+				industrial_complex = 0
+			}
+		}
+}

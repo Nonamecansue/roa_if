@@ -1,0 +1,29 @@
+state={
+	id=360
+	name="STATE_360"
+	provinces={
+		992 2707 4089 4891 5974 6203 6322 7196 7504 9419 9420 9471 9516 9528 
+	}
+	manpower=2167800
+	buildings_max_level_factor=1.000
+		state_category=large_town
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = WLT
+		add_core_of = WLT
+		buildings = {
+			infrastructure = 3
+			air_base = 0
+			arms_factory = 3
+			industrial_complex = 1
+		}
+	}
+}

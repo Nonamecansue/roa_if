@@ -1,0 +1,29 @@
+state={
+	id=626
+	name="STATE_626"
+	provinces={
+		541 1670 2567 3725 4082 4333 4701 5702 6096 7175 7527 9961 9983 10075 10156 10189 
+	}
+	manpower=1220000
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = WZL
+		add_core_of =WZL
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

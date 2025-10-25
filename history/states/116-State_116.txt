@@ -1,0 +1,29 @@
+state={
+	id=116
+	name="STATE_116"
+	provinces={
+		343 449 1126 2184 2456 3491 3863 3999 4404 4491 4653 5597 5751 5776 5992 6002 6088 6435 6507 6890 7020 8543 8560 8568 8570 8604 8609 8614 8627 8653 8660 8664 8673 8683 8723 8731 8735 
+	}
+	manpower=1038000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten =0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = SHO
+		add_core_of = SHO
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 1
+		}
+	}
+}

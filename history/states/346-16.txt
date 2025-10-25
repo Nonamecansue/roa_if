@@ -1,0 +1,28 @@
+state={
+	id=346
+	name="STATE_346"
+	provinces={
+		1958 2072 2719 2981 3256 4955 6106 9578 9651 9657 9740 9741 9754 
+	}
+	manpower=2176000
+	state_category=city
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = HMG
+		add_core_of = HMG
+		buildings = {
+			infrastructure = 3
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 4
+		}
+	}
+}

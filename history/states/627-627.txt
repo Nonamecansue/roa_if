@@ -1,0 +1,29 @@
+state={
+	id=627
+	name="STATE_627"
+	provinces={
+		59 530 540 1739 2215 2335 3523 3871 4267 5023 6101 6703 9918 9958 10001 10041 10082 10173 10205 
+	}
+	manpower=1130000
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = DXH
+		add_core_of =DXH
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

@@ -1,0 +1,50 @@
+﻿capital = 1
+
+recruit_character = XBW_xrw
+recruit_character = XBW_xrw_leader
+
+146.1.1 = {
+    set_technology = { 
+        #步兵装备
+        infantry_weapons = 1
+        bicycle_infantry = 1
+
+        #火炮
+        gw_artillery = 1
+
+        #支援装备
+        tech_support = 1
+        tech_engineers = 1
+
+        #建造
+        construction1 = 1
+    }
+    set_stability = 0.5
+    set_war_support = 0.1
+    set_convoys = 32
+    set_research_slots = 3
+}
+
+
+
+146.1.1={
+    oob = "XBW_176"
+    add_ideas = {
+        
+    }
+    set_politics = {
+    	ruling_party = baoshou
+    	election_frequency = 48
+    	elections_allowed = no
+    }
+    set_popularities = {
+       genming = 0
+       xiakeshang = 5
+       jijingailiang = 5
+       baoshougailiang = 5
+       baoshou = 80
+       diguo = 5
+       huanxiang = 0
+       yibian = 0
+    }
+}

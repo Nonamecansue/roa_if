@@ -1,0 +1,29 @@
+state={
+	id=252
+	name="STATE_252"
+	provinces={
+		214 262 451 889 940 1066 1139 1310 1478 1906 2302 2532 3965 4133 5071 5470 5496 6083 6140 6244 6371 6520 6568 6761 6981 7664 10179 10195 10198 10216 10336 10350 10358 10367 10441 
+	}
+	manpower=507000
+	state_category=xiaozhulin
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = REN
+		add_core_of = REN
+		buildings = {
+			infrastructure = 1
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

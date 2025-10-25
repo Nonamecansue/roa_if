@@ -1,0 +1,60 @@
+﻿capital = 163
+
+recruit_character = BSL_leidi
+recruit_character = BSL_leidi_leader
+
+146.1.1 = {
+    set_technology = { 
+        #步兵装备
+        infantry_weapons = 1
+
+        
+
+
+
+        #支援装备
+        tech_support = 1
+        winter_logistics_support_tech = 1
+
+        #建造
+        construction1 = 1
+        
+    }
+    set_stability = 0.5
+    set_war_support = 0.3
+    set_convoys = 32
+    set_research_slots = 3
+}
+
+
+
+146.1.1={
+    oob = "BSL_176"
+    add_ideas = {
+        limited_conscription
+        limited_exports
+        low_economic_mobilisation
+        xianzhiguowaimeiti
+        zhongshuishou
+        guankongrunei
+        nongye_gongye
+        yizhanzhong
+        
+        
+    }
+    set_politics = {
+    	ruling_party = baoshou
+    	election_frequency = 48
+    	elections_allowed = no
+    }
+    set_popularities = {
+       genming = 0
+       xiakeshang = 10
+       jijingailiang = 10
+       baoshougailiang = 20
+       baoshou = 40
+       diguo = 20
+       huanxiang = 0
+       yibian = 0
+    }
+}

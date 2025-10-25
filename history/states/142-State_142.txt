@@ -1,0 +1,29 @@
+state={
+	id=142
+	name="STATE_142"
+	provinces={
+		1545 3460 3599 4373 5433 5641 5666 6540 7569 8915 8969 8971 9009 9020 9071 9095 9116 
+	}
+	manpower=900200
+	buildings_max_level_factor=1.000
+		state_category=rural
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = BSL
+		add_core_of = BSL
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

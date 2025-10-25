@@ -1,0 +1,31 @@
+state={
+	id=370
+	name="STATE_370"
+	provinces={
+		5484 7189 9768 
+	}
+	manpower=2187600
+	buildings_max_level_factor=1.000
+		state_category=city
+		local_supplies=0.000
+		resources={
+			steel= 0 #钢铁
+			tungsten = 0 #钨
+			chromium = 4 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+			
+		}
+	history = {
+		owner = XBW
+		add_core_of = XBW
+		buildings = {
+			infrastructure = 3
+			air_base = 0
+			arms_factory = 3
+			industrial_complex = 0
+			5484={ naval_base = 2}
+		}
+	}
+}

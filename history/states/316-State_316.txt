@@ -1,0 +1,29 @@
+state={
+	id=316
+	name="STATE_316"
+	provinces={
+		78 173 692 717 1007 1942 2065 2730 3008 3131 4100 4126 4359 4663 5487 6696 6762 6837 6887 7049 7262 11221 11257 11337 11369 11405 11411 11414 11451 11460 11480 11485 
+	}
+        manpower=1220000
+        buildings_max_level_factor=1.000
+	state_category=tiny_island
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+		history = {
+			owner = WZD
+			add_core_of = WZD
+			buildings = {
+				infrastructure = 0
+				air_base = 0
+				arms_factory = 0
+				industrial_complex = 0
+			}
+		}
+}

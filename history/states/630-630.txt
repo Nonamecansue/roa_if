@@ -1,0 +1,29 @@
+state={
+	id=630
+	name="STATE_630"
+	provinces={
+		389 507 915 2314 2652 3770 4099 7099 10944 10958 10964 11094 
+	}
+	manpower=2332000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+	resources={
+		steel=4 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = DJT
+		add_core_of =DJT
+		buildings = {
+			infrastructure = 3
+			air_base = 0
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+}

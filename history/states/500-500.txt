@@ -1,0 +1,29 @@
+state={
+	id=500
+	name="STATE_500"
+	provinces={
+		266 491 737 2318 2353 4289 4985 5117 7360 10635 10646 10718 10740 10804 
+	}
+	manpower=503200
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 1 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = SLQ
+		add_core_of = SLQ
+		buildings = {
+			infrastructure = 1
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

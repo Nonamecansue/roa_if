@@ -1,0 +1,29 @@
+state={
+	id=211
+	name="STATE_211"
+	provinces={
+		19 1911 4852 6477 6998 7246 7628 9708 9756 9807 9847 9863 
+	}
+	manpower=1008000
+	buildings_max_level_factor=1.000
+		state_category=town
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=2 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = HZH
+		add_core_of = HZH
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+}

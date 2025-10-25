@@ -1,0 +1,243 @@
+﻿division_template = {
+	name = "神率军团"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		artillery_brigade = { x = 2 y = 0 }
+		
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "骑兵分队"
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+	support = {
+	}
+}
+
+
+
+units = {
+	division = {
+		name = "骑兵分队"
+		location = 10164
+		division_template = "骑兵分队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "骑兵分队"
+		location = 10222
+		division_template = "骑兵分队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "骑兵分队"
+		location = 7377
+		division_template = "骑兵分队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "骑兵分队"
+		location = 2547
+		division_template = "骑兵分队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "神率军团"
+		location = 7377
+		division_template = "神率军团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "神率军团"
+		location = 4180
+		division_template = "神率军团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "神率军团"
+		location = 2394
+		division_template = "神率军团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "神率军团"
+		location = 1426
+		division_template = "神率军团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "神率军团"
+		location = 4220
+		division_template = "神率军团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "神率军团"
+		location = 10164
+		division_template = "神率军团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "神率军团"
+		location = 2547
+		division_template = "神率军团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "神率军团"
+		location = 10222
+		division_template = "神率军团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "神率军团"
+		location =181
+		division_template = "神率军团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "神率军团"
+		location = 10572
+		division_template = "神率军团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "神率军团"
+		location = 5827
+		division_template = "神率军团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "神率军团"
+		location = 10296
+		division_template = "神率军团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "神率军团"
+		location = 6396
+		division_template = "神率军团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "神率军团"
+		location = 7377
+		division_template = "神率军团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "神率军团"
+		location = 4180
+		division_template = "神率军团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "神率军团"
+		location = 2394
+		division_template = "神率军团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "神率军团"
+		location = 1426
+		division_template = "神率军团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "神率军团"
+		location = 4220
+		division_template = "神率军团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "神率军团"
+		location = 10164
+		division_template = "神率军团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "神率军团"
+		location = 2547
+		division_template = "神率军团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "神率军团"
+		location = 10222
+		division_template = "神率军团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "神率军团"
+		location =181
+		division_template = "神率军团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "神率军团"
+		location = 10572
+		division_template = "神率军团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "神率军团"
+		location = 5827
+		division_template = "神率军团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "神率军团"
+		location = 10296
+		division_template = "神率军团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "神率军团"
+		location = 6396
+		division_template = "神率军团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+
+}

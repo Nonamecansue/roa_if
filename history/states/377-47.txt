@@ -1,0 +1,29 @@
+state={
+	id=377
+	name="STATE_377"
+	provinces={
+		3827 4511 4796 4945 4952 5931 7007 9132 9159 9165 9201 9227 9238 9246 9284 
+	}
+	manpower=1087000
+	buildings_max_level_factor=1.000
+		state_category=large_town
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 3 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = HZH
+		add_core_of = HZH
+		buildings = {
+			infrastructure = 3
+			air_base = 0
+			arms_factory = 2
+			industrial_complex = 2
+		}
+	}
+}

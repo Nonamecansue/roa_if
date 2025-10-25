@@ -1,0 +1,29 @@
+state={
+	id=269
+	name="STATE_269"
+	provinces={
+		124 140 291 584 809 962 1967 2055 4320 4606 4758 4925 4957 5816 5870 6408 7630 10453 10506 10601 10675 10720 10785 
+	}
+	manpower=690200
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=1 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = REN
+		add_core_of = REN
+		buildings = {
+			infrastructure = 1
+			air_base = 0
+			arms_factory = 1
+			industrial_complex = 0
+		}
+	}
+}

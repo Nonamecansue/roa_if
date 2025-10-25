@@ -1,0 +1,29 @@
+state={
+	id=368
+	name="STATE_368"
+	provinces={
+		2341 2740 6806 10064 10099 10101 
+	}
+	manpower=2819080
+	buildings_max_level_factor=1.000
+		state_category=large_city
+		local_supplies=0.000
+		resources={
+			steel=3 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = XAG
+		add_core_of =XAG
+		buildings = {
+			infrastructure = 3
+			air_base = 0
+			arms_factory = 3
+			industrial_complex = 1
+		}
+	}
+}

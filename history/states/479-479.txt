@@ -1,0 +1,29 @@
+state={
+	id=479
+	name="STATE_479"
+	provinces={
+		2519 3325 4469 5037 6751 9232 9239 
+	}
+	manpower=532000
+	buildings_max_level_factor=1.000
+		state_category=small_island
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 3 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = BSL
+		add_core_of = BSL
+		buildings = {
+			infrastructure = 1
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

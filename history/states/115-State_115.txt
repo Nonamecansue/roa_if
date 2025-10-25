@@ -1,0 +1,29 @@
+state={
+	id=115
+	name="STATE_115"
+	provinces={
+		32 1517 2038 2078 2774 3179 3555 3646 3681 3768 4599 4917 5148 5203 6011 6713 6986 7176 7585 8615 8641 8646 8667 8678 8754 8755 
+	}
+	manpower=908200
+	buildings_max_level_factor=1.000
+		state_category=small_island
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = XFS
+		add_core_of = XFS
+		buildings = {
+			infrastructure = 1
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

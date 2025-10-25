@@ -1,0 +1,29 @@
+state={
+	id=580
+	name="STATE_580"
+	provinces={
+		904 1452 2574 3808 4624 5212 5540 7076 7357 7806 7824 7836 7849 7854 
+	}
+	manpower=723000
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = DLD
+		add_core_of = DLD
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

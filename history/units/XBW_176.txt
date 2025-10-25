@@ -1,0 +1,59 @@
+﻿division_template = {
+	name = "自行车巡逻队"
+	regiments = {
+		bicycle_battalion = { x = 0 y = 0 }
+		bicycle_battalion = { x = 0 y = 1 }
+		bicycle_battalion = { x = 0 y = 2 }
+		bicycle_battalion = { x = 1 y = 0 }
+		bicycle_battalion = { x = 1 y = 1 }
+		bicycle_battalion = { x = 1 y = 2 }
+	}
+	support = {
+	}
+}
+
+division_template = {
+	name = "妖精自卫军"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+	}
+}
+
+units = {
+	division = {
+		name = "自行车巡逻队"
+		location = 9846
+		division_template = "自行车巡逻队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "自行车巡逻队"
+		location = 9846
+		division_template = "自行车巡逻队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "妖精自卫军"
+		location = 5484
+		division_template = "妖精自卫军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "妖精自卫军"
+		location = 5484
+		division_template = "妖精自卫军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+
+}

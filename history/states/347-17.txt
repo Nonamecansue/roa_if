@@ -1,0 +1,29 @@
+state={
+	id=347
+	name="STATE_347"
+	provinces={
+		920 2189 8324 8333 8342 
+	}
+	manpower=583000
+	buildings_max_level_factor=1.000
+		state_category=rural
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 3 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = LWZ
+		add_core_of =LWZ
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 1
+			industrial_complex = 0
+		}
+	}
+}

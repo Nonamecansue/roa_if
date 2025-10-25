@@ -1,0 +1,29 @@
+state={
+	id=734
+	name="STATE_734"
+	provinces={
+		988 1914 2362 2875 2959 3037 3618 4189 4639 4907 5177 5638 6404 6416 8415 8526 8583 8599 8624 
+	}
+	manpower=1320000
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = UUZ
+		add_core_of =UUZ
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

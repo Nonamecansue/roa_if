@@ -1,0 +1,70 @@
+characters={
+	UUZ_youyouzi ={
+		name = UUZ_youyouzi
+		portraits={
+			civilian={
+				large="gfx/leaders/UUZ/UUZ_uuz.dds"
+				small="gfx/leaders/UUZ/UUZ_uuz_small.dds"
+			}
+			army = {
+				large="gfx/leaders/UUZ/UUZ_uuz.dds"
+				small="gfx/leaders/UUZ/UUZ_uuz_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = {  th_original_character th_character th_trait_qianxianzhandou war_hero trait_reckless th_trait_yinyangshi }
+			# id = 1
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		advisor = {
+			slot = character_coop
+			idea_token = UUZ_youyouzi
+			name = UUZ_youyouzi
+			cost = 200
+			modifier = {
+		#		PO_good_battle_influence_factor = 0.5
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	UUZ_youyouzi_leader ={
+		name = UUZ_youyouzi_leader
+		portraits={
+			civilian={
+				large="gfx/leaders/UUZ/UUZ_uuz.dds"
+				small="gfx/leaders/UUZ/UUZ_uuz_small.dds"
+			}
+			army = {
+				large="gfx/leaders/UUZ/UUZ_uuz.dds"
+				small="gfx/leaders/UUZ/UUZ_uuz_small.dds"
+			}
+		}
+		country_leader={
+			ideology=jijingailiang_type
+			id=-1
+		}
+		country_leader={
+			ideology=baoshougailiang_type
+			id=-1
+		}
+		country_leader={
+			ideology=baoshou_type
+			id=-1
+		}
+		country_leader={
+			ideology=diguo_type
+			id=-1
+		}
+		country_leader={
+			ideology=huanxiang_type
+			id=-1
+		}
+	}
+	
+}

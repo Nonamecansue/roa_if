@@ -1,0 +1,29 @@
+state={
+	id=354
+	name="STATE_354"
+	provinces={
+		888 897 1988 3150 4172 4976 5252 6593 6841 6922 10023 10045 10058 
+	}
+	manpower=1376000
+	buildings_max_level_factor=1.000
+		state_category=town
+		local_supplies=0.000
+		resources={
+			steel=0 #钢铁
+			tungsten = 0 #钨
+			chromium = 0 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = XAG
+		add_core_of =XAG
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 2
+			industrial_complex = 0
+		}
+	}
+}

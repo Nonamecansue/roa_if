@@ -1,0 +1,85 @@
+﻿division_template = {
+	name = "保留防卫军"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+	}
+}
+
+units = {
+	division = {
+		name = "保留防卫军"
+		location = 1224
+		division_template = "保留防卫军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "保留防卫军"
+		location = 10842
+		division_template = "保留防卫军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "保留防卫军"
+		location = 403
+		division_template = "保留防卫军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "保留防卫军"
+		location = 1467
+		division_template = "保留防卫军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "保留防卫军"
+		location = 1550
+		division_template = "保留防卫军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "保留防卫军"
+		location = 4519
+		division_template = "保留防卫军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "保留防卫军"
+		location = 6248
+		division_template = "保留防卫军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "保留防卫军"
+		location = 6046
+		division_template = "保留防卫军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "保留防卫军"
+		location = 6531
+		division_template = "保留防卫军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "保留防卫军"
+		location = 1605
+		division_template = "保留防卫军"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+
+}

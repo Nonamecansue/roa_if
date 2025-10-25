@@ -1,0 +1,29 @@
+state={
+	id=470
+	name="STATE_470"
+	provinces={
+		1419 1483 1688 2254 2964 4054 4563 4598 4944 5318 5563 5784 6400 6608 10874 10909 10919 10923 10945 10966 11000 11011 11017 
+	}
+	manpower=2876000
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+	resources={
+		steel=4 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = REN
+		add_core_of = REN
+		buildings = {
+			infrastructure = 4
+			air_base = 0
+			arms_factory = 4
+			industrial_complex = 1
+		}
+	}
+}

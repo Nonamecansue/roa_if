@@ -1,0 +1,30 @@
+state={
+	id=253
+	name="STATE_253"
+	provinces={
+		224 418 677 716 1446 2498 2841 3237 3915 4127 5133 5554 6005 7282 7443 7615 10322 10393 10429 10444 10462 10473 10487 10488 10525 10533 10544 
+	}
+	manpower=1317900
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 1 #铬
+		rubber=0 #橡胶
+		aluminium=2 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = REN
+		add_core_of =REN
+		victory_points = { 10462 5 }
+		buildings = {
+			infrastructure = 3
+			air_base = 0
+			arms_factory = 1
+			industrial_complex = 1
+		}
+	}
+}

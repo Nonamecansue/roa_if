@@ -1,0 +1,30 @@
+state={
+	id=188
+	name="STATE_188"
+	provinces={
+		21 646 799 1573 1587 3348 3505 4045 4072 4280 4486 5000 5208 5953 6176 6587 6952 7180 7236 9241 9287 9479 
+	}
+	manpower=12
+	impassable = yes
+	buildings_max_level_factor=1.000
+	state_category=tiny_island
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = TGD
+		add_core_of = TGD
+		buildings = {
+			infrastructure = 0
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

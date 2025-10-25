@@ -1,0 +1,28 @@
+state={
+	id=396
+	name="STATE_396"
+	provinces={
+		1378 1399 2114 3117 4103 5052 6555 7377 9971 9990 10000 10033 10068 
+	}
+	manpower=1876000
+	state_category=rural
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 3 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = SXL
+		add_core_of = SXL
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 1
+			industrial_complex = 0
+		}
+	}
+}

@@ -1,0 +1,89 @@
+ideas = {
+
+	kaifang = { 
+		law = yes
+		jinzhirunei= {
+			default = yes
+									
+			level = 1
+			cost = 150
+			cancel_if_invalid = no
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.15
+			}
+			research_bonus = {
+						
+		    }
+			
+		}
+
+		rencairunei= {
+									
+			level = 2
+			cost = 150
+			cancel_if_invalid = no
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				research_speed_factor = 0.1
+				
+			}
+			research_bonus = {
+						
+		    }
+			
+		}
+
+		guankongrunei= {
+									
+			level = 3
+			cost = 150
+			cancel_if_invalid = no
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				MONTHLY_POPULATION = 0.1
+				
+			}
+			research_bonus = {
+						
+		    }
+			
+		}
+
+		songsanguankongrunei= {
+									
+			level = 4
+			cost = 150
+			cancel_if_invalid = no
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				MONTHLY_POPULATION = 0.2
+				
+			}
+			research_bonus = {
+						
+		    }
+			
+		}
+
+		wanquankaifangrunei= {
+									
+			level = 5
+			cost = 150
+			cancel_if_invalid = no
+			removal_cost = -1
+			modifier = {
+				MONTHLY_POPULATION = 0.4
+				stability_factor = -0.1
+				
+			}
+			research_bonus = {
+						
+		    }
+			
+		}
+	}
+}

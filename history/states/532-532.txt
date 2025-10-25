@@ -1,0 +1,29 @@
+state={
+	id=532
+	name="STATE_532"
+	provinces={
+		641 1408 1444 4484 6564 6753 10024 10042 10072 
+	}
+	manpower=1748000
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=4 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = NYS
+		add_core_of = NYS
+		buildings = {
+			infrastructure = 3
+			air_base = 0
+			arms_factory = 3
+			industrial_complex = 0
+		}
+	}
+}

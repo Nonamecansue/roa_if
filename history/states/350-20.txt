@@ -1,0 +1,29 @@
+state={
+	id=350
+	name="STATE_350"
+	provinces={
+		132 248 2046 2570 4605 5406 5709 6938 9190 9233 
+	}
+	manpower=2108000
+	buildings_max_level_factor=1.000
+		state_category=city
+		local_supplies=0.000
+		resources={
+			steel=3 #钢铁
+			tungsten = 3 #钨
+			chromium = 3 #铬
+			rubber=0 #橡胶
+			aluminium=0 #铝
+			oil = 0 #石油
+		}
+	history = {
+		owner = HCY
+		add_core_of = HCY
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 1
+			industrial_complex = 2
+		}
+	}
+}

@@ -1,0 +1,29 @@
+state={
+	id=189
+	name="STATE_189"
+	provinces={
+		76 595 850 1096 1404 1463 2034 2380 2428 2808 2881 3070 3118 3643 4793 6079 6461 9590 9623 9667 9670 9678 9715 9772 9828 9873 9906 9907 
+	}
+	manpower=1402000
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = LZY
+		add_core_of = LZY
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

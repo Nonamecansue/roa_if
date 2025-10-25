@@ -1,0 +1,29 @@
+state={
+	id=34
+	name="STATE_34"
+	provinces={
+		50 298 1078 2075 3207 3783 3933 4330 6996 7440 7808 7810 
+	}
+	manpower=682000
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+	resources={
+		steel=0 #钢铁
+		tungsten = 0 #钨
+		chromium = 0 #铬
+		rubber=0 #橡胶
+		aluminium=0 #铝
+		oil = 0 #石油
+	}
+	history = {
+		owner = JIU
+		add_core_of =JIU
+		buildings = {
+			infrastructure = 2
+			air_base = 0
+			arms_factory = 0
+			industrial_complex = 0
+		}
+	}
+}

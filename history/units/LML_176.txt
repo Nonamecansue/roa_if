@@ -1,0 +1,42 @@
+﻿division_template = {
+	name = "狸林防卫队"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+	}
+	support = {
+	}
+}
+
+
+units = {
+	division = {
+		name = "狸林防卫队"
+		location = 4943
+		division_template = "狸林防卫队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "狸林防卫队"
+		location = 4547
+		division_template = "狸林防卫队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "狸林防卫队"
+		location = 4943
+		division_template = "狸林防卫队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "狸林防卫队"
+		location = 4547
+		division_template = "狸林防卫队"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+
+}
